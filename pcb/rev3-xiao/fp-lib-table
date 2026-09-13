@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "GEA_XIAO")(type "KiCad")(uri "${KIPRJMOD}/footprints/GEA_XIAO.pretty")(options "")(descr "Project-local Seeed XIAO ESP32-C3 rev1.3 footprint"))
+)
