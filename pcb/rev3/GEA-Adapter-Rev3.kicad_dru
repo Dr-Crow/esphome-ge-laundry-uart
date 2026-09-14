@@ -1,0 +1,9 @@
+(version 1)
+
+(rule "USB data pair skew"
+  (condition "A.hasNetclass('USBData')")
+  (constraint skew (max 1mm) (within_diff_pairs)))
+
+(rule "USB data pair no vias"
+  (condition "A.hasNetclass('USBData')")
+  (constraint via_count (max 0)))

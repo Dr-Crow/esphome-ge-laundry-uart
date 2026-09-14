@@ -196,6 +196,7 @@
       "track_widths": [
         0.0,
         0.2,
+        0.432,
         0.5
       ],
       "tuning_pattern_settings": {
@@ -542,6 +543,24 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
+        "diff_pair_gap": 0.203,
+        "diff_pair_via_gap": 0.203,
+        "diff_pair_width": 0.432,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USBData",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.432,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
         "diff_pair_gap": 0.0,
         "diff_pair_via_gap": 0.0,
         "diff_pair_width": 0.0,
@@ -574,31 +593,67 @@
       },
       {
         "netclass": "Power",
-        "pattern": "/ALT_PWR"
+        "pattern": "ALT_PWR"
       },
       {
         "netclass": "Power",
-        "pattern": "/APPLIANCE_PROTECTED"
+        "pattern": "PIN1_FUSED"
       },
       {
         "netclass": "Power",
-        "pattern": "/BUCK_5V"
+        "pattern": "PIN1_PROTECTED"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "PIN1_SW_OUT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "PIN3_FUSED"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "PIN3_PROTECTED"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "PIN3_SW_OUT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "V_INPUT"
       },
       {
         "netclass": "USBPower",
-        "pattern": "/USB_VBUS"
+        "pattern": "USB_VBUS"
       },
       {
         "netclass": "USBPower",
-        "pattern": "/USB_VBUS_FUSED"
+        "pattern": "USB_VBUS_FUSED"
       },
       {
-        "netclass": "Power",
-        "pattern": "/p1"
+        "netclass": "USBData",
+        "pattern": "USB_CONN_N"
       },
       {
-        "netclass": "Power",
-        "pattern": "/p2"
+        "netclass": "USBData",
+        "pattern": "USB_CONN_P"
+      },
+      {
+        "netclass": "USBData",
+        "pattern": "USB_MCU_N"
+      },
+      {
+        "netclass": "USBData",
+        "pattern": "USB_MCU_P"
+      },
+      {
+        "netclass": "USBData",
+        "pattern": "USB_PROTECTED_N"
+      },
+      {
+        "netclass": "USBData",
+        "pattern": "USB_PROTECTED_P"
       },
       {
         "netclass": "Power",
@@ -606,27 +661,15 @@
       },
       {
         "netclass": "Power",
-        "pattern": "Net-(JP2-A)"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "Net-(JP2-B)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Q2_GATE"
+        "pattern": "/BUCK_5V"
       },
       {
         "netclass": "Switching",
-        "pattern": "/BUCK_BST"
+        "pattern": "BUCK_BST"
       },
       {
         "netclass": "Switching",
         "pattern": "/BUCK_SW"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Q1_GATE"
       }
     ]
   },
@@ -723,7 +766,7 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "connection_grid_size": 50.0,
+    "connection_grid_size": 25.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
