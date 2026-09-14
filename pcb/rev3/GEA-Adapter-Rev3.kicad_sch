@@ -34699,7 +34699,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/7d87e82d7c94fc2f1ad4584993e52b86.pdf?productCode=C2894897"
 			(at 93.81 335.0 0)
 			(hide yes)
 			(show_name no)
@@ -34710,7 +34710,7 @@
 				)
 			)
 		)
-		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+		(property "Description" "HCTL USB 2.0 Type-C receptacle, 16 contacts, top mount"
 			(at 90.0 335.0 0)
 			(hide yes)
 			(show_name no)
@@ -34721,7 +34721,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "GCT"
+		(property "Manufacturer" "HCTL"
 			(at 90.0 335.0 0)
 			(effects
 				(font
@@ -34730,7 +34730,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "USB4105-GF-A"
+		(property "MPN" "HC-TYPE-C-16P-01A"
+			(at 90.0 335.0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2894897"
 			(at 90.0 335.0 0)
 			(effects
 				(font
@@ -35318,6 +35327,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2071056"
+			(at 250.19 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Input_Range" "3.8V to 32V"
 			(at 250.19 80.01 0)
 			(effects
@@ -35435,6 +35453,15 @@
 			)
 		)
 		(property "MPN" "ETQP3M4R7KVP"
+			(at 284.48 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C412309"
 			(at 284.48 77.47 0)
 			(effects
 				(font

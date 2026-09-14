@@ -112,6 +112,22 @@ The target is a turnkey assembled board with no customer hand soldering. The man
 
 JLCPCB is the natural first quote for the existing designs because many parts already carry JLC/LCSC catalog numbers. PCBWay remains a useful comparison, but it needs the vendor-neutral manufacturer fields rather than only JLC/LCSC numbers. Live stock, substitutions, setup fees, through-hole labor, shipping, and quantity determine the real price.
 
+Current sourcing review has corrected two catalog mismatches: C9 now specifies FH
+`1206B106K500NT` (`C303950`), a 10 uF, 50 V, X7R capacitor in the placed
+1206 footprint, and C10 specifies FH `0603B104M500NT` (`C286510`), a
+100 nF, 50 V, X7R capacitor in the placed 0603 footprint. J1 consistently
+specifies the low-cost EVERCOM `5301-8P8C` (`C3097717`) and requires wave
+soldering. J4 now specifies HCTL `HC-TYPE-C-16P-01A` (`C2894897`). Its
+official drawing matches the existing GCT-family footprint's contact order,
+0.5 mm pitch, locating holes, and four shell-tab centers. It was selected
+because the exact GCT part was unavailable and the HCTL part was in stock at
+the time of review. Do not substitute another mechanically similar USB
+connector without comparing the official pad and shell-tab drawing.
+
+The current schematic exports 43 populated BOM groups covering 90 placed
+parts. Seven groups still lack an LCSC identifier, so this is not yet a matched
+assembly BOM and no assembled-price claim should be made from it.
+
 ## Release gates
 
 - Complete routing with no unintended open connections or shorts.
