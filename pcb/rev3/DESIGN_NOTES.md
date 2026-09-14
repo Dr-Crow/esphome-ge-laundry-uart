@@ -125,12 +125,14 @@ the time of review. Do not substitute another mechanically similar USB
 connector without comparing the official pad and shell-tab drawing.
 
 The current schematic exports 42 populated BOM groups covering 90 placed
-parts. Exact LCSC identities are recorded for 41 groups. The only unresolved
-group is C16/C17: the specified TDK `CGA6P1X8L1C226M250AC` (`C2181897`)
-22 uF, 16 V, X8L output capacitor is currently out of stock. A stocked X5R
-part is not an approved substitution until DC-bias derating and AP63205 output
-stability are checked. This is therefore not yet a release-ready assembly BOM,
-and no assembled-price claim should be made from it.
+parts, and every group has an exact LCSC identity. C16/C17 use Samsung
+`CL32B226KAJNNNE` (`C309062`), a stocked 22 uF, 25 V, X7R, 1210 capacitor
+specified to 125 C. It replaces an unavailable 16 V X8L part and provides more
+voltage and temperature margin than the 85 C X5R fallback. Prototype testing
+must still check AP63205 load-step response, ripple, and capacitor temperature
+at the intended input and load extremes. A matched BOM does not establish the
+assembled price; live stock, assembly classification, and setup fees remain
+quote-time gates.
 
 ## Release gates
 
