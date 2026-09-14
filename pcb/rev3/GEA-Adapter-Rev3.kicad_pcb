@@ -10228,7 +10228,7 @@
 				)
 			)
 		)
-		(property "Value" "22u 16V X8L"
+		(property "Value" "22u 25V X7R"
 			(at 0 2.3 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10240,7 +10240,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10252,7 +10252,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "22 uF 25 V X7R 1210 MLCC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10264,7 +10264,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "X8L"
+		(property "Dielectric" "X7R"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10276,7 +10276,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA6P1X8L1C226M250AC"
+		(property "MPN" "CL32B226KAJNNNE"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10288,7 +10288,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TDK"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10300,7 +10300,19 @@
 				)
 			)
 		)
-		(property "Voltage" "16V"
+		(property "LCSC" "C309062"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d3d55e9-9b6d-48f5-95bb-7313c85a0290")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10930,7 +10942,7 @@
 				)
 			)
 		)
-		(property "Value" "100n 50V X7R"
+		(property "Value" "100n 50V X8L"
 			(at 0 1.43 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -10954,7 +10966,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100 nF 50 V X8L 0603 MLCC"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -10966,7 +10978,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "X7R"
+		(property "Dielectric" "X8L"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -10995,6 +11007,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "90d32d1d-1a92-4e28-bb0e-f6ab05e26e7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C161181"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39509fde-8203-4911-a849-43e1629adfb2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15813,7 +15837,7 @@
 				)
 			)
 		)
-		(property "Value" "22u 16V X8L"
+		(property "Value" "22u 25V X7R"
 			(at 0 2.3 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15825,7 +15849,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15837,7 +15861,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "22 uF 25 V X7R 1210 MLCC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15849,7 +15873,7 @@
 				)
 			)
 		)
-		(property "Dielectric" "X8L"
+		(property "Dielectric" "X7R"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15861,7 +15885,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA6P1X8L1C226M250AC"
+		(property "MPN" "CL32B226KAJNNNE"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15873,7 +15897,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TDK"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15885,7 +15909,19 @@
 				)
 			)
 		)
-		(property "Voltage" "16V"
+		(property "LCSC" "C309062"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c87df7d0-cce4-4f55-a4e7-3baa521ce38f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
