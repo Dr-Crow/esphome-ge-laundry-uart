@@ -11846,7 +11846,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/288017-1206B106K500NT/C303950"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11858,7 +11858,7 @@
 				)
 			)
 		)
-		(property "Description" "C15850"
+		(property "Description" "10 uF 50 V X7R 1206 MLCC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11882,7 +11882,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15850"
+		(property "LCSC" "C303950"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11894,7 +11894,7 @@
 				)
 			)
 		)
-		(property "MPN" "CGA5L1X7R1H106K160AC"
+		(property "MPN" "1206B106K500NT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11906,7 +11906,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TDK"
+		(property "Manufacturer" "FH"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13821,7 +13821,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/0603B104M500NT/C286510"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -13833,7 +13833,7 @@
 				)
 			)
 		)
-		(property "Description" "C28233"
+		(property "Description" "100 nF 50 V X7R 0603 MLCC"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -13857,7 +13857,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C286510"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -13869,7 +13869,7 @@
 				)
 			)
 		)
-		(property "MPN" "GCM188L81H104KA57"
+		(property "MPN" "0603B104M500NT"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -13881,7 +13881,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "FH"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
