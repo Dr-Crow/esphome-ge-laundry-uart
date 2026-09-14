@@ -2,21 +2,26 @@
 ![v2](https://github.com/user-attachments/assets/f0ecc78b-20a1-45ff-a41a-00d02f6c67e2)
 
 # esphome-ge-laundry-uart
-The project started out as integrating a GE washer & dryer with Home Assistant using ESPHome.  The GE W&D have an RJ45 style communication port with a serial interface.  ESP32 hardware powered by the communication port provides remaining time and cycle done feedback to HA via ESPHome.  Initial software was an custom component, which was then migrated to an external component.  Initially lots of research into the GEA2 and GEA3 implementation with a U+ Connect module.  [GE Appliances](https://github.com/geappliances) / [FirstBuild](https://firstbuild.com/inventions/home-assistant-adapter/) started releasing hardware and protocol information, picking up where the old GEMakers left off.  They implement GEA2 and GEA3 in Arduino cpp and Home Assistant MQTT interface.  Modern and flexible ESPhome external component is now located here: https://github.com/mguaylam/esphome-gea.   Legacy code is available in a branch if needed.
 
-### Current Status:
+This project connects compatible GE washers and dryers to Home Assistant through ESPHome. The appliance service port uses an 8P8C connector that looks like RJ45, but it carries appliance power and low-voltage serial signals rather than Ethernet. An ESP32 powered by that port can report information such as remaining cycle time and cycle completion.
 
-- Version 2.0 of PCB designed and fabricated.  Uses same ESP32-C3 and pinout as FirstBuild adapter.  PCB assembly files ready for assembly at JLCPCB if you want to order your own.  About $15 per board.
-  Current version 2.0 and 2.1 PCB have error on silk screen RX and TX pins are mismarked.  Also the U1 reset IC is problematic and causes ESP boot loops.
-- Better 3d printed case design.
-- Recommend using this ESPhome custom component.  https://github.com/mguaylam/esphome-gea.  Baseline yaml are provided for the version 2.x PCBs here for reference.
+The original custom component has moved to the actively maintained [ESPHome GEA external component](https://github.com/mguaylam/esphome-gea). GE Appliances and FirstBuild also publish useful [hardware](https://github.com/geappliances/home-assistant-adapter), [examples](https://github.com/geappliances/home-assistant-examples), and [protocol implementations](https://github.com/geappliances/home-assistant-bridge). Legacy project code remains available in a branch.
 
-### TODO:
+## Current status
 
-- PCB Updates, add USB hardware to avoid serial programming.  Remove U1.  Do a proper DC/DC regulator for the 5v supply.  Fix silk screen.
+- The [PCB revision guide](pcb/readme.md) explains the differences, known problems, and order status for each hardware version.
+- Revisions 2.0 and 2.1 use the same ESP32-C3 module and pinout as the FirstBuild adapter, but their RX/TX labels are swapped and an optional reset-monitor chip can cause boot loops.
+- [Revision 2.2](pcb/rev2.2/README.md) is a manufacturing candidate that leaves the troublesome reset-monitor chip uninstalled, corrects the RX/TX labels, and provides a matched Gerber, bill of materials, and placement file. It still requires fabrication-preview review and prototype testing before production use.
+- A revised 3D-printed case is still planned.
+- Baseline YAML files for version 2.x boards remain here for reference; new installations should use the maintained ESPHome GEA external component linked above.
+
+## TODO
+
+- Validate the revision 2.2 manufacturing candidate on a small prototype batch.
+- Develop revision 3 with onboard USB programming and a qualified DC/DC power path.
 - See if the GEA2 subscribe/publish logic can be worked out for quicker response.
 
-### Related projects:
+## Related projects
 
 - https://github.com/puddly/casserole
 - https://github.com/GEMakers/green-bean
@@ -28,6 +33,3 @@ The project started out as integrating a GE washer & dryer with Home Assistant u
 - https://github.com/geappliances/home-assistant-examples
 - https://github.com/geappliances/home-assistant-bridge
 - https://github.com/mguaylam/esphome-gea
-
-
-
