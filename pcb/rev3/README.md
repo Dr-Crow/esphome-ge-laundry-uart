@@ -22,9 +22,12 @@ The blocking diodes are one-way valves for electricity. They let either the appl
 
 - The schematic is complete enough for design review and opens in KiCad 9.0.9.
 - The board outline, component placement, antenna keepout, ground plane, and part of the power routing are present.
+- The GEA3 receiver path from U5 through R12 to ESP32-C3 U2 pad 12, and the transmitter path from U4 through R13 to U2 pad 11, are routed. The DNP J3 debug-header branches on those nets remain open.
 - The USB connector and protection parts are placed, but the USB data pair is not routed.
 - Many ordinary signal and power connections remain unrouted. The board is not a manufacturing candidate.
 - No Gerber, BOM, or placement package is released for ordering.
+
+The next routing slice should distribute +3V3 locally and complete the remaining appliance/control nets. It must continue to leave the USB differential-pair corridor and the ESP32 antenna keepout untouched.
 
 The KiCad files are the source of truth. This branch intentionally does not include custom board-generator scripts, checksum manifests, or per-routing-step validation programs.
 
