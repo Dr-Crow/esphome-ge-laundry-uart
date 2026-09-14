@@ -18042,7 +18042,7 @@
 	(footprint "RF_Module:ESP32-C3-WROOM-02"
 		(layer "F.Cu")
 		(uuid "d1a5d244-8e73-494f-b0b7-50f2f77722b5")
-		(at 75.6 17 -90)
+		(at 81.6 17 -90)
 		(descr "RF Module, ESP32-C3 WROOM-02, Wi-Fi and Bluetooth, BLE, onboard antenna, https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf")
 		(tags "ESP32-C3 WROOM-02 espressif")
 		(property "Reference" "U2"
@@ -18971,7 +18971,7 @@
 			)
 			(polygon
 				(pts
-					(xy 82.7 3) (xy 82.7 31) (xy 93.7 31) (xy 93.7 3)
+					(xy 88.7 3) (xy 88.7 31) (xy 99.7 31) (xy 99.7 3)
 				)
 			)
 		)
@@ -23030,14 +23030,6 @@
 		(uuid "4bbc40f8-27a3-4442-840e-e036317eadc8")
 	)
 	(segment
-		(start 69.6 8.25)
-		(end 67.5 8.25)
-		(width 0.3)
-		(layer "F.Cu")
-		(net 18)
-		(uuid "548e94d3-cae0-47e4-af72-11e7d99ae6f9")
-	)
-	(segment
 		(start 19.5 34.525)
 		(end 22 35.8)
 		(width 0.5)
@@ -23316,6 +23308,14 @@
 		(layer "F.Cu")
 		(net 18)
 		(uuid "ec5f7985-bf25-4b8e-bd71-17ef6f8c4ecd")
+	)
+	(segment
+		(start 75.6 8.25)
+		(end 67.5 8.25)
+		(width 0.3)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "efd26687-86a0-4ef2-9ce9-223a05b4e25f")
 	)
 	(segment
 		(start 48.0625 24)
@@ -24286,12 +24286,20 @@
 		(uuid "fe77f87a-bd77-48f0-a26c-465f477dd71a")
 	)
 	(segment
-		(start 75.6 25.75)
+		(start 81.6 28)
+		(end 75.6 28)
+		(width 0.432)
+		(layer "F.Cu")
+		(net 63)
+		(uuid "2cbae851-84f0-44ca-95ba-aa164f68b5cb")
+	)
+	(segment
+		(start 75.6 28)
 		(end 75.6 29.5)
 		(width 0.432)
 		(layer "F.Cu")
 		(net 63)
-		(uuid "0977ea13-f0a9-4f84-8495-4bd379c8a733")
+		(uuid "3d415ac6-7fab-40bd-9dfc-b345bb89c53c")
 	)
 	(segment
 		(start 75.6 29.5)
@@ -24300,6 +24308,14 @@
 		(layer "F.Cu")
 		(net 63)
 		(uuid "56249dd3-47f4-4593-9526-61bf45c32f08")
+	)
+	(segment
+		(start 81.6 25.75)
+		(end 81.6 28)
+		(width 0.432)
+		(layer "F.Cu")
+		(net 63)
+		(uuid "c33edabb-fff9-48da-b756-7f2e32e0a4af")
 	)
 	(segment
 		(start 74.5 28.6)
@@ -24326,6 +24342,14 @@
 		(uuid "89716b30-42af-4b31-88cf-e004b643430b")
 	)
 	(segment
+		(start 80.1 25.75)
+		(end 80.1 27)
+		(width 0.432)
+		(layer "F.Cu")
+		(net 64)
+		(uuid "d62ee858-0d04-4ae1-97cc-846a0fe1bb6b")
+	)
+	(segment
 		(start 73.325 28.6)
 		(end 73.325 27.8)
 		(width 0.432)
@@ -24334,12 +24358,12 @@
 		(uuid "d8598c38-c8a9-4c42-ae74-350f4ebbe066")
 	)
 	(segment
-		(start 74.1 25.75)
+		(start 80.1 27)
 		(end 74.1 27)
 		(width 0.432)
 		(layer "F.Cu")
 		(net 64)
-		(uuid "f5bafd9c-e5ed-4169-9d34-2203f241dca3")
+		(uuid "d9c1158b-766d-4fb0-89ba-1d274d5a97bf")
 	)
 	(segment
 		(start 70.0375 28.05)
