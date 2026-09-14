@@ -3513,10 +3513,10 @@
     (property "Manufacturer" "Seeed Studio" (at 190.5 69.85 0)
       (effects (font (size 1.27 1.27)) (hide yes))
     )
-    (property "MPN" "XIAO-ESP32-C3" (at 190.5 69.85 0)
+    (property "MPN" "113991054" (at 190.5 69.85 0)
       (effects (font (size 1.27 1.27)) (hide yes))
     )
-    (property "LCSC/JLCPCB" "C18212168" (at 190.5 69.85 0)
+    (property "LCSC" "C18212168" (at 190.5 69.85 0)
       (effects (font (size 1.27 1.27)) (hide yes))
     )
 		(pin "1"
@@ -6029,6 +6029,15 @@
 			)
 		)
 		(property "MPN" "AP63205WU-7"
+			(at 260.0000 270.0000 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2071056"
 			(at 260.0000 270.0000 0)
 			(effects
 				(font
