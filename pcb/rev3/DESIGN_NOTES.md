@@ -100,7 +100,15 @@ release gate rather than assuming that a clean DRC proves signal integrity.
 
 ## RF and enclosure
 
-The ESP32 module contains the antenna; no separate antenna is needed. Copper, traces, components, and enclosure hardware must stay out of the module's antenna keepout. Final Wi-Fi range must be tested in the actual printed enclosure and near the appliance chassis.
+The ESP32 module contains the antenna; no separate antenna is needed. U2 is placed
+at `(81.6, 17.0)` with its antenna facing the right edge. The module antenna
+overhangs the base board and its embedded keepout begins at the 88.7 mm board
+edge, following Espressif's preferred module-on-baseboard placement. The
+rightmost solder pad retains 0.65 mm edge clearance. The enclosure must leave at
+least 15 mm of clear space beyond the antenna edge (`x = 88.7..103.7 mm`,
+`y = 3..31 mm`) with no metal, wiring, fasteners, or structural ribs. Final
+throughput and Wi-Fi range must be tested in the printed enclosure and next to
+the appliance chassis.
 
 ## Assembly and sourcing
 

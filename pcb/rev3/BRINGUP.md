@@ -73,6 +73,21 @@ measurements on the first known-good boards.
    the enumeration and boot test.
 5. Record idle and Wi-Fi-active current and rail voltage.
 
+## USB and Wi-Fi reliability
+
+1. Repeat USB enumeration, flashing, reset, and reconnect at least ten times with
+   appliance power absent.
+2. Run sustained serial logging while the ESP32 transmits Wi-Fi traffic; record any
+   USB disconnect, packet error, reset, or host warning.
+3. Install the board in the intended enclosure with at least 15 mm of clear space
+   beyond the overhanging antenna edge. Keep metal, wiring, fasteners, and enclosure
+   ribs out of that volume.
+4. Measure Wi-Fi throughput and usable range both away from the appliance and in the
+   final mounting position next to the appliance chassis. Compare at least two boards.
+
+Do not approve the two-layer USB/RF layout if USB errors appear under Wi-Fi load or
+if the installed enclosure materially degrades range or connection stability.
+
 Stop for unexpected current limiting, a host over-current warning, rapid heating,
 or any voltage driven toward an appliance pin.
 
@@ -164,6 +179,8 @@ or odor. Record and inspect a failure before trying it again.
 | USB plus both inputs | | | |
 | Reverse-current checks | | | |
 | Rail stability under Wi-Fi load | | | |
+| USB reliability under Wi-Fi traffic | | | |
+| Enclosed Wi-Fi throughput and range | | | |
 | Temperature observations | | | |
 | Appliance-only test | | | |
 | Appliance plus USB test | | | |

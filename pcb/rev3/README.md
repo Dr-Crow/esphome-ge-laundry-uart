@@ -69,18 +69,26 @@ The blocking diodes are one-way valves for electricity. They let either the appl
   connections are routed. The feedback sense trace uses the bottom layer briefly
   and returns to the output capacitor through two standard through-vias.
 - The USB-C connector is placed on the lower board edge. The ESP32-to-series-resistor
-  section of the USB pair is routed on the top layer at 5.225 mm and 6.025 mm
-  (0.800 mm skew), with no vias. The ESD protector has a local ground via, and both
-  connector ground contacts are tied to the grounded shell pads.
-- The connector-to-ESD and ESD-to-series-resistor data sections, additional ground
-  returns, and the remaining signal and rail connections still need routing and a
-  final zone refill. The board is not a manufacturing candidate.
+  section and the connector-to-ESD sections are routed end to end. The local
+  connector fan-out uses 0.20 mm tracks, 0.10 mm clearance, and ordinary 0.8/0.4 mm
+  through vias. Combined pair skew is approximately 0.48 mm. The ESD protector has
+  a local ground via, and both connector ground contacts are tied to the grounded
+  shell pads. The bottom-layer section requires physical USB reliability testing
+  because it does not have an ideal continuous reference plane.
+- The ESP32 module is shifted to the right so its antenna overhangs the PCB and its
+  keepout begins at the board edge. The PCB remains 88.7 mm by 40.0 mm; the enclosure
+  must preserve 15 mm of antenna-side clearance outside that edge.
+- Routing has progressed from 192 to 110 open connections without introducing a
+  hard DRC geometry error. Remaining signal and rail connections still need routing
+  and a final zone refill. The board is not a manufacturing candidate.
+- The schematic BOM contains 42 purchasing groups / 90 fitted parts and every group
+  has an exact LCSC identifier. Stock, substitutions, and assembly charges still
+  require a live quote.
 - No Gerber, BOM, or placement package is released for ordering.
 
-The next routing slices should finish and measure the two remaining USB data sections,
-add short ground returns into the bottom plane, then complete the remaining appliance
-and control nets. Every slice must preserve the bottom ground return and ESP32 antenna
-keepout.
+The next routing slices should complete the remaining 5 V, 3.3 V, appliance, and
+control nets. Every slice must preserve the bottom ground return, routed USB path,
+and ESP32 antenna keepout.
 
 The KiCad files are the source of truth.
 
@@ -102,15 +110,14 @@ and single-sided component placement. Its 40 mm height provides a dedicated lowe
 buck-converter corridor without using the USB routing area. Changing to four copper
 layers alone would not reduce it to FirstBuild's footprint.
 
-The USB component placement must leave a direct corridor for the pair while preserving
-the ground plane and antenna keepout. The release design remains two layers. Trace
-width and spacing use JLCPCB's published calculator model for its nominal stack-up:
-17 mil traces, an 8 mil pair gap, and 8 mil clearance to top-layer ground produce a
-calculated result near 90 ohms. JLCPCB does not advertise impedance certification for
-its normal two-layer FR-4 service, so this is a design target rather than a TDR-backed
-fabrication guarantee. If that geometry does not fit over uninterrupted bottom
-ground, the two-layer layout must be revised and reviewed again; moving to four layers
-is outside the current Revision 3A decision unless separately approved.
+The release design remains two layers. The connector fan-out uses 0.20 mm tracks and
+0.10 mm local clearance, within JLCPCB's published standard capability, while the
+existing MCU-side pair remains 0.432 mm wide. These are manufacturing limits rather
+than a controlled-impedance guarantee. The completed route passes KiCad clearance and
+pair-skew checks, but its bottom-layer section interrupts the ideal reference-plane
+arrangement. USB enumeration, flashing, sustained logging, and reconnect testing on
+the physical prototype are therefore release gates. If those tests fail, revise the
+two-layer placement or return for review before changing to four layers.
 
 See [DESIGN_NOTES.md](DESIGN_NOTES.md) for the decision gates and unresolved items.
 Use [BRINGUP.md](BRINGUP.md) to record current-limited prototype validation before
