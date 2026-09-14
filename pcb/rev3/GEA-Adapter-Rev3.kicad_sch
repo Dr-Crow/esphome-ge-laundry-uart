@@ -34127,6 +34127,9 @@
 				(hide yes)
 			)
 		)
+    (property "LCSC" "C105580" (at 135.0 360.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "804b7203-2675-42fd-9a45-bf1939d94274")
 		)
@@ -34231,6 +34234,9 @@
 				(hide yes)
 			)
 		)
+    (property "LCSC" "C105580" (at 135.0 380.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "e5e8879e-10f0-4fa6-8ef7-1452f3554f2f")
 		)
@@ -34335,6 +34341,9 @@
 				(hide yes)
 			)
 		)
+    (property "LCSC" "C107701" (at 245.0 325.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a5371246-94fa-4d2d-bf33-3bba17924e95")
 		)
@@ -34439,6 +34448,9 @@
 				(hide yes)
 			)
 		)
+    (property "LCSC" "C107701" (at 245.0 345.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "aae45a7c-32bc-40b4-8432-6cec6441d5be")
 		)
@@ -34544,6 +34556,9 @@
 				(hide yes)
 			)
 		)
+    (property "LCSC" "C163512" (at 165.0 400.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "e9278645-81c5-4d54-b81f-ec80ba2c1b9a")
 		)
@@ -34891,6 +34906,9 @@
 				(hide yes)
 			)
 		)
+    (property "LCSC" "C7519" (at 180.0 335.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "c6f2c4cd-3f5a-49ac-ad1a-ebbee3b4188c")
 		)
@@ -35016,6 +35034,9 @@
 				(hide yes)
 			)
 		)
+    (property "LCSC" "C82288" (at 230.0 400.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "1059b464-136a-4961-8cbb-45451b6327e5")
 		)
@@ -35523,7 +35544,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n 50V X7R"
+		(property "Value" "100n 50V X8L"
 			(at 270.51 95.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35556,7 +35577,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100 nF 50 V X8L 0603 MLCC"
 			(at 270.51 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -35594,7 +35615,7 @@
 				(hide yes)
 			)
 		)
-		(property "Dielectric" "X7R"
+		(property "Dielectric" "X8L"
 			(at 270.51 91.44 0)
 			(effects
 				(font
@@ -35603,6 +35624,9 @@
 				(hide yes)
 			)
 		)
+    (property "LCSC" "C161181" (at 270.51 91.44 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "85a80287-51ac-4f21-928e-864998385f05")
 		)
@@ -35946,6 +35970,9 @@
 				(hide yes)
 			)
 		)
+    (property "LCSC" "C82288" (at 325.12 77.47 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "0365c12d-3317-42e0-90ad-a1c0b64f4e65")
 		)

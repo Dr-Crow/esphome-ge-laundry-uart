@@ -124,9 +124,13 @@ because the exact GCT part was unavailable and the HCTL part was in stock at
 the time of review. Do not substitute another mechanically similar USB
 connector without comparing the official pad and shell-tab drawing.
 
-The current schematic exports 43 populated BOM groups covering 90 placed
-parts. Seven groups still lack an LCSC identifier, so this is not yet a matched
-assembly BOM and no assembled-price claim should be made from it.
+The current schematic exports 42 populated BOM groups covering 90 placed
+parts. Exact LCSC identities are recorded for 41 groups. The only unresolved
+group is C16/C17: the specified TDK `CGA6P1X8L1C226M250AC` (`C2181897`)
+22 uF, 16 V, X8L output capacitor is currently out of stock. A stocked X5R
+part is not an approved substitution until DC-bias derating and AP63205 output
+stability are checked. This is therefore not yet a release-ready assembly BOM,
+and no assembled-price claim should be made from it.
 
 ## Release gates
 
