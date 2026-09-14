@@ -24,7 +24,7 @@ Revision 3B explores replacing the bare ESP32 module and carrier USB circuit wit
 - `GEA-Adapter-Rev3B-XIAO-Placement.kicad_pcb` is a two-layer mechanical placement study using the Revision 3 outline. It has no complete circuit or routing and must not be fabricated.
 - `footprints/GEA_XIAO.pretty/XIAO-ESP32-C3-v1.3-SMD.kicad_mod` is the project-local 22-pad XIAO footprint derived from Seeed's published source. Its source and license are recorded beside it.
 
-The KiCad files are the source of truth. This branch intentionally excludes generated replay artifacts, checksum manifests, and custom per-stage validation scripts.
+The KiCad files are the source of truth. Only the reviewable design files and supporting documentation belong in this branch.
 
 ## Power decision
 
