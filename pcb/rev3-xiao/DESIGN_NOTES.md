@@ -10,7 +10,7 @@
 | Carrier layer target | Two layers if rerouting works; four-layer fallback | Two layers |
 | MCU/module cost | Lower | Higher, currently about $5 retail |
 | Carrier part count | Higher | Lower |
-| Dual-source power | Carrier has explicit blocking paths | Requires a new policy/circuit and proof |
+| Dual-source power | Carrier has explicit blocking paths | Manual appliance-pin and RUN/USB-DEBUG selectors plus a protected 9-16 V buck input |
 | Assembly | One assembled PCB | Carrier plus an assembled XIAO module |
 
 The XIAO can still be competitive because its module premium replaces the USB connector, USB protection, configuration resistors, series resistors, boot/reset support, flash, RF layout, and 3.3 V supply. Only matched assembled quotes can determine the real winner.
@@ -34,7 +34,7 @@ Feed regulated appliance-derived 5 V into the XIAO 5 V pad through the vendor-re
 
 Use a dedicated source selector, ideal-diode controller, or load switch whose data sheet explicitly covers reverse blocking and the required voltage/current range. Validate source-only, USB-only, both, neither, and both insertion orders. No appliance-derived voltage may reach the host VBUS.
 
-This circuit is not selected yet. It should not be added to a production carrier until a schematic review and bench fixture establish the current paths, handoff behavior, voltage drop, startup, thermal margin, and fault behavior.
+Rev 3B deliberately does not select this automatic circuit. It uses the cheaper manual RUN/USB-DEBUG jumper described below. Automatic source selection remains a possible later revision after bench testing establishes the current paths, handoff behavior, voltage drop, startup, thermal margin, and fault behavior.
 
 ## Mechanical and assembly gates
 
@@ -55,9 +55,9 @@ The finished-unit goal is below the former $39.99 FirstBuild retail price, not m
 - [Seeed XIAO ESP32-C3 schematic](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_SCH_260116.pdf)
 - [Diodes Incorporated 74LVC2G07 data sheet](https://www.diodes.com/datasheet/download/74LVC2G07.pdf)
 
-## Rev 3B minimal-carrier connectivity rebuild (2026-09-13)
+## Rev 3B minimal-carrier schematic draft
 
-This section describes the uncommitted carrier schematic draft. It is a review
+This section describes the carrier schematic draft. It is a review
 artifact, not an approval to fabricate or attach a board to an appliance.
 
 ### Intended power-source operating rule
@@ -67,7 +67,7 @@ appliance regulator +5 V -> D5 SS14 -> JP_PWR pin 1 (RUN) --shunt--> pin 2 -> XI
                                                     pin 3 (USB DEBUG): no circuit connection
 ```
 
-- `JP_PWR` is a 1x3, 2.54 mm header for a removable two-position shunt. In RUN,
+- `JP2` and `JP_PWR` are distinct removable-shunt headers. `JP2` is the appliance-input selector: bridge pins 1-2 to use 8P8C pin 1 (`VDC`) or pins 2-3 to use 8P8C pin 3 (`ALT_PWR`); only one shunt position is allowed. `JP_PWR` is a 1x3, 2.54 mm header for a removable two-position shunt. In RUN,
   the shunt bridges pins 1-2. In USB DEBUG, it is parked across pins 2-3;
   pin 3 is intentionally unconnected, so appliance power is open.
 - D5 is labeled with its anode on appliance-regulated `APPL_5V` and cathode on `PWR_RUN`.
@@ -84,8 +84,7 @@ appliance regulator +5 V -> D5 SS14 -> JP_PWR pin 1 (RUN) --shunt--> pin 2 -> XI
 - XIAO pad 12 is the 3.3 V output; pads 13, 18, and 22 are ground; pad 14 is
   `XIAO_VBUS`. Pad 21 (`BAT`) is explicitly no-connect: the legacy battery
   fixture and its charger-facing net have been removed.
-- J2 is the appliance-facing GEA3 connector: pin 1 is `GEA3_APPL_RX` and pin
-  2 is `GEA3_APPL_TX`. `D3` and `D4` are BAV99 rail clamps to `APPL_5V`/GND.
+- J1 is the actual 8P8C appliance connector: pin 1 is `VDC`, pin 3 is `ALT_PWR`, pin 4 is adapter TX / appliance RX (`GEA3_APPL_RX`), pin 5 is appliance TX / adapter RX (`GEA3_APPL_TX`), and pin 8 is GND. Pins 2, 6, and 7 are NC; pin 7 is deliberately NC because this Rev 3B prototype is GEA3-only. `D3` and `D4` are BAV99 rail clamps to `APPL_5V`/GND.
   `U3` is a 3.3 V 74LVC2G07 dual non-inverting open-drain buffer. Appliance
   TX enters through R3 and D3 before U3; XIAO TX leaves U3 through R6, then
   D4. R4 pulls MCU-side `UART_RX` to XIAO 3.3 V; R5 pulls appliance RX to
@@ -97,9 +96,11 @@ appliance regulator +5 V -> D5 SS14 -> JP_PWR pin 1 (RUN) --shunt--> pin 2 -> XI
 
 | Ref(s) | Candidate | Identifier/status |
 | --- | --- | --- |
-| U2 | Seeed XIAO ESP32-C3 | MPN 113991054; LCSC availability and price unverified |
+| J1 | Amphenol 54602-908LF 8P8C jack | LCSC `C2847314`; through-hole assembly required |
+| JP2, JP_PWR | 1x3 2.54 mm headers plus removable 2-position shunts | exact manufacturer/LCSC identifiers unverified |
+| U2 | Seeed XIAO ESP32-C3 | MPN 113991054; JLCPCB/LCSC C18212168, SMD 21x17.8 mm, Extended; supported for Economic and Standard SMT assembly (live source checked 2026-09-14) |
+| U8 | Diodes Incorporated AP63205WU-7, TSOT-23-6 | LCSC `C2071056`; fixed 5 V buck converter |
 | D5 | SS14, SOD-123 Schottky | MPN SS14; LCSC selection unverified |
-| JP_PWR | 1x3 2.54 mm header plus 2-position shunt | exact manufacturer/LCSC identifier unverified |
 | U3 | Diodes Incorporated 74LVC2G07W6-7, SOT-23-6 | LCSC `C151607`; 3.3 V open-drain dual buffer with inputs specified to 5.5 V |
 | D3, D4 | BAV99, SOT-23 | GEA3 rail clamps; exact vendor/LCSC identifier unverified |
 | R3/R6/R4/R5 | 4.7 k/1 k/10 k/10 k, 0805 | values are review starting points, not yet bench-validated |
@@ -110,9 +111,11 @@ appliance regulator +5 V -> D5 SS14 -> JP_PWR pin 1 (RUN) --shunt--> pin 2 -> XI
 
 KiCad 9.0.9 parses the rebuilt schematic and exports distinct `/APPL_5V`,
 `/PWR_RUN`, `/XIAO_VBUS`, `/UART_TX`, `/UART_RX`, `/GND`, and
-`/XIAO_3V3_OUT` nets. The previous `+3V3`/GND collision is gone. ERC still
-has library/off-grid warnings because the desktop CLI has no initialized
-global symbol table; those warnings do not substitute for electrical review.
+`/XIAO_3V3_OUT` nets. The previous `+3V3`/GND collision is gone. ERC reports
+zero errors and 101 warnings: 39 missing-global-library warnings from the CLI
+environment, 58 inherited off-grid endpoint warnings, and 4 unconnected wire
+endpoint warnings. These findings still require cleanup before layout release
+and do not substitute for electrical review.
 
 The rebuilt netlist proves no direct J2-to-XIAO GPIO net: appliance TX reaches
 U3 only through R3/D3, and appliance RX is driven only from U3 through R6/D4.
