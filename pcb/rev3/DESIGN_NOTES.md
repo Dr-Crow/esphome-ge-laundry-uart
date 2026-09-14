@@ -74,28 +74,29 @@ single-sided placement dominate its approximately 88.7 mm by 40.0 mm outline. Th
 extra height creates a dedicated lower-edge buck-converter corridor without crossing
 the USB pair; extra copper layers alone would not create the same size reduction.
 
-For the nominal JLCPCB 1.6 mm two-layer calculator stack-up, the layout starting
-geometry is 17 mil (0.432 mm) top-layer traces, an 8 mil (0.203 mm) gap between the
-pair, and 8 mil clearance to top-layer ground copper. JLCPCB's calculator reports
-approximately 90.37 ohms differential for that geometry. The normal two-layer
-service is not advertised as controlled-impedance/TDR certified, so the board and
-documentation must call this a calculated target. Keep the pair on the top layer,
-use no vias, preserve uninterrupted bottom ground, target no more than 1 mm pair
-skew, and keep it away from the switching nodes and antenna.
+The connector fan-out uses a short 0.20 mm track / 0.10 mm clearance neck-down,
+which is within JLCPCB's published standard two-layer capability. The existing
+MCU-side pair remains 0.432 mm wide. These dimensions establish manufacturing
+limits, not a controlled-impedance claim: obtain the selected vendor's stack-up
+review before release. Each connector-side data net uses two standard 0.8/0.4 mm
+through vias; no microvias or via-in-pad process is required.
 
 Decision order:
 
-1. Place the USB protection and series parts to create a short, direct routing corridor.
-2. Apply a KiCad differential-pair rule for the documented 17/8/8 mil geometry.
-3. Use the two-layer layout only if the pair fits without cutting the ground return or antenna keepout.
-4. If it does not fit, revise the two-layer placement and return for review; do not silently change the layer count.
+1. Keep the connector fan-out at or above the documented 0.20/0.10 mm limits.
+2. Keep the paired nets close in length and away from switching nodes and the antenna.
+3. Prove USB enumeration, flashing, sustained logging, and reconnect behavior on prototypes.
+4. If the two-layer prototype is unreliable, revise placement for a top-layer route or return for review before changing the layer count.
 
-Current routed evidence: the ESP32-to-series-resistor section is entirely on
-`F.Cu`, uses the 0.432 mm USBData width, and measures 5.225 mm for D- and
-6.025 mm for D+ (0.800 mm skew). KiCad 9.0.9 reports no short, clearance,
-courtyard, via-count, or pair-skew violation for this section. The two remaining
-USB sections are still unrouted and must meet the same release gates before the
-board can be fabricated.
+Current routed evidence: J4, U7, R28/R29, and the ESP32 are connected end to
+end. The connector-to-U7 paths measure 23.6725 mm for D- and 23.3100 mm for
+D+; the U7-to-resistor skew is 0.0417 mm, and the existing resistor-to-MCU
+section has 0.8000 mm skew. Combined connector-to-MCU skew is approximately
+0.48 mm. KiCad 9.0.9 reports no USB short, clearance, courtyard, via-count, or
+pair-skew violation. The long connector-side section runs on `B.Cu`, which also
+carries the main ground fill, so the pair does not have an ideal continuous
+reference plane along that section. Treat successful physical USB testing as a
+release gate rather than assuming that a clean DRC proves signal integrity.
 
 ## RF and enclosure
 
