@@ -26331,7 +26331,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
+		(property "Footprint" "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal"
 			(at 43.815 94.615 90)
 			(effects
 				(font
@@ -26340,7 +26340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/c-bmj-0102.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/EVERCOM-53018P8C/C3097717"
 			(at 43.815 94.615 90)
 			(effects
 				(font
@@ -26349,7 +26349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Amphenol Cat 3 single modular jack, horizontal through-hole, 8P8C, unshielded"
+		(property "Description" "EVERCOM horizontal through-hole 8P8C appliance connector"
 			(at 43.815 95.25 0)
 			(effects
 				(font
@@ -26358,7 +26358,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2847314"
+		(property "LCSC" "C3097717"
 			(at 43.815 95.25 0)
 			(effects
 				(font
@@ -26367,7 +26367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Amphenol Communications Solutions"
+		(property "Manufacturer" "EVERCOM"
 			(at 43.815 95.25 0)
 			(effects
 				(font
@@ -26376,7 +26376,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "54602-908LF"
+		(property "MPN" "5301-8P8C"
 			(at 43.815 95.25 0)
 			(effects
 				(font
