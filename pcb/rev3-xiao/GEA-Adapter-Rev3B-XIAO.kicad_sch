@@ -4064,14 +4064,14 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5e97dd2b-2c92-4963-a946-6fe1c27af41e")
-		(property "Reference" "JP_PWR" (at 145 19 0) (effects (font (size 1.27 1.27))))
+		(property "Reference" "JP1" (at 145 19 0) (effects (font (size 1.27 1.27))))
 		(property "Value" "RUN / USB DEBUG" (at 145 21.5 0) (effects (font (size 1.27 1.27))))
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 145 25 0) (effects (font (size 1.27 1.27)) (hide yes)))
 		(property "Description" "Pins 1-2 RUN; park shunt on 2-3 for USB DEBUG; pin 3 has no circuit connection" (at 145 25 0) (effects (font (size 1.27 1.27)) (hide yes)))
 		(pin "1" (uuid "848e3ee6-61a1-4c17-aa74-4eb5b46af1e2"))
 		(pin "2" (uuid "3e40b7aa-822a-41f5-9139-2a6f978a61b3"))
 		(pin "3" (uuid "fd95e222-c83e-492d-bb30-fd0a16464f06"))
-		(instances (project "" (path "/64c3e063-c36f-4f7f-9f5c-b0c05a6486f2" (reference "JP_PWR") (unit 1))))
+		(instances (project "" (path "/64c3e063-c36f-4f7f-9f5c-b0c05a6486f2" (reference "JP1") (unit 1))))
 	)
 	(symbol
 		(lib_id "GEA:74LVC2G07")
@@ -4198,7 +4198,7 @@
 		)
 		(uuid "7b4f6ec8-5197-45a0-bad6-74cc486a08bf")
 	)
-	(text "JP_PWR: shunt 1-2 only for appliance RUN. Park 2-3 for USB DEBUG; pin 3 is not connected. Never attach appliance RUN and USB together."
+	(text "JP1: shunt 1-2 only for appliance RUN. Park 2-3 for USB DEBUG; pin 3 is not connected. Never attach appliance RUN and USB together."
 		(exclude_from_sim no)
 		(at 35 33 0)
 		(effects
@@ -4209,7 +4209,7 @@
 		)
 		(uuid "a81a72fe-8dbc-4e94-90b4-ce2f0eefa004")
 	)
-	(text "Before moving JP_PWR, remove power. Bench-check appliance-only and USB-only states; do not connect appliance RUN and USB together."
+	(text "Before moving JP1, remove power. Bench-check appliance-only and USB-only states; do not connect appliance RUN and USB together."
 		(exclude_from_sim no)
 		(at 35 36 0)
 		(effects
@@ -6979,7 +6979,7 @@
 		(effects (font (size 1.27 1.27)) (justify left bottom))
 		(uuid "0fb9ed2d-0fe1-4c0a-ab5f-381c71f12cd2")
 	)
-	(text "JP_PWR is separate: RUN bridges appliance-regulated 5 V to XIAO VBUS; USB DEBUG parks the shunt and isolates appliance power."
+	(text "JP1 is separate: RUN bridges appliance-regulated 5 V to XIAO VBUS; USB DEBUG parks the shunt and isolates appliance power."
 		(exclude_from_sim no)
 		(at 120 335 0)
 		(effects (font (size 1.27 1.27)) (justify left bottom))

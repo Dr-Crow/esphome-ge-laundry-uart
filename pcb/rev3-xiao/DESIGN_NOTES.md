@@ -63,11 +63,11 @@ artifact, not an approval to fabricate or attach a board to an appliance.
 ### Intended power-source operating rule
 
 ```text
-appliance regulator +5 V -> D5 SS14 -> JP_PWR pin 1 (RUN) --shunt--> pin 2 -> XIAO_VBUS
+appliance regulator +5 V -> D5 SS14 -> JP1 pin 1 (RUN) --shunt--> pin 2 -> XIAO_VBUS
                                                     pin 3 (USB DEBUG): no circuit connection
 ```
 
-- `JP2` and `JP_PWR` are distinct removable-shunt headers. `JP2` is the appliance-input selector: bridge pins 1-2 to use 8P8C pin 1 (`VDC`) or pins 2-3 to use 8P8C pin 3 (`ALT_PWR`); only one shunt position is allowed. `JP_PWR` is a 1x3, 2.54 mm header for a removable two-position shunt. In RUN,
+- `JP2` and `JP1` are distinct removable-shunt headers. `JP2` is the appliance-input selector: bridge pins 1-2 to use 8P8C pin 1 (`VDC`) or pins 2-3 to use 8P8C pin 3 (`ALT_PWR`); only one shunt position is allowed. `JP1` is a 1x3, 2.54 mm header for a removable two-position shunt. In RUN,
   the shunt bridges pins 1-2. In USB DEBUG, it is parked across pins 2-3;
   pin 3 is intentionally unconnected, so appliance power is open.
 - D5 is labeled with its anode on appliance-regulated `APPL_5V` and cathode on `PWR_RUN`.
@@ -97,7 +97,7 @@ appliance regulator +5 V -> D5 SS14 -> JP_PWR pin 1 (RUN) --shunt--> pin 2 -> XI
 | Ref(s) | Candidate | Identifier/status |
 | --- | --- | --- |
 | J1 | Amphenol 54602-908LF 8P8C jack | LCSC `C2847314`; through-hole assembly required |
-| JP2, JP_PWR | 1x3 2.54 mm headers plus removable 2-position shunts | exact manufacturer/LCSC identifiers unverified |
+| JP1, JP2 | 1x3 2.54 mm headers plus removable 2-position shunts | exact manufacturer/LCSC identifiers unverified |
 | U2 | Seeed XIAO ESP32-C3 | MPN 113991054; JLCPCB/LCSC C18212168, SMD 21x17.8 mm, Extended; supported for Economic and Standard SMT assembly (live source checked 2026-09-14) |
 | U8 | Diodes Incorporated AP63205WU-7, TSOT-23-6 | LCSC `C2071056`; fixed 5 V buck converter |
 | D5 | SS14, SOD-123 Schottky | MPN SS14; LCSC selection unverified |
