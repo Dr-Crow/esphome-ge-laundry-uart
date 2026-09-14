@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
+  (lib (name "OnionStraws")(type "KiCad")(uri "${KIPRJMOD}/footprints/OnionStraws.pretty")(options "")(descr "Project-local production footprints"))
 )

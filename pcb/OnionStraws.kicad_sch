@@ -24126,7 +24126,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
+		(property "Footprint" "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal"
 			(at 43.815 94.615 90)
 			(effects
 				(font
@@ -27214,9 +27214,9 @@
 		(at 143.51 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "468fcc7f-55f8-4783-b36e-f80ec4401b15")
 		(property "Reference" "U1"
@@ -30226,7 +30226,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C10493"
 			(at 196.215 45.72 90)
 			(effects
 				(font

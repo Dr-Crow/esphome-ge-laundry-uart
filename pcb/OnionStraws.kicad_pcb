@@ -7412,7 +7412,7 @@
 		(path "/468fcc7f-55f8-4783-b36e-f80ec4401b15")
 		(sheetname "/")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start 0 -1.56)
 			(end 0.65 -1.56)
@@ -10984,12 +10984,12 @@
 			)
 		)
 	)
-	(footprint "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
+	(footprint "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal"
 		(layer "F.Cu")
 		(uuid "aaae981d-07d1-4f09-b03e-c3cf226ef289")
 		(at 122.425 99.2825 90)
-		(descr "8 Pol Shallow Latch Connector, Modjack, RJ45 (https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0102.pdf)")
-		(tags "RJ45")
+		(descr "EVERCOM 5301-8P8C horizontal through-hole 8P8C jack, LCSC C3097717. Signal drills are 0.90 mm per the connector requirement.")
+		(tags "RJ45 8P8C EVERCOM 5301-8P8C")
 		(property "Reference" "J1"
 			(at 4.445 -5 90)
 			(layer "F.SilkS")
@@ -11244,7 +11244,7 @@
 		(pad "1" thru_hole rect
 			(at 0 0 90)
 			(size 1.5 1.5)
-			(drill 0.76)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "VDC")
@@ -11254,7 +11254,7 @@
 		(pad "2" thru_hole circle
 			(at 1.27 -2.54 90)
 			(size 1.5 1.5)
-			(drill 0.76)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 20 "unconnected-(J1-Pad2)")
@@ -11264,7 +11264,7 @@
 		(pad "3" thru_hole circle
 			(at 2.54 0 90)
 			(size 1.5 1.5)
-			(drill 0.76)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 16 "/ALT_PWR")
@@ -11274,7 +11274,7 @@
 		(pad "4" thru_hole circle
 			(at 3.81 -2.54 90)
 			(size 1.5 1.5)
-			(drill 0.76)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 5 "GEA_FullTx")
@@ -11284,7 +11284,7 @@
 		(pad "5" thru_hole circle
 			(at 5.08 0 90)
 			(size 1.5 1.5)
-			(drill 0.76)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 4 "GEA_FullRx")
@@ -11294,7 +11294,7 @@
 		(pad "6" thru_hole circle
 			(at 6.35 -2.54 90)
 			(size 1.5 1.5)
-			(drill 0.76)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 19 "unconnected-(J1-Pad6)")
@@ -11304,7 +11304,7 @@
 		(pad "7" thru_hole circle
 			(at 7.62 0 90)
 			(size 1.5 1.5)
-			(drill 0.76)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 3 "GEA_HalfDplx")
@@ -11314,7 +11314,7 @@
 		(pad "8" thru_hole circle
 			(at 8.89 -2.54 90)
 			(size 1.5 1.5)
-			(drill 0.76)
+			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 41 "GND")
@@ -23565,7 +23565,7 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "mulcmu\nOnion Straws\nRevision 2.1"
+	(gr_text "mulcmu\nOnion Straws\nRevision 2.2"
 		(at 77.6 89.193091 0)
 		(layer "B.SilkS")
 		(uuid "34442e29-15fe-4294-87b9-4b142653eb1c")
@@ -23602,7 +23602,7 @@
 			(justify right bottom mirror)
 		)
 	)
-	(gr_text "5V\n\n\n3v3\n\n\nHalf (7)\n\n\nFull RX (5)\n\n\nFull TX (4)\n\n\nGND"
+	(gr_text "5V\n\n\n3v3\n\n\nHalf (7)\n\n\nFull TX (5)\n\n\nFull RX (4)\n\n\nGND"
 		(at 118.4 86 90)
 		(layer "B.SilkS")
 		(uuid "bfcb3726-9a1f-47ab-80df-60e72e21f354")
