@@ -1,0 +1,63 @@
+version: 2.1
+
+jobs:
+  kicad-validation:
+    docker:
+      - image: kicad/kicad:9.0
+    resource_class: medium
+    steps:
+      - checkout
+      - run:
+          name: Run KiCad 9 ERC and DRC
+          command: |
+            mkdir -p ci-artifacts
+            set +e
+
+            kicad-cli sch erc \
+              --severity-all \
+              --exit-code-violations \
+              --output ci-artifacts/erc.rpt \
+              pcb/OnionStraws.kicad_sch
+            erc_status=$?
+
+            kicad-cli pcb drc \
+              --severity-all \
+              --exit-code-violations \
+              --schematic-parity \
+              --output ci-artifacts/drc.rpt \
+              pcb/OnionStraws.kicad_pcb
+            drc_status=$?
+
+            {
+              echo "KiCad: $(kicad-cli --version)"
+              echo "ERC exit status: ${erc_status} (5 means violations)"
+              echo "DRC exit status: ${drc_status} (5 means violations)"
+              echo ""
+              echo "ERC/DRC findings are report-only while this legacy board baseline is established."
+            } | tee ci-artifacts/summary.txt
+
+            printf '%s\n' "$erc_status" > ci-artifacts/erc.status
+            printf '%s\n' "$drc_status" > ci-artifacts/drc.status
+      - store_artifacts:
+          path: ci-artifacts
+          destination: kicad-validation
+      - run:
+          name: Reject KiCad tool or input failures
+          when: always
+          command: |
+            erc_status=$(cat ci-artifacts/erc.status)
+            drc_status=$(cat ci-artifacts/drc.status)
+
+            # KiCad returns 5 when violations are found. Existing findings are
+            # intentionally report-only; other failures still fail this job.
+            if [ "$erc_status" -ne 0 ] && [ "$erc_status" -ne 5 ]; then
+              exit "$erc_status"
+            fi
+            if [ "$drc_status" -ne 0 ] && [ "$drc_status" -ne 5 ]; then
+              exit "$drc_status"
+            fi
+
+workflows:
+  pcb-validation:
+    jobs:
+      - kicad-validation
