@@ -22,14 +22,13 @@ AP63205 input network directly. USB F3/D10 and buck D11 isolation are unchanged.
 There are no user controls or power-selection jumpers. The target layout calls for
 diagnostic pads at each fused input, the isolated common node, USB VBUS, +5V and +3V3;
 those pads are now present on the PCB, including TP8 through TP14 for the two automatic
-input paths and USB VBUS. J2 remains a schematic-only do-not-install header and does
-not create a PCB or enclosure feature. A permanent 2-by-3, 2.54 mm J2 header was
-checked in both through-hole and top-side surface-mount forms. Every practical
-top-side location intersected completed routing or an existing component courtyard.
-A top-mounted through-hole header could share J1's existing solder-side process, but
-its body still has no clear location; mounting it underneath would add a second-side
-insertion and enclosure-clearance problem. J3 retains all six recovery signals
-through connector-free pogo pads without those changes.
+input paths and USB VBUS. J2 is a populated top-side 2-by-3, 2.54 mm surface-mount
+male recovery header. Routing was moved locally to give all six signals a clean path
+without enlarging the board. The surface-mount choice leaves the underside flat and
+avoids a case-floor pocket; the tradeoff is lower mechanical strength than a
+through-hole header and JLCPCB's Extended-component feeder fee, which must be
+confirmed in the refreshed quote. J3 is retained only as a schematic DNP alternate and is not
+placed on Rev3A.
 SW1 now provides hardware reset through `EN`, while SW2 selects the ESP32-C3 ROM
 downloader through GPIO9/`BOOT`. JP1 is the inherited signal-mapping solder selector,
 not a power selector.
@@ -149,7 +148,12 @@ change and again in the vendor preview before ordering. Do not substitute
 another mechanically similar connector without comparing its official contact,
 locating-hole, shell-tab, and body dimensions.
 
-The current schematic exports 42 populated BOM groups covering 90 placed
+J2 specifies hanxia `HX PZ-2.54-02-03-S-PB3.2` (`C42391552`), a top-side
+surface-mount 2-by-3 male header. Its supplier STEP is included for enclosure review.
+The part was listed as an Extended component for Economic/Standard SMT assembly during
+the design pass. Treat its feeder fee and live stock as quote gates, not settled cost.
+
+The current schematic exports 43 populated BOM groups covering 91 placed
 parts, and every group has an exact LCSC identity. C16/C17 use Samsung
 `CL32B226KAJNNNE` (`C309062`), a stocked 22 uF, 25 V, X7R, 1210 capacitor
 specified to 125 C. It replaces an unavailable 16 V X8L part and provides more
@@ -194,6 +198,14 @@ shipping and tax, or $28.25 per board:
 | Manual assembly | $0.66 |
 | Nitrogen reflow | $0.90 |
 | Total before shipping and tax | $141.24 |
+
+J2 was added after that upload. On 2026-09-15 its catalog price was $0.05 each and
+it was classified as one Extended part. Applying
+[JLCPCB's documented $3 fee](https://jlcpcb.com/help/article/pcb-assembly-faqs) per
+Extended component type, plus five headers and 30 additional SMT joints, gives an
+arithmetic estimate of about $144.54 total ($28.91 per board) before shipping and
+tax. This is not a vendor quote; the regenerated 43-group / 91-placement package
+must be uploaded to confirm the actual total and placement acceptance.
 
 The corrected 0.30 mm thermal drills selected the standard fabrication process:
 via covering and special-hole charges were both $0.00. Shipping was not included

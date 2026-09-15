@@ -41,17 +41,17 @@ physical release gates, not software assumptions.
 | present | present | present | pin 1 priority + USB isolation | both isolated; test current sharing |
 
 The schematic includes diagnostic pads at the fused, reverse-protected, and switched
-output of each appliance input, plus V_INPUT, USB VBUS, +5V and +3V3. J2 remains a
-schematic-only, do-not-install header option and is not placed on the PCB. J3 is a
-top-side, no-component Tag-Connect recovery footprint carrying EN, +3V3, ESP UART TX,
-GND, ESP UART RX, and BOOT. It permits 3.3 V UART flashing if the USB connector or
-USB data path is unavailable without adding a per-board connector or assembly step.
+output of each appliance input, plus V_INPUT, USB VBUS, +5V and +3V3. J2 is a
+permanently populated top-side 2-by-3, 2.54 mm recovery header carrying +3V3, GND,
+BOOT, ESP UART TX/RX, and EN. It provides a simple backup flashing path with an
+ordinary 3.3 V USB-to-UART adapter and female Dupont leads if the USB connector or
+USB data path is unavailable. J3 remains in the schematic only as a DNP alternate
+for a future Tag-Connect variant; it is not placed or populated on Rev3A.
 SW1 is connected to `EN` and labelled `RESET`; SW2 is connected to GPIO9 and labelled
 `BOOT`. Hold BOOT, tap RESET, release RESET, then release BOOT to enter the ESP32-C3
-ROM downloader. A permanent 2.54 mm J2 header was evaluated, but both through-hole
-and surface-mount 2-by-3 footprints conflicted with the completed routing or nearby
-component courtyards at every practical top-side location. It remains omitted rather
-than increasing board size or destabilizing the validated route.
+ROM downloader. J2 uses a surface-mount male header so it keeps the board underside
+flat and avoids a case-floor relief. It is less mechanically rugged than a
+through-hole header, so connect and remove leads with the board supported.
 JP1 is unrelated to power:
 it is the inherited signal-mapping solder selector. Its manufactured copper defaults
 to pads 1-2 for FirstBuild-compatible mapping; changing it is an engineering rework
@@ -70,14 +70,13 @@ with current-limited supplies before any appliance connection.
   diagnostic light. It is reserved for a future fault pattern rather than adding a
   fourth LED or silently changing an existing entity's behavior.
 
-USB-C is the normal programming and logging interface. The six gold pads and three
-alignment holes at J3 form a reusable Tag-Connect `TC2030-IDC-NL` service interface;
-they are contacted by spring pins, so the production board needs no soldered header.
-The recovery cable terminates in a 2-by-3, 0.1-inch IDC socket and must be broken out
-or rewired to the documented J3 pinout before connecting a 3.3 V USB-to-UART adapter.
-Do not attach a generic Tag-Connect USB/FTDI cable directly: its standard pin order
-does not match J3. See [BRINGUP.md](BRINGUP.md#recovery-flashing-when-usb-is-unavailable)
-for the exact pin map and power precautions.
+USB-C is the normal programming and logging interface. J2 is the backup interface;
+its installed 0.1-inch pins accept common female Dupont leads, so no pogo fixture or
+Tag-Connect cable is required. Open the enclosure before using it. Use 3.3 V UART
+logic only, cross adapter TX/RX, and never drive J2 power while the board is already
+powered from USB or the appliance. See
+[BRINGUP.md](BRINGUP.md#recovery-flashing-when-usb-is-unavailable) for the exact pin
+map and sequence.
 
 Status: digitally complete for review and quoting, but not electrically qualified. Do not order or connect this board to an appliance until the vendor previews and prototype gates below pass.
 
@@ -116,14 +115,15 @@ The blocking diodes are one-way valves for electricity. They let either the appl
   keepout begins at the board edge. The PCB remains 88.7 mm by 40.0 mm; the enclosure
   must preserve 15 mm of antenna-side clearance outside that edge.
 - Native KiCad 9.0.9 DRC reports zero errors and zero unconnected items. Five local
-  footprint-copy mismatches and four intentional connector/antenna silkscreen edge
+  footprint-copy mismatches and two intentional antenna silkscreen edge
   warnings are documented in the review package. ERC reports zero errors and 55
   reviewed legacy/grid warnings; see `review/README.md` for their dispositions.
-- The schematic BOM contains 42 purchasing groups / 90 fitted parts and every group
-  has an exact LCSC identifier. A complete JLCPCB Economic Assembly match on
-  2026-09-15 selected every group and placement and quoted five boards at $141.24
-  before shipping and tax ($28.25 each). Stock and pricing must be refreshed at
-  order time.
+- The schematic BOM contains 43 purchasing groups / 91 fitted parts and every group
+  has an exact LCSC identifier. The last complete JLCPCB Economic Assembly quote,
+  captured before J2 was added, selected 42 groups / 90 placements and priced five
+  boards at $141.24 before shipping and tax ($28.25 each). The 43-group / 91-placement
+  package requires a refreshed quote because J2 is an Extended component. Stock and
+  pricing must also be refreshed at order time.
 - The generated Gerber, BOM, and placement package is a review/quote artifact. Do not
   order it until the vendor previews are reviewed and the owner approves a prototype batch.
 

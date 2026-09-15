@@ -83,46 +83,37 @@ measurements on the first known-good boards.
 
 ## Recovery flashing when USB is unavailable
 
-J3 is a top-side Tag-Connect recovery footprint and does not require a connector to
-be installed on every board. Open the enclosure to reach it; the current case has
-no external service opening. Use a TC2030-compatible cable or pogo fixture and a
-3.3 V USB-to-UART adapter. Never use 5 V UART or RS-232 signalling.
+J2 is the populated top-side 2-by-3 recovery header. Open the enclosure to reach it;
+the case intentionally has no external service opening. Use a reputable USB-to-UART
+adapter set for **3.3 V logic** and six female Dupont leads. Never use 5 V UART or
+RS-232 signalling. USB-C remains the normal flashing and logging interface.
 
-The verified accessory chain is a Tag-Connect `TC2030-IDC-NL` cable, a 2-by-3 IDC
-breakout, and a 3.3 V USB-to-UART adapter. The IDC cable is only a mechanical probe:
-wire each breakout terminal to the signal named below. Do not plug a standard
-Tag-Connect USB or FTDI cable directly into J3 because its fixed pin order is
-different and may put 5 V on `EN`. USB-C remains the first-choice interface; buy
-the recovery tools only for repeated board development or if USB hardware fails.
-
-Suggested parts are the [Tag-Connect TC2030-IDC-NL](https://www.tag-connect.com/product/tc2030-idc-nl),
-a [2-by-3 IDC screw-terminal breakout](https://www.schmalztech.com/products/2x3-header-idc-connector-breakout-board-with-rubber-feet),
-and a reputable 3.3 V USB-to-UART adapter such as the
+One suitable example is the
 [Waveshare CP2102 USB-UART Board (USB-C)](https://www.waveshare.com/cp2102-usb-uart-board-type-c.htm).
-The Waveshare board includes a jumper cable and exposes its UART signals on
-installed pin headers; set its voltage selection to 3.3 V before connection.
-The breakout keeps the project-specific J3 wiring visible and reconfigurable.
-The integrated
-[TC2030-FTDI-3V3 cable](https://www.tag-connect.com/product/tc2030-ftdi-ttl-232r-3v3)
-is not pin-compatible with this board and must not be connected directly.
+Its installed header accepts the same female Dupont leads used at J2. Confirm the
+adapter's voltage selection is 3.3 V before any connection.
 
-| J3 pin | Board signal | Recovery connection |
+Viewed from the top of the PCB with the `J2 RECOVERY` text below the header, the left
+column is pins 1, 2, 6 and the right column is pins 3, 5, 4 from top to bottom:
+
+| J2 pin | Board signal | Recovery connection |
 | ---: | --- | --- |
-| 1 | `EN` | Pull low briefly, then release, to reset |
-| 2 | `+3V3` | Optional regulated 3.3 V input with all other sources disconnected |
-| 3 | ESP32 GPIO21 / UART0 TX | USB-to-UART adapter RX |
-| 4 | `GND` | USB-to-UART adapter ground |
+| 1 | `+3V3` | Optional regulated 3.3 V input with every other power source disconnected |
+| 2 | `GND` | USB-to-UART adapter ground |
+| 3 | ESP32 GPIO9 / `BOOT` | Hold low while resetting to enter download mode |
+| 4 | ESP32 GPIO21 / UART0 TX | USB-to-UART adapter RX |
 | 5 | ESP32 GPIO20 / UART0 RX | USB-to-UART adapter TX |
-| 6 | ESP32 GPIO9 / `BOOT` | Hold low while resetting to enter download mode |
+| 6 | `EN` | Pull low briefly, then release, to reset |
 
 R1 holds GPIO8 high for valid ESP32-C3 download mode. With appliance power and USB
 disconnected, connect the adapter ground and crossed UART signals. Power the board
-from one approved source; use J3 pin 2 only when supplying a current-limited,
-regulated 3.3 V rail directly. For the normal button sequence, hold SW2 (`BOOT`),
+from one approved source; use J2 pin 1 only when supplying a current-limited,
+regulated 3.3 V rail directly. Do not connect the adapter's power pin when USB-C or
+J1 powers the board. For the normal button sequence, hold SW2 (`BOOT`),
 tap and release SW1 (`RESET`), then release SW2 after the ROM downloader starts. A
-pogo fixture can instead hold J3 pin 6 low while pulsing J3 pin 1 low. Flash with
+lead can instead hold J2 pin 3 low while pulsing J2 pin 6 low. Flash with
 `esptool` over the adapter's serial port. Stop if the 3.3 V rail, regulator, ESP32,
-or UART pads are physically damaged; a recovery connector cannot bypass those
+or UART header is physically damaged; a recovery connector cannot bypass those
 failures.
 
 ## USB and Wi-Fi reliability

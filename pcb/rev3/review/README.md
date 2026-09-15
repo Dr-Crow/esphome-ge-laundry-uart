@@ -22,7 +22,7 @@ drawing and a physical connector for final mechanical qualification.
 3. Run ERC and DRC from the current KiCad project. A saved report or image is not
    proof that the source still matches it.
 4. Check every fitted BOM row for value, package, rating, exact manufacturer part
-   number, and sourcing identifier. Confirm that the CPL covers the same 90 fitted
+   number, and sourcing identifier. Confirm that the CPL covers the same 91 fitted
    parts.
 5. Separately inspect the vendor's board, drill, parts, and placement previews.
 
@@ -50,12 +50,12 @@ prototype-only until the vendor previews and the bring-up plan pass.
 ## PCB DRC dispositions
 
 KiCad 9.0.9 reports zero error-severity findings, zero unconnected items, zero
-schematic-parity issues, and nine reviewed warnings:
+schematic-parity issues, and seven reviewed warnings:
 
 | Finding | Count | Disposition |
 | --- | ---: | --- |
 | Local footprint differs from current library copy | 5 | D2, C5, SW2, TP13, and U2 are intentionally retained project copies. D2/C5/SW2/U2 predate the final route; TP13 differs only because its crowded silkscreen circle was moved to fabrication documentation. Exact fitted parts and pads remain unchanged. |
-| Silkscreen reaches board edge | 4 | J1's connector body and U2's antenna intentionally overhang the board edge. The warnings affect outline graphics only; copper, mask, pads, and fabrication clearances pass. |
+| Silkscreen reaches board edge | 2 | U2's antenna intentionally overhangs the board edge. The warnings affect outline graphics only; copper, mask, pads, and fabrication clearances pass. |
 
 The board uses four copper layers. Both internal layers are solid GND reference
 planes. The complete connector-to-ESP32 paths measure 24.314 mm (D+) and 25.357 mm
