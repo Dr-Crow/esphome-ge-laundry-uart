@@ -42,8 +42,11 @@ physical release gates, not software assumptions.
 
 The schematic includes diagnostic pads at the fused, reverse-protected, and switched
 output of each appliance input, plus V_INPUT, USB VBUS, +5V and +3V3. J2 remains a
-schematic-only, do-not-install header option and is not placed on the PCB. J3 is the
-existing do-not-install Tag-Connect programming footprint. JP1 is unrelated to power:
+schematic-only, do-not-install header option and is not placed on the PCB. J3 is a
+top-side, no-component Tag-Connect recovery footprint carrying EN, +3V3, ESP UART TX,
+GND, ESP UART RX, and BOOT. It permits 3.3 V UART flashing if the USB connector or
+USB data path is unavailable without adding a per-board connector or assembly step.
+JP1 is unrelated to power:
 it is the inherited signal-mapping solder selector. Its manufactured copper defaults
 to pads 1-2 for FirstBuild-compatible mapping; changing it is an engineering rework
 that requires cutting that bridge and joining pads 2-3. Validate all eight power states
@@ -130,9 +133,10 @@ layers alone would not reduce it to FirstBuild's footprint.
 
 The release candidate uses 0.20 mm minimum tracks. Each USB data path uses two
 standard 0.8/0.4 mm through-vias, and every other routed via uses the same standard
-size. A quote-stage review removed two unnecessary 0.40/0.20 mm vias from a low-speed
-control net because their 0.20 mm drills invoked high-precision fabrication charges.
-These are manufacturing limits rather than a controlled-impedance guarantee. USB enumeration,
+size. U2's center pad uses twelve 0.6/0.3 mm plated thermal-ground holes, matching
+Revision 2.2 and JLCPCB's standard 0.3 mm minimum-drill option. An earlier 0.2 mm
+version invoked small-hole material and test charges without providing a routing or
+thermal requirement. These are manufacturing limits rather than a controlled-impedance guarantee. USB enumeration,
 flashing, sustained logging, and reconnect testing on the physical prototype remain
 release gates even though the pair is referenced to continuous internal ground.
 

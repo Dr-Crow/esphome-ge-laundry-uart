@@ -81,6 +81,30 @@ measurements on the first known-good boards.
    the enumeration and boot test.
 5. Record idle and Wi-Fi-active current and rail voltage.
 
+## Recovery flashing when USB is unavailable
+
+J3 is a top-side Tag-Connect recovery footprint and does not require a connector to
+be installed on every board. Open the enclosure to reach it; the current case has
+no external service opening. Use a TC2030-compatible cable or pogo fixture and a
+3.3 V USB-to-UART adapter. Never use 5 V UART or RS-232 signalling.
+
+| J3 pin | Board signal | Recovery connection |
+| ---: | --- | --- |
+| 1 | `EN` | Pull low briefly, then release, to reset |
+| 2 | `+3V3` | Optional regulated 3.3 V input with all other sources disconnected |
+| 3 | ESP32 GPIO21 / UART0 TX | USB-to-UART adapter RX |
+| 4 | `GND` | USB-to-UART adapter ground |
+| 5 | ESP32 GPIO20 / UART0 RX | USB-to-UART adapter TX |
+| 6 | ESP32 GPIO9 / `BOOT` | Hold low while resetting to enter download mode |
+
+R1 holds GPIO8 high for valid ESP32-C3 download mode. With appliance power and USB
+disconnected, connect the adapter ground and crossed UART signals. Power the board
+from one approved source; use J3 pin 2 only when supplying a current-limited,
+regulated 3.3 V rail directly. Hold J3 pin 6 low, pulse J3 pin 1 low and release it,
+then release pin 6 after the ROM download mode starts. Flash with `esptool` over the
+adapter's serial port. Stop if the 3.3 V rail, regulator, ESP32, or UART pads are
+physically damaged; a recovery connector cannot bypass those failures.
+
 ## USB and Wi-Fi reliability
 
 1. Repeat USB enumeration, flashing, reset, and reconnect at least ten times with
