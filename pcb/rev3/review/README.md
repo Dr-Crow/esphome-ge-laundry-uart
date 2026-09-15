@@ -56,5 +56,7 @@ The board uses four copper layers. Both internal layers are solid GND reference
 planes. The complete connector-to-ESP32 paths measure 24.314 mm (D+) and 25.357 mm
 (D-), for 1.043 mm skew. Both use 0.20 mm tracks and two standard 0.8/0.4 mm
 through-vias to cross from `F.Cu` to `B.Cu` and back. The minimum board trace is
-0.20 mm and every routed via is a standard 0.8/0.4 mm through-via. These checks do
-not replace fabricator stack-up review or physical USB testing.
+0.20 mm and every routed via is a standard 0.8/0.4 mm through-via. U2 additionally
+uses twelve 0.6/0.3 mm plated thermal-ground holes in its center pad, matching the
+Revision 2.2 module footprint and standard 0.3 mm fabrication capability. These
+checks do not replace fabricator stack-up review or physical USB testing.

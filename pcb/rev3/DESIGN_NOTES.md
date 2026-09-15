@@ -82,10 +82,11 @@ respectively, for 1.043 mm skew. Both are 0.20 mm wide. Each uses two standard
 0.8/0.4 mm through-vias to cross from `F.Cu` to `B.Cu` and back while remaining
 referenced to an uninterrupted internal ground plane. These dimensions establish
 manufacturing limits, not a controlled-impedance claim: obtain the selected vendor's
-four-layer stack-up review before release. The smallest vias elsewhere on the board
-are also standard 0.8/0.4 mm through-vias. Two smaller prototype vias on a low-speed
-control net were rerouted after they invoked high-precision fabrication charges in
-the quote calculator. There are no microvias or via-in-pad features.
+four-layer stack-up review before release. Every routed via uses the same standard
+0.8/0.4 mm geometry. U2 has twelve 0.6/0.3 mm plated thermal-ground holes in its
+center pad, matching the Revision 2.2 ESP32 footprint. The 0.3 mm drills avoid the
+small-hole process used by an earlier quote package without changing pad locations
+or copper diameter. There are no microvias or filled via-in-pad features.
 
 Decision order:
 

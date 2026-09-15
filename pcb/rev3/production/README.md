@@ -24,6 +24,12 @@ and orientation.
 
 The PCB is 88.7 mm by 40.0 mm with four copper layers. The Gerber set must contain
 `F.Cu`, `In1.Cu`, `In2.Cu`, and `B.Cu`; both inner layers are solid GND planes.
+The plated drill file has a 0.30 mm minimum: twelve 0.30 mm drills connect U2's
+thermal-ground pad, while routed vias use 0.40 mm drills. Quote this as standard
+FR4 TG135 with the 0.30 mm minimum-hole option and ordinary electrical testing.
+Stop if the upload requests a small-hole, high-Tg, filled-via, or four-wire Kelvin
+process; those options are not required by this design and indicate a file or quote
+configuration mismatch.
 
 Do not order or connect a board to an appliance until the owner reviews the vendor
 board, drill, parts, and placement previews. After fabrication, the current-limited
