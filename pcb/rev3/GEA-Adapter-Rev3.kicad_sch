@@ -11074,7 +11074,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "145897f9-b67d-4576-8342-c83879c440ec")
@@ -11114,7 +11114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DNP connector-free Tag-Connect recovery footprint; manual flash fallback when USB is unavailable; no installed part"
+		(property "Description" "DNP schematic alternate retained for reference; Rev3A uses populated J2 for recovery"
 			(at 49.53 232.41 0)
 			(effects
 				(font
@@ -13579,9 +13579,9 @@
 		(at 49.53 212.09 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63eed7e9-41f0-441b-9330-7f8d75b82aac")
 		(property "Reference" "J2"
@@ -13593,7 +13593,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1x6"
+		(property "Value" "RECOVERY"
 			(at 52.07 214.6299 0)
 			(effects
 				(font
@@ -13602,7 +13602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "OnionStraws:Recovery_Header_2x3_P2.54mm_Vertical"
 			(at 49.53 212.09 0)
 			(effects
 				(font
@@ -13611,7 +13611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/hanxia-HX_PZ_2_54_02_03_S_PB32/C42391552"
 			(at 49.53 212.09 0)
 			(effects
 				(font
@@ -13620,7 +13620,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schematic-only diagnostic header; not placed on PCB (on_board no); do not install"
+		(property "Description" "Populated surface-mount 2x3, 2.54 mm male recovery header for 3.3 V UART flashing"
+			(at 49.53 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "HX PZ-2.54-02-03-S-PB3.2"
+			(at 49.53 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "hanxia"
+			(at 49.53 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C42391552"
 			(at 49.53 212.09 0)
 			(effects
 				(font

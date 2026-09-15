@@ -62,7 +62,7 @@
 	)
 	(fp_line
 		(start 12.205 -3.88)
-		(end 12.205 14.08)
+		(end 12.205 13.6)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -71,7 +71,7 @@
 	)
 	(fp_line
 		(start -3.315 -3.88)
-		(end -3.315 14.08)
+		(end -3.315 13.6)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -106,8 +106,8 @@
 		(layer "F.SilkS")
 	)
 	(fp_line
-		(start -3.315 14.08)
-		(end 12.205 14.08)
+		(start -3.315 13.6)
+		(end 12.205 13.6)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -274,7 +274,7 @@
 		(remove_unused_layers no)
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Amphenol_54602-x08_Horizontal.wrl"
+	(model "${KIPRJMOD}/models/J1-EVERCOM-5301-8P8C-envelope.step"
 		(offset
 			(xyz 0 0 0)
 		)
