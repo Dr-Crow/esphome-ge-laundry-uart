@@ -1,6 +1,8 @@
 /captures
 /local_components/gea_adapter/__pycache__
 *.pyc
-*.pyc
+*.kicad_prl
 
 /pcb/OnionStraws-backups
+*_2d_view.png
+*_drc_violations.json
