@@ -2,6 +2,12 @@
 
 This directory contains an editable [build123d](https://build123d.readthedocs.io/) source model and regenerated two-piece exports for the Rev3A GEA Adapter.
 
+These STEP/STL files are fit-check deliverables, not enclosure qualification. J1 has
+no 3D body in the KiCad assembly, so its modeled envelope comes from the linked
+manufacturer drawing. Preserve that drawing revision and validate the populated
+board, both cable insertions, retention, temperature, and installed Wi-Fi behavior
+before release.
+
 ## Dimensions and fit
 
 - PCB datum: **88.7 × 40.0 × 1.6 mm**; the base cavity has at least 0.5 mm XY clearance on the board's left, top, and bottom edges.
@@ -23,7 +29,12 @@ Print base and lid separately with the flat floor/ceiling on the build plate, no
 
 ## Files
 
+- `requirements.txt` — pinned Python dependencies for regeneration and checks.
 - `enclosure.py` — parametric source; rerun with `python enclosure.py --out case/rev3a`.
 - `rev3a_base.stl`, `rev3a_lid.stl` — print meshes.
 - `rev3a_base.step`, `rev3a_lid.step` — editable CAD exchange solids.
 - `check_geometry.py` — regenerates the shapes and checks exported STLs with trimesh.
+
+The checked-in exports pass `check_geometry.py` with build123d 0.11.1 and trimesh
+4.12.2: each STL is a watertight volume and each STEP file imports as one valid solid.
+This is a geometry check only; it does not replace a populated-board fit test.
