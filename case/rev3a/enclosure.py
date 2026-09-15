@@ -90,7 +90,7 @@ def make_base() -> Part:
     base = base - cavity
 
     # RJ45 J1: side-entry opening through the left wall.  The generous
-    # 14x22 mm window covers the rotated EVERCOM body and cable latch.
+    # 22x8.2 mm (Y x Z) window covers the rotated EVERCOM body and cable latch.
     rj45_window = _box(
         RJ45_WINDOW_X0,
         RJ45_WINDOW_X1,
