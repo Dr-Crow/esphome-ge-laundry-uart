@@ -4,8 +4,11 @@ The KiCad schematic and PCB are authoritative. The files in this directory are
 derived review artifacts and must be regenerated after either source changes.
 
 The package includes a one-page schematic PDF/PNG, top and mirrored-bottom copper
-plots, both internal-plane plots, a top assembly plot with DNP markings, 3D top and
-bottom renders, ERC/DRC reports, and plated/non-plated drill maps and reports.
+plots, both internal-plane plots, a top assembly plot with DNP markings, 3D top,
+bottom, and side renders, ERC/DRC reports, and plated/non-plated drill maps and
+reports. J1 uses a deliberately simplified STEP envelope derived from its
+manufacturer drawing because the catalog part has no official 3D model; use the
+drawing and a physical connector for final mechanical qualification.
 
 ## Review order
 

@@ -180,9 +180,8 @@ def make_lid() -> Part:
         )
         lid = lid + retainer
 
-    # Two shallow service holes over SW1 (GPIO8 boot-selection strap) and SW2
-    # (GPIO9 boot strap), as present in the Rev3A layout at (5,3.4) and
-    # (13,3.4). Neither switch is reset. They are tool-access holes,
+    # Two shallow service holes over SW1 (RESET/EN) and SW2 (GPIO9/BOOT), as
+    # present in the Rev3A layout at (5,3.4) and (13,3.4). They are tool-access holes,
     # not mounting holes, and are outside the antenna keep-out.
     for x in (5.0, 13.0):
         lid = lid - _cylinder(2.0, LID_Z1 - LID_CEILING - 0.1, LID_Z1 + 0.1, x, 3.4)

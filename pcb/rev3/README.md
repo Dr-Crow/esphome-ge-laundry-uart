@@ -46,6 +46,12 @@ schematic-only, do-not-install header option and is not placed on the PCB. J3 is
 top-side, no-component Tag-Connect recovery footprint carrying EN, +3V3, ESP UART TX,
 GND, ESP UART RX, and BOOT. It permits 3.3 V UART flashing if the USB connector or
 USB data path is unavailable without adding a per-board connector or assembly step.
+SW1 is connected to `EN` and labelled `RESET`; SW2 is connected to GPIO9 and labelled
+`BOOT`. Hold BOOT, tap RESET, release RESET, then release BOOT to enter the ESP32-C3
+ROM downloader. A permanent 2.54 mm J2 header was evaluated, but both through-hole
+and surface-mount 2-by-3 footprints conflicted with the completed routing or nearby
+component courtyards at every practical top-side location. It remains omitted rather
+than increasing board size or destabilizing the validated route.
 JP1 is unrelated to power:
 it is the inherited signal-mapping solder selector. Its manufactured copper defaults
 to pads 1-2 for FirstBuild-compatible mapping; changing it is an engineering rework

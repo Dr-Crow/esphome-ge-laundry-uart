@@ -100,10 +100,12 @@ no external service opening. Use a TC2030-compatible cable or pogo fixture and a
 R1 holds GPIO8 high for valid ESP32-C3 download mode. With appliance power and USB
 disconnected, connect the adapter ground and crossed UART signals. Power the board
 from one approved source; use J3 pin 2 only when supplying a current-limited,
-regulated 3.3 V rail directly. Hold J3 pin 6 low, pulse J3 pin 1 low and release it,
-then release pin 6 after the ROM download mode starts. Flash with `esptool` over the
-adapter's serial port. Stop if the 3.3 V rail, regulator, ESP32, or UART pads are
-physically damaged; a recovery connector cannot bypass those failures.
+regulated 3.3 V rail directly. For the normal button sequence, hold SW2 (`BOOT`),
+tap and release SW1 (`RESET`), then release SW2 after the ROM downloader starts. A
+pogo fixture can instead hold J3 pin 6 low while pulsing J3 pin 1 low. Flash with
+`esptool` over the adapter's serial port. Stop if the 3.3 V rail, regulator, ESP32,
+or UART pads are physically damaged; a recovery connector cannot bypass those
+failures.
 
 ## USB and Wi-Fi reliability
 

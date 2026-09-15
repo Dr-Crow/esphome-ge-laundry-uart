@@ -2,11 +2,11 @@
 
 This directory contains an editable [build123d](https://build123d.readthedocs.io/) source model and regenerated two-piece exports for the Rev3A GEA Adapter.
 
-These STEP/STL files are fit-check deliverables, not enclosure qualification. J1 has
-no 3D body in the KiCad assembly, so its modeled envelope comes from the linked
-manufacturer drawing. Preserve that drawing revision and validate the populated
-board, both cable insertions, retention, temperature, and installed Wi-Fi behavior
-before release.
+These STEP/STL files are fit-check deliverables, not enclosure qualification. The
+KiCad assembly now includes a deliberately simplified J1 visualization envelope made
+from the linked manufacturer drawing; it is not manufacturer CAD. Preserve that
+drawing revision and validate the populated board, both cable insertions, retention,
+temperature, and installed Wi-Fi behavior before release.
 
 ## Dimensions and fit
 
@@ -17,7 +17,7 @@ before release.
 
 ## Connector and service clearances
 
-J1 (RJ45) is treated as a left-side entry connector and has a 22 × 8.2 mm base window spanning y=3.5..25.5 and z=2..10.2 mm. The lid has a matching y=2.75..26.25, z=8.5..18.75 left-wall notch with 0.75 mm lateral and 1.0 mm vertical margin, so the lid wall cannot block the full conservative body/cable insertion envelope. The JLCPCB page identifies C3097717 as EVERCOM 5301-8P8C and links the one-page manufacturer drawing, which lists 15.20, 11.50, and 18.05 mm connector body dimensions: [JLCPCB C3097717](https://jlcpcb.com/partdetail/EVERCOM-53018P8C/C3097717). Because no 3D body is included in the KiCad assembly, the model uses the 11.50 mm maximum body height plus a 1.00 mm conservative cable/latch allowance above the seated PCB top (12.50 mm envelope). The lid underside is z=19.4 mm, leaving 1.65 mm above that envelope. J4 (USB-C) is at (72,36.325) near the lower (+Y) edge and has a 15 × 7 mm cable window. Service holes are provided above SW1/SW2 at (5,3.4) and (13,3.4). In the current PCB, SW1 pulls the ESP32-C3 GPIO8 boot-selection strap low and SW2 pulls its GPIO9 boot strap low; neither button is reset. Connector bodies and cable plugs vary, so prototype-fit both a plug and the populated board before committing to a final print.
+J1 (RJ45) is treated as a left-side entry connector and has a 22 × 8.2 mm base window spanning y=3.5..25.5 and z=2..10.2 mm. The lid has a matching y=2.75..26.25, z=8.5..18.75 left-wall notch with 0.75 mm lateral and 1.0 mm vertical margin, so the lid wall cannot block the full conservative body/cable insertion envelope. The JLCPCB page identifies C3097717 as EVERCOM 5301-8P8C and links the one-page manufacturer drawing, which lists 15.20, 11.50, and 18.05 mm connector body dimensions: [JLCPCB C3097717](https://jlcpcb.com/partdetail/EVERCOM-53018P8C/C3097717). The simplified KiCad model uses the 11.50 mm body height; the enclosure adds a 1.00 mm conservative cable/latch allowance above the seated PCB top (12.50 mm envelope). The lid underside is z=19.4 mm, leaving 1.65 mm above that envelope. J4 (USB-C) is at (72,36.325) near the lower (+Y) edge and has a 15 × 7 mm cable window. Service holes are provided above SW1/SW2 at (5,3.4) and (13,3.4). SW1 is hardware `RESET`/`EN`; SW2 is GPIO9/`BOOT`. Hold BOOT while tapping RESET to force recovery download mode. Connector bodies and cable plugs vary, so prototype-fit both a plug and the populated board before committing to a final print.
 
 ## Antenna gate
 

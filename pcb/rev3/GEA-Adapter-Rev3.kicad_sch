@@ -8974,18 +8974,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 160.02) (xy 161.29 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e51da0ed-0d32-4c3a-83c5-cea8fdec660f")
-	)
-
-
-	(wire
-		(pts
 			(xy 57.15 31.75) (xy 57.15 36.83)
 		)
 		(stroke
@@ -9290,6 +9278,16 @@
 			(justify left bottom)
 		)
 		(uuid "6e1bbcfe-e661-4113-b349-89eabb015f85")
+	)
+	(label "EN"
+		(at 161.29 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2a5cb9d-0e9a-4cbb-9aca-1f21380e3a71")
 	)
 	(label "LED2"
 		(at 156.21 147.32 0)
@@ -11116,7 +11114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DNP Tag-Connect TC2030 programming footprint; pads present on PCB; do not install cable during normal operation"
+		(property "Description" "DNP connector-free Tag-Connect recovery footprint; manual flash fallback when USB is unavailable; no installed part"
 			(at 49.53 232.41 0)
 			(effects
 				(font

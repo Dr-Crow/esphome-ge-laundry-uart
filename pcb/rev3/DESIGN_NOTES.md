@@ -23,8 +23,14 @@ There are no user controls or power-selection jumpers. The target layout calls f
 diagnostic pads at each fused input, the isolated common node, USB VBUS, +5V and +3V3;
 those pads are now present on the PCB, including TP8 through TP14 for the two automatic
 input paths and USB VBUS. J2 remains a schematic-only do-not-install header and does
-not create a PCB or enclosure feature. J3 is the existing do-not-install Tag-Connect
-footprint. JP1 is the inherited signal-mapping solder selector, not a power selector.
+not create a PCB or enclosure feature. A permanent 2-by-3, 2.54 mm J2 header was
+checked in both through-hole and top-side surface-mount forms. Every practical
+location intersected completed routing or an existing component courtyard; the
+through-hole option would also add a second-side/wave-solder operation. J3 retains
+all six recovery signals through connector-free pogo pads without those changes.
+SW1 now provides hardware reset through `EN`, while SW2 selects the ESP32-C3 ROM
+downloader through GPIO9/`BOOT`. JP1 is the inherited signal-mapping solder selector,
+not a power selector.
 Its bare-board copper defaults to pads 1-2 for the FirstBuild-compatible mapping; the
 DNP flag means there is no separately assembled part. Cutting that bridge and joining
 pads 2-3 is an engineering-only alternate mapping. The design is safe to evaluate only with current-limited sources until
@@ -62,8 +68,8 @@ The ESP32-C3 provides native USB Full Speed on GPIO18 and GPIO19. The board adds
 
 Espressif requires the data traces to run together, remain nearly equal in length, see continuous ground beneath them, and present 90 ohms differential impedance within 10 percent. Rev3A uses four copper layers with solid `In1.Cu` and `In2.Cu` ground-reference planes.
 
-This matches the published FirstBuild Gerber archive, which contains only top and
-bottom copper layers. In a JLCPCB calculator check on 2026-09-14, five 88.7 mm by
+By contrast, the published FirstBuild Gerber archive contains only top and bottom
+copper layers. In a JLCPCB calculator check on 2026-09-14, five 88.7 mm by
 34 mm bare boards were $4 total with two layers and $7 total with four layers before
 shipping. A finished two-layer routing trial fragmented its ground fill into 18
 disconnected islands. The four-layer revision preserves the same outline and
@@ -191,6 +197,17 @@ The corrected 0.30 mm thermal drills selected the standard fabrication process:
 via covering and special-hole charges were both $0.00. Shipping was not included
 in the final quote and must be checked at order time. The quote is a cost snapshot,
 not permission to order or evidence that the unbuilt design has passed bring-up.
+
+A same-day re-upload after the reset/boot and silkscreen improvements produced an
+incomplete $126.76 comparison, not a lower complete-board price. JLCPCB had no
+assembly stock for four catalog identities used by 28 placements: C28233 (100 nF,
+100 V), C28323 (1 uF, 50 V), C17414 (10 kohm), and C151607 (74LVC2G07). Marking
+those parts "do not place" removed $8.00 from the displayed total, which explains
+the apparent reduction. The physical improvements do not change the board outline,
+layer count, drill sizes, BOM count, or placement count, so their manufacturing
+cost delta is $0 when quoted with the same available parts. Retain $134.76 as the
+last complete comparison and resolve each stock-out with an electrically and
+mechanically reviewed drop-in part before requesting a new complete quote.
 
 ## Release gates
 
