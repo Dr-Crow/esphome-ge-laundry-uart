@@ -19,6 +19,10 @@ from enclosure import (
     BASE_Y1,
     PCB_X,
     PCB_Y,
+    LED_VIEW_HOLES,
+    LED_VIEW_RADIUS,
+    LID_CEILING,
+    LID_Z1,
     LID_UNDERSIDE_Z,
     RJ45_ENVELOPE_TOP_Z,
     RJ45_WINDOW_Y0,
@@ -35,6 +39,7 @@ from enclosure import (
     LID_RETAINER_OUTER_RADIUS,
     LID_RETAINER_INNER_RADIUS,
     _box,
+    _cylinder,
     make_base,
     make_lid,
 )
@@ -76,6 +81,16 @@ def main() -> None:
     assert overlap is None or overlap.volume < 1e-6, "lid blocks RJ45 insertion envelope"
     assert LOCATING_POST_RADIUS < 1.6
     assert LID_RETAINER_INNER_RADIUS < 1.6 < LID_RETAINER_OUTER_RADIUS
+    for x, y in LED_VIEW_HOLES:
+        viewing_hole = _cylinder(
+            LED_VIEW_RADIUS,
+            LID_Z1 - LID_CEILING - 0.1,
+            LID_Z1 + 0.1,
+            x,
+            y,
+        )
+        blocked = lid.intersect(viewing_hole)
+        assert blocked is None or blocked.volume < 1e-6, f"lid blocks LED view at {(x, y)}"
     print(f"RJ45 envelope: top_z={RJ45_ENVELOPE_TOP_Z:.2f} lid_underside={LID_UNDERSIDE_Z:.2f} clearance={LID_UNDERSIDE_Z - RJ45_ENVELOPE_TOP_Z:.2f} mm")
     print(f"RJ45 window: y={RJ45_WINDOW_Y0}..{RJ45_WINDOW_Y1} z={RJ45_WINDOW_Z0}..{RJ45_WINDOW_Z1} mm")
 

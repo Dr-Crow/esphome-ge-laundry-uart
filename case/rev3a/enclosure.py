@@ -50,6 +50,11 @@ ANTENNA_Y0, ANTENNA_Y1 = 3.0, 31.0
 
 MOUNT_HOLES = ((4.0, 30.0), (48.0, 4.0))
 
+# Small lid apertures expose the existing status LEDs without adding PCB parts.
+# D4 is green/Wi-Fi, D5 is red/user diagnostic, and D6 is yellow/GEA bus.
+LED_VIEW_HOLES = ((49.0, 24.0), (82.5, 1.5), (80.0, 36.5))
+LED_VIEW_RADIUS = 1.25
+
 # C3097717 (EVERCOM 5301-8P8C) is not present in the KiCad assembly STEP.
 # The JLCPCB-hosted manufacturer drawing lists 15.20, 11.50, and 18.05 mm
 # body dimensions.  Use the largest 11.50 mm body height plus a conservative
@@ -185,6 +190,18 @@ def make_lid() -> Part:
     # not mounting holes, and are outside the antenna keep-out.
     for x in (5.0, 13.0):
         lid = lid - _cylinder(2.0, LID_Z1 - LID_CEILING - 0.1, LID_Z1 + 0.1, x, 3.4)
+
+    # Viewing holes make all three board-status LEDs visible through an opaque
+    # print. They are deliberately smaller than the LED packages and clear the
+    # snap beads, retainers, connector openings, and antenna chamber.
+    for x, y in LED_VIEW_HOLES:
+        lid = lid - _cylinder(
+            LED_VIEW_RADIUS,
+            LID_Z1 - LID_CEILING - 0.1,
+            LID_Z1 + 0.1,
+            x,
+            y,
+        )
 
     # Four inward snap beads.  They are short, rounded-free printable nubs
     # positioned only over the board area; x<=80 keeps the RF chamber empty.
