@@ -19,6 +19,12 @@ from enclosure import (
     BASE_Y1,
     PCB_X,
     PCB_Y,
+    LID_UNDERSIDE_Z,
+    RJ45_ENVELOPE_TOP_Z,
+    RJ45_WINDOW_Y0,
+    RJ45_WINDOW_Y1,
+    RJ45_WINDOW_Z0,
+    RJ45_WINDOW_Z1,
     make_base,
     make_lid,
 )
@@ -43,6 +49,11 @@ def main() -> None:
     assert lx[0] < bx[0] and lx[3] > bx[3], (lx, bx)
     assert PCB_X + 15.0 == ANTENNA_X1
     assert ANTENNA_X0 >= PCB_X and ANTENNA_Y0 >= 0 and ANTENNA_Y1 <= PCB_Y
+    assert LID_UNDERSIDE_Z - RJ45_ENVELOPE_TOP_Z >= 1.0
+    assert RJ45_WINDOW_Y1 - RJ45_WINDOW_Y0 >= 18.0
+    assert RJ45_WINDOW_Z1 - RJ45_WINDOW_Z0 >= 8.0
+    print(f"RJ45 envelope: top_z={RJ45_ENVELOPE_TOP_Z:.2f} lid_underside={LID_UNDERSIDE_Z:.2f} clearance={LID_UNDERSIDE_Z - RJ45_ENVELOPE_TOP_Z:.2f} mm")
+    print(f"RJ45 window: y={RJ45_WINDOW_Y0}..{RJ45_WINDOW_Y1} z={RJ45_WINDOW_Z0}..{RJ45_WINDOW_Z1} mm")
 
     for name in ("rev3a_base", "rev3a_lid"):
         # STL stores each triangle's vertices independently by design;

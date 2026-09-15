@@ -29,14 +29,14 @@ Z_CLEAR = 1.0
 # Base envelope.  The extra length to x=103.7 is the antenna chamber.
 BASE_X0, BASE_X1 = -4.0, 103.7
 BASE_Y0, BASE_Y1 = -4.0, 44.0
-BASE_Z0, BASE_Z1 = 0.0, 8.0
+BASE_Z0, BASE_Z1 = 0.0, 10.0
 FLOOR = 2.4
 
 # Lid envelope and its deep, friction-fit skirt.  The skirt overlaps the
 # base wall by 1 mm in Z and has 0.25 mm radial clearance per side.
 LID_X0, LID_X1 = -5.0, 104.7
 LID_Y0, LID_Y1 = -5.0, 45.0
-LID_Z0, LID_Z1 = 7.0, 14.0
+LID_Z0, LID_Z1 = 9.0, 22.0
 LID_CEILING = 2.6
 LID_INNER_X0, LID_INNER_X1 = -4.25, 103.95
 LID_INNER_Y0, LID_INNER_Y1 = -4.25, 44.25
@@ -49,6 +49,26 @@ ANTENNA_X0, ANTENNA_X1 = PCB_X, PCB_X + 15.0
 ANTENNA_Y0, ANTENNA_Y1 = 3.0, 31.0
 
 MOUNT_HOLES = ((4.0, 30.0), (48.0, 4.0))
+
+# C3097717 (EVERCOM 5301-8P8C) is not present in the KiCad assembly STEP.
+# The JLCPCB-hosted manufacturer drawing lists 15.20, 11.50, and 18.05 mm
+# body dimensions.  Use the largest 11.50 mm body height plus a conservative
+# 1.0 mm cable-plug/latch allowance for a 12.50 mm vertical envelope above
+# the seated PCB top.  These named values make the missing-3D-model assumption
+# visible and are checked in check_geometry.py.
+PCB_SEAT_Z = FLOOR + 1.25
+PCB_TOP_Z = PCB_SEAT_Z + PCB_T
+RJ45_BODY_HEIGHT = 11.50
+RJ45_CABLE_LATCH_ALLOWANCE = 1.00
+RJ45_VERTICAL_ENVELOPE = RJ45_BODY_HEIGHT + RJ45_CABLE_LATCH_ALLOWANCE
+RJ45_ENVELOPE_TOP_Z = PCB_TOP_Z + RJ45_VERTICAL_ENVELOPE
+LID_UNDERSIDE_Z = LID_Z1 - LID_CEILING
+
+# The side window crosses the full conservative cable/port opening height;
+# the lid skirt begins at x=-5..-4.25 and therefore cannot cover this window.
+RJ45_WINDOW_X0, RJ45_WINDOW_X1 = -5.0, 0.7
+RJ45_WINDOW_Y0, RJ45_WINDOW_Y1 = 3.5, 25.5
+RJ45_WINDOW_Z0, RJ45_WINDOW_Z1 = 2.0, BASE_Z1 + 0.2
 
 
 def _box(x0: float, x1: float, y0: float, y1: float, z0: float, z1: float) -> Part:
@@ -71,7 +91,14 @@ def make_base() -> Part:
 
     # RJ45 J1: side-entry opening through the left wall.  The generous
     # 14x22 mm window covers the rotated EVERCOM body and cable latch.
-    rj45_window = _box(-5.0, 0.7, 3.5, 25.5, 2.0, 7.2)
+    rj45_window = _box(
+        RJ45_WINDOW_X0,
+        RJ45_WINDOW_X1,
+        RJ45_WINDOW_Y0,
+        RJ45_WINDOW_Y1,
+        RJ45_WINDOW_Z0,
+        RJ45_WINDOW_Z1,
+    )
     base = base - rj45_window
 
     # USB-C J4 at (72,36.325), opening through the positive-y/lower edge.
@@ -121,7 +148,7 @@ def make_lid() -> Part:
         # Place the nub 0.15 mm inside the skirt edge so the boolean union
         # has a positive overlap (rather than merely touching a face).
         for y in (LID_INNER_Y0 + 0.15, LID_INNER_Y1 - 0.15):
-            bead = _box(x - 2.0, x + 2.0, y - 0.45, y + 0.45, 7.15, 8.0)
+            bead = _box(x - 2.0, x + 2.0, y - 0.45, y + 0.45, LID_Z0 + 0.15, LID_Z0 + 1.0)
             lid = lid + bead
     return lid
 
