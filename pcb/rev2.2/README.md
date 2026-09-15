@@ -38,10 +38,21 @@ Neither interface is USB. Connecting a Mac requires a 3.3 V USB-to-UART adapter 
 
 These exports are generated from the Rev 2.2 KiCad sources without editor chrome, grid, or net labels. The J1 footprint intentionally has no 3D model until an exact EVERCOM model is verified.
 
+## Orderability notes
+
+The resistor values below are the schematic intent; only the stale supplier catalog IDs were corrected in Rev 2.2. Catalog availability is time-sensitive and must be rechecked in the live quote.
+
+| Designator | Schematic value/package | Sourced part | LCSC | Source-backed specification/status |
+| --- | --- | --- | --- | --- |
+| R22 | 4K7 / 0805 | UNI-ROYAL `0805W8F4701T5E` | [C17673](https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Uniroyal-Elec-0805W8F4701T5E_C17673.html) | 4.7 kΩ, ±1%, 125 mW, 150 V, −55 to +155 °C, 0805; observed in stock at verification |
+| R18, R21 | 220k / 0805 | RALEC `RTT052203FTP` | [C104108](https://www.lcsc.com/product-detail/C104108.html) | 220 kΩ, ±1%, 125 mW, 150 V, −55 to +155 °C, 0805; observed in stock at verification |
+| U4, U5 | 74LVC2G07 / SOT-23-6 | DIODES `74LVC2G07W6-7` | [C151607](https://www.lcsc.com/product-detail/C151607.html) | Pin-compatible package/part listing; availability observed but must be rechecked at quote |
+| U6 | AP2205-3.3 / SOT-89-3 | DIODES `AP2205-33Y-13` | [C5205181](https://item.szlcsc.com/5896544.html) | 3.3 V, 200 mA LDO, 24 V working voltage, SOT-89; prior quote showed low stock, so confirm before ordering |
+
 ## Before ordering
 
 1. Upload only the revision 2.2 ZIP, BOM, and CPL together. For a no-hand-solder board, request turnkey mixed assembly so the assembler installs both the SMT parts and through-hole J1. Confirm the fabrication preview shows a 2-layer, 1.6 mm board with the expected 88.7 mm by 30.1 mm outline and drill map.
-2. In the parts review, confirm all 59 designators are recognized, U1 and J2 are absent, and no substitute has been accepted without review. A September 2026 five-board quote matched 23 of 24 BOM groups, but U4/U5 were unavailable and only four units of U6 (`AP2205-33Y-13`, `C5205181`) were in stock. The inherited Rev 2.1 supplier fields also matched R22's `4K7` value to a 47 kΩ part and R18/R21's `220k` value to a 200 kΩ part. Do not order until those resistor values are confirmed against the intended circuit and every unavailable part is restocked or an exact electrical and pin-compatible substitute is qualified.
+2. In the parts review, confirm all 59 designators are recognized, U1 and J2 are absent, and no substitute has been accepted without review. The Rev 2.2 BOM now maps R22's `4K7` intent to 4.7 kΩ `C17673` and R18/R21's `220k` intent to 220 kΩ `C104108`; verify those IDs and the U4/U5/U6 availability again in the live quote before ordering.
 3. In the assembly preview, confirm J1 is the EVERCOM `5301-8P8C` (`C3097717`), is installed with its socket opening facing out from the short board edge, and its pins and two locating posts align with the drill preview. Also confirm the pin 5/pin 4 labels are legible. If J1 is missing or the vendor will not assemble it, stop before checkout; that quote would require hand soldering.
 4. Confirm whether the target appliance supplies power on connector pin 1 or pin 3. Rev 2.2 defaults to the existing pin-1 power path through `JP2` pads 1-2. A pin-3 appliance requires the documented solder-selector rework; do not connect an unknown appliance until its pinout and supply voltage are confirmed.
 5. Order a small prototype batch first. Because the standard BOM includes the ESP32 module, use a current-limited bench supply for first power. Inspect orientation, shorts, and solder joints, then verify the 5 V and 3.3 V rails before allowing a normal Wi-Fi workload.
