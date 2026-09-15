@@ -25,9 +25,11 @@ those pads are now present on the PCB, including TP8 through TP14 for the two au
 input paths and USB VBUS. J2 remains a schematic-only do-not-install header and does
 not create a PCB or enclosure feature. A permanent 2-by-3, 2.54 mm J2 header was
 checked in both through-hole and top-side surface-mount forms. Every practical
-location intersected completed routing or an existing component courtyard; the
-through-hole option would also add a second-side/wave-solder operation. J3 retains
-all six recovery signals through connector-free pogo pads without those changes.
+top-side location intersected completed routing or an existing component courtyard.
+A top-mounted through-hole header could share J1's existing solder-side process, but
+its body still has no clear location; mounting it underneath would add a second-side
+insertion and enclosure-clearance problem. J3 retains all six recovery signals
+through connector-free pogo pads without those changes.
 SW1 now provides hardware reset through `EN`, while SW2 selects the ESP32-C3 ROM
 downloader through GPIO9/`BOOT`. JP1 is the inherited signal-mapping solder selector,
 not a power selector.
