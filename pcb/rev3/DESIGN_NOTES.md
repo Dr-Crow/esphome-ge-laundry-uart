@@ -126,12 +126,15 @@ Current sourcing review has corrected two catalog mismatches: C9 now specifies F
 1206 footprint, and C10 specifies FH `0603B104M500NT` (`C286510`), a
 100 nF, 50 V, X7R capacitor in the placed 0603 footprint. J1 consistently
 specifies the low-cost EVERCOM `5301-8P8C` (`C3097717`) and requires wave
-soldering. J4 now specifies HCTL `HC-TYPE-C-16P-01A` (`C2894897`). Its
-official drawing matches the existing GCT-family footprint's contact order,
-0.5 mm pitch, locating holes, and four shell-tab centers. It was selected
-because the exact GCT part was unavailable and the HCTL part was in stock at
-the time of review. Do not substitute another mechanically similar USB
-connector without comparing the official pad and shell-tab drawing.
+soldering. J4 specifies HCTL `HC-TYPE-C-16P-01A` (`C2894897`). It was
+selected because it is inexpensive and was well stocked at the time of
+review. The current PCB still embeds a GCT-family footprint, while KiCad 9
+provides an exact HCTL footprint with different pad-row geometry. Replace the
+embedded footprint with
+`Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A`, then re-route and
+revalidate the complete USB cluster against the HCTL drawing before ordering.
+Do not substitute another mechanically similar connector without comparing
+its official contact, locating-hole, and shell-tab dimensions.
 
 The current schematic exports 42 populated BOM groups covering 90 placed
 parts, and every group has an exact LCSC identity. C16/C17 use Samsung

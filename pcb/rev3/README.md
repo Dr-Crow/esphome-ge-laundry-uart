@@ -78,17 +78,23 @@ The blocking diodes are one-way valves for electricity. They let either the appl
 - The ESP32 module is shifted to the right so its antenna overhangs the PCB and its
   keepout begins at the board edge. The PCB remains 88.7 mm by 40.0 mm; the enclosure
   must preserve 15 mm of antenna-side clearance outside that edge.
-- Routing has progressed from 192 to 110 open connections without introducing a
-  hard DRC geometry error. Remaining signal and rail connections still need routing
-  and a final zone refill. The board is not a manufacturing candidate.
+- Routing has progressed from 192 to 84 open connections without introducing a
+  hard DRC geometry error. The completed slices include all 5 V distribution,
+  additional 3.3 V branches, the secondary transmit path, and local boot/debug
+  controls. The remaining signal and rail connections require a coordinated
+  placement-and-routing pass rather than more isolated traces. The board is not a
+  manufacturing candidate.
 - The schematic BOM contains 42 purchasing groups / 90 fitted parts and every group
   has an exact LCSC identifier. Stock, substitutions, and assembly charges still
   require a live quote.
 - No Gerber, BOM, or placement package is released for ordering.
 
-The next routing slices should complete the remaining 5 V, 3.3 V, appliance, and
-control nets. Every slice must preserve the bottom ground return, routed USB path,
-and ESP32 antenna keepout.
+The next layout pass must complete USB power and configuration-channel routing,
+the remaining 3.3 V and appliance signals, and all control nets while preserving
+the bottom ground return and ESP32 antenna keepout. The PCB currently embeds a
+GCT-family USB footprint even though J4 is sourced as HCTL
+`HC-TYPE-C-16P-01A`; replace it with KiCad 9's exact HCTL footprint and revalidate
+the complete USB cluster before manufacturing.
 
 The KiCad files are the source of truth.
 
