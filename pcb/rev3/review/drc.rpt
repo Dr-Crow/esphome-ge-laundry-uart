@@ -1,0 +1,42 @@
+** Drc report for GEA-Adapter-Rev3.kicad_pcb **
+** Created on 2026-09-15T04:03:26-0400 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 9 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(0.0000 mm, 40.0000 mm): Segment on Edge.Cuts
+    @(17.8500 mm, 9.2400 mm): Segment of J1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(0.0000 mm, 40.0000 mm): Segment on Edge.Cuts
+    @(17.8500 mm, 24.7600 mm): Segment of J1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(88.7000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(94.8100 mm, 26.1100 mm): Segment of U2 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(88.7000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(88.3000 mm, 7.9000 mm): Polygon of U2 on F.Silkscreen
+[lib_footprint_mismatch]: Footprint 'SOT-23' does not match copy in library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(31.0295 mm, 19.8191 mm): Footprint D2
+[lib_footprint_mismatch]: Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'.
+    Local override; warning
+    @(18.1447 mm, 26.4745 mm): Footprint C5
+[lib_footprint_mismatch]: Footprint 'SW_Push_1P1T_XKB_TS-1187A' does not match copy in library 'Button_Switch_SMD'.
+    Local override; warning
+    @(13.0000 mm, 3.4000 mm): Footprint SW2
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.0mm' does not match copy in library 'TestPoint'.
+    Local override; warning
+    @(61.0000 mm, 37.0000 mm): Footprint TP13
+[lib_footprint_mismatch]: Footprint 'ESP32-C3-WROOM-02' does not match copy in library 'RF_Module'.
+    Local override; warning
+    @(81.6000 mm, 17.0000 mm): Footprint U2
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

@@ -6,7 +6,7 @@ This file records the decisions that materially affect safety, cost, or whether 
 
 ### Rev3A automatic front end
 
-The final Rev3A power architecture removes the manual JP2 selector and the shared
+The proposed Rev3A power architecture removes the manual JP2 selector and the shared
 Q1/Q2/D12/D13 gate network. F1 and F2 remain independent per-input fuses. Each fused
 input uses a FirstBuild-derived P-channel reverse-protection stage followed by its own
 TPS22810DBVR load switch. Rev 3A uses the currently available CJ3407 instead of the
@@ -15,8 +15,8 @@ input capacitor, 0.1 uF output capacitor, and a 100 pF/5.1 k/51 ohm PMOS gate ne
 An MMBT3904 with external 10 k resistors makes J1 pin 1 the priority source when both
 appliance inputs are valid. This replaces the inconsistent and end-of-life pre-biased
 transistor choices found in the reference files with common parts whose values are
-explicit in the schematic. MBR0540 output isolation prevents the secondary source
-from back-powering the selected path. The common isolated V_INPUT feeds the existing
+explicit in the schematic. MBR0540 output isolation is intended to keep the secondary
+source from back-powering the selected path. The common isolated V_INPUT feeds the existing
 AP63205 input network directly. USB F3/D10 and buck D11 isolation are unchanged.
 
 There are no user controls or power-selection jumpers. The target layout calls for
@@ -24,7 +24,10 @@ diagnostic pads at each fused input, the isolated common node, USB VBUS, +5V and
 those pads are now present on the PCB, including TP8 through TP14 for the two automatic
 input paths and USB VBUS. J2 remains a schematic-only do-not-install header and does
 not create a PCB or enclosure feature. J3 is the existing do-not-install Tag-Connect
-footprint. The design is safe to evaluate only with current-limited sources until
+footprint. JP1 is the inherited signal-mapping solder selector, not a power selector.
+Its bare-board copper defaults to pads 1-2 for the FirstBuild-compatible mapping; the
+DNP flag means there is no separately assembled part. Cutting that bridge and joining
+pads 2-3 is an engineering-only alternate mapping. The design is safe to evaluate only with current-limited sources until
 reverse current, switch timing, and thermal behavior are measured.
 
 The source headroom gate is explicit: AP63205 is retained for prototype work, but a
@@ -57,15 +60,15 @@ The ESP32-C3 provides native USB Full Speed on GPIO18 and GPIO19. The board adds
 - one 22 ohm series resistor on each data line; and
 - a resettable fuse and blocking diode on USB power.
 
-Espressif requires the data traces to run together, remain nearly equal in length, see continuous ground beneath them, and present 90 ohms differential impedance within 10 percent. Rev 3A remains a two-layer design to control cost. It is acceptable only when the fabricator supports a practical geometry and the routed board preserves a nearly continuous bottom ground plane.
+Espressif requires the data traces to run together, remain nearly equal in length, see continuous ground beneath them, and present 90 ohms differential impedance within 10 percent. Rev3A uses four copper layers with solid `In1.Cu` and `In2.Cu` ground-reference planes.
 
 This matches the published FirstBuild Gerber archive, which contains only top and
 bottom copper layers. In a JLCPCB calculator check on 2026-09-14, five 88.7 mm by
 34 mm bare boards were $4 total with two layers and $7 total with four layers before
-shipping. Four layers are therefore not prohibitively expensive, but they do not
-remove the top-side area required by the connectors, ESP32 antenna keepout, and power
-components. Two layers remain the default; four layers are a fallback only if the
-finished USB and ground layout cannot meet the release gates.
+shipping. A finished two-layer routing trial fragmented its ground fill into 18
+disconnected islands. The four-layer revision preserves the same outline and
+placement while providing uninterrupted return planes, so the small historical bare-
+board premium was accepted. The final assembled quote must confirm the current cost.
 
 The FirstBuild Gerber outline is approximately 59.94 mm by 27.43 mm. Its smaller
 carrier uses a Seeed XIAO ESP32-C3 daughterboard, components on both sides, and many
@@ -74,29 +77,26 @@ single-sided placement dominate its approximately 88.7 mm by 40.0 mm outline. Th
 extra height creates a dedicated lower-edge buck-converter corridor without crossing
 the USB pair; extra copper layers alone would not create the same size reduction.
 
-The connector fan-out uses a short 0.20 mm track / 0.10 mm clearance neck-down,
-which is within JLCPCB's published standard two-layer capability. The existing
-MCU-side pair remains 0.432 mm wide. These dimensions establish manufacturing
-limits, not a controlled-impedance claim: obtain the selected vendor's stack-up
-review before release. Each connector-side data net uses two standard 0.8/0.4 mm
-through vias; no microvias or via-in-pad process is required.
+The complete connector-to-ESP32 D+ and D- routes are 24.314 mm and 25.357 mm
+respectively, for 1.043 mm skew. Both are 0.20 mm wide. Each uses two standard
+0.8/0.4 mm through-vias to cross from `F.Cu` to `B.Cu` and back while remaining
+referenced to an uninterrupted internal ground plane. These dimensions establish
+manufacturing limits, not a controlled-impedance claim: obtain the selected vendor's
+four-layer stack-up review before release. The smallest vias elsewhere on the board
+are two ordinary 0.40/0.20 mm through-vias on a low-speed control net; there are no
+microvias or via-in-pad features.
 
 Decision order:
 
 1. Keep the connector fan-out at or above the documented 0.20/0.10 mm limits.
 2. Keep the paired nets close in length and away from switching nodes and the antenna.
 3. Prove USB enumeration, flashing, sustained logging, and reconnect behavior on prototypes.
-4. If the two-layer prototype is unreliable, revise placement for a top-layer route or return for review before changing the layer count.
+4. Confirm the fabricator's stack-up and physical USB reliability before release.
 
-Current routed evidence: J4, U7, R28/R29, and the ESP32 are connected end to
-end. The connector-to-U7 paths measure 23.6725 mm for D- and 23.3100 mm for
-D+; the U7-to-resistor skew is 0.0417 mm, and the existing resistor-to-MCU
-section has 0.8000 mm skew. Combined connector-to-MCU skew is approximately
-0.48 mm. KiCad 9.0.9 reports no USB short, clearance, courtyard, via-count, or
-pair-skew violation. The long connector-side section runs on `B.Cu`, which also
-carries the main ground fill, so the pair does not have an ideal continuous
-reference plane along that section. Treat successful physical USB testing as a
-release gate rather than assuming that a clean DRC proves signal integrity.
+Current routed evidence: J4, U7, R28/R29, and the ESP32 are connected end to end.
+KiCad 9.0.9 reports no USB short, clearance, or unconnected item and the complete PCB
+reports zero DRC errors. Treat successful physical USB testing as a release gate
+rather than assuming that a clean DRC proves signal integrity.
 
 ## RF and enclosure
 
@@ -128,11 +128,10 @@ Current sourcing review has corrected two catalog mismatches: C9 now specifies F
 specifies the low-cost EVERCOM `5301-8P8C` (`C3097717`) and requires wave
 soldering. J4 specifies HCTL `HC-TYPE-C-16P-01A` (`C2894897`). It was
 selected because it is inexpensive and was well stocked at the time of
-review. The current PCB still embeds a GCT-family footprint, while KiCad 9
-provides an exact HCTL footprint with different pad-row geometry. Replace the
-embedded footprint with
-`Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A`, then re-route and
-revalidate the complete USB cluster against the HCTL drawing before ordering.
+review. The PCB uses KiCad 9's exact HCTL footprint
+`Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A`. Revalidate the complete
+USB cluster against the HCTL drawing after any footprint or routing change and
+again in the vendor preview before ordering.
 Do not substitute another mechanically similar connector without comparing
 its official contact, locating-hole, and shell-tab dimensions.
 
@@ -145,6 +144,21 @@ must still check AP63205 load-step response, ripple, and capacitor temperature
 at the intended input and load extremes. A matched BOM does not establish the
 assembled price; live stock, assembly classification, and setup fees remain
 quote-time gates.
+
+### Live sourcing checkpoint
+
+The 2026-09-15 LCSC/JLCPCB catalog review found the regulator, load switches,
+ESP32 module, USB protection, USB-C connector, PMOS devices, power diodes, fuses,
+inductor, and principal capacitors under their documented catalog identities.
+Stock counts are volatile and are not a substitute for the assembly quote.
+
+| Risk | Parts | Quote-time action |
+| --- | --- | --- |
+| Mechanical single source | J1 EVERCOM `5301-8P8C` (`C3097717`) | Verify live availability, drawing, orientation, and wave-solder charge; do not substitute by appearance. |
+| No validated drop-in alternate | U2 ESP32-C3-WROOM-02-N4 (`C2934560`), J4 HCTL `HC-TYPE-C-16P-01A` (`C2894897`) | Keep exact parts or return the footprint/layout for review. |
+| Availability needs confirmation | C11/C13 Samsung `CL21A106KAYNNNE` (`C15850`), F3 Littelfuse `1206L050YR` (`C163512`) | Approve only a same-package, equal-or-better electrical alternate after datasheet review. |
+| Lower observed stock | D14-D17 MCC `MBR0540-TP` (`C78744`) | Recheck quantity before assembly submission; do not change diode rating or footprint without review. |
+| Exact-part stock observed | U8 `AP63205WU-7` (`C2071056`), U6 `AP2112K-3.3TRG1` (`C51118`), U9/U10 `TPS22810DBVR` (`C205990`), Q3/Q4 `CJ3407` (`C15903`), U7 `USBLC6-2SC6` (`C7519`) | Confirm the quote did not silently substitute parts. |
 
 ## Release gates
 

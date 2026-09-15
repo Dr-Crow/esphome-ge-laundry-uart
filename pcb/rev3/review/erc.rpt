@@ -1,0 +1,172 @@
+ERC report (2026-09-15T04:03:21-0400, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(34.29 mm, 31.75 mm): Symbol #PWR01 [GND]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(49.53 mm, 31.75 mm): Symbol #PWR010 [+5V]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(57.15 mm, 31.75 mm): Symbol #PWR011 [GND]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(72.39 mm, 31.75 mm): Symbol #PWR012 [+5V]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(80.01 mm, 31.75 mm): Symbol #PWR015 [GND]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(95.25 mm, 31.75 mm): Symbol #PWR016 [+5V]
+[lib_symbol_mismatch]: Symbol '8P8C' doesn't match copy in library 'Connector'
+    ; warning
+    @(43.815 mm, 95.25 mm): Symbol J1 [8P8C]
+[lib_symbol_mismatch]: Symbol 'VDC' doesn't match copy in library 'power'
+    ; warning
+    @(104.14 mm, 25.40 mm): Symbol #PWR020 [VDC]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(75.565 mm, 85.09 mm): Symbol #PWR014 [GND]
+[lib_symbol_mismatch]: Symbol 'VDC' doesn't match copy in library 'power'
+    ; warning
+    @(74.93 mm, 102.87 mm): Symbol #PWR013 [VDC]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(36.83 mm, 132.08 mm): Symbol #PWR06 [+5V]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(48.26 mm, 148.59 mm): Symbol #PWR08 [GND]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(37.465 mm, 159.385 mm): Symbol #PWR07 [+3V3]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(118.11 mm, 114.30 mm): Symbol #PWR017 [+3V3]
+[lib_symbol_mismatch]: Symbol 'Q_PMOS_GSD' doesn't match copy in library 'Transistor_FET'
+    ; warning
+    @(175.26 mm, 45.72 mm): Symbol Q3 [Q_PMOS_GSD]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(48.26 mm, 181.61 mm): Symbol #PWR09 [GND]
+[lib_symbol_mismatch]: Symbol 'LED' doesn't match copy in library 'Device'
+    ; warning
+    @(139.70 mm, 137.16 mm): Symbol D5 [LED]
+[lib_symbol_mismatch]: Symbol 'Q_PMOS_GSD' doesn't match copy in library 'Transistor_FET'
+    ; warning
+    @(175.26 mm, 104.14 mm): Symbol Q4 [Q_PMOS_GSD]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(35.56 mm, 207.01 mm): Symbol #PWR02 [+3V3]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(35.56 mm, 209.55 mm): Symbol #PWR03 [GND]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(186.69 mm, 129.54 mm): Symbol #PWR022 [+3V3]
+[lib_symbol_mismatch]: Symbol 'LED' doesn't match copy in library 'Device'
+    ; warning
+    @(135.89 mm, 187.96 mm): Symbol D4 [LED]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(35.56 mm, 229.87 mm): Symbol #PWR04 [+3V3]
+[lib_symbol_mismatch]: Symbol 'LED' doesn't match copy in library 'Device'
+    ; warning
+    @(140.97 mm, 187.96 mm): Symbol D6 [LED]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(35.56 mm, 234.95 mm): Symbol #PWR05 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(173.99 mm, 199.39 mm): Symbol #PWR021 [GND]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(287.02 mm, 118.11 mm): Symbol #PWR025 [+3V3]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(280.67 mm, 190.50 mm): Symbol #PWR024 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(321.31 mm, 123.825 mm): Symbol #PWR033 [GND]
+[lib_symbol_mismatch]: Symbol '74LVC2G07' doesn't match copy in library '74xGxx'
+    ; warning
+    @(321.31 mm, 126.365 mm): Symbol U4 [74LVC2G07]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(321.31 mm, 128.905 mm): Symbol #PWR034 [+5V]
+[multiple_net_names]: Both +5V and VCC are attached to the same items; +5V will be used in the netlist
+    ; warning
+    @(320.04 mm, 187.96 mm): Symbol #PWR028 Hidden pin 1 [+5V, Power input, Line]
+    @(321.31 mm, 128.905 mm): Symbol U4 Hidden pin 5 [VCC, Power input, Line]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(320.675 mm, 145.415 mm): Symbol #PWR029 [+3V3]
+[lib_symbol_issues]: Symbol '74LVC2G07_3v3' not found in symbol library 'onionStraws'
+    ; warning
+    @(320.675 mm, 147.955 mm): Symbol U5 [74LVC2G07_3v3]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(320.675 mm, 150.495 mm): Symbol #PWR030 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(335.915 mm, 114.30 mm): Symbol #PWR035 [GND]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(320.675 mm, 165.10 mm): Symbol #PWR031 [+3V3]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(335.915 mm, 133.985 mm): Symbol #PWR036 [+5V]
+[lib_symbol_issues]: Symbol '74LVC2G07_3v3' not found in symbol library 'onionStraws'
+    ; warning
+    @(320.675 mm, 167.64 mm): Symbol U5 [74LVC2G07_3v3]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(320.675 mm, 170.18 mm): Symbol #PWR032 [GND]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(320.04 mm, 182.88 mm): Symbol #PWR027 [GND]
+[lib_symbol_mismatch]: Symbol '74LVC2G07' doesn't match copy in library '74xGxx'
+    ; warning
+    @(320.04 mm, 185.42 mm): Symbol U4 [74LVC2G07]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(335.915 mm, 155.575 mm): Symbol #PWR037 [+5V]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(320.04 mm, 187.96 mm): Symbol #PWR028 [+5V]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(335.915 mm, 175.26 mm): Symbol #PWR038 [+5V]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(410.00 mm, 207.86 mm): Symbol J4 Pin A1 [GND, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(436.19 mm, 225.00 mm): Symbol R26 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
+    ; warning
+    @(490.22 mm, 25.40 mm): Symbol #PWR026 [+5V]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(436.19 mm, 245.00 mm): Symbol R27 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(464.92 mm, 185.00 mm): Symbol U7 Pin 1 [I/O1, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(466.19 mm, 225.00 mm): Symbol F3 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(516.19 mm, 185.00 mm): Symbol R28 Pin 1 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(516.19 mm, 215.00 mm): Symbol R29 Pin 1 [Passive, Line]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(568.96 mm, 25.40 mm): Symbol #PWR039 [+3V3]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(536.19 mm, 225.00 mm): Symbol D10 Pin 1 [K, Passive, Line]
+
+ ** ERC messages: 55  Errors 0  Warnings 55

@@ -2,7 +2,7 @@
 
 ## Automatic power front end
 
-Revision 3A is a no-jumper design. Each appliance input is protected independently:
+Revision 3A is a no-jumper design. The proposed front end gives each appliance input an independent fuse, reverse-protection stage, and controlled switch:
 
 ```text
 J1 pin 1 (VDC)  -> F2 -> CJ3407 reverse-protection PMOS -> TPS22810DBVR ->+
@@ -14,16 +14,20 @@ J1 pin 3 (ALT)  -> F1 -> CJ3407 reverse-protection PMOS -> TPS22810DBVR ->+-> V_
 Each TPS22810 uses CT = 0.022 uF, a local 1 uF input capacitor, a 0.1 uF output
 capacitor, and a small 100 pF/5.1 k/51 ohm PMOS gate network derived from the
 published FirstBuild design. An MMBT3904 transistor and two resistors give pin 1
-priority when both inputs are present. MBR0540 diodes combine the two protected
+priority when both inputs are present. MBR0540 diodes are intended to combine the two switched
 outputs without feeding one appliance pin from the other. USB power remains on its
 separate F3/D10 path, and the existing buck-side D11 isolation is retained. There is
 no JP2 or user-selectable power control.
+
+Pin-1 priority, reverse protection, and source isolation are design objectives, not
+qualified safety properties. Verify them with current-limited supplies in all eight
+source combinations before connecting an appliance.
 
 The AP63205 remains the prototype regulator. A measured 4.3 V source cannot produce a
 regulated 5 V output; source headroom and the reverse-protection/load-switch drops are
 physical release gates, not software assumptions.
 
-### Eight-state power truth table
+### Eight-state design expectation — unverified until bring-up
 
 | VDC (pin 1) | ALT_PWR (pin 3) | USB VBUS | Selected appliance path | V_INPUT / board behavior |
 | --- | --- | --- | --- | --- |
@@ -39,10 +43,13 @@ physical release gates, not software assumptions.
 The schematic includes diagnostic pads at the fused, reverse-protected, and switched
 output of each appliance input, plus V_INPUT, USB VBUS, +5V and +3V3. J2 remains a
 schematic-only, do-not-install header option and is not placed on the PCB. J3 is the
-existing do-not-install Tag-Connect programming footprint. Validate all eight states
+existing do-not-install Tag-Connect programming footprint. JP1 is unrelated to power:
+it is the inherited signal-mapping solder selector. Its manufactured copper defaults
+to pads 1-2 for FirstBuild-compatible mapping; changing it is an engineering rework
+that requires cutting that bridge and joining pads 2-3. Validate all eight power states
 with current-limited supplies before any appliance connection.
 
-Status: design in progress. Do not fabricate or connect this board to an appliance yet.
+Status: digitally complete for review and quoting, but not electrically qualified. Do not order or connect this board to an appliance until the vendor previews and prototype gates below pass.
 
 Revision 3A keeps the ESP32-C3-WROOM-02 module used by Revision 2. The module includes its Wi-Fi antenna. The board adds easier USB-C programming and replaces the older power regulators with parts better suited to appliance power and Wi-Fi current peaks.
 
@@ -56,57 +63,61 @@ Revision 3A keeps the ESP32-C3-WROOM-02 module used by Revision 2. The module in
 | 3.3 V power | AP2205, rated for 200 mA | AP2112K, rated for up to 600 mA |
 | USB/appliance power sharing | Not supported | Each source passes through a blocking diode before the 5 V rails join |
 | Reset monitor | U1 footprint left empty | Removed from the design |
-| Board | 88.7 mm by 30.1 mm, two layers | Current draft is about 88.7 mm by 40.0 mm, two layers |
+| Board | 88.7 mm by 30.1 mm, two layers | 88.7 mm by 40.0 mm, four layers |
 
 The blocking diodes are one-way valves for electricity. They let either the appliance or USB power the board while preventing appliance power from being pushed back into the computer's USB port. That behavior still needs to be measured on prototypes in every source combination.
 
 ## Current state
 
 - The schematic is complete enough for design review and opens in KiCad 9.0.9.
-- The board outline, component placement, antenna keepout, and bottom ground zone are present.
+- The 88.7 mm by 40.0 mm board, component placement, antenna keepout, and four-layer stack are complete. `In1.Cu` and `In2.Cu` are uninterrupted ground-reference planes.
 - The automatic pin-1/pin-3 power paths now reach the regulator input, and the
   lower-edge buck-converter input, switching, output, bootstrap, and feedback
   connections are routed. The feedback sense trace uses the bottom layer briefly
   and returns to the output capacitor through two standard through-vias.
-- The USB-C connector is placed on the lower board edge. The ESP32-to-series-resistor
-  section and the connector-to-ESD sections are routed end to end. The local
-  connector fan-out uses 0.20 mm tracks, 0.10 mm clearance, and ordinary 0.8/0.4 mm
-  through vias. Combined pair skew is approximately 0.48 mm. The ESD protector has
-  a local ground via, and both connector ground contacts are tied to the grounded
-  shell pads. The bottom-layer section requires physical USB reliability testing
-  because it does not have an ideal continuous reference plane.
+- The USB-C connector is placed on the lower board edge. The complete connector-to-
+  ESP32 paths measure 24.314 mm for D+ and 25.357 mm for D- (1.043 mm skew). Both
+  use 0.20 mm tracks. Each crosses from `F.Cu` to `B.Cu` and back through two standard
+  0.8/0.4 mm through-vias while remaining referenced to an uninterrupted internal
+  ground plane. The ESD protector has a local ground via, and both connector ground
+  contacts are tied to the grounded shell pads. The dimensions are manufacturing
+  evidence, not a 90-ohm impedance claim; fabricator and physical USB tests remain gates.
 - The ESP32 module is shifted to the right so its antenna overhangs the PCB and its
   keepout begins at the board edge. The PCB remains 88.7 mm by 40.0 mm; the enclosure
   must preserve 15 mm of antenna-side clearance outside that edge.
-- Routing has progressed from 192 to 84 open connections without introducing a
-  hard DRC geometry error. The completed slices include all 5 V distribution,
-  additional 3.3 V branches, the secondary transmit path, and local boot/debug
-  controls. The remaining signal and rail connections require a coordinated
-  placement-and-routing pass rather than more isolated traces. The board is not a
-  manufacturing candidate.
+- Native KiCad 9.0.9 DRC reports zero errors and zero unconnected items. Five local
+  footprint-copy mismatches and four intentional connector/antenna silkscreen edge
+  warnings are documented in the review package. ERC reports zero errors and 55
+  reviewed legacy/grid warnings; see `review/README.md` for their dispositions.
 - The schematic BOM contains 42 purchasing groups / 90 fitted parts and every group
   has an exact LCSC identifier. Stock, substitutions, and assembly charges still
   require a live quote.
-- No Gerber, BOM, or placement package is released for ordering.
+- The generated Gerber, BOM, and placement package is a review/quote artifact. Do not
+  order it until the vendor previews are reviewed and the owner approves a prototype batch.
 
-The next layout pass must complete USB power and configuration-channel routing,
-the remaining 3.3 V and appliance signals, and all control nets while preserving
-the bottom ground return and ESP32 antenna keepout. The PCB currently embeds a
-GCT-family USB footprint even though J4 is sourced as HCTL
-`HC-TYPE-C-16P-01A`; replace it with KiCad 9's exact HCTL footprint and revalidate
-the complete USB cluster before manufacturing.
+J4 now uses KiCad 9's exact HCTL footprint
+`Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A` for HCTL
+`HC-TYPE-C-16P-01A` (`C2894897`). Revalidate the complete USB cluster against the
+manufacturer drawing after any footprint or routing change. This match is not
+manufacturing approval.
 
 The KiCad files are the source of truth.
 
-## Two-layer versus four-layer USB
+## Four-layer routing decision
 
-The current file remains a two-layer board because cost matters. Espressif permits a two-layer ESP32-C3 design when the bottom layer stays substantially continuous ground, but USB still needs a closely spaced, equal-length 90-ohm pair over uninterrupted ground.
+Rev3A uses four copper layers. A complete two-layer route was tested first, but the
+signal routing split the ground fill into 18 disconnected fragments and left the USB
+pair without a defensible continuous return path. Adding solid `In1.Cu` and `In2.Cu`
+ground planes closed every ground connection without changing component placement,
+outline size, or the automatic-power and USB circuits. This is a signal-integrity and
+return-current correction, not a board-size optimization.
 
 The published FirstBuild manufacturing archive is also two-layer: it contains one
 top and one bottom copper image and no inner copper layers. A JLCPCB calculator check
 on 2026-09-14 priced five 88.7 mm by 34 mm bare boards at $4 total for two layers and
-$7 total for four layers before shipping. That quote is a planning snapshot, not the
-final assembled Revision 3A price.
+$7 total for four layers before shipping. That historical snapshot did not use the
+current 88.7 mm by 40.0 mm outline and is not a Revision 3A price. The live assembled
+quote recorded for this revision supersedes that historical comparison.
 
 FirstBuild's Gerber outline measures about 59.94 mm by 27.43 mm. It achieves that
 density with a Seeed XIAO ESP32-C3 daughterboard, which already includes USB-C and the
@@ -116,14 +127,12 @@ and single-sided component placement. Its 40 mm height provides a dedicated lowe
 buck-converter corridor without using the USB routing area. Changing to four copper
 layers alone would not reduce it to FirstBuild's footprint.
 
-The release design remains two layers. The connector fan-out uses 0.20 mm tracks and
-0.10 mm local clearance, within JLCPCB's published standard capability, while the
-existing MCU-side pair remains 0.432 mm wide. These are manufacturing limits rather
-than a controlled-impedance guarantee. The completed route passes KiCad clearance and
-pair-skew checks, but its bottom-layer section interrupts the ideal reference-plane
-arrangement. USB enumeration, flashing, sustained logging, and reconnect testing on
-the physical prototype are therefore release gates. If those tests fail, revise the
-two-layer placement or return for review before changing to four layers.
+The release candidate uses 0.20 mm minimum tracks. Each USB data path uses two
+standard 0.8/0.4 mm through-vias. The board's smallest drills are two 0.40/0.20 mm
+through-vias on a nearby low-speed control net. These are manufacturing limits rather
+than a controlled-impedance guarantee. USB enumeration,
+flashing, sustained logging, and reconnect testing on the physical prototype remain
+release gates even though the pair is referenced to continuous internal ground.
 
 See [DESIGN_NOTES.md](DESIGN_NOTES.md) for the decision gates and unresolved items.
 Use [BRINGUP.md](BRINGUP.md) to record current-limited prototype validation before
@@ -133,7 +142,7 @@ any appliance connection.
 
 1. Finish every required connection and obtain a clean schematic/PCB parity check.
 2. Resolve or formally exclude every ERC and DRC finding in KiCad rather than matching a saved warning count.
-3. Verify the documented two-layer USB geometry, pair-length match, and uninterrupted ground return.
+3. Verify the documented four-layer USB geometry, pair-length match, stack-up, and uninterrupted ground return.
 4. Verify exact manufacturer part numbers, footprints, availability, and assembly type for all populated parts.
 5. Review the vendor's board, drill, parts, and placement previews.
 6. Test a small prototype batch with current-limited power before connecting an appliance.

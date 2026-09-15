@@ -3,6 +3,10 @@
 This procedure is for the first assembled Revision 3A boards. It is a bench test
 plan, not permission to connect an untested board to an appliance.
 
+Status: drafted procedure for a future populated prototype. Do not assemble, order,
+or connect an appliance until routing, schematic/PCB parity, ERC/DRC, footprint, and
+vendor-preview gates pass.
+
 Do not connect a GE appliance until the unpowered checks, USB checks, and all eight
 power-source combinations pass with current-limited bench sources.
 
@@ -43,6 +47,10 @@ priority, and reverse-current failures much easier to isolate.
 | PCB revision | Revision 3A |
 | ESP32 module marking | |
 | Assembly supplier and lot | |
+| RJ45 breakout fixture and revision | |
+| Fixture pin map | |
+| Supply channel identifiers and limits | |
+| Target appliance model | |
 | Firmware image and commit | |
 | Inspector and date | |
 
@@ -85,7 +93,7 @@ measurements on the first known-good boards.
 4. Measure Wi-Fi throughput and usable range both away from the appliance and in the
    final mounting position next to the appliance chassis. Compare at least two boards.
 
-Do not approve the two-layer USB/RF layout if USB errors appear under Wi-Fi load or
+Do not approve the four-layer USB/RF layout if USB errors appear under Wi-Fi load or
 if the installed enclosure materially degrades range or connection stability.
 
 Stop for unexpected current limiting, a host over-current warning, rapid heating,
@@ -114,8 +122,9 @@ Repeat the procedure through J1 pin 3. Confirm the pin 1 path remains unpowered.
 ### Both appliance inputs
 
 Use two isolated supply channels with a common ground at the fixture. Apply both
-approved input voltages and confirm that pin 1 has priority, pin 3 is not driven
-backward, and the board remains powered safely as each input is removed in turn.
+approved input voltages. A passing result requires measured pin-1 priority, no reverse
+voltage or current into pin 3, stable board rails, and no unsafe temperature rise as
+each input is removed in turn.
 
 Do not deliberately reverse or over-voltage an input during first bring-up. Those
 tests require a separately reviewed fixture and limit.
