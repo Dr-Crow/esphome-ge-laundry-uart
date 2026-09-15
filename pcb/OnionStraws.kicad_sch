@@ -6,8 +6,8 @@
 	(paper "B")
 	(title_block
 		(title "Onion Straws")
-		(date "2025-05-22")
-		(rev "2.0")
+		(date "2026-09-14")
+		(rev "2.2")
 	)
 	(lib_symbols
 		(symbol "74xGxx:74LVC2G07"
@@ -4379,7 +4379,7 @@
 		)
 		(uuid "99c2e0c8-3dce-4d99-a64f-17d17e84bd00")
 	)
-	(text "2.1 changes\n\nAdded ground test point\nChange D8 to bigger part\n\nmove  rj45 inboard 4.5mm\nsmaller 7805 or different ldo"
+	(text "2.2 changes\n\nDNP U1 voltage supervisor\nCorrect J1 RX/TX labels\n\nEVERCOM J1 footprint\n0.90 mm signal drills"
 		(exclude_from_sim no)
 		(at 402.844 248.412 0)
 		(effects

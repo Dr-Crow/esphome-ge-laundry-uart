@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Onion Straws")
+		(date "2026-09-14")
+		(rev "2.2")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -11012,7 +11017,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://github.com/puddly/casserole/issues/3#issue-433554335"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/EVERCOM-53018P8C/C3097717"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11322,17 +11327,6 @@
 			(uuid "7c348bd0-f10e-4646-b3e0-4b355b30f8d8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Amphenol_54602-x08_Horizontal.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965"
 		(layer "F.Cu")

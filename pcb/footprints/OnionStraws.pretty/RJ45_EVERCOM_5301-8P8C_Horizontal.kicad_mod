@@ -274,15 +274,4 @@
 		(remove_unused_layers no)
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Amphenol_54602-x08_Horizontal.wrl"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 )

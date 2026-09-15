@@ -30,6 +30,14 @@ Neither interface is USB. Connecting a Mac requires a 3.3 V USB-to-UART adapter 
 - `production/BOM-OnionStraws-rev2.2.csv`: KiCad-generated assembly BOM with DNP parts excluded.
 - `production/CPL-OnionStraws-rev2.2.csv`: top-side placement data for the installed parts, including through-hole J1. U1 and the unpopulated J2 header are excluded.
 
+## Review exports
+
+- [Schematic PDF](review/OnionStraws-rev2.2-schematic.pdf)
+- [Top-side 2D review image](review/OnionStraws-rev2.2-top.png)
+- [Bottom-side 2D review image](review/OnionStraws-rev2.2-bottom.png)
+
+These exports are generated from the Rev 2.2 KiCad sources without editor chrome, grid, or net labels. The J1 footprint intentionally has no 3D model until an exact EVERCOM model is verified.
+
 ## Before ordering
 
 1. Upload only the revision 2.2 ZIP, BOM, and CPL together. For a no-hand-solder board, request turnkey mixed assembly so the assembler installs both the SMT parts and through-hole J1. Confirm the fabrication preview shows a 2-layer, 1.6 mm board with the expected 88.7 mm by 30.1 mm outline and drill map.
