@@ -10,7 +10,8 @@ Upload the matching Gerber ZIP, BOM, and CPL as one revisioned set.
 - The Gerber ZIP defines copper, solder mask, silkscreen, board outline, and
   plated/non-plated drills.
 - The BOM maps fitted references to exact parts and quantities.
-- The CPL supplies fitted-part coordinates, side, and rotation.
+- The CPL supplies fitted-part coordinates, side, and rotation using JLCPCB's
+  documented `Designator`, `Mid X`, `Mid Y`, `Rotation`, and `Layer` headers.
 
 J1 is the appliance-facing, through-hole EVERCOM `5301-8P8C` connector. A turnkey
 quote must include it and show the correct orientation and through-hole assembly
