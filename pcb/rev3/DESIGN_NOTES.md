@@ -83,8 +83,9 @@ respectively, for 1.043 mm skew. Both are 0.20 mm wide. Each uses two standard
 referenced to an uninterrupted internal ground plane. These dimensions establish
 manufacturing limits, not a controlled-impedance claim: obtain the selected vendor's
 four-layer stack-up review before release. The smallest vias elsewhere on the board
-are two ordinary 0.40/0.20 mm through-vias on a low-speed control net; there are no
-microvias or via-in-pad features.
+are also standard 0.8/0.4 mm through-vias. Two smaller prototype vias on a low-speed
+control net were rerouted after they invoked high-precision fabrication charges in
+the quote calculator. There are no microvias or via-in-pad features.
 
 Decision order:
 

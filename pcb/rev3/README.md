@@ -128,9 +128,10 @@ buck-converter corridor without using the USB routing area. Changing to four cop
 layers alone would not reduce it to FirstBuild's footprint.
 
 The release candidate uses 0.20 mm minimum tracks. Each USB data path uses two
-standard 0.8/0.4 mm through-vias. The board's smallest drills are two 0.40/0.20 mm
-through-vias on a nearby low-speed control net. These are manufacturing limits rather
-than a controlled-impedance guarantee. USB enumeration,
+standard 0.8/0.4 mm through-vias, and every other routed via uses the same standard
+size. A quote-stage review removed two unnecessary 0.40/0.20 mm vias from a low-speed
+control net because their 0.20 mm drills invoked high-precision fabrication charges.
+These are manufacturing limits rather than a controlled-impedance guarantee. USB enumeration,
 flashing, sustained logging, and reconnect testing on the physical prototype remain
 release gates even though the pair is referenced to continuous internal ground.
 
