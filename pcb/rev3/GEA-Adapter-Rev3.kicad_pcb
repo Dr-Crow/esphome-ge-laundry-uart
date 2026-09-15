@@ -153,6 +153,8 @@
 	(net 66 "/USB_CONN_N")
 	(net 67 "/USB_CONN_P")
 	(net 68 "/USB_PROTECTED_P")
+	(net 69 "unconnected-(U9-QOD-Pad5)")
+	(net 70 "unconnected-(U10-QOD-Pad5)")
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
 		(uuid "05b4eb67-6e4e-4a58-a071-6ba81c3bcafd")
@@ -581,7 +583,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u 25V X5R"
 			(at 0 1.68 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2959,6 +2961,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
+			(net 69 "unconnected-(U9-QOD-Pad5)")
 			(uuid "2419ac87-7471-43db-b01b-b59acccd5e3a")
 		)
 		(pad "6" smd roundrect
@@ -4386,7 +4389,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/7d87e82d7c94fc2f1ad4584993e52b86.pdf?productCode=C2894897"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C2765186"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4399,7 +4402,7 @@
 				)
 			)
 		)
-		(property "Description" "HCTL USB 2.0 Type-C receptacle, 16 contacts, top mount"
+		(property "Description" "SHOU HAN USB 2.0 Type-C receptacle, 16 contacts, top mount"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4412,7 +4415,7 @@
 				)
 			)
 		)
-		(property "MPN" "HC-TYPE-C-16P-01A"
+		(property "MPN" "TYPE-C 16PIN 2MD(073)"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4424,7 +4427,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "HCTL"
+		(property "Manufacturer" "SHOU HAN"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4436,7 +4439,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2894897"
+		(property "LCSC" "C2765186"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7294,6 +7297,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
+			(net 70 "unconnected-(U10-QOD-Pad5)")
 			(uuid "b87b8161-a084-402d-a4a6-226b4b6740a7")
 		)
 		(pad "6" smd roundrect
@@ -9550,7 +9554,7 @@
 				)
 			)
 		)
-		(property "Value" "Polyfuse"
+		(property "Value" "MF-MSMF075/24-2"
 			(at 0 2.65 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11821,7 +11825,7 @@
 				)
 			)
 		)
-		(property "Value" "Polyfuse"
+		(property "Value" "MF-MSMF075/24-2"
 			(at 0 2.65 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19979,7 +19983,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u 25V X5R"
 			(at 0 1.68 0)
 			(layer "F.Fab")
 			(hide yes)

@@ -17,6 +17,11 @@ J1 is the appliance-facing, through-hole EVERCOM `5301-8P8C` connector. A turnke
 quote must include it and show the correct orientation and through-hole assembly
 method. DNP service/test items are intentionally excluded from BOM and CPL.
 
+J4 is the SHOU HAN `TYPE-C 16PIN 2MD(073)` (`C2765186`) USB-C receptacle. Its
+official drawing was checked against the placed KiCad land pattern before the
+live Economic Assembly quote. The vendor preview must still confirm its position
+and orientation.
+
 The PCB is 88.7 mm by 40.0 mm with four copper layers. The Gerber set must contain
 `F.Cu`, `In1.Cu`, `In2.Cu`, and `B.Cu`; both inner layers are solid GND planes.
 

@@ -1,4 +1,4 @@
-ERC report (2026-09-15T04:23:57-0400, Encoding UTF8)
+ERC report (2026-09-15T05:01:59-0400, Encoding UTF8)
 Report includes: Errors, Warnings, Exclusions
 
 ***** Sheet /
@@ -133,7 +133,7 @@ Report includes: Errors, Warnings, Exclusions
     @(320.04 mm, 187.96 mm): Symbol #PWR028 [+5V]
 [multiple_net_names]: Both +5V and VCC are attached to the same items; +5V will be used in the netlist
     ; warning
-    @(335.915 mm, 175.26 mm): Symbol #PWR038 Hidden pin 1 [+5V, Power input, Line]
+    @(320.04 mm, 187.96 mm): Symbol #PWR028 Hidden pin 1 [+5V, Power input, Line]
     @(320.04 mm, 187.96 mm): Symbol U4 Hidden pin 5 [VCC, Power input, Line]
 [lib_symbol_mismatch]: Symbol '+5V' doesn't match copy in library 'power'
     ; warning

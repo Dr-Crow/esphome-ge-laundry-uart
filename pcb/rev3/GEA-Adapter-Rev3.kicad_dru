@@ -1,8 +1,8 @@
 (version 1)
 
-# KiCad's HCTL-recommended land pattern places J4 contact pads 0.1847 mm
-# from J4's own locating holes. Keep the board-wide hole clearance unchanged.
-(rule "HCTL USB-C locating-hole clearance"
+# The J4 land pattern, verified against the C2765186 drawing, places its contact
+# pads 0.1847 mm from its own locating holes. Keep board-wide clearance unchanged.
+(rule "USB-C locating-hole clearance"
   (condition "A.memberOfFootprint('Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A') || B.memberOfFootprint('Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A')")
   (constraint hole_clearance (min 0.18mm)))
 

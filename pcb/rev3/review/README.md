@@ -44,8 +44,8 @@ prototype-only until the vendor previews and the bring-up plan pass.
 
 ## PCB DRC dispositions
 
-KiCad 9.0.9 reports zero error-severity findings, zero unconnected items, and nine
-reviewed warnings:
+KiCad 9.0.9 reports zero error-severity findings, zero unconnected items, zero
+schematic-parity issues, and nine reviewed warnings:
 
 | Finding | Count | Disposition |
 | --- | ---: | --- |

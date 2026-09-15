@@ -127,14 +127,18 @@ Current sourcing review has corrected two catalog mismatches: C9 now specifies F
 1206 footprint, and C10 specifies FH `0603B104M500NT` (`C286510`), a
 100 nF, 50 V, X7R capacitor in the placed 0603 footprint. J1 consistently
 specifies the low-cost EVERCOM `5301-8P8C` (`C3097717`) and requires wave
-soldering. J4 specifies HCTL `HC-TYPE-C-16P-01A` (`C2894897`). It was
-selected because it is inexpensive and was well stocked at the time of
-review. The PCB uses KiCad 9's exact HCTL footprint
-`Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A`. Revalidate the complete
-USB cluster against the HCTL drawing after any footprint or routing change and
-again in the vendor preview before ordering.
-Do not substitute another mechanically similar connector without comparing
-its official contact, locating-hole, and shell-tab dimensions.
+soldering. J4 specifies SHOU HAN `TYPE-C 16PIN 2MD(073)` (`C2765186`), an
+Economic Assembly part with ample quoted stock. Its official drawing matches
+the existing KiCad 9 land pattern
+`Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A`: 0.50 mm contact pitch,
+5.78 mm locating-hole spacing, 8.64 mm shell-slot spacing, matching shell-slot
+positions, and an 8.94 mm by 7.35 mm body envelope. The earlier HCTL
+`HC-TYPE-C-16P-01A` (`C2894897`) has the same land pattern but was not selectable
+from JLCPCB's live Economic Assembly inventory. Revalidate the complete USB
+cluster against the selected connector drawing after any footprint or routing
+change and again in the vendor preview before ordering. Do not substitute
+another mechanically similar connector without comparing its official contact,
+locating-hole, shell-tab, and body dimensions.
 
 The current schematic exports 42 populated BOM groups covering 90 placed
 parts, and every group has an exact LCSC identity. C16/C17 use Samsung
@@ -156,7 +160,8 @@ Stock counts are volatile and are not a substitute for the assembly quote.
 | Risk | Parts | Quote-time action |
 | --- | --- | --- |
 | Mechanical single source | J1 EVERCOM `5301-8P8C` (`C3097717`) | Verify live availability, drawing, orientation, and wave-solder charge; do not substitute by appearance. |
-| No validated drop-in alternate | U2 ESP32-C3-WROOM-02-N4 (`C2934560`), J4 HCTL `HC-TYPE-C-16P-01A` (`C2894897`) | Keep exact parts or return the footprint/layout for review. |
+| No validated drop-in alternate | U2 ESP32-C3-WROOM-02-N4 (`C2934560`) | Keep the exact part or return the footprint/layout for review. |
+| Verified quote substitution | J4 SHOU HAN `TYPE-C 16PIN 2MD(073)` (`C2765186`) | Keep the selected part; the HCTL `HC-TYPE-C-16P-01A` (`C2894897`) is mechanically compatible but was unavailable to Economic Assembly during the live quote. |
 | Availability needs confirmation | C11/C13 Samsung `CL21A106KAYNNNE` (`C15850`), F3 Littelfuse `1206L050YR` (`C163512`) | Approve only a same-package, equal-or-better electrical alternate after datasheet review. |
 | Lower observed stock | D14-D17 MCC `MBR0540-TP` (`C78744`) | Recheck quantity before assembly submission; do not change diode rating or footprint without review. |
 | Exact-part stock observed | U8 `AP63205WU-7` (`C2071056`), U6 `AP2112K-3.3TRG1` (`C51118`), U9/U10 `TPS22810DBVR` (`C205990`), Q3/Q4 `CJ3407` (`C15903`), U7 `USBLC6-2SC6` (`C7519`) | Confirm the quote did not silently substitute parts. |

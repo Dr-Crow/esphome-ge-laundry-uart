@@ -95,11 +95,12 @@ The blocking diodes are one-way valves for electricity. They let either the appl
 - The generated Gerber, BOM, and placement package is a review/quote artifact. Do not
   order it until the vendor previews are reviewed and the owner approves a prototype batch.
 
-J4 now uses KiCad 9's exact HCTL footprint
-`Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A` for HCTL
-`HC-TYPE-C-16P-01A` (`C2894897`). Revalidate the complete USB cluster against the
-manufacturer drawing after any footprint or routing change. This match is not
-manufacturing approval.
+J4 uses SHOU HAN `TYPE-C 16PIN 2MD(073)` (`C2765186`) with KiCad 9's
+`Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A` land pattern. The
+selected connector drawing matches the footprint's contact row, locating holes,
+four shell slots, and body envelope. Revalidate the complete USB cluster against
+the manufacturer drawing after any footprint or routing change. This match is
+not manufacturing approval.
 
 The KiCad files are the source of truth.
 

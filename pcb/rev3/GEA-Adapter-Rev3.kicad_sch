@@ -18887,7 +18887,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/7d87e82d7c94fc2f1ad4584993e52b86.pdf?productCode=C2894897"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C2765186"
 			(at 413.81 185 0)
 			(hide yes)
 			(show_name no)
@@ -18898,7 +18898,7 @@
 				)
 			)
 		)
-		(property "Description" "HCTL USB 2.0 Type-C receptacle, 16 contacts, top mount"
+		(property "Description" "SHOU HAN USB 2.0 Type-C receptacle, 16 contacts, top mount"
 			(at 410 185 0)
 			(hide yes)
 			(show_name no)
@@ -18909,7 +18909,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "HCTL"
+		(property "Manufacturer" "SHOU HAN"
 			(at 410 185 0)
 			(effects
 				(font
@@ -18918,7 +18918,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "HC-TYPE-C-16P-01A"
+		(property "MPN" "TYPE-C 16PIN 2MD(073)"
 			(at 410 185 0)
 			(effects
 				(font
@@ -18927,7 +18927,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2894897"
+		(property "LCSC" "C2765186"
 			(at 410 185 0)
 			(effects
 				(font
