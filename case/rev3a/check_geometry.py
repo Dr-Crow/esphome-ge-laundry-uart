@@ -24,6 +24,11 @@ from enclosure import (
     LID_CEILING,
     LID_Z1,
     LID_UNDERSIDE_Z,
+    J2_ENVELOPE_TOP_Z,
+    J2_HALF_X,
+    J2_HALF_Y,
+    J2_X,
+    J2_Y,
     RJ45_ENVELOPE_TOP_Z,
     RJ45_WINDOW_Y0,
     RJ45_WINDOW_Y1,
@@ -65,6 +70,9 @@ def main() -> None:
     assert PCB_X + 15.0 == ANTENNA_X1
     assert ANTENNA_X0 >= PCB_X and ANTENNA_Y0 >= 0 and ANTENNA_Y1 <= PCB_Y
     assert LID_UNDERSIDE_Z - RJ45_ENVELOPE_TOP_Z >= 1.0
+    assert LID_UNDERSIDE_Z - J2_ENVELOPE_TOP_Z >= 3.0
+    assert J2_X - J2_HALF_X >= 0 and J2_X + J2_HALF_X <= PCB_X
+    assert J2_Y - J2_HALF_Y >= 0 and J2_Y + J2_HALF_Y <= PCB_Y
     assert RJ45_WINDOW_Y1 - RJ45_WINDOW_Y0 >= 18.0
     assert RJ45_WINDOW_Z1 - RJ45_WINDOW_Z0 >= 8.0
     assert RJ45_NOTCH_Y0 < RJ45_WINDOW_Y0 and RJ45_NOTCH_Y1 > RJ45_WINDOW_Y1
@@ -93,6 +101,7 @@ def main() -> None:
         assert blocked is None or blocked.volume < 1e-6, f"lid blocks LED view at {(x, y)}"
     print(f"RJ45 envelope: top_z={RJ45_ENVELOPE_TOP_Z:.2f} lid_underside={LID_UNDERSIDE_Z:.2f} clearance={LID_UNDERSIDE_Z - RJ45_ENVELOPE_TOP_Z:.2f} mm")
     print(f"RJ45 window: y={RJ45_WINDOW_Y0}..{RJ45_WINDOW_Y1} z={RJ45_WINDOW_Z0}..{RJ45_WINDOW_Z1} mm")
+    print(f"J2 header: top_z={J2_ENVELOPE_TOP_Z:.2f} lid_underside={LID_UNDERSIDE_Z:.2f} clearance={LID_UNDERSIDE_Z - J2_ENVELOPE_TOP_Z:.2f} mm")
 
     for name in ("rev3a_base", "rev3a_lid"):
         # STL stores each triangle's vertices independently by design;

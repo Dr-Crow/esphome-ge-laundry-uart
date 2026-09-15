@@ -69,6 +69,16 @@ RJ45_VERTICAL_ENVELOPE = RJ45_BODY_HEIGHT + RJ45_CABLE_LATCH_ALLOWANCE
 RJ45_ENVELOPE_TOP_Z = PCB_TOP_Z + RJ45_VERTICAL_ENVELOPE
 LID_UNDERSIDE_Z = LID_Z1 - LID_CEILING
 
+# J2 is the populated top-side 2x3 recovery header at (11.7, 32.5).  The
+# supplier STEP reaches 11.06 mm above its PCB datum.  Keep this as an
+# explicit enclosure envelope so a future lower lid cannot silently collide
+# with the header.  Recovery access requires removing the lid; there is no
+# external opening that could admit conductive debris during normal use.
+J2_X, J2_Y = 11.7, 32.5
+J2_HALF_X, J2_HALF_Y = 3.75, 3.82
+J2_HEIGHT_ABOVE_PCB = 11.06
+J2_ENVELOPE_TOP_Z = PCB_TOP_Z + J2_HEIGHT_ABOVE_PCB
+
 # The side window crosses the full conservative cable/port opening height.
 # The matching lid notch below clears the same insertion envelope.
 RJ45_WINDOW_X0, RJ45_WINDOW_X1 = -5.0, 0.7
