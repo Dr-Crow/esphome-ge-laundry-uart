@@ -167,6 +167,31 @@ Stock counts are volatile and are not a substitute for the assembly quote.
 | Lower observed stock | D14-D17 MCC `MBR0540-TP` (`C78744`) | Recheck quantity before assembly submission; do not change diode rating or footprint without review. |
 | Exact-part stock observed | U8 `AP63205WU-7` (`C2071056`), U6 `AP2112K-3.3TRG1` (`C51118`), U9/U10 `TPS22810DBVR` (`C205990`), Q3/Q4 `CJ3407` (`C15903`), U7 `USBLC6-2SC6` (`C7519`) | Confirm the quote did not silently substitute parts. |
 
+### Live quote checkpoint
+
+On 2026-09-15, a fresh JLCPCB Economic Assembly upload of the revisioned Gerber,
+BOM, and CPL package detected a four-layer 88.7 mm by 40.0 mm board, all 42 BOM
+groups, and all 90 placements. Five assembled boards quoted at $134.76 before
+shipping, or $26.95 per board:
+
+| Charge | Five-board quote |
+| --- | ---: |
+| Four-layer PCBs | $7.00 |
+| Assembly setup | $8.18 |
+| Stencil | $1.53 |
+| Components | $49.13 |
+| Extended-component fees | $61.40 |
+| SMT assembly | $2.38 |
+| Hand-soldering labor | $3.58 |
+| Manual assembly | $0.66 |
+| Nitrogen reflow | $0.90 |
+| Total before shipping | $134.76 |
+
+The corrected 0.30 mm thermal drills selected the standard fabrication process:
+via covering and special-hole charges were both $0.00. Shipping was not included
+in the final quote and must be checked at order time. The quote is a cost snapshot,
+not permission to order or evidence that the unbuilt design has passed bring-up.
+
 ## Release gates
 
 - Complete routing with no unintended open connections or shorts.
