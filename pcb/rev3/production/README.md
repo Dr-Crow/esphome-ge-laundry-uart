@@ -15,11 +15,12 @@ Upload the matching Gerber ZIP, BOM, and CPL as one revisioned set.
 
 A valid turnkey upload must show all 42 BOM groups and all 90 placements selected
 for assembly. Stop if the vendor marks any fitted row "do not place" or reports an
-unselected part. The 2026-09-15 refresh found temporary stock-outs for C28233,
-C28323, C17414, and C151607; the resulting $126.76 display omitted 28 placements
-and is not a complete-board quote. Review any replacement against the original
-electrical ratings, package, pinout, temperature rating, and manufacturer data
-before changing the BOM.
+unselected part. The complete 2026-09-15 match used stocked Yageo `C106243` and
+`C91185` capacitors in place of unavailable `C28233` and `C28323`, while retaining
+the available original `C17414` resistors and `C151607` buffers. Five boards quoted
+at $141.24 before shipping and tax ($28.25 each). Review every replacement against
+the original electrical ratings, package, pinout, temperature rating, and
+manufacturer data; stock and pricing remain quote-time values.
 
 J1 is the appliance-facing, through-hole EVERCOM `5301-8P8C` connector. A turnkey
 quote must include it and show the correct orientation and through-hole assembly

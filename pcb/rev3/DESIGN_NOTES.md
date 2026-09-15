@@ -179,37 +179,36 @@ Stock counts are volatile and are not a substitute for the assembly quote.
 
 On 2026-09-15, a fresh JLCPCB Economic Assembly upload of the revisioned Gerber,
 BOM, and CPL package detected a four-layer 88.7 mm by 40.0 mm board, all 42 BOM
-groups, and all 90 placements. Five assembled boards quoted at $134.76 before
-shipping, or $26.95 per board:
+groups, and all 90 placements. Five assembled boards quoted at $141.24 before
+shipping and tax, or $28.25 per board:
 
 | Charge | Five-board quote |
 | --- | ---: |
 | Four-layer PCBs | $7.00 |
 | Assembly setup | $8.18 |
 | Stencil | $1.53 |
-| Components | $49.13 |
-| Extended-component fees | $61.40 |
-| SMT assembly | $2.38 |
+| Components | $49.41 |
+| Extended-component fees | $67.54 |
+| SMT assembly | $2.44 |
 | Hand-soldering labor | $3.58 |
 | Manual assembly | $0.66 |
 | Nitrogen reflow | $0.90 |
-| Total before shipping | $134.76 |
+| Total before shipping and tax | $141.24 |
 
 The corrected 0.30 mm thermal drills selected the standard fabrication process:
 via covering and special-hole charges were both $0.00. Shipping was not included
 in the final quote and must be checked at order time. The quote is a cost snapshot,
 not permission to order or evidence that the unbuilt design has passed bring-up.
 
-A same-day re-upload after the reset/boot and silkscreen improvements produced an
-incomplete $126.76 comparison, not a lower complete-board price. JLCPCB had no
-assembly stock for four catalog identities used by 28 placements: C28233 (100 nF,
-100 V), C28323 (1 uF, 50 V), C17414 (10 kohm), and C151607 (74LVC2G07). Marking
-those parts "do not place" removed $8.00 from the displayed total, which explains
-the apparent reduction. The physical improvements do not change the board outline,
-layer count, drill sizes, BOM count, or placement count, so their manufacturing
-cost delta is $0 when quoted with the same available parts. Retain $134.76 as the
-last complete comparison and resolve each stock-out with an electrically and
-mechanically reviewed drop-in part before requesting a new complete quote.
+The final upload replaced the unavailable 100 nF, 100 V and 1 uF, 50 V capacitor
+families with stocked Yageo `CC0805KKX7R0BB104` (`C106243`) and
+`CC0805KKX7R9BB105` (`C91185`) parts in the same 0805 footprints. Their voltage,
+dielectric, and package requirements match the design. A catalog refresh also
+showed that the original UNI-ROYAL 10 kohm resistor (`C17414`) and Diodes
+Incorporated `74LVC2G07W6-7` buffer (`C151607`) were available, so they were kept
+instead of introducing unnecessary substitutions. Stock remains volatile; repeat
+the exact-part match immediately before ordering and stop if any fitted row is
+unselected or marked do not place.
 
 ## Release gates
 

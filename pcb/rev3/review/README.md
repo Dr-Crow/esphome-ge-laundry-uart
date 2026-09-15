@@ -7,7 +7,9 @@ The package includes a one-page schematic PDF/PNG, top and mirrored-bottom coppe
 plots, both internal-plane plots, a top assembly plot with DNP markings, 3D top,
 bottom, and side renders, ERC/DRC reports, and plated/non-plated drill maps and
 reports. J1 uses a deliberately simplified STEP envelope derived from its
-manufacturer drawing because the catalog part has no official 3D model; use the
+manufacturer drawing because the catalog part has no official 3D model. Its socket
+opening is oriented at the left board edge and its envelope matches the drawing's
+outer dimensions, but internal latch/contact geometry is not modeled; use the
 drawing and a physical connector for final mechanical qualification.
 
 ## Review order

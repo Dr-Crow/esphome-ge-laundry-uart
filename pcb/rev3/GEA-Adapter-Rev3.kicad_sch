@@ -10365,7 +10365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C28233"
+		(property "Description" "C106243"
 			(at 36.83 140.97 0)
 			(effects
 				(font
@@ -10374,7 +10374,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 36.83 140.97 90)
 			(effects
 				(font
@@ -10383,7 +10383,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 36.83 140.97 0)
 			(effects
 				(font
@@ -10392,7 +10392,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 36.83 140.97 0)
 			(effects
 				(font
@@ -10459,7 +10459,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C28233"
+		(property "Description" "C106243"
 			(at 66.04 168.91 0)
 			(effects
 				(font
@@ -10468,7 +10468,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 66.04 168.91 90)
 			(effects
 				(font
@@ -10477,7 +10477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 66.04 168.91 0)
 			(effects
 				(font
@@ -10486,7 +10486,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 66.04 168.91 0)
 			(effects
 				(font
@@ -11017,7 +11017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C28233"
+		(property "Description" "C106243"
 			(at 363.22 53.34 0)
 			(effects
 				(font
@@ -11026,7 +11026,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 363.22 53.34 0)
 			(effects
 				(font
@@ -11035,7 +11035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 363.22 53.34 0)
 			(effects
 				(font
@@ -11044,7 +11044,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 363.22 53.34 0)
 			(effects
 				(font
@@ -11355,7 +11355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C28233"
+		(property "Description" "C106243"
 			(at 64.77 36.83 0)
 			(effects
 				(font
@@ -11364,7 +11364,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 64.77 36.83 90)
 			(effects
 				(font
@@ -11373,7 +11373,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 64.77 36.83 0)
 			(effects
 				(font
@@ -11382,7 +11382,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 64.77 36.83 0)
 			(effects
 				(font
@@ -13317,7 +13317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C28233"
+		(property "Description" "C106243"
 			(at 314.96 53.34 0)
 			(effects
 				(font
@@ -13326,7 +13326,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 314.96 53.34 0)
 			(effects
 				(font
@@ -13335,7 +13335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 314.96 53.34 0)
 			(effects
 				(font
@@ -13344,7 +13344,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 314.96 53.34 0)
 			(effects
 				(font
@@ -13831,7 +13831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C28233"
+		(property "Description" "C106243"
 			(at 87.63 36.83 0)
 			(effects
 				(font
@@ -13840,7 +13840,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 87.63 36.83 90)
 			(effects
 				(font
@@ -13849,7 +13849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 87.63 36.83 0)
 			(effects
 				(font
@@ -13858,7 +13858,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 87.63 36.83 0)
 			(effects
 				(font
@@ -14086,7 +14086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Samsung CL21B105KBFNNNE 1 uF 50 V X7R 0805 MLCC"
+		(property "Description" "Yageo CC0805KKX7R9BB105 1 uF 50 V X7R 0805 MLCC"
 			(at 37.465 168.275 0)
 			(effects
 				(font
@@ -14095,7 +14095,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28323"
+		(property "LCSC" "C91185"
 			(at 37.465 168.275 90)
 			(effects
 				(font
@@ -14105,7 +14105,7 @@
 			)
 		)
 
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Yageo"
 			(at 37.465 168.275 0)
 			(effects
 				(font
@@ -14114,7 +14114,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B105KBFNNNE"
+		(property "MPN" "CC0805KKX7R9BB105"
 			(at 37.465 168.275 0)
 			(effects
 				(font
@@ -16218,7 +16218,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C28233"
+		(property "Description" "C106243"
 			(at 41.91 36.83 0)
 			(effects
 				(font
@@ -16227,7 +16227,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 41.91 36.83 90)
 			(effects
 				(font
@@ -16236,7 +16236,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 41.91 36.83 0)
 			(effects
 				(font
@@ -16245,7 +16245,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 41.91 36.83 0)
 			(effects
 				(font
@@ -17862,7 +17862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C28233"
+		(property "Description" "C106243"
 			(at 50.8 167.64 0)
 			(effects
 				(font
@@ -17871,7 +17871,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 50.8 167.64 90)
 			(effects
 				(font
@@ -17880,7 +17880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 50.8 167.64 0)
 			(effects
 				(font
@@ -17889,7 +17889,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 50.8 167.64 0)
 			(effects
 				(font
@@ -22300,7 +22300,7 @@
 				)
 			)
 		)
-		(property "Description" "Samsung CL21B105KBFNNNE 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release"
+		(property "Description" "Yageo CC0805KKX7R9BB105 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release"
 			(at 228.6 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -22311,7 +22311,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C28323"
+		(property "LCSC" "C91185"
 			(at 228.6 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -22322,7 +22322,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Yageo"
 			(at 228.6 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -22333,7 +22333,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21B105KBFNNNE"
+		(property "MPN" "CC0805KKX7R9BB105"
 			(at 228.6 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -22412,7 +22412,7 @@
 				)
 			)
 		)
-		(property "Description" "Samsung CL21B105KBFNNNE 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release"
+		(property "Description" "Yageo CC0805KKX7R9BB105 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release"
 			(at 228.6 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -22423,7 +22423,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C28323"
+		(property "LCSC" "C91185"
 			(at 228.6 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -22434,7 +22434,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Yageo"
 			(at 228.6 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -22445,7 +22445,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21B105KBFNNNE"
+		(property "MPN" "CC0805KKX7R9BB105"
 			(at 228.6 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -22985,7 +22985,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F1002T5E_C17414.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414"
 			(at 314.96 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -22996,7 +22996,7 @@
 				)
 			)
 		)
-		(property "Description" "10 kOhm, 1%, 0805; JLCPCB C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
 			(at 314.96 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -23089,7 +23089,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F1002T5E_C17414.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414"
 			(at 325.12 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -23100,7 +23100,7 @@
 				)
 			)
 		)
-		(property "Description" "10 kOhm, 1%, 0805; JLCPCB C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
 			(at 325.12 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -23193,7 +23193,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F1002T5E_C17414.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414"
 			(at 345.44 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -23204,7 +23204,7 @@
 				)
 			)
 		)
-		(property "Description" "10 kOhm, 1%, 0805; JLCPCB C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
 			(at 345.44 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -23299,7 +23299,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_Samsung-Electro-Mechanics-CL21B104KCFNNNE_C28233.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Yageo-CC0805KKX7R0BB104/C106243"
 			(at 269.24 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -23310,7 +23310,7 @@
 				)
 			)
 		)
-		(property "Description" "100 nF, 100 V, X7R, 0805; JLCPCB C28233"
+		(property "Description" "100 nF, 100 V, X7R, 10%, 0805; JLCPCB C106243"
 			(at 269.24 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -23321,7 +23321,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 0 0 0)
 			(effects
 				(font
@@ -23330,7 +23330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(effects
 				(font
@@ -23339,7 +23339,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 0 0 0)
 			(effects
 				(font
@@ -23405,7 +23405,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_Samsung-Electro-Mechanics-CL21B104KCFNNNE_C28233.pdf"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Yageo-CC0805KKX7R0BB104/C106243"
 			(at 269.24 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -23416,7 +23416,7 @@
 				)
 			)
 		)
-		(property "Description" "100 nF, 100 V, X7R, 0805; JLCPCB C28233"
+		(property "Description" "100 nF, 100 V, X7R, 10%, 0805; JLCPCB C106243"
 			(at 269.24 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -23427,7 +23427,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C28233"
+		(property "LCSC" "C106243"
 			(at 0 0 0)
 			(effects
 				(font
@@ -23436,7 +23436,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(effects
 				(font
@@ -23445,7 +23445,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B104KCFNNNE"
+		(property "MPN" "CC0805KKX7R0BB104"
 			(at 0 0 0)
 			(effects
 				(font

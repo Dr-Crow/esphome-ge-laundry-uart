@@ -58,6 +58,27 @@ to pads 1-2 for FirstBuild-compatible mapping; changing it is an engineering rew
 that requires cutting that bridge and joining pads 2-3. Validate all eight power states
 with current-limited supplies before any appliance connection.
 
+### Buttons and indicators
+
+- `SW1 RESET` resets the ESP32-C3. `SW2 BOOT` is only needed to force the ROM
+  downloader when automatic USB flashing cannot start. Before the reset/boot cleanup,
+  both switches acted on boot-strapping pins and the board had no dedicated reset
+  button.
+- The green LED is the Wi-Fi-connected indicator.
+- The yellow LED is the GEA-bus-connected indicator.
+- The red LED is currently exposed to ESPHome/Home Assistant as a user-controlled
+  diagnostic light. It is reserved for a future fault pattern rather than adding a
+  fourth LED or silently changing an existing entity's behavior.
+
+USB-C is the normal programming and logging interface. The six gold pads and three
+alignment holes at J3 form a reusable Tag-Connect `TC2030-IDC-NL` service interface;
+they are contacted by spring pins, so the production board needs no soldered header.
+The recovery cable terminates in a 2-by-3, 0.1-inch IDC socket and must be broken out
+or rewired to the documented J3 pinout before connecting a 3.3 V USB-to-UART adapter.
+Do not attach a generic Tag-Connect USB/FTDI cable directly: its standard pin order
+does not match J3. See [BRINGUP.md](BRINGUP.md#recovery-flashing-when-usb-is-unavailable)
+for the exact pin map and power precautions.
+
 Status: digitally complete for review and quoting, but not electrically qualified. Do not order or connect this board to an appliance until the vendor previews and prototype gates below pass.
 
 Revision 3A keeps the ESP32-C3-WROOM-02 module used by Revision 2. The module includes its Wi-Fi antenna. The board adds easier USB-C programming and replaces the older power regulators with parts better suited to appliance power and Wi-Fi current peaks.
@@ -99,8 +120,10 @@ The blocking diodes are one-way valves for electricity. They let either the appl
   warnings are documented in the review package. ERC reports zero errors and 55
   reviewed legacy/grid warnings; see `review/README.md` for their dispositions.
 - The schematic BOM contains 42 purchasing groups / 90 fitted parts and every group
-  has an exact LCSC identifier. Stock, substitutions, and assembly charges still
-  require a live quote.
+  has an exact LCSC identifier. A complete JLCPCB Economic Assembly match on
+  2026-09-15 selected every group and placement and quoted five boards at $141.24
+  before shipping and tax ($28.25 each). Stock and pricing must be refreshed at
+  order time.
 - The generated Gerber, BOM, and placement package is a review/quote artifact. Do not
   order it until the vendor previews are reviewed and the owner approves a prototype batch.
 
