@@ -88,6 +88,24 @@ be installed on every board. Open the enclosure to reach it; the current case ha
 no external service opening. Use a TC2030-compatible cable or pogo fixture and a
 3.3 V USB-to-UART adapter. Never use 5 V UART or RS-232 signalling.
 
+The verified accessory chain is a Tag-Connect `TC2030-IDC-NL` cable, a 2-by-3 IDC
+breakout, and a 3.3 V USB-to-UART adapter. The IDC cable is only a mechanical probe:
+wire each breakout terminal to the signal named below. Do not plug a standard
+Tag-Connect USB or FTDI cable directly into J3 because its fixed pin order is
+different and may put 5 V on `EN`. USB-C remains the first-choice interface; buy
+the recovery tools only for repeated board development or if USB hardware fails.
+
+Suggested parts are the [Tag-Connect TC2030-IDC-NL](https://www.tag-connect.com/product/tc2030-idc-nl),
+a [2-by-3 IDC screw-terminal breakout](https://www.schmalztech.com/products/2x3-header-idc-connector-breakout-board-with-rubber-feet),
+and a reputable 3.3 V USB-to-UART adapter such as the
+[Waveshare CP2102 USB-UART Board (USB-C)](https://www.waveshare.com/cp2102-usb-uart-board-type-c.htm).
+The Waveshare board includes a jumper cable and exposes its UART signals on
+installed pin headers; set its voltage selection to 3.3 V before connection.
+The breakout keeps the project-specific J3 wiring visible and reconfigurable.
+The integrated
+[TC2030-FTDI-3V3 cable](https://www.tag-connect.com/product/tc2030-ftdi-ttl-232r-3v3)
+is not pin-compatible with this board and must not be connected directly.
+
 | J3 pin | Board signal | Recovery connection |
 | ---: | --- | --- |
 | 1 | `EN` | Pull low briefly, then release, to reset |
