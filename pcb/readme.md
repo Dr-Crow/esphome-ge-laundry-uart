@@ -16,6 +16,7 @@
 | 2.0 | Built with known issues | Changed to the ESP32-C3 module and redesigned the board for factory assembly. RX/TX are mislabeled and U1 can cause boot loops. |
 | 2.1 | Built with known issues | Refined the Rev 2 layout, protection-diode footprint, power/test connections, and manufacturing files. It retains the Rev 2.0 RX/TX and U1 problems. |
 | 2.2 | Manufacturing candidate | Corrects the two Rev 2.x problems without redesigning the circuit. Its files pass package-consistency checks, but known legacy ERC/DRC findings remain and no physical Rev 2.2 board has been tested. See the [Rev 2.2 ordering and validation guide](rev2.2/README.md). |
+| 3A | Review-ready prototype design | Keeps the ESP32-C3 module while adding USB-C, automatic pin-1/pin-3 appliance-power selection, dedicated reset/boot buttons, three status LEDs, and a populated recovery header. It remains unqualified until independent review, vendor previews, and prototype bring-up pass. See the [Rev 3A board guide](rev3/BOARD_GUIDE.md). |
 
 ## Manufacturing file guide
 

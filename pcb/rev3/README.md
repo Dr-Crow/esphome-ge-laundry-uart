@@ -1,5 +1,9 @@
 # Revision 3A PCB
 
+New to the board? Start with the illustrated [Revision 3A board guide](BOARD_GUIDE.md).
+Reviewers should use the self-contained [review package](review/README.md) and its
+[release-readiness checklist](review/REVIEW_CHECKLIST.md).
+
 ## Automatic power front end
 
 Revision 3A is a no-jumper design. The proposed front end gives each appliance input an independent fuse, reverse-protection stage, and controlled switch:

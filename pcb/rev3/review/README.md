@@ -4,13 +4,40 @@ The KiCad schematic and PCB are authoritative. The files in this directory are
 derived review artifacts and must be regenerated after either source changes.
 
 The package includes a one-page schematic PDF/PNG, top and mirrored-bottom copper
-plots, both internal-plane plots, a top assembly plot with DNP markings, 3D top,
-bottom, and side renders, ERC/DRC reports, and plated/non-plated drill maps and
-reports. J1 uses a deliberately simplified STEP envelope derived from its
+plots, both internal-plane plots, clean top and bottom assembly drawings, a
+dimensioned outline, straight-down and isometric 3D views, ERC/DRC reports, and
+plated/non-plated drill maps and reports. The bottom assembly drawing is
+intentionally sparse because every fitted component is on the top side.
+
+| Artifact | Purpose |
+| --- | --- |
+| `schematic.pdf` / `schematic.png` | Light-background, grid-free schematic with revisioned title block |
+| `top.png` / `bottom.png` | Fabricated outer-layer views; bottom is mirrored for inspection |
+| `inner1.png` / `inner2.png` | Individual internal ground-plane views |
+| `assembly-top.pdf` / `assembly-top.png` | Top fabrication outlines and reference designators without value-text clutter |
+| `assembly-bottom.pdf` / `assembly-bottom.png` | Bottom fabrication and hole view; no fitted bottom components |
+| `dimensions.pdf` / `dimensions.png` | 88.70 mm by 40.00 mm outline and hole locations |
+| `3d-top.png` | Mandatory straight-down populated-board view in top-layer orientation |
+| `3d-isometric.png` | Optional angled view for component-height and connector inspection |
+| `3d-bottom.png` / `3d-side.png` | Underside and connector-height inspection |
+| `drc.*` / `erc.*` | Current KiCad 9.0.9 report outputs and reviewed warning counts |
+| `*-drl_map.pdf` / `drill.rpt` | Plated and non-plated drill review |
+
+All 91 fitted references resolve to a 3D model. SW1/SW2 and F1/F2 use repository-
+local exact-part models because their old KiCad-library filenames are not present
+in the current KiCad 9 installation. J1 uses a deliberately simplified STEP
+envelope derived from its
 manufacturer drawing because the catalog part has no official 3D model. Its socket
 opening is oriented at the left board edge and its envelope matches the drawing's
 outer dimensions, but internal latch/contact geometry is not modeled; use the
 drawing and a physical connector for final mechanical qualification.
+
+Use [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md) to track the remaining human,
+vendor-preview, and physical-prototype gates. Before publishing the package to a
+community, confirm that community's current posting rules and use separate direct
+links for each artifact rather than expecting reviewers to navigate the repository.
+The vendor-neutral [review brief](REVIEW_REQUEST.md) separates schematic questions
+from layout/BOM questions and summarizes all known untested claims.
 
 ## Review order
 
@@ -24,7 +51,9 @@ drawing and a physical connector for final mechanical qualification.
 4. Check every fitted BOM row for value, package, rating, exact manufacturer part
    number, and sourcing identifier. Confirm that the CPL covers the same 91 fitted
    parts.
-5. Separately inspect the vendor's board, drill, parts, and placement previews.
+5. Use `dimensions.png` and the enclosure models to check the outline, mounting
+   holes, connector openings, button height, J2 clearance, and antenna keepout.
+6. Separately inspect the vendor's board, drill, parts, and placement previews.
 
 The schematic review follows the presentation guidance from the
 [r/PrintedCircuitBoard schematic](https://www.reddit.com/r/PrintedCircuitBoard/wiki/schematic_review_tips/),
