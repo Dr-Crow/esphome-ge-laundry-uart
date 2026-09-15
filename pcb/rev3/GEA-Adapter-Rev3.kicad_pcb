@@ -8,8 +8,10 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "GEA Adapter")
-		(rev "Rev3A")
+		(title "GE Appliance Adapter - Rev3A")
+		(date "2026-09-15")
+		(rev "3A")
+		(company "Dr-Crow")
 		(comment 1 "UNQUALIFIED PROTOTYPE - CURRENT-LIMITED BENCH TEST ONLY")
 	)
 	(layers
@@ -1524,7 +1526,7 @@
 			(uuid "1743a394-1757-498c-9fba-880c29ccbf67")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T_XKB_TS-1187A.step"
+		(model "${KIPRJMOD}/models/SW1-SW2-XKB-TS-1187A-B-A-B.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8217,7 +8219,7 @@
 			(uuid "1a6b8661-18d9-4ce0-a75a-a60f8b978dbe")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_Push_1P1T_XKB_TS-1187A.step"
+		(model "${KIPRJMOD}/models/SW1-SW2-XKB-TS-1187A-B-A-B.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9699,7 +9701,7 @@
 			(uuid "6fb648fe-cc1c-4743-8cc3-14aa4517b5b7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1812_4532Metric.step"
+		(model "${KIPRJMOD}/models/F1-F2-Bourns-MF-MSMF075-24-2.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11988,7 +11990,7 @@
 			(uuid "f2409009-e46b-4fcc-b2d7-6a4226166447")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1812_4532Metric.step"
+		(model "${KIPRJMOD}/models/F1-F2-Bourns-MF-MSMF075-24-2.step"
 			(offset
 				(xyz 0 0 0)
 			)

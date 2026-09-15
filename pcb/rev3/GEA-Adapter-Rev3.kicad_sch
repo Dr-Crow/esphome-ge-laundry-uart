@@ -8,6 +8,8 @@
 		(title "GE Appliance Adapter - Rev3A")
 		(date "2026-09-15")
 		(rev "3A")
+		(company "Dr-Crow")
+		(comment 1 "UNQUALIFIED PROTOTYPE - REVIEW BEFORE FABRICATION")
 	)
 	(lib_symbols
 		(symbol "74xGxx:74LVC2G07"
