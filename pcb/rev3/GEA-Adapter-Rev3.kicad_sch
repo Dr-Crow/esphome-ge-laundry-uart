@@ -26461,7 +26461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17513"
+		(property "Description" "UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 271.78 168.91 0)
 			(effects
 				(font
@@ -26472,6 +26472,25 @@
 		)
 		(property "LCSC" "C17513"
 			(at 271.78 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 271.78 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 271.78 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26511,7 +26530,7 @@
 				)
 			)
 		)
-		(property "Value" "Polyfuse"
+		(property "Value" "MF-MSMF075/24-2"
 			(at 151.5364 29.845 90)
 			(effects
 				(font
@@ -26529,7 +26548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C208467.html"
 			(at 154.94 29.845 0)
 			(effects
 				(font
@@ -26538,7 +26557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C12604"
+		(property "Description" "Bourns MF-MSMF075/24-2 PTC resettable fuse; 750 mA hold, 1.5 A trip, 24 V, -40 to 85 C; 1812"
 			(at 154.94 29.845 0)
 			(effects
 				(font
@@ -26547,8 +26566,26 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C12604"
+		(property "LCSC" "C208467"
 			(at 154.94 29.845 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 154.94 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF-MSMF075/24-2"
+			(at 154.94 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26703,7 +26740,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u 25V X5R"
 			(at 305.181 54.483 0)
 			(effects
 				(font
@@ -26721,7 +26758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC_C15850.html"
 			(at 302.26 53.34 0)
 			(effects
 				(font
@@ -26730,7 +26767,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C15850"
+		(property "Description" "Samsung CL21A106KAYNNNE 10 uF 25 V X5R 0805 MLCC"
 			(at 302.26 53.34 0)
 			(effects
 				(font
@@ -26740,6 +26777,24 @@
 			)
 		)
 		(property "LCSC" "C15850"
+			(at 302.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung"
+			(at 302.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 302.26 53.34 0)
 			(effects
 				(font
@@ -26806,7 +26861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17713"
+		(property "Description" "UNI-ROYAL 0805W8F4701T5E 4.7 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 344.805 133.35 0)
 			(effects
 				(font
@@ -26815,8 +26870,27 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17713"
+		(property "LCSC" "C17673"
 			(at 344.805 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 344.805 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F4701T5E"
+			(at 344.805 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26900,6 +26974,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 36.83 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B104KCFNNNE"
+			(at 36.83 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5e844299-5583-4726-abff-79fc5e2e1885")
 		)
@@ -26969,6 +27061,24 @@
 		)
 		(property "LCSC" "C28233"
 			(at 66.04 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 66.04 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B104KCFNNNE"
+			(at 66.04 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27101,7 +27211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 125.73 162.56 0)
 			(effects
 				(font
@@ -27112,6 +27222,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 125.73 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 125.73 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 125.73 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27177,7 +27306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 335.915 139.7 0)
 			(effects
 				(font
@@ -27188,6 +27317,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 335.915 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 335.915 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 335.915 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27365,7 +27513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 125.73 160.02 0)
 			(effects
 				(font
@@ -27376,6 +27524,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 125.73 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 125.73 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 125.73 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27459,6 +27626,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 363.22 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B104KCFNNNE"
+			(at 363.22 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84ac5743-5b11-4850-8b90-9004371e928c")
 		)
@@ -27520,7 +27705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DNP Tag-Connect TC2030 programming footprint; pads present on PCB; do not install cable during normal operation"
 			(at 49.53 232.41 0)
 			(effects
 				(font
@@ -27599,7 +27784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17513"
+		(property "Description" "UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 364.49 185.42 0)
 			(effects
 				(font
@@ -27610,6 +27795,25 @@
 		)
 		(property "LCSC" "C17513"
 			(at 364.49 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 364.49 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 364.49 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27753,6 +27957,24 @@
 		)
 		(property "LCSC" "C28233"
 			(at 64.77 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 64.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B104KCFNNNE"
+			(at 64.77 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28123,7 +28345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17557"
+		(property "Description" "UNI-ROYAL 0805W8F2200T5E 220 Ω 1% 1/8 W 0805 thick-film resistor"
 			(at 140.97 177.8 0)
 			(effects
 				(font
@@ -28134,6 +28356,25 @@
 		)
 		(property "LCSC" "C17557"
 			(at 140.97 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 140.97 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F2200T5E"
+			(at 140.97 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28594,7 +28835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17539"
+		(property "Description" "RALEC RTT052203FTP 220 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 335.915 179.705 0)
 			(effects
 				(font
@@ -28603,8 +28844,27 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17539"
+		(property "LCSC" "C104108"
 			(at 335.915 179.705 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "RALEC"
+			(at 335.915 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RTT052203FTP"
+			(at 335.915 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28908,7 +29168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17557"
+		(property "Description" "UNI-ROYAL 0805W8F2200T5E 220 Ω 1% 1/8 W 0805 thick-film resistor"
 			(at 135.89 177.8 0)
 			(effects
 				(font
@@ -28919,6 +29179,25 @@
 		)
 		(property "LCSC" "C17557"
 			(at 135.89 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 135.89 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F2200T5E"
+			(at 135.89 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28984,7 +29263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17557"
+		(property "Description" "UNI-ROYAL 0805W8F2200T5E 220 Ω 1% 1/8 W 0805 thick-film resistor"
 			(at 127 137.16 0)
 			(effects
 				(font
@@ -28995,6 +29274,25 @@
 		)
 		(property "LCSC" "C17557"
 			(at 127 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 127 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F2200T5E"
+			(at 127 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29101,7 +29399,7 @@
 				)
 			)
 		)
-		(property "Value" "Polyfuse"
+		(property "Value" "MF-MSMF075/24-2"
 			(at 148.59 59.2836 90)
 			(effects
 				(font
@@ -29119,7 +29417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C208467.html"
 			(at 148.59 55.88 0)
 			(effects
 				(font
@@ -29128,7 +29426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C12604"
+		(property "Description" "Bourns MF-MSMF075/24-2 PTC resettable fuse; 750 mA hold, 1.5 A trip, 24 V, -40 to 85 C; 1812"
 			(at 148.59 55.88 0)
 			(effects
 				(font
@@ -29137,8 +29435,26 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C12604"
+		(property "LCSC" "C208467"
 			(at 148.59 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 148.59 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF-MSMF075/24-2"
+			(at 148.59 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29270,7 +29586,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17513"
+		(property "Description" "UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 271.78 153.67 0)
 			(effects
 				(font
@@ -29281,6 +29597,25 @@
 		)
 		(property "LCSC" "C17513"
 			(at 271.78 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 271.78 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 271.78 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29346,7 +29681,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17513"
+		(property "Description" "UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 362.585 126.365 0)
 			(effects
 				(font
@@ -29357,6 +29692,25 @@
 		)
 		(property "LCSC" "C17513"
 			(at 362.585 126.365 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 362.585 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 362.585 126.365 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29572,6 +29926,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 313.69 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B104KCFNNNE"
+			(at 313.69 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "85fdd679-d8ed-441c-a960-1f3a858f1d5c")
 		)
@@ -29766,7 +30138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Reserved DNP solder jumper; footprint present on PCB but left open; do not bridge without explicit test plan"
 			(at 104.14 157.48 0)
 			(effects
 				(font
@@ -29839,7 +30211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Schematic-only diagnostic header; not placed on PCB (on_board no); do not install"
 			(at 49.53 212.09 0)
 			(effects
 				(font
@@ -30068,6 +30440,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 87.63 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B104KCFNNNE"
+			(at 87.63 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d99eef68-2284-4714-bfb4-04501dd18482")
 		)
@@ -30192,7 +30582,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 289.56 137.16 0)
 			(effects
 				(font
@@ -30203,6 +30593,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 289.56 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 289.56 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 289.56 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30268,7 +30677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C28323"
+		(property "Description" "Samsung CL21B105KBFNNNE 1 uF 50 V X7R 0805 MLCC"
 			(at 37.465 168.275 0)
 			(effects
 				(font
@@ -30279,6 +30688,25 @@
 		)
 		(property "LCSC" "C28323"
 			(at 37.465 168.275 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "Samsung"
+			(at 37.465 168.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KBFNNNE"
+			(at 37.465 168.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30410,7 +30838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17539"
+		(property "Description" "RALEC RTT052203FTP 220 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 335.915 118.745 0)
 			(effects
 				(font
@@ -30419,8 +30847,27 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17539"
+		(property "LCSC" "C104108"
 			(at 335.915 118.745 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "RALEC"
+			(at 335.915 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RTT052203FTP"
+			(at 335.915 118.745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30486,7 +30933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 280.67 179.07 0)
 			(effects
 				(font
@@ -30497,6 +30944,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 280.67 179.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 280.67 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 280.67 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31105,7 +31571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17513"
+		(property "Description" "UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 364.49 167.64 0)
 			(effects
 				(font
@@ -31116,6 +31582,25 @@
 		)
 		(property "LCSC" "C17513"
 			(at 364.49 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 364.49 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 364.49 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31279,7 +31764,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 127 134.62 0)
 			(effects
 				(font
@@ -31290,6 +31775,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 127 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 127 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31598,7 +32102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C318884"
+		(property "Description" "XKB Connection TS-1187A-B-A-B tactile switch 12 V 50 mA SMD"
 			(at 161.29 187.96 0)
 			(effects
 				(font
@@ -31609,6 +32113,24 @@
 		)
 		(property "LCSC" "C318884"
 			(at 161.29 187.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XKB Connection"
+			(at 161.29 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TS-1187A-B-A-B"
+			(at 161.29 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32156,7 +32678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 335.915 160.02 0)
 			(effects
 				(font
@@ -32167,6 +32689,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 335.915 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 335.915 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 335.915 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32243,6 +32784,24 @@
 		)
 		(property "LCSC" "C28233"
 			(at 41.91 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 41.91 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B104KCFNNNE"
+			(at 41.91 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32521,7 +33080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17513"
+		(property "Description" "UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 271.78 163.83 0)
 			(effects
 				(font
@@ -32532,6 +33091,25 @@
 		)
 		(property "LCSC" "C17513"
 			(at 271.78 163.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 271.78 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 271.78 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32597,7 +33175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17513"
+		(property "Description" "UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 271.78 158.75 0)
 			(effects
 				(font
@@ -32608,6 +33186,25 @@
 		)
 		(property "LCSC" "C17513"
 			(at 271.78 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 271.78 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1001T5E"
+			(at 271.78 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33013,7 +33610,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u 25V X5R"
 			(at 354.711 54.483 0)
 			(effects
 				(font
@@ -33040,7 +33637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C15850"
+		(property "Description" "Samsung CL21A106KAYNNNE 10 uF 25 V X5R 0805 MLCC"
 			(at 351.79 53.34 0)
 			(effects
 				(font
@@ -33050,6 +33647,24 @@
 			)
 		)
 		(property "LCSC" "C15850"
+			(at 351.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung"
+			(at 351.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 351.79 53.34 0)
 			(effects
 				(font
@@ -33185,7 +33800,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C318884"
+		(property "Description" "XKB Connection TS-1187A-B-A-B tactile switch 12 V 50 mA SMD"
 			(at 166.37 187.96 0)
 			(effects
 				(font
@@ -33196,6 +33811,24 @@
 		)
 		(property "LCSC" "C318884"
 			(at 166.37 187.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XKB Connection"
+			(at 166.37 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TS-1187A-B-A-B"
+			(at 166.37 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33525,7 +34158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 280.67 137.16 0)
 			(effects
 				(font
@@ -33536,6 +34169,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 280.67 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 280.67 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 280.67 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33765,6 +34417,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 50.8 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B104KCFNNNE"
+			(at 50.8 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "316be0f3-bbf6-424d-9e3e-2ba2b2c1bf42")
 		)
@@ -33929,7 +34599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 294.64 137.16 0)
 			(effects
 				(font
@@ -33940,6 +34610,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 294.64 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 294.64 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 294.64 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34005,7 +34694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17414"
+		(property "Description" "UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor"
 			(at 127 144.78 0)
 			(effects
 				(font
@@ -34016,6 +34705,25 @@
 		)
 		(property "LCSC" "C17414"
 			(at 127 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 127 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0805W8F1002T5E"
+			(at 127 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38464,7 +39172,7 @@
 				)
 			)
 		)
-		(property "Description" "C28323"
+		(property "Description" "Samsung CL21B105KBFNNNE 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release"
 			(at 229.87 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -38476,6 +39184,28 @@
 			)
 		)
 		(property "LCSC" "C28323"
+			(at 229.87 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung"
+			(at 229.87 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21B105KBFNNNE"
 			(at 229.87 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -38554,7 +39284,7 @@
 				)
 			)
 		)
-		(property "Description" "C28323"
+		(property "Description" "Samsung CL21B105KBFNNNE 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release"
 			(at 229.87 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -38566,6 +39296,28 @@
 			)
 		)
 		(property "LCSC" "C28323"
+			(at 229.87 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung"
+			(at 229.87 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21B105KBFNNNE"
 			(at 229.87 54.61 0)
 			(hide yes)
 			(show_name no)
