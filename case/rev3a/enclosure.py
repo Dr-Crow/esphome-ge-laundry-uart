@@ -64,11 +64,23 @@ RJ45_VERTICAL_ENVELOPE = RJ45_BODY_HEIGHT + RJ45_CABLE_LATCH_ALLOWANCE
 RJ45_ENVELOPE_TOP_Z = PCB_TOP_Z + RJ45_VERTICAL_ENVELOPE
 LID_UNDERSIDE_Z = LID_Z1 - LID_CEILING
 
-# The side window crosses the full conservative cable/port opening height;
-# the lid skirt begins at x=-5..-4.25 and therefore cannot cover this window.
+# The side window crosses the full conservative cable/port opening height.
+# The matching lid notch below clears the same insertion envelope.
 RJ45_WINDOW_X0, RJ45_WINDOW_X1 = -5.0, 0.7
 RJ45_WINDOW_Y0, RJ45_WINDOW_Y1 = 3.5, 25.5
 RJ45_WINDOW_Z0, RJ45_WINDOW_Z1 = 2.0, BASE_Z1 + 0.2
+RJ45_NOTCH_X0, RJ45_NOTCH_X1 = LID_X0 - 0.2, LID_INNER_X0 + 0.25
+RJ45_NOTCH_Y0, RJ45_NOTCH_Y1 = RJ45_WINDOW_Y0 - 0.75, RJ45_WINDOW_Y1 + 0.75
+RJ45_NOTCH_Z0, RJ45_NOTCH_Z1 = LID_Z0 - 0.5, RJ45_ENVELOPE_TOP_Z + 1.0
+
+# Printed PCB retention: 1.25 mm locating posts pass through the 3.2 mm
+# drills with 0.35 mm radial clearance. Lid-side annular retainers bear on
+# the bare mounting annulus only, just above the seated PCB top.
+LOCATING_POST_RADIUS = 1.25
+LOCATING_POST_TOP_Z = PCB_TOP_Z + 0.30
+LID_RETAINER_OUTER_RADIUS = 2.4
+LID_RETAINER_INNER_RADIUS = 1.5
+LID_RETAINER_BOTTOM_Z = PCB_TOP_Z - 0.05
 
 
 def _box(x0: float, x1: float, y0: float, y1: float, z0: float, z1: float) -> Part:
@@ -111,7 +123,8 @@ def make_base() -> Part:
     for x, y in MOUNT_HOLES:
         boss = _cylinder(3.0, FLOOR, 3.65, x, y)
         bore = _cylinder(1.9, FLOOR - 0.1, 3.8, x, y)
-        base = base + (boss - bore)
+        locating_post = _cylinder(LOCATING_POST_RADIUS, FLOOR - 0.1, LOCATING_POST_TOP_Z, x, y)
+        base = base + (boss - bore) + locating_post
 
     # Small lead-in ramps at the two long walls make the lid's skirt locate
     # during assembly without intruding into the antenna chamber.
@@ -135,6 +148,37 @@ def make_lid() -> Part:
         LID_Z1 - LID_CEILING,
     )
     lid = lid - underside
+
+    # Clear the complete left lid wall across the conservative RJ45 body and
+    # cable/latch insertion envelope. Margins exceed the nominal drawing.
+    rj45_notch = _box(
+        RJ45_NOTCH_X0,
+        RJ45_NOTCH_X1,
+        RJ45_NOTCH_Y0,
+        RJ45_NOTCH_Y1,
+        RJ45_NOTCH_Z0,
+        RJ45_NOTCH_Z1,
+    )
+    lid = lid - rj45_notch
+
+    # Long annular retainers descend from the lid underside to the PCB
+    # mounting annulus. They are outside the antenna chamber and stay within
+    # 2.4 mm of each hole centre.
+    for x, y in MOUNT_HOLES:
+        retainer = _cylinder(
+            LID_RETAINER_OUTER_RADIUS,
+            LID_RETAINER_BOTTOM_Z,
+            LID_UNDERSIDE_Z + 0.1,
+            x,
+            y,
+        ) - _cylinder(
+            LID_RETAINER_INNER_RADIUS,
+            LID_RETAINER_BOTTOM_Z - 0.1,
+            LID_UNDERSIDE_Z + 0.2,
+            x,
+            y,
+        )
+        lid = lid + retainer
 
     # Two shallow service holes over SW1 (reset) and SW2 (boot), as present in
     # the Rev3A layout at (5,3.4) and (13,3.4).  They are tool-access holes,

@@ -25,6 +25,16 @@ from enclosure import (
     RJ45_WINDOW_Y1,
     RJ45_WINDOW_Z0,
     RJ45_WINDOW_Z1,
+    RJ45_NOTCH_X0,
+    RJ45_NOTCH_X1,
+    RJ45_NOTCH_Y0,
+    RJ45_NOTCH_Y1,
+    RJ45_NOTCH_Z0,
+    RJ45_NOTCH_Z1,
+    LOCATING_POST_RADIUS,
+    LID_RETAINER_OUTER_RADIUS,
+    LID_RETAINER_INNER_RADIUS,
+    _box,
     make_base,
     make_lid,
 )
@@ -52,6 +62,20 @@ def main() -> None:
     assert LID_UNDERSIDE_Z - RJ45_ENVELOPE_TOP_Z >= 1.0
     assert RJ45_WINDOW_Y1 - RJ45_WINDOW_Y0 >= 18.0
     assert RJ45_WINDOW_Z1 - RJ45_WINDOW_Z0 >= 8.0
+    assert RJ45_NOTCH_Y0 < RJ45_WINDOW_Y0 and RJ45_NOTCH_Y1 > RJ45_WINDOW_Y1
+    assert RJ45_NOTCH_Z0 <= 9.0 and RJ45_NOTCH_Z1 >= RJ45_ENVELOPE_TOP_Z + 0.99
+    insertion = _box(
+        RJ45_NOTCH_X0,
+        RJ45_NOTCH_X1,
+        RJ45_NOTCH_Y0,
+        RJ45_NOTCH_Y1,
+        RJ45_NOTCH_Z0,
+        RJ45_NOTCH_Z1,
+    )
+    overlap = lid.intersect(insertion)
+    assert overlap is None or overlap.volume < 1e-6, "lid blocks RJ45 insertion envelope"
+    assert LOCATING_POST_RADIUS < 1.6
+    assert LID_RETAINER_INNER_RADIUS < 1.6 < LID_RETAINER_OUTER_RADIUS
     print(f"RJ45 envelope: top_z={RJ45_ENVELOPE_TOP_Z:.2f} lid_underside={LID_UNDERSIDE_Z:.2f} clearance={LID_UNDERSIDE_Z - RJ45_ENVELOPE_TOP_Z:.2f} mm")
     print(f"RJ45 window: y={RJ45_WINDOW_Y0}..{RJ45_WINDOW_Y1} z={RJ45_WINDOW_Z0}..{RJ45_WINDOW_Z1} mm")
 
