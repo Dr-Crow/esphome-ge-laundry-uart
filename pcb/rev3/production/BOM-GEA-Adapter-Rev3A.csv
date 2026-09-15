@@ -19,6 +19,7 @@
 "500mA","F3","Fuse:Fuse_1206_3216Metric","C163512","Littelfuse","1206L050YR","","","","","500mA","","","","","","1"
 "MF-MSMF075/24-2","F1,F2","Fuse:Fuse_1812_4532Metric","C208467","Bourns","MF-MSMF075/24-2","","","","","","","","","","","2"
 "8P8C","J1","OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal","C3097717","EVERCOM","5301-8P8C","","","","","","","","","","","1"
+"RECOVERY","J2","OnionStraws:Recovery_Header_2x3_P2.54mm_Vertical","C42391552","hanxia","HX PZ-2.54-02-03-S-PB3.2","","","","","","","","","","","1"
 "USB_C_Receptacle_USB2.0_16P","J4","Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A","C2765186","SHOU HAN","TYPE-C 16PIN 2MD(073)","","","","","","","","","","","1"
 "4.7uH","L1","Inductor_SMD:L_Panasonic_PCC-M0530M","C412309","Panasonic Industry","ETQP3M4R7KVP","","","","3.4A","","","","6.7A","","","1"
 "MMBT3904","Q5","Package_TO_SOT_SMD:SOT-23","C20526","Jiangsu Changjing","MMBT3904","","","","","","","","","","","1"

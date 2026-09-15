@@ -1,16 +1,8 @@
 ** Drc report for GEA-Adapter-Rev3.kicad_pcb **
-** Created on 2026-09-15T10:51:31-0400 **
+** Created on 2026-09-15T12:47:19-0400 **
 ** Report includes: Errors, Warnings, Exclusions **
 
-** Found 9 DRC violations **
-[silk_edge_clearance]: Silkscreen clipped by board edge
-    Rule: board setup constraints silk; warning
-    @(0.0000 mm, 40.0000 mm): Segment on Edge.Cuts
-    @(17.8500 mm, 9.2400 mm): Segment of J1 on F.Silkscreen
-[silk_edge_clearance]: Silkscreen clipped by board edge
-    Rule: board setup constraints silk; warning
-    @(0.0000 mm, 40.0000 mm): Segment on Edge.Cuts
-    @(17.8500 mm, 24.7600 mm): Segment of J1 on F.Silkscreen
+** Found 7 DRC violations **
 [silk_edge_clearance]: Silkscreen clipped by board edge
     Rule: board setup constraints silk; warning
     @(88.7000 mm, 0.0000 mm): Segment on Edge.Cuts
