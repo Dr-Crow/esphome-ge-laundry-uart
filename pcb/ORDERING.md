@@ -1,51 +1,48 @@
-# Ordering a PCB assembly
+# Order a Rev 2.2 board
 
-This guide describes the common process for ordering a small assembled prototype batch from JLCPCB or a similar service. Always read the selected revision's README first: its component availability, connector orientation, appliance-power behavior, and test status may differ.
+You do not need KiCad to order the board. This guide uses JLCPCB, but another PCB assembly company can use the same files.
 
 [Back to the project overview](../README.md) · [PCB revision index](README.md)
 
-## Choose the revision
+> [!NOTE]
+> Rev 2.2 has not yet been tested as an assembled board. Order the minimum quantity first. If you want to wait for tested hardware, check the [Rev 2.2 status](rev2.2/README.md) before ordering.
 
-New builds should use [Rev 2.2](rev2.2/README.md). A revision's `manufacturing/` directory is one matched package:
+## Download these three files
 
-- the Gerber ZIP describes the board layers, outline, silkscreen, and holes;
-- the BOM identifies the parts to install;
-- the CPL identifies each installed part's position, side, and rotation.
+- [Gerber ZIP](rev2.2/manufacturing/GERBER-OnionStraws-rev2.2.zip): the board itself
+- [BOM](rev2.2/manufacturing/BOM-OnionStraws-rev2.2.csv): the parts list
+- [CPL](rev2.2/manufacturing/CPL-OnionStraws-rev2.2.csv): where the parts go
 
-Never mix one revision's Gerbers with another revision's BOM or CPL.
+Keep these three Rev 2.2 files together. Do not use a BOM or CPL from an older revision.
 
-## Request the quote
+## Place the order
 
-1. Upload the Gerber ZIP to the PCB quote page.
-2. Confirm the detected board outline, layer count, thickness, quantity, and drill preview against the revision README.
-3. Enable PCB assembly and upload the matching BOM and CPL.
-4. For a board that does not require hand soldering, select the assembly option that includes both surface-mount and through-hole parts.
-5. Review every substitution. Do not accept a different electrical value, package, pinout, or connector footprint only because the website suggests it.
+1. Open the JLCPCB PCB quote page and upload the Gerber ZIP.
+2. The site should detect a 2-layer board about 88.6 mm by 30.0 mm. Use the standard 1.6 mm board thickness.
+3. Choose five PCBs and enable PCB assembly for all five boards.
+4. Select economic, top-side assembly.
+5. Upload the Rev 2.2 BOM and CPL when prompted.
+6. Review the board and component-placement previews. Resolve any missing, unselected, or obviously misplaced parts before continuing.
 
-## Review the previews
+## Current price estimate
 
-Before checkout, confirm:
+A JLCPCB quote checked on September 19, 2026 was **$78.07 before shipping and tax for five fully assembled boards**, or about **$15.61 per board**. Treat this as a dated estimate because component stock and pricing change.
 
-- the board orientation and dimensions are correct;
-- holes and slots appear in the fabrication preview;
-- connectors face the intended board edge;
-- polarized parts have the expected orientation;
-- the assembly side and component rotations look correct;
-- all required designators are recognized;
-- intentionally uninstalled parts are absent from the assembly list; and
-- the quoted assembly service installs every connector that you do not plan to solder yourself.
+## Before paying
 
-Save screenshots or a PDF of the fabrication, parts, and assembly previews with the order record. A vendor preview is a required human check; it is not replaced by KiCad ERC/DRC or repository validation.
+Before continuing, check that:
 
-## Order and bring up prototypes
+- The board is about 88.6 mm by 30.0 mm and has two layers.
+- Assembly is enabled for all five boards on the top side.
+- The component-placement preview looks aligned with the board.
+- The parts list has no unresolved or unselected items.
 
-Order a small prototype batch before committing to a larger run. When the boards arrive:
+The [Rev 2.2 page](rev2.2/README.md) has the full part list and board images if you need to compare them with the order screen.
 
-1. Compare the board and component orientations with the saved previews.
-2. Inspect for solder bridges, damaged parts, and reversed polarized components.
-3. Use a current-limited bench supply for first power when practical.
-4. Verify the expected power rails before starting a normal ESP32 Wi-Fi workload.
-5. Test programming and serial communication before connecting to an appliance.
-6. Begin appliance testing with passive receive-only logging, then expand testing only after the appliance model and protocol are confirmed.
+## When the boards arrive
 
-Record the assembler, order date, approved substitutions, and observed test results. Component prices and inventory change frequently, so treat old quotes as estimates rather than current pricing.
+1. Check for bent connectors, loose parts, or visible solder bridges.
+2. Follow the [firmware setup guide](../firmware/README.md) to flash the board.
+3. Do not connect it to an appliance until the 3.3 V and 5 V power rails have been checked. Rev 2.2 is still awaiting its first assembled-board test.
+
+If you do not have the tools to check the power rails, wait until the first Rev 2.2 batch has been tested and the results are posted.

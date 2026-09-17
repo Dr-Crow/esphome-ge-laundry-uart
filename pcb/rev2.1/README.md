@@ -17,7 +17,7 @@ Rev 2.1 is the latest built Rev 2.x design before the corrective Rev 2.2 work. I
 - [Non-plated-hole drill map](validation/npth-drill-map.pdf)
 - [U1 trace-removal illustration](images/u1-trace-fix.png)
 
-The PCB silkscreen identifies this source as Revision 2.1, while the inherited schematic title block still says 2.0. The files are kept together because Git history shows they formed the active project, but that mismatch is documented rather than silently rewritten.
+The PCB silkscreen identifies this source as Revision 2.1, while the inherited schematic title block still says 2.0. The historical files are unchanged, and this README calls out the mismatch.
 
 No schematic PDF or board-view image was included with the retained Rev 2.1 artifacts, and those exports were not reconstructed.
 

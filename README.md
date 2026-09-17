@@ -7,31 +7,21 @@ Local Home Assistant control and monitoring for compatible GE appliances through
 
 ![Assembled Rev 2-era adapter](pcb/rev2.0/images/assembled-board.jpg)
 
-*Assembled Rev 2-era adapter.*
-
 The project began as an effort to integrate a GE washer and dryer with Home Assistant. An ESP32 powered by the appliance communication port reports information such as remaining time and cycle completion through ESPHome. Early work involved researching the GEA2 and GEA3 protocols and the U+ Connect module; later, [GE Appliances](https://github.com/geappliances) and [FirstBuild](https://firstbuild.com/inventions/home-assistant-adapter/) published additional hardware and protocol information. The maintained ESPHome implementation now lives in [mguaylam/esphome-gea](https://github.com/mguaylam/esphome-gea), while this repository provides compatible hardware, reference configurations, manufacturing files, and enclosures.
 
-## Start here
+## Getting started
 
-> [!IMPORTANT]
-> New hardware builds should start with [PCB Rev 2.2](pcb/rev2.2/README.md). It corrects the known Rev 2.0/2.1 board-file problems, but assembled prototypes still require physical validation before it can be considered a proven release.
+### I already have a board
 
-- [Review Rev 2.2 and its known validation gates](pcb/rev2.2/README.md)
-- [Prepare a PCB assembly order](pcb/ORDERING.md)
-- [Configure ESPHome](firmware/README.md)
-- [Download or modify the Rev 2 enclosure](case/rev2/README.md)
+Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 configuration, flash the board, connect it to Home Assistant, and check the status LEDs. The [Rev 2 enclosure](case/rev2/README.md) includes ready-to-print files.
 
-Older hardware and the full change history remain available in the [PCB revision index](pcb/README.md).
+### I want to order a board
 
-## New-user path
+Start with [PCB Rev 2.2](pcb/rev2.2/README.md), then follow the [step-by-step ordering guide](pcb/ORDERING.md). Rev 2.2 corrects the known Rev 2.0 and Rev 2.1 board-file problems.
 
-1. Read the [Rev 2.2 guide](pcb/rev2.2/README.md), especially its appliance-power and prototype-testing notes.
-2. Follow the shared [PCB ordering guide](pcb/ORDERING.md) using only the matched Rev 2.2 manufacturing files.
-3. Start with the appropriate reference configuration in [firmware](firmware/README.md).
-4. Print or adapt the [Rev 2 enclosure](case/rev2/README.md).
-5. Inspect and power the prototype cautiously before connecting it to an appliance.
+**Current status:** Rev 2.2 is the recommended manufacturing candidate; physical testing is still pending. A JLCPCB quote checked on September 19, 2026 was **$78.07 before shipping and tax for five fully assembled boards**, or about **$15.61 per board**. Prices and component availability can change.
 
-Interested in improving the project? Read the [contribution guide](CONTRIBUTING.md) before changing hardware or manufacturing files.
+Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
 
 ## Related projects
 

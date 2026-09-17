@@ -13,7 +13,7 @@ Rev 2.0 reworked the board for automated assembly and adopted an ESP32-C3 module
 - [Board STEP model](validation/board.step)
 - [Historical board photograph](images/assembled-board.jpg)
 
-The photograph was stored as `v2.jpg` in the repository root. Its exact Rev 2.x subrevision was not recorded, so it is preserved as historical documentation rather than validation evidence.
+The photograph was stored as `v2.jpg` in the repository root. Its exact Rev 2.x subrevision was not recorded.
 
 No editable KiCad source was included with the retained Rev 2.0 artifacts, and none was reconstructed for this archive.
 

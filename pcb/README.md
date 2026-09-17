@@ -1,6 +1,6 @@
 # PCB revisions
 
-This directory keeps every board revision in a separate package so editable source, factory files, and validation evidence cannot be mixed between revisions.
+This directory keeps every board revision in a separate package so source files, manufacturing files, and review files do not get mixed between revisions.
 
 [Back to the project overview](../README.md) · [PCB ordering guide](ORDERING.md)
 
@@ -11,7 +11,7 @@ This directory keeps every board revision in a separate package so editable sour
 
 - `design/` contains the editable KiCad project. A `.pretty` directory under `footprints/` is a KiCad footprint library: it defines the exact copper pads, drill holes, silkscreen, and component outline used on the board. A project `fp-lib-table` maps the library name used by the board to that local directory so footprints resolve from a clean clone. A `models/` directory, when present, contains optional 3D component shapes.
 - `manufacturing/` contains files sent to a PCB assembler. Gerbers describe copper, holes, solder mask, and silkscreen; the BOM lists components; the CPL lists component positions and rotations.
-- `validation/` contains technical inspection material such as schematic PDFs, exact board views, drill maps, and ERC/DRC reports.
+- `validation/` contains files used to review the design, such as schematic PDFs, board views, drill maps, and ERC/DRC reports.
 - `images/` contains photographs and explanatory renders used by documentation. Images are not manufacturing inputs.
 
 ## Revision index
@@ -26,9 +26,9 @@ This directory keeps every board revision in a separate package so editable sour
 > [!IMPORTANT]
 > Rev 2.0 and Rev 2.1 have swapped RX/TX silkscreen labels. Their U1 reset supervisor can also cause ESP32 boot loops. Do not treat either manufacturing package as a corrected design.
 
-Rev 2.2 addresses those known board-file problems but is not a proven hardware release until assembled prototypes pass electrical, appliance, and enclosure testing. Use only the three matched files in its `manufacturing/` directory when requesting a quote.
+Rev 2.2 addresses those known board-file problems but is not proven until assembled boards pass electrical, appliance, and enclosure testing. Use only the three matched files in its `manufacturing/` directory when ordering.
 
-The revision folders intentionally contain different material. Historical files were preserved as found; missing editable source, exports, or images were not recreated and should not be inferred from a standardized folder name.
+Not every revision has the same files. The table lists what is actually available; missing source files, exports, and images were not recreated.
 
 ## Historical revisions
 
@@ -38,5 +38,3 @@ The revision folders intentionally contain different material. Historical files 
 - Rev 1.0 added configurable resistors for inverted GEA2 serial signaling.
 - Rev 2.0 introduced an assembly-oriented ESP32-C3 design.
 - Rev 2.1 updated that design and migrated its source to KiCad 9.
-
-Historical Git commits retain earlier source and generated files that are intentionally omitted from the active tree, including editor state, automatic backups, duplicate extracted Gerbers, and vendor project databases.
