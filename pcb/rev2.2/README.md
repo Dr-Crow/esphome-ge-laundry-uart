@@ -1,8 +1,14 @@
-# PCB Rev 2.2 manufacturing candidate
+# PCB Rev 2.2 superseded corrective design
 
-This directory contains the matched files needed to quote a small revision 2.2 prototype batch. Revision 2.2 is not a proven hardware release until physical boards pass bring-up testing.
+This directory contains the matched files needed to quote a small revision 2.2
+prototype batch. Rev 3A supersedes this design for new prototype builds. Revision
+2.2 is retained as the corrected Rev 2.x reference and is not a proven hardware
+release until physical boards pass bring-up testing.
 
-Start with the [KiCad project](design/OnionStraws.kicad_pro). Use the shared [PCB ordering guide](../ORDERING.md) with the three matched Rev 2.2 manufacturing files; do not substitute files from an older revision.
+Start with the [KiCad project](design/OnionStraws.kicad_pro). If quoting this
+older revision, use only the three matched Rev 2.2 manufacturing files described
+below; do not substitute files from another revision. The shared
+[PCB ordering guide](../ORDERING.md) now covers the current Rev 3A design.
 
 ## What changed
 
@@ -21,7 +27,7 @@ Rev 2.2 does not add a new user-operated jumper, programming connector, or autom
 
 Rev 2.2 preserves two service interfaces, both excluded from factory assembly:
 
-- `J2` is a row of six 2.54 mm through-holes carrying, from square pin 1 to pin 6, 3.3 V, ground, boot, board transmit, board receive, and enable. Revision 2.2 leaves these holes unpopulated. A header may be soldered into them later, or a custom pogo fixture may contact them.
+- `J2` is a row of six 2.54 mm through-holes carrying, from square pin 1 to pin 6, 3.3 V, ground, boot, board/ESP RX, board/ESP TX, and enable. Revision 2.2 leaves these holes unpopulated. A header may be soldered into them later, or a custom pogo fixture may contact them.
 - `J3` carries the same six signals on a flat, bottom-side Tag-Connect `TC2030-IDC-NL` pattern. It has copper contacts and three alignment holes but no connector component, so it adds no BOM or assembly cost. A compatible cable or reusable pogo clip can make a no-solder connection.
 
 Neither interface is USB. Connecting a Mac requires a 3.3 V USB-to-UART adapter plus the matching cable or fixture; do not connect 5 V logic to these signals. The current Rev 2 enclosure covers both service areas and is unchanged in this revision.
@@ -55,7 +61,10 @@ These are the intended parts. Inventory changes, so confirm them on the order sc
 
 ## Current status
 
-Rev 2.2 is the recommended manufacturing candidate, but physical bring-up testing is still pending. A JLCPCB quote checked on September 19, 2026 was **$78.07 before shipping and tax for five fully assembled boards**, or about **$15.61 per board**. See the [ordering guide](../ORDERING.md) for the short ordering process.
+Rev 2.2 is superseded by Rev 3A and physical bring-up testing is still pending. A
+JLCPCB quote checked on September 19, 2026 was **$78.07 before shipping and tax
+for five fully assembled boards**, or about **$15.61 per board**. Treat this as a
+dated estimate for the older design.
 
 ## Rev 2.2 order and test checks
 
@@ -67,4 +76,4 @@ Rev 2.2 is the recommended manufacturing candidate, but physical bring-up testin
 
 KiCad 9.0.9 reports the same ERC and DRC issues as Rev 2.1, with no new categories. The Gerber ZIP also passes its integrity check. Physical testing is still outstanding.
 
-[Back to the PCB revision index](../README.md) · [Ordering guide](../ORDERING.md) · [Rev 2 enclosure](../../case/rev2/README.md) · [Firmware examples](../../firmware/README.md)
+[Back to the PCB revision index](../README.md) · [Current Rev 3A ordering guide](../ORDERING.md) · [Rev 2 enclosure](../../case/rev2/README.md) · [Firmware examples](../../firmware/README.md)
