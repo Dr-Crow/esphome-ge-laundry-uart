@@ -1,15 +1,15 @@
-# Set up and use a Rev 2.x board
+# Set up and use the adapter
 
 These examples use the maintained [ESPHome GEA component](https://github.com/mguaylam/esphome-gea) to connect the adapter to Home Assistant.
 
-[Back to the project overview](../README.md) · [Recommended PCB Rev 2.2](../pcb/rev2.2/README.md) · [Revision history](../pcb/README.md)
+[Back to the project overview](../README.md) · [Current PCB Rev 3A](../pcb/rev3a/README.md) · [Revision history](../pcb/README.md)
 
 ## Choose a configuration
 
 | Configuration | Connection | Typical use |
 | --- | --- | --- |
-| [`gea2.yaml`](gea2.yaml) | GPIO5 TX and GPIO10 RX, inverted, 19,200 baud | Rev 2.x reference for GEA2 appliances. |
-| [`gea3.yaml`](gea3.yaml) | GPIO21 TX and GPIO20 RX, non-inverted, 230,400 baud | Rev 2.x reference for GEA3 appliances. |
+| [`gea2.yaml`](gea2.yaml) | GPIO5 TX and GPIO10 RX, inverted, 19,200 baud | Rev 2.x and Rev 3A reference for GEA2 appliances. |
+| [`gea3.yaml`](gea3.yaml) | GPIO21 TX and GPIO20 RX, non-inverted, 230,400 baud | Rev 2.x and Rev 3A reference for GEA3 appliances. |
 
 The appliance model determines whether it uses GEA2 or GEA3. Start with a configuration already known to work with your appliance rather than trying both while connected.
 
@@ -29,7 +29,27 @@ esp_home_ota_pw: "..."
 
 You can use the ESPHome Device Builder or the command line. The examples are starting points, so appliance-specific entities may need to be added or changed.
 
-## First flash
+## First flash: Rev 3A
+
+Rev 3A normally flashes through the ESP32-C3 native USB connection. Leave the
+appliance connector disconnected during initial setup.
+
+1. Connect the board's USB-C port to the computer with a data-capable cable.
+2. In ESPHome Device Builder, choose **Install** and select the serial port. With
+   the command line, run:
+
+   ```console
+   esphome run your-config.yaml --device /dev/cu.your-usb-device
+   ```
+
+3. If the board does not enter the downloader automatically, hold **BOOT**, tap
+   and release **RESET**, then release **BOOT** after the downloader starts.
+4. Disconnect USB before beginning appliance-power bring-up.
+
+If native USB is unavailable, use the populated J2 recovery header and the
+recovery sequence in the [Rev 3A board guide](../pcb/rev3a/README.md#recovery-flashing).
+
+## First flash: Rev 2.x
 
 Rev 2.x boards do not have USB. The first flash needs a **3.3 V logic** USB-to-UART adapter connected to the unpopulated J2 holes or the J3 Tag-Connect pads. Do not connect 5 V to these pins.
 
@@ -63,4 +83,6 @@ Later updates can be installed over Wi-Fi from ESPHome Device Builder. From the 
 3. Power the appliance and wait for the board to join Wi-Fi.
 4. Add the discovered ESPHome device in Home Assistant.
 
-With the supplied configurations, the green LED shows Wi-Fi connection and the yellow LED shows GEA bus activity. The red LED is available to ESPHome but is not assigned a status by these examples.
+With the supplied configurations, the green LED shows Wi-Fi connection and the
+yellow LED shows GEA bus activity. The red LED is available to ESPHome but is not
+assigned a status by these examples.

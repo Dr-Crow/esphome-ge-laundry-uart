@@ -1,8 +1,14 @@
-# PCB Rev 2.2 manufacturing candidate
+# PCB Rev 2.2 superseded corrective design
 
-This directory contains the matched files needed to quote a small revision 2.2 prototype batch. Revision 2.2 is not a proven hardware release until physical boards pass bring-up testing.
+This directory contains the matched files needed to quote a small revision 2.2
+prototype batch. Rev 3A supersedes this design for new prototype builds. Revision
+2.2 is retained as the corrected Rev 2.x reference and is not a proven hardware
+release until physical boards pass bring-up testing.
 
-Start with the [KiCad project](design/OnionStraws.kicad_pro). Use the shared [PCB ordering guide](../ORDERING.md) with the three matched Rev 2.2 manufacturing files; do not substitute files from an older revision.
+Start with the [KiCad project](design/OnionStraws.kicad_pro). If quoting this
+older revision, use only the three matched Rev 2.2 manufacturing files described
+below; do not substitute files from another revision. The shared
+[PCB ordering guide](../ORDERING.md) now covers the current Rev 3A design.
 
 ## What changed
 
@@ -55,7 +61,10 @@ These are the intended parts. Inventory changes, so confirm them on the order sc
 
 ## Current status
 
-Rev 2.2 is the recommended manufacturing candidate, but physical bring-up testing is still pending. A JLCPCB quote checked on September 19, 2026 was **$78.07 before shipping and tax for five fully assembled boards**, or about **$15.61 per board**. See the [ordering guide](../ORDERING.md) for the short ordering process.
+Rev 2.2 is superseded by Rev 3A and physical bring-up testing is still pending. A
+JLCPCB quote checked on September 19, 2026 was **$78.07 before shipping and tax
+for five fully assembled boards**, or about **$15.61 per board**. Treat this as a
+dated estimate for the older design.
 
 ## Rev 2.2 order and test checks
 
@@ -67,4 +76,4 @@ Rev 2.2 is the recommended manufacturing candidate, but physical bring-up testin
 
 KiCad 9.0.9 reports the same ERC and DRC issues as Rev 2.1, with no new categories. The Gerber ZIP also passes its integrity check. Physical testing is still outstanding.
 
-[Back to the PCB revision index](../README.md) · [Ordering guide](../ORDERING.md) · [Rev 2 enclosure](../../case/rev2/README.md) · [Firmware examples](../../firmware/README.md)
+[Back to the PCB revision index](../README.md) · [Current Rev 3A ordering guide](../ORDERING.md) · [Rev 2 enclosure](../../case/rev2/README.md) · [Firmware examples](../../firmware/README.md)

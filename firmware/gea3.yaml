@@ -1,3 +1,5 @@
+# Reference configuration for PCB Rev 3A and the Rev 2.x family.
+
 substitutions:
   name: gea3_template
   upper_name: GEA3 Template
@@ -128,7 +130,7 @@ output:
       inverted: false
     id: led2_output
 
-  # GPIO10: Output for Yellow LED, active high
+  # GPIO4: Output for Yellow LED, active high
   - platform: ledc
     pin:
       number: 4
@@ -175,4 +177,3 @@ interval:
             - light.turn_on: led3
           else:
             - light.turn_off: led3
-

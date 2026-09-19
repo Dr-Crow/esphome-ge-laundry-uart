@@ -13,15 +13,34 @@ The project began as an effort to integrate a GE washer and dryer with Home Assi
 
 ### I already have a board
 
-Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 configuration, flash the board, connect it to Home Assistant, and check the status LEDs. The [Rev 2 enclosure](case/rev2/README.md) includes ready-to-print files.
+Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3
+configuration, flash the board, and connect it to Home Assistant. Rev 3A normally
+flashes through USB-C; Rev 2.x requires an external 3.3 V serial adapter. Printable
+enclosures are available for [Rev 3A](case/rev3a/README.md) and
+[Rev 2.x](case/rev2/README.md).
 
 ### I want to order a board
 
-Start with [PCB Rev 2.2](pcb/rev2.2/README.md), then follow the [step-by-step ordering guide](pcb/ORDERING.md). Rev 2.2 corrects the known Rev 2.0 and Rev 2.1 board-file problems.
+Start with [PCB Rev 3A](pcb/rev3a/README.md), then follow the
+[step-by-step ordering guide](pcb/ORDERING.md). Rev 3A is the current development
+design and supersedes Rev 2.2 for new prototype builds. It adds USB-C, automatic
+pin-1/pin-3 appliance-power selection, more efficient power conversion, a
+recovery header, and a matching enclosure.
 
-**Current status:** Rev 2.2 is the recommended manufacturing candidate; physical testing is still pending. A JLCPCB quote checked on September 19, 2026 was **$78.07 before shipping and tax for five fully assembled boards**, or about **$15.61 per board**. Prices and component availability can change.
+> [!CAUTION]
+> Rev 3A passes the documented KiCad and manufacturing-file checks, but assembled
+> hardware has not completed electrical or appliance testing. Order only a minimum
+> prototype batch until its bring-up procedure passes.
 
-Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
+A JLCPCB quote checked on September 19, 2026 was **$149.96 before shipping and tax
+for five fully assembled boards**, or about **$29.99 per board**. Prices and part
+availability can change. Rev 2.2 remains available as an older, lower-cost design;
+older boards and the complete change history are listed in the
+[PCB revision index](pcb/README.md).
+
+Hardware reviewers and contributors can inspect the
+[Rev 3A validation package](pcb/rev3a/validation/README.md) and should also read
+the [contribution guide](CONTRIBUTING.md).
 
 ## Related projects
 

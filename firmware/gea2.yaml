@@ -1,4 +1,4 @@
-# Reference configuration for the OnionStraws PCB Rev 2.x family.
+# Reference configuration for PCB Rev 3A and the Rev 2.x family.
 
 substitutions:
   name: gea2_template
@@ -148,7 +148,7 @@ output:
       inverted: false
     id: led2_output
 
-  # GPIO10: Output for Yellow LED, active high
+  # GPIO4: Output for Yellow LED, active high
   - platform: ledc
     pin:
       number: 4
