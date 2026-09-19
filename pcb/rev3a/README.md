@@ -64,10 +64,10 @@ clear of metal, wiring, fasteners, and enclosure ribs.
 
 ## Design and manufacturing status
 
-- KiCad 9.0.9 ERC: zero errors and 55 reviewed warnings.
+- KiCad 9.0.9 ERC: zero errors and 53 reviewed warnings.
 - KiCad 9.0.9 DRC: zero errors, zero unconnected items, zero schematic-parity
   findings, and seven reviewed warnings.
-- Manufacturing package: 44 BOM groups and 93 fitted top-side placements.
+- Manufacturing package: 40 BOM groups and 93 fitted top-side placements.
 - Board construction: four copper layers, 1.6 mm target thickness, 0.20 mm minimum
   routed track, ordinary 0.8/0.4 mm through-vias, and 0.30 mm ESP32 thermal drills.
 - `In1.Cu` is a continuous ground-reference plane. `In2.Cu` is a ground plane

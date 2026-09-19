@@ -25,15 +25,14 @@ change.
 
 KiCad 9.0.9 reports:
 
-- ERC: zero errors and 55 warnings;
+- ERC: zero errors and 53 warnings;
 - DRC: zero errors, seven warnings, zero unconnected items, and zero
   schematic-parity findings.
 
-The ERC warnings are 44 embedded-symbol/library differences, two legacy U5
-library lookup warnings, eight USB-section grid warnings, and one intentional
-`+5V`/hidden-`VCC` alias. The DRC warnings are five retained local-footprint
-differences and two antenna-silkscreen edge warnings. Review the current JSON files
-rather than relying only on these counts.
+The ERC warnings are 44 embedded-symbol/library differences, eight USB-section
+grid warnings, and one intentional `+5V`/hidden-`VCC` alias. The DRC warnings are
+five retained local-footprint differences and two antenna-silkscreen edge
+warnings. Review the current JSON files rather than relying only on these counts.
 
 The short D18 connection on `In2.Cu` is intentional and passes DRC. `In1.Cu`
 remains the continuous USB ground reference; do not describe both inner layers as

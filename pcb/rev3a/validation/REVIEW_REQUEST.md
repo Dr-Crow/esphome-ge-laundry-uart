@@ -74,7 +74,7 @@ design does not claim protection against a physically reversed supply.
 ## Known findings and limits
 
 - KiCad 9.0.9 reports zero ERC/DRC errors, zero unconnected items, and zero
-  schematic-parity findings. The saved reports contain 55 ERC warnings and seven
+  schematic-parity findings. The saved reports contain 53 ERC warnings and seven
   DRC warnings with dispositions in [README.md](README.md).
 - USB routing has a continuous ground reference, but no controlled-impedance
   fabrication stack is claimed.

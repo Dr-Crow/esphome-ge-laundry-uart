@@ -14,6 +14,6 @@
   (lib (name "Switch")(type "KiCad")(uri "${KICAD9_SYMBOL_DIR}/Switch.kicad_sym")(options "")(descr ""))
   (lib (name "Transistor_BJT")(type "KiCad")(uri "${KICAD9_SYMBOL_DIR}/Transistor_BJT.kicad_sym")(options "")(descr ""))
   (lib (name "Transistor_FET")(type "KiCad")(uri "${KICAD9_SYMBOL_DIR}/Transistor_FET.kicad_sym")(options "")(descr ""))
-  (lib (name "onionStraws")(type "Legacy")(uri "${KIPRJMOD}/../OnionStraws-cache.lib")(options "")(descr "Legacy project symbols"))
+  (lib (name "onionStraws")(type "KiCad")(uri "${KIPRJMOD}/symbols/onionStraws.kicad_sym")(options "")(descr "Project-local custom symbols"))
   (lib (name "power")(type "KiCad")(uri "${KICAD9_SYMBOL_DIR}/power.kicad_sym")(options "")(descr ""))
 )

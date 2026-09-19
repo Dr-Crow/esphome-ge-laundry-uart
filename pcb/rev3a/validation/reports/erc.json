@@ -1,11 +1,10 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-09-19T13:11:32-0400",
+    "date": "2026-09-19T13:46:02-0400",
     "included_severities": [
         "error",
-        "warning",
-        "exclusion"
+        "warning"
     ],
     "kicad_version": "9.0.9",
     "sheets": [
@@ -517,21 +516,6 @@
                     "type": "lib_symbol_mismatch"
                 },
                 {
-                    "description": "The symbol library 'onionStraws' was not found at '/Users/jim/git/worktrees/esphome-ge-laundry-uart/rev3a-pr/pcb/rev3a/design/../OnionStraws-cache.lib'.",
-                    "items": [
-                        {
-                            "description": "Symbol U5 [74LVC2G07_3v3]",
-                            "pos": {
-                                "x": 3.20675,
-                                "y": 1.47955
-                            },
-                            "uuid": "fec659a6-de89-4d09-aa02-43e085d6bd42"
-                        }
-                    ],
-                    "severity": "warning",
-                    "type": "lib_symbol_issues"
-                },
-                {
                     "description": "Symbol 'GND' doesn't match copy in library 'power'",
                     "items": [
                         {
@@ -590,21 +574,6 @@
                     ],
                     "severity": "warning",
                     "type": "lib_symbol_mismatch"
-                },
-                {
-                    "description": "The symbol library 'onionStraws' was not found at '/Users/jim/git/worktrees/esphome-ge-laundry-uart/rev3a-pr/pcb/rev3a/design/../OnionStraws-cache.lib'.",
-                    "items": [
-                        {
-                            "description": "Symbol U5 [74LVC2G07_3v3]",
-                            "pos": {
-                                "x": 3.20675,
-                                "y": 1.6764
-                            },
-                            "uuid": "3ba96a36-c37b-4297-b8dd-0261e172da3d"
-                        }
-                    ],
-                    "severity": "warning",
-                    "type": "lib_symbol_issues"
                 },
                 {
                     "description": "Symbol 'GND' doesn't match copy in library 'power'",

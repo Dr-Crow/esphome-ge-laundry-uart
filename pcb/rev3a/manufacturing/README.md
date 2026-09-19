@@ -7,8 +7,10 @@ Upload these three matched files together:
 - [`CPL-GEA-Adapter-Rev3A.csv`](CPL-GEA-Adapter-Rev3A.csv)
 
 The package describes an 88.7 x 40.0 mm, four-layer, 1.6 mm board with all 93
-fitted components on the top side. The BOM contains 44 purchasing groups and an
-exact LCSC identifier for every group.
+fitted components on the top side. The BOM contains 40 purchasing groups and an
+exact LCSC identifier for every group. References that use the same purchasable
+part are combined into one row, and every reference is written out explicitly so
+JLCPCB can match the BOM to the placement file.
 
 The Gerber archive contains 14 files: four copper layers, top/bottom paste,
 top/bottom solder mask, top/bottom silkscreen, board outline, separate plated and
@@ -31,3 +33,15 @@ Supplier stock, substitutions, assembly classifications, and pricing change. Sto
 if any BOM row is unselected or marked do-not-place, or if the quote adds a process
 not listed above. Review the board, drill, parts, and placement previews before
 payment.
+
+## Prototype quote
+
+On September 19, 2026, JLCPCB accepted the matched 40-group BOM and all 93
+top-side placements for five fully assembled boards. The web quote was $149.96
+before shipping and tax, or $29.99 per assembled board:
+
+- PCB fabrication: $8.00;
+- economic PCBA: $141.96, including $50.12 of components and $74.16 of extended-component fees.
+
+This is a point-in-time estimate, not a promised price. Recheck stock, selected
+parts, process options, and the final total before ordering.

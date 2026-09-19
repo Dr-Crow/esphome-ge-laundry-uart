@@ -29,7 +29,9 @@ Older boards and the complete change history are listed in the [PCB revision ind
 USB-C, automatic pin-1/pin-3 appliance-power selection, a switching regulator,
 a recovery header, and a matching printable enclosure. Its design files and
 manufacturing package pass KiCad's automated checks, but the board has not yet
-completed physical bring-up. Review the [Rev 3A validation package](pcb/rev3a/validation/README.md)
+completed physical bring-up. A September 19, 2026 JLCPCB quote was $149.96 before
+shipping and tax for five fully assembled boards, or $29.99 per board. Review the
+[Rev 3A validation package](pcb/rev3a/validation/README.md)
 and [prototype procedure](pcb/rev3a/BRINGUP.md) before ordering or testing it.
 
 ## Related projects

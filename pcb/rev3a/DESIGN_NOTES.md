@@ -81,7 +81,7 @@ vias, filled vias, via-in-pad requirements, or bottom-side placements.
 
 ## Sourcing and assembly
 
-The matched package contains 44 purchasing groups and 93 placements. D18 uses
+The matched package contains 40 purchasing groups and 93 placements. D18 uses
 SUNMATE SMF16A (`C399290`); R38 shares the existing RALEC 220 kohm part
 (`C104108`). J1 is the through-hole EVERCOM 5301-8P8C (`C3097717`), J2 is the
 top-side 2-by-3 recovery header (`C42391552`), and J4 is the SHOU HAN USB-C
@@ -95,7 +95,6 @@ and manufacturer data are reviewed.
 
 - independent schematic, PCB, BOM, and enclosure review;
 - vendor board, drill, part-selection, and placement preview review;
-- real assembled-board quote from the final 44-group / 93-placement package;
 - appliance-voltage and regulator-headroom measurements;
 - dynamic pin-1/pin-3 handoff and reverse-current measurements;
 - USB VBUS decay and no-backfeed measurements;
@@ -104,3 +103,10 @@ and manufacturer data are reviewed.
 
 The [validation checklist](validation/REVIEW_CHECKLIST.md) and
 [bring-up procedure](BRINGUP.md) track these items.
+
+## Prototype quote
+
+JLCPCB accepted the final 40-group BOM and all 93 top-side placements on
+September 19, 2026. Five fully assembled boards quoted at $149.96 before shipping
+and tax, or $29.99 per board. Supplier stock and assembly fees change, so this is
+a planning estimate and must be refreshed before purchase.

@@ -15,12 +15,13 @@ guides.
 - [x] Board outline plus PTH and NPTH drill maps.
 - [x] Machine-readable ERC and DRC reports.
 - [x] Matched Gerber, BOM, and placement files.
+- [x] Live five-board quote accepted all 40 BOM groups and 93 placements.
 
 ## Source and layout checks
 
 - [x] Schematic-to-PCB parity reports no mismatch.
 - [x] PCB reports no unconnected items or error-severity DRC findings.
-- [x] BOM contains 44 groups; CPL contains 93 fitted top-side references.
+- [x] BOM contains 40 groups; CPL contains 93 fitted top-side references.
 - [x] BOM rows include exact manufacturer and LCSC identifiers.
 - [x] D18 and R38 are included in both source and manufacturing outputs.
 - [x] Standard 0.8/0.4 mm routed through-vias and 0.30 mm ESP32 thermal drills.
