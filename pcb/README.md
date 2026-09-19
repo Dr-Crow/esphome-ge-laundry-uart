@@ -18,6 +18,7 @@ This directory keeps every board revision in a separate package so source files,
 
 | Revision | Status | Available material |
 | --- | --- | --- |
+| [Rev 3A](rev3a/README.md) | Prototype design; physical testing pending | KiCad source, four-layer manufacturing package, validation bundle, bring-up plan, and enclosure. |
 | [Rev 2.2](rev2.2/README.md) | Manufacturing candidate | Corrected KiCad source, matched factory package, and validation exports. |
 | [Rev 2.1](rev2.1/README.md) | Built; superseded | KiCad 9 source, JLCPCB package, drill maps, and repair image. |
 | [Rev 2.0](rev2.0/README.md) | Built; superseded | PCBA archive, schematic, board model, renders, and photographs. |
@@ -27,6 +28,10 @@ This directory keeps every board revision in a separate package so source files,
 > Rev 2.0 and Rev 2.1 have swapped RX/TX silkscreen labels. Their U1 reset supervisor can also cause ESP32 boot loops. Do not treat either manufacturing package as a corrected design.
 
 Rev 2.2 addresses those known board-file problems but is not proven until assembled boards pass electrical, appliance, and enclosure testing. Use only the three matched files in its `manufacturing/` directory when ordering.
+
+Rev 3A is a separate prototype path, not a replacement recommendation yet. It adds
+USB-C and automatic appliance-power selection but must complete its documented
+electrical and mechanical bring-up before it can become the default board.
 
 Not every revision has the same files. The table lists what is actually available; missing source files, exports, and images were not recreated.
 

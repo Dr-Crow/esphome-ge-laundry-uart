@@ -23,6 +23,15 @@ Start with [PCB Rev 2.2](pcb/rev2.2/README.md), then follow the [step-by-step or
 
 Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
 
+### I want to help test new hardware
+
+[PCB Rev 3A](pcb/rev3a/README.md) is the current prototype design. It adds
+USB-C, automatic pin-1/pin-3 appliance-power selection, a switching regulator,
+a recovery header, and a matching printable enclosure. Its design files and
+manufacturing package pass KiCad's automated checks, but the board has not yet
+completed physical bring-up. Review the [Rev 3A validation package](pcb/rev3a/validation/README.md)
+and [prototype procedure](pcb/rev3a/BRINGUP.md) before ordering or testing it.
+
 ## Related projects
 
 - [GE Appliances organization](https://github.com/geappliances)

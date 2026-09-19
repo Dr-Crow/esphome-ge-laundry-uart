@@ -1,0 +1,853 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-19T13:11:32-0400",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/477311b9-8f81-40c8-9c55-fd87e287247a",
+            "violations": [
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01 [GND]",
+                            "pos": {
+                                "x": 0.3429,
+                                "y": 0.3175
+                            },
+                            "uuid": "d6fc91af-e3cc-4352-a128-bb24d4feb602"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR010 [+5V]",
+                            "pos": {
+                                "x": 0.4953,
+                                "y": 0.3175
+                            },
+                            "uuid": "3bf27c14-f5ac-41c4-abe4-ea3fa1f95ffe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR011 [GND]",
+                            "pos": {
+                                "x": 0.5715,
+                                "y": 0.3175
+                            },
+                            "uuid": "e7e29eee-0923-49c2-bf73-345c7e673620"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR012 [+5V]",
+                            "pos": {
+                                "x": 0.7239,
+                                "y": 0.3175
+                            },
+                            "uuid": "9dbfc28d-ec68-4187-8aea-44f4c1a63198"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR015 [GND]",
+                            "pos": {
+                                "x": 0.8001,
+                                "y": 0.3175
+                            },
+                            "uuid": "88a3646d-30a5-4ea8-b07e-c36fa6fb91f7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR016 [+5V]",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.3175
+                            },
+                            "uuid": "68f8132e-c949-43a2-a314-121ac77f722a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '8P8C' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J1 [8P8C]",
+                            "pos": {
+                                "x": 0.43815,
+                                "y": 0.9525
+                            },
+                            "uuid": "00000000-0000-0000-0000-00005f2dfac0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'VDC' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR020 [VDC]",
+                            "pos": {
+                                "x": 1.0414,
+                                "y": 0.254
+                            },
+                            "uuid": "94fc5d86-ec2d-4e11-afe5-a58854686fa1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR014 [GND]",
+                            "pos": {
+                                "x": 0.75565,
+                                "y": 0.8509
+                            },
+                            "uuid": "41407cef-f5d1-4602-80cc-518048765741"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'VDC' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR013 [VDC]",
+                            "pos": {
+                                "x": 0.7493,
+                                "y": 1.0287
+                            },
+                            "uuid": "2325401d-03cb-4ff0-964a-c7d465cb4a21"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR06 [+5V]",
+                            "pos": {
+                                "x": 0.3683,
+                                "y": 1.3208
+                            },
+                            "uuid": "46faea16-3ef1-44b4-b354-7192e4f25c58"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR08 [GND]",
+                            "pos": {
+                                "x": 0.4826,
+                                "y": 1.4859
+                            },
+                            "uuid": "300fc4b9-55bc-46f1-b09c-8db6b15214a8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+3V3' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07 [+3V3]",
+                            "pos": {
+                                "x": 0.37465,
+                                "y": 1.59385
+                            },
+                            "uuid": "27a921bb-fbc4-43c3-b7a1-7bf781fdf0ed"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+3V3' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR017 [+3V3]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 1.143
+                            },
+                            "uuid": "376a4bfb-1749-4c7c-895e-cddb9d242d65"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Q_PMOS_GSD' doesn't match copy in library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q3 [Q_PMOS_GSD]",
+                            "pos": {
+                                "x": 1.7526,
+                                "y": 0.4572
+                            },
+                            "uuid": "bc14b953-8faf-4fe4-80c5-a79be03edee4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR09 [GND]",
+                            "pos": {
+                                "x": 0.4826,
+                                "y": 1.8161
+                            },
+                            "uuid": "74a0e824-cb0c-4415-8720-fe586c2eb44a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'LED' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol D5 [LED]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": 1.3716
+                            },
+                            "uuid": "a6c49bc8-5d2f-4127-b831-1ff4da839c76"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Q_PMOS_GSD' doesn't match copy in library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q4 [Q_PMOS_GSD]",
+                            "pos": {
+                                "x": 1.7526,
+                                "y": 1.0414
+                            },
+                            "uuid": "dccde25b-a512-478a-8ed9-3c246c50015c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+3V3' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR02 [+3V3]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 2.0701
+                            },
+                            "uuid": "cf7db322-fd4e-45ba-b4f8-6bf5494b6e19"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03 [GND]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 2.0955
+                            },
+                            "uuid": "be7914c4-7c98-4eb7-880e-c681711b0366"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+3V3' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR022 [+3V3]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 1.2954
+                            },
+                            "uuid": "e5b62bea-37c3-4a71-8d71-e4b3ffaba122"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'LED' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol D4 [LED]",
+                            "pos": {
+                                "x": 1.3589,
+                                "y": 1.8796
+                            },
+                            "uuid": "f5ca7214-78ab-4d24-aa3c-ea2e0600d2a1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+3V3' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04 [+3V3]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 2.2987
+                            },
+                            "uuid": "add8efbc-17c8-4eea-8c09-76f44a3c653b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'LED' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol D6 [LED]",
+                            "pos": {
+                                "x": 1.4097,
+                                "y": 1.8796
+                            },
+                            "uuid": "c0ab535a-1e91-48d0-a739-367dd1a75477"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05 [GND]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 2.3495
+                            },
+                            "uuid": "969dcdad-2e08-49b5-8cf0-41ab882aee84"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR021 [GND]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.9939
+                            },
+                            "uuid": "eaee13f1-c379-4459-9014-cec31b4b16cd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+3V3' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR025 [+3V3]",
+                            "pos": {
+                                "x": 2.8702,
+                                "y": 1.1811
+                            },
+                            "uuid": "53c96dbb-00c5-4486-916c-76cceb4600f1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR024 [GND]",
+                            "pos": {
+                                "x": 2.8067,
+                                "y": 1.905
+                            },
+                            "uuid": "7d00dcf0-43a9-48c7-aa32-cf23d91e6c82"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR033 [GND]",
+                            "pos": {
+                                "x": 3.2131,
+                                "y": 1.23825
+                            },
+                            "uuid": "ed108bd1-a662-4d53-b53b-412d762a3eeb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '74LVC2G07' doesn't match copy in library '74xGxx'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [74LVC2G07]",
+                            "pos": {
+                                "x": 3.2131,
+                                "y": 1.26365
+                            },
+                            "uuid": "2a5f40f9-54b1-4a76-9a48-74db65fd2317"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR034 [+5V]",
+                            "pos": {
+                                "x": 3.2131,
+                                "y": 1.28905
+                            },
+                            "uuid": "6e297d89-0127-45f0-b8df-813fa50afde8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Both +5V and VCC are attached to the same items; +5V will be used in the netlist",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR028 Hidden pin 1 [+5V, Power input, Line]",
+                            "pos": {
+                                "x": 3.2004,
+                                "y": 1.8796
+                            },
+                            "uuid": "2bb08548-d14d-452c-b0da-25c783fe7e4f"
+                        },
+                        {
+                            "description": "Symbol U4 Hidden pin 5 [VCC, Power input, Line]",
+                            "pos": {
+                                "x": 3.2131,
+                                "y": 1.28905
+                            },
+                            "uuid": "bb2eb10e-839a-4abf-81e7-c35194344f1f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                },
+                {
+                    "description": "Symbol '+3V3' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR029 [+3V3]",
+                            "pos": {
+                                "x": 3.20675,
+                                "y": 1.45415
+                            },
+                            "uuid": "2bb5c2d0-7153-4eea-ba2c-d2787fd29a30"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "The symbol library 'onionStraws' was not found at '/Users/jim/git/worktrees/esphome-ge-laundry-uart/rev3a-pr/pcb/rev3a/design/../OnionStraws-cache.lib'.",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [74LVC2G07_3v3]",
+                            "pos": {
+                                "x": 3.20675,
+                                "y": 1.47955
+                            },
+                            "uuid": "fec659a6-de89-4d09-aa02-43e085d6bd42"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR030 [GND]",
+                            "pos": {
+                                "x": 3.20675,
+                                "y": 1.50495
+                            },
+                            "uuid": "5dfd135e-366d-43fb-b206-8a5b03830198"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR035 [GND]",
+                            "pos": {
+                                "x": 3.35915,
+                                "y": 1.143
+                            },
+                            "uuid": "03991e4b-9808-438a-98bc-aaaddf3083ef"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+3V3' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR031 [+3V3]",
+                            "pos": {
+                                "x": 3.20675,
+                                "y": 1.651
+                            },
+                            "uuid": "c568c2c6-6de9-4e60-816c-0362747f0054"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR036 [+5V]",
+                            "pos": {
+                                "x": 3.35915,
+                                "y": 1.33985
+                            },
+                            "uuid": "a4a2146a-e8cd-4ce6-9d81-0a5a4cdb527b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "The symbol library 'onionStraws' was not found at '/Users/jim/git/worktrees/esphome-ge-laundry-uart/rev3a-pr/pcb/rev3a/design/../OnionStraws-cache.lib'.",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [74LVC2G07_3v3]",
+                            "pos": {
+                                "x": 3.20675,
+                                "y": 1.6764
+                            },
+                            "uuid": "3ba96a36-c37b-4297-b8dd-0261e172da3d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR032 [GND]",
+                            "pos": {
+                                "x": 3.20675,
+                                "y": 1.7018
+                            },
+                            "uuid": "44d5a8b2-140c-4a31-ae42-6546dac3a258"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'GND' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR027 [GND]",
+                            "pos": {
+                                "x": 3.2004,
+                                "y": 1.8288
+                            },
+                            "uuid": "dce415c0-612e-4cfa-9427-22bcd6310523"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '74LVC2G07' doesn't match copy in library '74xGxx'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [74LVC2G07]",
+                            "pos": {
+                                "x": 3.2004,
+                                "y": 1.8542
+                            },
+                            "uuid": "b09bb8c1-5e3c-46cc-b227-1374b14bc907"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR037 [+5V]",
+                            "pos": {
+                                "x": 3.35915,
+                                "y": 1.55575
+                            },
+                            "uuid": "3a4d1f9e-6e03-4e8f-b84f-1a0bc062f4d4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR028 [+5V]",
+                            "pos": {
+                                "x": 3.2004,
+                                "y": 1.8796
+                            },
+                            "uuid": "315d947a-502f-4968-9537-95fcb3e57d09"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR038 [+5V]",
+                            "pos": {
+                                "x": 3.35915,
+                                "y": 1.7526
+                            },
+                            "uuid": "95465809-2d5e-4948-b06b-1b1a8dc431b7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol J4 Pin A1 [GND, Passive, Line]",
+                            "pos": {
+                                "x": 4.1,
+                                "y": 2.0786
+                            },
+                            "uuid": "097e8ae5-4cee-49c1-b441-2ffddf3973e4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R26 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 4.3619,
+                                "y": 2.25
+                            },
+                            "uuid": "804b7203-2675-42fd-9a45-bf1939d94274"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol '+5V' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR026 [+5V]",
+                            "pos": {
+                                "x": 4.9022,
+                                "y": 0.254
+                            },
+                            "uuid": "91f9b895-0acc-49c6-9d1a-9c9683d210c3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R27 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 4.3619,
+                                "y": 2.45
+                            },
+                            "uuid": "e5e8879e-10f0-4fa6-8ef7-1452f3554f2f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 1 [I/O1, Passive, Line]",
+                            "pos": {
+                                "x": 4.6492,
+                                "y": 1.85
+                            },
+                            "uuid": "c6f2c4cd-3f5a-49ac-ad1a-ebbee3b4188c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol F3 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 4.6619,
+                                "y": 2.25
+                            },
+                            "uuid": "e9278645-81c5-4d54-b81f-ec80ba2c1b9a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R28 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 5.1619,
+                                "y": 1.85
+                            },
+                            "uuid": "a5371246-94fa-4d2d-bf33-3bba17924e95"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R29 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 5.1619,
+                                "y": 2.15
+                            },
+                            "uuid": "aae45a7c-32bc-40b4-8432-6cec6441d5be"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol '+3V3' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR039 [+3V3]",
+                            "pos": {
+                                "x": 5.6896,
+                                "y": 0.254
+                            },
+                            "uuid": "2c1d38dc-c4a3-42c7-9eef-879f64316ed5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol D10 Pin 1 [K, Passive, Line]",
+                            "pos": {
+                                "x": 5.3619,
+                                "y": 2.25
+                            },
+                            "uuid": "1059b464-136a-4961-8cbb-45451b6327e5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                }
+            ]
+        }
+    ],
+    "source": "GEA-Adapter-Rev3A.kicad_sch"
+}
