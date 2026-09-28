@@ -3,6 +3,7 @@
 substitutions:
   name: gea2_template
   upper_name: GEA2 Template
+  esp32_board: esp32-c3-devkitc-02
 
 esphome:
   name: ${name}
@@ -14,7 +15,7 @@ esphome:
         - light.turn_off: led1
         
 esp32:
-  board: esp32-c3-devkitc-02
+  board: ${esp32_board}
   variant: esp32c3
   framework:
     type: esp-idf  
@@ -148,7 +149,7 @@ output:
       inverted: false
     id: led2_output
 
-  # GPIO10: Output for Yellow LED, active high
+  # GPIO4: Output for Yellow LED, active high
   - platform: ledc
     pin:
       number: 4

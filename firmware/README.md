@@ -1,4 +1,4 @@
-# Set up and use a Rev 2.x board
+# Set up and use a Rev 2.x or Rev 3B board
 
 These examples use the maintained [ESPHome GEA component](https://github.com/mguaylam/esphome-gea) to connect the adapter to Home Assistant.
 
@@ -29,7 +29,7 @@ esp_home_ota_pw: "..."
 
 You can use the ESPHome Device Builder or the command line. The examples are starting points, so appliance-specific entities may need to be added or changed.
 
-## First flash
+## Rev 2.x first flash
 
 Rev 2.x boards do not have USB. The first flash needs a **3.3 V logic** USB-to-UART adapter connected to the unpopulated J2 holes or the J3 Tag-Connect pads. Do not connect 5 V to these pins.
 
@@ -38,8 +38,8 @@ Rev 2.x boards do not have USB. The first flash needs a **3.3 V logic** USB-to-U
 | 1, square pad | 3.3 V | A regulated 3.3 V source capable of powering the ESP32 |
 | 2 | Ground | Adapter ground |
 | 3 | Boot | Ground only while entering the bootloader |
-| 4 | Board TX | Adapter RX |
-| 5 | Board RX | Adapter TX |
+| 4 | Board RX | Adapter TX |
+| 5 | Board TX | Adapter RX |
 | 6 | Enable | Optional reset control |
 
 Use only one power source at a time. Some USB-to-UART adapters cannot provide enough 3.3 V current for an ESP32 Wi-Fi board; use a separate regulated 3.3 V supply when needed and connect its ground to the adapter ground.
@@ -54,9 +54,33 @@ Use only one power source at a time. Some USB-to-UART adapters cannot provide en
 
 4. When the upload finishes, disconnect Boot from Ground and power-cycle the board.
 
+## Rev 3B native USB first flash and recovery
+
+Rev 3B uses the Seeed XIAO ESP32-C3 module and its native USB-C connector. Keep the appliance disconnected during first flash or recovery. In the existing YAML substitutions, change `esp32_board` from its default to `seeed_xiao_esp32c3`:
+
+```yaml
+esp32_board: seeed_xiao_esp32c3
+```
+
+For USB logging during bring-up, replace the existing `logger:` block with this one (the GEA UART remains on its normal pins):
+
+```yaml
+logger:
+  baud_rate: 115200
+  hardware_uart: USB_SERIAL_JTAG
+```
+
+Connect a data-capable USB-C cable to the XIAO USB connector. Hold the onboard BOOT button while connecting USB, then release it when the bootloader port appears; use RESET to retry if needed. Select the USB serial device in ESPHome Device Builder or with `esphome run`. The J2 recovery-power connection is under electrical review; use native USB for Rev3B recovery until that review is complete.
+
+J2 direction for the Rev3B GEA3 UART follows the module pins, not the legacy net-label names: pin 4 is module RX (adapter TX), and pin 5 is module TX (adapter RX). The header uses 3.3 V UART logic; its power-pin use is not yet documented for Rev3B.
+
+## Later updates
+
 Later updates can be installed over Wi-Fi from ESPHome Device Builder. From the command line, run the same `esphome run` command and choose the network device when prompted.
 
 ## Connect to the appliance
+
+These steps apply to qualified boards. Rev3B is still a prototype and is not ready for appliance connection.
 
 1. Disconnect the programming adapter and install the board in its enclosure.
 2. With the appliance off, connect the adapter to its service port. This connector is not Ethernet.
