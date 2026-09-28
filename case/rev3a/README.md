@@ -12,7 +12,7 @@ temperature, and installed Wi-Fi behavior before release.
 
 - PCB datum: **88.7 × 40.0 × 1.6 mm**; the base cavity has at least 0.5 mm XY clearance on the board's left, top, and bottom edges.
 - Base envelope: x=-4..103.7, y=-4..44, z=0..10 mm. Lid envelope: x=-5..104.7, y=-5..45, z=9..22 mm; total assembled height is 22 mm.
-- The board sits on printed annular bosses at (4,30) and (48,4), aligned with the 3.2 mm PCB drills. 1.25 mm locating posts pass through both holes (0.35 mm radial clearance), and matching 2.4 mm OD / 1.5 mm ID annular lid retainers lightly contact only the bare mounting annuli. No screws or purchased hardware are required; verify the retainer contact on the first populated-board print.
+- The board sits on printed annular bosses at (4,30) and (48,4), aligned with the 3.2 mm PCB drills. 2.50 mm-diameter locating posts pass through both holes (0.35 mm radial clearance), and matching 4.8 mm OD / 3.0 mm ID annular lid retainers lightly contact only the bare mounting annuli. No screws or purchased hardware are required; verify the retainer contact on the first populated-board print.
 - The lid is a friction/snap fit: its 7 mm deep skirt overlaps the base wall by 1 mm, with two pairs of shallow snap beads. Expect to tune bead clearance for the printer and filament.
 
 ## Connector and service clearances
@@ -29,6 +29,20 @@ The volume x=88.7..103.7, y=3..31 is intentionally a clear chamber: no bosses, r
 
 Print base and lid separately with the flat floor/ceiling on the build plate, no supports, 0.2 mm layers, 3+ perimeters, 20–30% infill, and a 0.4 mm nozzle. PETG or ABS is preferred for appliance heat; PLA is suitable only for a bench fit. Deburr the connector windows and test the lid on an unpowered populated PCB first. Confirm J1/J4 plug insertion, the full RJ45 plug/latch sweep, J2 lead access with the lid removed, button reach, board seating, and antenna behavior before any live appliance connection.
 
+## Optional finger-operated lid
+
+The default tool-access lid and base remain unchanged. This is an **experimental optional prototype**, not a qualified enclosure. It uses four printed pieces: `rev3a_button_lid.stl`, two identical `rev3a_button_plunger.stl` parts, and one `rev3a_button_keeper.stl`. It preserves the board supports, USB/RJ45 openings, LED apertures, internal-only J2 access, and antenna chamber. See the [case-option comparison render](images/case-options.png).
+
+For an unambiguous orientation, hold the enclosure with the RJ45 opening on the left and the USB opening toward you: `RESET` is SW1 at x=5, the button nearest the RJ45 opening; `BOOT` is SW2 at x=13, immediately to its right.
+
+Print the lid with its outside ceiling on the bed. Unlike the original support-free lid, this optional lid needs small, local supports beneath the two keeper rails; remove them carefully and keep the rail mating faces clean. Print both plungers **cap-face-down with the long stem up**, and print the keeper flat. Use a 0.4 mm nozzle, 0.2 mm layers, at least three perimeters, and PETG or ABS for the keeper arms. Do not scale the pieces.
+
+With the lid upside down, insert each plunger from the inside so its finger cap passes through the guide. Push it upward until its wide flange reaches the integral upper throat. Then fit the common keeper from below around both long stems. Gently spread its two side arms outward while seating the hooks above the lid rails; do not force the keeper straight through the rails. The flange is then trapped: the upper throat prevents a button being pulled out, while the keeper is the lower press stop. The modeled stop-to-stop motion is 0.20 mm.
+
+The [C318884 switch drawing](https://www.lcsc.com/datasheet/C318884.pdf) specifies a 1.5 mm switch height, 2.0 mm actuator diameter, 0.20 +/- 0.10 mm drawing travel, and a 0.25 mm table value; it provides no permissible over-travel or crush-force value. The sliders therefore rest lightly on the switch actuators and rely on the switch's own return spring—this design does **not** claim an air gap, qualified retention, or certified force protection. Keeper engagement can be loose or tight depending on printer variation. Before live use, prototype on an unpowered populated board: confirm both keeper hooks stay engaged, each button returns to the upper stop without holding its switch electrically pressed, and continuity changes only while pressing. If the keeper can fall out, requires excessive force to fit, or either switch stays closed, use the original tool-access lid.
+
+Neither button is needed in normal operation. `RESET` restarts the adapter; it is not a factory reset. Hold `BOOT` while tapping `RESET` for the downloader. J2 remains an internal recovery backup and requires the lid to be removed.
+
 ## Files
 
 - `requirements.txt` — pinned Python dependencies for regeneration and checks.
@@ -36,6 +50,10 @@ Print base and lid separately with the flat floor/ceiling on the build plate, no
 - `rev3a_base.stl`, `rev3a_lid.stl` — print meshes.
 - `rev3a_base.step`, `rev3a_lid.step` — editable CAD exchange solids.
 - `check_geometry.py` — regenerates the shapes and checks exported STLs with trimesh.
+- `button_case.py` — optional captive lid, slider, and shared-keeper source; rerun with `python button_case.py --out case/rev3a`.
+- `rev3a_button_lid.stl`, `rev3a_button_plunger.stl`, `rev3a_button_keeper.stl` — optional print meshes; print two plungers and one keeper.
+- Matching `.step` files — editable optional solids.
+- `check_button_geometry.py` — focused checks against the actual C318884 switch STEP, including capture, actual lower stop, switch intersections, and exported STL/STEP validity.
 
 The checked-in exports pass `check_geometry.py` with build123d 0.11.1 and trimesh
 4.12.2: each STL is a watertight volume and each STEP file imports as one valid solid.
