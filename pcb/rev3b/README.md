@@ -12,7 +12,7 @@ The antenna comes with the XIAO module; factory installation still needs confirm
 
 The [KiCad 9 project](design/GEA-Adapter-Rev3B.kicad_pro), [schematic source](design/GEA-Adapter-Rev3B.kicad_sch), and [PCB source](design/GEA-Adapter-Rev3B.kicad_pcb) are available for design review. The provisional PCB uses four copper layers and measures 99 x 40 mm, with USB-C extending about 1 mm beyond the edge. This is 10.3 mm longer than Rev 3A's PCB; the extra space accommodates the XIAO while retaining much of the input circuitry's placement.
 
-Routing, enclosure fit, manufacturing files and assembled-board pricing are still pending. The board has unconnected nets and must not be fabricated from this source. The J2 3D model's seating position also needs verification before enclosure clearances are finalized. These files are not a fabrication release.
+Routing, power-trace clearances, enclosure fit, manufacturing files and assembled-board pricing are still pending. The board has unconnected nets and must not be fabricated from this source. The J2 3D model's seating position also needs verification before enclosure clearances are finalized. These files are not a fabrication release.
 
 ## One power source at a time
 

@@ -593,35 +593,35 @@
       },
       {
         "netclass": "Power",
-        "pattern": "ALT_PWR"
+        "pattern": "/ALT_PWR"
       },
       {
         "netclass": "Power",
-        "pattern": "PIN1_FUSED"
+        "pattern": "/PIN1_FUSED"
       },
       {
         "netclass": "Power",
-        "pattern": "PIN1_PROTECTED"
+        "pattern": "/PIN1_PROTECTED"
       },
       {
         "netclass": "Power",
-        "pattern": "PIN1_SW_OUT"
+        "pattern": "/PIN1_SW_OUT"
       },
       {
         "netclass": "Power",
-        "pattern": "PIN3_FUSED"
+        "pattern": "/PIN3_FUSED"
       },
       {
         "netclass": "Power",
-        "pattern": "PIN3_PROTECTED"
+        "pattern": "/PIN3_PROTECTED"
       },
       {
         "netclass": "Power",
-        "pattern": "PIN3_SW_OUT"
+        "pattern": "/PIN3_SW_OUT"
       },
       {
         "netclass": "Power",
-        "pattern": "V_INPUT"
+        "pattern": "/V_INPUT"
       },
       {
         "netclass": "USBPower",
@@ -661,11 +661,15 @@
       },
       {
         "netclass": "Power",
+        "pattern": "/5V_IN"
+      },
+      {
+        "netclass": "Power",
         "pattern": "/BUCK_5V"
       },
       {
         "netclass": "Switching",
-        "pattern": "BUCK_BST"
+        "pattern": "/BUCK_BST"
       },
       {
         "netclass": "Switching",
