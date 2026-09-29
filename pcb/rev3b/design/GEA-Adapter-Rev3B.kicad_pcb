@@ -22618,6 +22618,14 @@
 		(net 14)
 		(uuid "d49e10ea-02a6-4992-85d8-720d8f497e8c")
 	)
+	(via
+		(at 23.6 29.2)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net 14)
+		(uuid "f22c9dd9-7bdc-42b4-ab4e-76c68f8628aa")
+	)
 	(segment
 		(start 49.9375 24)
 		(end 51.0549 24)
