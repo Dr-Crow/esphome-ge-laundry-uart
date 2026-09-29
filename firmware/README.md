@@ -56,7 +56,7 @@ Use only one power source at a time. Some USB-to-UART adapters cannot provide en
 
 ## Rev 3B native USB first flash and recovery
 
-Rev 3B uses the Seeed XIAO ESP32-C3 module and its native USB-C connector. Keep the appliance disconnected during first flash or recovery. In the existing YAML substitutions, change `esp32_board` from its default to `seeed_xiao_esp32c3`:
+Rev 3B uses the Seeed XIAO ESP32-C3 module and its native USB-C connector. Appliance power energizes the same rail as the USB connector's VBUS; connecting both at once can back-feed a computer through the USB cable. Only one physical power source may be connected at a time. Keep the appliance unplugged whenever USB is connected, including for first flash and recovery. This design has no USB debug logging while the appliance is connected — use the Wi-Fi logs instead once the board has joined the network. In the existing YAML substitutions, change `esp32_board` from its default to `seeed_xiao_esp32c3`:
 
 ```yaml
 esp32_board: seeed_xiao_esp32c3
@@ -70,9 +70,24 @@ logger:
   hardware_uart: USB_SERIAL_JTAG
 ```
 
-Connect a data-capable USB-C cable to the XIAO USB connector. Hold the onboard BOOT button while connecting USB, then release it when the bootloader port appears; use RESET to retry if needed. Select the USB serial device in ESPHome Device Builder or with `esphome run`. The J2 recovery-power connection is under electrical review; use native USB for Rev3B recovery until that review is complete.
+Connect a data-capable USB-C cable to the XIAO USB connector. Hold the onboard BOOT button while connecting USB, then release it when the bootloader port appears; use RESET to retry if needed. Select the USB serial device in ESPHome Device Builder or with `esphome run`.
 
-J2 direction for the Rev3B GEA3 UART follows the module pins, not the legacy net-label names: pin 4 is module RX (adapter TX), and pin 5 is module TX (adapter RX). The header uses 3.3 V UART logic; its power-pin use is not yet documented for Rev3B.
+### J2 backup programming (design candidate)
+
+Rev3B is also planned to have a permanent, factory-populated, SMD 2x3 `J2` header for backup programming when USB access is impractical. This pinout is a design candidate, not yet confirmed on assembled hardware:
+
+| J2 pin | Signal | Connect to |
+| --- | --- | --- |
+| 1 | Regulated 5 V in (through an isolation diode) | A regulated 5 V supply |
+| 2 | Ground | Adapter ground and supply ground |
+| 3 | Boot (GPIO9) | A jumper to ground to enter the bootloader |
+| 4 | Module RX (GPIO20) | Adapter TX |
+| 5 | Module TX (GPIO21) | Adapter RX |
+| 6 | Enable | Briefly connect to ground, then release, to reset the processor |
+
+Before using J2, disconnect both the USB cable and the appliance connection; only one power source may be connected to the board at a time. J2 logic is 3.3 V only; never connect adapter power or signal into the module's `3V3` pad. An ordinary 3.3 V USB-to-UART adapter with TX/RX/GND and jumper leads is sufficient — no special boot-control hardware is required. If the 5 V supply and the adapter are separate devices, connect the supply ground, the adapter ground, and J2 pin 2 together.
+
+To enter the bootloader, connect pin 3 (Boot) to ground and apply the regulated 5 V supply. If already powered, briefly ground pin 6 (Enable), then release it while keeping Boot grounded. Select the UART adapter in ESPHome and flash the firmware. Remove the Boot jumper and reset again to start the firmware. This pinout still needs confirmation on assembled hardware.
 
 ## Later updates
 
