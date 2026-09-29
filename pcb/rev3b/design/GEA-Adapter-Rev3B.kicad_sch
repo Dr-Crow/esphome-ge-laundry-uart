@@ -9098,7 +9098,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f2dfac0")
 		(property "Reference" "J1"
-			(at 45.2628 78.3082 0)
+			(at 40.64 78.3082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9106,7 +9106,7 @@
 			)
 		)
 		(property "Value" "8P8C"
-			(at 45.2628 80.6196 0)
+			(at 40.64 80.6196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9958,7 +9958,7 @@
 		(dnp no)
 		(uuid "0757ed83-5a92-4f2e-b97f-91bc828e2721")
 		(property "Reference" "R2"
-			(at 125.73 165.1 90)
+			(at 120.65 165.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9966,7 +9966,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 125.73 162.56 90)
+			(at 120.65 162.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10258,7 +10258,7 @@
 		(dnp no)
 		(uuid "0f3373f5-767b-4613-a1f9-211dc0897cb5")
 		(property "Reference" "R1"
-			(at 125.73 157.48 90)
+			(at 120.65 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10266,7 +10266,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 125.73 160.02 90)
+			(at 120.65 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14683,7 +14683,7 @@
 		(dnp no)
 		(uuid "a6c49bc8-5d2f-4127-b831-1ff4da839c76")
 		(property "Reference" "D5"
-			(at 136.652 135.89 0)
+			(at 139.7 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14691,7 +14691,7 @@
 			)
 		)
 		(property "Value" "RED"
-			(at 139.7 139.954 0)
+			(at 139.7 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15644,6 +15644,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 				(justify right)
 			)
 		)
@@ -21849,7 +21850,7 @@
 	)
 	(text "3  XIAO 3V3 OUTPUT / CARRIER LOGIC RAIL"
 		(exclude_from_sim no)
-		(at 315 20 0)
+		(at 430 20 0)
 		(effects
 			(font
 				(size 1.524 1.524)
