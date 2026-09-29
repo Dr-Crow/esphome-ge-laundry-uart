@@ -10,6 +10,8 @@ Rev 3B uses a Seeed XIAO ESP32-C3 module with built-in USB-C, BOOT/RESET buttons
 
 The antenna comes with the XIAO module; factory installation still needs confirmation. The carrier footprint follows Seeed's official 22-pad drawing.
 
+The [KiCad 9 project](design/GEA-Adapter-Rev3B.kicad_pro) and [schematic source](design/GEA-Adapter-Rev3B.kicad_sch) are available for design review. PCB routing, enclosure fit, manufacturing files and assembled-board pricing are still pending. The schematic is not a fabrication release.
+
 ## One power source at a time
 
 Rev 3B adds circuitry to automatically select between GE appliance pin 1 and pin 3 power, so the same board works with either wiring without a solder-selector change. Only one external supply may be physically connected to the board at a time: USB, appliance power, or a regulated 5 V supply on `J2`. There is no simultaneous-source protection circuit, and appliance power energizes the same rail as USB VBUS — connecting both at once can back-feed a computer through the USB cable. Rev 3B also does not support battery operation.
