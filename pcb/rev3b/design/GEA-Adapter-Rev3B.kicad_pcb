@@ -8,9 +8,9 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "GE Appliance Adapter - Rev3A")
-		(date "2026-09-15")
-		(rev "3A")
+		(title "GE Appliance Adapter - Rev3B")
+		(date "2026-09-29")
+		(rev "3B")
 		(company "Dr-Crow")
 		(comment 1 "UNQUALIFIED PROTOTYPE - CURRENT-LIMITED BENCH TEST ONLY")
 	)
@@ -238,7 +238,7 @@
 			)
 		)
 		(path "/da6c8207-c042-45d4-9bf7-06a10874b2f4")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.76 -1.56)
@@ -625,7 +625,7 @@
 			)
 		)
 		(path "/dab3ce46-5d68-4182-ba7e-5871aeeebd54")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -777,7 +777,7 @@
 			)
 		)
 		(path "/2726a2a1-29f8-4cbe-91c8-e56b3387e7d1")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -1211,7 +1211,7 @@
 			)
 		)
 		(path "/74b5b296-9fe7-44d8-86e8-7daabc6561b1")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -1363,7 +1363,7 @@
 			)
 		)
 		(path "/ce71ef5f-2de2-4d90-ac78-835f57bd8be9")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -1828,7 +1828,7 @@
 			)
 		)
 		(path "/d79df4cb-de73-4d5d-af77-aa47e0dffd2a")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.26 -0.95)
@@ -2671,7 +2671,7 @@
 			)
 		)
 		(path "/ed7c54c8-eb1f-4548-b828-59ecb89c3d82")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -2823,7 +2823,7 @@
 			)
 		)
 		(path "/07fbf78d-d7d2-4dee-95aa-02b6682e55e4")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -2999,7 +2999,7 @@
 			)
 		)
 		(path "/a9006e9a-a776-43c5-9357-3d7e345e3d54")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.76 -1.56)
@@ -3375,7 +3375,7 @@
 			)
 		)
 		(path "/a6c49bc8-5d2f-4127-b831-1ff4da839c76")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.685 -0.96)
@@ -3702,7 +3702,7 @@
 			)
 		)
 		(path "/b3501035-f81d-48a3-b153-7b734b4fc8c0")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
@@ -3812,7 +3812,7 @@
 			)
 		)
 		(path "/41210ed9-4981-424c-be35-381675a4fb21")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -3964,7 +3964,7 @@
 			)
 		)
 		(path "/3cf02de4-0b1a-4ce7-abdb-516d921496f0")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -4262,7 +4262,7 @@
 			)
 		)
 		(path "/5449b854-20e9-4e7c-8b5d-9cbe2961acae")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.91 1.56)
@@ -4618,7 +4618,7 @@
 			)
 		)
 		(path "/c2d6a9ee-f4c6-44e1-a18b-7e291eeb77e0")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -4770,7 +4770,7 @@
 			)
 		)
 		(path "/0f3373f5-767b-4613-a1f9-211dc0897cb5")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -4922,7 +4922,7 @@
 			)
 		)
 		(path "/554a3ba3-78d4-41fe-bb81-3a018839fa98")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -5074,7 +5074,7 @@
 			)
 		)
 		(path "/f8eba0f7-7a1b-4a7d-a1d8-0df2a95332f2")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -5581,7 +5581,7 @@
 			)
 		)
 		(path "/46e03cc7-89a1-45c3-8938-ea082ea4aa72")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -5858,7 +5858,7 @@
 			)
 		)
 		(path "/38823c36-e0ed-4070-86a5-46e652097b3c")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
@@ -6300,7 +6300,7 @@
 			)
 		)
 		(path "/c28ad6d7-faea-478b-ba48-fab1c6eceb40")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -6577,7 +6577,7 @@
 			)
 		)
 		(path "/d0584b35-d467-4eb5-b7b5-a3c30f001e0a")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
@@ -6689,7 +6689,7 @@
 			)
 		)
 		(path "/00000000-0000-0000-0000-00005f3718ad")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -7106,7 +7106,7 @@
 			)
 		)
 		(path "/d1c5b745-ce67-4ce0-80ab-5e4ad8f382c1")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
@@ -7208,7 +7208,7 @@
 			)
 		)
 		(path "/f2e9d393-35fc-479a-83b3-161fe52af241")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
@@ -8184,7 +8184,7 @@
 			)
 		)
 		(path "/ffe0aff5-9976-4496-a824-b04d7fffa1b3")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -8433,7 +8433,7 @@
 			)
 		)
 		(path "/00000000-0000-0000-0000-00005f3289a9")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.386252 -1.71)
@@ -8967,7 +8967,7 @@
 			)
 		)
 		(path "/63eed7e9-41f0-441b-9330-7f8d75b82aac")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_circle
 			(center -4.4 -3.65)
@@ -9256,7 +9256,7 @@
 			)
 		)
 		(path "/db10b19a-2925-460d-91b6-ab52763a575d")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.711252 -1.36)
@@ -9408,7 +9408,7 @@
 			)
 		)
 		(path "/c0ab535a-1e91-48d0-a739-367dd1a75477")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.685 -0.96)
@@ -9794,7 +9794,7 @@
 			)
 		)
 		(path "/21d7214f-a9fc-4c82-a08e-7335ed898872")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -10091,7 +10091,7 @@
 			)
 		)
 		(path "/1212a047-fb4f-436b-a003-79050cd2da2e")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 2.86 2.61)
@@ -10394,7 +10394,7 @@
 			)
 		)
 		(path "/0f92c83b-4a0e-4393-b64f-44e3811f347e")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -10546,7 +10546,7 @@
 			)
 		)
 		(path "/41e11189-48e3-42ca-a63e-8b1b0b9b844e")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.386252 -1.71)
@@ -10746,7 +10746,7 @@
 			)
 		)
 		(path "/00000000-0000-0000-0000-00005f333061")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.711252 -0.91)
@@ -10888,7 +10888,7 @@
 			)
 		)
 		(path "/9a78a0c9-9986-4d50-9037-603f280c3485")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd exclude_from_pos_files dnp)
 		(fp_line
 			(start -2.36 -1)
@@ -11278,7 +11278,7 @@
 			)
 		)
 		(path "/2bfdc927-c633-48be-891b-4ea5e8c343e8")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -11430,7 +11430,7 @@
 			)
 		)
 		(path "/7fc42c3e-1792-49df-8a3c-986ac005f602")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -11608,7 +11608,7 @@
 			)
 		)
 		(path "/00000000-0000-0000-0000-00005f2dfac0")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -3.315 13.6)
@@ -11954,7 +11954,7 @@
 			)
 		)
 		(path "/cea3e60b-5877-4f16-a2ba-67fcdb3208ff")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -12381,7 +12381,7 @@
 			)
 		)
 		(path "/0757ed83-5a92-4f2e-b97f-91bc828e2721")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -12533,7 +12533,7 @@
 			)
 		)
 		(path "/45cbe67a-154d-4abe-8838-59de0b0a29fa")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -12733,7 +12733,7 @@
 			)
 		)
 		(path "/0c00ef1e-9241-4a78-a412-3cd7c8364766")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -13150,7 +13150,7 @@
 			)
 		)
 		(path "/8add6fe9-7f74-4c57-82c4-edb6e74c9b88")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
@@ -13422,7 +13422,7 @@
 			)
 		)
 		(path "/b035ef10-1fc7-40b3-8e83-da04db117cec")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.76 -1.56)
@@ -13822,7 +13822,7 @@
 			)
 		)
 		(path "/b09bb8c1-5e3c-46cc-b227-1374b14bc907")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.91 -1.56)
@@ -14174,7 +14174,7 @@
 			)
 		)
 		(path "/00000000-0000-0000-0000-00005f36072d")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -14326,7 +14326,7 @@
 			)
 		)
 		(path "/00000000-0000-0000-0000-00005f31ba49")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -14526,7 +14526,7 @@
 			)
 		)
 		(path "/2e3eeed9-3743-4e3f-b8fc-7062f57cd7a1")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.711252 -1.36)
@@ -14678,7 +14678,7 @@
 			)
 		)
 		(path "/744b4081-ec99-4711-aace-0e93395568bc")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -14854,7 +14854,7 @@
 			)
 		)
 		(path "/fec659a6-de89-4d09-aa02-43e085d6bd42")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.91 -1.56)
@@ -15206,7 +15206,7 @@
 			)
 		)
 		(path "/00000000-0000-0000-0000-00005f372a02")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -15348,7 +15348,7 @@
 			)
 		)
 		(path "/2acbebc0-467b-48e3-a214-5ba9b872d3f1")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
@@ -15460,7 +15460,7 @@
 			)
 		)
 		(path "/7a34e985-8a84-4b77-a731-d3a66dea75a8")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -15700,7 +15700,7 @@
 			)
 		)
 		(path "/5c0f2f9c-7d49-4bed-a929-0ae6b029dcc5")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
@@ -15812,7 +15812,7 @@
 			)
 		)
 		(path "/f5ca7214-78ab-4d24-aa3c-ea2e0600d2a1")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.685 -0.96)
@@ -16370,7 +16370,7 @@
 			)
 		)
 		(path "/1cd3ba5a-51bc-4e01-8769-894fb06c2229")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -16522,7 +16522,7 @@
 			)
 		)
 		(path "/a449dc65-997b-4085-b7a0-c07651fbec72")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -16674,7 +16674,7 @@
 			)
 		)
 		(path "/3a3706fc-3bf8-472e-83d0-e2bb4ccc58e0")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -17238,7 +17238,7 @@
 			)
 		)
 		(path "/00000000-0000-0000-0000-00005f333718")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 -0.735)
@@ -17378,7 +17378,7 @@
 			)
 		)
 		(path "/2f6837da-9a3c-4d1c-96a9-1d7065db7755")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_circle
 			(center 0 0)
@@ -17648,7 +17648,7 @@
 			)
 		)
 		(path "/a2c2dfa3-25ab-4e30-95c7-0ace8c501014")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.76 -1.56)
@@ -18315,7 +18315,7 @@
 			)
 		)
 		(path "/600a6d65-feb0-4d96-85b3-f5e8f234e27b")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(zone_connect 1)
 		(attr exclude_from_pos_files exclude_from_bom dnp allow_soldermask_bridges)
 		(net_tie_pad_groups "1, 2")
@@ -18637,7 +18637,7 @@
 			)
 		)
 		(path "/87787b7b-0950-4e3b-8130-4503b072059b")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -18789,7 +18789,7 @@
 			)
 		)
 		(path "/ffb09ab6-f372-4027-9c8e-6ae354d34df1")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -19212,7 +19212,7 @@
 			)
 		)
 		(path "/a291dc52-db30-477b-9b12-9628ee562cf0")
-		(sheetfile "GEA-Adapter-Rev3A.kicad_sch")
+		(sheetfile "GEA-Adapter-Rev3B.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
