@@ -9119,7 +9119,7 @@
 			(uuid "1058b1b5-f823-4dc4-a98f-8ec3d22630e8")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/models/J2-hanxia-HX-PZ-2.54-02-03-S.step"
+		(model "${KIPRJMOD}/models/J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9127,7 +9127,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 90)
+				(xyz 0 0 0)
 			)
 		)
 	)
