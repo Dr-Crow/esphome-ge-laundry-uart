@@ -10,7 +10,7 @@ Rev 3B uses a Seeed XIAO ESP32-C3 module with built-in USB-C, BOOT/RESET buttons
 
 The antenna comes with the XIAO module; factory installation still needs confirmation. The carrier footprint follows Seeed's official 22-pad drawing.
 
-The [KiCad 9 project](design/GEA-Adapter-Rev3B.kicad_pro), [schematic source](design/GEA-Adapter-Rev3B.kicad_sch), and [PCB source](design/GEA-Adapter-Rev3B.kicad_pcb) are available for design review. The provisional PCB uses four copper layers and measures 99 x 40 mm, with USB-C extending about 1 mm beyond the edge. This is 10.3 mm longer than Rev 3A's PCB; the extra space accommodates the XIAO while retaining much of the input circuitry's placement.
+The [KiCad 9 project](design/GEA-Adapter-Rev3B.kicad_pro), [schematic source](design/GEA-Adapter-Rev3B.kicad_sch), and [PCB source](design/GEA-Adapter-Rev3B.kicad_pcb) are available for design review. The provisional PCB uses four copper layers and measures 99 x 40 mm, with USB-C extending about 1 mm beyond the edge. This is 10.3 mm longer than Rev 3A's PCB; the extra space accommodates the XIAO, a deliberate functional-block layout, and mounting supports at opposite board ends.
 
 Routing, power-trace clearances, enclosure fit, manufacturing files and assembled-board pricing are still pending. The board has unconnected nets and must not be fabricated from this source. The J2 3D model's seating position also needs verification before enclosure clearances are finalized. These files are not a fabrication release.
 
