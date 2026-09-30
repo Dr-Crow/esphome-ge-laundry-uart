@@ -87,14 +87,6 @@
 		(layer "F.SilkS")
 		(uuid "b0b987fd-0e64-4365-ab71-b261ad752be8")
 	)
-	(fp_rect
-		(start 4.395 -21.037)
-		(end 13.394 -22.547)
-		(stroke (width 0.127) (type default))
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "a23b1e29-3878-49ad-b2c3-117cdbfd4dd9")
-	)
 	(fp_text user "USB-C"
 		(at 8.895 -21.75 0)
 		(layer "F.Fab")
