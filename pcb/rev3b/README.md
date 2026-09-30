@@ -1,6 +1,6 @@
 # PCB Rev 3B review candidate
 
-Rev 3B is a design in progress under review: PCB routing is unfinished, and there is no final case or assembled-board quote. It is not orderable. The [PCB revision index](../README.md) still points to [Rev 2.2](../rev2.2/README.md).
+Rev 3B is a routed design under review. It passes KiCad 9's PCB checks, but the schematic review, case, manufacturing files and assembled-board quote are not finished. It is not orderable. The [PCB revision index](../README.md) still points to [Rev 2.2](../rev2.2/README.md).
 
 [Back to the PCB revision index](../README.md) · [Ordering guide](../ORDERING.md) · [Firmware examples](../../firmware/README.md)
 
@@ -12,7 +12,9 @@ The antenna comes with the XIAO module; factory installation still needs confirm
 
 The [KiCad 9 project](design/GEA-Adapter-Rev3B.kicad_pro), [schematic source](design/GEA-Adapter-Rev3B.kicad_sch), and [PCB source](design/GEA-Adapter-Rev3B.kicad_pcb) are available for design review. The provisional PCB uses four copper layers and measures 99 x 40 mm, with USB-C extending about 1 mm beyond the edge. This is 10.3 mm longer than Rev 3A's PCB; the extra space accommodates the XIAO, a deliberate functional-block layout, and mounting supports at opposite board ends.
 
-Routing, power-trace clearances, enclosure fit, manufacturing files and assembled-board pricing are still pending. The board has unconnected nets and must not be fabricated from this source. The J2 3D model's seating position also needs verification before enclosure clearances are finalized. These files are not a fabrication release.
+The September 30, 2026 KiCad 9.0.9 PCB check reports no errors, warnings, unconnected items or schematic-to-board mismatches. The board uses ordinary 0.8 mm vias with 0.4 mm drills, keeps vias off surface-mount solder pads, and reserves the first inner layer for ground. The schematic check has no errors and 12 warnings still to review. Passing these checks does not establish electrical, thermal or appliance compatibility on assembled hardware.
+
+The J2 model now matches the supplier drawing's pin arrangement and seating orientation. Physical seating, enclosure fit, power-input limits and prototype testing remain to be checked. The XIAO and RJ45 models are clearance envelopes, not detailed component renders. These files are not a fabrication release.
 
 ## One power source at a time
 
