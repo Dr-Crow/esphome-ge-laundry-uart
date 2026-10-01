@@ -16,6 +16,14 @@ The September 30, 2026 KiCad 9.0.9 PCB check reports no errors, warnings, unconn
 
 The J2 model now matches the supplier drawing's pin arrangement and seating orientation. Physical seating, enclosure fit, power-input limits and prototype testing remain to be checked. The XIAO and RJ45 models are clearance envelopes, not detailed component renders. These files are not a fabrication release.
 
+## Board views
+
+![Rev 3B routed board, top view](images/rev3b-render-top.png)
+
+[Top](images/rev3b-render-top.png) · [Bottom](images/rev3b-render-bottom.png) · [Angled view](images/rev3b-render-oblique.png)
+
+Copper layers: [top](images/rev3b-copper-f-cu.svg) · [inner ground](images/rev3b-copper-in1-cu.svg) · [inner routing](images/rev3b-copper-in2-cu.svg) · [bottom](images/rev3b-copper-b-cu.svg). All copper plots use the top-side viewing direction so layers can be compared; the bottom 3D view looks from underneath.
+
 ## One power source at a time
 
 Rev 3B adds circuitry to automatically select between GE appliance pin 1 and pin 3 power, so the same board works with either wiring without a solder-selector change. Only one external supply may be physically connected to the board at a time: USB, appliance power, or a regulated 5 V supply on `J2`. There is no simultaneous-source protection circuit, and appliance power energizes the same rail as USB VBUS — connecting both at once can back-feed a computer through the USB cable. Rev 3B also does not support battery operation.
