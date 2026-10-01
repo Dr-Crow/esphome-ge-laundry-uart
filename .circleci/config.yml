@@ -2,6 +2,9 @@ version: 2.1
 
 jobs:
   kicad-validate:
+    parameters:
+      revision:
+        type: string
     resource_class: small
     docker:
       - image: kicad/kicad:9.0.9
@@ -11,6 +14,14 @@ jobs:
           command: sudo apt-get update && sudo apt-get install -y --no-install-recommends git ca-certificates openssh-client
       - checkout
       - run:
+          name: Resolve revision paths
+          command: |
+            REVISION="<< parameters.revision >>"
+            FILE_BASE="GEA-Adapter-Rev$(echo "$REVISION" | tr '[:lower:]' '[:upper:]')"
+            PROJECT_DIR="pcb/rev${REVISION}/design"
+            echo "export FILE_BASE=${FILE_BASE}" >> "$BASH_ENV"
+            echo "export PROJECT_DIR=${PROJECT_DIR}" >> "$BASH_ENV"
+      - run:
           name: KiCad CLI version
           command: kicad-cli version
       - run:
@@ -19,37 +30,37 @@ jobs:
             mkdir -p reports
             kicad-cli sch erc --severity-all --format json \
               --output reports/erc-full.json \
-              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch
+              "${PROJECT_DIR}/${FILE_BASE}.kicad_sch"
           when: always
       - run:
           name: ERC error gate
           command: |
             kicad-cli sch erc --severity-error --exit-code-violations --format json \
               --output reports/erc-gate.json \
-              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch
+              "${PROJECT_DIR}/${FILE_BASE}.kicad_sch"
       - run:
           name: DRC full-severity report with schematic parity (artifact, non-gating)
           command: |
             kicad-cli pcb drc --severity-all --schematic-parity --format json \
               --output reports/drc-full.json \
-              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb
+              "${PROJECT_DIR}/${FILE_BASE}.kicad_pcb"
           when: always
       - run:
           name: DRC error gate (errors, unconnected nets, schematic parity)
           command: |
             kicad-cli pcb drc --severity-error --exit-code-violations --schematic-parity --format json \
               --output reports/drc-gate.json \
-              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb
+              "${PROJECT_DIR}/${FILE_BASE}.kicad_pcb"
       - run:
           name: Export Gerber/drill preview (not a released manufacturing fileset)
           command: |
             mkdir -p fab-preview
             kicad-cli pcb export gerbers --board-plot-params \
               --output fab-preview/ \
-              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb
+              "${PROJECT_DIR}/${FILE_BASE}.kicad_pcb"
             kicad-cli pcb export drill \
               --output fab-preview/ \
-              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb
+              "${PROJECT_DIR}/${FILE_BASE}.kicad_pcb"
       - store_artifacts:
           path: reports
           when: always
@@ -60,4 +71,8 @@ jobs:
 workflows:
   validate:
     jobs:
-      - kicad-validate
+      - kicad-validate:
+          matrix:
+            parameters:
+              revision: ["3b", "3c"]
+          name: kicad-validate-rev<< matrix.revision >>
