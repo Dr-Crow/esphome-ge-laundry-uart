@@ -18,6 +18,7 @@ This directory keeps every board revision in a separate package so source files,
 
 | Revision | Status | Available material |
 | --- | --- | --- |
+| [Rev 3C](rev3c/README.md) | Design review; not appliance-qualified | Socketed variant of Rev 3B for a plug-in, pre-soldered XIAO ESP32-C3 module; no soldering required. |
 | [Rev 3B](rev3b/README.md) | Design review; not appliance-qualified | Four-layer XIAO ESP32-C3 carrier with native USB-C, automatic appliance power-pin selection, and an internal recovery header. |
 | [Rev 2.2](rev2.2/README.md) | Manufacturing candidate | Corrected KiCad source, matched factory package, and validation exports. |
 | [Rev 2.1](rev2.1/README.md) | Built; superseded | KiCad 9 source, JLCPCB package, drill maps, and repair image. |
