@@ -72,6 +72,8 @@ See the [firmware guide](../../firmware/README.md) for the matching ESPHome conf
 
 ## Case and ordering status
 
+The [Rev 3B enclosure](../../case/rev3b/README.md) has USB/RJ45 openings, LED windows, BOOT/RESET tool access, two board supports and an internal recovery header. Internal-antenna, external-bulkhead and captive-magnet options are available as printable candidates. CAD clearance checks pass; physical fit, cable access, magnet retention and wireless performance have not been tested.
+
 Rev 3B is not orderable. See [Rev 2.2](../rev2.2/README.md) and its [ordering guide](../ORDERING.md), which is the current manufacturing candidate with physical bring-up testing still pending.
 
 The following files are available for design review and assembler quotes, not as a ready-to-order release:
