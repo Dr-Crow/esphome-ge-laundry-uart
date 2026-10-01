@@ -12,7 +12,7 @@
 		(comment 1 "UNQUALIFIED PROTOTYPE - REVIEW BEFORE FABRICATION")
 	)
 	(lib_symbols
-		(symbol "74xGxx:74LVC2G07"
+		(symbol "GEA_Rev3B:74LVC2G07"
 			(pin_names
 				(offset 1.016)
 			)
@@ -121,7 +121,7 @@
 					(at 0 2.54 90)
 					(length 0)
 					(hide yes)
-					(name "VCC"
+					(name "+5V"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -8912,28 +8912,6 @@
 			)
 		)
 	)
-	(global_label "GEA3_TX"
-		(shape input)
-		(at 223.52 134.62 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5482ce0b-7820-4c19-8d04-bb8e3b93014f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.7128 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GEA3_RX"
 		(shape input)
 		(at 261.62 163.83 180)
@@ -9040,50 +9018,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GEA3_RX"
-		(shape input)
-		(at 223.52 137.16 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f41fc398-576b-42ed-8871-139642a239fb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 234.0152 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GEA2_RX"
-		(shape input)
-		(at 96.52 172.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f78d211c-cb06-4487-b1e5-5b5383f40e63")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.0248 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -9307,7 +9241,7 @@
 			(at 119.38 33.02 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -9315,7 +9249,7 @@
 			(at 127 33.02 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -9958,7 +9892,7 @@
 		(dnp no)
 		(uuid "0757ed83-5a92-4f2e-b97f-91bc828e2721")
 		(property "Reference" "R2"
-			(at 120.65 165.1 90)
+			(at 120.65 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9966,7 +9900,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 120.65 162.56 90)
+			(at 120.65 163.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10258,7 +10192,7 @@
 		(dnp no)
 		(uuid "0f3373f5-767b-4613-a1f9-211dc0897cb5")
 		(property "Reference" "R1"
-			(at 120.65 157.48 90)
+			(at 120.65 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10266,7 +10200,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 120.65 160.02 90)
+			(at 120.65 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10840,7 +10774,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xGxx:74LVC2G07")
+		(lib_id "GEA_Rev3B:74LVC2G07")
 		(at 321.31 126.365 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12167,7 +12101,7 @@
 			(at 119.38 93.98 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -12175,7 +12109,7 @@
 			(at 127 93.98 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -15033,7 +14967,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xGxx:74LVC2G07")
+		(lib_id "GEA_Rev3B:74LVC2G07")
 		(at 320.04 185.42 180)
 		(unit 2)
 		(exclude_from_sim no)
@@ -15630,7 +15564,7 @@
 		(dnp no)
 		(uuid "cc71aa51-d694-4c19-9c64-5966956e6c6b")
 		(property "Reference" "U2"
-			(at 183.6735 127 0)
+			(at 179.07 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17497,7 +17431,7 @@
 		(dnp no)
 		(uuid "5449b854-20e9-4e7c-8b5d-9cbe2961acae")
 		(property "Reference" "U8"
-			(at 403.86 66.04 0)
+			(at 403.86 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17507,7 +17441,7 @@
 			)
 		)
 		(property "Value" "AP63205WU"
-			(at 403.86 83.82 0)
+			(at 403.86 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18580,7 +18514,7 @@
 		(dnp no)
 		(uuid "bc14b953-8faf-4fe4-80c5-a79be03edee4")
 		(property "Reference" "Q3"
-			(at 175.26 33.02 0)
+			(at 180.34 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18591,7 +18525,7 @@
 			)
 		)
 		(property "Value" "CJ3407"
-			(at 175.26 35.56 0)
+			(at 180.34 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18689,7 +18623,7 @@
 		(dnp no)
 		(uuid "dccde25b-a512-478a-8ed9-3c246c50015c")
 		(property "Reference" "Q4"
-			(at 175.26 93.98 0)
+			(at 180.34 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18700,7 +18634,7 @@
 			)
 		)
 		(property "Value" "CJ3407"
-			(at 175.26 96.52 0)
+			(at 180.34 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24137,10 +24071,16 @@
 
 
 
-	(label "BOOT"
+	(global_label "BOOT"
+		(shape input)
 		(at 166.37 162.56 0)
-		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
 		(uuid "b3a00001-0000-4000-8000-000000000002")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.5348 162.56 0)
+			(effects (font (size 1.27 1.27)) (justify left) (hide yes))
+		)
 	)
 
 
@@ -24174,15 +24114,25 @@
 	(label "LED2" (at 158.75 148.59 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b3b00000-0000-4000-8000-000000000009"))
 	(label "LED1" (at 158.75 152.4 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b3b00000-0000-4000-8000-000000000010"))
 	(label "GEA2_MCU_TX" (at 158.75 156.21 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b3b00000-0000-4000-8000-000000000011"))
-	(label "GEA3_RX" (at 158.75 167.64 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b3b00000-0000-4000-8000-000000000012"))
-	(label "GEA3_TX" (at 213.36 167.64 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000013"))
+	(global_label "GEA3_RX" (shape input) (at 158.75 167.64 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b3b00000-0000-4000-8000-000000000012")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.5752 167.64 0) (effects (font (size 1.27 1.27)) (justify right) (hide yes)))
+	)
+	(global_label "GEA3_TX" (shape input) (at 213.36 167.64 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b3b00000-0000-4000-8000-000000000013")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}" (at 223.5348 167.64 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+	)
 	(label "BOOT_SEL" (at 213.36 163.83 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000014"))
-	(label "BOOT" (at 213.36 160.02 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000015"))
-	(label "GEA2_RX" (at 213.36 156.21 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000016"))
+	(global_label "BOOT" (shape input) (at 213.36 160.02 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b3b00000-0000-4000-8000-000000000015")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}" (at 223.5348 160.02 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+	)
+	(global_label "GEA2_RX" (shape input) (at 213.36 156.21 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b3b00000-0000-4000-8000-000000000016")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}" (at 223.5348 156.21 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+	)
 	(label "+3V3" (at 213.36 152.4 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000017"))
 	(label "GND" (at 213.36 148.59 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000018"))
 	(label "+5V" (at 213.36 144.78 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000019"))
-	(label "EN" (at 184.15 125.73 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000020"))
+	(global_label "EN" (shape input) (at 184.15 125.73 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b3b00000-0000-4000-8000-000000000020")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}" (at 184.15 115.5552 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+	)
 	(label "GND" (at 187.96 125.73 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000021"))
 	(no_connect
 		(at 184.15 176.53)
@@ -24193,7 +24143,9 @@
 	(global_label "EN" (shape input) (at 36.83 219.71 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b3b00000-0000-4000-8000-000000000025"))
 	(global_label "EN" (shape input) (at 36.83 227.33 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b3b00000-0000-4000-8000-000000000033"))
 	(global_label "BOOT" (shape input) (at 36.83 240.03 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b3b00000-0000-4000-8000-000000000034"))
-	(label "EN" (at 130.81 134.62 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3b00000-0000-4000-8000-000000000035"))
+	(global_label "EN" (shape input) (at 130.81 134.62 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b3b00000-0000-4000-8000-000000000035")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}" (at 140.9848 134.62 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+	)
 	(label "ALT_PWR" (at 64.135 97.79 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b3b00000-0000-4000-8000-000000000036"))
 	(label "5V_IN" (at 44.45 207.01 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b3b00000-0000-4000-8000-000000000049"))
 	(label "+5V"
