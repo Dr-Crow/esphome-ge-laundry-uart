@@ -23,6 +23,8 @@ Start with [PCB Rev 2.2](pcb/rev2.2/README.md), then follow the [step-by-step or
 
 Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
 
+[Rev 3B](pcb/rev3b/README.md) is a new XIAO ESP32-C3 carrier under design review, with native USB-C and an external antenna. Its price and appliance compatibility are not yet established; it does not replace the ordering recommendation above.
+
 ## Related projects
 
 - [GE Appliances organization](https://github.com/geappliances)

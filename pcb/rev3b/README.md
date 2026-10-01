@@ -1,6 +1,6 @@
 # PCB Rev 3B review candidate
 
-Rev 3B is a routed design under review. It passes KiCad 9's PCB checks, but the schematic review, case, manufacturing files and assembled-board quote are not finished. It is not orderable. The [PCB revision index](../README.md) still points to [Rev 2.2](../rev2.2/README.md).
+Rev 3B is a routed design under review. It passes KiCad 9's PCB and schematic checks, and manufacturing files are available for review and quoting. It is not ready to order. The [PCB revision index](../README.md) still points to [Rev 2.2](../rev2.2/README.md).
 
 [Back to the PCB revision index](../README.md) · [Ordering guide](../ORDERING.md) · [Firmware examples](../../firmware/README.md)
 
@@ -12,7 +12,7 @@ The antenna comes with the XIAO module; factory installation still needs confirm
 
 The [KiCad 9 project](design/GEA-Adapter-Rev3B.kicad_pro), [schematic source](design/GEA-Adapter-Rev3B.kicad_sch), and [PCB source](design/GEA-Adapter-Rev3B.kicad_pcb) are available for design review. The provisional PCB uses four copper layers and measures 99 x 40 mm, with USB-C extending about 1 mm beyond the edge. This is 10.3 mm longer than Rev 3A's PCB; the extra space accommodates the XIAO, a deliberate functional-block layout, and mounting supports at opposite board ends.
 
-The September 30, 2026 KiCad 9.0.9 PCB check reports no errors, warnings, unconnected items or schematic-to-board mismatches. The board uses ordinary 0.8 mm vias with 0.4 mm drills, keeps vias off surface-mount solder pads, and reserves the first inner layer for ground. The schematic check has no errors and 12 warnings still to review. Passing these checks does not establish electrical, thermal or appliance compatibility on assembled hardware.
+The October 1, 2026 KiCad 9.0.9 PCB check reports zero errors, warnings, unconnected items or schematic-to-board mismatches. The schematic check also reports zero errors and warnings. The board uses ordinary 0.8 mm vias with 0.4 mm drills, keeps vias off surface-mount solder pads, and reserves the first inner layer for ground. Passing these checks does not establish electrical, thermal or appliance compatibility on assembled hardware.
 
 The J2 model now matches the supplier drawing's pin arrangement and seating orientation. Physical seating, enclosure fit, power-input limits and prototype testing remain to be checked. The XIAO and RJ45 models are clearance envelopes, not detailed component renders. These files are not a fabrication release.
 
@@ -25,6 +25,8 @@ The J2 model now matches the supplier drawing's pin arrangement and seating orie
 Copper layers: [top](images/rev3b-copper-f-cu.svg) · [inner ground](images/rev3b-copper-in1-cu.svg) · [inner routing](images/rev3b-copper-in2-cu.svg) · [bottom](images/rev3b-copper-b-cu.svg). All copper plots use the top-side viewing direction so layers can be compared; the bottom 3D view looks from underneath.
 
 ## One power source at a time
+
+Rev 3B is not appliance-qualified. The supported appliance voltage range, startup and transient behavior, and loaded module power rails still need verification on a controlled bench prototype. Do not connect this unqualified board to an appliance.
 
 Rev 3B adds circuitry to automatically select between GE appliance pin 1 and pin 3 power, so the same board works with either wiring without a solder-selector change. Only one external supply may be physically connected to the board at a time: USB, appliance power, or a regulated 5 V supply on `J2`. There is no simultaneous-source protection circuit, and appliance power energizes the same rail as USB VBUS — connecting both at once can back-feed a computer through the USB cable. Rev 3B also does not support battery operation.
 
@@ -71,6 +73,15 @@ See the [firmware guide](../../firmware/README.md) for the matching ESPHome conf
 ## Case and ordering status
 
 Rev 3B is not orderable. See [Rev 2.2](../rev2.2/README.md) and its [ordering guide](../ORDERING.md), which is the current manufacturing candidate with physical bring-up testing still pending.
+
+The following files are available for design review and assembler quotes, not as a ready-to-order release:
+
+- [Gerber and drill ZIP](manufacturing/GERBER-GEA-Adapter-Rev3B.zip)
+- [Bill of materials](manufacturing/BOM-GEA-Adapter-Rev3B.csv): 82 populated parts, including the RJ45 connector, recovery header and XIAO module.
+- [Component positions](manufacturing/CPL-GEA-Adapter-Rev3B.csv): the same 82 parts, all on the top side.
+- [Schematic PDF](validation/schematic.pdf)
+
+The assembled-board quote and module availability are still pending. No per-board price has been established.
 
 ## Sources
 
