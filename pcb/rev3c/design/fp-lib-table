@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "OnionStraws")(type "KiCad")(uri "${KIPRJMOD}/footprints/OnionStraws.pretty")(options "")(descr "Project-local production footprints"))
+  (lib (name "GEA_Rev3C")(type "KiCad")(uri "${KIPRJMOD}/footprints/GEA_Rev3C.pretty")(options "")(descr "Rev3C project-local footprints: HCTL PM254-1-07-Z-8.5 XIAO sockets"))
+)
