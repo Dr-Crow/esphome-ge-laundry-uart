@@ -1,0 +1,63 @@
+version: 2.1
+
+jobs:
+  kicad-validate:
+    resource_class: small
+    docker:
+      - image: kicad/kicad:9.0.9
+    steps:
+      - run:
+          name: Prepare checkout tools
+          command: sudo apt-get update && sudo apt-get install -y --no-install-recommends git ca-certificates openssh-client
+      - checkout
+      - run:
+          name: KiCad CLI version
+          command: kicad-cli version
+      - run:
+          name: ERC full-severity report (artifact, non-gating)
+          command: |
+            mkdir -p reports
+            kicad-cli sch erc --severity-all --format json \
+              --output reports/erc-full.json \
+              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch
+          when: always
+      - run:
+          name: ERC error gate
+          command: |
+            kicad-cli sch erc --severity-error --exit-code-violations --format json \
+              --output reports/erc-gate.json \
+              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch
+      - run:
+          name: DRC full-severity report with schematic parity (artifact, non-gating)
+          command: |
+            kicad-cli pcb drc --severity-all --schematic-parity --format json \
+              --output reports/drc-full.json \
+              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb
+          when: always
+      - run:
+          name: DRC error gate (errors, unconnected nets, schematic parity)
+          command: |
+            kicad-cli pcb drc --severity-error --exit-code-violations --schematic-parity --format json \
+              --output reports/drc-gate.json \
+              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb
+      - run:
+          name: Export Gerber/drill preview (not a released manufacturing fileset)
+          command: |
+            mkdir -p fab-preview
+            kicad-cli pcb export gerbers --board-plot-params \
+              --output fab-preview/ \
+              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb
+            kicad-cli pcb export drill \
+              --output fab-preview/ \
+              pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb
+      - store_artifacts:
+          path: reports
+          when: always
+      - store_artifacts:
+          path: fab-preview
+          when: always
+
+workflows:
+  validate:
+    jobs:
+      - kicad-validate
