@@ -16,7 +16,17 @@ The [KiCad 9 project](design/GEA-Adapter-Rev3C.kicad_pro), [schematic source](de
 
 ## Module
 
-Buy a [Seeed Studio XIAO ESP32-C3 Pre-Soldered, SKU 102010633](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html) (USD 5.99 as checked October 1, 2026, before tax and shipping, separate from the carrier board; carrier pricing is still pending). This SKU includes its own antenna.
+Buy a [Seeed Studio XIAO ESP32-C3 Pre-Soldered, SKU 102010633](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html) (USD 5.99 as checked October 1, 2026, before tax and shipping, separate from the carrier board). This SKU includes its own antenna.
+
+### Cost estimate
+
+JLCPCB quoted **USD 114.65 for five assembled carriers ($22.93 each)** on
+October 1, 2026: four layers, 99 × 40 mm, 1.6 mm, lead-free HASL, Economic
+PCBA, and all 82 carrier parts installed, including both female sockets and
+the recovery header. Adding the $5.99 pre-soldered XIAO brings the estimate
+to **$28.92 per adapter before shipping, tax, the case, and cables**. An
+external screw-on antenna and its pigtail would cost extra. Prices and stock
+can change; this quote is not an approval to manufacture or use the board.
 
 > [!IMPORTANT]
 > Do not use the unsoldered SKU 113991054 as a plug-in replacement — it has no header pins to mate with the carrier's sockets. Other XIAO models (C6, S3, and similar) are not drop-in compatible; use the pre-soldered XIAO ESP32-C3 SKU above.
@@ -65,7 +75,7 @@ The [Rev 3C enclosure](../../case/rev3c/README.md) accounts for the taller, sock
 
 The final KiCad 9 full-severity ERC and DRC report zero errors, warnings, and unconnected items, with zero schematic-to-board parity differences. These checks do not establish assembled-board electrical, thermal, mechanical, RF, or appliance compatibility.
 
-The carrier manufacturing files are available for design review and quoting: [BOM](manufacturing/BOM-GEA-Adapter-Rev3C.csv), [CPL](manufacturing/CPL-GEA-Adapter-Rev3C.csv), and [Gerber/drill ZIP](manufacturing/GERBER-GEA-Adapter-Rev3C.zip). The BOM and CPL each contain 82 carrier parts, including J1, J2, J5, and J6; the XIAO module is supplied separately. Pricing is pending; no quote or production release is implied.
+The carrier manufacturing files are available for design review and quoting: [BOM](manufacturing/BOM-GEA-Adapter-Rev3C.csv), [CPL](manufacturing/CPL-GEA-Adapter-Rev3C.csv), and [Gerber/drill ZIP](manufacturing/GERBER-GEA-Adapter-Rev3C.zip). The BOM and CPL each contain 82 carrier parts, including J1, J2, J5, and J6; the XIAO module is supplied separately. The quote above does not establish production readiness.
 
 ![Rev3C oblique review render](images/rev3c-render-oblique.png)
 
