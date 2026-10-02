@@ -23,6 +23,8 @@ Start with [PCB Rev 2.2](pcb/rev2.2/README.md), then follow the [step-by-step or
 
 Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
 
+For the proposed USB-C revisions, see the [board and enclosure comparison](docs/revision-comparison/README.md), including assembled-board estimates and views from several angles. The [project handoff](docs/revision-comparison/HANDOFF.md) records the development branches and remaining work.
+
 ## Related projects
 
 - [GE Appliances organization](https://github.com/geappliances)
