@@ -172,6 +172,32 @@ def check_button_sightlines(lid: Part) -> list[str]:
     return problems
 
 
+def check_button_datums() -> list[str]:
+    """BUTTON_POSITIONS must match the rigid-translation datums derived from
+    the official Seeed v1.3 project's own BOOT0/RST0 footprint centers --
+    (139.5476,100.5586) and (139.5476,109.4486) respectively -- offset by
+    the row-pair-derived translation dx=-60.5476, dy=-92.0861 (see
+    enclosure.py's BUTTON_POSITIONS comment). This is a regression guard
+    against reintroducing a swapped-label or reflected-axis mistake.
+    """
+    problems = []
+    expected = {
+        "BOOT0": (139.5476 - 60.5476, 100.5586 - 92.0861),
+        "RST0": (139.5476 - 60.5476, 109.4486 - 92.0861),
+    }
+    for ref, (ex, ey) in expected.items():
+        if ref not in e.BUTTON_POSITIONS:
+            problems.append(f"{ref} missing from BUTTON_POSITIONS")
+            continue
+        ax, ay = e.BUTTON_POSITIONS[ref]
+        if abs(ax - ex) > 0.01 or abs(ay - ey) > 0.01:
+            problems.append(
+                f"{ref} at ({ax},{ay}) does not match the official-pin-derived "
+                f"datum ({ex:.4f},{ey:.4f})"
+            )
+    return problems
+
+
 def check_mount_hole_access() -> list[str]:
     """H1/H2 locating posts must reach the PCB's own 3.2 mm drill without
     the post itself exceeding the drill radius (checked already by
@@ -269,6 +295,7 @@ def main() -> int:
     problems += check_connector_corridors(base, lid)
     problems += check_led_sightlines(lid)
     problems += check_button_sightlines(lid)
+    problems += check_button_datums()
     problems += check_mount_hole_access()
 
     base_ant = e.make_base(antenna="internal")

@@ -92,11 +92,14 @@ J2_HEIGHT_MAX = 9.60
 LED_POSITIONS = {"D4": (84.0, 26.0), "D5": (84.0, 30.0), "D6": (88.0, 26.0)}
 LED_VIEW_RADIUS = 1.25
 
-# BOOT/RESET centers are derived from the official Seeed v1.3 KiCad project
-# and transformed through the current U2 footprint's carrier mapping. These
-# are center coordinates, not a promise about actuator height or tool fit; the
-# conservative lid apertures below still require a physical press/return check.
-BUTTON_POSITIONS = {"BOOT0": (90.725, 5.524), "RST0": (81.835, 5.524)}
+# Seeed v1.3 BOOT0=(139.5476,100.5586), RST0=(139.5476,109.4486).
+# Matching D0/D6 and RX/VBUS rows to U2 pads 1/7 and 8/14 gives a rigid
+# translation dx=-60.5476, dy=-92.0861, with no reflection. Use the row-pair
+# midpoint: carrier SMD land centers are wider apart than module hole centers.
+# Both Rev3B and Rev3C seat the module in the same physical XY orientation;
+# U2's -90-degree placement refers to its library-local coordinate system.
+# Actuator height, tool fit, and press/return still require a physical check.
+BUTTON_POSITIONS = {"BOOT0": (79.0, 8.4725), "RST0": (79.0, 17.3625)}
 BUTTON_ACCESS_RADIUS = 1.75
 
 # ---------------------------------------------------------------------------
@@ -481,4 +484,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -46,6 +46,10 @@ the extracted D4/D5/D6 positions. Two conservative lid tool apertures are
 centered on the BOOT0/RST0 centers from the official Seeed v1.3 project; tool
 fit, actuator force, and return must still be checked on hardware.
 
+The lid has two 3.5 mm tool holes above the module's BOOT and RESET buttons.
+Their alignment follows Seeed's module layout; the geometry checks include
+these positions to catch accidental movement of either opening.
+
 The conservative J1 and XIAO model envelopes are project clearance solids,
 not manufacturer CAD. The base includes a conservative 3.0 mm under-board
 RJ45-tail relief with a 0.6 mm floor skin because the local evidence does not
@@ -102,4 +106,3 @@ and release, LED visibility, J2 lead access with the lid removed, board seating,
 antenna bend/retention/RF behavior, and magnet captivity if selected. Do not
 connect USB, appliance power, and J2 5 V at the same time; the case provides
 no electrical interlock.
-
