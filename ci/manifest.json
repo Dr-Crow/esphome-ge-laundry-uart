@@ -50,7 +50,7 @@
       "bom": "pcb/rev2.2/manufacturing/BOM-OnionStraws-rev2.2.csv",
       "cpl": "pcb/rev2.2/manufacturing/CPL-OnionStraws-rev2.2.csv",
       "archive": "pcb/rev2.2/manufacturing/GERBER-OnionStraws-rev2.2.zip",
-      "status": "Manufacturing candidate; physical bring-up pending",
+      "status": "Prototype baseline; rating, source and physical qualification blocked",
       "readiness": {
         "power": {
           "state": "blocked",

@@ -48,6 +48,7 @@ or publishes a release.
 - Release checks separate power, source and physical qualification gates. Every
   gate must explicitly be passed and cite a committed evidence file with its
   SHA-256, plus the exact current project/schematic/PCB hashes in `source_sha256`.
+  Evidence must be tracked in git and match its committed HEAD contents.
   Source changes invalidate qualification until that evidence is reviewed again.
   Current gates remain blocked. A native or firmware pass is not release
   readiness, permission to order, or evidence of appliance compatibility.

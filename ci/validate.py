@@ -204,8 +204,17 @@ def release(board, output, manifest):
             findings.append(f"BLOCKED {gate}: evidence/hash missing")
         elif evidence.get("source_sha256") != current_sources:
             findings.append(f"BLOCKED {gate}: qualification does not match current source hashes")
+        elif command(["git", "ls-files", "--error-unmatch", "--",
+                      path(evidence["evidence"]).relative_to(ROOT)], output,
+                     gate + "-evidence-tracked") != 0:
+            findings.append(f"BLOCKED {gate}: qualification evidence is not tracked in git")
         elif sha(path(evidence["evidence"])) != evidence["sha256"]:
             findings.append(f"BLOCKED {gate}: evidence hash differs")
+        else:
+            committed = subprocess.run(["git", "show", "HEAD:" + str(path(evidence["evidence"]).relative_to(ROOT))],
+                                       cwd=ROOT, capture_output=True, check=False)
+            if committed.returncode != 0 or hashlib.sha256(committed.stdout).hexdigest() != evidence["sha256"]:
+                findings.append(f"BLOCKED {gate}: qualification evidence differs from committed HEAD")
     (output / "readiness.json").write_text(json.dumps({"gates": readiness, "findings": findings}, indent=2) + "\n")
     require(not findings, "; ".join(findings))
     return {"readiness": "passed", "notice": "Readiness evidence is reviewed independently from native CI checks"}
