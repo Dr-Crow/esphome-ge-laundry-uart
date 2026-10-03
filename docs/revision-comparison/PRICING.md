@@ -6,6 +6,8 @@ All prices are USD. Each quote is for five PCBs and assembly of all five
 carriers. Shipping, tax, printed enclosures, appliance cables, external UART
 programmers, optional SMA pigtails and screw-on antennas are excluded.
 The comparison does not contain a final delivered quote or a purchase order.
+Historical quotes do not price the pending corrected shared dual-input Rev3C.
+The rejected PIN1-only experiment is not an accepted cost or part-count baseline.
 
 | Revision | Quote date | PCB and assembly scope | Total for five | Per adapter |
 | --- | --- | --- | ---: | ---: |
@@ -85,3 +87,29 @@ Do not report a Rev3D adapter price by simply adding that difference.
 Printed cases, magnets and optional external antennas have not been quoted.
 The $39.99 FirstBuild target is a comparison goal, not a delivered-cost claim.
 Refresh component stock, module availability and all fees before ordering.
+
+## Bounded October 3 component comparison
+
+Public catalog snapshots compare only one fuse, one diode and one divider
+resistor per board, including a 100-resistor minimum purchase. They are not
+a complete BOM, assembled-board quote or required dual-input design price.
+
+| Parts purchased | Five boards | Ten boards |
+| --- | ---: | ---: |
+| Littelfuse 1812L075/33DR + PMEG6010ER,115 + 2.4 kΩ resistor | $2.10 | $3.88 |
+| Bourns MF-MSMF075/33X-2 + same diode/resistor | $5.13 | $9.32 |
+
+Sources: [Littelfuse C151170](https://www.lcsc.com/product-detail/C151170.html),
+[exact Bourns DigiKey](https://www.digikey.com/en/products/detail/bourns-inc/MF-MSMF075-33X-2/16357034),
+[diode C456121](https://www.lcsc.com/product-detail/C456121.html),
+[resistor C17526](https://www.lcsc.com/product-detail/C17526.html).
+LCSC listed exact Bourns C3760814 unavailable in the checked snapshot.
+The [JLC C151170 listing](https://jlcpcb.com/partdetail/Littelfuse-1812L07533DR/C151170)
+confirms an Extended assembly part, without verified live price or stock.
+LCSC stock does not establish JLC inventory. Manufacturer lands, thermal
+response and qualification differ; the fuses are not asserted drop-in equivalents.
+
+These totals exclude all other parts, PCB, module, assembly setup, placement,
+attrition, shipping, tax and tariffs. Do not extrapolate the rejected experiment's
+58-part count or these purchases into a finished adapter saving. The required
+automatic dual-input power repair remains unquoted.

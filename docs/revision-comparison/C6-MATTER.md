@@ -1,52 +1,60 @@
 # C3/C6 carrier compatibility and Matter options
 
-[Comparison](README.md) · [Project handoff](HANDOFF.md)
+[Comparison](README.md) · [Validation and decisions](VALIDATION.md) · [Project handoff](HANDOFF.md)
 
-Research snapshot: October 2, 2026. No C6 carrier or Matter firmware has been
-implemented. A shared carrier is a proposal; the published Rev3C remains
-specified for the pre-headered XIAO ESP32-C3.
+Hardware/firmware update: October 3, 2026. Four shared C3/C6 × GEA2/GEA3
+ESPHome profiles were recovered exactly and freshly compiled, including C6
+antenna-switch configuration. The public Rev3C baseline remains C3-specific.
+The PIN1-only carrier experiment is rejected. Useful shared-interface findings
+may inform a replacement retaining both appliance inputs and automatic selection.
+No physical module/case/RF qualification or Matter implementation is claimed.
+The optional Matter research below retains its October 2 scope and is not a
+new platform-support verification.
 
-## Header pattern
+## Header and recovery findings
 
-The Rev3C carrier and Seeed's official C6 PCB use two seven-pin rows with
-2.54 mm pitch and 15.24 mm between row centers. Both modules are nominally
-21 × 17.8 mm, with 5 V, ground and 3.3 V in the same side-header positions.
-This is a PCB-coordinate check, not confirmation of installed height or fit.
+Both side-header patterns have 2.54 mm pitch and 15.24 mm between rows.
+Modules are nominally 21 × 17.8 mm, with side 5 V, GND and 3V3 positions
+aligned. Coordinate agreement does not prove installed height or fit.
 
-| Physical XIAO pin | Current carrier use | C3 GPIO | C6 GPIO |
+| Physical XIAO pin | Carrier use | C3 GPIO | C6 GPIO |
 | --- | --- | ---: | ---: |
-| D0 / D1 / D2 | Three status LEDs | 2 / 3 / 4 | 0 / 1 / 2 |
-| D3 | GEA2 transmit | 5 | 21 |
+| D0 / D1 / D2 | Red diagnostic / green Wi-Fi / yellow GEA-connected LEDs | 2 / 3 / 4 | 0 / 1 / 2 |
+| D3 | GEA2 TX | 5 | 21 |
 | D4 / D5 | Unconnected | 6 / 7 | 22 / 23 |
-| D6 | GEA3 transmit and recovery TX | 21 | 16 |
-| D7 | GEA3 receive and recovery RX | 20 | 17 |
-| D8 | C3 strapping pull-up | 8 | 19 |
-| D9 | C3 BOOT connection | 9, BOOT | 20, ordinary GPIO |
-| D10 | GEA2 receive | 10 | 18 |
+| D6 | GEA3 TX | 21 | 16 |
+| D7 | GEA3 RX | 20 | 17 |
+| D8 | Existing pull-up | 8 | 19 |
+| D9 | Existing C3 BOOT connection | 9, BOOT | 20, ordinary GPIO |
+| D10 | GEA2 RX | 10 | 18 |
 
-Sources: [Seeed C3 pin map](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/),
-[Seeed C6 pin map and PCB download](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/).
-Carrier connections were read from Rev3C source at `38d94d3`.
+Sources: [Seeed C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/),
+[Seeed C6](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/).
+All 14 shared header functions and firmware assignments were independently
+compared with exact recovered sources and official module CAD. The red LED
+is manual and starts off; yellow reports bus connection, not packet activity.
 
-## Shared-carrier proposal
+C6 BOOT is not on its two side-header rows. The recovered shared schematic
+removes legacy J2/D19 and uses each module's USB, BOOT and RESET controls.
+Different firmware images are required for C3 and C6; a jumper cannot convert
+one build into the other. Both ROMs can emit UART text onto GEA3 TX before
+application logging stops. Appliance response is untested; optional TX
+containment is not implemented.
 
-Most signal differences can be handled by separate C3 and C6 firmware
-configurations. A jumper does not make one compiled firmware image run on
-both chips. No processor-selector jumper has been implemented or shown to
-be necessary for normal operation.
+## Firmware and remaining hardware gates
 
-The recovery exception needs explicit handling: C3 brings BOOT to D9;
-C6's actual GPIO9 BOOT signal is not on its two seven-pin side headers.
-A jumper among those header pins cannot reach C6 BOOT. The inexpensive
-proposal is to retain J2 UART/power access, use the C6 module's own BOOT and
-RESET buttons, and label or isolate the C3-only J2 BOOT connection as needed.
-Review the real ROM UART pins and complete boot sequence before acceptance.
+All four profiles passed config checks and real local builds with ESPHome
+2026.9.1, ESP-IDF 5.5.5 and GEA commit
+`283ff2b0dfe90a6d14a5417a23176d433be8a5b3`. C6 GPIO3 enables its antenna
+switch; GPIO14 selects internal or optional external antenna. GEA2 destination
+and ERD examples are not a verified refrigerator configuration.
 
-Remaining work: review every pin and startup pull resistor; verify 5 V/3.3 V
-power and regulator headroom; preserve the single-source restriction until
-a different circuit is verified; adapt USB/button/antenna case access;
-compile both configurations; and test actual modules. C6's antenna switch
-uses onboard GPIO3 and GPIO14 and needs firmware configuration.
+The reviewed all-layer carrier copper exclusion improves the C6 ceramic antenna
+area without qualifying RF. The legacy case is C3-only; no common C3/C6 case
+has completed calibration, fit or physical testing. Purchased module revisions,
+5 V/3V3 headroom, demand, retention, USB/buttons, thermal and RF remain gates.
+Use one external source at a time: side VBUS connects directly to module USB.
+Leave UART VCC disconnected and never inject the module's 3V3 output.
 
 ## Thread, ESPHome and Matter
 

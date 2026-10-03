@@ -2,9 +2,14 @@
 
 [Project overview](../../README.md) · [Pricing details](PRICING.md) · [C3/C6 and Matter options](C6-MATTER.md) · [Project handoff](HANDOFF.md)
 
-Snapshot: October 2, 2026. Rev2.2 is the current manufacturing candidate;
-Rev3A, Rev3B and Rev3C are design-review candidates with physical testing
-outstanding. The source branches and exact revisions are linked below.
+Updated October 3, 2026. Rev3C is the development focus, with shared C3/C6
+flexibility and **both original appliance power inputs with automatic selection**
+required. The experimental PIN1-only prototype is rejected and archived;
+its digital checks and lower part count do not make it the accepted design.
+No revision is a qualified manufacturing release. Rev2.2 has unresolved
+power-rating and physical gates and is not an established fallback.
+[Current validation and decisions](VALIDATION.md) distinguish original source
+checks from the reviewed cleanup candidates.
 
 ## Cost and functionality
 
@@ -12,6 +17,8 @@ USD, batches of five, with all five carriers assembled. Shipping, tax, printed
 cases and appliance cables are excluded. Quotes were recorded September 19
 for Rev2.2 and October 1 for the Rev3 variants; they have not been refreshed
 for this comparison. Rev3B's amount excludes its processor module and installation.
+These are historical architecture quotes, not prices for a corrected shared
+dual-input Rev3C.
 
 | Revision | Processor and programming | PCB | Five-board cost | Per adapter |
 | --- | --- | --- | ---: | ---: |
@@ -26,12 +33,15 @@ per adapter than Rev3A at this batch size. Relative to the $39.99 FirstBuild
 price used as the project target, it leaves $11.07 for other costs; delivered
 cost below that target has not been established. [Pricing details](PRICING.md).
 
-Rev3A/B/C add automatic selection between appliance power on pin 1 and pin 3,
+The public Rev3A/B/C baselines add automatic selection between appliance power on pin 1 and pin 3,
 two board mounting points, and permanent J2 recovery headers. Rev3A has separate
 USB and appliance isolation paths intended for simultaneous connection,
 pending bench verification. Rev3B/C require only one physical power source at
 a time: appliance power energizes the XIAO USB VBUS rail. A C6 substitution
-does not automatically remove this restriction.
+does not automatically remove this restriction. The replacement Rev3C must
+keep both appliance inputs and automatic behavior. Shared firmware and module
+recovery findings are independently useful; the electrical replacement is not
+yet qualified.
 
 ## How to read the images
 
@@ -42,7 +52,9 @@ clearance models. The XIAO shield outline is approximate, and the antenna
 cable and flat antenna are omitted. Rev2.2's fuse bodies use an 1812-package
 stand-in whose exact height is unverified. Colors are illustrative.
 
-The images help compare layouts but do not establish connector fit, socket
+These galleries are the published October 2 source views. New cleanup packages
+carry their own matched exports; do not pair old galleries with changed factory
+files. The images help compare layouts but do not establish connector fit, socket
 retention, thermal performance or RF reception. Rev2.2 and Rev3A show base
 and lid separately. Rev3B/C include assembly previews and exploded views;
 the exploded lid offset is for presentation.
@@ -84,10 +96,14 @@ Case: [closed](images/rev3b/case-closed.png) · [side](images/rev3b/case-side.pn
 
 Source: [Rev3B PCB](https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/c5db989810663caa18226a091bfb105ad26fb00e/pcb/rev3b) · [Rev3B case](https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/c5db989810663caa18226a091bfb105ad26fb00e/case/rev3b).
 
-### Rev3C
+### Public C3-only Rev3C baseline and legacy case
 
 The pre-headered XIAO plugs into factory-installed female sockets. This
 requires a taller case but permits replacing the module without soldering.
+The case shown below is **C3-only legacy**, not a default shared C3/C6 enclosure.
+The separately explored five-piece enclosure remains an unqualified prototype;
+its exact final CAD was not restored in this pass. C6 buttons, antenna access,
+module retention and physical fit require their own checks.
 
 ![Rev3C board and case, multiple views](images/rev3c-gallery.png)
 
