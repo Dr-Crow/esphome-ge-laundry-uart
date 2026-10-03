@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "tools": {
+    "kicad": "9.0.9",
+    "esphome": "2026.9.1"
+  },
+  "boards": {
+    "rev1.0": {
+      "source": null,
+      "archive": "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip",
+      "status": "Historical; editable source and assembly data unavailable"
+    },
+    "rev2.0": {
+      "source": null,
+      "archive": "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip",
+      "status": "Superseded; editable source unavailable"
+    },
+    "rev2.1": {
+      "source": "pcb/rev2.1/design/OnionStraws",
+      "bom": "pcb/rev2.1/manufacturing/BOM-OnionStraws-rev2.1.csv",
+      "cpl": "pcb/rev2.1/manufacturing/CPL-OnionStraws-rev2.1.csv",
+      "archive": "pcb/rev2.1/manufacturing/GERBER-OnionStraws-rev2.1.zip",
+      "status": "Superseded; inherited ERC/DRC findings remain blocking",
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Known reset-supervisor boot-loop issue"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Native ERC/DRC findings remain unresolved"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Superseded hardware with known RX/TX silkscreen errors"
+        }
+      },
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/p1": "Power",
+        "/p2": "Power",
+        "/p3": "Power",
+        "GND": "Power",
+        "VDC": "Power"
+      }
+    },
+    "rev2.2": {
+      "source": "pcb/rev2.2/design/OnionStraws",
+      "bom": "pcb/rev2.2/manufacturing/BOM-OnionStraws-rev2.2.csv",
+      "cpl": "pcb/rev2.2/manufacturing/CPL-OnionStraws-rev2.2.csv",
+      "archive": "pcb/rev2.2/manufacturing/GERBER-OnionStraws-rev2.2.zip",
+      "status": "Manufacturing candidate; physical bring-up pending",
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Target-appliance source and rail/startup qualification pending"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Native ERC/DRC findings remain unresolved"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Assembly, connector and enclosure qualification pending"
+        }
+      },
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/p1": "Power",
+        "/p2": "Power",
+        "/p3": "Power",
+        "GND": "Power",
+        "VDC": "Power"
+      }
+    }
+  },
+  "firmware": [
+    "firmware/gea2.yaml",
+    "firmware/gea3.yaml"
+  ]
+}

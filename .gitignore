@@ -8,3 +8,5 @@ fp-info-cache
 project.db
 *.kicad_sch_old
 secrets.yaml
+ci-artifacts/
+.esphome/

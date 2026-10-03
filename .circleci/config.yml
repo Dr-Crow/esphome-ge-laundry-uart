@@ -1,0 +1,66 @@
+version: 2.1
+
+jobs:
+  inventory:
+    docker:
+      - image: cimg/python:3.13.2
+    steps:
+      - checkout
+      - run:
+          name: Inventory source and manufacturing availability
+          command: python3 ci/validate.py inventory
+      - store_artifacts:
+          path: ci-artifacts
+          destination: inventory
+
+  native-board:
+    parameters:
+      stage:
+        type: enum
+        enum: [hardware, manufacturing, rules, release]
+      revision:
+        type: string
+        default: all
+    docker:
+      - image: kicad/kicad:9.0.9
+    resource_class: medium
+    steps:
+      - checkout
+      - run:
+          name: Native board validation and explicit gates
+          command: python3 ci/validate.py << parameters.stage >> --revision << parameters.revision >>
+      - store_artifacts:
+          path: ci-artifacts
+          destination: << parameters.stage >>-<< parameters.revision >>
+
+  firmware:
+    docker:
+      - image: esphome/esphome:2026.9.1
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Compile every declared ESPHome profile
+          command: python3 ci/validate.py firmware
+          no_output_timeout: 20m
+      - store_artifacts:
+          path: ci-artifacts
+          destination: firmware
+
+workflows:
+  validation:
+    jobs:
+      - inventory
+      - native-board:
+          name: native-hardware
+          stage: hardware
+      - native-board:
+          name: manufacturing-parity
+          stage: manufacturing
+      - native-board:
+          name: intended-netclass-audit
+          stage: rules
+      - native-board:
+          name: release-readiness
+          stage: release
+      - firmware
