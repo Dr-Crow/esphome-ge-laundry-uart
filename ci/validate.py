@@ -103,8 +103,8 @@ def manufacturing(board, output, manifest):
     tool("kicad-cli", manifest["tools"]["kicad"])
     _, sch, pcb = sources(board)
     netlist, positions = output / "netlist.xml", output / "positions.csv"
-    generated = output / "gerbers"
-    generated.mkdir(exist_ok=True)
+    # Preserve earlier artifacts without mixing them into the current export set.
+    generated = Path(tempfile.mkdtemp(prefix="gerbers-", dir=output))
     for name, args in [
         ("netlist", ["sch", "export", "netlist", "--format", "kicadxml", "-o", netlist, sch]),
         ("positions", ["pcb", "export", "pos", "--format", "csv", "--units", "mm", "-o", positions, pcb]),
