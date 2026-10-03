@@ -43,6 +43,9 @@
         "/p3": "Power",
         "GND": "Power",
         "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.2
       }
     },
     "rev2.2": {
@@ -73,6 +76,9 @@
         "/p3": "Power",
         "GND": "Power",
         "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.2
       }
     }
   },

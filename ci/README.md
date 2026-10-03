@@ -77,3 +77,5 @@ CircleCI job structure. Its old paths and report-only handling of violations are
 replaced here. Official container/CLI references:
 [KiCad containers](https://www.kicad.org/download/docker/),
 [CircleCI CLI](https://circleci.com/docs/guides/toolkit/circleci-cli/).
+
+Native .kicad_dru files are included in source hashes for inventory, native checks, manufacturing and readiness. A revision using a required sidecar declares its exact path as design_rules; absence fails. Qualification collected before adding or changing rules cannot pass the current source-hash gate. The intended audit also enforces declared netclass clearance values, so lowering a class cannot hide routing errors while leaving its net names assigned correctly.

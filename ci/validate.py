@@ -55,13 +55,25 @@ def sources(board):
             (".kicad_pro", ".kicad_sch", ".kicad_pcb")]
 
 
-def inventory(board, output, manifest):
+def design_inputs(board):
     files = sources(board)
+    native_rules = files[0].with_suffix(".kicad_dru")
+    if board.get("design_rules"):
+        require(path(board["design_rules"]) == native_rules,
+                "Declared native rules do not match the source stem")
+    if native_rules.is_file():
+        files.append(path(str(native_rules.relative_to(ROOT))))
+    return files
+
+
+def inventory(board, output, manifest):
+    files = design_inputs(board)
     files += [path(board[key]) for key in ("bom", "cpl", "archive")]
     return {"files": {str(file.relative_to(ROOT)): sha(file) for file in files}}
 
 
 def hardware(board, output, manifest):
+    inputs = design_inputs(board)
     tool("kicad-cli", manifest["tools"]["kicad"])
     _, sch, pcb = sources(board)
     results = {}
@@ -73,7 +85,7 @@ def hardware(board, output, manifest):
     # Run both checks before failing so inherited issues remain available as artifacts.
     require(all(code == 0 for code in results.values()), f"Native checks failed: {results}; see reports")
     require(all((output / f"{mode}.json").is_file() for mode in results), "Native report missing")
-    return {"native_exit_codes": results, "source_sha256": {p.name: sha(p) for p in sources(board)}}
+    return {"native_exit_codes": results, "source_sha256": {p.name: sha(p) for p in inputs}}
 
 
 def rows(file, key):
@@ -100,6 +112,7 @@ def gerber_content(data):
 
 
 def manufacturing(board, output, manifest):
+    inputs = design_inputs(board)
     tool("kicad-cli", manifest["tools"]["kicad"])
     _, sch, pcb = sources(board)
     netlist, positions = output / "netlist.xml", output / "positions.csv"
@@ -164,7 +177,7 @@ def manufacturing(board, output, manifest):
         copper = [entry for entry in job["FilesAttributes"] if entry["FileFunction"].startswith("Copper,")]
         require(len(copper) == job["GeneralSpecs"]["LayerNumber"], "Gerber job copper layer count mismatch")
     return {"assembled_references": len(expected), "native_matched_gerber_and_drill_files": len(generated_files),
-            "source_sha256": {p.name: sha(p) for p in sources(board)}}
+            "source_sha256": {p.name: sha(p) for p in inputs}}
 
 
 def rules(board, output, manifest):
@@ -187,13 +200,18 @@ def rules(board, output, manifest):
             findings.append(f"Intended net absent from native netlist: {net}")
         if expected not in classes or not any(p["pattern"] == net and p["netclass"] == expected for p in patterns):
             findings.append(f"Missing explicit netclass pattern: {net} -> {expected}")
+    for name, expected in board.get("intended_clearance_mm", {}).items():
+        actual = next((item.get("clearance") for item in settings["classes"]
+                       if item["name"] == name), None)
+        if not isinstance(actual, (int, float)) or not math.isclose(actual, expected, abs_tol=1e-9):
+            findings.append(f"Intended {name} clearance differs: expected {expected} mm, got {actual}")
     (output / "intended-rule-audit.json").write_text(json.dumps({"intended": intended, "findings": findings}, indent=2) + "\n")
     require(not findings, "; ".join(findings))
     return {"explicit_net_assignments_checked": len(intended), "notice": "Configured native DRC and intended-rule coverage are separate checks"}
 
 
 def release(board, output, manifest):
-    current_sources = {str(p.relative_to(ROOT)): sha(p) for p in sources(board)}
+    current_sources = {str(p.relative_to(ROOT)): sha(p) for p in design_inputs(board)}
     readiness = board.get("readiness", {})
     findings = []
     for gate in ("power", "source", "physical"):
