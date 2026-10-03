@@ -1,0 +1,111 @@
+# Modern common services with only the LED proved in the Rev1 netlist.
+esphome:
+  name: ${name}
+  min_version: 2026.9.1
+  on_boot:
+    - priority: 800
+      then:
+        - light.turn_off: carrier_led
+
+logger:
+  baud_rate: 0
+
+api:
+  on_client_connected:
+    - delay: 1s
+    - lambda: |-
+        id(gea_hub).log_address();
+        id(gea_hub).log_erds();
+
+ota:
+  password: !secret esp_home_ota_pw
+  platform: esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
+sensor:
+  - platform: uptime
+    name: ${upper_name} Uptime
+    entity_category: diagnostic
+
+  - platform: wifi_signal
+    name: ${upper_name} WiFi Signal
+    update_interval: 60s
+    entity_category: diagnostic
+
+  - platform: template
+    name: ${upper_name} GEA RX Bytes
+    entity_category: diagnostic
+    accuracy_decimals: 0
+    lambda: 'return id(gea_hub).get_rx_bytes();'
+    update_interval: 30s
+
+  - platform: template
+    name: ${upper_name} GEA CRC Errors
+    entity_category: diagnostic
+    accuracy_decimals: 0
+    lambda: 'return id(gea_hub).get_crc_errors();'
+    update_interval: 30s
+
+  - platform: template
+    name: ${upper_name} GEA TX Retries
+    entity_category: diagnostic
+    accuracy_decimals: 0
+    lambda: 'return id(gea_hub).get_tx_retries();'
+    update_interval: 30s
+
+  - platform: template
+    name: ${upper_name} GEA Dropped Requests
+    entity_category: diagnostic
+    accuracy_decimals: 0
+    lambda: 'return id(gea_hub).get_dropped_requests();'
+    update_interval: 30s
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: ${upper_name} IP
+      entity_category: diagnostic
+
+binary_sensor:
+  - platform: template
+    name: ${upper_name} GEA Bus Connected
+    entity_category: diagnostic
+    lambda: 'return id(gea_hub).is_bus_connected();'
+
+button:
+  - platform: restart
+    name: ${upper_name} Restart
+
+output:
+  # U3.15 GPIO13 -> R19 220R -> D6 anode; D6 cathode is GND.
+  - platform: ledc
+    pin:
+      number: GPIO13
+      inverted: false
+    id: carrier_led_output
+    max_power: 0.04
+
+light:
+  - platform: monochromatic
+    name: ${upper_name} Carrier LED
+    id: carrier_led
+    output: carrier_led_output
+    restore_mode: ALWAYS_OFF
+
+interval:
+  - interval: 1s
+    then:
+      - if:
+          condition:
+            wifi.connected:
+          then:
+            - light.turn_on: carrier_led
+          else:
+            - light.turn_off: carrier_led

@@ -1,0 +1,4 @@
+/validation/artifacts/
+/validation/build-source/
+/.esphome/
+/secrets.yaml
