@@ -29,6 +29,17 @@ esp_home_ota_pw: "..."
 
 You can use the ESPHome Device Builder or the command line. The examples are starting points, so appliance-specific entities may need to be added or changed.
 
+## Reproduce the reference build
+
+The reference profiles pin ESP-IDF **5.5.5** and the GEA component to commit
+`283ff2b0dfe90a6d14a5417a23176d433be8a5b3`. CI uses ESPHome **2026.9.1** and
+runs actual compilation for both profiles. To run those checks locally with the
+same ESPHome version, use `python3 ci/validate.py firmware` from the repository
+root. The driver uses temporary dummy credentials and never flashes a device.
+
+These build checks establish software compilation only. Match the board and
+appliance configuration and complete physical qualification before use.
+
 ## First flash
 
 Rev 2.x boards do not have USB. The first flash needs a **3.3 V logic** USB-to-UART adapter connected to the unpopulated J2 holes or the J3 Tag-Connect pads. Do not connect 5 V to these pins.
