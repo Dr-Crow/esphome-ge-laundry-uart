@@ -111,6 +111,45 @@ def gerber_content(data):
                              or re.match(r"; DRILL file \{KiCad [^}]+\} date ", line)))
 
 
+def reviewed_placement_origins(board, inputs, positions, output):
+    policy = board.get("cpl_centroid_policy")
+    if not policy:
+        return {}
+    evidence = path(policy["evidence"])
+    require(sha(evidence) == policy["sha256"], "Placement-origin evidence hash differs")
+    relative = str(evidence.relative_to(ROOT))
+    committed = subprocess.run(["git", "show", "HEAD:" + relative], cwd=ROOT,
+                               capture_output=True, check=False)
+    require(committed.returncode == 0 and
+            hashlib.sha256(committed.stdout).hexdigest() == policy["sha256"],
+            "Placement-origin evidence is not committed at HEAD")
+    review = json.loads(evidence.read_text())
+    require(review["source_sha256"] == {str(p.relative_to(ROOT)): sha(p) for p in inputs},
+            "Placement-origin review does not match current source hashes")
+    origins = {}
+    for ref, record in review["references"].items():
+        require(ref in positions, f"Placement-origin reference absent: {ref}")
+        native = positions[ref]
+        require(native["Package"] == record["footprint"].split(":")[-1],
+                f"Placement-origin footprint differs: {ref}")
+        anchor = record["native_anchor_xy_mm"]
+        center = record["pad_bbox_center_xy_mm"]
+        bounds = record["native_pad_bbox_xy_mm"]
+        require(len(anchor) == len(center) == 2 and len(bounds) == 4,
+                f"Malformed placement-origin evidence: {ref}")
+        require(all(math.isfinite(value) for value in anchor + center + bounds),
+                f"Nonfinite placement-origin evidence: {ref}")
+        require(all(abs(anchor[i] - float(native[key])) <= 0.00001
+                    and abs(center[i] - (bounds[i] + bounds[i+2]) / 2) <= 0.00001
+                    for i, key in enumerate(("PosX", "PosY"))),
+                f"Placement-origin geometry differs: {ref}")
+        require(abs((float(native["Rot"]) - record["rotation_degrees"] + 180) % 360 - 180) <= 0.00001,
+                f"Placement-origin rotation differs: {ref}")
+        origins[ref] = {"PosX": center[0], "PosY": center[1]}
+    (output / "placement-origin-review.json").write_text(json.dumps(review, indent=2) + "\n")
+    return origins
+
+
 def manufacturing(board, output, manifest):
     inputs = design_inputs(board)
     tool("kicad-cli", manifest["tools"]["kicad"])
@@ -131,7 +170,9 @@ def manufacturing(board, output, manifest):
         if item.findtext("footprint") and not {"dnp", "exclude_from_bom"} & properties.keys():
             components[item.attrib["ref"]] = (item.findtext("value"), item.findtext("footprint"), properties)
     bom, cpl, pos = rows(path(board["bom"]), "Designator"), rows(path(board["cpl"]), "Designator"), rows(positions, "Ref")
+    origins = reviewed_placement_origins(board, inputs, pos, output)
     expected = set(components)
+    require(set(origins) <= expected, "Placement-origin policy includes unassembled references")
     require(set(bom) == set(cpl) == expected,
             f"Assembly reference mismatch: BOM-only={sorted(set(bom)-expected)}, "
             f"CPL-only={sorted(set(cpl)-expected)}, missing-BOM={sorted(expected-set(bom))}, "
@@ -147,7 +188,7 @@ def manufacturing(board, output, manifest):
                 require(bom[ref][field] == properties.get(field), f"{field} mismatch: {ref}")
         for alternatives, native in [(("Mid X", "MidX"), "PosX"), (("Mid Y", "MidY"), "PosY"), (("Rotation",), "Rot")]:
             value = float(next(cpl[ref][key] for key in alternatives if key in cpl[ref]))
-            delta = value - float(pos[ref][native])
+            delta = value - float(origins.get(ref, {}).get(native, pos[ref][native]))
             if native == "Rot":
                 delta = (delta + 180) % 360 - 180
             require(math.isfinite(value) and abs(delta) <= 0.00001, f"CPL {native} differs from PCB: {ref}")
@@ -176,7 +217,8 @@ def manufacturing(board, output, manifest):
             require(gerber_content(archive.read(name)) == gerber_content(data), f"Manufacturing/source geometry or metadata differs: {name}")
         copper = [entry for entry in job["FilesAttributes"] if entry["FileFunction"].startswith("Copper,")]
         require(len(copper) == job["GeneralSpecs"]["LayerNumber"], "Gerber job copper layer count mismatch")
-    return {"assembled_references": len(expected), "native_matched_gerber_and_drill_files": len(generated_files),
+    return {"assembled_references": len(expected), "reviewed_centroid_references": len(origins),
+            "native_matched_gerber_and_drill_files": len(generated_files),
             "source_sha256": {p.name: sha(p) for p in inputs}}
 
 

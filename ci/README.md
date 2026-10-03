@@ -37,6 +37,11 @@ or publishes a release.
   The archive must match regenerated Gerber, drill and job content from the
   current source. Only creation timestamps are removed before comparison.
   Source or generator-version changes require deliberate export regeneration.
+  A revision with a reviewed alternative centroid convention may declare
+  `cpl_centroid_policy` pointing to a committed, hash-matched native geometry
+  review. It applies only to its listed references and exact source hashes;
+  footprint anchors remain the default. Source/anchor/rotation/proof changes
+  fail until reviewed again. This does not approve supplier package alignment.
 - Rules checks the declared intended net-to-netclass assignments against actual
   native net names and explicit project patterns. Sheet-leading slashes matter.
   This is a bounded coverage audit, not a second DRC implementation: its coverage
