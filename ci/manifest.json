@@ -8,12 +8,12 @@
     "rev1.0": {
       "source": null,
       "archive": "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip",
-      "status": "Historical; editable source and assembly data unavailable"
+      "status": "Historical; current package has no editable source or assembly data; historical recovery/provenance review pending"
     },
     "rev2.0": {
       "source": null,
       "archive": "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip",
-      "status": "Superseded; editable source unavailable"
+      "status": "Superseded; current package has no editable source; historical recovery/provenance review pending"
     },
     "rev2.1": {
       "source": "pcb/rev2.1/design/OnionStraws",

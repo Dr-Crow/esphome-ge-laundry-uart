@@ -15,15 +15,19 @@ python3 ci/validate.py release --revision rev2.2
 
 Install KiCad **9.0.9**, its official symbol/footprint libraries and ESPHome
 **2026.9.1**. The CircleCI configuration pins those container versions and checks
-the executable versions. Native reports and command logs go to `ci-artifacts/`
+the executable versions. Container tags and immutable manifest digests were
+verified against the official Docker registry. Local native checks ran with the
+installed official tools; fresh container execution and hosted jobs have not run.
+Native reports and command logs go to `ci-artifacts/`
 and are retained even when jobs fail. No command flashes hardware, places orders
 or publishes a release.
 
 ## What each result means
 
 - Inventory records source and factory-file hashes. Every revision directory must
-  be declared in `ci/manifest.json`. Rev1.0 and Rev2.0 have no editable sources;
-  their checks explicitly fail as missing, even though historical archives exist.
+  be declared in `ci/manifest.json`. The current Rev1.0 and Rev2.0 package directories lack editable sources;
+  their checks explicitly fail as missing. Historical source recovery and exact
+  export provenance review are pending; existing archives do not establish parity.
 - Hardware runs native ERC and DRC with all severities and schematic parity.
   Any nonzero exit, including KiCad exit 5 for violations, fails. The project rules
   and existing exclusions are preserved; this does not claim that configured

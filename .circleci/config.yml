@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   inventory:
     docker:
-      - image: cimg/python:3.13.2
+      - image: cimg/python:3.13.2@sha256:cdd7d2937b04e0751ff13b7cba0b2afa9a3aa3bf85d977b5a207220582ca6eeb
     steps:
       - checkout
       - run:
@@ -22,7 +22,7 @@ jobs:
         type: string
         default: all
     docker:
-      - image: kicad/kicad:9.0.9
+      - image: kicad/kicad:9.0.9@sha256:e638b79b0321f29395a5b783e94bb9f3c73303e8da15da27b8f5cb4b67a37729
     resource_class: medium
     steps:
       - checkout
@@ -35,7 +35,7 @@ jobs:
 
   firmware:
     docker:
-      - image: esphome/esphome:2026.9.1
+      - image: esphome/esphome:2026.9.1@sha256:4ad55931c0186d2910dc128526237acabb422a662697a4e8bb356d390a1332a1
     resource_class: large
     steps:
       - checkout

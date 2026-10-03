@@ -50,7 +50,7 @@ def tool(name, version):
 
 
 def sources(board):
-    require(board.get("source"), "MISSING: editable KiCad source unavailable")
+    require(board.get("source"), "MISSING: editable KiCad source absent from current revision package")
     return [path(board["source"] + ext) for ext in
             (".kicad_pro", ".kicad_sch", ".kicad_pcb")]
 
