@@ -1,0 +1,141 @@
+{
+  "symbols": [
+    {
+      "source_symbol": "74xGxx:74LVC2G07",
+      "local_symbol": "LegacySymbols:74LVC2G07",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Connector:8P8C",
+      "local_symbol": "LegacySymbols:8P8C",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Connector:TestPoint",
+      "local_symbol": "LegacySymbols:TestPoint",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Connector_Generic:Conn_01x04",
+      "local_symbol": "LegacySymbols:Conn_01x04",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Device:C",
+      "local_symbol": "LegacySymbols:C",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Device:D_TVS",
+      "local_symbol": "LegacySymbols:D_TVS",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Device:D_Zener",
+      "local_symbol": "LegacySymbols:D_Zener",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Device:LED",
+      "local_symbol": "LegacySymbols:LED",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Device:Polyfuse",
+      "local_symbol": "LegacySymbols:Polyfuse",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Device:Q_PMOS_GSD",
+      "local_symbol": "LegacySymbols:Q_PMOS_GSD",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Device:R",
+      "local_symbol": "LegacySymbols:R",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Diode:BAV99",
+      "local_symbol": "LegacySymbols:BAV99",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Mechanical:MountingHole",
+      "local_symbol": "LegacySymbols:MountingHole",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "Switch:SW_Push",
+      "local_symbol": "LegacySymbols:SW_Push",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "onionStraws:74LVC2G07_3v3",
+      "local_symbol": "LegacySymbols:74LVC2G07_3v3",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "onionStraws:APX803L",
+      "local_symbol": "LegacySymbols:APX803L",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "onionStraws:ESP32",
+      "local_symbol": "LegacySymbols:ESP32",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "power:+3V3",
+      "local_symbol": "LegacySymbols:+3V3",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "power:+5V",
+      "local_symbol": "LegacySymbols:+5V",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "power:GND",
+      "local_symbol": "LegacySymbols:GND",
+      "definition_changes": "library namespace only"
+    },
+    {
+      "source_symbol": "power:VDC",
+      "local_symbol": "LegacySymbols:VDC",
+      "definition_changes": "library namespace only"
+    }
+  ],
+  "flags": [
+    {
+      "reference": "#FLG01",
+      "symbol_uuid": "78187759-88d7-4a01-a341-1414c5f09cd2",
+      "position_mm": [
+        122.555,
+        33.02
+      ],
+      "net": "VDC",
+      "proof": "existing conductor endpoint; no physical footprint"
+    },
+    {
+      "reference": "#FLG02",
+      "symbol_uuid": "d166bfd8-77d5-4190-9058-24d4eefe368b",
+      "position_mm": [
+        249.555,
+        27.94
+      ],
+      "net": "+5V",
+      "proof": "existing conductor endpoint; no physical footprint"
+    },
+    {
+      "reference": "#FLG03",
+      "symbol_uuid": "b2a2637d-d3ae-4f2e-8e9f-5dda53f649a3",
+      "position_mm": [
+        249.555,
+        51.435
+      ],
+      "net": "GND",
+      "proof": "existing conductor endpoint; no physical footprint"
+    }
+  ]
+}

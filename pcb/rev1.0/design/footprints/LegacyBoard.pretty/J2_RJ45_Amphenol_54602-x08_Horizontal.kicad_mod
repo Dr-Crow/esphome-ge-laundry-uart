@@ -1,0 +1,306 @@
+(footprint "J2_RJ45_Amphenol_54602-x08_Horizontal"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "8 Pol Shallow Latch Connector, Modjack, RJ45 (https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0102.pdf)")
+	(tags "RJ45")
+	(property "Reference" "J2"
+		(at 4.445 -5 0)
+		(layer "F.SilkS")
+		(uuid "232c6584-30bf-4440-a900-b535f44b5475")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "8P8C"
+		(at 4.445 4 0)
+		(layer "F.Fab")
+		(uuid "2e6e9f37-1085-4f64-92dc-ca08927978fc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6153c6f4-9f29-4507-8b49-b37dea519afa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e8f675c6-cce3-4a52-9d20-66e1862814b6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -4 -0.5)
+		(end -4 0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b3288c9b-b861-49ed-823b-8f6727750cd4")
+	)
+	(fp_line
+		(start -4 0.5)
+		(end -3.5 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5f6931fc-e19d-4219-8acd-5ee1b91857c2")
+	)
+	(fp_line
+		(start -3.5 0)
+		(end -4 -0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d4554c62-2603-4c18-b674-53147d03b0ae")
+	)
+	(fp_line
+		(start -3.315 -3.88)
+		(end -3.315 11.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6bbf80a2-b08d-4765-b5ce-9edb253e337a")
+	)
+	(fp_line
+		(start 12.205 -3.88)
+		(end -3.315 -3.88)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d2a7e55e-a68b-4e8c-89e5-219cb5d60c68")
+	)
+	(fp_line
+		(start 12.205 -3.88)
+		(end 12.205 11.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "04fa0af4-64dd-473c-bd16-0063f70f8daf")
+	)
+	(fp_line
+		(start -3.71 -4.27)
+		(end -3.71 14.47)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b88fcca5-aafa-43be-9eca-15ef2ec69b32")
+	)
+	(fp_line
+		(start -3.71 -4.27)
+		(end 12.6 -4.27)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d124c694-3608-428a-b8f2-0133121fcfc7")
+	)
+	(fp_line
+		(start 12.6 14.47)
+		(end -3.71 14.47)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "55ead465-374a-41ba-bc36-80b068945b6f")
+	)
+	(fp_line
+		(start 12.6 14.47)
+		(end 12.6 -4.27)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "25716e81-6eb8-4fc2-a2e9-52ed3ffc2fec")
+	)
+	(fp_line
+		(start -3.205 -2.77)
+		(end -2.205 -3.77)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b93658c9-6042-4dee-96ab-fd56e6d134e7")
+	)
+	(fp_line
+		(start -3.205 13.97)
+		(end -3.205 -2.77)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "41a1c3d3-8797-4d4b-8b5e-0c95a929e508")
+	)
+	(fp_line
+		(start -2.205 -3.77)
+		(end 12.095 -3.77)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fbd8c6d2-879b-4d30-8922-90fb8f18ff50")
+	)
+	(fp_line
+		(start 12.095 -3.77)
+		(end 12.095 13.97)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7b01c461-38ca-4e15-9fac-93a10e10d641")
+	)
+	(fp_line
+		(start 12.095 13.97)
+		(end -3.205 13.97)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9f5d1453-8b9b-415a-a13b-69bfaca9ac10")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 4.445 2 0)
+		(layer "F.Fab")
+		(uuid "0640dd68-12e0-4164-8821-5b870c1e317c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -1.27 6.35)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "F.Cu" "B.Cu" "F.Mask" "B.Mask")
+		(uuid "7cd540ef-2b72-4b6f-84e8-97fd4db851a9")
+	)
+	(pad "" np_thru_hole circle
+		(at 10.16 6.35)
+		(size 3.2 3.2)
+		(drill 3.2)
+		(layers "F.Cu" "B.Cu" "F.Mask" "B.Mask")
+		(uuid "3655357b-a64d-4b68-884e-ff27bf2d2b3d")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.5 1.5)
+		(drill 0.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4585c786-359d-47d0-a105-6542b828c081")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 -2.54)
+		(size 1.5 1.5)
+		(drill 0.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "36b6de78-6942-4df8-80ba-6f2b829e3fb7")
+	)
+	(pad "3" thru_hole circle
+		(at 2.54 0)
+		(size 1.5 1.5)
+		(drill 0.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6f926b76-c6e8-4f5a-85d0-5de353207609")
+	)
+	(pad "4" thru_hole circle
+		(at 3.81 -2.54)
+		(size 1.5 1.5)
+		(drill 0.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b50d4b55-5850-4904-b419-0d6a255fd710")
+	)
+	(pad "5" thru_hole circle
+		(at 5.08 0)
+		(size 1.5 1.5)
+		(drill 0.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1ba52ce6-8a9f-4842-b173-10300f99e8c6")
+	)
+	(pad "6" thru_hole circle
+		(at 6.35 -2.54)
+		(size 1.5 1.5)
+		(drill 0.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d532abe5-08ef-4b34-857f-e720c332de29")
+	)
+	(pad "7" thru_hole circle
+		(at 7.62 0)
+		(size 1.5 1.5)
+		(drill 0.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4df0db31-522f-4a4f-a099-9027e01126c0")
+	)
+	(pad "8" thru_hole circle
+		(at 8.89 -2.54)
+		(size 1.5 1.5)
+		(drill 0.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "399af11f-8ca9-47f9-9bdf-257ccf5cd822")
+	)
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Amphenol_54602-x08_Horizontal.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
