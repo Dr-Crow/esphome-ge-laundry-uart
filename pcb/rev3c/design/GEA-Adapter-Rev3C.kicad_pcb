@@ -3439,7 +3439,7 @@
 			(uuid "10722920-d32f-4e2a-acb3-eaa4813f45f1")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/models/Socket_1x07_P2.54mm_HCTL_PM254.step"
+		(model "${KIPRJMOD}/models/Socket_HCTL_PM254-1-07-Z-8.5-drawing-detail.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3450,15 +3450,26 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KIPRJMOD}/models/XIAO-ESP32-C3-Rev3C-installed-envelope.step"
+		(model "${KIPRJMOD}/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step"
 			(offset
-				(xyz -18.047 -16.5229 11)
+				(xyz -7.62 -7.62 11)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/models/U.FL_Hirose_U.FL-R-SMT-1_Vertical-kicad-9.0.9.step"
+			(offset
+				(xyz -16.637 -7.62 12.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 180)
 			)
 		)
 	)
@@ -11822,7 +11833,7 @@
 			(uuid "bcf59c84-fca0-4f7a-9caf-073ceeabb459")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/models/J1-EVERCOM-5301-8P8C-envelope.step"
+		(model "${KIPRJMOD}/models/RJ45_EVERCOM_5301-8P8C-RevA-drawing-detail.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18190,7 +18201,7 @@
 			(uuid "270ff11d-895a-42e3-9e7d-cba46835e182")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/models/Socket_1x07_P2.54mm_HCTL_PM254.step"
+		(model "${KIPRJMOD}/models/Socket_HCTL_PM254-1-07-Z-8.5-drawing-detail.step"
 			(offset
 				(xyz 0 0 0)
 			)

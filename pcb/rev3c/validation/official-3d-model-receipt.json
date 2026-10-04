@@ -888,5 +888,11 @@
     }
   ],
   "verified_utc": "2026-10-03T21:36:16.467277+00:00",
-  "sourcing_correction_note": "Four metadata records only; all inherited package model references and geometry unchanged from46173b6."
+  "sourcing_correction_note": "Four metadata records only; all inherited package model references and geometry unchanged from46173b6.",
+  "active_render_model_review": {
+    "receipt": "component-model-provenance.json",
+    "human_readable": "../MODEL-ACCURACY.md",
+    "selected_source_baseline": "409dc0118dce37eb6bdd3f4507da134994e1333e",
+    "note": "Historical download and final_resolution arrays above describe the earlier electrical checkpoint. Current module/RJ45/socket model associations and transforms are recorded separately in the active component-model receipt."
+  }
 }

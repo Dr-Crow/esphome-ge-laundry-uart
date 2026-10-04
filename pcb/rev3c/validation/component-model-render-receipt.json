@@ -1,0 +1,123 @@
+{
+  "renderer": "native KiCad CLI 9.0.9",
+  "render_quality": "high",
+  "dimensions_pixels": [
+    1800,
+    1000
+  ],
+  "baseline_commit": "409dc0118dce37eb6bdd3f4507da134994e1333e",
+  "matched_camera_before_after": true,
+  "c6_variant_is_transient_3d_model_swap_only": true,
+  "pixel_review": "Direct inspection of C3/C6 top, bottom and oblique pixels plus matched baseline views. Module partial PCB-derived geometry, nominal U.FL reference, RJ45/socket geometry present and correctly oriented. Generic USB and omitted shield/buttons/chips/headers remain explicit; no physical-fit approval.",
+  "renders": [
+    {
+      "image": "images/rev3c-render-top.png",
+      "sha256": "20bed1655abb664da60788110ff2b825f403d8e1d20e6fd9e540725bdaa2ee47",
+      "bytes": 276098,
+      "side": "top",
+      "source_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/model-comparison/before-top.png",
+      "sha256": "f34bc29e0d0334e420167f1b6b2015a84aaaee07a5fdbb1fd675ea981d29444b",
+      "bytes": 243923,
+      "side": "top",
+      "source_sha256": "b6369c659926c95b88bc3dcb144a1749195d518f4bd6afba0916f6fa79f558d7",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/rev3c-render-bottom.png",
+      "sha256": "52b54839bca455f54ff12d074a8d5c5ebd0e1e775c639fdb10b7300b77108d9a",
+      "bytes": 102319,
+      "side": "bottom",
+      "source_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/model-comparison/before-bottom.png",
+      "sha256": "d06254e01de00908be26ff7d2dd6775410204e5959faa345529a0f2e50318d14",
+      "bytes": 95272,
+      "side": "bottom",
+      "source_sha256": "b6369c659926c95b88bc3dcb144a1749195d518f4bd6afba0916f6fa79f558d7",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/rev3c-render-oblique.png",
+      "sha256": "c423411277ddeb6c4c68e44191688c0642b2e7ea00c4aeff3ed91cbc3ef4a5b4",
+      "bytes": 429975,
+      "side": "oblique",
+      "source_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
+      "rotate_deg": [
+        315,
+        0,
+        25
+      ]
+    },
+    {
+      "image": "images/model-comparison/before-oblique.png",
+      "sha256": "2b021a1922d38d0ae07e2be55e482f2c8109fade4252783831bbb5386ea47b64",
+      "bytes": 394269,
+      "side": "oblique",
+      "source_sha256": "b6369c659926c95b88bc3dcb144a1749195d518f4bd6afba0916f6fa79f558d7",
+      "rotate_deg": [
+        315,
+        0,
+        25
+      ]
+    },
+    {
+      "image": "images/rev3c-render-c6-top.png",
+      "sha256": "543d0345dd3fcf1ee0c1ed9229cceb6139bd19d295149366b59357897e6675ab",
+      "bytes": 280901,
+      "side": "top",
+      "source_sha256": "4a147b3345dc4f79d3d9f277b5ee1a694b42dbd35215efbb947fb9de83611e4a",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/rev3c-render-c6-bottom.png",
+      "sha256": "d7500913549ea66fcf219210d366bdf5c2ad9a52f14dd4aeaa430b976f57902a",
+      "bytes": 102236,
+      "side": "bottom",
+      "source_sha256": "4a147b3345dc4f79d3d9f277b5ee1a694b42dbd35215efbb947fb9de83611e4a",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/rev3c-render-c6-oblique.png",
+      "sha256": "a2e3d1cbb571b31c25300e5f4f50cd9261d77faa6ecc3ea8f21d30efb3d48cef",
+      "bytes": 436790,
+      "side": "oblique",
+      "source_sha256": "4a147b3345dc4f79d3d9f277b5ee1a694b42dbd35215efbb947fb9de83611e4a",
+      "rotate_deg": [
+        315,
+        0,
+        25
+      ]
+    }
+  ],
+  "c6_variant_changes": "Only model asset, U.FL ANT datum and transient model path resolution; one unchanged electrical carrier."
+}

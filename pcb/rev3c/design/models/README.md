@@ -1,50 +1,38 @@
-# Rev3C mechanical models
+# Rev3C component model assets
 
-The optional rated-switch review keeps the original custom socket, fuse, RJ45 and
-C3 module clearance envelopes. Native review renders use official KiCad 9.0.9
-standard package models for the other referenced components; these generic
-package models are not selected-supplier cosmetic CAD or evidence of fit.
-See the [model provenance and final resolution receipt](../../validation/official-3d-model-receipt.json).
-The shown module envelope is C3 reference geometry, not an exact C6 model.
-The historical J2 drawing model below is retained as an unused library file;
-J2 and D19 are absent from the shared source and assembled review outputs.
+The current [component model accuracy checkpoint](../../MODEL-ACCURACY.md) is the
+canonical human-readable source/provenance/transform receipt. These are partial
+visual references; complete manufacturer assembly CAD and physical fit remain
+unverified.
 
-`Socket_1x07_P2.54mm_HCTL_PM254.step` is a millimetre STEP body envelope for
-HCTL PM254-1-07-Z-8.5 (18.18 x 2.5 x 8.5 mm), positioned relative to pad 1.
-It is based on the public manufacturer drawing and omits tails; it is not
-manufacturer-supplied CAD.
+The carrier now associates:
 
-`XIAO-ESP32-C3-Rev3C-installed-envelope.step` is a graphics-only,
-build123d-generated envelope for the user-installed pre-headered Seeed module.
-It includes the official module board outline, USB-C shell, BOOT/RESET switch
-envelopes, U.FL location, a conservative complete-module height envelope, and
-provisional 2.5 mm male-header spacers. The model is excluded from factory BOM
-and position outputs. It is not evidence of physical fit or cosmetic geometry.
+- XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step: official Seeed v1.3 PCB/copper,
+  40 generic KiCad component models, omitted shields/switches/U.FL/chips/headers in the baked asset.
+  A separate licensed named-part U.FL model is associated with the carrier at
+  the official C3/C6 ANT datum; its nominal dimensions match the Hirose drawing.
+- Socket_HCTL_PM254-1-07-Z-8.5-drawing-detail.step: self-authored manufacturer-drawing
+  body/tails, illustrative receiving recesses.
+- RJ45_EVERCOM_5301-8P8C-RevA-drawing-detail.step: self-authored Rev A dimensioned
+  body and signal tails, illustrative cavity/contact springs; locating-post solids
+  omitted because their profile/insertion depth is not established.
 
-## XIAO ESP32-C3 alignment and source
+XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step is a distinct alternative
+partial preview. The render script makes a transient model-only swap for C6;
+there is one canonical electrical carrier. No male-header SKU, mating depth,
+measured installed Z, physical fit or RF qualification is inferred.
 
-- The module feature locations follow the official Seeed v1.3 KiCad project:
-  <https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip>.
-- The public pin map and module information are at
-  <https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/>.
-- The envelope uses the verified Rev3C socket transform and mirrored STEP Y
-  coordinates for KiCad. The module bottom is shown 11 mm above the carrier
-  PCB top (8.5 mm socket body plus provisional 2.5 mm male spacer). Verify
-  mating engagement, USB cable, buttons, U.FL plug, and antenna clearance on
-  the actual parts before fabrication.
+See [XIAO asset license](XIAO-ASSET-LICENSE.md), [KiCad library license](KICAD-LIBRARY-LICENSE.md)
+and [module provenance](../../validation/xiao-model-provenance.json). Seeed-derived
+assets carry CC BY-SA 4.0; KiCad component data has its library exception. The
+repository MIT license covers the self-authored connector generator/fallbacks.
 
-## J2 recovery header model
+The previous C3 installed block, socket and RJ45 envelopes, historical unused J2
+recovery-header model and obsolete Bourns fuse model remain as unused reference
+files. They are not active exact-part models. U9/U10 and F1/F2 still use explicitly
+approximate maximum envelopes; other fitted package models use the inherited
+KiCad 9.0.9 library. No exact vendor cosmetic CAD is claimed for those packages.
 
-`J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step` is a drawing-based nominal model
-for Hanxia HX PZ-2.54-02-03-S-PB3.2, LCSC C42391552. The public product listing
-is [JLCPCB C42391552](https://jlcpcb.com/partdetail/hanxia-HX_PZ_2_54_02_03_S_PB32/C42391552).
-The model uses zero XYZ offset and zero model rotation: two 0.64 mm post
-columns at x +/-1.27 mm and three rows at y -2.54/0/+2.54 mm, a nominal
-5.00 x 7.42 mm body, 7.50 mm foot envelope, and 9.20 mm nominal height
-(9.60 mm stacked pre-assembly maximum). It is a simplified drawing model,
-not manufacturer-authenticated CAD or a physical-fit guarantee; retain
-assembly/case margin and verify against the actual part.
-
-## Optional rated-input component envelopes
-
-`TPS1H200A-DGN0008K-max-envelope.step` follows TI RevE p27 maximum body3.1×3.1 mm, lead span5.05 mm, lead width0.38 mm, pitch0.65 mm and height1.1 mm. Rectangular leads omit bends. `1812L075-33DR-max-envelope.step` follows Littelfuse1812L p6 maximum4.73×3.41×1.55 mm. Both are simplified drawing-based envelopes generated by the adjacent script, not manufacturer-authenticated CAD. They replace the missing generic HVSSOP model and obsolete Bourns envelope for current renders. They do not qualify fit, solder joints or thermal behavior.
+Regenerate connector fallback assets with generate_connector_detail.py using
+build123d 0.11.1. Native rendering and protected-source verification scripts are in
+../../validation/. Every model scale is 1:1.

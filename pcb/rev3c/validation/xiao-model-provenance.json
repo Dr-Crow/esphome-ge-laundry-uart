@@ -1,0 +1,5927 @@
+{
+  "kicad_version": "9.0.9",
+  "classification": "Partial revision-specific vendor-PCB-derived preview with generic component models; not manufacturer assembled CAD; not a complete mechanical envelope.",
+  "board_license": "CC BY-SA 4.0 as expressly labeled in companion vendor schematic title blocks; retain Seeed attribution, source links, license and derivative notice.",
+  "board_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "kicad_model_license": "CC BY-SA 4.0 with KiCad library exception; copied model collections retain LICENSE.md and source/author metadata.",
+  "kicad_model_repository": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+  "kicad_model_tag": "9.0.9",
+  "kicad_model_commit": "a0244fe3442823dbb052ebc4820b4c2951e1742c",
+  "vendor_wiki_urls": [
+    "https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/",
+    "https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/"
+  ],
+  "grabcad_verdict": "Rejected as manufacturer CAD: Seeed wiki links to third-party Maurice Pannard approximations. C3 2023-02-14 predates v1.3; author warns SoC/USB-C/U.FL accuracy. C6 2024-11-06 warns button/U.FL/antenna positional accuracy and omits LEDs/resistors. No explicit per-asset redistribution license verified. No GrabCAD models downloaded.",
+  "mating_stack": "No preheader SKU, fitted male-header model, measured socket engagement, mating depth or installed module Z is asserted. The export represents a bare PCB-derived reference.",
+  "modules": {
+    "c3": {
+      "revision": "v1.3",
+      "vendor_archive_url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+      "vendor_archive_filename": "c3-v1.3-260116.zip",
+      "vendor_archive_sha256": "477bc61cec652eaeefa887cb1f97abb1514e8a61ea9659240b88be7213c3b6ff",
+      "original_pcb_path": "official-source/c3/XIAO ESP32C3_v1.3.kicad_pcb",
+      "original_pcb_sha256": "a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db",
+      "derivative_pcb_path": "XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.kicad_pcb",
+      "derivative_pcb_sha256": "ee202b11df30ade4d21c983527c5201dd8b0a3eff9f23e7fc4c059b274a5c081",
+      "mechanical_copper_fingerprint_unchanged": true,
+      "geometry_fingerprint_sha256": "9e51622e1b38e2c79edae7c2727de6f94c29ecb5a2b336fb657d1cced917fd41",
+      "conversion_note": "KiCad9 native save may normalize duplicate decorative silkscreen/mask primitives from KiCad8 C6 source. Exact pads, footprint positions/angles, tracks/vias, copper/mechanical drawings, zone outlines and board thickness compare equal; original source retained unchanged.",
+      "schematic_title_block_evidence": [
+        "CCBY-SA4.0   Size: A3",
+        "Date: 2026-01-15   Rev: v1.3",
+        "CCBY-SA4.0         Size: A3",
+        "Date: 2026-01-15   Rev: v1.3",
+        "CCBY-SA4.0                               Size: A3",
+        "Date: 2026-01-15                                   Rev: v1.3"
+      ],
+      "source_to_carrier_translation_mm": [
+        -60.5476,
+        -92.0861
+      ],
+      "export_user_origin_native_kicad_xy_mm": [
+        148.4376,
+        105.0036
+      ],
+      "carrier_grid_origin_kicad_xy_mm": [
+        87.89,
+        12.9175
+      ],
+      "step_axes": "+X USB/right; +Y opposite carrier KiCad Y; +Z top/component side. No XY rotation from source; exporter Y reflection only.",
+      "fourteen_pin_centers": [
+        {
+          "pin": 1,
+          "source_reference": "J2",
+          "source_pad_number": "1",
+          "source_net": "D0",
+          "carrier_kicad_xy_mm": [
+            95.51,
+            5.2975
+          ],
+          "step_xy_mm": [
+            7.62,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 2,
+          "source_reference": "J2",
+          "source_pad_number": "2",
+          "source_net": "D1",
+          "carrier_kicad_xy_mm": [
+            92.97,
+            5.2975
+          ],
+          "step_xy_mm": [
+            5.08,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 3,
+          "source_reference": "J2",
+          "source_pad_number": "3",
+          "source_net": "D2",
+          "carrier_kicad_xy_mm": [
+            90.43,
+            5.2975
+          ],
+          "step_xy_mm": [
+            2.54,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 4,
+          "source_reference": "J2",
+          "source_pad_number": "4",
+          "source_net": "D3",
+          "carrier_kicad_xy_mm": [
+            87.89,
+            5.2975
+          ],
+          "step_xy_mm": [
+            0.0,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 5,
+          "source_reference": "J2",
+          "source_pad_number": "5",
+          "source_net": "D4",
+          "carrier_kicad_xy_mm": [
+            85.35,
+            5.2975
+          ],
+          "step_xy_mm": [
+            -2.54,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 6,
+          "source_reference": "J2",
+          "source_pad_number": "6",
+          "source_net": "D5",
+          "carrier_kicad_xy_mm": [
+            82.81,
+            5.2975
+          ],
+          "step_xy_mm": [
+            -5.08,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 7,
+          "source_reference": "J2",
+          "source_pad_number": "7",
+          "source_net": "TX_D6",
+          "carrier_kicad_xy_mm": [
+            80.27,
+            5.2975
+          ],
+          "step_xy_mm": [
+            -7.62,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 8,
+          "source_reference": "J1",
+          "source_pad_number": "1",
+          "source_net": "RX_D7",
+          "carrier_kicad_xy_mm": [
+            80.27,
+            20.5375
+          ],
+          "step_xy_mm": [
+            -7.62,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 9,
+          "source_reference": "J1",
+          "source_pad_number": "2",
+          "source_net": "D8",
+          "carrier_kicad_xy_mm": [
+            82.81,
+            20.5375
+          ],
+          "step_xy_mm": [
+            -5.08,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 10,
+          "source_reference": "J1",
+          "source_pad_number": "3",
+          "source_net": "D9",
+          "carrier_kicad_xy_mm": [
+            85.35,
+            20.5375
+          ],
+          "step_xy_mm": [
+            -2.54,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 11,
+          "source_reference": "J1",
+          "source_pad_number": "4",
+          "source_net": "D10",
+          "carrier_kicad_xy_mm": [
+            87.89,
+            20.5375
+          ],
+          "step_xy_mm": [
+            0.0,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 12,
+          "source_reference": "J1",
+          "source_pad_number": "5",
+          "source_net": "VCC_3V3",
+          "carrier_kicad_xy_mm": [
+            90.43,
+            20.5375
+          ],
+          "step_xy_mm": [
+            2.54,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 13,
+          "source_reference": "J1",
+          "source_pad_number": "6",
+          "source_net": "GND",
+          "carrier_kicad_xy_mm": [
+            92.97,
+            20.5375
+          ],
+          "step_xy_mm": [
+            5.08,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 14,
+          "source_reference": "J1",
+          "source_pad_number": "7",
+          "source_net": "VUSB",
+          "carrier_kicad_xy_mm": [
+            95.51,
+            20.5375
+          ],
+          "step_xy_mm": [
+            7.62,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        }
+      ],
+      "source_board_edge_stroke_bbox_carrier_mm": {
+        "x_min": 77.4633,
+        "y_min": 4.0148,
+        "x_max": 98.4437,
+        "y_max": 21.8202
+      },
+      "pcb_nominal_thickness_mm": 1.6,
+      "features_vendor_carrier_xy": {
+        "BOOT0": {
+          "value": "TD-1183SN-A3N-D1R",
+          "center": [
+            79.0,
+            8.4725
+          ],
+          "rotation": 90.0,
+          "pads": [
+            {
+              "num": "",
+              "net": "",
+              "center": [
+                79.0,
+                8.4725
+              ]
+            },
+            {
+              "num": "1",
+              "net": "GND",
+              "center": [
+                79.0,
+                10.1975
+              ]
+            },
+            {
+              "num": "2",
+              "net": "D9",
+              "center": [
+                79.0,
+                6.7475
+              ]
+            }
+          ]
+        },
+        "RST0": {
+          "value": "TD-1183SN-A3N-D1R",
+          "center": [
+            79.0,
+            17.3625
+          ],
+          "rotation": -90.0,
+          "pads": [
+            {
+              "num": "",
+              "net": "",
+              "center": [
+                79.0,
+                17.3625
+              ]
+            },
+            {
+              "num": "1",
+              "net": "GND",
+              "center": [
+                79.0,
+                15.6375
+              ]
+            },
+            {
+              "num": "2",
+              "net": "EN",
+              "center": [
+                79.0,
+                19.0875
+              ]
+            }
+          ]
+        },
+        "ANT0": {
+          "value": "U.FL-R-SMT-1",
+          "center": [
+            78.873,
+            12.9175
+          ],
+          "rotation": 180.0,
+          "pads": [
+            {
+              "num": "D",
+              "net": "N$28",
+              "center": [
+                80.27,
+                12.9175
+              ]
+            },
+            {
+              "num": "GND1",
+              "net": "GND",
+              "center": [
+                78.873,
+                14.1875
+              ]
+            },
+            {
+              "num": "GND2",
+              "net": "GND",
+              "center": [
+                78.873,
+                11.6475
+              ]
+            }
+          ]
+        },
+        "USB0": {
+          "value": "UBF31-0171",
+          "center": [
+            92.589,
+            12.9175
+          ],
+          "rotation": 180.0,
+          "pads": [
+            {
+              "num": "",
+              "net": "",
+              "center": [
+                93.689,
+                15.7925
+              ]
+            },
+            {
+              "num": "",
+              "net": "",
+              "center": [
+                93.689,
+                10.0425
+              ]
+            },
+            {
+              "num": "A1_B12",
+              "net": "GND",
+              "center": [
+                92.539,
+                16.1175
+              ]
+            },
+            {
+              "num": "A4_B9",
+              "net": "VUSB",
+              "center": [
+                92.539,
+                15.3175
+              ]
+            },
+            {
+              "num": "A5",
+              "net": "N$1",
+              "center": [
+                92.539,
+                14.1675
+              ]
+            },
+            {
+              "num": "A6",
+              "net": "DP",
+              "center": [
+                92.539,
+                13.1675
+              ]
+            },
+            {
+              "num": "A7",
+              "net": "DM",
+              "center": [
+                92.539,
+                12.6675
+              ]
+            },
+            {
+              "num": "A8",
+              "net": "",
+              "center": [
+                92.539,
+                11.6675
+              ]
+            },
+            {
+              "num": "B1_A12",
+              "net": "GND",
+              "center": [
+                92.539,
+                9.7175
+              ]
+            },
+            {
+              "num": "B4_A9",
+              "net": "VUSB",
+              "center": [
+                92.539,
+                10.5175
+              ]
+            },
+            {
+              "num": "B5",
+              "net": "N$2",
+              "center": [
+                92.539,
+                11.1675
+              ]
+            },
+            {
+              "num": "B6",
+              "net": "DP",
+              "center": [
+                92.539,
+                12.1675
+              ]
+            },
+            {
+              "num": "B7",
+              "net": "DM",
+              "center": [
+                92.539,
+                13.6675
+              ]
+            },
+            {
+              "num": "B8",
+              "net": "",
+              "center": [
+                92.539,
+                14.6675
+              ]
+            },
+            {
+              "num": "S1",
+              "net": "GND",
+              "center": [
+                97.3515,
+                17.2355
+              ]
+            },
+            {
+              "num": "S2",
+              "net": "GND",
+              "center": [
+                97.3515,
+                8.5995
+              ]
+            },
+            {
+              "num": "S3",
+              "net": "GND",
+              "center": [
+                93.1605,
+                17.2355
+              ]
+            },
+            {
+              "num": "S4",
+              "net": "GND",
+              "center": [
+                93.1605,
+                8.5995
+              ]
+            },
+            {
+              "num": "S5",
+              "net": "GND",
+              "center": [
+                97.089,
+                14.4175
+              ]
+            },
+            {
+              "num": "S6",
+              "net": "GND",
+              "center": [
+                97.089,
+                11.4175
+              ]
+            }
+          ]
+        }
+      },
+      "components": [
+        {
+          "reference": "C13",
+          "value": "DNP",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            146.2786,
+            99.8855
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "CHG0",
+          "value": "RED",
+          "source_footprint": "LED-0402",
+          "source_models": [],
+          "source_position_mm": [
+            158.3563,
+            110.7186
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C53",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            142.8877,
+            107.5436
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C7",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            146.7866,
+            110.7186
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "BOOT0",
+          "value": "TD-1183SN-A3N-D1R",
+          "source_footprint": "BUTTON_TD1183SA",
+          "source_models": [],
+          "source_position_mm": [
+            139.5476,
+            100.5586
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "J2",
+          "value": "DNP",
+          "source_footprint": "H7-HALF-HOLE-2.54",
+          "source_models": [],
+          "source_position_mm": [
+            148.4376,
+            97.3836
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "C50",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            143.6116,
+            107.0356
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C40",
+          "value": "2.2uF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            142.9766,
+            102.9589
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R7",
+          "value": "0R",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            144.145,
+            107.6198
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R9",
+          "value": "100k",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            146.8247,
+            102.4636
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "D1",
+          "value": "MSK4005",
+          "source_footprint": "SOD-523",
+          "source_models": [],
+          "source_position_mm": [
+            148.5646,
+            102.5906
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C2",
+          "value": "1uF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            109.6137
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C8",
+          "value": "22pF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            143.6116,
+            108.1786
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C14",
+          "value": "1.6pF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            143.9799,
+            105.918
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R10",
+          "value": "22R",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            104.7496
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R21",
+          "value": "DNP",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            143.5227,
+            102.9589
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "C48",
+          "value": "1.6pF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            142.367,
+            105.3592
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C5",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            143.6116,
+            109.8042
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R3",
+          "value": "DNP",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            107.8865
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "C6",
+          "value": "10pF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            148.9456,
+            110.7186
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C9",
+          "value": "22pF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            144.145,
+            108.6739
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "L3",
+          "value": "2nH",
+          "source_footprint": "L0201",
+          "source_models": [],
+          "source_position_mm": [
+            142.7226,
+            106.7562
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+          "model_sha256": "303a886d7d6d526df33deb11f533d5e25b0f1acdadadb70657d7df635d21352e",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "U2",
+          "value": "TLV75733PDBVR",
+          "source_footprint": "SOT-25",
+          "source_models": [],
+          "source_position_mm": [
+            148.1836,
+            100.5586
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C12",
+          "value": "DNP",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            103.7336
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "C15",
+          "value": "0R",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            144.1577,
+            105.0798
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C41",
+          "value": "12pF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            146.2786,
+            103.8479
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C10",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            146.2786,
+            102.4636
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C43",
+          "value": "2.2uF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            142.4686,
+            104.1146
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C45",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            142.9766,
+            104.1146
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "L1",
+          "value": "2nH",
+          "source_footprint": "L0201",
+          "source_models": [],
+          "source_position_mm": [
+            143.1544,
+            105.6386
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+          "model_sha256": "303a886d7d6d526df33deb11f533d5e25b0f1acdadadb70657d7df635d21352e",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "RST0",
+          "value": "TD-1183SN-A3N-D1R",
+          "source_footprint": "BUTTON_TD1183SA",
+          "source_models": [],
+          "source_position_mm": [
+            139.5476,
+            109.4486
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C44",
+          "value": "1uF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            143.4846,
+            104.1146
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C4",
+          "value": "2.2uF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            150.0251,
+            102.9716
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "ANT0",
+          "value": "U.FL-R-SMT-1",
+          "source_footprint": "U-FL3P-SMD-2.6X2.6X1.0MM",
+          "source_models": [],
+          "source_position_mm": [
+            139.4206,
+            105.0036
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C54",
+          "value": "2.2uF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            142.1765,
+            107.5436
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R8",
+          "value": "22R",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            104.2416
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "J1",
+          "value": "DNP",
+          "source_footprint": "H7-HALF-HOLE-2.54",
+          "source_models": [],
+          "source_position_mm": [
+            148.4376,
+            112.6236
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "R4",
+          "value": "10k",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            144.145,
+            109.8042
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "U4",
+          "value": "ESP32-C3FH4",
+          "source_footprint": "QFN32G-0.5-5X5MM",
+          "source_models": [],
+          "source_position_mm": [
+            147.8153,
+            107.3912
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R32",
+          "value": "0R",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            146.8247,
+            103.8479
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C42",
+          "value": "12pF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            147.5105,
+            103.8479
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R22",
+          "value": "2.7k",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            145.7198,
+            99.8855
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "Q1",
+          "value": "LP0404N3T5G",
+          "source_footprint": "PMOS_1.0_0.6_0.35MM",
+          "source_models": [],
+          "source_position_mm": [
+            148.5646,
+            103.8606
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C39",
+          "value": "2.2uF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            145.7071,
+            101.2317
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C3",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            109.1438
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R1",
+          "value": "5.1k",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            103.2256
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R31",
+          "value": "2.2k",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            110.1217
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "USB0",
+          "value": "UBF31-0171",
+          "source_footprint": "USB2.0-TYPE-C",
+          "source_models": [],
+          "source_position_mm": [
+            153.1366,
+            105.0036
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_USB_substitute",
+          "basis": "C6 vendor PCB explicitly references GCT USB4105-xx-A model at offset(-3.5,0,0), rotationZ90. Retained for C6; reused for C3 similar USB footprint. C3 actual value UBF31-0171 is not GCT. Model is visual only; not USB-shell fit or plug-depth proof.",
+          "model": "Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+          "model_sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+          "model_offset_mm": [
+            -3.5,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "reference": "C49",
+          "value": "0R",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            143.1544,
+            105.0798
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R2",
+          "value": "5.1k",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            105.7656
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C11",
+          "value": "DNP",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            151.257,
+            105.2576
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "X2",
+          "value": "32.768k/DST1610A",
+          "source_footprint": "X2-SMD-1.6X1.0X0.5MM",
+          "source_models": [],
+          "source_position_mm": [
+            142.621,
+            109.0676
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "F1",
+          "value": "6V_500mA_Fuse",
+          "source_footprint": "F0603",
+          "source_models": [],
+          "source_position_mm": [
+            151.1681,
+            101.1301
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R5",
+          "value": "1R",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            142.4686,
+            102.5779
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C1",
+          "value": "2.2uF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            150.5331,
+            102.9716
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C23",
+          "value": "2.2uF",
+          "source_footprint": "C0201",
+          "source_models": [],
+          "source_position_mm": [
+            146.2786,
+            101.2317
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R6",
+          "value": "10k",
+          "source_footprint": "R0201",
+          "source_models": [],
+          "source_position_mm": [
+            147.9296,
+            110.7186
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "U1",
+          "value": "",
+          "source_footprint": "SOT-25",
+          "source_models": [],
+          "source_position_mm": [
+            143.7386,
+            100.5586
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "X4",
+          "value": "40MHz/306011483",
+          "source_footprint": "X4-SMD-2.0X1.6X0.5MM",
+          "source_models": [],
+          "source_position_mm": [
+            145.0086,
+            103.2256
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP2",
+          "value": "DNP",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            151.9936,
+            103.7336
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "GND0",
+          "value": "DNP",
+          "source_footprint": "TP-80X40MIL",
+          "source_models": [],
+          "source_position_mm": [
+            150.7236,
+            100.5586
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "TP1",
+          "value": "DNP",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            154.5336,
+            106.2736
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "TP3",
+          "value": "DNP",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            157.0736,
+            103.7336
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "TP6",
+          "value": "DNP",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            154.5336,
+            103.7336
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "U$2",
+          "value": "",
+          "source_footprint": "LOGO-SEEED-NEW-1X9.6MM",
+          "source_models": [],
+          "source_position_mm": [
+            148.1836,
+            103.7336
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "BAT0",
+          "value": "DNP",
+          "source_footprint": "TP-80X40MIL",
+          "source_models": [],
+          "source_position_mm": [
+            148.8186,
+            100.5586
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "TP4",
+          "value": "DNP",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            151.9936,
+            106.2736
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_explicit_DNP"
+        },
+        {
+          "reference": "TP5",
+          "value": "DNP",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            157.0736,
+            106.2736
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_explicit_DNP"
+        }
+      ],
+      "included_generic_component_count": 40,
+      "omitted_component_count": 28,
+      "step_validation": {
+        "bare_pcb": {
+          "path": "XIAO_ESP32C3_v1.3_bare_pcb_datum.step",
+          "bytes": 116448,
+          "sha256": "9c987f636d069029e2630b3c716cc598243067a90d003196d6cebfd9792e2c29",
+          "bbox_mm": {
+            "x_min": -10.414,
+            "y_min": -8.89,
+            "z_min": 0.0,
+            "x_max": 10.541,
+            "y_max": 8.89,
+            "z_max": 1.51
+          },
+          "solid_count": 1,
+          "face_count": 79,
+          "occt_shape_valid": true,
+          "vertical_cylindrical_faces": [
+            {
+              "center_xy_mm": [
+                8.635999,
+                6.984999
+              ],
+              "radius_mm": 1.905001
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                8.635999,
+                -6.984999
+              ],
+              "radius_mm": 1.905001
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -0.0,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -8.508999,
+                -6.984999
+              ],
+              "radius_mm": 1.905001
+            },
+            {
+              "center_xy_mm": [
+                -8.508999,
+                6.984999
+              ],
+              "radius_mm": 1.905001
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -0.0,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -0.0,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                -7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                -7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                -5.715,
+                -6.223
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                -5.715,
+                -6.223
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                -4.953,
+                -6.223
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                -4.953,
+                -6.223
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                -8.89,
+                -4.445
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                -7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                -0.0,
+                -7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                -7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                -7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                -7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                5.2705,
+                -4.318
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                9.4615,
+                -4.318
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                5.799,
+                -2.875
+              ],
+              "radius_mm": 0.29
+            },
+            {
+              "center_xy_mm": [
+                -8.89,
+                4.445
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                -5.715,
+                6.223
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                -5.715,
+                6.223
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                -4.953,
+                6.223
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                -4.953,
+                6.223
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                -0.0,
+                7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                5.799,
+                2.875
+              ],
+              "radius_mm": 0.29
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                5.2705,
+                4.318
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                9.4615,
+                4.318
+              ],
+              "radius_mm": 0.254
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                7.62
+              ],
+              "radius_mm": 0.425
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                7.62
+              ],
+              "radius_mm": 0.425
+            }
+          ],
+          "all_fourteen_pin_holes_match": true
+        },
+        "detailed_visual_reference": {
+          "path": "XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+          "bytes": 10381543,
+          "sha256": "ce94f33287391d085e1cab8886d803a4e3822b638902346ca5a8ecb020f55055",
+          "bbox_mm": {
+            "x_min": -10.414,
+            "y_min": -9.524999,
+            "z_min": -0.04,
+            "x_max": 11.8740001,
+            "y_max": 9.524999,
+            "z_max": 4.9050001
+          },
+          "solid_count": 1082,
+          "face_count": 8762,
+          "occt_shape_valid": true
+        }
+      },
+      "step_board_z_datum": "Independent native bare-PCB STEP bounding box; use its z_min/z_max for assembly offset. Generic components and copper may extend slightly beyond board planes.",
+      "repository_model_path": "design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+      "carrier_J5_model_offset_mm": [
+        -7.62,
+        -7.62,
+        11
+      ],
+      "carrier_model_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "carrier_scale": [
+        1,
+        1,
+        1
+      ],
+      "installed_substrate_bottom_above_carrier_top_mm": 11,
+      "installed_z_is_provisional": true
+    },
+    "c6": {
+      "revision": "v1.0",
+      "vendor_archive_url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip",
+      "vendor_archive_filename": "c6-v1.0-260114.zip",
+      "vendor_archive_sha256": "cea2ed66da575e4a1dd6c7a9acd60583ed4a9adbf6b1d2952851c1e4199c05fc",
+      "original_pcb_path": "official-source/c6/XIAO ESP32 C6.kicad_pcb",
+      "original_pcb_sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027",
+      "derivative_pcb_path": "XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.kicad_pcb",
+      "derivative_pcb_sha256": "21263d3e4d89f354f719f2bae7bb506a46029ef6b35181b7da86e53ae0e65bd2",
+      "mechanical_copper_fingerprint_unchanged": true,
+      "geometry_fingerprint_sha256": "999ee5cba67f20fb726dd8c30db63c9b2fef98fe17b8daf314057e29fff2e8bf",
+      "conversion_note": "KiCad9 native save may normalize duplicate decorative silkscreen/mask primitives from KiCad8 C6 source. Exact pads, footprint positions/angles, tracks/vias, copper/mechanical drawings, zone outlines and board thickness compare equal; original source retained unchanged.",
+      "schematic_title_block_evidence": [
+        "CCBY-SA4.0           Size: A3",
+        "Date: 2026-01-14   Rev: V1.0",
+        "CCBY-SA4.0      Size: A3",
+        "Date: 2026-01-14   Rev: V1.0",
+        "CCBY-SA4.0   Size: A3",
+        "Date: 2026-01-14   Rev: V1.0",
+        "CCBY-SA4.0                         Size: A3",
+        "Date: 2026-01-14                                                                       Rev: V1.0",
+        "CCBY-SA4.0                              Size: A3",
+        "Date: 2026-01-14             Rev: V1.0"
+      ],
+      "source_to_carrier_translation_mm": [
+        -20.5077,
+        -59.9585
+      ],
+      "export_user_origin_native_kicad_xy_mm": [
+        108.3977,
+        72.876
+      ],
+      "carrier_grid_origin_kicad_xy_mm": [
+        87.89,
+        12.9175
+      ],
+      "step_axes": "+X USB/right; +Y opposite carrier KiCad Y; +Z top/component side. No XY rotation from source; exporter Y reflection only.",
+      "fourteen_pin_centers": [
+        {
+          "pin": 1,
+          "source_reference": "U2",
+          "source_pad_number": "1",
+          "source_net": "GPIO0{slash}XTAL_32K_P{slash}ADC1_CH0",
+          "carrier_kicad_xy_mm": [
+            95.51,
+            5.2975
+          ],
+          "step_xy_mm": [
+            7.62,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 2,
+          "source_reference": "U2",
+          "source_pad_number": "2",
+          "source_net": "GPIO1{slash}XTAL_32K_N{slash}ADC1_CH1",
+          "carrier_kicad_xy_mm": [
+            92.97,
+            5.2975
+          ],
+          "step_xy_mm": [
+            5.08,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 3,
+          "source_reference": "U2",
+          "source_pad_number": "3",
+          "source_net": "GPIO2{slash}ADC1_CH2",
+          "carrier_kicad_xy_mm": [
+            90.43,
+            5.2975
+          ],
+          "step_xy_mm": [
+            2.54,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 4,
+          "source_reference": "U2",
+          "source_pad_number": "4",
+          "source_net": "GPIO21{slash}SDIO_D1",
+          "carrier_kicad_xy_mm": [
+            87.89,
+            5.2975
+          ],
+          "step_xy_mm": [
+            0.0,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 5,
+          "source_reference": "U2",
+          "source_pad_number": "5",
+          "source_net": "GPIO22{slash}SDIO_D2",
+          "carrier_kicad_xy_mm": [
+            85.35,
+            5.2975
+          ],
+          "step_xy_mm": [
+            -2.54,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 6,
+          "source_reference": "U2",
+          "source_pad_number": "6",
+          "source_net": "GPIO23{slash}SDIO_D3",
+          "carrier_kicad_xy_mm": [
+            82.81,
+            5.2975
+          ],
+          "step_xy_mm": [
+            -5.08,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 7,
+          "source_reference": "U2",
+          "source_pad_number": "7",
+          "source_net": "D6{slash}TX",
+          "carrier_kicad_xy_mm": [
+            80.27,
+            5.2975
+          ],
+          "step_xy_mm": [
+            -7.62,
+            7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 8,
+          "source_reference": "U2",
+          "source_pad_number": "8",
+          "source_net": "D7{slash}RX",
+          "carrier_kicad_xy_mm": [
+            80.27,
+            20.5375
+          ],
+          "step_xy_mm": [
+            -7.62,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 9,
+          "source_reference": "U2",
+          "source_pad_number": "9",
+          "source_net": "GPIO19{slash}SDIO_CLK",
+          "carrier_kicad_xy_mm": [
+            82.81,
+            20.5375
+          ],
+          "step_xy_mm": [
+            -5.08,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 10,
+          "source_reference": "U2",
+          "source_pad_number": "10",
+          "source_net": "GPIO20{slash}SDIO_D0",
+          "carrier_kicad_xy_mm": [
+            85.35,
+            20.5375
+          ],
+          "step_xy_mm": [
+            -2.54,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 11,
+          "source_reference": "U2",
+          "source_pad_number": "11",
+          "source_net": "GPIO18{slash}SDIO_CMD",
+          "carrier_kicad_xy_mm": [
+            87.89,
+            20.5375
+          ],
+          "step_xy_mm": [
+            0.0,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 12,
+          "source_reference": "U2",
+          "source_pad_number": "12",
+          "source_net": "+3V3",
+          "carrier_kicad_xy_mm": [
+            90.43,
+            20.5375
+          ],
+          "step_xy_mm": [
+            2.54,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 13,
+          "source_reference": "U2",
+          "source_pad_number": "13",
+          "source_net": "GND",
+          "carrier_kicad_xy_mm": [
+            92.97,
+            20.5375
+          ],
+          "step_xy_mm": [
+            5.08,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        },
+        {
+          "pin": 14,
+          "source_reference": "U2",
+          "source_pad_number": "14",
+          "source_net": "VBUS",
+          "carrier_kicad_xy_mm": [
+            95.51,
+            20.5375
+          ],
+          "step_xy_mm": [
+            7.62,
+            -7.62
+          ],
+          "exported_hole_face_match": true
+        }
+      ],
+      "source_board_edge_stroke_bbox_carrier_mm": {
+        "x_min": 77.4633,
+        "y_min": 4.0148,
+        "x_max": 98.4437,
+        "y_max": 21.8202
+      },
+      "pcb_nominal_thickness_mm": 1.6,
+      "features_vendor_carrier_xy": {
+        "ANT1": {
+          "value": "KH5220-A36",
+          "center": [
+            78.6285,
+            16.0415
+          ],
+          "rotation": -90.0,
+          "pads": [
+            {
+              "num": "1",
+              "net": "Net-(ANT1-Pad1)",
+              "center": [
+                78.6285,
+                13.3415
+              ]
+            },
+            {
+              "num": "2",
+              "net": "unconnected-(ANT1-Pad2)",
+              "center": [
+                78.6285,
+                18.7415
+              ]
+            }
+          ]
+        },
+        "K2": {
+          "value": "SKTAAAE010",
+          "center": [
+            97.3483,
+            19.4927
+          ],
+          "rotation": -90.0,
+          "pads": [
+            {
+              "num": "1",
+              "net": "GND",
+              "center": [
+                97.7233,
+                18.1927
+              ]
+            },
+            {
+              "num": "2",
+              "net": "GND",
+              "center": [
+                96.9733,
+                18.1927
+              ]
+            },
+            {
+              "num": "3",
+              "net": "BOOT",
+              "center": [
+                97.7233,
+                20.7927
+              ]
+            },
+            {
+              "num": "4",
+              "net": "BOOT",
+              "center": [
+                96.9733,
+                20.7927
+              ]
+            }
+          ]
+        },
+        "K1": {
+          "value": "SKTAAAE010",
+          "center": [
+            97.3483,
+            6.3355
+          ],
+          "rotation": 90.0,
+          "pads": [
+            {
+              "num": "1",
+              "net": "GND",
+              "center": [
+                96.9733,
+                7.6355
+              ]
+            },
+            {
+              "num": "2",
+              "net": "GND",
+              "center": [
+                97.7233,
+                7.6355
+              ]
+            },
+            {
+              "num": "3",
+              "net": "EN",
+              "center": [
+                96.9733,
+                5.0355
+              ]
+            },
+            {
+              "num": "4",
+              "net": "EN",
+              "center": [
+                97.7233,
+                5.0355
+              ]
+            }
+          ]
+        },
+        "USB1": {
+          "value": "USB2.0 Type C",
+          "center": [
+            92.6237,
+            12.9215
+          ],
+          "rotation": 180.0,
+          "pads": [
+            {
+              "num": "",
+              "net": "",
+              "center": [
+                93.7237,
+                15.7965
+              ]
+            },
+            {
+              "num": "",
+              "net": "",
+              "center": [
+                93.7237,
+                10.0465
+              ]
+            },
+            {
+              "num": "A1_B12",
+              "net": "GND",
+              "center": [
+                92.4987,
+                16.1715
+              ]
+            },
+            {
+              "num": "A4_B9",
+              "net": "VBUS",
+              "center": [
+                92.4987,
+                15.3215
+              ]
+            },
+            {
+              "num": "A5",
+              "net": "Net-(USB1-A5{slash}CC1)",
+              "center": [
+                92.4987,
+                14.1715
+              ]
+            },
+            {
+              "num": "A6",
+              "net": "/03 Power/USB_DP",
+              "center": [
+                92.4987,
+                13.1715
+              ]
+            },
+            {
+              "num": "A7",
+              "net": "/03 Power/USB_DN",
+              "center": [
+                92.4987,
+                12.6715
+              ]
+            },
+            {
+              "num": "A8",
+              "net": "unconnected-(USB1-A8{slash}SBU1-PadA8)",
+              "center": [
+                92.4987,
+                11.6715
+              ]
+            },
+            {
+              "num": "B1_A12",
+              "net": "GND",
+              "center": [
+                92.4987,
+                9.7215
+              ]
+            },
+            {
+              "num": "B4_A9",
+              "net": "VBUS",
+              "center": [
+                92.4987,
+                10.5215
+              ]
+            },
+            {
+              "num": "B5",
+              "net": "Net-(USB1-B5{slash}CC2)",
+              "center": [
+                92.4987,
+                11.1715
+              ]
+            },
+            {
+              "num": "B6",
+              "net": "/03 Power/USB_DP",
+              "center": [
+                92.4987,
+                12.1715
+              ]
+            },
+            {
+              "num": "B7",
+              "net": "/03 Power/USB_DN",
+              "center": [
+                92.4987,
+                13.6715
+              ]
+            },
+            {
+              "num": "B8",
+              "net": "unconnected-(USB1-B8{slash}SBU2-PadB8)",
+              "center": [
+                92.4987,
+                14.6715
+              ]
+            },
+            {
+              "num": "S1",
+              "net": "GND",
+              "center": [
+                97.3737,
+                17.2215
+              ]
+            },
+            {
+              "num": "S2",
+              "net": "GND",
+              "center": [
+                97.3737,
+                8.6215
+              ]
+            },
+            {
+              "num": "S3",
+              "net": "GND",
+              "center": [
+                93.1737,
+                17.2215
+              ]
+            },
+            {
+              "num": "S4",
+              "net": "GND",
+              "center": [
+                93.1737,
+                8.6215
+              ]
+            },
+            {
+              "num": "S5",
+              "net": "GND",
+              "center": [
+                97.1237,
+                14.4215
+              ]
+            },
+            {
+              "num": "S6",
+              "net": "GND",
+              "center": [
+                97.1237,
+                11.4215
+              ]
+            }
+          ]
+        },
+        "ANT2": {
+          "value": "U.FL-R-SMT-1",
+          "center": [
+            78.8825,
+            8.6215
+          ],
+          "rotation": 180.0,
+          "pads": [
+            {
+              "num": "1",
+              "net": "Net-(ANT2-D)",
+              "center": [
+                80.2795,
+                8.6215
+              ]
+            },
+            {
+              "num": "2",
+              "net": "GND",
+              "center": [
+                78.8825,
+                9.8915
+              ]
+            },
+            {
+              "num": "3",
+              "net": "GND",
+              "center": [
+                78.8825,
+                7.3515
+              ]
+            }
+          ]
+        }
+      },
+      "components": [
+        {
+          "reference": "C18",
+          "value": "100pF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            102.66,
+            72.11
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "ANT1",
+          "value": "KH5220-A36",
+          "source_footprint": "ANT2P-5.2x2x1.1MM",
+          "source_models": [],
+          "source_position_mm": [
+            99.1362,
+            76.0
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C1",
+          "value": "10uF",
+          "source_footprint": "C0402",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            104.84,
+            69.46
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "model_sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "K2",
+          "value": "SKTAAAE010",
+          "source_footprint": "SW4-SMD-2.8-2.6X1.6X0.53MM",
+          "source_models": [],
+          "source_position_mm": [
+            117.856,
+            79.4512
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R12",
+          "value": "0R",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            106.61,
+            71.2216
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "L5",
+          "value": "TBD",
+          "source_footprint": "L0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            99.88,
+            71.38
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "omitted_unresolved_population_TBD"
+        },
+        {
+          "reference": "K1",
+          "value": "SKTAAAE010",
+          "source_footprint": "SW4-SMD-2.8-2.6X1.6X0.53MM",
+          "source_models": [],
+          "source_position_mm": [
+            117.856,
+            66.294
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R7",
+          "value": "22R",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.05,
+            72.525
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C25",
+          "value": "TBD",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            104.68,
+            72.03
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_unresolved_population_TBD"
+        },
+        {
+          "reference": "R18",
+          "value": "1.5K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            110.3148,
+            76.58
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "L3",
+          "value": "TBD",
+          "source_footprint": "L0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            103.12,
+            68.87
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_unresolved_population_TBD"
+        },
+        {
+          "reference": "C21",
+          "value": "1uF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.18,
+            68.8
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C16",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            103.13,
+            74.73
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "X1",
+          "value": "40MHz",
+          "source_footprint": "X4-SMD-1.6X1.2MM",
+          "source_models": [],
+          "source_position_mm": [
+            107.8364,
+            71.5772
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R14",
+          "value": "499R",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            110.3148,
+            75.5534
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R25",
+          "value": "1.5K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.2012,
+            78.56
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R8",
+          "value": "22R",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.075,
+            73.175
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "CHG1",
+          "value": "Red",
+          "source_footprint": "LED-0402",
+          "source_models": [],
+          "source_position_mm": [
+            114.5286,
+            67.0052
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R6",
+          "value": "5.1K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.2012,
+            71.1454
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C20",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            110.3148,
+            76.0614
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C9",
+          "value": "1uF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            110.19,
+            68.75
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R10",
+          "value": "200K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            109.19,
+            68.75
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R16",
+          "value": "10K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.19,
+            68.28
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "L4",
+          "value": "TBD",
+          "source_footprint": "L0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            103.83,
+            72.23
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_unresolved_population_TBD"
+        },
+        {
+          "reference": "C13",
+          "value": "10uF",
+          "source_footprint": "C0402",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            103.07,
+            77.84
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "model_sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "D4",
+          "value": "Yellow",
+          "source_footprint": "LED-0402",
+          "source_models": [],
+          "source_position_mm": [
+            114.5286,
+            78.6892
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "Q3",
+          "value": "LP0404N3T5G",
+          "source_footprint": "PMOS_1.0X0.6X0.35MM",
+          "source_models": [],
+          "source_position_mm": [
+            102.91,
+            73.01
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C6",
+          "value": "10pF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            110.07,
+            72.525
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C12",
+          "value": "10nF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            106.5944,
+            72.353
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "D3",
+          "value": "LNZ8F5V6T5G",
+          "source_footprint": "DFN1006-2L",
+          "source_models": [],
+          "source_position_mm": [
+            109.728,
+            71.0946
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R23",
+          "value": "10K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            104.2,
+            71.05
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "Q2",
+          "value": "LN237N3T5G",
+          "source_footprint": "PMOS_1.0X0.6X0.35MM",
+          "source_models": [],
+          "source_position_mm": [
+            108.5342,
+            69.3928
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C7",
+          "value": "10pF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            110.07,
+            73.175
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "U1",
+          "value": "SMD IC PMIC;DCDC Buck-ADJ-1A,Vin 1.95V to 5.5V,Vout 1.8V to 3.3V;WLCSP-6B",
+          "source_footprint": "BGA6-0.35-0.745X10.95X0.4MM",
+          "source_models": [],
+          "source_position_mm": [
+            106.37,
+            69.58
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "L2",
+          "value": "2.0nH",
+          "source_footprint": "L0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            103.63,
+            74.73
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+          "model_sha256": "303a886d7d6d526df33deb11f533d5e25b0f1acdadadb70657d7df635d21352e",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R11",
+          "value": "10K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.17,
+            67.27
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C4",
+          "value": "10uF",
+          "source_footprint": "C0402",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            104.0008,
+            67.6656
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+          "model_sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "D2",
+          "value": "ESDPSA0402V05",
+          "source_footprint": "ESD-0402",
+          "source_models": [],
+          "source_position_mm": [
+            111.2012,
+            70.0532
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "U5",
+          "value": "FM8625H",
+          "source_footprint": "DFN6-0.4-1.1X0.7X0.45MM",
+          "source_models": [],
+          "source_position_mm": [
+            103.02,
+            70.9
+          ],
+          "source_rotation_deg": -45.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C24",
+          "value": "TBD",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            102.87,
+            69.62
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_unresolved_population_TBD"
+        },
+        {
+          "reference": "C10",
+          "value": "16pF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            107.44,
+            70.06
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C17",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            103.26,
+            76.61
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C2",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            108.34,
+            68.23
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R19",
+          "value": "2.2K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            108.21,
+            69.98
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C28",
+          "value": "TBD",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            100.62,
+            71.11
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_unresolved_population_TBD"
+        },
+        {
+          "reference": "C27",
+          "value": "TBD",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            99.14,
+            71.12
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_unresolved_population_TBD"
+        },
+        {
+          "reference": "R1",
+          "value": "249K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            105.74,
+            71.05
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "USB1",
+          "value": "USB2.0 Type C",
+          "source_footprint": "USB2.0-TYPE-C",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+              "offset": [
+                -3.5,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                90.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            113.1314,
+            72.88
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_USB_substitute",
+          "basis": "C6 vendor PCB explicitly references GCT USB4105-xx-A model at offset(-3.5,0,0), rotationZ90. Retained for C6; reused for C3 similar USB footprint. C3 actual value UBF31-0171 is not GCT. Model is visual only; not USB-shell fit or plug-depth proof.",
+          "model": "Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+          "model_sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+          "model_offset_mm": [
+            -3.5,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            90.0
+          ]
+        },
+        {
+          "reference": "ANT2",
+          "value": "U.FL-R-SMT-1",
+          "source_footprint": "U-FL3P-SMD-2.6X2.6X1.0MM",
+          "source_models": [],
+          "source_position_mm": [
+            99.3902,
+            68.58
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R24",
+          "value": "5.1K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            104.71,
+            71.05
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "U4",
+          "value": "ESP32-C6FH4",
+          "source_footprint": "QFN32-0.5-5X5MM",
+          "source_models": [],
+          "source_position_mm": [
+            106.835,
+            75.8074
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R3",
+          "value": "5.1K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.27,
+            74.38
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C14",
+          "value": "1uF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            103.26,
+            76.08
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C8",
+          "value": "1uF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            110.4392,
+            71.3486
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "D1",
+          "value": "LMBR4010BST5G",
+          "source_footprint": "DFN1006-2L",
+          "source_models": [],
+          "source_position_mm": [
+            109.3216,
+            67.818
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R13",
+          "value": "5.1K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            110.22,
+            78.55
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C19",
+          "value": "10pF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            105.22,
+            71.05
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C22",
+          "value": "10pF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.2,
+            77.54
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R17",
+          "value": "10K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.2,
+            78.05
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "U2",
+          "value": "~",
+          "source_footprint": "MOUDLE14P-XIAO-HALF-HOLE",
+          "source_models": [
+            {
+              "file": "${AMZPATH}/3dmodels/AMz3D.3dshapes/XIAO-nRF52840 v15.step",
+              "offset": [
+                -1.778,
+                -6.096,
+                0.381
+              ],
+              "rotation": [
+                -90.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "file": "${AMZPATH}/3dmodels/AMz3D.3dshapes/Seeeduino XIAO SAMD21 v4.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "file": "${AMZPATH}/3dmodels/AMz3D.3dshapes/Seeed Studio XIAO RP2040 v26.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                90.0
+              ]
+            },
+            {
+              "file": "${AMZPATH}/3dmodels/AMz3D.3dshapes/Seeed Studio XIAO-ESP32-C3.step",
+              "offset": [
+                -1.7018,
+                -6.096,
+                0.0
+              ],
+              "rotation": [
+                -90.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "file": "${AMZPATH}/3dmodels/AMz3D.3dshapes/XIAO-ESP32S3 v2.step",
+              "offset": [
+                -1.778,
+                -6.1722,
+                0.0
+              ],
+              "rotation": [
+                -90.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            108.3977,
+            72.876
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "U3",
+          "value": "SGM40567-4.2XG/TR",
+          "source_footprint": "WLCSP-0.4-0.92X1.16X0.4MM",
+          "source_models": [],
+          "source_position_mm": [
+            110.0074,
+            69.5706
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "C11",
+          "value": "16pF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            109.01,
+            72.1614
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C23",
+          "value": "TBD",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            102.57,
+            68.37
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_unresolved_population_TBD"
+        },
+        {
+          "reference": "R21",
+          "value": "10K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            102.92,
+            73.88
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R20",
+          "value": "100R",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            111.19,
+            67.78
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R9",
+          "value": "100K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            108.2,
+            68.75
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "L1",
+          "value": "0.47uH",
+          "source_footprint": "L0603",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            106.47,
+            67.78
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Inductor_SMD.3dshapes/L_0603_1608Metric.step",
+          "model_sha256": "b0136ad7160588d2f5dac8c85da84a35646db656b5bc54bbb873b6b548eedbb3",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "Q1",
+          "value": "LP0404N3T5G",
+          "source_footprint": "PMOS_1.0X0.6X0.35MM",
+          "source_models": [],
+          "source_position_mm": [
+            110.2106,
+            67.818
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "R15",
+          "value": "0R",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            110.4,
+            74.0548
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C5",
+          "value": "1uF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            105.3498,
+            72.353
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "C15",
+          "value": "100nF",
+          "source_footprint": "C0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            103.25,
+            75.55
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+          "model_sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "R22",
+          "value": "10K",
+          "source_footprint": "R0201",
+          "source_models": [
+            {
+              "file": "${KICAD7_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+              "offset": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_position_mm": [
+            102.21,
+            73.7
+          ],
+          "source_rotation_deg": -90.0,
+          "status": "generic_package_model",
+          "basis": "Vendor footprint imperial package code; no production manufacturer, terminal geometry, color or exact height established.",
+          "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+          "model_sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+          "model_offset_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "model_rotation_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "reference": "REF**",
+          "value": "Val**",
+          "source_footprint": "LOGO-SEEED-NEW-1X9.6MM",
+          "source_models": [],
+          "source_position_mm": [
+            105.0,
+            77.54
+          ],
+          "source_rotation_deg": 90.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP4",
+          "value": "Test Point",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            111.9632,
+            71.6026
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP6",
+          "value": "Test Point",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            111.9632,
+            74.1426
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP9",
+          "value": "Test Point",
+          "source_footprint": "TP-80X40MIL",
+          "source_models": [],
+          "source_position_mm": [
+            102.87,
+            71.0946
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP1",
+          "value": "Test Point",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            109.48,
+            74.05
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP7",
+          "value": "Test Point",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            117.0432,
+            74.1426
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP10",
+          "value": "Test Point",
+          "source_footprint": "TP-80X40MIL",
+          "source_models": [],
+          "source_position_mm": [
+            102.87,
+            73.6346
+          ],
+          "source_rotation_deg": 0.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP2",
+          "value": "Test Point",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            109.4232,
+            71.6026
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP5",
+          "value": "Test Point",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            117.0432,
+            71.6026
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP8",
+          "value": "Test Point",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            114.5032,
+            71.6026
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        },
+        {
+          "reference": "TP3",
+          "value": "Test Point",
+          "source_footprint": "TP-D45MIL",
+          "source_models": [],
+          "source_position_mm": [
+            114.5032,
+            74.1426
+          ],
+          "source_rotation_deg": 180.0,
+          "status": "omitted_no_verified_3D_model"
+        }
+      ],
+      "included_generic_component_count": 46,
+      "omitted_component_count": 37,
+      "step_validation": {
+        "bare_pcb": {
+          "path": "XIAO_ESP32C6_v1.0_bare_pcb_datum.step",
+          "bytes": 129500,
+          "sha256": "4ec5786ee56c7c08f910980917b6122a98ec10dbcd670e1be25ad37606add11a",
+          "bbox_mm": {
+            "x_min": -10.414,
+            "y_min": -8.89,
+            "z_min": 0.0,
+            "x_max": 10.541,
+            "y_max": 8.89,
+            "z_max": 1.51
+          },
+          "solid_count": 1,
+          "face_count": 89,
+          "occt_shape_valid": true,
+          "vertical_cylindrical_faces": [
+            {
+              "center_xy_mm": [
+                8.635999,
+                6.984999
+              ],
+              "radius_mm": 1.905001
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                8.635999,
+                -6.984999
+              ],
+              "radius_mm": 1.905001
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -0.0,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                -8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -8.508999,
+                -6.984999
+              ],
+              "radius_mm": 1.905001
+            },
+            {
+              "center_xy_mm": [
+                -8.508999,
+                6.984999
+              ],
+              "radius_mm": 1.905001
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -0.0,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -0.0,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                8.89
+              ],
+              "radius_mm": 0.35
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                -7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                -7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                -5.705484,
+                -6.219616
+              ],
+              "radius_mm": 0.254016
+            },
+            {
+              "center_xy_mm": [
+                -5.705518,
+                -6.219618
+              ],
+              "radius_mm": 0.253982
+            },
+            {
+              "center_xy_mm": [
+                -4.943519,
+                -6.219619
+              ],
+              "radius_mm": 0.254019
+            },
+            {
+              "center_xy_mm": [
+                -4.943485,
+                -6.219615
+              ],
+              "radius_mm": 0.253985
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                -7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                0.0,
+                -7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                -7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                -7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                4.8837,
+                -4.304
+              ],
+              "radius_mm": 0.25
+            },
+            {
+              "center_xy_mm": [
+                5.6837,
+                -4.304
+              ],
+              "radius_mm": 0.25
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                -7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                9.0837,
+                -4.304
+              ],
+              "radius_mm": 0.25
+            },
+            {
+              "center_xy_mm": [
+                9.8837,
+                -4.304
+              ],
+              "radius_mm": 0.25
+            },
+            {
+              "center_xy_mm": [
+                5.8337,
+                -2.879
+              ],
+              "radius_mm": 0.29
+            },
+            {
+              "center_xy_mm": [
+                -7.62,
+                7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                -5.705484,
+                6.226384
+              ],
+              "radius_mm": 0.254016
+            },
+            {
+              "center_xy_mm": [
+                -5.705518,
+                6.226382
+              ],
+              "radius_mm": 0.253982
+            },
+            {
+              "center_xy_mm": [
+                -4.943519,
+                6.226381
+              ],
+              "radius_mm": 0.254019
+            },
+            {
+              "center_xy_mm": [
+                -4.943485,
+                6.226385
+              ],
+              "radius_mm": 0.253985
+            },
+            {
+              "center_xy_mm": [
+                -5.08,
+                7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                -2.54,
+                7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                -0.0,
+                7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                5.8337,
+                2.871
+              ],
+              "radius_mm": 0.29
+            },
+            {
+              "center_xy_mm": [
+                4.8837,
+                4.296
+              ],
+              "radius_mm": 0.25
+            },
+            {
+              "center_xy_mm": [
+                5.6837,
+                4.296
+              ],
+              "radius_mm": 0.25
+            },
+            {
+              "center_xy_mm": [
+                2.54,
+                7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                5.08,
+                7.62
+              ],
+              "radius_mm": 0.5
+            },
+            {
+              "center_xy_mm": [
+                9.0837,
+                4.296
+              ],
+              "radius_mm": 0.25
+            },
+            {
+              "center_xy_mm": [
+                9.8837,
+                4.296
+              ],
+              "radius_mm": 0.25
+            },
+            {
+              "center_xy_mm": [
+                7.62,
+                7.62
+              ],
+              "radius_mm": 0.5
+            }
+          ],
+          "all_fourteen_pin_holes_match": true
+        },
+        "detailed_visual_reference": {
+          "path": "XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step",
+          "bytes": 18367201,
+          "sha256": "81efa7c7c0e1d811a9d34c3eb9ff03c09ee8861f5cb627265f05abbf8824f992",
+          "bbox_mm": {
+            "x_min": -10.414,
+            "y_min": -9.524999,
+            "z_min": -0.04,
+            "x_max": 11.9087001,
+            "y_max": 9.524999,
+            "z_max": 4.9050001
+          },
+          "solid_count": 906,
+          "face_count": 13568,
+          "occt_shape_valid": true
+        }
+      },
+      "step_board_z_datum": "Independent native bare-PCB STEP bounding box; use its z_min/z_max for assembly offset. Generic components and copper may extend slightly beyond board planes.",
+      "repository_model_path": "design/models/XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step",
+      "carrier_J5_model_offset_mm": [
+        -7.62,
+        -7.62,
+        11
+      ],
+      "carrier_model_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "carrier_scale": [
+        1,
+        1,
+        1
+      ],
+      "installed_substrate_bottom_above_carrier_top_mm": 11,
+      "installed_z_is_provisional": true
+    }
+  },
+  "final_step_layers": "Native board body, components, tracks, pads, zones and inner copper included; thin silkscreen/soldermask sheets omitted after they made initial aggregate invalid.",
+  "verification_caveat": "OCCT validity and CAD pin alignment establish file topology and export datum, not physical fit or manufacturing accuracy.",
+  "export_parameters": {
+    "engine": "native KiCad CLI 9.0.9 pcb export step",
+    "detailed_flags": [
+      "--force",
+      "--include-tracks",
+      "--include-pads",
+      "--include-zones",
+      "--include-inner-copper",
+      "--min-distance",
+      "0.001mm"
+    ],
+    "model_root_define": "KICAD9_3DMODEL_DIR=models",
+    "board_only_flags": [
+      "--force",
+      "--board-only"
+    ],
+    "origin_argument": "--user-origin: per-module export_user_origin_native_kicad_xy_mm",
+    "source_geometry": "No refill; native load/save plus attached generic models; source copper and zone fills preserved."
+  },
+  "generic_component_source_assets": [
+    {
+      "model": "LICENSE.md",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/LICENSE.md",
+      "http_status": 200,
+      "bytes": 2101,
+      "sha256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+      "git_blob_sha1": "314afa8a91e3273f3e90203b8382315bbb40bbfb",
+      "status": "downloaded",
+      "source_filename": "LICENSE.md"
+    },
+    {
+      "model": "Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_0201_0603Metric.step",
+      "http_status": 200,
+      "bytes": 43984,
+      "sha256": "453afba1c6e8ad718c79c3b370606cdf345221d24ac8202778236e8b3bfb19c7",
+      "git_blob_sha1": "5be54922acbbe254b78799b00353c07b9f00294f",
+      "status": "downloaded",
+      "source_filename": "C_0201_0603Metric.step",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* C_0201_0603Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */"
+    },
+    {
+      "model": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "http_status": 200,
+      "bytes": 43502,
+      "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "git_blob_sha1": "a5725e143e2db0a0a1e499bd95c9c9da94a4f82b",
+      "status": "downloaded",
+      "source_filename": "C_0402_1005Metric.step",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* C_0402_1005Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */"
+    },
+    {
+      "model": "Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Resistor_SMD.3dshapes/R_0201_0603Metric.step",
+      "http_status": 200,
+      "bytes": 40756,
+      "sha256": "33893da67f0e1d523ba6096fc78c9fb67e7770efb072fcf51f480f9365706a1d",
+      "git_blob_sha1": "5c748dfc2b7f5bf2007430305deee9837da8fa06",
+      "status": "downloaded",
+      "source_filename": "R_0201_0603Metric.step",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* R_0201_0603Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */"
+    },
+    {
+      "model": "Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Inductor_SMD.3dshapes/L_0201_0603Metric.step",
+      "http_status": 200,
+      "bytes": 43984,
+      "sha256": "303a886d7d6d526df33deb11f533d5e25b0f1acdadadb70657d7df635d21352e",
+      "git_blob_sha1": "9e75790ceb6c62226032333c77af014b7756bb92",
+      "status": "downloaded",
+      "source_filename": "L_0201_0603Metric.step",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* L_0201_0603Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */"
+    },
+    {
+      "model": "Inductor_SMD.3dshapes/L_0603_1608Metric.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Inductor_SMD.3dshapes/L_0603_1608Metric.step",
+      "http_status": 200,
+      "bytes": 43450,
+      "sha256": "b0136ad7160588d2f5dac8c85da84a35646db656b5bc54bbb873b6b548eedbb3",
+      "git_blob_sha1": "a43760e234d4abd6eef8badd3f5a7527f5788f43",
+      "status": "downloaded",
+      "source_filename": "L_0603_1608Metric.step",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* L_0603_1608Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */"
+    },
+    {
+      "model": "Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "http_status": 200,
+      "bytes": 1059856,
+      "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+      "git_blob_sha1": "874d38dccc95aaa482eb8a0e9294e28ed47aa971",
+      "status": "downloaded",
+      "source_filename": "USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;"
+    },
+    {
+      "model": "LED_SMD.3dshapes/LED_0402_1005Metric.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/LED_SMD.3dshapes/LED_0402_1005Metric.step",
+      "http_status": 200,
+      "bytes": 77782,
+      "sha256": "401a17c0a337a26edbde24f58dabfc1560d6cb1bfb8c8fc5c31b8692e321eb12",
+      "git_blob_sha1": "056b14baf64977edca07fe1f9468e4127bef18d2",
+      "status": "downloaded",
+      "source_filename": "LED_0402_1005Metric.step",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* LED_0402_1005Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */"
+    },
+    {
+      "model": "Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "http_status": 200,
+      "bytes": 87532,
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "git_blob_sha1": "817d0a496347f0ccc8ada766dbab28fb85ebd5d1",
+      "status": "downloaded",
+      "source_filename": "SOT-23-5.step",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* SOT-23-5.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */"
+    },
+    {
+      "model": "Diode_SMD.3dshapes/D_SOD-523.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Diode_SMD.3dshapes/D_SOD-523.step",
+      "http_status": 200,
+      "bytes": 43207,
+      "sha256": "b525222377930c32abea58606bffba3aaf171cc66ac292b82d28a82d646d995d",
+      "git_blob_sha1": "906e8aba75814a860725d76adfacdedafe36d3c1",
+      "status": "downloaded",
+      "source_filename": "D_SOD-523.step",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* D_SOD-523.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * any later version.\n * \n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n * \n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see http://www.gnu.org/licenses/.\n * \n * As a special exception, if you create a design which uses this symbol,\n * and embed this symbol or unaltered portions of this symbol into the design,\n * this symbol does not by itself cause the resulting design to be covered by\n * the GNU General Public License.\n * This exception does not however invalidate any other reasons why the design\n * itself might be covered by the GNU General Public License. \n * If you modify this symbol, you may extend this exception to your version of the symbol,\n * but you are not obligated to do so.\n * If you do not wish to do so, delete this exception statement from your version\n * Risk disclaimer\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */"
+    },
+    {
+      "model": "Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.5x3.5mm.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.5x3.5mm.step",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "producer_recorded_utc": "2026-10-04",
+  "integration_validation_utc": "2026-10-04T02:48:47Z",
+  "missing_physical_envelopes_in_baked_module_assets": [
+    "RF shield",
+    "BOOT and RESET switches",
+    "U.FL antenna connector",
+    "ceramic antenna on C6",
+    "unresolved semiconductor packages and crystals",
+    "male header pins and plastic",
+    "external antenna and cable"
+  ],
+  "carrier_augmented_reference_geometry": {
+    "U.FL": "Separately associated licensed named-part KiCad geometry at official ANT0(C3)/ANT2(C6) datum. Nominal published dimensions verified, actual fitted manufacturer/plating/packaging/mated cable unknown.",
+    "receipt": "service-component-provenance.json"
+  }
+}

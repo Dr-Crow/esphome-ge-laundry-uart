@@ -1,0 +1,222 @@
+{
+  "selected_baseline_commit": "409dc0118dce37eb6bdd3f4507da134994e1333e",
+  "comparison": "Entire PCB S-expression token stream identical after removing only model nodes; all non-model data including pads, nets, tracks, vias, zones, outline, placement and properties retained.",
+  "pcb_before_sha256": "6d22b6cda3ddabd9171a304034f7bdd40a47f4bcd8645200ce5cd79ccb97c304",
+  "pcb_after_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
+  "pcb_without_models_before_sha256": "fc62d2fc6963c7f9d933451832af8060179a7efc007b066f08f7bae011b31948",
+  "pcb_without_models_after_sha256": "fc62d2fc6963c7f9d933451832af8060179a7efc007b066f08f7bae011b31948",
+  "non_model_pcb_tokens_identical": true,
+  "protected_files": [
+    {
+      "path": "firmware/README.md",
+      "sha256": "8b5dd8e283b955d2becb5b97f2f4458285987a4595f5895b8863df5e788ae916",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/gea2.yaml",
+      "sha256": "291e96813c9dd4334602120f54c1c1098d12c8640ca13e4a8847a755e651d811",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/gea3.yaml",
+      "sha256": "a45960f49f296ed2608e82fc6abf6abc736fbe902ef328f52fcb52b5dc49bc3b",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/.gitignore",
+      "sha256": "9f4d7afdaf1dd6104987e3366b40700e4c41a5c49a63feeb31da0e6b0e86973c",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/README.md",
+      "sha256": "a063fa258c31e125894c9e384b581246a55c0ef13b05d91957c03314cb386002",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/c3-gea2.yaml",
+      "sha256": "ff4362e214c9c99cc8c3df64c8d4c63769355111e632fc4fad29cddec79b3b0d",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/c3-gea3.yaml",
+      "sha256": "fccf7ceeb9638114f44925c1f027158e83848b64d52a153256890ba379e4fb43",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/c6-gea2.yaml",
+      "sha256": "69f30f6813e7dc3fd24cbe693601f8291b7b76e178d568c4a67e2f73fe8005fc",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/c6-gea3.yaml",
+      "sha256": "bd3d016407627988c481bf9d66fdbc1ea8e2a5f2f58c87b345a1b1c4f7e5b3e3",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/c6-rf.yaml",
+      "sha256": "55979b14a8a3dc9414c42ebc613fe2d036b72a1b447329d6be5f9c27c470d943",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/common.yaml",
+      "sha256": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/gea2.yaml",
+      "sha256": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/gea3.yaml",
+      "sha256": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip",
+      "sha256": "6a3c80fe47a93ec45a44a21d1d35d9692b3aaca6649cdf93bc7cc371a7f84d57",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip",
+      "sha256": "b9c0b397806d3a719c32faa83c08bac2e80aa1c1d4d27d3e6d6a35cd5381445a",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_pcb",
+      "sha256": "48659f6dda0e3a93a36ff374a123e88bebd92e34a81db51500814e828deb7631",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_pro",
+      "sha256": "db231fc62efb73764ba81d5d76042a67c3071150120ec860fb3f05c42d3d7402",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_sch",
+      "sha256": "0516df5b71988cc33c75ab3701dde6ef7aa0a483fd9b1eb9c3252266e6b7db67",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/manufacturing/BOM-OnionStraws-rev2.1.csv",
+      "sha256": "8349ac8f8b807fe495411aa3799bed70c92f1549b473bb296070cd7b8b49b8c0",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/manufacturing/CPL-OnionStraws-rev2.1.csv",
+      "sha256": "b789fc3fa47186a1867b89feef229c33f6abbcab6fd15f555752646f93e85563",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/manufacturing/GERBER-OnionStraws-rev2.1.zip",
+      "sha256": "4d8085f473667262989145ddda61a348569543c9b6867966967dd4a8369afd01",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_pcb",
+      "sha256": "a74850d25c72be1b9baf79642791826f1afbd74a01b2bb20d9d4ec6556ea54fc",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_pro",
+      "sha256": "281f9cb3cdc9741a1ff3c4ebb11554a58ac6fc98005b46531074300eff4c5e73",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_sch",
+      "sha256": "64e337f7aef6713dfdf343f069d1c66acd1d1aac2e8557b6e3c50e32f9545cf8",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod",
+      "sha256": "c659545f06a71b90d180bb48769be1cfb23ee0d256e18b8ea9d6185c1222ce7d",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/manufacturing/BOM-OnionStraws-rev2.2.csv",
+      "sha256": "9e2f0106f4a4bf769b8a727dc4e5215770da58eaab379b476eec8ff6c86d0e68",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/manufacturing/CPL-OnionStraws-rev2.2.csv",
+      "sha256": "db43135a1fb9aa74f7355622aeb59f890827ffbadf3609ad435f1b56ec9234a3",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/manufacturing/GERBER-OnionStraws-rev2.2.zip",
+      "sha256": "8dcdfbae90c26f50a3bed56a0e5d62fde3d1508467558da9e7662e0b29098cfd",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_dru",
+      "sha256": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pro",
+      "sha256": "1e7fdc30cbb1eb191c4bb35cfb8b7d476023758b16cf30cf3651b9fe78621cde",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch",
+      "sha256": "c15769b67f4fe8da33f004d7ab947315d1089fdbe22a2337cf13122657f8f23b",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod",
+      "sha256": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod",
+      "sha256": "c1579e5f623b6e83cd2f271eea57f69fcc128405f4546499ae1542f13c7bce1a",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod",
+      "sha256": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod",
+      "sha256": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod",
+      "sha256": "3dd6c2bd57cbd627d4c993c72472ce438884f7522fb43f9de412970250665e30",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/symbols/GEA_Rev3B.kicad_sym",
+      "sha256": "da13a21843a34f4b7de0930c5781151c5b681cc78f5aad3714abd96f97335a60",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/symbols/GEA_Rev3C.kicad_sym",
+      "sha256": "f99810d1045fec726f813d9b8a738ef85138210ea09bfd2bc00f7ec5f9b5132b",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/design/symbols/onionStraws.kicad_sym",
+      "sha256": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/manufacturing/BOM-GEA-Adapter-Rev3C.csv",
+      "sha256": "27a9dfa850fe996a36c792fb6146548bc59342eda2b05732fa24e173bade1406",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/manufacturing/CPL-GEA-Adapter-Rev3C.csv",
+      "sha256": "aedf3c96a88d4ced3028111d3d5cf2d13d135eaa57dc472c9e84bd6f84a9221b",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3c/manufacturing/GERBER-GEA-Adapter-Rev3C.zip",
+      "sha256": "669346b37b394cbcbb11c41386a494241a1670b662eeca8a5e55609a908dc4af",
+      "matches_selected_baseline": true
+    }
+  ],
+  "all_protected_files_byte_identical": true
+}
