@@ -1,10 +1,13 @@
 # Rev3B mechanical models
 
-`XIAO-ESP32-C3-v1.3-envelope.step` is a build123d-generated clearance envelope, not manufacturer CAD. It includes the board envelope, USB-C protrusion, both button envelopes, U.FL connector envelope, and a conservative populated-component height envelope. Do not use it as evidence of physical fit or cosmetic geometry.
+The placed U2 preview now uses `XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step`, copied byte-for-byte from the verified Rev3C visual asset. It is derived from the official Seeed v1.3 PCB with generic package models and a nominal, dimension-checked ESP32-C3FH4 QFN32. It is a partial visual reference, not complete manufacturer assembly CAD. See [MODEL-ACCURACY.md](../../MODEL-ACCURACY.md), [Seeed attribution/license](XIAO-ASSET-LICENSE.md) and [KiCad library license](KICAD-LIBRARY-LICENSE.md).
+
+The former `XIAO-ESP32-C3-v1.3-envelope.step` remains as a historical build123d clearance envelope, and the unchanged footprint-library model still names it. The placed PCB U2 association overrides it with the verified partial asset. Its assumed button/U.FL/component envelopes are not used as cosmetic or physical-fit evidence.
 
 ## XIAO ESP32-C3 alignment and source
 
-- Footprint origin: left edge of the 17.8 mm side, with the USB edge at `y=-21 mm`; footprint body is `17.8 x 21.0 mm`. The STEP uses positive Y (`0..21 mm`) because KiCad mirrors the model Y axis relative to footprint coordinates.
+- Unchanged footprint origin: left edge of the 17.8 mm side, with the USB edge at `y=-21 mm`; nominal F.Fab body is `17.8 x 21.0 mm`. That description applies to the historical origin-based envelope, not the new drilled-grid-centered asset.
+- The placed partial asset has local model offset `(8.9175,10.5,0)` mm, rotation `(0,0,-90)` degrees and 100% XYZ scale. Native U2 is `(77.39,4)` mm at -90 degrees. The installed asset grid datum is `(87.89,12.9175)` mm; its USB faces the right carrier edge. The retained zero Z is an unmeasured nominal solder-seating assumption, not the Rev3C 11 mm socket stack.
 - Official Seeed v1.3 KiCad project: <https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip>.
 - Seeed OSHW-XIAO-Series repository was checked for a directly hosted ESP32-C3 STEP; it contains the KiCad footprint library but no ESP32-C3 STEP model.
 - Official resource page: <https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/>. Seeed links the 3D model to GrabCAD; no directly hosted manufacturer CAD was imported here.
@@ -25,4 +28,4 @@ assembly/case margin and verify against the actual part.
 
 ## Rated-protection approximate package envelopes
 
-`1812L075-33DR-max-envelope.step` and `TPS1H200A-DGN0008K-max-envelope.step` are transferred unchanged from selected C source fafd3ea. They are approximate maximum solids derived from the Littelfuse/TI package drawings cited in [RATED-PROTECTION.md](../../RATED-PROTECTION.md), not authenticated supplier CAD or physical/thermal qualification. Current native model resolution is recorded in [current-3d-model-resolution.json](../../validation/current-3d-model-resolution.json). The soldered C3 model and original case/interface boundaries remain.
+`1812L075-33DR-max-envelope.step` and `TPS1H200A-DGN0008K-max-envelope.step` are transferred unchanged from selected C source fafd3ea. They are approximate maximum solids derived from the Littelfuse/TI package drawings cited in [RATED-PROTECTION.md](../../RATED-PROTECTION.md), not authenticated supplier CAD or physical/thermal qualification. The frozen rated-protection model-resolution record is retained in [current-3d-model-resolution.json](../../validation/current-3d-model-resolution.json); this visual lane has its own current [preservation/registration receipt](../../validation/verified-c3-model-preservation.json). The soldered C3 association is updated only in the placed PCB model node; original case/interface boundaries remain.

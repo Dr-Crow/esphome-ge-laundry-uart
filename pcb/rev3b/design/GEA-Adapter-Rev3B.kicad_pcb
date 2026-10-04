@@ -9008,15 +9008,15 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/models/XIAO-ESP32-C3-v1.3-envelope.step"
+		(model "${KIPRJMOD}/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 8.9175 10.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz 0 0 -90)
 			)
 		)
 	)
