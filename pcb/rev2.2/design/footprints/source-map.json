@@ -1,0 +1,372 @@
+[
+  {
+    "reference": "C1",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C1_C_0805_2012Metric"
+  },
+  {
+    "reference": "C10",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C10_C_0805_2012Metric"
+  },
+  {
+    "reference": "C11",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C11_C_0805_2012Metric"
+  },
+  {
+    "reference": "C12",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C12_C_0805_2012Metric"
+  },
+  {
+    "reference": "C13",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C13_C_0805_2012Metric"
+  },
+  {
+    "reference": "C14",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C14_C_0805_2012Metric"
+  },
+  {
+    "reference": "C2",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C2_C_0805_2012Metric"
+  },
+  {
+    "reference": "C3",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C3_C_0805_2012Metric"
+  },
+  {
+    "reference": "C4",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C4_C_0805_2012Metric"
+  },
+  {
+    "reference": "C5",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C5_C_0805_2012Metric"
+  },
+  {
+    "reference": "C6",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C6_C_0805_2012Metric"
+  },
+  {
+    "reference": "C7",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C7_C_0805_2012Metric"
+  },
+  {
+    "reference": "C8",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C8_C_0805_2012Metric"
+  },
+  {
+    "reference": "C9",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C9_C_0805_2012Metric"
+  },
+  {
+    "reference": "D1",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+    "project_footprint": "LegacyBoard:D1_SOT-23"
+  },
+  {
+    "reference": "D2",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+    "project_footprint": "LegacyBoard:D2_SOT-23"
+  },
+  {
+    "reference": "D3",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+    "project_footprint": "LegacyBoard:D3_SOT-23"
+  },
+  {
+    "reference": "D4",
+    "source_footprint": "LED_SMD:LED_0805_2012Metric",
+    "project_footprint": "LegacyBoard:D4_LED_0805_2012Metric"
+  },
+  {
+    "reference": "D5",
+    "source_footprint": "LED_SMD:LED_0805_2012Metric",
+    "project_footprint": "LegacyBoard:D5_LED_0805_2012Metric"
+  },
+  {
+    "reference": "D6",
+    "source_footprint": "LED_SMD:LED_0805_2012Metric",
+    "project_footprint": "LegacyBoard:D6_LED_0805_2012Metric"
+  },
+  {
+    "reference": "D7",
+    "source_footprint": "Diode_SMD:D_SMA",
+    "project_footprint": "LegacyBoard:D7_D_SMA"
+  },
+  {
+    "reference": "D8",
+    "source_footprint": "Diode_SMD:D_SOD-123",
+    "project_footprint": "LegacyBoard:D8_D_SOD-123"
+  },
+  {
+    "reference": "D9",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+    "project_footprint": "LegacyBoard:D9_SOT-23"
+  },
+  {
+    "reference": "F1",
+    "source_footprint": "Fuse:Fuse_1812_4532Metric",
+    "project_footprint": "LegacyBoard:F1_Fuse_1812_4532Metric"
+  },
+  {
+    "reference": "F2",
+    "source_footprint": "Fuse:Fuse_1812_4532Metric",
+    "project_footprint": "LegacyBoard:F2_Fuse_1812_4532Metric"
+  },
+  {
+    "reference": "H1",
+    "source_footprint": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+    "project_footprint": "LegacyBoard:H1_MountingHole_3.2mm_M3_DIN965"
+  },
+  {
+    "reference": "H2",
+    "source_footprint": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+    "project_footprint": "LegacyBoard:H2_MountingHole_3.2mm_M3_DIN965"
+  },
+  {
+    "reference": "J1",
+    "source_footprint": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+    "project_footprint": "LegacyBoard:J1_RJ45_EVERCOM_5301-8P8C_Horizontal"
+  },
+  {
+    "reference": "J2",
+    "source_footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+    "project_footprint": "LegacyBoard:J2_PinHeader_1x06_P2.54mm_Vertical"
+  },
+  {
+    "reference": "J3",
+    "source_footprint": "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
+    "project_footprint": "LegacyBoard:J3_Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
+  },
+  {
+    "reference": "JP1",
+    "source_footprint": "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels",
+    "project_footprint": "LegacyBoard:JP1_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+  },
+  {
+    "reference": "JP2",
+    "source_footprint": "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels",
+    "project_footprint": "LegacyBoard:JP2_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+  },
+  {
+    "reference": "Q1",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+    "project_footprint": "LegacyBoard:Q1_SOT-23"
+  },
+  {
+    "reference": "Q2",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+    "project_footprint": "LegacyBoard:Q2_SOT-23"
+  },
+  {
+    "reference": "R1",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R1_R_0805_2012Metric"
+  },
+  {
+    "reference": "R10",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R10_R_0805_2012Metric"
+  },
+  {
+    "reference": "R11",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R11_R_0805_2012Metric"
+  },
+  {
+    "reference": "R12",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R12_R_0805_2012Metric"
+  },
+  {
+    "reference": "R13",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R13_R_0805_2012Metric"
+  },
+  {
+    "reference": "R14",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R14_R_0805_2012Metric"
+  },
+  {
+    "reference": "R15",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R15_R_0805_2012Metric"
+  },
+  {
+    "reference": "R16",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R16_R_0805_2012Metric"
+  },
+  {
+    "reference": "R17",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R17_R_0805_2012Metric"
+  },
+  {
+    "reference": "R18",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R18_R_0805_2012Metric"
+  },
+  {
+    "reference": "R19",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R19_R_0805_2012Metric"
+  },
+  {
+    "reference": "R2",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R2_R_0805_2012Metric"
+  },
+  {
+    "reference": "R20",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R20_R_0805_2012Metric"
+  },
+  {
+    "reference": "R21",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R21_R_0805_2012Metric"
+  },
+  {
+    "reference": "R22",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R22_R_0805_2012Metric"
+  },
+  {
+    "reference": "R23",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R23_R_0805_2012Metric"
+  },
+  {
+    "reference": "R24",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R24_R_0805_2012Metric"
+  },
+  {
+    "reference": "R25",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R25_R_0805_2012Metric"
+  },
+  {
+    "reference": "R3",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R3_R_0805_2012Metric"
+  },
+  {
+    "reference": "R4",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R4_R_0805_2012Metric"
+  },
+  {
+    "reference": "R5",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R5_R_0805_2012Metric"
+  },
+  {
+    "reference": "R6",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R6_R_0805_2012Metric"
+  },
+  {
+    "reference": "R7",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R7_R_0805_2012Metric"
+  },
+  {
+    "reference": "R8",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R8_R_0805_2012Metric"
+  },
+  {
+    "reference": "R9",
+    "source_footprint": "Resistor_SMD:R_0805_2012Metric",
+    "project_footprint": "LegacyBoard:R9_R_0805_2012Metric"
+  },
+  {
+    "reference": "SW1",
+    "source_footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+    "project_footprint": "LegacyBoard:SW1_SW_Push_1P1T_XKB_TS-1187A"
+  },
+  {
+    "reference": "SW2",
+    "source_footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+    "project_footprint": "LegacyBoard:SW2_SW_Push_1P1T_XKB_TS-1187A"
+  },
+  {
+    "reference": "TP1",
+    "source_footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+    "project_footprint": "LegacyBoard:TP1_TestPoint_Pad_D2.0mm"
+  },
+  {
+    "reference": "TP2",
+    "source_footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+    "project_footprint": "LegacyBoard:TP2_TestPoint_Pad_D2.0mm"
+  },
+  {
+    "reference": "TP3",
+    "source_footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+    "project_footprint": "LegacyBoard:TP3_TestPoint_Pad_D2.0mm"
+  },
+  {
+    "reference": "TP4",
+    "source_footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+    "project_footprint": "LegacyBoard:TP4_TestPoint_Pad_D2.0mm"
+  },
+  {
+    "reference": "TP5",
+    "source_footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+    "project_footprint": "LegacyBoard:TP5_TestPoint_Pad_D2.0mm"
+  },
+  {
+    "reference": "TP6",
+    "source_footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+    "project_footprint": "LegacyBoard:TP6_TestPoint_Pad_D2.0mm"
+  },
+  {
+    "reference": "TP7",
+    "source_footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+    "project_footprint": "LegacyBoard:TP7_TestPoint_Pad_D2.0mm"
+  },
+  {
+    "reference": "U1",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+    "project_footprint": "LegacyBoard:U1_SOT-23"
+  },
+  {
+    "reference": "U2",
+    "source_footprint": "RF_Module:ESP32-C3-WROOM-02",
+    "project_footprint": "LegacyBoard:U2_ESP32-C3-WROOM-02"
+  },
+  {
+    "reference": "U3",
+    "source_footprint": "Package_TO_SOT_SMD:TO-263-2",
+    "project_footprint": "LegacyBoard:U3_TO-263-2"
+  },
+  {
+    "reference": "U4",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "project_footprint": "LegacyBoard:U4_SOT-23-6"
+  },
+  {
+    "reference": "U5",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "project_footprint": "LegacyBoard:U5_SOT-23-6"
+  },
+  {
+    "reference": "U6",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-89-3",
+    "project_footprint": "LegacyBoard:U6_SOT-89-3"
+  }
+]
