@@ -29,7 +29,7 @@ The illustrated `pcb/rev3c/ORDERING.md` in the selected candidate records the ac
 
 ## Historical architecture quotes
 
-These earlier snapshots price the original source architectures, not the current repairs or pending Rev3A/B voltage backports. Each is a batch of five, with all five quoted carriers assembled.
+These earlier snapshots price the original source architectures, not the current repairs or the new Rev3A/B protection sources. Each is a batch of five, with all five quoted carriers assembled.
 
 | Revision / scope | Quote date | Historical total | Per carrier |
 | --- | --- | ---: | ---: |
