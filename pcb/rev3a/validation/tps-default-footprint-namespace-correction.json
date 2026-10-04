@@ -1,0 +1,15 @@
+{
+  "change": "New TPS symbol default footprint points to its current A project-local OnionStraws library, matching actual U9/U10 instance selections. No pin/type/location, instance field or net change.",
+  "files": [
+    {
+      "file": "symbols/onionStraws.kicad_sym",
+      "before_sha256": "331c473848471c8437cf453704150957147de3c2d7cf75eb8861387ad628f891",
+      "after_sha256": "bd8e9c0852fada14eadfcc8d7f2c62fca73f53c11f70686a9ff5758ea31738bd"
+    },
+    {
+      "file": "GEA-Adapter-Rev3A.kicad_sch",
+      "before_sha256": "947d47ba635bd688439515c2871af1153fbce6fb84a08564cef8a1bd94093355",
+      "after_sha256": "177e54d7fe4824b8abbbfa6a9c60e8721563fb6e5384ff745b1c43ac30402b13"
+    }
+  ]
+}

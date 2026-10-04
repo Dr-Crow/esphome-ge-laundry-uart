@@ -1,0 +1,202 @@
+{
+  "project_connection_grid_mil": 25.0,
+  "project_configuration_changed": false,
+  "source_coordinates_changed": false,
+  "source_connection_endpoint_label_nc_junction_and_symbol_anchor_records": 1040,
+  "native_1nm_resolution_off_lattice_coordinate_record_counts_by_grid_mm": {
+    "0.635": 37,
+    "0.127": 37,
+    "0.0254": 37,
+    "0.01": 163,
+    "0.005": 0
+  },
+  "review": "Historic schematic combines 25 mil placements with the USB block on round metric anchors. A 0.005 mm common denominator describes the mixed decimal coordinates but is not evidence of an intended tiny global design grid. Preserve the existing sensible 25 mil connection grid and the eight explicit native warnings.",
+  "usb_symbol_anchors": [
+    {
+      "kind": "symbol",
+      "reference": "R26",
+      "position_mm_source_text": [
+        "440",
+        "225"
+      ]
+    },
+    {
+      "kind": "symbol",
+      "reference": "R27",
+      "position_mm_source_text": [
+        "440",
+        "245"
+      ]
+    },
+    {
+      "kind": "symbol",
+      "reference": "R28",
+      "position_mm_source_text": [
+        "500",
+        "180"
+      ]
+    },
+    {
+      "kind": "symbol",
+      "reference": "R29",
+      "position_mm_source_text": [
+        "500",
+        "200"
+      ]
+    },
+    {
+      "kind": "symbol",
+      "reference": "F3",
+      "position_mm_source_text": [
+        "470",
+        "225"
+      ]
+    },
+    {
+      "kind": "symbol",
+      "reference": "J4",
+      "position_mm_source_text": [
+        "405",
+        "185"
+      ]
+    },
+    {
+      "kind": "symbol",
+      "reference": "U7",
+      "position_mm_source_text": [
+        "455",
+        "185"
+      ]
+    },
+    {
+      "kind": "symbol",
+      "reference": "D10",
+      "position_mm_source_text": [
+        "520",
+        "225"
+      ]
+    }
+  ],
+  "retained_native_warnings": [
+    {
+      "description": "Symbol pin or wire end off connection grid",
+      "items": [
+        {
+          "description": "Symbol J4 Pin A1 [GND, Passive, Line]",
+          "pos": {
+            "x": 4.05,
+            "y": 2.0786
+          },
+          "uuid": "097e8ae5-4cee-49c1-b441-2ffddf3973e4"
+        }
+      ],
+      "severity": "warning",
+      "type": "endpoint_off_grid"
+    },
+    {
+      "description": "Symbol pin or wire end off connection grid",
+      "items": [
+        {
+          "description": "Symbol U7 Pin 1 [I/O1, Passive, Line]",
+          "pos": {
+            "x": 4.4992,
+            "y": 1.85
+          },
+          "uuid": "c6f2c4cd-3f5a-49ac-ad1a-ebbee3b4188c"
+        }
+      ],
+      "severity": "warning",
+      "type": "endpoint_off_grid"
+    },
+    {
+      "description": "Symbol pin or wire end off connection grid",
+      "items": [
+        {
+          "description": "Symbol R26 Pin 1 [Passive, Line]",
+          "pos": {
+            "x": 4.3619,
+            "y": 2.25
+          },
+          "uuid": "804b7203-2675-42fd-9a45-bf1939d94274"
+        }
+      ],
+      "severity": "warning",
+      "type": "endpoint_off_grid"
+    },
+    {
+      "description": "Symbol pin or wire end off connection grid",
+      "items": [
+        {
+          "description": "Symbol R27 Pin 1 [Passive, Line]",
+          "pos": {
+            "x": 4.3619,
+            "y": 2.45
+          },
+          "uuid": "e5e8879e-10f0-4fa6-8ef7-1452f3554f2f"
+        }
+      ],
+      "severity": "warning",
+      "type": "endpoint_off_grid"
+    },
+    {
+      "description": "Symbol pin or wire end off connection grid",
+      "items": [
+        {
+          "description": "Symbol F3 Pin 1 [Passive, Line]",
+          "pos": {
+            "x": 4.6619,
+            "y": 2.25
+          },
+          "uuid": "e9278645-81c5-4d54-b81f-ec80ba2c1b9a"
+        }
+      ],
+      "severity": "warning",
+      "type": "endpoint_off_grid"
+    },
+    {
+      "description": "Symbol pin or wire end off connection grid",
+      "items": [
+        {
+          "description": "Symbol R28 Pin 1 [Passive, Line]",
+          "pos": {
+            "x": 4.9619,
+            "y": 1.8
+          },
+          "uuid": "a5371246-94fa-4d2d-bf33-3bba17924e95"
+        }
+      ],
+      "severity": "warning",
+      "type": "endpoint_off_grid"
+    },
+    {
+      "description": "Symbol pin or wire end off connection grid",
+      "items": [
+        {
+          "description": "Symbol R29 Pin 1 [Passive, Line]",
+          "pos": {
+            "x": 4.9619,
+            "y": 2.0
+          },
+          "uuid": "aae45a7c-32bc-40b4-8432-6cec6441d5be"
+        }
+      ],
+      "severity": "warning",
+      "type": "endpoint_off_grid"
+    },
+    {
+      "description": "Symbol pin or wire end off connection grid",
+      "items": [
+        {
+          "description": "Symbol D10 Pin 1 [K, Passive, Line]",
+          "pos": {
+            "x": 5.1619,
+            "y": 2.25
+          },
+          "uuid": "1059b464-136a-4961-8cbb-45451b6327e5"
+        }
+      ],
+      "severity": "warning",
+      "type": "endpoint_off_grid"
+    }
+  ]
+}

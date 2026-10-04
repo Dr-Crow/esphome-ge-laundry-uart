@@ -1,0 +1,43 @@
+{
+  "case": {
+    "files": 26,
+    "byte_exact_to_frozen": true,
+    "hashes": {
+      "case/README.md": "9639757011d41fa1cd6b434d5a9b103e4ed871ec684c0bcb740fde1f793bacc0",
+      "case/rev2/v2-case.f3z": "89aaac626923fe750aebcc5ddf7258b36e25d596ef2ab59b1aca296cd7e85cb2",
+      "case/rev2/README.md": "5e6694b73a16206bbb8662e1182b0dda249ab75c818146a1d6ba87f0802f69d2",
+      "case/rev3a/rev3a_lid.stl": "2cfa56b6dab61706232b794de8342f04b004418ef9e513017d3379859f5c6dcf",
+      "case/rev3a/rev3a_base.step": "16386dad541f55afd401b4b5fc898a01718fcd5a90c64e17deb6505df78e7ac1",
+      "case/rev3a/requirements.txt": "afb0bb3272d1c1662329b3c09105692f861a14055a76ff22c8f8646afd48c8ed",
+      "case/rev3a/rev3a_base.stl": "f29bfae4df73d1ac95c567c1d594b317baf192815159562080d5bed5bef722a2",
+      "case/rev3a/rev3a_lid.step": "25e376a39324cd75383790a8730f4a932beaefe58301e883c65d1e94676b4661",
+      "case/rev3a/rev3a_button_lid.stl": "713618d6ef8e022239de28302e9cc215a1e10c1fd57d6fc95528b9dd1fabd79b",
+      "case/rev3a/enclosure.py": "8e41ca77d2f77533e04d5940233f44b601523b5949c31f8939c1028d043b1c6f",
+      "case/rev3a/README.md": "8ab193ccf42c3e9a270463508e08a62b03feefe2209dc9550f0b5b228b2c2d88",
+      "case/rev3a/rev3a_button_plunger.step": "3424b978e0cc2712f26f0d060c193c8f60cd68fef9dcc3957c9f5c4113015f16",
+      "case/rev3a/rev3a_button_plunger.stl": "9b40cca4786ad864100cf66a4e20d0b948884377068a60f913b64a9fad508db1",
+      "case/rev3a/rev3a_button_lid.step": "22767b74170844563e70628d70afd9f103f1e99bfeee805f46df7ef5b5bfeb76",
+      "case/rev3a/rev3a_button_keeper.stl": "5a90d0a0efd52f37cb5c5be6faceb284e64b6a9b211ecae47184a88ce9ba312d",
+      "case/rev3a/check_geometry.py": "29557dd047c2c267519e2e9989db5c8336908b7655eece55825b29e4a07cd8ac",
+      "case/rev3a/button_case.py": "fd1cdc35dcb7474ba2efdb96911ff218544c589dda06dff4967be65b92d70b78",
+      "case/rev3a/rev3a_button_keeper.step": "33aabd776e06ca5f7d3c1a805f055edc53410ede33e442c0e1f14071c6aa9166",
+      "case/rev3a/check_button_geometry.py": "0531e6ba8da4df11fe85ebb58577632e78a6d635f0a530ae13d4724e665011af",
+      "case/rev2/images/enclosure-render.png": "73f43d41add105ebe2d50c45b2a04c63a8393bd7b4453c95464b6d4f5db7b81e",
+      "case/rev2/images/print-supports.png": "d1152abe1c7cc561aaeb5175f806256e9f87b50913acd0ddd2d0b932a1fbc4cf",
+      "case/rev2/images/case-render.png": "f3ea396dc34747be375797d750fcebcd245988e5b1fc4e24ccb1832856b7e8db",
+      "case/rev2/exports/v2-case-lid.stl": "4500f0ee8a07d7c433e72eb5f8c367609b7006373a47c26fb710467b33f0bc84",
+      "case/rev2/exports/v2-case.step": "243cce43255c380a1f37753ea1207d86cba15170a35942d596d44534094ea14b",
+      "case/rev2/exports/v2-case-base.stl": "739c5f7357e1d10d52c355661ea8c1f811e291f216ba126e091cffd9928b71c3",
+      "case/rev3a/images/case-options.png": "90bf703026dd8d3b9cf7d687b3af87ac7f171f1d1543654ccba23b425d4b156e"
+    }
+  },
+  "firmware": {
+    "files": 3,
+    "byte_exact_to_frozen": true,
+    "hashes": {
+      "firmware/gea2.yaml": "0920782b25367a71bec8f658598a05e5673b9cf9bdf897d99cf0e388ea4aff0c",
+      "firmware/README.md": "cddd1d4725a4bf8010186d8f11b2d0c97d87f6b5828023e56621abeaa017e8f4",
+      "firmware/gea3.yaml": "031d7d562c17704524091a181ddb540a2b1ff3f59c1175c101b7b322ca6f894f"
+    }
+  }
+}

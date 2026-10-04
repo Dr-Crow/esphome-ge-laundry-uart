@@ -1,0 +1,106 @@
+{
+  "source_pins_checked": 301,
+  "unchanged_original_nonrepair_pin_nets": 253,
+  "selected_pin_assertions": 42,
+  "recovered_legacy_definitions_exact": 35,
+  "original_nonrepair_instances_exact_after_known_metadata_restore": 136,
+  "J4_known_metadata_updates": [
+    "exact_primary_Datasheet_URL",
+    "exact_part_review_Description",
+    "exact_local_manufacturer_footprint_ID"
+  ],
+  "project_config_and_pcb_general_layers_setup_byte_exact": true,
+  "selected_part_identity_assertions": {
+    "U9": [
+      "C2653785",
+      "Texas Instruments",
+      "TPS1H200AQDGNRQ1"
+    ],
+    "U10": [
+      "C2653785",
+      "Texas Instruments",
+      "TPS1H200AQDGNRQ1"
+    ],
+    "F1": [
+      "C151170",
+      "Littelfuse",
+      "1812L075/33DR"
+    ],
+    "F2": [
+      "C151170",
+      "Littelfuse",
+      "1812L075/33DR"
+    ],
+    "D16": [
+      "C668891",
+      "MCC",
+      "BZT52C12-TP"
+    ],
+    "D17": [
+      "C668891",
+      "MCC",
+      "BZT52C12-TP"
+    ],
+    "R39": [
+      "C22978",
+      "UNI-ROYAL",
+      "0603WAF3301T5E"
+    ],
+    "R40": [
+      "C22978",
+      "UNI-ROYAL",
+      "0603WAF3301T5E"
+    ],
+    "R41": [
+      "C149504",
+      "UNI-ROYAL",
+      "0805W8F1003T5E"
+    ],
+    "R42": [
+      "C149504",
+      "UNI-ROYAL",
+      "0805W8F1003T5E"
+    ],
+    "D19": [
+      "C399290",
+      "SUNMATE Elec",
+      "SMF16A"
+    ],
+    "C26": [
+      "C91185",
+      "Yageo",
+      "CC0805KKX7R9BB105"
+    ]
+  },
+  "source_hashes": {
+    "GEA-Adapter-Rev3A.kicad_prl": "32ba07854c0a5e32efb3c3afdb2119c6e1ce537e9b835ff4001c8dbc6302c3c1",
+    "GEA-Adapter-Rev3A.kicad_pro": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
+    "GEA-Adapter-Rev3A.kicad_sch": "e09f35454df792d243e65246c3097b91034a31f7655d7f563db7a46ef81963ee",
+    "sym-lib-table": "517fcd666d3fae8354da04c8c31217b7bfe89481b4ee6bf7fea72a1e01b62a39",
+    "fp-lib-table": "ea7ce6c8bc5e2f53a672617675fb8753c08e14721d74f8743ea8c0101f937717",
+    "GEA-Adapter-Rev3A.kicad_pcb": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+    "GEA-Adapter-Rev3A.kicad_dru": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec",
+    "footprints/source-map.json": "3a9b2804d89478f57ed9248d2215abc11de62e894fa1589a4f901963ef58e98a",
+    "models/1812L075-33DR-max-envelope.step": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+    "models/SW1-SW2-XKB-TS-1187A-B-A-B.step": "6f57eea6a999f1f7e20a0b13d82708e199205cd17c636936e60b9d928778dfd5",
+    "models/J2-hanxia-HX-PZ-2.54-02-03-S.step": "3ea4193c78935fb6de70fb37c46ca892b3b275335dfee51ac666b65ac2c3fd0d",
+    "models/J1-EVERCOM-5301-8P8C-envelope.step": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+    "models/J4-SHOU-HAN-TYPE-C-16PIN-2MD-073.step": "4c2fffc9e40808e5033388d77f59a14f6c8ff674e8fbe7790579c30cf4077eda",
+    "models/TPS1H200A-DGN0008K-max-envelope.step": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+    "models/F1-F2-Bourns-MF-MSMF075-24-2.step": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea",
+    "models/generate_connector_envelopes.py": "7949fd3bcb1d9b95808224dff32562df7c49f2fade93b477d631621e810413b3",
+    "symbols/source-map.json": "779ad9904daf5b273bdf691213214ca984eb35a5b25e7d59173136424be3ffe4",
+    "symbols/LegacySymbols.kicad_sym": "99f95aaf64808fb498ce9f063559045c25f5a0dcee86532b1d5fb59dfeb4891c",
+    "symbols/onionStraws.kicad_sym": "bd8e9c0852fada14eadfcc8d7f2c62fca73f53c11f70686a9ff5758ea31738bd",
+    "footprints/LegacyBoard.pretty/D2_SOT-23.kicad_mod": "e46553553c7d85df3e96d44e8a02773d3c949522871866cfd6cc3ef68db0ff12",
+    "footprints/LegacyBoard.pretty/C5_C_0805_2012Metric.kicad_mod": "3f6bd08022c46fe7529fbe2badf34e1a978ca985826ea45304cca1f2ee1c9c88",
+    "footprints/LegacyBoard.pretty/SW2_SW_Push_1P1T_XKB_TS-1187A.kicad_mod": "f9bba750dc3d6ea77b3f17dfb03448bd4fd5a3396c69a2a863f672eb969b6a79",
+    "footprints/LegacyBoard.pretty/U2_ESP32-C3-WROOM-02.kicad_mod": "bae9c15b21292b4b65712a82328cc53d4a19b3f52770234f1f5c16b45556776e",
+    "footprints/LegacyBoard.pretty/TP13_TestPoint_Pad_D1.0mm.kicad_mod": "744e723344b350f5ea1ee1a96de5e820d0f91f3198dd246ced94a4f64ebe28b9",
+    "footprints/OnionStraws.pretty/USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed.kicad_mod": "e2d861e8a00a924d32076717f21f9a696857f1d1802f74427f581312478cdb70",
+    "footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
+    "footprints/OnionStraws.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
+    "footprints/OnionStraws.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
+    "footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod": "11b183bc1433ae3c1d37f09a7c29850ff230ae0dcfcf7f7cfe714364fad24114"
+  }
+}

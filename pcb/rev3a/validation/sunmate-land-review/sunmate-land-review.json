@@ -1,0 +1,100 @@
+{
+  "vendor": "SUNMATE",
+  "exact_part": "SMF16A/C399290",
+  "vendor_package_name": "SOD-123FL",
+  "kicad_footprint": "Diode_SMD:D_SOD-123F",
+  "drawing_source": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736",
+  "pdf_sha256": "7b825d053f2797dcfd6efd8a268f79365b147bc57f7dc42c6da31fedab743e2b",
+  "actual_p1_pixels": "source-pixels/SUNMATE-package.png",
+  "vendor_dimension_mm": {
+    "A_overall": [
+      3.58,
+      3.72
+    ],
+    "B_body_length": [
+      2.72,
+      2.78
+    ],
+    "C_body_width": [
+      1.77,
+      1.83
+    ],
+    "D_body_height": [
+      1.02,
+      1.08
+    ],
+    "E_terminal_width": {
+      "minimum_as_printed": 0.097,
+      "typical": 1,
+      "maximum": 1.03,
+      "ambiguity": "Apparent min0.097 discrepancy is preserved; no correction silently assumed."
+    },
+    "L_terminal_length": [
+      0.53,
+      0.57
+    ],
+    "H_terminal_thickness": [
+      0.13,
+      0.17
+    ]
+  },
+  "current_native_lands_mm": {
+    "centres": [
+      -1.4,
+      1.4
+    ],
+    "pad_size": [
+      1.1,
+      1.1
+    ],
+    "roundrect_corner_radius": 0.25,
+    "positive_pad_bounding_rectangle_x": [
+      0.85,
+      1.95
+    ],
+    "positive_pad_bounding_rectangle_y": [
+      -0.55,
+      0.55
+    ]
+  },
+  "centred_interval_screen_mm": {
+    "positive_terminal_outer_x": [
+      1.79,
+      1.86
+    ],
+    "positive_terminal_inner_x": [
+      1.22,
+      1.33
+    ],
+    "maximum_terminal_y": [
+      -0.515,
+      0.515
+    ],
+    "minimum_rectangle_inner_overhang": 0.37,
+    "minimum_rectangle_outer_overhang": 0.08999999999999986,
+    "minimum_rectangle_side_overhang": 0.03500000000000003,
+    "land_inner_gap": 1.7,
+    "terminal_inner_gap": [
+      2.44,
+      2.66
+    ]
+  },
+  "rounded_overlap_worst_independent_dimension_screen": {
+    "A": 3.72,
+    "L": 0.53,
+    "E": 1.03,
+    "positive_terminal_x": [
+      1.33,
+      1.86
+    ],
+    "terminal_area_mm2": 0.5459,
+    "area_outside_rounded_copper_mm2": 0.0007009736856397261,
+    "overlap_area_mm2": 0.5451990263143603,
+    "overlap_fraction": 0.9987159302333033
+  },
+  "scope": "Zero-offset geometry screening only; excludes placement/rotation/part tolerances, fabrication, paste/reflow, thermal/case/service reliability. Supplier nomenclature is not treated as equality. Body/terminal corners, coplanarity and a manufacturer-recommended land pattern/assembler approval remain separate.",
+  "drawing_pixel_sha256": {
+    "source-pixels/SUNMATE-package.png": "b389b8ead0fad4b2986b64bfcb1817dac203e8995f8a65db88a60756573c1511",
+    "source-pixels/SUNMATE-package-crop.png": "a6850c49bc9848d91dfb247d9a78092e5c13699b7482b5d74c68ad3cd1af6437"
+  }
+}

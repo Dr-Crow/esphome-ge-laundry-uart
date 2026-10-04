@@ -1,0 +1,46 @@
+{
+  "pcb_sha256": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+  "native_version": "9.0.9",
+  "method": "Native effective shapes with1nm binary Collide threshold; TP12 pad vs foreign-net F copper and through-vias; nominal CAD gap, not tolerance/process acceptance.",
+  "nearest": [
+    {
+      "kind": "track",
+      "item": "79786271-d08c-49a3-b83f-52c1c8e90793",
+      "net": "Net-(D5-A)",
+      "gap_mm": 0.250201
+    },
+    {
+      "kind": "via",
+      "item": "1db4c514-9f96-4253-b896-766a3236e348",
+      "net": "/V_INPUT",
+      "gap_mm": 0.294287
+    },
+    {
+      "kind": "track",
+      "item": "88a738b8-2c17-4df6-a051-6aa188c783a5",
+      "net": "/V_INPUT",
+      "gap_mm": 0.594287
+    },
+    {
+      "kind": "track",
+      "item": "bae86480-f042-4ada-8e28-686696a21ed8",
+      "net": "GEA_FullRx",
+      "gap_mm": 0.650401
+    },
+    {
+      "kind": "track",
+      "item": "6bf9ec3f-9308-44f8-adee-db7358a8ddaa",
+      "net": "Net-(D5-A)",
+      "gap_mm": 0.998121
+    },
+    {
+      "kind": "track",
+      "item": "545936aa-09ce-4a6c-a568-dc38ffabd681",
+      "net": "Net-(R20-Pad1)",
+      "gap_mm": 1.050601
+    }
+  ],
+  "minimum_mm": 0.250201,
+  "Power_rule_mm": 0.25,
+  "headroom_mm": 0.000201
+}

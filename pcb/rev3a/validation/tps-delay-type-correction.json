@@ -1,0 +1,18 @@
+{
+  "primary": "TI SLVSEE0E Rev E May2026 Table4-1 page3: DELAY5 I/O",
+  "files": [
+    {
+      "file": "symbols/onionStraws.kicad_sym",
+      "before_sha256": "967164f14de2c6d7978d751c85255d9377e12c91072552eb9694c89fef3c526e",
+      "after_sha256": "331c473848471c8437cf453704150957147de3c2d7cf75eb8861387ad628f891",
+      "only_difference": "TPS1H200A DELAY pin5 electrical type input to bidirectional; location/name/number/style unchanged"
+    },
+    {
+      "file": "GEA-Adapter-Rev3A.kicad_sch",
+      "before_sha256": "831aa38a12989b03b4d2dac0c4cff12976b82d1735a219ae085476ba73a75472",
+      "after_sha256": "947d47ba635bd688439515c2871af1153fbce6fb84a08564cef8a1bd94093355",
+      "only_difference": "TPS1H200A DELAY pin5 electrical type input to bidirectional; location/name/number/style unchanged"
+    }
+  ],
+  "physical_pin_geometry_and_net_membership_unchanged": true
+}

@@ -1,0 +1,582 @@
+{
+  "baseline_commit": "a94c46e7456edd8d267fc0e4bf7b64c01a580e7f",
+  "verified_utc": "2026-10-03T22:46:08.589342+00:00",
+  "source_hashes": {
+    "kicad_pcb": "2f4a2cb171c99e112ccd92e08608380abe10f9f071ba5a99e14f68fa9a8548aa",
+    "kicad_sch": "ac1d8be0bc01f05528e3fd094671c57b7cbcc6c86284fd01d3e4564f9688ea0d",
+    "kicad_pro": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
+    "kicad_dru": "b4c4710c0e40f5cf8df32b619d8cef2f01282b5cb5aa41f01a562b1896602d83"
+  },
+  "native_tool": "KiCad9.0.9 pinned official libraries",
+  "native_results": {
+    "erc": {
+      "errors": 0,
+      "warnings": 53,
+      "exclusions": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "exact_frozen_warning_match": true,
+      "report_sha256": "8ea18f5fc0dedae393f087671772fcdd8139fbf6df739fc81b90f9714aa67b9a"
+    },
+    "drc-all-track-errors": {
+      "errors": 0,
+      "warnings": 5,
+      "exclusions": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "exact_frozen_warning_match": true,
+      "report_sha256": "c1fe11d401215d93918121e937e140018103554027f18b082712681b05eb84de"
+    },
+    "drc": {
+      "errors": 0,
+      "warnings": 5,
+      "exclusions": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "exact_frozen_warning_match": true,
+      "report_sha256": "19b20a8c3b169ad722515ec9023b825539ff002126fd84074c7c4d0735fd4aef"
+    }
+  },
+  "invariants": {
+    "footprints": 111,
+    "complete_footprint_subtrees_identical": true,
+    "identities_values_positions_rotations_layers_properties_attributes_pads_models_unchanged": true,
+    "native_pad_count": 315,
+    "pad_net_mapping_unchanged": true,
+    "nonempty_named_pads_checked_against_native_schematic_netlist": 300,
+    "schematic_component_count": 112,
+    "schematic_project_rules_assignments_library_tables_bytes_unchanged": true,
+    "firmware_case_manufacturing_BOM_CPL_part_assets_bytes_unchanged": true,
+    "board_outline_and_nonrouting_settings_unchanged": {
+      "embedded_fonts": {
+        "unchanged": true,
+        "count": 1
+      },
+      "general": {
+        "unchanged": true,
+        "count": 1
+      },
+      "generator": {
+        "unchanged": true,
+        "count": 1
+      },
+      "generator_version": {
+        "unchanged": true,
+        "count": 1
+      },
+      "gr_line": {
+        "unchanged": true,
+        "count": 4
+      },
+      "layers": {
+        "unchanged": true,
+        "count": 1
+      },
+      "net": {
+        "unchanged": true,
+        "count": 71
+      },
+      "paper": {
+        "unchanged": true,
+        "count": 1
+      },
+      "setup": {
+        "unchanged": true,
+        "count": 1
+      },
+      "title_block": {
+        "unchanged": true,
+        "count": 1
+      },
+      "version": {
+        "unchanged": true,
+        "count": 1
+      }
+    },
+    "zones": 4,
+    "zone_settings_and_outlines_unchanged": true,
+    "zone_fills_recomputed": 4,
+    "existing_route_nets_unchanged": true
+  },
+  "counts": {
+    "pcb_footprints": 111,
+    "pcb_pads": 315,
+    "native_nets": 71,
+    "schematic_components": 112,
+    "fitted_references": 93,
+    "value_specific_BOM_rows": 44,
+    "distinct_purchasing_tuples": 40,
+    "modified_segments": 78,
+    "modified_vias": 11,
+    "removed_segments": 5,
+    "added_segments": 6,
+    "added_vias": 2,
+    "all_fitted_top_side": true,
+    "resolved_3d_model_instances": 94
+  },
+  "routing_delta_file": "clearance-routing-delta.json",
+  "via_annuli": {
+    "changes": [
+      {
+        "uuid": "46416691-42cc-4f50-a108-4a1000d5395d",
+        "before": {
+          "net": "/BOOT",
+          "x": 18.3987,
+          "y": 19.4322,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "/BOOT",
+          "x": 18.3987,
+          "y": 19.4322,
+          "diameter": 0.68,
+          "drill": 0.4,
+          "annulus": 0.14
+        }
+      },
+      {
+        "uuid": "8014cb5c-e688-4ba1-a415-f249366b2128",
+        "before": {
+          "net": "/LED2",
+          "x": 53.9744,
+          "y": 34.603,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "/LED2",
+          "x": 53.9744,
+          "y": 34.603,
+          "diameter": 0.68,
+          "drill": 0.4,
+          "annulus": 0.14
+        }
+      },
+      {
+        "uuid": "bbc29168-d6f6-4151-96b6-d32f810eaf87",
+        "before": {
+          "net": "GEA2_RX",
+          "x": 64.6427,
+          "y": 25.7283,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "GEA2_RX",
+          "x": 64.6427,
+          "y": 25.7283,
+          "diameter": 0.68,
+          "drill": 0.4,
+          "annulus": 0.14
+        }
+      },
+      {
+        "uuid": "7340a801-66a9-4e84-a0db-bd231ca1f92e",
+        "before": {
+          "net": "GEA2_TX",
+          "x": 51.2367,
+          "y": 36.0231,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "GEA2_TX",
+          "x": 51.2367,
+          "y": 36.0231,
+          "diameter": 0.68,
+          "drill": 0.4,
+          "annulus": 0.14
+        }
+      },
+      {
+        "uuid": "2a796b4c-17ba-4c87-aa12-96c8adcc9ab2",
+        "before": {
+          "net": "Net-(D6-A)",
+          "x": 63.6446,
+          "y": 32.5178,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "Net-(D6-A)",
+          "x": 63.6446,
+          "y": 32.5178,
+          "diameter": 0.68,
+          "drill": 0.4,
+          "annulus": 0.14
+        }
+      },
+      {
+        "uuid": "b0b75ca8-7f57-4ad9-9ce9-80434660e83c",
+        "before": {
+          "net": "Net-(D6-A)",
+          "x": 49.1325,
+          "y": 28.793,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "Net-(D6-A)",
+          "x": 49.1325,
+          "y": 28.793,
+          "diameter": 0.68,
+          "drill": 0.4,
+          "annulus": 0.14
+        }
+      },
+      {
+        "uuid": "f9f2ae03-d0a9-49ed-bc21-7f9c9ec9ceb8",
+        "before": {
+          "net": "Net-(JP1-A)",
+          "x": 53.7346,
+          "y": 36.4346,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "Net-(JP1-A)",
+          "x": 53.7346,
+          "y": 36.4346,
+          "diameter": 0.72,
+          "drill": 0.4,
+          "annulus": 0.16
+        }
+      },
+      {
+        "uuid": "18150f60-f487-4d3e-89fe-f786f62a2d48",
+        "before": {
+          "net": "/V_INPUT",
+          "x": 63.5927,
+          "y": 26.8736,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "/V_INPUT",
+          "x": 63.5927,
+          "y": 26.8736,
+          "diameter": 0.68,
+          "drill": 0.4,
+          "annulus": 0.14
+        }
+      },
+      {
+        "uuid": "0587cf74-bbc6-4c63-889e-3ed9a114952d",
+        "before": {
+          "net": "/PIN3_GATE",
+          "x": 61.3726,
+          "y": 29.3539,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "/PIN3_GATE",
+          "x": 61.3726,
+          "y": 29.3539,
+          "diameter": 0.68,
+          "drill": 0.4,
+          "annulus": 0.14
+        }
+      },
+      {
+        "uuid": "e1efc113-3078-455e-a398-4b237f85e4d6",
+        "before": {
+          "net": "/USB_VBUS_FUSED",
+          "x": 21.583,
+          "y": 22.6473,
+          "diameter": 0.8,
+          "drill": 0.4,
+          "annulus": 0.2
+        },
+        "after": {
+          "net": "/USB_VBUS_FUSED",
+          "x": 21.583,
+          "y": 22.6473,
+          "diameter": 0.68,
+          "drill": 0.4,
+          "annulus": 0.14
+        }
+      }
+    ],
+    "added": [
+      {
+        "uuid": "595f71a5-30d9-4eb1-b59c-a6a27131a360",
+        "net": "/PIN3_EN",
+        "x": 57.3,
+        "y": 24.5804,
+        "diameter": 0.68,
+        "drill": 0.4,
+        "annulus": 0.14
+      },
+      {
+        "uuid": "d6a90323-0b0e-4dca-8151-20720ace9a7e",
+        "net": "/PIN3_EN",
+        "x": 55.0,
+        "y": 27.98,
+        "diameter": 0.68,
+        "drill": 0.4,
+        "annulus": 0.14
+      }
+    ]
+  },
+  "native_minima_mm": {
+    "min_clearance": 0.2,
+    "min_track_width": 0.2,
+    "min_via_annular_width": 0.05,
+    "min_via_diameter": 0.4,
+    "min_through_hole_diameter": 0.3
+  },
+  "manufacturer_via_guidance": {
+    "url": "https://jlcpcb.com/capabilities/pcb-capabilities",
+    "reviewed_utc": "2026-10-03T22:46:08.589342+00:00",
+    "via_diameter_minus_hole_min_mm": 0.1,
+    "preferred_mm": 0.15,
+    "this_delta_nominal_diametral_differences_mm": [
+      0.28,
+      0.32
+    ],
+    "PTH_component_pad_category_is_separate": true,
+    "finished_annulus_and_process_acceptance": "Open; nominal CAD ring doesnot establish post-drill/registration/etch/plate corners"
+  },
+  "TP12_margin": {
+    "actual_mm": 0.2502,
+    "required_mm": 0.25,
+    "excess_um": 0.2,
+    "immediate_GEA_FullRx_clearance_mm": 0.2002,
+    "0.26mm_simple_shift_attempt": "No clean bounded delta; 20um trial19new conflicts,12um trial0.1897mm USB corridor; production unchanged",
+    "diagnostic_file": "tp12-margin-review.json",
+    "production_rules_unchanged": true,
+    "release_process_gate_retained": true
+  },
+  "manufacturing_payload_comparison": [
+    {
+      "member": "GEA-Adapter-Rev3A-B_Cu.gbl",
+      "native_payload_geometry_unchanged": false,
+      "previous_sha256": "815ef5d41832194a80dc5c67df6bc1e49a713981012b973495370079df2e307f",
+      "current_sha256": "4a44b4803c230c21d4ea735f7625ac4e33092dd6b5f0e49d373a191dad79af48",
+      "unchanged_payload_bytes_preserved": false
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-B_Mask.gbs",
+      "native_payload_geometry_unchanged": true,
+      "previous_sha256": "c1d70c0d9fcb08d860fb50280a8fc0192f83a2d17c73afc140d6d7f41be6b487",
+      "current_sha256": "c1d70c0d9fcb08d860fb50280a8fc0192f83a2d17c73afc140d6d7f41be6b487",
+      "unchanged_payload_bytes_preserved": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-B_Paste.gbp",
+      "native_payload_geometry_unchanged": true,
+      "previous_sha256": "ce961dafebfeeb92e8874d7203153c46b150ea5cbee1ac7e250fabc129b21ffb",
+      "current_sha256": "ce961dafebfeeb92e8874d7203153c46b150ea5cbee1ac7e250fabc129b21ffb",
+      "unchanged_payload_bytes_preserved": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-B_Silkscreen.gbo",
+      "native_payload_geometry_unchanged": true,
+      "previous_sha256": "e63354ce032a6367eef2f4764d412aa455a61ff63a72f72b577ac2ccc146c1ff",
+      "current_sha256": "e63354ce032a6367eef2f4764d412aa455a61ff63a72f72b577ac2ccc146c1ff",
+      "unchanged_payload_bytes_preserved": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-Edge_Cuts.gm1",
+      "native_payload_geometry_unchanged": true,
+      "previous_sha256": "af0e1d98324b1e95f5688653959659d515054a32b3d28a3169e8b4ed2cd0f42e",
+      "current_sha256": "af0e1d98324b1e95f5688653959659d515054a32b3d28a3169e8b4ed2cd0f42e",
+      "unchanged_payload_bytes_preserved": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-F_Cu.gtl",
+      "native_payload_geometry_unchanged": false,
+      "previous_sha256": "b3be807d6f15ae1efbf84811bffc97e1a8a40f08d41374c0caf0b576a6337c33",
+      "current_sha256": "b98a129c330210e95c684a46b522ca77cfce15c7b450ae64c3cadbf6bdbc2fd8",
+      "unchanged_payload_bytes_preserved": false
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-F_Mask.gts",
+      "native_payload_geometry_unchanged": true,
+      "previous_sha256": "ea74ae08d279bc70816d9aef07ae09f87c4aaf74d7705ed272ade527ee4b6dab",
+      "current_sha256": "ea74ae08d279bc70816d9aef07ae09f87c4aaf74d7705ed272ade527ee4b6dab",
+      "unchanged_payload_bytes_preserved": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-F_Paste.gtp",
+      "native_payload_geometry_unchanged": true,
+      "previous_sha256": "6cc00162a5794b3a21beefba306e63a09c6c619a33f200a5659c5e58c205187f",
+      "current_sha256": "6cc00162a5794b3a21beefba306e63a09c6c619a33f200a5659c5e58c205187f",
+      "unchanged_payload_bytes_preserved": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-F_Silkscreen.gto",
+      "native_payload_geometry_unchanged": true,
+      "previous_sha256": "ec816214e71b89264cbaafa0bcf462fc7f4d8d6b29e1369a198f206b556a3e40",
+      "current_sha256": "ec816214e71b89264cbaafa0bcf462fc7f4d8d6b29e1369a198f206b556a3e40",
+      "unchanged_payload_bytes_preserved": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-In1_Cu.g1",
+      "native_payload_geometry_unchanged": false,
+      "previous_sha256": "dc7beffd1abbcce0ed0617763693d66938ce85caa368836b4a592c434eda62cc",
+      "current_sha256": "cfc52be5af6f474313a18a181e3039d61852787f26ee6117e2485ea5ce5791d2",
+      "unchanged_payload_bytes_preserved": false
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-In2_Cu.g2",
+      "native_payload_geometry_unchanged": false,
+      "previous_sha256": "8d62692217e08e1d368ca27cc79b905dc1697c9f56a1a07c8dd936c7d031d15f",
+      "current_sha256": "db620885a6be410f1461dd45e8e3709c07cd400f5ed5a1242fadb58a7075ee50",
+      "unchanged_payload_bytes_preserved": false
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-NPTH.drl",
+      "native_payload_geometry_unchanged": true,
+      "previous_sha256": "05860020db885bacacfe88d330a382767edd55d7d614b559ca0f595afcc12cbc",
+      "current_sha256": "05860020db885bacacfe88d330a382767edd55d7d614b559ca0f595afcc12cbc",
+      "unchanged_payload_bytes_preserved": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-PTH.drl",
+      "native_payload_geometry_unchanged": false,
+      "previous_sha256": "f85540517b1393b9b01a738dbae5924abf6d3d1e2599fd7d690ea2e456a3488e",
+      "current_sha256": "894dcce18c113d52a762ba9f12dcf1b8a4644edcad98efbdfcadeff0583b6b75",
+      "unchanged_payload_bytes_preserved": false
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-job.gbrjob",
+      "native_payload_geometry_unchanged": true,
+      "previous_sha256": "bc25d7c28bcbba8504770d5bec95119dfe64ca7c9479271e41024f916dcb14ea",
+      "current_sha256": "bc25d7c28bcbba8504770d5bec95119dfe64ca7c9479271e41024f916dcb14ea",
+      "unchanged_payload_bytes_preserved": true
+    }
+  ],
+  "BOM_CPL_byte_identical_to_baseline": true,
+  "protected_firmware_case_hashes": [
+    {
+      "path": "firmware/README.md",
+      "sha256": "cddd1d4725a4bf8010186d8f11b2d0c97d87f6b5828023e56621abeaa017e8f4"
+    },
+    {
+      "path": "firmware/gea2.yaml",
+      "sha256": "0920782b25367a71bec8f658598a05e5673b9cf9bdf897d99cf0e388ea4aff0c"
+    },
+    {
+      "path": "firmware/gea3.yaml",
+      "sha256": "031d7d562c17704524091a181ddb540a2b1ff3f59c1175c101b7b322ca6f894f"
+    },
+    {
+      "path": "case/README.md",
+      "sha256": "9639757011d41fa1cd6b434d5a9b103e4ed871ec684c0bcb740fde1f793bacc0"
+    },
+    {
+      "path": "case/rev2/README.md",
+      "sha256": "5e6694b73a16206bbb8662e1182b0dda249ab75c818146a1d6ba87f0802f69d2"
+    },
+    {
+      "path": "case/rev2/exports/v2-case-base.stl",
+      "sha256": "739c5f7357e1d10d52c355661ea8c1f811e291f216ba126e091cffd9928b71c3"
+    },
+    {
+      "path": "case/rev2/exports/v2-case-lid.stl",
+      "sha256": "4500f0ee8a07d7c433e72eb5f8c367609b7006373a47c26fb710467b33f0bc84"
+    },
+    {
+      "path": "case/rev2/exports/v2-case.step",
+      "sha256": "243cce43255c380a1f37753ea1207d86cba15170a35942d596d44534094ea14b"
+    },
+    {
+      "path": "case/rev2/images/case-render.png",
+      "sha256": "f3ea396dc34747be375797d750fcebcd245988e5b1fc4e24ccb1832856b7e8db"
+    },
+    {
+      "path": "case/rev2/images/enclosure-render.png",
+      "sha256": "73f43d41add105ebe2d50c45b2a04c63a8393bd7b4453c95464b6d4f5db7b81e"
+    },
+    {
+      "path": "case/rev2/images/print-supports.png",
+      "sha256": "d1152abe1c7cc561aaeb5175f806256e9f87b50913acd0ddd2d0b932a1fbc4cf"
+    },
+    {
+      "path": "case/rev2/v2-case.f3z",
+      "sha256": "89aaac626923fe750aebcc5ddf7258b36e25d596ef2ab59b1aca296cd7e85cb2"
+    },
+    {
+      "path": "case/rev3a/README.md",
+      "sha256": "8ab193ccf42c3e9a270463508e08a62b03feefe2209dc9550f0b5b228b2c2d88"
+    },
+    {
+      "path": "case/rev3a/button_case.py",
+      "sha256": "fd1cdc35dcb7474ba2efdb96911ff218544c589dda06dff4967be65b92d70b78"
+    },
+    {
+      "path": "case/rev3a/check_button_geometry.py",
+      "sha256": "0531e6ba8da4df11fe85ebb58577632e78a6d635f0a530ae13d4724e665011af"
+    },
+    {
+      "path": "case/rev3a/check_geometry.py",
+      "sha256": "29557dd047c2c267519e2e9989db5c8336908b7655eece55825b29e4a07cd8ac"
+    },
+    {
+      "path": "case/rev3a/enclosure.py",
+      "sha256": "8e41ca77d2f77533e04d5940233f44b601523b5949c31f8939c1028d043b1c6f"
+    },
+    {
+      "path": "case/rev3a/images/case-options.png",
+      "sha256": "90bf703026dd8d3b9cf7d687b3af87ac7f171f1d1543654ccba23b425d4b156e"
+    },
+    {
+      "path": "case/rev3a/requirements.txt",
+      "sha256": "afb0bb3272d1c1662329b3c09105692f861a14055a76ff22c8f8646afd48c8ed"
+    },
+    {
+      "path": "case/rev3a/rev3a_base.step",
+      "sha256": "16386dad541f55afd401b4b5fc898a01718fcd5a90c64e17deb6505df78e7ac1"
+    },
+    {
+      "path": "case/rev3a/rev3a_base.stl",
+      "sha256": "f29bfae4df73d1ac95c567c1d594b317baf192815159562080d5bed5bef722a2"
+    },
+    {
+      "path": "case/rev3a/rev3a_button_keeper.step",
+      "sha256": "33aabd776e06ca5f7d3c1a805f055edc53410ede33e442c0e1f14071c6aa9166"
+    },
+    {
+      "path": "case/rev3a/rev3a_button_keeper.stl",
+      "sha256": "5a90d0a0efd52f37cb5c5be6faceb284e64b6a9b211ecae47184a88ce9ba312d"
+    },
+    {
+      "path": "case/rev3a/rev3a_button_lid.step",
+      "sha256": "22767b74170844563e70628d70afd9f103f1e99bfeee805f46df7ef5b5bfeb76"
+    },
+    {
+      "path": "case/rev3a/rev3a_button_lid.stl",
+      "sha256": "713618d6ef8e022239de28302e9cc215a1e10c1fd57d6fc95528b9dd1fabd79b"
+    },
+    {
+      "path": "case/rev3a/rev3a_button_plunger.step",
+      "sha256": "3424b978e0cc2712f26f0d060c193c8f60cd68fef9dcc3957c9f5c4113015f16"
+    },
+    {
+      "path": "case/rev3a/rev3a_button_plunger.stl",
+      "sha256": "9b40cca4786ad864100cf66a4e20d0b948884377068a60f913b64a9fad508db1"
+    },
+    {
+      "path": "case/rev3a/rev3a_lid.step",
+      "sha256": "25e376a39324cd75383790a8730f4a932beaefe58301e883c65d1e94676b4661"
+    },
+    {
+      "path": "case/rev3a/rev3a_lid.stl",
+      "sha256": "2cfa56b6dab61706232b794de8342f04b004418ef9e513017d3379859f5c6dcf"
+    }
+  ],
+  "independent_snapshot_verification_sha256": "a3a07900010736c16644101d2fb4c983cf7391c679b6b6d20a648676f3dcd8f3",
+  "status": "Intended digital clearance errors resolved;53 ERC/five DRC warnings visible; physical/process and original electrical power gates remain open"
+}

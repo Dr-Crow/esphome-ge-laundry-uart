@@ -1,0 +1,677 @@
+{
+  "routing_freeze_pcb_sha256": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+  "native_version": "9.0.9",
+  "method": "Native effective rounded-pad/track/via/hole/paste shapes; binary Collide threshold at1nm. Nearest solid copper excludes generated zone fills and own-net copper. Distances are nominal CAD values, not finished-hole/mask/assembly tolerances.",
+  "vias": {
+    "PIN3_FUSED_underbody": {
+      "point_mm": [
+        51.5,
+        27
+      ],
+      "uuid": "ec8d4ef5-984d-4d7b-94a0-5e43bffd07fa",
+      "net": "/PIN3_FUSED",
+      "diameter_mm": 0.7,
+      "drill_mm": 0.3,
+      "annulus_mm": 0.2,
+      "front_tented": true,
+      "back_tented": true,
+      "front_tenting_mode": 0,
+      "back_tenting_mode": 0,
+      "nearest_foreign_solid_copper": [
+        {
+          "kind": "pad",
+          "item": "Q4.1",
+          "net": "/PIN3_GATE",
+          "layer": "F.Cu",
+          "gap_mm": 0.300001
+        },
+        {
+          "kind": "pad",
+          "item": "Q4.2",
+          "net": "/PIN3_PROTECTED",
+          "layer": "F.Cu",
+          "gap_mm": 0.300001
+        },
+        {
+          "kind": "track",
+          "item": "c679c5a7-4aef-4011-8351-f5f1e8c780ef",
+          "net": "Net-(D4-A)",
+          "layer": "B.Cu",
+          "gap_mm": 0.414001
+        },
+        {
+          "kind": "track",
+          "item": "c9a88f31-9026-4539-8ee8-9f11b0ce9589",
+          "net": "/PIN3_PROTECTED",
+          "layer": "F.Cu",
+          "gap_mm": 0.4459
+        }
+      ],
+      "nearest_hole_to_paste": [
+        {
+          "pad": "Q4.1",
+          "hole_to_paste_gap_mm": 0.500001
+        },
+        {
+          "pad": "Q4.2",
+          "hole_to_paste_gap_mm": 0.500001
+        }
+      ],
+      "nearest_copper_to_paste": [
+        {
+          "pad": "Q4.1",
+          "copper_to_paste_gap_mm": 0.300001
+        },
+        {
+          "pad": "Q4.2",
+          "copper_to_paste_gap_mm": 0.300001
+        }
+      ],
+      "nearest_hole_to_hole": [
+        {
+          "item": "b6666326-73a9-4df5-a7e8-865db501ea5f",
+          "hole_to_hole_gap_mm": 1.493909
+        }
+      ]
+    },
+    "R32_GND": {
+      "point_mm": [
+        51.225,
+        32.68
+      ],
+      "uuid": "bd10d9e2-aa4f-4e3b-98fd-c8203c7b089f",
+      "net": "GND",
+      "diameter_mm": 0.7,
+      "drill_mm": 0.3,
+      "annulus_mm": 0.2,
+      "front_tented": true,
+      "back_tented": true,
+      "front_tenting_mode": 0,
+      "back_tenting_mode": 0,
+      "nearest_foreign_solid_copper": [
+        {
+          "kind": "via",
+          "item": "702c844b-1dd0-4c0a-b1d6-4b5230f05247",
+          "net": "GEA2_RX",
+          "layer": "F.Cu",
+          "gap_mm": 0.23675
+        },
+        {
+          "kind": "via",
+          "item": "702c844b-1dd0-4c0a-b1d6-4b5230f05247",
+          "net": "GEA2_RX",
+          "layer": "In1.Cu",
+          "gap_mm": 0.23675
+        },
+        {
+          "kind": "via",
+          "item": "702c844b-1dd0-4c0a-b1d6-4b5230f05247",
+          "net": "GEA2_RX",
+          "layer": "In2.Cu",
+          "gap_mm": 0.23675
+        },
+        {
+          "kind": "via",
+          "item": "702c844b-1dd0-4c0a-b1d6-4b5230f05247",
+          "net": "GEA2_RX",
+          "layer": "B.Cu",
+          "gap_mm": 0.23675
+        }
+      ],
+      "nearest_hole_to_paste": [
+        {
+          "pad": "R32.1",
+          "hole_to_paste_gap_mm": 0.831016
+        },
+        {
+          "pad": "D17.1",
+          "hole_to_paste_gap_mm": 1.538904
+        }
+      ],
+      "nearest_copper_to_paste": [
+        {
+          "pad": "R32.1",
+          "copper_to_paste_gap_mm": 0.631016
+        },
+        {
+          "pad": "D17.1",
+          "copper_to_paste_gap_mm": 1.338904
+        }
+      ],
+      "nearest_hole_to_hole": [
+        {
+          "item": "702c844b-1dd0-4c0a-b1d6-4b5230f05247",
+          "hole_to_hole_gap_mm": 0.63675
+        },
+        {
+          "item": "72d14ea3-7d8b-4297-a15f-89a722272787",
+          "hole_to_hole_gap_mm": 0.715708
+        }
+      ]
+    },
+    "R42_DELAY": {
+      "point_mm": [
+        58.75,
+        33.2
+      ],
+      "uuid": "1c1480c1-1e7f-4e6d-9de2-de5cdf02f7f6",
+      "net": "/PIN3_DELAY",
+      "diameter_mm": 0.7,
+      "drill_mm": 0.3,
+      "annulus_mm": 0.2,
+      "front_tented": true,
+      "back_tented": true,
+      "front_tenting_mode": 0,
+      "back_tenting_mode": 0,
+      "nearest_foreign_solid_copper": [
+        {
+          "kind": "track",
+          "item": "0f2abdbd-bb40-484f-bf9a-7e4dc6bc4e98",
+          "net": "/V_INPUT",
+          "layer": "F.Cu",
+          "gap_mm": 0.277684
+        },
+        {
+          "kind": "track",
+          "item": "86bd0e1c-9844-418f-822c-fea9746c9848",
+          "net": "/PIN3_GATE",
+          "layer": "In2.Cu",
+          "gap_mm": 0.350001
+        },
+        {
+          "kind": "track",
+          "item": "706b3c12-056d-438c-b8c6-f0bca3674f0b",
+          "net": "/PIN3_GATE",
+          "layer": "In2.Cu",
+          "gap_mm": 0.542472
+        },
+        {
+          "kind": "track",
+          "item": "93ff4272-b1ca-423d-9f0d-755502e20b5e",
+          "net": "/PIN3_GATE",
+          "layer": "In2.Cu",
+          "gap_mm": 0.542472
+        }
+      ],
+      "nearest_hole_to_paste": [
+        {
+          "pad": "R42.2",
+          "hole_to_paste_gap_mm": 0.175001
+        },
+        {
+          "pad": "R34.1",
+          "hole_to_paste_gap_mm": 1.471164
+        }
+      ],
+      "nearest_copper_to_paste": [
+        {
+          "pad": "R42.2",
+          "copper_to_paste_gap_mm": 1e-06
+        },
+        {
+          "pad": "R34.1",
+          "copper_to_paste_gap_mm": 1.271164
+        }
+      ],
+      "nearest_hole_to_hole": [
+        {
+          "item": "c0d1b402-744c-4602-b5ed-4f58d4e4f64c",
+          "hole_to_hole_gap_mm": 1.284779
+        },
+        {
+          "item": "1a90caa2-7e53-4110-82e8-eac81bd6b2b5",
+          "hole_to_hole_gap_mm": 1.950001
+        }
+      ]
+    },
+    "D19_PROTECTED": {
+      "point_mm": [
+        54.1,
+        17.55
+      ],
+      "uuid": "fa7a0caa-0875-40f0-b948-55174d02befd",
+      "net": "/PIN3_PROTECTED",
+      "diameter_mm": 0.8,
+      "drill_mm": 0.4,
+      "annulus_mm": 0.2,
+      "front_tented": true,
+      "back_tented": true,
+      "front_tenting_mode": 0,
+      "back_tenting_mode": 0,
+      "nearest_foreign_solid_copper": [
+        {
+          "kind": "track",
+          "item": "e79b6882-4418-4fa4-ba82-aaf5f674757c",
+          "net": "Net-(R21-Pad1)",
+          "layer": "F.Cu",
+          "gap_mm": 0.282801
+        },
+        {
+          "kind": "track",
+          "item": "84d7c37e-d9e2-485a-95f7-319467ce9de3",
+          "net": "+3V3",
+          "layer": "B.Cu",
+          "gap_mm": 0.283311
+        },
+        {
+          "kind": "track",
+          "item": "8cff58ae-d92c-4256-b610-c9ccd4836d4b",
+          "net": "Net-(R10-Pad2)",
+          "layer": "In2.Cu",
+          "gap_mm": 0.300001
+        },
+        {
+          "kind": "track",
+          "item": "a89d870c-973c-4db3-9020-fc7cdb3d23d9",
+          "net": "/USB_VBUS",
+          "layer": "F.Cu",
+          "gap_mm": 0.684501
+        }
+      ],
+      "nearest_hole_to_paste": [
+        {
+          "pad": "D19.1",
+          "hole_to_paste_gap_mm": 0.388153
+        },
+        {
+          "pad": "D18.2",
+          "hole_to_paste_gap_mm": 1.350001
+        }
+      ],
+      "nearest_copper_to_paste": [
+        {
+          "pad": "D19.1",
+          "copper_to_paste_gap_mm": 0.188153
+        },
+        {
+          "pad": "D18.2",
+          "copper_to_paste_gap_mm": 1.150001
+        }
+      ],
+      "nearest_hole_to_hole": [
+        {
+          "item": "d6e19ce3-aa24-4251-89f7-9b051f7e45c6",
+          "hole_to_hole_gap_mm": 1.97129
+        },
+        {
+          "item": "fc5fd776-af92-4728-b501-815937066d81",
+          "hole_to_hole_gap_mm": 2.903408
+        }
+      ]
+    },
+    "U9_GND": {
+      "point_mm": [
+        59.6,
+        9
+      ],
+      "uuid": "3e539d13-aa0c-4e10-9449-ac7efd260598",
+      "net": "GND",
+      "diameter_mm": 0.8,
+      "drill_mm": 0.4,
+      "annulus_mm": 0.2,
+      "front_tented": true,
+      "back_tented": true,
+      "front_tenting_mode": 0,
+      "back_tenting_mode": 0,
+      "nearest_foreign_solid_copper": [
+        {
+          "kind": "pad",
+          "item": "R33.1",
+          "net": "/PIN1_GATE_CLAMP",
+          "layer": "F.Cu",
+          "gap_mm": 0.393133
+        },
+        {
+          "kind": "via",
+          "item": "9a833347-6c19-4f5a-b9ba-cafeea06ba00",
+          "net": "Net-(R13-Pad2)",
+          "layer": "F.Cu",
+          "gap_mm": 0.911725
+        },
+        {
+          "kind": "via",
+          "item": "9a833347-6c19-4f5a-b9ba-cafeea06ba00",
+          "net": "Net-(R13-Pad2)",
+          "layer": "In1.Cu",
+          "gap_mm": 0.911725
+        },
+        {
+          "kind": "via",
+          "item": "9a833347-6c19-4f5a-b9ba-cafeea06ba00",
+          "net": "Net-(R13-Pad2)",
+          "layer": "In2.Cu",
+          "gap_mm": 0.911725
+        }
+      ],
+      "nearest_hole_to_paste": [
+        {
+          "pad": "U9.",
+          "hole_to_paste_gap_mm": 0.455001
+        },
+        {
+          "pad": "R33.1",
+          "hole_to_paste_gap_mm": 0.593133
+        }
+      ],
+      "nearest_copper_to_paste": [
+        {
+          "pad": "U9.",
+          "copper_to_paste_gap_mm": 0.255001
+        },
+        {
+          "pad": "R33.1",
+          "copper_to_paste_gap_mm": 0.393133
+        }
+      ],
+      "nearest_hole_to_hole": [
+        {
+          "item": "9a833347-6c19-4f5a-b9ba-cafeea06ba00",
+          "hole_to_hole_gap_mm": 1.311725
+        }
+      ]
+    },
+    "U10_GND": {
+      "point_mm": [
+        57.5,
+        28.65
+      ],
+      "uuid": "1b2d7e18-1189-4bf6-afb4-e60a427fe3dd",
+      "net": "GND",
+      "diameter_mm": 0.8,
+      "drill_mm": 0.4,
+      "annulus_mm": 0.2,
+      "front_tented": true,
+      "back_tented": true,
+      "front_tenting_mode": 0,
+      "back_tenting_mode": 0,
+      "nearest_foreign_solid_copper": [
+        {
+          "kind": "track",
+          "item": "318f9612-ff75-4f43-9d1a-d6c28469a678",
+          "net": "GEA2_RX",
+          "layer": "B.Cu",
+          "gap_mm": 0.378401
+        },
+        {
+          "kind": "track",
+          "item": "a4768236-08b4-4c92-a97b-5da2d803ee4b",
+          "net": "GEA2_RX",
+          "layer": "B.Cu",
+          "gap_mm": 1.023439
+        },
+        {
+          "kind": "pad",
+          "item": "U10.4",
+          "net": "/PIN3_CL",
+          "layer": "F.Cu",
+          "gap_mm": 1.250736
+        },
+        {
+          "kind": "pad",
+          "item": "U10.5",
+          "net": "/PIN3_DELAY",
+          "layer": "F.Cu",
+          "gap_mm": 1.250736
+        }
+      ],
+      "nearest_hole_to_paste": [
+        {
+          "pad": "R40.2",
+          "hole_to_paste_gap_mm": 0.175544
+        },
+        {
+          "pad": "U10.",
+          "hole_to_paste_gap_mm": 0.705001
+        }
+      ],
+      "nearest_copper_to_paste": [
+        {
+          "pad": "R40.2",
+          "copper_to_paste_gap_mm": 1e-06
+        },
+        {
+          "pad": "U10.",
+          "copper_to_paste_gap_mm": 0.505001
+        }
+      ],
+      "nearest_hole_to_hole": [
+        {
+          "item": "1a90caa2-7e53-4110-82e8-eac81bd6b2b5",
+          "hole_to_hole_gap_mm": 2.173908
+        }
+      ]
+    },
+    "C26_EN": {
+      "point_mm": [
+        70.05,
+        7.9
+      ],
+      "uuid": "478ee1d5-4b72-4e88-a95d-be92065464fd",
+      "net": "/EN",
+      "diameter_mm": 0.8,
+      "drill_mm": 0.4,
+      "annulus_mm": 0.2,
+      "front_tented": true,
+      "back_tented": true,
+      "front_tenting_mode": 0,
+      "back_tenting_mode": 0,
+      "nearest_foreign_solid_copper": [
+        {
+          "kind": "track",
+          "item": "b72f27b3-a542-4df7-ab0b-db4ca775aa3b",
+          "net": "/BOOT",
+          "layer": "B.Cu",
+          "gap_mm": 0.613199
+        },
+        {
+          "kind": "track",
+          "item": "4a57c884-c0a0-4557-89d3-f5ee7ffb66d9",
+          "net": "/LED1",
+          "layer": "F.Cu",
+          "gap_mm": 0.849601
+        },
+        {
+          "kind": "track",
+          "item": "1ed5ee34-a5fb-40ab-8aee-2f200797467c",
+          "net": "/LED1",
+          "layer": "F.Cu",
+          "gap_mm": 0.861054
+        },
+        {
+          "kind": "track",
+          "item": "662fb142-36ff-48ea-b63f-0f6ac526a013",
+          "net": "/BOOT_SEL",
+          "layer": "F.Cu",
+          "gap_mm": 0.901701
+        }
+      ],
+      "nearest_hole_to_paste": [
+        {
+          "pad": "C26.1",
+          "hole_to_paste_gap_mm": 0.300001
+        },
+        {
+          "pad": "R41.2",
+          "hole_to_paste_gap_mm": 1.910747
+        }
+      ],
+      "nearest_copper_to_paste": [
+        {
+          "pad": "C26.1",
+          "copper_to_paste_gap_mm": 0.100001
+        },
+        {
+          "pad": "R41.2",
+          "copper_to_paste_gap_mm": 1.710747
+        }
+      ],
+      "nearest_hole_to_hole": [
+        {
+          "item": "71228523-d354-4cff-8d10-5ec9e2932f55",
+          "hole_to_hole_gap_mm": 1.417964
+        },
+        {
+          "item": "210352b1-fb7b-46ce-84d3-4aca7d2b409b",
+          "hole_to_hole_gap_mm": 1.49275
+        }
+      ]
+    },
+    "R41_VS": {
+      "point_mm": [
+        67.55,
+        4.6
+      ],
+      "uuid": "de5e2093-1e5c-4e15-949a-0669ce385a7e",
+      "net": "/PIN1_PROTECTED",
+      "diameter_mm": 0.8,
+      "drill_mm": 0.4,
+      "annulus_mm": 0.2,
+      "front_tented": true,
+      "back_tented": true,
+      "front_tenting_mode": 0,
+      "back_tenting_mode": 0,
+      "nearest_foreign_solid_copper": [
+        {
+          "kind": "track",
+          "item": "4aceed44-1462-41d6-bdd2-fe0c781566ef",
+          "net": "Net-(R13-Pad2)",
+          "layer": "In2.Cu",
+          "gap_mm": 0.264853
+        },
+        {
+          "kind": "track",
+          "item": "4dc4e9d0-a114-484c-b1b3-a81236ffce23",
+          "net": "Net-(R13-Pad2)",
+          "layer": "In2.Cu",
+          "gap_mm": 0.264853
+        },
+        {
+          "kind": "track",
+          "item": "6a7e32b1-2ec2-45fa-ae24-957bbcf5bea5",
+          "net": "Net-(R13-Pad2)",
+          "layer": "In2.Cu",
+          "gap_mm": 0.264853
+        },
+        {
+          "kind": "track",
+          "item": "d50a97b0-ede0-4f24-8a50-e482a36f6776",
+          "net": "Net-(R13-Pad2)",
+          "layer": "In2.Cu",
+          "gap_mm": 0.264853
+        }
+      ],
+      "nearest_hole_to_paste": [
+        {
+          "pad": "R41.1",
+          "hole_to_paste_gap_mm": 0.275001
+        },
+        {
+          "pad": "C2.2",
+          "hole_to_paste_gap_mm": 1.903323
+        }
+      ],
+      "nearest_copper_to_paste": [
+        {
+          "pad": "R41.1",
+          "copper_to_paste_gap_mm": 0.075001
+        },
+        {
+          "pad": "C2.2",
+          "copper_to_paste_gap_mm": 1.703323
+        }
+      ],
+      "nearest_hole_to_hole": [
+        {
+          "item": "5874e6e5-0d1a-4ed3-9969-239cdefc2dac",
+          "hole_to_hole_gap_mm": 1.652008
+        },
+        {
+          "item": "11e74eeb-66d4-4375-9f1d-bf5c7378dbd9",
+          "hole_to_hole_gap_mm": 1.72978
+        }
+      ]
+    },
+    "R41_DELAY": {
+      "point_mm": [
+        68.2,
+        8.3
+      ],
+      "uuid": "210352b1-fb7b-46ce-84d3-4aca7d2b409b",
+      "net": "/PIN1_DELAY",
+      "diameter_mm": 0.8,
+      "drill_mm": 0.4,
+      "annulus_mm": 0.2,
+      "front_tented": true,
+      "back_tented": true,
+      "front_tenting_mode": 0,
+      "back_tenting_mode": 0,
+      "nearest_foreign_solid_copper": [
+        {
+          "kind": "track",
+          "item": "662fb142-36ff-48ea-b63f-0f6ac526a013",
+          "net": "/BOOT_SEL",
+          "layer": "F.Cu",
+          "gap_mm": 0.501701
+        },
+        {
+          "kind": "via",
+          "item": "478ee1d5-4b72-4e88-a95d-be92065464fd",
+          "net": "/EN",
+          "layer": "F.Cu",
+          "gap_mm": 1.09275
+        },
+        {
+          "kind": "via",
+          "item": "478ee1d5-4b72-4e88-a95d-be92065464fd",
+          "net": "/EN",
+          "layer": "In1.Cu",
+          "gap_mm": 1.09275
+        },
+        {
+          "kind": "via",
+          "item": "478ee1d5-4b72-4e88-a95d-be92065464fd",
+          "net": "/EN",
+          "layer": "In2.Cu",
+          "gap_mm": 1.09275
+        }
+      ],
+      "nearest_hole_to_paste": [
+        {
+          "pad": "R41.2",
+          "hole_to_paste_gap_mm": 0.350391
+        },
+        {
+          "pad": "D14.2",
+          "hole_to_paste_gap_mm": 1.922606
+        }
+      ],
+      "nearest_copper_to_paste": [
+        {
+          "pad": "R41.2",
+          "copper_to_paste_gap_mm": 0.150391
+        },
+        {
+          "pad": "D14.2",
+          "copper_to_paste_gap_mm": 1.722606
+        }
+      ],
+      "nearest_hole_to_hole": [
+        {
+          "item": "478ee1d5-4b72-4e88-a95d-be92065464fd",
+          "hole_to_hole_gap_mm": 1.49275
+        },
+        {
+          "item": "20233e0b-08e1-4e24-b40d-612ef6f2b26b",
+          "hole_to_hole_gap_mm": 2.390162
+        }
+      ]
+    }
+  },
+  "open_gates": [
+    "Finished drilled-hole, registration, mask-tenting and assembly coplanarity qualification, including fused via under Q4 body (manufacturer A1 minimum0)",
+    "Transient/overshoot and source coordination; no source/inrush/thermal/stall measurements",
+    "R42 In1 reference-plane slot and original-trace return/crosstalk review; no unchanged-reference-plane claim",
+    "EN/reset-adapter/USB/firmware bring-up qualification",
+    "Inherited TP12 nominal Power gap0.250201mm retains only0.000201mm rule headroom"
+  ]
+}

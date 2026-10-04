@@ -1,0 +1,363 @@
+{
+  "review_scope": "Bounded, read-only exact J4 primary-part body datum and pin-1 transform review. No active/frozen source edits, browser actions, uploads, substitutions, or commits.",
+  "result": "Body datum and pin-1 transform screening pass. Exact-part mechanical/manufacturing compatibility remains qualified by existing land-pattern and board-thickness differences.",
+  "primary_part": {
+    "reference": "J4",
+    "manufacturer": "SHOU HAN",
+    "mpn": "TYPE-C 16PIN 2MD(073)",
+    "lcsc": "C2765186"
+  },
+  "primary_supplier_drawing": {
+    "source_url": "https://atta.szlcsc.com/upload/public/pdf/source/20250421/4251387FDD0B70FDBB4F5FD36EE975AA.pdf",
+    "part_association_url": "https://item.szlcsc.com/2901843.html",
+    "current_lcsc_viewer_pdf_url": "https://datasheet.lcsc.com/datasheet/pdf/2d53d8d8199c9dd6666d9bc9ac7c3a1e.pdf?productCode=C2765186",
+    "file": "SHOU-HAN-C2765186-drawing.pdf",
+    "sha256": "39110c4af62ba9309f87e6405ce58368b479fcf233e9166d54fc6ffae5b366ba",
+    "bytes": 1212516,
+    "supplier": "Shenzhen Shouhan Technology Co., Ltd.",
+    "page_one_based": 1,
+    "drawing_sheet": "1 OF 1",
+    "drawing_revision": "A",
+    "drawing_title": "TYPE-C 16PIN 2MD (073)",
+    "units": "mm",
+    "acquisition": "No exact cached supplier drawing was found in the bounded research/audit search; manufacturer-authored PDF was retrieved read-only from the supplier attachment URL into scratch.",
+    "byte_identity_to_current_lcsc_pdf": "Not established. Public web tool opens the current LCSC PDF; direct local retrieval of that hash URL returned HTTP 403. Local PDF hash applies to the supplier attachment URL above.",
+    "pixel_files": {
+      "SHOU-HAN-C2765186-page1.png": "589aa8c4517cdbbfc9cabb5a31248bff31e7a83543e2eb899873fa17b68dc5ae",
+      "drawing-land-pin1-crop.png": "582494f9c7b549ed4a8df6495ec941cec07d63df8c2a1df9bb3c314f5e67a7b8",
+      "drawing-side-detail.png": "61d41ae04c0ebfb53aa2b356de93fad65b0dcf27beb2f1f33f65ce01bf1734bd",
+      "drawing-tab-seating-detail.png": "ef9638ff18e5ca603417649d33a05fe3195725a4ce9176d11f5878e9bfa6d845",
+      "drawing-bottom-view-detail.png": "b03ffc0ed05c3976a0c9be071a75fc287f6a3785778b2586ad69c785bfc19875",
+      "drawing-tolerance-detail.png": "ddad9bf0a6bdab3e43865354b0bea367e9a48393fd67d1ee302e2b4d3be37265"
+    }
+  },
+  "supplier_drawing_facts": [
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Body outer dimensions",
+      "width_mm": 8.94,
+      "length_mm": 7.35,
+      "height_mm": 3.16
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Front body edge is 2.60 mm from the center of the forward shell lug in the side view",
+      "distance_mm": 2.6
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Rear/forward shell-lug center spacing",
+      "side_view_mm": 4.2,
+      "recommended_layout_mm": 4.18
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Shell-lug horizontal center spacing",
+      "mm": 8.64
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Locator-hole horizontal center spacing and hole diameter",
+      "center_spacing_mm": 5.78,
+      "hole_diameter_mm": 0.65
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Forward shell-lug center to locator-hole row distance in recommended top-view layout",
+      "mm": 3.68
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Top-view contact sequence left to right",
+      "physical_lands": [
+        "A1/B12",
+        "A4/B9",
+        "B8",
+        "A5",
+        "B7",
+        "A6",
+        "A7",
+        "B6",
+        "A8",
+        "B5",
+        "A9/B4",
+        "A12/B1"
+      ]
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Contact pitch coordinates measured about body center",
+      "physical_land_x_mm": [
+        -3.2,
+        -2.4,
+        -1.75,
+        -1.25,
+        -0.75,
+        -0.25,
+        0.25,
+        0.75,
+        1.25,
+        1.75,
+        2.4,
+        3.2
+      ]
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "A1/B12 is the left rear ground contact pair. A12/B1 is the right rear ground pair."
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Recommended PCB layout explicitly states thickness 0.80 mm and default tolerance +/-0.05 mm."
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Forward shell-slot recommendation",
+      "hole_width_mm": 0.6,
+      "hole_height_mm": 1.4,
+      "pad_height_mm": 1.8
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Rear shell-slot recommendation",
+      "hole_width_mm": 0.6,
+      "hole_height_mm": 1.7,
+      "pad_height_mm": 2.1
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Recommended signal-land height callout is 1.17 mm; the adjacent 5.32 and 4.17 mm y-dimension callouts imply a 1.15 mm span."
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Actual shell-tab widths in side view",
+      "forward_width_mm": 0.8,
+      "rear_width_mm": 1.1,
+      "printed_decimal_precision": 1,
+      "general_tolerance_mm": 0.15,
+      "tolerance_source": "Title block X.X +/-0.15 mm"
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Rear-view shell-tab projection from contact/seating-level line",
+      "projection_mm": 1.0,
+      "printed_decimal_precision": 2,
+      "general_tolerance_mm": 0.1,
+      "tolerance_source": "Title block X.XX +/-0.10 mm",
+      "seating_plane_note": "The drawing does not explicitly label this line as PCB top; applying it as board-top seating datum is an interpretation."
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "Solder contact tails project 0.30 mm past rear body line in bottom view",
+      "projection_mm": 0.3,
+      "general_tolerance_mm": 0.1
+    },
+    {
+      "type": "supplier_drawing_fact",
+      "fact": "No minimum shell-lug protrusion through PCB, allowed PCB-thickness range, or solder-fill acceptance requirement is stated in the reviewed six-page supplier PDF."
+    }
+  ],
+  "native_source_facts": {
+    "type": "native_source_fact",
+    "tool_version": "KiCad 9.0.9",
+    "library_namespace": "Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A",
+    "namespace_warning": "HCTL footprint namespace and embedded description refer to a stock HCTL C2894897 part and its 5 A claim. They are not primary SHOU HAN identity/rating evidence. BOM and exact part properties select SHOU HAN C2765186.",
+    "board_anchor_mm": [
+      72.0,
+      36.325
+    ],
+    "rotation_deg": 0.0,
+    "board_thickness_mm": 1.6,
+    "local_fab_body_bounds_mm": {
+      "x": [
+        -4.47,
+        4.47
+      ],
+      "y": [
+        -3.675,
+        3.675
+      ]
+    },
+    "board_fab_body_bounds_mm": {
+      "x": [
+        67.53,
+        76.47
+      ],
+      "y": [
+        32.65,
+        40.0
+      ]
+    },
+    "local_shell_lug_centers_mm": [
+      [
+        -4.32,
+        -3.105
+      ],
+      [
+        4.32,
+        -3.105
+      ],
+      [
+        -4.32,
+        1.075
+      ],
+      [
+        4.32,
+        1.075
+      ]
+    ],
+    "local_locator_holes_mm": [
+      [
+        -2.89,
+        -2.605
+      ],
+      [
+        2.89,
+        -2.605
+      ]
+    ],
+    "contact_land_centers_y_mm": -3.745,
+    "contact_land_height_mm": 1.3,
+    "forward_shell_slot_mm": [
+      0.6,
+      1.2
+    ],
+    "forward_shell_pad_mm": [
+      1.0,
+      1.6
+    ],
+    "rear_shell_slot_mm": [
+      0.6,
+      1.7
+    ],
+    "rear_shell_pad_mm": [
+      1.0,
+      2.1
+    ],
+    "A1_local_mm": [
+      -3.2,
+      -3.745
+    ],
+    "A1_board_mm": [
+      68.8,
+      32.58
+    ],
+    "A1_net": "GND",
+    "B12_coincident_with_A1": true,
+    "pin1_Fab_marker": "V-shaped mark about x=-3.2 at the rear body edge, consistent with A1/B12.",
+    "existing_manufacturing_CPL_anchor_mm": [
+      72.0,
+      -36.325
+    ],
+    "existing_manufacturing_CPL_rotation_deg": 0.0,
+    "native_geometry_file": "native-J4-geometry.json"
+  },
+  "derived_geometry_facts": [
+    {
+      "type": "derived_geometry_fact",
+      "fact": "Forward shell-lug center y=+1.075 plus supplier front offset 2.60 gives body front y=+3.675. Subtracting body length 7.35 gives body rear y=-3.675. The body geometric center is therefore footprint origin (0,0)."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "Body width 8.94 is symmetric about shell-lug and locator rows, so body x bounds are +/-4.47."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "Body front is native board y=40.0 mm, matching the lower Edge.Cuts boundary; existing footprint opening direction is +local Y."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "For front-side rotation 0 and CPL y=-board y, A1/B12 local offset (-3.2,-3.745) maps to CPL vector (-3.2,+3.745) and absolute CPL (68.8,-32.58)."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "Existing J4 anchor is body center, not pad bounding-box center or rear signal-contact-row center. No body-datum shift or 180-degree correction is indicated."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "Drawing physical-land order and native pad numbering/net names agree for all 12 physical lands representing 16 USB contacts."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "Actual forward tab 0.8 +/-0.15 mm gives 0.65...0.95 mm width. A 1.20 mm nominal slot is 0.40 mm longer than nominal tab and 0.25 mm longer than maximum printed tab width. This is conditional clearance in the long-slot direction only; no as-fabricated slot tolerance or full positional tolerance stack is assumed."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "Actual rear tab 1.1 +/-0.15 mm gives 0.95...1.25 mm width, below native rear slot nominal length 1.70 mm."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "If the rear-view 1.00 +/-0.10 mm projection is measured from board-top seating level, on a nominal 1.60 mm board the lug ends would be recessed 0.50...0.70 mm from the board bottom. On a nominal 0.80 mm board they would protrude 0.10...0.30 mm."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "A short lug within a through hole does not itself obstruct nominal insertion or seating. The source establishes a change in bottom-side accessibility/protrusion, not an authenticated inability to insert, seat, or make top-side SMT contact."
+    },
+    {
+      "type": "derived_geometry_fact",
+      "fact": "Native signal lands span local y=-4.395...-3.095 mm while body rear is y=-3.675. Thus they extend 0.720 mm beyond the rear body and 0.580 mm under it. The printed 0.30 mm rearward solder-tail projection lies within this native longitudinal pad extent under the drawing body datum. No nominal loss of contact in this direction is demonstrated."
+    }
+  ],
+  "invariance": {
+    "frozen": {
+      "path": "/workspace/shared/ge-oct3-rev3a-clearance/pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+      "pcb_sha256": "2f4a2cb171c99e112ccd92e08608380abe10f9f071ba5a99e14f68fa9a8548aa",
+      "j4_sha256": "2da7c06be42903b9812b8def0424c3e5035255394f884c6099b69467d73570ce",
+      "j4_normalized_net_ids_sha256": "db5e0d23b52a2f00c4a727380c22a265750c2889233b4820538138e8f7eb7057"
+    },
+    "current": {
+      "path": "/workspace/shared/ge-oct3-rev3a-rated-protection/pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+      "pcb_sha256": "5e41644ab8741f0d9f9dfb3734e223b5dda0f7d2ca1abe33400a74b6356135fa",
+      "j4_sha256": "d8b310899c4ca7201dd734f081f8f52fb9bea34d3a9ba467c149d006437df493",
+      "j4_normalized_net_ids_sha256": "db5e0d23b52a2f00c4a727380c22a265750c2889233b4820538138e8f7eb7057"
+    },
+    "j4_unchanged_ignoring_only_net_id_numbers": true
+  },
+  "authentic_uncertainties": [
+    {
+      "type": "authentic_uncertainty",
+      "scope": "Manufacturing qualification",
+      "fact": "Supplier recommended layout thickness 0.80 mm differs from native board 1.60 mm. The source reviewed does not state an allowed board-thickness range. This is not proof of incompatibility, but exact-part through-board fit/retention needs supplier or assembler confirmation."
+    },
+    {
+      "type": "authentic_uncertainty",
+      "scope": "Manufacturing qualification",
+      "fact": "Forward shell slot and annular pad are 0.20 mm shorter than the exact supplier recommendation. The HCTL-derived land pattern is therefore not a literal exact-part recommended-layout match. Differences already exist in frozen Rev3A; no changes were made."
+    },
+    {
+      "type": "authentic_uncertainty",
+      "scope": "Manufacturing qualification",
+      "fact": "Native signal lands are 1.30 mm tall versus drawing callout 1.17 mm. The drawing itself has a 0.02 mm inconsistency between that callout and 5.32-4.17 mm. No exact recommended y-center was asserted from those inconsistent dimensions."
+    },
+    {
+      "type": "authentic_uncertainty",
+      "scope": "Assembly service transform",
+      "fact": "Drawing does not specify a pick-and-place origin or tape-feed orientation. Body-centered native origin and pin map are supported; this review does not verify an assembler proprietary model transform or a quote preview."
+    },
+    {
+      "type": "authentic_uncertainty",
+      "scope": "3D model provenance",
+      "fact": "Locally named J4 SHOU HAN 16PIN model carries STEP FILE_NAME USB-C-SMD_TYPE-C-6PIN-2MD-073.step. It was not used as primary datum/pin-assignment evidence. Source mapping from that STEP to the exact 16-contact SKU was not established in this review."
+    },
+    {
+      "type": "authentic_uncertainty",
+      "scope": "Snapshot identity",
+      "fact": "Supplied current PCB SHA256 796cad8c57bd229f138da461483d9d91551f158c40fd6837ca47beaaff7fc240 was already replaced when read. Reviewed snapshot is 5e41644ab8741f0d9f9dfb3734e223b5dda0f7d2ca1abe33400a74b6356135fa; full J4 content is unchanged from frozen after ignoring only global net-ID renumbering."
+    },
+    {
+      "type": "authentic_uncertainty",
+      "scope": "Actual mechanical fit",
+      "fact": "No nominal shell-tab insertion failure or top SMT contact failure is established by the printed dimensions. Native finished-hole tolerance, full tab/locator positional tolerance stack, tab thickness in the narrow-slot direction, and seating/contact coplanarity are not sufficiently specified here to assert a complete worst-case fit pass."
+    },
+    {
+      "type": "authentic_uncertainty",
+      "scope": "Soldering and retention",
+      "fact": "A thicker PCB likely leaves the approximately 1.00 mm lugs recessed from its bottom if the contact-level line is the board-top datum. Minimum protrusion, wetting/fill process, and retention acceptance requirements are unstated. Supplier/assembler confirmation or an exact-part fit/reflow sample is a conditional qualification recommendation, not an authenticated incompatibility."
+    }
+  ],
+  "actual_tab_and_seating_followup": {
+    "requested_question": "Do actual tab dimensions/seating detail prove nominal incompatibility at native 1.20 mm forward slots and 1.60 mm board?",
+    "answer": "No authenticated nominal insertion, seating, or top-contact failure is established. Printed tab widths fit the native nominal long-slot dimensions. Interpreted 1.00 mm projection would leave recessed lug ends on a 1.60 mm board, leaving solder/retention qualification open.",
+    "conditional_recommendation": "Confirm this exact SHOU HAN SKU at native 1.20 mm forward slots and 1.60 mm board with supplier/assembler or a fit/reflow sample. Do not call the recommendation an authenticated incompatibility or change footprint geometry solely from this bounded review."
+  }
+}

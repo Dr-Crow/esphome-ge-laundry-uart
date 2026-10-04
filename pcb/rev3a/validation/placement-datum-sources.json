@@ -1,0 +1,89 @@
+{
+  "classification": "Authored nominal manufacturer/body-datum review; not supplier approval. Exact full material/plating suffix, pick/reel/orientation/process acceptance remain gates.",
+  "references": {
+    "J1": {
+      "manufacturer": "EVERCOM",
+      "mpn": "5301-8P8C",
+      "identity": "C3097717",
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "local_body_center_xy_mm": [
+        4.445,
+        5.325
+      ],
+      "supplier_alignment": "Not approved; actual supplier-library zero, pin1, orientation and process still require review.",
+      "source_url": "https://chinarj45.com/uploads/20260211/99f6f1d1acfb5da691ec9e117bc8ba1c.pdf",
+      "manufacturer_document_sha256": "a25397e72510ab7b7d3bc458d8b68bf003e3506e1d7a6d9f45e3c82aeb6a4f61",
+      "datum_description": "EVERCOM5301-880XXX RevA2025-09-23 nominal unshielded8P8C family; STEP body bounds x[-3.155,12.045],y[-14.35,3.70]. STEP Y mirrors footprint Y, giving local footprint body centre(4.445,5.325). Full material/plating suffix remains unverified.",
+      "source_native_anchor_cpl_mm": [
+        13.97,
+        -12.555
+      ],
+      "body_width_depth_height_mm": [
+        15.2,
+        18.05,
+        11.45
+      ],
+      "body_cpl_center_xy_mm": [
+        8.645,
+        -17.0
+      ],
+      "model_limit": "Retained older Rev3A approximate envelope is not this manufacturer body datum; it is not authenticated supplier CAD."
+    },
+    "U2": {
+      "manufacturer": "Espressif Systems",
+      "mpn": "ESP32-C3-WROOM-02-N4",
+      "identity": "C2934560",
+      "datum_type": "module_pcb_body_bbox_center",
+      "local_body_center_xy_mm": [
+        0,
+        -3.1
+      ],
+      "source_url": "https://documentation.espressif.com/esp32-c3-wroom-02_datasheet_en.pdf",
+      "manufacturer_document_sha256": "2375b1be75ebbfcffa050e6a26c3ee7957bc7171b319066081a491d1b2e21161",
+      "datum_description": "Espressif WROOM-02 v1.7 Fig10-1 printed p35 and Fig11-1 p38: nominal18x20mm full module PCB body, antenna included. Native local body bounds x[-9,9],y[-13.1,6.9], pin1(-8.75,-6), producing full-module body centre(0,-3.1).",
+      "source_native_anchor_cpl_mm": [
+        81.6,
+        -17
+      ],
+      "body_cpl_center_xy_mm": [
+        84.7,
+        -17
+      ],
+      "supplier_alignment": "Unapproved actual supplier zero, centroid, pick/reel orientation and process.",
+      "primary_pixel_sha256": [
+        "1b658c51a1e7c97a1276f22ecaba1c6bcd8f9ce65d8c11dcfa13a0a3ae588f7e",
+        "b186c10ac78685c13af2056166587e0a02b7655f7d5ed421b54c290644270000"
+      ]
+    },
+    "J4": {
+      "manufacturer": "SHOU HAN",
+      "mpn": "TYPE-C 16PIN 2MD(073)",
+      "identity": "C2765186",
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "local_body_center_xy_mm": [
+        0,
+        0
+      ],
+      "source_url": "https://atta.szlcsc.com/upload/public/pdf/source/20250421/4251387FDD0B70FDBB4F5FD36EE975AA.pdf",
+      "manufacturer_document_sha256": "39110c4af62ba9309f87e6405ce58368b479fcf233e9166d54fc6ffae5b366ba",
+      "datum_description": "SHOU HAN TYPE-C16PIN2MD(073) RevA p1 nominal8.94x7.35mm body; forward shell lug is2.60mm from front body face. Native forward lug local y1.075 yields bodyfront+3.675/rear-3.675, centered(0,0). A1/B12 is the left rear ground pair.",
+      "source_native_anchor_cpl_mm": [
+        72,
+        -36.325
+      ],
+      "body_cpl_center_xy_mm": [
+        72,
+        -36.325
+      ],
+      "supplier_alignment": "Unapproved actual supplier zero, orientation and assembly. Drawing recommends0.80mm PCB; retained1.6mm and inherited shell-land differences require exact assembly qualification.",
+      "primary_pixel_sha256": {
+        "SHOU-HAN-C2765186-page1.png": "589aa8c4517cdbbfc9cabb5a31248bff31e7a83543e2eb899873fa17b68dc5ae",
+        "drawing-land-pin1-crop.png": "582494f9c7b549ed4a8df6495ec941cec07d63df8c2a1df9bb3c314f5e67a7b8",
+        "drawing-side-detail.png": "61d41ae04c0ebfb53aa2b356de93fad65b0dcf27beb2f1f33f65ce01bf1734bd",
+        "drawing-tab-seating-detail.png": "ef9638ff18e5ca603417649d33a05fe3195725a4ce9176d11f5878e9bfa6d845",
+        "drawing-bottom-view-detail.png": "b03ffc0ed05c3976a0c9be071a75fc287f6a3785778b2586ad69c785bfc19875",
+        "drawing-tolerance-detail.png": "ddad9bf0a6bdab3e43865354b0bea367e9a48393fd67d1ee302e2b4d3be37265"
+      }
+    }
+  }
+}

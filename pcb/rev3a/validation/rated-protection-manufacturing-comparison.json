@@ -1,0 +1,114 @@
+[
+  {
+    "member": "GEA-Adapter-Rev3A-B_Cu.gbl",
+    "frozen_base_sha256": "4a44b4803c230c21d4ea735f7625ac4e33092dd6b5f0e49d373a191dad79af48",
+    "native_regenerated_sha256": "6c2b589a8be21764c7d0d631da88808f3a29c6f1ddc90b466686fc06cee7c296",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "6c2b589a8be21764c7d0d631da88808f3a29c6f1ddc90b466686fc06cee7c296"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-B_Mask.gbs",
+    "frozen_base_sha256": "c1d70c0d9fcb08d860fb50280a8fc0192f83a2d17c73afc140d6d7f41be6b487",
+    "native_regenerated_sha256": "5c92ffa965772dadba805fb7344b5c597e98816699bdf05cda3ec25f16232291",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "5c92ffa965772dadba805fb7344b5c597e98816699bdf05cda3ec25f16232291"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-B_Paste.gbp",
+    "frozen_base_sha256": "ce961dafebfeeb92e8874d7203153c46b150ea5cbee1ac7e250fabc129b21ffb",
+    "native_regenerated_sha256": "34c899b1a0fed6c69516e0999c18e16079cecdb7917f1a5231585341ada2e40c",
+    "timestamp_normalized_equal": true,
+    "unchanged_payload_bytes_preserved": true,
+    "distributed_sha256": "ce961dafebfeeb92e8874d7203153c46b150ea5cbee1ac7e250fabc129b21ffb"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-B_Silkscreen.gbo",
+    "frozen_base_sha256": "e63354ce032a6367eef2f4764d412aa455a61ff63a72f72b577ac2ccc146c1ff",
+    "native_regenerated_sha256": "92d02472305110b2f337a70030b511f09e5b080b0a3309815fa950c5d421c7b3",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "92d02472305110b2f337a70030b511f09e5b080b0a3309815fa950c5d421c7b3"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-Edge_Cuts.gm1",
+    "frozen_base_sha256": "af0e1d98324b1e95f5688653959659d515054a32b3d28a3169e8b4ed2cd0f42e",
+    "native_regenerated_sha256": "e682640537243e94dbda9e1ebecee75dd14fa9b6c851beddc0dfb13931ca8358",
+    "timestamp_normalized_equal": true,
+    "unchanged_payload_bytes_preserved": true,
+    "distributed_sha256": "af0e1d98324b1e95f5688653959659d515054a32b3d28a3169e8b4ed2cd0f42e"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-F_Cu.gtl",
+    "frozen_base_sha256": "b98a129c330210e95c684a46b522ca77cfce15c7b450ae64c3cadbf6bdbc2fd8",
+    "native_regenerated_sha256": "eba99a6ddea1a0630b18d86b645e0a3005b4baa0b5ec8665a44135e301f8cdb1",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "eba99a6ddea1a0630b18d86b645e0a3005b4baa0b5ec8665a44135e301f8cdb1"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-F_Mask.gts",
+    "frozen_base_sha256": "ea74ae08d279bc70816d9aef07ae09f87c4aaf74d7705ed272ade527ee4b6dab",
+    "native_regenerated_sha256": "c84e3c1334d9fee90f0659ec45a1a585d5c4e5ce92cb78da8e2438be73c5721e",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "c84e3c1334d9fee90f0659ec45a1a585d5c4e5ce92cb78da8e2438be73c5721e"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-F_Paste.gtp",
+    "frozen_base_sha256": "6cc00162a5794b3a21beefba306e63a09c6c619a33f200a5659c5e58c205187f",
+    "native_regenerated_sha256": "e607c83ed901d3c231442708a6ee805c35b43522a82487e90c9ef576022f481e",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "e607c83ed901d3c231442708a6ee805c35b43522a82487e90c9ef576022f481e"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-F_Silkscreen.gto",
+    "frozen_base_sha256": "ec816214e71b89264cbaafa0bcf462fc7f4d8d6b29e1369a198f206b556a3e40",
+    "native_regenerated_sha256": "17b181e0e34ade4a358ecdd5223f3be0797a68fe1e2127f0ae81e1fc4f3fcfca",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "17b181e0e34ade4a358ecdd5223f3be0797a68fe1e2127f0ae81e1fc4f3fcfca"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-In1_Cu.g1",
+    "frozen_base_sha256": "cfc52be5af6f474313a18a181e3039d61852787f26ee6117e2485ea5ce5791d2",
+    "native_regenerated_sha256": "95e580389de3aaaeab9f792fa205b28ec1dd4e28c927a8d64cbc909327a9306d",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "95e580389de3aaaeab9f792fa205b28ec1dd4e28c927a8d64cbc909327a9306d"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-In2_Cu.g2",
+    "frozen_base_sha256": "db620885a6be410f1461dd45e8e3709c07cd400f5ed5a1242fadb58a7075ee50",
+    "native_regenerated_sha256": "4e527fb7e7a12c3a593a6bf2653db4d712efdd4f6d6cd0a800d4c6d5f51340af",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "4e527fb7e7a12c3a593a6bf2653db4d712efdd4f6d6cd0a800d4c6d5f51340af"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-NPTH.drl",
+    "frozen_base_sha256": "05860020db885bacacfe88d330a382767edd55d7d614b559ca0f595afcc12cbc",
+    "native_regenerated_sha256": "4ed01bef4958fe0145c996583a5e34ee26accce2c40d628848b9e79fc23e7e1a",
+    "timestamp_normalized_equal": true,
+    "unchanged_payload_bytes_preserved": true,
+    "distributed_sha256": "05860020db885bacacfe88d330a382767edd55d7d614b559ca0f595afcc12cbc"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-PTH.drl",
+    "frozen_base_sha256": "894dcce18c113d52a762ba9f12dcf1b8a4644edcad98efbdfcadeff0583b6b75",
+    "native_regenerated_sha256": "2d6a37720bf65003ac86f38b82d158d9e36d91e77eff6390be89fc0ec3658173",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "2d6a37720bf65003ac86f38b82d158d9e36d91e77eff6390be89fc0ec3658173"
+  },
+  {
+    "member": "GEA-Adapter-Rev3A-job.gbrjob",
+    "frozen_base_sha256": "bc25d7c28bcbba8504770d5bec95119dfe64ca7c9479271e41024f916dcb14ea",
+    "native_regenerated_sha256": "16623baeb99a21c325eaf2e24c79685e71f2e3d85382faf3aad483e99cca4d3d",
+    "timestamp_normalized_equal": false,
+    "unchanged_payload_bytes_preserved": false,
+    "distributed_sha256": "16623baeb99a21c325eaf2e24c79685e71f2e3d85382faf3aad483e99cca4d3d"
+  }
+]

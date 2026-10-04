@@ -1,0 +1,119 @@
+{
+  "part": {
+    "ref": "U2",
+    "manufacturer": "Espressif",
+    "MPN": "ESP32-C3-WROOM-02-N4",
+    "LCSC": "C2934560"
+  },
+  "primary": {
+    "URL": "https://documentation.espressif.com/esp32-c3-wroom-02_datasheet_en.pdf",
+    "version": "1.7",
+    "pdf_sha256": "2375b1be75ebbfcffa050e6a26c3ee7957bc7171b319066081a491d1b2e21161",
+    "drawings": [
+      {
+        "printed_pdf_page": 35,
+        "figure": "10-1",
+        "pixel_sha256": "1b658c51a1e7c97a1276f22ecaba1c6bcd8f9ce65d8c11dcfa13a0a3ae588f7e"
+      },
+      {
+        "printed_pdf_page": 38,
+        "figure": "11-1",
+        "pixel_sha256": "b186c10ac78685c13af2056166587e0a02b7655f7d5ed421b54c290644270000"
+      }
+    ]
+  },
+  "native_fixed_original_source": "d1769b25c206fe86f60e37c415d4a60da7bb8334",
+  "requested_current_source_sha256": "796cad8c57bd229f138da461483d9d91551f158c40fd6837ca47beaaff7fc240",
+  "manufacturer_dimensions_mm": {
+    "body_width": 18,
+    "body_length": 20,
+    "body_tolerance_plus_minus": 0.15,
+    "height": 3.2,
+    "height_tolerance_plus_minus": 0.15,
+    "antenna_length": 6,
+    "pad1_from_antenna_body_end": 7.1,
+    "pad_row_center_spacing": 17.5,
+    "pad_pitch": 1.5,
+    "recommended_signal_land": [
+      1.5,
+      0.9
+    ]
+  },
+  "native_transform": {
+    "position_PCB_Y_down_mm": [
+      81.6,
+      17
+    ],
+    "position_CPL_Y_up_mm": [
+      81.6,
+      -17
+    ],
+    "rotation_deg": -90,
+    "local_Fab_body_bbox_mm": [
+      -9,
+      -13.1,
+      9,
+      6.9
+    ],
+    "local_full_body_center_mm": [
+      0,
+      -3.1
+    ],
+    "world_Fab_body_bbox_PCB_mm": [
+      74.7,
+      8,
+      94.7,
+      26
+    ],
+    "world_full_body_center_PCB_mm": [
+      84.7,
+      17
+    ],
+    "world_full_body_center_CPL_mm": [
+      84.7,
+      -17
+    ],
+    "pin1_local_mm": [
+      -8.75,
+      -6
+    ],
+    "pin1_world_PCB_mm": [
+      87.6,
+      8.25
+    ],
+    "pin1_world_CPL_mm": [
+      87.6,
+      -8.25
+    ],
+    "pin1_net": "+3V3",
+    "pin1_relative_full_body_center_PCB_mm": [
+      2.9,
+      -8.75
+    ],
+    "pin1_relative_full_body_center_CPL_mm": [
+      2.9,
+      8.75
+    ],
+    "antenna_global_PCB_bbox_mm": [
+      88.7,
+      8,
+      94.7,
+      26
+    ],
+    "RF_keepout_PCB_bbox_mm": [
+      88.7,
+      3,
+      99.7,
+      31
+    ]
+  },
+  "scope": "Exact primary nominal drawing/native transform screen. Footprint origin lies at pin-row midpoint, not geometric full-module body center. No supplier placement-library zero/centroid, pick datum, actual tape/reel orientation or assembly approval inferred. No source/CPL edit.",
+  "JLC_primary_CPL_contract": {
+    "URL": "https://jlcpcb.com/help/article/pick-place-file-for-pcb-assembly",
+    "updated_date": "2026-09-09",
+    "review_utc_date": "2026-10-04",
+    "Mid_X_Mid_Y": "component centroid in millimetres",
+    "positive_rotation": "counterclockwise",
+    "implication": "Raw native-row equality alone does not establish supplier-centroid/zero/pin1 transform correctness. The geometric full-module centre is(84.7,-17),3.1mm from native origin(81.6,-17)."
+  }
+}

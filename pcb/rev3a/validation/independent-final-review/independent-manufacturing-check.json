@@ -1,0 +1,131 @@
+{
+  "native_BOM_byte_exact_to_distributed": true,
+  "fitted_refs": 97,
+  "BOM_rows": 49,
+  "purchasing_tuples": 42,
+  "CPL_refs_exact": true,
+  "native_to_centroid_CPL_transforms": [
+    {
+      "ref": "J1",
+      "native": [
+        13.97,
+        -12.555
+      ],
+      "CPL": [
+        8.645,
+        -17.0
+      ],
+      "local_body_offset": [
+        4.445,
+        5.325
+      ],
+      "rotation": -90.0,
+      "scope": "Not approved; actual supplier-library zero, pin1, orientation and process still require review."
+    },
+    {
+      "ref": "U2",
+      "native": [
+        81.6,
+        -17.0
+      ],
+      "CPL": [
+        84.7,
+        -17.0
+      ],
+      "local_body_offset": [
+        0,
+        -3.1
+      ],
+      "rotation": -90.0,
+      "scope": "Unapproved actual supplier zero, centroid, pick/reel orientation and process."
+    }
+  ],
+  "CAM_zip_sha256": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e",
+  "CAM_members": [
+    {
+      "member": "GEA-Adapter-Rev3A-B_Cu.gbl",
+      "distributed_sha256": "6c2b589a8be21764c7d0d631da88808f3a29c6f1ddc90b466686fc06cee7c296",
+      "fresh_native_sha256": "f858417a842fc742c195053ced77b47f49162f780e3fbcf0dfa1c37ddc8932ee",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-B_Mask.gbs",
+      "distributed_sha256": "5c92ffa965772dadba805fb7344b5c597e98816699bdf05cda3ec25f16232291",
+      "fresh_native_sha256": "8a42b690cbe8707ee9b1ebca825c11a029cd0b079d9450056838511953d61b6c",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-B_Paste.gbp",
+      "distributed_sha256": "ce961dafebfeeb92e8874d7203153c46b150ea5cbee1ac7e250fabc129b21ffb",
+      "fresh_native_sha256": "e3589337873402065d3ff77a78d1e81a7b7817559b55b88fd5d01139fd9b5bbd",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-B_Silkscreen.gbo",
+      "distributed_sha256": "92d02472305110b2f337a70030b511f09e5b080b0a3309815fa950c5d421c7b3",
+      "fresh_native_sha256": "105a677195c6cf3fd96bba0066ed7c0d13d042b1e3dcf83ab58c6cacceb85b2d",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-Edge_Cuts.gm1",
+      "distributed_sha256": "af0e1d98324b1e95f5688653959659d515054a32b3d28a3169e8b4ed2cd0f42e",
+      "fresh_native_sha256": "b4f0c84f4ec29f6a3c41b2ab518b6e1e54f62a52e1648e4a76a58cdd2f6aad62",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-F_Cu.gtl",
+      "distributed_sha256": "eba99a6ddea1a0630b18d86b645e0a3005b4baa0b5ec8665a44135e301f8cdb1",
+      "fresh_native_sha256": "8a8a74a39e2a114525e12adc4e69712e1121e09215dfeb2531ac6af063115c8d",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-F_Mask.gts",
+      "distributed_sha256": "c84e3c1334d9fee90f0659ec45a1a585d5c4e5ce92cb78da8e2438be73c5721e",
+      "fresh_native_sha256": "4e0e06b8c9645db079dbce1c1b9521f56317bc2c2a6985be74d7ac93b883373a",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-F_Paste.gtp",
+      "distributed_sha256": "e607c83ed901d3c231442708a6ee805c35b43522a82487e90c9ef576022f481e",
+      "fresh_native_sha256": "a57c9f586d0b87ff0679be78b492ff68d679795b348265726559828874416db9",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-F_Silkscreen.gto",
+      "distributed_sha256": "17b181e0e34ade4a358ecdd5223f3be0797a68fe1e2127f0ae81e1fc4f3fcfca",
+      "fresh_native_sha256": "80d3293e84e8992266cc88003ae2cc6ae62f785cadd1022dc0a52e478c5d0d91",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-In1_Cu.g1",
+      "distributed_sha256": "95e580389de3aaaeab9f792fa205b28ec1dd4e28c927a8d64cbc909327a9306d",
+      "fresh_native_sha256": "7677ad4014b169f02ef4946870cd9a8e68a7b23cac63cc40cb83e6bde26b8f8f",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-In2_Cu.g2",
+      "distributed_sha256": "4e527fb7e7a12c3a593a6bf2653db4d712efdd4f6d6cd0a800d4c6d5f51340af",
+      "fresh_native_sha256": "10f4d07936f5df6946cbfc5b63ff6edae060532875a7e382a3af07c1c2b86c84",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-NPTH.drl",
+      "distributed_sha256": "05860020db885bacacfe88d330a382767edd55d7d614b559ca0f595afcc12cbc",
+      "fresh_native_sha256": "a6173118687e5db09b369618923df63640445265550d2b566d972a3619cb84c7",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-PTH.drl",
+      "distributed_sha256": "2d6a37720bf65003ac86f38b82d158d9e36d91e77eff6390be89fc0ec3658173",
+      "fresh_native_sha256": "6a90ceab020536b010a88b90ad85d4b8545c5c5499d241a7388a7c773daa2cd9",
+      "timestamp_normalized_exact": true
+    },
+    {
+      "member": "GEA-Adapter-Rev3A-job.gbrjob",
+      "distributed_sha256": "16623baeb99a21c325eaf2e24c79685e71f2e3d85382faf3aad483e99cca4d3d",
+      "fresh_native_sha256": "81963119aa4d5c9032332dd43d8c72f9442a61c793828080b4adb761f5a49ecc",
+      "timestamp_normalized_exact": true
+    }
+  ],
+  "normalization_scope": "Only known native creation timestamps; every other payload byte compared exactly. Nominal J1 family body and exact U2 full-module body transformations are separate from supplier library/pick/reel/process approval."
+}
