@@ -2,7 +2,7 @@
 
 Rev 3B is a routed design under review with a bounded rated-protection backport. It passes KiCad 9's PCB and schematic checks, and manufacturing files are available for review and quoting. It is not ready to order. The [PCB revision index](../README.md) distinguishes this prototype from the retained historical designs; none is an appliance-qualified fallback.
 
-[Back to the PCB revision index](../README.md) · [Historical ordering guide](../ORDERING.md) · [Firmware examples](../../firmware/README.md)
+[Back to the PCB revision index](../README.md) · [Historical ordering guide](../ORDERING.md)
 
 ## What Rev 3B is
 
@@ -68,7 +68,7 @@ The board also has two mounting points and three status LEDs on GPIO2, GPIO3, an
 | GEA2 | GPIO5 | GPIO10 |
 | GEA3 | GPIO21 | GPIO20 |
 
-See the [firmware guide](../../firmware/README.md) for the matching ESPHome configuration and the `seeed_xiao_esp32c3` board substitution.
+Use the `seeed_xiao_esp32c3` ESPHome board setting and the bus/LED GPIO mapping in this package. The repository’s legacy firmware examples require a revision-matched configuration and do not establish Rev3B runtime qualification. No C6 profile is supported by this soldered-C3 carrier.
 
 ## Case and ordering status
 
