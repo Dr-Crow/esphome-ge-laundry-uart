@@ -1,3 +1,12 @@
+# Current Rev2 source review
+
+The earlier review below is frozen to its original input. Current schematic-only
+normalization resolves all four aliases; fresh native ERC/DRC/unconnected/parity
+are zero. [Source-bound delta and native negative controls](../validation/erc-normalization/DELTA-AND-INTEGRATION.md) prove 186 physical memberships and all PCB/CAM/firmware bytes unchanged.
+Power/module/assembly/physical gates remain open.
+
+## Frozen prior review
+
 # Rev 2.0 bounded native cleanup review
 
 Genuine KiCad **9.0.9** validates the cleaned source with **ERC: 0 errors / 4

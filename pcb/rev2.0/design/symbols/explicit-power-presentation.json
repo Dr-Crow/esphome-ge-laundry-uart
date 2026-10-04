@@ -1,0 +1,7 @@
+{
+  "source_symbol": "74xGxx:74LVC2G07",
+  "project_symbol": "LegacySymbols:74LVC2G07",
+  "source_provenance": "Original source-map list and RESTORED-PROVENANCE remain unchanged historical identity.",
+  "later_presentation": "Pin5 VCC explicit with faithful source-bound lead. Numbers,names,types,physical memberships and board unchanged; pin2GND unchanged.",
+  "evidence": "../../validation/erc-normalization/candidate-verification.json"
+}

@@ -19,8 +19,9 @@ remain. Two U2 silkscreen overhangs are removed and two J1 silk segments are
 clipped at x=131.5 mm. UART text and its historical direction meaning are retained.
 
 The connection grid is 25 mil: every one of the 725 original connection-bearing
-object coordinates lies on that grid. No wires, pins, labels or symbols were
-snapped or moved. All original project rules, severities, exclusions and net
+object coordinates lies on that grid. The original native cleanup changed no such objects. A later schematic-only
+normalization now records specific canonical-label and VCC-presentation edits;
+all physical pin memberships and board geometry remain exact. All original project rules, severities, exclusions and net
 classes are unchanged. Three excluded-from-BOM/board power flags model the
 intended external VDC supply, GND return and passive selected/protected `/p1`
 output feeding U3.IN. They establish ERC intent only, not voltage/current ratings,
@@ -32,3 +33,8 @@ retain the repository license. See [the native review](../native-review/REVIEW.m
 for exact counts, original-versus-current artifact distinctions, supplier placement
 limitations and regeneration effects. A clean native check does not qualify this
 historical board for a new order.
+
+[Exact later annotation delta](../validation/erc-normalization/DELTA-AND-INTEGRATION.md)
+records the visible VCC lead and canonical label presentations. Original recovery
+records remain provenance; the current local symbol includes that explicit
+presentation change.

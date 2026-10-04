@@ -1,8 +1,8 @@
 {
   "files_sha256": {
     "CURRENT-CAM-REVIEW-rev2.0.zip": "1e2985304da496103d60ab1386a475efc4def74f43d9b3423ceae85e1feef774",
-    "CURRENT-NATIVE-SOURCE-rev2.0.zip": "9c8250aa77c08495640b19d430e9187a12d4c528f6c460627a4f97daae95be49",
-    "REVIEW.md": "ff35e35cb35ff22306452ca6c2063a821363701d01ce8dded60a649f06eb1b21",
+    "CURRENT-NATIVE-SOURCE-rev2.0.zip": "cae88466c73918d5b52f7fef90641a7236d621853bb79786726541cc581ec996",
+    "REVIEW.md": "d0dd228d50f903b80c6f48af92486479e998a3edfc57e64981dcdeaeb9f60c30",
     "board-back.pdf": "9fa5749899d91200507b1100a3a083d3536d9dd7601f93d6d52df8db48af3b07",
     "board-back.png": "726649673ada4fb9b042fd6cd123e01308efedb173ce3f4bd37a111ddecb7eb4",
     "board-back.svg": "1e79c532e53b27b815b7a248869d2224ee03fff8bc98b331f6ed7e42a0b961f5",
@@ -46,16 +46,18 @@
     "proof/validate_native.py": "47ab8d7b3139fe98043518cf504293b6f5556797fbbd3d31b8ad2035003bc118",
     "proof/verification-summary.json": "1a9d31cb20cb3b0130d91f0227032cbe18c9338c1f158a330137f394d6dfef86",
     "proof/verify_cleanup.py": "be3c66e05db442c39301964e58999094162388843fda2c2c0c97ce37dad4cfb0",
-    "reports/current-archive-hashes.json": "3d188c391d7c189c8819a251b5fdb7c63428f789d84d36c014a73ddfc9ce2ae7",
+    "reports/current-archive-hashes.json": "e8e10ffc248aaf0629a9579f81c5bd866b410c7a1cb45e69a8a8bfaa94577b52",
     "reports/drc.json": "30880981cac3f7e5529e052a02f5824c42c4a511fb4e7e254f7c6c41583abbad",
     "reports/erc.json": "f6c09e6749ab5e0d0bee884cd64c2d9f887a0d14a38460ec3ca9a69b73964906",
     "reports/input-drc.json": "cc9edc169e15048e960272b5e1017bc0a751674bcdac7a99d4111a2ad778d6e9",
     "reports/input-erc.json": "c475c3fd5cc2bb583c7c6776afc14e5ed6e5ec1c6bfdc22266babbef6c0f6c1a",
     "reports/native-summary.json": "47f99eb7c848f11e292fabe558ba7953907adc1bcca211d5b7ac5dfb8294e845",
-    "reports/source-hashes.json": "1766acea25129350e4b4042c4aa01babaf5612c242b78762a4fe5c1c17e4ace5",
+    "reports/source-hashes.json": "dc343d5cb6c2110d53315b61d3d07dc0400b79855412551a9859ccf1e8ff6a06",
     "reports/warning-classification.json": "0f325a8bef034dbe5c07dd581b66e5545c9cc12c8d94f3f6051b6f55fa58172c",
-    "schematic.pdf": "64096059d2ff5314add6c2baf23d6bb79080d6ed922844026cfae901277fd888"
+    "schematic.pdf": "64096059d2ff5314add6c2baf23d6bb79080d6ed922844026cfae901277fd888",
+    "HISTORICAL-NATIVE-SOURCE-before-erc-normalization-rev2.0.zip": "9c8250aa77c08495640b19d430e9187a12d4c528f6c460627a4f97daae95be49"
   },
   "native_version": "9.0.9",
-  "presentation_qa": "All final schematic, assembly front/back, copper F/B and drill map pages rendered and visually inspected"
+  "presentation_qa": "All final schematic, assembly front/back, copper F/B and drill map pages rendered and visually inspected",
+  "later_annotation_scope": "Original pixels/physical CAM retained; refreshed current schematic/report/source archive hashes are separate from historical snapshots."
 }

@@ -1,0 +1,72 @@
+[
+  {
+    "native_version": "9.0.9",
+    "fixture_kind": "power",
+    "mutation": "Temporary copied design only; original explicit +5V annotations -> +3V3",
+    "input_source_files_modified": false,
+    "native_export_unique_pin_count": 186,
+    "baseline_unique_pin_count": 186,
+    "detected": true,
+    "removed": [
+      [
+        "U4",
+        "5",
+        "+5V",
+        "VCC",
+        "power_in"
+      ]
+    ],
+    "added": [
+      [
+        "U4",
+        "5",
+        "+3V3",
+        "VCC",
+        "power_in"
+      ]
+    ],
+    "pin_names_types_preserved": true
+  },
+  {
+    "native_version": "9.0.9",
+    "fixture_kind": "uart",
+    "mutation": "Temporary copied design only; swap canonical global labels on U2 physical11 and12 processor-side wires",
+    "input_source_files_modified": false,
+    "native_export_unique_pin_count": 186,
+    "baseline_unique_pin_count": 186,
+    "detected": true,
+    "removed": [
+      [
+        "U2",
+        "11",
+        "GEA3_TX",
+        "IO20/RXD",
+        "bidirectional"
+      ],
+      [
+        "U2",
+        "12",
+        "GEA3_RX",
+        "IO21/TXD",
+        "bidirectional"
+      ]
+    ],
+    "added": [
+      [
+        "U2",
+        "11",
+        "GEA3_RX",
+        "IO20/RXD",
+        "bidirectional"
+      ],
+      [
+        "U2",
+        "12",
+        "GEA3_TX",
+        "IO21/TXD",
+        "bidirectional"
+      ]
+    ],
+    "pin_names_types_preserved": true
+  }
+]

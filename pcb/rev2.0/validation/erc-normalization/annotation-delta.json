@@ -1,0 +1,176 @@
+{
+  "label_changes": [
+    {
+      "uuid": "06354342-18ad-47d7-ae37-68b12cad74cc",
+      "old": "TXD",
+      "new": "GEA3_RX",
+      "at": [
+        "207.01",
+        "137.16",
+        "0"
+      ],
+      "disposition": "Remove redundant local alias already wired to original same-net global label; physical wiring unchanged"
+    },
+    {
+      "uuid": "1d1b20c0-3fcc-4e88-ba5c-0baa3c567967",
+      "old": "TXD",
+      "new": "GEA3_RX",
+      "at": [
+        "36.83",
+        "217.17",
+        "0"
+      ],
+      "disposition": "Use original canonical global net name on unchanged connector attachment coordinate, matching original global shape input"
+    },
+    {
+      "uuid": "59bcd463-a266-4e67-a4d6-216956604e74",
+      "old": "TXD",
+      "new": "GEA3_RX",
+      "at": [
+        "36.83",
+        "232.41",
+        "0"
+      ],
+      "disposition": "Use original canonical global net name on unchanged connector attachment coordinate, matching original global shape input"
+    },
+    {
+      "uuid": "9c02243a-f6e5-44da-8366-47f351e95861",
+      "old": "GLITCHES",
+      "new": "DBG_LED",
+      "at": [
+        "133.35",
+        "144.78",
+        "0"
+      ],
+      "disposition": "Rename debug local alias to original canonical DBG_LED; anchor and wiring unchanged"
+    },
+    {
+      "uuid": "c926e658-13ee-41e4-9695-20c71f446ebf",
+      "old": "RXD",
+      "new": "GEA3_TX",
+      "at": [
+        "36.83",
+        "237.49",
+        "0"
+      ],
+      "disposition": "Use original canonical global net name on unchanged connector attachment coordinate, matching original global shape input"
+    },
+    {
+      "uuid": "eac750d3-8f02-4e51-af94-c6d9e3390649",
+      "old": "RXD",
+      "new": "GEA3_TX",
+      "at": [
+        "207.01",
+        "134.62",
+        "0"
+      ],
+      "disposition": "Remove redundant local alias already wired to original same-net global label; physical wiring unchanged"
+    },
+    {
+      "uuid": "f5aeb3e9-2dbb-4e0e-ab40-9da4e6019a7a",
+      "old": "RXD",
+      "new": "GEA3_TX",
+      "at": [
+        "36.83",
+        "214.63",
+        "0"
+      ],
+      "disposition": "Use original canonical global net name on unchanged connector attachment coordinate, matching original global shape input"
+    }
+  ],
+  "power_annotation_moves": [
+    {
+      "reference": "#PWR028",
+      "uuid": "315d947a-502f-4968-9537-95fcb3e57d09",
+      "old_at": [
+        "320.04",
+        "187.96",
+        "180"
+      ],
+      "new_at": [
+        "325.12",
+        "194.31",
+        "180"
+      ],
+      "wire_uuid": "99674ea4-15e1-5322-b733-b5a6320d5285",
+      "pin": "U4.5",
+      "net": "+5V",
+      "explicit_pin_endpoint": [
+        "320.04",
+        "191.135"
+      ],
+      "additional_wire_uuid": "73e73eba-faaf-5423-b04e-c4c239ed424e",
+      "wire_segments": [
+        [
+          [
+            "320.04",
+            "191.135"
+          ],
+          [
+            "320.04",
+            "194.31"
+          ]
+        ],
+        [
+          [
+            "320.04",
+            "194.31"
+          ],
+          [
+            "325.12",
+            "194.31"
+          ]
+        ]
+      ]
+    },
+    {
+      "reference": "#PWR034",
+      "uuid": "6e297d89-0127-45f0-b8df-813fa50afde8",
+      "old_at": [
+        "321.31",
+        "128.905",
+        "180"
+      ],
+      "new_at": [
+        "326.39",
+        "135.255",
+        "180"
+      ],
+      "wire_uuid": "39895348-83d2-52cd-87e1-738f011c547d",
+      "pin": "U4.5",
+      "net": "+5V",
+      "explicit_pin_endpoint": [
+        "321.31",
+        "132.08"
+      ],
+      "additional_wire_uuid": "119d4084-efc3-5036-83ee-cbb3fa5b9e0f",
+      "wire_segments": [
+        [
+          [
+            "321.31",
+            "132.08"
+          ],
+          [
+            "321.31",
+            "135.255"
+          ]
+        ],
+        [
+          [
+            "321.31",
+            "135.255"
+          ],
+          [
+            "326.39",
+            "135.255"
+          ]
+        ]
+      ]
+    }
+  ],
+  "symbol_definition_change": "74LVC2G07 pin 5 VCC/power_in/name/number/angle preserved; visible explicit length 3.175mm lead from original body contact at local (0,2.54) to endpoint (0,5.715), mirrored in embedded and local library definitions; GND pin2 unchanged",
+  "u4_reference_value_text_x_translation_mm": "-3.81",
+  "hardware_pins_changed": 0,
+  "ground_pin_2_hidden_presentation_unchanged": true,
+  "power_flags_changed": 0
+}

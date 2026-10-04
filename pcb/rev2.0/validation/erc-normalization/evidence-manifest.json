@@ -1,0 +1,63 @@
+{
+  "source_commit": "24dd93b0cb633c889765108397380a0e438393fa",
+  "candidate_commit": "ab7e7341d43cdce956606b80f058802d8eda3c6d",
+  "candidate_branch": "fix/rev2-power-net-aliases",
+  "changed_source_sha256": {
+    "pcb/rev2.0/design/OnionStraws.kicad_sch": {
+      "before_sha256": "d064e6ebd6c8464f784c8c7198f8fd006943b4244e9dbec695ba0d925611802f",
+      "candidate_sha256": "e07d25f2fbaa58c997bd973c13ca19893bb1126050f3a1af5f74108f0d7d4b43"
+    },
+    "pcb/rev2.0/design/symbols/LegacySymbols.kicad_sym": {
+      "before_sha256": "5be95c642b5f1c1ea9b547bb2c1bc85c4cfcd8f937beb65f3776a800c4cd488c",
+      "candidate_sha256": "d24de4348847d065aa91dc08d4289c8a5fbd098078c884f0a7e4cfc802798dd3"
+    }
+  },
+  "unchanged_pcb_sha256": "73cf5b1aec5182b9e162540e9a4b7897b89c961b958dfe228d6fe3530fc8826c",
+  "evidence_artifacts_sha256": {
+    "DELTA-AND-INTEGRATION.md": "8e54fd66f15015f319c67acfb4aaacccad70810ca6584b91d9305868c811155b",
+    "after-board-physical.json": "cfff20b0838d772773d3c282cce4f007fe20a77fcfd89e56a3414b648b2216a1",
+    "after-drc.json": "6a6474af99076e03613938fc1287ba860a6b9e1223c97db5a959deec6336dd89",
+    "after-erc.json": "bd2c16a741bea7edc93b006cf195233674d592346c536ae647d86751f5f640ff",
+    "after-pin-memberships.json": "1e047ae018bab04624716a3ba59f3ad0c433a906f3795ab457ddf022a091be44",
+    "after-schematic.pdf": "a26a3d75a18731f45780ce7f9df884d35441d883e6deffbdc2694c1ef681dbb5",
+    "after-schematic.png": "eeefbe153227b63395afa2d2b37dfe27a563117769b1bd00ce93a80d496551c3",
+    "after-tracked-sha256.json": "6bc21ea6144ff7d31a1a9c57169509ff9190ee7bb4def8dd71668bf27dc09403",
+    "after.net.xml": "503d243014ca8a05e87dd5f4e3c9318a2013ab7e741b4f7c21d6d694f16d1ff8",
+    "annotation-delta.json": "cb9a0003c01d9f23e7d121702b7607d677ffd0f80358ee4a799523c7d7c8f8b4",
+    "baseline.py": "61d8484f956542e0e2eef00f944ae9757174b500bb522cf23874947d3be84862",
+    "before-board-physical.json": "cfff20b0838d772773d3c282cce4f007fe20a77fcfd89e56a3414b648b2216a1",
+    "before-drc.json": "1be4a3cf8f011a115c916b0b134c900c4509940bcd902f1ef16a9c8165a17161",
+    "before-erc.json": "8f5ce62fdb2574feb113b187ce2a74a4058ecaa69f724503d040103eaec57b26",
+    "before-pin-memberships.json": "1e047ae018bab04624716a3ba59f3ad0c433a906f3795ab457ddf022a091be44",
+    "before-tracked-sha256.json": "7175b1ccb089b4d038aa778a02495cade55848a7dbd5146ae02f8c6b9ab5096e",
+    "before.net.xml": "83c863192e647ed1c400d9b5e157315c4305ad0f521ad86196c4e2b6b3534dd1",
+    "cam-regeneration-parity.json": "b6f890c2f7b7299875c0ac2f34ce9031371b657da2c107f819e93459d4212caf",
+    "candidate-verification.json": "bc9af95cef5522571b0fb0cd911d4f4216304bce824b48bb97a62d15d3c58643",
+    "final-schematic.png": "eeefbe153227b63395afa2d2b37dfe27a563117769b1bd00ce93a80d496551c3",
+    "inspect_rev2.py": "a49e54f9bb253ffe51bef803573ee60f01c2ecdfc2fe971638df600be232f945",
+    "native-negative-controls.json": "d5945376d65ea49c985711f3148eb2dcbb22c32ce09443878564acf7abb9b53f",
+    "native_negative_controls.py": "94b219fff7b6ea080c15998fc325146ea0150297c76ba11764419d3650755695",
+    "normalize_aliases.py": "e4a20d3e109faf9fc06ca8d064bf5cef7e45c0312ef5384b7a563ba6b5ad605b",
+    "power-negative-native.net.xml": "cee2430524103bd954e7fca9012f354e439f4c7f63e5d752b756847083042b56",
+    "preserved-tracked-sha256.json": "ce992dd8be54ddab77824685035ef812c78061ef651e95ad7244f4ccd4064abb",
+    "processor-uart.png": "be7d2ac2cb5199df7b3f47fe3cb70dffdd1eab664790bb0bc0b00dcf9a9fb7ce",
+    "refine_annotations.py": "ce20e3b4e6c4fb6e8bb20bb24c48d4e1e8be87bf8ec26555fcfcdbe4fc692c59",
+    "schematic_parser.py": "74b5db4bb327160c7e3524bd272ed64f7caed7e86827ebdc9387e4e71add575e",
+    "u4a.png": "80cc510e52be62afb18ac664ab8203eb25b98aa102de6b2e40b2feb617db47e4",
+    "u4b.png": "9c0b7a35445436bacdae798ea9727d95396a2c8081503534e41ef99cb48568db",
+    "uart-connectors.png": "a2efb829c940330bb62d0e5eaeff48590c6f844f458abe8d35d8fd68b114cd87",
+    "uart-negative-native.net.xml": "d98dfbc4aa065a28f61174ff9dc035d591d7ec8d6ab8e719b153a63542f0e60f",
+    "verification.log": "bc9af95cef5522571b0fb0cd911d4f4216304bce824b48bb97a62d15d3c58643",
+    "verify_candidate.py": "eb875cc0c2dc57fc43adb60aec8247f6df6bddcaa4149842ddd86a952f77cd7d",
+    "visual-inspection.json": "3a7a54433db0d33565af0b2a96aea39236db5af234c16df4abce1a3982162d1c"
+  },
+  "native_version": "9.0.9",
+  "integration_publication_performed": false,
+  "candidate_worktree_clean": true,
+  "upstream_checkout_unchanged": true,
+  "owner": "Dr-Crow <9339757+Dr-Crow@users.noreply.github.com>",
+  "author": "Dr-Crow <9339757+Dr-Crow@users.noreply.github.com>",
+  "committer": "Dr-Crow <9339757+Dr-Crow@users.noreply.github.com>",
+  "tree_sha1": "a8f543e2f8bed1f7871eb814e8e62559fddbfeb0",
+  "metadata_only_amendment_preserved_entire_source_tree": true
+}

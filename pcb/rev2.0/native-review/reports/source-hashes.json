@@ -4,10 +4,9 @@
     "KICAD-LIBRARY-LICENSE.md": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
     "OnionStraws-cache.lib": "fad22aac94fecea1b25220b07bf9b1625cec08fd7e24c5dd68bab64986e1fcb1",
     "OnionStraws.kicad_pcb": "73cf5b1aec5182b9e162540e9a4b7897b89c961b958dfe228d6fe3530fc8826c",
-    "OnionStraws.kicad_prl": "0697cfb340f876f0a9ecb68522f580b498343333cd953cc66c418ada327b5889",
     "OnionStraws.kicad_pro": "ac4fe9fe0828fe204c712b3f5753e44520226430c85153bad19ba405ee91f602",
-    "OnionStraws.kicad_sch": "d064e6ebd6c8464f784c8c7198f8fd006943b4244e9dbec695ba0d925611802f",
-    "README.md": "e65b9f93c186bbafa020c1af5c705b5a32fe4f1c15a016d8ee630d1054f90a14",
+    "OnionStraws.kicad_sch": "e07d25f2fbaa58c997bd973c13ca19893bb1126050f3a1af5f74108f0d7d4b43",
+    "README.md": "ab8c4b334e01bed212a7a670c9fee4d52ac9d0d6241945e2583ad5d977c474b1",
     "RESTORED-PROVENANCE.json": "d9a64bb6e40c07db1140e13bb53e97603ac1f4f0a062d73c46a39dad19068599",
     "footprints/LegacyBoard.pretty/C10_C_0805_2012Metric.kicad_mod": "d2e636604e1e8d5710828247f315c122d061ca54dccfc89a1b825bf013060348",
     "footprints/LegacyBoard.pretty/C11_C_0805_2012Metric.kicad_mod": "7499870b4ec9955c3bbb50c0f93fc5fba531483a2f76196d73b07bbfb2e2171d",
@@ -85,9 +84,12 @@
     "footprints/source-map.json": "b995c7149c211930c638ab65cba30b4464a3f1c23ffdce5f9f0321f8390031cf",
     "fp-lib-table": "786fee92a51bc6e97fbc93a7f83ffbb24aad78fbd040e5b915b677b30536a09c",
     "sym-lib-table": "99a14811b3f74c3533a97635986a70c047129d3fd5995be0c380116b470fb4b5",
-    "symbols/LegacySymbols.kicad_sym": "5be95c642b5f1c1ea9b547bb2c1bc85c4cfcd8f937beb65f3776a800c4cd488c",
+    "symbols/LegacySymbols.kicad_sym": "d24de4348847d065aa91dc08d4289c8a5fbd098078c884f0a7e4cfc802798dd3",
+    "symbols/explicit-power-presentation.json": "00f494326e918e59b3d6e353468666b566d60949c3bf43319bec9cc99b4d0b6a",
     "symbols/power-model.json": "6cd69e53a20db54fac7f0115e7f519f881dd62d8d28d43a27f1098c3bef97cb2",
     "symbols/source-map.json": "2a7652e94825d64f6eb652053f2aa21becd559f7951a492487dca575e1032d7c"
   },
-  "reports_generated_from_byte_exact_source_copy": true
+  "reports_generated_from_byte_exact_source_copy": true,
+  "later_annotation_scope": "Current canonical UART/LED and explicit VCC presentation; original recovered blobs and older receipts remain frozen provenance.",
+  "updated_utc": "2026-10-04T06:47:19.153202+00:00"
 }
