@@ -1,0 +1,30 @@
+{
+  "before": {
+    "design/GEA-Adapter-Rev3A.kicad_pcb": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+    "design/GEA-Adapter-Rev3A.kicad_sch": "e09f35454df792d243e65246c3097b91034a31f7655d7f563db7a46ef81963ee",
+    "design/GEA-Adapter-Rev3A.kicad_pro": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
+    "design/GEA-Adapter-Rev3A.kicad_dru": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec",
+    "manufacturing/BOM-GEA-Adapter-Rev3A.csv": "076e69ac94b57e2da1f789cf6c4265e9ed462d6ee65aff4f5b146974e6b54f13",
+    "manufacturing/CPL-GEA-Adapter-Rev3A.csv": "cd026b761d8623fc9cd2cc3225603449431454cc33e4a5576d27f3f01debdf3f",
+    "manufacturing/GERBER-GEA-Adapter-Rev3A.zip": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e"
+  },
+  "copy": {
+    "design/GEA-Adapter-Rev3A.kicad_pcb": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+    "design/GEA-Adapter-Rev3A.kicad_sch": "e09f35454df792d243e65246c3097b91034a31f7655d7f563db7a46ef81963ee",
+    "design/GEA-Adapter-Rev3A.kicad_pro": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
+    "design/GEA-Adapter-Rev3A.kicad_dru": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec",
+    "manufacturing/BOM-GEA-Adapter-Rev3A.csv": "076e69ac94b57e2da1f789cf6c4265e9ed462d6ee65aff4f5b146974e6b54f13",
+    "manufacturing/CPL-GEA-Adapter-Rev3A.csv": "cd026b761d8623fc9cd2cc3225603449431454cc33e4a5576d27f3f01debdf3f",
+    "manufacturing/GERBER-GEA-Adapter-Rev3A.zip": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e"
+  },
+  "after": {
+    "design/GEA-Adapter-Rev3A.kicad_pcb": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+    "design/GEA-Adapter-Rev3A.kicad_sch": "e09f35454df792d243e65246c3097b91034a31f7655d7f563db7a46ef81963ee",
+    "design/GEA-Adapter-Rev3A.kicad_pro": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
+    "design/GEA-Adapter-Rev3A.kicad_dru": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec",
+    "manufacturing/BOM-GEA-Adapter-Rev3A.csv": "076e69ac94b57e2da1f789cf6c4265e9ed462d6ee65aff4f5b146974e6b54f13",
+    "manufacturing/CPL-GEA-Adapter-Rev3A.csv": "cd026b761d8623fc9cd2cc3225603449431454cc33e4a5576d27f3f01debdf3f",
+    "manufacturing/GERBER-GEA-Adapter-Rev3A.zip": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e"
+  },
+  "scope": "Exact final source plus matched distributed BOM/CPL/CAM; source before/copy/after coherent. Owner may still write docs/proof metadata outside source/export hashes."
+}

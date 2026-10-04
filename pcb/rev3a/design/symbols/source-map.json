@@ -1,0 +1,301 @@
+{
+  "source_commit": "d1769b25c206fe86f60e37c415d4a60da7bb8334",
+  "source_schematic_sha256": "ac1d8be0bc01f05528e3fd094671c57b7cbcc6c86284fd01d3e4564f9688ea0d",
+  "metadata_baseline_schematic_sha256": "18e38df65669f2f62fb707ce226722663bfefcd8a9e7da08a1a5211d6db681ee",
+  "mapping": [
+    {
+      "source_symbol": "74xGxx:74LVC2G07",
+      "local_symbol": "LegacySymbols:74LVC2G07",
+      "instance_count": 2,
+      "source_definition_sha256": "7d1ea3c3686e4bc36cbab0c1ed84993dc7004338032a7706ce498d027f293362",
+      "recovered_body_with_source_root_restored_sha256": "7d1ea3c3686e4bc36cbab0c1ed84993dc7004338032a7706ce498d027f293362",
+      "definition_changes": "Namespace-only recovery at source_commit, followed by ERC presentation cleanup: remove only pin 5 VCC hide flag. Name VCC, number 5, power_in type, position (0, 2.54), direction 90, zero length and every other definition property remain unchanged. Both gate instances explicitly connect pin 5 to their existing +5V symbols through new schematic wires."
+    },
+    {
+      "source_symbol": "Connector:8P8C",
+      "local_symbol": "LegacySymbols:8P8C",
+      "instance_count": 1,
+      "source_definition_sha256": "0e383a7919ecace686ce227579beb434532dbe69d0fcdf0d1127d38a14ece6da",
+      "recovered_body_with_source_root_restored_sha256": "0e383a7919ecace686ce227579beb434532dbe69d0fcdf0d1127d38a14ece6da",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Connector:TestPoint",
+      "local_symbol": "LegacySymbols:TestPoint",
+      "instance_count": 14,
+      "source_definition_sha256": "7922aa64935e9ce7d05885645b3019e4ebaf8e9908e2e5153b2a1985e2b5df9e",
+      "recovered_body_with_source_root_restored_sha256": "7922aa64935e9ce7d05885645b3019e4ebaf8e9908e2e5153b2a1985e2b5df9e",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Connector_Generic:Conn_01x06",
+      "local_symbol": "LegacySymbols:Conn_01x06",
+      "instance_count": 2,
+      "source_definition_sha256": "4321e8a068d182e6db3a614bf5512fe33b9b8a15e07dddb33be94cf87b4bb357",
+      "recovered_body_with_source_root_restored_sha256": "4321e8a068d182e6db3a614bf5512fe33b9b8a15e07dddb33be94cf87b4bb357",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Device:C",
+      "local_symbol": "LegacySymbols:C",
+      "instance_count": 22,
+      "source_definition_sha256": "dbd23ceae33e5c24d744dd8bb20dafbe39a0f7b7f652d62908361cb8a41e585f",
+      "recovered_body_with_source_root_restored_sha256": "dbd23ceae33e5c24d744dd8bb20dafbe39a0f7b7f652d62908361cb8a41e585f",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Device:D_TVS",
+      "local_symbol": "LegacySymbols:D_TVS",
+      "instance_count": 0,
+      "source_definition_sha256": "5bb73af31b4ed54901878db7b12bb6dda32232fd69ee63e18106828e7cad3dc2",
+      "recovered_body_with_source_root_restored_sha256": "5bb73af31b4ed54901878db7b12bb6dda32232fd69ee63e18106828e7cad3dc2",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Device:D_Zener",
+      "local_symbol": "LegacySymbols:D_Zener",
+      "instance_count": 3,
+      "source_definition_sha256": "8ced64141d75f4369c0e4fdaeffbbab02aad7b77e2eee72873a567b3c2cc6185",
+      "recovered_body_with_source_root_restored_sha256": "8ced64141d75f4369c0e4fdaeffbbab02aad7b77e2eee72873a567b3c2cc6185",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Device:LED",
+      "local_symbol": "LegacySymbols:LED",
+      "instance_count": 3,
+      "source_definition_sha256": "89862a971fcdf99995390cba6b551bbf31ca55b151a5071875b7356ad02ae9b9",
+      "recovered_body_with_source_root_restored_sha256": "89862a971fcdf99995390cba6b551bbf31ca55b151a5071875b7356ad02ae9b9",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Device:Polyfuse",
+      "local_symbol": "LegacySymbols:Polyfuse",
+      "instance_count": 3,
+      "source_definition_sha256": "b8ff961b2a9ea548339d3b09c3d7e11ce04a5d3d187ad0cf8d929b6cfb164705",
+      "recovered_body_with_source_root_restored_sha256": "b8ff961b2a9ea548339d3b09c3d7e11ce04a5d3d187ad0cf8d929b6cfb164705",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Transistor_FET:Q_PMOS_GSD",
+      "local_symbol": "LegacySymbols:Q_PMOS_GSD",
+      "instance_count": 2,
+      "source_definition_sha256": "057697db1d50ec785fb94b44d9d9eb1913fb38209d94ade2443b0cfb3301dd32",
+      "recovered_body_with_source_root_restored_sha256": "057697db1d50ec785fb94b44d9d9eb1913fb38209d94ade2443b0cfb3301dd32",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Device:R",
+      "local_symbol": "LegacySymbols:R",
+      "instance_count": 35,
+      "source_definition_sha256": "1db2e6027e604ef63e07c3dc245487cd1b9c2bd8376ec6f05285e04bac203c7c",
+      "recovered_body_with_source_root_restored_sha256": "1db2e6027e604ef63e07c3dc245487cd1b9c2bd8376ec6f05285e04bac203c7c",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Diode:BAV99",
+      "local_symbol": "LegacySymbols:BAV99",
+      "instance_count": 4,
+      "source_definition_sha256": "73c2a6571597313677151e6634af478a7a827c42ca6bb789d59881955b093827",
+      "recovered_body_with_source_root_restored_sha256": "73c2a6571597313677151e6634af478a7a827c42ca6bb789d59881955b093827",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Jumper:SolderJumper_3_Bridged12",
+      "local_symbol": "LegacySymbols:SolderJumper_3_Bridged12",
+      "instance_count": 1,
+      "source_definition_sha256": "038b1feeb467766a04a7fe4e4bacd3fcab5b044547077b071eedf12ff25cfefe",
+      "recovered_body_with_source_root_restored_sha256": "038b1feeb467766a04a7fe4e4bacd3fcab5b044547077b071eedf12ff25cfefe",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Mechanical:MountingHole",
+      "local_symbol": "LegacySymbols:MountingHole",
+      "instance_count": 2,
+      "source_definition_sha256": "36f4c1fbebad7eb3a9c9db1e30aa2b337da8bd25831980bf752f8f27c0396f76",
+      "recovered_body_with_source_root_restored_sha256": "36f4c1fbebad7eb3a9c9db1e30aa2b337da8bd25831980bf752f8f27c0396f76",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "RF_Module:ESP32-C3-WROOM-02",
+      "local_symbol": "LegacySymbols:ESP32-C3-WROOM-02",
+      "instance_count": 1,
+      "source_definition_sha256": "862aeae849dec95ffc2ab6ceb2989eaea1dc35df0af04eae99a27d3957576978",
+      "recovered_body_with_source_root_restored_sha256": "862aeae849dec95ffc2ab6ceb2989eaea1dc35df0af04eae99a27d3957576978",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Regulator_Linear:AP2204R-3.3",
+      "local_symbol": "LegacySymbols:AP2204R-3.3",
+      "instance_count": 0,
+      "source_definition_sha256": "6ae706fdec76b151117960b0467a9be76ef3961ea3c04ec98820ffb7ad538b8a",
+      "recovered_body_with_source_root_restored_sha256": "6ae706fdec76b151117960b0467a9be76ef3961ea3c04ec98820ffb7ad538b8a",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Regulator_Linear:L7805",
+      "local_symbol": "LegacySymbols:L7805",
+      "instance_count": 0,
+      "source_definition_sha256": "ea75a921bed0661ce446da20cf0289a96f26a91f09de3a91ba551b0f7000ed8d",
+      "recovered_body_with_source_root_restored_sha256": "ea75a921bed0661ce446da20cf0289a96f26a91f09de3a91ba551b0f7000ed8d",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Switch:SW_Push",
+      "local_symbol": "LegacySymbols:SW_Push",
+      "instance_count": 2,
+      "source_definition_sha256": "216aa8e512dbb17328e5f02cf31f069785690d776940ed42c4231295a314419e",
+      "recovered_body_with_source_root_restored_sha256": "216aa8e512dbb17328e5f02cf31f069785690d776940ed42c4231295a314419e",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "onionStraws:74LVC2G07_3v3",
+      "local_symbol": "LegacySymbols:74LVC2G07_3v3",
+      "instance_count": 2,
+      "source_definition_sha256": "bc2a52ffe6b53959f9d7fb3d646e4f2440186a803ce96b3ff543fe0c55aa432b",
+      "recovered_body_with_source_root_restored_sha256": "bc2a52ffe6b53959f9d7fb3d646e4f2440186a803ce96b3ff543fe0c55aa432b",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "onionStraws:APX803L",
+      "local_symbol": "LegacySymbols:APX803L",
+      "instance_count": 0,
+      "source_definition_sha256": "ac1703990a55badb78966d1b357be38e57effe3b0c7b897385c86ca801f20af5",
+      "recovered_body_with_source_root_restored_sha256": "ac1703990a55badb78966d1b357be38e57effe3b0c7b897385c86ca801f20af5",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "power:+3V3",
+      "local_symbol": "LegacySymbols:+3V3",
+      "instance_count": 9,
+      "source_definition_sha256": "b161a880c5a136e65fce2bddb2a8ba44ec79e6c3c10cf00dfe261f46edd3d782",
+      "recovered_body_with_source_root_restored_sha256": "b161a880c5a136e65fce2bddb2a8ba44ec79e6c3c10cf00dfe261f46edd3d782",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "power:+5V",
+      "local_symbol": "LegacySymbols:+5V",
+      "instance_count": 10,
+      "source_definition_sha256": "8c514bc6c1ab0ab481638c170537d86d5a391c18cc9bcf81d8903d572422b6b0",
+      "recovered_body_with_source_root_restored_sha256": "8c514bc6c1ab0ab481638c170537d86d5a391c18cc9bcf81d8903d572422b6b0",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "power:GND",
+      "local_symbol": "LegacySymbols:GND",
+      "instance_count": 15,
+      "source_definition_sha256": "aa99e53d011395be4336d9eb17451146b9dfe9e9ab0ddca5b18d259c016f603a",
+      "recovered_body_with_source_root_restored_sha256": "aa99e53d011395be4336d9eb17451146b9dfe9e9ab0ddca5b18d259c016f603a",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "power:VDC",
+      "local_symbol": "LegacySymbols:VDC",
+      "instance_count": 2,
+      "source_definition_sha256": "66aefeb116f62ac89b361d4d9ec7cff728976e9af495d7c7d2bea2851b2eec67",
+      "recovered_body_with_source_root_restored_sha256": "66aefeb116f62ac89b361d4d9ec7cff728976e9af495d7c7d2bea2851b2eec67",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Connector:USB_C_Receptacle_USB2.0_16P",
+      "local_symbol": "LegacySymbols:USB_C_Receptacle_USB2.0_16P",
+      "instance_count": 1,
+      "source_definition_sha256": "53480b3c99f33481b5bff73cc309ee222b2b5e6a7b2811d31ffb4cf47c06d055",
+      "recovered_body_with_source_root_restored_sha256": "53480b3c99f33481b5bff73cc309ee222b2b5e6a7b2811d31ffb4cf47c06d055",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Power_Protection:USBLC6-2SC6",
+      "local_symbol": "LegacySymbols:USBLC6-2SC6",
+      "instance_count": 1,
+      "source_definition_sha256": "3b8c6b23380882b511be71d8682c743d7cb3c93bec6d516005f5de657f54e930",
+      "recovered_body_with_source_root_restored_sha256": "3b8c6b23380882b511be71d8682c743d7cb3c93bec6d516005f5de657f54e930",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Device:D_Schottky",
+      "local_symbol": "LegacySymbols:D_Schottky",
+      "instance_count": 2,
+      "source_definition_sha256": "7e01756e0e39ad6b83db663de2c2be537e5b67705d007301aca21f9dca3173aa",
+      "recovered_body_with_source_root_restored_sha256": "7e01756e0e39ad6b83db663de2c2be537e5b67705d007301aca21f9dca3173aa",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Regulator_Switching:AP63205WU",
+      "local_symbol": "LegacySymbols:AP63205WU",
+      "instance_count": 1,
+      "source_definition_sha256": "6147b3db442ce5691541c022fe9118aafa2406cebb06026f4528e4192cee3cbb",
+      "recovered_body_with_source_root_restored_sha256": "6147b3db442ce5691541c022fe9118aafa2406cebb06026f4528e4192cee3cbb",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Device:L",
+      "local_symbol": "LegacySymbols:L",
+      "instance_count": 1,
+      "source_definition_sha256": "6f04cea44f73eaa86870c6accabe558e0dd0fd6cbed7d4453b665c491a31b3ef",
+      "recovered_body_with_source_root_restored_sha256": "6f04cea44f73eaa86870c6accabe558e0dd0fd6cbed7d4453b665c491a31b3ef",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "power:PWR_FLAG",
+      "local_symbol": "LegacySymbols:PWR_FLAG",
+      "instance_count": 6,
+      "source_definition_sha256": "f865dab44225fe06f09da98185f9fa0be6d2e76f64886deda19eac2c8f690cdf",
+      "recovered_body_with_source_root_restored_sha256": "f865dab44225fe06f09da98185f9fa0be6d2e76f64886deda19eac2c8f690cdf",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Regulator_Linear:AP2112K-3.3",
+      "local_symbol": "LegacySymbols:AP2112K-3.3",
+      "instance_count": 1,
+      "source_definition_sha256": "9f0392a62f4ae33ed8089a1d07ce315f764be0faed7121c236eadbc2bf7db5ba",
+      "recovered_body_with_source_root_restored_sha256": "9f0392a62f4ae33ed8089a1d07ce315f764be0faed7121c236eadbc2bf7db5ba",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Diode:BZX84Cxx",
+      "local_symbol": "LegacySymbols:BZX84Cxx",
+      "instance_count": 0,
+      "source_definition_sha256": "43f54e860dc0b606a5ce8415371325715846026366f05df1b5d6b2194ea0a929",
+      "recovered_body_with_source_root_restored_sha256": "43f54e860dc0b606a5ce8415371325715846026366f05df1b5d6b2194ea0a929",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Power_Management:TPS22810DBV",
+      "local_symbol": "LegacySymbols:TPS22810DBV",
+      "instance_count": 0,
+      "source_definition_sha256": "dafe3dba866e13815efb8ea708dd46c8b3fb457fa52f45ca7c1d3180919d173e",
+      "recovered_body_with_source_root_restored_sha256": "dafe3dba866e13815efb8ea708dd46c8b3fb457fa52f45ca7c1d3180919d173e",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Transistor_BJT:MMBT3904",
+      "local_symbol": "LegacySymbols:MMBT3904",
+      "instance_count": 1,
+      "source_definition_sha256": "1a3c038714066a6e50dd4749e7efcd2f5e495d6e7f70f8e45d4513b8dd72dbc0",
+      "recovered_body_with_source_root_restored_sha256": "1a3c038714066a6e50dd4749e7efcd2f5e495d6e7f70f8e45d4513b8dd72dbc0",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    },
+    {
+      "source_symbol": "Diode:MBR0540",
+      "local_symbol": "LegacySymbols:MBR0540",
+      "instance_count": 2,
+      "source_definition_sha256": "aa9348f50d7e4135152c846c6634b35b980610ba178ac094bfd83cf4ae1ebe65",
+      "recovered_body_with_source_root_restored_sha256": "aa9348f50d7e4135152c846c6634b35b980610ba178ac094bfd83cf4ae1ebe65",
+      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+    }
+  ],
+  "retained_rated_definitions": [
+    "onionStraws:Rated_D_Zener",
+    "onionStraws:Rated_Resistor",
+    "onionStraws:TPS1H200A_Q1"
+  ],
+  "changes": "Historical recovery: library namespaces only. Subsequent schematic-only ERC presentation cleanup is recorded under subsequent_presentation_cleanup; it changes no pin names, numbers, electrical types, endpoint geometry or part identities.",
+  "recovery_snapshot_scope": "Original namespace-only recovery from source_commit. Source/recovered-body hashes below are retained historical provenance; subsequent presentation changes are recorded separately.",
+  "subsequent_presentation_cleanup": {
+    "base_commit": "60ccb434ea4bb9c9e0cde7bbac36a15220b23a0e",
+    "proof": "../../validation/erc-normalization/PROOF.json",
+    "changed_local_symbol": "LegacySymbols:74LVC2G07",
+    "current_library_sha256": "167df964f673fc74e979fa40bed640716288e4c425485e37d2dd58b5de3edb81",
+    "preserved": "All other definitions, component identities, pin endpoint positions/directions and current electrical memberships."
+  }
+}

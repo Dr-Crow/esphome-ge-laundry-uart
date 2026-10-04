@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "OnionStraws")(type "KiCad")(uri "${KIPRJMOD}/footprints/OnionStraws.pretty")(options "")(descr "Project-local production footprints"))
+  (lib (name "LegacyBoard")(type "KiCad")(uri "${KIPRJMOD}/footprints/LegacyBoard.pretty")(options "")(descr "Exact embedded frozen Rev3A definitions for five historical library mismatches; no geometry upgrade"))
+)

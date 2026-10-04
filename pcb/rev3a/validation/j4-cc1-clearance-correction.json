@@ -1,0 +1,45 @@
+{
+  "source_script_sha256": "546e5dde7bb3c759a06adbfb2b5be319d7d5cd79cab5f0c23ae8c3807e193095",
+  "changed_original_track_uuids": [
+    "a4524d42-b7d0-4dd2-ae38-40c6ccfeec8a",
+    "e9428697-c8aa-44c1-a182-c8deab6843e8",
+    "d135d825-5f6b-411f-bd72-ab8f785e98b0"
+  ],
+  "net": "/USB_CC1",
+  "layer": "B.Cu",
+  "width_mm": 0.2,
+  "internal_anchor_changes": [
+    {
+      "before": [
+        66.8048,
+        38.5088
+      ],
+      "after": [
+        66.8048,
+        38.75
+      ]
+    },
+    {
+      "before": [
+        68.0051,
+        38.5088
+      ],
+      "after": [
+        68.0051,
+        38.75
+      ]
+    }
+  ],
+  "unchanged_boundary_endpoints": [
+    [
+      65.3266,
+      37.0306
+    ],
+    [
+      70.4175,
+      36.0964
+    ]
+  ],
+  "USB_differential_data": "All original USBData pads/tracks/vias unchanged; no topology/pin-net/functional change.",
+  "native_scratch": "Genuine9.0.9 all-severity/all-track/parity0 errors/warnings/unconnected/parity; live source independently rerun."
+}

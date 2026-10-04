@@ -1,0 +1,50 @@
+{
+  "outcome": "No reviewed margin improvement delta. Retain the margin/process gate.",
+  "production_source_unchanged": true,
+  "existing_tp12_clearance_mm": 0.2502,
+  "requested_tp12_clearance_mm": 0.26,
+  "extra_space_required_um": 9.8,
+  "immediate_neighbor": {
+    "uuid": "bae86480-f042-4ada-8e28-686696a21ed8",
+    "net": "GEA_FullRx",
+    "layer": "F.Cu",
+    "y_mm": 17.2504,
+    "width_mm": 0.2,
+    "horizontal_clearance_to_D5_mm": 0.2002
+  },
+  "failed_shift_12um": {
+    "errors": 3,
+    "actual_clearance_mm": 0.1897,
+    "affected_objects": [
+      "1630514f-217f-4f99-9a71-473cecc54cf3",
+      "49d00dad-695f-40a0-8fa6-c00203a14fdd",
+      "99a35f46-6ceb-406d-b97b-dfd95dbac7ab",
+      "ad100b3f-a189-436e-8b35-3acba6f3a387"
+    ],
+    "report": "corridor-12um-failed-drc.json"
+  },
+  "local_20um_jog_trial": {
+    "errors": 42,
+    "actual_intertrack_clearances_mm": [
+      0.1866,
+      0.1881
+    ],
+    "report": "local-jog-failed-drc.json"
+  },
+  "alternate_layer_obstacles": [
+    "JP1-A diagonal e2a0d2ab-2b44-4acb-88e4-e634d38b2384",
+    "V_INPUT via 1db4c514-9f96-4253-b896-766a3236e348 and B.Cu vertical48957637-c28a-4c09-a3f1-3da21ee430b0",
+    "BOOT B.Cu vertical34a750f9-bfcb-43e3-8343-606b407a861f"
+  ],
+  "reasonable_remaining_alternative": "Carefully staggered multi-track local jogs with more horizontal separation at transitions, or a longer alternate-layer detour with verified via landing sites and F.Cu crossings for the B.Cu barriers. Neither has been proved clean by this bounded probe.",
+  "scope": "No footprint, pad, placement, rule, assignment, width or drill changes. No physical tests.",
+  "production_margin_measurement": {
+    "pcb_sha256": "2f4a2cb171c99e112ccd92e08608380abe10f9f071ba5a99e14f68fa9a8548aa",
+    "actual_mm": 0.2502,
+    "required_mm": 0.25,
+    "margin_um": 0.2,
+    "diagnostic_requirement_mm": 0.26,
+    "production_rules_unchanged": true,
+    "short_diagnostic": "tp12-diagnostic-drc-026.json"
+  }
+}

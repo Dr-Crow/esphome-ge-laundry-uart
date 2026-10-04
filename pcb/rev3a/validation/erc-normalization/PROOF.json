@@ -1,0 +1,323 @@
+{
+  "scope": "Schematic-only cleanup of nine native ERC warnings; no circuit, PCB, manufacturing, firmware or physical qualification change.",
+  "base_commit": "60ccb434ea4bb9c9e0cde7bbac36a15220b23a0e",
+  "input_electrical_freeze": "d2bde08da836b493f76de03d330aa0489e2c3419",
+  "generated_utc": "2026-10-04T06:27:52.292488+00:00",
+  "native_environment": {
+    "activation": "/workspace/shared/ge-oct3-tools/activate.sh",
+    "version": "9.0.9",
+    "symbol_library_commit": "ad36cd14bcd1b1cd0484f629ccdd3481366f74f3",
+    "footprint_library_commit": "2b941bf1d97862be429793b46fd52a5add09a2fc"
+  },
+  "source_closure": {
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_dru": {
+      "before": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec",
+      "after": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec"
+    },
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb": {
+      "before": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+      "after": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a"
+    },
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pro": {
+      "before": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
+      "after": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6"
+    },
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch": {
+      "before": "e09f35454df792d243e65246c3097b91034a31f7655d7f563db7a46ef81963ee",
+      "after": "c64844158d72df072a88e4d64342f31abea2f3cc1f7112e64a6e38ae18de0b53"
+    },
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/C5_C_0805_2012Metric.kicad_mod": {
+      "before": "3f6bd08022c46fe7529fbe2badf34e1a978ca985826ea45304cca1f2ee1c9c88",
+      "after": "3f6bd08022c46fe7529fbe2badf34e1a978ca985826ea45304cca1f2ee1c9c88"
+    },
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/D2_SOT-23.kicad_mod": {
+      "before": "e46553553c7d85df3e96d44e8a02773d3c949522871866cfd6cc3ef68db0ff12",
+      "after": "e46553553c7d85df3e96d44e8a02773d3c949522871866cfd6cc3ef68db0ff12"
+    },
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/SW2_SW_Push_1P1T_XKB_TS-1187A.kicad_mod": {
+      "before": "f9bba750dc3d6ea77b3f17dfb03448bd4fd5a3396c69a2a863f672eb969b6a79",
+      "after": "f9bba750dc3d6ea77b3f17dfb03448bd4fd5a3396c69a2a863f672eb969b6a79"
+    },
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/TP13_TestPoint_Pad_D1.0mm.kicad_mod": {
+      "before": "744e723344b350f5ea1ee1a96de5e820d0f91f3198dd246ced94a4f64ebe28b9",
+      "after": "744e723344b350f5ea1ee1a96de5e820d0f91f3198dd246ced94a4f64ebe28b9"
+    },
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/U2_ESP32-C3-WROOM-02.kicad_mod": {
+      "before": "bae9c15b21292b4b65712a82328cc53d4a19b3f52770234f1f5c16b45556776e",
+      "after": "bae9c15b21292b4b65712a82328cc53d4a19b3f52770234f1f5c16b45556776e"
+    },
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": {
+      "before": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
+      "after": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384"
+    },
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": {
+      "before": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
+      "after": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc"
+    },
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod": {
+      "before": "11b183bc1433ae3c1d37f09a7c29850ff230ae0dcfcf7f7cfe714364fad24114",
+      "after": "11b183bc1433ae3c1d37f09a7c29850ff230ae0dcfcf7f7cfe714364fad24114"
+    },
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": {
+      "before": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
+      "after": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac"
+    },
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed.kicad_mod": {
+      "before": "e2d861e8a00a924d32076717f21f9a696857f1d1802f74427f581312478cdb70",
+      "after": "e2d861e8a00a924d32076717f21f9a696857f1d1802f74427f581312478cdb70"
+    },
+    "pcb/rev3a/design/fp-lib-table": {
+      "before": "ea7ce6c8bc5e2f53a672617675fb8753c08e14721d74f8743ea8c0101f937717",
+      "after": "ea7ce6c8bc5e2f53a672617675fb8753c08e14721d74f8743ea8c0101f937717"
+    },
+    "pcb/rev3a/design/models/1812L075-33DR-max-envelope.step": {
+      "before": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+      "after": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a"
+    },
+    "pcb/rev3a/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step": {
+      "before": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea",
+      "after": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea"
+    },
+    "pcb/rev3a/design/models/J1-EVERCOM-5301-8P8C-envelope.step": {
+      "before": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+      "after": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539"
+    },
+    "pcb/rev3a/design/models/J2-hanxia-HX-PZ-2.54-02-03-S.step": {
+      "before": "3ea4193c78935fb6de70fb37c46ca892b3b275335dfee51ac666b65ac2c3fd0d",
+      "after": "3ea4193c78935fb6de70fb37c46ca892b3b275335dfee51ac666b65ac2c3fd0d"
+    },
+    "pcb/rev3a/design/models/J4-SHOU-HAN-TYPE-C-16PIN-2MD-073.step": {
+      "before": "4c2fffc9e40808e5033388d77f59a14f6c8ff674e8fbe7790579c30cf4077eda",
+      "after": "4c2fffc9e40808e5033388d77f59a14f6c8ff674e8fbe7790579c30cf4077eda"
+    },
+    "pcb/rev3a/design/models/SW1-SW2-XKB-TS-1187A-B-A-B.step": {
+      "before": "6f57eea6a999f1f7e20a0b13d82708e199205cd17c636936e60b9d928778dfd5",
+      "after": "6f57eea6a999f1f7e20a0b13d82708e199205cd17c636936e60b9d928778dfd5"
+    },
+    "pcb/rev3a/design/models/TPS1H200A-DGN0008K-max-envelope.step": {
+      "before": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+      "after": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3"
+    },
+    "pcb/rev3a/design/sym-lib-table": {
+      "before": "517fcd666d3fae8354da04c8c31217b7bfe89481b4ee6bf7fea72a1e01b62a39",
+      "after": "517fcd666d3fae8354da04c8c31217b7bfe89481b4ee6bf7fea72a1e01b62a39"
+    },
+    "pcb/rev3a/design/symbols/LegacySymbols.kicad_sym": {
+      "before": "99f95aaf64808fb498ce9f063559045c25f5a0dcee86532b1d5fb59dfeb4891c",
+      "after": "167df964f673fc74e979fa40bed640716288e4c425485e37d2dd58b5de3edb81"
+    },
+    "pcb/rev3a/design/symbols/onionStraws.kicad_sym": {
+      "before": "bd8e9c0852fada14eadfcc8d7f2c62fca73f53c11f70686a9ff5758ea31738bd",
+      "after": "bd8e9c0852fada14eadfcc8d7f2c62fca73f53c11f70686a9ff5758ea31738bd"
+    }
+  },
+  "reports": {
+    "before_ERC": {
+      "file": "before-erc.json",
+      "native_version": "9.0.9",
+      "date": "2026-10-04T02:13:53-0400",
+      "sha256": "27cc1c07f821969fe26c6f256cc6e98adad5689d1ee02d7e6db98994fb58e2ce",
+      "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+      ],
+      "counts": {
+        "warning": 9
+      },
+      "warning_classes": {
+        "multiple_net_names": 1,
+        "endpoint_off_grid": 8
+      },
+      "unconnected": 0,
+      "schematic_parity": 0
+    },
+    "after_ERC": {
+      "file": "after-erc.json",
+      "native_version": "9.0.9",
+      "date": "2026-10-04T02:21:21-0400",
+      "sha256": "18bb6855ba5ec1c2abc51ffb97fe72c88879b383c88af2a1f9ee39cb180dc0a8",
+      "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+      ],
+      "counts": {},
+      "warning_classes": {},
+      "unconnected": 0,
+      "schematic_parity": 0
+    },
+    "after_DRC_all_track": {
+      "file": "after-drc.json",
+      "native_version": "9.0.9",
+      "date": "2026-10-04T02:21:22-0400",
+      "sha256": "a7dfbeabe63c9e891b7c68eb971828994e8e006425e451e8f3298b00bded4294",
+      "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+      ],
+      "counts": {},
+      "warning_classes": {},
+      "unconnected": 0,
+      "schematic_parity": 0
+    },
+    "after_DRC_standard": {
+      "file": "after-drc-standard.json",
+      "native_version": "9.0.9",
+      "date": "2026-10-04T02:22:56-0400",
+      "sha256": "6191a4fea87e01eeb5d4f7662af108db27cc6fa556bbc36d31ba5eed5ec76248",
+      "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+      ],
+      "counts": {},
+      "warning_classes": {},
+      "unconnected": 0,
+      "schematic_parity": 0
+    }
+  },
+  "native_exit_codes": {
+    "before_ERC_severity_all_exit_code_violations": 5,
+    "after_ERC_severity_all_exit_code_violations": 0,
+    "after_DRC_standard_severity_all_parity_exit_code_violations": 0,
+    "after_DRC_all_track_severity_all_parity_exit_code_violations": 0,
+    "netlist_before_and_after_export": 0,
+    "native_schematic_PDF_export": 0
+  },
+  "electrical_preservation": {
+    "before_pin_count": 301,
+    "after_pin_count": 301,
+    "nets": 72,
+    "removed": [],
+    "added": [],
+    "component_metadata_identical": true,
+    "library_pin_metadata_identical": true,
+    "net_codes_and_names_identical": true,
+    "membership_sha256": "7ce5454dcfb1107bb07946024ec73c08f2e9059ebba97f76b12e85532f939ab6",
+    "negative_test": {
+      "mutation": "Comparison-only fixture changes U4 pin 5 from +5V to +3V3, preserving node count and pinfunction VCC. No source modified.",
+      "removed": [
+        [
+          "U4",
+          "5",
+          "+5V",
+          "VCC",
+          "power_in"
+        ]
+      ],
+      "added": [
+        [
+          "U4",
+          "5",
+          "+3V3",
+          "VCC",
+          "power_in"
+        ]
+      ],
+      "detected": true
+    }
+  },
+  "geometry_preservation": {
+    "eight_USB_symbols_snapped_to_original_25_mil_grid": true,
+    "original_pin_names_numbers_types_lengths_coordinates_directions_preserved_except_symbol_translation": true,
+    "USB_pin_endpoints": 35,
+    "USB_local_labels_translated": 27,
+    "USB_no_connect_markers_translated": 2,
+    "original_wires_and_junctions_identical": true,
+    "U4_common_VCC_hide_flag_removed_only": true,
+    "U4_hidden_GND_definition_unchanged": true,
+    "U4_existing_plus5V_symbols_translated_mm": 3.175,
+    "U4_new_explicit_wires": 2,
+    "U4_reference_and_value_text_shift_x_mm": -3.81,
+    "local_and_cached_symbol_definitions_match": true
+  },
+  "tracked_preservation": {
+    "before_count": 172,
+    "unchanged_count": 167,
+    "changed_existing_paths": [
+      "pcb/rev3a/README.md",
+      "pcb/rev3a/STANDALONE-REVIEW.md",
+      "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch",
+      "pcb/rev3a/design/symbols/LegacySymbols.kicad_sym",
+      "pcb/rev3a/design/symbols/source-map.json"
+    ],
+    "protected_sha256": {
+      "case/README.md": "59023694d2095f98a79b83425f94107e3b1a54396d75502e3154b2784ec143c7",
+      "case/rev2/README.md": "5e6694b73a16206bbb8662e1182b0dda249ab75c818146a1d6ba87f0802f69d2",
+      "case/rev2/exports/v2-case-base.stl": "739c5f7357e1d10d52c355661ea8c1f811e291f216ba126e091cffd9928b71c3",
+      "case/rev2/exports/v2-case-lid.stl": "4500f0ee8a07d7c433e72eb5f8c367609b7006373a47c26fb710467b33f0bc84",
+      "case/rev2/exports/v2-case.step": "243cce43255c380a1f37753ea1207d86cba15170a35942d596d44534094ea14b",
+      "case/rev2/images/case-render.png": "f3ea396dc34747be375797d750fcebcd245988e5b1fc4e24ccb1832856b7e8db",
+      "case/rev2/images/enclosure-render.png": "73f43d41add105ebe2d50c45b2a04c63a8393bd7b4453c95464b6d4f5db7b81e",
+      "case/rev2/images/print-supports.png": "d1152abe1c7cc561aaeb5175f806256e9f87b50913acd0ddd2d0b932a1fbc4cf",
+      "case/rev2/v2-case.f3z": "89aaac626923fe750aebcc5ddf7258b36e25d596ef2ab59b1aca296cd7e85cb2",
+      "firmware/README.md": "8b5dd8e283b955d2becb5b97f2f4458285987a4595f5895b8863df5e788ae916",
+      "firmware/gea2.yaml": "291e96813c9dd4334602120f54c1c1098d12c8640ca13e4a8847a755e651d811",
+      "firmware/gea3.yaml": "a45960f49f296ed2608e82fc6abf6abc736fbe902ef328f52fcb52b5dc49bc3b",
+      "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+      "pcb/rev3a/manufacturing/BOM-GEA-Adapter-Rev3A.csv": "076e69ac94b57e2da1f789cf6c4265e9ed462d6ee65aff4f5b146974e6b54f13",
+      "pcb/rev3a/manufacturing/CPL-GEA-Adapter-Rev3A.csv": "cd026b761d8623fc9cd2cc3225603449431454cc33e4a5576d27f3f01debdf3f",
+      "pcb/rev3a/manufacturing/GERBER-GEA-Adapter-Rev3A.zip": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e",
+      "pcb/rev3a/manufacturing/README.md": "cdfdd447a67808425c173f1fdc6c13cccae984af9af69ab5ca6b1581366dba0b"
+    },
+    "all_before_tracked_hashes": "before-tracked-sha256.json",
+    "PCB_BOM_CPL_CAM_firmware_case_bytes_unchanged": true,
+    "project_custom_rules_severities_exclusions_unchanged": true,
+    "fitted_refs_unchanged": 97,
+    "CAM_member_count": 14,
+    "CAM_members_sha256": {
+      "GEA-Adapter-Rev3A-B_Cu.gbl": "6c2b589a8be21764c7d0d631da88808f3a29c6f1ddc90b466686fc06cee7c296",
+      "GEA-Adapter-Rev3A-B_Mask.gbs": "5c92ffa965772dadba805fb7344b5c597e98816699bdf05cda3ec25f16232291",
+      "GEA-Adapter-Rev3A-B_Paste.gbp": "ce961dafebfeeb92e8874d7203153c46b150ea5cbee1ac7e250fabc129b21ffb",
+      "GEA-Adapter-Rev3A-B_Silkscreen.gbo": "92d02472305110b2f337a70030b511f09e5b080b0a3309815fa950c5d421c7b3",
+      "GEA-Adapter-Rev3A-Edge_Cuts.gm1": "af0e1d98324b1e95f5688653959659d515054a32b3d28a3169e8b4ed2cd0f42e",
+      "GEA-Adapter-Rev3A-F_Cu.gtl": "eba99a6ddea1a0630b18d86b645e0a3005b4baa0b5ec8665a44135e301f8cdb1",
+      "GEA-Adapter-Rev3A-F_Mask.gts": "c84e3c1334d9fee90f0659ec45a1a585d5c4e5ce92cb78da8e2438be73c5721e",
+      "GEA-Adapter-Rev3A-F_Paste.gtp": "e607c83ed901d3c231442708a6ee805c35b43522a82487e90c9ef576022f481e",
+      "GEA-Adapter-Rev3A-F_Silkscreen.gto": "17b181e0e34ade4a358ecdd5223f3be0797a68fe1e2127f0ae81e1fc4f3fcfca",
+      "GEA-Adapter-Rev3A-In1_Cu.g1": "95e580389de3aaaeab9f792fa205b28ec1dd4e28c927a8d64cbc909327a9306d",
+      "GEA-Adapter-Rev3A-In2_Cu.g2": "4e527fb7e7a12c3a593a6bf2653db4d712efdd4f6d6cd0a800d4c6d5f51340af",
+      "GEA-Adapter-Rev3A-NPTH.drl": "05860020db885bacacfe88d330a382767edd55d7d614b559ca0f595afcc12cbc",
+      "GEA-Adapter-Rev3A-PTH.drl": "2d6a37720bf65003ac86f38b82d158d9e36d91e77eff6390be89fc0ec3658173",
+      "GEA-Adapter-Rev3A-job.gbrjob": "16623baeb99a21c325eaf2e24c79685e71f2e3d85382faf3aad483e99cca4d3d"
+    }
+  },
+  "pixel_review": {
+    "native_PDF": "schematic.pdf",
+    "page_count": 1,
+    "full_page_inspected": true,
+    "closeups_inspected": [
+      "u4a.png",
+      "u4b.png",
+      "usb-group.png"
+    ],
+    "finding": "All moved USB endpoint labels/markers remain attached; exposed U4 VCC names, numbers, explicit wires and original +5V symbols are clear without overlap."
+  },
+  "integration_refresh_required": [
+    "Existing rated-protection source/report manifest and native reports still bind pre-cleanup source; refresh on integrated source without changing severity or adding a waiver.",
+    "Replace package schematic PDF from integrated source; this proof contains a current native PDF.",
+    "Refresh source-bound manufacturing-comparison metadata and reproduce the unchanged BOM/CPL and normalized CAM payloads during integration."
+  ],
+  "artifact_sha256": {
+    "README.md": "60303db9d4500a855a4527172815419a050d600bee03787c788b3ba254dfd1db",
+    "after-drc-standard.json": "6191a4fea87e01eeb5d4f7662af108db27cc6fa556bbc36d31ba5eed5ec76248",
+    "after-drc.json": "a7dfbeabe63c9e891b7c68eb971828994e8e006425e451e8f3298b00bded4294",
+    "after-erc.json": "18bb6855ba5ec1c2abc51ffb97fe72c88879b383c88af2a1f9ee39cb180dc0a8",
+    "after-pin-memberships.json": "244fc9a7fc9328c10aee2bde29683cb6124154341cf87f70e13ec89d62bfa21a",
+    "after.net.xml": "bd4a94d53a58c5fa2b37c27533a6e94e247a7cb4ef783e884e9f5f215876f5d2",
+    "before-erc.json": "27cc1c07f821969fe26c6f256cc6e98adad5689d1ee02d7e6db98994fb58e2ce",
+    "before-pin-memberships.json": "244fc9a7fc9328c10aee2bde29683cb6124154341cf87f70e13ec89d62bfa21a",
+    "before-tracked-sha256.json": "f1a505683d1e43fbe3b22d1f5754d3f03fbe134c65087ad2c95003d8f696cc2b",
+    "before.net.xml": "f44a176a0b890c94ca81fc4fdcd61c1c11f540a525da6f1e6a3054ac73fc4ec1",
+    "coordinate-remap.json": "bc761205b4eef64590c98f5c8c5da9d67a0616c2f695ce79a33a7bac12a590fe",
+    "pin-preservation.json": "85479425ce45572c150c69b6c46dba9756a99b6552380bc6bfcab17f81b7db1e",
+    "schematic.pdf": "feaaffba7a90a43c24c61e3fb94c064de447b216df339c4a4294379eed230231",
+    "schematic_parser.py": "fd7b25b61f1a5b061733d95d39e626f205997ffb9a960f6a0bc34f1900921a2b",
+    "u4a.png": "18f74563993253b53728595062ebf10236769c7f24a0a9a3308707cc53138703",
+    "u4b.png": "aa9e5fdc105c1452300dae27db63a216d5ec7f4b3a8577dd4a9b749c227c466f",
+    "usb-group.png": "9d1ca70e7d9c1d2055b43d5ea45f8e3b1ef263ce66fc55545687d7a565ad46a4",
+    "verify.py": "45a06b87e9f939bb7822ec06f4aece2c05951ac25f3ebd943ecbed0571271ed4"
+  }
+}

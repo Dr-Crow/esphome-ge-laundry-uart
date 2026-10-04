@@ -1,0 +1,24 @@
+(version 1)
+
+# The J4 land pattern, verified against the C2765186 drawing, places its contact
+# pads 0.1847 mm from its own locating holes. Keep board-wide clearance unchanged.
+(rule "USB-C locating-hole clearance"
+  (condition "A.memberOfFootprint('OnionStraws:USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed') || B.memberOfFootprint('OnionStraws:USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed')")
+  (constraint hole_clearance (min 0.18mm)))
+
+(rule "USB data pair skew"
+  (condition "A.hasNetclass('USBData')")
+  (constraint skew (max 1mm) (within_diff_pairs)))
+
+(rule "USB data pair via limit"
+  (condition "A.hasNetclass('USBData')")
+  (constraint via_count (max 2)))
+
+# TI TPS1H200A-Q1 Rev E, DGN0008K-C01 p28 intended land: 0.45 mm leads / 0.65 pitch.
+# Applies only to two pads within the same named switch footprint. Routes, vias and other footprints retain netclass/global rules.
+(rule "TI DGN0008K U9 intrinsic pad gaps"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U9') && B.memberOfFootprint('U9')")
+  (constraint clearance (min 0.20mm)))
+(rule "TI DGN0008K U10 intrinsic pad gaps"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U10') && B.memberOfFootprint('U10')")
+  (constraint clearance (min 0.20mm)))

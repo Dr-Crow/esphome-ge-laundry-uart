@@ -1,0 +1,14 @@
+{
+  "updated_utc": "2026-10-04T06:40:42.065116+00:00",
+  "schema_sha256": "c64844158d72df072a88e4d64342f31abea2f3cc1f7112e64a6e38ae18de0b53",
+  "PCB_sha256": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+  "BOM_sha256": "70158d51f3caa9abd827e995d92ee816c3ed2edbd5727d149c0acf95a3a480d5",
+  "CPL_sha256": "cd026b761d8623fc9cd2cc3225603449431454cc33e4a5576d27f3f01debdf3f",
+  "CAM_sha256": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e",
+  "frozen_grouped_comparison": {
+    "path": "validation/rated-protection-manufacturing-comparison.json",
+    "sha256": "efd6e8f3b184149780f4323e1b3bfa1b63b7cb817975bf8e0727ff634d2e09e8",
+    "source": "d2bde08da836b493f76de03d330aa0489e2c3419"
+  },
+  "scope": "Earlier grouped-BOM byte comparison remains frozen. Current supplier BOM has97 one-reference rows with exact tuple proof; schematic-only normalization preserves301 physical tuples. Current native CI manufacturing/CAM/body-datum checks establish current parity."
+}

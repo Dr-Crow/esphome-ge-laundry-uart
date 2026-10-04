@@ -1,0 +1,87 @@
+[
+  {
+    "before": "ALT_PWR",
+    "after": "/ALT_PWR",
+    "netclass": "Power"
+  },
+  {
+    "before": "PIN1_FUSED",
+    "after": "/PIN1_FUSED",
+    "netclass": "Power"
+  },
+  {
+    "before": "PIN1_PROTECTED",
+    "after": "/PIN1_PROTECTED",
+    "netclass": "Power"
+  },
+  {
+    "before": "PIN1_SW_OUT",
+    "after": "/PIN1_SW_OUT",
+    "netclass": "Power"
+  },
+  {
+    "before": "PIN3_FUSED",
+    "after": "/PIN3_FUSED",
+    "netclass": "Power"
+  },
+  {
+    "before": "PIN3_PROTECTED",
+    "after": "/PIN3_PROTECTED",
+    "netclass": "Power"
+  },
+  {
+    "before": "PIN3_SW_OUT",
+    "after": "/PIN3_SW_OUT",
+    "netclass": "Power"
+  },
+  {
+    "before": "V_INPUT",
+    "after": "/V_INPUT",
+    "netclass": "Power"
+  },
+  {
+    "before": "USB_VBUS",
+    "after": "/USB_VBUS",
+    "netclass": "USBPower"
+  },
+  {
+    "before": "USB_VBUS_FUSED",
+    "after": "/USB_VBUS_FUSED",
+    "netclass": "USBPower"
+  },
+  {
+    "before": "USB_CONN_N",
+    "after": "/USB_CONN_N",
+    "netclass": "USBData"
+  },
+  {
+    "before": "USB_CONN_P",
+    "after": "/USB_CONN_P",
+    "netclass": "USBData"
+  },
+  {
+    "before": "USB_MCU_N",
+    "after": "/USB_MCU_N",
+    "netclass": "USBData"
+  },
+  {
+    "before": "USB_MCU_P",
+    "after": "/USB_MCU_P",
+    "netclass": "USBData"
+  },
+  {
+    "before": "USB_PROTECTED_N",
+    "after": "/USB_PROTECTED_N",
+    "netclass": "USBData"
+  },
+  {
+    "before": "USB_PROTECTED_P",
+    "after": "/USB_PROTECTED_P",
+    "netclass": "USBData"
+  },
+  {
+    "before": "BUCK_BST",
+    "after": "/BUCK_BST",
+    "netclass": "Switching"
+  }
+]

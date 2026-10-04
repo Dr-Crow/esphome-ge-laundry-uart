@@ -1,0 +1,115 @@
+{
+  "source_sha256": "0194bda407f1d2323738b68d1455d265475d19e1af1f6bb2bd0fefbf4e93e515",
+  "R42_old_position_mm": [
+    57.0,
+    33.25
+  ],
+  "R42_position_mm": [
+    57.0,
+    33.25
+  ],
+  "R42_rotation_deg": 0.0,
+  "R42_pads": [
+    {
+      "pin": "1",
+      "position_mm": [
+        56.0875,
+        33.25
+      ],
+      "net": "/PIN3_PROTECTED"
+    },
+    {
+      "pin": "2",
+      "position_mm": [
+        57.9125,
+        33.25
+      ],
+      "net": "/PIN3_DELAY"
+    }
+  ],
+  "remove_uuids": [],
+  "preserved_main_via_uuid": "c6237c9b-8c64-4774-88c8-1648e3ee7e9f",
+  "routes": [
+    {
+      "uuid": "33a38b6d-6af6-4de4-94a5-cdf8ba86a1f7",
+      "net": "/PIN3_DELAY",
+      "start": [
+        57.9125,
+        33.25
+      ],
+      "end": [
+        58.75,
+        33.2
+      ],
+      "width": 0.2,
+      "layer": "F.Cu",
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "4d902a9e-6563-40e4-9685-8b7dc44b1d6f",
+      "net": "/PIN3_DELAY",
+      "start": [
+        58.75,
+        33.2
+      ],
+      "end": [
+        58.75,
+        35.55
+      ],
+      "width": 0.2,
+      "layer": "In1.Cu",
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "66399e30-3007-4f53-9bfa-7c383da581dc",
+      "net": "/PIN3_DELAY",
+      "start": [
+        58.75,
+        35.55
+      ],
+      "end": [
+        61.4,
+        35.55
+      ],
+      "width": 0.2,
+      "layer": "In1.Cu",
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "8fd38015-f873-4bdf-82bc-0e1ef50d0f78",
+      "net": "/PIN3_DELAY",
+      "start": [
+        61.4,
+        35.55
+      ],
+      "end": [
+        61.4,
+        28.55
+      ],
+      "width": 0.2,
+      "layer": "In1.Cu",
+      "via": false,
+      "drill": 0
+    },
+    {
+      "uuid": "1779f44d-82bf-479d-82ec-63f0fefbd1b6",
+      "net": "/PIN3_DELAY",
+      "start": [
+        58.75,
+        33.2
+      ],
+      "end": [
+        58.75,
+        33.2
+      ],
+      "width": 0.7,
+      "layer": "F.Cu",
+      "via": true,
+      "drill": 0.3
+    }
+  ],
+  "claim": "Preserves R42 and all existing main/own-VS copper. Only additive DELAY tracks and one0.7/.3 through-via within the existing0.30mm minimum-drill process. Scratch-only native check; no active source/rule/interface/part changes."
+}

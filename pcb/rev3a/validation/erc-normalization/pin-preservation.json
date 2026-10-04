@@ -1,0 +1,33 @@
+{
+  "before_pin_count": 301,
+  "after_pin_count": 301,
+  "nets": 72,
+  "removed": [],
+  "added": [],
+  "component_metadata_identical": true,
+  "library_pin_metadata_identical": true,
+  "net_codes_and_names_identical": true,
+  "membership_sha256": "7ce5454dcfb1107bb07946024ec73c08f2e9059ebba97f76b12e85532f939ab6",
+  "negative_test": {
+    "mutation": "Comparison-only fixture changes U4 pin 5 from +5V to +3V3, preserving node count and pinfunction VCC. No source modified.",
+    "removed": [
+      [
+        "U4",
+        "5",
+        "+5V",
+        "VCC",
+        "power_in"
+      ]
+    ],
+    "added": [
+      [
+        "U4",
+        "5",
+        "+3V3",
+        "VCC",
+        "power_in"
+      ]
+    ],
+    "detected": true
+  }
+}

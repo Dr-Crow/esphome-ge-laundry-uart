@@ -1,0 +1,52 @@
+{
+  "reviewed_utc": "2026-10-03T22:46:08.589342+00:00",
+  "pcb_sha256": "2f4a2cb171c99e112ccd92e08608380abe10f9f071ba5a99e14f68fa9a8548aa",
+  "actual_native_pixels_inspected": [
+    {
+      "path": "pcb/rev3a/images/3d-bottom.png",
+      "sha256": "d8cfbbea3d140e69a401e166d0e294b60080f7214f9b24d7cb0d6a68f8eda5b9"
+    },
+    {
+      "path": "pcb/rev3a/images/3d-isometric.png",
+      "sha256": "cb53d534d513e627d28d49f26b09466d6bfd822f79f2a06d3cbf1d65f8f26ccd"
+    },
+    {
+      "path": "pcb/rev3a/images/3d-side.png",
+      "sha256": "24fa06782471905167c9085e5c8d9233845960ef32b78d9ec4c76671de1ae948"
+    },
+    {
+      "path": "pcb/rev3a/images/3d-top.png",
+      "sha256": "231374d15bd08d582d14ace3203326fde16e3db4f3f037d9c0d03b17a7c3a14d"
+    },
+    {
+      "path": "pcb/rev3a/images/bottom.svg",
+      "sha256": "d1cd16d34999969f3e3e47a07f8eec81ebc3ac8527790115c48d0329da6a3266"
+    },
+    {
+      "path": "pcb/rev3a/images/inner1.svg",
+      "sha256": "d238617122ed59382a7ec48f99678e9494f5f6ba092e79efd03151a631f6c9f9"
+    },
+    {
+      "path": "pcb/rev3a/images/inner2.svg",
+      "sha256": "ff7bd66ef41380930571694445fa4550a642fc572b61b048995d842c3a1e8cf9"
+    },
+    {
+      "path": "pcb/rev3a/images/top.svg",
+      "sha256": "db2675bba084c378c0f89522e307052c0cdcf50327d0292c40f33f9f0042f7de"
+    },
+    {
+      "path": "pcb/rev3a/validation/pth-drill-map.pdf",
+      "sha256": "27d83f93da730c6abc822a6f3570c4a945c65f2d27dc389c0e0bcdeda51f8d10"
+    }
+  ],
+  "observations": [
+    "All four native copper layers rasterized and actual pixels inspected, including the F.Cu power/return corridors and B.Cu PIN3_EN detour. In1.Cu ground-reference geometry remains continuous apart from normal via clearances; In2.Cu D18 trace remains unchanged.",
+    "Native top/bottom/isometric/side images regenerated with all94 model instances resolved, including the official ESP32-C3-WROOM-02 model; original connectors/module/buttons/LEDs and case datums retained.",
+    "Native plated drill-map pixels show183 0.40mm vias,12 0.30mm thermal drills,eight0.90mm holes andfour0.60mm slots. Two new PIN3_EN holes are reflected. NPTH map native pixels are identical to baseline and that PDF is retained."
+  ],
+  "limits": [
+    "TP12 measured0.2502mm clearance gives only0.2um excess over the intended rule; failed broader probes did not enter source.",
+    "Nominal0.14/0.16mm annuli require actual fabricator finished-annulus/process review; CAD minima are not physical tolerance guarantees.",
+    "No electrical input-protection/current/headroom/thermal, physical enclosure/module/connector or RF qualification."
+  ]
+}

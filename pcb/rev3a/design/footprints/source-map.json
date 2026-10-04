@@ -1,0 +1,37 @@
+[
+  {
+    "reference": "C5",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "project_footprint": "LegacyBoard:C5_C_0805_2012Metric",
+    "origin": "Exact embedded frozen d1769b25 board definition, neutralized placement/orientation only",
+    "sha256": "3f6bd08022c46fe7529fbe2badf34e1a978ca985826ea45304cca1f2ee1c9c88"
+  },
+  {
+    "reference": "D2",
+    "source_footprint": "Package_TO_SOT_SMD:SOT-23",
+    "project_footprint": "LegacyBoard:D2_SOT-23",
+    "origin": "Exact embedded frozen d1769b25 board definition, neutralized placement/orientation only",
+    "sha256": "e46553553c7d85df3e96d44e8a02773d3c949522871866cfd6cc3ef68db0ff12"
+  },
+  {
+    "reference": "SW2",
+    "source_footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+    "project_footprint": "LegacyBoard:SW2_SW_Push_1P1T_XKB_TS-1187A",
+    "origin": "Exact embedded frozen d1769b25 board definition, neutralized placement/orientation only",
+    "sha256": "f9bba750dc3d6ea77b3f17dfb03448bd4fd5a3396c69a2a863f672eb969b6a79"
+  },
+  {
+    "reference": "TP13",
+    "source_footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "project_footprint": "LegacyBoard:TP13_TestPoint_Pad_D1.0mm",
+    "origin": "Exact embedded frozen d1769b25 board definition, neutralized placement/orientation only",
+    "sha256": "744e723344b350f5ea1ee1a96de5e820d0f91f3198dd246ced94a4f64ebe28b9"
+  },
+  {
+    "reference": "U2",
+    "source_footprint": "RF_Module:ESP32-C3-WROOM-02",
+    "project_footprint": "LegacyBoard:U2_ESP32-C3-WROOM-02",
+    "origin": "Exact embedded frozen d1769b25 board definition, neutralized placement/orientation only",
+    "sha256": "bae9c15b21292b4b65712a82328cc53d4a19b3f52770234f1f5c16b45556776e"
+  }
+]

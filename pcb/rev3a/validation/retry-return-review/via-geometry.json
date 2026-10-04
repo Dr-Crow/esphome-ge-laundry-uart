@@ -1,0 +1,77 @@
+{
+  "native_proposal_sha256": "dc156e9bd11345c74f29efe3cd526017c18f99f08b7d8ca09956c67e7d629fe3",
+  "via_mm": [
+    58.75,
+    33.2,
+    0.7,
+    0.3
+  ],
+  "annulus_mm": 0.2,
+  "nearest_hole_to_paste": [
+    [
+      0.175,
+      "R42",
+      "2"
+    ],
+    [
+      1.471163,
+      "R34",
+      "1"
+    ],
+    [
+      1.689914,
+      "R40",
+      "1"
+    ],
+    [
+      2.0,
+      "R42",
+      "1"
+    ],
+    [
+      2.620204,
+      "D17",
+      "2"
+    ]
+  ],
+  "near_other_net_copper": [
+    {
+      "uuid": "0f2abdbd-bb40-484f-bf9a-7e4dc6bc4e98",
+      "net": "/V_INPUT",
+      "layer": "F.Cu",
+      "gap_mm": 0.277683,
+      "required_mm": 0.25
+    },
+    {
+      "uuid": "86bd0e1c-9844-418f-822c-fea9746c9848",
+      "net": "/PIN3_GATE",
+      "layer": "In2.Cu",
+      "gap_mm": 0.35,
+      "required_mm": 0.2
+    }
+  ],
+  "nearest_drill_to_drill_mm": [
+    [
+      1.2847780000000002,
+      "c0d1b402-744c-4602-b5ed-4f58d4e4f64c",
+      "/PIN3_GATE"
+    ],
+    [
+      1.95,
+      "1a90caa2-7e53-4110-82e8-eac81bd6b2b5",
+      "/PIN3_CL"
+    ],
+    [
+      3.302739,
+      "c6237c9b-8c64-4774-88c8-1648e3ee7e9f",
+      "/PIN3_PROTECTED"
+    ],
+    [
+      3.9941939999999994,
+      "b7cb9cb2-ffc3-4596-a728-4b4543f95acb",
+      "GEA2_RX"
+    ]
+  ],
+  "scope": "Exact native all-four-copper-layer spacing and nominal drill-to-paste only; finished drill/mask/tenting/placement/reflow/assembled process remains qualification.",
+  "nearest_D6_B_Cu_gap_mm": 0.411864
+}

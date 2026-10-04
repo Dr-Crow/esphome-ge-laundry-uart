@@ -1,0 +1,27 @@
+Rev3A historical symbol metadata recovery
+
+Fresh native KiCad 9.0.9: ERC 0 errors / 13 warnings.
+Baseline rated backport: 0 errors / 57 warnings. Frozen d1769b25 base: 0 errors / 53 warnings.
+
+Removed: lib_symbol_mismatch, 44 warnings.
+Historical cached definitions recovered into LegacySymbols exactly; only root namespaces and instance lib_id namespaces changed.
+All 35 actual written symbol-library bodies match original source after restoring root names. Nested names, pin numbers/names/types, properties and geometry are byte-exact.
+Affected warning references: #PWR01, #PWR010, #PWR011, #PWR012, #PWR015, #PWR016, J1, #PWR911, #PWR014, #PWR013, #PWR06, #PWR08, #PWR07, #PWR99, Q3, #PWR09, D5, Q4, #PWR02, #PWR03, #PWR022, D4, #PWR04, D6, #PWR05, #PWR021, #PWR910, #PWR024, #PWR033, U4, #PWR034, #PWR029, #PWR030, #PWR035, #PWR031, #PWR036, #PWR032, #PWR027, U4, #PWR037, #PWR028, #PWR038, #PWR026, #PWR039
+
+Retained: endpoint_off_grid, 8 warnings.
+References: J4, U7, R26, R27, F3, R28, R29, D10.
+These are existing USB metric-anchor placements mixed with historical imperial grids. Existing 25 mil metadata remains. No snapping; no tiny 0.005 mm common-denominator grid selected to clear warnings.
+
+Retained: multiple_net_names, 1 warning.
+Canonical +5V and original hidden U4 pin 5 VCC remain. Native ERC witness changed from existing #PWR028 to existing #PWR037, without moving either symbol or changing any node membership.
+
+Deferred to parent: footprint_link_issues, 4 warnings.
+References: F1/F2 Fuse_Littelfuse_1812L_Recommended; U9/U10 TPS1H200A_DGN0008K_TI_RevE, all in OnionStraws.
+No instance Footprint field was changed in this recovery. Parent owns installation of those existing selected custom footprints.
+
+Exact native XML proof: 115 component records and all their fields, 27 used library-part records and all pin metadata, 72 named partitions, 299 ref/pin membership records unchanged apart from library namespace.
+Complete schematic is byte-exact after namespace reversal. Every current coordinate, wire, label, property text and footprint field remains. Rated definitions and onionStraws library unchanged. Project .kicad_pro, rules, netclasses, severities, exclusions and 25 mil connection grid byte-exact unchanged.
+
+Read metadata-proof.json, definition-proof.json, grid-review.json, symbols/source-map.json and before/after-source snapshots for hashes and exact native warning objects.
+The native proof describes this metadata-only checkpoint before the parent applies separate footprint installation/cache changes.
+No PCB, footprint table/library, .dru, export or commit was edited by this recovery.

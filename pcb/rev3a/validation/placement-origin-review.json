@@ -1,0 +1,113 @@
+{
+  "source_reference_commit": "d1769b25c206fe86f60e37c415d4a60da7bb8334",
+  "source_sha256": {
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_dru": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec",
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pro": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch": "c64844158d72df072a88e4d64342f31abea2f3cc1f7112e64a6e38ae18de0b53",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/C5_C_0805_2012Metric.kicad_mod": "3f6bd08022c46fe7529fbe2badf34e1a978ca985826ea45304cca1f2ee1c9c88",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/D2_SOT-23.kicad_mod": "e46553553c7d85df3e96d44e8a02773d3c949522871866cfd6cc3ef68db0ff12",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/SW2_SW_Push_1P1T_XKB_TS-1187A.kicad_mod": "f9bba750dc3d6ea77b3f17dfb03448bd4fd5a3396c69a2a863f672eb969b6a79",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/TP13_TestPoint_Pad_D1.0mm.kicad_mod": "744e723344b350f5ea1ee1a96de5e820d0f91f3198dd246ced94a4f64ebe28b9",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/U2_ESP32-C3-WROOM-02.kicad_mod": "bae9c15b21292b4b65712a82328cc53d4a19b3f52770234f1f5c16b45556776e",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod": "11b183bc1433ae3c1d37f09a7c29850ff230ae0dcfcf7f7cfe714364fad24114",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed.kicad_mod": "e2d861e8a00a924d32076717f21f9a696857f1d1802f74427f581312478cdb70",
+    "pcb/rev3a/design/fp-lib-table": "ea7ce6c8bc5e2f53a672617675fb8753c08e14721d74f8743ea8c0101f937717",
+    "pcb/rev3a/design/models/1812L075-33DR-max-envelope.step": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+    "pcb/rev3a/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea",
+    "pcb/rev3a/design/models/J1-EVERCOM-5301-8P8C-envelope.step": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+    "pcb/rev3a/design/models/J2-hanxia-HX-PZ-2.54-02-03-S.step": "3ea4193c78935fb6de70fb37c46ca892b3b275335dfee51ac666b65ac2c3fd0d",
+    "pcb/rev3a/design/models/J4-SHOU-HAN-TYPE-C-16PIN-2MD-073.step": "4c2fffc9e40808e5033388d77f59a14f6c8ff674e8fbe7790579c30cf4077eda",
+    "pcb/rev3a/design/models/SW1-SW2-XKB-TS-1187A-B-A-B.step": "6f57eea6a999f1f7e20a0b13d82708e199205cd17c636936e60b9d928778dfd5",
+    "pcb/rev3a/design/models/TPS1H200A-DGN0008K-max-envelope.step": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+    "pcb/rev3a/design/sym-lib-table": "517fcd666d3fae8354da04c8c31217b7bfe89481b4ee6bf7fea72a1e01b62a39",
+    "pcb/rev3a/design/symbols/LegacySymbols.kicad_sym": "167df964f673fc74e979fa40bed640716288e4c425485e37d2dd58b5de3edb81",
+    "pcb/rev3a/design/symbols/onionStraws.kicad_sym": "bd8e9c0852fada14eadfcc8d7f2c62fca73f53c11f70686a9ff5758ea31738bd"
+  },
+  "references": {
+    "J1": {
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "footprint": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+      "native_anchor_xy_mm": [
+        13.97,
+        -12.555
+      ],
+      "rotation_degrees": -90.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        4.445,
+        5.325
+      ],
+      "body_center_xy_mm": [
+        8.645,
+        -17.0
+      ],
+      "manufacturer_datum": {
+        "manufacturer": "EVERCOM",
+        "mpn": "5301-8P8C",
+        "source_url": "https://chinarj45.com/uploads/20260211/99f6f1d1acfb5da691ec9e117bc8ba1c.pdf",
+        "datum_description": "EVERCOM5301-880XXX RevA2025-09-23 nominal unshielded8P8C family; STEP body bounds x[-3.155,12.045],y[-14.35,3.70]. STEP Y mirrors footprint Y, giving local footprint body centre(4.445,5.325). Full material/plating suffix remains unverified.",
+        "evidence": "pcb/rev3a/validation/placement-datum-sources.json",
+        "sha256": "75b3aecdd461a8ade83eef4c6fde5362f6fde264e30ab9429f8a434b0ab3430b"
+      }
+    },
+    "U2": {
+      "datum_type": "module_pcb_body_bbox_center",
+      "footprint": "LegacyBoard:U2_ESP32-C3-WROOM-02",
+      "native_anchor_xy_mm": [
+        81.6,
+        -17.0
+      ],
+      "rotation_degrees": -90.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        0,
+        -3.1
+      ],
+      "body_center_xy_mm": [
+        84.7,
+        -17.0
+      ],
+      "manufacturer_datum": {
+        "manufacturer": "Espressif Systems",
+        "mpn": "ESP32-C3-WROOM-02-N4",
+        "source_url": "https://documentation.espressif.com/esp32-c3-wroom-02_datasheet_en.pdf",
+        "datum_description": "Espressif WROOM-02 v1.7 Fig10-1 printed p35 and Fig11-1 p38: nominal18x20mm full module PCB body, antenna included. Native local body bounds x[-9,9],y[-13.1,6.9], pin1(-8.75,-6), producing full-module body centre(0,-3.1).",
+        "evidence": "pcb/rev3a/validation/placement-datum-sources.json",
+        "sha256": "75b3aecdd461a8ade83eef4c6fde5362f6fde264e30ab9429f8a434b0ab3430b"
+      }
+    },
+    "J4": {
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "footprint": "OnionStraws:USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed",
+      "native_anchor_xy_mm": [
+        72.0,
+        -36.325
+      ],
+      "rotation_degrees": 0.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        0,
+        0
+      ],
+      "body_center_xy_mm": [
+        72.0,
+        -36.325
+      ],
+      "manufacturer_datum": {
+        "manufacturer": "SHOU HAN",
+        "mpn": "TYPE-C 16PIN 2MD(073)",
+        "source_url": "https://atta.szlcsc.com/upload/public/pdf/source/20250421/4251387FDD0B70FDBB4F5FD36EE975AA.pdf",
+        "datum_description": "SHOU HAN TYPE-C16PIN2MD(073) RevA p1 nominal8.94x7.35mm body; forward shell lug is2.60mm from front body face. Native forward lug local y1.075 yields bodyfront+3.675/rear-3.675, centered(0,0). A1/B12 is the left rear ground pair.",
+        "evidence": "pcb/rev3a/validation/placement-datum-sources.json",
+        "sha256": "75b3aecdd461a8ade83eef4c6fde5362f6fde264e30ab9429f8a434b0ab3430b"
+      }
+    }
+  },
+  "screened_fitted_references": 97,
+  "supplier_qualification": "Blocked: nominal body datums reviewed, actual supplier zero/orientation/process and connector board-thickness/land compatibility remain open.",
+  "source_binding_note": "Current25-dependency closure after schematic-only ERC normalization. All301 physical memberships, PCB geometry, nominal J1/J4/U2 body points and CPL remain unchanged; supplier BOM separately expanded with tuple-equivalence proof."
+}

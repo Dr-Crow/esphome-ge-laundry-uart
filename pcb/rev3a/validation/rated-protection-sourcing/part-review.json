@@ -1,0 +1,865 @@
+{
+  "title": "Rev3A rated-protection backport: selected-part public sourcing review",
+  "generated_at_utc": "2026-10-04T01:54:29.310021+00:00",
+  "observation_window_utc": {
+    "start": "2026-10-04T01:43:15Z",
+    "end": "2026-10-04T01:49:22Z"
+  },
+  "scope": "Eight exact current selections: rated protection replacements/additions, reused TVS/capacitor, and unchanged gate series resistors. No substitutions, quote, cart, order, login, or repository edits were performed.",
+  "source": {
+    "frozen_a_commit": "d1769b25c206fe86f60e37c415d4a60da7bb8334",
+    "baseline_bom_sha256": "054d8d71fa13cb9e095481a436db33ecc1a2e88ce5ad4893b9bcec10863ad598",
+    "draft_schematic_path": "/workspace/shared/ge-oct3-rev3a-rated-protection/pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch",
+    "draft_schematic_sha256": "40a6b0c897244f0cbc4bfd98922fa17b8fd7283ee117fa91584aaeb2f05788ed",
+    "counts": {
+      "frozen_a_fitted": 93,
+      "backport_fitted_unique_references": 97,
+      "backport_purchasing_tuples": 42,
+      "backport_value_footprint_groups": 46
+    },
+    "source_status": "Current draft schematic snapshot; routing/export validation remains the parent task. Existing manufacturing BOM was not used as the current backport export."
+  },
+  "parts": [
+    {
+      "code": "C2653785",
+      "manufacturer": "Texas Instruments",
+      "mpn": "TPS1H200AQDGNRQ1",
+      "catalog_package_and_attributes": "EMSOP-8-EP (TI DGN/HVSSOP-8 with exposed pad)",
+      "footprints_in_current_schematic": [
+        "OnionStraws:TPS1H200A_DGN0008K_TI_RevE"
+      ],
+      "quantities_per_board": {
+        "frozen_a_same_exact_code": 0,
+        "backport_total": 2,
+        "replaced_sites": 2,
+        "added_sites": 0
+      },
+      "references": [
+        "U10",
+        "U9"
+      ],
+      "replaced_site_references": [
+        "U9",
+        "U10"
+      ],
+      "added_site_references": [],
+      "jlcpcb": {
+        "source_url": "https://jlcpcb.com/partdetail/TexasInstruments-TPS1H200AQDGNRQ1/C2653785",
+        "observed_at_utc": "2026-10-04T01:43:15Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "classification": "Extended",
+        "in_stock": 12171,
+        "available_order_quantity": 11985,
+        "minimum": 1,
+        "multiple": null,
+        "full_reel": 2500,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 1,
+            "unit_price": 0.8243
+          },
+          {
+            "minimum_quantity": 10,
+            "unit_price": 0.6698
+          },
+          {
+            "minimum_quantity": 30,
+            "unit_price": 0.5918
+          },
+          {
+            "minimum_quantity": 100,
+            "unit_price": 0.5154
+          },
+          {
+            "minimum_quantity": 500,
+            "unit_price": 0.4699
+          },
+          {
+            "minimum_quantity": 1000,
+            "unit_price": 0.4471
+          }
+        ]
+      },
+      "lcsc": {
+        "source_url": "https://www.lcsc.com/product-detail/C2653785.html",
+        "observed_at_utc": "2026-10-04T01:47:45Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "in_stock": 12171,
+        "minimum": 1,
+        "multiple": 1,
+        "full_reel": 2500,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 1,
+            "unit_price": 0.8335
+          },
+          {
+            "minimum_quantity": 10,
+            "unit_price": 0.6774
+          },
+          {
+            "minimum_quantity": 30,
+            "unit_price": 0.5985
+          },
+          {
+            "minimum_quantity": 100,
+            "unit_price": 0.5212
+          },
+          {
+            "minimum_quantity": 500,
+            "unit_price": 0.4752
+          },
+          {
+            "minimum_quantity": 1000,
+            "unit_price": 0.4521
+          }
+        ]
+      }
+    },
+    {
+      "code": "C151170",
+      "manufacturer": "Littelfuse",
+      "mpn": "1812L075/33DR",
+      "catalog_package_and_attributes": "1812",
+      "footprints_in_current_schematic": [
+        "OnionStraws:Fuse_Littelfuse_1812L_Recommended"
+      ],
+      "quantities_per_board": {
+        "frozen_a_same_exact_code": 0,
+        "backport_total": 2,
+        "replaced_sites": 2,
+        "added_sites": 0
+      },
+      "references": [
+        "F1",
+        "F2"
+      ],
+      "replaced_site_references": [
+        "F1",
+        "F2"
+      ],
+      "added_site_references": [],
+      "jlcpcb": {
+        "source_url": "https://jlcpcb.com/partdetail/Littelfuse-1812L07533DR/C151170",
+        "observed_at_utc": "2026-10-04T01:44:01Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "classification": "Extended",
+        "in_stock": 8862,
+        "available_order_quantity": 8678,
+        "minimum": 1,
+        "multiple": null,
+        "full_reel": 1500,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 1,
+            "unit_price": 0.1873
+          },
+          {
+            "minimum_quantity": 50,
+            "unit_price": 0.1494
+          },
+          {
+            "minimum_quantity": 150,
+            "unit_price": 0.1306
+          },
+          {
+            "minimum_quantity": 1500,
+            "unit_price": 0.1109
+          },
+          {
+            "minimum_quantity": 3000,
+            "unit_price": 0.0995
+          },
+          {
+            "minimum_quantity": 4500,
+            "unit_price": 0.0939
+          }
+        ]
+      },
+      "lcsc": {
+        "source_url": "https://www.lcsc.com/product-detail/C151170.html",
+        "observed_at_utc": "2026-10-04T01:47:59Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "in_stock": 8860,
+        "minimum": 5,
+        "multiple": 5,
+        "full_reel": 1500,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 5,
+            "unit_price": 0.1892
+          },
+          {
+            "minimum_quantity": 50,
+            "unit_price": 0.151
+          },
+          {
+            "minimum_quantity": 150,
+            "unit_price": 0.1319
+          },
+          {
+            "minimum_quantity": 1500,
+            "unit_price": 0.112
+          },
+          {
+            "minimum_quantity": 3000,
+            "unit_price": 0.1005
+          },
+          {
+            "minimum_quantity": 4500,
+            "unit_price": 0.0948
+          }
+        ]
+      }
+    },
+    {
+      "code": "C668891",
+      "manufacturer": "MCC",
+      "mpn": "BZT52C12-TP",
+      "catalog_package_and_attributes": "SOD-123; nominal 12 V zener",
+      "footprints_in_current_schematic": [
+        "Diode_SMD:D_SOD-123"
+      ],
+      "quantities_per_board": {
+        "frozen_a_same_exact_code": 0,
+        "backport_total": 2,
+        "replaced_sites": 2,
+        "added_sites": 0
+      },
+      "references": [
+        "D16",
+        "D17"
+      ],
+      "replaced_site_references": [
+        "D16",
+        "D17"
+      ],
+      "added_site_references": [],
+      "jlcpcb": {
+        "source_url": "https://jlcpcb.com/partdetail/698950-BZT52C12TP/C668891",
+        "observed_at_utc": "2026-10-04T01:44:01Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "classification": "Extended",
+        "in_stock": 48100,
+        "available_order_quantity": 46946,
+        "minimum": 1,
+        "multiple": null,
+        "full_reel": 3000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 1,
+            "unit_price": 0.0277
+          },
+          {
+            "minimum_quantity": 200,
+            "unit_price": 0.0228
+          },
+          {
+            "minimum_quantity": 600,
+            "unit_price": 0.0202
+          },
+          {
+            "minimum_quantity": 3000,
+            "unit_price": 0.017
+          },
+          {
+            "minimum_quantity": 9000,
+            "unit_price": 0.0156
+          },
+          {
+            "minimum_quantity": 21000,
+            "unit_price": 0.0149
+          }
+        ]
+      },
+      "lcsc": {
+        "source_url": "https://www.lcsc.com/product-detail/C668891.html",
+        "observed_at_utc": "2026-10-04T01:47:59Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "in_stock": 45980,
+        "minimum": 20,
+        "multiple": 20,
+        "full_reel": 3000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 20,
+            "unit_price": 0.028
+          },
+          {
+            "minimum_quantity": 200,
+            "unit_price": 0.0235
+          },
+          {
+            "minimum_quantity": 600,
+            "unit_price": 0.0212
+          },
+          {
+            "minimum_quantity": 3000,
+            "unit_price": 0.0201
+          },
+          {
+            "minimum_quantity": 9000,
+            "unit_price": 0.0187
+          }
+        ]
+      }
+    },
+    {
+      "code": "C22978",
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0603WAF3301T5E",
+      "catalog_package_and_attributes": "0603; 3.3 kΩ ±1%, 100 mW, 75 V",
+      "footprints_in_current_schematic": [
+        "Resistor_SMD:R_0603_1608Metric"
+      ],
+      "quantities_per_board": {
+        "frozen_a_same_exact_code": 0,
+        "backport_total": 2,
+        "replaced_sites": 2,
+        "added_sites": 0
+      },
+      "references": [
+        "R39",
+        "R40"
+      ],
+      "replaced_site_references": [
+        "R39",
+        "R40"
+      ],
+      "added_site_references": [],
+      "jlcpcb": {
+        "source_url": "https://jlcpcb.com/partdetail/23705-0603WAF3301T5E/C22978",
+        "observed_at_utc": "2026-10-04T01:44:35Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "classification": "Basic",
+        "in_stock": 5690740,
+        "available_order_quantity": 5225644,
+        "minimum": 1,
+        "multiple": null,
+        "full_reel": 5000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 1,
+            "unit_price": 0.0026
+          },
+          {
+            "minimum_quantity": 1000,
+            "unit_price": 0.002
+          },
+          {
+            "minimum_quantity": 5000,
+            "unit_price": 0.0016
+          },
+          {
+            "minimum_quantity": 10000,
+            "unit_price": 0.0015
+          },
+          {
+            "minimum_quantity": 50000,
+            "unit_price": 0.0013
+          }
+        ]
+      },
+      "lcsc": {
+        "source_url": "https://www.lcsc.com/product-detail/C22978.html",
+        "observed_at_utc": "2026-10-04T01:47:59Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "in_stock": 3942500,
+        "minimum": 100,
+        "multiple": 100,
+        "full_reel": 5000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 100,
+            "unit_price": 0.0026
+          },
+          {
+            "minimum_quantity": 1000,
+            "unit_price": 0.002
+          },
+          {
+            "minimum_quantity": 5000,
+            "unit_price": 0.0017
+          },
+          {
+            "minimum_quantity": 10000,
+            "unit_price": 0.0015
+          },
+          {
+            "minimum_quantity": 50000,
+            "unit_price": 0.0013
+          }
+        ]
+      }
+    },
+    {
+      "code": "C149504",
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0805W8F1003T5E",
+      "catalog_package_and_attributes": "0805; 100 kΩ ±1%, 125 mW, 150 V",
+      "footprints_in_current_schematic": [
+        "Resistor_SMD:R_0805_2012Metric"
+      ],
+      "quantities_per_board": {
+        "frozen_a_same_exact_code": 0,
+        "backport_total": 2,
+        "replaced_sites": 0,
+        "added_sites": 2
+      },
+      "references": [
+        "R41",
+        "R42"
+      ],
+      "replaced_site_references": [],
+      "added_site_references": [
+        "R41",
+        "R42"
+      ],
+      "jlcpcb": {
+        "source_url": "https://jlcpcb.com/partdetail/160838-0805W8F1003T5E/C149504",
+        "observed_at_utc": "2026-10-04T01:45:47Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "classification": "Basic",
+        "in_stock": 4203263,
+        "available_order_quantity": 3812618,
+        "minimum": 1,
+        "multiple": null,
+        "full_reel": 5000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 1,
+            "unit_price": 0.0059
+          },
+          {
+            "minimum_quantity": 1000,
+            "unit_price": 0.0047
+          },
+          {
+            "minimum_quantity": 5000,
+            "unit_price": 0.0041
+          },
+          {
+            "minimum_quantity": 10000,
+            "unit_price": 0.0037
+          },
+          {
+            "minimum_quantity": 50000,
+            "unit_price": 0.0035
+          },
+          {
+            "minimum_quantity": 100000,
+            "unit_price": 0.0034
+          }
+        ]
+      },
+      "lcsc": {
+        "source_url": "https://www.lcsc.com/product-detail/C149504.html",
+        "observed_at_utc": "2026-10-04T01:48:11Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "in_stock": 2762200,
+        "minimum": 100,
+        "multiple": 100,
+        "full_reel": 5000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 100,
+            "unit_price": 0.006
+          },
+          {
+            "minimum_quantity": 1000,
+            "unit_price": 0.0047
+          },
+          {
+            "minimum_quantity": 5000,
+            "unit_price": 0.0041
+          },
+          {
+            "minimum_quantity": 10000,
+            "unit_price": 0.0037
+          },
+          {
+            "minimum_quantity": 50000,
+            "unit_price": 0.0035
+          },
+          {
+            "minimum_quantity": 100000,
+            "unit_price": 0.0034
+          }
+        ]
+      }
+    },
+    {
+      "code": "C399290",
+      "manufacturer": "SUNMATE Elec",
+      "mpn": "SMF16A",
+      "catalog_package_and_attributes": "SOD-123FL; 16 V standoff, 26 V clamp TVS",
+      "footprints_in_current_schematic": [
+        "Diode_SMD:D_SOD-123F"
+      ],
+      "quantities_per_board": {
+        "frozen_a_same_exact_code": 1,
+        "backport_total": 2,
+        "replaced_sites": 0,
+        "added_sites": 1
+      },
+      "references": [
+        "D18",
+        "D19"
+      ],
+      "replaced_site_references": [],
+      "added_site_references": [
+        "D19"
+      ],
+      "jlcpcb": {
+        "source_url": "https://jlcpcb.com/partdetail/SUNMATEElec-SMF16A/C399290",
+        "observed_at_utc": "2026-10-04T01:46:46Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "classification": "Extended",
+        "in_stock": 4831,
+        "available_order_quantity": 4831,
+        "minimum": 1,
+        "multiple": null,
+        "full_reel": 3000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 1,
+            "unit_price": 0.0363
+          },
+          {
+            "minimum_quantity": 200,
+            "unit_price": 0.0301
+          },
+          {
+            "minimum_quantity": 600,
+            "unit_price": 0.0267
+          },
+          {
+            "minimum_quantity": 3000,
+            "unit_price": 0.0246
+          },
+          {
+            "minimum_quantity": 9000,
+            "unit_price": 0.0228
+          },
+          {
+            "minimum_quantity": 21000,
+            "unit_price": 0.0218
+          }
+        ]
+      },
+      "lcsc": {
+        "source_url": "https://www.lcsc.com/product-detail/TVS_SUNMATE-Elec-SMF16A_C399290.html",
+        "observed_at_utc": "2026-10-04T01:48:11Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "in_stock": 4820,
+        "minimum": 20,
+        "multiple": 20,
+        "full_reel": 3000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 20,
+            "unit_price": 0.0345
+          },
+          {
+            "minimum_quantity": 200,
+            "unit_price": 0.0286
+          },
+          {
+            "minimum_quantity": 600,
+            "unit_price": 0.0254
+          },
+          {
+            "minimum_quantity": 3000,
+            "unit_price": 0.0234
+          },
+          {
+            "minimum_quantity": 9000,
+            "unit_price": 0.0217
+          },
+          {
+            "minimum_quantity": 21000,
+            "unit_price": 0.0209
+          }
+        ],
+        "pricing_note": "Visible 5% promotional price transcribed; crossed-out first-tier price is USD 0.0363 and discounted price is USD 0.0345."
+      },
+      "package_note": "Supplier calls the package SOD-123FL; current CAD calls the land Diode_SMD:D_SOD-123F. Nomenclature alone does not prove pad geometry."
+    },
+    {
+      "code": "C91185",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0805KKX7R9BB105",
+      "catalog_package_and_attributes": "0805; 1 µF ±10%, 50 V, X7R",
+      "footprints_in_current_schematic": [
+        "Capacitor_SMD:C_0805_2012Metric"
+      ],
+      "quantities_per_board": {
+        "frozen_a_same_exact_code": 3,
+        "backport_total": 4,
+        "replaced_sites": 0,
+        "added_sites": 1
+      },
+      "references": [
+        "C2",
+        "C20",
+        "C21",
+        "C26"
+      ],
+      "replaced_site_references": [],
+      "added_site_references": [
+        "C26"
+      ],
+      "jlcpcb": {
+        "source_url": "https://jlcpcb.com/partdetail/YAGEO-CC0805KKX7R9BB105/C91185",
+        "observed_at_utc": "2026-10-04T01:47:13Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "classification": "Extended",
+        "in_stock": 839350,
+        "available_order_quantity": 812481,
+        "minimum": 1,
+        "multiple": null,
+        "full_reel": 3000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 1,
+            "unit_price": 0.0327
+          },
+          {
+            "minimum_quantity": 200,
+            "unit_price": 0.0259
+          },
+          {
+            "minimum_quantity": 600,
+            "unit_price": 0.023
+          },
+          {
+            "minimum_quantity": 3000,
+            "unit_price": 0.0207
+          },
+          {
+            "minimum_quantity": 9000,
+            "unit_price": 0.0197
+          },
+          {
+            "minimum_quantity": 21000,
+            "unit_price": 0.0192
+          }
+        ]
+      },
+      "lcsc": {
+        "source_url": "https://www.lcsc.com/product-detail/C91185.html",
+        "observed_at_utc": "2026-10-04T01:48:11Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "in_stock": 789120,
+        "minimum": 20,
+        "multiple": 20,
+        "full_reel": 3000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 20,
+            "unit_price": 0.033
+          },
+          {
+            "minimum_quantity": 200,
+            "unit_price": 0.0262
+          },
+          {
+            "minimum_quantity": 600,
+            "unit_price": 0.0232
+          },
+          {
+            "minimum_quantity": 3000,
+            "unit_price": 0.0209
+          },
+          {
+            "minimum_quantity": 9000,
+            "unit_price": 0.02
+          },
+          {
+            "minimum_quantity": 21000,
+            "unit_price": 0.0194
+          }
+        ]
+      }
+    },
+    {
+      "code": "C17738",
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0805W8F510JT5E",
+      "catalog_package_and_attributes": "0805; 51 Ω ±1%, 125 mW, 150 V",
+      "footprints_in_current_schematic": [
+        "Resistor_SMD:R_0805_2012Metric"
+      ],
+      "quantities_per_board": {
+        "frozen_a_same_exact_code": 2,
+        "backport_total": 2,
+        "replaced_sites": 0,
+        "added_sites": 0
+      },
+      "references": [
+        "R33",
+        "R34"
+      ],
+      "replaced_site_references": [],
+      "added_site_references": [],
+      "jlcpcb": {
+        "source_url": "https://jlcpcb.com/partdetail/18426-0805W8F510JT5E/C17738",
+        "observed_at_utc": "2026-10-04T01:47:45Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "classification": "Basic",
+        "in_stock": 855155,
+        "available_order_quantity": 742352,
+        "minimum": 1,
+        "multiple": null,
+        "full_reel": 5000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 1,
+            "unit_price": 0.003
+          },
+          {
+            "minimum_quantity": 1000,
+            "unit_price": 0.0023
+          },
+          {
+            "minimum_quantity": 5000,
+            "unit_price": 0.0019
+          },
+          {
+            "minimum_quantity": 10000,
+            "unit_price": 0.0017
+          },
+          {
+            "minimum_quantity": 50000,
+            "unit_price": 0.0014
+          }
+        ]
+      },
+      "lcsc": {
+        "source_url": "https://www.lcsc.com/product-detail/C17738.html",
+        "observed_at_utc": "2026-10-04T01:48:11Z",
+        "observation_method": "live rendered cloud-browser public part page",
+        "in_stock": 433000,
+        "minimum": 100,
+        "multiple": 100,
+        "full_reel": 5000,
+        "currency": "USD",
+        "pricing_tiers": [
+          {
+            "minimum_quantity": 100,
+            "unit_price": 0.003
+          },
+          {
+            "minimum_quantity": 1000,
+            "unit_price": 0.0023
+          },
+          {
+            "minimum_quantity": 5000,
+            "unit_price": 0.0019
+          },
+          {
+            "minimum_quantity": 10000,
+            "unit_price": 0.0017
+          },
+          {
+            "minimum_quantity": 50000,
+            "unit_price": 0.0015
+          }
+        ]
+      }
+    }
+  ],
+  "frozen_a_replacements": [
+    {
+      "references": [
+        "U9",
+        "U10"
+      ],
+      "old_code": "C205990",
+      "old_mpn": "TPS22810DBVR",
+      "new_code": "C2653785"
+    },
+    {
+      "references": [
+        "F1",
+        "F2"
+      ],
+      "old_code": "C208467",
+      "old_mpn": "MF-MSMF075/24-2",
+      "new_code": "C151170"
+    },
+    {
+      "references": [
+        "D16",
+        "D17"
+      ],
+      "old_code": "C78744",
+      "old_mpn": "MBR0540-TP",
+      "new_code": "C668891",
+      "note": "D14/D15 retain C78744."
+    },
+    {
+      "old_references": [
+        "C22",
+        "C23"
+      ],
+      "old_code": "C1532",
+      "old_mpn": "0402B223K500NT",
+      "new_references": [
+        "R39",
+        "R40"
+      ],
+      "new_code": "C22978"
+    }
+  ],
+  "net_added_references": [
+    "R41",
+    "R42",
+    "D19",
+    "C26"
+  ],
+  "historical_candidate": {
+    "code": "C550251",
+    "manufacturer": "Nexperia",
+    "mpn": "BZT52-C12X",
+    "package": "SOD-123",
+    "source_url": "https://www.lcsc.com/product-detail/Zener-Diodes_Nexperia-BZT52-C12X_C550251.html",
+    "observed_at_utc": "2026-10-04T01:49:22Z",
+    "stock_status": "Out of Stock",
+    "frozen_a_quantity": 0,
+    "backport_quantity": 0,
+    "note": "Replaced reviewed Rev3C zener candidate, not the frozen-A original and not a gate series resistor. Its stock blocker is addressed by the explicitly reviewed MCC C668891 selection; no substitute was selected by this sourcing review."
+  },
+  "selected_part_arithmetic_only": {
+    "currency": "USD",
+    "jlc_lowest_quantity_tier_new_or_changed_placements": 12,
+    "jlc_lowest_quantity_tier_new_or_changed_placement_cost_per_board": 2.1646,
+    "jlc_lowest_quantity_tier_all_eight_reviewed_codes_placement_count": 18,
+    "jlc_lowest_quantity_tier_all_eight_reviewed_codes_cost_per_board": 2.305,
+    "not_a_quote": true,
+    "excludes": "All other fitted parts, quantity-break aggregation, assembly attrition, minimum rounding, extended-part/assembly/setup fees, PCB, stencil/process, shipping, tax, and availability reservation."
+  },
+  "limitations": [
+    "Stock/prices are dated page observations, fluctuate, and are not reserved; JLC stock and available order quantity differ and must not be conflated.",
+    "JLC minimum 1 is the public assembly-parts page minimum. Purchase multiples were not displayed and remain null. LCSC distributor minimums/multiples are separate.",
+    "JLC and LCSC have separate prices/stock; distributor availability does not prove a JLC assembly allocation.",
+    "Exact MPN/code and package labels were verified. Manufacturer land, polarity, thermal pad, stencil and orientation approval remain CAD/assembly checks.",
+    "The three resistor codes are Basic; the switch, fuse, zener, TVS and capacitor codes are Extended. Complete supplier fees and all 97 fitted parts require a later source-bound quote.",
+    "No complete quote, assembled-board total, stock guarantee, physical test or electrical qualification is claimed."
+  ]
+}

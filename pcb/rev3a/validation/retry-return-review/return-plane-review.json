@@ -1,0 +1,172 @@
+{
+  "source_before_sha256": "0194bda407f1d2323738b68d1455d265475d19e1af1f6bb2bd0fefbf4e93e515",
+  "source_after_sha256": "dc156e9bd11345c74f29efe3cd526017c18f99f08b7d8ca09956c67e7d629fe3",
+  "In1_removed_raw_mm2": 9.959915406129,
+  "In1_meaningful_slot_mm2": 9.9599153757115,
+  "In1_outline_count_before_after": [
+    1,
+    1
+  ],
+  "projection": {
+    "USBData": [],
+    "Switching": [],
+    "other_original_tracks": [
+      {
+        "uuid": "f21ccad4-793b-45e9-a8ae-a20dd870dcfc",
+        "net": "Net-(D6-A)",
+        "layer": "B.Cu",
+        "via": false,
+        "start_mm": [
+          63.6446,
+          32.5178
+        ],
+        "end_mm": [
+          59.2767,
+          32.5178
+        ]
+      },
+      {
+        "uuid": "cf9397fe-33dc-4e4b-9bce-e09eaf94c300",
+        "net": "Net-(R10-Pad2)",
+        "layer": "B.Cu",
+        "via": false,
+        "start_mm": [
+          64.3955,
+          32.8313
+        ],
+        "end_mm": [
+          60.0905,
+          37.1363
+        ]
+      },
+      {
+        "uuid": "0f2abdbd-bb40-484f-bf9a-7e4dc6bc4e98",
+        "net": "/V_INPUT",
+        "layer": "F.Cu",
+        "via": false,
+        "start_mm": [
+          57.6744,
+          35.3047
+        ],
+        "end_mm": [
+          61.0291,
+          31.95
+        ]
+      },
+      {
+        "uuid": "773ebaea-6a57-4bf5-9ddf-90b4b165146c",
+        "net": "/V_INPUT",
+        "layer": "F.Cu",
+        "via": false,
+        "start_mm": [
+          61.0291,
+          30.0026
+        ],
+        "end_mm": [
+          60.6709,
+          29.6444
+        ]
+      },
+      {
+        "uuid": "89ac2dc0-7bfd-4bd3-a9be-b16a9e29f88a",
+        "net": "/V_INPUT",
+        "layer": "F.Cu",
+        "via": false,
+        "start_mm": [
+          61.0291,
+          31.95
+        ],
+        "end_mm": [
+          61.0291,
+          30.0026
+        ]
+      },
+      {
+        "uuid": "c9efb3c3-6058-4f9c-87ea-2ab26631a0bb",
+        "net": "/PIN3_GATE",
+        "layer": "F.Cu",
+        "via": false,
+        "start_mm": [
+          61.3726,
+          29.3539
+        ],
+        "end_mm": [
+          61.9415,
+          29.9228
+        ]
+      },
+      {
+        "uuid": "0587cf74-bbc6-4c63-889e-3ed9a114952d",
+        "net": "/PIN3_GATE",
+        "layer": "F.Cu",
+        "via": true,
+        "start_mm": [
+          61.3726,
+          29.3539
+        ],
+        "end_mm": [
+          61.3726,
+          29.3539
+        ]
+      },
+      {
+        "uuid": "193890ea-b2cd-4154-b3f2-0e7f140e9d14",
+        "net": "/PIN3_GATE",
+        "layer": "B.Cu",
+        "via": false,
+        "start_mm": [
+          58.1128,
+          29.5372
+        ],
+        "end_mm": [
+          61.1893,
+          29.5372
+        ]
+      },
+      {
+        "uuid": "9280237d-1a6c-49d7-9d57-7a2f455d92f0",
+        "net": "/PIN3_GATE",
+        "layer": "B.Cu",
+        "via": false,
+        "start_mm": [
+          61.1893,
+          29.5372
+        ],
+        "end_mm": [
+          61.3726,
+          29.3539
+        ]
+      },
+      {
+        "uuid": "13cc08f7-8d90-48fe-8e92-2eca7135d8e2",
+        "net": "/PIN3_SW_OUT",
+        "layer": "F.Cu",
+        "via": false,
+        "start_mm": [
+          65.0394,
+          30.1258
+        ],
+        "end_mm": [
+          61.0,
+          34.1652
+        ]
+      },
+      {
+        "uuid": "230d2779-f4b7-4d56-954f-912e8d6e3dbe",
+        "net": "/PIN3_SW_OUT",
+        "layer": "F.Cu",
+        "via": false,
+        "start_mm": [
+          61.0,
+          34.1652
+        ],
+        "end_mm": [
+          61.0,
+          37.0
+        ]
+      }
+    ]
+  },
+  "original_RF_rule_area_intersections": [],
+  "scope": "The added In1 copper creates a real GND reference-plane slot. Native original USBData/Switching/RF projection screen only, not RF/USB/return-path or physical qualification."
+}

@@ -1,0 +1,2941 @@
+{
+  "source_sha256": {
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_dru": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec",
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pro": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch": "e09f35454df792d243e65246c3097b91034a31f7655d7f563db7a46ef81963ee",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/C5_C_0805_2012Metric.kicad_mod": "3f6bd08022c46fe7529fbe2badf34e1a978ca985826ea45304cca1f2ee1c9c88",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/D2_SOT-23.kicad_mod": "e46553553c7d85df3e96d44e8a02773d3c949522871866cfd6cc3ef68db0ff12",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/SW2_SW_Push_1P1T_XKB_TS-1187A.kicad_mod": "f9bba750dc3d6ea77b3f17dfb03448bd4fd5a3396c69a2a863f672eb969b6a79",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/TP13_TestPoint_Pad_D1.0mm.kicad_mod": "744e723344b350f5ea1ee1a96de5e820d0f91f3198dd246ced94a4f64ebe28b9",
+    "pcb/rev3a/design/footprints/LegacyBoard.pretty/U2_ESP32-C3-WROOM-02.kicad_mod": "bae9c15b21292b4b65712a82328cc53d4a19b3f52770234f1f5c16b45556776e",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod": "11b183bc1433ae3c1d37f09a7c29850ff230ae0dcfcf7f7cfe714364fad24114",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
+    "pcb/rev3a/design/footprints/OnionStraws.pretty/USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed.kicad_mod": "e2d861e8a00a924d32076717f21f9a696857f1d1802f74427f581312478cdb70",
+    "pcb/rev3a/design/fp-lib-table": "ea7ce6c8bc5e2f53a672617675fb8753c08e14721d74f8743ea8c0101f937717",
+    "pcb/rev3a/design/models/1812L075-33DR-max-envelope.step": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+    "pcb/rev3a/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea",
+    "pcb/rev3a/design/models/J1-EVERCOM-5301-8P8C-envelope.step": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+    "pcb/rev3a/design/models/J2-hanxia-HX-PZ-2.54-02-03-S.step": "3ea4193c78935fb6de70fb37c46ca892b3b275335dfee51ac666b65ac2c3fd0d",
+    "pcb/rev3a/design/models/J4-SHOU-HAN-TYPE-C-16PIN-2MD-073.step": "4c2fffc9e40808e5033388d77f59a14f6c8ff674e8fbe7790579c30cf4077eda",
+    "pcb/rev3a/design/models/SW1-SW2-XKB-TS-1187A-B-A-B.step": "6f57eea6a999f1f7e20a0b13d82708e199205cd17c636936e60b9d928778dfd5",
+    "pcb/rev3a/design/models/TPS1H200A-DGN0008K-max-envelope.step": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+    "pcb/rev3a/design/sym-lib-table": "517fcd666d3fae8354da04c8c31217b7bfe89481b4ee6bf7fea72a1e01b62a39",
+    "pcb/rev3a/design/symbols/LegacySymbols.kicad_sym": "99f95aaf64808fb498ce9f063559045c25f5a0dcee86532b1d5fb59dfeb4891c",
+    "pcb/rev3a/design/symbols/onionStraws.kicad_sym": "bd8e9c0852fada14eadfcc8d7f2c62fca73f53c11f70686a9ff5758ea31738bd"
+  },
+  "fitted_count": 97,
+  "noncentral_candidates": [
+    "J1",
+    "J4",
+    "U2"
+  ],
+  "screen_method": "Native local copper pad bounds and Fab graphics excluding text; body/pin1 interpretation separately reviewed for asymmetric candidates. Bounds alone do not establish vendor body/pick datum.",
+  "references": {
+    "D2": {
+      "footprint": "LegacyBoard:D2_SOT-23",
+      "native_anchor_pcb_mm": [
+        31.0295,
+        19.8191
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.675,
+        -1.25,
+        1.675,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.65,
+        -1.45,
+        0.65,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C13": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        55.1546,
+        2.7662
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C5": {
+      "footprint": "LegacyBoard:C5_C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        18.1447,
+        26.4745
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R35": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        58.25,
+        14.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "SW2": {
+      "footprint": "LegacyBoard:SW2_SW_Push_1P1T_XKB_TS-1187A",
+      "native_anchor_pcb_mm": [
+        13.0,
+        3.4
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -3.5,
+        -2.25,
+        3.5,
+        2.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -3.25,
+        -2.55,
+        3.25,
+        2.55
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R34": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        61.0291,
+        31.2393
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R16": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        49.0,
+        21.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R12": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        15.3834,
+        7.6481
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D14": {
+      "footprint": "Diode_SMD:D_SOD-123",
+      "native_anchor_pcb_mm": [
+        66.0,
+        11.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.1,
+        -0.6,
+        2.1,
+        0.6
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.4,
+        -0.9,
+        1.4,
+        0.9
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D11": {
+      "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+      "native_anchor_pcb_mm": [
+        14.5,
+        38.8
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.0,
+        -0.6,
+        2.0,
+        0.6
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.3,
+        -0.85,
+        1.3,
+        0.85
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "U9": {
+      "footprint": "OnionStraws:TPS1H200A_DGN0008K_TI_RevE",
+      "native_anchor_pcb_mm": [
+        59.8,
+        10.6
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.9,
+        -1.5,
+        2.9,
+        1.5
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.5,
+        -1.5,
+        1.5,
+        1.5
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C21": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        62.0,
+        23.35
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R14": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        65.0,
+        29.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R19": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        43.5,
+        15.25
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D3": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "native_anchor_pcb_mm": [
+        26.5666,
+        23.5771
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.675,
+        -1.25,
+        1.675,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.65,
+        -1.45,
+        0.65,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D5": {
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        82.5,
+        1.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.6,
+        1.0,
+        0.6
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R31": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        53.0,
+        7.8
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "J4": {
+      "footprint": "OnionStraws:USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed",
+      "native_anchor_pcb_mm": [
+        72.0,
+        36.325
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -4.82,
+        -4.395,
+        4.82,
+        1.975
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        -1.2099999999999997
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -4.47,
+        -3.675,
+        4.47,
+        3.675
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Explicit primary body datum reviewed separately"
+    },
+    "R4": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        45.0,
+        23.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R6": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        13.9382,
+        27.1248
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "U8": {
+      "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "native_anchor_pcb_mm": [
+        39.0,
+        36.0
+      ],
+      "rotation_degrees": 180.0,
+      "local_copper_pad_bbox_mm": [
+        -1.8,
+        -1.25,
+        1.8,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -1.45,
+        0.8,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C3": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        21.3993,
+        4.2852
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R1": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        24.5192,
+        6.7861
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C12": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        25.0019,
+        30.9665
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C4": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        21.0122,
+        30.6994
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "Q5": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "native_anchor_pcb_mm": [
+        58.0713,
+        22.4962
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.675,
+        -1.25,
+        1.675,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.65,
+        -1.45,
+        0.65,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R23": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        9.5026,
+        27.2496
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R36": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        62.0,
+        20.75
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R42": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        57.0,
+        33.25
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "U10": {
+      "footprint": "OnionStraws:TPS1H200A_DGN0008K_TI_RevE",
+      "native_anchor_pcb_mm": [
+        57.5,
+        26.8
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.9,
+        -1.5,
+        2.9,
+        1.5
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.5,
+        -1.5,
+        1.5,
+        1.5
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R20": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        41.5,
+        5.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R32": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        50.0,
+        31.0
+      ],
+      "rotation_degrees": 180.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "SW1": {
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "native_anchor_pcb_mm": [
+        5.0,
+        3.4
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -3.5,
+        -2.25,
+        3.5,
+        2.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -3.25,
+        -2.55,
+        3.25,
+        2.55
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C1": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        25.3702,
+        4.0785
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D18": {
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "native_anchor_pcb_mm": [
+        52.0,
+        16.0
+      ],
+      "rotation_degrees": -90.0,
+      "local_copper_pad_bbox_mm": [
+        -1.95,
+        -0.55,
+        1.95,
+        0.55
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.4,
+        -0.9,
+        1.4,
+        0.9
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D10": {
+      "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+      "native_anchor_pcb_mm": [
+        21.6703,
+        23.6533
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.0,
+        -0.6,
+        2.0,
+        0.6
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.3,
+        -0.85,
+        1.3,
+        0.85
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R39": {
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "native_anchor_pcb_mm": [
+        55.5,
+        8.0
+      ],
+      "rotation_degrees": 90.0,
+      "local_copper_pad_bbox_mm": [
+        -1.225,
+        -0.475,
+        1.225,
+        0.475
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -0.4125,
+        0.8,
+        0.4125
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R33": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        61.5,
+        7.8
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C25": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        66.0,
+        23.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R5": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        11.6334,
+        7.5108
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C26": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        72.0,
+        7.9
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "F2": {
+      "footprint": "OnionStraws:Fuse_Littelfuse_1812L_Recommended",
+      "native_anchor_pcb_mm": [
+        44.1,
+        11.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -3.505,
+        -1.575,
+        3.505,
+        1.575
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -2.25,
+        -1.6,
+        2.25,
+        1.6
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "Q3": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "native_anchor_pcb_mm": [
+        52.0,
+        11.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.675,
+        -1.25,
+        1.675,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.65,
+        -1.45,
+        0.65,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "J2": {
+      "footprint": "OnionStraws:Recovery_Header_2x3_P2.54mm_Vertical",
+      "native_anchor_pcb_mm": [
+        11.7,
+        32.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -4.51,
+        -3.175,
+        4.51,
+        3.175
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": null,
+      "local_fab_graphic_bbox_center_mm": null,
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C16": {
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "native_anchor_pcb_mm": [
+        24.5,
+        36.0
+      ],
+      "rotation_degrees": 90.0,
+      "local_copper_pad_bbox_mm": [
+        -2.05,
+        -1.35,
+        2.05,
+        1.35
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.6,
+        -1.25,
+        1.6,
+        1.25
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D6": {
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        80.0,
+        36.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.6,
+        1.0,
+        0.6
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R29": {
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "native_anchor_pcb_mm": [
+        72.5,
+        29.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.225,
+        -0.475,
+        1.225,
+        0.475
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -0.4125,
+        0.8,
+        0.4125
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C18": {
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "native_anchor_pcb_mm": [
+        46.5,
+        7.8
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -0.76,
+        -0.31,
+        0.76,
+        0.31
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.5,
+        -0.25,
+        0.5,
+        0.25
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C15": {
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "native_anchor_pcb_mm": [
+        38.0,
+        39.0
+      ],
+      "rotation_degrees": 180.0,
+      "local_copper_pad_bbox_mm": [
+        -1.225,
+        -0.475,
+        1.225,
+        0.475
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -0.4,
+        0.8,
+        0.4
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "L1": {
+      "footprint": "Inductor_SMD:L_Panasonic_PCC-M0530M",
+      "native_anchor_pcb_mm": [
+        31.0,
+        36.5
+      ],
+      "rotation_degrees": 180.0,
+      "local_copper_pad_bbox_mm": [
+        -3.6,
+        -1.8,
+        3.6,
+        1.8
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -2.75,
+        -2.5,
+        2.75,
+        2.5
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C14": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        64.3911,
+        1.6087
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "F1": {
+      "footprint": "OnionStraws:Fuse_Littelfuse_1812L_Recommended",
+      "native_anchor_pcb_mm": [
+        45.9,
+        27.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -3.505,
+        -1.575,
+        3.505,
+        1.575
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -2.25,
+        -1.6,
+        2.25,
+        1.6
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C9": {
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "native_anchor_pcb_mm": [
+        44.0,
+        35.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.05,
+        -0.9,
+        2.05,
+        0.9
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.6,
+        -0.8,
+        1.6,
+        0.8
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R41": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        67.25,
+        6.5
+      ],
+      "rotation_degrees": -90.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D19": {
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "native_anchor_pcb_mm": [
+        55.2,
+        18.4
+      ],
+      "rotation_degrees": -90.0,
+      "local_copper_pad_bbox_mm": [
+        -1.95,
+        -0.55,
+        1.95,
+        0.55
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.4,
+        -0.9,
+        1.4,
+        0.9
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R7": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        19.0796,
+        1.83
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R18": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        47.25,
+        14.25
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "J1": {
+      "footprint": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+      "native_anchor_pcb_mm": [
+        13.97,
+        12.555
+      ],
+      "rotation_degrees": -90.0,
+      "local_copper_pad_bbox_mm": [
+        -2.87,
+        -3.29,
+        11.76,
+        7.95
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        4.445,
+        2.33
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -3.205,
+        -3.77,
+        12.095,
+        13.97
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        4.445,
+        5.1000000000000005
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Explicit primary body datum reviewed separately"
+    },
+    "R38": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        38.0,
+        27.0
+      ],
+      "rotation_degrees": 180.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R11": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        43.9159,
+        21.2618
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D15": {
+      "footprint": "Diode_SMD:D_SOD-123",
+      "native_anchor_pcb_mm": [
+        64.0,
+        27.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.1,
+        -0.6,
+        2.1,
+        0.6
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.4,
+        -0.9,
+        1.4,
+        0.9
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R2": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        26.4318,
+        8.9541
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R10": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        39.7949,
+        21.2527
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C10": {
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "native_anchor_pcb_mm": [
+        44.0,
+        38.5
+      ],
+      "rotation_degrees": 180.0,
+      "local_copper_pad_bbox_mm": [
+        -1.225,
+        -0.475,
+        1.225,
+        0.475
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -0.4,
+        0.8,
+        0.4
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D17": {
+      "footprint": "Diode_SMD:D_SOD-123",
+      "native_anchor_pcb_mm": [
+        54.5,
+        31.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.1,
+        -0.6,
+        2.1,
+        0.6
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.4,
+        -0.9,
+        1.4,
+        0.9
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R26": {
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "native_anchor_pcb_mm": [
+        64.5,
+        35.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.225,
+        -0.475,
+        1.225,
+        0.475
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -0.4125,
+        0.8,
+        0.4125
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C20": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        62.0,
+        13.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D9": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "native_anchor_pcb_mm": [
+        21.0813,
+        20.0597
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.675,
+        -1.25,
+        1.675,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.65,
+        -1.45,
+        0.65,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "U4": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "native_anchor_pcb_mm": [
+        29.0,
+        16.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.8,
+        -1.25,
+        1.8,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -1.45,
+        0.8,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R22": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        39.75,
+        15.25
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R13": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        41.5,
+        2.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C17": {
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "native_anchor_pcb_mm": [
+        19.5,
+        36.0
+      ],
+      "rotation_degrees": 90.0,
+      "local_copper_pad_bbox_mm": [
+        -2.05,
+        -1.35,
+        2.05,
+        1.35
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.6,
+        -1.25,
+        1.6,
+        1.25
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C7": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        68.6544,
+        1.53
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "U5": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "native_anchor_pcb_mm": [
+        22.2969,
+        12.3807
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.8,
+        -1.25,
+        1.8,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -1.45,
+        0.8,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C6": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        74.7911,
+        1.5051
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R27": {
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "native_anchor_pcb_mm": [
+        64.5,
+        38.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.225,
+        -0.475,
+        1.225,
+        0.475
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -0.4125,
+        0.8,
+        0.4125
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C2": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        64.0,
+        4.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D4": {
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        49.0,
+        24.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.6,
+        1.0,
+        0.6
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "Q4": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "native_anchor_pcb_mm": [
+        52.0,
+        27.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.675,
+        -1.25,
+        1.675,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.65,
+        -1.45,
+        0.65,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R25": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        66.5,
+        20.75
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "U2": {
+      "footprint": "LegacyBoard:U2_ESP32-C3-WROOM-02",
+      "native_anchor_pcb_mm": [
+        81.6,
+        17.0
+      ],
+      "rotation_degrees": -90.0,
+      "local_copper_pad_bbox_mm": [
+        -9.5,
+        -6.45,
+        9.5,
+        6.45
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -9.6,
+        -13.21,
+        9.11,
+        6.9
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        -0.2450000000000001,
+        -3.1550000000000002
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Explicit primary body datum reviewed separately"
+    },
+    "F3": {
+      "footprint": "Fuse:Fuse_1206_3216Metric",
+      "native_anchor_pcb_mm": [
+        40.6464,
+        23.6464
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.025,
+        -0.875,
+        2.025,
+        0.875
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.6,
+        -0.8,
+        1.6,
+        0.8
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R3": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        78.5,
+        1.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R21": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        79.0,
+        32.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C24": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        65.8855,
+        13.5353
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D16": {
+      "footprint": "Diode_SMD:D_SOD-123",
+      "native_anchor_pcb_mm": [
+        53.8734,
+        5.3032
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -2.1,
+        -0.6,
+        2.1,
+        0.6
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.4,
+        -0.9,
+        1.4,
+        0.9
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C11": {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        36.3666,
+        24.4892
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.45,
+        -0.725,
+        1.45,
+        0.725
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "U7": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "native_anchor_pcb_mm": [
+        68.9,
+        29.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.8,
+        -1.25,
+        1.8,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -1.45,
+        0.8,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R37": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        54.1272,
+        23.5777
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "D1": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "native_anchor_pcb_mm": [
+        26.7127,
+        11.7999
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.675,
+        -1.25,
+        1.675,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.65,
+        -1.45,
+        0.65,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "U6": {
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "native_anchor_pcb_mm": [
+        60.0,
+        4.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.8,
+        -1.25,
+        1.8,
+        1.25
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -1.45,
+        0.8,
+        1.45
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R15": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        41.5,
+        7.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R17": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        83.0,
+        32.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "C19": {
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "native_anchor_pcb_mm": [
+        46.5,
+        31.0
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -0.76,
+        -0.31,
+        0.76,
+        0.31
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.5,
+        -0.25,
+        0.5,
+        0.25
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R28": {
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "native_anchor_pcb_mm": [
+        72.5,
+        27.8
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.225,
+        -0.475,
+        1.225,
+        0.475
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -0.4125,
+        0.8,
+        0.4125
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R40": {
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "native_anchor_pcb_mm": [
+        57.8,
+        30.25
+      ],
+      "rotation_degrees": 90.0,
+      "local_copper_pad_bbox_mm": [
+        -1.225,
+        -0.475,
+        1.225,
+        0.475
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -0.8,
+        -0.4125,
+        0.8,
+        0.4125
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    },
+    "R24": {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_anchor_pcb_mm": [
+        86.5,
+        1.5
+      ],
+      "rotation_degrees": 0.0,
+      "local_copper_pad_bbox_mm": [
+        -1.425,
+        -0.7,
+        1.425,
+        0.7
+      ],
+      "local_copper_pad_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "local_fab_graphic_bbox_mm": [
+        -1.0,
+        -0.625,
+        1.0,
+        0.625
+      ],
+      "local_fab_graphic_bbox_center_mm": [
+        0.0,
+        0.0
+      ],
+      "scope": "Fab graphic bounds screen, not automatically manufacturer body bounds; text omitted; 90-degree placements only use pad bounding-box transform.",
+      "classification": "Native anchor retained; copper-pad and Fab graphic bounds centered within0.02mm in screening; supplier zero/orientation/process remain unverified."
+    }
+  },
+  "supplier_qualification": "All supplier zero/orientation/process checks remain open."
+}

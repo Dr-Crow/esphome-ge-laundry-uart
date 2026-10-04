@@ -1,0 +1,829 @@
+{
+  "schema": 1,
+  "review_date_utc": "2026-10-03T22:46:08.589342+00:00",
+  "revision": "rev3a",
+  "upstream_ref": "origin/design/rev3a-pr",
+  "upstream_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+  "source_binding": "Current native source and distributed assets bound by SHA256; no current commit self-reference; frozen baseline and historical reports retained",
+  "native_tool": {
+    "kicad": "9.0.9",
+    "symbols_commit": "ad36cd14bcd1b1cd0484f629ccdd3481366f74f3",
+    "footprints_commit": "2b941bf1d97862be429793b46fd52a5add09a2fc",
+    "stock_models_commit": "a0244fe3442823dbb052ebc4820b4c2951e1742c"
+  },
+  "results": {
+    "configured_baseline": {
+      "erc": {
+        "errors": 0,
+        "warnings": 53,
+        "exclusions": 0
+      },
+      "drc_all_track_errors": {
+        "errors": 0,
+        "warnings": 7,
+        "exclusions": 0,
+        "unconnected": 0,
+        "parity": 0
+      },
+      "drc_standard_aggregation": {
+        "errors": 0,
+        "warnings": 7,
+        "exclusions": 0,
+        "unconnected": 0,
+        "parity": 0
+      }
+    },
+    "intended_patterns_original_silk": {
+      "erc": {
+        "errors": 0,
+        "warnings": 53,
+        "exclusions": 0
+      },
+      "drc_all_track_errors": {
+        "errors": 62,
+        "warnings": 7,
+        "exclusions": 0,
+        "unconnected": 0,
+        "parity": 0
+      },
+      "drc_standard_aggregation": {
+        "errors": 57,
+        "warnings": 7,
+        "exclusions": 0,
+        "unconnected": 0,
+        "parity": 0
+      }
+    },
+    "current": {
+      "erc": {
+        "errors": 0,
+        "warnings": 53,
+        "exclusions": 0
+      },
+      "drc_all_track_errors": {
+        "errors": 0,
+        "warnings": 5,
+        "exclusions": 0,
+        "unconnected": 0,
+        "parity": 0
+      },
+      "drc_standard_aggregation": {
+        "errors": 0,
+        "warnings": 5,
+        "exclusions": 0,
+        "unconnected": 0,
+        "parity": 0
+      }
+    },
+    "frozen_a94": {
+      "erc": {
+        "errors": 0,
+        "warnings": 53,
+        "exclusions": 0
+      },
+      "drc_all_track_errors": {
+        "errors": 62,
+        "warnings": 5,
+        "exclusions": 0,
+        "unconnected": 0,
+        "parity": 0
+      },
+      "drc_standard_aggregation": {
+        "errors": 57,
+        "warnings": 5,
+        "exclusions": 0,
+        "unconnected": 0,
+        "parity": 0
+      }
+    }
+  },
+  "source_gate": {
+    "status": "digital_clearance_errors_resolved_process_and_qualification_open",
+    "automated_native_pass": false,
+    "fabrication_ready": false,
+    "hardware_qualified": false,
+    "reason": "Zero intended routing errors;53 ERC/five DRC warnings preserved; TP12 margin,via finished annuli/process and independent electrical/physical gates open",
+    "clearance_rules_unchanged": true,
+    "severity_rules_unchanged": true,
+    "exclusions_added": 0,
+    "power_architecture_changed": false,
+    "dual_appliance_inputs_retained": true,
+    "automatic_selection_circuit_retained": true,
+    "silkscreen_warnings_resolved": 2,
+    "error_level_native_clearance_gate_passed": true
+  },
+  "clearance_classification": {
+    "routing_pad_track": 0,
+    "routing_via_track": 0,
+    "routing_track_track": 0,
+    "routing_pth_pad_track": 0,
+    "zone_conflicts": 0,
+    "intrinsic_pad_spacing": 0,
+    "applicable_narrower_copper_rule": 0
+  },
+  "parts_and_exports": {
+    "schematic_components_including_excluded_alternate": 112,
+    "pcb_footprints": 111,
+    "purchasing_groups": 40,
+    "fitted_top_side_references": 93,
+    "references": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "D1",
+      "D10",
+      "D11",
+      "D14",
+      "D15",
+      "D16",
+      "D17",
+      "D18",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D9",
+      "F1",
+      "F2",
+      "F3",
+      "J1",
+      "J2",
+      "J4",
+      "L1",
+      "Q3",
+      "Q4",
+      "Q5",
+      "R1",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R2",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26",
+      "R27",
+      "R28",
+      "R29",
+      "R3",
+      "R31",
+      "R32",
+      "R33",
+      "R34",
+      "R35",
+      "R36",
+      "R37",
+      "R38",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "SW1",
+      "SW2",
+      "U10",
+      "U2",
+      "U4",
+      "U5",
+      "U6",
+      "U7",
+      "U8",
+      "U9"
+    ],
+    "BOM_part_identity_quantity_footprint_unchanged": true,
+    "CPL_byte_identical": true,
+    "restored_rating_metadata_cells": [
+      {
+        "references": "D10,D11",
+        "LCSC": "C82288",
+        "field": "Forward Current",
+        "before": "",
+        "after": "1A"
+      },
+      {
+        "references": "D10,D11",
+        "LCSC": "C82288",
+        "field": "Reverse Voltage",
+        "before": "",
+        "after": "20V"
+      },
+      {
+        "references": "F3",
+        "LCSC": "C163512",
+        "field": "Hold Current",
+        "before": "",
+        "after": "500mA"
+      },
+      {
+        "references": "L1",
+        "LCSC": "C412309",
+        "field": "Rated Current",
+        "before": "",
+        "after": "3.4A"
+      },
+      {
+        "references": "L1",
+        "LCSC": "C412309",
+        "field": "Saturation Current",
+        "before": "",
+        "after": "6.7A"
+      },
+      {
+        "references": "U6",
+        "LCSC": "C51118",
+        "field": "Output Current",
+        "before": "",
+        "after": "600mA"
+      },
+      {
+        "references": "U8",
+        "LCSC": "C2071056",
+        "field": "Input Range",
+        "before": "",
+        "after": "3.8V to 32V"
+      },
+      {
+        "references": "U8",
+        "LCSC": "C2071056",
+        "field": "Output Current",
+        "before": "",
+        "after": "2A"
+      }
+    ],
+    "gerber_archive_members": 14,
+    "payload_comparison": [
+      {
+        "member": "GEA-Adapter-Rev3A-B_Cu.gbl",
+        "native_payload_geometry_unchanged": false,
+        "previous_sha256": "815ef5d41832194a80dc5c67df6bc1e49a713981012b973495370079df2e307f",
+        "current_sha256": "4a44b4803c230c21d4ea735f7625ac4e33092dd6b5f0e49d373a191dad79af48",
+        "unchanged_payload_bytes_preserved": false
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-B_Mask.gbs",
+        "native_payload_geometry_unchanged": true,
+        "previous_sha256": "c1d70c0d9fcb08d860fb50280a8fc0192f83a2d17c73afc140d6d7f41be6b487",
+        "current_sha256": "c1d70c0d9fcb08d860fb50280a8fc0192f83a2d17c73afc140d6d7f41be6b487",
+        "unchanged_payload_bytes_preserved": true
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-B_Paste.gbp",
+        "native_payload_geometry_unchanged": true,
+        "previous_sha256": "ce961dafebfeeb92e8874d7203153c46b150ea5cbee1ac7e250fabc129b21ffb",
+        "current_sha256": "ce961dafebfeeb92e8874d7203153c46b150ea5cbee1ac7e250fabc129b21ffb",
+        "unchanged_payload_bytes_preserved": true
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-B_Silkscreen.gbo",
+        "native_payload_geometry_unchanged": true,
+        "previous_sha256": "e63354ce032a6367eef2f4764d412aa455a61ff63a72f72b577ac2ccc146c1ff",
+        "current_sha256": "e63354ce032a6367eef2f4764d412aa455a61ff63a72f72b577ac2ccc146c1ff",
+        "unchanged_payload_bytes_preserved": true
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-Edge_Cuts.gm1",
+        "native_payload_geometry_unchanged": true,
+        "previous_sha256": "af0e1d98324b1e95f5688653959659d515054a32b3d28a3169e8b4ed2cd0f42e",
+        "current_sha256": "af0e1d98324b1e95f5688653959659d515054a32b3d28a3169e8b4ed2cd0f42e",
+        "unchanged_payload_bytes_preserved": true
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-F_Cu.gtl",
+        "native_payload_geometry_unchanged": false,
+        "previous_sha256": "b3be807d6f15ae1efbf84811bffc97e1a8a40f08d41374c0caf0b576a6337c33",
+        "current_sha256": "b98a129c330210e95c684a46b522ca77cfce15c7b450ae64c3cadbf6bdbc2fd8",
+        "unchanged_payload_bytes_preserved": false
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-F_Mask.gts",
+        "native_payload_geometry_unchanged": true,
+        "previous_sha256": "ea74ae08d279bc70816d9aef07ae09f87c4aaf74d7705ed272ade527ee4b6dab",
+        "current_sha256": "ea74ae08d279bc70816d9aef07ae09f87c4aaf74d7705ed272ade527ee4b6dab",
+        "unchanged_payload_bytes_preserved": true
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-F_Paste.gtp",
+        "native_payload_geometry_unchanged": true,
+        "previous_sha256": "6cc00162a5794b3a21beefba306e63a09c6c619a33f200a5659c5e58c205187f",
+        "current_sha256": "6cc00162a5794b3a21beefba306e63a09c6c619a33f200a5659c5e58c205187f",
+        "unchanged_payload_bytes_preserved": true
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-F_Silkscreen.gto",
+        "native_payload_geometry_unchanged": true,
+        "previous_sha256": "ec816214e71b89264cbaafa0bcf462fc7f4d8d6b29e1369a198f206b556a3e40",
+        "current_sha256": "ec816214e71b89264cbaafa0bcf462fc7f4d8d6b29e1369a198f206b556a3e40",
+        "unchanged_payload_bytes_preserved": true
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-In1_Cu.g1",
+        "native_payload_geometry_unchanged": false,
+        "previous_sha256": "dc7beffd1abbcce0ed0617763693d66938ce85caa368836b4a592c434eda62cc",
+        "current_sha256": "cfc52be5af6f474313a18a181e3039d61852787f26ee6117e2485ea5ce5791d2",
+        "unchanged_payload_bytes_preserved": false
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-In2_Cu.g2",
+        "native_payload_geometry_unchanged": false,
+        "previous_sha256": "8d62692217e08e1d368ca27cc79b905dc1697c9f56a1a07c8dd936c7d031d15f",
+        "current_sha256": "db620885a6be410f1461dd45e8e3709c07cd400f5ed5a1242fadb58a7075ee50",
+        "unchanged_payload_bytes_preserved": false
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-NPTH.drl",
+        "native_payload_geometry_unchanged": true,
+        "previous_sha256": "05860020db885bacacfe88d330a382767edd55d7d614b559ca0f595afcc12cbc",
+        "current_sha256": "05860020db885bacacfe88d330a382767edd55d7d614b559ca0f595afcc12cbc",
+        "unchanged_payload_bytes_preserved": true
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-PTH.drl",
+        "native_payload_geometry_unchanged": false,
+        "previous_sha256": "f85540517b1393b9b01a738dbae5924abf6d3d1e2599fd7d690ea2e456a3488e",
+        "current_sha256": "894dcce18c113d52a762ba9f12dcf1b8a4644edcad98efbdfcadeff0583b6b75",
+        "unchanged_payload_bytes_preserved": false
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-job.gbrjob",
+        "native_payload_geometry_unchanged": true,
+        "previous_sha256": "bc25d7c28bcbba8504770d5bec95119dfe64ca7c9479271e41024f916dcb14ea",
+        "current_sha256": "bc25d7c28bcbba8504770d5bec95119dfe64ca7c9479271e41024f916dcb14ea",
+        "unchanged_payload_bytes_preserved": true
+      }
+    ],
+    "native_render_stock_models_verified": 18,
+    "PDF_page_crop": "assembly top/bottom and outline cropped around native vector objects with12pt margin; no geometry transform",
+    "bom_rows": 44,
+    "mixed_value_groups_split": [
+      {
+        "before": "100n,100nF",
+        "after": [
+          "100n",
+          "100nF"
+        ]
+      },
+      {
+        "before": "1u,1u 50V X7R",
+        "after": [
+          "1u",
+          "1u 50V X7R"
+        ]
+      },
+      {
+        "before": "10K,10k",
+        "after": [
+          "10K",
+          "10k"
+        ]
+      },
+      {
+        "before": "74LVC2G07,74LVC2G07_3v3",
+        "after": [
+          "74LVC2G07",
+          "74LVC2G07_3v3"
+        ]
+      }
+    ],
+    "manufacturer_part_number_header": "MPN",
+    "saved_plot_metadata": {
+      "usegerberextensions": true,
+      "subtractmaskfromsilk": true,
+      "drillshape": 0,
+      "archive_byte_identical_to_metadata_baseline": false,
+      "native_payloads_match_with_only_creation_timestamps_removed": 13
+    },
+    "value_specific_bom_rows": 44,
+    "purchasing_groups_definition": "Distinct LCSC/manufacturer/MPN tuples, independent of native Value labels",
+    "resolved_3d_model_instances": 94,
+    "historical_metadata_payload_comparison": [
+      {
+        "member": "GEA-Adapter-Rev3A-B_Cu.gbl",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-B_Mask.gbs",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-B_Paste.gbp",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-B_Silkscreen.gbo",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-Edge_Cuts.gm1",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-F_Cu.gtl",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-F_Mask.gts",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-F_Paste.gtp",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-F_Silkscreen.gto",
+        "payload_equal_after_creation_time_removal": false,
+        "change": "front silk moved to fabrication layer"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-In1_Cu.g1",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-In2_Cu.g2",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-NPTH.drl",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-PTH.drl",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      },
+      {
+        "member": "GEA-Adapter-Rev3A-job.gbrjob",
+        "payload_equal_after_creation_time_removal": true,
+        "change": "none"
+      }
+    ],
+    "payload_comparison_baseline": "a94c46e7456edd8d267fc0e4bf7b64c01a580e7f",
+    "historical_standard_drc_error_counts_on_a94": [
+      56,
+      57
+    ],
+    "current_standard_drc_errors": 0
+  },
+  "open_gates": [
+    "intended Power routing clearance",
+    "SMF16A versus TPS22810 transient/rating coordination",
+    "CJ3407 source/drain/body-diode orientation and VGS stress",
+    "PIN3 protection and buck headroom",
+    "appliance source current/inrush and enclosed thermal capacity",
+    "independent footprint/BOM/assembly/mechanical review",
+    "fabricator previews and physical bench/appliance qualification"
+  ],
+  "source_files": [
+    {
+      "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_dru",
+      "sha256": "b4c4710c0e40f5cf8df32b619d8cef2f01282b5cb5aa41f01a562b1896602d83",
+      "bytes": 660
+    },
+    {
+      "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+      "sha256": "2f4a2cb171c99e112ccd92e08608380abe10f9f071ba5a99e14f68fa9a8548aa",
+      "bytes": 1462300
+    },
+    {
+      "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_prl",
+      "sha256": "32ba07854c0a5e32efb3c3afdb2119c6e1ce537e9b835ff4001c8dbc6302c3c1",
+      "bytes": 2127
+    },
+    {
+      "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pro",
+      "sha256": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
+      "bytes": 19735
+    },
+    {
+      "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch",
+      "sha256": "ac1d8be0bc01f05528e3fd094671c57b7cbcc6c86284fd01d3e4564f9688ea0d",
+      "bytes": 428730
+    },
+    {
+      "path": "pcb/rev3a/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod",
+      "sha256": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
+      "bytes": 4461
+    },
+    {
+      "path": "pcb/rev3a/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod",
+      "sha256": "11b183bc1433ae3c1d37f09a7c29850ff230ae0dcfcf7f7cfe714364fad24114",
+      "bytes": 3283
+    },
+    {
+      "path": "pcb/rev3a/design/fp-lib-table",
+      "sha256": "a04025768378ea31de20597f668e9a6921c19045b70db15951eef24a4229e204",
+      "bytes": 165
+    },
+    {
+      "path": "pcb/rev3a/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step",
+      "sha256": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea",
+      "bytes": 1254620
+    },
+    {
+      "path": "pcb/rev3a/design/models/J1-EVERCOM-5301-8P8C-envelope.step",
+      "sha256": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+      "bytes": 29952
+    },
+    {
+      "path": "pcb/rev3a/design/models/J2-hanxia-HX-PZ-2.54-02-03-S.step",
+      "sha256": "3ea4193c78935fb6de70fb37c46ca892b3b275335dfee51ac666b65ac2c3fd0d",
+      "bytes": 2482612
+    },
+    {
+      "path": "pcb/rev3a/design/models/J4-SHOU-HAN-TYPE-C-16PIN-2MD-073.step",
+      "sha256": "4c2fffc9e40808e5033388d77f59a14f6c8ff674e8fbe7790579c30cf4077eda",
+      "bytes": 2072408
+    },
+    {
+      "path": "pcb/rev3a/design/models/SW1-SW2-XKB-TS-1187A-B-A-B.step",
+      "sha256": "6f57eea6a999f1f7e20a0b13d82708e199205cd17c636936e60b9d928778dfd5",
+      "bytes": 1534129
+    },
+    {
+      "path": "pcb/rev3a/design/models/generate_connector_envelopes.py",
+      "sha256": "7949fd3bcb1d9b95808224dff32562df7c49f2fade93b477d631621e810413b3",
+      "bytes": 1213
+    },
+    {
+      "path": "pcb/rev3a/design/sym-lib-table",
+      "sha256": "fa2491c1ff7a434de0d0dfde5a75a5655009d870b0b26fdcf3c2d6645f0f684f",
+      "bytes": 1995
+    },
+    {
+      "path": "pcb/rev3a/design/symbols/onionStraws.kicad_sym",
+      "sha256": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c",
+      "bytes": 3541
+    }
+  ],
+  "distributed_artifacts": [
+    {
+      "path": "pcb/rev3a/README.md",
+      "sha256": "fd33a469f807815b31bd023e1edac46f2917e777f569d1f59f706281665dbdec",
+      "bytes": 16629
+    },
+    {
+      "path": "pcb/rev3a/images/3d-bottom.png",
+      "sha256": "d8cfbbea3d140e69a401e166d0e294b60080f7214f9b24d7cb0d6a68f8eda5b9",
+      "bytes": 106657
+    },
+    {
+      "path": "pcb/rev3a/images/3d-isometric.png",
+      "sha256": "cb53d534d513e627d28d49f26b09466d6bfd822f79f2a06d3cbf1d65f8f26ccd",
+      "bytes": 483051
+    },
+    {
+      "path": "pcb/rev3a/images/3d-side.png",
+      "sha256": "24fa06782471905167c9085e5c8d9233845960ef32b78d9ec4c76671de1ae948",
+      "bytes": 30264
+    },
+    {
+      "path": "pcb/rev3a/images/3d-top.png",
+      "sha256": "231374d15bd08d582d14ace3203326fde16e3db4f3f037d9c0d03b17a7c3a14d",
+      "bytes": 266388
+    },
+    {
+      "path": "pcb/rev3a/images/bottom.svg",
+      "sha256": "d1cd16d34999969f3e3e47a07f8eec81ebc3ac8527790115c48d0329da6a3266",
+      "bytes": 138593
+    },
+    {
+      "path": "pcb/rev3a/images/inner1.svg",
+      "sha256": "d238617122ed59382a7ec48f99678e9494f5f6ba092e79efd03151a631f6c9f9",
+      "bytes": 182699
+    },
+    {
+      "path": "pcb/rev3a/images/inner2.svg",
+      "sha256": "ff7bd66ef41380930571694445fa4550a642fc572b61b048995d842c3a1e8cf9",
+      "bytes": 182107
+    },
+    {
+      "path": "pcb/rev3a/images/top.svg",
+      "sha256": "db2675bba084c378c0f89522e307052c0cdcf50327d0292c40f33f9f0042f7de",
+      "bytes": 603477
+    },
+    {
+      "path": "pcb/rev3a/manufacturing/BOM-GEA-Adapter-Rev3A.csv",
+      "sha256": "054d8d71fa13cb9e095481a436db33ecc1a2e88ce5ad4893b9bcec10863ad598",
+      "bytes": 5885
+    },
+    {
+      "path": "pcb/rev3a/manufacturing/CPL-GEA-Adapter-Rev3A.csv",
+      "sha256": "c54dc40b6554b7bc145fa1ee6ef9ee834e212d399ddc0d987b258e835ce9dea3",
+      "bytes": 4463
+    },
+    {
+      "path": "pcb/rev3a/manufacturing/GERBER-GEA-Adapter-Rev3A.zip",
+      "sha256": "0cf258eb4a8e0c734372647b91599f15da6eb114b70da124da018490344109e2",
+      "bytes": 263419
+    },
+    {
+      "path": "pcb/rev3a/manufacturing/README.md",
+      "sha256": "3dc381c22e0694666384055051ed631bac694a34bd8e446b05d72ba1713d2437",
+      "bytes": 5240
+    },
+    {
+      "path": "pcb/rev3a/validation/CLEARANCE-REPAIR.md",
+      "sha256": "e6929f3ecdf706c2cf0bfba4717a67f8931e6c7e651402718fc804c58f06cf39",
+      "bytes": 5659
+    },
+    {
+      "path": "pcb/rev3a/validation/NATIVE-REVIEW.md",
+      "sha256": "a311ce267e4feb84cabbb4870d7be121d5526a89de469031aee5b6a81797c355",
+      "bytes": 9979
+    },
+    {
+      "path": "pcb/rev3a/validation/NETCLASS-REVIEW.md",
+      "sha256": "7e72f0efd4885b30384f2505505ad7a44ac8804f274e3d63d83a9789bcac37da",
+      "bytes": 2157
+    },
+    {
+      "path": "pcb/rev3a/validation/README.md",
+      "sha256": "28a859b80338e4cb44764fec1646d87f1a04a8f4e8899b4fdf597c72ba606793",
+      "bytes": 7908
+    },
+    {
+      "path": "pcb/rev3a/validation/assembly-bottom.pdf",
+      "sha256": "97a17fba44738739f1e4f6a3b219bb9b17b1ee00e2eb6a2fc25d288901b00c38",
+      "bytes": 62566
+    },
+    {
+      "path": "pcb/rev3a/validation/assembly-top.pdf",
+      "sha256": "3233ab1dba43f498a2453d81c06c31f563b9f896f813d3730acfcd67eacb8b48",
+      "bytes": 149888
+    },
+    {
+      "path": "pcb/rev3a/validation/board-outline.pdf",
+      "sha256": "b2441620ec3a97481d353fb59511fc6191ed048be715eb0c4d5bd51071adc6c5",
+      "bytes": 60061
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/after-drc-all-track-errors.json",
+      "sha256": "79220ef6a5a6b2c5015e553230c57bc6fa3873647e8acd0f6326c457435d83b6",
+      "bytes": 55364
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/after-drc.json",
+      "sha256": "5b64ac2744f35bb75ddf7bbaa78ddcea19597e24557ced4fc86f8d23f533fcc2",
+      "bytes": 51159
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/after-erc.json",
+      "sha256": "93137662ec4e114eface1d1e9052300156d7fd68bdaf584f46edef0e9ea65a8d",
+      "bytes": 34055
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/before-drc-all-track-errors.json",
+      "sha256": "8919541ef9d1117a9ba61c387ea1535f1c1c574e828f283a2fd9103cf8395aa2",
+      "bytes": 4553
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/before-drc.json",
+      "sha256": "17c8e9a4645d2dc934387eef7d021e5dd51c210885055488ef15b56d5b30cb36",
+      "bytes": 4553
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/before-erc.json",
+      "sha256": "ed5cdbe2c2ebb509f5304771c62e2ef6469a22976d834fe46cdc42a637138143",
+      "bytes": 34055
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/clearance-classification.json",
+      "sha256": "b4e6c20e11cfdcb08d5bd979173873079a4d1fd7cb9ed688cf0318169a8d0eb7",
+      "bytes": 43435
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/clearance-drc-all-track-errors.json",
+      "sha256": "c1fe11d401215d93918121e937e140018103554027f18b082712681b05eb84de",
+      "bytes": 3004
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/clearance-drc.json",
+      "sha256": "19b20a8c3b169ad722515ec9023b825539ff002126fd84074c7c4d0735fd4aef",
+      "bytes": 3004
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/clearance-erc.json",
+      "sha256": "8ea18f5fc0dedae393f087671772fcdd8139fbf6df739fc81b90f9714aa67b9a",
+      "bytes": 34055
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/clearance-model-resolution.json",
+      "sha256": "93dffdf4b2769c0a93de0f33657949f4e0be0f850606c9a85c4a3f889e386356",
+      "bytes": 21426
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/clearance-repair-proof.json",
+      "sha256": "ebf10301649255f93aebf36cbcb2eb2d7cfd22a5383d2c452e158acf515e0604",
+      "bytes": 18746
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/clearance-routing-delta.json",
+      "sha256": "f9eb65c86526f0a4e5877277c2bbcf2e3f4c192eed0964333f45d8ee12362787",
+      "bytes": 62029
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/clearance-visual-review.json",
+      "sha256": "90101dced6605da1d0c48a76cfc0f45b9d42123f0ab66e80f361e618ad00af3e",
+      "bytes": 2615
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/intended-drc-all-track-errors.json",
+      "sha256": "a8ba5e8f21cac9491483c8a349d9fa8f1d518d4ac136b66deb620015afba34b0",
+      "bytes": 56913
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/intended-drc.json",
+      "sha256": "8ff67ae2d6ec3157dbf3402219e889180e86b4d849684e72703666e270cc43e5",
+      "bytes": 52708
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/pattern-corrections.json",
+      "sha256": "13ab196b9b2a842ebbb1a60f2b5b7b26c3e6773dc99bfbbde48b9d7b7c49a92c",
+      "bytes": 1562
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/stock-model-provenance.json",
+      "sha256": "cf3f147cca9b604be08ab98587cbe1c9c1fa0da0e4139353e7dfe2cb5e85a532",
+      "bytes": 6276
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/tp12-diagnostic-drc-026.json",
+      "sha256": "145b91718ca9f4c584c21b5e55ec1ec13057fed61350fbcd4def77104341a28d",
+      "bytes": 3865
+    },
+    {
+      "path": "pcb/rev3a/validation/native-kicad-9.0.9/tp12-margin-review.json",
+      "sha256": "c92d50d2fb1746e8ec7d5ffaedcaf2920b82368fa5840249c1fabcc547302467",
+      "bytes": 1969
+    },
+    {
+      "path": "pcb/rev3a/validation/npth-drill-map.pdf",
+      "sha256": "57c629ff8f828aef4abd1481552405d17df6398c4531761691911e9638a96eec",
+      "bytes": 10402
+    },
+    {
+      "path": "pcb/rev3a/validation/pth-drill-map.pdf",
+      "sha256": "27d83f93da730c6abc822a6f3570c4a945c65f2d27dc389c0e0bcdeda51f8d10",
+      "bytes": 29099
+    },
+    {
+      "path": "pcb/rev3a/validation/schematic.pdf",
+      "sha256": "28bf2575b310b3d22050fb44f44c64d6424b38ad33e7af3d0bd1b6af3e1f1d95",
+      "bytes": 502293
+    }
+  ],
+  "earlier_metadata_review_source_commit": "91eb7f5996bcf2e81bd0155700ec0f9b5098245b",
+  "routing_repair_baseline_commit": "a94c46e7456edd8d267fc0e4bf7b64c01a580e7f",
+  "historical_clearance_classification": {
+    "routing_pad_track": 26,
+    "routing_via_track": 22,
+    "routing_track_track": 9,
+    "routing_pth_pad_track": 5,
+    "zone_conflicts": 0,
+    "intrinsic_pad_spacing": 0,
+    "applicable_narrower_copper_rule": 0
+  },
+  "routing_repair_proof": "pcb/rev3a/validation/native-kicad-9.0.9/clearance-repair-proof.json",
+  "export_preservation": "Four copper Gerbers and PTH drills refreshed; nine unchanged payloads preserved byte-for-byte after native timestamp-normalized comparisons; BOM/CPL unchanged; copper/render/PTH-map pixels inspected."
+}
