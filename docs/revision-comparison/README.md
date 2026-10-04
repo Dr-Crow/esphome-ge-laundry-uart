@@ -2,9 +2,9 @@
 
 [Project overview](../../README.md) · [Current validation](VALIDATION.md) · [Pricing](PRICING.md) · [Finish plan](FINISH-PLAN.md) · [Source handoff](HANDOFF.md) · [C3/C6 and Matter](C6-MATTER.md)
 
-Updated October 4, 2026 at 05:20 UTC; exact Rev3C placement quote refreshed at 04:16 UTC. The user selected the shared Rev3C design with two **40 V-rated TPS1H200A switches**, both GE power inputs and automatic PIN1 priority. Current standalone source is `5542734`; its current factory trio is placement-corrected `b53cfca`. The original electrical protection source is `7bb455f`. Selection does not establish a 40 V carrier rating, appliance compatibility or manufacturing readiness.
+Updated October 4, 2026 at 06:58 UTC; strict seven-revision native checks and exact source-bound quote snapshots. The user selected the shared Rev3C design with two **40 V-rated TPS1H200A switches**, both GE power inputs and automatic PIN1 priority. Current standalone source is `5542734`; its current factory trio is placement-corrected `b53cfca`. The original electrical protection source is `7bb455f`. Selection does not establish a 40 V carrier rating, appliance compatibility or manufacturing readiness.
 
-C3 is the first target, with C6 interface and firmware flexibility retained. The Rev3B rated-protection backport is digitally reviewed at 85 fitted references; Rev3A routing is electrically closed in an uncommitted draft; final placement, connector mechanical review, exports and independent review are active. Current-main-based per-revision candidates are staged locally. Older revisions retain their distinct architectures and review gates. No revision has physical qualification, and older boards are not established safe fallbacks.
+C3 is the first target, with C6 interface and firmware flexibility retained. Rev3A/B backports are digitally reviewed at 97/85 fitted references; Rev3A rated protection, exact connector lands and zero-warning schematic normalization are independently reviewed and staged; all seven revisions now have zero native findings. Current-main-based per-revision candidates are staged locally. Older revisions retain their distinct architectures and review gates. No revision has physical qualification, and older boards are not established safe fallbacks.
 
 ## Architecture and current role
 
@@ -13,7 +13,7 @@ C3 is the first target, with C6 interface and firmware flexibility retained. The
 | Rev1.0 | Generic 38-pin classic ESP32 interface; original nodemcu-32s target | PIN1 only; external buck through J1 | Restored historical CAD and two new classic profiles; exact purchased module and external supply unknown |
 | Rev2.0 | ESP32-C3-WROOM-02; UART programmer | Manual dual-input selector, linear 5 V and 3V3 regulators | Restored source; legacy protection, regulator and physical gates remain |
 | Rev2.1 / Rev2.2 | ESP32-C3-WROOM-02; UART programmer | Manual dual-input selector, linear regulators | Native cleanup passes; 60 / 59 fitted references; source-specific placement review remains |
-| Rev3A | Integrated C3 and built-in antenna; carrier USB-C/recovery controls | Automatic dual input and buck; separate USB/appliance paths | Intended-rule routing repair complete; protection backport active; process/physical gates open |
+| Rev3A | Integrated C3 and built-in antenna; carrier USB-C/recovery controls | Automatic dual input and buck; separate USB/appliance paths | Rated backport and zero-finding native checks complete;97 refs, exact current quote; source/process/physical gates open |
 | Rev3B | Soldered XIAO C3; module USB-C/external antenna | Automatic dual input and buck | Rated protection passes native/manufacturing/intended-rule checks ; 85 fitted refs; soldered C3 sourcing/install and physical gates open |
 | Selected Rev3C | Socketed pre-headered XIAO C3/C6; module USB/BOOT/RESET | Both GE inputs, automatic PIN1 priority, rated switches and buck | Selected development source; 83 fitted carrier references; four shared C3/C6 firmware builds |
 
@@ -29,7 +29,7 @@ USD, complete PCB plus Economic top-side assembly, with all carriers assembled. 
 | Historical clamp-sourced baseline `ca1fdb1` | 80 | $130.39 | $160.37 |
 | Selected design premium | +3 | **$4.25** | **$8.54** |
 
-The premium is about $0.85 per carrier. These are quote observations, not an order or delivered cost. Older architecture prices and module snapshots are clearly separated in [PRICING.md](PRICING.md). The selected source contains the illustrated `pcb/rev3c/ORDERING.md` and matching relative assets; use that guide only with its exact three-file package.
+The premium is about $0.85 per carrier. These are quote observations, not an order or delivered cost. Older architecture prices and module snapshots are clearly separated in [PRICING.md](PRICING.md). Current A includes its processor at $178.90/5 or $227.86/10; B remains stock-blocked. The selected source contains the illustrated `pcb/rev3c/ORDERING.md` and matching relative assets; use that guide only with its exact three-file package.
 
 ## Current source-bound C3/C6 package previews
 
@@ -40,6 +40,14 @@ These October 4 previews accompany selected standalone source `5542734`. Officia
 ![Current C6 partial package preview](images/current-rev3c/c6-verified-package.png)
 
 The carrier PCB/schematic/manufacturing/firmware bytes are unchanged by these visual additions. Model source/provenance and its exact-source preservation receipts live in the selected candidate's `pcb/rev3c/MODEL-ACCURACY.md` and `validation/`. Module antenna/pigtail, exact buttons and mating geometry are not qualified by these views.
+
+### Current alternative board previews
+
+These are source-bound CAD previews of the reviewed alternatives, not manufactured boards. A preserves its integrated C3 architecture; B uses the partial native-registered C3 v1.3 model with unmeasured solder seating. Actual package/process/case/RF/thermal fit remains unqualified.
+
+![Current rated Rev3A preview](images/current-alternatives/rev3a-rated.png)
+
+![Current rated Rev3B partial C3 preview](images/current-alternatives/rev3b-verified-c3.png)
 
 ## How to read the historical images
 

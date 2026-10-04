@@ -27,6 +27,15 @@ Observed settings were FR-4 TG135, four layers, 99 × 40 mm, 1.6 mm, green mask,
 
 The illustrated `pcb/rev3c/ORDERING.md` in the selected candidate records the actual screenshots, steps and SHA-256 hashes of each matched Gerber/BOM/CPL trio. Familiar filenames alone are insufficient. Keep the 83-reference trio together; never mix it with the 80-reference baseline. Refresh exact stock, process review, shipping/tax and total after qualification and before any later order approval.
 
+## Current Rev3A and unavailable Rev3B
+
+| Current exact source | References / priced groups | Five | Ten | Scope |
+| --- | ---: | ---: | ---: | --- |
+| Rev3A factory trio `a5ab243` | 97 /42 | **$178.90** | **$227.86** | Includes integrated C3 and connectors; shipping, tax, case/programming/tests excluded |
+| Rev3B current source | 85 | Unavailable | Unavailable | Exact U2 C18212168 shortage; no omission accepted |
+
+A's one-reference-per-row BOM is component-equivalent to its native 49-row grouping and clears the supplier import warning. Its schematic-only0-warning cleanup preserves the quoted factory trio. J4's recessed shell legs/no paste aperture still require assembler-approved solder delivery, inspection and retention. Placeholder supplier views do not approve placement. The C carrier quotes exclude XIAO modules; compare that scope before comparing totals.
+
 ## Historical architecture quotes
 
 These earlier snapshots price the original source architectures, not the current repairs or the new Rev3A/B protection sources. Each is a batch of five, with all five quoted carriers assembled.
