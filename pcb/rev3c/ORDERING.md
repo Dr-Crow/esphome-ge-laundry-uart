@@ -6,6 +6,8 @@ The selected 83-part Rev3C prototype source has complete JLCPCB quotes of **$134
 
 Both GE power inputs, automatic PIN1 priority, the buck and C3/C6 interfaces remain. No extra USB circuitry was added. Disconnect the appliance before powered USB.
 
+The current Gerber ZIP includes the October 4 [stencil correction](STENCIL-REVIEW.md): drill-center graphics are disabled so they cannot create unintended paste openings at drilled holes. BOM and CPL bytes are unchanged. The quoted totals and screenshots above used the previous frozen Gerber ZIP; refresh the supplier quote and stencil/process review for the current ZIP before ordering. Its SHA-256 is listed below.
+
 For historical cost comparison, the stock-corrected **80-part baseline** has complete quotes of **$130.39 for 5** and **$160.37 for 10**, under the same observed PCB and assembly settings. Its source is `ca1fdb1261af8b32a1bf353d37f40439ead5c3b0`; only D16/D17 sourcing changes to reviewed MCC C668891, with original switches, fuses and topology retained. The higher-rated option costs **$4.25 more per five-board batch** or **$8.54 more per ten-board batch**, about **$0.85 per carrier**. These are complete assembly quote differences, before shipping and tax.
 
 ## Keep the selected three files together
@@ -20,7 +22,7 @@ The October3 quote/screenshot snapshot was source **7bb455fbc85c748f3125ed091a54
 
 | File | What JLCPCB uses it for | Bytes | SHA-256 |
 | --- | --- | ---: | --- |
-| GERBER-GEA-Adapter-Rev3C.zip | Copper, solder mask, silkscreen, outline and drills; 14-member native factory package | 221392 | 669346b37b394cbcbb11c41386a494241a1670b662eeca8a5e55609a908dc4af |
+| GERBER-GEA-Adapter-Rev3C.zip | Copper, solder mask, silkscreen, outline and drills; 14-member native factory package | 215452 | 73d319df01ec65f1b8ba60b49da10fd3a226887d75be6d6e6170832a2cdf3c13 |
 | BOM-GEA-Adapter-Rev3C.csv | 83 carrier reference designators and their exact selected parts | 4768 | 27a9dfa850fe996a36c792fb6146548bc59342eda2b05732fa24e173bade1406 |
 | CPL-GEA-Adapter-Rev3C.csv |83 refs; J1 nominal body datum, native angles and Top layer | 3156 | a1f17d5e6018b582694428e374c18ecc110410482ab69022347bd8cf62ea37b2 |
 
