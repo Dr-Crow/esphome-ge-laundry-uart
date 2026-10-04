@@ -1,0 +1,273 @@
+{
+  "native_kicad_version": "9.0.9",
+  "source_pcb_sha256": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1",
+  "source_model_sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+  "native_export_sha256": "0db1d998dfee3ee73a3a14b812950894a3287a57ad86c6282a83866a7c4bc79a",
+  "native_export_bytes": 10824344,
+  "native_export_retained_in_repository": false,
+  "export_scope": "Diagnostic native STEP: U2 compound plus unchanged carrier substrate; no manufacturing/CAM export changes.",
+  "source_and_export_occt_shape_valid": true,
+  "source_model_solid_count": 1083,
+  "export_solid_count": 1084,
+  "all_source_solids_preserved_at_actual_installed_transform": true,
+  "geometry_signature": "Multiset of optimal bounding box, volume, surface area and center of mass for all solids, rounded to 0.00001 in mm / corresponding geometry units.",
+  "actual_native_source_to_installed_translation_xyz_mm": [
+    87.89,
+    -12.9175,
+    1.595
+  ],
+  "actual_native_xy_rotation_deg": 0,
+  "fourteen_actual_native_pin_holes": [
+    {
+      "pin": 1,
+      "actual_native_step_hole_center_xy_mm": [
+        95.51,
+        -5.2975
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        95.51,
+        4.835
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 2,
+      "actual_native_step_hole_center_xy_mm": [
+        92.97,
+        -5.2975
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        92.97,
+        4.835
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 3,
+      "actual_native_step_hole_center_xy_mm": [
+        90.43,
+        -5.2975
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        90.43,
+        4.835
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 4,
+      "actual_native_step_hole_center_xy_mm": [
+        87.89,
+        -5.2975
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        87.89,
+        4.835
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 5,
+      "actual_native_step_hole_center_xy_mm": [
+        85.35,
+        -5.2975
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        85.35,
+        4.835
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 6,
+      "actual_native_step_hole_center_xy_mm": [
+        82.81,
+        -5.2975
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        82.81,
+        4.835
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 7,
+      "actual_native_step_hole_center_xy_mm": [
+        80.27,
+        -5.2975
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        80.27,
+        4.835
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 8,
+      "actual_native_step_hole_center_xy_mm": [
+        80.27,
+        -20.5375
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        80.27,
+        21.0
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 9,
+      "actual_native_step_hole_center_xy_mm": [
+        82.81,
+        -20.5375
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        82.81,
+        21.0
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 10,
+      "actual_native_step_hole_center_xy_mm": [
+        85.35,
+        -20.5375
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        85.35,
+        21.0
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 11,
+      "actual_native_step_hole_center_xy_mm": [
+        87.89,
+        -20.5375
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        87.89,
+        21.0
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 12,
+      "actual_native_step_hole_center_xy_mm": [
+        90.43,
+        -20.5375
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        90.43,
+        21.0
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 13,
+      "actual_native_step_hole_center_xy_mm": [
+        92.97,
+        -20.5375
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        92.97,
+        21.0
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 14,
+      "actual_native_step_hole_center_xy_mm": [
+        95.51,
+        -20.5375
+      ],
+      "hole_radius_mm": 0.425,
+      "matches_primary_source_transform": true,
+      "carrier_land_kicad_xy_mm": [
+        95.51,
+        21.0
+      ],
+      "drill_minus_land_kicad_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    }
+  ],
+  "nominal_soc_bbox_native_step_mm": [
+    84.7677,
+    -17.8051,
+    3.19,
+    89.7677,
+    -12.8051,
+    4.04
+  ],
+  "usb_right_verified_by_native_geometry_and_render": true,
+  "generic_usb_shell_extreme_carrier_x_mm": 99.764,
+  "z_caveat": "Native export places source substrate bottom at 1.595 mm with the retained 0 mm model offset. This follows nominal native board stackup; solder stand-off and real installed seating remain unmeasured.",
+  "supplier_assembly_origin_qualified": false,
+  "all_electrical_manufacturing_and_placement_source_unchanged": true
+}

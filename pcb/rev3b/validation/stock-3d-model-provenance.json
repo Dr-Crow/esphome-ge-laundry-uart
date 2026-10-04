@@ -1,0 +1,90 @@
+{
+  "tag": "9.0.9",
+  "commit": "a0244fe3442823dbb052ebc4820b4c2951e1742c",
+  "files": [
+    {
+      "path": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "bytes": 43502
+    },
+    {
+      "path": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450
+    },
+    {
+      "path": "Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618
+    },
+    {
+      "path": "Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "bytes": 43450
+    },
+    {
+      "path": "Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502
+    },
+    {
+      "path": "Diode_SMD.3dshapes/D_SOD-123.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836
+    },
+    {
+      "path": "Diode_SMD.3dshapes/D_SOD-123F.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Diode_SMD.3dshapes/D_SOD-123F.step",
+      "sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+      "bytes": 42604
+    },
+    {
+      "path": "Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+      "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7",
+      "bytes": 59769
+    },
+    {
+      "path": "Inductor_SMD.3dshapes/L_Panasonic_PCC-M0530M.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Inductor_SMD.3dshapes/L_Panasonic_PCC-M0530M.step",
+      "sha256": "9a853d3f886a569a231a862c760b6a7b42fa54b796f74486a1f23e7a8a55c932",
+      "bytes": 23091
+    },
+    {
+      "path": "LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "bytes": 78220
+    },
+    {
+      "path": "Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "bytes": 99639
+    },
+    {
+      "path": "Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296
+    },
+    {
+      "path": "Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+      "sha256": "1007b8f67a3e81e2c5182bfd1fd27afe4d8d3710e0bfa1a14b8a91db8b595eb5",
+      "bytes": 100519
+    },
+    {
+      "path": "Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592
+    }
+  ]
+}

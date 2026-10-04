@@ -1,0 +1,173 @@
+{
+  "no_hierarchy_prefix_mismatches_on_live_power_switching_nets": true,
+  "patterns": [
+    {
+      "pattern": "+3V3",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "+3V3"
+      ]
+    },
+    {
+      "pattern": "+5V",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "+5V"
+      ]
+    },
+    {
+      "pattern": "/ALT_PWR",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/ALT_PWR"
+      ]
+    },
+    {
+      "pattern": "/PIN1_FUSED",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/PIN1_FUSED"
+      ]
+    },
+    {
+      "pattern": "/PIN1_PROTECTED",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/PIN1_PROTECTED"
+      ]
+    },
+    {
+      "pattern": "/PIN1_SW_OUT",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/PIN1_SW_OUT"
+      ]
+    },
+    {
+      "pattern": "/PIN3_FUSED",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/PIN3_FUSED"
+      ]
+    },
+    {
+      "pattern": "/PIN3_PROTECTED",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/PIN3_PROTECTED"
+      ]
+    },
+    {
+      "pattern": "/PIN3_SW_OUT",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/PIN3_SW_OUT"
+      ]
+    },
+    {
+      "pattern": "/V_INPUT",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/V_INPUT"
+      ]
+    },
+    {
+      "pattern": "USB_VBUS",
+      "netclass": "USBPower",
+      "clearance_mm": 0.2,
+      "matches": []
+    },
+    {
+      "pattern": "USB_VBUS_FUSED",
+      "netclass": "USBPower",
+      "clearance_mm": 0.2,
+      "matches": []
+    },
+    {
+      "pattern": "USB_CONN_N",
+      "netclass": "USBData",
+      "clearance_mm": 0.1,
+      "matches": []
+    },
+    {
+      "pattern": "USB_CONN_P",
+      "netclass": "USBData",
+      "clearance_mm": 0.1,
+      "matches": []
+    },
+    {
+      "pattern": "USB_MCU_N",
+      "netclass": "USBData",
+      "clearance_mm": 0.1,
+      "matches": []
+    },
+    {
+      "pattern": "USB_MCU_P",
+      "netclass": "USBData",
+      "clearance_mm": 0.1,
+      "matches": []
+    },
+    {
+      "pattern": "USB_PROTECTED_N",
+      "netclass": "USBData",
+      "clearance_mm": 0.1,
+      "matches": []
+    },
+    {
+      "pattern": "USB_PROTECTED_P",
+      "netclass": "USBData",
+      "clearance_mm": 0.1,
+      "matches": []
+    },
+    {
+      "pattern": "VDC",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "VDC"
+      ]
+    },
+    {
+      "pattern": "/5V_IN",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/5V_IN"
+      ]
+    },
+    {
+      "pattern": "/BUCK_5V",
+      "netclass": "Power",
+      "clearance_mm": 0.25,
+      "matches": [
+        "/BUCK_5V"
+      ]
+    },
+    {
+      "pattern": "/BUCK_BST",
+      "netclass": "Switching",
+      "clearance_mm": 0.3,
+      "matches": [
+        "/BUCK_BST"
+      ]
+    },
+    {
+      "pattern": "/BUCK_SW",
+      "netclass": "Switching",
+      "clearance_mm": 0.3,
+      "matches": [
+        "/BUCK_SW"
+      ]
+    }
+  ]
+}

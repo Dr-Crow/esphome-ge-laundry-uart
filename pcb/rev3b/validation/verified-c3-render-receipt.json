@@ -1,0 +1,85 @@
+{
+  "native_renderer": "KiCad CLI 9.0.9",
+  "quality": "high",
+  "dimensions_px": [
+    1800,
+    1000
+  ],
+  "baseline_commit": "1db7a80f38a05c0c85023c01df63db22d81281c4",
+  "matched_camera_before_after": true,
+  "pixel_review": "Final top, bottom and oblique PNG pixels inspected. USB shell faces the carrier right edge and verified nominal SoC with generic pin-1 marker appears over the primary C3 PCB. No socket/header geometry or assumed button/regulator geometry is added. Unmeasured zero-Z seating and omitted components remain limits.",
+  "renders": [
+    {
+      "image": "images/rev3b-render-top.png",
+      "sha256": "150e4810980fa2cfb6718ea8c8209f1e72ec72c3e80e1b1f8e0a5292a65ff3e3",
+      "bytes": 280036,
+      "view": "top",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "pcb_source_sha256": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1"
+    },
+    {
+      "image": "images/rev3b-render-bottom.png",
+      "sha256": "671fb2b200fa66647ca7e740637e0b290e117d69fcd083b184b3f8b9795ad9bb",
+      "bytes": 84337,
+      "view": "bottom",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "pcb_source_sha256": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1"
+    },
+    {
+      "image": "images/rev3b-render-oblique.png",
+      "sha256": "76009c51fe5dc0282c2afee6d5877d0ff7a752576785206195212f3e6a1e91c0",
+      "bytes": 432974,
+      "view": "oblique",
+      "rotation_deg": [
+        315,
+        0,
+        25
+      ],
+      "pcb_source_sha256": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1"
+    },
+    {
+      "image": "images/model-comparison/before-top.png",
+      "sha256": "748778351d0f283ac538e88c3abb6426c9557f139d5d76d2e82eab3947a531a1",
+      "bytes": 251468,
+      "view": "top",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "pcb_source_sha256": "a21a84afde3d430d0749b10b0d20312ef122954420cca0baf46ab7304feca598"
+    },
+    {
+      "image": "images/model-comparison/before-bottom.png",
+      "sha256": "cefc583321c1e7b3151f699290e04c8fbd8da9e7cd3200486c10ae600ecc1e7f",
+      "bytes": 84788,
+      "view": "bottom",
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "pcb_source_sha256": "a21a84afde3d430d0749b10b0d20312ef122954420cca0baf46ab7304feca598"
+    },
+    {
+      "image": "images/model-comparison/before-oblique.png",
+      "sha256": "d47f298949d61e600b57bd2a6d784f4eb014d77ac55623fab48c0f4ab4d3ef9f",
+      "bytes": 398706,
+      "view": "oblique",
+      "rotation_deg": [
+        315,
+        0,
+        25
+      ],
+      "pcb_source_sha256": "a21a84afde3d430d0749b10b0d20312ef122954420cca0baf46ab7304feca598"
+    }
+  ]
+}

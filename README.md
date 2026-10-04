@@ -17,7 +17,7 @@ Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 c
 
 ### I want to review a new board
 
-This branch stages the [Rev3A integrated-C3 prototype](pcb/rev3a/README.md) with rated protection while retaining both appliance inputs and automatic priority. Use its exact matched source/manufacturing evidence and revision-specific power/service instructions. Source checks and quotes do not establish assembly or physical release.
+This branch stages the [Rev3B soldered-C3 prototype](pcb/rev3b/README.md) with rated protection while retaining both appliance inputs and automatic priority. Use its exact matched source/manufacturing evidence and revision-specific power/service instructions. Source checks and quotes do not establish assembly or physical release.
 
 Rev2.2's old $78.07 five-board quote is historical. Its regulator/current, protection and thermal limits remain unqualified; it is not a manufacturing-ready fallback.
 

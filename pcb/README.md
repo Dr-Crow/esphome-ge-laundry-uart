@@ -5,7 +5,7 @@ This directory keeps every board revision in a separate package so source files,
 [Back to the project overview](../README.md) · [PCB ordering guide](ORDERING.md)
 
 > [!IMPORTANT]
-> [Rev 3A](rev3a/README.md) is a rated-protection review prototype. Every revision, including Rev 2.2, needs revision-specific electrical and assembly qualification before a new build; no manufacturing release is established here.
+> [Rev 3B](rev3b/README.md) is a rated-protection review prototype. Every revision, including Rev 2.2, needs revision-specific electrical and assembly qualification before a new build; no manufacturing release is established here.
 
 ## What the folders mean
 
@@ -18,7 +18,7 @@ This directory keeps every board revision in a separate package so source files,
 
 | Revision | Status | Available material |
 | --- | --- | --- |
-| [Rev 3A](rev3a/README.md) | Integrated C3 prototype; qualification open | Rated dual-input automatic selection, integrated C3/USB and source-matched review exports; qualification open. |
+| [Rev 3B](rev3b/README.md) | Soldered C3 prototype; qualification open | Dual-input automatic selection, native checks, source-matched review exports; no C6 claim. |
 | [Rev 2.2](rev2.2/README.md) | Historical candidate; qualification open | Corrected KiCad source, matched factory package, and validation exports. |
 | [Rev 2.1](rev2.1/README.md) | Built; superseded | KiCad 9 source, JLCPCB package, drill maps, and repair image. |
 | [Rev 2.0](rev2.0/README.md) | Built; superseded | PCBA archive, schematic, board model, renders, and photographs. |

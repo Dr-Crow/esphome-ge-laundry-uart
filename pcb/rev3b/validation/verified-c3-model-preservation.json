@@ -1,0 +1,1755 @@
+{
+  "selected_baseline_commit": "1db7a80f38a05c0c85023c01df63db22d81281c4",
+  "native_kicad_version": "9.0.9",
+  "scope": "Only U2 placed 3D association and visual assets/docs/receipts/renders changed; no manufacturing export regeneration.",
+  "pcb_before_sha256": "a21a84afde3d430d0749b10b0d20312ef122954420cca0baf46ab7304feca598",
+  "pcb_after_sha256": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1",
+  "pcb_non_model_tokens_before_sha256": "37e860107d5ed04694e8fee2aea5bd8c6f377448c4a27efcc2275fc378a3ce96",
+  "pcb_non_model_tokens_after_sha256": "37e860107d5ed04694e8fee2aea5bd8c6f377448c4a27efcc2275fc378a3ce96",
+  "all_non_model_pcb_tokens_identical": true,
+  "protected_files": [
+    {
+      "path": "case/README.md",
+      "sha256": "59023694d2095f98a79b83425f94107e3b1a54396d75502e3154b2784ec143c7",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "case/rev2/README.md",
+      "sha256": "5e6694b73a16206bbb8662e1182b0dda249ab75c818146a1d6ba87f0802f69d2",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "case/rev2/exports/v2-case-base.stl",
+      "sha256": "739c5f7357e1d10d52c355661ea8c1f811e291f216ba126e091cffd9928b71c3",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "case/rev2/exports/v2-case-lid.stl",
+      "sha256": "4500f0ee8a07d7c433e72eb5f8c367609b7006373a47c26fb710467b33f0bc84",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "case/rev2/exports/v2-case.step",
+      "sha256": "243cce43255c380a1f37753ea1207d86cba15170a35942d596d44534094ea14b",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "case/rev2/images/case-render.png",
+      "sha256": "f3ea396dc34747be375797d750fcebcd245988e5b1fc4e24ccb1832856b7e8db",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "case/rev2/images/enclosure-render.png",
+      "sha256": "73f43d41add105ebe2d50c45b2a04c63a8393bd7b4453c95464b6d4f5db7b81e",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "case/rev2/images/print-supports.png",
+      "sha256": "d1152abe1c7cc561aaeb5175f806256e9f87b50913acd0ddd2d0b932a1fbc4cf",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "case/rev2/v2-case.f3z",
+      "sha256": "89aaac626923fe750aebcc5ddf7258b36e25d596ef2ab59b1aca296cd7e85cb2",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/README.md",
+      "sha256": "8b5dd8e283b955d2becb5b97f2f4458285987a4595f5895b8863df5e788ae916",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/gea2.yaml",
+      "sha256": "291e96813c9dd4334602120f54c1c1098d12c8640ca13e4a8847a755e651d811",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "firmware/gea3.yaml",
+      "sha256": "a45960f49f296ed2608e82fc6abf6abc736fbe902ef328f52fcb52b5dc49bc3b",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip",
+      "sha256": "6a3c80fe47a93ec45a44a21d1d35d9692b3aaca6649cdf93bc7cc371a7f84d57",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip",
+      "sha256": "b9c0b397806d3a719c32faa83c08bac2e80aa1c1d4d27d3e6d6a35cd5381445a",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_pcb",
+      "sha256": "48659f6dda0e3a93a36ff374a123e88bebd92e34a81db51500814e828deb7631",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_pro",
+      "sha256": "db231fc62efb73764ba81d5d76042a67c3071150120ec860fb3f05c42d3d7402",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_sch",
+      "sha256": "0516df5b71988cc33c75ab3701dde6ef7aa0a483fd9b1eb9c3252266e6b7db67",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/manufacturing/BOM-OnionStraws-rev2.1.csv",
+      "sha256": "8349ac8f8b807fe495411aa3799bed70c92f1549b473bb296070cd7b8b49b8c0",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/manufacturing/CPL-OnionStraws-rev2.1.csv",
+      "sha256": "b789fc3fa47186a1867b89feef229c33f6abbcab6fd15f555752646f93e85563",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.1/manufacturing/GERBER-OnionStraws-rev2.1.zip",
+      "sha256": "4d8085f473667262989145ddda61a348569543c9b6867966967dd4a8369afd01",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_pcb",
+      "sha256": "a74850d25c72be1b9baf79642791826f1afbd74a01b2bb20d9d4ec6556ea54fc",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_pro",
+      "sha256": "281f9cb3cdc9741a1ff3c4ebb11554a58ac6fc98005b46531074300eff4c5e73",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_sch",
+      "sha256": "64e337f7aef6713dfdf343f069d1c66acd1d1aac2e8557b6e3c50e32f9545cf8",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod",
+      "sha256": "c659545f06a71b90d180bb48769be1cfb23ee0d256e18b8ea9d6185c1222ce7d",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/design/fp-lib-table",
+      "sha256": "a04025768378ea31de20597f668e9a6921c19045b70db15951eef24a4229e204",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/manufacturing/BOM-OnionStraws-rev2.2.csv",
+      "sha256": "9e2f0106f4a4bf769b8a727dc4e5215770da58eaab379b476eec8ff6c86d0e68",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/manufacturing/CPL-OnionStraws-rev2.2.csv",
+      "sha256": "db43135a1fb9aa74f7355622aeb59f890827ffbadf3609ad435f1b56ec9234a3",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev2.2/manufacturing/GERBER-OnionStraws-rev2.2.zip",
+      "sha256": "8dcdfbae90c26f50a3bed56a0e5d62fde3d1508467558da9e7662e0b29098cfd",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_dru",
+      "sha256": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pro",
+      "sha256": "abea7adbb5a1ee515cd443d6735b7c1808d31d0cef98924e77ab61f694fccbc9",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch",
+      "sha256": "5aa8998b7820a3f00f2b0b18424f478989efacae7c6f33a47c488224012fba03",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/footprints/GEA_Rev3B.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod",
+      "sha256": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/footprints/GEA_Rev3B.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod",
+      "sha256": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/footprints/GEA_XIAO.pretty/XIAO-ESP32-C3-v1.3-SMD.kicad_mod",
+      "sha256": "dd5c7fc37281f0ddb85c987c7974d45df259a9fe9a5396c7383c1fe6b28ffd21",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod",
+      "sha256": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod",
+      "sha256": "3dd6c2bd57cbd627d4c993c72472ce438884f7522fb43f9de412970250665e30",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/fp-lib-table",
+      "sha256": "3bdbba75ef000096fbfc9210f95e7d3c037da781871f67facea42a2decc032e6",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/sym-lib-table",
+      "sha256": "d5c96c2f68d97e509e7eadcdc5eb0d977a254cea4f5faee175c5c1490f0d2117",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/symbols/GEA_Rev3B.kicad_sym",
+      "sha256": "e02116db811a5e2da4c9c634fb87d1c7434ce472f0c953f4126403d80a6e2bb4",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/design/symbols/onionStraws.kicad_sym",
+      "sha256": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/manufacturing/BOM-GEA-Adapter-Rev3B.csv",
+      "sha256": "23ec68c57f4a09124a1bc0cb251dbc1fe21fd55b554e9ad74ef809fdc4cdb186",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/manufacturing/CPL-GEA-Adapter-Rev3B.csv",
+      "sha256": "85e6301cb7c32632b331c8cf9fa66c21c993ef165d50fedcdc8d9ca951263545",
+      "matches_selected_baseline": true
+    },
+    {
+      "path": "pcb/rev3b/manufacturing/GERBER-GEA-Adapter-Rev3B.zip",
+      "sha256": "8f0b11b89f4b1ca77e4e1f128bae8ff0698d54773f41c1063af04e52fea97639",
+      "matches_selected_baseline": true
+    }
+  ],
+  "all_protected_files_byte_identical": true,
+  "source_pcb_sha256": "a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db",
+  "primary_source_url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+  "assembly_transform": {
+    "reference": "U2",
+    "footprint_xy_mm": [
+      77.39,
+      4.0
+    ],
+    "footprint_rotation_deg": -90,
+    "model_offset_mm": [
+      8.9175,
+      10.5,
+      0.0
+    ],
+    "model_rotation_deg": [
+      0.0,
+      0.0,
+      -90.0
+    ],
+    "model_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "grid_datum_carrier_xy_mm": [
+      87.89,
+      12.9175
+    ],
+    "old_nominal_fab_body_center_carrier_xy_mm": [
+      87.89,
+      12.9
+    ],
+    "primary_substrate_body_center_carrier_xy_mm": [
+      87.9535,
+      12.9175
+    ],
+    "primary_substrate_bbox_carrier_xy_mm": [
+      77.476,
+      4.0275,
+      98.431,
+      21.8075
+    ],
+    "unchanged_nominal_fab_body_bbox_carrier_xy_mm": [
+      77.39,
+      4.0,
+      98.39,
+      21.8
+    ],
+    "unchanged_typed_nominal_body_datum_cpl_xy_mm": [
+      87.89,
+      -12.9
+    ],
+    "primary_substrate_cad_center_cpl_xy_mm": [
+      87.9535,
+      -12.9175
+    ],
+    "cad_center_minus_typed_nominal_body_cpl_xy_mm": [
+      0.0635,
+      -0.0175
+    ],
+    "nominal_body_vs_cad_caveat": "Sub-0.1 mm CAD/nominal discrepancy; not evidence of a wrong typed datum basis. Existing CPL and its nominal-body placement proof remain untouched; visual asset does not reinterpret electrical source or placement.",
+    "body_bounds_exclude": [
+      "copper",
+      "solder mask",
+      "edge stroke thickness",
+      "all components",
+      "USB shell"
+    ],
+    "drilled_grid_average_excludes": [
+      "source J1/J2 extra edge castellations",
+      "test points",
+      "underside contacts",
+      "component coordinates"
+    ],
+    "supplier_assembly_origin_qualified": false,
+    "source_grid_datum_xy_mm": [
+      148.4376,
+      105.0036
+    ],
+    "source_to_carrier_translation_mm": [
+      -60.5476,
+      -92.0861
+    ],
+    "registered_usb_footprint_xy_mm": [
+      92.589,
+      12.9175
+    ],
+    "zero_z_is_retained_unmeasured_nominal": true,
+    "z_caveat": "Retained existing 0 mm model offset; no measured solder seating or stand-off and no Rev3C 11 mm socket stack copied. The source compound contains lower copper as low as -0.04 mm; zero offset is not physical fit proof."
+  },
+  "fourteen_pin_registration": [
+    {
+      "pin": 1,
+      "source_reference": "J2",
+      "source_pad": "1",
+      "source_net": "D0",
+      "source_xy_mm": [
+        156.0576,
+        97.3836
+      ],
+      "step_xy_mm": [
+        7.62,
+        7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        95.51,
+        5.2975
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        95.51,
+        4.835
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 2,
+      "source_reference": "J2",
+      "source_pad": "2",
+      "source_net": "D1",
+      "source_xy_mm": [
+        153.5176,
+        97.3836
+      ],
+      "step_xy_mm": [
+        5.08,
+        7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        92.97,
+        5.2975
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        92.97,
+        4.835
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 3,
+      "source_reference": "J2",
+      "source_pad": "3",
+      "source_net": "D2",
+      "source_xy_mm": [
+        150.9776,
+        97.3836
+      ],
+      "step_xy_mm": [
+        2.54,
+        7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        90.43,
+        5.2975
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        90.43,
+        4.835
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 4,
+      "source_reference": "J2",
+      "source_pad": "4",
+      "source_net": "D3",
+      "source_xy_mm": [
+        148.4376,
+        97.3836
+      ],
+      "step_xy_mm": [
+        0.0,
+        7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        87.89,
+        5.2975
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        87.89,
+        4.835
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 5,
+      "source_reference": "J2",
+      "source_pad": "5",
+      "source_net": "D4",
+      "source_xy_mm": [
+        145.8976,
+        97.3836
+      ],
+      "step_xy_mm": [
+        -2.54,
+        7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        85.35,
+        5.2975
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        85.35,
+        4.835
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 6,
+      "source_reference": "J2",
+      "source_pad": "6",
+      "source_net": "D5",
+      "source_xy_mm": [
+        143.3576,
+        97.3836
+      ],
+      "step_xy_mm": [
+        -5.08,
+        7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        82.81,
+        5.2975
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        82.81,
+        4.835
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 7,
+      "source_reference": "J2",
+      "source_pad": "7",
+      "source_net": "TX_D6",
+      "source_xy_mm": [
+        140.8176,
+        97.3836
+      ],
+      "step_xy_mm": [
+        -7.62,
+        7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        80.27,
+        5.2975
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        80.27,
+        4.835
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        0.4625
+      ]
+    },
+    {
+      "pin": 8,
+      "source_reference": "J1",
+      "source_pad": "1",
+      "source_net": "RX_D7",
+      "source_xy_mm": [
+        140.8176,
+        112.6236
+      ],
+      "step_xy_mm": [
+        -7.62,
+        -7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        80.27,
+        20.5375
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        80.27,
+        21.0
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 9,
+      "source_reference": "J1",
+      "source_pad": "2",
+      "source_net": "D8",
+      "source_xy_mm": [
+        143.3576,
+        112.6236
+      ],
+      "step_xy_mm": [
+        -5.08,
+        -7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        82.81,
+        20.5375
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        82.81,
+        21.0
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 10,
+      "source_reference": "J1",
+      "source_pad": "3",
+      "source_net": "D9",
+      "source_xy_mm": [
+        145.8976,
+        112.6236
+      ],
+      "step_xy_mm": [
+        -2.54,
+        -7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        85.35,
+        20.5375
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        85.35,
+        21.0
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 11,
+      "source_reference": "J1",
+      "source_pad": "4",
+      "source_net": "D10",
+      "source_xy_mm": [
+        148.4376,
+        112.6236
+      ],
+      "step_xy_mm": [
+        0.0,
+        -7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        87.89,
+        20.5375
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        87.89,
+        21.0
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 12,
+      "source_reference": "J1",
+      "source_pad": "5",
+      "source_net": "VCC_3V3",
+      "source_xy_mm": [
+        150.9776,
+        112.6236
+      ],
+      "step_xy_mm": [
+        2.54,
+        -7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        90.43,
+        20.5375
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        90.43,
+        21.0
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 13,
+      "source_reference": "J1",
+      "source_pad": "6",
+      "source_net": "GND",
+      "source_xy_mm": [
+        153.5176,
+        112.6236
+      ],
+      "step_xy_mm": [
+        5.08,
+        -7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        92.97,
+        20.5375
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        92.97,
+        21.0
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    },
+    {
+      "pin": 14,
+      "source_reference": "J1",
+      "source_pad": "7",
+      "source_net": "VUSB",
+      "source_xy_mm": [
+        156.0576,
+        112.6236
+      ],
+      "step_xy_mm": [
+        7.62,
+        -7.62
+      ],
+      "registered_drill_xy_carrier_mm": [
+        95.51,
+        20.5375
+      ],
+      "unchanged_carrier_land_xy_mm": [
+        95.51,
+        21.0
+      ],
+      "drill_minus_land_xy_mm": [
+        0.0,
+        -0.4625
+      ]
+    }
+  ],
+  "land_fit_caveat": "Drilled module pin centers differ from carrier SMD land rows by 0.4625 mm. Datum/axis registration does not qualify solder contact, pad overlap or underside-clearance fit.",
+  "bound_visual_assets": [
+    {
+      "path": "pcb/rev3b/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+      "sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+      "bytes": 10792728
+    },
+    {
+      "path": "pcb/rev3b/design/models/XIAO-ASSET-LICENSE.md",
+      "sha256": "9f3a73010ca359b3d54f388286b81f3b130ca3d75f8b9683ae717e4c5a1fe2a4",
+      "bytes": 2144
+    },
+    {
+      "path": "pcb/rev3b/design/models/KICAD-LIBRARY-LICENSE.md",
+      "sha256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+      "bytes": 2101
+    },
+    {
+      "path": "pcb/rev3b/design/models/xiao-packages/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step",
+      "sha256": "7e77a52b3e261a45529e0df739376ea7cd79204fb1afad81332a50f4f1607000",
+      "bytes": 191384
+    },
+    {
+      "path": "pcb/rev3b/validation/xiao-c3-model-source.json",
+      "sha256": "8fbbd5ccff9af698077f264ff0322c9ae0603096439ae7e820c54ff6abf29b01",
+      "bytes": 80218
+    },
+    {
+      "path": "pcb/rev3b/validation/xiao-soc-package-source.json",
+      "sha256": "db773cc70e619d3c8f037d9bad335aaedd970fa459393603455fdfcea4ef810a",
+      "bytes": 18306
+    }
+  ],
+  "native_model_resolution": [
+    {
+      "reference": "D20",
+      "path": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step",
+      "sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+      "bytes": 42604,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C19",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "bytes": 43502,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D2",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R38",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C13",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C5",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "U10",
+      "path": "${KIPRJMOD}/models/TPS1H200A-DGN0008K-max-envelope.step",
+      "sha256": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+      "bytes": 160460,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R35",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R16",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R12",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D14",
+      "path": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R31",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D11",
+      "path": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+      "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7",
+      "bytes": 59769,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R14",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R19",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D3",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D5",
+      "path": "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "bytes": 78220,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "Q3",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D17",
+      "path": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R40",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "Q4",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R4",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C18",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "bytes": 43502,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R6",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "U8",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+      "sha256": "1007b8f67a3e81e2c5182bfd1fd27afe4d8d3710e0bfa1a14b8a91db8b595eb5",
+      "bytes": 100519,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C3",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R1",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C12",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C4",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "Q5",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R23",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R36",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R20",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R41",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C1",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D18",
+      "path": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step",
+      "sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+      "bytes": 42604,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "U2",
+      "path": "${KIPRJMOD}/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+      "sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+      "bytes": 10792728,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R5",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R33",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "J2",
+      "path": "${KIPRJMOD}/models/J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step",
+      "sha256": "121f1070cd6a16336abf762283f6729797d65949ee19b2c53b6302145b87edaa",
+      "bytes": 191218,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D16",
+      "path": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C16",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D6",
+      "path": "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "bytes": 78220,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "F1",
+      "path": "${KIPRJMOD}/models/1812L075-33DR-max-envelope.step",
+      "sha256": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+      "bytes": 16948,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "F2",
+      "path": "${KIPRJMOD}/models/1812L075-33DR-max-envelope.step",
+      "sha256": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+      "bytes": 16948,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C15",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "L1",
+      "path": "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Panasonic_PCC-M0530M.step",
+      "sha256": "9a853d3f886a569a231a862c760b6a7b42fa54b796f74486a1f23e7a8a55c932",
+      "bytes": 23091,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C14",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C9",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "bytes": 43450,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D8",
+      "path": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R7",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R18",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "J1",
+      "path": "${KIPRJMOD}/models/J1-EVERCOM-5301-8P8C-envelope.step",
+      "sha256": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+      "bytes": 29952,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R11",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D15",
+      "path": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R2",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R34",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R10",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C10",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C25",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C20",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D9",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "U4",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "bytes": 99639,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R22",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R13",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C17",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "U9",
+      "path": "${KIPRJMOD}/models/TPS1H200A-DGN0008K-max-envelope.step",
+      "sha256": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+      "bytes": 160460,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C7",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "U5",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "bytes": 99639,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C6",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C2",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D4",
+      "path": "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "bytes": 78220,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R25",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R3",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R21",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C24",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C21",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R32",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "C11",
+      "path": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R37",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D1",
+      "path": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "D19",
+      "path": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+      "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7",
+      "bytes": 59769,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R15",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R17",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R24",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    },
+    {
+      "reference": "R39",
+      "path": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "resolved": true
+    }
+  ],
+  "all_native_models_resolve": true,
+  "native_registration_scale_percent": 100,
+  "actual_installed_native_geometry_receipt": "verified-c3-installed-geometry.json",
+  "qualification": "Partial C3 visual reference; no enclosure, mating, RF, electrical, thermal, appliance or manufacturing qualification."
+}

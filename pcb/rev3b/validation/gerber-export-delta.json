@@ -1,0 +1,52 @@
+{
+  "GEA-Adapter-Rev3B-B_Cu.gbr": {
+    "removed_035_mm_drill_marker_flashes": 106,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-B_Mask.gbr": {
+    "removed_035_mm_drill_marker_flashes": 12,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-B_Paste.gbr": {
+    "removed_035_mm_drill_marker_flashes": 12,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-B_Silkscreen.gbr": {
+    "removed_035_mm_drill_marker_flashes": 12,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-Edge_Cuts.gbr": {
+    "removed_035_mm_drill_marker_flashes": 12,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-F_Cu.gbr": {
+    "removed_035_mm_drill_marker_flashes": 106,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-F_Mask.gbr": {
+    "removed_035_mm_drill_marker_flashes": 12,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-F_Paste.gbr": {
+    "removed_035_mm_drill_marker_flashes": 12,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-F_Silkscreen.gbr": {
+    "removed_035_mm_drill_marker_flashes": 12,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-In1_Cu.gbr": {
+    "removed_035_mm_drill_marker_flashes": 106,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-In2_Cu.gbr": {
+    "removed_035_mm_drill_marker_flashes": 106,
+    "otherwise_geometry_identical": true
+  },
+  "GEA-Adapter-Rev3B-NPTH.drl": {
+    "drill_data_identical": true
+  },
+  "GEA-Adapter-Rev3B-PTH.drl": {
+    "drill_data_identical": true
+  }
+}

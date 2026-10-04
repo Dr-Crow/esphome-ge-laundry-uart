@@ -1,0 +1,277 @@
+{
+  "base_commit": "0b957ba996e7e7a86f8776c9289b6cfb634421ee",
+  "reviewed_source": "fafd3eab5a8a8465697e1557bb075d88f85be9d9",
+  "verified_utc": "2026-10-04T00:21:35.931433+00:00",
+  "native_version": "9.0.9",
+  "counts": {
+    "schematic_components": 103,
+    "native_footprints": 102,
+    "pin_nets": 257,
+    "changed_original_pin_nets": 23,
+    "unchanged_original_pin_nets": 222,
+    "removed_copper": 109,
+    "added_copper": 163,
+    "populated_bom": 85,
+    "populated_cpl": 85,
+    "gerber_zip_members": 14,
+    "resolved_models": 86
+  },
+  "native_checks": {
+    "erc": 0,
+    "drc": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "warnings": 0,
+    "exclusions": 0
+  },
+  "preserved": {
+    "soldered_XIAO_C3_U2_and_22_pad_geometry": true,
+    "both_GE_inputs_and_original_PIN1_presence_priority": true,
+    "J1_J2_JP1_mounts_LED_USB_case_firmware": true,
+    "project_global_Power_Switching_rules": true,
+    "outline_mm": [
+      99.0,
+      40.0
+    ],
+    "all_621_retained_track_via_objects": true,
+    "direct_module_and_named_GE_connector_routes": true,
+    "all_GE_signal_path_copper_unchanged": false,
+    "all_filled_copper_unchanged_outside_track_bounds": false
+  },
+  "changed_original_pin_nets": [
+    {
+      "reference": "C18",
+      "pin": "1",
+      "before": "/PIN1_FUSED",
+      "after": "/PIN1_PROTECTED"
+    },
+    {
+      "reference": "C19",
+      "pin": "1",
+      "before": "/PIN3_FUSED",
+      "after": "/PIN3_PROTECTED"
+    },
+    {
+      "reference": "C22",
+      "pin": "1",
+      "before": "/PIN1_CT",
+      "after": null
+    },
+    {
+      "reference": "C22",
+      "pin": "2",
+      "before": "GND",
+      "after": null
+    },
+    {
+      "reference": "C23",
+      "pin": "1",
+      "before": "/PIN3_CT",
+      "after": null
+    },
+    {
+      "reference": "C23",
+      "pin": "2",
+      "before": "GND",
+      "after": null
+    },
+    {
+      "reference": "D16",
+      "pin": "1",
+      "before": "GND",
+      "after": "/PIN1_PROTECTED"
+    },
+    {
+      "reference": "D17",
+      "pin": "1",
+      "before": "GND",
+      "after": "/PIN3_PROTECTED"
+    },
+    {
+      "reference": "Q3",
+      "pin": "2",
+      "before": "/PIN1_FUSED",
+      "after": "/PIN1_PROTECTED"
+    },
+    {
+      "reference": "Q3",
+      "pin": "3",
+      "before": "/PIN1_PROTECTED",
+      "after": "/PIN1_FUSED"
+    },
+    {
+      "reference": "Q4",
+      "pin": "2",
+      "before": "/PIN3_FUSED",
+      "after": "/PIN3_PROTECTED"
+    },
+    {
+      "reference": "Q4",
+      "pin": "3",
+      "before": "/PIN3_PROTECTED",
+      "after": "/PIN3_FUSED"
+    },
+    {
+      "reference": "R31",
+      "pin": "1",
+      "before": "/PIN1_FUSED",
+      "after": "GND"
+    },
+    {
+      "reference": "R32",
+      "pin": "1",
+      "before": "/PIN3_FUSED",
+      "after": "GND"
+    },
+    {
+      "reference": "U10",
+      "pin": "1",
+      "before": "/PIN3_PROTECTED",
+      "after": "/PIN3_EN"
+    },
+    {
+      "reference": "U10",
+      "pin": "3",
+      "before": "/PIN3_EN",
+      "after": "unconnected-(U10-FAULT-Pad3)"
+    },
+    {
+      "reference": "U10",
+      "pin": "4",
+      "before": "/PIN3_CT",
+      "after": "/PIN3_CL"
+    },
+    {
+      "reference": "U10",
+      "pin": "5",
+      "before": "unconnected-(U10-QOD-Pad5)",
+      "after": "/PIN3_DELAY"
+    },
+    {
+      "reference": "U10",
+      "pin": "6",
+      "before": "/PIN3_SW_OUT",
+      "after": "GND"
+    },
+    {
+      "reference": "U9",
+      "pin": "3",
+      "before": "/PIN1_PROTECTED",
+      "after": "unconnected-(U9-FAULT-Pad3)"
+    },
+    {
+      "reference": "U9",
+      "pin": "4",
+      "before": "/PIN1_CT",
+      "after": "/PIN1_CL"
+    },
+    {
+      "reference": "U9",
+      "pin": "5",
+      "before": "unconnected-(U9-QOD-Pad5)",
+      "after": "/PIN1_DELAY"
+    },
+    {
+      "reference": "U9",
+      "pin": "6",
+      "before": "/PIN1_SW_OUT",
+      "after": "GND"
+    }
+  ],
+  "changed_footprints": [
+    "C18",
+    "C19",
+    "C21",
+    "C24",
+    "C25",
+    "D16",
+    "D17",
+    "F1",
+    "F2",
+    "Q3",
+    "Q4",
+    "R31",
+    "R32",
+    "R33",
+    "R34",
+    "U10",
+    "U9"
+  ],
+  "removed_references": [
+    "C22",
+    "C23"
+  ],
+  "added_references": [
+    "D20",
+    "R38",
+    "R39",
+    "R40",
+    "R41"
+  ],
+  "drill_counts": {
+    "PTH": {
+      "0.4": 111,
+      "0.9": 8
+    },
+    "NPTH": {
+      "3.2": 4
+    }
+  },
+  "zip_members": {
+    "GEA-Adapter-Rev3B-B_Cu.gbr": "f52c72daebbb82639383e06c17770379098ad5a406982f16a6214de11d18a39f",
+    "GEA-Adapter-Rev3B-B_Mask.gbr": "d5354484cc5042f0b62127b5e8385d7380652c37d5d6068c8bf38898f0d1f6a0",
+    "GEA-Adapter-Rev3B-B_Paste.gbr": "4ec85121e7eacccf1a43b62672191270182d5503ffdbc44c7c46ef075ece6854",
+    "GEA-Adapter-Rev3B-B_Silkscreen.gbr": "932455ea94d9bf3cb0155ab551210bb80bb83405c1029e0f62212808c9571bbf",
+    "GEA-Adapter-Rev3B-Edge_Cuts.gbr": "c1efe6d100d0482e032adf21e4dbb4d1e982d8793032d7840b2b2836b706a94a",
+    "GEA-Adapter-Rev3B-F_Cu.gbr": "ee2e5e5d724d9fb10ca27aa024f9a4c638bb0963da1dda15fc9e3e52d58e720b",
+    "GEA-Adapter-Rev3B-F_Mask.gbr": "c4d6cd40e8ccc3a0a31c85e0a432fc2206949bc29565f39e7c2400cd5d919fb1",
+    "GEA-Adapter-Rev3B-F_Paste.gbr": "c19e3a387beff87876e4d3daf2f9a8eec4a76b16ec54a9719147205d0c621639",
+    "GEA-Adapter-Rev3B-F_Silkscreen.gbr": "131b1a8fea04c7217ea5cf282272ad30b695aa34025682c656957e2f96d7d26c",
+    "GEA-Adapter-Rev3B-In1_Cu.gbr": "7a00f2647e0863238cecce73462aab49c51fcd992c24ee3731232b66fcebf93d",
+    "GEA-Adapter-Rev3B-In2_Cu.gbr": "49095f5667682593bc4873276ed10fa59833acb2ad75dbfd00e1e9cd9871c570",
+    "GEA-Adapter-Rev3B-NPTH.drl": "af18e803fdacc29305f7424be9c9ee452fd4d4aa2cf578ce93396118fd96481c",
+    "GEA-Adapter-Rev3B-PTH.drl": "4bb613be144c36abc8e4426f05617132652fb9c57867a65be7a0c2c2b1b4c52f",
+    "GEA-Adapter-Rev3B-job.gbrjob": "4996b4d77470df180ab9e26a08ff8e9cbb41f022c03dda3a082999cb4daf1099"
+  },
+  "source_hashes": {
+    "kicad_sch": "40c0f743f5cebbd27e9727a00276291257fd84f8dc47263d075e2e0abd38f0f1",
+    "kicad_pcb": "a21a84afde3d430d0749b10b0d20312ef122954420cca0baf46ab7304feca598",
+    "kicad_pro": "abea7adbb5a1ee515cd443d6735b7c1808d31d0cef98924e77ab61f694fccbc9",
+    "kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454"
+  },
+  "bom_sha256": "23ec68c57f4a09124a1bc0cb251dbc1fe21fd55b554e9ad74ef809fdc4cdb186",
+  "limits": [
+    "Prototype only; no appliance/physical/source/transient/thermal/stencil qualification",
+    "Soldered XIAO ESP32-C3 only; no C6 compatibility assertion",
+    "No remote publication/order/quote change/physical test"
+  ],
+  "copper_review": {
+    "track_object_edit_bounds_mm": [
+      39.9125,
+      2,
+      77,
+      33.0099
+    ],
+    "local_unrelated_net_detours": [
+      "+3V3",
+      "Net-(D9-K2), intermediate half-duplex receive/clamp net to U4.1"
+    ],
+    "F_Cu_XOR_mm2": 358.269,
+    "F_Cu_removed_mm2": 233.259,
+    "F_Cu_added_mm2": 125.011,
+    "F_Cu_outside_track_window_left_mm2": 1.618,
+    "F_Cu_removed_right_of_x77_mm2": 24.99,
+    "F_Cu_extent_max_x_mm": 85.467,
+    "other_layer_outside_window_residue_each_contour_max_mm2": 4e-06,
+    "zone_definitions_unchanged": true,
+    "U2_UFL_exclusion_bounds_mm": [
+      77.39,
+      10.858,
+      80.184,
+      14.922
+    ],
+    "UFL_filled_copper_delta_mm2_all_layers": 0,
+    "physical_RF_thermal_return_path_qualification": "Open",
+    "independent_receipt": "validation/INDEPENDENT-BACKPORT-REVIEW.md"
+  }
+}
