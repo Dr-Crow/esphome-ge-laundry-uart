@@ -45,7 +45,7 @@ class ReleaseEvidenceTest(unittest.TestCase):
         manifest = json.loads((validate.ROOT / "ci/manifest.json").read_text())
         board = manifest["boards"]["rev2.2"]
         source_hashes = {str(p.relative_to(validate.ROOT)): validate.sha(p)
-                         for p in validate.sources(board)}
+                         for p in validate.design_inputs(board)}
         # Keep the fixture in the actual checkout so git, rather than a mock,
         # determines whether this otherwise valid qualification file is tracked.
         with tempfile.NamedTemporaryFile(dir=validate.ROOT, prefix="qualification-test-",
@@ -54,7 +54,8 @@ class ReleaseEvidenceTest(unittest.TestCase):
             evidence.write_text('{"qualification": "test-only"}\n')
             board["readiness"] = {
                 gate: {"state": "passed", "evidence": str(evidence.relative_to(validate.ROOT)),
-                       "sha256": validate.sha(evidence), "source_sha256": source_hashes}
+                       "sha256": validate.sha(evidence), "source_sha256": source_hashes,
+                       "external_kicad": validate.external_identity(board, manifest)}
                 for gate in ("power", "source", "physical")
             }
             with tempfile.TemporaryDirectory(prefix="qualification-result-") as output:

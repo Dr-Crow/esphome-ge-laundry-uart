@@ -8,12 +8,46 @@
     "rev1.0": {
       "source": null,
       "archive": "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip",
-      "status": "Historical; current package has no editable source or assembly data; historical recovery/provenance review pending"
+      "status": "Historical Gerber package; no editable CAD or original supplier BOM/CPL in this branch; qualification blocked",
+      "bom": null,
+      "cpl": null,
+      "assembly_note": "No historical supplier BOM/CPL exists in this package; no purchasing data invented.",
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Historical source, component/module ratings, source capacity and electrical qualification absent from this package"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Editable KiCad source absent; exact historical archive/source pairing and assembly qualification unestablished"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Historical assembly, module/connector/enclosure and appliance qualification unestablished"
+        }
+      }
     },
     "rev2.0": {
       "source": null,
       "archive": "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip",
-      "status": "Superseded; current package has no editable source; historical recovery/provenance review pending"
+      "status": "Historical PCBA package; no editable CAD or current source-matched assembly files in this branch; historical supplier rotations unqualified",
+      "bom": null,
+      "cpl": null,
+      "assembly_note": "Prior supplier tables remain inside the historical PCBA ZIP; without current editable source they do not establish source parity or supplier rotation qualification.",
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Historical source, component/module ratings, source capacity and electrical qualification absent from this package"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Editable KiCad source absent; exact historical archive/source pairing and assembly qualification unestablished"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Historical assembly, module/connector/enclosure and appliance qualification unestablished"
+        }
+      }
     },
     "rev2.1": {
       "source": "pcb/rev2.1/design/OnionStraws",
@@ -28,7 +62,7 @@
         },
         "source": {
           "state": "blocked",
-          "reason": "Native ERC/DRC findings remain unresolved"
+          "reason": "Native ERC/DRC findings, missing archive job, legacy BOM header, Q1 source purchasing metadata and inherited supplier placement-origin disagreement remain unresolved"
         },
         "physical": {
           "state": "blocked",
@@ -46,7 +80,8 @@
       },
       "intended_clearance_mm": {
         "Power": 0.2
-      }
+      },
+      "library_tables": []
     },
     "rev2.2": {
       "source": "pcb/rev2.2/design/OnionStraws",
@@ -79,11 +114,21 @@
       },
       "intended_clearance_mm": {
         "Power": 0.2
-      }
+      },
+      "library_tables": [
+        "pcb/rev2.2/design/fp-lib-table"
+      ]
     }
   },
   "firmware": [
     "firmware/gea2.yaml",
     "firmware/gea3.yaml"
-  ]
+  ],
+  "external_kicad": {
+    "version": "9.0.9",
+    "symbols_commit": "ad36cd14bcd1b1cd0484f629ccdd3481366f74f3",
+    "footprints_commit": "2b941bf1d97862be429793b46fd52a5add09a2fc",
+    "models_commit": "a0244fe3442823dbb052ebc4820b4c2951e1742c",
+    "container_digest": "sha256:e638b79b0321f29395a5b783e94bb9f3c73303e8da15da27b8f5cb4b67a37729"
+  }
 }

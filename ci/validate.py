@@ -34,9 +34,9 @@ def sha(file):
     return hashlib.sha256(file.read_bytes()).hexdigest()
 
 
-def command(args, output, name, cwd=ROOT):
+def command(args, output, name, cwd=None):
     with (output / f"{name}.log").open("w") as log:
-        result = subprocess.run(list(map(str, args)), cwd=cwd, stdout=log,
+        result = subprocess.run(list(map(str, args)), cwd=ROOT if cwd is None else cwd, stdout=log,
                                 stderr=subprocess.STDOUT, check=False)
     return result.returncode
 
@@ -55,21 +55,156 @@ def sources(board):
             (".kicad_pro", ".kicad_sch", ".kicad_pcb")]
 
 
-def design_inputs(board):
-    files = sources(board)
-    native_rules = files[0].with_suffix(".kicad_dru")
+def design_dependencies(board):
+    """Canonical local CAD/library/model closure; stock references stay external."""
+    core = sources(board)
+    project = core[0].parent
+    files = {file for file in core}
+    external, local_libraries = set(), {}
+
+    def reference(uri):
+        if re.match(r"^\$\{(?:KICAD[689]_(?:SYMBOL|FOOTPRINT|3DMODEL)_DIR|KISYS3DMOD)\}/", uri):
+            external.add(uri)
+            return None
+        uri = uri.replace("${KIPRJMOD}", str(project))
+        require("${" not in uri and not re.match(r"^[a-zA-Z]+://", uri),
+                f"Unsupported design dependency: {uri}")
+        resolved = (project / uri).resolve()
+        require(resolved.is_relative_to(ROOT), f"Design dependency outside checkout: {uri}")
+        return resolved
+
+    native_rules = core[0].with_suffix(".kicad_dru")
     if board.get("design_rules"):
         require(path(board["design_rules"]) == native_rules,
                 "Declared native rules do not match the source stem")
     if native_rules.is_file():
-        files.append(path(str(native_rules.relative_to(ROOT))))
-    return files
+        files.add(native_rules)
+    # Manifest declarations make removal of a real project table a missing input.
+    tables = {path(name) for name in board.get("library_tables", [])}
+    tables |= {project / name for name in ("fp-lib-table", "sym-lib-table")
+               if (project / name).is_file()}
+    for table in sorted(tables):
+        files.add(table)
+        entries = re.findall(r'\(lib\s+\(name\s+"([^"\n]+)"\).*?\(uri\s+"([^"\n]+)"\)',
+                             table.read_text(), re.DOTALL)
+        require(len(entries) == len(re.findall(r"\(lib\s", table.read_text())),
+                f"Unsupported library table entry: {table.relative_to(ROOT)}")
+        for name, uri in entries:
+            resolved = reference(uri)
+            if resolved is None:
+                continue
+            local_libraries[(table.name, name)] = resolved
+            if resolved.suffix == ".pretty":
+                require(resolved.is_dir(), f"MISSING: {resolved.relative_to(ROOT)}")
+                footprints = list(resolved.glob("*.kicad_mod"))
+                require(footprints, f"MISSING: local footprint library empty: {resolved.relative_to(ROOT)}")
+                files.update(footprints)
+            else:
+                files.add(path(str(resolved.relative_to(ROOT))))
+    # Bind additional project-local library/models too, including retained envelopes.
+    files.update(p for p in project.rglob("*") if p.is_file() and
+                 p.suffix.lower() in (".kicad_mod", ".kicad_sym", ".step", ".stp", ".wrl"))
+    pending = [core[1]]
+    while pending:
+        schematic = pending.pop()
+        for uri in re.findall(r'\(property\s+"Sheetfile"\s+"([^"\n]+)"', schematic.read_text()):
+            dependency = path(str((schematic.parent / uri).resolve().relative_to(ROOT)))
+            if dependency not in files:
+                files.add(dependency)
+                pending.append(dependency)
+    for file in list(files):
+        if file.suffix not in (".kicad_sch", ".kicad_pcb", ".kicad_mod"):
+            continue
+        text = file.read_text()
+        for uri in re.findall(r'\(model\s+"([^"\n]+)"', text):
+            dependency = reference(uri)
+            if dependency is not None:
+                files.add(path(str(dependency.relative_to(ROOT))))
+        footprints = re.findall(r'\(footprint\s+"([^"\n]+)"', text)
+        footprints += re.findall(r'\(property\s+"Footprint"\s+"([^"\n]+)"', text)
+        for footprint in footprints:
+            if ":" not in footprint:
+                continue
+            library, name = footprint.split(":", 1)
+            local = local_libraries.get(("fp-lib-table", library))
+            if local is not None:
+                files.add(path(str((local / (name + ".kicad_mod")).relative_to(ROOT))))
+    return sorted({path(str(p.relative_to(ROOT))) for p in files}), sorted(external)
+
+
+def design_inputs(board):
+    return design_dependencies(board)[0]
+
+
+def source_identity(board):
+    return {str(p.relative_to(ROOT)): sha(p) for p in design_inputs(board)}
+
+
+def external_identity(board, manifest):
+    references = design_dependencies(board)[1]
+    provenance = manifest.get("external_kicad", {})
+    if references:
+        require(provenance.get("version") == manifest["tools"]["kicad"] and
+                all(re.fullmatch(r"[0-9a-f]{40}", provenance.get(name, ""))
+                    for name in ("symbols_commit", "footprints_commit", "models_commit")) and
+                re.fullmatch(r"sha256:[0-9a-f]{64}", provenance.get("container_digest", "")),
+                "MISSING: pinned external KiCad library/model provenance")
+    return {"references": references, "provenance": dict(provenance) if references else {}}
 
 
 def inventory(board, output, manifest):
-    files = design_inputs(board)
-    files += [path(board[key]) for key in ("bom", "cpl", "archive")]
-    return {"files": {str(file.relative_to(ROOT)): sha(file) for file in files}}
+    files, missing, external = [], [], {}
+    try:
+        files += design_inputs(board)
+        external = external_identity(board, manifest)
+    except ValueError as error:
+        missing.append(str(error))
+    for key in ("bom", "cpl", "archive"):
+        if not board.get(key):
+            missing.append(f"MISSING: supplier {key.upper()} not declared")
+        else:
+            try:
+                files.append(path(board[key]))
+            except ValueError as error:
+                missing.append(str(error))
+    if board.get("historical_archive"):
+        files.append(path(board["historical_archive"]))
+    result = {"files": {str(file.relative_to(ROOT)): sha(file) for file in files},
+              "missing": missing, "external_kicad": external}
+    (output / "files.json").write_text(json.dumps(result, indent=2) + "\n")
+    require(not missing, "; ".join(missing))
+    return result
+
+
+def firmware_inputs(profile):
+    """Hash the declared local YAML/include closure, excluding private secrets."""
+    files, pending = {}, [path(profile)]
+    while pending:
+        source = pending.pop()
+        relative = str(source.relative_to(ROOT))
+        require(source.is_relative_to(ROOT / "firmware") and source.suffix in (".yaml", ".yml")
+                and source.name != "secrets.yaml", f"Invalid firmware input: {relative}")
+        if relative in files:
+            continue
+        files[relative] = sha(source)
+        for include in re.findall(r"^[^#\n]*!include\s+([^\n]+)", source.read_text(), re.MULTILINE):
+            # These profiles use plain or quoted local paths, not substitutions/maps.
+            include = include.split(" #", 1)[0].strip().strip("\"'")
+            require(include and not any(c in include for c in "{}$"),
+                    f"Unsupported local include in {relative}: {include}")
+            pending.append(path(str((source.parent / include).relative_to(ROOT))))
+    return dict(sorted(files.items()))
+
+
+def firmware_inventory(output, manifest):
+    profiles = manifest.get("firmware", [])
+    require(isinstance(profiles, list) and profiles, "MISSING: no firmware compile profiles declared")
+    require(all(isinstance(p, str) for p in profiles), "Invalid firmware profile declaration")
+    require(len(set(profiles)) == len(profiles), "Duplicate firmware compile profile")
+    result = {profile: {"source_sha256": sha(path(profile)),
+                        "input_sha256": firmware_inputs(profile)} for profile in profiles}
+    (output / "profiles.json").write_text(json.dumps(result, indent=2) + "\n")
+    return result
 
 
 def hardware(board, output, manifest):
@@ -77,15 +212,27 @@ def hardware(board, output, manifest):
     tool("kicad-cli", manifest["tools"]["kicad"])
     _, sch, pcb = sources(board)
     results = {}
-    for mode, source, extra in [("erc", sch, []), ("drc", pcb, ["--schematic-parity", "--all-track-errors"])]:
-        report = output / f"{mode}.json"
-        results[mode] = command(["kicad-cli", "sch" if mode == "erc" else "pcb", mode,
-                                "--severity-all", "--exit-code-violations", "--format", "json",
-                                "--output", report, *extra, source], output, mode)
+    # ERC can migrate old project metadata. Preserve committed inputs and libraries.
+    with tempfile.TemporaryDirectory(prefix="gea-native-") as temporary:
+        checkout = Path(temporary) / "checkout"
+        for file in inputs:
+            destination = checkout / file.relative_to(ROOT)
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(file, destination)
+        for mode, source, extra in [("erc", checkout / sch.relative_to(ROOT), []),
+                                   ("drc", checkout / pcb.relative_to(ROOT), ["--schematic-parity", "--all-track-errors"])]:
+            report = output / f"{mode}.json"
+            report.unlink(missing_ok=True)
+            results[mode] = command(["kicad-cli", "sch" if mode == "erc" else "pcb", mode,
+                                    "--severity-all", "--exit-code-violations", "--format", "json",
+                                    "--output", report, *extra, source], output, mode)
+    details = {"native_exit_codes": results, "source_sha256": {str(p.relative_to(ROOT)): sha(p) for p in inputs},
+               "external_kicad": external_identity(board, manifest)}
+    (output / "native-checks.json").write_text(json.dumps(details, indent=2) + "\n")
     # Run both checks before failing so inherited issues remain available as artifacts.
-    require(all(code == 0 for code in results.values()), f"Native checks failed: {results}; see reports")
     require(all((output / f"{mode}.json").is_file() for mode in results), "Native report missing")
-    return {"native_exit_codes": results, "source_sha256": {p.name: sha(p) for p in inputs}}
+    require(all(code == 0 for code in results.values()), f"Native checks failed: {results}; see reports")
+    return details
 
 
 def rows(file, key):
@@ -150,8 +297,37 @@ def reviewed_placement_origins(board, inputs, positions, output):
     return origins
 
 
+def matched_archive(board, generated):
+    generated_files = {p.name: p.read_bytes() for p in generated.iterdir() if p.is_file() and not p.name.endswith(".gbrjob")}
+    with zipfile.ZipFile(path(board["archive"])) as archive:
+        require(archive.testzip() is None, "Gerber ZIP integrity failure")
+        names = archive.namelist()
+        require(len(set(names)) == len(names), "Duplicate ZIP members")
+        require(all(Path(n).name == n and n not in (".", "..") for n in names), "ZIP must contain flat safe filenames")
+        jobs = [n for n in names if n.endswith(".gbrjob")]
+        require(len(jobs) == 1, "Expected one Gerber job file")
+        job = json.loads(archive.read(jobs[0]))
+        native_job = json.loads((generated / jobs[0]).read_text())
+        job["Header"].pop("CreationDate", None)
+        native_job["Header"].pop("CreationDate", None)
+        require(job == native_job, "Gerber job/source metadata differs")
+        plotted = {entry["Path"] for entry in job["FilesAttributes"]}
+        drills = {n for n in names if n.endswith(".drl")}
+        require(plotted and drills, "Missing Gerber/drill members")
+        require(plotted | drills == set(generated_files), "Stored archive and native export file sets differ")
+        require(plotted | drills <= set(names), "Gerber job references missing members")
+        require(all(n in plotted | drills | set(jobs) or n.endswith((".txt", ".rpt")) for n in names),
+                "Archive contains undeclared manufacturing members")
+        for name, data in generated_files.items():
+            require(gerber_content(archive.read(name)) == gerber_content(data), f"Manufacturing/source geometry or metadata differs: {name}")
+        copper = [entry for entry in job["FilesAttributes"] if entry["FileFunction"].startswith("Copper,")]
+        require(len(copper) == job["GeneralSpecs"]["LayerNumber"], "Gerber job copper layer count mismatch")
+    return len(generated_files)
+
+
 def manufacturing(board, output, manifest):
     inputs = design_inputs(board)
+    (output / "cam-parity.json").unlink(missing_ok=True)
     tool("kicad-cli", manifest["tools"]["kicad"])
     _, sch, pcb = sources(board)
     netlist, positions = output / "netlist.xml", output / "positions.csv"
@@ -164,6 +340,16 @@ def manufacturing(board, output, manifest):
         ("drills", ["pcb", "export", "drill", "--excellon-separate-th", "-o", str(generated) + "/", pcb])
     ]:
         require(command(["kicad-cli", *args], output, name) == 0, f"Native {name} export failed")
+    # CAM identity is independent of missing/unqualified assembly metadata.
+    cam_count = matched_archive(board, generated)
+    cam = {"archive": board["archive"], "status": "passed",
+           "native_matched_gerber_and_drill_files": cam_count,
+           "source_sha256": {str(p.relative_to(ROOT)): sha(p) for p in inputs},
+           "external_kicad": external_identity(board, manifest)}
+    (output / "cam-parity.json").write_text(json.dumps(cam, indent=2) + "\n")
+    missing = [key.upper() for key in ("bom", "cpl") if not board.get(key)]
+    require(not missing, "MISSING: supplier " + "/".join(missing) +
+            "; current review CAM/source parity passed; " + board.get("assembly_note", "assembly inputs absent"))
     components = {}
     for item in ET.parse(netlist).findall("components/comp"):
         properties = {p.attrib["name"]: p.attrib.get("value", "") for p in item.findall("property")}
@@ -193,36 +379,15 @@ def manufacturing(board, output, manifest):
                 delta = (delta + 180) % 360 - 180
             require(math.isfinite(value) and abs(delta) <= 0.00001, f"CPL {native} differs from PCB: {ref}")
         require(cpl[ref]["Layer"].lower() == pos[ref]["Side"].lower(), f"CPL side differs from PCB: {ref}")
-    generated_files = {p.name: p.read_bytes() for p in generated.iterdir() if p.is_file() and not p.name.endswith(".gbrjob")}
-    with zipfile.ZipFile(path(board["archive"])) as archive:
-        require(archive.testzip() is None, "Gerber ZIP integrity failure")
-        names = archive.namelist()
-        require(len(set(names)) == len(names), "Duplicate ZIP members")
-        require(all(Path(n).name == n and n not in (".", "..") for n in names), "ZIP must contain flat safe filenames")
-        jobs = [n for n in names if n.endswith(".gbrjob")]
-        require(len(jobs) == 1, "Expected one Gerber job file")
-        job = json.loads(archive.read(jobs[0]))
-        native_job = json.loads((generated / jobs[0]).read_text())
-        job["Header"].pop("CreationDate", None)
-        native_job["Header"].pop("CreationDate", None)
-        require(job == native_job, "Gerber job/source metadata differs")
-        plotted = {entry["Path"] for entry in job["FilesAttributes"]}
-        drills = {n for n in names if n.endswith(".drl")}
-        require(plotted and drills, "Missing Gerber/drill members")
-        require(plotted | drills == set(generated_files), "Stored archive and native export file sets differ")
-        require(plotted | drills <= set(names), "Gerber job references missing members")
-        require(all(n in plotted | drills | set(jobs) or n.endswith((".txt", ".rpt")) for n in names),
-                "Archive contains undeclared manufacturing members")
-        for name, data in generated_files.items():
-            require(gerber_content(archive.read(name)) == gerber_content(data), f"Manufacturing/source geometry or metadata differs: {name}")
-        copper = [entry for entry in job["FilesAttributes"] if entry["FileFunction"].startswith("Copper,")]
-        require(len(copper) == job["GeneralSpecs"]["LayerNumber"], "Gerber job copper layer count mismatch")
     return {"assembled_references": len(expected), "reviewed_centroid_references": len(origins),
-            "native_matched_gerber_and_drill_files": len(generated_files),
-            "source_sha256": {p.name: sha(p) for p in inputs}}
+            "native_matched_gerber_and_drill_files": cam_count,
+            "source_sha256": {str(p.relative_to(ROOT)): sha(p) for p in inputs},
+            "external_kicad": external_identity(board, manifest)}
 
 
 def rules(board, output, manifest):
+    identity = source_identity(board)
+    external = external_identity(board, manifest)
     tool("kicad-cli", manifest["tools"]["kicad"])
     project, sch, _ = sources(board)
     intended = board.get("intended_netclasses", {})
@@ -249,11 +414,13 @@ def rules(board, output, manifest):
             findings.append(f"Intended {name} clearance differs: expected {expected} mm, got {actual}")
     (output / "intended-rule-audit.json").write_text(json.dumps({"intended": intended, "findings": findings}, indent=2) + "\n")
     require(not findings, "; ".join(findings))
-    return {"explicit_net_assignments_checked": len(intended), "notice": "Configured native DRC and intended-rule coverage are separate checks"}
+    return {"explicit_net_assignments_checked": len(intended), "source_sha256": identity,
+            "external_kicad": external, "notice": "Configured native DRC and intended-rule coverage are separate checks"}
 
 
 def release(board, output, manifest):
-    current_sources = {str(p.relative_to(ROOT)): sha(p) for p in design_inputs(board)}
+    current_sources = source_identity(board)
+    external = external_identity(board, manifest)
     readiness = board.get("readiness", {})
     findings = []
     for gate in ("power", "source", "physical"):
@@ -264,6 +431,8 @@ def release(board, output, manifest):
             findings.append(f"BLOCKED {gate}: evidence/hash missing")
         elif evidence.get("source_sha256") != current_sources:
             findings.append(f"BLOCKED {gate}: qualification does not match current source hashes")
+        elif external["references"] and evidence.get("external_kicad") != external:
+            findings.append(f"BLOCKED {gate}: qualification does not match pinned external KiCad dependencies")
         elif command(["git", "ls-files", "--error-unmatch", "--",
                       path(evidence["evidence"]).relative_to(ROOT)], output,
                      gate + "-evidence-tracked") != 0:
@@ -275,15 +444,16 @@ def release(board, output, manifest):
                                        cwd=ROOT, capture_output=True, check=False)
             if committed.returncode != 0 or hashlib.sha256(committed.stdout).hexdigest() != evidence["sha256"]:
                 findings.append(f"BLOCKED {gate}: qualification evidence differs from committed HEAD")
-    (output / "readiness.json").write_text(json.dumps({"gates": readiness, "findings": findings}, indent=2) + "\n")
+    (output / "readiness.json").write_text(json.dumps({"gates": readiness, "findings": findings,
+                                                        "source_sha256": current_sources, "external_kicad": external}, indent=2) + "\n")
     require(not findings, "; ".join(findings))
     return {"readiness": "passed", "notice": "Readiness evidence is reviewed independently from native CI checks"}
 
 
 def firmware(output, manifest):
     tool("esphome", manifest["tools"]["esphome"])
-    profiles = manifest.get("firmware", [])
-    require(profiles, "MISSING: no firmware compile profiles declared")
+    declared = firmware_inventory(output, manifest)
+    profiles = list(declared)
     # Dummy CI credentials stay outside the checkout. Never flash or run a device.
     with tempfile.TemporaryDirectory(prefix="gea-firmware-") as temporary:
         workspace = Path(temporary)
@@ -303,7 +473,7 @@ def firmware(output, manifest):
             artifacts = [{"path": str(p.relative_to(workspace)), "bytes": p.stat().st_size, "sha256": sha(p)}
                          for p in workspace.rglob("firmware.*")
                          if p.is_file() and p.suffix in (".bin", ".elf") and p.stat().st_mtime >= started]
-            results[profile] = {"source_sha256": sha(source), "config_exit_code": config,
+            results[profile] = {**declared[profile], "config_exit_code": config,
                                 "compile_exit_code": compile_status, "artifacts": artifacts}
             if compile_status == 0 and not any(a["path"].endswith(".bin") for a in artifacts):
                 results[profile]["compile_exit_code"] = "MISSING: fresh compiled binary"
@@ -327,7 +497,9 @@ def main():
     output = ROOT / args.output / args.stage
     output.mkdir(parents=True, exist_ok=True)
     results = {}
-    selected = {"firmware": None} if args.stage == "firmware" else manifest["boards"]
+    selected = {"firmware": None} if args.stage == "firmware" else dict(manifest["boards"])
+    if args.stage == "inventory":
+        selected["firmware"] = None
     require(args.revision == "all" or args.revision in selected, f"Unknown revision: {args.revision}")
     for revision, board in selected.items():
         if args.revision != "all" and args.revision != revision:
@@ -335,7 +507,12 @@ def main():
         destination = output / revision
         destination.mkdir(exist_ok=True)
         try:
-            result = firmware(destination, manifest) if args.stage == "firmware" else globals()[args.stage](board, destination, manifest)
+            if args.stage == "firmware":
+                result = firmware(destination, manifest)
+            elif args.stage == "inventory" and revision == "firmware":
+                result = firmware_inventory(destination, manifest)
+            else:
+                result = globals()[args.stage](board, destination, manifest)
             results[revision] = {"status": "passed", "details": result}
         except (ValueError, OSError, KeyError, StopIteration, ET.ParseError, zipfile.BadZipFile, subprocess.CalledProcessError) as error:
             results[revision] = {"status": "failed", "reason": str(error)}

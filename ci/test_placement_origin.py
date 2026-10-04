@@ -13,9 +13,11 @@ class PlacementOriginTest(unittest.TestCase):
     def fixture(self, root):
         for suffix in (".kicad_pro", ".kicad_sch", ".kicad_pcb"):
             (root / ("board" + suffix)).write_text("reviewed source\n")
+        (root / "symbols").mkdir()
+        (root / "symbols/local.kicad_sym").write_text("reviewed local symbol\n")
         board = {"source": "board"}
         review = {
-            "source_sha256": {p.name: validate.sha(p) for p in validate.design_inputs(board)},
+            "source_sha256": {str(p.relative_to(root)): validate.sha(p) for p in validate.design_inputs(board)},
             "references": {"J1": {
                 "footprint": "Library:RJ45", "native_anchor_xy_mm": [122.425, -99.2825],
                 "pad_bbox_center_xy_mm": [124.755, -94.8375],
@@ -41,6 +43,15 @@ class PlacementOriginTest(unittest.TestCase):
                 origins = validate.reviewed_placement_origins(board, validate.design_inputs(board), positions, root)
                 self.assertEqual(origins["J1"], {"PosX": 124.755, "PosY": -94.8375})
                 (root / "board.kicad_pcb").write_text("changed geometry\n")
+                with self.assertRaisesRegex(ValueError, "does not match current source hashes"):
+                    validate.reviewed_placement_origins(board, validate.design_inputs(board), positions, root)
+
+    def test_changed_local_library_invalidates_centroid_attestation(self):
+        with tempfile.TemporaryDirectory(prefix="centroid-library-") as temporary:
+            root = Path(temporary)
+            with patch.object(validate, "ROOT", root):
+                board, positions = self.fixture(root)
+                (root / "symbols/local.kicad_sym").write_text("changed pin function\n")
                 with self.assertRaisesRegex(ValueError, "does not match current source hashes"):
                     validate.reviewed_placement_origins(board, validate.design_inputs(board), positions, root)
 
