@@ -1,0 +1,35 @@
+[
+  {
+    "reference": "#FLG01",
+    "uuid": "66a9054b-1d02-4acd-b615-148a36ed947f",
+    "net": "VDC",
+    "at_mm": [
+      154.94,
+      23.495
+    ],
+    "angle": 270,
+    "purpose": "External connector supply input"
+  },
+  {
+    "reference": "#FLG02",
+    "uuid": "2c09ae4e-7bf7-4eb3-95fc-c26e73f6c4d7",
+    "net": "GND",
+    "at_mm": [
+      75.565,
+      85.09
+    ],
+    "angle": 0,
+    "purpose": "External connector supply return"
+  },
+  {
+    "reference": "#FLG03",
+    "uuid": "a404eafe-03da-4e92-bc77-bb58c34e1737",
+    "net": "/p1",
+    "at_mm": [
+      260.35,
+      43.18
+    ],
+    "angle": 0,
+    "purpose": "Original manual selector/protection pass-through output feeding U3.IN"
+  }
+]

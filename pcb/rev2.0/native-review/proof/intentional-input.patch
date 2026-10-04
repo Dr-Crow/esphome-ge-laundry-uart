@@ -1,0 +1,44 @@
+diff --git a/pcb/rev2.0/design/OnionStraws.kicad_pcb b/pcb/rev2.0/design/OnionStraws.kicad_pcb
+index 010b208..339481f 100644
+--- a/pcb/rev2.0/design/OnionStraws.kicad_pcb
++++ b/pcb/rev2.0/design/OnionStraws.kicad_pcb
+@@ -16349,7 +16349,7 @@
+ 		(at 115.525 106.5 -90)
+ 		(descr "SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip, labeled with numbers")
+ 		(tags "net tie solder jumper bridged")
+-		(property "Reference" "Power Pin"
++		(property "Reference" "JP2"
+ 			(at -0.9 1.925 90)
+ 			(layer "B.SilkS")
+ 			(uuid "771201a5-93ee-4f60-b773-173235bd8c60")
+@@ -17036,7 +17036,7 @@
+ 		(at 109.525 104.6 180)
+ 		(descr "SMD pad as test Point, diameter 2.0mm")
+ 		(tags "test point SMD pad")
+-		(property "Reference" "INPUT POWER"
++		(property "Reference" "TP3"
+ 			(at 2.125 2.4 -90)
+ 			(layer "B.SilkS")
+ 			(uuid "1b240116-c04e-4f3f-ad87-dd68c4ea539a")
+diff --git a/pcb/rev2.0/design/OnionStraws.kicad_sch b/pcb/rev2.0/design/OnionStraws.kicad_sch
+index b2a4710..1540a8a 100644
+--- a/pcb/rev2.0/design/OnionStraws.kicad_sch
++++ b/pcb/rev2.0/design/OnionStraws.kicad_sch
+@@ -24857,7 +24857,7 @@
+ 		(unit 1)
+ 		(exclude_from_sim no)
+ 		(in_bom yes)
+-		(on_board yes)
++		(on_board no)
+ 		(dnp yes)
+ 		(fields_autoplaced yes)
+ 		(uuid "08d2780d-73f8-499b-bea0-b768891162eb")
+@@ -29342,7 +29342,7 @@
+ 		(unit 1)
+ 		(exclude_from_sim no)
+ 		(in_bom yes)
+-		(on_board yes)
++		(on_board no)
+ 		(dnp yes)
+ 		(fields_autoplaced yes)
+ 		(uuid "aa982b43-16ef-4dda-a055-36faea17455b")

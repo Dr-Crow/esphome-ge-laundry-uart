@@ -1,0 +1,41 @@
+{
+  "source_commit": "af1f2c40029ef67c56910fb2c55feac835553525",
+  "status": "Exact restored public editable source; cleanup and native/export qualification pending",
+  "files": [
+    {
+      "path": "pcb/rev2.0/design/OnionStraws.kicad_pcb",
+      "original_path": "pcb/OnionStraws.kicad_pcb",
+      "git_blob": "010b208d9e2dfebe455b618f5e6058e6512d5fc1",
+      "bytes": 873469,
+      "sha256": "0525b9c44904883859d549441bedc7d6648870b9314438e3bf459c119a4b6152"
+    },
+    {
+      "path": "pcb/rev2.0/design/OnionStraws.kicad_sch",
+      "original_path": "pcb/OnionStraws.kicad_sch",
+      "git_blob": "b2a47102c9f4718cca5bd68c6b0e2a07f662b998",
+      "bytes": 1575672,
+      "sha256": "370d1233b040b76d2c7aed67e4ea63dd7515476bd08beb63c6982ed69c4b261d"
+    },
+    {
+      "path": "pcb/rev2.0/design/OnionStraws.kicad_pro",
+      "original_path": "pcb/OnionStraws.kicad_pro",
+      "git_blob": "67d99a09299d199a0a3eb20f13f2a164bba038c9",
+      "bytes": 15818,
+      "sha256": "500700d9387563e38c926ce7fffea81ab03656f3b9276f84ad20252d640c0ad0"
+    },
+    {
+      "path": "pcb/rev2.0/design/fp-lib-table",
+      "original_path": "pcb/fp-lib-table",
+      "git_blob": "203ca73579dea9f413fe7c3d6ed52e75a6842987",
+      "bytes": 111,
+      "sha256": "120b0521add419c486ea286920a68574da9e359d745b3014f051118d3d7ad793"
+    },
+    {
+      "path": "pcb/rev2.0/design/OnionStraws-cache.lib",
+      "original_path": "pcb/OnionStraws-cache.lib",
+      "git_blob": "e8da6b73a1dca3cd66a194bbf5923f0884c8b7c9",
+      "bytes": 9401,
+      "sha256": "fad22aac94fecea1b25220b07bf9b1625cec08fd7e24c5dd68bab64986e1fcb1"
+    }
+  ]
+}

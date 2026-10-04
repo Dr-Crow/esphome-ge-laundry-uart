@@ -1,0 +1,23 @@
+{
+  "native_version": "9.0.9",
+  "erc_errors": 0,
+  "erc_warnings": 4,
+  "drc_errors": 0,
+  "drc_warnings": 0,
+  "drc_unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "erc_arguments": [
+    "--severity-all",
+    "--format",
+    "json"
+  ],
+  "drc_arguments": [
+    "--severity-all",
+    "--all-track-errors",
+    "--schematic-parity",
+    "--format",
+    "json"
+  ],
+  "execution": "Byte-exact source copy; KiCad project-format migration confined to temporary directory",
+  "no_source_changes_during_validation": true
+}

@@ -1,0 +1,30 @@
+{
+  "native_version": "9.0.9",
+  "original_electrical_pin_memberships": 186,
+  "electrical_net_partitions": 45,
+  "source_component_count_including_pinless_H3_H4": 75,
+  "board_footprint_count": 73,
+  "pad_definition_count": 222,
+  "track_via_item_count": 712,
+  "original_schematic_connection_object_coordinates": 725,
+  "original_coordinates_off_50mil_grid": 199,
+  "original_coordinates_off_25mil_grid": 0,
+  "complete_pad_definition_changes_except_authorized_thermal_angle": 0,
+  "pad_layer_set_changes": 0,
+  "footprint_placement_changes": 0,
+  "route_changes": 0,
+  "board_drawing_changes": 0,
+  "original_schematic_wire_label_text_image_changes": 0,
+  "original_symbol_definition_changes": 0,
+  "authorized_pad_setting_changes": [
+    "U4.2 thermal spoke angle 90deg -> 45deg"
+  ],
+  "authorized_silk_graphics": [
+    "remove two U2 overhang graphics",
+    "clip two J1 overhang segment ends at x=131.5mm"
+  ],
+  "project_changes": [
+    "connection_grid_size 50mil -> 25mil only"
+  ],
+  "original_pcba_archive_sha256": "b9c0b397806d3a719c32faa83c08bac2e80aa1c1d4d27d3e6d6a35cd5381445a"
+}

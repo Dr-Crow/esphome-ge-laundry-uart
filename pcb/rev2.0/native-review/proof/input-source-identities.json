@@ -1,0 +1,15 @@
+{
+  "base_commit": "d02a00776768ee9a45962089be5a58e84adf5d52",
+  "historical_source_commit": "af1f2c40029ef67c56910fb2c55feac835553525",
+  "intentional_input_corrections": [
+    "UUID-backed PCB reference Power Pin -> JP2",
+    "UUID-backed PCB reference INPUT POWER -> TP3",
+    "DNP pinless H3/H4 placeholders on_board no"
+  ],
+  "source_sha256": {
+    "OnionStraws.kicad_sch": "f2b6e2d196d3a01a76c3d90d4e6a01b52a1dd82bfe294c010b8d77dd6f8324b2",
+    "OnionStraws.kicad_pcb": "8724bea58251cf8c942b2de3b3e5e80848191f4c871e220b1f21d67a43d0c80e",
+    "OnionStraws.kicad_pro": "500700d9387563e38c926ce7fffea81ab03656f3b9276f84ad20252d640c0ad0"
+  },
+  "historical_pcba_archive_sha256": "b9c0b397806d3a719c32faa83c08bac2e80aa1c1d4d27d3e6d6a35cd5381445a"
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "source_symbol": "74xGxx:74LVC2G07",
+    "project_symbol": "LegacySymbols:74LVC2G07"
+  },
+  {
+    "source_symbol": "Connector:8P8C",
+    "project_symbol": "LegacySymbols:8P8C"
+  },
+  {
+    "source_symbol": "Connector:TestPoint",
+    "project_symbol": "LegacySymbols:TestPoint"
+  },
+  {
+    "source_symbol": "Connector_Generic:Conn_01x06",
+    "project_symbol": "LegacySymbols:Conn_01x06"
+  },
+  {
+    "source_symbol": "Device:C",
+    "project_symbol": "LegacySymbols:C"
+  },
+  {
+    "source_symbol": "Device:D_TVS",
+    "project_symbol": "LegacySymbols:D_TVS"
+  },
+  {
+    "source_symbol": "Device:D_Zener",
+    "project_symbol": "LegacySymbols:D_Zener"
+  },
+  {
+    "source_symbol": "Device:LED",
+    "project_symbol": "LegacySymbols:LED"
+  },
+  {
+    "source_symbol": "Device:Polyfuse",
+    "project_symbol": "LegacySymbols:Polyfuse"
+  },
+  {
+    "source_symbol": "Device:Q_PMOS_GSD",
+    "project_symbol": "LegacySymbols:Q_PMOS_GSD"
+  },
+  {
+    "source_symbol": "Device:R",
+    "project_symbol": "LegacySymbols:R"
+  },
+  {
+    "source_symbol": "Diode:BAV99",
+    "project_symbol": "LegacySymbols:BAV99"
+  },
+  {
+    "source_symbol": "Jumper:SolderJumper_3_Bridged12",
+    "project_symbol": "LegacySymbols:SolderJumper_3_Bridged12"
+  },
+  {
+    "source_symbol": "Mechanical:MountingHole",
+    "project_symbol": "LegacySymbols:MountingHole"
+  },
+  {
+    "source_symbol": "RF_Module:ESP32-C3-WROOM-02",
+    "project_symbol": "LegacySymbols:ESP32-C3-WROOM-02"
+  },
+  {
+    "source_symbol": "Regulator_Linear:AP2204R-3.3",
+    "project_symbol": "LegacySymbols:AP2204R-3.3"
+  },
+  {
+    "source_symbol": "Regulator_Linear:L7805",
+    "project_symbol": "LegacySymbols:L7805"
+  },
+  {
+    "source_symbol": "Switch:SW_Push",
+    "project_symbol": "LegacySymbols:SW_Push"
+  },
+  {
+    "source_symbol": "onionStraws:74LVC2G07_3v3",
+    "project_symbol": "LegacySymbols:74LVC2G07_3v3"
+  },
+  {
+    "source_symbol": "onionStraws:APX803L",
+    "project_symbol": "LegacySymbols:APX803L"
+  },
+  {
+    "source_symbol": "power:+3V3",
+    "project_symbol": "LegacySymbols:+3V3"
+  },
+  {
+    "source_symbol": "power:+5V",
+    "project_symbol": "LegacySymbols:+5V"
+  },
+  {
+    "source_symbol": "power:GND",
+    "project_symbol": "LegacySymbols:GND"
+  },
+  {
+    "source_symbol": "power:VDC",
+    "project_symbol": "LegacySymbols:VDC"
+  }
+]

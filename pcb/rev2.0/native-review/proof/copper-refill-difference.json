@@ -1,0 +1,51 @@
+[
+  {
+    "comparison": "historical-vs-native9-refill",
+    "records": [
+      {
+        "layer": "F.Cu",
+        "xor_area_mm2": 1.6160023714,
+        "xor_outline_count": 1426,
+        "bounds_mm": [
+          43.502403,
+          80.794435,
+          130.316936,
+          109.9895
+        ]
+      },
+      {
+        "layer": "B.Cu",
+        "xor_area_mm2": 0.365273824683,
+        "xor_outline_count": 2484,
+        "bounds_mm": [
+          43.609704,
+          80.794435,
+          130.474517,
+          109.9895
+        ]
+      }
+    ]
+  },
+  {
+    "comparison": "native9-control-vs-45deg",
+    "records": [
+      {
+        "layer": "F.Cu",
+        "xor_area_mm2": 0.575544686049,
+        "xor_outline_count": 1,
+        "bounds_mm": [
+          83.0875,
+          90.139802,
+          84.25,
+          90.9255
+        ]
+      },
+      {
+        "layer": "B.Cu",
+        "xor_area_mm2": 0.0,
+        "xor_outline_count": 0,
+        "bounds_mm": null
+      }
+    ]
+  }
+]
