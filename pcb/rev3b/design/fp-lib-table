@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name "OnionStraws")(type "KiCad")(uri "${KIPRJMOD}/footprints/OnionStraws.pretty")(options "")(descr "Project-local production footprints"))
+  (lib (name "GEA_XIAO")(type "KiCad")(uri "${KIPRJMOD}/footprints/GEA_XIAO.pretty")(options "")(descr "Seeed XIAO ESP32-C3 v1.3 footprint"))
+
+  (lib (name "GEA_Rev3B")(type "KiCad")(uri "${KIPRJMOD}/footprints/GEA_Rev3B.pretty")(options "")(descr "Exact Littelfuse and TI rated protection vendor lands"))
+)

@@ -1,0 +1,36 @@
+{
+  "source": "fafd3eab5a8a8465697e1557bb075d88f85be9d9",
+  "reference_base": "ade0f40",
+  "removed": 109,
+  "added": 163,
+  "changed_footprints": [
+    "C18",
+    "C19",
+    "C21",
+    "C24",
+    "C25",
+    "D16",
+    "D17",
+    "F1",
+    "F2",
+    "Q3",
+    "Q4",
+    "R31",
+    "R32",
+    "R33",
+    "R34",
+    "U10",
+    "U9"
+  ],
+  "removed_references": [
+    "C22",
+    "C23"
+  ],
+  "added_references": [
+    "R38",
+    "R39",
+    "R40",
+    "R41",
+    "D20"
+  ]
+}

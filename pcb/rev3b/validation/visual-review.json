@@ -1,0 +1,56 @@
+{
+  "reviewed_utc": "2026-10-04T00:21:35.975813+00:00",
+  "actual_pixels_inspected": [
+    {
+      "path": "images/rev3b-copper-b-cu.svg",
+      "sha256": "14b0e4b6d0574b0665a778184ea906b5f5a5082236ee22d52064bacfae37abd5"
+    },
+    {
+      "path": "images/rev3b-copper-f-cu.svg",
+      "sha256": "a6731485c80f99923e22af4ceddf411bd378364fc236dc8003b56af01eb92a5d"
+    },
+    {
+      "path": "images/rev3b-copper-in1-cu.svg",
+      "sha256": "878ae438657f6a82dd4e0629c2444059543ba9c6d24590e2b9a8f72789aa8811"
+    },
+    {
+      "path": "images/rev3b-copper-in2-cu.svg",
+      "sha256": "c4702462e77b9e027a2716e4b0230be0be94a616930a625e0f1aaac049473de4"
+    },
+    {
+      "path": "images/rev3b-render-bottom.png",
+      "sha256": "88ba6210eddc20247d88dc8ef9cf080c90181675a6beef18164ae645a7c1d828"
+    },
+    {
+      "path": "images/rev3b-render-oblique.png",
+      "sha256": "2238459c3ce27bfaac411f9470948c7ea75ee97fee397c215d0ab08b9ebd4f3a"
+    },
+    {
+      "path": "images/rev3b-render-top.png",
+      "sha256": "017cb48430ba6de9522499c3fd5c37a6668ce6608c9061347e710329b6e64a79"
+    },
+    {
+      "path": "validation/schematic.pdf",
+      "sha256": "e435085e61e03acc58dd9b27cbec3814c7865593978452655c3a1cf94f23f62e"
+    },
+    {
+      "path": "validation/pth-drill-map.pdf",
+      "sha256": "6eecde472f7d156dbe373fb07f21d15671ab2451d05718686c7dc36298a075b1"
+    },
+    {
+      "path": "validation/npth-drill-map.pdf",
+      "sha256": "392dcee0bd8b2a08bc655402566ecb8208ab16c50314ec607162e0254ff82c1b"
+    }
+  ],
+  "observations": [
+    "Top/bottom/oblique native renders show the original soldered XIAO C3, RJ45, recovery header, JP1 and mounting datums with new switch/PPTC drawing envelopes.",
+    "Schematic pixels show mirrored source-referenced PMOS branches, exact MCC zeners, each own-VS retry resistor, conditional CL resistors, correct TI pinout and FAULT no-connect; B-only USB/J2/module notes remain.",
+    "Native four-layer copper SVGs rasterized and actual pixels inspected. The first inner ground plane and original B module signal routes remain; both TI EPs return through external ground vias.",
+    "Native drill-map pixels show111 plated0.4 mm vias,8 plated0.9 mm connector holes and4 nonplated3.2 mm holes; native count comparison passes."
+  ],
+  "limits": [
+    "TI/PPTC solids are approximate maximum drawing envelopes; XIAO/connector envelopes remain original.",
+    "Final EP solder coverage/stencil/process/environment and actual device temperatures are unqualified.",
+    "No physical fit, RF, source, appliance or electrical test."
+  ]
+}
