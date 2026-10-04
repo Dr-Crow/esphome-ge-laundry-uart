@@ -6,46 +6,86 @@
   },
   "boards": {
     "rev1.0": {
-      "source": null,
-      "archive": "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip",
-      "status": "Historical Gerber package; no editable CAD or original supplier BOM/CPL in this branch; qualification blocked",
+      "source": "pcb/rev1.0/design/OnionStraws",
       "bom": null,
       "cpl": null,
-      "assembly_note": "No historical supplier BOM/CPL exists in this package; no purchasing data invented.",
+      "archive": "pcb/rev1.0/review-manufacturing/REVIEW-CAM-OnionStraws-rev1.0.zip",
+      "status": "Restored historical source; native review does not establish release qualification",
+      "library_tables": [
+        "pcb/rev1.0/design/fp-lib-table",
+        "pcb/rev1.0/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/p1": "Power",
+        "/p2": "Power",
+        "/p3": "Power",
+        "GND": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.2
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "historical_archive": "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip",
+      "assembly_note": "No historical supplier BOM/CPL exists in the recovered package; no purchasing data invented.",
       "readiness": {
         "power": {
           "state": "blocked",
-          "reason": "Historical source, component/module ratings, source capacity and electrical qualification absent from this package"
+          "reason": "Historical external-buck architecture, supply ratings, source capacity, supervisor and appliance electrical qualification remain open"
         },
         "source": {
           "state": "blocked",
-          "reason": "Editable KiCad source absent; exact historical archive/source pairing and assembly qualification unestablished"
+          "reason": "Original supplier BOM/CPL absent; exact classic ESP32 board and external buck identities/procurement remain unverified"
         },
         "physical": {
           "state": "blocked",
-          "reason": "Historical assembly, module/connector/enclosure and appliance qualification unestablished"
+          "reason": "Historical module, assembly, connectors, enclosure and appliance qualification remain open"
         }
       }
     },
     "rev2.0": {
-      "source": null,
-      "archive": "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip",
-      "status": "Historical PCBA package; no editable CAD or current source-matched assembly files in this branch; historical supplier rotations unqualified",
+      "source": "pcb/rev2.0/design/OnionStraws",
       "bom": null,
       "cpl": null,
-      "assembly_note": "Prior supplier tables remain inside the historical PCBA ZIP; without current editable source they do not establish source parity or supplier rotation qualification.",
+      "archive": "pcb/rev2.0/native-review/CI-CAM-REVIEW-rev2.0.zip",
+      "status": "Restored historical source; native review does not establish release qualification",
+      "library_tables": [
+        "pcb/rev2.0/design/fp-lib-table",
+        "pcb/rev2.0/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/p1": "Power",
+        "/p2": "Power",
+        "/p3": "Power",
+        "GND": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.2
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "historical_archive": "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip",
+      "assembly_note": "Historical supplier tables remain in the original PCBA ZIP; current native exports are not supplier-qualified BOM/CPL or rotation approval.",
       "readiness": {
         "power": {
           "state": "blocked",
-          "reason": "Historical source, component/module ratings, source capacity and electrical qualification absent from this package"
+          "reason": "Known reset-supervisor boot-loop risk; historical regulator/protection ratings, source capacity and appliance electrical qualification remain open"
         },
         "source": {
           "state": "blocked",
-          "reason": "Editable KiCad source absent; exact historical archive/source pairing and assembly qualification unestablished"
+          "reason": "Current source-matched supplier BOM/CPL absent; historical diode rotations and U6 AP2205/AP2204R part identity remain unqualified"
         },
         "physical": {
           "state": "blocked",
-          "reason": "Historical assembly, module/connector/enclosure and appliance qualification unestablished"
+          "reason": "Historical module, assembly, connector, UART viewpoint, enclosure and appliance qualification remain open"
         }
       }
     },
@@ -54,21 +94,11 @@
       "bom": "pcb/rev2.1/manufacturing/BOM-OnionStraws-rev2.1.csv",
       "cpl": "pcb/rev2.1/manufacturing/CPL-OnionStraws-rev2.1.csv",
       "archive": "pcb/rev2.1/manufacturing/GERBER-OnionStraws-rev2.1.zip",
-      "status": "Superseded; inherited ERC/DRC findings remain blocking",
-      "readiness": {
-        "power": {
-          "state": "blocked",
-          "reason": "Known reset-supervisor boot-loop issue"
-        },
-        "source": {
-          "state": "blocked",
-          "reason": "Native ERC/DRC findings, missing archive job, legacy BOM header, Q1 source purchasing metadata and inherited supplier placement-origin disagreement remain unresolved"
-        },
-        "physical": {
-          "state": "blocked",
-          "reason": "Superseded hardware with known RX/TX silkscreen errors"
-        }
-      },
+      "status": "Restored historical source; native review does not establish release qualification",
+      "library_tables": [
+        "pcb/rev2.1/design/fp-lib-table",
+        "pcb/rev2.1/design/sym-lib-table"
+      ],
       "intended_netclasses": {
         "+3V3": "Power",
         "+5V": "Power",
@@ -81,28 +111,44 @@
       "intended_clearance_mm": {
         "Power": 0.2
       },
-      "library_tables": []
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "historical_archive": "pcb/rev2.1/manufacturing/original/GERBER-OnionStraws-rev2.1.zip",
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Known reset-supervisor boot-loop risk and historical power architecture"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Current native/CAM/assembly parity does not qualify supplier library pose/rotation, purchasing identity or production process"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Historical module, connector, UART viewpoint, assembly, enclosure and appliance qualification remain open"
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev2.1/validation/placement-origin-review.json",
+        "sha256": "1ac8ac51e72b080097d3a80d5c06ede7a7365d137ff103855d10d569b63c37e1",
+        "required_references": [
+          "U3",
+          "J1",
+          "U6"
+        ]
+      }
     },
     "rev2.2": {
       "source": "pcb/rev2.2/design/OnionStraws",
       "bom": "pcb/rev2.2/manufacturing/BOM-OnionStraws-rev2.2.csv",
       "cpl": "pcb/rev2.2/manufacturing/CPL-OnionStraws-rev2.2.csv",
       "archive": "pcb/rev2.2/manufacturing/GERBER-OnionStraws-rev2.2.zip",
-      "status": "Prototype baseline; rating, source and physical qualification blocked",
-      "readiness": {
-        "power": {
-          "state": "blocked",
-          "reason": "Target-appliance source and rail/startup qualification pending"
-        },
-        "source": {
-          "state": "blocked",
-          "reason": "Native ERC/DRC findings remain unresolved"
-        },
-        "physical": {
-          "state": "blocked",
-          "reason": "Assembly, connector and enclosure qualification pending"
-        }
-      },
+      "status": "Restored historical source; native review does not establish release qualification",
+      "library_tables": [
+        "pcb/rev2.2/design/fp-lib-table",
+        "pcb/rev2.2/design/sym-lib-table"
+      ],
       "intended_netclasses": {
         "+3V3": "Power",
         "+5V": "Power",
@@ -115,14 +161,217 @@
       "intended_clearance_mm": {
         "Power": 0.2
       },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "historical_archive": "pcb/rev2.2/manufacturing/original/GERBER-OnionStraws-rev2.2.zip",
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Target-appliance source capacity, rail/startup, protection ratings and electrical qualification remain open"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Current native/CAM/assembly parity does not qualify supplier library pose/rotation, purchasing identity or production process"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Historical module, connector, UART viewpoint, assembly, enclosure and appliance qualification remain open"
+        }
+      }
+    },
+    "rev3a": {
+      "source": "pcb/rev3a/design/GEA-Adapter-Rev3A",
+      "bom": "pcb/rev3a/manufacturing/BOM-GEA-Adapter-Rev3A.csv",
+      "cpl": "pcb/rev3a/manufacturing/CPL-GEA-Adapter-Rev3A.csv",
+      "archive": "pcb/rev3a/manufacturing/GERBER-GEA-Adapter-Rev3A.zip",
+      "status": "Reviewed rated-switch prototype; release qualification blocked",
+      "design_rules": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_dru",
       "library_tables": [
-        "pcb/rev2.2/design/fp-lib-table"
-      ]
+        "pcb/rev3a/design/fp-lib-table",
+        "pcb/rev3a/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/ALT_PWR": "Power",
+        "/BUCK_5V": "Power",
+        "/BUCK_BST": "Switching",
+        "/BUCK_SW": "Switching",
+        "/PIN1_FUSED": "Power",
+        "/PIN1_PROTECTED": "Power",
+        "/PIN1_SW_OUT": "Power",
+        "/PIN3_FUSED": "Power",
+        "/PIN3_PROTECTED": "Power",
+        "/PIN3_SW_OUT": "Power",
+        "/USB_CONN_N": "USBData",
+        "/USB_CONN_P": "USBData",
+        "/USB_MCU_N": "USBData",
+        "/USB_MCU_P": "USBData",
+        "/USB_PROTECTED_N": "USBData",
+        "/USB_PROTECTED_P": "USBData",
+        "/USB_VBUS": "USBPower",
+        "/USB_VBUS_FUSED": "USBPower",
+        "/V_INPUT": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.25,
+        "Switching": 0.3,
+        "USBPower": 0.2,
+        "USBData": 0.1
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Whole-chain transient/energy/differential limits, appliance source current, current-limit/retry, loaded startup and thermal qualification remain open"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Exact RJ45 suffix and other purchasing identities, supplier library pose/zero/orientation, stencil/assembly process and current quote review remain unqualified"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Actual module/connector/recovery fit, antenna/RF, enclosure, assembly and appliance qualification remain open"
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev3a/validation/placement-origin-review.json",
+        "sha256": "c5840c153fe881d90e41500d090e6d07607638208b77917e1c53f204cf7e73a5",
+        "required_references": [
+          "J1",
+          "U2",
+          "J4"
+        ]
+      }
+    },
+    "rev3b": {
+      "source": "pcb/rev3b/design/GEA-Adapter-Rev3B",
+      "bom": "pcb/rev3b/manufacturing/BOM-GEA-Adapter-Rev3B.csv",
+      "cpl": "pcb/rev3b/manufacturing/CPL-GEA-Adapter-Rev3B.csv",
+      "archive": "pcb/rev3b/manufacturing/GERBER-GEA-Adapter-Rev3B.zip",
+      "status": "Reviewed rated-switch prototype; release qualification blocked",
+      "design_rules": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_dru",
+      "library_tables": [
+        "pcb/rev3b/design/fp-lib-table",
+        "pcb/rev3b/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/5V_IN": "Power",
+        "/ALT_PWR": "Power",
+        "/BUCK_5V": "Power",
+        "/BUCK_BST": "Switching",
+        "/BUCK_SW": "Switching",
+        "/PIN1_FUSED": "Power",
+        "/PIN1_PROTECTED": "Power",
+        "/PIN1_SW_OUT": "Power",
+        "/PIN3_FUSED": "Power",
+        "/PIN3_PROTECTED": "Power",
+        "/PIN3_SW_OUT": "Power",
+        "/V_INPUT": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.25,
+        "Switching": 0.3
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Whole-chain transient/energy/differential limits, appliance source current, current-limit/retry, loaded startup and thermal qualification remain open"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Exact RJ45 suffix and other purchasing identities, supplier library pose/zero/orientation, stencil/assembly process and current quote review remain unqualified"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Actual module/connector/recovery fit, antenna/RF, enclosure, assembly and appliance qualification remain open"
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev3b/validation/placement-origin-review.json",
+        "sha256": "bfae54bfd08b30a399aed0ae23ae661aa7530ca54cc7e8cc4613eaa3a971b6b8",
+        "required_references": [
+          "J1",
+          "U2"
+        ]
+      }
+    },
+    "rev3c": {
+      "source": "pcb/rev3c/design/GEA-Adapter-Rev3C",
+      "bom": "pcb/rev3c/manufacturing/BOM-GEA-Adapter-Rev3C.csv",
+      "cpl": "pcb/rev3c/manufacturing/CPL-GEA-Adapter-Rev3C.csv",
+      "archive": "pcb/rev3c/manufacturing/GERBER-GEA-Adapter-Rev3C.zip",
+      "status": "Selected shared C3/C6 prototype; release qualification blocked",
+      "design_rules": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_dru",
+      "library_tables": [
+        "pcb/rev3c/design/fp-lib-table",
+        "pcb/rev3c/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/ALT_PWR": "Power",
+        "/BUCK_5V": "Power",
+        "/BUCK_BST": "Switching",
+        "/BUCK_SW": "Switching",
+        "/PIN1_FUSED": "Power",
+        "/PIN1_PROTECTED": "Power",
+        "/PIN1_SW_OUT": "Power",
+        "/PIN3_FUSED": "Power",
+        "/PIN3_PROTECTED": "Power",
+        "/PIN3_SW_OUT": "Power",
+        "/V_INPUT": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.25,
+        "Switching": 0.3
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Whole-chain transient/energy/differential limits, appliance source current, current-limit/retry, loaded startup and thermal qualification remain open"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Exact RJ45 suffix and other purchasing identities, supplier library pose/zero/orientation, stencil/assembly process and current quote review remain unqualified"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Actual module/header/socket fit, retention, vibration, USB/BOOT/RESET access, antenna/RF and enclosure qualification remain open; no default shared C3/C6 case CAD"
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev3c/validation/placement-origin-review.json",
+        "sha256": "3cb652b50c235e524239c43f0a7a6a991031e8f2cfc25e076a26d69a7a93832b",
+        "required_references": [
+          "J1"
+        ]
+      }
     }
   },
   "firmware": [
     "firmware/gea2.yaml",
-    "firmware/gea3.yaml"
+    "firmware/gea3.yaml",
+    "firmware/rev1-classic/gea2.yaml",
+    "firmware/rev1-classic/gea3.yaml",
+    "firmware/shared-rev3c/c3-gea2.yaml",
+    "firmware/shared-rev3c/c3-gea3.yaml",
+    "firmware/shared-rev3c/c6-gea2.yaml",
+    "firmware/shared-rev3c/c6-gea3.yaml"
   ],
   "external_kicad": {
     "version": "9.0.9",

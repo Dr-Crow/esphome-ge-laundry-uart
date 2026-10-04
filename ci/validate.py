@@ -405,9 +405,26 @@ def matched_archive(board, generated):
     return len(generated_files)
 
 
+def fabrication_plot(board, output):
+    """Require manufacturing plots without drill-marker apertures on paste layers."""
+    (output / "fabrication-plot.json").unlink(missing_ok=True)
+    policy = board.get("fabrication_plot")
+    require(isinstance(policy, dict) and set(policy) == {"drillshape"} and
+            type(policy["drillshape"]) is int and policy["drillshape"] == 0,
+            "MISSING/invalid fabrication plot policy: drillshape must be explicitly 0")
+    _, _, pcb = sources(board)
+    values = re.findall(r"\(drillshape\s+([^()]+)\)", pcb.read_text())
+    require(len(values) == 1 and values[0].strip() == "0",
+            "Fabrication plot drillshape must be 0; drill markers create unintended paste apertures")
+    result = {"drillshape": 0, "pcb": str(pcb.relative_to(ROOT)), "pcb_sha256": sha(pcb)}
+    (output / "fabrication-plot.json").write_text(json.dumps(result, indent=2) + "\n")
+    return result
+
+
 def manufacturing(board, output, manifest):
     inputs = design_inputs(board)
     (output / "cam-parity.json").unlink(missing_ok=True)
+    plot = fabrication_plot(board, output)
     tool("kicad-cli", manifest["tools"]["kicad"])
     _, sch, pcb = sources(board)
     netlist, positions = output / "netlist.xml", output / "positions.csv"
@@ -424,6 +441,7 @@ def manufacturing(board, output, manifest):
     cam_count = matched_archive(board, generated)
     cam = {"archive": board["archive"], "status": "passed",
            "native_matched_gerber_and_drill_files": cam_count,
+           "fabrication_plot": plot,
            "source_sha256": {str(p.relative_to(ROOT)): sha(p) for p in inputs},
            "external_kicad": external_identity(board, manifest)}
     (output / "cam-parity.json").write_text(json.dumps(cam, indent=2) + "\n")
@@ -461,6 +479,7 @@ def manufacturing(board, output, manifest):
         require(cpl[ref]["Layer"].lower() == pos[ref]["Side"].lower(), f"CPL side differs from PCB: {ref}")
     return {"assembled_references": len(expected), "reviewed_centroid_references": len(origins),
             "native_matched_gerber_and_drill_files": cam_count,
+            "fabrication_plot": plot,
             "source_sha256": {str(p.relative_to(ROOT)): sha(p) for p in inputs},
             "external_kicad": external_identity(board, manifest)}
 
@@ -479,14 +498,19 @@ def rules(board, output, manifest):
     settings = json.loads(project.read_text())["net_settings"]
     patterns = settings.get("netclass_patterns", [])
     classes = {item["name"] for item in settings["classes"]}
+    legacy = {(net, item["name"]) for item in settings["classes"]
+              for net in item.get("nets", [])} if (
+                  settings.get("meta", {}).get("version") == 2 and
+                  "netclass_patterns" not in settings) else set()
     findings = []
     # Require explicit full net-name assignments, including the sheet-leading slash.
     # This bounded policy intentionally avoids reimplementing KiCad's rule engine.
     for net, expected in intended.items():
         if net not in nets:
             findings.append(f"Intended net absent from native netlist: {net}")
-        if expected not in classes or not any(p["pattern"] == net and p["netclass"] == expected for p in patterns):
-            findings.append(f"Missing explicit netclass pattern: {net} -> {expected}")
+        if expected not in classes or not (any(p["pattern"] == net and p["netclass"] == expected for p in patterns)
+                                           or (net, expected) in legacy):
+            findings.append(f"Missing explicit netclass assignment: {net} -> {expected}")
     for name, expected in board.get("intended_clearance_mm", {}).items():
         actual = next((item.get("clearance") for item in settings["classes"]
                        if item["name"] == name), None)

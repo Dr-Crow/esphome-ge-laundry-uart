@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Test source, placement and readiness boundaries
+          name: Test source, stencil, placement and readiness boundaries
           command: python3 -m unittest discover -s ci -p 'test_*.py'
 
   inventory:

@@ -9,6 +9,14 @@ import validate
 
 
 class FirmwareInventoryTest(unittest.TestCase):
+    def test_every_standalone_profile_is_declared(self):
+        manifest = json.loads((validate.ROOT / "ci/manifest.json").read_text())
+        profiles = {str(file.relative_to(validate.ROOT))
+                    for file in (validate.ROOT / "firmware").rglob("*.yaml")
+                    if "packages" not in file.parts and file.name != "secrets.yaml"}
+        self.assertEqual(set(manifest["firmware"]), profiles)
+        self.assertEqual(len(manifest["firmware"]), 8)
+
     def fixture(self, root):
         firmware = root / 'firmware'
         (firmware / 'packages').mkdir(parents=True)

@@ -66,6 +66,34 @@ class ReleaseEvidenceTest(unittest.TestCase):
 
 
 class NativeClearanceTest(unittest.TestCase):
+    def test_legacy_explicit_membership_cannot_be_removed(self):
+        manifest = json.loads((validate.ROOT / "ci/manifest.json").read_text())
+        board = manifest["boards"]["rev1.0"]
+        with tempfile.TemporaryDirectory(prefix="legacy-membership-") as temporary:
+            root = Path(temporary)
+            source = validate.ROOT / "pcb/rev1.0/design"
+            destination = root / "pcb/rev1.0/design"
+            shutil.copytree(source, destination)
+            output = root / "output"
+            output.mkdir()
+            with patch.object(validate, "ROOT", root):
+                validate.rules(board, output, manifest)
+                project = destination / "OnionStraws.kicad_pro"
+                settings = json.loads(project.read_text())
+                next(item for item in settings["net_settings"]["classes"]
+                     if item["name"] == "Power")["nets"].remove("/p1")
+                project.write_text(json.dumps(settings) + "\n")
+                with self.assertRaisesRegex(ValueError, "Missing explicit netclass assignment: /p1 -> Power"):
+                    validate.rules(board, output, manifest)
+                # Modern pattern-based settings cannot fall back to stale legacy lists.
+                next(item for item in settings["net_settings"]["classes"]
+                     if item["name"] == "Power")["nets"].append("/p1")
+                settings["net_settings"]["meta"]["version"] = 3
+                settings["net_settings"]["netclass_patterns"] = []
+                project.write_text(json.dumps(settings) + "\n")
+                with self.assertRaisesRegex(ValueError, "Missing explicit netclass assignment: /p1 -> Power"):
+                    validate.rules(board, output, manifest)
+
     def test_lowered_clearance_is_rejected_with_unchanged_net_assignments(self):
         manifest = json.loads((validate.ROOT / "ci/manifest.json").read_text())
         board = manifest["boards"]["rev2.2"]
