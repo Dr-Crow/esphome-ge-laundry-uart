@@ -61,11 +61,13 @@ places orders or publishes a release.
   footprints and purchasing fields must match the schematic; CPL coordinates,
   rotations and sides must match native placements. Archives alone are not CAD
   parity or manufacturing approval.
-- A committed, hash-matched `cpl_centroid_policy` can attest exact native geometry
-  for specifically listed alternative centroids. Source/anchor/rotation/evidence
-  changes invalidate it. Footprint anchors apply to all other references. This
-  manifest has no such attestation; this branch does not import another package's
-  centroid proof or supplier rotation approval.
+- A committed, hash-matched `cpl_centroid_policy` can attest specific alternative
+  placement datums. Legacy pad-bounds centres remain distinct from explicitly
+  typed module-PCB or manufacturer-nominal body centres. Required references,
+  complete current source closure, documentary hashes, exact native part/footprint,
+  anchor/rotation/side and local-to-export transform must match; stale or unknown
+  evidence fails. Angles have no override. This public-main manifest has no such
+  attestation; source/part-library pose and physical approval are not inferred.
 - Rules audits exactly the declared native net names, explicit class patterns and
   intended clearances. Sheet-leading slashes matter. A missing audit policy fails;
   configured native DRC and intended-rule coverage remain separate checks.
@@ -98,6 +100,50 @@ contract, missing Q1 source purchasing metadata and supplier CPL origin disagree
 Rev2.2's native factory-source parity is independent of its unresolved native,
 electrical and physical qualification. These source defects are not repaired or
 waived by this CI change. **All twelve release gates remain blocked.**
+
+## Reviewed body-datum schema
+
+A body-datum policy has this minimal shape (placeholder paths/hashes must be
+replaced with real committed evidence). Source hashes must cover the complete
+current design dependency closure. The record's manufacturer and MPN must exactly
+match native netlist properties. Local coordinates use KiCad footprint axes;
+export coordinates use native CSV X and negated board Y, without drill-origin
+translation. At native −90°, local `(x, y)` gives export delta `(−y, −x)`.
+
+```json
+{
+  "cpl_centroid_policy": {
+    "evidence": "pcb/revision/validation/placement-origin-review.json",
+    "sha256": "<SHA-256 of committed review>",
+    "required_references": ["U2"]
+  }
+}
+```
+
+```json
+{
+  "source_sha256": {"<each checkout-relative design input>": "<SHA-256>"},
+  "references": {
+    "U2": {
+      "datum_type": "module_pcb_body_bbox_center",
+      "footprint": "GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD",
+      "native_anchor_xy_mm": [77.39, -4.0],
+      "rotation_degrees": -90.0,
+      "side": "top",
+      "local_body_center_xy_mm": [8.9, -10.5],
+      "body_center_xy_mm": [87.89, -12.9],
+      "manufacturer_datum": {
+        "manufacturer": "<exact native Manufacturer property>",
+        "mpn": "<exact native MPN property>",
+        "evidence": "pcb/revision/validation/manufacturer-datum.pdf",
+        "sha256": "<SHA-256 of committed manufacturer drawing or reviewed capture>",
+        "source_url": "https://manufacturer.example/document",
+        "datum_description": "<documented nominal body datum and exclusions>"
+      }
+    }
+  }
+}
+```
 
 ## Add a revision or profile
 

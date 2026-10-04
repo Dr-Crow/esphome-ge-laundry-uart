@@ -258,40 +258,120 @@ def gerber_content(data):
                              or re.match(r"; DRILL file \{KiCad [^}]+\} date ", line)))
 
 
-def reviewed_placement_origins(board, inputs, positions, output):
-    policy = board.get("cpl_centroid_policy")
-    if not policy:
-        return {}
-    evidence = path(policy["evidence"])
-    require(sha(evidence) == policy["sha256"], "Placement-origin evidence hash differs")
+def placement_numbers(value, size, ref):
+    require(isinstance(value, list) and len(value) == size and
+            all(type(number) in (int, float) and abs(number) <= sys.float_info.max and
+                math.isfinite(number) for number in value),
+            f"Malformed or nonfinite placement-origin evidence: {ref}")
+    return value
+
+
+def committed_placement_evidence(declaration, label):
+    require(isinstance(declaration, dict) and
+            isinstance(declaration.get("evidence"), str) and declaration["evidence"] and
+            not Path(declaration["evidence"]).is_absolute() and
+            ".." not in Path(declaration["evidence"]).parts and
+            isinstance(declaration.get("sha256"), str) and
+            re.fullmatch(r"[0-9a-f]{64}", declaration["sha256"]),
+            f"Malformed {label} declaration")
+    evidence = path(declaration["evidence"])
+    require(sha(evidence) == declaration["sha256"], f"{label} hash differs")
     relative = str(evidence.relative_to(ROOT))
     committed = subprocess.run(["git", "show", "HEAD:" + relative], cwd=ROOT,
                                capture_output=True, check=False)
     require(committed.returncode == 0 and
-            hashlib.sha256(committed.stdout).hexdigest() == policy["sha256"],
-            "Placement-origin evidence is not committed at HEAD")
-    review = json.loads(evidence.read_text())
-    require(review["source_sha256"] == {str(p.relative_to(ROOT)): sha(p) for p in inputs},
+            hashlib.sha256(committed.stdout).hexdigest() == declaration["sha256"],
+            f"{label} is not committed at HEAD")
+    return evidence
+
+
+def reviewed_placement_origins(board, inputs, positions, output, components=None):
+    if "cpl_centroid_policy" not in board:
+        return {}
+    policy = board["cpl_centroid_policy"]
+    evidence = committed_placement_evidence(policy, "Placement-origin evidence")
+
+    def unique_keys(pairs):
+        result = {}
+        for key, value in pairs:
+            require(key not in result, f"Duplicate placement-origin evidence key: {key}")
+            result[key] = value
+        return result
+
+    review = json.loads(evidence.read_text(), object_pairs_hook=unique_keys)
+    require(isinstance(review, dict) and isinstance(review.get("references"), dict) and
+            review["references"], "Malformed placement-origin review")
+    require(set(inputs) == set(design_inputs(board)),
+            "Placement-origin inputs omit current source dependencies")
+    require(review.get("source_sha256") == {str(p.relative_to(ROOT)): sha(p) for p in inputs},
             "Placement-origin review does not match current source hashes")
+    requested = policy.get("required_references")
+    if "required_references" in policy:
+        require(isinstance(requested, list) and requested and
+                all(isinstance(ref, str) and ref for ref in requested) and
+                len(set(requested)) == len(requested),
+                "Malformed required placement-origin references")
+        require(set(requested) <= set(positions), "Required placement-origin reference absent from PCB")
+        require(set(requested) == set(review["references"]),
+                "Placement-origin review differs from required references")
     origins = {}
     for ref, record in review["references"].items():
+        require(isinstance(record, dict) and isinstance(record.get("footprint"), str) and
+                record["footprint"], f"Malformed placement-origin evidence: {ref}")
         require(ref in positions, f"Placement-origin reference absent: {ref}")
         native = positions[ref]
         require(native["Package"] == record["footprint"].split(":")[-1],
                 f"Placement-origin footprint differs: {ref}")
-        anchor = record["native_anchor_xy_mm"]
-        center = record["pad_bbox_center_xy_mm"]
-        bounds = record["native_pad_bbox_xy_mm"]
-        require(len(anchor) == len(center) == 2 and len(bounds) == 4,
-                f"Malformed placement-origin evidence: {ref}")
-        require(all(math.isfinite(value) for value in anchor + center + bounds),
-                f"Nonfinite placement-origin evidence: {ref}")
-        require(all(abs(anchor[i] - float(native[key])) <= 0.00001
-                    and abs(center[i] - (bounds[i] + bounds[i+2]) / 2) <= 0.00001
+        anchor = placement_numbers(record.get("native_anchor_xy_mm"), 2, ref)
+        rotation = placement_numbers([record.get("rotation_degrees")], 1, ref)[0]
+        require(all(math.isfinite(float(native[key])) and
+                    abs(anchor[i] - float(native[key])) <= 0.00001
                     for i, key in enumerate(("PosX", "PosY"))),
                 f"Placement-origin geometry differs: {ref}")
-        require(abs((float(native["Rot"]) - record["rotation_degrees"] + 180) % 360 - 180) <= 0.00001,
+        require(math.isfinite(float(native["Rot"])) and
+                abs((float(native["Rot"]) - rotation + 180) % 360 - 180) <= 0.00001,
                 f"Placement-origin rotation differs: {ref}")
+        # An omitted type retains the original Rev2.1 pad-bounds convention.
+        datum = record.get("datum_type", "pad_bbox_center")
+        require(datum in ("pad_bbox_center", "module_pcb_body_bbox_center",
+                          "manufacturer_nominal_body_bbox_center"),
+                f"Unknown placement-origin datum type: {ref}")
+        if datum == "pad_bbox_center":
+            require(not {"body_center_xy_mm", "local_body_center_xy_mm", "manufacturer_datum"} & record.keys(),
+                    f"Body datum cannot use the pad-bounds convention: {ref}")
+            center = placement_numbers(record.get("pad_bbox_center_xy_mm"), 2, ref)
+            bounds = placement_numbers(record.get("native_pad_bbox_xy_mm"), 4, ref)
+            require(all(bounds[i] <= bounds[i+2] and
+                        abs(center[i] - (bounds[i] + bounds[i+2]) / 2) <= 0.00001 for i in range(2)),
+                    f"Placement-origin geometry differs: {ref}")
+        else:
+            require(requested is not None and ref in requested,
+                    f"Body-datum reference must be explicitly required: {ref}")
+            require(not {"pad_bbox_center_xy_mm", "native_pad_bbox_xy_mm"} & record.keys(),
+                    f"Body datum cannot substitute pad-bounds evidence: {ref}")
+            require(components is not None and ref in components and
+                    record["footprint"] == components[ref][1],
+                    f"Body-datum full footprint differs or component identity missing: {ref}")
+            require(record.get("side") == "top" == native.get("Side", "").lower(),
+                    f"Body-datum side differs or is unsupported: {ref}")
+            manufacturer = record.get("manufacturer_datum")
+            require(isinstance(manufacturer, dict) and
+                    all(isinstance(manufacturer.get(key), str) and manufacturer[key].strip()
+                        for key in ("manufacturer", "mpn", "source_url", "datum_description")) and
+                    re.fullmatch(r"https://[^\s]+", manufacturer["source_url"]),
+                    f"Malformed manufacturer datum basis: {ref}")
+            properties = components[ref][2]
+            require(manufacturer["manufacturer"] == properties.get("Manufacturer") and
+                    manufacturer["mpn"] == properties.get("MPN"),
+                    f"Manufacturer datum part identity differs: {ref}")
+            committed_placement_evidence(manufacturer, f"Manufacturer datum evidence for {ref}")
+            local = placement_numbers(record.get("local_body_center_xy_mm"), 2, ref)
+            center = placement_numbers(record.get("body_center_xy_mm"), 2, ref)
+            angle = math.radians(rotation)
+            expected = [anchor[0] + math.cos(angle) * local[0] + math.sin(angle) * local[1],
+                        anchor[1] + math.sin(angle) * local[0] - math.cos(angle) * local[1]]
+            require(all(abs(center[i] - expected[i]) <= 0.00001 for i in range(2)),
+                    f"Body-datum local/export geometry differs: {ref}")
         origins[ref] = {"PosX": center[0], "PosY": center[1]}
     (output / "placement-origin-review.json").write_text(json.dumps(review, indent=2) + "\n")
     return origins
@@ -356,7 +436,7 @@ def manufacturing(board, output, manifest):
         if item.findtext("footprint") and not {"dnp", "exclude_from_bom"} & properties.keys():
             components[item.attrib["ref"]] = (item.findtext("value"), item.findtext("footprint"), properties)
     bom, cpl, pos = rows(path(board["bom"]), "Designator"), rows(path(board["cpl"]), "Designator"), rows(positions, "Ref")
-    origins = reviewed_placement_origins(board, inputs, pos, output)
+    origins = reviewed_placement_origins(board, inputs, pos, output, components)
     expected = set(components)
     require(set(origins) <= expected, "Placement-origin policy includes unassembled references")
     require(set(bom) == set(cpl) == expected,
