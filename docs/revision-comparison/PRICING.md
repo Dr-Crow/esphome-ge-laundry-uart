@@ -2,17 +2,17 @@
 
 [Comparison](README.md) · [Validation](VALIDATION.md) · [Finish plan](FINISH-PLAN.md)
 
-All prices are USD. The current October 3, 2026 quotes are complete PCB plus Economic top-side assembly for **all five or all ten carriers**, with exact reference/part-code matching at both quantities. Shipping, tax, XIAO modules and module-side headers/installation, programming, functional tests, enclosures and appliance cables are excluded. No order has been placed.
+All prices are USD. The selected exact Rev3C quotes refreshed October 4, 2026 at 04:16 UTC and the historical October 3 baseline quotes are complete PCB plus Economic top-side assembly for **all five or all ten carriers**, with exact reference/part-code matching at both quantities. Shipping, tax, XIAO modules and module-side headers/installation, programming, functional tests, enclosures and appliance cables are excluded. No order has been placed.
 
 ## Selected Rev3C and historical baseline
 
 | Matched factory source | References / unique purchasing groups | Five carriers | Ten carriers |
 | --- | ---: | ---: | ---: |
-| Selected `7bb455fbc85c748f3125ed091a54375de69fbbcc` | 83 / 34 | **$134.64** | **$168.91** |
+| Selected placement-corrected `b53cfca83c4433b2288f882439c16e083c1fb50d` | 83 / 34 | **$134.64** | **$168.91** |
 | Historical baseline `ca1fdb1261af8b32a1bf353d37f40439ead5c3b0` | 80 / 33 | $130.39 | $160.37 |
 | Selected-source premium | | **$4.25** | **$8.54** |
 
-The premium is approximately $0.85 per carrier. Current selected development head `fafd3eab5a8a8465697e1557bb075d88f85be9d9` adds selection and ordering documentation; its factory bytes remain those quoted at `7bb455f`. The 80-reference baseline changed only D16/D17 sourcing to reviewed MCC C668891; its original TPS22810 switches, fuses and topology remain. It is a historical price comparison, not the selected design.
+The premium is approximately $0.85 per carrier. Current standalone source `5542734` adds source-preserving partial C3/C6 models and current quote documentation. Its factory trio is the corrected J1 body-datum package at `b53cfca`; all 83 exact codes matched and were stocked at both quantities in the 04:16 refresh. The earlier `7bb455f` CPL is historical; do not use it as the current placement file. The 80-reference baseline changed only D16/D17 sourcing to reviewed MCC C668891; its original TPS22810 switches, fuses and topology remain. It is a historical price comparison, not the selected design.
 
 | Included subtotal | Selected, five | Selected, ten | Baseline, five | Baseline, ten |
 | --- | ---: | ---: | ---: | ---: |
@@ -23,7 +23,7 @@ The premium is approximately $0.85 per carrier. Current selected development hea
 
 PCBA also includes setup, stencil, SMT, hand-soldering, manual assembly and nitrogen reflow. Rounded lines are not substitutes for the supplier's total. The quote includes J1 RJ45 and J5/J6 female sockets with no unapproved omissions or substitutions.
 
-Observed settings were FR-4 TG135, four layers, 99 × 40 mm, 1.6 mm, green mask, white silkscreen, lead-free HASL and 1 oz copper on both inner and outer layers. The native export job reports 35 µm on all layers; that metadata has not established a mandatory electrical stackup. A 0.5 oz inner comparison needs a separately evaluated variant. Supplier 3D placeholders did not establish placement or physical approval.
+Observed settings were FR-4 TG135, four layers, 99 × 40 mm, 1.6 mm, green mask, white silkscreen, lead-free HASL and 1 oz copper on both inner and outer layers. The native export job reports 35 µm on all layers; that metadata has not established a mandatory electrical stackup. A 0.5 oz inner comparison needs a separately evaluated variant. Supplier 2D and 3D placeholders did not establish actual body/pad/pin 1 alignment or physical approval, even with the corrected CPL. Rev3B's exact 85-reference quote is blocked by U2 C18212168 stock at both quantities; no omission was approved.
 
 The illustrated `pcb/rev3c/ORDERING.md` in the selected candidate records the actual screenshots, steps and SHA-256 hashes of each matched Gerber/BOM/CPL trio. Familiar filenames alone are insufficient. Keep the 83-reference trio together; never mix it with the 80-reference baseline. Refresh exact stock, process review, shipping/tax and total after qualification and before any later order approval.
 
