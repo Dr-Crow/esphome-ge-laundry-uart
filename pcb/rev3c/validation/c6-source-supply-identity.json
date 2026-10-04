@@ -1,0 +1,249 @@
+{
+  "review_date_utc": "2026-10-04",
+  "scope": "Read-only identification of the exact official C6 source used for the partial model; no purchased module or electrical performance qualification.",
+  "finding": "U1 SGM6029CYG/TR supplies the actual +3V3 rail through L1. U3 SGM40567-4.2XG/TR is the separate VBAT charger.",
+  "official_source": {
+    "archive_url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip",
+    "archive_sha256": "cea2ed66da575e4a1dd6c7a9acd60583ed4a9adbf6b1d2952851c1e4199c05fc",
+    "archive_member_prefix": "202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/",
+    "schematic_title": "XIAO ESP32-C6",
+    "schematic_title_block_date": "2026-01-14",
+    "schematic_title_block_revision": "V1.0",
+    "revision_history_note": "01 Descriptions retains v1.0 Initial version, 2024/3/28, Linus.Liao. This history row does not replace the 2026-01-14 title-block/archive identity or identify an installed production module.",
+    "source_files": [
+      {
+        "archive_member": "202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_sch",
+        "sha256": "ffc9f9812ce318ced06d1e4697861e689dec628895df9d27702e05ae48a16847"
+      },
+      {
+        "archive_member": "202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/03 Power.kicad_sch",
+        "sha256": "b8209426898fd519211ce9258eb9164940545bce3a0851966995ad236d414fee"
+      },
+      {
+        "archive_member": "202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/04 ESP32 C6.kicad_sch",
+        "sha256": "9adb7444f9657442b9f4dbc63f2d0f50628eb225e1cf09e40970d2d1a49efc88"
+      },
+      {
+        "archive_member": "202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_pcb",
+        "sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027"
+      }
+    ],
+    "matching_official_pdf_url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH_260114.pdf",
+    "matching_official_pdf_sha256": "510f3f917bcded1201ca5c63374409183457c1ef83a836988517d6802180dad7",
+    "newly_retrieved_pdf_matches_retained_headroom_pdf_bytes": true,
+    "native_netlist_exporter": "KiCad 9.0.9 kicad-cli sch export netlist --format kicadxml"
+  },
+  "exact_part_and_net_evidence": [
+    {
+      "reference": "U1",
+      "value": "SMD IC PMIC;DCDC Buck-ADJ-1A,Vin 1.95V to 5.5V,Vout 1.8V to 3.3V;WLCSP-6B",
+      "manufacturer": "SGMICRO",
+      "mpn_raw": "SGM6029CYG/TR\t",
+      "mpn_normalized": "SGM6029CYG/TR",
+      "pins": [
+        {
+          "pin": "A1",
+          "function": "GND",
+          "net": "GND"
+        },
+        {
+          "pin": "A2",
+          "function": "VOS",
+          "net": "+3V3"
+        },
+        {
+          "pin": "B1",
+          "function": "VIN",
+          "net": "+5V"
+        },
+        {
+          "pin": "B2",
+          "function": "SW",
+          "net": "Net-(U1-SW)"
+        },
+        {
+          "pin": "C1",
+          "function": "MODE",
+          "net": "Net-(U1-MODE)"
+        },
+        {
+          "pin": "C2",
+          "function": "EN",
+          "net": "+5V"
+        }
+      ]
+    },
+    {
+      "reference": "L1",
+      "value": "0.47uH",
+      "manufacturer": "TDK",
+      "mpn_raw": "TFM160808ALC-R47MTAA",
+      "mpn_normalized": "TFM160808ALC-R47MTAA",
+      "pins": [
+        {
+          "pin": "1",
+          "function": "",
+          "net": "Net-(U1-SW)"
+        },
+        {
+          "pin": "2",
+          "function": "",
+          "net": "+3V3"
+        }
+      ]
+    },
+    {
+      "reference": "D1",
+      "value": "LMBR4010BST5G",
+      "manufacturer": "LRC",
+      "mpn_raw": "LMBR4010BST5G",
+      "mpn_normalized": "LMBR4010BST5G",
+      "pins": [
+        {
+          "pin": "1",
+          "function": "",
+          "net": "VBUS"
+        },
+        {
+          "pin": "2",
+          "function": "",
+          "net": "+5V"
+        }
+      ]
+    },
+    {
+      "reference": "Q1",
+      "value": "LP0404N3T5G",
+      "manufacturer": "LRC",
+      "mpn_raw": "LP0404N3T5G",
+      "mpn_normalized": "LP0404N3T5G",
+      "pins": [
+        {
+          "pin": "1",
+          "function": "G",
+          "net": "Net-(Q1-G)"
+        },
+        {
+          "pin": "2",
+          "function": "S",
+          "net": "+5V"
+        },
+        {
+          "pin": "3",
+          "function": "D",
+          "net": "VBAT"
+        }
+      ]
+    },
+    {
+      "reference": "U3",
+      "value": "SGM40567-4.2XG/TR",
+      "manufacturer": "SGMICRO",
+      "mpn_raw": "SGM40567-4.2XG/TR",
+      "mpn_normalized": "SGM40567-4.2XG/TR",
+      "pins": [
+        {
+          "pin": "A1",
+          "function": "BAT",
+          "net": "VBAT"
+        },
+        {
+          "pin": "A2",
+          "function": "VIN",
+          "net": "VBUS"
+        },
+        {
+          "pin": "B1",
+          "function": "F",
+          "net": "GND"
+        },
+        {
+          "pin": "B2",
+          "function": "NCHG",
+          "net": "Net-(CHG1--)"
+        },
+        {
+          "pin": "C1",
+          "function": "IREF",
+          "net": "Net-(U3-IREF)"
+        },
+        {
+          "pin": "C2",
+          "function": "GND",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "U2",
+      "value": "XIAO ESP32-C6",
+      "manufacturer": null,
+      "mpn_raw": null,
+      "mpn_normalized": null,
+      "pins": [
+        {
+          "pin": "12",
+          "function": "3V3_OUT",
+          "net": "+3V3"
+        },
+        {
+          "pin": "13",
+          "function": "GND",
+          "net": "GND"
+        },
+        {
+          "pin": "14",
+          "function": "VBUS",
+          "net": "VBUS"
+        }
+      ]
+    },
+    {
+      "reference": "U4",
+      "value": "ESP32-C6FH4",
+      "manufacturer": "Espressif",
+      "mpn_raw": "ESP32-C6FH4",
+      "mpn_normalized": "ESP32-C6FH4",
+      "pins": [
+        {
+          "pin": "20",
+          "function": "VDDPST2",
+          "net": "+3V3"
+        },
+        {
+          "pin": "29",
+          "function": "VDDA1",
+          "net": "+3V3"
+        },
+        {
+          "pin": "32",
+          "function": "VDDA2",
+          "net": "+3V3"
+        },
+        {
+          "pin": "5",
+          "function": "VDDPST1",
+          "net": "+3V3"
+        }
+      ]
+    }
+  ],
+  "power_path_interpretation": {
+    "vb_bus_path": "U2.14/USB VBUS → D1 LMBR4010BST5G → +5V → U1.B1 VIN; U1.C2 EN also +5V. +5V is the internal net label, not a guarantee of exactly 5.000 V.",
+    "regulated_rail_path": "U1.B2 SW → L1.1; L1.2 → +3V3. U1.A2 VOS senses +3V3. U2.12 and U4.5/.20/.29/.32 use +3V3.",
+    "battery_branch": "U3.A2 VIN=VBUS; U3.A1 BAT=VBAT. Q1.3 D=VBAT and Q1.2 S=+5V connect the battery supply branch to the internal regulator input rail.",
+    "separate_charger": true,
+    "supply_architecture": "Buck converter for the main +3V3 rail, separate linear Li-ion charger for VBAT."
+  },
+  "retained_final_headroom_reference_check": {
+    "uses_SGM6029_current_260114_reference": true,
+    "uses_RT9080": false,
+    "numerical_correction_required_by_this_identity_check": false
+  },
+  "limits": [
+    "Equal V1.0 labels do not establish electrical equivalence between archive dates.",
+    "This exact reference does not identify the purchased/installed module production revision.",
+    "Operating input minimum and net names do not prove loaded/hot 3V3 regulation, headroom, source capability or transient behavior.",
+    "No model rework, electrical source change, firmware change or manufacturing change is made by this receipt."
+  ]
+}

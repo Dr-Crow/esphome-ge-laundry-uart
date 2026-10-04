@@ -47,6 +47,17 @@ at 9.0.9, commit `a0244fe3442823dbb052ebc4820b4c2951e1742c`, under CC BY-SA 4.0
 with the KiCad library exception. Asset hashes and per-reference provenance are
 in the [module receipt](validation/xiao-model-provenance.json).
 
+The exact C6 reference also uses **U1 SGM6029CYG/TR for its main +3V3 rail**:
+U1 VIN/EN are on internal +5V, its SW pin feeds L1, and L1's output/VOS net is
++3V3, shared by module side pin 12 and the MCU supplies. **U3 SGM40567-4.2XG/TR
+is the separate VBAT charger**, with VIN on VBUS. The current `260114` archive
+SHA-256 is `cea2ed66da575e4a1dd6c7a9acd60583ed4a9adbf6b1d2952851c1e4199c05fc`;
+its title block is V1.0, 2026-01-14. The retained final power-headroom review
+already uses this buck reference. The [source identity receipt](validation/c6-source-supply-identity.json)
+records exact schematic/PCB/PDF hashes and pin/net evidence. Equal V1.0 labels
+do not establish equivalence across archive dates or identify the installed
+module; this visual reference does not qualify electrical headroom.
+
 The wiki-linked [C3 GrabCAD model](https://grabcad.com/library/seeed-studio-xiao-esp32-c3-1)
 is Maurice Pannard's February 2023 reconstruction, predating v1.3; its author
 warns about chip, USB-C and U.FL accuracy. The corresponding C6 community model
