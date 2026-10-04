@@ -5,7 +5,7 @@ This directory keeps every board revision in a separate package so source files,
 [Back to the project overview](../README.md) · [PCB ordering guide](ORDERING.md)
 
 > [!IMPORTANT]
-> For a new build, start with [Rev 2.2](rev2.2/README.md). Older revisions are retained for repair information and project history.
+> Every revision needs its own source, electrical, assembly and physical qualification before a new build. Rev2.2 retains unresolved regulator/current and protection limits; it is not a released fallback. Older packages remain for review and project history.
 
 ## What the folders mean
 
@@ -18,15 +18,15 @@ This directory keeps every board revision in a separate package so source files,
 
 | Revision | Status | Available material |
 | --- | --- | --- |
-| [Rev 2.2](rev2.2/README.md) | Manufacturing candidate | Corrected KiCad source, matched factory package, and validation exports. |
+| [Rev 2.2](rev2.2/README.md) | Historical candidate; qualification open | Corrected KiCad source, matched factory package, and validation exports. |
 | [Rev 2.1](rev2.1/README.md) | Built; superseded | KiCad 9 source, JLCPCB package, drill maps, and repair image. |
 | [Rev 2.0](rev2.0/README.md) | Built; superseded | PCBA archive, schematic, board model, renders, and photographs. |
 | [Rev 1.0](rev1.0/README.md) | Historical | Gerber archive only. |
 
 > [!IMPORTANT]
-> Rev 2.0 and Rev 2.1 have swapped RX/TX silkscreen labels. Their U1 reset supervisor can also cause ESP32 boot loops. Do not treat either manufacturing package as a corrected design.
+> Historical RX/TX labels use an endpoint perspective; verify the exact ESP GPIO-to-adapter direction rather than inferring a hardware swap. The U1 supervisor has reported boot-loop issues on Rev2.1. Historical manufacturing packages are not qualified corrected sources.
 
-Rev 2.2 addresses those known board-file problems but is not proven until assembled boards pass electrical, appliance, and enclosure testing. Use only the three matched files in its `manufacturing/` directory when ordering.
+Rev 2.2 addresses those known board-file problems but is not proven until assembled boards pass electrical, appliance, and enclosure testing. Keep the three matched files together for review; qualification and exact supplier process approval are still required before ordering.
 
 Not every revision has the same files. The table lists what is actually available; missing source files, exports, and images were not recreated.
 
