@@ -1,0 +1,424 @@
+{
+  "revision": "2.2",
+  "comparison_base_source_head": "7b3201de09d19bec6a10d9e90b4b02792bda6972",
+  "board_sha256_before": "129364338a44484154cba4a64ceaa745404a0e102ce89ebfffba593e02601945",
+  "board_sha256_after": "4e98a77322d5f7a416f03c71dd2c724a4dd39c0ff49f3e16eb12916a8eeed187",
+  "kicad_version": "9.0.9",
+  "physical_nets": 45,
+  "exact_named_net_memberships_preserved": true,
+  "component_identities_values_assembly_properties_preserved": true,
+  "all_other_footprint_placements_preserved": true,
+  "all_pad_sizes_shapes_numbers_nets_layers_drills_preserved": true,
+  "board_design_settings_drawings_outline_mounts_preserved": true,
+  "zone_definitions_clearance_thermal_and_rule_settings_preserved": true,
+  "footprints_before": 74,
+  "footprints_after": 74,
+  "pads_before": 223,
+  "pads_after": 223,
+  "track_and_via_items_before": 711,
+  "track_and_via_items_after": 713,
+  "retained_track_and_via_items_unchanged": 704,
+  "retained_track_items_changed": 7,
+  "new_track_items": 2,
+  "deleted_track_or_via_items": 0,
+  "local_change_box_mm": [
+    80.5,
+    96.3,
+    86.2,
+    100.9
+  ],
+  "courtyard_separation_mm_after": 0.05,
+  "changes": {
+    "pads": [
+      {
+        "uuid_or_reference": "3871218e-d9f2-4922-a55d-b1837bd25d4c",
+        "before": {
+          "reference": "C10",
+          "number": "1",
+          "net": "GND",
+          "position": [
+            84025000,
+            98100000
+          ],
+          "size": [
+            1000000,
+            1450000
+          ],
+          "drill": [
+            0,
+            0
+          ],
+          "shape": 4,
+          "attribute": 1,
+          "angle": 270.0,
+          "layers": "00000000_00000000_00000000_00002003",
+          "zone_connection": -1
+        },
+        "after": {
+          "reference": "C10",
+          "number": "1",
+          "net": "GND",
+          "position": [
+            84025000,
+            97800000
+          ],
+          "size": [
+            1000000,
+            1450000
+          ],
+          "drill": [
+            0,
+            0
+          ],
+          "shape": 4,
+          "attribute": 1,
+          "angle": 270.0,
+          "layers": "00000000_00000000_00000000_00002003",
+          "zone_connection": -1
+        }
+      },
+      {
+        "uuid_or_reference": "f3f72232-063e-4522-93f3-e57d1053ed04",
+        "before": {
+          "reference": "C10",
+          "number": "2",
+          "net": "/p3",
+          "position": [
+            84025000,
+            100000000
+          ],
+          "size": [
+            1000000,
+            1450000
+          ],
+          "drill": [
+            0,
+            0
+          ],
+          "shape": 4,
+          "attribute": 1,
+          "angle": 270.0,
+          "layers": "00000000_00000000_00000000_00002003",
+          "zone_connection": -1
+        },
+        "after": {
+          "reference": "C10",
+          "number": "2",
+          "net": "/p3",
+          "position": [
+            84025000,
+            99700000
+          ],
+          "size": [
+            1000000,
+            1450000
+          ],
+          "drill": [
+            0,
+            0
+          ],
+          "shape": 4,
+          "attribute": 1,
+          "angle": 270.0,
+          "layers": "00000000_00000000_00000000_00002003",
+          "zone_connection": -1
+        }
+      }
+    ],
+    "tracks": [
+      {
+        "uuid_or_reference": "7bb34fd0-396c-4682-bbf4-13e307f13656",
+        "before": {
+          "class": "PCB_TRACK",
+          "net": "GND",
+          "start": [
+            84025000,
+            98100000
+          ],
+          "end": [
+            82896800,
+            99228200
+          ],
+          "layer": 0,
+          "width": 406400
+        },
+        "after": {
+          "class": "PCB_TRACK",
+          "net": "GND",
+          "start": [
+            84025000,
+            97800000
+          ],
+          "end": [
+            82896800,
+            98928200
+          ],
+          "layer": 0,
+          "width": 406400
+        }
+      },
+      {
+        "uuid_or_reference": "8d27b864-f703-4268-b5ed-a5b9b0248e81",
+        "before": {
+          "class": "PCB_TRACK",
+          "net": "GND",
+          "start": [
+            84125000,
+            98000000
+          ],
+          "end": [
+            84025000,
+            98100000
+          ],
+          "layer": 0,
+          "width": 406400
+        },
+        "after": {
+          "class": "PCB_TRACK",
+          "net": "GND",
+          "start": [
+            84125000,
+            98000000
+          ],
+          "end": [
+            84025000,
+            97800000
+          ],
+          "layer": 0,
+          "width": 406400
+        }
+      },
+      {
+        "uuid_or_reference": "edfd8dbd-0e7e-4441-894d-0150c32f56b3",
+        "before": {
+          "class": "PCB_TRACK",
+          "net": "GND",
+          "start": [
+            82896800,
+            99228200
+          ],
+          "end": [
+            82896800,
+            102021800
+          ],
+          "layer": 0,
+          "width": 406400
+        },
+        "after": {
+          "class": "PCB_TRACK",
+          "net": "GND",
+          "start": [
+            82896800,
+            98928200
+          ],
+          "end": [
+            82896800,
+            102021800
+          ],
+          "layer": 0,
+          "width": 406400
+        }
+      },
+      {
+        "uuid_or_reference": "4c835960-f1b9-473a-bb7c-d676d25cb56e",
+        "before": {
+          "class": "PCB_TRACK",
+          "net": "+3V3",
+          "start": [
+            85078909,
+            97196800
+          ],
+          "end": [
+            88000000,
+            94275709
+          ],
+          "layer": 0,
+          "width": 406400
+        },
+        "after": {
+          "class": "PCB_TRACK",
+          "net": "+3V3",
+          "start": [
+            85528909,
+            96746800
+          ],
+          "end": [
+            88000000,
+            94275709
+          ],
+          "layer": 0,
+          "width": 406400
+        }
+      },
+      {
+        "uuid_or_reference": "5c58cb88-58cd-4fce-a9ef-b2b572fb2ac8",
+        "before": {
+          "class": "PCB_TRACK",
+          "net": "+3V3",
+          "start": [
+            77475000,
+            102994308
+          ],
+          "end": [
+            83272508,
+            97196800
+          ],
+          "layer": 0,
+          "width": 406400
+        },
+        "after": {
+          "class": "PCB_TRACK",
+          "net": "+3V3",
+          "start": [
+            77475000,
+            102994308
+          ],
+          "end": [
+            81000000,
+            99469308
+          ],
+          "layer": 0,
+          "width": 406400
+        }
+      },
+      {
+        "uuid_or_reference": "7011579d-a61a-491c-8c12-010cb9e3c393",
+        "before": {
+          "class": "PCB_TRACK",
+          "net": "+3V3",
+          "start": [
+            83272508,
+            97196800
+          ],
+          "end": [
+            85078909,
+            97196800
+          ],
+          "layer": 0,
+          "width": 406400
+        },
+        "after": {
+          "class": "PCB_TRACK",
+          "net": "+3V3",
+          "start": [
+            83222508,
+            96746800
+          ],
+          "end": [
+            85528909,
+            96746800
+          ],
+          "layer": 0,
+          "width": 406400
+        }
+      },
+      {
+        "uuid_or_reference": "839ae116-59aa-49e8-9fec-3f186a4b9d7c",
+        "before": {
+          "class": "PCB_TRACK",
+          "net": "/p3",
+          "start": [
+            84025000,
+            100000000
+          ],
+          "end": [
+            84025000,
+            101250000
+          ],
+          "layer": 0,
+          "width": 406400
+        },
+        "after": {
+          "class": "PCB_TRACK",
+          "net": "/p3",
+          "start": [
+            84025000,
+            99700000
+          ],
+          "end": [
+            84025000,
+            101250000
+          ],
+          "layer": 0,
+          "width": 406400
+        }
+      }
+    ],
+    "footprints": [
+      {
+        "uuid_or_reference": "C10",
+        "before": {
+          "position": [
+            84025000,
+            99050000
+          ],
+          "angle": -90.0
+        },
+        "after": {
+          "position": [
+            84025000,
+            98750000
+          ],
+          "angle": -90.0
+        }
+      }
+    ]
+  },
+  "added_items": {
+    "pads": [],
+    "tracks": [
+      {
+        "uuid": "c54a0b4d-52cc-4730-a4d2-72b52b5fe764",
+        "class": "PCB_TRACK",
+        "net": "+3V3",
+        "start": [
+          81000000,
+          98969308
+        ],
+        "end": [
+          83222508,
+          96746800
+        ],
+        "layer": 0,
+        "width": 406400
+      },
+      {
+        "uuid": "fed12ad5-5e4b-46c3-943f-42fbf9c6dbd2",
+        "class": "PCB_TRACK",
+        "net": "+3V3",
+        "start": [
+          81000000,
+          99469308
+        ],
+        "end": [
+          81000000,
+          98969308
+        ],
+        "layer": 0,
+        "width": 406400
+      }
+    ],
+    "footprints": []
+  },
+  "native_zone_refill_geometry": [
+    {
+      "layer": "F.Cu",
+      "vertex_count_before": 7312,
+      "vertex_count_after": 7333,
+      "native_refill_boundary_representations_changed_outside_local_box": 50,
+      "maximum_outside_boundary_displacement_nm": 1.4142135623730951,
+      "note": "Collinear vertices and native integer rounding can change during refill; this sub-2-nm representation difference is not a track, rule or placement change."
+    },
+    {
+      "layer": "B.Cu",
+      "vertex_count_before": 3977,
+      "vertex_count_after": 3977,
+      "native_refill_boundary_representations_changed_outside_local_box": 0,
+      "maximum_outside_boundary_displacement_nm": 0,
+      "note": "Collinear vertices and native integer rounding can change during refill; this sub-2-nm representation difference is not a track, rule or placement change."
+    }
+  ],
+  "original_power_architecture_manual_JP2_preserved": true,
+  "automatic_source_selection_implemented": false,
+  "physical_qualification": false
+}

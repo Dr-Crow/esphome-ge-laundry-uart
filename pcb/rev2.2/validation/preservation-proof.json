@@ -1,0 +1,30 @@
+{
+  "revision": "2.2",
+  "physical_nets": 45,
+  "physical_net_memberships_preserved": true,
+  "component_values_and_assembly_properties_preserved": true,
+  "footprint_placements_preserved": false,
+  "track_and_via_geometry_preserved": false,
+  "footprints": 74,
+  "pads": 223,
+  "track_and_via_items": 713,
+  "pad_changes": [
+    {
+      "reference": "U4",
+      "pin": "2",
+      "field": "zone_connection",
+      "before": -1,
+      "after": 2
+    }
+  ],
+  "footprint_placement_exceptions": [
+    "C10: Y 99.05 -> 98.75 mm; orientation unchanged"
+  ],
+  "pad_position_exceptions": [
+    "C10 pin 1: Y 98.10 -> 97.80 mm",
+    "C10 pin 2: Y 100.00 -> 99.70 mm"
+  ],
+  "local_route_exceptions": "Seven retained front-layer track endpoints adjusted around C10 and two front-layer 0.4064-mm +3V3 segments added. No vias moved or added.",
+  "detailed_local_change_proof": "capacitor-clearance-proof.json",
+  "all_pad_sizes_shapes_numbers_nets_drills_preserved": true
+}

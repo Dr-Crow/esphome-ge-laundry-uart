@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name "OnionStraws")(type "KiCad")(uri "${KIPRJMOD}/footprints/OnionStraws.pretty")(options "")(descr "Project-local production footprints"))
+ (lib (name "LegacyBoard")(type "KiCad")(uri "${KIPRJMOD}/footprints/LegacyBoard.pretty")(options "")(descr "Recovered embedded source footprints; local documented cleanup only"))
 )

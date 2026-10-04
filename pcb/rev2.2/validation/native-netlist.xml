@@ -1,0 +1,2175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/workspace/shared/ge-oct3-legacy-cleanup/pcb/rev2.2/design/OnionStraws.kicad_sch</source>
+    <date>2026-10-03T15:26:55-0400</date>
+    <tool>Eeschema 9.0.9</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Onion Straws</title>
+        <company/>
+        <rev>2.2</rev>
+        <date>2026-09-14</date>
+        <source>OnionStraws.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>LegacyBoard:C1_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28233</description>
+      <fields>
+        <field name="LCSC">C28233</field>
+        <field name="Footprint">LegacyBoard:C1_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28233</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28233"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f3718ad</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1u</value>
+      <footprint>LegacyBoard:C2_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28323</description>
+      <fields>
+        <field name="LCSC">C28323</field>
+        <field name="Footprint">LegacyBoard:C2_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28323</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28323"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a34e985-8a84-4b77-a731-d3a66dea75a8</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>LegacyBoard:C3_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28233</description>
+      <fields>
+        <field name="LCSC">C28233</field>
+        <field name="Footprint">LegacyBoard:C3_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28233</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28233"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2d6a9ee-f4c6-44e1-a18b-7e291eeb77e0</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>LegacyBoard:C4_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28233</description>
+      <fields>
+        <field name="LCSC">C28233</field>
+        <field name="Footprint">LegacyBoard:C4_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28233</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28233"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8eba0f7-7a1b-4a7d-a1d8-0df2a95332f2</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>LegacyBoard:C5_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28233</description>
+      <fields>
+        <field name="LCSC">C28233</field>
+        <field name="Footprint">LegacyBoard:C5_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28233</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28233"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2726a2a1-29f8-4cbe-91c8-e56b3387e7d1</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>LegacyBoard:C6_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28233</description>
+      <fields>
+        <field name="LCSC">C28233</field>
+        <field name="Footprint">LegacyBoard:C6_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28233</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28233"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f372a02</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100n</value>
+      <footprint>LegacyBoard:C7_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28233</description>
+      <fields>
+        <field name="LCSC">C28233</field>
+        <field name="Footprint">LegacyBoard:C7_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28233</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28233"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>744b4081-ec99-4711-aace-0e93395568bc</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>1u</value>
+      <footprint>LegacyBoard:C8_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28323</description>
+      <fields>
+        <field name="LCSC">C28323</field>
+        <field name="Footprint">LegacyBoard:C8_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28323</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28323"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ab92a36-facc-42cf-884b-a61b86852411</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>10u</value>
+      <footprint>LegacyBoard:C9_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C15850</description>
+      <fields>
+        <field name="LCSC">C15850</field>
+        <field name="Footprint">LegacyBoard:C9_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C15850</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C15850"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f333061</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>100n</value>
+      <footprint>LegacyBoard:C10_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28233</description>
+      <fields>
+        <field name="LCSC">C28233</field>
+        <field name="Footprint">LegacyBoard:C10_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28233</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28233"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c00ef1e-9241-4a78-a412-3cd7c8364766</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>10u</value>
+      <footprint>LegacyBoard:C11_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C15850</description>
+      <fields>
+        <field name="LCSC">C15850</field>
+        <field name="Footprint">LegacyBoard:C11_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C15850</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C15850"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f333718</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>100n</value>
+      <footprint>LegacyBoard:C12_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28233</description>
+      <fields>
+        <field name="LCSC">C28233</field>
+        <field name="Footprint">LegacyBoard:C12_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28233</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28233"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>554a3ba3-78d4-41fe-bb81-3a018839fa98</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>10u</value>
+      <footprint>LegacyBoard:C13_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C15850</description>
+      <fields>
+        <field name="LCSC">C15850</field>
+        <field name="Footprint">LegacyBoard:C13_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C15850</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C15850"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dab3ce46-5d68-4182-ba7e-5871aeeebd54</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>100n</value>
+      <footprint>LegacyBoard:C14_C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C28233</description>
+      <fields>
+        <field name="LCSC">C28233</field>
+        <field name="Footprint">LegacyBoard:C14_C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C28233</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28233"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f92c83b-4a0e-4393-b64f-44e3811f347e</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>BAV99</value>
+      <footprint>LegacyBoard:D1_SOT-23</footprint>
+      <description>C2500</description>
+      <fields>
+        <field name="LCSC">C2500</field>
+        <field name="Footprint">LegacyBoard:D1_SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description">C2500</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="LCSC" value="C2500"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2c2dfa3-25ab-4e30-95c7-0ace8c501014</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>BAV99</value>
+      <footprint>LegacyBoard:D2_SOT-23</footprint>
+      <description>C2500</description>
+      <fields>
+        <field name="LCSC">C2500</field>
+        <field name="Footprint">LegacyBoard:D2_SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description">C2500</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="LCSC" value="C2500"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da6c8207-c042-45d4-9bf7-06a10874b2f4</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>BAV99</value>
+      <footprint>LegacyBoard:D3_SOT-23</footprint>
+      <description>C2500</description>
+      <fields>
+        <field name="LCSC">C2500</field>
+        <field name="Footprint">LegacyBoard:D3_SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description">C2500</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="LCSC" value="C2500"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9006e9a-a776-43c5-9357-3d7e345e3d54</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>GRN</value>
+      <footprint>LegacyBoard:D4_LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C2297</description>
+      <fields>
+        <field name="LCSC">C2297</field>
+        <field name="Footprint">LegacyBoard:D4_LED_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C2297</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C2297"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5ca7214-78ab-4d24-aa3c-ea2e0600d2a1</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>RED</value>
+      <footprint>LegacyBoard:D5_LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C84256</description>
+      <fields>
+        <field name="LCSC">C84256</field>
+        <field name="Footprint">LegacyBoard:D5_LED_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C84256</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84256"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6c49bc8-5d2f-4127-b831-1ff4da839c76</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>YLW</value>
+      <footprint>LegacyBoard:D6_LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C2296</description>
+      <fields>
+        <field name="LCSC">C2296</field>
+        <field name="Footprint">LegacyBoard:D6_LED_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C2296</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C2296"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0ab535a-1e91-48d0-a739-367dd1a75477</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>D_TVS</value>
+      <footprint>LegacyBoard:D7_D_SMA</footprint>
+      <datasheet>~</datasheet>
+      <description>C309871</description>
+      <fields>
+        <field name="LCSC">C309871</field>
+        <field name="Footprint">LegacyBoard:D7_D_SMA</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C309871</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <property name="LCSC" value="C309871"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="diode TVS thyrector"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c7e1fe5-ef50-4fc3-a765-465dd47adade</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>5.2V</value>
+      <footprint>LegacyBoard:D8_D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <description>C78479</description>
+      <fields>
+        <field name="LCSC">C78479</field>
+        <field name="Footprint">LegacyBoard:D8_D_SOD-123</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C78479</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="D_Zener" description="Zener diode"/>
+      <property name="LCSC" value="C78479"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a78a0c9-9986-4d50-9037-603f280c3485</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>BAV99</value>
+      <footprint>LegacyBoard:D9_SOT-23</footprint>
+      <description>C2500</description>
+      <fields>
+        <field name="LCSC">C2500</field>
+        <field name="Footprint">LegacyBoard:D9_SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description">C2500</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="LCSC" value="C2500"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b035ef10-1fc7-40b3-8e83-da04db117cec</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>Polyfuse</value>
+      <footprint>LegacyBoard:F1_Fuse_1812_4532Metric</footprint>
+      <description>C12604</description>
+      <fields>
+        <field name="LCSC">C12604</field>
+        <field name="Footprint">LegacyBoard:F1_Fuse_1812_4532Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">C12604</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="LCSC" value="C12604"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
+      <property name="ki_fp_filters" value="*polyfuse* *PTC*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41e11189-48e3-42ca-a63e-8b1b0b9b844e</tstamps>
+    </comp>
+    <comp ref="F2">
+      <value>Polyfuse</value>
+      <footprint>LegacyBoard:F2_Fuse_1812_4532Metric</footprint>
+      <description>C12604</description>
+      <fields>
+        <field name="LCSC">C12604</field>
+        <field name="Footprint">LegacyBoard:F2_Fuse_1812_4532Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">C12604</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="LCSC" value="C12604"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
+      <property name="ki_fp_filters" value="*polyfuse* *PTC*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f3289a9</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>LegacyBoard:H1_MountingHole_3.2mm_M3_DIN965</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:H1_MountingHole_3.2mm_M3_DIN965</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f6837da-9a3c-4d1c-96a9-1d7065db7755</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>LegacyBoard:H2_MountingHole_3.2mm_M3_DIN965</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:H2_MountingHole_3.2mm_M3_DIN965</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3501035-f81d-48a3-b153-7b734b4fc8c0</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>8P8C</value>
+      <footprint>LegacyBoard:J1_RJ45_EVERCOM_5301-8P8C_Horizontal</footprint>
+      <datasheet>https://github.com/puddly/casserole/issues/3#issue-433554335</datasheet>
+      <description>C3097717</description>
+      <fields>
+        <field name="LCSC">C3097717</field>
+        <field name="Footprint">LegacyBoard:J1_RJ45_EVERCOM_5301-8P8C_Horizontal</field>
+        <field name="Datasheet">https://github.com/puddly/casserole/issues/3#issue-433554335</field>
+        <field name="Description">C3097717</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="8P8C" description="RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61"/>
+      <property name="LCSC" value="C3097717"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="8P8C RJ female connector"/>
+      <property name="ki_fp_filters" value="8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f2dfac0</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>1x6</value>
+      <footprint>LegacyBoard:J2_PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:J2_PinHeader_1x06_P2.54mm_Vertical</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>63eed7e9-41f0-441b-9330-7f8d75b82aac</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>TC2030</value>
+      <footprint>LegacyBoard:J3_Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:J3_Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>145897f9-b67d-4576-8342-c83879c440ec</tstamps>
+    </comp>
+    <comp ref="JP1">
+      <value>FirstBuild</value>
+      <footprint>LegacyBoard:JP1_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:JP1_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="Solder Jumper SPDT"/>
+      <property name="ki_fp_filters" value="SolderJumper*Bridged12*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>600a6d65-feb0-4d96-85b3-f5e8f234e27b</tstamps>
+    </comp>
+    <comp ref="JP2">
+      <value>AltPwr</value>
+      <footprint>LegacyBoard:JP2_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:JP2_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="Solder Jumper SPDT"/>
+      <property name="ki_fp_filters" value="SolderJumper*Bridged12*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>97febc29-3de1-4b65-b3fe-7bc586b38f87</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>Si2309CDS</value>
+      <footprint>LegacyBoard:Q1_SOT-23</footprint>
+      <description>C10493</description>
+      <fields>
+        <field name="LCSC">C10493</field>
+        <field name="Footprint">LegacyBoard:Q1_SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description">C10493</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
+      <property name="LCSC" value="C10493"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="transistor PMOS P-MOS P-MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb566574-0426-4696-a3c1-925518d046ee</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>Si2309CDS</value>
+      <footprint>LegacyBoard:Q2_SOT-23</footprint>
+      <description>C10493</description>
+      <fields>
+        <field name="LCSC">C10493</field>
+        <field name="Footprint">LegacyBoard:Q2_SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description">C10493</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
+      <property name="LCSC" value="C10493"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="transistor PMOS P-MOS P-MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f2eb41c</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>LegacyBoard:R1_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R1_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f3373f5-767b-4613-a1f9-211dc0897cb5</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>LegacyBoard:R2_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R2_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0757ed83-5a92-4f2e-b97f-91bc828e2721</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>LegacyBoard:R3_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R3_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a449dc65-997b-4085-b7a0-c07651fbec72</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>220</value>
+      <footprint>LegacyBoard:R4_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17557</description>
+      <fields>
+        <field name="LCSC">C17557</field>
+        <field name="Footprint">LegacyBoard:R4_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17557</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17557"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41210ed9-4981-424c-be35-381675a4fb21</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10K</value>
+      <footprint>LegacyBoard:R5_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R5_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffe0aff5-9976-4496-a824-b04d7fffa1b3</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>220</value>
+      <footprint>LegacyBoard:R6_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17557</description>
+      <fields>
+        <field name="LCSC">C17557</field>
+        <field name="Footprint">LegacyBoard:R6_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17557</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17557"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3cf02de4-0b1a-4ce7-abdb-516d921496f0</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>220</value>
+      <footprint>LegacyBoard:R7_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17557</description>
+      <fields>
+        <field name="LCSC">C17557</field>
+        <field name="Footprint">LegacyBoard:R7_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17557</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17557"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2bfdc927-c633-48be-891b-4ea5e8c343e8</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>DNP</value>
+      <footprint>LegacyBoard:R8_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:R8_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe1a1342-6757-4ac5-8483-c69aea7943ee</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>1M</value>
+      <footprint>LegacyBoard:R9_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17514</description>
+      <fields>
+        <field name="LCSC">C17514</field>
+        <field name="Footprint">LegacyBoard:R9_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17514</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17514"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b17db9c4-60bf-4e62-8d05-e4ff14d65f25</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>1K</value>
+      <footprint>LegacyBoard:R10_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17513</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Footprint">LegacyBoard:R10_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17513</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45cbe67a-154d-4abe-8838-59de0b0a29fa</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>1K</value>
+      <footprint>LegacyBoard:R11_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17513</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Footprint">LegacyBoard:R11_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17513</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cea3e60b-5877-4f16-a2ba-67fcdb3208ff</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>1K</value>
+      <footprint>LegacyBoard:R12_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17513</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Footprint">LegacyBoard:R12_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17513</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce71ef5f-2de2-4d90-ac78-835f57bd8be9</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>1K</value>
+      <footprint>LegacyBoard:R13_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17513</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Footprint">LegacyBoard:R13_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17513</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f31ba49</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>10K</value>
+      <footprint>LegacyBoard:R14_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R14_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed7c54c8-eb1f-4548-b828-59ecb89c3d82</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>10K</value>
+      <footprint>LegacyBoard:R15_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R15_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87787b7b-0950-4e3b-8130-4503b072059b</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>10K</value>
+      <footprint>LegacyBoard:R16_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R16_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74b5b296-9fe7-44d8-86e8-7daabc6561b1</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>10K</value>
+      <footprint>LegacyBoard:R17_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R17_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffb09ab6-f372-4027-9c8e-6ae354d34df1</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>220k</value>
+      <footprint>LegacyBoard:R18_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C104108</description>
+      <fields>
+        <field name="LCSC">C104108</field>
+        <field name="Footprint">LegacyBoard:R18_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C104108</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C104108"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fc42c3e-1792-49df-8a3c-986ac005f602</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>10K</value>
+      <footprint>LegacyBoard:R19_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R19_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07fbf78d-d7d2-4dee-95aa-02b6682e55e4</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>10K</value>
+      <footprint>LegacyBoard:R20_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17414</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Footprint">LegacyBoard:R20_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17414</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c28ad6d7-faea-478b-ba48-fab1c6eceb40</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>220k</value>
+      <footprint>LegacyBoard:R21_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C104108</description>
+      <fields>
+        <field name="LCSC">C104108</field>
+        <field name="Footprint">LegacyBoard:R21_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C104108</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C104108"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a3706fc-3bf8-472e-83d0-e2bb4ccc58e0</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>4K7</value>
+      <footprint>LegacyBoard:R22_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17673</description>
+      <fields>
+        <field name="LCSC">C17673</field>
+        <field name="Footprint">LegacyBoard:R22_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17673</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17673"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f36072d</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>1K</value>
+      <footprint>LegacyBoard:R23_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17513</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Footprint">LegacyBoard:R23_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17513</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46e03cc7-89a1-45c3-8938-ea082ea4aa72</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>1K</value>
+      <footprint>LegacyBoard:R24_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17513</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Footprint">LegacyBoard:R24_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17513</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a291dc52-db30-477b-9b12-9628ee562cf0</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>1K</value>
+      <footprint>LegacyBoard:R25_R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C17513</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Footprint">LegacyBoard:R25_R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C17513</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1cd3ba5a-51bc-4e01-8769-894fb06c2229</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <footprint>LegacyBoard:SW1_SW_Push_1P1T_XKB_TS-1187A</footprint>
+      <datasheet>~</datasheet>
+      <description>C318884</description>
+      <fields>
+        <field name="LCSC">C318884</field>
+        <field name="Footprint">LegacyBoard:SW1_SW_Push_1P1T_XKB_TS-1187A</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C318884</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="LCSC" value="C318884"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a969b592-32a1-43bc-8903-4b5cf49a73e4</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <footprint>LegacyBoard:SW2_SW_Push_1P1T_XKB_TS-1187A</footprint>
+      <datasheet>~</datasheet>
+      <description>C318884</description>
+      <fields>
+        <field name="LCSC">C318884</field>
+        <field name="Footprint">LegacyBoard:SW2_SW_Push_1P1T_XKB_TS-1187A</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C318884</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="LCSC" value="C318884"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de5022fb-ce5e-4ba6-ac07-82ad01d98632</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>LegacyBoard:TP1_TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:TP1_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2acbebc0-467b-48e3-a214-5ba9b872d3f1</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>LegacyBoard:TP2_TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:TP2_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8add6fe9-7f74-4c57-82c4-edb6e74c9b88</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>LegacyBoard:TP3_TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:TP3_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38823c36-e0ed-4070-86a5-46e652097b3c</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint</value>
+      <footprint>LegacyBoard:TP4_TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:TP4_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d1c5b745-ce67-4ce0-80ab-5e4ad8f382c1</tstamps>
+    </comp>
+    <comp ref="TP5">
+      <value>TestPoint</value>
+      <footprint>LegacyBoard:TP5_TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:TP5_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0584b35-d467-4eb5-b7b5-a3c30f001e0a</tstamps>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint</value>
+      <footprint>LegacyBoard:TP6_TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:TP6_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2e9d393-35fc-479a-83b3-161fe52af241</tstamps>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint</value>
+      <footprint>LegacyBoard:TP7_TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LegacyBoard:TP7_TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LegacySymbols" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c0f2f9c-7d49-4bed-a929-0ae6b029dcc5</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>APX803L20-29SA-7</value>
+      <footprint>LegacyBoard:U1_SOT-23</footprint>
+      <description>C2067355</description>
+      <fields>
+        <field name="LCSC">C2067355</field>
+        <field name="Footprint">LegacyBoard:U1_SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description">C2067355</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="APX803L" description=""/>
+      <property name="LCSC" value="C2067355"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>468fcc7f-55f8-4783-b36e-f80ec4401b15</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>ESP32-C3-WROOM-02</value>
+      <footprint>LegacyBoard:U2_ESP32-C3-WROOM-02</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</datasheet>
+      <description>C2934560</description>
+      <fields>
+        <field name="LCSC">C2934560</field>
+        <field name="Footprint">LegacyBoard:U2_ESP32-C3-WROOM-02</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</field>
+        <field name="Description">C2934560</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="ESP32-C3-WROOM-02" description="802.11 b/g/n Wi­Fi and Bluetooth 5 module, ESP32­C3 SoC, RISC­V microprocessor, On-board antenna"/>
+      <property name="LCSC" value="C2934560"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="esp32 espressif WiFi Bluetooth LE"/>
+      <property name="ki_fp_filters" value="ESP32?C3*WROOM?02*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc71aa51-d694-4c19-9c64-5966956e6c6b</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>L7805</value>
+      <footprint>LegacyBoard:U3_TO-263-2</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</datasheet>
+      <description>C86206</description>
+      <fields>
+        <field name="LCSC">C86206</field>
+        <field name="Footprint">LegacyBoard:U3_TO-263-2</field>
+        <field name="Datasheet">http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</field>
+        <field name="Description">C86206</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="L7805" description="Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"/>
+      <property name="LCSC" value="C86206"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="Voltage Regulator 1.5A Positive"/>
+      <property name="ki_fp_filters" value="TO?252* TO?263* TO?220*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3d614b7-1e3d-442d-b71a-0f7656270264</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>74LVC2G07</value>
+      <footprint>LegacyBoard:U4_SOT-23-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <description>C151607</description>
+      <fields>
+        <field name="LCSC">C151607</field>
+        <field name="Footprint">LegacyBoard:U4_SOT-23-6</field>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+        <field name="Description">C151607</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="74LVC2G07" description="Dual Buffer w/ Open Drain, Low-Voltage CMOS"/>
+      <property name="LCSC" value="C151607"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="Dual Gate Buffer Open Drain LVC CMOS"/>
+      <property name="ki_fp_filters" value="SG-* SOT*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b09bb8c1-5e3c-46cc-b227-1374b14bc907 2a5f40f9-54b1-4a76-9a48-74db65fd2317</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>74LVC2G07_3v3</value>
+      <footprint>LegacyBoard:U5_SOT-23-6</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <description>C151607</description>
+      <fields>
+        <field name="LCSC">C151607</field>
+        <field name="Footprint">LegacyBoard:U5_SOT-23-6</field>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+        <field name="Description">C151607</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="74LVC2G07_3v3" description="Dual Buffer w/ Open Drain, Low-Voltage CMOS"/>
+      <property name="LCSC" value="C151607"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="Dual Gate Buffer Open Drain LVC CMOS"/>
+      <property name="ki_fp_filters" value="SG-* SOT*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fec659a6-de89-4d09-aa02-43e085d6bd42 3ba96a36-c37b-4297-b8dd-0261e172da3d</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>AP2205-3.3</value>
+      <footprint>LegacyBoard:U6_SOT-89-3</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/products_inactive_data/AP2204.pdf</datasheet>
+      <description>C19268131</description>
+      <fields>
+        <field name="LCSC">C19268131</field>
+        <field name="Footprint">LegacyBoard:U6_SOT-89-3</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/products_inactive_data/AP2204.pdf</field>
+        <field name="Description">C19268131</field>
+      </fields>
+      <libsource lib="LegacySymbols" part="AP2204R-3.3" description="150mA low dropout linear regulator, wide input voltage range, 3.3V fixed positive output, SOT-89-3 package"/>
+      <property name="LCSC" value="C19268131"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="OnionStraws.kicad_sch"/>
+      <property name="ki_keywords" value="linear regulator ldo fixed positive"/>
+      <property name="ki_fp_filters" value="SOT?89*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7cf5810c-1e40-4f16-b50c-a75608b1473f</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="LegacySymbols" part="74LVC2G07">
+      <description>Dual Buffer w/ Open Drain, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
+      <footprints>
+        <fp>SG-*</fp>
+        <fp>SOT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC2G07</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+        <field name="Description">Dual Buffer w/ Open Drain, Low-Voltage CMOS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="open_collector"/>
+        <pin num="5" name="+5V" type="power_in"/>
+        <pin num="6" name="" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="74LVC2G07_3v3">
+      <description>Dual Buffer w/ Open Drain, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
+      <footprints>
+        <fp>SG-*</fp>
+        <fp>SOT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">74LVC2G07_3v3</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+        <field name="Description">Dual Buffer w/ Open Drain, Low-Voltage CMOS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="open_collector"/>
+        <pin num="5" name="+3V3" type="power_in"/>
+        <pin num="6" name="" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="8P8C">
+      <description>RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>8P8C*</fp>
+        <fp>RJ31*</fp>
+        <fp>RJ32*</fp>
+        <fp>RJ33*</fp>
+        <fp>RJ34*</fp>
+        <fp>RJ35*</fp>
+        <fp>RJ41*</fp>
+        <fp>RJ45*</fp>
+        <fp>RJ49*</fp>
+        <fp>RJ61*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">8P8C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+        <pin num="7" name="" type="passive"/>
+        <pin num="8" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="AP2204R-3.3">
+      <description>150mA low dropout linear regulator, wide input voltage range, 3.3V fixed positive output, SOT-89-3 package</description>
+      <docs>https://www.diodes.com/assets/Datasheets/products_inactive_data/AP2204.pdf</docs>
+      <footprints>
+        <fp>SOT?89*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP2204R-3.3</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-89-3</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/products_inactive_data/AP2204.pdf</field>
+        <field name="Description">150mA low dropout linear regulator, wide input voltage range, 3.3V fixed positive output, SOT-89-3 package</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="APX803L">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">APX803L</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="~{RESET}" type="output"/>
+        <pin num="3" name="Vcc" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="BAV99">
+      <description>BAV99 High-speed switching diodes, SOT-23</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">BAV99</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</field>
+        <field name="Description">BAV99 High-speed switching diodes, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+        <pin num="3" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="D_TVS">
+      <description>Bidirectional transient-voltage-suppression diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_TVS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Bidirectional transient-voltage-suppression diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Zener diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="ESP32-C3-WROOM-02">
+      <description>802.11 b/g/n Wi­Fi and Bluetooth 5 module, ESP32­C3 SoC, RISC­V microprocessor, On-board antenna</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</docs>
+      <footprints>
+        <fp>ESP32?C3*WROOM?02*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-C3-WROOM-02</field>
+        <field name="Footprint">RF_Module:ESP32-C3-WROOM-02</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf</field>
+        <field name="Description">802.11 b/g/n Wi­Fi and Bluetooth 5 module, ESP32­C3 SoC, RISC­V microprocessor, On-board antenna</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="power_in"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="IO4" type="bidirectional"/>
+        <pin num="4" name="IO5" type="bidirectional"/>
+        <pin num="5" name="IO6" type="bidirectional"/>
+        <pin num="6" name="IO7" type="bidirectional"/>
+        <pin num="7" name="IO8" type="bidirectional"/>
+        <pin num="8" name="IO9" type="bidirectional"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="IO10" type="bidirectional"/>
+        <pin num="11" name="IO20/RXD" type="bidirectional"/>
+        <pin num="12" name="IO21/TXD" type="bidirectional"/>
+        <pin num="13" name="IO18" type="bidirectional"/>
+        <pin num="14" name="IO19" type="bidirectional"/>
+        <pin num="15" name="IO3" type="bidirectional"/>
+        <pin num="16" name="IO2" type="bidirectional"/>
+        <pin num="17" name="IO1" type="bidirectional"/>
+        <pin num="18" name="IO0" type="bidirectional"/>
+        <pin num="19" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="L7805">
+      <description>Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252</description>
+      <docs>http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</docs>
+      <footprints>
+        <fp>TO?252*</fp>
+        <fp>TO?263*</fp>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L7805</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</field>
+        <field name="Description">Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole without connection</field>
+      </fields>
+    </libpart>
+    <libpart lib="LegacySymbols" part="Polyfuse">
+      <description>Resettable fuse, polymeric positive temperature coefficient</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resettable fuse, polymeric positive temperature coefficient</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="Q_PMOS_GSD">
+      <description>P-MOSFET transistor, gate/source/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_GSD</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">P-MOSFET transistor, gate/source/drain</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="SolderJumper_3_Bridged12">
+      <description>3-pole Solder Jumper, pins 1+2 closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged12*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_3_Bridged12</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">3-pole Solder Jumper, pins 1+2 closed/bridged</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LegacySymbols" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="LegacySymbols">
+      <uri>/workspace/shared/ge-oct3-legacy-cleanup/pcb/rev2.2/design/symbols/LegacySymbols.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3" class="Power">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="Vcc" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="3V3" pintype="power_in"/>
+      <node ref="U5" pin="5" pinfunction="+3V3" pintype="power_in"/>
+      <node ref="U6" pin="3" pinfunction="VOUT" pintype="power_out"/>
+    </net>
+    <net code="2" name="+5V" class="Power">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U4" pin="5" pinfunction="+5V" pintype="power_in"/>
+      <node ref="U6" pin="1" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="3" name="/ALT_PWR" class="Default">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="3" pintype="passive"/>
+    </net>
+    <net code="4" name="/BOOT" class="Default">
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J3" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="JP1" pin="3" pinfunction="B" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="IO9" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/BOOT_SEL" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="IO8" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/DBG_LED" class="Default">
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="16" pinfunction="IO2" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/EN" class="Default">
+      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="~{RESET}" pintype="output"/>
+      <node ref="U2" pin="2" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="8" name="/LED1" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="IO4" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/LED2" class="Default">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="IO3" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/p1" class="Power">
+      <node ref="D7" pin="2" pinfunction="A2" pintype="passive"/>
+      <node ref="JP2" pin="2" pinfunction="C" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="11" name="/p2" class="Power">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="/p3" class="Power">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="13" name="GEA2_RX" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="IO10" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="GEA2_TX" class="Default">
+      <node ref="JP1" pin="2" pinfunction="C" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="GEA3_RX" class="Default">
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="IO21/TXD" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="GEA3_TX" class="Default">
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J3" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="IO20/RXD" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="GEA_FullRx" class="Default">
+      <node ref="D2" pin="3" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="5" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="GEA_FullTx" class="Default">
+      <node ref="D3" pin="3" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="4" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="GEA_HalfDplx" class="Default">
+      <node ref="D1" pin="3" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="7" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="GND" class="Power">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D7" pin="1" pinfunction="A1" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="8" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="19" pinfunction="GND" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="21" name="Net-(D4-A)" class="Default">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(D5-A)" class="Default">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(D6-A)" class="Default">
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(D9-A)" class="Default">
+      <node ref="D9" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="1" pintype="input"/>
+    </net>
+    <net code="25" name="Net-(D9-K-Pad3)" class="Default">
+      <node ref="D9" pin="3" pinfunction="K" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U5" pin="6" pintype="open_collector"/>
+    </net>
+    <net code="26" name="Net-(JP1-A)" class="Default">
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="IO5" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="Net-(JP2-A)" class="Default">
+      <node ref="F2" pin="2" pintype="passive"/>
+      <node ref="JP2" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(JP2-B)" class="Default">
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="JP2" pin="3" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(Q2-G)" class="Default">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(R10-Pad2)" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U4" pin="6" pintype="open_collector"/>
+    </net>
+    <net code="31" name="Net-(R11-Pad2)" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U5" pin="1" pintype="input"/>
+    </net>
+    <net code="32" name="Net-(R12-Pad2)" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U5" pin="3" pintype="input"/>
+    </net>
+    <net code="33" name="Net-(R13-Pad2)" class="Default">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U4" pin="4" pintype="open_collector"/>
+    </net>
+    <net code="34" name="Net-(R20-Pad1)" class="Default">
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="4" pintype="open_collector"/>
+    </net>
+    <net code="35" name="Net-(R21-Pad1)" class="Default">
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="3" pintype="input"/>
+    </net>
+    <net code="36" name="VDC" class="Power">
+      <node ref="F2" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pintype="passive"/>
+    </net>
+    <net code="37" name="unconnected-(D9-K-Pad1)" class="Default">
+      <node ref="D9" pin="1" pinfunction="K" pintype="passive+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(J1-Pad2)" class="Default">
+      <node ref="J1" pin="2" pintype="passive+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(J1-Pad6)" class="Default">
+      <node ref="J1" pin="6" pintype="passive+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U2-IO0-Pad18)" class="Default">
+      <node ref="U2" pin="18" pinfunction="IO0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U2-IO1-Pad17)" class="Default">
+      <node ref="U2" pin="17" pinfunction="IO1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(U2-IO6-Pad5)" class="Default">
+      <node ref="U2" pin="5" pinfunction="IO6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(U2-IO7-Pad6)" class="Default">
+      <node ref="U2" pin="6" pinfunction="IO7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(U2-IO18-Pad13)" class="Default">
+      <node ref="U2" pin="13" pinfunction="IO18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U2-IO19-Pad14)" class="Default">
+      <node ref="U2" pin="14" pinfunction="IO19" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>
