@@ -17,11 +17,13 @@ Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 c
 
 ### I want to review a new board
 
-Review the exact source and [native CI/readiness gates](ci/README.md) before selecting a manufacturing package. This standalone CI candidate retains the public hardware baseline; source availability, native errors/warnings, intended rules and assembly evidence can still fail. No revision is released by a green software build or quote.
+The selected development focus is the socketed C3/C6 Rev3C with both appliance inputs, automatic priority and rated protection. Start with the [current comparison and validation](docs/revision-comparison/README.md), [exact source handoff](docs/revision-comparison/HANDOFF.md) and [finish registry](docs/revision-comparison/FINISH-PLAN.md). This documentation candidate records separate unpublished hardware/CI packages; it does not include those hardware trees.
 
-The [ordering guide](pcb/ORDERING.md) identifies file roles. Its September19 Rev2.2 quote of $78.07 for five boards is historical; regulator/current, protection, thermal, assembly and physical qualification remain open. It is not a manufacturing-ready fallback.
+Rev2.2's old $78.07 five-board quote is historical. Its regulator/current, protection, thermal and physical gates remain open; it is not a manufacturing-ready fallback. The selected Rev3C has its own exact factory trio and current quote, with assembly/electrical/physical qualification still required.
 
 Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
+
+For the proposed USB-C revisions, see the [board and enclosure comparison](docs/revision-comparison/README.md), including assembled-board estimates and views from several angles. The [project handoff](docs/revision-comparison/HANDOFF.md) records the development branches and remaining work.
 
 ## Related projects
 

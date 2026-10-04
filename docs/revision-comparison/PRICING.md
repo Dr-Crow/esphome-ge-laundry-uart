@@ -1,0 +1,53 @@
+# Recorded assembly quotes
+
+[Comparison](README.md) · [Validation](VALIDATION.md) · [Finish plan](FINISH-PLAN.md)
+
+All prices are USD. The selected exact Rev3C quotes refreshed October 4, 2026 at 04:16 UTC and the historical October 3 baseline quotes are complete PCB plus Economic top-side assembly for **all five or all ten carriers**, with exact reference/part-code matching at both quantities. Shipping, tax, XIAO modules and module-side headers/installation, programming, functional tests, enclosures and appliance cables are excluded. No order has been placed.
+
+## Selected Rev3C and historical baseline
+
+| Matched factory source | References / unique purchasing groups | Five carriers | Ten carriers |
+| --- | ---: | ---: | ---: |
+| Selected placement-corrected `b53cfca83c4433b2288f882439c16e083c1fb50d` | 83 / 34 | **$134.64** | **$168.91** |
+| Historical baseline `ca1fdb1261af8b32a1bf353d37f40439ead5c3b0` | 80 / 33 | $130.39 | $160.37 |
+| Selected-source premium | | **$4.25** | **$8.54** |
+
+The premium is approximately $0.85 per carrier. Current standalone source `5542734` adds source-preserving partial C3/C6 models and current quote documentation. Its factory trio is the corrected J1 body-datum package at `b53cfca`; all 83 exact codes matched and were stocked at both quantities in the 04:16 refresh. The earlier `7bb455f` CPL is historical; do not use it as the current placement file. The 80-reference baseline changed only D16/D17 sourcing to reviewed MCC C668891; its original TPS22810 switches, fuses and topology remain. It is a historical price comparison, not the selected design.
+
+| Included subtotal | Selected, five | Selected, ten | Baseline, five | Baseline, ten |
+| --- | ---: | ---: | ---: | ---: |
+| PCB | 29.81 | 36.07 | 29.81 | 36.07 |
+| PCBA | 104.83 | 132.84 | 100.58 | 124.30 |
+| Components within PCBA | 34.18 | 58.70 | 30.02 | 50.36 |
+| Extended-part fees within PCBA | 52.53 | 52.53 | 52.53 | 52.53 |
+
+PCBA also includes setup, stencil, SMT, hand-soldering, manual assembly and nitrogen reflow. Rounded lines are not substitutes for the supplier's total. The quote includes J1 RJ45 and J5/J6 female sockets with no unapproved omissions or substitutions.
+
+Observed settings were FR-4 TG135, four layers, 99 × 40 mm, 1.6 mm, green mask, white silkscreen, lead-free HASL and 1 oz copper on both inner and outer layers. The native export job reports 35 µm on all layers; that metadata has not established a mandatory electrical stackup. A 0.5 oz inner comparison needs a separately evaluated variant. Supplier 2D and 3D placeholders did not establish actual body/pad/pin 1 alignment or physical approval, even with the corrected CPL. Rev3B's exact 85-reference quote is blocked by U2 C18212168 stock at both quantities; no omission was approved.
+
+The illustrated `pcb/rev3c/ORDERING.md` in the selected candidate records the actual screenshots, steps and SHA-256 hashes of each matched Gerber/BOM/CPL trio. Familiar filenames alone are insufficient. Keep the 83-reference trio together; never mix it with the 80-reference baseline. Refresh exact stock, process review, shipping/tax and total after qualification and before any later order approval.
+
+## Current Rev3A and unavailable Rev3B
+
+| Current exact source | References / priced groups | Five | Ten | Scope |
+| --- | ---: | ---: | ---: | --- |
+| Rev3A factory trio `a5ab243` | 97 /42 | **$178.90** | **$227.86** | Includes integrated C3 and connectors; shipping, tax, case/programming/tests excluded |
+| Rev3B current source | 85 | Unavailable | Unavailable | Exact U2 C18212168 shortage; no omission accepted |
+
+A's one-reference-per-row BOM is component-equivalent to its native 49-row grouping and clears the supplier import warning. Its schematic-only0-warning cleanup preserves the quoted factory trio. J4's recessed shell legs/no paste aperture still require assembler-approved solder delivery, inspection and retention. Placeholder supplier views do not approve placement. The C carrier quotes exclude XIAO modules; compare that scope before comparing totals.
+
+## Historical architecture quotes
+
+These earlier snapshots price the original source architectures, not the current repairs or the new Rev3A/B protection sources. Each is a batch of five, with all five quoted carriers assembled.
+
+| Revision / scope | Quote date | Historical total | Per carrier |
+| --- | --- | ---: | ---: |
+| Rev2.2 assembled board | September 19, 2026 | $78.07 | $15.61 |
+| Original Rev3A, including integrated processor | October 1, 2026 | $154.44 | $30.89 |
+| Original Rev3B carrier, XIAO/installation excluded | October 1, 2026 | $112.08 | $22.42, incomplete |
+| Original Rev3C carrier, sockets included | October 1, 2026 | $114.65 | $22.93 |
+| Original Rev3C plus five $5.99 retail C3 modules | October 1, 2026 | $144.60 | $28.92 |
+
+Original Rev3C's quote came from `163c98f`; public head `38d94d3` added case-alignment/quote documentation. Its 82-reference/33-group scope differs from the selected 83-reference source. Rev3A's original quote included 93 placements/40 purchasing groups. Rev3B deliberately excluded module, antenna and soldering because a complete module batch was unavailable at that time. Adding a retail module price does not establish an installed factory quote.
+
+The October 1 retail snapshots were $5.99 for [pre-headered C3, SKU 102010633](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html) and $6.20 for [pre-headered C6, SKU 102010636](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html). They are historical module-only prices, not current stock or complete adapter quotes. No delivered cost, printed case cost or appliance compatibility has been established against the $39.99 FirstBuild comparison target.
