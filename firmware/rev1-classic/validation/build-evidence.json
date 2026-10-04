@@ -1,0 +1,232 @@
+{
+  "started_utc": "2026-10-03T22:45:38.404157+00:00",
+  "base_commit": "bc0d52495bd97ed1504bd0ca0775e47feb01a648",
+  "hardware_source_commit": "87984047ee029efb83bf9947dc21818fd18e39b3",
+  "hardware_schematic_blob": "884cae1950066274f54545e730efb9746e1474ba",
+  "hardware_board_blob": "7202d06e51b573ea9181b7dff6960e35402ede7d",
+  "esphome": "2026.9.1",
+  "esp_idf": "5.5.5",
+  "target": "nodemcu-32s",
+  "variant": "esp32",
+  "gea_component_commit": "283ff2b0dfe90a6d14a5417a23176d433be8a5b3",
+  "isolated_source_path": "/tmp/rev1-classic-validation-7nj9a8n3",
+  "secrets": "Synthetic validation-only values; no real credentials read",
+  "source_sha256": {
+    "gea2.yaml": "d3c2da26b218933aa081bde1d869d10aa7dad59b8aa9455f9962d96753eb04e1",
+    "gea3.yaml": "f19dd6cf0f94040edeef8220ea92284848e00f77c80998892bec5d0f44cf9714",
+    "packages/common.yaml": "e0c7b2c2b716fc57204dfebbee810bb5e3374cb7720535526e9474838d62655d",
+    "packages/gea2.yaml": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba",
+    "packages/gea3.yaml": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76"
+  },
+  "profiles": [
+    {
+      "profile": "gea2.yaml",
+      "config": {
+        "command": [
+          "/workspace/shared/ge-oct3-tools/esphome-venv/bin/esphome",
+          "config",
+          "/tmp/rev1-classic-validation-7nj9a8n3/gea2.yaml"
+        ],
+        "exit_code": 0,
+        "seconds": 17.529,
+        "log": "validation/artifacts/logs/readable/gea2-config.log",
+        "log_sha256": "3d436f8a4c47afc328f84475883129a63c6a6fb3fa4eb73a9638bfca6f1b1aaa",
+        "raw_log": "validation/artifacts/logs/gea2-config.log",
+        "raw_log_sha256": "3d436f8a4c47afc328f84475883129a63c6a6fb3fa4eb73a9638bfca6f1b1aaa"
+      },
+      "compile": {
+        "command": [
+          "/workspace/shared/ge-oct3-tools/esphome-venv/bin/esphome",
+          "compile",
+          "/tmp/rev1-classic-validation-7nj9a8n3/gea2.yaml"
+        ],
+        "exit_code": 0,
+        "seconds": 86.707,
+        "log": "validation/artifacts/logs/readable/gea2-compile.log",
+        "log_sha256": "c11e5b7ac4bda3a108c53730904250ce6b911e0db22e9d680342b9339765a6d0",
+        "raw_log": "validation/artifacts/logs/gea2-compile.log",
+        "raw_log_sha256": "a628e9b21433adb772615a29a38b07eda4f3c2cc4e87ee854b687723e0fdb8fd"
+      },
+      "artifacts": [
+        {
+          "path": "validation/artifacts/gea2/firmware.factory.bin",
+          "bytes": 947232,
+          "sha256": "3ef3b77c8717152f68e6e8ebce908d78963078b6689e2e436315b2fe73144bd2"
+        },
+        {
+          "path": "validation/artifacts/gea2/firmware.ota.bin",
+          "bytes": 881696,
+          "sha256": "0eed22a2d6a29cfd44f4bd40b2af83b2e37f8636c794822b5202ef92c2e4c46d"
+        },
+        {
+          "path": "validation/artifacts/gea2/firmware.elf",
+          "bytes": 14146024,
+          "sha256": "a9518d8a34989105791ddadaf3107e97555e159858ace995089a2c41b87b8fd2"
+        }
+      ],
+      "status": "compiled"
+    },
+    {
+      "profile": "gea3.yaml",
+      "config": {
+        "command": [
+          "/workspace/shared/ge-oct3-tools/esphome-venv/bin/esphome",
+          "config",
+          "/tmp/rev1-classic-validation-7nj9a8n3/gea3.yaml"
+        ],
+        "exit_code": 0,
+        "seconds": 0.305,
+        "log": "validation/artifacts/logs/readable/gea3-config.log",
+        "log_sha256": "e5e04703a5a826bb911284aa23968a4a56aff02465fe1c263f2dc61db28e6e3c",
+        "raw_log": "validation/artifacts/logs/gea3-config.log",
+        "raw_log_sha256": "e5e04703a5a826bb911284aa23968a4a56aff02465fe1c263f2dc61db28e6e3c"
+      },
+      "compile": {
+        "command": [
+          "/workspace/shared/ge-oct3-tools/esphome-venv/bin/esphome",
+          "compile",
+          "/tmp/rev1-classic-validation-7nj9a8n3/gea3.yaml"
+        ],
+        "exit_code": 0,
+        "seconds": 43.838,
+        "log": "validation/artifacts/logs/readable/gea3-compile.log",
+        "log_sha256": "c4c51f0d42ad791fb8cc9220e5b6ae756064b7fa6d0b4aeab7a9539851aad049",
+        "raw_log": "validation/artifacts/logs/gea3-compile.log",
+        "raw_log_sha256": "e2415343ff15a9ddeb84082a64e7acc65d368159be26c525b650f550c94df7c3"
+      },
+      "artifacts": [
+        {
+          "path": "validation/artifacts/gea3/firmware.factory.bin",
+          "bytes": 944400,
+          "sha256": "afb1a67ef4fc4feca71a405eb99d6fac77d683c9e4dce161181dd64503ce984f"
+        },
+        {
+          "path": "validation/artifacts/gea3/firmware.ota.bin",
+          "bytes": 878864,
+          "sha256": "0c28d3fd67636da52d6c0fdd1c245e9cbc246e3bea7cf105110b0f1b3a8d6116"
+        },
+        {
+          "path": "validation/artifacts/gea3/firmware.elf",
+          "bytes": 14062720,
+          "sha256": "32edfba2046450fc481c50b04ec2d28f0c989256ce201464156820253daa0b18"
+        }
+      ],
+      "status": "compiled"
+    }
+  ],
+  "fetched_external_component_heads": [
+    {
+      "path": "/tmp/rev1-classic-validation-7nj9a8n3/.esphome/external_components/3849fb67",
+      "head": "283ff2b0dfe90a6d14a5417a23176d433be8a5b3"
+    }
+  ],
+  "completed_utc": "2026-10-03T22:48:06.840174+00:00",
+  "all_real_builds_passed": true,
+  "external_component_submodule": {
+    "name": "erd-definitions",
+    "commit": "c0de08ce3d3a55d5d7b0c0ba0a10e2688f224e58"
+  },
+  "external_component_tracked_worktree_clean": true,
+  "local_validation_driver": {
+    "path": "validation/artifacts/validate.py",
+    "sha256": "b23248da2588e3352d6834a8907b1e48fe815eeac0634ef1b89eb505df6c614a",
+    "scope": "Archived script used for these isolated builds; upstream CI owns compile orchestration."
+  },
+  "local_artifact_retention": "Config/compile stdout (raw and normalized), archived validation driver and binaries remain local under ignored validation/artifacts; they are not in the candidate commit.",
+  "warning_classification": {
+    "gea2": {
+      "total": 9,
+      "printf_format": 8,
+      "unsigned_long_with_percent_u": 6,
+      "signed_long_with_percent_d": 2,
+      "unused_generated_function": 1
+    },
+    "gea3": {
+      "total": 8,
+      "printf_format": 7,
+      "unsigned_long_with_percent_u": 6,
+      "signed_long_with_percent_d": 1,
+      "unused_generated_function": 1
+    },
+    "shared_format_source_sites": [
+      {
+        "source": "components/gea/gea.cpp",
+        "line": 402,
+        "conversion": "%u",
+        "actual_type": "uint32_t / unsigned long",
+        "diagnostics": 1
+      },
+      {
+        "source": "components/gea/gea.cpp",
+        "line": 432,
+        "conversion": "%u",
+        "actual_type": "uint32_t / unsigned long",
+        "diagnostics": 1
+      },
+      {
+        "source": "components/gea/gea.cpp",
+        "line": 532,
+        "conversion": "%u",
+        "actual_type": "uint32_t / unsigned long",
+        "diagnostics": 1
+      },
+      {
+        "source": "components/gea/gea.cpp",
+        "line": 540,
+        "conversion": "%d",
+        "actual_type": "int32_t / long",
+        "diagnostics": 1
+      },
+      {
+        "source": "components/gea/gea.cpp",
+        "line": 650,
+        "conversion": "%u",
+        "actual_type": "uint32_t / unsigned long",
+        "diagnostics": 2
+      },
+      {
+        "source": "components/gea/gea.cpp",
+        "line": 653,
+        "conversion": "%u",
+        "actual_type": "uint32_t / unsigned long",
+        "diagnostics": 1
+      }
+    ],
+    "gea2_extra_format_source_site": {
+      "source": "components/gea/text_sensor/gea_text_sensor.h",
+      "line": 46,
+      "conversion": "%d",
+      "actual_type": "int32_t / long",
+      "diagnostics": 1
+    },
+    "shared_unused_source_site": {
+      "source": "components/gea/erd_table.h",
+      "line": 2208,
+      "function": "erd_lookup(uint16_t)",
+      "diagnostics": 1
+    },
+    "classification": "C/C++ printf type-contract defects; actual signedness and width match on this Xtensa target. No runtime failure is established by these build diagnostics.",
+    "target_width_and_abi": {
+      "compiler": "xtensa-esp32-elf-g++ 14.2.0 / esp-14.2.0_20260121",
+      "sizeof_int": 4,
+      "sizeof_long": 4,
+      "int_width": 32,
+      "long_width": 32,
+      "int32_type": "long int",
+      "uint32_type": "long unsigned int",
+      "word_bytes": 4,
+      "argument_alignment_bits": 32,
+      "abi": "Xtensa windowed",
+      "endianness": "little",
+      "evidence": "Actual compiler predefined macros; installed GCC xtensa.h UNITS_PER_WORD=4 and PARM_BOUNDARY=32; existing gea.cpp.obj line-402 poll-value l32i.n load to outgoing a14 before callx8.",
+      "preprocessor_command": "/workspace/shared/ge-oct3-tools/state/cache/esphome/idf/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ -dM -E -x c++ /dev/null",
+      "gcc_target_header": "/workspace/shared/ge-oct3-tools/state/cache/esphome/idf/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/plugin/include/config/xtensa/xtensa.h:114,121,123,133",
+      "existing_object": "/tmp/rev1-classic-validation-7nj9a8n3/.esphome/build/rev1-classic-gea2/build/esp-idf/src/CMakeFiles/__idf_src.dir/esphome/components/gea/gea.cpp.obj"
+    },
+    "observed_abi_effect": "No width truncation, extra variadic-slot consumption or argument shift evidenced for these specific warnings. The unused-function warning has no printf/ABI effect.",
+    "runtime_logging_tested": false,
+    "upstream_source_modified": false,
+    "affected_paths": "Logging plus two ERD decimal conversions (gea.cpp:532/540) and the GEA2 text-sensor integer conversion (gea_text_sensor.h:46).",
+    "runtime_decimal_conversion_tested": false
+  }
+}

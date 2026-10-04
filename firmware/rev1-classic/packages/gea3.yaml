@@ -1,0 +1,16 @@
+uart:
+  id: uart_gea
+  tx_pin:
+    number: ${gea_tx_gpio}
+    inverted: false
+  rx_pin:
+    number: ${gea_rx_gpio}
+    inverted: false
+  baud_rate: 230400
+
+gea:
+  id: gea_hub
+  uart_id: uart_gea
+  src_address: 0xBB
+  dest_address: 0xC0
+  erd_lookup: true
