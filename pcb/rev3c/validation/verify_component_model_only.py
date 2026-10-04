@@ -5,7 +5,7 @@ import re
 import subprocess
 from pathlib import Path
 
-BASE = '409dc0118dce37eb6bdd3f4507da134994e1333e'
+BASE = '47c2fdc5047077b492509b3fbe73c1698958bda4'
 ROOT = Path(__file__).resolve().parents[3]
 PCB = 'pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb'
 

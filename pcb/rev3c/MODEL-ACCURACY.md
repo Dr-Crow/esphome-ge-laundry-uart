@@ -2,7 +2,7 @@
 
 This isolated visual review replaces the featureless C3 module block with a
 revision-specific PCB-derived reference and adds visible connector openings and
-tails. The electrical candidate remains `409dc0118dce37eb6bdd3f4507da134994e1333e`.
+tails. The pre-model electrical source is `47c2fdc5047077b492509b3fbe73c1698958bda4`, including the metadata-only DELAY-pin correction. The matched-camera old-model render uses `409dc01`; its PCB geometry and manufacturing files are identical to that later electrical source.
 **Complete, revision-matched manufacturer assembly STEP files were not available
 for the selected XIAO modules, EVERCOM jack or HCTL sockets.** The new previews
 are partial models for review; their detail must not be interpreted as enclosure,

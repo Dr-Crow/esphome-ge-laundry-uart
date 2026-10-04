@@ -258,7 +258,7 @@
     "tag_metadata_sha256": "fe912747a1e67c818cd0fe68e93dc452d86bd1f9c57c0c474e941e4d117ef095",
     "official_api_verification_complete": true
   },
-  "note": "Current 85 model instances all resolve. New TPS/PPTC project-local STEP files are explicitly approximate maximum drawing envelopes; unavailable exact generic model requests were not relabeled as successful. All other model files retain existing provenance, plus newly downloaded official0603 resistor model. No exact C6 model or physical/thermal/assembly qualification.",
+  "note": "Historical download/resolution receipt for the frozen electrical source6d22b6c. Its inherited final_* counts describe earlier checkpoints, not the present model lane. Current86 referenced instances resolve; model accuracy, source identity, preservation and current checks are in component-model-* receipts and MODEL-ACCURACY.md.",
   "final_board_sha256": "6d22b6cda3ddabd9171a304034f7bdd40a47f4bcd8645200ce5cd79ccb97c304",
   "final_model_instances": 82,
   "final_standard_instances": 76,
@@ -862,7 +862,7 @@
     }
   ],
   "gate_repair_model_files_verified_utc": "2026-10-03T18:57:25.550499+00:00",
-  "historical_note": "Original download receipt describes frozen shared/gate baseline; final_resolution below describes current optional rated-switch source.",
+  "historical_note": "Frozen shared/gate/rated download provenance retained. Current model-only integration has a separate receipt and does not claim exact complete manufacturer assembly or physical fit.",
   "new_downloads": [
     {
       "path": "Package_SO.3dshapes/HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm.step",

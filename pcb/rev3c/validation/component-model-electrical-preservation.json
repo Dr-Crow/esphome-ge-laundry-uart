@@ -1,5 +1,5 @@
 {
-  "selected_baseline_commit": "409dc0118dce37eb6bdd3f4507da134994e1333e",
+  "selected_baseline_commit": "47c2fdc5047077b492509b3fbe73c1698958bda4",
   "comparison": "Entire PCB S-expression token stream identical after removing only model nodes; all non-model data including pads, nets, tracks, vias, zones, outline, placement and properties retained.",
   "pcb_before_sha256": "6d22b6cda3ddabd9171a304034f7bdd40a47f4bcd8645200ce5cd79ccb97c304",
   "pcb_after_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
@@ -159,7 +159,7 @@
     },
     {
       "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch",
-      "sha256": "c15769b67f4fe8da33f004d7ab947315d1089fdbe22a2337cf13122657f8f23b",
+      "sha256": "0c4abc0c24b55c4e7813596ad224bb1f4fb4776476184da79baf45af45187080",
       "matches_selected_baseline": true
     },
     {
@@ -194,7 +194,7 @@
     },
     {
       "path": "pcb/rev3c/design/symbols/GEA_Rev3C.kicad_sym",
-      "sha256": "f99810d1045fec726f813d9b8a738ef85138210ea09bfd2bc00f7ec5f9b5132b",
+      "sha256": "70cc601ef3bdc625f37521e12c7d9a1884aeeb26c13e064b8e8fbb91e497fe8c",
       "matches_selected_baseline": true
     },
     {
