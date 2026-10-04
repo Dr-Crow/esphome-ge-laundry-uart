@@ -1,0 +1,128 @@
+{
+  "renderer": "native KiCad CLI 9.0.9",
+  "render_quality": "high",
+  "dimensions_pixels": [
+    1800,
+    1000
+  ],
+  "baseline_commit": "409dc0118dce37eb6bdd3f4507da134994e1333e",
+  "matched_camera_before_after": true,
+  "c6_variant_is_transient_3d_model_swap_only": true,
+  "pixel_review": "Current C3/C6 top, bottom and oblique PNGs explicitly inspected. Both nominal SoC bodies and correct pin-1 corner dots are visible; the module variants remain distinct. Generic USB/color detail and remaining omitted parts/11 mm installation assumptions are unresolved. Historical featureless-block baseline is regenerated with the matched cameras.",
+  "renders": [
+    {
+      "image": "images/rev3c-render-top.png",
+      "sha256": "4b03f4fcb0dfb83962baf538805fb1d3d82cb1ab93e429bdba8ea5fb5a8b0bc5",
+      "bytes": 276003,
+      "side": "top",
+      "source_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/model-comparison/before-top.png",
+      "sha256": "3d512bc3dc0ff6211386cd93fe0bca174603e23a87146ec6fb167ec36c8121dc",
+      "bytes": 243759,
+      "side": "top",
+      "source_sha256": "6c3822569c86b9a3612894f9eca6f5d4cb7b0327bdc1f9e5f3392e69b92434c5",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/rev3c-render-bottom.png",
+      "sha256": "5ec88d9f6332c7be8e42b0ad502f00165af5700a1cd15f50e571ed2a566e3f78",
+      "bytes": 101923,
+      "side": "bottom",
+      "source_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/model-comparison/before-bottom.png",
+      "sha256": "315523ef9f4df71d707b3ff9c07d44737831393fa5c8d21d18ec4b5e60955253",
+      "bytes": 95514,
+      "side": "bottom",
+      "source_sha256": "6c3822569c86b9a3612894f9eca6f5d4cb7b0327bdc1f9e5f3392e69b92434c5",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/rev3c-render-oblique.png",
+      "sha256": "102012993258066142493c7242ff462a86682628f241b0784343a80d162c7231",
+      "bytes": 427941,
+      "side": "oblique",
+      "source_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
+      "rotate_deg": [
+        315,
+        0,
+        25
+      ]
+    },
+    {
+      "image": "images/model-comparison/before-oblique.png",
+      "sha256": "22589a7db4c4dfdcf327a183a3baa2aa8440f06acddca465e0b2cd7574ccfdbf",
+      "bytes": 393709,
+      "side": "oblique",
+      "source_sha256": "6c3822569c86b9a3612894f9eca6f5d4cb7b0327bdc1f9e5f3392e69b92434c5",
+      "rotate_deg": [
+        315,
+        0,
+        25
+      ]
+    },
+    {
+      "image": "images/rev3c-render-c6-top.png",
+      "sha256": "e029c61d383b0aa29be4bf504158d33ef66bfff819fbcb4e220b241a2c45073c",
+      "bytes": 279812,
+      "side": "top",
+      "source_sha256": "172b271751c77aeec02338ab34bac284bb5c43a117d79977b823a0c10d7ee5d5",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/rev3c-render-c6-bottom.png",
+      "sha256": "0f2f5022a145b7525bb51002b78f16b05439207f113cb410e5c7aa94277bf428",
+      "bytes": 102511,
+      "side": "bottom",
+      "source_sha256": "172b271751c77aeec02338ab34bac284bb5c43a117d79977b823a0c10d7ee5d5",
+      "rotate_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "image": "images/rev3c-render-c6-oblique.png",
+      "sha256": "ddd28767a54c5bd4f1a5601171f0a2f850d5620d92e5488b4c0906c6b987d702",
+      "bytes": 433805,
+      "side": "oblique",
+      "source_sha256": "172b271751c77aeec02338ab34bac284bb5c43a117d79977b823a0c10d7ee5d5",
+      "rotate_deg": [
+        315,
+        0,
+        25
+      ]
+    }
+  ],
+  "model_addition_receipt": "xiao-soc-package-provenance.json",
+  "current_module_asset_sha256": {
+    "c3": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+    "c6": "629b2beb967833819be0ac0365e305d6ef3ce673a9d5281df7a5c7ea37a4c9c1"
+  },
+  "rendered_against_carrier_checkpoint": "b53cfca83c4433b2288f882439c16e083c1fb50d"
+}

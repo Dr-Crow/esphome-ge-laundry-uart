@@ -1,0 +1,189 @@
+{
+  "tool_version": "9.0.9",
+  "only_source_change_confirmed": true,
+  "netlist_components_libraries_and_all_pin_nets_identical": true,
+  "isolated_local_library_uri_prefixes_normalized_only": true,
+  "native_position_csv_byte_identical": true,
+  "all_14_factory_files_match_after_only_timestamp_and_appended_marker_removal": true,
+  "existing_unplaced_D8_paste_apertures": {
+    "reference": "D8",
+    "schematic_value": "DNI",
+    "assembled": false,
+    "existing_paste_flashes": 2,
+    "status": "Inherited; unchanged by drill-mark repair; supplier stencil/process review still required"
+  },
+  "all_existing_SMT_paste_apertures_unchanged": true,
+  "F_Paste_unwanted_markers_removed": 26,
+  "B_Paste_unwanted_markers_removed": 26,
+  "drill_file_geometry_unchanged": true,
+  "job_stackup_layers_rules_size_metadata_unchanged": true,
+  "source_release_qualification": "Open; supplier placement, package/stencil/process and electrical/thermal/physical/RF review remain blocked. This repair only removes unintended plot marks.",
+  "files": [
+    {
+      "file": "GEA-Adapter-Rev3C-B_Cu.gbl",
+      "original_sha256": "3d619162a82fa804a4156ca6c76e73b2fbf43ae35293b2dc5f0c8c9c9acc81f8",
+      "repaired_sha256": "f2c0146bcea6908a304947b8a8c281f5336a0f183b98133305504c9227bdd9fd",
+      "removed_marker_count": 129,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-B_Mask.gbs",
+      "original_sha256": "abe363559fe7417f53dd906142f1395586e7754382af6f657cc8b83dc85f80b0",
+      "repaired_sha256": "779e23f7dcae7435f6c23d95b270aafd0ff7a9b4fc98c133c525b4439cd03a5d",
+      "removed_marker_count": 26,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-B_Paste.gbp",
+      "original_sha256": "0fd822b99384cceec83ab41fefd260c8797fc0a88d6f54db2eaa0104d1ca4c70",
+      "repaired_sha256": "33b1ca7293aecae7fe1c7729cb6774b00044e5439353236fa81b1868d8a49cc6",
+      "removed_marker_count": 26,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-B_Silkscreen.gbo",
+      "original_sha256": "8c1afd7070483669f3efefba9e5438de22aade23abe9bf53dd3fb19412ee8b1c",
+      "repaired_sha256": "1246e6b367c5e7d8197f2ddac32a4cd9eed81736d224810c36348f5bd3f31c4a",
+      "removed_marker_count": 26,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-Edge_Cuts.gm1",
+      "original_sha256": "7accb0f561663593e5356a79b441fd9beda7c7ba80b1b82c30ab95705808b8c0",
+      "repaired_sha256": "8a3af5f0f6ab165db1486cebb11e7055551797ad73df54529c64d3ecde126549",
+      "removed_marker_count": 26,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-F_Cu.gtl",
+      "original_sha256": "92433f266a3573c52a6d85a0da48267cea97cf9b889fa176bb9907d34420e016",
+      "repaired_sha256": "288c8a8616d0d178ed3212a1e1f0b819af4e28659c03ae0de566a60321e5b54a",
+      "removed_marker_count": 129,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-F_Mask.gts",
+      "original_sha256": "1ad3b139c77ff988e95efe4aa3b46c57d0b127688dc759f1a5f18285330f52e1",
+      "repaired_sha256": "2ee2b1dfc9505ab8171261038738871db9afd9e4951d74771b45ae4ca64b15ad",
+      "removed_marker_count": 26,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-F_Paste.gtp",
+      "original_sha256": "ee51c434d1241d7d9cf8251427d7c83d9a450c02276bba8040de90fd018bc426",
+      "repaired_sha256": "c10cc011461ec21853b4aa401dd97265dfea508edd3858663f312e9853fc8cbb",
+      "removed_marker_count": 26,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-F_Silkscreen.gto",
+      "original_sha256": "5b993890faf9707b4b9dc6b7edc34e28997fa766bde2b7985f21e583e0f96bfd",
+      "repaired_sha256": "5d0088e59cfe3933133c55020df84f0c7d6966bc5981f5b8be4502b3dfe0a279",
+      "removed_marker_count": 26,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-In1_Cu.g1",
+      "original_sha256": "bcfdc36d9e1b17aaae0e5594b213b5345051d740d4b18a15f335240a5824dcdf",
+      "repaired_sha256": "49059363a7eb58d5e89d6ac2abe30a53bbec4cd111a6af2a260fe1705e16c391",
+      "removed_marker_count": 129,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-In2_Cu.g2",
+      "original_sha256": "d04f328c111f5b1059a6ea1532ceb5860409b974f9640c327f6327bb6d5747f1",
+      "repaired_sha256": "d3e463f02775933a2dcef3b21345c52351858e639ea1375fdfb24e675c566bff",
+      "removed_marker_count": 129,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-NPTH.drl",
+      "original_sha256": "ef2ac999515cbe6bfe6af23392dc3119deb93d4fa5ea42e681d00a36c71ed58f",
+      "repaired_sha256": "25bb9429a1a3c7ab8fe788964555ec5dc17a0b4fffeb195c10b87addcbb175c3",
+      "removed_marker_count": 0,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-PTH.drl",
+      "original_sha256": "8932e6068e2bcb3690412edeae30c6bf50b95d3c0fd5928d42a911741edf2cc0",
+      "repaired_sha256": "a23dfe341a67232c739b341264ac3f008d36f2a02db154abd2c3a8b590da3a03",
+      "removed_marker_count": 0,
+      "checks": {
+        "exact_equal_after_only_timestamp_and_appended_mark_removal": true
+      }
+    },
+    {
+      "file": "GEA-Adapter-Rev3C-job.gbrjob",
+      "original_sha256": "f43061afe11aa95c068ed3f382c237ba65c0bd45686cba9ebf2191da262924aa",
+      "repaired_sha256": "ac492176ee468e6edbc83235c5bb0003ac0880381523b9b1343b738591f27dd5",
+      "removed_marker_count": 0,
+      "checks": {
+        "date_normalized_job_equal": true
+      }
+    }
+  ],
+  "rendered_positive_flash_counts": {
+    "Original source: drill marks enabled/F_Paste.gtp": 221,
+    "Original source: drill marks enabled/B_Paste.gbp": 26,
+    "Repaired candidate: drill marks disabled/F_Paste.gtp": 195,
+    "Repaired candidate: drill marks disabled/B_Paste.gbp": 0
+  },
+  "base_commit": "5542734e89c52fb34357d0d9f16744fcd508d7f3",
+  "checked_at_utc": "2026-10-04T22:25:24Z",
+  "source_change": {
+    "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+    "before_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
+    "after_sha256": "4fba3feea4161f7e6bdfbd7f20ac677a485948fac540d7bda1c246a451c4bab9",
+    "only_change": "pcbplotparams drillshape1 to0; all other board bytes identical"
+  },
+  "factory_zip": {
+    "path": "pcb/rev3c/manufacturing/GERBER-GEA-Adapter-Rev3C.zip",
+    "bytes": 215452,
+    "sha256": "73d319df01ec65f1b8ba60b49da10fd3a226887d75be6d6e6170832a2cdf3c13"
+  },
+  "fresh_native": {
+    "erc_errors": 0,
+    "erc_warnings": 0,
+    "drc_errors": 0,
+    "drc_warnings": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0,
+    "all_severities": true,
+    "all_track_errors": true
+  },
+  "external_pins": {
+    "kicad_container_index": "sha256:e638b79b0321f29395a5b783e94bb9f3c73303e8da15da27b8f5cb4b67a37729",
+    "symbols_commit": "ad36cd14bcd1b1cd0484f629ccdd3481366f74f3",
+    "footprints_commit": "2b941bf1d97862be429793b46fd52a5add09a2fc",
+    "models_commit": "a0244fe3442823dbb052ebc4820b4c2951e1742c"
+  },
+  "reproduction": {
+    "gerbers": "kicad-cli pcb export gerbers --board-plot-params --output review/gerbers pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+    "drills": "kicad-cli pcb export drill --format excellon --excellon-separate-th --output review/gerbers/ pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+    "comparison_policy": "Remove creation timestamps and the original appended0.35mm drill-marker aperture blocks only; all14 factoryfiles then match."
+  }
+}

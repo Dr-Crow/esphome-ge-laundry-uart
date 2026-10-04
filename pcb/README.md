@@ -5,7 +5,7 @@ This directory keeps every board revision in a separate package so source files,
 [Back to the project overview](../README.md) · [PCB ordering guide](ORDERING.md)
 
 > [!IMPORTANT]
-> [Rev 3B](rev3b/README.md) is a rated-protection review prototype. Every revision, including Rev 2.2, needs revision-specific electrical and assembly qualification before a new build; no manufacturing release is established here.
+> [Rev3C](rev3c/README.md) is the selected development focus, with both appliance inputs and automatic PIN1 priority. All revisions remain subject to their electrical and physical qualification gates before ordering or appliance connection.
 
 ## What the folders mean
 
@@ -18,16 +18,16 @@ This directory keeps every board revision in a separate package so source files,
 
 | Revision | Status | Available material |
 | --- | --- | --- |
-| [Rev 3B](rev3b/README.md) | Soldered C3 prototype; qualification open | Dual-input automatic selection, native checks, source-matched review exports; no C6 claim. |
-| [Rev 2.2](rev2.2/README.md) | Historical candidate; qualification open | Corrected KiCad source, matched factory package, and validation exports. |
+| [Rev3C](rev3c/README.md) | Selected prototype; unqualified | Socketed C3/C6 source, matched 83-reference package, native review and illustrated quote guide. |
+| [Rev 2.2](rev2.2/README.md) | Legacy review; unqualified | KiCad source, factory package and validation exports; power/current/thermal review remains. |
 | [Rev 2.1](rev2.1/README.md) | Built; superseded | KiCad 9 source, JLCPCB package, drill maps, and repair image. |
 | [Rev 2.0](rev2.0/README.md) | Built; superseded | PCBA archive, schematic, board model, renders, and photographs. |
 | [Rev 1.0](rev1.0/README.md) | Historical | Gerber archive only. |
 
 > [!IMPORTANT]
-> Historical RX/TX labels use an endpoint perspective; verify exact ESP GPIO-to-adapter direction. The U1 supervisor has reported boot-loop issues on Rev2.1. Historical manufacturing packages are not qualified corrected sources.
+> UART RX/TX labels must be interpreted from the appliance or module perspective using the exact schematic. The Rev2-era U1 reset supervisor has reported ESP32 boot-loop issues. Original manufacturing archives are historical, not qualification evidence.
 
-Rev 2.2 addresses those known board-file problems but is not proven until assembled boards pass electrical, appliance, and enclosure testing. Retain its three matched manufacturing files for review; passing digital checks is not manufacturing approval.
+Rev2.2 omits that supervisor, but its input protection, regulator current capability and thermal limits still require review. No older revision is an established safe fallback. The [selected Rev3C guide](rev3c/ORDERING.md) describes its exact matched file trio and release gates.
 
 Not every revision has the same files. The table lists what is actually available; missing source files, exports, and images were not recreated.
 

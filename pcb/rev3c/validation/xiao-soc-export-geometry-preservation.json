@@ -1,0 +1,60 @@
+{
+  "comparison": "Multiset of every solid: optimal bbox, volume, surface area and center of mass, rounded to 0.000001 mm / corresponding geometry units. This independently checks exports in addition to the exact source non-model token proof.",
+  "signature_fields": [
+    "x_min",
+    "y_min",
+    "z_min",
+    "x_max",
+    "y_max",
+    "z_max",
+    "volume_mm3",
+    "surface_area_mm2",
+    "center_x_mm",
+    "center_y_mm",
+    "center_z_mm"
+  ],
+  "modules": {
+    "c3": {
+      "before_step_sha256": "ce94f33287391d085e1cab8886d803a4e3822b638902346ca5a8ecb020f55055",
+      "after_step_sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+      "before_solid_count": 1082,
+      "after_solid_count": 1083,
+      "all_previous_solid_geometry_signatures_preserved": true,
+      "new_solid_count": 1,
+      "new_solid_signature": [
+        -3.1223,
+        -4.8876,
+        1.595,
+        1.8777,
+        0.1124,
+        2.445,
+        20.462156,
+        68.14504,
+        -0.621925,
+        -2.387975,
+        2.027208
+      ]
+    },
+    "c6": {
+      "before_step_sha256": "81efa7c7c0e1d811a9d34c3eb9ff03c09ee8861f5cb627265f05abbf8824f992",
+      "after_step_sha256": "629b2beb967833819be0ac0365e305d6ef3ce673a9d5281df7a5c7ea37a4c9c1",
+      "before_solid_count": 906,
+      "after_solid_count": 907,
+      "all_previous_solid_geometry_signatures_preserved": true,
+      "new_solid_count": 1,
+      "new_solid_signature": [
+        -4.0627,
+        -5.4314,
+        1.595,
+        0.9373,
+        -0.4314,
+        2.445,
+        20.462156,
+        68.14504,
+        -1.562325,
+        -2.931775,
+        2.027208
+      ]
+    }
+  }
+}

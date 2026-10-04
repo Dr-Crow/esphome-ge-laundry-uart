@@ -1,0 +1,9 @@
+(version 1)
+# TI TPS1H200A-Q1 Rev E, DGN0008K-C01 p28 intended land: 0.45 mm leads / 0.65 pitch.
+# Applies only to two pads within the same named switch footprint. Routes, vias and other footprints retain netclass/global rules.
+(rule "TI DGN0008K U9 intrinsic pad gaps"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U9') && B.memberOfFootprint('U9')")
+  (constraint clearance (min 0.20mm)))
+(rule "TI DGN0008K U10 intrinsic pad gaps"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U10') && B.memberOfFootprint('U10')")
+  (constraint clearance (min 0.20mm)))

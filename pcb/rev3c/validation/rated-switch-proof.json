@@ -1,0 +1,554 @@
+{
+  "candidate": "Optional higher-rated dual-input protection review; no OEM failure finding or mandatory selection",
+  "base_commit": "8f95555022eec353f8c9e3b9c54b612ee2541eaa",
+  "verified_utc": "2026-10-03T21:35:43.286130+00:00",
+  "native_version": "9.0.9",
+  "source_hashes": {
+    "kicad_pcb": "6d22b6cda3ddabd9171a304034f7bdd40a47f4bcd8645200ce5cd79ccb97c304",
+    "kicad_sch": "c15769b67f4fe8da33f004d7ab947315d1089fdbe22a2337cf13122657f8f23b",
+    "kicad_pro": "1e7fdc30cbb1eb191c4bb35cfb8b7d476023758b16cf30cf3651b9fe78621cde",
+    "kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454"
+  },
+  "counts": {
+    "native_footprints": 100,
+    "schematic_components": 100,
+    "schematic_pin_nets": 233,
+    "unchanged_nonreplacement_pin_nets": 205,
+    "fitted_bom": 83,
+    "fitted_cpl": 83,
+    "removed_copper_objects": 78,
+    "added_copper_objects": 126
+  },
+  "preserved": {
+    "both_input_paths_and_original_PIN1_presence_priority": true,
+    "buck_and_module_USB_power_topology": true,
+    "14_socket_pads_interfaces_placement_and_mount_datums": true,
+    "original_project_global_netclasses_and_plot_policy": true,
+    "retained_copper_and_all_GEA_signal_routes": true,
+    "all_firmware_yaml_hashes": true
+  },
+  "board_outline_mm": [
+    99.0,
+    40.0
+  ],
+  "antenna_filled_overlap_mm2": {
+    "F.Cu": 0.0,
+    "In1.Cu": 0.0,
+    "In2.Cu": 0.0,
+    "B.Cu": 0.0
+  },
+  "removed_references": [
+    "C22",
+    "C23"
+  ],
+  "added_references": [
+    "D20",
+    "R38",
+    "R39",
+    "R40",
+    "R41"
+  ],
+  "changed_placement_or_footprint_references": [
+    "C21",
+    "C24",
+    "C25",
+    "F1",
+    "F2",
+    "R33",
+    "R34",
+    "U10",
+    "U9"
+  ],
+  "part_field_changes": [
+    "D16",
+    "D17",
+    "F1",
+    "F2",
+    "U9",
+    "U10"
+  ],
+  "all_new_pin_mapping": [
+    {
+      "reference": "D20",
+      "pin": "1",
+      "net": "/PIN3_PROTECTED"
+    },
+    {
+      "reference": "D20",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "reference": "R38",
+      "pin": "1",
+      "net": "/PIN1_CL"
+    },
+    {
+      "reference": "R38",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "reference": "R39",
+      "pin": "1",
+      "net": "/PIN3_CL"
+    },
+    {
+      "reference": "R39",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "reference": "R40",
+      "pin": "1",
+      "net": "/PIN1_PROTECTED"
+    },
+    {
+      "reference": "R40",
+      "pin": "2",
+      "net": "/PIN1_DELAY"
+    },
+    {
+      "reference": "R41",
+      "pin": "1",
+      "net": "/PIN3_PROTECTED"
+    },
+    {
+      "reference": "R41",
+      "pin": "2",
+      "net": "/PIN3_DELAY"
+    },
+    {
+      "reference": "U10",
+      "pin": "1",
+      "net": "/PIN3_EN"
+    },
+    {
+      "reference": "U10",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "reference": "U10",
+      "pin": "3",
+      "net": "unconnected-(U10-FAULT-Pad3)"
+    },
+    {
+      "reference": "U10",
+      "pin": "4",
+      "net": "/PIN3_CL"
+    },
+    {
+      "reference": "U10",
+      "pin": "5",
+      "net": "/PIN3_DELAY"
+    },
+    {
+      "reference": "U10",
+      "pin": "6",
+      "net": "GND"
+    },
+    {
+      "reference": "U10",
+      "pin": "7",
+      "net": "/PIN3_SW_OUT"
+    },
+    {
+      "reference": "U10",
+      "pin": "8",
+      "net": "/PIN3_PROTECTED"
+    },
+    {
+      "reference": "U10",
+      "pin": "9",
+      "net": "GND"
+    },
+    {
+      "reference": "U9",
+      "pin": "1",
+      "net": "/PIN1_PROTECTED"
+    },
+    {
+      "reference": "U9",
+      "pin": "2",
+      "net": "GND"
+    },
+    {
+      "reference": "U9",
+      "pin": "3",
+      "net": "unconnected-(U9-FAULT-Pad3)"
+    },
+    {
+      "reference": "U9",
+      "pin": "4",
+      "net": "/PIN1_CL"
+    },
+    {
+      "reference": "U9",
+      "pin": "5",
+      "net": "/PIN1_DELAY"
+    },
+    {
+      "reference": "U9",
+      "pin": "6",
+      "net": "GND"
+    },
+    {
+      "reference": "U9",
+      "pin": "7",
+      "net": "/PIN1_SW_OUT"
+    },
+    {
+      "reference": "U9",
+      "pin": "8",
+      "net": "/PIN1_PROTECTED"
+    },
+    {
+      "reference": "U9",
+      "pin": "9",
+      "net": "GND"
+    }
+  ],
+  "native_all_severity_counts": {
+    "erc": 0,
+    "drc": 0,
+    "unconnected": 0,
+    "parity": 0
+  },
+  "native_drill_counts_match_map_PDFs": {
+    "PTH": {
+      "0.4": 103,
+      "1.02": 14,
+      "0.9": 8
+    },
+    "NPTH": {
+      "3.2": 4
+    }
+  },
+  "zip_members": [
+    {
+      "name": "GEA-Adapter-Rev3C-B_Cu.gbl",
+      "sha256": "27347584de037b9d67a9a6b268c5fa84d77d1835576fedaec78aeb5ab7c03224"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-B_Mask.gbs",
+      "sha256": "cfa21dc5824e2727ff7a40a29591af303f1d03960862fb8deeb4ef8169507911"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-B_Paste.gbp",
+      "sha256": "52bfb4d7f602303f4c526ec72c26fc735024282def9ecd6a68309e3f3bb1417b"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-B_Silkscreen.gbo",
+      "sha256": "04899a7b56b08e257a34ecb133f64b0fab22d5204ab9beb274f37e35843cc8b8"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-Edge_Cuts.gm1",
+      "sha256": "edc678cc277531001211653cd946ec151a48e4a40fe3ba0bfe2220aeb90f45b6"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-F_Cu.gtl",
+      "sha256": "31f1c241c2a43a19141f2ca95dd6435e5fafd280bd401b37012d71f007aa6013"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-F_Mask.gts",
+      "sha256": "e1f525f84b519097a37961f0529eebf8ad92568f4046f9f35ea7ebe0ca70b389"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-F_Paste.gtp",
+      "sha256": "01cbf80008100056ca3d1d051185fb81ae2d87ce9679422f30d889cb3dc9aa17"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-F_Silkscreen.gto",
+      "sha256": "ccd1005ca5b3f3390b8010bd3f64b510c2aba4331dec4e481cc67f7bea859bd1"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-In1_Cu.g1",
+      "sha256": "b0cb4b66a3c33e89827d4a175204a94b3b994cdc15fa19757033f932d56d222e"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-In2_Cu.g2",
+      "sha256": "d55f26188655724035c00f530e9bec4ad1026d015f6675b880545bc229ecf5e7"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-NPTH.drl",
+      "sha256": "8d88e744881992b0454ef31cc154b03beb00140ca3da1ae45d54dce53c5796fc"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-PTH.drl",
+      "sha256": "33b8369334883dd8d5011481656c6d25918b804f3f401575e514663ce4e52844"
+    },
+    {
+      "name": "GEA-Adapter-Rev3C-job.gbrjob",
+      "sha256": "937b19d3b38721a0f4b3a2aa4a741452292b908f3a01f2819fa0c41a1589bd77"
+    }
+  ],
+  "firmware_hashes": [
+    {
+      "path": "firmware/gea2.yaml",
+      "sha256": "291e96813c9dd4334602120f54c1c1098d12c8640ca13e4a8847a755e651d811"
+    },
+    {
+      "path": "firmware/gea3.yaml",
+      "sha256": "a45960f49f296ed2608e82fc6abf6abc736fbe902ef328f52fcb52b5dc49bc3b"
+    },
+    {
+      "path": "firmware/shared-rev3c/c3-gea2.yaml",
+      "sha256": "ff4362e214c9c99cc8c3df64c8d4c63769355111e632fc4fad29cddec79b3b0d"
+    },
+    {
+      "path": "firmware/shared-rev3c/c3-gea3.yaml",
+      "sha256": "fccf7ceeb9638114f44925c1f027158e83848b64d52a153256890ba379e4fb43"
+    },
+    {
+      "path": "firmware/shared-rev3c/c6-gea2.yaml",
+      "sha256": "69f30f6813e7dc3fd24cbe693601f8291b7b76e178d568c4a67e2f73fe8005fc"
+    },
+    {
+      "path": "firmware/shared-rev3c/c6-gea3.yaml",
+      "sha256": "bd3d016407627988c481bf9d66fdbc1ea8e2a5f2f58c87b345a1b1c4f7e5b3e3"
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/c6-rf.yaml",
+      "sha256": "55979b14a8a3dc9414c42ebc613fe2d036b72a1b447329d6be5f9c27c470d943"
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/common.yaml",
+      "sha256": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4"
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/gea2.yaml",
+      "sha256": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba"
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/gea3.yaml",
+      "sha256": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76"
+    }
+  ],
+  "remaining_gates": [
+    "No qualified OEM current/tolerance/transient allowance",
+    "Both C3/C6 loaded5V startup/inrush/RF/priority recovery",
+    "Provisional0.606A CL with current-limit/retry/thermal effects",
+    "Whole-chain transient differential/energy/sustained-OV limits",
+    "Environmental/assembly qualification of TI intrinsic0.20mm pad gaps and solder coverage/stencil",
+    "MCC low-current/hot clamp and fast VGS/thermal qualification; refreshed exact stock/assembly fees/price"
+  ],
+  "sourcing_correction": {
+    "base_commit": "46173b61546d1e51993c1376399b2614f3577df3",
+    "changed_component_metadata_references": [
+      "D16",
+      "D17",
+      "R40",
+      "R41"
+    ],
+    "metadata_records": {
+      "kicad_sch:R41": {
+        "before": {
+          "LCSC": "C17407",
+          "Datasheet": "https://jlcpcb.com/partdetail/uni_royal_uniroyal_elec-C17407/C17407"
+        },
+        "after": {
+          "LCSC": "C149504",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504"
+        }
+      },
+      "kicad_sch:R40": {
+        "before": {
+          "LCSC": "C17407",
+          "Datasheet": "https://jlcpcb.com/partdetail/uni_royal_uniroyal_elec-C17407/C17407"
+        },
+        "after": {
+          "LCSC": "C149504",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504"
+        }
+      },
+      "kicad_sch:D17": {
+        "before": {
+          "Value": "BZT52-C12X",
+          "Manufacturer": "Nexperia",
+          "MPN": "BZT52-C12X",
+          "LCSC": "C550251",
+          "Description": "12 V zener, 11.4-12.7 V at 5 mA/25 C, SOD123; pin 1=K/source, 2=A/gate bias",
+          "Datasheet": "https://assets.nexperia.com/documents/data-sheet/BZT52_SER.pdf"
+        },
+        "after": {
+          "Value": "BZT52C12-TP",
+          "Manufacturer": "MCC",
+          "MPN": "BZT52C12-TP",
+          "LCSC": "C668891",
+          "Description": "MCC 12 V gate zener, 11.4-12.7 V at 5 mA/25 C, SOD-123; 1=K/source, 2=A/bias; low-current/transient qualification open",
+          "Datasheet": "https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf"
+        }
+      },
+      "kicad_sch:D16": {
+        "before": {
+          "Value": "BZT52-C12X",
+          "Manufacturer": "Nexperia",
+          "MPN": "BZT52-C12X",
+          "LCSC": "C550251",
+          "Description": "12 V zener, 11.4-12.7 V at 5 mA/25 C, SOD123; pin 1=K/source, 2=A/gate bias",
+          "Datasheet": "https://assets.nexperia.com/documents/data-sheet/BZT52_SER.pdf"
+        },
+        "after": {
+          "Value": "BZT52C12-TP",
+          "Manufacturer": "MCC",
+          "MPN": "BZT52C12-TP",
+          "LCSC": "C668891",
+          "Description": "MCC 12 V gate zener, 11.4-12.7 V at 5 mA/25 C, SOD-123; 1=K/source, 2=A/bias; low-current/transient qualification open",
+          "Datasheet": "https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf"
+        }
+      },
+      "kicad_pcb:D16": {
+        "before": {
+          "Value": "BZT52-C12X",
+          "Manufacturer": "Nexperia",
+          "MPN": "BZT52-C12X",
+          "LCSC": "C550251",
+          "Description": "12 V source-referenced gate zener, SOD123; pad 1=K, 2=A",
+          "Datasheet": "https://assets.nexperia.com/documents/data-sheet/BZT52_SER.pdf"
+        },
+        "after": {
+          "Value": "BZT52C12-TP",
+          "Manufacturer": "MCC",
+          "MPN": "BZT52C12-TP",
+          "LCSC": "C668891",
+          "Description": "MCC 12 V gate zener, 11.4-12.7 V at 5 mA/25 C, SOD-123; 1=K/source, 2=A/bias; low-current/transient qualification open",
+          "Datasheet": "https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf"
+        }
+      },
+      "kicad_pcb:R41": {
+        "before": {
+          "LCSC": "C17407",
+          "Datasheet": "https://jlcpcb.com/partdetail/uni_royal_uniroyal_elec-C17407/C17407"
+        },
+        "after": {
+          "LCSC": "C149504",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504"
+        }
+      },
+      "kicad_pcb:D17": {
+        "before": {
+          "Value": "BZT52-C12X",
+          "Manufacturer": "Nexperia",
+          "MPN": "BZT52-C12X",
+          "LCSC": "C550251",
+          "Description": "12 V source-referenced gate zener, SOD123; pad 1=K, 2=A",
+          "Datasheet": "https://assets.nexperia.com/documents/data-sheet/BZT52_SER.pdf"
+        },
+        "after": {
+          "Value": "BZT52C12-TP",
+          "Manufacturer": "MCC",
+          "MPN": "BZT52C12-TP",
+          "LCSC": "C668891",
+          "Description": "MCC 12 V gate zener, 11.4-12.7 V at 5 mA/25 C, SOD-123; 1=K/source, 2=A/bias; low-current/transient qualification open",
+          "Datasheet": "https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf"
+        }
+      },
+      "kicad_pcb:R40": {
+        "before": {
+          "LCSC": "C17407",
+          "Datasheet": "https://jlcpcb.com/partdetail/uni_royal_uniroyal_elec-C17407/C17407"
+        },
+        "after": {
+          "LCSC": "C149504",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504"
+        }
+      }
+    },
+    "reverse_property_substitution_reproduces_base_CAD_bytes": true,
+    "all_233_pin_nets_identical_to_base": true,
+    "no_copper_footprint_pad_position_rule_firmware_change": true,
+    "native_BOM_changed_rows_only": [
+      "D16",
+      "D17",
+      "R40",
+      "R41"
+    ],
+    "native_CPL_conversion_byte_identical": true,
+    "factory_ZIP_byte_identical": true,
+    "native_export_comparisons": [
+      {
+        "name": "GEA-Adapter-Rev3C-B_Cu.gbl",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "d553229e2c6f1ea73cb84e9c0167cd7459a98afa243d4a5323869a54f01b5d22"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-B_Mask.gbs",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "7e9a6fadae3f573e8b5dd96279becef3b57a9e55fe5c95078f67d0d81f1f08cf"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-B_Paste.gbp",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "0a951e51ad2a177a47145b2a2e1c4b61bdfc7244cee375606cb426e001ae148c"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-B_Silkscreen.gbo",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "3f46009d2301909a7cbe3994686cbcb0f567d3d2fdb64e06db90f4140d40b239"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-Edge_Cuts.gm1",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "d49ccb89110aaee767efca60c9061303ba9bb67c28a7e5def3c95ea3aad28f90"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-F_Cu.gtl",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "81bbcf59980711d7e938b785aa9d83d1e95ea2531d19d5f706a77dbf50944056"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-F_Mask.gts",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "6e99685d046978785b1f3c1c82265b9d34f780cbe307ec8fc8c4cf511732bb65"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-F_Paste.gtp",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "438469f9fabc768c9ea6b3c3357d0e7abd91a0afab53ae909a851a958ad0a501"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-F_Silkscreen.gto",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "7ba0a5d37605173d5904052e97f950ce002a91b7f4f5203335828ab97f8f8597"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-In1_Cu.g1",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "7e4896613f6fbd51a59bef464efe29361625cb166895d214ce05401620a417b7"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-In2_Cu.g2",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "a4dfc001b2592cd5f7b6b4d885b7ac8f418c3003e70c1cf4470849b9df52e277"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-NPTH.drl",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "1a49ec93c69433850f1e9cabd0417d8e1ac7eb44134eb338df8545baba662184"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-PTH.drl",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "88aa49e1a50984ce9d85938e404985766997e73903723e0bf0da82d52c663401"
+      },
+      {
+        "name": "GEA-Adapter-Rev3C-job.gbrjob",
+        "geometry_and_attributes_unchanged_except_generation_date_checksum": true,
+        "comparison_sha256": "f5ec3e5d3b7c8bbdba86df06586676ec54417f7fac7e275bda17a7f7607b2062"
+      }
+    ],
+    "frozen_quote_and_gate_source_files_checked_unchanged": 54,
+    "MCC_primary": {
+      "url": "https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf",
+      "revision": "Rev.3-4-12012020",
+      "sha256": "62433183c904e7cac0daac6e92b508468fb25b832a393a73d2878f10bbb08316",
+      "reviewed_pages": [
+        1,
+        2,
+        3
+      ],
+      "qualification": "Nominal/package/polarity reviewed; higher impedance, typical coefficient with unspecified IZTC and no comparable capacitance/surge bound; low-current/fast-VGS/thermal/assembly open"
+    }
+  }
+}

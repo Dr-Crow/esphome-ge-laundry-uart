@@ -1,0 +1,25 @@
+{
+  "base_commit": "409dc0118dce37eb6bdd3f4507da134994e1333e",
+  "purpose": "Correct TI RevE page3 DELAY5 electrical type to bidirectional; no wiring or geometry change",
+  "changed_source_files": {
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch": {
+      "before_sha256": "c15769b67f4fe8da33f004d7ab947315d1089fdbe22a2337cf13122657f8f23b",
+      "after_sha256": "0c4abc0c24b55c4e7813596ad224bb1f4fb4776476184da79baf45af45187080"
+    },
+    "pcb/rev3c/design/symbols/GEA_Rev3C.kicad_sym": {
+      "before_sha256": "f99810d1045fec726f813d9b8a738ef85138210ea09bfd2bc00f7ec5f9b5132b",
+      "after_sha256": "70cc601ef3bdc625f37521e12c7d9a1884aeeb26c13e064b8e8fbb91e497fe8c"
+    }
+  },
+  "net_graph_identical": true,
+  "schematic_pin_memberships": 233,
+  "all_other_pcb_design_render_manufacturing_firmware_files_byte_identical": true,
+  "native_kicad": "9.0.9",
+  "native_exit_codes": {
+    "erc": 0,
+    "drc": 0
+  },
+  "qualification": "Existing power/source/physical gates remain open; no hosted or physical test.",
+  "manufacturer_reference": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf (Rev E, pin-functions table: DELAY is I/O)",
+  "retained_manufacturing_snapshot": "7bb455fbc85c748f3125ed091a54375de69fbbcc"
+}

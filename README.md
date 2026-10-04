@@ -17,11 +17,11 @@ Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 c
 
 ### I want to review a new board
 
-This branch stages the [Rev3B soldered-C3 prototype](pcb/rev3b/README.md) with rated protection while retaining both appliance inputs and automatic priority. Use its exact matched source/manufacturing evidence and revision-specific power/service instructions. Source checks and quotes do not establish assembly or physical release.
+The selected development focus is [Rev3C](pcb/rev3c/README.md), a shared socketed XIAO C3/C6 carrier with both GE appliance power inputs and automatic PIN1 priority. C3 comes first. Its higher-rated switches preserve the original source-selection and buck topology.
 
-Rev2.2's old $78.07 five-board quote is historical. Its regulator/current, protection and thermal limits remain unqualified; it is not a manufacturing-ready fallback.
+The illustrated [Rev3C JLCPCB guide](pcb/rev3c/ORDERING.md) identifies the matched files and settings. Complete October 3, 2026 quotes were **$134.64 for five carriers** or **$168.91 for ten**, before shipping, tax and separately supplied XIAO modules. It remains a prototype: source/current/transient, loaded startup, thermal, assembly and enclosure qualification are open. Disconnect appliance RJ45 before powered USB and leave UART VCC disconnected. No qualified shared C3/C6 enclosure is included.
 
-Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
+Older boards are listed in the [PCB revision index](pcb/README.md). Rev2.2 is not a manufacturing-ready fallback; its power ratings and thermal/current limits also require qualification. Hardware contributors should read the [contribution guide](CONTRIBUTING.md).
 
 ## Related projects
 

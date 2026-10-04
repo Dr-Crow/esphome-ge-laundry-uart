@@ -1,0 +1,589 @@
+{
+  "candidate": "Selected rated dual-input Rev3C prototype; C3 first with C6 flexibility; electrical/thermal/physical qualification open",
+  "base_commit": "8f95555022eec353f8c9e3b9c54b612ee2541eaa",
+  "manifest_updated_utc": "2026-10-04T22:34:12.723053+00:00",
+  "counts": {
+    "native_footprints": 100,
+    "schematic_components": 100,
+    "schematic_pin_nets": 233,
+    "unchanged_nonreplacement_pin_nets": 205,
+    "fitted_bom": 83,
+    "fitted_cpl": 83,
+    "removed_copper_objects": 78,
+    "added_copper_objects": 126,
+    "gerber_drill_zip_members": 14,
+    "resolved_3d_model_instances": 86,
+    "pth_drill_counts_mm": {
+      "0.4": 103,
+      "0.9": 8,
+      "1.02": 14
+    },
+    "npth_drill_counts_mm": {
+      "3.2": 4
+    }
+  },
+  "status": {
+    "native_cad": "Fresh KiCad9.0.9 full-severity ERC/all-track/parity DRC0 errors/0 warnings/0 unconnected/0 parity on October4,2026 after drill-marker plot-policy correction.",
+    "manufacturing": "Fresh native14-file factory regeneration/parity and83 BOM/CPL/source binding pass. ZIP removes unwanted drill markers. Historical134.64/168.91USD quotes used previousGerbers; refreshed supplier quote/stencil/process review and all release qualifications remain open.",
+    "source_current_startup_transient_thermal_environment_fit": "Unqualified; see RATED-SWITCH-OPTION.md and POWER-QUALIFICATION.md",
+    "original_80_part_supplier_quote_baseline": "Frozen separately at8f95555; no quote/order action in this candidate",
+    "frozen_quote_snapshots": "8f95555 and46173b6 source/quote snapshots unchanged"
+  },
+  "source_files": [
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_dru",
+      "bytes": 611,
+      "sha256": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454"
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+      "bytes": 1176201,
+      "sha256": "4fba3feea4161f7e6bdfbd7f20ac677a485948fac540d7bda1c246a451c4bab9"
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pro",
+      "bytes": 19801,
+      "sha256": "1e7fdc30cbb1eb191c4bb35cfb8b7d476023758b16cf30cf3651b9fe78621cde"
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch",
+      "bytes": 403238,
+      "sha256": "0c4abc0c24b55c4e7813596ad224bb1f4fb4776476184da79baf45af45187080"
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod",
+      "bytes": 1646,
+      "sha256": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384"
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod",
+      "bytes": 2932,
+      "sha256": "c1579e5f623b6e83cd2f271eea57f69fcc128405f4546499ae1542f13c7bce1a"
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod",
+      "bytes": 2894,
+      "sha256": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac"
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod",
+      "bytes": 4461,
+      "sha256": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc"
+    },
+    {
+      "path": "pcb/rev3c/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod",
+      "bytes": 3292,
+      "sha256": "3dd6c2bd57cbd627d4c993c72472ce438884f7522fb43f9de412970250665e30"
+    },
+    {
+      "path": "pcb/rev3c/design/fp-lib-table",
+      "bytes": 341,
+      "sha256": "05b7f7185ec4c8bc8ceb76d10e0e4fa12fab5272e89d4e52657966af63f528e4"
+    },
+    {
+      "path": "pcb/rev3c/design/models/1812L075-33DR-max-envelope.step",
+      "bytes": 16948,
+      "sha256": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a"
+    },
+    {
+      "path": "pcb/rev3c/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step",
+      "bytes": 1254620,
+      "sha256": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea"
+    },
+    {
+      "path": "pcb/rev3c/design/models/J1-EVERCOM-5301-8P8C-envelope.step",
+      "bytes": 29952,
+      "sha256": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539"
+    },
+    {
+      "path": "pcb/rev3c/design/models/J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step",
+      "bytes": 191218,
+      "sha256": "121f1070cd6a16336abf762283f6729797d65949ee19b2c53b6302145b87edaa"
+    },
+    {
+      "path": "pcb/rev3c/design/models/README.md",
+      "bytes": 2860,
+      "sha256": "f54f7d835ba2cd160c46f50f536e5af9fe9bc48ef73915dc2028fbb86bbbf4b4"
+    },
+    {
+      "path": "pcb/rev3c/design/models/Socket_1x07_P2.54mm_HCTL_PM254.step",
+      "bytes": 16947,
+      "sha256": "ffc7112aad0ee3b6457b50cc4adc58366581d3a5c1c4cf1c174850ba5db299ec"
+    },
+    {
+      "path": "pcb/rev3c/design/models/TPS1H200A-DGN0008K-max-envelope.step",
+      "bytes": 160460,
+      "sha256": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3"
+    },
+    {
+      "path": "pcb/rev3c/design/models/XIAO-ESP32-C3-Rev3C-installed-envelope.step",
+      "bytes": 118114,
+      "sha256": "d709f98f14a412c8b5ff7965419963bc6280bf45cd4d6584e3f7675d2a518d2d"
+    },
+    {
+      "path": "pcb/rev3c/design/models/generate_rated_part_envelopes.py",
+      "bytes": 996,
+      "sha256": "631b6cd7efef8023e141f45573da24417083c97f6deb8ee226d1c9ad0f84eb7c"
+    },
+    {
+      "path": "pcb/rev3c/design/sym-lib-table",
+      "bytes": 2281,
+      "sha256": "a9b9a0418dd6a4c3405982f8cf04868ad022b4f9164039a30dd9cde88887fbe7"
+    },
+    {
+      "path": "pcb/rev3c/design/symbols/GEA_Rev3B.kicad_sym",
+      "bytes": 7211,
+      "sha256": "da13a21843a34f4b7de0930c5781151c5b681cc78f5aad3714abd96f97335a60"
+    },
+    {
+      "path": "pcb/rev3c/design/symbols/GEA_Rev3C.kicad_sym",
+      "bytes": 6899,
+      "sha256": "70cc601ef3bdc625f37521e12c7d9a1884aeeb26c13e064b8e8fbb91e497fe8c"
+    },
+    {
+      "path": "pcb/rev3c/design/symbols/onionStraws.kicad_sym",
+      "bytes": 3541,
+      "sha256": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c"
+    },
+    {
+      "path": "pcb/rev3c/design/models/KICAD-LIBRARY-LICENSE.md",
+      "bytes": 2101,
+      "sha256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f"
+    },
+    {
+      "path": "pcb/rev3c/design/models/RJ45_EVERCOM_5301-8P8C-RevA-drawing-detail.step",
+      "bytes": 237597,
+      "sha256": "2dd0fad1b3f731095d418325b7213b68477a9fc6b63a950a9d7fed368039e809"
+    },
+    {
+      "path": "pcb/rev3c/design/models/Socket_HCTL_PM254-1-07-Z-8.5-drawing-detail.step",
+      "bytes": 347896,
+      "sha256": "4567f7426543c3946b75e5153f8eed87556cc254caa2858d83bfffe307479394"
+    },
+    {
+      "path": "pcb/rev3c/design/models/U.FL_Hirose_U.FL-R-SMT-1_Vertical-kicad-9.0.9.step",
+      "bytes": 70713,
+      "sha256": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a"
+    },
+    {
+      "path": "pcb/rev3c/design/models/XIAO-ASSET-LICENSE.md",
+      "bytes": 2144,
+      "sha256": "9f3a73010ca359b3d54f388286b81f3b130ca3d75f8b9683ae717e4c5a1fe2a4"
+    },
+    {
+      "path": "pcb/rev3c/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+      "bytes": 10792728,
+      "sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80"
+    },
+    {
+      "path": "pcb/rev3c/design/models/XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step",
+      "bytes": 18778427,
+      "sha256": "629b2beb967833819be0ac0365e305d6ef3ce673a9d5281df7a5c7ea37a4c9c1"
+    },
+    {
+      "path": "pcb/rev3c/design/models/generate_connector_detail.py",
+      "bytes": 3801,
+      "sha256": "2272bed8ce14018dfc6e705903dca6ad44f757a85ab9bf8e3c31463d394a6d2b"
+    },
+    {
+      "path": "pcb/rev3c/validation/render_component_models.py",
+      "bytes": 3869,
+      "sha256": "93010aefaafbfad72d68fe3dfdb64ef8384cf4d1b9f5b1f6247da5c26215b2c1"
+    },
+    {
+      "path": "pcb/rev3c/validation/verify_component_model_only.py",
+      "bytes": 3489,
+      "sha256": "063a23ac51553c7ceba0ca72c062827998614e2bf1950812e4f8921070ed58fb"
+    },
+    {
+      "path": "pcb/rev3c/design/models/xiao-packages/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step",
+      "bytes": 191384,
+      "sha256": "7e77a52b3e261a45529e0df739376ea7cd79204fb1afad81332a50f4f1607000"
+    },
+    {
+      "path": "pcb/rev3c/validation/augment_xiao_soc_models.py",
+      "bytes": 8629,
+      "sha256": "e48bcea57a4085a6c9b3bbea08acf1bbd0cc7829f11aa27ee5887fed66215a34"
+    },
+    {
+      "path": "pcb/rev3c/validation/verify_xiao_soc_geometry.py",
+      "bytes": 3623,
+      "sha256": "d25b1f698e800a90be0427163022bcbfae92357eb36a7983be6bc8429493db07"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "pcb/rev3c/images/rev3c-copper-b-cu.svg",
+      "bytes": 123690,
+      "sha256": "438c4097ef390826ade6f5fb0f0822a310c46ef9bb72b78b46d6a026233c4b98"
+    },
+    {
+      "path": "pcb/rev3c/images/rev3c-copper-f-cu.svg",
+      "bytes": 312503,
+      "sha256": "5ca33e706df54168a538ff46607b10dbf51d1363c4b8f91a90100cf28e9f2243"
+    },
+    {
+      "path": "pcb/rev3c/images/rev3c-copper-in1-cu.svg",
+      "bytes": 121104,
+      "sha256": "cb852cf1162bf5fc6a45c665186ffa9ec266571d19c6dc171c2b4d3a3f1729ed"
+    },
+    {
+      "path": "pcb/rev3c/images/rev3c-copper-in2-cu.svg",
+      "bytes": 118050,
+      "sha256": "e3c676f3115a2f2f4e7c368ff5daec588b3ffe0d73d4d7499d57c90b47716cfc"
+    },
+    {
+      "path": "pcb/rev3c/images/rev3c-render-bottom.png",
+      "bytes": 101923,
+      "sha256": "5ec88d9f6332c7be8e42b0ad502f00165af5700a1cd15f50e571ed2a566e3f78"
+    },
+    {
+      "path": "pcb/rev3c/images/rev3c-render-oblique.png",
+      "bytes": 427941,
+      "sha256": "102012993258066142493c7242ff462a86682628f241b0784343a80d162c7231"
+    },
+    {
+      "path": "pcb/rev3c/images/rev3c-render-top.png",
+      "bytes": 276003,
+      "sha256": "4b03f4fcb0dfb83962baf538805fb1d3d82cb1ab93e429bdba8ea5fb5a8b0bc5"
+    },
+    {
+      "path": "pcb/rev3c/manufacturing/BOM-GEA-Adapter-Rev3C.csv",
+      "bytes": 4768,
+      "sha256": "27a9dfa850fe996a36c792fb6146548bc59342eda2b05732fa24e173bade1406"
+    },
+    {
+      "path": "pcb/rev3c/manufacturing/CPL-GEA-Adapter-Rev3C.csv",
+      "bytes": 3156,
+      "sha256": "a1f17d5e6018b582694428e374c18ecc110410482ab69022347bd8cf62ea37b2"
+    },
+    {
+      "path": "pcb/rev3c/manufacturing/GERBER-GEA-Adapter-Rev3C.zip",
+      "bytes": 215452,
+      "sha256": "73d319df01ec65f1b8ba60b49da10fd3a226887d75be6d6e6170832a2cdf3c13"
+    },
+    {
+      "path": "pcb/rev3c/validation/firmware-validation.json",
+      "bytes": 4307,
+      "sha256": "91b08744ea57bef37fcf73b95d326192658580a1dfb0a6208e51c0378c5a69f0"
+    },
+    {
+      "path": "pcb/rev3c/validation/gate-protection-proof.json",
+      "bytes": 200386,
+      "sha256": "e714339021a5c0ad4331c90f258ecde5b48580df80f263a3b336b56b0113eceb"
+    },
+    {
+      "path": "pcb/rev3c/validation/native-kicad-9.0.9-drc.json",
+      "bytes": 375,
+      "sha256": "088da0288dd2d747ba442e60952414f63ab9a5f5c22c5f7b539f408b240099d9"
+    },
+    {
+      "path": "pcb/rev3c/validation/native-kicad-9.0.9-erc.json",
+      "bytes": 459,
+      "sha256": "3b7afb5beb8977eb658b6ca55804d5810c4a2b6fbb19c2cd89d5dce0933e2a73"
+    },
+    {
+      "path": "pcb/rev3c/validation/netlist.xml",
+      "bytes": 158803,
+      "sha256": "ee32172573a93e33e7d770a3cb8316a5033ac59549243c2da792508dce2d341e"
+    },
+    {
+      "path": "pcb/rev3c/validation/npth-drill-map.pdf",
+      "bytes": 7303,
+      "sha256": "bc0b61bcfc73d68c592f386b53339d6631e52a957a2293d62207d10eca7a6648"
+    },
+    {
+      "path": "pcb/rev3c/validation/official-3d-model-receipt.json",
+      "bytes": 46299,
+      "sha256": "a3121719e4081a032dca32da4a24e8026baf76c49c3ea70d91b795fa0d3adae9"
+    },
+    {
+      "path": "pcb/rev3c/validation/pth-drill-map.pdf",
+      "bytes": 15652,
+      "sha256": "53b4fed3b61b52f70046cfe6a7fd3a0db6cf599ecce832416bacbf78ab34d48e"
+    },
+    {
+      "path": "pcb/rev3c/validation/rated-switch-proof.json",
+      "bytes": 17480,
+      "sha256": "fa4ae56a38558d718de5fade49d7c608187083f6ec41c63105ce32a7f148fb86"
+    },
+    {
+      "path": "pcb/rev3c/validation/schematic.pdf",
+      "bytes": 502933,
+      "sha256": "6835600596242d1fa070492a1f06f15e390fd85dcc8d0070937c0c2b811e902d"
+    },
+    {
+      "path": "pcb/rev3c/validation/source-restoration-proof.json",
+      "bytes": 154190,
+      "sha256": "f5e112ecbd1db888e6869038b90ceb65fb88d91d307aaf0fb3e5c94658b23ccd"
+    },
+    {
+      "path": "pcb/rev3c/validation/visual-review.json",
+      "bytes": 3247,
+      "sha256": "bbf6c40559920eaae90da99d6a5ade995fd8f487eff5e3ef829846c4d9abcff7"
+    },
+    {
+      "path": "pcb/rev3c/validation/delay-pin-type-proof.json",
+      "bytes": 1226,
+      "sha256": "d47fe4f555f5581425af637776b9d3da778a02b4142257633efb289356f8ad5c"
+    },
+    {
+      "path": "pcb/rev3c/images/model-comparison/before-bottom.png",
+      "bytes": 95514,
+      "sha256": "315523ef9f4df71d707b3ff9c07d44737831393fa5c8d21d18ec4b5e60955253"
+    },
+    {
+      "path": "pcb/rev3c/images/model-comparison/before-oblique.png",
+      "bytes": 393709,
+      "sha256": "22589a7db4c4dfdcf327a183a3baa2aa8440f06acddca465e0b2cd7574ccfdbf"
+    },
+    {
+      "path": "pcb/rev3c/images/model-comparison/before-top.png",
+      "bytes": 243759,
+      "sha256": "3d512bc3dc0ff6211386cd93fe0bca174603e23a87146ec6fb167ec36c8121dc"
+    },
+    {
+      "path": "pcb/rev3c/images/rev3c-render-c6-bottom.png",
+      "bytes": 102511,
+      "sha256": "0f2f5022a145b7525bb51002b78f16b05439207f113cb410e5c7aa94277bf428"
+    },
+    {
+      "path": "pcb/rev3c/images/rev3c-render-c6-oblique.png",
+      "bytes": 433805,
+      "sha256": "ddd28767a54c5bd4f1a5601171f0a2f850d5620d92e5488b4c0906c6b987d702"
+    },
+    {
+      "path": "pcb/rev3c/images/rev3c-render-c6-top.png",
+      "bytes": 279812,
+      "sha256": "e029c61d383b0aa29be4bf504158d33ef66bfff819fbcb4e220b241a2c45073c"
+    },
+    {
+      "path": "pcb/rev3c/validation/c6-source-supply-identity.json",
+      "bytes": 7512,
+      "sha256": "6590f2faacf4833e823e8202bee9404314a4e42d121f74f7a1a5c52b4d47e9d6"
+    },
+    {
+      "path": "pcb/rev3c/validation/component-model-electrical-preservation.json",
+      "bytes": 9470,
+      "sha256": "b832b3e5ad626a5d8077b06bba9bd6dd48de4d1a93fa06b4b0c4aa0c35959252"
+    },
+    {
+      "path": "pcb/rev3c/validation/component-model-native-drc.json",
+      "bytes": 375,
+      "sha256": "57752ea36817080c7db23a9857b3e4e965fd17e1692da7047eb9c6363c5d5cb3"
+    },
+    {
+      "path": "pcb/rev3c/validation/component-model-native-erc.json",
+      "bytes": 459,
+      "sha256": "d954f93f5aa89c1b1f33f31ff612aaacb71809273405047a687a9ba15b95f59d"
+    },
+    {
+      "path": "pcb/rev3c/validation/component-model-provenance.json",
+      "bytes": 57502,
+      "sha256": "37c94b119c6b3fb40a31e6c0ddbcfd45ae5b695a9e6fa2e4a65bf28d434e7f8e"
+    },
+    {
+      "path": "pcb/rev3c/validation/component-model-render-receipt.json",
+      "bytes": 4162,
+      "sha256": "826835d0e5d876c676694a9ce3663fc3bc3a7117ad84f7366f04c755df59d58a"
+    },
+    {
+      "path": "pcb/rev3c/validation/service-component-provenance.json",
+      "bytes": 7836,
+      "sha256": "3d6aa246781ffeec13a01e77c8bd49635ec9cde2be8478315c71b24f5c25d6b4"
+    },
+    {
+      "path": "pcb/rev3c/validation/xiao-model-provenance.json",
+      "bytes": 190252,
+      "sha256": "50eaeb022a04a01077cf9b5b6a99e8e81ab993c58ce3cc85da09ef64ddb6b251"
+    },
+    {
+      "path": "pcb/rev3c/validation/placement-origin-review.json",
+      "bytes": 5329,
+      "sha256": "3cb652b50c235e524239c43f0a7a6a991031e8f2cfc25e076a26d69a7a93832b"
+    },
+    {
+      "path": "pcb/rev3c/validation/placement-datum-sources.json",
+      "bytes": 1272,
+      "sha256": "8629c3a9e1349b26b58f77c5207dd9aa3254f77319f18036f72d83828dc5057d"
+    },
+    {
+      "path": "pcb/rev3c/validation/xiao-soc-electrical-preservation.json",
+      "bytes": 9454,
+      "sha256": "bbdf3b66125b192a8b17f815c5292302c3de678e675a1f7f54b4a74dde3850f6"
+    },
+    {
+      "path": "pcb/rev3c/validation/xiao-soc-export-geometry-preservation.json",
+      "bytes": 1661,
+      "sha256": "1c13fbd50980727ef4981b5356252b4157a921ea7aa15230c9347cf2c1dcfd5b"
+    },
+    {
+      "path": "pcb/rev3c/validation/xiao-soc-package-provenance.json",
+      "bytes": 20197,
+      "sha256": "dc34c762f240fa9b73fb8b1b1171bc8bbfe358c045ff3f01ae71800fc9c3c007"
+    },
+    {
+      "path": "pcb/rev3c/validation/stencil-marker-repair-proof.json",
+      "bytes": 8307,
+      "sha256": "fcfbcaa4bc0d8e9fd64fcd5411c340a454f3ef3c0bc05147327912518a768b59"
+    },
+    {
+      "path": "pcb/rev3c/images/stencil-marker-comparison.png",
+      "bytes": 229874,
+      "sha256": "b493b77a1fc4986d64f52fba5f28c7b65f5aafdc7ad859dd0e4802a1b35def5e"
+    }
+  ],
+  "firmware_sources": [
+    {
+      "path": "firmware/shared-rev3c/c3-gea2.yaml",
+      "bytes": 671,
+      "sha256": "ff4362e214c9c99cc8c3df64c8d4c63769355111e632fc4fad29cddec79b3b0d"
+    },
+    {
+      "path": "firmware/shared-rev3c/c3-gea3.yaml",
+      "bytes": 672,
+      "sha256": "fccf7ceeb9638114f44925c1f027158e83848b64d52a153256890ba379e4fb43"
+    },
+    {
+      "path": "firmware/shared-rev3c/c6-gea2.yaml",
+      "bytes": 740,
+      "sha256": "69f30f6813e7dc3fd24cbe693601f8291b7b76e178d568c4a67e2f73fe8005fc"
+    },
+    {
+      "path": "firmware/shared-rev3c/c6-gea3.yaml",
+      "bytes": 740,
+      "sha256": "bd3d016407627988c481bf9d66fdbc1ea8e2a5f2f58c87b345a1b1c4f7e5b3e3"
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/c6-rf.yaml",
+      "bytes": 475,
+      "sha256": "55979b14a8a3dc9414c42ebc613fe2d036b72a1b447329d6be5f9c27c470d943"
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/common.yaml",
+      "bytes": 3451,
+      "sha256": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4"
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/gea2.yaml",
+      "bytes": 637,
+      "sha256": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba"
+    },
+    {
+      "path": "firmware/shared-rev3c/packages/gea3.yaml",
+      "bytes": 255,
+      "sha256": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76"
+    }
+  ],
+  "review_documents": [
+    {
+      "path": "pcb/rev3c/ANTENNA-REVIEW.md",
+      "bytes": 5110,
+      "sha256": "fdc6fac484f8842f7de608e01e96f2fbc5226ec0e54877116dfc1b5eaef0a2b5"
+    },
+    {
+      "path": "pcb/rev3c/GATE-PROTECTION.md",
+      "bytes": 10367,
+      "sha256": "cfb8618195c7e1d4b298cc85d33e164a3ae3fe4304f5967d40e1251f8ca2ac0a"
+    },
+    {
+      "path": "pcb/rev3c/POWER-QUALIFICATION.md",
+      "bytes": 4478,
+      "sha256": "1505d36fe77effcb15afe892515b6c9902733d9db5a78cc94b40b7f3d61e0d4d"
+    },
+    {
+      "path": "pcb/rev3c/RATED-SWITCH-OPTION.md",
+      "bytes": 13623,
+      "sha256": "15d81f526e99dc567eb4ea3dad98bbdf0d55760a24fd2695280a0623c2a7d231"
+    },
+    {
+      "path": "pcb/rev3c/README.md",
+      "bytes": 8950,
+      "sha256": "efd3cda13a23ff806c515eb9354c90c3024c9fa51956d95d26e441319020f822"
+    },
+    {
+      "path": "pcb/rev3c/ORDERING.md",
+      "bytes": 12049,
+      "sha256": "3cfdc8a1f2087cc601f2d83a63b10a5b4c1043c9ddbba53faade387be1c1ba5e"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/all-83-confirmed.jpg",
+      "bytes": 98545,
+      "sha256": "98a3458ec474bffb2aece4ed678e9394fed81597a41afa26771ee33fbb940d65"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/baseline-five-board-complete-quote.jpg",
+      "bytes": 114151,
+      "sha256": "807f14773def19f5bccf46bc4ee9ffc96c1e5c59265d1a1441c3177ad446a02d"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/baseline-ten-board-complete-quote.jpg",
+      "bytes": 114223,
+      "sha256": "ccd6d996715c350b1b2ee57ca7bdcc9ad2614307510f791fbdde2c29be26ed76"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/five-board-assembly-settings.jpg",
+      "bytes": 449604,
+      "sha256": "838124b5167f77690cd115f0fcd92f276a5668b73467b617db626f64856ae05b"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/five-board-complete-quote.jpg",
+      "bytes": 122937,
+      "sha256": "3f9b503202fca9f735899f6de91190ca460b1ef4694a067583d772e2f03788fb"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/five-board-pcb-settings.jpg",
+      "bytes": 334457,
+      "sha256": "23c61b8483e7b33be9464f6357fbcf6acc61fa8cde7645b08516a713020ac363"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/placement-preview.jpg",
+      "bytes": 139803,
+      "sha256": "3bd645a86a4ffceb7b8dd980f5882c18f08e05873df868b6f0210044a74ffaa2"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/ten-board-complete-quote.jpg",
+      "bytes": 114277,
+      "sha256": "f74f2929f45e86df013a83e86c896154a6e8bf4bf817ba8bbf81c6b6d908171c"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/three-file-map.png",
+      "bytes": 29251,
+      "sha256": "f61ddb426fa110a18f70b3a80a9f220f0ee27a942d54172e76e7915aecd4c0a8"
+    },
+    {
+      "path": "pcb/rev3c/MODEL-ACCURACY.md",
+      "bytes": 19128,
+      "sha256": "48f75343ef5c49efff01245bbda22309ec7f651ff901d9fd2d56625598f6417b"
+    },
+    {
+      "path": "pcb/rev3c/validation/PLACEMENT-DATUM-REVIEW.md",
+      "bytes": 698,
+      "sha256": "553d56de5f92cae837a041dcc9a944e2c4fab3916b04f9cb237de052fd96797d"
+    },
+    {
+      "path": "pcb/rev3c/STENCIL-REVIEW.md",
+      "bytes": 3272,
+      "sha256": "3feccf932e88bcef1d7e47bfaae0f06c84f1f242294bfd65d9a792dca23cc9d9"
+    }
+  ],
+  "export_notes": {
+    "BOM": "Native schematic Value/Reference/Footprint/LCSC with exclude-DNP;83 fitted refs",
+    "CPL": "Native board CSV positions retain angles/sides;83 matching fitted refs. J1 X/Y use a separately committed/source-bound manufacturer nominal body-datum proof. Source-native anchor agreement alone is not supplier-centroid approval.",
+    "Gerber_drill": "Native board stored plot policy, Protel extensions,11 Gerbers +2 separate drills +job;14-member ZIP; maps separately",
+    "renders": "Nine native inspected 1800\u00d71000 C3/C6 and matched-camera baseline images. Current assets are partial PCB-derived/nominal drawing previews, with missing exact buttons, shield/chips/headers and generic C3 USB limits in MODEL-ACCURACY.md; no physical-fit claim.",
+    "historical_proofs": "Frozen restoration/gate/rated/DELAY/model-only checkpoints retain their respective source identities. The model verifier is explicitly pinned to d662d1e; current placement-origin-review proves the later export coordinate convention against complete current CAD closure.",
+    "intrinsic_rule": "Only pad-to-pad within each exact U9/U10 footprint is0.20mm; all global/routing/netclass constraints unchanged",
+    "sourcing_correction": "Native BOM/netlist/schematic refreshed for four metadata records. Native CPL conversion identical and Gerber/drill/job differ only in generation dates/checksums: CPL/ZIP/copper/renders/drill maps retained byte-for-byte.",
+    "delay_pin_type": "At 47c2fdc, DELAY5 changed from input to bidirectional in local/embedded symbols. All 233 pin memberships and frozen PCB/manufacturing/image/firmware bytes were preserved at that checkpoint; later model/image changes are documented separately.",
+    "portable_source": "The editor-session .kicad_prl file is excluded from the portable source manifest; it was already absent from the current-main candidate.",
+    "component_models": "At d662d1e, only3D-model PCB nodes changed and all protected electrical/CAM/BOM/CPL/firmware bytes matched47c2fdc. Subsequent J1 CPL X/Y correction has its own reviewed nominal-body datum proof; all CAD, BOM, CAM and angles remain unchanged. No supplier or physical qualification is implied.",
+    "soc_models": "Source82dba70 adds exact named nominal5\u00d75\u00d70.85 mm QFN32 geometry for both FH4 chips, with package/pin1/OCCT checks and inspected native renders. No carrier geometry or fabrication input changed; current placement proof rebinding covers the changed model assets.",
+    "stencil_marker_repair": "Only stored plot drillshape1-to0 changed in the board; all other PCB bytes identical to5542734e. Native9.0.9 regeneration removes appended drill-center graphics;195 existing frontSMT apertures remain (including2 for DNI D8 requiring assemblerreview), bottompaste has0. Drills/job geometry, BOM/CPL, electrical design and firmware are unchanged."
+  },
+  "sourcing_correction_base_commit": "46173b61546d1e51993c1376399b2614f3577df3",
+  "selection_date_utc": "2026-10-03",
+  "quoted_electrical_source_commit": "7bb455fbc85c748f3125ed091a54375de69fbbcc",
+  "quote_refresh_utc": "2026-10-04T04:16:00Z",
+  "quoted_current_placement_source": "b53cfca83c4433b2288f882439c16e083c1fb50d"
+}

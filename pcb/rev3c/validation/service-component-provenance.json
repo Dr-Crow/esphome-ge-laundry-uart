@@ -1,0 +1,237 @@
+{
+  "checked_utc": "2026-10-04T02:59:25Z",
+  "classification": "Named-part KiCad community CAD; official Hirose drawing verifies nominal dimensions; physical installed connector manufacturer and packaging remain unverified.",
+  "model": {
+    "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.step",
+    "commit": "a0244fe3442823dbb052ebc4820b4c2951e1742c",
+    "sha256": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
+    "file_header_timestamp": "2017-11-24T17:15:48",
+    "solid_count": 1,
+    "valid": true,
+    "bbox_mm": {
+      "xmin": -1.55,
+      "xmax": 1.5500000000000005,
+      "ymin": -1.5000000000000016,
+      "ymax": 1.5,
+      "zmin": 0.0,
+      "zmax": 1.2500000000000007
+    },
+    "size_mm": [
+      3.1000000000000005,
+      3.0000000000000018,
+      1.2500000000000007
+    ]
+  },
+  "source_footprints": {
+    "C3_ANT0": {
+      "at_mm": [
+        139.4206,
+        105.0036
+      ],
+      "board_rotation_degrees": 180,
+      "local_signal_pad_mm": [
+        -1.397,
+        0
+      ],
+      "local_ground_pad_mm": [
+        [
+          0,
+          -1.27
+        ],
+        [
+          0,
+          1.27
+        ]
+      ],
+      "pcb_relative_path": "c3-v1.3-260116/202003511_XIAO ESP32C3_v1.3_SCH&PCB_260116/XIAO ESP32C3_v1.3.kicad_pcb",
+      "pcb_sha256": "a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db",
+      "reference": "ANT0",
+      "value": "U.FL-R-SMT-1",
+      "source_packaging": "unspecified",
+      "installed_manufacturer": "unverified"
+    },
+    "C6_ANT2": {
+      "at_mm": [
+        99.3902,
+        68.58
+      ],
+      "board_rotation_degrees": 180,
+      "local_signal_pad_mm": [
+        -1.397,
+        0
+      ],
+      "local_ground_pad_mm": [
+        [
+          0,
+          -1.27
+        ],
+        [
+          0,
+          1.27
+        ]
+      ],
+      "pcb_relative_path": "c6-v1.0-260114/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_pcb",
+      "pcb_sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027",
+      "reference": "ANT2",
+      "value": "U.FL-R-SMT-1",
+      "source_packaging": "unspecified",
+      "installed_manufacturer": "unverified",
+      "source_description": "SMD U-FL Female CONN-Gold;3P-L2.6*W2.6*H1.25mm",
+      "plating_qualifier": "Footprint description says Gold, but official Hirose -1 shell is Silver. This source description cannot prove installed plating/manufacturer."
+    }
+  },
+  "placement": {
+    "raw_step_to_seeed_footprint_offset_mm": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "model_rotation_degrees": [
+      0,
+      0,
+      0
+    ],
+    "stock_footprint_model_offset_mm": [
+      0.4749999928,
+      0,
+      0
+    ],
+    "stock_to_seeed_local_translation_mm": [
+      -0.475,
+      0,
+      0
+    ],
+    "explanation": "Stock ground-pad midpoint is x=+0.475 mm. Seeed ground-pad midpoint is x=0. Raw STEP mating axis and 2.6 mm body are centered at (0,0). Signal terminal points toward negative local X in raw STEP and both source footprints."
+  },
+  "terminal_registration": {
+    "raw_signal_terminal_bbox_mm": [
+      -1.55,
+      -1.3,
+      -0.3,
+      0.3,
+      0,
+      0
+    ],
+    "raw_signal_terminal_center_mm": [
+      -1.425,
+      0
+    ],
+    "source_signal_pad_bbox_mm": [
+      -1.8415,
+      -0.9525,
+      -0.4191,
+      0.4191
+    ],
+    "signal_terminal_fully_contained_by_source_copper": true,
+    "raw_ground_terminal_centers_mm": [
+      [
+        0,
+        -1.3
+      ],
+      [
+        0,
+        1.3
+      ]
+    ],
+    "raw_ground_terminal_size_mm": [
+      1.8,
+      0.4
+    ],
+    "source_ground_pad_size_mm": [
+      1.6764,
+      0.8382
+    ],
+    "terminal_x_overhang_per_edge_mm": 0.0618,
+    "ground_y_center_delta_mm": 0.03
+  },
+  "official_reference": {
+    "product_url": "https://www.hirose.com/en/product/p/CL0331-0472-2-01",
+    "part": "U.FL-R-SMT-1(01)",
+    "CL_number": "CL0331-0472-2-01",
+    "drawing_no": "EDC3-302540-01",
+    "drawing_designed_date": "2011-11-10",
+    "drawing_approved_date": "2011-11-15",
+    "drawing_checked_date": "2011-11-14",
+    "drawing_reference_notice": true,
+    "drawing_download_watermark_date": "2026-10-01",
+    "nominal_size_mm": [
+      3.0,
+      3.1,
+      1.25
+    ],
+    "height_tolerance_mm": 0.2,
+    "nominal_body_size_xy_mm": [
+      2.6,
+      2.6
+    ],
+    "mated_height_nominal_mm": 1.9,
+    "mated_height_max_mm": 2.0,
+    "suffix_is_packaging_only": true,
+    "suffix_options": {
+      "01": "100 pieces/bag",
+      "60": "4000 pieces/reel",
+      "80": "10000 pieces/reel"
+    },
+    "drawing_url": "https://www.hirose.com/en/product/p/CL0331-0472-2-01/documents?path=%2Fapi%2Fv1%2Fproducts%2FCL0331-0472-2-01%2Fdocuments%2Fdrawing_2d%2Fcontent%3Flang%3DEN",
+    "catalog_url": "https://www.hirose.com/en/product/series/U.FL/documents?path=%2Fapi%2Fv1%2Fseries%2FU.FL%2Fdocuments%2Fproduct_series_catalog%2Fcontent%3Flang%3DEN",
+    "drawing_sha256": "792ac953c894033688f435af321003de52e9d7a904d2d54a1dffed57bd81e82f"
+  },
+  "license": {
+    "kicad": "CC-BY-SA 4.0 with KiCad electronic-design exception; retain attribution/license if redistributing model as library collection. License downloaded at same immutable commit.",
+    "vendor_hirose": "Official ZIP Read me.pdf expressly forbids redistribution/modification/posting without written permission; research-only reference, exclude from repository and deliverable.",
+    "kicad_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/LICENSE.md",
+    "kicad_sha256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+    "hirose_terms_url": "https://www.hirose.com/corporate/en/terms/"
+  },
+  "button": {
+    "source_exact_mpn": "TD-1183SN-A3N-D1R",
+    "source_footprint": "BUTTON_TD1183SA",
+    "direct_source_symbol_description": "\u5fb7\u827a\u9686:TD-1183SA/311020740",
+    "manufacturer_family_evidence": "DEALON / \u5fb7\u827a\u9686; not XKB",
+    "official_brand_url": "https://www.moralityele.com/",
+    "exact_part_manufacturer_confirmation": false,
+    "exact_height_verified": false,
+    "exact_drawing_revision_verified": false,
+    "official_redistributable_CAD_found": false,
+    "family_drawing_context_only": "A manufacturer-authored family drawing TD-1183S\u25a1-XXH-XXX on secondary LCSC host shows 3.0x2.5 mm and A=1.5/B=1.7 mm, 2015-05-19 rev A. It does not map A3N-D1R. No height or model may be substituted from that family drawing.",
+    "source_symbol_relative_path": "c3-v1.3-260116/202003511_XIAO ESP32C3_v1.3_SCH&PCB_260116/02 XIAO ESP32-C3.kicad_sch",
+    "source_symbol_sha256": "f2d4a788fda969994542680a6be022f7ac8e0bb94338607480e1d97f6c5c0c89",
+    "source_symbol_description_line": 397,
+    "bounded_search": "Exact MPN queries, exact suffix fragments, official DEALON moralityele.com home, both complete tactile listing pages, full sitemap, site-restricted searches, advertised search endpoint (404), and contact-linked twdealon.com (site unavailable). No exact official drawing or licensed CAD was found. Stop with exact button height/manufacturer variant/revision unresolved."
+  },
+  "repository_asset": "design/models/U.FL_Hirose_U.FL-R-SMT-1_Vertical-kicad-9.0.9.step",
+  "carrier_associations": {
+    "c3": {
+      "reference": "J5",
+      "offset_mm": [
+        -16.637,
+        -7.62,
+        12.6
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        180
+      ]
+    },
+    "c6": {
+      "reference": "J5",
+      "offset_mm": [
+        -16.6275,
+        -3.324,
+        12.6
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        180
+      ]
+    },
+    "module_seating_z_is_provisional": true
+  }
+}

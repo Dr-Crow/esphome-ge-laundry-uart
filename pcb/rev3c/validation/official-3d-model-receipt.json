@@ -1,0 +1,898 @@
+{
+  "download_receipt": {
+    "official_repository": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "tag": "9.0.9",
+    "retrieved_utc": "2026-10-03T17:22:40.146883+00:00",
+    "board_path": "/workspace/shared/ge-oct3-rev3c-dual-input/pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+    "board_sha256": "13fb72ecdf41a057b81a4e268bb536517156fada4cab7d2d3ae5f482a5bbec8d",
+    "model_root": "/workspace/shared/ge-oct3-tools/kicad-packages3D-9.0.9",
+    "requested_distinct_models": 14,
+    "available": 14,
+    "missing": 0,
+    "models": [
+      {
+        "path": "Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "http_status": 200,
+        "bytes": 43502,
+        "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+        "git_blob_sha1": "a5725e143e2db0a0a1e499bd95c9c9da94a4f82b",
+        "etag": "\"6ccd8c01e89259d6adc1ecb058bf40fc\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Capacitor_SMD.3dshapes%2FC_0402_1005Metric.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+        "official_api_git_blob_sha1": "a5725e143e2db0a0a1e499bd95c9c9da94a4f82b",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "http_status": 200,
+        "bytes": 43450,
+        "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+        "git_blob_sha1": "a63c4915166c2f63d6b5c1fa8b659de9c8fbd719",
+        "etag": "\"5d99fe75e41f11f6a2ed44406794180d\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Capacitor_SMD.3dshapes%2FC_0603_1608Metric.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+        "official_api_git_blob_sha1": "a63c4915166c2f63d6b5c1fa8b659de9c8fbd719",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "http_status": 200,
+        "bytes": 43618,
+        "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+        "git_blob_sha1": "f6167ad807a7d5036a6c55ae86e5749114f82ec2",
+        "etag": "\"b79aa3fe2a8a6d8a80842450dc41124e\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Capacitor_SMD.3dshapes%2FC_0805_2012Metric.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+        "official_api_git_blob_sha1": "f6167ad807a7d5036a6c55ae86e5749114f82ec2",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+        "http_status": 200,
+        "bytes": 43450,
+        "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+        "git_blob_sha1": "b006e2f220caed751133425221c41c6f6d2e7881",
+        "etag": "\"fa05f9a4360f1bd705a77523f32d068a\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Capacitor_SMD.3dshapes%2FC_1206_3216Metric.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+        "official_api_git_blob_sha1": "b006e2f220caed751133425221c41c6f6d2e7881",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "http_status": 200,
+        "bytes": 43502,
+        "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+        "git_blob_sha1": "bd77c84312ab0cc88cf91c3324361bed62932807",
+        "etag": "\"fccc3416b9a25b80ad07b9e5283ee9b8\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Capacitor_SMD.3dshapes%2FC_1210_3225Metric.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+        "official_api_git_blob_sha1": "bd77c84312ab0cc88cf91c3324361bed62932807",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Diode_SMD.3dshapes/D_SOD-123.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Diode_SMD.3dshapes/D_SOD-123.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Diode_SMD.3dshapes/D_SOD-123.step",
+        "http_status": 200,
+        "bytes": 52836,
+        "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+        "git_blob_sha1": "fbc2f366536011135722b7a2f4e113bfaa2504a6",
+        "etag": "\"3fbdac581d2c8e8d0c5c8df01e2e27b1\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Diode_SMD.3dshapes/D_SOD-123.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Diode_SMD.3dshapes%2FD_SOD-123.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+        "official_api_git_blob_sha1": "fbc2f366536011135722b7a2f4e113bfaa2504a6",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Diode_SMD.3dshapes/D_SOD-123F.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Diode_SMD.3dshapes/D_SOD-123F.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Diode_SMD.3dshapes/D_SOD-123F.step",
+        "http_status": 200,
+        "bytes": 42604,
+        "sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+        "git_blob_sha1": "d24e8b3691a68cf0effe3cc13869c646bd5fd1b6",
+        "etag": "\"a06e80754ece4f7f80a15e51c8ca24f7\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Diode_SMD.3dshapes/D_SOD-123F.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Diode_SMD.3dshapes%2FD_SOD-123F.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+        "official_api_git_blob_sha1": "d24e8b3691a68cf0effe3cc13869c646bd5fd1b6",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+        "http_status": 200,
+        "bytes": 59769,
+        "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7",
+        "git_blob_sha1": "581b98565387402170102756ba51d32458fd8946",
+        "etag": "\"8eb08df46bed171ac5ff9f02641d65a6\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Diode_SMD.3dshapes%2FNexperia_CFP3_SOD-123W.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7",
+        "official_api_git_blob_sha1": "581b98565387402170102756ba51d32458fd8946",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Inductor_SMD.3dshapes/L_Panasonic_PCC-M0530M.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Inductor_SMD.3dshapes/L_Panasonic_PCC-M0530M.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Inductor_SMD.3dshapes/L_Panasonic_PCC-M0530M.step",
+        "http_status": 200,
+        "bytes": 23091,
+        "sha256": "9a853d3f886a569a231a862c760b6a7b42fa54b796f74486a1f23e7a8a55c932",
+        "git_blob_sha1": "754bd91033071c24eae0a43eca20f4d157cf35ab",
+        "etag": "\"23fc69d058023259c885a9f2f4fcce7c\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Inductor_SMD.3dshapes/L_Panasonic_PCC-M0530M.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Inductor_SMD.3dshapes%2FL_Panasonic_PCC-M0530M.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "9a853d3f886a569a231a862c760b6a7b42fa54b796f74486a1f23e7a8a55c932",
+        "official_api_git_blob_sha1": "754bd91033071c24eae0a43eca20f4d157cf35ab",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "LED_SMD.3dshapes/LED_0805_2012Metric.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+        "http_status": 200,
+        "bytes": 78220,
+        "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+        "git_blob_sha1": "46b48d90167fe4e6606c5a8a6660499fb0e3d8b7",
+        "etag": "\"7272fd9213f4d355e7b3d93862119b40\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/LED_SMD.3dshapes%2FLED_0805_2012Metric.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+        "official_api_git_blob_sha1": "46b48d90167fe4e6606c5a8a6660499fb0e3d8b7",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+        "http_status": 200,
+        "bytes": 99639,
+        "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+        "git_blob_sha1": "80e369a05617b080768235c00a25db2ccd52587a",
+        "etag": "\"02b5d93df6ee6fad76ccb28ba30d189e\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Package_TO_SOT_SMD.3dshapes%2FSOT-23-6.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+        "official_api_git_blob_sha1": "80e369a05617b080768235c00a25db2ccd52587a",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+        "http_status": 200,
+        "bytes": 60296,
+        "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+        "git_blob_sha1": "4100ae1025fec0121b9cb80773b84d266db0b074",
+        "etag": "\"c3cf92adf734c8f4eb28f67b33e20a54\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Package_TO_SOT_SMD.3dshapes%2FSOT-23.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+        "official_api_git_blob_sha1": "4100ae1025fec0121b9cb80773b84d266db0b074",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+        "http_status": 200,
+        "bytes": 100519,
+        "sha256": "1007b8f67a3e81e2c5182bfd1fd27afe4d8d3710e0bfa1a14b8a91db8b595eb5",
+        "git_blob_sha1": "07759e7a19cb10866483d71e3c9516f472b66163",
+        "etag": "\"88d04d90414bbe88eebb20931c6ae94e\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Package_TO_SOT_SMD.3dshapes%2FTSOT-23-6.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "1007b8f67a3e81e2c5182bfd1fd27afe4d8d3710e0bfa1a14b8a91db8b595eb5",
+        "official_api_git_blob_sha1": "07759e7a19cb10866483d71e3c9516f472b66163",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      },
+      {
+        "path": "Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "http_status": 200,
+        "bytes": 40592,
+        "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+        "git_blob_sha1": "56fa3aff63e34ff594185da0ba1ff2008a26646d",
+        "etag": "\"266dda1df4dc85a49a0fe6886f5da33e\"",
+        "status": "available",
+        "immutable_source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "official_api_metadata_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/files/Resistor_SMD.3dshapes%2FR_0805_2012Metric.step?ref=a0244fe3442823dbb052ebc4820b4c2951e1742c",
+        "official_api_sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+        "official_api_git_blob_sha1": "56fa3aff63e34ff594185da0ba1ff2008a26646d",
+        "official_sha256_matches": true,
+        "official_git_blob_matches": true
+      }
+    ],
+    "scope": "Only models referenced through KICAD9_3DMODEL_DIR. Local KIPRJMOD custom envelopes unchanged.",
+    "official_tag_api_url": "https://gitlab.com/api/v4/projects/kicad%2Flibraries%2Fkicad-packages3D/repository/tags/9.0.9",
+    "tag_object_sha": "6083258d1251af54f78c536869563644efd84ee2",
+    "tag_commit_sha": "a0244fe3442823dbb052ebc4820b4c2951e1742c",
+    "tag_protected": true,
+    "tag_created_at": "2026-04-24T16:17:57.000Z",
+    "tag_metadata_sha256": "fe912747a1e67c818cd0fe68e93dc452d86bd1f9c57c0c474e941e4d117ef095",
+    "official_api_verification_complete": true
+  },
+  "note": "Historical download/resolution receipt for the frozen electrical source6d22b6c. Its inherited final_* counts describe earlier checkpoints, not the present model lane. Current86 referenced instances resolve; model accuracy, source identity, preservation and current checks are in component-model-* receipts and MODEL-ACCURACY.md.",
+  "final_board_sha256": "6d22b6cda3ddabd9171a304034f7bdd40a47f4bcd8645200ce5cd79ccb97c304",
+  "final_model_instances": 82,
+  "final_standard_instances": 76,
+  "final_custom_instances": 6,
+  "missing_final_references": [],
+  "final_resolution": [
+    {
+      "reference": "D2",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C13",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C5",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R35",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R34",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R16",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R12",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D14",
+      "model": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D11",
+      "model": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step",
+      "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7",
+      "bytes": 59769,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "U9",
+      "model": "${KIPRJMOD}/models/TPS1H200A-DGN0008K-max-envelope.step",
+      "sha256": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+      "bytes": 160460,
+      "kind": "drawing-based maximum envelope; no exact supplier CAD/fit claim"
+    },
+    {
+      "reference": "C21",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R14",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R19",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D3",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "J5",
+      "model": "${KIPRJMOD}/models/Socket_1x07_P2.54mm_HCTL_PM254.step",
+      "sha256": "ffc7112aad0ee3b6457b50cc4adc58366581d3a5c1c4cf1c174850ba5db299ec",
+      "bytes": 16947,
+      "kind": "inherited custom envelope"
+    },
+    {
+      "reference": "J5",
+      "model": "${KIPRJMOD}/models/XIAO-ESP32-C3-Rev3C-installed-envelope.step",
+      "sha256": "d709f98f14a412c8b5ff7965419963bc6280bf45cd4d6584e3f7675d2a518d2d",
+      "bytes": 118114,
+      "kind": "inherited custom envelope"
+    },
+    {
+      "reference": "R40",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D5",
+      "model": "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "bytes": 78220,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R31",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R4",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R6",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "U8",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+      "sha256": "1007b8f67a3e81e2c5182bfd1fd27afe4d8d3710e0bfa1a14b8a91db8b595eb5",
+      "bytes": 100519,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C3",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R1",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C12",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C4",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "Q5",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R23",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R36",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "U10",
+      "model": "${KIPRJMOD}/models/TPS1H200A-DGN0008K-max-envelope.step",
+      "sha256": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+      "bytes": 160460,
+      "kind": "drawing-based maximum envelope; no exact supplier CAD/fit claim"
+    },
+    {
+      "reference": "R20",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R32",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C1",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D18",
+      "model": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step",
+      "sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+      "bytes": 42604,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R38",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R33",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C25",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R5",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D20",
+      "model": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step",
+      "sha256": "132323445e3d1f9231e81c083cd88a33cd204dd8b96063bb2ed1f3ab4470c7e7",
+      "bytes": 42604,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "F2",
+      "model": "${KIPRJMOD}/models/1812L075-33DR-max-envelope.step",
+      "sha256": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+      "bytes": 16948,
+      "kind": "drawing-based maximum envelope; no exact supplier CAD/fit claim"
+    },
+    {
+      "reference": "Q3",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C16",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D6",
+      "model": "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "bytes": 78220,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C18",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "bytes": 43502,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C15",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "L1",
+      "model": "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Panasonic_PCC-M0530M.step",
+      "sha256": "9a853d3f886a569a231a862c760b6a7b42fa54b796f74486a1f23e7a8a55c932",
+      "bytes": 23091,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C14",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "F1",
+      "model": "${KIPRJMOD}/models/1812L075-33DR-max-envelope.step",
+      "sha256": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+      "bytes": 16948,
+      "kind": "drawing-based maximum envelope; no exact supplier CAD/fit claim"
+    },
+    {
+      "reference": "C9",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "bytes": 43450,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D8",
+      "model": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R7",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R18",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "J1",
+      "model": "${KIPRJMOD}/models/J1-EVERCOM-5301-8P8C-envelope.step",
+      "sha256": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+      "bytes": 29952,
+      "kind": "inherited custom envelope"
+    },
+    {
+      "reference": "R11",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D15",
+      "model": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R2",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R10",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C10",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "bytes": 43450,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D17",
+      "model": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C20",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D9",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "U4",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "bytes": 99639,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R41",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R22",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R13",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C17",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "bytes": 43502,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C7",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "U5",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "bytes": 99639,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C6",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C2",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D4",
+      "model": "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "bytes": 78220,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "Q4",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R25",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R21",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C24",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D16",
+      "model": "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "bytes": 52836,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C11",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "bytes": 43618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R37",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "D1",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "bytes": 60296,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "J6",
+      "model": "${KIPRJMOD}/models/Socket_1x07_P2.54mm_HCTL_PM254.step",
+      "sha256": "ffc7112aad0ee3b6457b50cc4adc58366581d3a5c1c4cf1c174850ba5db299ec",
+      "bytes": 16947,
+      "kind": "inherited custom envelope"
+    },
+    {
+      "reference": "R15",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R17",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "C19",
+      "model": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+      "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "bytes": 43502,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R39",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "bytes": 40618,
+      "kind": "official KiCad9.0.9 generic package model"
+    },
+    {
+      "reference": "R24",
+      "model": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "bytes": 40592,
+      "kind": "official KiCad9.0.9 generic package model"
+    }
+  ],
+  "gate_repair_model_files_verified_utc": "2026-10-03T18:57:25.550499+00:00",
+  "historical_note": "Frozen shared/gate/rated download provenance retained. Current model-only integration has a separate receipt and does not claim exact complete manufacturer assembly or physical fit.",
+  "new_downloads": [
+    {
+      "path": "Package_SO.3dshapes/HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Package_SO.3dshapes/HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm.step",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "Fuse.3dshapes/Fuse_1812_4532Metric.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Fuse.3dshapes/Fuse_1812_4532Metric.step",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "source_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "http_status": 200,
+      "bytes": 40618,
+      "final_url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/9.0.9/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "git_blob_sha1": "a885593ca3dd3dd354835d6f586626a712c61c2a",
+      "status": "available"
+    }
+  ],
+  "verified_utc": "2026-10-03T21:36:16.467277+00:00",
+  "sourcing_correction_note": "Four metadata records only; all inherited package model references and geometry unchanged from46173b6.",
+  "active_render_model_review": {
+    "receipt": "component-model-provenance.json",
+    "human_readable": "../MODEL-ACCURACY.md",
+    "selected_source_baseline": "409dc0118dce37eb6bdd3f4507da134994e1333e",
+    "note": "Historical download and final_resolution arrays above describe the earlier electrical checkpoint. Current module/RJ45/socket model associations and transforms are recorded separately in the active component-model receipt."
+  }
+}
