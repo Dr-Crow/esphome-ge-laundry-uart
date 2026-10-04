@@ -55,7 +55,7 @@
           (name "GND" (effects (font (size 1.016 1.016))))
           (number "2" (effects (font (size 1.016 1.016))))
         )
-        (pin power_in line (at 0 2.54 90) (length 0) hide
+        (pin power_in line (at 0 5.715 90) (length 3.175)
           (name "VCC" (effects (font (size 1.016 1.016))))
           (number "5" (effects (font (size 1.016 1.016))))
         )
