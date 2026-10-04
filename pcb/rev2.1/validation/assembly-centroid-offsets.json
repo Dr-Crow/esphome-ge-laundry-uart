@@ -1,0 +1,24 @@
+{
+  "source": "0ee8e021a14ac59176a202034de46db23a4ff9c3",
+  "offsets": {
+    "J1": {
+      "mid_x_offset_mm": 2.33,
+      "mid_y_offset_mm": 4.445,
+      "status": "Matches native pad bounding-box centroid; supplier package/model/process alignment still unqualified"
+    },
+    "U3": {
+      "mid_x_offset_mm": -1.875,
+      "mid_y_offset_mm": 0.0,
+      "status": "Matches native pad bounding-box centroid; supplier package/model/process alignment still unqualified"
+    },
+    "U6": {
+      "mid_x_offset_mm": 0.3,
+      "mid_y_offset_mm": 0.0,
+      "status": "Matches native pad bounding-box centroid; supplier package/model/process alignment still unqualified"
+    }
+  },
+  "placement_review_required": true,
+  "convention": "Reviewed native pad-bounding-box centroid for J1/U3/U6; native anchor for other refs",
+  "evidence": "placement-origin-review.json",
+  "evidence_sha256": "e1bb378c01fc42e9b923b70d46dcd758fa157dad8da7229e0aba55b7fde55c0f"
+}

@@ -1,0 +1,98 @@
+(footprint "TP1_TestPoint_Pad_D2.0mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SMD pad as test Point, diameter 2.0mm")
+	(tags "test point SMD pad")
+	(property "Reference" "TP1"
+		(at 0 -1.998 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a62b42cf-d42d-429c-8b56-7f4632aad376")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TestPoint"
+		(at 0 2.05 0)
+		(layer "F.Fab")
+		(uuid "0dd10a82-aa6b-43b1-b69b-9b26954e0009")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8ccf8b29-1d93-439d-b2fc-dc15a8db774e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a7c8fcbd-f516-451f-8b02-f763795f4abe")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom dnp)
+	(fp_circle
+		(center 0 0)
+		(end 0 1.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "299090a8-a284-415a-9d98-e449539a248f")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.5 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5c03d17c-ef25-4544-8bd7-3b5e630341de")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2 0)
+		(layer "F.Fab")
+		(uuid "4a001350-3e19-436a-8036-127fe0caa43f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 2 2)
+		(layers "F.Cu" "F.Mask")
+		(uuid "9c991c84-4760-462a-9e0c-6a00caa411c4")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "base_commit": "0ee8e021a14ac59176a202034de46db23a4ff9c3",
+  "native_kicad": "9.0.9",
+  "convention": "Native pad bounding-box center for the three listed references; native footprint anchor for every other assembled reference. This validates export convention, not supplier model/package alignment.",
+  "primary_reference": "https://github.com/bennymeg/Fabrication-Toolkit#-override-component-origin",
+  "source_sha256": {
+    "pcb/rev2.1/design/OnionStraws.kicad_pcb": "d357d159ec1e54dfefb504e55ddaad09589a39156223a882fa454ee706762038",
+    "pcb/rev2.1/design/OnionStraws.kicad_pro": "9c0da6cf2a2461fb1aa63bb901daf51ec59951bdc1285554ee44495526249e11",
+    "pcb/rev2.1/design/OnionStraws.kicad_sch": "ae2e3d79fa1ce635c008c50e324ffd00f8516b461e4540c4f664fbb1f76da6d1",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C10_C_0805_2012Metric.kicad_mod": "3dab99f31da83ab64f031a7f0ccb9232ef6c1d7bd1890aba0ff6c04f4af3e28a",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C11_C_0805_2012Metric.kicad_mod": "d6b4b1647e2f2b7d582d317cfaaca76ebcf158c02c45809c7c0701803e588954",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C12_C_0805_2012Metric.kicad_mod": "9c2a3f365888463ade1bdbfdfc40dd9b15e4044acaa65e877a1147e93931e941",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C13_C_0805_2012Metric.kicad_mod": "7eef8041731e08d4ce3e2ed1ba9aca6ca2ac30f2a9a5249e6c9a55866ae929ce",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C14_C_0805_2012Metric.kicad_mod": "73f2e1382c2abad2c604ce9fda5557b28a882031270780b220e6ad35e27993cf",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C1_C_0805_2012Metric.kicad_mod": "8cbc69280bd5f637b0030c7f2b9af2d553edd1f234a3c2e7420ae42ab09f57ae",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C2_C_0805_2012Metric.kicad_mod": "23a366120b2963c141caebd4b6b4ae028d7366d6cec7b32a6fc779eff1de1c3e",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C3_C_0805_2012Metric.kicad_mod": "21b81713e3bcc029bff16ae08d5db13ba262cd742e3a29196d610d27a5f8efd6",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C4_C_0805_2012Metric.kicad_mod": "2ba641f635f1006b89f50f3beb559eaac1ab36c638207844db10a8cccb4a70ce",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C5_C_0805_2012Metric.kicad_mod": "eeb2e2a09748528e08151358385484677b343f8df60ad49f0aefb96991393efd",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C6_C_0805_2012Metric.kicad_mod": "016baeb735a447da4abeb5784afd159942bee6c6e0e4b47fa11c49a043c8669a",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C7_C_0805_2012Metric.kicad_mod": "2b3d6eca250aa6ad263cfe9ccc79ced71a7793c6ab3eb829a6ec07e5d5902c5e",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C8_C_0805_2012Metric.kicad_mod": "f35264ec0116b2e1678b7d0563251d49d3f40f54fad91d52b2912e011bd1805f",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C9_C_0805_2012Metric.kicad_mod": "cb09ca6b7c0703f8dd544caf926b09ecfd020cd2bcc6862860729d2caa789567",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/D1_SOT-23.kicad_mod": "ee76732ebba06808e571fa58c04287820886796c5b0a2ddbfc37a8be07caa81c",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/D2_SOT-23.kicad_mod": "7432074b91b39709542c7e6bb54d13ab46722379a714a076237aeddbd16cc24c",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/D3_SOT-23.kicad_mod": "38e13a817feb1eb265d5d82ca40b62062df033c62b23e699f94d726435326742",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/D4_LED_0805_2012Metric.kicad_mod": "c9b640b2e68d7fccfbcb240e9e8b4c318f34c785ff20445a3444895499233999",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/D5_LED_0805_2012Metric.kicad_mod": "4a80706747c20feca42f2d27c7465fbafaa14416502e2f5b216763984a3edf85",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/D6_LED_0805_2012Metric.kicad_mod": "993eeae3ca6cee2bd93331a0a0ad672f170c40bc80667cbd445c1283f2311c12",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/D7_D_SMA.kicad_mod": "da03319e361977bdafee2c07662ccfa767af1874e7bc05e8f8a9561c86c0351d",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/D8_D_SOD-123.kicad_mod": "75873d7fae4ec59ac568deb2628228c25900950781531181fb57b65110bf044b",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/D9_SOT-23.kicad_mod": "c58b4f6c88d0a209792dab28455443d6da0c76465d73722d3d091286218fcbcc",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/F1_Fuse_1812_4532Metric.kicad_mod": "6e50ff3c23ca34fe62a4b6bde21506524f0c8860c4304cfe01e3d840cccfd546",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/F2_Fuse_1812_4532Metric.kicad_mod": "1e90590d72a5f2d0503a72b6872d8f46b93c6f074661e9f385a82040f6143871",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/H1_MountingHole_3.2mm_M3_DIN965.kicad_mod": "0b32e4d56fe7dcd740f95611fbf1bb3355a006e1c7770c13b0a67a36c7e3dc66",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/H2_MountingHole_3.2mm_M3_DIN965.kicad_mod": "b22f54c5eecc483076cb64e513362f72d778d954cc1edac2d519f46249b454c3",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/J1_RJ45_Amphenol_54602-x08_Horizontal.kicad_mod": "8dd5dae2b670f15967f2a4812698c51fb9556901eeeb38a31f697f57531ef86f",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/J2_PinHeader_1x06_P2.54mm_Vertical.kicad_mod": "6a1a02f68d097b3fc21d4dcfdbe4945b640cd233ecca3ff146239dc352aeca27",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/J3_Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical.kicad_mod": "c002ea5dc317db017c5156cc51b00800d668313be70ef064f07f5b363d346be8",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/JP1_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels.kicad_mod": "ffd5f177cb99ba42de7b022db1dd162bf14bf3acd2d96b8e7fa04c7e224b6726",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/JP2_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels.kicad_mod": "66fba6972e4e711fcd96f5759dfea9ba05589e6dd9c3a2aa0a5cf8fba42ab8c5",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/Q1_SOT-23.kicad_mod": "96dd4be1dc35dbe2b3d87c06e2bf56f65b37c3979c5ae77c1bafa7561460f26e",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/Q2_SOT-23.kicad_mod": "47e26f757c139b92ea8f98913e6e5b501b902116fb42a831585cc72f009a2f61",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R10_R_0805_2012Metric.kicad_mod": "5da672d9c0e851731730526ff3cde24234ccecaee105b915c20e1d8996d8479a",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R11_R_0805_2012Metric.kicad_mod": "0fe87f51065a3f2783c3594da94d502a0f40990de821fa91d7ad105b93bb7311",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R12_R_0805_2012Metric.kicad_mod": "9afb816f8a077b684c99205380db92afa3e62a44e69db0e34c8d98950e3d178f",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R13_R_0805_2012Metric.kicad_mod": "32cff98f1c000714db9a0de3dacf0024185e69631a56ee8ea770bfbba2c5df74",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R14_R_0805_2012Metric.kicad_mod": "9ae8fc21057a6049a76980f45bc010b8d3a89921a8a5cdde5701f443371e9741",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R15_R_0805_2012Metric.kicad_mod": "8f67f5482da30683bfa763f5c27d79a42f7bc92a6d7e5ae887337010d4adc6aa",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R16_R_0805_2012Metric.kicad_mod": "9244dde1c6e363722a4746c735886b48913e288fc2861619c1d7919a9f114134",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R17_R_0805_2012Metric.kicad_mod": "9ce8a0fe3956e04d251d77fb6be08b4be76509141747b1612ed5846bfcd9f677",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R18_R_0805_2012Metric.kicad_mod": "33263c430e271a1301fdda7be62961de40e6de97e419438073ad310ee534bcf6",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R19_R_0805_2012Metric.kicad_mod": "051f6f4f9ee12aba7f4a299c040d1bafb8ffe14a2a64f7d7ce88ef2fdbbad63a",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R1_R_0805_2012Metric.kicad_mod": "8ae2de6144e6df11e5e0f1a554296086118cf3308ddf50bf01e57e5ffc5a4282",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R20_R_0805_2012Metric.kicad_mod": "3d2fa453c2e7699fdfff4a977221b28f518a7f3f4ed021dcdcc2884d2781ba42",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R21_R_0805_2012Metric.kicad_mod": "08a94ad8bae0049d4faac372e135d67687adbbb918a7acf6a85838ad0d892f10",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R22_R_0805_2012Metric.kicad_mod": "af623011ef6e92c0263345649b772f606b459dcb857968693691ebe6ab3d5d7c",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R23_R_0805_2012Metric.kicad_mod": "957adbf15b87e78ec57ed323e5924ee128a7ef8ac9b9a807d7c2161032832398",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R24_R_0805_2012Metric.kicad_mod": "f8ab69f10daf074e6da572a260fc65f4d64fa5686e8d5d5dc8c73a132d659928",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R25_R_0805_2012Metric.kicad_mod": "cef7063e7863d42d95e67b819d91dc4fd709823b469f66c601c11c99e0ae62e7",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R2_R_0805_2012Metric.kicad_mod": "a6c2ff175a6e66041ad310b90e86fa71c0e4a4c9e5f10cc59cc25883b4683d4c",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R3_R_0805_2012Metric.kicad_mod": "c0833662362e46f7bdd7c6e75a530ec342eb4b4473e8db12668e4a874ce85204",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R4_R_0805_2012Metric.kicad_mod": "98d3d81d93f0a9a5a146f7d09a43caf51d6918356addd252647d0eee292e4168",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R5_R_0805_2012Metric.kicad_mod": "8f3b9f80b5b20b5cadd50a267e163fcfecf586a1cb7d70c7247edef6cf673f09",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R6_R_0805_2012Metric.kicad_mod": "88f43de0821f79957172bc77773e10bc0b103f06b96c953e5cab7447bf360aaa",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R7_R_0805_2012Metric.kicad_mod": "0fd6e6c95ac0de4c332faca62893cf61f9e6a5e7084063bfea6b0db537e65ffe",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R8_R_0805_2012Metric.kicad_mod": "98ffd8aff59bf452aead5b72a7595a3a0134e64b3d3e92b4253e6d6428b10a72",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/R9_R_0805_2012Metric.kicad_mod": "63ae8e42c60743549c4fc64bbb255be07f88251e94e38b368c8c3c67e2a8e2f0",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/SW1_SW_Push_1P1T_XKB_TS-1187A.kicad_mod": "081cf35dab69fa26f2fddec554d4eed3057eab8cf68eda05a7df5e7324dba11e",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/SW2_SW_Push_1P1T_XKB_TS-1187A.kicad_mod": "cbad82f600973c3cfe713ada95a64768cce92284c08ae50331a10094ed55e631",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/TP1_TestPoint_Pad_D2.0mm.kicad_mod": "0f1c98c1f454af87e42e36e46ddab58156759180bbce3b3a6375e3b7593c9b58",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/TP2_TestPoint_Pad_D2.0mm.kicad_mod": "e294c7ab5e223328451abd658c36926bb256041111ac467c08617f6b10957c2d",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/TP3_TestPoint_Pad_D2.0mm.kicad_mod": "6cbac279a0bc4a1feaf2753a1878655f3d7fa31c92c0a7891a4f881a9323683f",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/TP4_TestPoint_Pad_D2.0mm.kicad_mod": "2130fe6599ff341aced0ca6f85bfa90939cfd18fbc91a7e23660ae8475f9966d",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/TP5_TestPoint_Pad_D2.0mm.kicad_mod": "57a4c68f27705def92ee9a8f98c6b3a2ccf928c8548cc94db5fbce5874489f7e",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/TP6_TestPoint_Pad_D2.0mm.kicad_mod": "5ce717d23a673ff340aab5e776601cc9a00c0a240575e99563924a86f70a7101",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/TP7_TestPoint_Pad_D2.0mm.kicad_mod": "4c9fd21d01d59465b63ffb7bc0c9f4224bf30094299ef3536352da117e6cf0fd",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/U1_SOT-23.kicad_mod": "0579c22acf632c197556c600fa3a1ed19f0303a01599240a9002ec2fb1fa4b42",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/U2_ESP32-C3-WROOM-02.kicad_mod": "2f4b642529d54b9fac418914bcf18f0fbc04a643168cf967e201ae6090043f5f",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/U3_TO-263-2.kicad_mod": "9fe08d018661b000bba8707506f5033d9c4938eef46ccacbd36dd64c07b19092",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/U4_SOT-23-6.kicad_mod": "a54d8a20ac4276d76383979d1cfcc051bffe9c67e92cad014c433f269275d40a",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/U5_SOT-23-6.kicad_mod": "871c83d19b97d9f2e7c5a6788d905cf4198d5b8f71d9b0c19cdc4e4ff2c6fcb1",
+    "pcb/rev2.1/design/footprints/LegacyBoard.pretty/U6_SOT-89-3.kicad_mod": "b4876846e007a9361cb8939c2eb2c94955510ae65dffb655062da329bf27f830",
+    "pcb/rev2.1/design/fp-lib-table": "b2ae60a953882ae0cc5023de68ea2d36dffdfb9cbeeaf6cdd658b85efec77ca6",
+    "pcb/rev2.1/design/sym-lib-table": "636ce07b8f47da8d40333d93cc71479b84148cec7dfd3ab5175947eb45625dda",
+    "pcb/rev2.1/design/symbols/LegacySymbols.kicad_sym": "2b271d73d80135c821a2b6fb49d620be75afb63389e66b4ff3e8ab0ab06745da"
+  },
+  "references": {
+    "U3": {
+      "footprint": "LegacyBoard:U3_TO-263-2",
+      "native_anchor_xy_mm": [
+        95.675,
+        -103.96
+      ],
+      "native_pad_bbox_xy_mm": [
+        85.725,
+        -109.36,
+        101.875,
+        -98.56
+      ],
+      "pad_bbox_center_xy_mm": [
+        93.8,
+        -103.96
+      ],
+      "offset_xy_mm": [
+        -1.875,
+        0.0
+      ],
+      "rotation_degrees": 0.0,
+      "status": "Existing CPL equals this native geometric convention; no file coordinate changed."
+    },
+    "J1": {
+      "footprint": "LegacyBoard:J1_RJ45_Amphenol_54602-x08_Horizontal",
+      "native_anchor_xy_mm": [
+        122.425,
+        -99.2825
+      ],
+      "native_pad_bbox_xy_mm": [
+        119.135,
+        -102.1525,
+        130.375,
+        -87.5225
+      ],
+      "pad_bbox_center_xy_mm": [
+        124.755,
+        -94.8375
+      ],
+      "offset_xy_mm": [
+        2.33,
+        4.445
+      ],
+      "rotation_degrees": 90.0,
+      "status": "Existing CPL equals this native geometric convention; no file coordinate changed."
+    },
+    "U6": {
+      "footprint": "LegacyBoard:U6_SOT-89-3",
+      "native_anchor_xy_mm": [
+        76.525,
+        -107.0
+      ],
+      "native_pad_bbox_xy_mm": [
+        74.525,
+        -108.95,
+        79.125,
+        -105.05
+      ],
+      "pad_bbox_center_xy_mm": [
+        76.825,
+        -107.0
+      ],
+      "offset_xy_mm": [
+        0.3,
+        0.0
+      ],
+      "rotation_degrees": 180.0,
+      "status": "Existing CPL equals this native geometric convention; no file coordinate changed."
+    }
+  },
+  "metadata_correction": "Q1 schematic LCSC empty\u2192C10493, matching unchanged PCB/BOM. Native geometry and all pin nets unchanged.",
+  "dependency_binding_review": {
+    "native_kicad": "9.0.9",
+    "previous_attestation_sha256": "e1bb378c01fc42e9b923b70d46dcd758fa157dad8da7229e0aba55b7fde55c0f",
+    "previous_core_sha256": {
+      "pcb/rev2.1/design/OnionStraws.kicad_pro": "9c0da6cf2a2461fb1aa63bb901daf51ec59951bdc1285554ee44495526249e11",
+      "pcb/rev2.1/design/OnionStraws.kicad_sch": "ae2e3d79fa1ce635c008c50e324ffd00f8516b461e4540c4f664fbb1f76da6d1",
+      "pcb/rev2.1/design/OnionStraws.kicad_pcb": "d357d159ec1e54dfefb504e55ddaad09589a39156223a882fa454ee706762038"
+    },
+    "verification": "Fresh pcbnew geometry independently recomputed all three footprint IDs, native anchor XY, rotated native pad bounding-box extents, center XY and rotation. Every record matches within 0.00001 mm/degrees. Existing references and source/CAM coordinates remain byte-unchanged.",
+    "local_dependency_files": 80,
+    "additional_qualification": false
+  }
+}

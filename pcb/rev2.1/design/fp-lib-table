@@ -1,0 +1,3 @@
+(fp_lib_table
+ (lib (name "LegacyBoard")(type "KiCad")(uri "${KIPRJMOD}/footprints/LegacyBoard.pretty")(options "")(descr "Recovered embedded source footprints; local documented cleanup only"))
+)
