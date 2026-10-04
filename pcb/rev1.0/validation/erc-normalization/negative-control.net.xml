@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/workspace/shared/ge-oct4-rev1-erc-normalize/pcb/rev1.0/design/OnionStraws.kicad_sch</source>
-    <date>2026-10-04T02:25:07-0400</date>
+    <source>/workspace/shared/ge-oct4-rev1-erc-normalize-proof/negative-control-design/OnionStraws.kicad_sch</source>
+    <date>2026-10-04T02:26:58-0400</date>
     <tool>Eeschema 9.0.9</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1418,7 +1418,7 @@
   </libparts>
   <libraries>
     <library logical="LegacySymbols">
-      <uri>/workspace/shared/ge-oct4-rev1-erc-normalize/pcb/rev1.0/design/symbols/LegacySymbols.kicad_sym</uri>
+      <uri>/workspace/shared/ge-oct4-rev1-erc-normalize-proof/negative-control-design/symbols/LegacySymbols.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
@@ -1429,6 +1429,7 @@
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="R9" pin="2" pintype="passive"/>
       <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VCC" pintype="power_in"/>
       <node ref="U2" pin="5" pinfunction="+3V3" pintype="power_in"/>
       <node ref="U3" pin="1" pinfunction="3v3" pintype="power_out"/>
     </net>
@@ -1449,7 +1450,6 @@
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="R17" pin="2" pintype="passive"/>
       <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
-      <node ref="U1" pin="5" pinfunction="VCC" pintype="power_in"/>
       <node ref="U3" pin="19" pinfunction="5VIN" pintype="power_in"/>
       <node ref="U4" pin="3" pinfunction="Vcc" pintype="power_in"/>
     </net>

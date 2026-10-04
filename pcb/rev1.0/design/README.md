@@ -7,3 +7,5 @@ This source comes from exact public commit `87984047ee029efb83bf9947dc21818fd18e
 `footprints/LegacyBoard.pretty` recovers each source board footprint, paired by reference and original identity in `footprints/source-map.json`. Pads, holes, models, parts and placement geometry are retained; only the documented RJ45 overhanging silk graphics change. The local library exists to preserve historical native geometry, rather than refresh it from today's stock footprints.
 
 The [upstream KiCad library notice](KICAD-LIBRARY-LICENSE.md) is retained for the KiCad library data. Original project custom definitions retain their original provenance. The recovery establishes agreement with the embedded historical design, not a purchased module identity or component rating qualification.
+
+The current local 74LVC2G07 definition has an explicit VCC presentation change. Original recovery/namespace records remain provenance; source-bound proof in ../validation/erc-normalization/ records unchanged physical pin memberships and all other preserved source.

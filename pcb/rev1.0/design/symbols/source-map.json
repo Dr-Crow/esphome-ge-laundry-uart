@@ -137,5 +137,11 @@
       "net": "GND",
       "proof": "existing conductor endpoint; no physical footprint"
     }
-  ]
+  ],
+  "explicit_power_presentation_review": {
+    "source": "74xGxx:74LVC2G07",
+    "local": "LegacySymbols:74LVC2G07",
+    "changes": "Faithful visible pin5 VCC with source-bound annotation lead; pin names/numbers/types and physical graph preserved; pin2GND unchanged. Original namespace recovery provenance remains separate.",
+    "evidence": "../../validation/erc-normalization/proof.json"
+  }
 }

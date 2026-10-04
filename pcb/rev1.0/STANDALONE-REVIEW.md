@@ -23,3 +23,7 @@ Firmware is a separate universal pinned legacy/classic review unit. This PCB can
 All native CAD, local libraries, manufacturing exports, original archives, retained machine-readable proofs and rendered review assets are copied byte-for-byte from the stated reviewed source, except the explicitly superseding Rev 2.1 dependency attestation below. Documentation only is adjusted for standalone navigation and review boundaries. Original archives remain distinct from current review CAM. Physical and hosted proof remain pending.
 
 [PCB revision index](../README.md).
+
+## Current schematic presentation
+
+[Schematic normalization](validation/erc-normalization/integration-updates.json) resolves the former alias warnings with explicit faithful power presentation. Native KiCad 9.0.9 now reports zero errors/warnings/unconnected/parity. Original physical architecture, PCB/CAM, firmware and pin memberships remain; power/module/procurement/assembly/physical gates are still open. Earlier source/independent receipts are frozen historical evidence.

@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-04T02:21:41-0400",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/477311b9-8f81-40c8-9c55-fd87e287247a",
+            "violations": [
+                {
+                    "description": "Both +5V and VCC are attached to the same items; +5V will be used in the netlist",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0131 Hidden pin 1 [+5V, Power input, Line]",
+                            "pos": {
+                                "x": 2.20345,
+                                "y": 1.17475
+                            },
+                            "uuid": "696d8ebe-26d6-439b-9b3e-9aea41d84f25"
+                        },
+                        {
+                            "description": "Symbol U1 Hidden pin 5 [VCC, Power input, Line]",
+                            "pos": {
+                                "x": 2.0574,
+                                "y": 0.90805
+                            },
+                            "uuid": "bb2eb10e-839a-4abf-81e7-c35194344f1f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                }
+            ]
+        }
+    ],
+    "source": "OnionStraws.kicad_sch"
+}

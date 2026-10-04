@@ -1,0 +1,136 @@
+{
+  "source_commit": "2088c3acbe2766541cf4b2daa4a5f45e6ed5e4da",
+  "candidate_commit": "51effc2fc3adfa5acbbe1469120566866044a9ad",
+  "owner": "Dr-Crow <9339757+Dr-Crow@users.noreply.github.com>",
+  "clone": "/workspace/shared/ge-oct4-rev1-erc-normalize",
+  "tool_version": "9.0.9",
+  "source_hashes": {
+    "pcb/rev1.0/design/OnionStraws.kicad_sch": "ded9db1a9f1b2e56d73509cd068acb9709b5f97b9fec8ab2d99018710c7689cb",
+    "pcb/rev1.0/design/symbols/LegacySymbols.kicad_sym": "c42547003cc1a60f07f9f2618f46c48464296667441811cda0dfc87ed4199a5c",
+    "pcb/rev1.0/design/OnionStraws.kicad_pcb": "fbee229893652b7e36fe99563679229b8be1422968c2087ffb71ad33aeba7655",
+    "pcb/rev1.0/design/OnionStraws.kicad_pro": "282b8b3c4890a52ab2c91742f6e878372fd8346f1fea58dd86f2c2e6beb5394c"
+  },
+  "proof_files": {
+    "fresh-cam-comparison.json": {
+      "sha256": "246642a739f31b2739f4b0fbb0508495c5371b25e8008f2c1af91c229b4474fc",
+      "bytes": 3234
+    },
+    "after-erc.json": {
+      "sha256": "4d7b0e7d576c50c5f11420dd7286e780fec4e478bd8e7b1c60b0cd9c8c04e07f",
+      "bytes": 453
+    },
+    "proof.json": {
+      "sha256": "4d8479f9f85db5718e1aa20e9302f4188529f71797b1feefc5b5481481932ccb",
+      "bytes": 25185
+    },
+    "before-tracked-sha256.json": {
+      "sha256": "c3a70b271402ee591520797ae0825998c6542e25553f2b237504edde003f699e",
+      "bytes": 27183
+    },
+    "after-u1b.png": {
+      "sha256": "87db948af650401916f9daa7ba639112f7df33955e6afa1df0d6cf6c109ab1f3",
+      "bytes": 8705
+    },
+    "before-erc.json": {
+      "sha256": "99c666ebbf08347bc581981273ef40605b025c0506b2f73fcdb5726efe827814",
+      "bytes": 1533
+    },
+    "check.py": {
+      "sha256": "6b9861f82f86bb71bca2c513ce644345a2ff28033ce6278ce94c0778f65e2751",
+      "bytes": 8556
+    },
+    "native_snapshot.py": {
+      "sha256": "2b472a106663d479c8115297b00dbc4938ca2f9f81690eb98fadc542928e81eb",
+      "bytes": 2764
+    },
+    "before-board-physical.json": {
+      "sha256": "b8449956f1ea6558b0617b636095f5cd55563b0f7c0df1815222dac3a7d3b289",
+      "bytes": 466963
+    },
+    "integration-updates.json": {
+      "sha256": "5d25f68304015294363d64de65d7f23e9ab466dda9aa303f54890e027cc2d71e",
+      "bytes": 4469
+    },
+    "after-schematic.pdf": {
+      "sha256": "2c8dc6d401b098f8daec8bb8161ded72d443b7a02be848c8393b465d17a004a3",
+      "bytes": 320921
+    },
+    "README.md": {
+      "sha256": "36adc2b2749c1786e543ac9b2be98d896a188f18aa0698ff955cfb1928abbe18",
+      "bytes": 2002
+    },
+    "after-schematic.png": {
+      "sha256": "89dbd8be3eea74e654940cf5dcc875e490ad9d5763206aec09d65a5997fa805a",
+      "bytes": 185550
+    },
+    "physical-pin-memberships.json": {
+      "sha256": "89d2f39a83cec3d67134bdc19b10df743d95c71d41ab1422b118b581a90e9f1b",
+      "bytes": 12170
+    },
+    "before.net.xml": {
+      "sha256": "d2710846f6fe906efa604d0305b7cefc98dca62c0a644748c65834bab2a74c10",
+      "bytes": 75920
+    },
+    "negative-control.net.xml": {
+      "sha256": "59a3a874a7ab29a6e4dbc3942628b50f16b41e608ec90ee506538e0dad7aafa1",
+      "bytes": 75944
+    },
+    "after-u1a.png": {
+      "sha256": "b13c8250e7f38c4f74d7424972bc9f5665cff214bd8e7bc391a84e1f5d33b13a",
+      "bytes": 10851
+    },
+    "refine.py": {
+      "sha256": "c0b776c0f9d183da1af34564fe14c07da8fa7056460fd6120d799988bc29b425",
+      "bytes": 1451
+    },
+    "after-drc.json": {
+      "sha256": "3b05029be56892070e4ebab67b0f54a204f7c11d6c9779d600733f9629a5ec4c",
+      "bytes": 369
+    },
+    "schematic_parser.py": {
+      "sha256": "ac1586a5951db358ac8a7f8c8c61e7547732cd7b7268f10344ab13469b1ec5bb",
+      "bytes": 821
+    },
+    "normalize.py": {
+      "sha256": "3477572897264cd3432e6f2f1bbcecb54d3e5e5de7fd8118c87caa2437436ad2",
+      "bytes": 2714
+    },
+    "presentation-delta.json": {
+      "sha256": "a9b57043893e8dfed29abed5150727aec0a47e6c04134a7b7d21f5dfe72f0839",
+      "bytes": 1474
+    },
+    "after.net.xml": {
+      "sha256": "580d0e8b010b9dd00701f478c8dbb8c5e4c0ec3435e82d4749e4792956f61b07",
+      "bytes": 75920
+    },
+    "before-drc.json": {
+      "sha256": "4e25540d8038a975b67bc514bada3d76e414e2589a49841dd8c8764c34d64a34",
+      "bytes": 369
+    },
+    "after-board-physical.json": {
+      "sha256": "b8449956f1ea6558b0617b636095f5cd55563b0f7c0df1815222dac3a7d3b289",
+      "bytes": 466963
+    }
+  },
+  "visual_inspection": {
+    "latest_whole_page_checked": true,
+    "latest_U1A_U1B_crops_checked": true,
+    "VCC_pin_number_name_lead_and_5V_arrow_clear": true,
+    "classic_ESP32_external_buck_gea_architecture_unchanged": true
+  },
+  "baseline": "0 ERC errors/1 warning, 0 DRC/unconnected/parity",
+  "candidate": "0 ERC errors/0 warnings, 0 DRC/unconnected/parity",
+  "physical_memberships": "166 pins/58 nets exact",
+  "baseline_tracked_files": 161,
+  "byte_identical_input_files": 159,
+  "candidate_changes": [
+    "pcb/rev1.0/design/OnionStraws.kicad_sch",
+    "pcb/rev1.0/design/symbols/LegacySymbols.kicad_sym"
+  ],
+  "hardware_qualified": false,
+  "fabrication_approved": false,
+  "author": "Dr-Crow <9339757+Dr-Crow@users.noreply.github.com>",
+  "committer": "Dr-Crow <9339757+Dr-Crow@users.noreply.github.com>",
+  "tree_sha1": "02e6a23cc19f91b7305978a4f79973f61653223a",
+  "metadata_only_amendment_preserved_entire_source_tree": true
+}

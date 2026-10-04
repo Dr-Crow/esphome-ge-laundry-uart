@@ -1,3 +1,14 @@
+# Current Rev1 schematic review
+
+The earlier review below is frozen to its original cleanup input. Current
+explicit VCC presentation resolves the one alias; fresh native ERC/DRC/unconnected/
+parity findings are zero. Source-bound proof in erc-normalization/proof.json
+records 166 physical memberships/58 nets, native detached-fixture controls and
+unchanged PCB/CAM/firmware. Ratings, module/buck identity, procurement and physical
+qualification remain open.
+
+## Frozen prior review
+
 # Rev1 native source review
 
 October 3, 2026, genuine KiCad 9.0.9. The cleaned historical source has **zero ERC errors, one retained ERC alias warning, zero DRC findings, zero unconnected items and zero schematic parity findings**. This is a source and export review; appliance compatibility, electrical protection and manufacturing release remain unqualified.

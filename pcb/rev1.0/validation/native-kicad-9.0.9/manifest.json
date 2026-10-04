@@ -4,12 +4,12 @@
   "original_source_commit": "87984047ee029efb83bf9947dc21818fd18e39b3",
   "validation": {
     "ERC_errors": 0,
-    "ERC_warnings": 1,
+    "ERC_warnings": 0,
     "DRC_errors": 0,
     "DRC_warnings": 0,
     "unconnected": 0,
     "schematic_parity": 0,
-    "all_severity_warning_free": false,
+    "all_severity_warning_free": true,
     "native_error_level_pass": true,
     "hardware_qualified": false,
     "fabrication_approved": false
@@ -23,8 +23,8 @@
   "artifacts": [
     {
       "path": "pcb/rev1.0/README.md",
-      "bytes": 1513,
-      "sha256": "36261d99c4324d953e59d52e225e18d5b42d37f9315b8fc75405e7dba5a7d56d"
+      "bytes": 2067,
+      "sha256": "3323234490df783a9f5626100e86c1bf8b880411d53d96502e99d50f0a758687"
     },
     {
       "path": "pcb/rev1.0/design/KICAD-LIBRARY-LICENSE.md",
@@ -47,24 +47,19 @@
       "sha256": "fbee229893652b7e36fe99563679229b8be1422968c2087ffb71ad33aeba7655"
     },
     {
-      "path": "pcb/rev1.0/design/OnionStraws.kicad_prl",
-      "bytes": 2121,
-      "sha256": "0697cfb340f876f0a9ecb68522f580b498343333cd953cc66c418ada327b5889"
-    },
-    {
       "path": "pcb/rev1.0/design/OnionStraws.kicad_pro",
       "bytes": 9997,
       "sha256": "282b8b3c4890a52ab2c91742f6e878372fd8346f1fea58dd86f2c2e6beb5394c"
     },
     {
       "path": "pcb/rev1.0/design/OnionStraws.kicad_sch",
-      "bytes": 290266,
-      "sha256": "14d6d4898d4373b254c7241ff4fb2b5bf586d713bc1599f8009d1c154b0cd163"
+      "bytes": 290856,
+      "sha256": "ded9db1a9f1b2e56d73509cd068acb9709b5f97b9fec8ab2d99018710c7689cb"
     },
     {
       "path": "pcb/rev1.0/design/README.md",
-      "bytes": 1346,
-      "sha256": "6f10b244e38d6971d3e8c85007180326cfac917459c7593e590623fba3616eb6"
+      "bytes": 1612,
+      "sha256": "0bd0c71ec6d382f3c5cb51e0469a67271828660f1dd1f4879597a9e9c0a6ccde"
     },
     {
       "path": "pcb/rev1.0/design/RESTORED-PROVENANCE.json",
@@ -394,12 +389,12 @@
     {
       "path": "pcb/rev1.0/design/symbols/LegacySymbols.kicad_sym",
       "bytes": 54024,
-      "sha256": "be3ac75b16c05294e4ffd5d2086185e09e3c5f7c90c49d7fc8a76870d8e48600"
+      "sha256": "c42547003cc1a60f07f9f2618f46c48464296667441811cda0dfc87ed4199a5c"
     },
     {
       "path": "pcb/rev1.0/design/symbols/source-map.json",
-      "bytes": 4031,
-      "sha256": "937066a34350d31a50b8a2f44998a8b23028d19874a7b4ab7e870281c9579867"
+      "bytes": 4425,
+      "sha256": "b430372fa73538b68069f23831da07b8045fd09f9b54f05b481b75c6236ed1c6"
     },
     {
       "path": "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip",
@@ -524,12 +519,12 @@
     {
       "path": "pcb/rev1.0/validation/native-kicad-9.0.9/drc-all-track-errors.json",
       "bytes": 369,
-      "sha256": "3a9cabaad9f048bf27f0ac5ef6e139c7aa9cd32318e0061f66f6e1614db9967e"
+      "sha256": "3b05029be56892070e4ebab67b0f54a204f7c11d6c9779d600733f9629a5ec4c"
     },
     {
       "path": "pcb/rev1.0/validation/native-kicad-9.0.9/erc.json",
-      "bytes": 1533,
-      "sha256": "3ff48a7b26ca07d3a81da3c3bbda73ed295f20af7ef309a34b10d789cf2439c6"
+      "bytes": 453,
+      "sha256": "4d7b0e7d576c50c5f11420dd7286e780fec4e478bd8e7b1c60b0cd9c8c04e07f"
     },
     {
       "path": "pcb/rev1.0/validation/native-kicad-9.0.9/independent-historical-review.json",
@@ -538,8 +533,8 @@
     },
     {
       "path": "pcb/rev1.0/validation/native-kicad-9.0.9/netlist.xml",
-      "bytes": 75908,
-      "sha256": "05f4079db6197dcf03bd96d267019016b2c813bf994a0c2c1fb0314ef2e556bc"
+      "bytes": 75920,
+      "sha256": "580d0e8b010b9dd00701f478c8dbb8c5e4c0ec3435e82d4749e4792956f61b07"
     },
     {
       "path": "pcb/rev1.0/validation/native-kicad-9.0.9/preservation-proof.json",
@@ -553,13 +548,13 @@
     },
     {
       "path": "pcb/rev1.0/validation/schematic.pdf",
-      "bytes": 317990,
-      "sha256": "e1ccde55af567edfb790c896bc08bb26496819ae111973e57adbcc77971bbf53"
+      "bytes": 320921,
+      "sha256": "2c8dc6d401b098f8daec8bb8161ded72d443b7a02be848c8393b465d17a004a3"
     },
     {
       "path": "pcb/rev1.0/validation/schematic.png",
-      "bytes": 193817,
-      "sha256": "7dcd912dd10a2c589862d470ece577b05532d517773fa2b2c4e0122fedcce856"
+      "bytes": 185550,
+      "sha256": "89dbd8be3eea74e654940cf5dcc875e490ad9d5763206aec09d65a5997fa805a"
     },
     {
       "path": "pcb/rev1.0/validation/views/back.png",
@@ -591,5 +586,6 @@
       "bytes": 398750,
       "sha256": "f70201e500087043d9a951db647d2f1f4d5b8cc62576644cc8f3e1c44a518ceb"
     }
-  ]
+  ],
+  "schematic_presentation": "Explicit faithful VCC connection; original source recovery remains provenance. Current source hashes refreshed; no circuit/CAM/firmware change or qualification."
 }
