@@ -12,7 +12,7 @@ All prices are USD. The selected exact Rev3C quotes refreshed October 4, 2026 at
 | Historical baseline `ca1fdb1261af8b32a1bf353d37f40439ead5c3b0` | 80 / 33 | $130.39 | $160.37 |
 | Selected-source premium | | **$4.25** | **$8.54** |
 
-The premium is approximately $0.85 per carrier. Current standalone source `5542734` adds source-preserving partial C3/C6 models and current quote documentation. Its factory trio is the corrected J1 body-datum package at `b53cfca`; all 83 exact codes matched and were stocked at both quantities in the 04:16 refresh. The earlier `7bb455f` CPL is historical; do not use it as the current placement file. The 80-reference baseline changed only D16/D17 sourcing to reviewed MCC C668891; its original TPS22810 switches, fuses and topology remain. It is a historical price comparison, not the selected design.
+The premium is approximately $0.85 per carrier. Restored source `5542734` adds source-preserving partial C3/C6 models and quote documentation. Current selected source `b87d3e8` additionally disables unwanted drill-marker plotting and regenerates the Gerber ZIP; BOM/CPL are unchanged. Refresh the quote for that corrected ZIP before ordering. The previously quoted factory trio is the corrected J1 body-datum package at `b53cfca`; all 83 exact codes matched and were stocked at both quantities in the 04:16 refresh. The earlier `7bb455f` CPL is historical; do not use it as the current placement file. The 80-reference baseline changed only D16/D17 sourcing to reviewed MCC C668891; its original TPS22810 switches, fuses and topology remain. It is a historical price comparison, not the selected design.
 
 | Included subtotal | Selected, five | Selected, ten | Baseline, five | Baseline, ten |
 | --- | ---: | ---: | ---: | ---: |

@@ -2,7 +2,7 @@
 
 [Project overview](../../README.md) · [Current validation](VALIDATION.md) · [Pricing](PRICING.md) · [Finish plan](FINISH-PLAN.md) · [Source handoff](HANDOFF.md) · [C3/C6 and Matter](C6-MATTER.md)
 
-Updated October 4, 2026 at 06:58 UTC; strict seven-revision native checks and exact source-bound quote snapshots. The user selected the shared Rev3C design with two **40 V-rated TPS1H200A switches**, both GE power inputs and automatic PIN1 priority. Current standalone source is `5542734`; its current factory trio is placement-corrected `b53cfca`. The original electrical protection source is `7bb455f`. Selection does not establish a 40 V carrier rating, appliance compatibility or manufacturing readiness.
+Updated October 4, 2026 after source restoration and fresh seven-revision native/CAM checks. The user selected the shared Rev3C design with two **40 V-rated TPS1H200A switches**, both GE power inputs and automatic PIN1 priority. Current selected source is `b87d3e8`, adding the reviewed stencil correction to restored `5542734`; its BOM/CPL remain placement-corrected `b53cfca`, while its Gerber ZIP is regenerated. The original electrical protection source is `7bb455f`. Selection does not establish a 40 V carrier rating, appliance compatibility or manufacturing readiness.
 
 C3 is the first target, with C6 interface and firmware flexibility retained. Rev3A/B backports are digitally reviewed at 97/85 fitted references; Rev3A rated protection, exact connector lands and zero-warning schematic normalization are independently reviewed and staged; all seven revisions now have zero native findings. Current-main-based per-revision candidates are staged locally. Older revisions retain their distinct architectures and review gates. No revision has physical qualification, and older boards are not established safe fallbacks.
 
@@ -21,11 +21,11 @@ Rev3B/C require one physical power source at a time because the module's side-he
 
 ## Current quote comparison
 
-USD, complete PCB plus Economic top-side assembly, with all carriers assembled. The selected quote refreshed October 4 at 04:16 UTC includes the selected exact parts, RJ45 and female sockets. Shipping, tax, separately purchased XIAO modules/headers, installation, programming, tests and cases are excluded.
+USD, complete PCB plus Economic top-side assembly, with all carriers assembled. The historical selected quote refreshed October 4 at 04:16 UTC includes the selected exact parts, RJ45 and female sockets. The current corrected Gerber ZIP needs a refreshed quote and stencil/process review. Shipping, tax, separately purchased XIAO modules/headers, installation, programming, tests and cases are excluded.
 
 | Matched Rev3C source | Fitted references | Five carriers | Ten carriers |
 | --- | ---: | ---: | ---: |
-| Selected current factory trio `b53cfca` | 83 | **$134.64** | **$168.91** |
+| Previous quoted factory trio `b53cfca` | 83 | **$134.64** | **$168.91** |
 | Historical clamp-sourced baseline `ca1fdb1` | 80 | $130.39 | $160.37 |
 | Selected design premium | +3 | **$4.25** | **$8.54** |
 
@@ -33,7 +33,7 @@ The premium is about $0.85 per carrier. These are quote observations, not an ord
 
 ## Current source-bound C3/C6 package previews
 
-These October 4 previews accompany selected standalone source `5542734`. Official Seeed C3 v1.3/C6 v1.0 PCB geometry and licensed generic packages replace the earlier module block. The bare C3/C6 SoC packages are dimension-checked5 ×5 ×0.85 mm nominal with reviewed pin 1 orientation. Complete manufacturer assembly CAD, button/regulator exact heights, header seating and physical case fit remain unverified. The earlier galleries below are retained historical views.
+These October 4 previews accompany source `5542734`; the later plot-only correction `b87d3e8` preserves their board/component geometry. Official Seeed C3 v1.3/C6 v1.0 PCB geometry and licensed generic packages replace the earlier module block. The bare C3/C6 SoC packages are dimension-checked5 ×5 ×0.85 mm nominal with reviewed pin 1 orientation. Complete manufacturer assembly CAD, button/regulator exact heights, header seating and physical case fit remain unverified. The earlier galleries below are retained historical views.
 
 ![Current C3 partial package preview](images/current-rev3c/c3-verified-package.png)
 

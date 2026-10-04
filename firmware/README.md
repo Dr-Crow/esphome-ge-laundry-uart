@@ -1,4 +1,8 @@
-# Set up and use a Rev 2.x board
+# Firmware profiles and board service
+
+Choose the profile family for the actual board. [Shared Rev3C profiles](shared-rev3c/README.md) cover XIAO C3/C6 and GEA2/GEA3; [classic Rev1 profiles](rev1-classic/README.md) cover its distinct ESP32 wiring. The two reference configurations below cover the historical Rev2.x interface. All eight standalone profiles are declared in CI. Fresh integrated config/compile has not run because the exact ESPHome environment is unavailable; stored earlier build receipts are historical evidence.
+
+## Rev2.x reference setup
 
 These examples use the maintained [ESPHome GEA component](https://github.com/mguaylam/esphome-gea) and are software references for the historical Rev 2.x interface. They do not establish board power or appliance qualification.
 

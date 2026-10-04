@@ -1,5 +1,17 @@
 # Board validation and current decisions
 
+## Current integration recheck
+
+The new `integration/ge-restored-final-2026-10-04` branch combines the complete genuine final per-revision, firmware, CI and comparison histories. It includes the selected Rev3C stencil correction `b87d3e8`. It is a newly identified integration; the earlier `f85ba98` integration's omitted ancestor/tree remains unavailable.
+
+Fresh local checks on October 4 after source restoration use the exact KiCad 9.0.9 image, official pinned libraries and matching Python/pcbnew runtime. All seven full-severity ERC/all-track DRC checks and all seven intended-rule audits pass with zero errors, warnings, open connections or schematic-parity issues. Source/CAM parity passes all seven. Full BOM/CPL manufacturing checks pass Rev2.1/2.2/3A/3B/3C; Rev1/Rev2's missing current supplier inputs stay explicit failures. Twenty-eight regression tests pass, including rejection of source-matched drill-marker stencils and deleted legacy Power-net memberships.
+
+The current [CI review receipt](../../ci/validation/INTEGRATED-CI-REVIEW.json) binds all 380 CAD dependencies, current configuration/test hashes and eight profile/include inventories. All 21 power/source/physical release gates remain blocked. Fresh firmware config/compile, hosted jobs and external schema validation have not run in this integration. Older compilation and integration reports below retain their historical source boundaries; their binaries are not freshly verified.
+
+Rev3C's [stencil review](../../pcb/rev3c/STENCIL-REVIEW.md) removes 26 unintended openings from each paste layer; existing SMT geometry and BOM/CPL are preserved. Rev2.1/2.2/3A/3B already use drillshape 0, and independent fresh native paste/CAM audits pass. Unplaced source-paste apertures remain for Rev2.2 U1 and Rev3A/3B/3C D8 and require assembler review. Prior Rev3C quote totals apply to the earlier Gerber ZIP and need refresh.
+
+## Prior engineering checkpoints
+
 [Comparison](README.md) · [Exact source heads](HANDOFF.md) · [Pricing](PRICING.md) · [Finish plan](FINISH-PLAN.md)
 
 Updated October 4, 2026 at 06:58 UTC; strict seven-revision native checks and exact source-bound quote snapshots. The shared Rev3C design with two 40 V-rated TPS1H200A switches is selected. It retains both appliance PIN1/PIN3 inputs, automatic PIN1 priority, the AP63205 buck and C3/C6 header functions. The Rev3B rated-protection backport has passed independent digital review; Rev3A rated protection, exact connector lands and zero-warning schematic normalization are independently reviewed and staged; all seven revisions now have zero native findings. Older revisions remain separate. Selection and digital passes do not qualify a 40 V board, appliance operation, assembly, thermal behavior or enclosure.

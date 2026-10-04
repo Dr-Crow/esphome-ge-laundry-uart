@@ -18,17 +18,20 @@ This directory keeps every board revision in a separate package so source files,
 
 | Revision | Status | Available material |
 | --- | --- | --- |
+| [Rev 3C](rev3c/README.md) | Selected socketed C3/C6 prototype; qualification open | Rated dual-input source, four firmware profiles, corrected stencils, factory trio, partial component previews and illustrated ordering guide. |
+| [Rev 3B](rev3b/README.md) | Rated soldered-C3 alternative; qualification open | Native source, matched factory package, typed placement evidence and partial C3 previews; exact module stock remains a gate. |
+| [Rev 3A](rev3a/README.md) | Rated integrated-C3 alternative; qualification open | Native source, matched factory package, reviewed USB shell slots/lands and placement evidence; assembler solder/retention review remains open. |
 | [Rev 2.2](rev2.2/README.md) | Historical candidate; qualification open | Corrected KiCad source, matched factory package, and validation exports. |
-| [Rev 2.1](rev2.1/README.md) | Built; superseded | KiCad 9 source, JLCPCB package, drill maps, and repair image. |
-| [Rev 2.0](rev2.0/README.md) | Built; superseded | PCBA archive, schematic, board model, renders, and photographs. |
-| [Rev 1.0](rev1.0/README.md) | Historical | Gerber archive only. |
+| [Rev 2.1](rev2.1/README.md) | Historical; superseded; qualification open | Corrected KiCad source, source-bound supplier files, drill maps and explicit placement conventions. |
+| [Rev 2.0](rev2.0/README.md) | Historical; qualification open | Restored editable source, regenerated current CAM and preserved original PCBA archive; current supplier BOM/CPL and rotations remain unqualified. |
+| [Rev 1.0](rev1.0/README.md) | Historical; qualification open | Restored editable source, regenerated current CAM and preserved original Gerber archive; original purchasing/module/buck identity remains missing. |
 
 > [!IMPORTANT]
 > Historical RX/TX labels use an endpoint perspective; verify the exact ESP GPIO-to-adapter direction rather than inferring a hardware swap. The U1 supervisor has reported boot-loop issues on Rev2.1. Historical manufacturing packages are not qualified corrected sources.
 
 Rev 2.2 addresses those known board-file problems but is not proven until assembled boards pass electrical, appliance, and enclosure testing. Keep the three matched files together for review; qualification and exact supplier process approval are still required before ordering.
 
-Not every revision has the same files. The table lists what is actually available; missing source files, exports, and images were not recreated.
+All seven revisions have fresh full-severity native ERC/DRC and intended-rule checks with no findings. Source/CAM parity passes for all seven; complete source-bound BOM/CPL checks pass Rev2.1/2.2/3A/3B/3C. Rev1/Rev2's missing current supplier inputs remain explicit CI failures. All release gates remain open. See [validation](../docs/revision-comparison/VALIDATION.md) and the [finish plan](../docs/revision-comparison/FINISH-PLAN.md).
 
 ## Historical revisions
 
