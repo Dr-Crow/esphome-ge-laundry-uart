@@ -1,0 +1,66 @@
+{
+  "target_revision": "rev1.0",
+  "candidate_commit": "51effc2fc3adfa5acbbe1469120566866044a9ad",
+  "source_commit": "2088c3acbe2766541cf4b2daa4a5f45e6ed5e4da",
+  "source_hash_updates": {
+    "pcb/rev1.0/design/OnionStraws.kicad_sch": "ded9db1a9f1b2e56d73509cd068acb9709b5f97b9fec8ab2d99018710c7689cb",
+    "pcb/rev1.0/design/symbols/LegacySymbols.kicad_sym": "c42547003cc1a60f07f9f2618f46c48464296667441811cda0dfc87ed4199a5c"
+  },
+  "native_validation_updates": {
+    "ERC_errors": 0,
+    "ERC_warnings": 0,
+    "DRC_errors": 0,
+    "DRC_warnings": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "all_severity_warning_free": true,
+    "hardware_qualified": false,
+    "fabrication_approved": false
+  },
+  "replace_generated_artifacts": {
+    "pcb/rev1.0/validation/schematic.pdf": "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/after-schematic.pdf",
+    "pcb/rev1.0/validation/schematic.png": "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/after-schematic.png",
+    "pcb/rev1.0/validation/native-kicad-9.0.9/erc.json": "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/after-erc.json",
+    "pcb/rev1.0/validation/native-kicad-9.0.9/drc-all-track-errors.json": "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/after-drc.json",
+    "pcb/rev1.0/validation/native-kicad-9.0.9/netlist.xml": "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/after.net.xml"
+  },
+  "focused_source_bound_evidence": [
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/proof.json",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/presentation-delta.json",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/before-tracked-sha256.json",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/before.net.xml",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/before-erc.json",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/before-drc.json",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/negative-control.net.xml",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/fresh-cam-comparison.json",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/check.py",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/schematic_parser.py",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/native_snapshot.py",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/before-board-physical.json",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/after-board-physical.json",
+    "/workspace/shared/ge-oct4-rev1-erc-normalize-proof/physical-pin-memberships.json"
+  ],
+  "source_map_update": {
+    "path": "pcb/rev1.0/design/symbols/source-map.json",
+    "source_symbol": "74xGxx:74LVC2G07",
+    "local_symbol": "LegacySymbols:74LVC2G07",
+    "definition_changes": "Original pin names/numbers/types/shape retained; power pin5 VCC made visible with a 3.175mm presentation lead. Pin2 GND remains original hidden zero-length pin."
+  },
+  "docs_to_update": [
+    "pcb/rev1.0/README.md alias count",
+    "pcb/rev1.0/design/README.md namespace-only statement exception for VCC presentation",
+    "pcb/rev1.0/validation/NATIVE-REVIEW.md current counts/power alias resolution/link to new delta proof; retain prior review as historical scoped receipt"
+  ],
+  "manifest_to_update": {
+    "path": "pcb/rev1.0/validation/native-kicad-9.0.9/manifest.json",
+    "action": "Bind candidate CAD hashes, refreshed ERC/DRC/netlist/PDF/PNG and focused proof artifact hashes. Keep original-source/historical-independent receipts explicitly scoped to their original input hashes; do not rewrite past review as if it observed this new candidate."
+  },
+  "ci_updates_needed": {
+    "path": "ci/manifest.json",
+    "board": "rev1.0",
+    "status": "Native9.0.9 has zero all-severity findings; original historical-CAM, procurement/module and electrical/physical gates remain open",
+    "readiness_source_reason": "Remove alias-warning blocker only; retain historical original-CAM parity, supplier assembly selection and component/module qualification blockers",
+    "driver": "If the integration carries source hashes or warning expectations elsewhere, update those exact bindings to this candidate; preserve red hardware readiness."
+  },
+  "preserve_CAM_and_firmware": "All current/historical CAM, BOM/CPL, PCB/project/local footprints and firmware remain byte-exact. No export archive regeneration needed. Nine current Gerber payloads and two drills were freshly reproduced equal after only generation-date/checksum normalization."
+}

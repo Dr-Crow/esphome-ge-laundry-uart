@@ -1,0 +1,42 @@
+{
+  "native_version": "9.0.9",
+  "review_type": "Actual PNG pixels rendered from native schematic/PDF/SVG source exports; no substituted3D models",
+  "images": [
+    {
+      "path": "pcb/rev1.0/validation/schematic.png",
+      "sha256": "7dcd912dd10a2c589862d470ece577b05532d517773fa2b2c4e0122fedcce856",
+      "actual_pixels_inspected": true
+    },
+    {
+      "path": "pcb/rev1.0/validation/views/front.png",
+      "sha256": "55882b85804b99eb1c143ea1d1b34bac2c8daacb6012df8f81f4f8452ef28007",
+      "actual_pixels_inspected": true
+    },
+    {
+      "path": "pcb/rev1.0/validation/views/back.png",
+      "sha256": "97d0baa9a70a057cd3d5ce045c26671ee33635cb3eef0463df7de83d2fd96939",
+      "actual_pixels_inspected": true
+    },
+    {
+      "path": "pcb/rev1.0/validation/copper/front.png",
+      "sha256": "2bf9cf6d7d8eba14feba916ed766c4ff4eb39d569e20ee3b9218337eb524c9cc",
+      "actual_pixels_inspected": true
+    },
+    {
+      "path": "pcb/rev1.0/validation/copper/back.png",
+      "sha256": "8a532b56ae2fc4844aed15db5ba7d8cdc0816a4362f7df214cea3bb152431234",
+      "actual_pixels_inspected": true
+    },
+    {
+      "path": "pcb/rev1.0/validation/views/drill-PTH.png",
+      "sha256": "4716e89184f2e5e22671579c290e011fe8b7538736d46491019c737a3c2675f8",
+      "actual_pixels_inspected": true
+    },
+    {
+      "path": "pcb/rev1.0/validation/views/drill-NPTH.png",
+      "sha256": "042cdebd2aadc4a70e2ecdf61d5600b11ea02784439478dddd5e4abc9bdc5384",
+      "actual_pixels_inspected": true
+    }
+  ],
+  "findings": "Schematic flags and unchanged circuit readable. Front connector silk terminates inside edge; no floating outside silk. Original component labels retained. Both native copper regions and original antenna/header clearances retained. Drill maps show89PTH and6NPTH holes with source sizes; no new holes."
+}

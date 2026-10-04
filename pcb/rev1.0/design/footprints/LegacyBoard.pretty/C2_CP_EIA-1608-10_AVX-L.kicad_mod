@@ -1,0 +1,212 @@
+(footprint "C2_CP_EIA-1608-10_AVX-L"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Tantalum Capacitor SMD AVX-L (1608-10 Metric), IPC_7351 nominal, (Body size from: https://www.vishay.com/docs/48064/_t58_vmn_pt0471_1601.pdf), generated with kicad-footprint-generator")
+	(tags "capacitor tantalum")
+	(property "Reference" "C2"
+		(at 0 -1.48 0)
+		(layer "F.SilkS")
+		(uuid "9a55ca95-d316-498f-98c8-207c197af4a9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "100n"
+		(at 0 1.48 0)
+		(layer "F.Fab")
+		(uuid "b491e8a7-3b46-4bda-ad15-5a459ba74777")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7b734fa-1350-461f-8409-cc970bdba4f7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f497df6-08c2-4d86-b105-ea0bad38321d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.51 -0.785)
+		(end -1.51 0.785)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e63a3a91-7095-431c-b1c6-51c74e3e9802")
+	)
+	(fp_line
+		(start -1.51 0.785)
+		(end 0.8 0.785)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "90d12c5f-0bd7-4528-8817-891166cd6fe1")
+	)
+	(fp_line
+		(start 0.8 -0.785)
+		(end -1.51 -0.785)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d9afdd33-95cb-43a1-a23c-e024eb27cee4")
+	)
+	(fp_line
+		(start -1.5 -0.78)
+		(end 1.5 -0.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1376865c-bb5d-470a-b2ed-d3a43619f998")
+	)
+	(fp_line
+		(start -1.5 0.78)
+		(end -1.5 -0.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "317a2695-b261-44e5-b3c6-429f1d286438")
+	)
+	(fp_line
+		(start 1.5 -0.78)
+		(end 1.5 0.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "abfe6264-0fa3-48c8-8a5b-5e27dcd61e72")
+	)
+	(fp_line
+		(start 1.5 0.78)
+		(end -1.5 0.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ad3cd6c2-6851-4104-85ef-391f92ef2786")
+	)
+	(fp_line
+		(start -0.8 -0.125)
+		(end -0.8 0.425)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "973031d7-a526-49bb-911f-d58359e5eb32")
+	)
+	(fp_line
+		(start -0.8 0.425)
+		(end 0.8 0.425)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a2a8bd26-30d6-4ad2-aac0-48024ad52ac5")
+	)
+	(fp_line
+		(start -0.5 -0.425)
+		(end -0.8 -0.125)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c4b29d13-5e27-45f9-a1fe-e27da5820d82")
+	)
+	(fp_line
+		(start 0.8 -0.425)
+		(end -0.5 -0.425)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "adfe27c5-53e3-4b13-8ff5-11118b77b0a8")
+	)
+	(fp_line
+		(start 0.8 0.425)
+		(end 0.8 -0.425)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "22282eaa-f7af-4ade-a7f4-3644d45f4d6b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "9ab0ae58-6382-4472-9054-bfcc7b480895")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.7125 0)
+		(size 1.075 1.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2380952381)
+		(uuid "002ab888-27c5-40ab-b7a2-dda171e946a2")
+	)
+	(pad "2" smd roundrect
+		(at 0.7125 0)
+		(size 1.075 1.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2380952381)
+		(uuid "010c1e11-2f2b-47a5-9caf-cd4b3a4c6f7e")
+	)
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/Capacitor_Tantalum_SMD.3dshapes/CP_EIA-1608-10_AVX-L.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

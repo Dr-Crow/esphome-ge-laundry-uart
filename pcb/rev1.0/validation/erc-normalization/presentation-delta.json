@@ -1,0 +1,72 @@
+{
+  "symbol": "LegacySymbols:74LVC2G07",
+  "physical_pin": "U1.5",
+  "pinfunction_preserved": "VCC",
+  "pintype_preserved": "power_in",
+  "old_common_pin": {
+    "local_at": [
+      "0",
+      "2.54",
+      "90"
+    ],
+    "length_mm": "0",
+    "hidden": true
+  },
+  "new_common_pin": {
+    "local_at": [
+      "0",
+      "5.715",
+      "90"
+    ],
+    "length_mm": "3.175",
+    "hidden": false
+  },
+  "ground_pin_2_unchanged": true,
+  "moved_existing_power_symbols": [
+    {
+      "reference": "#PWR0135",
+      "from_mm": [
+        "204.47",
+        "149.86"
+      ],
+      "to_mm": [
+        "209.55",
+        "156.21"
+      ],
+      "rotation_preserved": "180",
+      "explicit_pin_endpoint_mm": [
+        "204.47",
+        "153.035"
+      ],
+      "wire_bend_mm": [
+        "204.47",
+        "156.21"
+      ]
+    },
+    {
+      "reference": "#PWR0122",
+      "from_mm": [
+        "205.74",
+        "90.805"
+      ],
+      "to_mm": [
+        "210.82",
+        "97.155"
+      ],
+      "rotation_preserved": "180",
+      "explicit_pin_endpoint_mm": [
+        "205.74",
+        "93.98"
+      ],
+      "wire_bend_mm": [
+        "205.74",
+        "97.155"
+      ]
+    }
+  ],
+  "new_wire_count": 4,
+  "U1_reference_value_shift_x_mm": "-3.81",
+  "physical_instance_positions_rotations_pin_uuids_unchanged": true,
+  "new_parts": 0,
+  "layout_review_refinement": "Move each +5V arrow 5.08mm right with a right-angle lead to separate it from the visible vertical VCC pin name."
+}

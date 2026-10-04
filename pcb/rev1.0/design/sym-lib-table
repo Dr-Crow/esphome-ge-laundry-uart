@@ -1,0 +1,3 @@
+(sym_lib_table
+ (lib (name "LegacySymbols")(type "KiCad")(uri "${KIPRJMOD}/symbols/LegacySymbols.kicad_sym")(options "")(descr "Exact Rev1 embedded definitions with original pins; external-source ERC flags only"))
+)

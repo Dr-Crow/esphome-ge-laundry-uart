@@ -1,0 +1,646 @@
+{
+  ".gitignore": {
+    "sha256": "eb46284fa11fb91e36818f7d61a558b8ac91520fccace1a2741f05d57606716b",
+    "bytes": 148
+  },
+  "CONTRIBUTING.md": {
+    "sha256": "3ce297e257e9b722eda825e2cbe3a96228361bada36fc0a61344240fdef00711",
+    "bytes": 1498
+  },
+  "LICENSE": {
+    "sha256": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc",
+    "bytes": 1063
+  },
+  "README.md": {
+    "sha256": "de334e9357d596e0119e94e72a5deb2bdec37e13681aebc4b38f5e92806eaf66",
+    "bytes": 2996
+  },
+  "case/README.md": {
+    "sha256": "59023694d2095f98a79b83425f94107e3b1a54396d75502e3154b2784ec143c7",
+    "bytes": 501
+  },
+  "case/rev2/README.md": {
+    "sha256": "5e6694b73a16206bbb8662e1182b0dda249ab75c818146a1d6ba87f0802f69d2",
+    "bytes": 1116
+  },
+  "case/rev2/exports/v2-case-base.stl": {
+    "sha256": "739c5f7357e1d10d52c355661ea8c1f811e291f216ba126e091cffd9928b71c3",
+    "bytes": 94684
+  },
+  "case/rev2/exports/v2-case-lid.stl": {
+    "sha256": "4500f0ee8a07d7c433e72eb5f8c367609b7006373a47c26fb710467b33f0bc84",
+    "bytes": 736484
+  },
+  "case/rev2/exports/v2-case.step": {
+    "sha256": "243cce43255c380a1f37753ea1207d86cba15170a35942d596d44534094ea14b",
+    "bytes": 4284772
+  },
+  "case/rev2/images/case-render.png": {
+    "sha256": "f3ea396dc34747be375797d750fcebcd245988e5b1fc4e24ccb1832856b7e8db",
+    "bytes": 806168
+  },
+  "case/rev2/images/enclosure-render.png": {
+    "sha256": "73f43d41add105ebe2d50c45b2a04c63a8393bd7b4453c95464b6d4f5db7b81e",
+    "bytes": 1740570
+  },
+  "case/rev2/images/print-supports.png": {
+    "sha256": "d1152abe1c7cc561aaeb5175f806256e9f87b50913acd0ddd2d0b932a1fbc4cf",
+    "bytes": 933021
+  },
+  "case/rev2/v2-case.f3z": {
+    "sha256": "89aaac626923fe750aebcc5ddf7258b36e25d596ef2ab59b1aca296cd7e85cb2",
+    "bytes": 4907488
+  },
+  "firmware/README.md": {
+    "sha256": "8b5dd8e283b955d2becb5b97f2f4458285987a4595f5895b8863df5e788ae916",
+    "bytes": 3372
+  },
+  "firmware/gea2.yaml": {
+    "sha256": "291e96813c9dd4334602120f54c1c1098d12c8640ca13e4a8847a755e651d811",
+    "bytes": 4277
+  },
+  "firmware/gea3.yaml": {
+    "sha256": "a45960f49f296ed2608e82fc6abf6abc736fbe902ef328f52fcb52b5dc49bc3b",
+    "bytes": 3483
+  },
+  "pcb/ORDERING.md": {
+    "sha256": "ffbdc0ef11926626c566d1e4597b75cc043e96c7545b54a1469d40489410dd38",
+    "bytes": 2403
+  },
+  "pcb/README.md": {
+    "sha256": "fff434710ec54d0454941a01240d25eb3ac399f2d0cbaca4f463b9cf6740aa47",
+    "bytes": 3305
+  },
+  "pcb/rev1.0/README.md": {
+    "sha256": "73fbf16322ff71b7b50de8e3bc4848c0f24975afb93daedc6fd38683b9b61f0c",
+    "bytes": 1589
+  },
+  "pcb/rev1.0/STANDALONE-REVIEW.md": {
+    "sha256": "eaa3deea3d3d5f2394b97c6a8e621ded6adf97c8f5e8d2e9800891e523bfee2c",
+    "bytes": 2614
+  },
+  "pcb/rev1.0/design/KICAD-LIBRARY-LICENSE.md": {
+    "sha256": "45d2bce75e5a4208f5afb01b8fb2c406e700371c4fe2b5f5cd5c443d46db4d8f",
+    "bytes": 2101
+  },
+  "pcb/rev1.0/design/NET-NAME-CORRECTION.json": {
+    "sha256": "21a9a8d89513af3304c1fbb952ec5fd69b64e77d46cf5d8588691f2b5cb64c32",
+    "bytes": 2348
+  },
+  "pcb/rev1.0/design/OnionStraws-cache.lib": {
+    "sha256": "fad22aac94fecea1b25220b07bf9b1625cec08fd7e24c5dd68bab64986e1fcb1",
+    "bytes": 9401
+  },
+  "pcb/rev1.0/design/OnionStraws.kicad_pcb": {
+    "sha256": "fbee229893652b7e36fe99563679229b8be1422968c2087ffb71ad33aeba7655",
+    "bytes": 810884
+  },
+  "pcb/rev1.0/design/OnionStraws.kicad_pro": {
+    "sha256": "282b8b3c4890a52ab2c91742f6e878372fd8346f1fea58dd86f2c2e6beb5394c",
+    "bytes": 9997
+  },
+  "pcb/rev1.0/design/OnionStraws.kicad_sch": {
+    "sha256": "14d6d4898d4373b254c7241ff4fb2b5bf586d713bc1599f8009d1c154b0cd163",
+    "bytes": 290266
+  },
+  "pcb/rev1.0/design/README.md": {
+    "sha256": "6f10b244e38d6971d3e8c85007180326cfac917459c7593e590623fba3616eb6",
+    "bytes": 1346
+  },
+  "pcb/rev1.0/design/RESTORED-PROVENANCE.json": {
+    "sha256": "77c3dd95d9fd82caff7f6b11ab2475fb5f8a2742e1928e7f168e97305bfbf7f1",
+    "bytes": 1610
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C10_C_0805_2012Metric.kicad_mod": {
+    "sha256": "d1cd089fb401fb6cddb58b5aed5278463154c2b5e58ea58063fa0dbdf5b73120",
+    "bytes": 3628
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C11_C_0805_2012Metric.kicad_mod": {
+    "sha256": "10898e7acfd60a1172e5b02a5f9774d5748348a1cd6b3f003c760fdf68d0c0fe",
+    "bytes": 3631
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C1_CP_EIA-1608-10_AVX-L.kicad_mod": {
+    "sha256": "d0bda50ece4c2b2c714a4fdc51b939835f77081c18ceb1109b94db2ce626ce62",
+    "bytes": 3836
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C2_CP_EIA-1608-10_AVX-L.kicad_mod": {
+    "sha256": "1a39f26e4ea15839746d01ab2c20caf701cc25ccab541b2f9e2dfec84ac8af33",
+    "bytes": 3836
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C3_CP_EIA-1608-10_AVX-L.kicad_mod": {
+    "sha256": "6f47bfb3ca42db9440367ee70bdc1c1f16aa86ff3668739e8bf2dff14d658c40",
+    "bytes": 3836
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C4_C_0805_2012Metric.kicad_mod": {
+    "sha256": "8a4df0cbaf1d5e9e937487c969940b356bb8f2504b759cc52daec199a74235f3",
+    "bytes": 3621
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C5_C_0805_2012Metric.kicad_mod": {
+    "sha256": "2a4be55af2e24fcdb43c642203212d94e6cb639b5315be8fac792ff0ac393dc0",
+    "bytes": 3622
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C6_C_0805_2012Metric.kicad_mod": {
+    "sha256": "7a755114d72f1fd3d9c72275358bb5e62568c6234eea1f5f72af010e36578e7a",
+    "bytes": 3622
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C7_C_0805_2012Metric.kicad_mod": {
+    "sha256": "6596bcc1251f9e26ca6c3564cb3fbd76c83fff76c111fb6ff21c90ac5d8871fb",
+    "bytes": 3625
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C8_C_0805_2012Metric.kicad_mod": {
+    "sha256": "51c8c95e4e7e484877ebe815b5c9b1cffbc0e90ffe71db2d07c1e9c74c298955",
+    "bytes": 3629
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/C9_C_0805_2012Metric.kicad_mod": {
+    "sha256": "e15f3f6fdb5a7e52243ef7e797ddf1d42d931e6c4ed998d81eb4bca1c3241c64",
+    "bytes": 3629
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/D1_SOT-23.kicad_mod": {
+    "sha256": "686b6c0422ff5591caaff961ad56147119b665a25a2747102bb4fd7d2ca65613",
+    "bytes": 4077
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/D2_SOT-23.kicad_mod": {
+    "sha256": "fdfec4bde82b78ef1e1f9b31e5015e16ef50ed74aa66477713f51996a6c97fe7",
+    "bytes": 4077
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/D3_SOT-23.kicad_mod": {
+    "sha256": "0ac79d8fbcf1070044ef7bc124f3307b40e37e461d292374a81b4c8bedbb940f",
+    "bytes": 4083
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/D4_SOT-23.kicad_mod": {
+    "sha256": "96f1b8a45bcae46adf6519565dfea83767ea6daa36f9c55cd25232d05ac64239",
+    "bytes": 4083
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/D5_D_SOD-123.kicad_mod": {
+    "sha256": "6a577cdc5d675d9709e317fe60038ed96e3cbf7d7cde7754ac41095bd1f29d1e",
+    "bytes": 4441
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/D6_LED_D5.0mm.kicad_mod": {
+    "sha256": "190258ae99cc527ad3b74b1731b4e506b447f17f33bde8a3520c93a45546838c",
+    "bytes": 3684
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/D7_D_SMA.kicad_mod": {
+    "sha256": "7d1d42b3f50317f4dc324eadb38a91ba352ecf176e3b1c908759e400bacadd79",
+    "bytes": 4400
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/F1_R_1210_3225Metric_Pad1.30x2.65mm_HandSolder.kicad_mod": {
+    "sha256": "f942d85a4e43d3df65d3880db9fb1f4ee4becc453dd07fdbd5246c01265dc89c",
+    "bytes": 3640
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/H1_MountingHole_3.2mm_M3_DIN965.kicad_mod": {
+    "sha256": "020b8a7b67ed9065218ec0df99c5306c87520255105615c280309517ac8b0be8",
+    "bytes": 1731
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/H2_MountingHole_3.2mm_M3_DIN965.kicad_mod": {
+    "sha256": "c79ef6a3efcf47a27ae9cb7c66b81ea7fdad3eaea41f9f651cb38a479b53800b",
+    "bytes": 1736
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/H3_MountingHole_3.2mm_M3_DIN965.kicad_mod": {
+    "sha256": "436221f80a8d4d06521a26d5a4beb52acab0b48ce2613396701420a032ebca29",
+    "bytes": 1736
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/H4_MountingHole_3.2mm_M3_DIN965.kicad_mod": {
+    "sha256": "6ae71e03a23932ce60b44d7efa9e53b6b632f7f50391b1888e0ae9d0cb46f19e",
+    "bytes": 1731
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/J1_PinHeader_1x04_P2.54mm_Horizontal.kicad_mod": {
+    "sha256": "e6bc15dcdf520408355563d7821a28cc5c46fadd62bb748a9eb2992f7b671c72",
+    "bytes": 4839
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/J2_RJ45_Amphenol_54602-x08_Horizontal.kicad_mod": {
+    "sha256": "5e9e28481abc766983d2a67c15887a59677c351e17f3a0636cb911bc89ac59f7",
+    "bytes": 5727
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/Q1_SOT-23.kicad_mod": {
+    "sha256": "9801cdf09b93fb32ae3b900dee696feaf26a7a33526b044bd6fa70436c5846f4",
+    "bytes": 4081
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/Q2_SOT-23.kicad_mod": {
+    "sha256": "a8e21b4d7237f3f91e54f8a95857687c59952c9950d048d5466b00ed595adefb",
+    "bytes": 4081
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R10_R_0805_2012Metric.kicad_mod": {
+    "sha256": "e7af838fd4ef9ced5a6dbdc55a9b452705e9a1f3671ab02d172a1f420ed6bc60",
+    "bytes": 3557
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R11_R_0805_2012Metric.kicad_mod": {
+    "sha256": "b1194c24423d6d9cf49c72caa7b058a907d0de322ccf199df3f27a176327b467",
+    "bytes": 3550
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R12_R_0805_2012Metric.kicad_mod": {
+    "sha256": "98bc9d99c52ebff969a1a453a47dde388db6058f70dcd949fb4c0a5f471a1bec",
+    "bytes": 3550
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R13_R_0805_2012Metric.kicad_mod": {
+    "sha256": "19f8c10ecad746f2dce853ab862608afacc0a92e05360bd3921eb3763f7a416a",
+    "bytes": 3557
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R14_R_0805_2012Metric.kicad_mod": {
+    "sha256": "c6d5accf42f935c1ccc0db65297bd901012c80a7571c0e23895ffb87096810dc",
+    "bytes": 3550
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R15_R_0805_2012Metric.kicad_mod": {
+    "sha256": "b467c17692c96bf7f2979e03aabb3e73c4f2761dc86ad6fb65e43c4a0504920b",
+    "bytes": 3550
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R16_R_0805_2012Metric.kicad_mod": {
+    "sha256": "d9080b6ad937e9641912bd3cca7703be45b1be400f2e9434ee92f6e0aae3b3f6",
+    "bytes": 3550
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R17_R_0805_2012Metric.kicad_mod": {
+    "sha256": "683a68eacf7e1458a9b5d2b38e214738e36e5f4668852d7e9700a65507e6e06f",
+    "bytes": 3554
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R18_R_0805_2012Metric.kicad_mod": {
+    "sha256": "895bf0595e0270056e59baec2c627cdacdc2df0431076793dbad85a866c4e2fb",
+    "bytes": 3550
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R19_R_0805_2012Metric.kicad_mod": {
+    "sha256": "80c49cdd8ae6a0c64b98ca9bb22ce51862cf7fa51d98fbb29f0151b6dd4c4904",
+    "bytes": 3549
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R1_R_0805_2012Metric.kicad_mod": {
+    "sha256": "956cd105769204dcb7a62118611a1c8c536716dce671c03a5f25e5ad6a0a8de8",
+    "bytes": 3549
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R2_R_0805_2012Metric.kicad_mod": {
+    "sha256": "94f38ecf1bc1e6cce8cc5e26d286438415037669ba924ba6b5007b8ce75253e8",
+    "bytes": 3548
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R3_R_0805_2012Metric.kicad_mod": {
+    "sha256": "b3db03f623a5ae5cee8c1c7c380ebb868207f35163a5e03bf151968762592186",
+    "bytes": 3550
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R4_R_0805_2012Metric.kicad_mod": {
+    "sha256": "0cdf65b28010296fddfc7e8d49e659353a8b1561a6d1c3366724a2d4230baf58",
+    "bytes": 3548
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R5_R_0805_2012Metric.kicad_mod": {
+    "sha256": "d10ddd46fa58fa28a73b887b0dcbe57dda0dec9cde32f6aaecd0ca1bc8e58ff2",
+    "bytes": 3549
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R6_R_0805_2012Metric.kicad_mod": {
+    "sha256": "f152eabb991232d2e4fe2d4aaba0c3d2c748d05a62a52e36fbb1a1acaf56b5d2",
+    "bytes": 3549
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R77_R_0805_2012Metric.kicad_mod": {
+    "sha256": "fe50d6f29c854aa600fc20d3152240d14d42afb584557f3988c053f8069f0e76",
+    "bytes": 3558
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R7_R_0805_2012Metric.kicad_mod": {
+    "sha256": "6fae66a68bd924f4556f8da5fa62c653d18d72b31e2e94b73ae47b7109f845fc",
+    "bytes": 3555
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R88_R_0805_2012Metric.kicad_mod": {
+    "sha256": "fac4f24a41489794635d68ee18fcbbc43a27d7189d7169f4174bf5da35ddfdec",
+    "bytes": 3557
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R8_R_0805_2012Metric.kicad_mod": {
+    "sha256": "852ca0b071084e3720afb8142144e09146a27c3415b814cae4b838d59e19ccea",
+    "bytes": 3549
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R99_R_0805_2012Metric.kicad_mod": {
+    "sha256": "332b3ae66a81dd489e8ceae5b2f1218a52dd7288e9a9514cd0f5f9f63434248a",
+    "bytes": 3557
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/R9_R_0805_2012Metric.kicad_mod": {
+    "sha256": "e47a72f7f2c3fc7d40f97394a97e932c496fa0257e0995177931d3c310d0aefb",
+    "bytes": 3549
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/SW1_SW_PUSH_6mm_H13mm.kicad_mod": {
+    "sha256": "5989be1cbb5e1e69ab66e9c006cb2317daa825a3346ae97fdd2945b4a96d4d2c",
+    "bytes": 5647
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/TP1_TestPoint_THTPad_D2.5mm_Drill1.2mm.kicad_mod": {
+    "sha256": "14d6ca4004034931ee9a65afb848b325765d1858bed58bb819c193539d8101d8",
+    "bytes": 1739
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/TP2_TestPoint_THTPad_D2.5mm_Drill1.2mm.kicad_mod": {
+    "sha256": "251bead05b9de9a68438e125c53073204e2e6258d324fe88fae69c7b51c3f3aa",
+    "bytes": 1739
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/TP3_TestPoint_THTPad_D2.5mm_Drill1.2mm.kicad_mod": {
+    "sha256": "a741f4a62f59ae223a63b5ea747ff98804e72dfa9067fe64710514874822476f",
+    "bytes": 1739
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/TP4_TestPoint_THTPad_D2.5mm_Drill1.2mm.kicad_mod": {
+    "sha256": "b49adc63c4af572f70b2cc8c34f213fb1c1800d865bb003be7a9e3084441d445",
+    "bytes": 1736
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/TP5_TestPoint_THTPad_D2.5mm_Drill1.2mm.kicad_mod": {
+    "sha256": "0328946da6481edcb81dbc5c105b3531e8b614f510371fd797d2fb2f775bc467",
+    "bytes": 1739
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/TP6_TestPoint_THTPad_D2.5mm_Drill1.2mm.kicad_mod": {
+    "sha256": "7a195f13aef33c64dab4bbf638ee670f7ab45e9ee3425ad7e83447b7ff663db8",
+    "bytes": 1739
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/TP7_TestPoint_THTPad_D2.5mm_Drill1.2mm.kicad_mod": {
+    "sha256": "b45d934461f16f199728ced594a577b49a1b9a2a8f996f19fa091708595ef02d",
+    "bytes": 1739
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/U1_SOT-23-6.kicad_mod": {
+    "sha256": "b9f426b5888cf0b0c0a6db2e95d194720eb19451f0c1da919693ded47d63b535",
+    "bytes": 4604
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/U2_SOT-23-6.kicad_mod": {
+    "sha256": "9b191565f6bf36798802ec997a11311bb34d0240f079c46b9942122d0bc79a4b",
+    "bytes": 4602
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/U3_DIP-38_900_ELL.kicad_mod": {
+    "sha256": "61212d56febaf1eb090cf3f7bee217e3a5188093efda425fa40b983b88f7d3ca",
+    "bytes": 9990
+  },
+  "pcb/rev1.0/design/footprints/LegacyBoard.pretty/U4_SOT-23.kicad_mod": {
+    "sha256": "2e5914792834f3a7091ff39094ad008ec6be8b39ed33e1b1a0033da90ec55edd",
+    "bytes": 4085
+  },
+  "pcb/rev1.0/design/footprints/source-map.json": {
+    "sha256": "d7b6a91da1a6f5fc4c9713402c9b69840b4e1c44697ef209f089c6b90ee33a9e",
+    "bytes": 9485
+  },
+  "pcb/rev1.0/design/fp-lib-table": {
+    "sha256": "0b9165a4316185939e8916b15dbc0c3c7fc6ae3ed377a5bd3fa50f7b0dbfd659",
+    "bytes": 220
+  },
+  "pcb/rev1.0/design/sym-lib-table": {
+    "sha256": "098eab6e07e091f73656be274254fc129caa08286d3bd376dcfc580aa56e8793",
+    "bytes": 216
+  },
+  "pcb/rev1.0/design/symbols/LegacySymbols.kicad_sym": {
+    "sha256": "be3ac75b16c05294e4ffd5d2086185e09e3c5f7c90c49d7fc8a76870d8e48600",
+    "bytes": 54024
+  },
+  "pcb/rev1.0/design/symbols/source-map.json": {
+    "sha256": "937066a34350d31a50b8a2f44998a8b23028d19874a7b4ab7e870281c9579867",
+    "bytes": 4031
+  },
+  "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip": {
+    "sha256": "6a3c80fe47a93ec45a44a21d1d35d9692b3aaca6649cdf93bc7cc371a7f84d57",
+    "bytes": 159102
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-B_Cu.gbr": {
+    "sha256": "91a9985e1f2e6d9aae2af211c79a5b9c34e202ab3db428f5a7565802bdcb76e9",
+    "bytes": 172338
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-B_Mask.gbr": {
+    "sha256": "d8104e78f56d2650b2d2312c352fa9fc377a4d8b616fc3995fa36d2f0f5db848",
+    "bytes": 2766
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-B_Paste.gbr": {
+    "sha256": "5bc9d1b9386f41243b2e101a9d27dab5ae19a36ac520cc084a0dd7cf8e61b030",
+    "bytes": 454
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-B_Silkscreen.gbr": {
+    "sha256": "779099c0648897131865172f24cef234185fb43d3ad6f08a9344ec4699afb6f3",
+    "bytes": 455
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-Edge_Cuts.gbr": {
+    "sha256": "4b987bbca16af88c1b987fe1c66787ae2c3438d39aa31d5d2b028cc8b9c31941",
+    "bytes": 680
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-F_Cu.gbr": {
+    "sha256": "5d9d054da23cf43c245686aebfb4abc8324b26dc42d4b177f49aa2881c4e4254",
+    "bytes": 326039
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-F_Mask.gbr": {
+    "sha256": "41c41d2adcacff13fb378b1801e82529ac11c422670569e3e240b7eae5eb1a4a",
+    "bytes": 8637
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-F_Paste.gbr": {
+    "sha256": "2d2686e7d313551f87d4ef66385680225674c169e15221c199fd0f2eb3369757",
+    "bytes": 6310
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-F_Silkscreen.gbr": {
+    "sha256": "6f9dfb03464ed9486e17f23616088841424ab4ae9b53bb0622a28d44b6010689",
+    "bytes": 108252
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-NPTH-drl_map.pdf": {
+    "sha256": "eba89e6b67afdca7ed3cf34772ee73b17f55feb47e7d2cc86155ae10dc9bbc6b",
+    "bytes": 7474
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-NPTH.drl": {
+    "sha256": "48e8122680f687b7baea56cd4f6029e0f1220a17698097b5e5d933ea97ffc6ba",
+    "bytes": 415
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-PTH-drl_map.pdf": {
+    "sha256": "4800d3f951d8e489813f500efd3a040aa49bdfde41cffff6f5242cf919f2e856",
+    "bytes": 22253
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-PTH.drl": {
+    "sha256": "8a36b3eb73773a421f87096751e9b15307da0b009284c440773a4074d3341385",
+    "bytes": 1913
+  },
+  "pcb/rev1.0/review-manufacturing/OnionStraws-job.gbrjob": {
+    "sha256": "517cdd9df3e10016b505df960effd18caa5966d8f3a262d5037109446a71d44f",
+    "bytes": 2721
+  },
+  "pcb/rev1.0/review-manufacturing/README.md": {
+    "sha256": "06843e23e6bb144872caf932544a97a11da99a10087e7bf4f1056815d3a22e23",
+    "bytes": 766
+  },
+  "pcb/rev1.0/review-manufacturing/REVIEW-CAM-OnionStraws-rev1.0.zip": {
+    "sha256": "a26fdafb6f0f618522a10fb538f68a809381c5c08ca4fc25814a95ba2f218d3a",
+    "bytes": 163675
+  },
+  "pcb/rev1.0/validation/NATIVE-REVIEW.md": {
+    "sha256": "e9f6dc74033ec4cff9feab4c96c015a88f2c10f975eabafbbe134ecc9a4bab01",
+    "bytes": 6300
+  },
+  "pcb/rev1.0/validation/board-front.pdf": {
+    "sha256": "f519c24082f101badfc503638a6bd2ef6fdda5f3c4911679ee7c7a5fc06b4e37",
+    "bytes": 179221
+  },
+  "pcb/rev1.0/validation/copper/back.png": {
+    "sha256": "8a532b56ae2fc4844aed15db5ba7d8cdc0816a4362f7df214cea3bb152431234",
+    "bytes": 113667
+  },
+  "pcb/rev1.0/validation/copper/back.svg": {
+    "sha256": "e294c1242eedb05c82a01ab754cd796b947b8254a38ea8fdab68017cca3205e9",
+    "bytes": 131896
+  },
+  "pcb/rev1.0/validation/copper/front.png": {
+    "sha256": "2bf9cf6d7d8eba14feba916ed766c4ff4eb39d569e20ee3b9218337eb524c9cc",
+    "bytes": 168454
+  },
+  "pcb/rev1.0/validation/copper/front.svg": {
+    "sha256": "c2d0c34a706fcd79a553f507004392567ea16d6673019289137ec03374d1c00a",
+    "bytes": 275005
+  },
+  "pcb/rev1.0/validation/native-kicad-9.0.9/INDEPENDENT-REVIEW.md": {
+    "sha256": "db5ce6a44545641fa35e717d3c1a829e8811c9c3973af5142fc13a1c1154e728",
+    "bytes": 3172
+  },
+  "pcb/rev1.0/validation/native-kicad-9.0.9/drc-all-track-errors.json": {
+    "sha256": "3a9cabaad9f048bf27f0ac5ef6e139c7aa9cd32318e0061f66f6e1614db9967e",
+    "bytes": 369
+  },
+  "pcb/rev1.0/validation/native-kicad-9.0.9/erc.json": {
+    "sha256": "3ff48a7b26ca07d3a81da3c3bbda73ed295f20af7ef309a34b10d789cf2439c6",
+    "bytes": 1533
+  },
+  "pcb/rev1.0/validation/native-kicad-9.0.9/independent-historical-review.json": {
+    "sha256": "5f5f747b32730b7b2330a1fc503024018fc98a8da885ef4687adfe16baca86d0",
+    "bytes": 33795
+  },
+  "pcb/rev1.0/validation/native-kicad-9.0.9/manifest.json": {
+    "sha256": "5aa186b1e272c73aea385e32567d8b0a9f21e6d383cce5e5f2a8fb5a1153bc18",
+    "bytes": 23820
+  },
+  "pcb/rev1.0/validation/native-kicad-9.0.9/netlist.xml": {
+    "sha256": "05f4079db6197dcf03bd96d267019016b2c813bf994a0c2c1fb0314ef2e556bc",
+    "bytes": 75908
+  },
+  "pcb/rev1.0/validation/native-kicad-9.0.9/preservation-proof.json": {
+    "sha256": "0293947cd17cc8cd894bf4d809995b30ca9839d04dbfbfdff29a32525c5c4e6e",
+    "bytes": 8261
+  },
+  "pcb/rev1.0/validation/native-kicad-9.0.9/visual-review.json": {
+    "sha256": "4859afd230a0faa7e0d3d47ad7941c84766ce11ee06a797593ffaef2a43163d2",
+    "bytes": 1821
+  },
+  "pcb/rev1.0/validation/schematic.pdf": {
+    "sha256": "e1ccde55af567edfb790c896bc08bb26496819ae111973e57adbcc77971bbf53",
+    "bytes": 317990
+  },
+  "pcb/rev1.0/validation/schematic.png": {
+    "sha256": "7dcd912dd10a2c589862d470ece577b05532d517773fa2b2c4e0122fedcce856",
+    "bytes": 193817
+  },
+  "pcb/rev1.0/validation/views/back.png": {
+    "sha256": "97d0baa9a70a057cd3d5ce045c26671ee33635cb3eef0463df7de83d2fd96939",
+    "bytes": 114470
+  },
+  "pcb/rev1.0/validation/views/back.svg": {
+    "sha256": "e1ec9570f6219b0dc80b7ff664a791eaffe7bff012689ffa891807542fe73465",
+    "bytes": 131832
+  },
+  "pcb/rev1.0/validation/views/drill-NPTH.png": {
+    "sha256": "042cdebd2aadc4a70e2ecdf61d5600b11ea02784439478dddd5e4abc9bdc5384",
+    "bytes": 13924
+  },
+  "pcb/rev1.0/validation/views/drill-PTH.png": {
+    "sha256": "4716e89184f2e5e22671579c290e011fe8b7538736d46491019c737a3c2675f8",
+    "bytes": 35367
+  },
+  "pcb/rev1.0/validation/views/front.png": {
+    "sha256": "55882b85804b99eb1c143ea1d1b34bac2c8daacb6012df8f81f4f8452ef28007",
+    "bytes": 261053
+  },
+  "pcb/rev1.0/validation/views/front.svg": {
+    "sha256": "f70201e500087043d9a951db647d2f1f4d5b8cc62576644cc8f3e1c44a518ceb",
+    "bytes": 398750
+  },
+  "pcb/rev2.0/README.md": {
+    "sha256": "2ec7a9db976f90dd86e87bd30d0f6fdb9361afaf1c986a9fad9f03eec6bfaace",
+    "bytes": 1000
+  },
+  "pcb/rev2.0/images/assembled-board.jpg": {
+    "sha256": "36f0ba26661820253292c2936ed92b238e744609995b923e5347d9a015d961e7",
+    "bytes": 448796
+  },
+  "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip": {
+    "sha256": "b9c0b397806d3a719c32faa83c08bac2e80aa1c1d4d27d3e6d6a35cd5381445a",
+    "bytes": 108767
+  },
+  "pcb/rev2.0/validation/board-render.png": {
+    "sha256": "c9f042effa3ad348dc32dc8df379835d8572e6e48d52957e34a7a182486cf866",
+    "bytes": 689626
+  },
+  "pcb/rev2.0/validation/board.step": {
+    "sha256": "9cda554f834d2521f350ccbe3b61a12d5372ee70a98c63b46de0c3ba1ccc8630",
+    "bytes": 1629732
+  },
+  "pcb/rev2.0/validation/schematic.pdf": {
+    "sha256": "7d061e0372e0909c35293620f9910885d246ab83018860abb9cec607fec6965a",
+    "bytes": 881666
+  },
+  "pcb/rev2.1/README.md": {
+    "sha256": "c5cb4366a2e1f92cb8d7d5ca8450888c7e02dfabb3fc0e0d93c24403cbf6c679",
+    "bytes": 1339
+  },
+  "pcb/rev2.1/design/OnionStraws.kicad_pcb": {
+    "sha256": "48659f6dda0e3a93a36ff374a123e88bebd92e34a81db51500814e828deb7631",
+    "bytes": 870669
+  },
+  "pcb/rev2.1/design/OnionStraws.kicad_pro": {
+    "sha256": "db231fc62efb73764ba81d5d76042a67c3071150120ec860fb3f05c42d3d7402",
+    "bytes": 16967
+  },
+  "pcb/rev2.1/design/OnionStraws.kicad_sch": {
+    "sha256": "0516df5b71988cc33c75ab3701dde6ef7aa0a483fd9b1eb9c3252266e6b7db67",
+    "bytes": 1583517
+  },
+  "pcb/rev2.1/images/u1-trace-fix.png": {
+    "sha256": "d0569b9a2717a23427b68372be8193459313d95a3ef17ef894d5adade2039bd1",
+    "bytes": 465051
+  },
+  "pcb/rev2.1/manufacturing/BOM-OnionStraws-rev2.1.csv": {
+    "sha256": "8349ac8f8b807fe495411aa3799bed70c92f1549b473bb296070cd7b8b49b8c0",
+    "bytes": 1070
+  },
+  "pcb/rev2.1/manufacturing/CPL-OnionStraws-rev2.1.csv": {
+    "sha256": "b789fc3fa47186a1867b89feef229c33f6abbcab6fd15f555752646f93e85563",
+    "bytes": 3056
+  },
+  "pcb/rev2.1/manufacturing/GERBER-OnionStraws-rev2.1.zip": {
+    "sha256": "4d8085f473667262989145ddda61a348569543c9b6867966967dd4a8369afd01",
+    "bytes": 147578
+  },
+  "pcb/rev2.1/validation/npth-drill-map.pdf": {
+    "sha256": "3d366abe8121f64586cac4fc42603f83f74092a64cff9172da0db3a94a9848c2",
+    "bytes": 10185
+  },
+  "pcb/rev2.1/validation/pth-drill-map.pdf": {
+    "sha256": "38a4cd4e144d5655674d7cdcf14ac333113f0bc5eba82ef797d69ef074a141f7",
+    "bytes": 18289
+  },
+  "pcb/rev2.2/README.md": {
+    "sha256": "40fed1971c21ead8cb3a3582842100d32f4a0fc609523c008f0b37455ed27b83",
+    "bytes": 7303
+  },
+  "pcb/rev2.2/design/OnionStraws.kicad_pcb": {
+    "sha256": "a74850d25c72be1b9baf79642791826f1afbd74a01b2bb20d9d4ec6556ea54fc",
+    "bytes": 870618
+  },
+  "pcb/rev2.2/design/OnionStraws.kicad_pro": {
+    "sha256": "281f9cb3cdc9741a1ff3c4ebb11554a58ac6fc98005b46531074300eff4c5e73",
+    "bytes": 16967
+  },
+  "pcb/rev2.2/design/OnionStraws.kicad_sch": {
+    "sha256": "64e337f7aef6713dfdf343f069d1c66acd1d1aac2e8557b6e3c50e32f9545cf8",
+    "bytes": 1583512
+  },
+  "pcb/rev2.2/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": {
+    "sha256": "c659545f06a71b90d180bb48769be1cfb23ee0d256e18b8ea9d6185c1222ce7d",
+    "bytes": 4312
+  },
+  "pcb/rev2.2/design/fp-lib-table": {
+    "sha256": "a04025768378ea31de20597f668e9a6921c19045b70db15951eef24a4229e204",
+    "bytes": 165
+  },
+  "pcb/rev2.2/manufacturing/BOM-OnionStraws-rev2.2.csv": {
+    "sha256": "9e2f0106f4a4bf769b8a727dc4e5215770da58eaab379b476eec8ff6c86d0e68",
+    "bytes": 1040
+  },
+  "pcb/rev2.2/manufacturing/CPL-OnionStraws-rev2.2.csv": {
+    "sha256": "db43135a1fb9aa74f7355622aeb59f890827ffbadf3609ad435f1b56ec9234a3",
+    "bytes": 1494
+  },
+  "pcb/rev2.2/manufacturing/GERBER-OnionStraws-rev2.2.zip": {
+    "sha256": "8dcdfbae90c26f50a3bed56a0e5d62fde3d1508467558da9e7662e0b29098cfd",
+    "bytes": 120965
+  },
+  "pcb/rev2.2/validation/board-bottom.png": {
+    "sha256": "0c662b8cebcee0afe18cee443088ae3fb311eed6ea6e6c2360ad9dbd86b167ad",
+    "bytes": 169291
+  },
+  "pcb/rev2.2/validation/board-top.png": {
+    "sha256": "8f38decc2f4dc917972d8bab9031ce31784b2997212523daa40a9aaa36c11145",
+    "bytes": 162578
+  },
+  "pcb/rev2.2/validation/schematic.pdf": {
+    "sha256": "a276f01c8c161a7bd9824c60904b5646ae56eb7cc10eefcf33627649cc7f6a0a",
+    "bytes": 912390
+  }
+}
