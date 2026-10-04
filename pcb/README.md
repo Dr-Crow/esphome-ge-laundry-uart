@@ -5,7 +5,7 @@ This directory keeps every board revision in a separate package so source files,
 [Back to the project overview](../README.md) · [PCB ordering guide](ORDERING.md)
 
 > [!IMPORTANT]
-> This candidate reviews [Rev 2.0](rev2.0/README.md) only. Its source, electrical, supplier and physical release gates remain open. Read its [standalone scope](rev2.0/STANDALONE-REVIEW.md) before using any artifact. Other entries retain inherited public-base descriptions; no manufacturing or appliance fallback approval is established here.
+> This candidate reviews [Rev 2.1](rev2.1/README.md) only. Its source, electrical, supplier and physical release gates remain open. Read its [standalone scope](rev2.1/STANDALONE-REVIEW.md) before using any artifact. Other entries retain inherited public-base descriptions; no manufacturing or appliance fallback approval is established here.
 
 ## What the folders mean
 
@@ -19,14 +19,14 @@ This directory keeps every board revision in a separate package so source files,
 | Revision | Status | Available material |
 | --- | --- | --- |
 | [Rev 2.2](rev2.2/README.md) | Manufacturing candidate | Corrected KiCad source, matched factory package, and validation exports. |
-| [Rev 2.1](rev2.1/README.md) | Built; superseded | KiCad 9 source, JLCPCB package, drill maps, and repair image. |
-| [Rev 2.0](rev2.0/README.md) | Retired; source review only | Recovered source/local libraries, paired native review exports, additional flat review CAM and byte-preserved original PCBA; 0 ERC errors / 4 alias warnings, zero DRC/parity/unconnected. |
+| [Rev 2.1](rev2.1/README.md) | Retired; source review only | Local source libraries, matched review CAM/BOM/CPL, complete 80-file centroid attestation and original archives; native ERC/DRC/parity/unconnected zero, 60 fitted references. |
+| [Rev 2.0](rev2.0/README.md) | Built; superseded | PCBA archive, schematic, board model, renders, and photographs. |
 | [Rev 1.0](rev1.0/README.md) | Historical | Gerber archive only. |
 
 > [!IMPORTANT]
-> Rev 2.0/2.1 UART labels require an explicit endpoint perspective; consult the reviewed [Rev 2.0 direction mapping](rev2.0/STANDALONE-REVIEW.md#service-interface-and-power-boundary). Their U1 reset supervisor can cause ESP32 boot loops. No historical package is qualified by this source review.
+> Rev 2.0/2.1 UART labels require an explicit endpoint perspective; consult the reviewed [Rev 2.1 direction mapping](rev2.1/STANDALONE-REVIEW.md#service-interface-and-power-boundary). Their U1 reset supervisor can cause ESP32 boot loops. No historical package is qualified by this source review.
 
-For this candidate, [Rev 2.0 release status](rev2.0/STANDALONE-REVIEW.md#release-status) governs the reviewed files. Native source checks and matched exports do not establish electrical, appliance, supplier or enclosure qualification.
+For this candidate, [Rev 2.1 release status](rev2.1/STANDALONE-REVIEW.md#release-status) governs the reviewed files. Native source checks and matched exports do not establish electrical, appliance, supplier or enclosure qualification.
 
 Not every revision has the same files. The table lists what is actually available; historical source restoration and new review exports are identified explicitly in each reviewed revision.
 

@@ -7,10 +7,10 @@
 	(title_block
 		(title "Onion Straws")
 		(date "2025-05-22")
-		(rev "2.0")
+		(rev "2.1")
 	)
 	(lib_symbols
-		(symbol "74xGxx:74LVC2G07"
+(symbol "LegacySymbols:74LVC2G07"
 			(pin_names
 				(offset 1.016)
 			)
@@ -119,7 +119,7 @@
 					(at 0 2.54 90)
 					(length 0)
 					(hide yes)
-					(name "VCC"
+					(name "+5V"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -232,7 +232,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:8P8C"
+(symbol "LegacySymbols:8P8C"
 			(pin_names
 				(offset 1.016)
 			)
@@ -573,7 +573,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:TestPoint"
+(symbol "LegacySymbols:TestPoint"
 			(pin_numbers
 				(hide yes)
 			)
@@ -680,7 +680,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x06"
+(symbol "LegacySymbols:Conn_01x06"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -938,7 +938,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+(symbol "LegacySymbols:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1077,7 +1077,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_TVS"
+(symbol "LegacySymbols:D_TVS"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1227,7 +1227,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Zener"
+(symbol "LegacySymbols:D_Zener"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1377,7 +1377,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED"
+(symbol "LegacySymbols:LED"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1551,7 +1551,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Polyfuse"
+(symbol "LegacySymbols:Polyfuse"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1700,7 +1700,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Q_PMOS_GSD"
+(symbol "LegacySymbols:Q_PMOS_GSD"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1987,7 +1987,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+(symbol "LegacySymbols:R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2111,7 +2111,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:BAV99"
+(symbol "LegacySymbols:BAV99"
 			(pin_names
 				(hide yes)
 			)
@@ -2322,7 +2322,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_3_Bridged12"
+(symbol "LegacySymbols:SolderJumper_3_Bridged12"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2581,7 +2581,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+(symbol "LegacySymbols:MountingHole"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2664,7 +2664,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RF_Module:ESP32-C3-WROOM-02"
+(symbol "LegacySymbols:ESP32-C3-WROOM-02"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3087,7 +3087,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AP2204R-3.3"
+(symbol "LegacySymbols:AP2204R-3.3"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3228,7 +3228,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:L7805"
+(symbol "LegacySymbols:L7805"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3370,7 +3370,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
+(symbol "LegacySymbols:SW_Push"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3520,7 +3520,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "onionStraws:74LVC2G07_3v3"
+(symbol "LegacySymbols:74LVC2G07_3v3"
 			(pin_names
 				(offset 1.016)
 			)
@@ -3742,7 +3742,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "onionStraws:APX803L"
+(symbol "LegacySymbols:APX803L"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3860,7 +3860,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
+(symbol "LegacySymbols:+3V3"
 			(power)
 			(pin_names
 				(offset 0)
@@ -3982,7 +3982,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+(symbol "LegacySymbols:+5V"
 			(power)
 			(pin_names
 				(offset 0)
@@ -4104,7 +4104,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+(symbol "LegacySymbols:GND"
 			(power)
 			(pin_names
 				(offset 0)
@@ -4202,7 +4202,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VDC"
+(symbol "LegacySymbols:VDC"
 			(power)
 			(pin_names
 				(offset 0)
@@ -4324,8 +4324,109 @@
 			)
 			(embedded_fonts no)
 		)
+(symbol "power:PWR_FLAG"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
 	)
-	(text "Voltage Supervisor, Hold ESP reset\nfor 150ms after power reaches 2.9V.\nPrevent brownout at boot."
+	)
+	(text "U1 fitted: known boot-loop issue.\nLegacy supervisor topology; retired."
 		(exclude_from_sim no)
 		(at 126.238 111.506 0)
 		(effects
@@ -4347,7 +4448,7 @@
 		)
 		(uuid "21fe163d-5c16-42b5-8408-6e6165b7b3e7")
 	)
-	(text "Reverse polarity protection\nand inrush current limit"
+	(text "Intended polarity / inrush circuit\nQualification pending"
 		(exclude_from_sim no)
 		(at 201.295 31.75 0)
 		(effects
@@ -4381,7 +4482,7 @@
 	)
 	(text "2.1 changes\n\nAdded ground test point\nChange D8 to bigger part\n\nmove  rj45 inboard 4.5mm\nsmaller 7805 or different ldo"
 		(exclude_from_sim no)
-		(at 402.844 248.412 0)
+		(at 355.6 215.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4411,7 +4512,7 @@
 		)
 		(uuid "bce92480-8c10-430c-8c44-8f5531a37e92")
 	)
-	(text "Peak of 1.5 amps w/o inrush\n"
+	(text "Inrush and load current\nnot yet qualified"
 		(exclude_from_sim no)
 		(at 269.875 -28.575 0)
 		(effects
@@ -4444,9 +4545,9 @@
 		)
 		(uuid "cd8ed60e-d385-4272-94f7-c73fbc71c4e7")
 	)
-	(text "VDC   +9v to +16v"
+	(text "Input voltage / current\nnot yet qualified"
 		(exclude_from_sim no)
-		(at 56.515 102.87 0)
+		(at 95.25 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -23583,16 +23684,7 @@
 		)
 		(uuid "04df6ee0-9af3-41bc-888c-1bef466a757f")
 	)
-	(label "TXD"
-		(at 207.01 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "06354342-18ad-47d7-ae37-68b12cad74cc")
-	)
+	
 	(label "LED1"
 		(at 156.21 149.86 0)
 		(effects
@@ -23613,11 +23705,12 @@
 		)
 		(uuid "1971c7c2-9218-442c-9c9b-f5d957908dd2")
 	)
-	(label "TXD"
+	(global_label "GEA3_RX"
+		(shape bidirectional)
 		(at 36.83 217.17 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.762 0.762)
 			)
 			(justify left bottom)
 		)
@@ -23653,11 +23746,12 @@
 		)
 		(uuid "556abc14-0e50-4ef1-a237-2cdf6dda90a2")
 	)
-	(label "TXD"
+	(global_label "GEA3_RX"
+		(shape bidirectional)
 		(at 36.83 232.41 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.762 0.762)
 			)
 			(justify left bottom)
 		)
@@ -23703,7 +23797,7 @@
 		)
 		(uuid "9a5f79bb-59bc-45e6-9aea-868b1565f648")
 	)
-	(label "GLITCHES"
+	(label "DBG_LED"
 		(at 133.35 144.78 0)
 		(effects
 			(font
@@ -23743,11 +23837,12 @@
 		)
 		(uuid "ab32b8c4-baa2-44ec-987d-59a1e4a69016")
 	)
-	(label "RXD"
+	(global_label "GEA3_TX"
+		(shape bidirectional)
 		(at 36.83 237.49 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.762 0.762)
 			)
 			(justify left bottom)
 		)
@@ -23763,21 +23858,13 @@
 		)
 		(uuid "df526060-3776-45ae-8995-0e344de84c80")
 	)
-	(label "RXD"
-		(at 207.01 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eac750d3-8f02-4e51-af94-c6d9e3390649")
-	)
-	(label "RXD"
+	
+	(global_label "GEA3_TX"
+		(shape bidirectional)
 		(at 36.83 214.63 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.762 0.762)
 			)
 			(justify left bottom)
 		)
@@ -24102,7 +24189,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:8P8C")
+		(lib_id "LegacySymbols:8P8C")
 		(at 43.815 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24126,7 +24213,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
+		(property "Footprint" "LegacyBoard:J1_RJ45_Amphenol_54602-x08_Horizontal"
 			(at 43.815 94.615 90)
 			(effects
 				(font
@@ -24196,7 +24283,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_PMOS_GSD")
+		(lib_id "LegacySymbols:Q_PMOS_GSD")
 		(at 232.41 45.72 270)
 		(mirror x)
 		(unit 1)
@@ -24221,7 +24308,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "LegacyBoard:Q2_SOT-23"
 			(at 234.95 40.64 0)
 			(effects
 				(font
@@ -24276,7 +24363,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 271.78 168.91 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24300,7 +24387,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R13_R_0805_2012Metric"
 			(at 271.78 170.688 90)
 			(effects
 				(font
@@ -24352,7 +24439,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Polyfuse")
+		(lib_id "LegacySymbols:Polyfuse")
 		(at 154.94 29.845 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24376,7 +24463,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+		(property "Footprint" "LegacyBoard:F2_Fuse_1812_4532Metric"
 			(at 156.21 34.925 0)
 			(effects
 				(font
@@ -24429,7 +24516,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 247.65 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24455,7 +24542,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C9_C_0805_2012Metric"
 			(at 248.6152 58.42 0)
 			(effects
 				(font
@@ -24507,7 +24594,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 302.26 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24533,7 +24620,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C11_C_0805_2012Metric"
 			(at 303.2252 57.15 0)
 			(effects
 				(font
@@ -24585,7 +24672,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 344.805 133.35 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24609,7 +24696,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R22_R_0805_2012Metric"
 			(at 346.583 133.35 90)
 			(effects
 				(font
@@ -24661,7 +24748,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 36.83 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24685,7 +24772,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C1_C_0805_2012Metric"
 			(at 37.7952 144.78 0)
 			(effects
 				(font
@@ -24737,7 +24824,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 66.04 168.91 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24761,7 +24848,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C6_C_0805_2012Metric"
 			(at 65.0748 165.1 0)
 			(effects
 				(font
@@ -24813,7 +24900,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 335.915 114.3 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24880,7 +24967,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 125.73 162.56 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24904,7 +24991,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R2_R_0805_2012Metric"
 			(at 125.73 164.338 90)
 			(effects
 				(font
@@ -24956,7 +25043,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 335.915 139.7 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24980,7 +25067,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R19_R_0805_2012Metric"
 			(at 337.693 139.7 90)
 			(effects
 				(font
@@ -25032,7 +25119,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 260.35 54.61 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25056,7 +25143,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C10_C_0805_2012Metric"
 			(at 259.3848 50.8 0)
 			(effects
 				(font
@@ -25108,7 +25195,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 125.73 160.02 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25132,7 +25219,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R1_R_0805_2012Metric"
 			(at 125.73 158.242 90)
 			(effects
 				(font
@@ -25184,7 +25271,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 363.22 53.34 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25208,7 +25295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C14_C_0805_2012Metric"
 			(at 362.2548 49.53 0)
 			(effects
 				(font
@@ -25260,7 +25347,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
+		(lib_id "LegacySymbols:Conn_01x06")
 		(at 49.53 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25287,7 +25374,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
+		(property "Footprint" "LegacyBoard:J3_Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
 			(at 49.53 232.41 0)
 			(effects
 				(font
@@ -25342,7 +25429,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 207.645 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25368,7 +25455,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C8_C_0805_2012Metric"
 			(at 208.6102 54.61 0)
 			(effects
 				(font
@@ -25420,7 +25507,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 364.49 185.42 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25444,7 +25531,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R25_R_0805_2012Metric"
 			(at 364.49 187.198 90)
 			(effects
 				(font
@@ -25496,7 +25583,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
+		(lib_id "LegacySymbols:VDC")
 		(at 74.93 102.87 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25563,7 +25650,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 64.77 36.83 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25587,7 +25674,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C5_C_0805_2012Metric"
 			(at 60.96 37.7952 0)
 			(effects
 				(font
@@ -25639,7 +25726,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "LegacySymbols:+3V3")
 		(at 37.465 159.385 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25705,7 +25792,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xGxx:74LVC2G07")
+		(lib_id "LegacySymbols:74LVC2G07")
 		(at 321.31 126.365 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25729,7 +25816,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "LegacyBoard:U4_SOT-23-6"
 			(at 321.31 126.365 0)
 			(effects
 				(font
@@ -25793,7 +25880,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "LegacySymbols:TestPoint")
 		(at 47.625 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25820,7 +25907,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "LegacyBoard:TP1_TestPoint_Pad_D2.0mm"
 			(at 52.705 134.62 0)
 			(effects
 				(font
@@ -25860,7 +25947,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "LegacySymbols:+3V3")
 		(at 320.675 145.415 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25926,7 +26013,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 140.97 177.8 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25950,7 +26037,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R7_R_0805_2012Metric"
 			(at 142.748 177.8 90)
 			(effects
 				(font
@@ -26002,7 +26089,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "LegacySymbols:+3V3")
 		(at 356.87 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26068,7 +26155,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "LegacySymbols:MountingHole")
 		(at 135.89 242.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26095,7 +26182,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
+		(property "Footprint" "LegacyBoard:H1_MountingHole_3.2mm_M3_DIN965"
 			(at 135.89 242.57 0)
 			(effects
 				(font
@@ -26132,7 +26219,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 48.26 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26198,7 +26285,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 320.04 187.96 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26264,7 +26351,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "LegacySymbols:+3V3")
 		(at 118.11 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26330,7 +26417,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "LegacySymbols:TestPoint")
 		(at 171.45 36.195 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26357,7 +26444,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "LegacyBoard:TP3_TestPoint_Pad_D2.0mm"
 			(at 176.53 36.195 0)
 			(effects
 				(font
@@ -26397,7 +26484,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 335.915 179.705 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26421,7 +26508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R21_R_0805_2012Metric"
 			(at 337.693 179.705 90)
 			(effects
 				(font
@@ -26473,7 +26560,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 335.915 155.575 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26539,7 +26626,7 @@
 		)
 	)
 	(symbol
-		(lib_id "onionStraws:74LVC2G07_3v3")
+		(lib_id "LegacySymbols:74LVC2G07_3v3")
 		(at 320.675 167.64 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -26563,7 +26650,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "LegacyBoard:U5_SOT-23-6"
 			(at 320.675 167.64 0)
 			(effects
 				(font
@@ -26627,7 +26714,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 49.53 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26693,7 +26780,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS")
+		(lib_id "LegacySymbols:D_TVS")
 		(at 185.42 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26720,7 +26807,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "LegacyBoard:D7_D_SMA"
 			(at 185.42 58.42 0)
 			(effects
 				(font
@@ -26772,7 +26859,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 135.89 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26796,7 +26883,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R6_R_0805_2012Metric"
 			(at 134.112 177.8 90)
 			(effects
 				(font
@@ -26848,7 +26935,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 127 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26872,7 +26959,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R4_R_0805_2012Metric"
 			(at 127 135.382 90)
 			(effects
 				(font
@@ -26924,7 +27011,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 75.565 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26991,7 +27078,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Polyfuse")
+		(lib_id "LegacySymbols:Polyfuse")
 		(at 148.59 55.88 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27015,7 +27102,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+		(property "Footprint" "LegacyBoard:F1_Fuse_1812_4532Metric"
 			(at 153.67 54.61 0)
 			(effects
 				(font
@@ -27068,7 +27155,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 320.675 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27134,7 +27221,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 271.78 153.67 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27158,7 +27245,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R10_R_0805_2012Metric"
 			(at 271.78 155.448 90)
 			(effects
 				(font
@@ -27210,7 +27297,7 @@
 		)
 	)
 	(symbol
-		(lib_id "onionStraws:APX803L")
+		(lib_id "LegacySymbols:APX803L")
 		(at 143.51 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27235,7 +27322,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "LegacyBoard:U1_SOT-23"
 			(at 143.51 123.19 0)
 			(effects
 				(font
@@ -27290,7 +27377,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 362.585 126.365 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27314,7 +27401,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R23_R_0805_2012Metric"
 			(at 362.585 128.143 90)
 			(effects
 				(font
@@ -27366,7 +27453,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 36.83 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27432,7 +27519,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "LegacySymbols:+3V3")
 		(at 287.02 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27498,7 +27585,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 313.69 53.34 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27522,7 +27609,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C12_C_0805_2012Metric"
 			(at 312.7248 49.53 0)
 			(effects
 				(font
@@ -27574,7 +27661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "LegacySymbols:TestPoint")
 		(at 58.42 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27601,7 +27688,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "LegacyBoard:TP7_TestPoint_Pad_D2.0mm"
 			(at 63.5 144.78 0)
 			(effects
 				(font
@@ -27641,7 +27728,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 320.675 150.495 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27707,7 +27794,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Bridged12")
+		(lib_id "LegacySymbols:SolderJumper_3_Bridged12")
 		(at 104.14 157.48 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27734,7 +27821,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+		(property "Footprint" "LegacyBoard:JP1_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
 			(at 104.14 157.48 0)
 			(effects
 				(font
@@ -27780,7 +27867,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
+		(lib_id "LegacySymbols:Conn_01x06")
 		(at 49.53 212.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27807,7 +27894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "LegacyBoard:J2_PinHeader_1x06_P2.54mm_Vertical"
 			(at 49.53 212.09 0)
 			(effects
 				(font
@@ -27862,7 +27949,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 95.25 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27928,7 +28015,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 321.31 128.905 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27994,7 +28081,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 87.63 36.83 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28018,7 +28105,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C7_C_0805_2012Metric"
 			(at 83.82 37.7952 0)
 			(effects
 				(font
@@ -28070,7 +28157,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 48.26 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28136,7 +28223,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 289.56 137.16 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28160,7 +28247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R16_R_0805_2012Metric"
 			(at 291.338 137.16 90)
 			(effects
 				(font
@@ -28212,7 +28299,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 37.465 168.275 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28236,7 +28323,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C2_C_0805_2012Metric"
 			(at 38.4302 172.085 0)
 			(effects
 				(font
@@ -28288,7 +28375,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:AP2204R-3.3")
+		(lib_id "LegacySymbols:AP2204R-3.3")
 		(at 337.82 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28313,7 +28400,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+		(property "Footprint" "LegacyBoard:U6_SOT-89-3"
 			(at 337.82 37.465 0)
 			(effects
 				(font
@@ -28368,7 +28455,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 280.67 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28434,7 +28521,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 335.915 118.745 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28458,7 +28545,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R18_R_0805_2012Metric"
 			(at 337.693 118.745 90)
 			(effects
 				(font
@@ -28510,7 +28597,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 280.67 179.07 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28534,7 +28621,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R15_R_0805_2012Metric"
 			(at 282.448 179.07 90)
 			(effects
 				(font
@@ -28586,7 +28673,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 80.01 31.75 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28652,7 +28739,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "LegacySymbols:TestPoint")
 		(at 48.26 161.925 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28679,7 +28766,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "LegacyBoard:TP2_TestPoint_Pad_D2.0mm"
 			(at 53.34 161.925 0)
 			(effects
 				(font
@@ -28719,7 +28806,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 289.56 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28785,7 +28872,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDC")
+		(lib_id "LegacySymbols:VDC")
 		(at 154.94 23.495 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28851,7 +28938,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 335.915 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28917,7 +29004,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 35.56 234.95 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28984,7 +29071,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Bridged12")
+		(lib_id "LegacySymbols:SolderJumper_3_Bridged12")
 		(at 154.94 43.18 90)
 		(mirror x)
 		(unit 1)
@@ -29009,7 +29096,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+		(property "Footprint" "LegacyBoard:JP2_SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
 			(at 154.94 43.18 0)
 			(effects
 				(font
@@ -29055,7 +29142,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
+		(lib_id "LegacySymbols:D_Zener")
 		(at 289.56 55.88 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29082,7 +29169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "LegacyBoard:D8_D_SOD-123"
 			(at 289.56 55.88 0)
 			(effects
 				(font
@@ -29134,7 +29221,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 219.71 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29200,7 +29287,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 72.39 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29266,7 +29353,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 364.49 167.64 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29290,7 +29377,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R24_R_0805_2012Metric"
 			(at 364.49 169.418 90)
 			(effects
 				(font
@@ -29342,7 +29429,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAV99")
+		(lib_id "LegacySymbols:BAV99")
 		(at 41.91 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29367,7 +29454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "LegacyBoard:D1_SOT-23"
 			(at 41.91 60.96 0)
 			(effects
 				(font
@@ -29422,7 +29509,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 127 134.62 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29446,7 +29533,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R3_R_0805_2012Metric"
 			(at 127 132.842 90)
 			(effects
 				(font
@@ -29498,7 +29585,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "LegacySymbols:+5V")
 		(at 335.915 133.985 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29564,7 +29651,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "LegacySymbols:LED")
 		(at 139.7 137.16 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29588,7 +29675,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:D5_LED_0805_2012Metric"
 			(at 139.7 137.16 0)
 			(effects
 				(font
@@ -29640,7 +29727,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAV99")
+		(lib_id "LegacySymbols:BAV99")
 		(at 87.63 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29665,7 +29752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "LegacyBoard:D3_SOT-23"
 			(at 87.63 60.96 0)
 			(effects
 				(font
@@ -29720,7 +29807,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
+		(lib_id "LegacySymbols:SW_Push")
 		(at 161.29 187.96 90)
 		(mirror x)
 		(unit 1)
@@ -29747,7 +29834,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "LegacyBoard:SW1_SW_Push_1P1T_XKB_TS-1187A"
 			(at 156.21 187.96 0)
 			(effects
 				(font
@@ -29799,7 +29886,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "LegacySymbols:+3V3")
 		(at 35.56 229.87 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29866,7 +29953,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAV99")
+		(lib_id "LegacySymbols:BAV99")
 		(at 356.235 133.985 270)
 		(mirror x)
 		(unit 1)
@@ -29892,7 +29979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "LegacyBoard:D9_SOT-23"
 			(at 343.535 133.985 0)
 			(effects
 				(font
@@ -29947,7 +30034,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xGxx:74LVC2G07")
+		(lib_id "LegacySymbols:74LVC2G07")
 		(at 320.04 185.42 180)
 		(unit 2)
 		(exclude_from_sim no)
@@ -29971,7 +30058,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "LegacyBoard:U4_SOT-23-6"
 			(at 320.04 185.42 0)
 			(effects
 				(font
@@ -30035,7 +30122,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 219.71 64.77 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30059,7 +30146,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R9_R_0805_2012Metric"
 			(at 221.488 64.77 90)
 			(effects
 				(font
@@ -30111,7 +30198,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "LegacySymbols:MountingHole")
 		(at 135.89 250.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30138,7 +30225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
+		(property "Footprint" "LegacyBoard:H2_MountingHole_3.2mm_M3_DIN965"
 			(at 135.89 250.19 0)
 			(effects
 				(font
@@ -30175,7 +30262,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_PMOS_GSD")
+		(lib_id "LegacySymbols:Q_PMOS_GSD")
 		(at 196.215 45.72 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30199,7 +30286,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "LegacyBoard:Q1_SOT-23"
 			(at 193.675 40.64 0)
 			(effects
 				(font
@@ -30226,7 +30313,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C10493"
 			(at 196.215 45.72 90)
 			(effects
 				(font
@@ -30254,7 +30341,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 35.56 209.55 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30321,7 +30408,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "LegacySymbols:LED")
 		(at 140.97 187.96 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30348,7 +30435,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:D6_LED_0805_2012Metric"
 			(at 140.97 187.96 0)
 			(effects
 				(font
@@ -30400,7 +30487,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 335.915 160.02 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30424,7 +30511,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R20_R_0805_2012Metric"
 			(at 337.693 160.02 90)
 			(effects
 				(font
@@ -30476,7 +30563,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 41.91 36.83 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30500,7 +30587,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C3_C_0805_2012Metric"
 			(at 38.1 37.7952 0)
 			(effects
 				(font
@@ -30552,7 +30639,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:L7805")
+		(lib_id "LegacySymbols:L7805")
 		(at 275.59 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30577,7 +30664,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
+		(property "Footprint" "LegacyBoard:U3_TO-263-2"
 			(at 276.225 46.99 0)
 			(effects
 				(font
@@ -30634,7 +30721,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "LegacySymbols:+3V3")
 		(at 320.675 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30700,7 +30787,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RF_Module:ESP32-C3-WROOM-02")
+		(lib_id "LegacySymbols:ESP32-C3-WROOM-02")
 		(at 186.69 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30726,7 +30813,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RF_Module:ESP32-C3-WROOM-02"
+		(property "Footprint" "LegacyBoard:U2_ESP32-C3-WROOM-02"
 			(at 186.69 151.765 0)
 			(effects
 				(font
@@ -30829,7 +30916,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 271.78 163.83 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30853,7 +30940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R12_R_0805_2012Metric"
 			(at 271.78 165.608 90)
 			(effects
 				(font
@@ -30905,7 +30992,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 271.78 158.75 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30929,7 +31016,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R11_R_0805_2012Metric"
 			(at 271.78 160.528 90)
 			(effects
 				(font
@@ -30981,7 +31068,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "LegacySymbols:+3V3")
 		(at 35.56 207.01 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31048,7 +31135,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "LegacySymbols:TestPoint")
 		(at 351.155 161.925 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31075,7 +31162,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "LegacyBoard:TP5_TestPoint_Pad_D2.0mm"
 			(at 356.235 161.925 0)
 			(effects
 				(font
@@ -31115,7 +31202,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "LegacySymbols:TestPoint")
 		(at 351.155 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31142,7 +31229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "LegacyBoard:TP4_TestPoint_Pad_D2.0mm"
 			(at 356.235 118.11 0)
 			(effects
 				(font
@@ -31182,7 +31269,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 34.29 31.75 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31248,7 +31335,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAV99")
+		(lib_id "LegacySymbols:BAV99")
 		(at 64.77 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31273,7 +31360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "LegacyBoard:D2_SOT-23"
 			(at 64.77 60.96 0)
 			(effects
 				(font
@@ -31328,7 +31415,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 351.79 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31354,7 +31441,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C13_C_0805_2012Metric"
 			(at 352.7552 57.15 0)
 			(effects
 				(font
@@ -31406,7 +31493,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 320.04 182.88 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31472,7 +31559,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
+		(lib_id "LegacySymbols:SW_Push")
 		(at 166.37 187.96 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31499,7 +31586,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "LegacyBoard:SW2_SW_Push_1P1T_XKB_TS-1187A"
 			(at 161.29 187.96 0)
 			(effects
 				(font
@@ -31551,7 +31638,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "LegacySymbols:+3V3")
 		(at 186.69 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31617,7 +31704,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 57.15 31.75 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31683,7 +31770,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 173.99 199.39 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31749,7 +31836,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 321.31 123.825 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31815,7 +31902,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 280.67 137.16 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31839,7 +31926,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R14_R_0805_2012Metric"
 			(at 282.448 137.16 90)
 			(effects
 				(font
@@ -31891,7 +31978,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "LegacySymbols:GND")
 		(at 134.62 124.46 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31958,7 +32045,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "LegacySymbols:TestPoint")
 		(at 352.425 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -31985,7 +32072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+		(property "Footprint" "LegacyBoard:TP6_TestPoint_Pad_D2.0mm"
 			(at 357.505 179.07 0)
 			(effects
 				(font
@@ -32025,7 +32112,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "LegacySymbols:LED")
 		(at 135.89 187.96 270)
 		(mirror x)
 		(unit 1)
@@ -32052,7 +32139,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:D4_LED_0805_2012Metric"
 			(at 135.89 187.96 0)
 			(effects
 				(font
@@ -32104,7 +32191,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "LegacySymbols:C")
 		(at 50.8 167.64 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32128,7 +32215,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:C4_C_0805_2012Metric"
 			(at 49.8348 163.83 0)
 			(effects
 				(font
@@ -32180,7 +32267,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 219.71 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32204,7 +32291,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R8_R_0805_2012Metric"
 			(at 221.488 50.8 90)
 			(effects
 				(font
@@ -32247,7 +32334,7 @@
 		)
 	)
 	(symbol
-		(lib_id "onionStraws:74LVC2G07_3v3")
+		(lib_id "LegacySymbols:74LVC2G07_3v3")
 		(at 320.675 147.955 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32271,7 +32358,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "LegacyBoard:U5_SOT-23-6"
 			(at 320.675 147.955 0)
 			(effects
 				(font
@@ -32335,7 +32422,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 294.64 137.16 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32359,7 +32446,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R17_R_0805_2012Metric"
 			(at 296.418 137.16 90)
 			(effects
 				(font
@@ -32411,7 +32498,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "LegacySymbols:R")
 		(at 127 144.78 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32435,7 +32522,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "LegacyBoard:R5_R_0805_2012Metric"
 			(at 127 143.002 90)
 			(effects
 				(font
@@ -32492,4 +32579,46 @@
 		)
 	)
 	(embedded_fonts no)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 154.94 23.495 0)
+		(unit 1)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "9f0906fa-23cd-46c7-8fdb-cc72e8ad51ea")
+		(property "Reference" "#FLG01" (at 154.94 23.495 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "PWR_FLAG" (at 154.94 19.685000000000002 0) (effects (font (size 1.27 1.27))) (hide yes))
+		(property "Footprint" "" (at 154.94 23.495 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "cf7b7b43-f912-4317-bb3c-d49e1fdd34fc"))
+		(instances (project "OnionStraws" (path "/477311b9-8f81-40c8-9c55-fd87e287247a" (reference "#FLG01") (unit 1))))
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 75.565 85.09 0)
+		(unit 1)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "b79e68ea-1c79-43c6-9369-5f34ea6f3b93")
+		(property "Reference" "#FLG02" (at 75.565 85.09 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "PWR_FLAG" (at 75.565 81.28 0) (effects (font (size 1.27 1.27))) (hide yes))
+		(property "Footprint" "" (at 75.565 85.09 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "1905096d-d76b-468b-bd6a-18e6270adae0"))
+		(instances (project "OnionStraws" (path "/477311b9-8f81-40c8-9c55-fd87e287247a" (reference "#FLG02") (unit 1))))
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 267.97 43.18 0)
+		(unit 1)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "c20be1e2-38eb-41b7-976b-e305c7dff847")
+		(property "Reference" "#FLG03" (at 267.97 43.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "PWR_FLAG" (at 267.97 39.37 0) (effects (font (size 1.27 1.27))) (hide yes))
+		(property "Footprint" "" (at 267.97 43.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "9da578c2-4d0d-4eba-9a53-70f709e7ce35"))
+		(instances (project "OnionStraws" (path "/477311b9-8f81-40c8-9c55-fd87e287247a" (reference "#FLG03") (unit 1))))
+	)
 )
