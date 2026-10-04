@@ -14,7 +14,8 @@ esp32:
   board: esp32-c3-devkitc-02
   variant: esp32c3
   framework:
-    type: esp-idf  
+    type: esp-idf
+    version: 5.5.5
   
 logger:
   baud_rate: 0
@@ -44,7 +45,7 @@ uart:
    baud_rate: 230400
 
 external_components:
-  - source: github://mguaylam/esphome-gea
+  - source: github://mguaylam/esphome-gea@283ff2b0dfe90a6d14a5417a23176d433be8a5b3
     components: [gea]
 
 gea:
