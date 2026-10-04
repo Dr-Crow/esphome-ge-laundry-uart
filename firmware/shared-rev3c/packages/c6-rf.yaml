@@ -1,0 +1,17 @@
+# XIAO ESP32-C6 RF switch: GPIO3 must be low to enable the RF path.
+# GPIO14 low selects the built-in antenna; set c6_external_antenna to true
+# in a C6 profile to select the external antenna instead.
+switch:
+  - platform: gpio
+    id: c6_rf_enable
+    internal: true
+    pin: GPIO3
+    restore_mode: ALWAYS_OFF
+
+  - platform: gpio
+    id: c6_antenna_select
+    internal: true
+    pin:
+      number: GPIO14
+      inverted: ${c6_external_antenna}
+    restore_mode: ALWAYS_OFF

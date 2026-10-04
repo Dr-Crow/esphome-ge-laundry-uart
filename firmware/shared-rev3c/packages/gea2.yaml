@@ -1,0 +1,37 @@
+uart:
+  id: uart_gea
+  tx_pin:
+    number: ${gea_tx_gpio}
+    inverted: true
+  rx_pin:
+    number: ${gea_rx_gpio}
+    inverted: true
+  baud_rate: 19200
+
+gea:
+  id: gea_hub
+  uart_id: uart_gea
+  protocol: gea2
+  src_address: 0xBB
+  dest_address: 0x24
+  erd_lookup: true
+
+text_sensor:
+  - platform: gea
+    gea_id: gea_hub
+    name: ${upper_name} Model
+    entity_category: diagnostic
+    erd: 0x0001
+    decode: ascii
+
+binary_sensor:
+  - platform: gea
+    gea_id: gea_hub
+    name: ${upper_name} Door
+    erd: 0x2012
+
+  - platform: gea
+    gea_id: gea_hub
+    name: ${upper_name} Cycle Complete
+    icon: mdi:tumble-dryer
+    erd: 0x2002
