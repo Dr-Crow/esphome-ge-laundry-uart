@@ -1,5 +1,5 @@
 {
-  "source_reference_commit": "d662d1e5baa75ec33c4fcc0a95cf9ff0449c7a1d",
+  "source_reference_commit": "82dba70e2dc8294839728c8236c0949496a34953",
   "source_sha256": {
     "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
     "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
@@ -21,8 +21,9 @@
     "pcb/rev3c/design/models/TPS1H200A-DGN0008K-max-envelope.step": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
     "pcb/rev3c/design/models/U.FL_Hirose_U.FL-R-SMT-1_Vertical-kicad-9.0.9.step": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
     "pcb/rev3c/design/models/XIAO-ESP32-C3-Rev3C-installed-envelope.step": "d709f98f14a412c8b5ff7965419963bc6280bf45cd4d6584e3f7675d2a518d2d",
-    "pcb/rev3c/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step": "ce94f33287391d085e1cab8886d803a4e3822b638902346ca5a8ecb020f55055",
-    "pcb/rev3c/design/models/XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step": "81efa7c7c0e1d811a9d34c3eb9ff03c09ee8861f5cb627265f05abbf8824f992",
+    "pcb/rev3c/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+    "pcb/rev3c/design/models/XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step": "629b2beb967833819be0ac0365e305d6ef3ce673a9d5281df7a5c7ea37a4c9c1",
+    "pcb/rev3c/design/models/xiao-packages/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step": "7e77a52b3e261a45529e0df739376ea7cd79204fb1afad81332a50f4f1607000",
     "pcb/rev3c/design/sym-lib-table": "a9b9a0418dd6a4c3405982f8cf04868ad022b4f9164039a30dd9cde88887fbe7",
     "pcb/rev3c/design/symbols/GEA_Rev3B.kicad_sym": "da13a21843a34f4b7de0930c5781151c5b681cc78f5aad3714abd96f97335a60",
     "pcb/rev3c/design/symbols/GEA_Rev3C.kicad_sym": "70cc601ef3bdc625f37521e12c7d9a1884aeeb26c13e064b8e8fbb91e497fe8c",
@@ -56,5 +57,6 @@
       }
     }
   },
-  "supplier_qualification": "Blocked; nominal body datum only; no actual supplier zero/orientation/process/placement approval."
+  "supplier_qualification": "Blocked; nominal body datum only; no actual supplier zero/orientation/process/placement approval.",
+  "source_rebind_note": "Rebound only changed baked model assets after independently verified SoC additions; entire carrier PCB, electrical/CAM/BOM/CPL/firmware bytes match b53cfca. Body datums and documentary capture are unchanged."
 }

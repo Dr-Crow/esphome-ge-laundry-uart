@@ -2,7 +2,7 @@
 
 ## Start with a quote and review
 
-The selected 83-part Rev3C prototype source has complete JLCPCB quotes of **$134.64 for 5 assembled carriers** and **$168.91 for 10**, observed October 3, 2026. Shipping, taxes, separately purchased XIAO modules, module-side headers/installation, programming, functional testing and a case are excluded. This design was selected on October 3, 2026. It remains **unqualified for manufacture or appliance connection** until the release gates below are closed.
+The selected 83-part Rev3C prototype source has complete JLCPCB quotes of **$134.64 for 5 assembled carriers** and **$168.91 for 10**, refreshed October4,2026 at04:16 UTC against corrected source `b53cfca`, with all83 exact codes stocked. The totals remain the same as October3.  Shipping, taxes, separately purchased XIAO modules, module-side headers/installation, programming, functional testing and a case are excluded. This design was selected on October 3, 2026. It remains **unqualified for manufacture or appliance connection** until the release gates below are closed.
 
 Both GE power inputs, automatic PIN1 priority, the buck and C3/C6 interfaces remain. No extra USB circuitry was added. Disconnect the appliance before powered USB.
 
@@ -16,7 +16,7 @@ Download [Gerber ZIP](manufacturing/GERBER-GEA-Adapter-Rev3C.zip), [BOM](manufac
 
 The download links above select the current paired review files. The CAD input checkpoint is **d662d1e**; J1’s CPL X/Y now use a documented nominal body datum, with native rotation retained. See the [placement review](validation/PLACEMENT-DATUM-REVIEW.md) and its source-bound proof. Familiar filenames alone do not identify the version.
 
-The October3 quote/screenshot snapshot was source **7bb455fbc85c748f3125ed091a54375de69fbbcc**, frozen package `rev3c-rated-option-7bb455f`, with its older pin-1-anchor CPL. Its frozen CPL was3157 bytes, SHA256 `aedf3c96a88d4ced3028111d3d5cf2d13d135eaa57dc472c9e84bd6f84a9221b`. Those quote values are historical estimates for the same83 parts; they do not establish supplier approval of the current corrected placement data. Refresh the exact current package before ordering.
+The October3 quote/screenshot snapshot was source **7bb455fbc85c748f3125ed091a54375de69fbbcc**, frozen package `rev3c-rated-option-7bb455f`, with its older pin-1-anchor CPL. Its frozen CPL was3157 bytes, SHA256 `aedf3c96a88d4ced3028111d3d5cf2d13d135eaa57dc472c9e84bd6f84a9221b`. The corrected `b53cfca` package was uploaded and re-quoted at04:16 UTC on October4: all83 codes matched/stocked for5/10, totals unchanged at$134.64/$168.91. Actual2D/3D library alignment remained unverified because the supplier preview still showed generic placeholders. Refresh stock and approve real placement/process before ordering.
 
 | File | What JLCPCB uses it for | Bytes | SHA-256 |
 | --- | --- | ---: | --- |
