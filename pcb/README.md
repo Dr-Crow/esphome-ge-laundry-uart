@@ -25,7 +25,7 @@ This directory keeps every board revision in a separate package so source files,
 | [Rev 1.0](rev1.0/README.md) | Historical | Gerber archive only. |
 
 > [!IMPORTANT]
-> Rev 2.0 and Rev 2.1 have swapped RX/TX silkscreen labels. Their U1 reset supervisor can also cause ESP32 boot loops. Do not treat either manufacturing package as a corrected design.
+> Historical RX/TX labels use an endpoint perspective; verify exact ESP GPIO-to-adapter direction. The U1 supervisor has reported boot-loop issues on Rev2.1. Historical manufacturing packages are not qualified corrected sources.
 
 Rev 2.2 addresses those known board-file problems but is not proven until assembled boards pass electrical, appliance, and enclosure testing. Retain its three matched manufacturing files for review; passing digital checks is not manufacturing approval.
 
