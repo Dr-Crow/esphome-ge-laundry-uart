@@ -53,8 +53,8 @@
       "bytes": 11183
     },
     "README.md": {
-      "sha256": "9d24ef6e44c15c8addd7aa86debd7d8a7caf5132f596aa5dc02a1ee50df42256",
-      "bytes": 8918
+      "sha256": "907d04b5a48133c3421deda5a34ca4220b97cbfd9bd451fd2630e651d6094d38",
+      "bytes": 9029
     },
     "design/GEA-Adapter-Rev3B.kicad_dru": {
       "sha256": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
@@ -177,8 +177,8 @@
       "bytes": 7711
     },
     "manufacturing/CPL-GEA-Adapter-Rev3B.csv": {
-      "sha256": "249a8eb1b786cb5daa3c51e738dc966a5e30b0369af028afb94bc2639c58823b",
-      "bytes": 4093
+      "sha256": "85e6301cb7c32632b331c8cf9fa66c21c993ef165d50fedcdc8d9ca951263545",
+      "bytes": 3233
     },
     "manufacturing/GERBER-GEA-Adapter-Rev3B.zip": {
       "sha256": "8f0b11b89f4b1ca77e4e1f128bae8ff0698d54773f41c1063af04e52fea97639",
@@ -255,6 +255,18 @@
     "validation/delay-pin-type-proof.json": {
       "sha256": "b1313df8e778901fc404ac37e8eba0c1706e0bc7510ec12c442544dc49a2eb05",
       "bytes": 1171
+    },
+    "validation/placement-origin-review.json": {
+      "bytes": 4951,
+      "sha256": "43569149909086eb7412fc97b4dd61b761f0c1da18788c3a9641155449fdd44b"
+    },
+    "validation/placement-datum-sources.json": {
+      "bytes": 2309,
+      "sha256": "466512526074e75e7e072008d514d69b0d2543c1ced97461af8ac07442b048a8"
+    },
+    "validation/PLACEMENT-DATUM-REVIEW.md": {
+      "bytes": 1072,
+      "sha256": "10b0a36013f03f255648d59ee1bed972c52957b53045b3ef1156b87235475170"
     }
   },
   "independent_review": {
@@ -266,5 +278,6 @@
   "imported_backport_commit": "dd9e68fbf28ddf23b93d8350e5f5bd9992fc873e",
   "candidate_public_base_commit": "bc0d52495bd97ed1504bd0ca0775e47feb01a648",
   "shared_component_reference_commit": "fafd3eab5a8a8465697e1557bb075d88f85be9d9",
-  "source_binding": "Implementation proof records frozen5742253; current file hashes and delay-pin-type-proof record the subsequent metadata-only correction. Editor-session .kicad_prl is excluded from portable source."
+  "source_binding": "Implementation proof records frozen5742253; current file hashes and delay-pin-type-proof record the subsequent metadata-only correction. Editor-session .kicad_prl is excluded from portable source.",
+  "placement_export": "J1/U2 reviewed nominal body datums; angles unchanged; provider zero/orientation/process qualification remains blocked."
 }

@@ -1,0 +1,79 @@
+{
+  "source_reference_commit": "f885fa225c5e39f56f5050e26d57b739277a0308",
+  "source_sha256": {
+    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
+    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb": "a21a84afde3d430d0749b10b0d20312ef122954420cca0baf46ab7304feca598",
+    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pro": "abea7adbb5a1ee515cd443d6735b7c1808d31d0cef98924e77ab61f694fccbc9",
+    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch": "5aa8998b7820a3f00f2b0b18424f478989efacae7c6f33a47c488224012fba03",
+    "pcb/rev3b/design/footprints/GEA_Rev3B.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
+    "pcb/rev3b/design/footprints/GEA_Rev3B.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
+    "pcb/rev3b/design/footprints/GEA_XIAO.pretty/XIAO-ESP32-C3-v1.3-SMD.kicad_mod": "dd5c7fc37281f0ddb85c987c7974d45df259a9fe9a5396c7383c1fe6b28ffd21",
+    "pcb/rev3b/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
+    "pcb/rev3b/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod": "3dd6c2bd57cbd627d4c993c72472ce438884f7522fb43f9de412970250665e30",
+    "pcb/rev3b/design/fp-lib-table": "3bdbba75ef000096fbfc9210f95e7d3c037da781871f67facea42a2decc032e6",
+    "pcb/rev3b/design/models/1812L075-33DR-max-envelope.step": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+    "pcb/rev3b/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea",
+    "pcb/rev3b/design/models/J1-EVERCOM-5301-8P8C-envelope.step": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+    "pcb/rev3b/design/models/J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step": "121f1070cd6a16336abf762283f6729797d65949ee19b2c53b6302145b87edaa",
+    "pcb/rev3b/design/models/TPS1H200A-DGN0008K-max-envelope.step": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+    "pcb/rev3b/design/models/XIAO-ESP32-C3-v1.3-envelope.step": "cbc6c2757da1e784924280c9be17e86113a9392fcdd52e96931ddb69184fc54e",
+    "pcb/rev3b/design/sym-lib-table": "d5c96c2f68d97e509e7eadcdc5eb0d977a254cea4f5faee175c5c1490f0d2117",
+    "pcb/rev3b/design/symbols/GEA_Rev3B.kicad_sym": "e02116db811a5e2da4c9c634fb87d1c7434ce472f0c953f4126403d80a6e2bb4",
+    "pcb/rev3b/design/symbols/onionStraws.kicad_sym": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c"
+  },
+  "references": {
+    "J1": {
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "footprint": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+      "native_anchor_xy_mm": [
+        13.97,
+        -12.55
+      ],
+      "rotation_degrees": -90.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        4.445,
+        5.325
+      ],
+      "body_center_xy_mm": [
+        8.645,
+        -16.995
+      ],
+      "manufacturer_datum": {
+        "manufacturer": "EVERCOM",
+        "mpn": "5301-8P8C",
+        "evidence": "pcb/rev3b/validation/placement-datum-sources.json",
+        "sha256": "466512526074e75e7e072008d514d69b0d2543c1ced97461af8ac07442b048a8",
+        "source_url": "https://chinarj45.com/uploads/20260211/99f6f1d1acfb5da691ec9e117bc8ba1c.pdf",
+        "datum_description": "EVERCOM5301-880XXX RevA2025-09-23 nominal unshielded8P8C family; STEP body bounds x[-3.155,12.045],y[-14.35,3.70]. STEP Y mirrors footprint Y, giving local footprint body centre(4.445,5.325). Full material/plating suffix remains unverified."
+      }
+    },
+    "U2": {
+      "datum_type": "module_pcb_body_bbox_center",
+      "footprint": "GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD",
+      "native_anchor_xy_mm": [
+        77.39,
+        -4
+      ],
+      "rotation_degrees": -90.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        8.9,
+        -10.5
+      ],
+      "body_center_xy_mm": [
+        87.89,
+        -12.9
+      ],
+      "manufacturer_datum": {
+        "manufacturer": "Seeed Studio",
+        "mpn": "113991054",
+        "evidence": "pcb/rev3b/validation/placement-datum-sources.json",
+        "sha256": "466512526074e75e7e072008d514d69b0d2543c1ced97461af8ac07442b048a8",
+        "source_url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+        "datum_description": "Declared21\u00d717.8 mm module PCB-body rectangle in officialv1.3 source and carrier Fab drawing; local bounds x[0,17.8],y[-21,0]. This is PCB-body centroid, excluding USB protrusion and asymmetric auxiliary lands. Actual delivered module revision/supplier zero remain unverified."
+      }
+    }
+  },
+  "supplier_qualification": "Blocked; nominal geometric datum correction only. Rotation unchanged; actual supplier zero/pin1/process/placement remains open."
+}

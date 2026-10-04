@@ -80,7 +80,7 @@ The following files are available for design review and assembler quotes, not as
 
 - [Gerber and drill ZIP](manufacturing/GERBER-GEA-Adapter-Rev3B.zip)
 - [Bill of materials](manufacturing/BOM-GEA-Adapter-Rev3B.csv): 85 populated parts, including the RJ45 connector, recovery header and XIAO module.
-- [Component positions](manufacturing/CPL-GEA-Adapter-Rev3B.csv): JLCPCB Designator/Mid X/Mid Y/Rotation/Layer columns for the same 85 parts, all on the top side; coordinates and rotations reproduce native KiCad 9.0.9 positions.
+- [Component positions](manufacturing/CPL-GEA-Adapter-Rev3B.csv): JLCPCB Designator/Mid X/Mid Y/Rotation/Layer columns for the same 85 parts, all on the top side; rotations reproduce native KiCad9.0.9 positions; J1/U2 use explicit reviewed nominal body datums, as documented in the [placement review](validation/PLACEMENT-DATUM-REVIEW.md).
 - [Schematic PDF](validation/schematic.pdf)
 
 The assembled-board quote and module availability are still pending. No per-board price has been established.
