@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "checked_at_utc": "2026-10-04T23:52:50.671293+00:00",
+  "scope": "CircleCI configuration schema validation; no hosted workflow execution",
+  "reviewed_source_head": "b113e92f3cf98aa4e8014d74b950cdcb6ee8dfae",
+  "valid": true,
+  "config": ".circleci/config.yml",
+  "config_sha256": "648a19a3e05d02ecfa5f5cf1af42f50a01535556515573aedda8a2c9c8813a5a",
+  "cli_version": "1.0.51932 (be3dd8e85cfc)",
+  "cli_sha256": "ec8088fcbcf8aec240fcf06da93bf53a1aaa35860036ccaf92399becdcdd6a8b",
+  "response_sha256": "72d00e8dc844136d9c7876c974c822a2bb518064d22e1edbfd1304fdb6ab838a",
+  "hosted_jobs": "not-run",
+  "firmware_config_compile": "not-run"
+}

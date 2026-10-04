@@ -105,8 +105,11 @@ The prior [validator/workflow receipt](validation/VALIDATOR-WORKFLOW-REVIEW.json
 is frozen evidence for the universal four-board/two-profile candidate's bytes and
 its October 4 CircleCI schema validation. It does not certify this extended driver,
 manifest or its fresh hosted execution. The integrated local review is recorded
-separately after the exact final files are checked. Hosted jobs, fresh full-container
-execution and fresh integrated ESPHome builds remain unverified.
+separately after the exact final files are checked. CircleCI accepted the current
+configuration through its schema validator on October 4; the
+[schema receipt](validation/INTEGRATED-CIRCLECI-SCHEMA.json) binds the CLI and
+configuration hashes. Hosted jobs, fresh full-container execution and fresh
+integrated ESPHome builds remain unverified.
 
 Do not turn failures green by ignoring native exit codes, lowering rules,
 omitting intended coverage, inventing assembly data or removing gates. Add a real

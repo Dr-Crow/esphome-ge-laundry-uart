@@ -5,7 +5,7 @@
   "ci_input_sha256": {
     "ci/validate.py": "68b0d1347ff71e5d0b6200dc4bf6c939462899cef853cfdbe9a25dc55803c454",
     "ci/manifest.json": "2533abbfd8501af45ac91263c376d7b25aa5157f693fc8f415c79c76a1cbc914",
-    "ci/README.md": "1f3d15d426ba15e8222129025aafbe8169b0bfb6b5cecfae772f57ed522a104d",
+    "ci/README.md": "b9478167e63552da226a1faa94f9a9d7226a7db87641fadcc7c27c17238d836c",
     ".circleci/config.yml": "648a19a3e05d02ecfa5f5cf1af42f50a01535556515573aedda8a2c9c8813a5a",
     "ci/test_design_dependencies.py": "87900089f8924a417ab59dcd54bc949d7320add7f5720023451fb1a21ec1c0f8",
     "ci/test_fabrication_plot.py": "1fe13841635601f4deb7262f83983e6c4191a5ec2c6027c6e0b1068cc07da6b1",
@@ -1164,14 +1164,17 @@
     },
     "config": "not-run",
     "compile": "not-run",
-    "reason": "Fresh ESPHome 2026.9.1 installation cancelled twice; single authorized retry exhausted; no alternate install/image or authentication route attempted"
+    "reason": "Exact local ESPHome 2026.9.1 runtime is unavailable; fresh integrated config/compile has not run"
   },
   "circleci": {
     "local_yaml_parse": "passed",
     "all_existing_fail_closed_jobs_declared": true,
-    "external_schema_submission": "not-run",
+    "external_schema_submission": "passed",
     "hosted_jobs": "not-run",
-    "prior_receipt": "ci/validation/VALIDATOR-WORKFLOW-REVIEW.json describes only the prior universal candidate bytes"
+    "prior_receipt": "ci/validation/VALIDATOR-WORKFLOW-REVIEW.json describes only the prior universal candidate bytes",
+    "schema_receipt": "ci/validation/INTEGRATED-CIRCLECI-SCHEMA.json",
+    "schema_receipt_sha256": "a9997ffd5d7b9543fa337af089f2d2f8e45e37a43736caba98e12de79eeea954",
+    "config_sha256": "648a19a3e05d02ecfa5f5cf1af42f50a01535556515573aedda8a2c9c8813a5a"
   },
   "release_gate_count": 21,
   "all_release_gates": "blocked",
@@ -1188,5 +1191,5 @@
     "No reconstructed original omitted integration parent/tree or fabricated ancestry",
     "Native/CAM/assembly parity does not establish supplier pose/process, exact unresolved part identity, physical qualification or appliance compatibility"
   ],
-  "documentation_rebind": "CI README setup wording revised only; tested driver, manifest, configuration, tests and all380 CAD dependencies remain byte-identical."
+  "documentation_rebind": "Only review/schema receipts and documentation changed after the tested integration. Driver, manifest, configuration, tests and all 380 CAD dependencies remain byte-identical."
 }

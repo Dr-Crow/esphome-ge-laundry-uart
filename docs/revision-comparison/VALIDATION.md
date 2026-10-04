@@ -6,7 +6,7 @@ The new `integration/ge-restored-final-2026-10-04` branch combines the complete 
 
 Fresh local checks on October 4 after source restoration use the exact KiCad 9.0.9 image, official pinned libraries and matching Python/pcbnew runtime. All seven full-severity ERC/all-track DRC checks and all seven intended-rule audits pass with zero errors, warnings, open connections or schematic-parity issues. Source/CAM parity passes all seven. Full BOM/CPL manufacturing checks pass Rev2.1/2.2/3A/3B/3C; Rev1/Rev2's missing current supplier inputs stay explicit failures. Twenty-eight regression tests pass, including rejection of source-matched drill-marker stencils and deleted legacy Power-net memberships.
 
-The current [CI review receipt](../../ci/validation/INTEGRATED-CI-REVIEW.json) binds all 380 CAD dependencies, current configuration/test hashes and eight profile/include inventories. All 21 power/source/physical release gates remain blocked. Fresh firmware config/compile, hosted jobs and external schema validation have not run in this integration. Older compilation and integration reports below retain their historical source boundaries; their binaries are not freshly verified.
+The current [CI review receipt](../../ci/validation/INTEGRATED-CI-REVIEW.json) binds all 380 CAD dependencies, current configuration/test hashes and eight profile/include inventories. CircleCI schema validation accepted the exact current configuration on October 4 using CLI 1.0.51932; its [separate receipt](../../ci/validation/INTEGRATED-CIRCLECI-SCHEMA.json) records the hashes. All 21 power/source/physical release gates remain blocked. Fresh firmware config/compile and hosted jobs have not run in this integration. Older compilation and integration reports below retain their historical source boundaries; their binaries are not freshly verified.
 
 Rev3C's [stencil review](../../pcb/rev3c/STENCIL-REVIEW.md) removes 26 unintended openings from each paste layer; existing SMT geometry and BOM/CPL are preserved. Rev2.1/2.2/3A/3B already use drillshape 0, and independent fresh native paste/CAM audits pass. Unplaced source-paste apertures remain for Rev2.2 U1 and Rev3A/3B/3C D8 and require assembler review. Prior Rev3C quote totals apply to the earlier Gerber ZIP and need refresh.
 
@@ -65,7 +65,7 @@ Use one reviewed supply, leave UART VCC disconnected and do not inject a module'
 
 ## Firmware and CI evidence
 
-Eight actual local ESPHome **2026.9.1 config and compile** results use ESP-IDF **5.5.5** and pinned GEA `283ff2b0dfe90a6d14a5417a23176d433be8a5b3`, with factory/OTA/ELF hashes recorded. The earlier temporary output binaries are not included in the restored package; their recorded output hashes remain historical evidence and have not been freshly verified.
+Eight historical local ESPHome **2026.9.1 config and compile** results use ESP-IDF **5.5.5** and pinned GEA `283ff2b0dfe90a6d14a5417a23176d433be8a5b3`, with factory/OTA/ELF hashes recorded. The earlier temporary output binaries are not included in the restored package; their recorded output hashes remain historical evidence and have not been freshly verified.
 
 | Profile family | Real builds | Proven UART assignments, TX / RX |
 | --- | ---: | --- |
