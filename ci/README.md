@@ -167,3 +167,9 @@ findings, supplier convention review and physical/electrical qualification disti
 
 Official references: [KiCad containers](https://www.kicad.org/download/docker/) and
 [CircleCI CLI](https://circleci.com/docs/guides/toolkit/circleci-cli/).
+
+The final config including the validator-tests job passed the official CircleCI CLI
+schema service on October 4 at 05:31 UTC. Its bytes and validator/test sources match
+the reviewed combined candidate. This validates configuration; fresh pinned-container
+execution and hosted jobs remain unverified. The source-bound receipt is in
+[VALIDATOR-WORKFLOW-REVIEW.json](validation/VALIDATOR-WORKFLOW-REVIEW.json).

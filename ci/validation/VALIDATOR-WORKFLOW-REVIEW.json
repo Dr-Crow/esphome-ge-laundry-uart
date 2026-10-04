@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-10-04T05:31:23Z",
+  "scope": "Official CircleCI config schema validation and local native validator tests; no hosted execution or container run",
+  "commands": [
+    {
+      "command": "python -m unittest discover -s ci -p test_*.py",
+      "result": "25 tests passed under activated genuine KiCad 9.0.9"
+    },
+    {
+      "command": "/tmp/ge-circleci-cli/circleci config validate .circleci/config.yml",
+      "result": "Config file at .circleci/config.yml is valid.",
+      "exit_code": 0
+    }
+  ],
+  "sha256": {
+    ".circleci/config.yml": "a2a9ea320547f96b73d87393bfc35bc6c282a9b3b7a8f88b508fb90817dbdaec",
+    "ci/validate.py": "f8ee4a3625573fd3e6bc0741875c9f2b21514b0812e89bc3068fd6903a256cbc",
+    "ci/test_design_dependencies.py": "87900089f8924a417ab59dcd54bc949d7320add7f5720023451fb1a21ec1c0f8",
+    "ci/test_inventory.py": "a4cfcc933cf0c7a8362d7de7030accca99bc606d3057a8e62559befd3d7fb33a",
+    "ci/test_placement_origin.py": "d0f076e86ef850103666a55ac1f57a2931a272a2f0eb0db96d9ccb508eda9db2",
+    "ci/test_release_gate.py": "599edd3c070cf3441f741d44f6fe3286a4a1bb14a321c9f64248ee8157cc51ff"
+  },
+  "local_container_runtime": "Neither docker nor podman is available; fresh pinned-container execution remains unverified."
+}

@@ -1,6 +1,16 @@
 version: 2.1
 
 jobs:
+  validator-tests:
+    docker:
+      - image: kicad/kicad:9.0.9@sha256:e638b79b0321f29395a5b783e94bb9f3c73303e8da15da27b8f5cb4b67a37729
+    resource_class: medium
+    steps:
+      - checkout
+      - run:
+          name: Test source, placement and readiness boundaries
+          command: python3 -m unittest discover -s ci -p 'test_*.py'
+
   inventory:
     docker:
       - image: cimg/python:3.13.2@sha256:cdd7d2937b04e0751ff13b7cba0b2afa9a3aa3bf85d977b5a207220582ca6eeb
@@ -50,6 +60,7 @@ jobs:
 workflows:
   validation:
     jobs:
+      - validator-tests
       - inventory
       - native-board:
           name: native-hardware
