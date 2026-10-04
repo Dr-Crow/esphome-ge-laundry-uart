@@ -1,0 +1,3 @@
+(sym_lib_table
+ (lib (name "LegacySymbols")(type "KiCad")(uri "${KIPRJMOD}/symbols/LegacySymbols.kicad_sym")(options "")(descr "Exact recovered Rev2 embedded definitions; original pins and aliases retained"))
+)

@@ -1,0 +1,186 @@
+{
+  "source_commit": "24dd93b0cb633c889765108397380a0e438393fa",
+  "native_version": "9.0.9",
+  "graph": {
+    "unique_physical_pins": 186,
+    "nets": 45,
+    "membership_sha256": "71b1dac31ba47ebcb53add2a07a4eeea0f15612fe46e98a58d02ecc5cf61c282",
+    "full_physical_pin_name_type_membership_identical": true,
+    "component_metadata_identical": true,
+    "libpart_pin_metadata_identical": true,
+    "library_metadata_identical": true,
+    "net_codes_names_identical": true,
+    "U4_memberships": [
+      [
+        "U4",
+        "1",
+        "Net-(D9-A)",
+        "",
+        "input"
+      ],
+      [
+        "U4",
+        "2",
+        "GND",
+        "GND",
+        "power_in"
+      ],
+      [
+        "U4",
+        "3",
+        "Net-(R21-Pad1)",
+        "",
+        "input"
+      ],
+      [
+        "U4",
+        "4",
+        "Net-(R13-Pad2)",
+        "",
+        "open_collector"
+      ],
+      [
+        "U4",
+        "5",
+        "+5V",
+        "VCC",
+        "power_in"
+      ],
+      [
+        "U4",
+        "6",
+        "Net-(R10-Pad2)",
+        "",
+        "open_collector"
+      ]
+    ],
+    "UART_memberships": [
+      [
+        "J2",
+        "4",
+        "GEA3_TX",
+        "Pin_4",
+        "passive"
+      ],
+      [
+        "J2",
+        "5",
+        "GEA3_RX",
+        "Pin_5",
+        "passive"
+      ],
+      [
+        "J3",
+        "3",
+        "GEA3_RX",
+        "Pin_3",
+        "passive"
+      ],
+      [
+        "J3",
+        "5",
+        "GEA3_TX",
+        "Pin_5",
+        "passive"
+      ],
+      [
+        "R12",
+        "1",
+        "GEA3_RX",
+        "",
+        "passive"
+      ],
+      [
+        "R13",
+        "1",
+        "GEA3_TX",
+        "",
+        "passive"
+      ],
+      [
+        "U2",
+        "11",
+        "GEA3_TX",
+        "IO20/RXD",
+        "bidirectional"
+      ],
+      [
+        "U2",
+        "12",
+        "GEA3_RX",
+        "IO21/TXD",
+        "bidirectional"
+      ]
+    ]
+  },
+  "board_physical_metadata_identical": true,
+  "board_counts": {
+    "footprints": 73,
+    "pads": 222,
+    "tracks": 712,
+    "drawings": 483,
+    "footprint_graphics": 905
+  },
+  "all_original_sheet_routing_objects_preserved": true,
+  "all_original_symbol_instances_physical_metadata_preserved": true,
+  "all_symbol_definition_changes_limited_to_recorded_U4_pin5_presentation": true,
+  "annotation_instances_changed": [
+    {
+      "reference": "U4",
+      "kind": "reference/value text positions only; physical instance untouched"
+    },
+    {
+      "reference": "#PWR028",
+      "kind": "original power symbol and property annotation coordinates only"
+    },
+    {
+      "reference": "#PWR034",
+      "kind": "original power symbol and property annotation coordinates only"
+    },
+    {
+      "reference": "U4",
+      "kind": "reference/value text positions only; physical instance untouched"
+    }
+  ],
+  "added_annotation_wires": 4,
+  "power_flags_changed": 0,
+  "tracked_input_files": 192,
+  "preserved_input_file_count": 190,
+  "changed_source_files": [
+    "pcb/rev2.0/design/OnionStraws.kicad_sch",
+    "pcb/rev2.0/design/symbols/LegacySymbols.kicad_sym"
+  ],
+  "negative_controls": [
+    {
+      "mutation": "U4.5 +5V -> +3V3",
+      "node_count_preserved": true,
+      "pin_name_type_preserved": true,
+      "detected": true
+    },
+    {
+      "mutation": "U2.11 GEA3_TX -> GEA3_RX",
+      "node_count_preserved": true,
+      "pin_name_type_preserved": true,
+      "detected": true
+    },
+    {
+      "mutation": "U2.12 GEA3_RX -> GEA3_TX",
+      "node_count_preserved": true,
+      "pin_name_type_preserved": true,
+      "detected": true
+    },
+    {
+      "mutation": "comparison-only U4 pad5 net -> +3V3 in complete board metadata",
+      "pad_count_preserved": true,
+      "detected": true
+    }
+  ],
+  "erc_errors": 0,
+  "erc_warnings": 0,
+  "erc_exclusions": 0,
+  "drc_violations": 0,
+  "drc_unconnected": 0,
+  "drc_schematic_parity": 0,
+  "native_rule_project_file_byte_preserved": true,
+  "legacy_procurement_module_rating_physical_safety_gates_open": true
+}

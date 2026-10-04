@@ -1,0 +1,20 @@
+{
+  "CURRENT-CAM-REVIEW-rev2.0.zip": {
+    "sha256": "1e2985304da496103d60ab1386a475efc4def74f43d9b3423ceae85e1feef774",
+    "bytes": 146647,
+    "member_count": 15,
+    "purpose": "Current review output; no manufacturing or supplier approval"
+  },
+  "CURRENT-NATIVE-SOURCE-rev2.0.zip": {
+    "sha256": "cae88466c73918d5b52f7fef90641a7236d621853bb79786726541cc581ec996",
+    "bytes": 1277829,
+    "member_count": 87,
+    "purpose": "Current source with explicit power/label presentation; no manufacturing qualification"
+  },
+  "HISTORICAL-NATIVE-SOURCE-before-erc-normalization-rev2.0.zip": {
+    "sha256": "9c8250aa77c08495640b19d430e9187a12d4c528f6c460627a4f97daae95be49",
+    "bytes": 1282788,
+    "member_count": 87,
+    "purpose": "Frozen pre-normalization source snapshot"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_commit": "24dd93b0cb633c889765108397380a0e438393fa",
+  "rendered_native_version": "9.0.9",
+  "final_pdf_sha256": "a26a3d75a18731f45780ce7f9df884d35441d883e6deffbdc2694c1ef681dbb5",
+  "render_png_sha256": "eeefbe153227b63395afa2d2b37dfe27a563117769b1bd00ce93a80d496551c3",
+  "render_dpi": 180,
+  "final_render_pixels_match_inspected_render": true,
+  "inspected_views": [
+    "full B-size schematic sheet",
+    "U4A explicit VCC pin5, number5, clear right-angle +5V annotation",
+    "U4B explicit VCC pin5, number5, clear right-angle +5V annotation",
+    "J2 and J3 canonical global UART labels with unchanged connector pin anchors",
+    "U2 IO20/RXD pin11 -> GEA3_TX and IO21/TXD pin12 -> GEA3_RX original wire paths"
+  ],
+  "review_result": "No new text/pin/label collisions or disconnected-looking annotations observed. Original historical embedded board image retained; does not represent refreshed PCB validation."
+}

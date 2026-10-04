@@ -1,0 +1,102 @@
+[
+  {
+    "description": "Both DBG_LED and GLITCHES are attached to the same items; DBG_LED will be used in the netlist",
+    "items": [
+      {
+        "description": "Label 'DBG_LED'",
+        "pos": {
+          "x": 1.5621,
+          "y": 1.4478
+        },
+        "uuid": "ab32b8c4-baa2-44ec-987d-59a1e4a69016"
+      },
+      {
+        "description": "Label 'GLITCHES'",
+        "pos": {
+          "x": 1.3335,
+          "y": 1.4478
+        },
+        "uuid": "9c02243a-f6e5-44da-8366-47f351e95861"
+      }
+    ],
+    "severity": "warning",
+    "type": "multiple_net_names",
+    "classification": "Original debug LED label alias; DBG_LED stays canonical",
+    "disposition": "Intentional source alias retained; original warning severity visible"
+  },
+  {
+    "description": "Both GEA3_TX and RXD are attached to the same items; GEA3_TX will be used in the netlist",
+    "items": [
+      {
+        "description": "Global Label 'GEA3_TX'",
+        "pos": {
+          "x": 2.2352,
+          "y": 1.3462
+        },
+        "uuid": "5482ce0b-7820-4c19-8d04-bb8e3b93014f"
+      },
+      {
+        "description": "Label 'RXD'",
+        "pos": {
+          "x": 0.3683,
+          "y": 2.3749
+        },
+        "uuid": "c926e658-13ee-41e4-9695-20c71f446ebf"
+      }
+    ],
+    "severity": "warning",
+    "type": "multiple_net_names",
+    "classification": "Original appliance-perspective GEA3_TX / ESP receive RXD alias; GEA3_TX stays canonical",
+    "disposition": "Intentional source alias retained; original warning severity visible"
+  },
+  {
+    "description": "Both GEA3_RX and TXD are attached to the same items; GEA3_RX will be used in the netlist",
+    "items": [
+      {
+        "description": "Global Label 'GEA3_RX'",
+        "pos": {
+          "x": 2.6162,
+          "y": 1.6383
+        },
+        "uuid": "782c22f7-a582-4106-ba49-43326c13dc96"
+      },
+      {
+        "description": "Label 'TXD'",
+        "pos": {
+          "x": 2.0701,
+          "y": 1.3716
+        },
+        "uuid": "06354342-18ad-47d7-ae37-68b12cad74cc"
+      }
+    ],
+    "severity": "warning",
+    "type": "multiple_net_names",
+    "classification": "Original appliance-perspective GEA3_RX / ESP transmit TXD alias; GEA3_RX stays canonical",
+    "disposition": "Intentional source alias retained; original warning severity visible"
+  },
+  {
+    "description": "Both +5V and VCC are attached to the same items; +5V will be used in the netlist",
+    "items": [
+      {
+        "description": "Symbol #PWR037 Hidden pin 1 [+5V, Power input, Line]",
+        "pos": {
+          "x": 3.35915,
+          "y": 1.55575
+        },
+        "uuid": "696d8ebe-26d6-439b-9b3e-9aea41d84f25"
+      },
+      {
+        "description": "Symbol U4 Hidden pin 5 [VCC, Power input, Line]",
+        "pos": {
+          "x": 3.2131,
+          "y": 1.28905
+        },
+        "uuid": "bb2eb10e-839a-4abf-81e7-c35194344f1f"
+      }
+    ],
+    "severity": "warning",
+    "type": "multiple_net_names",
+    "classification": "Original +5V supply / hidden U4 VCC pin alias; original pin name and +5V net retained",
+    "disposition": "Intentional source alias retained; original warning severity visible"
+  }
+]

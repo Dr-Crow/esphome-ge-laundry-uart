@@ -1,0 +1,49 @@
+{
+  "source": "Fresh native netlist.xml and unchanged native board drawings",
+  "printed_strings": [
+    "5V\\n\\n\\n3v3\\n\\n\\nHalf (7)\\n\\n\\nFull RX (5)\\n\\n\\nFull TX (4)",
+    "EN\\nRX\\nTX\\nBOOT\\nGND\\n3v3",
+    "3v3 GND BOOT\\nEN  RX  TX"
+  ],
+  "paths": [
+    {
+      "printed_label": "Full RX (5)",
+      "connector_pin": "J1.5",
+      "source_external_net": "GEA_FullRx",
+      "native_path": "U2.12 IO21/TXD -> R12 -> U5.3 input / U5.4 output -> R24 -> J1.5",
+      "ESP_direction": "TX",
+      "consistent_viewpoint": "Appliance receive"
+    },
+    {
+      "printed_label": "Full TX (4)",
+      "connector_pin": "J1.4",
+      "source_external_net": "GEA_FullTx",
+      "native_path": "J1.4 -> R25 -> U4.3 input / U4.4 output -> R13 -> U2.11 IO20/RXD",
+      "ESP_direction": "RX",
+      "consistent_viewpoint": "Appliance transmit"
+    },
+    {
+      "printed_label": "RX on J2/J3",
+      "connector_pins": [
+        "J2.5",
+        "J3.3"
+      ],
+      "source_net": "GEA3_RX; original alias TXD",
+      "ESP_pin": "U2.12 IO21/TXD",
+      "ESP_direction": "TX",
+      "consistent_viewpoint": "Attached programmer receive (interpretation; source does not print a viewpoint legend)"
+    },
+    {
+      "printed_label": "TX on J2/J3",
+      "connector_pins": [
+        "J2.4",
+        "J3.5"
+      ],
+      "source_net": "GEA3_TX; original alias RXD",
+      "ESP_pin": "U2.11 IO20/RXD",
+      "ESP_direction": "RX",
+      "consistent_viewpoint": "Attached programmer transmit (interpretation; source does not print a viewpoint legend)"
+    }
+  ],
+  "finding": "The netlist and native pad positions establish each signal direction. A blanket label-swap claim is not established when the appliance/attached-tool perspective is used. No UART text was changed."
+}

@@ -1,0 +1,78 @@
+{
+  "pcb_sha256": "73cf5b1aec5182b9e162540e9a4b7897b89c961b958dfe228d6fe3530fc8826c",
+  "native_version": "9.0.9",
+  "removed_metadata_lines_only": [
+    "CreationDate",
+    "G04 Created by KiCad date",
+    "DRILL file date"
+  ],
+  "payloads": [
+    {
+      "file": "OnionStraws-B_Cu.gbl",
+      "normalized_equal": true,
+      "current_byte_sha256": "7ec82bd106bea3935826fe3f9c92e128e2937cdff6e138a3eb6099a5b585bcb4",
+      "regenerated_byte_sha256": "4be221022b6b8479b81d50199513ba8b37881f54e1b0654ebd70be8d7f1f62ec"
+    },
+    {
+      "file": "OnionStraws-B_Mask.gbs",
+      "normalized_equal": true,
+      "current_byte_sha256": "97c1037aa01c1b3a031f3a030d77ec16a71b9b3a6744c8603784c4cc280547f6",
+      "regenerated_byte_sha256": "22e3673003a7b40e8f4af136733b75c45cf81933893afaec9fa264c889be0eec"
+    },
+    {
+      "file": "OnionStraws-B_Paste.gbp",
+      "normalized_equal": true,
+      "current_byte_sha256": "086e3abee14a1e51312026ade9913b4578713d404c24afbb036623b6af492d91",
+      "regenerated_byte_sha256": "33cb1d6742d6f2d8ceedef8dc8717c16ccb164d0227800a1ed4f36a6da5ad38f"
+    },
+    {
+      "file": "OnionStraws-B_Silkscreen.gbo",
+      "normalized_equal": true,
+      "current_byte_sha256": "f6c34a74af166230eb5a886e53d3241e405221fb84fac766bd7f8f995b092036",
+      "regenerated_byte_sha256": "5a617b3678fd153dcbc4377217cb0cceab901e36683060a17a7f868447896ad8"
+    },
+    {
+      "file": "OnionStraws-Edge_Cuts.gm1",
+      "normalized_equal": true,
+      "current_byte_sha256": "d73d60fe9ae8d65d57fa0726d9493f495b431cd6595387f986cf0a9f4b3842cf",
+      "regenerated_byte_sha256": "c10e17172499ba27c2124eb9f4359fe74ee6991cd71eef073a5c7dc5402bc90d"
+    },
+    {
+      "file": "OnionStraws-F_Cu.gtl",
+      "normalized_equal": true,
+      "current_byte_sha256": "2c52462b5a80236b54bd1017c5b5b78fbf3642871a6f90666c44507e7d4a23bd",
+      "regenerated_byte_sha256": "f933b5469ccdc5980c614122dc144976a2d4c93735908d08030c6e614b78ba16"
+    },
+    {
+      "file": "OnionStraws-F_Mask.gts",
+      "normalized_equal": true,
+      "current_byte_sha256": "9eb03dbef2086832b35e1903215b62bd9abd2599c380114f16bf2740fe14af11",
+      "regenerated_byte_sha256": "03575ed8bb249ec975cf848ec0c4c0744b4068906334d852fbc5537c22d286e7"
+    },
+    {
+      "file": "OnionStraws-F_Paste.gtp",
+      "normalized_equal": true,
+      "current_byte_sha256": "a9f48bf696362bc0f8644a5b5d4cdcebd556d2addcf4fd8cb86b544553d842cf",
+      "regenerated_byte_sha256": "672f42fcae80362346933e8797eb7c039bbcdf9416fe8ea712715dc7041e3c28"
+    },
+    {
+      "file": "OnionStraws-F_Silkscreen.gto",
+      "normalized_equal": true,
+      "current_byte_sha256": "8b3f36e5f653a55e0e97e4b058b723020c14018ed7007816b889467e8fe10477",
+      "regenerated_byte_sha256": "2cb68faeca4e66a8f556dab23dda0f9d82e8ffb340111620d0608138fd202e8c"
+    },
+    {
+      "file": "OnionStraws-NPTH.drl",
+      "normalized_equal": true,
+      "current_byte_sha256": "53a52454f60effc079f59551bbd96932fc2688642ca678b3ffd45d2515f9b55e",
+      "regenerated_byte_sha256": "649b10012155ffd215915f8c6275fe0183393f9f2ddfa4beee9026e5dd71b670"
+    },
+    {
+      "file": "OnionStraws-PTH.drl",
+      "normalized_equal": true,
+      "current_byte_sha256": "a579db0592cb7259b51cbbe9915bbfc556884ba84ab420d24a100f70c46ae217",
+      "regenerated_byte_sha256": "b4e7f8f6e0cf54d9b386829e0fd26fd329dd21e91280c7ea9444acd0d184424f"
+    }
+  ],
+  "all_payloads_equal": true
+}
