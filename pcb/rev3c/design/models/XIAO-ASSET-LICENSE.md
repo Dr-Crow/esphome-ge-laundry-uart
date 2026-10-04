@@ -16,7 +16,10 @@ Official sources:
 
 Changes in this adaptation: native KiCad 9.0.9 STEP export with a 14-pin-grid
 datum, board/copper geometry, and selected generic package component models.
-Unresolved components, shields, buttons, antenna parts and male headers are
+The nominal QFN32 package has been added for C3/C6 U4 after independent primary
+datasheet dimensions and pin-1 transform checks. The unmodified KiCad source
+asset, including its copyright/license notice, is retained in xiao-packages/.
+Other unresolved components, shields, buttons, antenna parts and male headers are
 omitted. Thin mask/silk export faces were omitted to retain valid STEP solids.
 The C3 UBF31-0171 USB receptacle is represented by a generic GCT package model;
 this is not exact manufacturer USB-shell geometry. See the per-reference

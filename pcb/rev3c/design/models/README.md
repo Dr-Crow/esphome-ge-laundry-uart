@@ -8,7 +8,8 @@ unverified.
 The carrier now associates:
 
 - XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step: official Seeed v1.3 PCB/copper,
-  40 generic KiCad component models, omitted shields/switches/U.FL/chips/headers in the baked asset.
+  41 KiCad component models, including a verified nominal QFN32 SoC package;
+  shields/switches/U.FL/remaining chips/headers are omitted from the baked asset.
   A separate licensed named-part U.FL model is associated with the carrier at
   the official C3/C6 ANT datum; its nominal dimensions match the Hirose drawing.
 - Socket_HCTL_PM254-1-07-Z-8.5-drawing-detail.step: self-authored manufacturer-drawing
@@ -18,7 +19,9 @@ The carrier now associates:
   omitted because their profile/insertion depth is not established.
 
 XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step is a distinct alternative
-partial preview. The render script makes a transient model-only swap for C6;
+partial preview with 47 models including its verified nominal QFN32 SoC package.
+The unmodified source package and license notices are retained in xiao-packages/.
+The render script makes a transient model-only swap for C6;
 there is one canonical electrical carrier. No male-header SKU, mating depth,
 measured installed Z, physical fit or RF qualification is inferred.
 
@@ -36,3 +39,9 @@ KiCad 9.0.9 library. No exact vendor cosmetic CAD is claimed for those packages.
 Regenerate connector fallback assets with generate_connector_detail.py using
 build123d 0.11.1. Native rendering and protected-source verification scripts are in
 ../../validation/. Every model scale is 1:1.
+
+Regenerate the two SoC-augmented module assets with
+../../validation/augment_xiao_soc_models.py, native KiCad 9.0.9 and OCCT Python
+bindings. It requires the pinned previous Seeed-derived module producer inputs
+and generic model root. See ../../validation/xiao-soc-package-provenance.json for
+hashes, nominal dimensions, pin-1 transforms and rejected regulator substitutes.

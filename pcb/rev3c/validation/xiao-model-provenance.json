@@ -22,7 +22,7 @@
       "original_pcb_path": "official-source/c3/XIAO ESP32C3_v1.3.kicad_pcb",
       "original_pcb_sha256": "a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db",
       "derivative_pcb_path": "XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.kicad_pcb",
-      "derivative_pcb_sha256": "ee202b11df30ade4d21c983527c5201dd8b0a3eff9f23e7fc4c059b274a5c081",
+      "derivative_pcb_sha256": "c68c822d108bc3d51b567259eea7414729c701e2dc8ce1ba6e7c8df05d3a5f82",
       "mechanical_copper_fingerprint_unchanged": true,
       "geometry_fingerprint_sha256": "9e51622e1b38e2c79edae7c2727de6f94c29ecb5a2b336fb657d1cced917fd41",
       "conversion_note": "KiCad9 native save may normalize duplicate decorative silkscreen/mask primitives from KiCad8 C6 source. Exact pads, footprint positions/angles, tracks/vias, copper/mechanical drawings, zone outlines and board thickness compare equal; original source retained unchanged.",
@@ -1345,7 +1345,26 @@
             107.3912
           ],
           "source_rotation_deg": -90.0,
-          "status": "omitted_no_verified_3D_model"
+          "status": "verified_nominal_QFN32_package_model",
+          "basis": "Exact selected ESP32-C3FH4 primary package drawing matches named KiCad QFN32 body, height, EP, pitch and terminals. Pin-1 orientation independently checked from source pad positions and isolated native STEP marker. Generic library colors/index-dot detail; not fitted vendor cosmetics or full tolerance envelope.",
+          "model": "Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step",
+          "model_sha256": "7e77a52b3e261a45529e0df739376ea7cd79204fb1afad81332a50f4f1607000",
+          "model_offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "model_rotation_deg": [
+            0,
+            0,
+            -90
+          ],
+          "model_scale": [
+            1,
+            1,
+            1
+          ],
+          "package_evidence_receipt": "xiao-soc-package-provenance.json"
         },
         {
           "reference": "R32",
@@ -1878,8 +1897,8 @@
           "status": "omitted_explicit_DNP"
         }
       ],
-      "included_generic_component_count": 40,
-      "omitted_component_count": 28,
+      "included_generic_component_count": 41,
+      "omitted_component_count": 27,
       "step_validation": {
         "bare_pcb": {
           "path": "XIAO_ESP32C3_v1.3_bare_pcb_datum.step",
@@ -2287,8 +2306,8 @@
         },
         "detailed_visual_reference": {
           "path": "XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
-          "bytes": 10381543,
-          "sha256": "ce94f33287391d085e1cab8886d803a4e3822b638902346ca5a8ecb020f55055",
+          "bytes": 10792728,
+          "sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
           "bbox_mm": {
             "x_min": -10.414,
             "y_min": -9.524999,
@@ -2297,8 +2316,8 @@
             "y_max": 9.524999,
             "z_max": 4.9050001
           },
-          "solid_count": 1082,
-          "face_count": 8762,
+          "solid_count": 1083,
+          "face_count": 8968,
           "occt_shape_valid": true
         }
       },
@@ -2320,7 +2339,77 @@
         1
       ],
       "installed_substrate_bottom_above_carrier_top_mm": 11,
-      "installed_z_is_provisional": true
+      "installed_z_is_provisional": true,
+      "previous_derivative_pcb_sha256": "ee202b11df30ade4d21c983527c5201dd8b0a3eff9f23e7fc4c059b274a5c081",
+      "derivative_source": "Previous native KiCad derivative augmented only with one verified U4 model node; regenerate with augment_xiao_soc_models.py.",
+      "soc_component_transform_validation": {
+        "source_derivative_sha256": "ee202b11df30ade4d21c983527c5201dd8b0a3eff9f23e7fc4c059b274a5c081",
+        "updated_derivative_sha256": "c68c822d108bc3d51b567259eea7414729c701e2dc8ce1ba6e7c8df05d3a5f82",
+        "non_model_derivative_tokens_unchanged": true,
+        "updated_non_model_token_sha256": "007feba5d798b41bf4de9878ceea34b4db1412e6a7362c873615906139422647",
+        "model_offset_mm": [
+          0,
+          0,
+          0
+        ],
+        "model_rotation_deg": [
+          0,
+          0,
+          -90
+        ],
+        "source_export_origin_mm": [
+          148.4376,
+          105.0036
+        ],
+        "component_bbox_module_step_mm": [
+          -3.1223,
+          -4.8876,
+          1.595,
+          1.8777,
+          0.1124,
+          2.445
+        ],
+        "exported_pin1_marker_center_module_step_mm": [
+          -2.5223,
+          -0.4876,
+          2.445
+        ],
+        "marker_radius_mm": 0.25,
+        "marker_shape_is_generic_library_detail": true,
+        "detailed_visual_reference": {
+          "path": "XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+          "bytes": 10792728,
+          "sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+          "bbox_mm": {
+            "x_min": -10.414,
+            "y_min": -9.524999,
+            "z_min": -0.04,
+            "x_max": 11.8740001,
+            "y_max": 9.524999,
+            "z_max": 4.9050001
+          },
+          "solid_count": 1083,
+          "face_count": 8968,
+          "occt_shape_valid": true
+        },
+        "included_component_count": 41,
+        "component_filter_validation": {
+          "path": "c3-soc-component-and-board.step",
+          "bytes": 492187,
+          "sha256": "b164b0208cee5fc181d8cac6b0e6384998850e37166e070b70952eb6d45d4859",
+          "bbox_mm": {
+            "x_min": -10.414,
+            "y_min": -8.89,
+            "z_min": 0.0,
+            "x_max": 10.541,
+            "y_max": 8.89,
+            "z_max": 2.445
+          },
+          "solid_count": 2,
+          "face_count": 285,
+          "occt_shape_valid": true
+        }
+      }
     },
     "c6": {
       "revision": "v1.0",
@@ -2330,7 +2419,7 @@
       "original_pcb_path": "official-source/c6/XIAO ESP32 C6.kicad_pcb",
       "original_pcb_sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027",
       "derivative_pcb_path": "XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.kicad_pcb",
-      "derivative_pcb_sha256": "21263d3e4d89f354f719f2bae7bb506a46029ef6b35181b7da86e53ae0e65bd2",
+      "derivative_pcb_sha256": "17539c90ccd90d4eba982a85cc663b09630d6c4b05786b22a17da4b59a68f18f",
       "mechanical_copper_fingerprint_unchanged": true,
       "geometry_fingerprint_sha256": "999ee5cba67f20fb726dd8c30db63c9b2fef98fe17b8daf314057e29fff2e8bf",
       "conversion_note": "KiCad9 native save may normalize duplicate decorative silkscreen/mask primitives from KiCad8 C6 source. Exact pads, footprint positions/angles, tracks/vias, copper/mechanical drawings, zone outlines and board thickness compare equal; original source retained unchanged.",
@@ -4413,7 +4502,26 @@
             75.8074
           ],
           "source_rotation_deg": 0.0,
-          "status": "omitted_no_verified_3D_model"
+          "status": "verified_nominal_QFN32_package_model",
+          "basis": "Exact selected ESP32-C6FH4 primary package drawing matches named KiCad QFN32 body, height, EP, pitch and terminals. Pin-1 orientation independently checked from source pad positions and isolated native STEP marker. Generic library colors/index-dot detail; not fitted vendor cosmetics or full tolerance envelope.",
+          "model": "Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step",
+          "model_sha256": "7e77a52b3e261a45529e0df739376ea7cd79204fb1afad81332a50f4f1607000",
+          "model_offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "model_rotation_deg": [
+            0,
+            0,
+            0
+          ],
+          "model_scale": [
+            1,
+            1,
+            1
+          ],
+          "package_evidence_receipt": "xiao-soc-package-provenance.json"
         },
         {
           "reference": "R3",
@@ -5312,8 +5420,8 @@
           "status": "omitted_no_verified_3D_model"
         }
       ],
-      "included_generic_component_count": 46,
-      "omitted_component_count": 37,
+      "included_generic_component_count": 47,
+      "omitted_component_count": 36,
       "step_validation": {
         "bare_pcb": {
           "path": "XIAO_ESP32C6_v1.0_bare_pcb_datum.step",
@@ -5735,8 +5843,8 @@
         },
         "detailed_visual_reference": {
           "path": "XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step",
-          "bytes": 18367201,
-          "sha256": "81efa7c7c0e1d811a9d34c3eb9ff03c09ee8861f5cb627265f05abbf8824f992",
+          "bytes": 18778427,
+          "sha256": "629b2beb967833819be0ac0365e305d6ef3ce673a9d5281df7a5c7ea37a4c9c1",
           "bbox_mm": {
             "x_min": -10.414,
             "y_min": -9.524999,
@@ -5745,8 +5853,8 @@
             "y_max": 9.524999,
             "z_max": 4.9050001
           },
-          "solid_count": 906,
-          "face_count": 13568,
+          "solid_count": 907,
+          "face_count": 13774,
           "occt_shape_valid": true
         }
       },
@@ -5768,7 +5876,77 @@
         1
       ],
       "installed_substrate_bottom_above_carrier_top_mm": 11,
-      "installed_z_is_provisional": true
+      "installed_z_is_provisional": true,
+      "previous_derivative_pcb_sha256": "21263d3e4d89f354f719f2bae7bb506a46029ef6b35181b7da86e53ae0e65bd2",
+      "derivative_source": "Previous native KiCad derivative augmented only with one verified U4 model node; regenerate with augment_xiao_soc_models.py.",
+      "soc_component_transform_validation": {
+        "source_derivative_sha256": "21263d3e4d89f354f719f2bae7bb506a46029ef6b35181b7da86e53ae0e65bd2",
+        "updated_derivative_sha256": "17539c90ccd90d4eba982a85cc663b09630d6c4b05786b22a17da4b59a68f18f",
+        "non_model_derivative_tokens_unchanged": true,
+        "updated_non_model_token_sha256": "03f69e4f6f6bbef89097af2785bd8d39ea881ecf5b5dc8e68ff5beb2310e9994",
+        "model_offset_mm": [
+          0,
+          0,
+          0
+        ],
+        "model_rotation_deg": [
+          0,
+          0,
+          0
+        ],
+        "source_export_origin_mm": [
+          108.3977,
+          72.876
+        ],
+        "component_bbox_module_step_mm": [
+          -4.0627,
+          -5.4314,
+          1.595,
+          0.9373,
+          -0.4314,
+          2.445
+        ],
+        "exported_pin1_marker_center_module_step_mm": [
+          -3.4627,
+          -1.0314,
+          2.445
+        ],
+        "marker_radius_mm": 0.25,
+        "marker_shape_is_generic_library_detail": true,
+        "detailed_visual_reference": {
+          "path": "XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step",
+          "bytes": 18778427,
+          "sha256": "629b2beb967833819be0ac0365e305d6ef3ce673a9d5281df7a5c7ea37a4c9c1",
+          "bbox_mm": {
+            "x_min": -10.414,
+            "y_min": -9.524999,
+            "z_min": -0.04,
+            "x_max": 11.9087001,
+            "y_max": 9.524999,
+            "z_max": 4.9050001
+          },
+          "solid_count": 907,
+          "face_count": 13774,
+          "occt_shape_valid": true
+        },
+        "included_component_count": 47,
+        "component_filter_validation": {
+          "path": "c6-soc-component-and-board.step",
+          "bytes": 505895,
+          "sha256": "95cafb04b13a9670009c457fb2110b582d95615834b3c4d36cb2529e8f44309e",
+          "bbox_mm": {
+            "x_min": -10.414,
+            "y_min": -8.89,
+            "z_min": 0.0,
+            "x_max": 10.541,
+            "y_max": 8.89,
+            "z_max": 2.445
+          },
+          "solid_count": 2,
+          "face_count": 295,
+          "occt_shape_valid": true
+        }
+      }
     }
   },
   "final_step_layers": "Native board body, components, tracks, pads, zones and inner copper included; thin silkscreen/soldermask sheets omitted after they made initial aggregate invalid.",
@@ -5907,10 +6085,21 @@
       "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.5x3.5mm.step",
       "status": "failed",
       "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "model": "Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step",
+      "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step",
+      "http_status": 200,
+      "bytes": 191384,
+      "sha256": "7e77a52b3e261a45529e0df739376ea7cd79204fb1afad81332a50f4f1607000",
+      "git_blob_sha1": "c95ba27a36f4a9ccc4538abb69d5c0acc8d4b1b7",
+      "source_repository_commit": "a0244fe3442823dbb052ebc4820b4c2951e1742c",
+      "retrieved_utc": "2026-10-04",
+      "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\n"
     }
   ],
   "producer_recorded_utc": "2026-10-04",
-  "integration_validation_utc": "2026-10-04T02:48:47Z",
+  "integration_validation_utc": "2026-10-04T04:31:50Z",
   "missing_physical_envelopes_in_baked_module_assets": [
     "RF shield",
     "BOOT and RESET switches",
@@ -5923,5 +6112,6 @@
   "carrier_augmented_reference_geometry": {
     "U.FL": "Separately associated licensed named-part KiCad geometry at official ANT0(C3)/ANT2(C6) datum. Nominal published dimensions verified, actual fitted manufacturer/plating/packaging/mated cable unknown.",
     "receipt": "service-component-provenance.json"
-  }
+  },
+  "soc_package_augmentation_receipt": "xiao-soc-package-provenance.json"
 }

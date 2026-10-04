@@ -1,0 +1,715 @@
+{
+  "producer": "augment_xiao_soc_models.py",
+  "kicad_version": "9.0.9",
+  "source_model": {
+    "path": "design/models/xiao-packages/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step",
+    "bytes": 191384,
+    "sha256": "7e77a52b3e261a45529e0df739376ea7cd79204fb1afad81332a50f4f1607000",
+    "bbox_mm": {
+      "x_min": -2.5,
+      "y_min": -2.5,
+      "z_min": 0.0,
+      "x_max": 2.5,
+      "y_max": 2.5,
+      "z_max": 0.85
+    },
+    "solid_count": 1,
+    "face_count": 206,
+    "occt_shape_valid": true
+  },
+  "model_scale": [
+    1,
+    1,
+    1
+  ],
+  "modules": {
+    "c3": {
+      "source_derivative_sha256": "ee202b11df30ade4d21c983527c5201dd8b0a3eff9f23e7fc4c059b274a5c081",
+      "updated_derivative_sha256": "c68c822d108bc3d51b567259eea7414729c701e2dc8ce1ba6e7c8df05d3a5f82",
+      "non_model_derivative_tokens_unchanged": true,
+      "updated_non_model_token_sha256": "007feba5d798b41bf4de9878ceea34b4db1412e6a7362c873615906139422647",
+      "model_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "model_rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "source_export_origin_mm": [
+        148.4376,
+        105.0036
+      ],
+      "component_bbox_module_step_mm": [
+        -3.1223,
+        -4.8876,
+        1.595,
+        1.8777,
+        0.1124,
+        2.445
+      ],
+      "exported_pin1_marker_center_module_step_mm": [
+        -2.5223,
+        -0.4876,
+        2.445
+      ],
+      "marker_radius_mm": 0.25,
+      "marker_shape_is_generic_library_detail": true,
+      "detailed_visual_reference": {
+        "path": "XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+        "bytes": 10792728,
+        "sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+        "bbox_mm": {
+          "x_min": -10.414,
+          "y_min": -9.524999,
+          "z_min": -0.04,
+          "x_max": 11.8740001,
+          "y_max": 9.524999,
+          "z_max": 4.9050001
+        },
+        "solid_count": 1083,
+        "face_count": 8968,
+        "occt_shape_valid": true
+      },
+      "included_component_count": 41,
+      "component_filter_validation": {
+        "path": "c3-soc-component-and-board.step",
+        "bytes": 492187,
+        "sha256": "b164b0208cee5fc181d8cac6b0e6384998850e37166e070b70952eb6d45d4859",
+        "bbox_mm": {
+          "x_min": -10.414,
+          "y_min": -8.89,
+          "z_min": 0.0,
+          "x_max": 10.541,
+          "y_max": 8.89,
+          "z_max": 2.445
+        },
+        "solid_count": 2,
+        "face_count": 285,
+        "occt_shape_valid": true
+      }
+    },
+    "c6": {
+      "source_derivative_sha256": "21263d3e4d89f354f719f2bae7bb506a46029ef6b35181b7da86e53ae0e65bd2",
+      "updated_derivative_sha256": "17539c90ccd90d4eba982a85cc663b09630d6c4b05786b22a17da4b59a68f18f",
+      "non_model_derivative_tokens_unchanged": true,
+      "updated_non_model_token_sha256": "03f69e4f6f6bbef89097af2785bd8d39ea881ecf5b5dc8e68ff5beb2310e9994",
+      "model_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "model_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "source_export_origin_mm": [
+        108.3977,
+        72.876
+      ],
+      "component_bbox_module_step_mm": [
+        -4.0627,
+        -5.4314,
+        1.595,
+        0.9373,
+        -0.4314,
+        2.445
+      ],
+      "exported_pin1_marker_center_module_step_mm": [
+        -3.4627,
+        -1.0314,
+        2.445
+      ],
+      "marker_radius_mm": 0.25,
+      "marker_shape_is_generic_library_detail": true,
+      "detailed_visual_reference": {
+        "path": "XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step",
+        "bytes": 18778427,
+        "sha256": "629b2beb967833819be0ac0365e305d6ef3ce673a9d5281df7a5c7ea37a4c9c1",
+        "bbox_mm": {
+          "x_min": -10.414,
+          "y_min": -9.524999,
+          "z_min": -0.04,
+          "x_max": 11.9087001,
+          "y_max": 9.524999,
+          "z_max": 4.9050001
+        },
+        "solid_count": 907,
+        "face_count": 13774,
+        "occt_shape_valid": true
+      },
+      "included_component_count": 47,
+      "component_filter_validation": {
+        "path": "c6-soc-component-and-board.step",
+        "bytes": 505895,
+        "sha256": "95cafb04b13a9670009c457fb2110b582d95615834b3c4d36cb2529e8f44309e",
+        "bbox_mm": {
+          "x_min": -10.414,
+          "y_min": -8.89,
+          "z_min": 0.0,
+          "x_max": 10.541,
+          "y_max": 8.89,
+          "z_max": 2.445
+        },
+        "solid_count": 2,
+        "face_count": 295,
+        "occt_shape_valid": true
+      }
+    }
+  },
+  "producer_sha256": "e48bcea57a4085a6c9b3bbea08acf1bbd0cc7829f11aa27ee5887fed66215a34",
+  "recorded_utc": "2026-10-04T04:31:50Z",
+  "selected_carrier_checkpoint": "b53cfca83c4433b2288f882439c16e083c1fb50d",
+  "classification": "Verified nominal QFN32 package geometry added to partial Seeed PCB-derived visual references; not complete manufacturer module assembly CAD.",
+  "model_source": {
+    "model": "Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step",
+    "url": "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/a0244fe3442823dbb052ebc4820b4c2951e1742c/Package_DFN_QFN.3dshapes/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step",
+    "http_status": 200,
+    "bytes": 191384,
+    "sha256": "7e77a52b3e261a45529e0df739376ea7cd79204fb1afad81332a50f4f1607000",
+    "git_blob_sha1": "c95ba27a36f4a9ccc4538abb69d5c0acc8d4b1b7",
+    "source_repository_commit": "a0244fe3442823dbb052ebc4820b4c2951e1742c",
+    "retrieved_utc": "2026-10-04",
+    "retained_source_notice": "ISO-10303-21;\nHEADER;\n/* QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\n"
+  },
+  "package_drawing_basis": {
+    "c3": {
+      "part": "ESP32-C3FH4",
+      "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf",
+      "datasheet_version": "2.4",
+      "datasheet_sha256": "833fc000b4b3c3d39c496fcbd597fed5806956503ce7390b19cc8ae82f19f968",
+      "drawing": "Figure 7-1, printed page 66; pin layout Figure 2-1, printed page 14"
+    },
+    "c6": {
+      "part": "ESP32-C6FH4",
+      "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf",
+      "datasheet_version": "1.5",
+      "datasheet_sha256": "372a5b42b2900c83ef4309149c8835e9ae2d1be19244995bf2fb83af4dc5edf1",
+      "drawing": "Figure 7-2, printed page 78; pin layout Figure 2-2, printed page 15"
+    },
+    "shared_nominal": {
+      "package": "QFN32 (5x5 mm)",
+      "body_xy_mm": [
+        5,
+        5
+      ],
+      "body_xy_tolerance_mm": 0.05,
+      "seating_to_top_height_mm": 0.85,
+      "height_range_mm": [
+        0.8,
+        0.9
+      ],
+      "exposed_pad_xy_mm": [
+        3.7,
+        3.7
+      ],
+      "exposed_pad_xy_tolerance_mm": 0.05,
+      "terminal_pitch_mm": 0.5,
+      "terminal_width_mm": 0.25,
+      "terminal_width_range_mm": [
+        0.2,
+        0.3
+      ],
+      "terminal_length_mm": 0.4,
+      "terminal_length_range_mm": [
+        0.35,
+        0.45
+      ],
+      "terminal_thickness_ref_mm": 0.203,
+      "pin1_exposed_pad_chamfer_mm": 0.3,
+      "pin_number_order": "anti-clockwise in top view from pin 1; index corner top-left in unrotated package drawing"
+    }
+  },
+  "package_contact_geometry_verified": {
+    "bottom_contacts": [
+      {
+        "bbox_mm": [
+          -1.85,
+          -1.85,
+          0.0,
+          1.85,
+          1.85,
+          0.0
+        ],
+        "area_mm2": 13.645
+      },
+      {
+        "bbox_mm": [
+          1.625,
+          2.1,
+          0.0,
+          1.875,
+          2.5,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          1.125,
+          2.1,
+          0.0,
+          1.375,
+          2.5,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          0.625,
+          2.1,
+          0.0,
+          0.875,
+          2.5,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          0.125,
+          2.1,
+          0.0,
+          0.375,
+          2.5,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -0.375,
+          2.1,
+          0.0,
+          -0.125,
+          2.5,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -0.875,
+          2.1,
+          0.0,
+          -0.625,
+          2.5,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -1.375,
+          2.1,
+          0.0,
+          -1.125,
+          2.5,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -1.875,
+          2.1,
+          0.0,
+          -1.625,
+          2.5,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          2.1,
+          1.625,
+          0.0,
+          2.5,
+          1.875,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          2.1,
+          1.125,
+          0.0,
+          2.5,
+          1.375,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          2.1,
+          0.625,
+          0.0,
+          2.5,
+          0.875,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          2.1,
+          0.125,
+          0.0,
+          2.5,
+          0.375,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          2.1,
+          -0.375,
+          0.0,
+          2.5,
+          -0.125,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          2.1,
+          -0.875,
+          0.0,
+          2.5,
+          -0.625,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          2.1,
+          -1.375,
+          0.0,
+          2.5,
+          -1.125,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          2.1,
+          -1.875,
+          0.0,
+          2.5,
+          -1.625,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          1.625,
+          -2.5,
+          0.0,
+          1.875,
+          -2.1,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          1.125,
+          -2.5,
+          0.0,
+          1.375,
+          -2.1,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          0.625,
+          -2.5,
+          0.0,
+          0.875,
+          -2.1,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          0.125,
+          -2.5,
+          0.0,
+          0.375,
+          -2.1,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -0.375,
+          -2.5,
+          0.0,
+          -0.125,
+          -2.1,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -0.875,
+          -2.5,
+          0.0,
+          -0.625,
+          -2.1,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -1.375,
+          -2.5,
+          0.0,
+          -1.125,
+          -2.1,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -1.875,
+          -2.5,
+          0.0,
+          -1.625,
+          -2.1,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -2.5,
+          -1.875,
+          0.0,
+          -2.1,
+          -1.625,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -2.5,
+          -1.375,
+          0.0,
+          -2.1,
+          -1.125,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -2.5,
+          -0.875,
+          0.0,
+          -2.1,
+          -0.625,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -2.5,
+          -0.375,
+          0.0,
+          -2.1,
+          -0.125,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -2.5,
+          0.125,
+          0.0,
+          -2.1,
+          0.375,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -2.5,
+          0.625,
+          0.0,
+          -2.1,
+          0.875,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -2.5,
+          1.125,
+          0.0,
+          -2.1,
+          1.375,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      },
+      {
+        "bbox_mm": [
+          -2.5,
+          1.625,
+          0.0,
+          -2.1,
+          1.875,
+          0.0
+        ],
+        "area_mm2": 0.093294
+      }
+    ],
+    "exposed_pad_bbox_xy_mm": [
+      -1.85,
+      -1.85,
+      1.85,
+      1.85
+    ],
+    "exposed_pad_area_mm2": 13.645,
+    "exposed_pad_chamfer_triangle_area_mm2": 0.045,
+    "peripheral_contact_count": 32,
+    "peripheral_contact_bbox_dimensions_mm": [
+      0.4,
+      0.25
+    ],
+    "centers_per_edge_mm": [
+      -1.75,
+      -1.25,
+      -0.75,
+      -0.25,
+      0.25,
+      0.75,
+      1.25,
+      1.75
+    ]
+  },
+  "vendor_step_licensing_review": {
+    "espressif_library_commit": "dd76561812ab300351234ba6e0ec1295641796f0",
+    "license_url": "https://github.com/espressif/kicad-libraries/blob/dd76561812ab300351234ba6e0ec1295641796f0/LICENSE.md",
+    "license_sha256": "6eb43c2548ac6714db47ccbd62354bd194e918f606b071a5e9893680b941d75a",
+    "license": "CC BY-SA 4.0 with library exception",
+    "finding": "Official repository contains C3/C6 module STEP files, but no selected bare FH4 SoC package STEP. No Espressif module CAD is substituted or bundled. Imported asset is the exact named unmodified KiCad QFN32 package, with its own retained source notices."
+  },
+  "bounded_exclusions": [
+    {
+      "reference": "C3 U2",
+      "part": "TLV75733PDBVR",
+      "verified_package": "TI DBV0005A, 5-pin SOT-23",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/tlv757p.pdf",
+      "datasheet_revision": "SBVS322C, March 2024; package drawing 4214839/K 08/2024",
+      "datasheet_sha256": "9f5e9602ed9366124dfee01dd773ceafca6b54c5c22cf3a7999453432c5cefb9",
+      "maximum_height_mm": 1.45,
+      "body_length_range_mm": [
+        2.75,
+        3.05
+      ],
+      "body_width_range_mm": [
+        1.45,
+        1.75
+      ],
+      "overall_lead_span_range_mm": [
+        2.6,
+        3.0
+      ],
+      "pitch_mm": 0.95,
+      "proposed_stock_model": "Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "stock_model_sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "stock_model_height_mm": 1.5500001,
+      "decision": "Omitted: immutable generic asset exceeds the actual TI package maximum; TSOT is a distinct package and no authenticated freely redistributable exact TI CAD was available. No model resize, translation into PCB or fabricated marking used."
+    },
+    {
+      "reference": "C3 U1",
+      "part": "Unfilled PCB value; schematic PMIC-XC6802MR; revision-history note changes U1 to ETA4054",
+      "decision": "Omitted: empty current PCB value and inherited symbol do not establish exact fitted charger suffix/height."
+    },
+    {
+      "reference": "C6 U1",
+      "part": "SGM6029CYG/TR",
+      "primary_url": "https://www.sg-micro.com/product/SGM6029",
+      "verified_package": "WLCSP-0.74x1.09-6B",
+      "decision": "Omitted: available named KiCad Texas_DSBGA-6_0.757x1.01mm_Layout2x3_P0.35mm is a different body package; no verified compatible licensed CAD."
+    },
+    {
+      "reference": "C6 U3",
+      "part": "SGM40567-4.2XG/TR",
+      "primary_url": "https://www.sg-micro.com/rect/assets/e95e555a-a8a2-4761-b86a-6554dff2d8ed/SGM40567.pdf",
+      "verified_package": "WLCSP-0.92x1.16-6B",
+      "decision": "Omitted: available named KiCad WLCSP-6_1.46x1.1mm_Layout3x2_P0.4mm is a different body package; no verified compatible licensed CAD."
+    }
+  ],
+  "limits": [
+    "Nominal package body/contacts match primary drawings; not the tolerance maximum or physical production chip measurement.",
+    "Library dot/appearance are generic; no manufacturer or batch text, date code, logo or shield has been drawn.",
+    "PCB/copper/export grid and installed carrier association unchanged. Component export seating is measured at 1.595 mm above module substrate-bottom datum; it is not measured assembly solder stand-off.",
+    "11 mm installed module-bottom Z, male header seating, buttons, RF shields, crystals, remaining semiconductors and complete module assembly remain unresolved."
+  ],
+  "render_receipt": "component-model-render-receipt.json",
+  "exported_geometry_preservation_receipt": "xiao-soc-export-geometry-preservation.json",
+  "protected_carrier_files_receipt": "xiao-soc-electrical-preservation.json",
+  "module_source_identity": {
+    "c3": {
+      "revision": "v1.3",
+      "vendor_archive_url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+      "vendor_archive_filename": "c3-v1.3-260116.zip",
+      "vendor_archive_sha256": "477bc61cec652eaeefa887cb1f97abb1514e8a61ea9659240b88be7213c3b6ff",
+      "original_pcb_sha256": "a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db",
+      "schematic_title_block_evidence": [
+        "CCBY-SA4.0   Size: A3",
+        "Date: 2026-01-15   Rev: v1.3",
+        "CCBY-SA4.0         Size: A3",
+        "Date: 2026-01-15   Rev: v1.3",
+        "CCBY-SA4.0                               Size: A3",
+        "Date: 2026-01-15                                   Rev: v1.3"
+      ]
+    },
+    "c6": {
+      "revision": "v1.0",
+      "vendor_archive_url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip",
+      "vendor_archive_filename": "c6-v1.0-260114.zip",
+      "vendor_archive_sha256": "cea2ed66da575e4a1dd6c7a9acd60583ed4a9adbf6b1d2952851c1e4199c05fc",
+      "original_pcb_sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027",
+      "schematic_title_block_evidence": [
+        "CCBY-SA4.0           Size: A3",
+        "Date: 2026-01-14   Rev: V1.0",
+        "CCBY-SA4.0      Size: A3",
+        "Date: 2026-01-14   Rev: V1.0",
+        "CCBY-SA4.0   Size: A3",
+        "Date: 2026-01-14   Rev: V1.0",
+        "CCBY-SA4.0                         Size: A3",
+        "Date: 2026-01-14                                                                       Rev: V1.0",
+        "CCBY-SA4.0                              Size: A3",
+        "Date: 2026-01-14             Rev: V1.0"
+      ]
+    }
+  }
+}

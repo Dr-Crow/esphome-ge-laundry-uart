@@ -19,6 +19,7 @@ preserved. No electrical part substitution is proposed here.
 | --- | --- | --- | --- |
 | XIAO C3 | Separately installed Seeed XIAO ESP32C3; canonical reference v1.3 | Native KiCad export of official v1.3 PCB and copper with generic package models | Partial assembly; no authenticated complete module STEP |
 | XIAO C6 | Separate Seeed XIAO ESP32C6 mechanical variant; reference v1.0 | Native KiCad export of official v1.0 PCB and copper with generic package models | Alternative preview; C3 geometry is never reused as C6 geometry |
+| Module SoCs | C3 U4 ESP32-C3FH4; C6 U4 ESP32-C6FH4 | Exact named KiCad QFN-32-1EP 5 × 5 mm, 0.5 mm pitch, 3.7 × 3.7 mm EP model | Verified nominal package dimensions and pin-1 orientation; generic colors/index dot, no chip text or actual production-height claim |
 | Module U.FL | Seeed C3 ANT0/C6 ANT2 value U.FL-R-SMT-1 | Separate licensed KiCad named-part Hirose model, dimensions checked against official drawing | Nominal geometry; fitted manufacturer/plating/packaging and mated cable remain unverified |
 | J1 | EVERCOM 5301-8P8C, **C3097717** | Locally authored detailed drawing model, Rev A 2025-09-23 | Dimensioned body and signal tails; undimensioned opening and springs are illustrative; locating-post solids omitted |
 | J5 and J6 | HCTL PM254-1-07-Z-8.5, C2897370 | Locally authored detailed drawing model, official family drawing Rev A, N = 7 | Dimensioned body and tails; receiving recess widths/depths are illustrative |
@@ -84,6 +85,67 @@ manufacturer-authored TD-1183S family drawing shows 3.0 × 2.5 mm bodies and
 1.5/1.7 mm height options, but the exact A3N-D1R suffix was not mapped to an
 option. Exact switch height, actuator profile and revision remain unresolved;
 no guessed button solids were drawn or imported.
+
+### Verified SoC package additions
+
+Both official Seeed sources name U4 as a bare FH4 SoC: **ESP32-C3FH4** and
+**ESP32-C6FH4**, respectively. The [C3 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf)
+v2.4 Figure 7-1 and the [C6 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)
+v1.5 Figure 7-2 establish the same QFN32 package: 5.00 ±0.05 mm square body,
+0.85 mm nominal height (0.80–0.90 mm), 0.50 mm pitch, 3.70 ±0.05 mm square
+exposed pad, 0.25 mm nominal terminal width and 0.40 mm nominal terminal length.
+The licensable unmodified KiCad 9.0.9 asset
+`QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step` independently measures
+5 × 5 × 0.85 mm. Its 32 bottom contact faces and chamfered 3.7 mm exposed pad
+also match those nominal dimensions. The older failed 3.5 mm EP download is
+historical evidence and is not used. The source file and its license notices
+are retained under `design/models/xiao-packages/`.
+
+The [official Espressif library](https://github.com/espressif/kicad-libraries/tree/dd76561812ab300351234ba6e0ec1295641796f0)
+was checked at the recorded commit, including its CC BY-SA 4.0 library-exception
+terms. It provides module STEP files, but no bare FH4 SoC STEP. No module CAD is
+substituted for a chip. The imported geometry is the named KiCad package, with
+generic colors and a pin-1 dot; no manufacturer logo, part text or batch marking
+has been added. This is nominal geometry, not a tolerance-maximum envelope.
+
+C3's Seeed footprint has local pad 1 at `(-1.75,+2.45)` mm and footprint
+orientation −90°. Its model Z rotation is **−90°** to align the stock package
+pin-1 corner. C6 local pad 1 is `(-2.45,-1.75)` mm with 0° footprint/model
+rotation. Isolated native STEP exports verify the pin-1 dot centers at
+`(-2.5223,-0.4876,2.445)` mm for C3 and `(-3.4627,-1.0314,2.445)` mm for C6,
+relative to each module's unchanged 14-pin-grid export origin. The stock marker
+radius/appearance are generic. The exported package seating plane is
+Z = 1.595 mm and top Z = 2.445 mm. These are native export coordinates, not
+a measured solder stand-off or an adjustment to the provisional 11 mm stack.
+
+The [package receipt](validation/xiao-soc-package-provenance.json) records the
+source archive/datasheet/model hashes, contact geometry, transforms, isolated
+exports and valid regenerated full compounds. The previous derivative boards
+are augmented only with U4 model nodes; their complete non-model token streams
+compare equal. The [producer](validation/augment_xiao_soc_models.py) checks the
+pinned input hashes and regenerates both distinct module STEP assets without
+refilling or editing source copper. Counts are now 41 included models for C3
+and 47 for C6. An [independent export comparison](validation/xiao-soc-export-geometry-preservation.json)
+matches the bounding box, volume, surface area and center of mass of every
+previous solid: all 1,082 C3 and 906 C6 solids are retained, with exactly one
+verified SoC solid added to each compound. The
+[protected-file receipt](validation/xiao-soc-electrical-preservation.json)
+also proves all 43 electrical, manufacturing and firmware files byte-identical.
+The carrier PCB, its 3D associations and the accepted connector
+body-datum manufacturing exports are byte-identical to the preceding checkpoint.
+
+The same pass bounded the remaining prominent semiconductor omissions.
+**C3 U2 TLV75733PDBVR** is TI DBV0005A/SOT-23-5. Its
+[primary package drawing](https://www.ti.com/lit/ds/symlink/tlv757p.pdf) permits
+1.45 mm maximum height, but the available immutable KiCad SOT-23-5 asset is
+1.55 mm high. It is not attached, resized or buried into the PCB. C3 U1's PCB
+value is empty; the schematic retains a PMIC-XC6802MR symbol and an earlier
+history note says ETA4054, so a fitted charger suffix/height is not inferred.
+C6 U1 [SGM6029CYG/TR](https://www.sg-micro.com/product/SGM6029) uses
+WLCSP-0.74 × 1.09-6B, and U3
+[SGM40567-4.2XG/TR](https://www.sg-micro.com/rect/assets/e95e555a-a8a2-4761-b86a-6554dff2d8ed/SGM40567.pdf)
+uses WLCSP-0.92 × 1.16-6B. Available named KiCad six-ball models have different
+body dimensions. These parts remain omitted pending compatible licensed geometry.
 
 The [HCTL official PM254 family product](https://www.hctldz.com/product-5-8/550.html)
 has an empty 3D download list. Its [Rev A drawing](https://www.hctldz.com/static/upload/2026/01/28/202601285507.pdf)
