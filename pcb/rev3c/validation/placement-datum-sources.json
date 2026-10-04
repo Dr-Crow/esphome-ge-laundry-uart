@@ -1,0 +1,32 @@
+{
+  "classification": "Authored technical review capture of nominal manufacturer/body-datum facts; not a supplier approval or redistributed manufacturer CAD/PDF.",
+  "references": {
+    "J1": {
+      "manufacturer": "EVERCOM",
+      "mpn": "5301-8P8C",
+      "identity": "C3097717",
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "local_body_center_xy_mm": [
+        4.445,
+        5.325
+      ],
+      "supplier_alignment": "Not approved; actual supplier-library zero, pin1, orientation and process still require review.",
+      "source_url": "https://chinarj45.com/uploads/20260211/99f6f1d1acfb5da691ec9e117bc8ba1c.pdf",
+      "manufacturer_document_sha256": "a25397e72510ab7b7d3bc458d8b68bf003e3506e1d7a6d9f45e3c82aeb6a4f61",
+      "datum_description": "EVERCOM5301-880XXX RevA2025-09-23 nominal unshielded8P8C family; STEP body bounds x[-3.155,12.045],y[-14.35,3.70]. STEP Y mirrors footprint Y, giving local footprint body centre(4.445,5.325). Full material/plating suffix remains unverified.",
+      "source_native_anchor_cpl_mm": [
+        13.97,
+        -12.55
+      ],
+      "body_width_depth_height_mm": [
+        15.2,
+        18.05,
+        11.45
+      ],
+      "body_cpl_center_xy_mm": [
+        8.645,
+        -16.995
+      ]
+    }
+  }
+}

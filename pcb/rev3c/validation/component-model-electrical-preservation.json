@@ -1,5 +1,7 @@
 {
   "selected_baseline_commit": "47c2fdc5047077b492509b3fbe73c1698958bda4",
+  "model_checkpoint_commit": "d662d1e",
+  "scope": "Frozen model-only checkpoint; later CPL datum export is separately reviewed, not claimed byte-identical.",
   "comparison": "Entire PCB S-expression token stream identical after removing only model nodes; all non-model data including pads, nets, tracks, vias, zones, outline, placement and properties retained.",
   "pcb_before_sha256": "6d22b6cda3ddabd9171a304034f7bdd40a47f4bcd8645200ce5cd79ccb97c304",
   "pcb_after_sha256": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",

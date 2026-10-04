@@ -1,4 +1,7 @@
-"""Prove the render/model lane preserves the selected electrical candidate."""
+"""Prove the frozen d662d1e model-only checkpoint against47c2fdc.
+
+Subsequent reviewed CPL body-datum changes have their own manufacturing proof.
+"""
 import hashlib
 import json
 import re
@@ -6,6 +9,7 @@ import subprocess
 from pathlib import Path
 
 BASE = '47c2fdc5047077b492509b3fbe73c1698958bda4'
+MODEL_CHECKPOINT = 'd662d1e'
 ROOT = Path(__file__).resolve().parents[3]
 PCB = 'pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb'
 
@@ -14,8 +18,8 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def baseline(path):
-    return subprocess.check_output(['git', '-C', str(ROOT), 'show', f'{BASE}:{path}'])
+def baseline(path, ref=BASE):
+    return subprocess.check_output(['git', '-C', str(ROOT), 'show', f'{ref}:{path}'])
 
 
 def remove_models(data):
@@ -41,7 +45,7 @@ def remove_models(data):
 
 if __name__ == '__main__':
     before = baseline(PCB)
-    after = (ROOT / PCB).read_bytes()
+    after = baseline(PCB, MODEL_CHECKPOINT)
     before_tokens, after_tokens = remove_models(before), remove_models(after)
     paths = subprocess.check_output(['git', '-C', str(ROOT), 'ls-tree', '-r', '--name-only', BASE]).decode().splitlines()
     protected = [p for p in paths if (
@@ -49,11 +53,13 @@ if __name__ == '__main__':
         p.endswith(('.kicad_sch', '.kicad_sym', '.kicad_mod', '.kicad_pro', '.kicad_dru')) or
         ('/design/' in p and p.endswith('.kicad_pcb') and p != PCB)
     )]
-    unchanged = [{ 'path':p, 'sha256':digest((ROOT/p).read_bytes()),
-                   'matches_selected_baseline':baseline(p)==(ROOT/p).read_bytes()}
+    unchanged = [{ 'path':p, 'sha256':digest(baseline(p, MODEL_CHECKPOINT)),
+                   'matches_selected_baseline':baseline(p)==baseline(p, MODEL_CHECKPOINT)}
                  for p in protected]
     result = {
         'selected_baseline_commit': BASE,
+        'model_checkpoint_commit': MODEL_CHECKPOINT,
+        'scope': 'Frozen model-only checkpoint; later CPL datum export is separately reviewed, not claimed byte-identical.',
         'comparison': 'Entire PCB S-expression token stream identical after removing only model nodes; all non-model data including pads, nets, tracks, vias, zones, outline, placement and properties retained.',
         'pcb_before_sha256': digest(before), 'pcb_after_sha256': digest(after),
         'pcb_without_models_before_sha256': digest(before_tokens),

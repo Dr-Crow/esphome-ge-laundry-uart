@@ -1,0 +1,60 @@
+{
+  "source_reference_commit": "d662d1e5baa75ec33c4fcc0a95cf9ff0449c7a1d",
+  "source_sha256": {
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb": "652993da8a47bca37ea95ca72a60eed44e5e4ff1a8ee202262f5ae4a911fa292",
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pro": "1e7fdc30cbb1eb191c4bb35cfb8b7d476023758b16cf30cf3651b9fe78621cde",
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch": "0c4abc0c24b55c4e7813596ad224bb1f4fb4776476184da79baf45af45187080",
+    "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
+    "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod": "c1579e5f623b6e83cd2f271eea57f69fcc128405f4546499ae1542f13c7bce1a",
+    "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
+    "pcb/rev3c/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
+    "pcb/rev3c/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod": "3dd6c2bd57cbd627d4c993c72472ce438884f7522fb43f9de412970250665e30",
+    "pcb/rev3c/design/fp-lib-table": "05b7f7185ec4c8bc8ceb76d10e0e4fa12fab5272e89d4e52657966af63f528e4",
+    "pcb/rev3c/design/models/1812L075-33DR-max-envelope.step": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+    "pcb/rev3c/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea",
+    "pcb/rev3c/design/models/J1-EVERCOM-5301-8P8C-envelope.step": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+    "pcb/rev3c/design/models/J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step": "121f1070cd6a16336abf762283f6729797d65949ee19b2c53b6302145b87edaa",
+    "pcb/rev3c/design/models/RJ45_EVERCOM_5301-8P8C-RevA-drawing-detail.step": "2dd0fad1b3f731095d418325b7213b68477a9fc6b63a950a9d7fed368039e809",
+    "pcb/rev3c/design/models/Socket_1x07_P2.54mm_HCTL_PM254.step": "ffc7112aad0ee3b6457b50cc4adc58366581d3a5c1c4cf1c174850ba5db299ec",
+    "pcb/rev3c/design/models/Socket_HCTL_PM254-1-07-Z-8.5-drawing-detail.step": "4567f7426543c3946b75e5153f8eed87556cc254caa2858d83bfffe307479394",
+    "pcb/rev3c/design/models/TPS1H200A-DGN0008K-max-envelope.step": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+    "pcb/rev3c/design/models/U.FL_Hirose_U.FL-R-SMT-1_Vertical-kicad-9.0.9.step": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
+    "pcb/rev3c/design/models/XIAO-ESP32-C3-Rev3C-installed-envelope.step": "d709f98f14a412c8b5ff7965419963bc6280bf45cd4d6584e3f7675d2a518d2d",
+    "pcb/rev3c/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step": "ce94f33287391d085e1cab8886d803a4e3822b638902346ca5a8ecb020f55055",
+    "pcb/rev3c/design/models/XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step": "81efa7c7c0e1d811a9d34c3eb9ff03c09ee8861f5cb627265f05abbf8824f992",
+    "pcb/rev3c/design/sym-lib-table": "a9b9a0418dd6a4c3405982f8cf04868ad022b4f9164039a30dd9cde88887fbe7",
+    "pcb/rev3c/design/symbols/GEA_Rev3B.kicad_sym": "da13a21843a34f4b7de0930c5781151c5b681cc78f5aad3714abd96f97335a60",
+    "pcb/rev3c/design/symbols/GEA_Rev3C.kicad_sym": "70cc601ef3bdc625f37521e12c7d9a1884aeeb26c13e064b8e8fbb91e497fe8c",
+    "pcb/rev3c/design/symbols/onionStraws.kicad_sym": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c"
+  },
+  "references": {
+    "J1": {
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "footprint": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+      "native_anchor_xy_mm": [
+        13.97,
+        -12.55
+      ],
+      "rotation_degrees": -90.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        4.445,
+        5.325
+      ],
+      "body_center_xy_mm": [
+        8.645,
+        -16.995
+      ],
+      "manufacturer_datum": {
+        "manufacturer": "EVERCOM",
+        "mpn": "5301-8P8C",
+        "evidence": "pcb/rev3c/validation/placement-datum-sources.json",
+        "sha256": "8629c3a9e1349b26b58f77c5207dd9aa3254f77319f18036f72d83828dc5057d",
+        "source_url": "https://chinarj45.com/uploads/20260211/99f6f1d1acfb5da691ec9e117bc8ba1c.pdf",
+        "datum_description": "EVERCOM5301-880XXX RevA2025-09-23 nominal unshielded8P8C family; STEP body bounds x[-3.155,12.045],y[-14.35,3.70]. STEP Y mirrors footprint Y, giving local footprint body centre(4.445,5.325). Full material/plating suffix remains unverified."
+      }
+    }
+  },
+  "supplier_qualification": "Blocked; nominal body datum only; no actual supplier zero/orientation/process/placement approval."
+}

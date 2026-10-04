@@ -14,13 +14,15 @@ Download [Gerber ZIP](manufacturing/GERBER-GEA-Adapter-Rev3C.zip), [BOM](manufac
 
 ![Three files from one frozen source](images/ordering/three-file-map.png)
 
-Use all three from source commit **7bb455fbc85c748f3125ed091a54375de69fbbcc**, frozen package `rev3c-rated-option-7bb455f`. Familiar filenames alone do not identify the version. Re-export all affected files and recheck their pairing after a source change.
+The download links above select the current paired review files. The CAD input checkpoint is **d662d1e**; J1’s CPL X/Y now use a documented nominal body datum, with native rotation retained. See the [placement review](validation/PLACEMENT-DATUM-REVIEW.md) and its source-bound proof. Familiar filenames alone do not identify the version.
+
+The October3 quote/screenshot snapshot was source **7bb455fbc85c748f3125ed091a54375de69fbbcc**, frozen package `rev3c-rated-option-7bb455f`, with its older pin-1-anchor CPL. Its frozen CPL was3157 bytes, SHA256 `aedf3c96a88d4ced3028111d3d5cf2d13d135eaa57dc472c9e84bd6f84a9221b`. Those quote values are historical estimates for the same83 parts; they do not establish supplier approval of the current corrected placement data. Refresh the exact current package before ordering.
 
 | File | What JLCPCB uses it for | Bytes | SHA-256 |
 | --- | --- | ---: | --- |
 | GERBER-GEA-Adapter-Rev3C.zip | Copper, solder mask, silkscreen, outline and drills; 14-member native factory package | 221392 | 669346b37b394cbcbb11c41386a494241a1670b662eeca8a5e55609a908dc4af |
 | BOM-GEA-Adapter-Rev3C.csv | 83 carrier reference designators and their exact selected parts | 4768 | 27a9dfa850fe996a36c792fb6146548bc59342eda2b05732fa24e173bade1406 |
-| CPL-GEA-Adapter-Rev3C.csv | The same 83 references, positions in mm, rotations and Top layer | 3157 | aedf3c96a88d4ced3028111d3d5cf2d13d135eaa57dc472c9e84bd6f84a9221b |
+| CPL-GEA-Adapter-Rev3C.csv |83 refs; J1 nominal body datum, native angles and Top layer | 3156 | a1f17d5e6018b582694428e374c18ecc110410482ab69022347bd8cf62ea37b2 |
 
 The 80-part baseline uses a different matched trio from source **ca1fdb1261af8b32a1bf353d37f40439ead5c3b0**, package `rev3c-dual-input-ca1fdb1`. Use its own 80-reference BOM and CPL together with its own Gerber ZIP. Do not mix the packages.
 
@@ -46,7 +48,7 @@ The 80-part baseline uses a different matched trio from source **ca1fdb1261af8b3
 
 5. Review **Component Placements** against native plots, CPL and package datasheets. Check board orientation, X/Y origin and units, Top layer, rotations, pin 1, diode/zener polarity, IC orientation, RJ45 and socket through-hole placement, and the TI exposed-pad/stencil requirements. The observed cloud preview remained “Generating PCB...” with reference placeholders; it did not provide usable 3D models. Passing to the pricing tab is not placement approval. Supplier graphics/placeholders do not establish physical fit. Native plot/CPL parity and physical assembly approval are separate checks. [Observed placement preview](images/ordering/placement-preview.jpg), [assembly review responsibilities](https://jlcpcb.com/help/article/terms-and-conditions-of-jlcpcb-assembly-service)
 
-   Genuine KiCad 9.0.9 native ERC/DRC report zero findings; source/export parity and digital manufacturing checks also pass. Those results do not establish electrical, functional or thermal qualification.
+   Genuine KiCad 9.0.9 native ERC/DRC report zero findings; CAD/CAM parity has passed; the separately typed body-datum export requires current validation and actual supplier-library pose review. Those results do not establish electrical, functional or thermal qualification.
 
 6. Open **Quote & Order** and record the complete PCB + PCBA total. Stop here for quote review. The supplier counts **34 unique component groups for selected 7bb455f**, versus **33 for baseline ca1fdb1**. The placed reference counts remain **83 and 80 per board**, respectively. These quotes include exact parts with no omissions or substitutions.
 

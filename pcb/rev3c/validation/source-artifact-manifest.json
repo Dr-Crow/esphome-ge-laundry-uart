@@ -192,8 +192,8 @@
     },
     {
       "path": "pcb/rev3c/validation/verify_component_model_only.py",
-      "bytes": 3180,
-      "sha256": "c5aa3f710caa9692cc84904f3cf214a4281e23dd6311847a6e7d920c65cf49b4"
+      "bytes": 3489,
+      "sha256": "063a23ac51553c7ceba0ca72c062827998614e2bf1950812e4f8921070ed58fb"
     }
   ],
   "artifacts": [
@@ -239,8 +239,8 @@
     },
     {
       "path": "pcb/rev3c/manufacturing/CPL-GEA-Adapter-Rev3C.csv",
-      "bytes": 3157,
-      "sha256": "aedf3c96a88d4ced3028111d3d5cf2d13d135eaa57dc472c9e84bd6f84a9221b"
+      "bytes": 3156,
+      "sha256": "a1f17d5e6018b582694428e374c18ecc110410482ab69022347bd8cf62ea37b2"
     },
     {
       "path": "pcb/rev3c/manufacturing/GERBER-GEA-Adapter-Rev3C.zip",
@@ -349,8 +349,8 @@
     },
     {
       "path": "pcb/rev3c/validation/component-model-electrical-preservation.json",
-      "bytes": 9311,
-      "sha256": "f24aacfae709ea57ede2f6699c58494e1d85f8e9daff04cec3f41393faed5422"
+      "bytes": 9470,
+      "sha256": "b832b3e5ad626a5d8077b06bba9bd6dd48de4d1a93fa06b4b0c4aa0c35959252"
     },
     {
       "path": "pcb/rev3c/validation/component-model-native-drc.json",
@@ -381,6 +381,16 @@
       "path": "pcb/rev3c/validation/xiao-model-provenance.json",
       "bytes": 181554,
       "sha256": "bbbb88b2c09f2a8595c45e9f9dab957637d879d56ed3187fb07210c593db6170"
+    },
+    {
+      "path": "pcb/rev3c/validation/placement-origin-review.json",
+      "bytes": 4867,
+      "sha256": "d7c23851df73268ae8589fcbcaf5ae26d2b2d0f09ef86bf1440d1a9014dd1394"
+    },
+    {
+      "path": "pcb/rev3c/validation/placement-datum-sources.json",
+      "bytes": 1272,
+      "sha256": "8629c3a9e1349b26b58f77c5207dd9aa3254f77319f18036f72d83828dc5057d"
     }
   ],
   "firmware_sources": [
@@ -448,13 +458,13 @@
     },
     {
       "path": "pcb/rev3c/README.md",
-      "bytes": 8448,
-      "sha256": "807bbcda4b778db37afd4f9606526ba1156449cbc9948316370ff637608d0179"
+      "bytes": 8692,
+      "sha256": "8261c5191650ba693d798fa443183092ce2e01d793eed2a79d0aacd062a81a24"
     },
     {
       "path": "pcb/rev3c/ORDERING.md",
-      "bytes": 10746,
-      "sha256": "476cc107411d39d2923d5907831823b6c40a84e0447d94102fd257b961cc1876"
+      "bytes": 11372,
+      "sha256": "4e5694e2695cae4578b34101b680979b0c38a0ac4ce5cac1f05de895be5019c3"
     },
     {
       "path": "pcb/rev3c/images/ordering/all-83-confirmed.jpg",
@@ -505,19 +515,24 @@
       "path": "pcb/rev3c/MODEL-ACCURACY.md",
       "bytes": 14609,
       "sha256": "b0e1def8d3b88c0035455f82a0ac3103ce2d627867b38aec03dedc74f4fdb64f"
+    },
+    {
+      "path": "pcb/rev3c/validation/PLACEMENT-DATUM-REVIEW.md",
+      "bytes": 698,
+      "sha256": "553d56de5f92cae837a041dcc9a944e2c4fab3916b04f9cb237de052fd96797d"
     }
   ],
   "export_notes": {
     "BOM": "Native schematic Value/Reference/Footprint/LCSC with exclude-DNP;83 fitted refs",
-    "CPL": "Native board CSV all sides/mm/exclude-DNP; only header/side labels converted to JLC;83 matching fitted refs",
+    "CPL": "Native board CSV positions retain angles/sides;83 matching fitted refs. J1 X/Y use a separately committed/source-bound manufacturer nominal body-datum proof. Source-native anchor agreement alone is not supplier-centroid approval.",
     "Gerber_drill": "Native board stored plot policy, Protel extensions,11 Gerbers +2 separate drills +job;14-member ZIP; maps separately",
     "renders": "Nine native inspected 1800\u00d71000 C3/C6 and matched-camera baseline images. Current assets are partial PCB-derived/nominal drawing previews, with missing exact buttons, shield/chips/headers and generic C3 USB limits in MODEL-ACCURACY.md; no physical-fit claim.",
-    "historical_proofs": "source-restoration-proof, gate-protection-proof and rated-switch-proof retain frozen checkpoints. delay-pin-type-proof records the metadata-only 47c2fdc correction. component-model-electrical-preservation verifies the subsequent visual lane against 47c2fdc; current native/source/manufacturing proof is checked separately.",
+    "historical_proofs": "Frozen restoration/gate/rated/DELAY/model-only checkpoints retain their respective source identities. The model verifier is explicitly pinned to d662d1e; current placement-origin-review proves the later export coordinate convention against complete current CAD closure.",
     "intrinsic_rule": "Only pad-to-pad within each exact U9/U10 footprint is0.20mm; all global/routing/netclass constraints unchanged",
     "sourcing_correction": "Native BOM/netlist/schematic refreshed for four metadata records. Native CPL conversion identical and Gerber/drill/job differ only in generation dates/checksums: CPL/ZIP/copper/renders/drill maps retained byte-for-byte.",
     "delay_pin_type": "At 47c2fdc, DELAY5 changed from input to bidirectional in local/embedded symbols. All 233 pin memberships and frozen PCB/manufacturing/image/firmware bytes were preserved at that checkpoint; later model/image changes are documented separately.",
     "portable_source": "The editor-session .kicad_prl file is excluded from the portable source manifest; it was already absent from the current-main candidate.",
-    "component_models": "Only 3D-model nodes change in the PCB; every nonmodel token remains identical to 47c2fdc. BOM/CPL/Gerber/drill/copper/firmware bytes retain the frozen electrical/quote pairing. Exact module/service identities and dimensional limits are recorded in model provenance; C6 source is SGM6029C/current260114 and matches the retained headroom PDF."
+    "component_models": "At d662d1e, only3D-model PCB nodes changed and all protected electrical/CAM/BOM/CPL/firmware bytes matched47c2fdc. Subsequent J1 CPL X/Y correction has its own reviewed nominal-body datum proof; all CAD, BOM, CAM and angles remain unchanged. No supplier or physical qualification is implied."
   },
   "sourcing_correction_base_commit": "46173b61546d1e51993c1376399b2614f3577df3",
   "selection_date_utc": "2026-10-03",
