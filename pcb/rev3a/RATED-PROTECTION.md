@@ -2,7 +2,7 @@
 
 This branch backports the selected Rev3C protection circuit (selected source `fafd3eab5a8a8465697e1557bb075d88f85be9d9`, electrical review `7bb455fbc85c748f3125ed091a54375de69fbbcc`) onto frozen Rev3A clearance source `d1769b25c206fe86f60e37c415d4a60da7bb8334`. Rev3A retains its integrated AP2112K-3.3/ESP32-C3-WROOM-02 architecture and original USB circuitry. Both GE inputs and original automatic PIN1-presence priority remain. This is a prototype protection backport, not a 40 V carrier rating or proof of an OEM failure.
 
-**Digital source status:** genuine KiCad 9.0.9 reports zero ERC errors with nine classified warnings and zero DRC errors/warnings/unconnected/parity, including all severities and expanded track checking. Native source, BOM, explicitly reviewed body-datum CPL, copper/drill archive, schematic and board review assets are paired in [the current manifest](validation/rated-protection-manifest.json). Independent review and exact supplier/process acceptance remain separate gates.
+**Digital source status:** genuine KiCad 9.0.9 reports zero ERC errors/warnings and zero DRC errors/warnings/unconnected/parity, including all severities and expanded track checking. Native source, BOM, explicitly reviewed body-datum CPL, copper/drill archive, schematic and board review assets are paired in [the current manifest](validation/rated-protection-manifest.json). Independent review and exact supplier/process acceptance remain separate gates.
 
 ## Reviewed protection circuit
 

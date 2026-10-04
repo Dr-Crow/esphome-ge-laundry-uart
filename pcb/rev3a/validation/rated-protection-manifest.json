@@ -2,13 +2,13 @@
   "scope": "Current source-bound rated-protection digital review/export freeze. No manufacturing/physical/electrical qualification approval.",
   "frozen_base_commit": "d1769b25c206fe86f60e37c415d4a60da7bb8334",
   "selected_C_commit": "fafd3eab5a8a8465697e1557bb075d88f85be9d9",
-  "generated_utc": "2026-10-04T06:03:55.342488+00:00",
+  "generated_utc": "2026-10-04T06:36:18.236788+00:00",
   "native_tools": "Genuine KiCad9.0.9 pinned symbol/footprint/model libraries",
   "source_sha256": {
     "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_dru": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec",
     "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
     "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pro": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
-    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch": "e09f35454df792d243e65246c3097b91034a31f7655d7f563db7a46ef81963ee",
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch": "c64844158d72df072a88e4d64342f31abea2f3cc1f7112e64a6e38ae18de0b53",
     "pcb/rev3a/design/footprints/LegacyBoard.pretty/C5_C_0805_2012Metric.kicad_mod": "3f6bd08022c46fe7529fbe2badf34e1a978ca985826ea45304cca1f2ee1c9c88",
     "pcb/rev3a/design/footprints/LegacyBoard.pretty/D2_SOT-23.kicad_mod": "e46553553c7d85df3e96d44e8a02773d3c949522871866cfd6cc3ef68db0ff12",
     "pcb/rev3a/design/footprints/LegacyBoard.pretty/SW2_SW_Push_1P1T_XKB_TS-1187A.kicad_mod": "f9bba750dc3d6ea77b3f17dfb03448bd4fd5a3396c69a2a863f672eb969b6a79",
@@ -28,26 +28,23 @@
     "pcb/rev3a/design/models/SW1-SW2-XKB-TS-1187A-B-A-B.step": "6f57eea6a999f1f7e20a0b13d82708e199205cd17c636936e60b9d928778dfd5",
     "pcb/rev3a/design/models/TPS1H200A-DGN0008K-max-envelope.step": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
     "pcb/rev3a/design/sym-lib-table": "517fcd666d3fae8354da04c8c31217b7bfe89481b4ee6bf7fea72a1e01b62a39",
-    "pcb/rev3a/design/symbols/LegacySymbols.kicad_sym": "99f95aaf64808fb498ce9f063559045c25f5a0dcee86532b1d5fb59dfeb4891c",
+    "pcb/rev3a/design/symbols/LegacySymbols.kicad_sym": "167df964f673fc74e979fa40bed640716288e4c425485e37d2dd58b5de3edb81",
     "pcb/rev3a/design/symbols/onionStraws.kicad_sym": "bd8e9c0852fada14eadfcc8d7f2c62fca73f53c11f70686a9ff5758ea31738bd"
   },
   "reports": {
     "ERC": {
-      "source_sha256": "e09f35454df792d243e65246c3097b91034a31f7655d7f563db7a46ef81963ee",
+      "source_sha256": "c64844158d72df072a88e4d64342f31abea2f3cc1f7112e64a6e38ae18de0b53",
       "native_version": "9.0.9",
       "errors": 0,
-      "warnings": 9,
+      "warnings": 0,
       "included_severities": [
         "error",
         "warning",
         "exclusion"
       ],
-      "date_as_native": "2026-10-04T01:39:23-0400",
-      "report_sha256": "636b66d684bd59e0ccccb4cc20e5d256811f5a665c1a0067dce556b525db810d",
-      "warning_classes": {
-        "endpoint_off_grid": 8,
-        "multiple_net_names": 1
-      }
+      "date_as_native": "2026-10-04T02:34:48-0400",
+      "report_sha256": "952896aef89ef0a1874d5eb46de93eedc8de6e20b704826a0e3c6859cc388904",
+      "warning_classes": {}
     },
     "DRC": {
       "source_sha256": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
@@ -61,8 +58,8 @@
         "warning",
         "exclusion"
       ],
-      "date_as_native": "2026-10-04T01:39:26-0400",
-      "report_sha256": "c08acd398a7875ac59a5ddc49fa70ed14cff699621211a90fa8be4cff6ebbaec"
+      "date_as_native": "2026-10-04T02:36:18-0400",
+      "report_sha256": "ea4c1980e8a9c120cb4f9829e0cead8aeec365a90a7c98d6a709c31c3227c17d"
     },
     "DRC_all_track": {
       "source_sha256": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
@@ -76,8 +73,8 @@
         "warning",
         "exclusion"
       ],
-      "date_as_native": "2026-10-04T01:39:24-0400",
-      "report_sha256": "1be7311a06f56551cf3fd7d9dc63709d468af20c105029e1c4fd661d5d04e0ae"
+      "date_as_native": "2026-10-04T02:34:49-0400",
+      "report_sha256": "13ee1e0a85849d75bbaa8feedfd91dbfe750473735d039afba4a70e5915b728f"
     }
   },
   "counts": {
@@ -230,5 +227,14 @@
     "references": 97,
     "native_grouped_export_rows": 49,
     "component_tuple_semantics": "Unchanged exact native component fields; currentCSV differs in serialization only."
-  }
+  },
+  "schematic_erc_normalization": {
+    "proof": "validation/erc-normalization/PROOF.json",
+    "input": "60ccb434ea4bb9c9e0cde7bbac36a15220b23a0e",
+    "frozen_implementation": "12ec65c7e63c6481ae0abf9ad6d35b961444fcbf",
+    "native_findings": "0 ERC errors/warnings;0 DRC errors/warnings/opens/parity, without waivers",
+    "physical_memberships": "All301 tuple fields and72 nets unchanged; explicit negative fixture detected.",
+    "supplier_bom": "Separate normalization preserves all97 per-reference fields; current97-row BOM differs only in serialization from49-row native export."
+  },
+  "current_manufacturing_binding": "validation/current-source-manufacturing-binding.json"
 }
