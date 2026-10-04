@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/workspace/shared/ge-oct3-rev3b-rated-protection/pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch</source>
-    <date>2026-10-03T20:21:33-0400</date>
+    <source>/workspace/shared/ge-oct4-rev3b-upstream/pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch</source>
+    <date>2026-10-03T22:42:50-0400</date>
     <tool>Eeschema 9.0.9</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -2728,7 +2728,7 @@
         <pin num="2" name="DIAG_EN" type="input"/>
         <pin num="3" name="FAULT" type="open_collector"/>
         <pin num="4" name="CL" type="output"/>
-        <pin num="5" name="DELAY" type="input"/>
+        <pin num="5" name="DELAY" type="bidirectional"/>
         <pin num="6" name="GND" type="power_in"/>
         <pin num="7" name="OUT" type="power_out"/>
         <pin num="8" name="VS" type="power_in"/>
@@ -2898,7 +2898,7 @@
       <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Diode.kicad_sym</uri>
     </library>
     <library logical="GEA_Rev3B">
-      <uri>/workspace/shared/ge-oct3-rev3b-rated-protection/pcb/rev3b/design/symbols/GEA_Rev3B.kicad_sym</uri>
+      <uri>/workspace/shared/ge-oct4-rev3b-upstream/pcb/rev3b/design/symbols/GEA_Rev3B.kicad_sym</uri>
     </library>
     <library logical="Jumper">
       <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Jumper.kicad_sym</uri>
@@ -2916,7 +2916,7 @@
       <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Transistor_FET.kicad_sym</uri>
     </library>
     <library logical="onionStraws">
-      <uri>/workspace/shared/ge-oct3-rev3b-rated-protection/pcb/rev3b/design/symbols/onionStraws.kicad_sym</uri>
+      <uri>/workspace/shared/ge-oct4-rev3b-upstream/pcb/rev3b/design/symbols/onionStraws.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
@@ -3010,7 +3010,7 @@
     </net>
     <net code="14" name="/PIN1_DELAY" class="Default">
       <node ref="R40" pin="2" pintype="passive"/>
-      <node ref="U9" pin="5" pinfunction="DELAY" pintype="input"/>
+      <node ref="U9" pin="5" pinfunction="DELAY" pintype="bidirectional"/>
     </net>
     <net code="15" name="/PIN1_FUSED" class="Power">
       <node ref="F2" pin="2" pintype="passive"/>
@@ -3051,7 +3051,7 @@
     </net>
     <net code="21" name="/PIN3_DELAY" class="Default">
       <node ref="R41" pin="2" pintype="passive"/>
-      <node ref="U10" pin="5" pinfunction="DELAY" pintype="input"/>
+      <node ref="U10" pin="5" pinfunction="DELAY" pintype="bidirectional"/>
     </net>
     <net code="22" name="/PIN3_EN" class="Default">
       <node ref="Q5" pin="3" pinfunction="C" pintype="passive"/>

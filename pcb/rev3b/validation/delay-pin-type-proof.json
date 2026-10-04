@@ -1,0 +1,22 @@
+{
+  "base_commit": "1a0690a5260b12e62c54b03d1de14abe97877980",
+  "purpose": "Correct TPS1H200A DELAY pin5 from input to bidirectional, following TI Rev E pin-functions table; no wiring or geometry change",
+  "manufacturer_reference": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+  "changed_source_files": {
+    "design/GEA-Adapter-Rev3B.kicad_sch": {
+      "before_sha256": "40c0f743f5cebbd27e9727a00276291257fd84f8dc47263d075e2e0abd38f0f1",
+      "after_sha256": "5aa8998b7820a3f00f2b0b18424f478989efacae7c6f33a47c488224012fba03"
+    },
+    "design/symbols/GEA_Rev3B.kicad_sym": {
+      "before_sha256": "3be6b7ed4b4dba739a435cd9b1a9bcbe01b24e8c04bdb9875e4fcc1abc440456",
+      "after_sha256": "e02116db811a5e2da4c9c634fb87d1c7434ce472f0c953f4126403d80a6e2bb4"
+    }
+  },
+  "net_graph_identical": true,
+  "schematic_pin_memberships": 257,
+  "native_kicad": "9.0.9",
+  "native_erc_errors_warnings": 0,
+  "native_drc_errors_warnings_unconnected_parity": 0,
+  "retained_manufacturing_source_commit": "5742253a1c95fb51b91638f57c5ae9ecab88c385",
+  "qualification": "Loaded source/thermal/transient/stencil/physical gates remain open; no physical or hosted tests."
+}

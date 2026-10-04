@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "base_commit": "0b957ba996e7e7a86f8776c9289b6cfb634421ee",
-  "reviewed_source_commit": "fafd3eab5a8a8465697e1557bb075d88f85be9d9",
-  "reviewed_utc": "2026-10-04T00:21:35.975813+00:00",
+  "reviewed_source_commit": "5742253a1c95fb51b91638f57c5ae9ecab88c385",
+  "reviewed_utc": "2026-10-04T02:43:31.584668+00:00",
   "kicad_version": "9.0.9",
   "native_erc_flags": [
     "--severity-all"
@@ -53,8 +53,8 @@
       "bytes": 11183
     },
     "README.md": {
-      "sha256": "102ac5af56de6b0c7b1e6d1a458c69047b6c9225c0254aa664cebd59eed7194c",
-      "bytes": 8326
+      "sha256": "dafd13ee2b1163a8d9a77a7978ae7f6703e526a521b9e846d8f63225ef29dc0d",
+      "bytes": 8818
     },
     "design/GEA-Adapter-Rev3B.kicad_dru": {
       "sha256": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
@@ -64,17 +64,13 @@
       "sha256": "a21a84afde3d430d0749b10b0d20312ef122954420cca0baf46ab7304feca598",
       "bytes": 1174850
     },
-    "design/GEA-Adapter-Rev3B.kicad_prl": {
-      "sha256": "b98f6db7ad1a07e010a5416fed4a86f40ec816decb196a25d678720a73546d01",
-      "bytes": 2127
-    },
     "design/GEA-Adapter-Rev3B.kicad_pro": {
       "sha256": "abea7adbb5a1ee515cd443d6735b7c1808d31d0cef98924e77ab61f694fccbc9",
       "bytes": 19801
     },
     "design/GEA-Adapter-Rev3B.kicad_sch": {
-      "sha256": "40c0f743f5cebbd27e9727a00276291257fd84f8dc47263d075e2e0abd38f0f1",
-      "bytes": 411160
+      "sha256": "5aa8998b7820a3f00f2b0b18424f478989efacae7c6f33a47c488224012fba03",
+      "bytes": 411168
     },
     "design/footprints/GEA_Rev3B.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": {
       "sha256": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
@@ -141,8 +137,8 @@
       "bytes": 2146
     },
     "design/symbols/GEA_Rev3B.kicad_sym": {
-      "sha256": "3be6b7ed4b4dba739a435cd9b1a9bcbe01b24e8c04bdb9875e4fcc1abc440456",
-      "bytes": 9360
+      "sha256": "e02116db811a5e2da4c9c634fb87d1c7434ce472f0c953f4126403d80a6e2bb4",
+      "bytes": 9368
     },
     "design/symbols/onionStraws.kicad_sym": {
       "sha256": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c",
@@ -213,11 +209,11 @@
       "bytes": 1582
     },
     "validation/native-kicad-9.0.9-drc.json": {
-      "sha256": "2aa2779064908a7b233589dd3394291baa64d5a8bb4bd8ee0625c3fd2f3285ee",
+      "sha256": "1c561152b295eef07208f1ff04764e5064d150c26e96d86a26e2e45c1a951157",
       "bytes": 375
     },
     "validation/native-kicad-9.0.9-erc.json": {
-      "sha256": "1ebfb75f67d2646ff51f0d87c11ca54a0b0538d356a740d0553eabbe02992250",
+      "sha256": "3732bd2fda5699252454d6f39dcf116a1209d2486276d2e8e2737a4824502443",
       "bytes": 459
     },
     "validation/netclass-pattern-audit.json": {
@@ -225,7 +221,7 @@
       "bytes": 3243
     },
     "validation/netlist.xml": {
-      "sha256": "4c42986d4f5c1e1ebd0623f5bc263644e4f8dbfb57b64d11c612d3d574c04857",
+      "sha256": "dbf964d4f271452bf5d6ac285721384f29d4f5e90a57dbfcb6fb2d5c2d5afa14",
       "bytes": 164595
     },
     "validation/npth-drill-map.pdf": {
@@ -241,7 +237,7 @@
       "bytes": 7392
     },
     "validation/schematic.pdf": {
-      "sha256": "e435085e61e03acc58dd9b27cbec3814c7865593978452655c3a1cf94f23f62e",
+      "sha256": "cd322d97b9a87a4755f2103736b5e77965bcdf7d2774aead3ee36297984f682e",
       "bytes": 514307
     },
     "validation/stock-3d-model-provenance.json": {
@@ -255,6 +251,10 @@
     "validation/INDEPENDENT-BACKPORT-REVIEW.md": {
       "sha256": "dbac5b2102b857f21421b62bd3ff6b81e0d4d4f8cf5479cdb83832ed06189433",
       "bytes": 12778
+    },
+    "validation/delay-pin-type-proof.json": {
+      "sha256": "b1313df8e778901fc404ac37e8eba0c1706e0bc7510ec12c442544dc49a2eb05",
+      "bytes": 1171
     }
   },
   "independent_review": {
@@ -262,5 +262,9 @@
     "receipt": "validation/INDEPENDENT-BACKPORT-REVIEW.md",
     "circuit_native_assembly_export_integrity": "Pass",
     "filled_copper_preservation": "Enumerated refill propagation and intermediate receive-clamp detours; RF/return-path/thermal gates remain open"
-  }
+  },
+  "imported_backport_commit": "dd9e68fbf28ddf23b93d8350e5f5bd9992fc873e",
+  "candidate_public_base_commit": "bc0d52495bd97ed1504bd0ca0775e47feb01a648",
+  "shared_component_reference_commit": "fafd3eab5a8a8465697e1557bb075d88f85be9d9",
+  "source_binding": "Implementation proof records frozen5742253; current file hashes and delay-pin-type-proof record the subsequent metadata-only correction. Editor-session .kicad_prl is excluded from portable source."
 }
