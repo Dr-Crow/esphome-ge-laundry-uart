@@ -1,0 +1,163 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-04T02:13:53-0400",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/477311b9-8f81-40c8-9c55-fd87e287247a",
+            "violations": [
+                {
+                    "description": "Both +5V and VCC are attached to the same items; +5V will be used in the netlist",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR037 Hidden pin 1 [+5V, Power input, Line]",
+                            "pos": {
+                                "x": 3.35915,
+                                "y": 1.55575
+                            },
+                            "uuid": "696d8ebe-26d6-439b-9b3e-9aea41d84f25"
+                        },
+                        {
+                            "description": "Symbol U4 Hidden pin 5 [VCC, Power input, Line]",
+                            "pos": {
+                                "x": 3.2131,
+                                "y": 1.28905
+                            },
+                            "uuid": "bb2eb10e-839a-4abf-81e7-c35194344f1f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol J4 Pin A1 [GND, Passive, Line]",
+                            "pos": {
+                                "x": 4.05,
+                                "y": 2.0786
+                            },
+                            "uuid": "097e8ae5-4cee-49c1-b441-2ffddf3973e4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol U7 Pin 1 [I/O1, Passive, Line]",
+                            "pos": {
+                                "x": 4.4992,
+                                "y": 1.85
+                            },
+                            "uuid": "c6f2c4cd-3f5a-49ac-ad1a-ebbee3b4188c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R26 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 4.3619,
+                                "y": 2.25
+                            },
+                            "uuid": "804b7203-2675-42fd-9a45-bf1939d94274"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R27 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 4.3619,
+                                "y": 2.45
+                            },
+                            "uuid": "e5e8879e-10f0-4fa6-8ef7-1452f3554f2f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol F3 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 4.6619,
+                                "y": 2.25
+                            },
+                            "uuid": "e9278645-81c5-4d54-b81f-ec80ba2c1b9a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R28 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 4.9619,
+                                "y": 1.8
+                            },
+                            "uuid": "a5371246-94fa-4d2d-bf33-3bba17924e95"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R29 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 4.9619,
+                                "y": 2.0
+                            },
+                            "uuid": "aae45a7c-32bc-40b4-8432-6cec6441d5be"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol D10 Pin 1 [K, Passive, Line]",
+                            "pos": {
+                                "x": 5.1619,
+                                "y": 2.25
+                            },
+                            "uuid": "1059b464-136a-4961-8cbb-45451b6327e5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                }
+            ]
+        }
+    ],
+    "source": "GEA-Adapter-Rev3A.kicad_sch"
+}

@@ -9,7 +9,7 @@
       "instance_count": 2,
       "source_definition_sha256": "7d1ea3c3686e4bc36cbab0c1ed84993dc7004338032a7706ce498d027f293362",
       "recovered_body_with_source_root_restored_sha256": "7d1ea3c3686e4bc36cbab0c1ed84993dc7004338032a7706ce498d027f293362",
-      "definition_changes": "Root library namespace only; full body and every nested name, pin, electrical type, geometry and property preserved."
+      "definition_changes": "Namespace-only recovery at source_commit, followed by ERC presentation cleanup: remove only pin 5 VCC hide flag. Name VCC, number 5, power_in type, position (0, 2.54), direction 90, zero length and every other definition property remain unchanged. Both gate instances explicitly connect pin 5 to their existing +5V symbols through new schematic wires."
     },
     {
       "source_symbol": "Connector:8P8C",
@@ -289,5 +289,13 @@
     "onionStraws:Rated_Resistor",
     "onionStraws:TPS1H200A_Q1"
   ],
-  "changes": "Library namespaces only. No pins, pin names, electrical types, symbol geometry, wires, labels, values, coordinates, footprints, rules or classes changed."
+  "changes": "Historical recovery: library namespaces only. Subsequent schematic-only ERC presentation cleanup is recorded under subsequent_presentation_cleanup; it changes no pin names, numbers, electrical types, endpoint geometry or part identities.",
+  "recovery_snapshot_scope": "Original namespace-only recovery from source_commit. Source/recovered-body hashes below are retained historical provenance; subsequent presentation changes are recorded separately.",
+  "subsequent_presentation_cleanup": {
+    "base_commit": "60ccb434ea4bb9c9e0cde7bbac36a15220b23a0e",
+    "proof": "../../validation/erc-normalization/PROOF.json",
+    "changed_local_symbol": "LegacySymbols:74LVC2G07",
+    "current_library_sha256": "167df964f673fc74e979fa40bed640716288e4c425485e37d2dd58b5de3edb81",
+    "preserved": "All other definitions, component identities, pin endpoint positions/directions and current electrical memberships."
+  }
 }

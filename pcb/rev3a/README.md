@@ -161,9 +161,13 @@ controlled-depth drilling, via-in-pad requirements, or bottom-side placements.
 
 ## Engineering and manufacturing status
 
-- The current schematic has zero KiCad 9.0.9 ERC errors and nine explicit warnings:
-  eight inherited USB metric-anchor grid warnings and one hidden power-name alias.
-  Exact historical library recovery removes 44 former symbol-mismatch warnings.
+- The current schematic has zero KiCad 9.0.9 ERC errors or warnings. The
+  [schematic-only ERC cleanup](validation/erc-normalization/README.md) moves eight
+  USB symbols and attached markers onto the unchanged 25 mil connection grid,
+  and explicitly wires the unchanged U4 VCC pins to +5V. All 301 current pin
+  memberships remain identical. The earlier namespace recovery removed 44
+  symbol-mismatch warnings. Existing rated-protection reports/manifests and
+  package schematic PDF still describe the pre-cleanup snapshot pending refresh.
 - Full native all-severity/all-track/parity DRC has zero errors, warnings and
   unconnected items. Exact frozen embedded footprint recovery clears five library
   mismatch warnings without pad, model, graphic, placement or attribute changes.

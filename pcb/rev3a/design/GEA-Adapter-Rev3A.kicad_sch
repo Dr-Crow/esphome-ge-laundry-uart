@@ -120,7 +120,6 @@
 				(pin power_in line
 					(at 0 2.54 90)
 					(length 0)
-					(hide yes)
 					(name "VCC"
 						(effects
 							(font
@@ -11629,7 +11628,7 @@
 		(dnp no)
 		(uuid "2a5f40f9-54b1-4a76-9a48-74db65fd2317")
 		(property "Reference" "U4"
-			(at 314.96 131.445 0)
+			(at 311.15 131.445 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11637,7 +11636,7 @@
 			)
 		)
 		(property "Value" "74LVC2G07"
-			(at 314.96 129.54 0)
+			(at 311.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12150,7 +12149,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:+5V")
-		(at 320.04 187.96 180)
+		(at 320.04 191.135 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12159,7 +12158,7 @@
 		(fields_autoplaced yes)
 		(uuid "315d947a-502f-4968-9537-95fcb3e57d09")
 		(property "Reference" "#PWR028"
-			(at 320.04 184.15 0)
+			(at 320.04 187.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12168,7 +12167,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 320.04 192.5225 0)
+			(at 320.04 195.6975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12176,7 +12175,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 320.04 187.96 0)
+			(at 320.04 191.135 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12185,7 +12184,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 320.04 187.96 0)
+			(at 320.04 191.135 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12194,7 +12193,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 320.04 187.96 0)
+			(at 320.04 191.135 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13762,7 +13761,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:+5V")
-		(at 321.31 128.905 180)
+		(at 321.31 132.08 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13771,7 +13770,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e297d89-0127-45f0-b8df-813fa50afde8")
 		(property "Reference" "#PWR034"
-			(at 321.31 125.095 0)
+			(at 321.31 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13780,7 +13779,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 321.31 133.4675 0)
+			(at 321.31 136.6425 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13788,7 +13787,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 321.31 128.905 0)
+			(at 321.31 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13797,7 +13796,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 321.31 128.905 0)
+			(at 321.31 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13806,7 +13805,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 321.31 128.905 0)
+			(at 321.31 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15723,7 +15722,7 @@
 		(dnp no)
 		(uuid "b09bb8c1-5e3c-46cc-b227-1374b14bc907")
 		(property "Reference" "U4"
-			(at 313.69 190.5 0)
+			(at 309.88 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15731,7 +15730,7 @@
 			)
 		)
 		(property "Value" "74LVC2G07"
-			(at 313.69 187.96 0)
+			(at 309.88 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18172,7 +18171,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:R")
-		(at 440 225 90)
+		(at 440.055 224.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18180,7 +18179,7 @@
 		(dnp no)
 		(uuid "f22adb7f-e6f7-4b39-b639-6f5de1215964")
 		(property "Reference" "R26"
-			(at 440 219 90)
+			(at 440.055 218.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18190,7 +18189,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 440 231 90)
+			(at 440.055 230.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18200,7 +18199,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 438.222 225 90)
+			(at 438.277 224.79 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18211,7 +18210,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 440 225 0)
+			(at 440.055 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18222,7 +18221,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 440 225 0)
+			(at 440.055 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18233,7 +18232,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 440 225 0)
+			(at 440.055 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18242,7 +18241,7 @@
 			)
 		)
 		(property "MPN" "RC0603FR-075K1L"
-			(at 440 225 0)
+			(at 440.055 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18251,7 +18250,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 440 225 0)
+			(at 440.055 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18260,7 +18259,7 @@
 			)
 		)
 		(property "LCSC" "C105580"
-			(at 440 225 0)
+			(at 440.055 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18285,7 +18284,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:R")
-		(at 440 245 90)
+		(at 440.055 245.11 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18293,7 +18292,7 @@
 		(dnp no)
 		(uuid "53df6279-8dec-4d05-8007-72360a9862ae")
 		(property "Reference" "R27"
-			(at 440 239 90)
+			(at 440.055 239.11 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18303,7 +18302,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 440 251 90)
+			(at 440.055 251.11 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18313,7 +18312,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 438.222 245 90)
+			(at 438.277 245.11 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18324,7 +18323,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 440 245 0)
+			(at 440.055 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18335,7 +18334,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 440 245 0)
+			(at 440.055 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18346,7 +18345,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 440 245 0)
+			(at 440.055 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18355,7 +18354,7 @@
 			)
 		)
 		(property "MPN" "RC0603FR-075K1L"
-			(at 440 245 0)
+			(at 440.055 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18364,7 +18363,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 440 245 0)
+			(at 440.055 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18373,7 +18372,7 @@
 			)
 		)
 		(property "LCSC" "C105580"
-			(at 440 245 0)
+			(at 440.055 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18398,7 +18397,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:R")
-		(at 500 180 90)
+		(at 499.745 179.705 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18406,7 +18405,7 @@
 		(dnp no)
 		(uuid "9c9fa8a9-b4a4-4255-b81e-577ed64e3f36")
 		(property "Reference" "R28"
-			(at 500 174 90)
+			(at 499.745 173.705 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18416,7 +18415,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 500 186 90)
+			(at 499.745 185.705 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18426,7 +18425,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 518.222 185 90)
+			(at 517.967 184.705 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18437,7 +18436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 520 185 0)
+			(at 519.745 184.705 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18448,7 +18447,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 520 185 0)
+			(at 519.745 184.705 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18459,7 +18458,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 520 185 0)
+			(at 519.745 184.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18468,7 +18467,7 @@
 			)
 		)
 		(property "MPN" "RC0603FR-0722RL"
-			(at 520 185 0)
+			(at 519.745 184.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18477,7 +18476,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 520 185 0)
+			(at 519.745 184.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18486,7 +18485,7 @@
 			)
 		)
 		(property "LCSC" "C107701"
-			(at 520 185 0)
+			(at 519.745 184.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18511,7 +18510,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:R")
-		(at 500 200 90)
+		(at 499.745 200.025 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18519,7 +18518,7 @@
 		(dnp no)
 		(uuid "4230381c-dc55-421e-869b-41167851f1f7")
 		(property "Reference" "R29"
-			(at 500 194 90)
+			(at 499.745 194.025 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18529,7 +18528,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 500 206 90)
+			(at 499.745 206.025 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18539,7 +18538,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 518.222 215 90)
+			(at 517.967 215.025 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18550,7 +18549,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 520 215 0)
+			(at 519.745 215.025 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18561,7 +18560,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 520 215 0)
+			(at 519.745 215.025 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18572,7 +18571,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 520 215 0)
+			(at 519.745 215.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18581,7 +18580,7 @@
 			)
 		)
 		(property "MPN" "RC0603FR-0722RL"
-			(at 520 215 0)
+			(at 519.745 215.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18590,7 +18589,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 520 215 0)
+			(at 519.745 215.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18599,7 +18598,7 @@
 			)
 		)
 		(property "LCSC" "C107701"
-			(at 520 215 0)
+			(at 519.745 215.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18624,7 +18623,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:Polyfuse")
-		(at 470 225 90)
+		(at 469.9 224.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18632,7 +18631,7 @@
 		(dnp no)
 		(uuid "e4fd043d-6a4c-44e8-8eb6-bea6d91b19dc")
 		(property "Reference" "F3"
-			(at 470 218 0)
+			(at 469.9 217.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18642,7 +18641,7 @@
 			)
 		)
 		(property "Value" "500mA"
-			(at 470 232 0)
+			(at 469.9 231.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18652,7 +18651,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
-			(at 471.27 219.92 0)
+			(at 471.17 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18664,7 +18663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 470 225 0)
+			(at 469.9 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18675,7 +18674,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 470 225 0)
+			(at 469.9 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18686,7 +18685,7 @@
 			)
 		)
 		(property "Manufacturer" "Littelfuse"
-			(at 470 225 0)
+			(at 469.9 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18695,7 +18694,7 @@
 			)
 		)
 		(property "MPN" "1206L050YR"
-			(at 470 225 0)
+			(at 469.9 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18704,7 +18703,7 @@
 			)
 		)
 		(property "Hold_Current" "500mA"
-			(at 470 225 0)
+			(at 469.9 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18713,7 +18712,7 @@
 			)
 		)
 		(property "LCSC" "C163512"
-			(at 470 225 0)
+			(at 469.9 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18737,7 +18736,7 @@
 		)
 	)
 	(label "USB_CC1"
-		(at 436.19 225 180)
+		(at 436.245 224.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18747,7 +18746,7 @@
 		(uuid "d30a9ed0-706b-4fae-b314-cb669a235f9b")
 	)
 	(label "GND"
-		(at 443.81 225 0)
+		(at 443.865 224.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18757,7 +18756,7 @@
 		(uuid "18216c69-978a-4af5-8f20-4d89653997b9")
 	)
 	(label "USB_CC2"
-		(at 436.19 245 180)
+		(at 436.245 245.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18767,7 +18766,7 @@
 		(uuid "0be356c1-6cdd-4701-9f24-0a5018ac0eab")
 	)
 	(label "GND"
-		(at 443.81 245 0)
+		(at 443.865 245.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18777,7 +18776,7 @@
 		(uuid "08fcc7b0-e28d-4393-89c0-b414f22973b9")
 	)
 	(label "USB_PROTECTED_N"
-		(at 496.19 180 180)
+		(at 495.935 179.705 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18787,7 +18786,7 @@
 		(uuid "c4ca56ae-31f9-446e-aef8-e505ca5ce7a7")
 	)
 	(label "USB_MCU_N"
-		(at 503.81 180 0)
+		(at 503.555 179.705 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18797,7 +18796,7 @@
 		(uuid "750db3c9-f992-4594-82c4-f55cd0ffdc1d")
 	)
 	(label "USB_PROTECTED_P"
-		(at 496.19 200 180)
+		(at 495.935 200.025 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18807,7 +18806,7 @@
 		(uuid "e2857d8a-7be8-47fe-b9fd-fd71ec264cf3")
 	)
 	(label "USB_MCU_P"
-		(at 503.81 200 0)
+		(at 503.555 200.025 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18817,7 +18816,7 @@
 		(uuid "6d519627-e531-415c-9d34-31cfb908995f")
 	)
 	(label "USB_VBUS"
-		(at 466.19 225 180)
+		(at 466.09 224.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18827,7 +18826,7 @@
 		(uuid "ad8f0bdf-f8e3-4f60-8798-fb937ef96d8d")
 	)
 	(label "USB_VBUS_FUSED"
-		(at 473.81 225 0)
+		(at 473.71 224.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18838,7 +18837,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:USB_C_Receptacle_USB2.0_16P")
-		(at 405 185 0)
+		(at 405.13 184.785 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18846,7 +18845,7 @@
 		(dnp no)
 		(uuid "34f29cf4-6010-4734-9bc3-e96689d14540")
 		(property "Reference" "J4"
-			(at 405 167.22 0)
+			(at 405.13 167.005 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18856,7 +18855,7 @@
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0_16P"
-			(at 405 210.4 0)
+			(at 405.13 210.185 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18866,7 +18865,7 @@
 			)
 		)
 		(property "Footprint" "OnionStraws:USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed"
-			(at 413.81 185 0)
+			(at 413.94 184.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18877,7 +18876,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20250421/4251387FDD0B70FDBB4F5FD36EE975AA.pdf"
-			(at 413.81 185 0)
+			(at 413.94 184.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18888,7 +18887,7 @@
 			)
 		)
 		(property "Description" "SHOU HAN TYPE-C 16PIN 2MD(073), C2765186, USB2.0 top-mount receptacle, 3A/5V; reviewed manufacturer shell slots; retained enlarged signal lands; 1.6mm PCB solder/retention qualification required"
-			(at 410 185 0)
+			(at 410.13 184.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18899,7 +18898,7 @@
 			)
 		)
 		(property "Manufacturer" "SHOU HAN"
-			(at 410 185 0)
+			(at 410.13 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18908,7 +18907,7 @@
 			)
 		)
 		(property "MPN" "TYPE-C 16PIN 2MD(073)"
-			(at 410 185 0)
+			(at 410.13 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18917,7 +18916,7 @@
 			)
 		)
 		(property "LCSC" "C2765186"
-			(at 410 185 0)
+			(at 410.13 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18987,7 +18986,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:USBLC6-2SC6")
-		(at 455 185 0)
+		(at 455.295 184.785 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18995,7 +18994,7 @@
 		(dnp no)
 		(uuid "907ec359-0ac9-44fe-a21a-a3b2f4609ffe")
 		(property "Reference" "U7"
-			(at 455 170 0)
+			(at 455.295 169.785 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19005,7 +19004,7 @@
 			)
 		)
 		(property "Value" "USBLC6-2SC6"
-			(at 455 200 0)
+			(at 455.295 199.785 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19015,7 +19014,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 471.27 178.65 0)
+			(at 471.565 178.435 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19028,7 +19027,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
-			(at 471.27 176.745 0)
+			(at 471.565 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19040,7 +19039,7 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
-			(at 470 185 0)
+			(at 470.295 184.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19051,7 +19050,7 @@
 			)
 		)
 		(property "Manufacturer" "STMicroelectronics"
-			(at 470 185 0)
+			(at 470.295 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19060,7 +19059,7 @@
 			)
 		)
 		(property "MPN" "USBLC6-2SC6"
-			(at 470 185 0)
+			(at 470.295 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19069,7 +19068,7 @@
 			)
 		)
 		(property "LCSC" "C7519"
-			(at 470 185 0)
+			(at 470.295 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19106,7 +19105,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:D_Schottky")
-		(at 520 225 0)
+		(at 520.065 224.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19114,7 +19113,7 @@
 		(dnp no)
 		(uuid "f7fdb6e8-55c9-425d-b8b5-287a2c734940")
 		(property "Reference" "D10"
-			(at 520 218 0)
+			(at 520.065 217.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19124,7 +19123,7 @@
 			)
 		)
 		(property "Value" "PMEG2010ER"
-			(at 520 232 0)
+			(at 520.065 231.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19134,7 +19133,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
-			(at 540 225 0)
+			(at 540.065 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19145,7 +19144,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 540 225 0)
+			(at 540.065 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19156,7 +19155,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 540 225 0)
+			(at 540.065 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19167,7 +19166,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 540 225 0)
+			(at 540.065 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19176,7 +19175,7 @@
 			)
 		)
 		(property "MPN" "PMEG2010ER,115"
-			(at 540 225 0)
+			(at 540.065 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19185,7 +19184,7 @@
 			)
 		)
 		(property "Forward_Current" "1A"
-			(at 540 225 0)
+			(at 540.065 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19194,7 +19193,7 @@
 			)
 		)
 		(property "Reverse_Voltage" "20V"
-			(at 540 225 0)
+			(at 540.065 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19203,7 +19202,7 @@
 			)
 		)
 		(property "LCSC" "C82288"
-			(at 540 225 0)
+			(at 540.065 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19227,7 +19226,7 @@
 		)
 	)
 	(label "USB_VBUS"
-		(at 420.24 169.76 0)
+		(at 420.37 169.545 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19237,7 +19236,7 @@
 		(uuid "44e66d06-7a14-45ee-b764-a5d03fbbcaf0")
 	)
 	(label "GND"
-		(at 405 207.86 0)
+		(at 405.13 207.645 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19247,7 +19246,7 @@
 		(uuid "b67b4194-afc1-475f-b873-c036f685afca")
 	)
 	(label "GND"
-		(at 397.38 207.86 180)
+		(at 397.51 207.645 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19257,7 +19256,7 @@
 		(uuid "ed971824-ae93-431e-9fe7-ee5c8d31a12c")
 	)
 	(label "USB_CC1"
-		(at 420.24 174.84 0)
+		(at 420.37 174.625 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19267,7 +19266,7 @@
 		(uuid "825b0272-7261-4771-a6fc-41d1d90add3d")
 	)
 	(label "USB_CC2"
-		(at 420.24 177.38 0)
+		(at 420.37 177.165 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19277,7 +19276,7 @@
 		(uuid "a95fcb08-dd06-42ec-92b5-04b13d89f384")
 	)
 	(label "USB_CONN_N"
-		(at 420.24 182.46 0)
+		(at 420.37 182.245 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19287,7 +19286,7 @@
 		(uuid "23af24f4-482d-4893-a630-f9976588b315")
 	)
 	(label "USB_CONN_P"
-		(at 420.24 187.54 0)
+		(at 420.37 187.325 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19297,7 +19296,7 @@
 		(uuid "77875ffe-e7f9-4ddd-9b4d-6ef1164e43d4")
 	)
 	(label "USB_CONN_N"
-		(at 449.92 185 180)
+		(at 450.215 184.785 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19307,7 +19306,7 @@
 		(uuid "a6a8a179-c921-4ac7-94fa-8d11c3d805d0")
 	)
 	(label "GND"
-		(at 455 192.62 0)
+		(at 455.295 192.405 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19317,7 +19316,7 @@
 		(uuid "d947bb59-06f4-4b2b-a188-f2f3f060c25d")
 	)
 	(label "USB_CONN_P"
-		(at 449.92 187.54 180)
+		(at 450.215 187.325 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19327,7 +19326,7 @@
 		(uuid "e483f626-8765-4688-a614-14b2002fad94")
 	)
 	(label "USB_PROTECTED_P"
-		(at 460.08 187.54 0)
+		(at 460.375 187.325 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19337,7 +19336,7 @@
 		(uuid "5edd9f90-5d42-4b10-b882-6d8749946b73")
 	)
 	(label "USB_VBUS"
-		(at 455 179.92 0)
+		(at 455.295 179.705 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19347,7 +19346,7 @@
 		(uuid "fde70074-afed-4f7c-99ad-a04d749ab189")
 	)
 	(label "USB_PROTECTED_N"
-		(at 460.08 185 0)
+		(at 460.375 184.785 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19357,7 +19356,7 @@
 		(uuid "c0c82953-3a4b-47ac-9fe2-1385f036b413")
 	)
 	(label "USB_VBUS_FUSED"
-		(at 523.81 225 180)
+		(at 523.875 224.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19387,7 +19386,7 @@
 		(uuid "7750090d-e63d-4611-96a9-80b4eab11288")
 	)
 	(label "+5V"
-		(at 516.19 225 0)
+		(at 516.255 224.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19397,7 +19396,7 @@
 		(uuid "342d16ad-b753-404d-b8f8-540de646b86a")
 	)
 	(label "USB_CONN_N"
-		(at 420.24 185 0)
+		(at 420.37 184.785 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19407,7 +19406,7 @@
 		(uuid "5e56a7f1-b10a-4769-8ed6-617bffe280d8")
 	)
 	(label "USB_CONN_P"
-		(at 420.24 190.08 0)
+		(at 420.37 189.865 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19423,11 +19422,11 @@
 		(uuid "b7712235-e5bd-4f38-8b2b-718897357518")
 	)
 	(no_connect
-		(at 420.24 197.7)
+		(at 420.37 197.485)
 		(uuid "bb7dbca6-cde0-4f3c-94ec-7cbfe7e515da")
 	)
 	(no_connect
-		(at 420.24 200.24)
+		(at 420.37 200.025)
 		(uuid "d1fe6b1f-ca5f-4de3-99a8-882eeacdbf0e")
 	)
 	(symbol
@@ -27268,4 +27267,14 @@
 (wire (pts (xy 411.48 311.15) (xy 419.1 311.15)) (stroke (width 0) (type default)) (uuid "d36a6653-d3ef-430c-829c-6ce728317322"))
 (label "GND" (at 419.1 311.15 0) (effects (font (size 1.0 1.0)) (justify left bottom)) (uuid "a402aa1c-ce2e-4d35-a033-f1d040f4efbb"))
 (text "CHIP_EN RC: retained 10k R3 + C26 1uF. Espressif recommendation; actual supply/reset/programmer qualification required." (at 411.48 318.77 0) (effects (font (size 1.0 1.0)) (justify left)) (uuid "220ec8f6-d866-497f-a98e-8c86333065cf"))
+	(wire
+		(pts (xy 321.31 128.905) (xy 321.31 132.08))
+		(stroke (width 0) (type default))
+		(uuid "768414f3-86f1-4e47-8623-0b2d16f5c932")
+	)
+	(wire
+		(pts (xy 320.04 187.96) (xy 320.04 191.135))
+		(stroke (width 0) (type default))
+		(uuid "e3f44900-76b7-43a6-8ab2-fc2478d202fb")
+	)
 )
