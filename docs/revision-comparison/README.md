@@ -4,7 +4,7 @@
 
 Updated October 4, 2026, from the October 3 source/quote checkpoints. The user selected the shared Rev3C design with two **40 V-rated TPS1H200A switches**, both GE power inputs and automatic PIN1 priority. Current source is local commit `fafd3ea`; its electrical and quoted factory files remain those of `7bb455f`. Selection does not establish a 40 V carrier rating, appliance compatibility or manufacturing readiness.
 
-C3 is the first target, with C6 interface and firmware flexibility retained. Applicable voltage-protection backports to Rev3A/B are now authorized as focused next work. Older revisions retain their distinct architectures and review gates. No revision has physical qualification, and older boards are not established safe fallbacks.
+C3 is the first target, with C6 interface and firmware flexibility retained. Applicable voltage-protection backports to Rev3A/B began October 4 at 00:05 UTC in isolated worktrees; new validated checkpoints are pending. Older revisions retain their distinct architectures and review gates. No revision has physical qualification, and older boards are not established safe fallbacks.
 
 ## Architecture and current role
 
@@ -13,8 +13,8 @@ C3 is the first target, with C6 interface and firmware flexibility retained. App
 | Rev1.0 | Generic 38-pin classic ESP32 interface; original nodemcu-32s target | PIN1 only; external buck through J1 | Restored historical CAD and two new classic profiles; exact purchased module and external supply unknown |
 | Rev2.0 | ESP32-C3-WROOM-02; UART programmer | Manual dual-input selector, linear 5 V and 3V3 regulators | Restored source; legacy protection, regulator and physical gates remain |
 | Rev2.1 / Rev2.2 | ESP32-C3-WROOM-02; UART programmer | Manual dual-input selector, linear regulators | Native cleanup passes; 60 / 59 fitted references; source-specific placement review remains |
-| Rev3A | Integrated C3 and built-in antenna; carrier USB-C/recovery controls | Automatic dual input and buck; separate USB/appliance paths | Intended-rule routing repair complete; focused protection backport and process/physical review next |
-| Rev3B | Soldered XIAO C3; module USB-C/external antenna | Automatic dual input and buck | Native checks pass; protection backport, module sourcing and installation review next |
+| Rev3A | Integrated C3 and built-in antenna; carrier USB-C/recovery controls | Automatic dual input and buck; separate USB/appliance paths | Intended-rule routing repair complete; protection backport active; process/physical gates open |
+| Rev3B | Soldered XIAO C3; module USB-C/external antenna | Automatic dual input and buck | Validated base passes native checks; protection backport active; sourcing/install gates open |
 | Selected Rev3C | Socketed pre-headered XIAO C3/C6; module USB/BOOT/RESET | Both GE inputs, automatic PIN1 priority, rated switches and buck | Selected development source; 83 fitted carrier references; four shared C3/C6 firmware builds |
 
 Rev3B/C require one physical power source at a time because the module's side-header VBUS connects to USB VBUS. Disconnect appliance power before powered USB. Rev3A's separate isolation paths still require bench verification. UART programmer VCC remains disconnected. Selection of C6 does not remove these power-path limits.

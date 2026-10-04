@@ -1,6 +1,6 @@
 # GE adapter source handoff
 
-Updated October 4, 2026, from the October 3 source/quote checkpoints. [Validation](VALIDATION.md), [pricing](PRICING.md) and the [finish plan](FINISH-PLAN.md) form the current review checkpoint. The selected shared Rev3C preserves both GE inputs and automatic PIN1 priority. C3 is first; C6 interface/firmware flexibility remains. Applicable Rev3A/B voltage backports are authorized next. No order, PR or publication is included.
+Updated October 4, 2026, from the October 3 source/quote checkpoints. [Validation](VALIDATION.md), [pricing](PRICING.md) and the [finish plan](FINISH-PLAN.md) form the current review checkpoint. The selected shared Rev3C preserves both GE inputs and automatic PIN1 priority. C3 is first; C6 interface/firmware flexibility remains. Applicable Rev3A/B voltage backports are active from October 4 at 00:05 UTC; no new validated heads are available yet. No order, PR or publication is included.
 
 ## Current local checkpoints
 
@@ -15,11 +15,14 @@ These exact hashes identify unpublished review candidates. They are deliberately
 | Reviewed Rev3B | 0b957ba996e7e7a86f8776c9289b6cfb634421ee | `pcb/rev3b/validation/` |
 | Rev2.1 placement cleanup | fe69d276e0031a752d600d55066d5f59a2018143 | `pcb/rev2.1/` native/manufacturing review |
 | Rev2.2 cleanup | 0ee8e021a14ac59176a202034de46db23a4ff9c3 | `pcb/rev2.2/` native/manufacturing review |
-| Restored Rev1.0 | 12f82aa5a4b1241e003749b5584b6e64e7fb5e71 | `pcb/rev1.0/validation/native-kicad-9.0.9/` |
-| Restored Rev2.0 | 17b41df540f792d20f0bc29dd736ecf97449f623 | `pcb/rev2.0/native-review/`, UART direction map |
+| Restored Rev1.0 final package | 3bb5f854f35c7d263d3c55392ac68ffac3995b25 | `pcb/rev1.0/validation/native-kicad-9.0.9/`, `review-manufacturing/` |
+| Restored Rev2.0 final package | 17b41df540f792d20f0bc29dd736ecf97449f623 | `pcb/rev2.0/native-review/`, source-bound current CAM and UART map |
 | Rev1 classic profiles | dde0af34e63c3a885cac82a07b3c13265028706a | `firmware/rev1-classic/validation/BUILD-REPORT.md`, `build-evidence.json` |
-| Universal CI | 563f5ba1b0495c5bef39f1928a76df031c04a8b9 | CI driver, regression tests and CI README |
+| Standalone universal CI | 563f5ba1b0495c5bef39f1928a76df031c04a8b9 | CI driver/tests; manifest declares two legacy profiles |
+| Integrated CI/source checkpoint | 146790c118960a70dc2ba954af76d9176b566335 | `ci/manifest.json` declares eight profiles; final historical integration/validation pending |
 | Legacy C3-only case | 5e01d790abac89fbfa031b8d12f00a0a6ce23dad | `case/rev3c/` unchanged CAD and geometry evidence |
+
+Rev1 implementation is `12f82aa5a4b1241e003749b5584b6e64e7fb5e71`; use final package `3bb5f85` for its independent receipt and completed review exports. Both restored historical packages have independent-review closeout and regenerated source-bound CAM. Original archives remain preserved; Rev1 original BOM/CPL absence and Rev2 supplier rotation approval remain procurement/assembly gates.
 
 Documentation-only selection changes do not requalify electrical files. After any CAD/BOM/CPL change, regenerate affected exports and bind all evidence to the new exact source. Current integrated source and future hosted job URLs must be recorded at publication time; no hosted execution is inferred from this table.
 
@@ -36,7 +39,7 @@ These links identify published baseline/history, not the unpublished candidates 
 | Original Rev1.0 editable source | [8798404](https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/87984047ee029efb83bf9947dc21818fd18e39b3) |
 | Original Rev2.0 editable source | [af1f2c4](https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/af1f2c40029ef67c56910fb2c55feac835553525) |
 
-Retain original archives as provenance. Matching Git blobs or filenames do not establish geometry/CPL approval. Rev1's original ZIP has no BOM/CPL; Rev2's archived/standalone semiconductor rotations have historical differences. Restored current exports need independent source pairing.
+Retain original archives as provenance. Matching Git blobs or filenames do not establish geometry/CPL approval. Rev1's original ZIP has no BOM/CPL; Rev2's archived/standalone semiconductor rotations have historical differences. Regenerated current CAM is source-bound and independently reviewed; original CAD-to-original-CAM identity and supplier placement approval are not inferred.
 
 ## Continue from the selected architecture
 

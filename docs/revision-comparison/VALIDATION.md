@@ -2,7 +2,7 @@
 
 [Comparison](README.md) · [Exact source heads](HANDOFF.md) · [Pricing](PRICING.md) · [Finish plan](FINISH-PLAN.md)
 
-Updated October 4, 2026; source and quote snapshot: October 3. The shared Rev3C design with two 40 V-rated TPS1H200A switches is selected. It retains both appliance PIN1/PIN3 inputs, automatic PIN1 priority, the AP63205 buck and C3/C6 header functions. Applicable protection backports to Rev3A/B are authorized next; older revisions remain separate. Selection and digital passes do not qualify a 40 V board, appliance operation, assembly, thermal behavior or enclosure.
+Updated October 4, 2026; source and quote snapshot: October 3. The shared Rev3C design with two 40 V-rated TPS1H200A switches is selected. It retains both appliance PIN1/PIN3 inputs, automatic PIN1 priority, the AP63205 buck and C3/C6 header functions. Applicable protection backports to Rev3A/B are active; older revisions remain separate. Selection and digital passes do not qualify a 40 V board, appliance operation, assembly, thermal behavior or enclosure.
 
 ## Current native checkpoints
 
@@ -10,13 +10,15 @@ Genuine KiCad **9.0.9**, full severities, expanded track reporting and schematic
 
 | Revision / local checkpoint | ERC errors / warnings | DRC errors / warnings | Unconnected / parity | Scope and remaining limits |
 | --- | ---: | ---: | ---: | --- |
-| Restored Rev1.0 `12f82aa` | 0 / 1 | 0 / 0 | 0 / 0 | One VCC/+5V alias warning retained; generic classic ESP32, external buck, PIN1 only; original archive has no BOM/CPL |
-| Restored Rev2.0 `17b41df` | 0 / 4 | 0 / 0 | 0 / 0 | Four alias warnings retained; manual dual input; current export/provenance closeout in progress |
+| Restored Rev1.0 final `3bb5f85` | 0 / 1 | 0 / 0 | 0 / 0 | One VCC/+5V alias warning retained; independent closeout/current CAM complete; generic classic ESP32, external buck, PIN1 only; original BOM/CPL absent |
+| Restored Rev2.0 `17b41df` | 0 / 4 | 0 / 0 | 0 / 0 | Four alias warnings retained; manual dual input; independent closeout/current CAM complete; supplier rotations unqualified |
 | Rev2.1 `fe69d276` | 0 / 0 | 0 / 0 | 0 / 0 | 60 fitted references; three source-bound pad-center placement conventions need supplier review |
 | Rev2.2 `0ee8e021` | 0 / 0 | 0 / 0 | 0 / 0 | 59 fitted references; legacy power/current/thermal and physical gates remain |
 | Rev3A `d1769b2` | 0 / 53 | 0 / 5 | 0 / 0 | All 62 intended-rule errors repaired; 93 fitted references; routing process and protection gates remain |
-| Rev3B `0b957ba` | 0 / 0 | 0 / 0 | 0 / 0 | 82 fitted references; rated protection backport not yet implemented |
+| Rev3B `0b957ba` | 0 / 0 | 0 / 0 | 0 / 0 | 82 fitted references in validated base; rated protection backport active, new validated head pending |
 | Selected Rev3C `fafd3ea` / electrical `7bb455f` | 0 / 0 | 0 / 0 | 0 / 0 | 83 matched BOM/CPL references; current-source checks pass; power/physical qualification remains open |
+
+Rev3A/B rows identify their last validated frozen bases. Rated protection work began October 4 at 00:05 UTC in separate isolated trees; no new validated backport heads are claimed. Rev1's implementation head is `12f82aa`; `3bb5f85` is its final review package.
 
 Rev3A's original configured Power patterns missed slash-prefixed nets. Correct intended patterns exposed 62 expanded errors (57 under standard aggregation); the repair retains the 0.25 mm Power clearance and now has zero errors under both modes. TP12's native clearance is **0.2502 mm**, only 0.2 µm above the rule. Nominal 0.14/0.16 mm via annuli also require supplier finished-annulus/process review. These geometry passes are not tolerance guarantees. Its retained 53 ERC and five DRC warnings are explicit, not erased.
 
@@ -29,7 +31,7 @@ The Rev2.1/2.2 C9/C10 courtyard issue is now resolved in their current cleanup s
 | Rev1.0 `8798404` | 3 / 276 | 0 / 51 | 0 / 59 | Electrical pin membership matched; 59 parity findings were generated net-name metadata |
 | Rev2.0 `af1f2c4` | 3 / 168 | 1 / 62 | 0 / 6 | Electrical membership matched by source UUID; reference aliases plus two absent DNP mechanical placeholders; one starved GND thermal |
 
-Recovery of original bytes does not establish source-to-CAM geometry parity. Rev1's retained Gerber archive is the original Git blob, with no BOM/CPL inside. Rev2's original archive and standalone CPL differ by six genuine 180° semiconductor rotations; nine diode rotations differ from native placement in both. Possible supplier conventions were not approval evidence. Current exports must be checked against the restored source independently.
+Recovery of original bytes does not establish source-to-CAM geometry parity. Rev1's retained Gerber archive is the original Git blob, with no BOM/CPL inside. Rev2's original archive and standalone CPL differ by six genuine 180° semiconductor rotations; nine diode rotations differ from native placement in both. Possible supplier conventions were not approval evidence. Both final historical packages now have independent-review closeout and regenerated source-bound current CAM, kept separate from the preserved originals. Rev1's missing original BOM/CPL remains a procurement gate; Rev2's supplier rotations remain unqualified.
 
 Earlier interface/electrical research used KiCad **9.0.2** netlist/geometry extraction. It was not a 9.0.9 ERC/DRC rerun. Six earlier 9.0.2 courtyard findings did not reproduce on the exact public 9.0.9 source; that does not erase the separate intended Power-routing findings repaired on Rev3A. Keep source, engine, libraries, severities and aggregation attached to each result; counts from different runs are not interchangeable.
 
@@ -57,7 +59,7 @@ Eight actual local ESPHome **2026.9.1 config and compile** results use ESP-IDF *
 
 Classic candidate `dde0af3` configures only proved carrier LED GPIO13; its exact purchased 38-pin module remains unknown. GEA2 has eight format plus one unused-function warning; GEA3 has seven format plus one unused-function warning. They include ERD/text decimal conversions, not only logging. Xtensa `int`/`long` have matching 32-bit widths and signedness here, with no evidenced argument displacement/truncation; the printf type-contract defects remain and runtime formatting was not tested. No device was flashed, attached or functionally tested. Shared Matter/Thread appliance firmware is not implemented.
 
-Universal CI source `563f5ba` has seven meaningful regression tests, separate native/source/manufacturing/firmware checks and current-source-bound qualification gates. Its current manifest declares the two legacy profiles; shared/classic successes are separate local build evidence, and their full CI-manifest integration remains to be reviewed. Local test/schema validation passed; pinned KiCad 9.0.9 and ESPHome 2026.9.1 containers are specified. **Fresh container execution and hosted jobs have not run.** The latest integration tree combines selected Rev3C, repaired Rev3A, legacy updates and classic profiles; integration is a source checkpoint, not hosted execution. Missing source, infrastructure failure and stale/untracked evidence remain failures.
+Universal CI source `563f5ba` has seven meaningful regression tests, separate native/source/manufacturing/firmware checks and current-source-bound qualification gates. Its standalone manifest declares the two legacy profiles. Integrated checkpoint `146790c` already declares all eight legacy/shared/classic profiles and contains selected Rev3C, reviewed Rev3A/2.1 and clean classic source. Final historical integration and complete-source validation are pending. Local test/schema validation passed; pinned KiCad 9.0.9 and ESPHome 2026.9.1 containers are specified. **Fresh container execution and hosted jobs have not run.** Eight manifest entries and separate successful local builds do not establish a complete integrated or hosted run. Missing source, infrastructure failure and stale/untracked evidence remain failures.
 
 ## Mechanical and delivery boundary
 
