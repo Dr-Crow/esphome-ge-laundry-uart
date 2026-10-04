@@ -92,9 +92,11 @@
     "retained_unchanged_copper_objects": 1364,
     "modified_copper_objects": 3,
     "removed_copper_objects": 211,
-    "added_copper_objects": 1294
+    "added_copper_objects": 1294,
+    "supplier_bom_rows": 97,
+    "native_grouped_bom_rows": 49
   },
-  "BOM_sha256": "076e69ac94b57e2da1f789cf6c4265e9ed462d6ee65aff4f5b146974e6b54f13",
+  "BOM_sha256": "70158d51f3caa9abd827e995d92ee816c3ed2edbd5727d149c0acf95a3a480d5",
   "CPL_sha256": "cd026b761d8623fc9cd2cc3225603449431454cc33e4a5576d27f3f01debdf3f",
   "CAM_sha256": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e",
   "CAM_members_sha256": {
@@ -137,7 +139,7 @@
     "pcb/rev3a/images/inner1.svg": "7509e42d23aa4f215617abc92240371c43e2bb33aa233e8098f9271d86ec8c37",
     "pcb/rev3a/images/inner2.svg": "fe314e70dffe2147f1a133f67e1cd144b195167692161bb6ef081ff6488b086f",
     "pcb/rev3a/images/top.svg": "c642a722149324c7f32cbafb61adf93d9e446e18ea75fe55c9dbeafdb92db976",
-    "pcb/rev3a/manufacturing/BOM-GEA-Adapter-Rev3A.csv": "076e69ac94b57e2da1f789cf6c4265e9ed462d6ee65aff4f5b146974e6b54f13",
+    "pcb/rev3a/manufacturing/BOM-GEA-Adapter-Rev3A.csv": "70158d51f3caa9abd827e995d92ee816c3ed2edbd5727d149c0acf95a3a480d5",
     "pcb/rev3a/manufacturing/CPL-GEA-Adapter-Rev3A.csv": "cd026b761d8623fc9cd2cc3225603449431454cc33e4a5576d27f3f01debdf3f",
     "pcb/rev3a/manufacturing/GERBER-GEA-Adapter-Rev3A.zip": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e",
     "pcb/rev3a/validation/assembly-bottom.pdf": "31e6d502b3891a6b2dd1ae4860cd2025e359d7465ec056e67005bb71c9ba416e",
@@ -221,5 +223,12 @@
   "local_library_provenance_sha256": {
     "pcb/rev3a/design/footprints/source-map.json": "3a9b2804d89478f57ed9248d2215abc11de62e894fa1589a4f901963ef58e98a",
     "pcb/rev3a/design/symbols/source-map.json": "779ad9904daf5b273bdf691213214ca984eb35a5b25e7d59173136424be3ffe4"
+  },
+  "supplier_bom_serialization": {
+    "proof": "validation/supplier-bom-row-normalization.json",
+    "rows": 97,
+    "references": 97,
+    "native_grouped_export_rows": 49,
+    "component_tuple_semantics": "Unchanged exact native component fields; currentCSV differs in serialization only."
   }
 }

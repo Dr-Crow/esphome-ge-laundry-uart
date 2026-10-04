@@ -1,0 +1,12 @@
+{
+  "scope": "Supplier CSV serialization only; grouped native BOM49rows expanded to97 one-reference rows with Quantity1. All per-reference fields/code/part/rating data identical; no substitution. Supplier warning reason remains unconfirmed until reimport.",
+  "baseline_candidate": "60ccb434ea4bb9c9e0cde7bbac36a15220b23a0e",
+  "before_sha256": "076e69ac94b57e2da1f789cf6c4265e9ed462d6ee65aff4f5b146974e6b54f13",
+  "after_sha256": "70158d51f3caa9abd827e995d92ee816c3ed2edbd5727d149c0acf95a3a480d5",
+  "before_rows": 49,
+  "after_rows": 97,
+  "references": 97,
+  "all_per_reference_fields_identical": true,
+  "gerber_sha256": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e",
+  "cpl_sha256": "cd026b761d8623fc9cd2cc3225603449431454cc33e4a5576d27f3f01debdf3f"
+}
