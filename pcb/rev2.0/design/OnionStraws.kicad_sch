@@ -134,8 +134,8 @@
 					)
 				)
 				(pin power_in line
-					(at 0 2.54 90)
-					(length 0) hide
+					(at 0 5.715 90)
+					(length 3.175)
 					(name "VCC"
 						(effects
 							(font
@@ -23582,17 +23582,7 @@
 		)
 		(uuid "04df6ee0-9af3-41bc-888c-1bef466a757f")
 	)
-	(label "TXD"
-		(at 207.01 137.16 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "06354342-18ad-47d7-ae37-68b12cad74cc")
-	)
+
 	(label "LED1"
 		(at 156.21 149.86 0)
 		(fields_autoplaced yes)
@@ -23615,14 +23605,15 @@
 		)
 		(uuid "1971c7c2-9218-442c-9c9b-f5d957908dd2")
 	)
-	(label "TXD"
-		(at 36.83 217.17 0)
+	(global_label "GEA3_RX"
+		(at 36.83 217.17 180)
+		(shape input)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right)
 		)
 		(uuid "1d1b20c0-3fcc-4e88-ba5c-0baa3c567967")
 	)
@@ -23659,14 +23650,15 @@
 		)
 		(uuid "556abc14-0e50-4ef1-a237-2cdf6dda90a2")
 	)
-	(label "TXD"
-		(at 36.83 232.41 0)
+	(global_label "GEA3_RX"
+		(at 36.83 232.41 180)
+		(shape input)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right)
 		)
 		(uuid "59bcd463-a266-4e67-a4d6-216956604e74")
 	)
@@ -23714,7 +23706,7 @@
 		)
 		(uuid "9a5f79bb-59bc-45e6-9aea-868b1565f648")
 	)
-	(label "GLITCHES"
+	(label "DBG_LED"
 		(at 133.35 144.78 0)
 		(fields_autoplaced yes)
 		(effects
@@ -23758,14 +23750,15 @@
 		)
 		(uuid "ab32b8c4-baa2-44ec-987d-59a1e4a69016")
 	)
-	(label "RXD"
-		(at 36.83 237.49 0)
+	(global_label "GEA3_TX"
+		(at 36.83 237.49 180)
+		(shape input)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right)
 		)
 		(uuid "c926e658-13ee-41e4-9695-20c71f446ebf")
 	)
@@ -23780,25 +23773,16 @@
 		)
 		(uuid "df526060-3776-45ae-8995-0e344de84c80")
 	)
-	(label "RXD"
-		(at 207.01 134.62 0)
+
+	(global_label "GEA3_TX"
+		(at 36.83 214.63 180)
+		(shape input)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
-		)
-		(uuid "eac750d3-8f02-4e51-af94-c6d9e3390649")
-	)
-	(label "RXD"
-		(at 36.83 214.63 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
+			(justify right)
 		)
 		(uuid "f5aeb3e9-2dbb-4e0e-ab40-9da4e6019a7a")
 	)
@@ -25645,7 +25629,7 @@
 		(dnp no)
 		(uuid "2a5f40f9-54b1-4a76-9a48-74db65fd2317")
 		(property "Reference" "U4"
-			(at 314.96 131.445 0)
+			(at 311.15 131.445 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25653,7 +25637,7 @@
 			)
 		)
 		(property "Value" "74LVC2G07"
-			(at 314.96 129.54 0)
+			(at 311.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26112,7 +26096,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:+5V")
-		(at 320.04 187.96 180)
+		(at 325.12 194.31 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26121,7 +26105,7 @@
 		(fields_autoplaced yes)
 		(uuid "315d947a-502f-4968-9537-95fcb3e57d09")
 		(property "Reference" "#PWR028"
-			(at 320.04 184.15 0)
+			(at 325.12 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26130,7 +26114,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 320.04 192.5225 0)
+			(at 325.12 198.8725 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26138,7 +26122,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 320.04 187.96 0)
+			(at 325.12 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26147,7 +26131,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 320.04 187.96 0)
+			(at 325.12 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26156,7 +26140,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 320.04 187.96 0)
+			(at 325.12 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27685,7 +27669,7 @@
 	)
 	(symbol
 		(lib_id "LegacySymbols:+5V")
-		(at 321.31 128.905 180)
+		(at 326.39 135.255 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27694,7 +27678,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e297d89-0127-45f0-b8df-813fa50afde8")
 		(property "Reference" "#PWR034"
-			(at 321.31 125.095 0)
+			(at 326.39 131.445 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27703,7 +27687,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 321.31 133.4675 0)
+			(at 326.39 139.8175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27711,7 +27695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 321.31 128.905 0)
+			(at 326.39 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27720,7 +27704,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 321.31 128.905 0)
+			(at 326.39 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27729,7 +27713,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 321.31 128.905 0)
+			(at 326.39 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29650,7 +29634,7 @@
 		(dnp no)
 		(uuid "b09bb8c1-5e3c-46cc-b227-1374b14bc907")
 		(property "Reference" "U4"
-			(at 313.69 190.5 0)
+			(at 309.88 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29658,7 +29642,7 @@
 			)
 		)
 		(property "Value" "74LVC2G07"
-			(at 313.69 187.96 0)
+			(at 309.88 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32058,5 +32042,29 @@
 		(property "Footprint" "" (at 260.35 43.18 0) (effects (font (size 1.27 1.27)) (hide yes)))
 		(pin "1" (uuid "988d7e10-e0d7-42f6-89c0-862b4ec822e3"))
 		(instances (project "OnionStraws" (path "/477311b9-8f81-40c8-9c55-fd87e287247a" (reference "#FLG03") (unit 1))))
+	)
+
+		(wire
+		(pts (xy 320.04 191.135) (xy 320.04 194.31))
+		(stroke (width 0) (type default))
+		(uuid "99674ea4-15e1-5322-b733-b5a6320d5285")
+	)
+
+		(wire
+		(pts (xy 321.31 132.08) (xy 321.31 135.255))
+		(stroke (width 0) (type default))
+		(uuid "39895348-83d2-52cd-87e1-738f011c547d")
+	)
+
+	(wire
+		(pts (xy 320.04 194.31) (xy 325.12 194.31))
+		(stroke (width 0) (type default))
+		(uuid "73e73eba-faaf-5423-b04e-c4c239ed424e")
+	)
+
+	(wire
+		(pts (xy 321.31 135.255) (xy 326.39 135.255))
+		(stroke (width 0) (type default))
+		(uuid "119d4084-efc3-5036-83ee-cbb3fa5b9e0f")
 	)
 )

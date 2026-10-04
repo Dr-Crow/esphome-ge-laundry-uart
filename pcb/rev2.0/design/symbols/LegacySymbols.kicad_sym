@@ -123,8 +123,8 @@
 					)
 				)
 				(pin power_in line
-					(at 0 2.54 90)
-					(length 0) hide
+					(at 0 5.715 90)
+					(length 3.175)
 					(name "VCC"
 						(effects
 							(font
