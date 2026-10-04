@@ -15,11 +15,11 @@ The project began as an effort to integrate a GE washer and dryer with Home Assi
 
 Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 configuration, flash the board, connect it to Home Assistant, and check the status LEDs. The [Rev 2 enclosure](case/rev2/README.md) includes ready-to-print files.
 
-### I want to order a board
+### I want to review a new board
 
-Start with [PCB Rev 2.2](pcb/rev2.2/README.md), then follow the [step-by-step ordering guide](pcb/ORDERING.md). Rev 2.2 corrects the known Rev 2.0 and Rev 2.1 board-file problems.
+Review the exact source and [native CI/readiness gates](ci/README.md) before selecting a manufacturing package. This standalone CI candidate retains the public hardware baseline; source availability, native errors/warnings, intended rules and assembly evidence can still fail. No revision is released by a green software build or quote.
 
-**Current status:** Rev 2.2 is the recommended manufacturing candidate; physical testing is still pending. A JLCPCB quote checked on September 19, 2026 was **$78.07 before shipping and tax for five fully assembled boards**, or about **$15.61 per board**. Prices and component availability can change.
+The [ordering guide](pcb/ORDERING.md) identifies file roles. Its September19 Rev2.2 quote of $78.07 for five boards is historical; regulator/current, protection, thermal, assembly and physical qualification remain open. It is not a manufacturing-ready fallback.
 
 Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
 

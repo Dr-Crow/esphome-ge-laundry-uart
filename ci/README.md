@@ -27,9 +27,11 @@ python3 -m unittest discover -s ci -p 'test_*.py'
 
 Use genuine KiCad **9.0.9**, its official symbol/footprint/model libraries and ESPHome
 **2026.9.1**. CircleCI pins executable/container versions and registry manifest
-digests. The CircleCI configuration is byte-identical to `563f5b`; its earlier schema
-validation remains the existing evidence. This staging work did not call external
-CircleCI validation, execute hosted jobs or start fresh containers. Existing real
+digests. The config now adds a pinned native validator-tests job. Its final bytes
+passed the official CircleCI CLI schema service on October 4 at 05:31 UTC; all 25
+boundary tests passed locally in both the universal and combined candidates.
+This is configuration/local-test evidence. Hosted jobs and fresh containers have
+not run. Existing real
 legacy firmware builds are source-matched; they were not repeated here. Reports and
 logs go to `ci-artifacts/`, retained even when jobs fail. No command flashes hardware,
 places orders or publishes a release.
