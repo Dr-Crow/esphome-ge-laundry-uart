@@ -2,7 +2,7 @@
   "source_reference_commit": "f885fa225c5e39f56f5050e26d57b739277a0308",
   "source_sha256": {
     "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
-    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb": "a21a84afde3d430d0749b10b0d20312ef122954420cca0baf46ab7304feca598",
+    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1",
     "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pro": "abea7adbb5a1ee515cd443d6735b7c1808d31d0cef98924e77ab61f694fccbc9",
     "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch": "5aa8998b7820a3f00f2b0b18424f478989efacae7c6f33a47c488224012fba03",
     "pcb/rev3b/design/footprints/GEA_Rev3B.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
@@ -17,6 +17,8 @@
     "pcb/rev3b/design/models/J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step": "121f1070cd6a16336abf762283f6729797d65949ee19b2c53b6302145b87edaa",
     "pcb/rev3b/design/models/TPS1H200A-DGN0008K-max-envelope.step": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
     "pcb/rev3b/design/models/XIAO-ESP32-C3-v1.3-envelope.step": "cbc6c2757da1e784924280c9be17e86113a9392fcdd52e96931ddb69184fc54e",
+    "pcb/rev3b/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+    "pcb/rev3b/design/models/xiao-packages/QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.step": "7e77a52b3e261a45529e0df739376ea7cd79204fb1afad81332a50f4f1607000",
     "pcb/rev3b/design/sym-lib-table": "d5c96c2f68d97e509e7eadcdc5eb0d977a254cea4f5faee175c5c1490f0d2117",
     "pcb/rev3b/design/symbols/GEA_Rev3B.kicad_sym": "e02116db811a5e2da4c9c634fb87d1c7434ce472f0c953f4126403d80a6e2bb4",
     "pcb/rev3b/design/symbols/onionStraws.kicad_sym": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c"
@@ -75,5 +77,6 @@
       }
     }
   },
-  "supplier_qualification": "Blocked; nominal geometric datum correction only. Rotation unchanged; actual supplier zero/pin1/process/placement remains open."
+  "supplier_qualification": "Blocked; nominal geometric datum correction only. Rotation unchanged; actual supplier zero/pin1/process/placement remains open.",
+  "source_binding_note": "Current model-only CAD dependency closure; nominal J1/U2 placement geometry, CPL, angles and manufacturing bytes unchanged. See verified-c3-model-preservation.json."
 }
