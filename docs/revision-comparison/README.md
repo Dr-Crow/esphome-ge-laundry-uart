@@ -1,51 +1,39 @@
 # Board and enclosure comparison
 
-[Project overview](../../README.md) · [Pricing details](PRICING.md) · [C3/C6 and Matter options](C6-MATTER.md) · [Project handoff](HANDOFF.md)
+[Project overview](../../README.md) · [Current validation](VALIDATION.md) · [Pricing](PRICING.md) · [Finish plan](FINISH-PLAN.md) · [Source handoff](HANDOFF.md) · [C3/C6 and Matter](C6-MATTER.md)
 
-Updated October 3, 2026. Rev3C is the development focus, with shared C3/C6
-flexibility and **both original appliance power inputs with automatic selection**
-required. The experimental PIN1-only prototype is rejected and archived;
-its digital checks and lower part count do not make it the accepted design.
-No revision is a qualified manufacturing release. Rev2.2 has unresolved
-power-rating and physical gates and is not an established fallback.
-[Current validation and decisions](VALIDATION.md) distinguish original source
-checks from the reviewed cleanup candidates.
+Updated October 4, 2026, from the October 3 source/quote checkpoints. The user selected the shared Rev3C design with two **40 V-rated TPS1H200A switches**, both GE power inputs and automatic PIN1 priority. Current source is local commit `fafd3ea`; its electrical and quoted factory files remain those of `7bb455f`. Selection does not establish a 40 V carrier rating, appliance compatibility or manufacturing readiness.
 
-## Cost and functionality
+C3 is the first target, with C6 interface and firmware flexibility retained. Applicable voltage-protection backports to Rev3A/B are now authorized as focused next work. Older revisions retain their distinct architectures and review gates. No revision has physical qualification, and older boards are not established safe fallbacks.
 
-USD, batches of five, with all five carriers assembled. Shipping, tax, printed
-cases and appliance cables are excluded. Quotes were recorded September 19
-for Rev2.2 and October 1 for the Rev3 variants; they have not been refreshed
-for this comparison. Rev3B's amount excludes its processor module and installation.
-These are historical architecture quotes, not prices for a corrected shared
-dual-input Rev3C.
+## Architecture and current role
 
-| Revision | Processor and programming | PCB | Five-board cost | Per adapter |
-| --- | --- | --- | ---: | ---: |
-| Rev2.2 | ESP32-C3-WROOM-02; external UART programmer | 88.7 × 30.1 mm, 2 layers | $78.07 | $15.61 |
-| Rev3A | Same ESP32 and built-in antenna; native USB-C and recovery header | 88.7 × 40 mm, 4 layers | $154.44 | $30.89 |
-| Rev3B | Soldered XIAO ESP32-C3; module USB-C and external antenna | 99 × 40 mm, 4 layers | $112.08 **without XIAO or installation** | $22.42 **incomplete** |
-| Rev3C | Socketed, pre-headered XIAO ESP32-C3; module USB-C and external antenna | 99 × 40 mm, 4 layers | $144.60 including five separately purchased modules | $28.92 |
+| Revision | Processor and service | Power architecture | Current role |
+| --- | --- | --- | --- |
+| Rev1.0 | Generic 38-pin classic ESP32 interface; original nodemcu-32s target | PIN1 only; external buck through J1 | Restored historical CAD and two new classic profiles; exact purchased module and external supply unknown |
+| Rev2.0 | ESP32-C3-WROOM-02; UART programmer | Manual dual-input selector, linear 5 V and 3V3 regulators | Restored source; legacy protection, regulator and physical gates remain |
+| Rev2.1 / Rev2.2 | ESP32-C3-WROOM-02; UART programmer | Manual dual-input selector, linear regulators | Native cleanup passes; 60 / 59 fitted references; source-specific placement review remains |
+| Rev3A | Integrated C3 and built-in antenna; carrier USB-C/recovery controls | Automatic dual input and buck; separate USB/appliance paths | Intended-rule routing repair complete; focused protection backport and process/physical review next |
+| Rev3B | Soldered XIAO C3; module USB-C/external antenna | Automatic dual input and buck | Native checks pass; protection backport, module sourcing and installation review next |
+| Selected Rev3C | Socketed pre-headered XIAO C3/C6; module USB/BOOT/RESET | Both GE inputs, automatic PIN1 priority, rated switches and buck | Selected development source; 83 fitted carrier references; four shared C3/C6 firmware builds |
 
-Rev3C's total combines the $114.65 assembled-carrier quote with five $5.99
-retail modules. The user plugs each module into its sockets. It is $1.97 less
-per adapter than Rev3A at this batch size. Relative to the $39.99 FirstBuild
-price used as the project target, it leaves $11.07 for other costs; delivered
-cost below that target has not been established. [Pricing details](PRICING.md).
+Rev3B/C require one physical power source at a time because the module's side-header VBUS connects to USB VBUS. Disconnect appliance power before powered USB. Rev3A's separate isolation paths still require bench verification. UART programmer VCC remains disconnected. Selection of C6 does not remove these power-path limits.
 
-The public Rev3A/B/C baselines add automatic selection between appliance power on pin 1 and pin 3,
-two board mounting points, and permanent J2 recovery headers. Rev3A has separate
-USB and appliance isolation paths intended for simultaneous connection,
-pending bench verification. Rev3B/C require only one physical power source at
-a time: appliance power energizes the XIAO USB VBUS rail. A C6 substitution
-does not automatically remove this restriction. The replacement Rev3C must
-keep both appliance inputs and automatic behavior. Shared firmware and module
-recovery findings are independently useful; the electrical replacement is not
-yet qualified.
+## Current quote comparison
+
+USD, complete PCB plus Economic top-side assembly, with all carriers assembled. The October 3 quotes include the selected exact parts, RJ45 and female sockets. Shipping, tax, separately purchased XIAO modules/headers, installation, programming, tests and cases are excluded.
+
+| Matched Rev3C source | Fitted references | Five carriers | Ten carriers |
+| --- | ---: | ---: | ---: |
+| Selected rated-switch source `7bb455f` | 83 | **$134.64** | **$168.91** |
+| Historical clamp-sourced baseline `ca1fdb1` | 80 | $130.39 | $160.37 |
+| Selected design premium | +3 | **$4.25** | **$8.54** |
+
+The premium is about $0.85 per carrier. These are quote observations, not an order or delivered cost. Older architecture prices and module snapshots are clearly separated in [PRICING.md](PRICING.md). The selected source contains the illustrated `pcb/rev3c/ORDERING.md` and matching relative assets; use that guide only with its exact three-file package.
 
 ## How to read the images
 
-These are CAD previews, not photographs of manufactured boards. They show
+These are historical CAD previews, not photographs of manufactured boards or views of the selected source. They show
 the populated-board layout and case geometry from several angles. Common
 parts use KiCad package models; the RJ45 body and XIAO module use simplified
 clearance models. The XIAO shield outline is approximate, and the antenna
@@ -101,8 +89,8 @@ Source: [Rev3B PCB](https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/c5db
 The pre-headered XIAO plugs into factory-installed female sockets. This
 requires a taller case but permits replacing the module without soldering.
 The case shown below is **C3-only legacy**, not a default shared C3/C6 enclosure.
-The separately explored five-piece enclosure remains an unqualified prototype;
-its exact final CAD was not restored in this pass. C6 buttons, antenna access,
+The separately explored five-piece common enclosure remains an unqualified concept;
+its exact final CAD is unavailable and must be restored before source and fit review. C6 buttons, antenna access,
 module retention and physical fit require their own checks.
 
 ![Rev3C board and case, multiple views](images/rev3c-gallery.png)
@@ -115,7 +103,4 @@ Source: [Rev3C PCB](https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/38d9
 
 ## Package scope
 
-This comparison branch contains documentation and accepted images. It does
-not modify any PCB, schematic, case CAD or manufacturing files. Rendering
-corrections were applied to private visualization copies; they have not been
-backported to the hardware branches. Native source files remain authoritative.
+This branch updates comparison and finish-plan documentation only. Its historical galleries are retained with their original public-source links. Current native results and exact unpublished heads are in [VALIDATION.md](VALIDATION.md) and [HANDOFF.md](HANDOFF.md); the remaining work is tracked in [FINISH-PLAN.md](FINISH-PLAN.md).

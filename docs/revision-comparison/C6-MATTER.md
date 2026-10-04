@@ -1,12 +1,13 @@
 # C3/C6 carrier compatibility and Matter options
 
-[Comparison](README.md) · [Validation and decisions](VALIDATION.md) · [Project handoff](HANDOFF.md)
+[Comparison](README.md) · [Validation and decisions](VALIDATION.md) · [Project handoff](HANDOFF.md) · [Finish plan](FINISH-PLAN.md)
 
-Hardware/firmware update: October 3, 2026. Four shared C3/C6 × GEA2/GEA3
-ESPHome profiles were recovered exactly and freshly compiled, including C6
-antenna-switch configuration. The public Rev3C baseline remains C3-specific.
-The PIN1-only carrier experiment is rejected. Useful shared-interface findings
-may inform a replacement retaining both appliance inputs and automatic selection.
+Hardware/firmware update: October 4, 2026; source checkpoint: October 3. The selected shared Rev3C source
+`fafd3ea` retains both GE inputs, automatic PIN1 priority and two 40 V-rated
+switches; that is not a 40 V carrier rating. Four shared C3/C6 × GEA2/GEA3
+profiles passed real builds, including C6 antenna-switch configuration. Together
+with two legacy C3 and two separate Rev1 classic ESP32 profiles, eight local
+builds are recorded. The classic profiles are incompatible with C3/C6 revisions.
 No physical module/case/RF qualification or Matter implementation is claimed.
 The optional Matter research below retains its October 2 scope and is not a
 new platform-support verification.
@@ -50,8 +51,8 @@ switch; GPIO14 selects internal or optional external antenna. GEA2 destination
 and ERD examples are not a verified refrigerator configuration.
 
 The reviewed all-layer carrier copper exclusion improves the C6 ceramic antenna
-area without qualifying RF. The legacy case is C3-only; no common C3/C6 case
-has completed calibration, fit or physical testing. Purchased module revisions,
+area without qualifying RF. The legacy case is C3-only and not the shared default; exact five-piece common
+CAD is unavailable and needs restoration before calibration, fit or actuator tests. Purchased module revisions,
 5 V/3V3 headroom, demand, retention, USB/buttons, thermal and RF remain gates.
 Use one external source at a time: side VBUS connects directly to module USB.
 Leave UART VCC disconnected and never inject the module's 3V3 output.
