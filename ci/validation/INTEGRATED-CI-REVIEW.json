@@ -184,8 +184,12 @@
         "pcb/rev1.0/manufacturing/GERBER-OnionStraws-rev1.0.zip": "6a3c80fe47a93ec45a44a21d1d35d9692b3aaca6649cdf93bc7cc371a7f84d57"
       },
       "native_report_sha256": {
-        "erc": "ea21ed3b212d103b91b0573493044319cd5777871b726d620e7b70ebb1f284be",
-        "drc": "e11b8f6832a596c6e844a2cc89d033e034531807d5285c4632ac7709ef41f782"
+        "erc": "9e8d18bbdec32e405ff9e9235459f5568ee64f400813a885673ce0f3ce4ff69f",
+        "drc": "53b0140e4896ff363766b1a446a3dca8ca602acae1a91d646ce23492e943f6bc"
+      },
+      "native_report_files": {
+        "erc": "ci/validation/integrated-native/rev1.0/erc.json",
+        "drc": "ci/validation/integrated-native/rev1.0/drc.json"
       }
     },
     "rev2.0": {
@@ -345,8 +349,12 @@
         "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip": "b9c0b397806d3a719c32faa83c08bac2e80aa1c1d4d27d3e6d6a35cd5381445a"
       },
       "native_report_sha256": {
-        "erc": "cd505a18fe624b97b9e9c6b1cd3255e34db54d55f922b2a5c3d28c699067678e",
-        "drc": "896c4d6e1b79e34216ba88b20b6a4afedd99df8883f62daa4f6753ded1e717e4"
+        "erc": "7d8c12e7e274958f50dc7666888268a82096a7f424065b33cc57a4160c6e6e43",
+        "drc": "bded408966caac23bb0c5ecbe1cfccb56d3ab79c40cdd30921d506e45b5da8c0"
+      },
+      "native_report_files": {
+        "erc": "ci/validation/integrated-native/rev2.0/erc.json",
+        "drc": "ci/validation/integrated-native/rev2.0/drc.json"
       }
     },
     "rev2.1": {
@@ -517,8 +525,12 @@
         "pcb/rev2.1/manufacturing/original/GERBER-OnionStraws-rev2.1.zip": "4d8085f473667262989145ddda61a348569543c9b6867966967dd4a8369afd01"
       },
       "native_report_sha256": {
-        "erc": "f08e6db37ae026aad815fa6b2250cb758905b94fcd669539a146ab844cf7c6bd",
-        "drc": "91dc2aafc500307978213fa80b19d2218f85dd804b8c0b97a12ade82aa395349"
+        "erc": "c3991986a014af47b5f7924a38af93d8cd2e5f8951df2fb7ed2cd2e6bb73ac0e",
+        "drc": "9e4ebd2b0d46b24d71ab5a1a7fa65ee61deff177603dd1aed23ef2170988ddc9"
+      },
+      "native_report_files": {
+        "erc": "ci/validation/integrated-native/rev2.1/erc.json",
+        "drc": "ci/validation/integrated-native/rev2.1/drc.json"
       }
     },
     "rev2.2": {
@@ -689,8 +701,12 @@
         "pcb/rev2.2/manufacturing/original/GERBER-OnionStraws-rev2.2.zip": "8dcdfbae90c26f50a3bed56a0e5d62fde3d1508467558da9e7662e0b29098cfd"
       },
       "native_report_sha256": {
-        "erc": "3ffea1e657ebfc50a83cc569654d3666fc7e304a51dd4271e960681a143d5032",
-        "drc": "c3145996e89152cb4a9bf6ed967cddaf698fd32026efa92717de3cab5961ed27"
+        "erc": "ad7b6d694f58c8c92917a457f58ea9bb31d86e4f8837fa7d219165c7e1c1a998",
+        "drc": "e6cfdce1c222cc4bbd74cbf4b397d5028feb1242fad09e603620c476effc5358"
+      },
+      "native_report_files": {
+        "erc": "ci/validation/integrated-native/rev2.2/erc.json",
+        "drc": "ci/validation/integrated-native/rev2.2/drc.json"
       }
     },
     "rev3a": {
@@ -825,8 +841,12 @@
         "pcb/rev3a/manufacturing/GERBER-GEA-Adapter-Rev3A.zip": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e"
       },
       "native_report_sha256": {
-        "erc": "05f16a03f55ecdc7b86d2d9e48a56d38c5e696f189ea7894463cb26a9062e002",
-        "drc": "d92d8f0d080631f35068614c61e3d1752f3c14c714fba88dee8b1ba9e9a4c6a8"
+        "erc": "6c9c0e1eab554c0ce4587f7bec50711679ac10dd9060ccdd8200cbfed0af82d4",
+        "drc": "8bb6495fd12fb41e9e2a9b4b7bdd92d1be298af48a6b25c3c586b4867d25b55b"
+      },
+      "native_report_files": {
+        "erc": "ci/validation/integrated-native/rev3a/erc.json",
+        "drc": "ci/validation/integrated-native/rev3a/drc.json"
       }
     },
     "rev3b": {
@@ -954,8 +974,12 @@
         "pcb/rev3b/manufacturing/GERBER-GEA-Adapter-Rev3B.zip": "8f0b11b89f4b1ca77e4e1f128bae8ff0698d54773f41c1063af04e52fea97639"
       },
       "native_report_sha256": {
-        "erc": "43e83c2771949064a0a93802741c2131734d16e4e3a0f24bf61929771d131c7e",
-        "drc": "43ef22ca1c059a7975c9560df3c610a9379145ecc31cf54a0e5f094b884254c1"
+        "erc": "061b35a4665bcb359a953aa04784b08583f8bf97e410e213f86bcc980154236a",
+        "drc": "41b98afa0f7b67de4e0f9045e34a2ae6197a1b8c9977a1f7ac25fcd3afb97368"
+      },
+      "native_report_files": {
+        "erc": "ci/validation/integrated-native/rev3b/erc.json",
+        "drc": "ci/validation/integrated-native/rev3b/drc.json"
       }
     },
     "rev3c": {
@@ -1089,8 +1113,12 @@
         "pcb/rev3c/manufacturing/GERBER-GEA-Adapter-Rev3C.zip": "73d319df01ec65f1b8ba60b49da10fd3a226887d75be6d6e6170832a2cdf3c13"
       },
       "native_report_sha256": {
-        "erc": "f5675a791ac78944681dee72af2117d4fbf29801de8849e8e223e48b267169b6",
-        "drc": "1d9b5cfc4f462f8d740cdbb82f848daf4168b22ecb1f2a3f4a23ac8e0fff95a0"
+        "erc": "71cfa54ced1fd9372555cc2c41f74fe95713fb334e84222bae67f81c65745b2e",
+        "drc": "d133bf653317c94a0eb03ddaec7673e7fd815ef500944a4885346a00c8fbf48d"
+      },
+      "native_report_files": {
+        "erc": "ci/validation/integrated-native/rev3c/erc.json",
+        "drc": "ci/validation/integrated-native/rev3c/drc.json"
       }
     }
   },
@@ -1191,5 +1219,20 @@
     "No reconstructed original omitted integration parent/tree or fabricated ancestry",
     "Native/CAM/assembly parity does not establish supplier pose/process, exact unresolved part identity, physical qualification or appliance compatibility"
   ],
-  "documentation_rebind": "Only review/schema receipts and documentation changed after the tested integration. Driver, manifest, configuration, tests and all 380 CAD dependencies remain byte-identical."
+  "documentation_rebind": "Only review/schema receipts and documentation changed after the tested integration. Driver, manifest, configuration, tests and all 380 CAD dependencies remain byte-identical.",
+  "exact_source_recheck": {
+    "tested_head": "929d4ba6b0a9a265bceff334fd6fc781eb419c2c",
+    "source_inputs_unchanged_after_recheck": true,
+    "native_report_rebind": "The unchanged source inputs were rerun after the initial review. Output hashes now identify the saved latest complete native reports; initial report-output bytes are not compared.",
+    "stage_exit_codes": {
+      "tests": 0,
+      "inventory": 1,
+      "firmware-inventory": 0,
+      "hardware": 0,
+      "rules": 0,
+      "manufacturing": 1,
+      "release": 1
+    },
+    "later_changes": "Classic build-report wording, schema/review receipts and documentation only; all CAD/firmware/configuration/driver/manifest/test inputs remain unchanged."
+  }
 }
