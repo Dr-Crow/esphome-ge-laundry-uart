@@ -1,0 +1,59 @@
+{
+  "reviewed_utc": "2026-10-03T21:36:16.467277+00:00",
+  "pcb_sha256": "6d22b6cda3ddabd9171a304034f7bdd40a47f4bcd8645200ce5cd79ccb97c304",
+  "schematic_sha256": "c15769b67f4fe8da33f004d7ab947315d1089fdbe22a2337cf13122657f8f23b",
+  "actual_pixels_inspected": [
+    {
+      "path": "images/rev3c-copper-b-cu.svg",
+      "sha256": "438c4097ef390826ade6f5fb0f0822a310c46ef9bb72b78b46d6a026233c4b98"
+    },
+    {
+      "path": "images/rev3c-copper-f-cu.svg",
+      "sha256": "5ca33e706df54168a538ff46607b10dbf51d1363c4b8f91a90100cf28e9f2243"
+    },
+    {
+      "path": "images/rev3c-copper-in1-cu.svg",
+      "sha256": "cb852cf1162bf5fc6a45c665186ffa9ec266571d19c6dc171c2b4d3a3f1729ed"
+    },
+    {
+      "path": "images/rev3c-copper-in2-cu.svg",
+      "sha256": "e3c676f3115a2f2f4e7c368ff5daec588b3ffe0d73d4d7499d57c90b47716cfc"
+    },
+    {
+      "path": "images/rev3c-render-bottom.png",
+      "sha256": "48a5b84a17eb2abc650e0ef01fae256aa25297fdcfa4f5b775ab0c25a2136b8f"
+    },
+    {
+      "path": "images/rev3c-render-oblique.png",
+      "sha256": "4f7701c7ed17c2d780d46578374895900f4e636003f86255d5dff226ae0b72ae"
+    },
+    {
+      "path": "images/rev3c-render-top.png",
+      "sha256": "c097e173a404441bc507f7c64349ab9bd0f5d6f3b88f522eb4d010a9f00e95e0"
+    },
+    {
+      "path": "validation/schematic.pdf",
+      "sha256": "92adc83b07976a126d33bd38bb890510803273170c60680482034f3971cbf99f"
+    },
+    {
+      "path": "validation/pth-drill-map.pdf",
+      "sha256": "53b4fed3b61b52f70046cfe6a7fd3a0db6cf599ecce832416bacbf78ab34d48e"
+    },
+    {
+      "path": "validation/npth-drill-map.pdf",
+      "sha256": "bc0b61bcfc73d68c592f386b53339d6631e52a957a2293d62207d10eca7a6648"
+    }
+  ],
+  "observations": [
+    "Top/bottom/oblique native renders show both automatic-input branches and new switch/PPTC drawing envelopes; original sockets/module alignment, JP1 and mounts remain.",
+    "Final schematic pixels show correct9-pin TPS mapping, GND/EP/DIAG connections, FAULT no-connect, separate CL and own-VS retry resistors; R41 is in a clear labeled region between input branches. D20 cathode label is PIN3_PROTECTED.",
+    "All four native copper SVGs were rasterized with installed Inkscape and actual power-region pixels inspected. Fine-pitch tracks escape with unchanged routing rules; EP uses external ground vias. Native clipping confirms0.0mm\u00b2 antenna fill on all four layers.",
+    "Native PTH map pixels show103 0.4mm vias, 8 0.9mm and 14 1.02mm connector/socket holes. NPTH map pixels show4 3.2mm holes. Counts agree with native board."
+  ],
+  "limits": [
+    "The two new STEP component envelopes are approximate maximum drawing solids, not authenticated supplier CAD.",
+    "TI intrinsic0.20mm pad rule is a bounded engineering vendor-land choice; no universal insulation/environmental qualification.",
+    "No physical mating, final stencil/solder-coverage, thermal, source, RF or appliance test."
+  ],
+  "sourcing_correction_note": "Actual updated native schematic pixels inspected: D16/D17 MCC values readable and source/bias labels intact. Prior copper/renders/drill-map pixel review is retained; package and copper geometry is byte-identical after reversing only four metadata records. No new physical/package fit claim."
+}

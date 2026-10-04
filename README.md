@@ -15,13 +15,13 @@ The project began as an effort to integrate a GE washer and dryer with Home Assi
 
 Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 configuration, flash the board, connect it to Home Assistant, and check the status LEDs. The [Rev 2 enclosure](case/rev2/README.md) includes ready-to-print files.
 
-### I want to order a board
+### I want to review a new board
 
-Start with [PCB Rev 2.2](pcb/rev2.2/README.md), then follow the [step-by-step ordering guide](pcb/ORDERING.md). Rev 2.2 corrects the known Rev 2.0 and Rev 2.1 board-file problems.
+The selected development focus is [Rev3C](pcb/rev3c/README.md), a shared socketed XIAO C3/C6 carrier with both GE appliance power inputs and automatic PIN1 priority. C3 comes first. Its higher-rated switches preserve the original source-selection and buck topology.
 
-**Current status:** Rev 2.2 is the recommended manufacturing candidate; physical testing is still pending. A JLCPCB quote checked on September 19, 2026 was **$78.07 before shipping and tax for five fully assembled boards**, or about **$15.61 per board**. Prices and component availability can change.
+The illustrated [Rev3C JLCPCB guide](pcb/rev3c/ORDERING.md) identifies the matched files and settings. Complete October 3, 2026 quotes were **$134.64 for five carriers** or **$168.91 for ten**, before shipping, tax and separately supplied XIAO modules. It remains a prototype: source/current/transient, loaded startup, thermal, assembly and enclosure qualification are open. Disconnect appliance RJ45 before powered USB and leave UART VCC disconnected. No qualified shared C3/C6 enclosure is included.
 
-Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
+Older boards are listed in the [PCB revision index](pcb/README.md). Rev2.2 is not a manufacturing-ready fallback; its power ratings and thermal/current limits also require qualification. Hardware contributors should read the [contribution guide](CONTRIBUTING.md).
 
 ## Related projects
 

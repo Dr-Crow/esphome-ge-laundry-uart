@@ -1,0 +1,3182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/workspace/shared/ge-oct3-rev3c-rated-switch/pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch</source>
+    <date>2026-10-03T17:35:42-0400</date>
+    <tool>Eeschema 9.0.9</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>GE Appliance Adapter - Rev3C shared XIAO C3/C6 carrier</title>
+        <company>Dr-Crow</company>
+        <rev>3C</rev>
+        <date>2026-10-02</date>
+        <source>GEA-Adapter-Rev3C.kicad_sch</source>
+        <comment number="1" value="UNQUALIFIED PROTOTYPE - REVIEW BEFORE FABRICATION"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f3718ad</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Yageo CC0805KKX7R9BB105 1 uF 50 V X7R 0805 MLCC</description>
+      <fields>
+        <field name="LCSC">C91185</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R9BB105</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Yageo CC0805KKX7R9BB105 1 uF 50 V X7R 0805 MLCC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C91185"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R9BB105"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a34e985-8a84-4b77-a731-d3a66dea75a8</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2d6a9ee-f4c6-44e1-a18b-7e291eeb77e0</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8eba0f7-7a1b-4a7d-a1d8-0df2a95332f2</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2726a2a1-29f8-4cbe-91c8-e56b3387e7d1</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f372a02</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>744b4081-ec99-4711-aace-0e93395568bc</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>10u 50V X7R</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/288017-1206B106K500NT/C303950</datasheet>
+      <description>10 uF 50 V X7R 1206 MLCC</description>
+      <fields>
+        <field name="LCSC">C303950</field>
+        <field name="Manufacturer">FH</field>
+        <field name="MPN">1206B106K500NT</field>
+        <field name="Voltage">50V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/288017-1206B106K500NT/C303950</field>
+        <field name="Description">10 uF 50 V X7R 1206 MLCC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C303950"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="MPN" value="1206B106K500NT"/>
+      <property name="Voltage" value="50V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f333061</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>100n 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/0603B104M500NT/C286510</datasheet>
+      <description>100 nF 50 V X7R 0603 MLCC</description>
+      <fields>
+        <field name="LCSC">C286510</field>
+        <field name="Manufacturer">FH</field>
+        <field name="MPN">0603B104M500NT</field>
+        <field name="Voltage">50V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/0603B104M500NT/C286510</field>
+        <field name="Description">100 nF 50 V X7R 0603 MLCC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C286510"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="MPN" value="0603B104M500NT"/>
+      <property name="Voltage" value="50V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c00ef1e-9241-4a78-a412-3cd7c8364766</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>10u 25V X5R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC_C15850.html</datasheet>
+      <description>Samsung CL21A106KAYNNNE 10 uF 25 V X5R 0805 MLCC</description>
+      <fields>
+        <field name="LCSC">C15850</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="MPN">CL21A106KAYNNNE</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC_C15850.html</field>
+        <field name="Description">Samsung CL21A106KAYNNNE 10 uF 25 V X5R 0805 MLCC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C15850"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="MPN" value="CL21A106KAYNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f333718</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>554a3ba3-78d4-41fe-bb81-3a018839fa98</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>10u 25V X5R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Samsung CL21A106KAYNNNE 10 uF 25 V X5R 0805 MLCC</description>
+      <fields>
+        <field name="LCSC">C15850</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="MPN">CL21A106KAYNNNE</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Samsung CL21A106KAYNNNE 10 uF 25 V X5R 0805 MLCC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C15850"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="MPN" value="CL21A106KAYNNNE"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dab3ce46-5d68-4182-ba7e-5871aeeebd54</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f92c83b-4a0e-4393-b64f-44e3811f347e</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>100n 50V X8L</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <description>100 nF 50 V X8L 0603 MLCC</description>
+      <fields>
+        <field name="Manufacturer">Murata</field>
+        <field name="MPN">GCM188L81H104KA57</field>
+        <field name="Voltage">50V</field>
+        <field name="Dielectric">X8L</field>
+        <field name="LCSC">C161181</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100 nF 50 V X8L 0603 MLCC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="MPN" value="GCM188L81H104KA57"/>
+      <property name="Voltage" value="50V"/>
+      <property name="Dielectric" value="X8L"/>
+      <property name="LCSC" value="C161181"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>21d7214f-a9fc-4c82-a08e-7335ed898872</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>22u 25V X7R</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</datasheet>
+      <description>22 uF 25 V X7R 1210 MLCC</description>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL32B226KAJNNNE</field>
+        <field name="Voltage">25V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="LCSC">C309062</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</field>
+        <field name="Description">22 uF 25 V X7R 1210 MLCC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL32B226KAJNNNE"/>
+      <property name="Voltage" value="25V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="LCSC" value="C309062"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>db10b19a-2925-460d-91b6-ab52763a575d</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>22u 25V X7R</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</datasheet>
+      <description>22 uF 25 V X7R 1210 MLCC</description>
+      <fields>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="MPN">CL32B226KAJNNNE</field>
+        <field name="Voltage">25V</field>
+        <field name="Dielectric">X7R</field>
+        <field name="LCSC">C309062</field>
+        <field name="Tolerance">10%</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do</field>
+        <field name="Description">22 uF 25 V X7R 1210 MLCC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="MPN" value="CL32B226KAJNNNE"/>
+      <property name="Voltage" value="25V"/>
+      <property name="Dielectric" value="X7R"/>
+      <property name="LCSC" value="C309062"/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e3eeed9-3743-4e3f-b8fc-7062f57cd7a1</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1912111437_FH-Guangdong-Fenghua-Advanced-Tech-0402CG101J500NT_C1546.pdf</datasheet>
+      <description>100 pF, 50 V, C0G, 0402; JLCPCB C1546</description>
+      <fields>
+        <field name="LCSC">C1546</field>
+        <field name="Manufacturer">FH</field>
+        <field name="MPN">0402CG101J500NT</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/lcsc/1912111437_FH-Guangdong-Fenghua-Advanced-Tech-0402CG101J500NT_C1546.pdf</field>
+        <field name="Description">100 pF, 50 V, C0G, 0402; JLCPCB C1546</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C1546"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="MPN" value="0402CG101J500NT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1957d4e9-d537-48a9-951d-9e95fa6cd0ed</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>100pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1912111437_FH-Guangdong-Fenghua-Advanced-Tech-0402CG101J500NT_C1546.pdf</datasheet>
+      <description>100 pF, 50 V, C0G, 0402; JLCPCB C1546</description>
+      <fields>
+        <field name="LCSC">C1546</field>
+        <field name="Manufacturer">FH</field>
+        <field name="MPN">0402CG101J500NT</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/lcsc/1912111437_FH-Guangdong-Fenghua-Advanced-Tech-0402CG101J500NT_C1546.pdf</field>
+        <field name="Description">100 pF, 50 V, C0G, 0402; JLCPCB C1546</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C1546"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="MPN" value="0402CG101J500NT"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53a61332-45a8-407e-b6aa-9f68ad399698</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>1u 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Yageo CC0805KKX7R9BB105 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release</description>
+      <fields>
+        <field name="LCSC">C91185</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R9BB105</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Yageo CC0805KKX7R9BB105 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C91185"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R9BB105"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1866aac6-11e9-4e41-8a03-74a9e26c3222</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>1u 50V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Yageo CC0805KKX7R9BB105 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release</description>
+      <fields>
+        <field name="LCSC">C91185</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R9BB105</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Yageo CC0805KKX7R9BB105 1 uF 50 V X7R 0805 MLCC; DC-bias derating requires prototype measurement and datasheet-curve verification before release</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C91185"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R9BB105"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ddb097fa-fc37-4f30-9d65-ae542e7f73df</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/Yageo-CC0805KKX7R0BB104/C106243</datasheet>
+      <description>100 nF, 100 V, X7R, 10%, 0805; JLCPCB C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/Yageo-CC0805KKX7R0BB104/C106243</field>
+        <field name="Description">100 nF, 100 V, X7R, 10%, 0805; JLCPCB C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05453c90-97a5-46d5-9e75-df14f9543ee1</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/Yageo-CC0805KKX7R0BB104/C106243</datasheet>
+      <description>100 nF, 100 V, X7R, 10%, 0805; JLCPCB C106243</description>
+      <fields>
+        <field name="LCSC">C106243</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="MPN">CC0805KKX7R0BB104</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/Yageo-CC0805KKX7R0BB104/C106243</field>
+        <field name="Description">100 nF, 100 V, X7R, 10%, 0805; JLCPCB C106243</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C106243"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="MPN" value="CC0805KKX7R0BB104"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0453e262-a2a9-4fa5-a14d-604ea488f9ef</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>BAV99</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</datasheet>
+      <description>High-speed dual switching diode, series configuration, SOT-23</description>
+      <fields>
+        <field name="LCSC">C2500</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">BAV99,215</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</field>
+        <field name="Description">High-speed dual switching diode, series configuration, SOT-23</field>
+      </fields>
+      <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="LCSC" value="C2500"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2c2dfa3-25ab-4e30-95c7-0ace8c501014</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>BAV99</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</datasheet>
+      <description>High-speed dual switching diode, series configuration, SOT-23</description>
+      <fields>
+        <field name="LCSC">C2500</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">BAV99,215</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</field>
+        <field name="Description">High-speed dual switching diode, series configuration, SOT-23</field>
+      </fields>
+      <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="LCSC" value="C2500"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da6c8207-c042-45d4-9bf7-06a10874b2f4</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>BAV99</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</datasheet>
+      <description>High-speed dual switching diode, series configuration, SOT-23</description>
+      <fields>
+        <field name="LCSC">C2500</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">BAV99,215</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</field>
+        <field name="Description">High-speed dual switching diode, series configuration, SOT-23</field>
+      </fields>
+      <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="LCSC" value="C2500"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9006e9a-a776-43c5-9357-3d7e345e3d54</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>GRN</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>emerald green 0805 LED</description>
+      <fields>
+        <field name="LCSC">C2297</field>
+        <field name="Manufacturer">Hubei KENTO Elec</field>
+        <field name="MPN">KT-0805G</field>
+        <field name="Footprint">LED_SMD:LED_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">emerald green 0805 LED</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C2297"/>
+      <property name="Manufacturer" value="Hubei KENTO Elec"/>
+      <property name="MPN" value="KT-0805G"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5ca7214-78ab-4d24-aa3c-ea2e0600d2a1</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>RED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>red 0805 LED</description>
+      <fields>
+        <field name="LCSC">C84256</field>
+        <field name="Manufacturer">Foshan NationStar Optoelectronics</field>
+        <field name="MPN">NCD0805R1</field>
+        <field name="Footprint">LED_SMD:LED_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">red 0805 LED</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84256"/>
+      <property name="Manufacturer" value="Foshan NationStar Optoelectronics"/>
+      <property name="MPN" value="NCD0805R1"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6c49bc8-5d2f-4127-b831-1ff4da839c76</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>YLW</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>yellow 0805 LED</description>
+      <fields>
+        <field name="LCSC">C2296</field>
+        <field name="Manufacturer">Hubei KENTO Elec</field>
+        <field name="MPN">KT-0805Y</field>
+        <field name="Footprint">LED_SMD:LED_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">yellow 0805 LED</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C2296"/>
+      <property name="Manufacturer" value="Hubei KENTO Elec"/>
+      <property name="MPN" value="KT-0805Y"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0ab535a-1e91-48d0-a739-367dd1a75477</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>DNI</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <description>Unqualified 5 V rail shunt; footprint retained for prototype fault evaluation</description>
+      <fields>
+        <field name="LCSC"/>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unqualified 5 V rail shunt; footprint retained for prototype fault evaluation</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a78a0c9-9986-4d50-9037-603f280c3485</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>BAV99</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</datasheet>
+      <description>High-speed dual switching diode, series configuration, SOT-23</description>
+      <fields>
+        <field name="LCSC">C2500</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">BAV99,215</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</field>
+        <field name="Description">High-speed dual switching diode, series configuration, SOT-23</field>
+      </fields>
+      <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="LCSC" value="C2500"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b035ef10-1fc7-40b3-8e83-da04db117cec</tstamps>
+    </comp>
+    <comp ref="D11">
+      <value>PMEG2010ER</value>
+      <footprint>Diode_SMD:Nexperia_CFP3_SOD-123W</footprint>
+      <description>Schottky diode</description>
+      <fields>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="MPN">PMEG2010ER,115</field>
+        <field name="Forward_Current">1A</field>
+        <field name="Reverse_Voltage">20V</field>
+        <field name="LCSC">C82288</field>
+        <field name="Footprint">Diode_SMD:Nexperia_CFP3_SOD-123W</field>
+        <field name="Datasheet"/>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="MPN" value="PMEG2010ER,115"/>
+      <property name="Forward_Current" value="1A"/>
+      <property name="Reverse_Voltage" value="20V"/>
+      <property name="LCSC" value="C82288"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d79df4cb-de73-4d5d-af77-aa47e0dffd2a</tstamps>
+    </comp>
+    <comp ref="D14">
+      <value>MBR0540-TP</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
+      <description>40 V, 0.5 A Schottky rectifier, SOD-123; JLCPCB C78744</description>
+      <fields>
+        <field name="LCSC">C78744</field>
+        <field name="Manufacturer">MCC</field>
+        <field name="MPN">MBR0540-TP</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet">https://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</field>
+        <field name="Description">40 V, 0.5 A Schottky rectifier, SOD-123; JLCPCB C78744</field>
+      </fields>
+      <libsource lib="Diode" part="MBR0540" description="40V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <property name="LCSC" value="C78744"/>
+      <property name="Manufacturer" value="MCC"/>
+      <property name="MPN" value="MBR0540-TP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="D*SOD?123*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2110a424-8d90-4b14-8628-74e7fa01a77d</tstamps>
+    </comp>
+    <comp ref="D15">
+      <value>MBR0540-TP</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
+      <description>40V 0.5A Schottky Power Rectifier Diode, SOD-123</description>
+      <fields>
+        <field name="LCSC">C78744</field>
+        <field name="Manufacturer">MCC</field>
+        <field name="MPN">MBR0540-TP</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet">http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</field>
+        <field name="Description">40V 0.5A Schottky Power Rectifier Diode, SOD-123</field>
+      </fields>
+      <libsource lib="Diode" part="MBR0540" description="40V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <property name="LCSC" value="C78744"/>
+      <property name="Manufacturer" value="MCC"/>
+      <property name="MPN" value="MBR0540-TP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <property name="ki_fp_filters" value="D*SOD?123*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3291fbd0-c17f-4719-8816-1fe681e4cd76</tstamps>
+    </comp>
+    <comp ref="D16">
+      <value>BZT52C12-TP</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf</datasheet>
+      <description>MCC 12 V gate zener, 11.4-12.7 V at 5 mA/25 C, SOD-123; 1=K/source, 2=A/bias; low-current/transient qualification open</description>
+      <fields>
+        <field name="LCSC">C668891</field>
+        <field name="Manufacturer">MCC</field>
+        <field name="MPN">BZT52C12-TP</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet">https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf</field>
+        <field name="Description">MCC 12 V gate zener, 11.4-12.7 V at 5 mA/25 C, SOD-123; 1=K/source, 2=A/bias; low-current/transient qualification open</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="LCSC" value="C668891"/>
+      <property name="Manufacturer" value="MCC"/>
+      <property name="MPN" value="BZT52C12-TP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>21d127f3-4231-4e24-9097-823f588028a0</tstamps>
+    </comp>
+    <comp ref="D17">
+      <value>BZT52C12-TP</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf</datasheet>
+      <description>MCC 12 V gate zener, 11.4-12.7 V at 5 mA/25 C, SOD-123; 1=K/source, 2=A/bias; low-current/transient qualification open</description>
+      <fields>
+        <field name="LCSC">C668891</field>
+        <field name="Manufacturer">MCC</field>
+        <field name="MPN">BZT52C12-TP</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet">https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf</field>
+        <field name="Description">MCC 12 V gate zener, 11.4-12.7 V at 5 mA/25 C, SOD-123; 1=K/source, 2=A/bias; low-current/transient qualification open</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="LCSC" value="C668891"/>
+      <property name="Manufacturer" value="MCC"/>
+      <property name="MPN" value="BZT52C12-TP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>76401d73-8316-467a-a6af-ece584668b2f</tstamps>
+    </comp>
+    <comp ref="D18">
+      <value>SMF16A</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736</datasheet>
+      <description>SMF16A unidirectional TVS, 16 V standoff / 19.7 V breakdown / 26 V clamp, 200 W (10/1000 us), SOD-123FL</description>
+      <fields>
+        <field name="LCSC">C399290</field>
+        <field name="Manufacturer">SUNMATE Elec</field>
+        <field name="MPN">SMF16A</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123F</field>
+        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736</field>
+        <field name="Description">SMF16A unidirectional TVS, 16 V standoff / 19.7 V breakdown / 26 V clamp, 200 W (10/1000 us), SOD-123FL</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="LCSC" value="C399290"/>
+      <property name="Manufacturer" value="SUNMATE Elec"/>
+      <property name="MPN" value="SMF16A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d788a9f8-2ad2-4611-925c-b0339909c62b</tstamps>
+    </comp>
+    <comp ref="D20">
+      <value>SMF16A</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736</datasheet>
+      <description>SMF16A unidirectional TVS, 16 V standoff / 19.7 V breakdown / 26 V clamp, 200 W (10/1000 us), SOD-123FL</description>
+      <fields>
+        <field name="LCSC">C399290</field>
+        <field name="Manufacturer">SUNMATE Elec</field>
+        <field name="MPN">SMF16A</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123F</field>
+        <field name="Datasheet">https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736</field>
+        <field name="Description">SMF16A unidirectional TVS, 16 V standoff / 19.7 V breakdown / 26 V clamp, 200 W (10/1000 us), SOD-123FL</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="LCSC" value="C399290"/>
+      <property name="Manufacturer" value="SUNMATE Elec"/>
+      <property name="MPN" value="SMF16A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ebd8eb8-d24e-4cef-b0ba-d6fc1d2a7816</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>1812L075/33DR</value>
+      <footprint>GEA_Rev3C:Fuse_Littelfuse_1812L_Recommended</footprint>
+      <datasheet>https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717</datasheet>
+      <description>Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land</description>
+      <fields>
+        <field name="LCSC">C151170</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="MPN">1812L075/33DR</field>
+        <field name="Footprint">GEA_Rev3C:Fuse_Littelfuse_1812L_Recommended</field>
+        <field name="Datasheet">https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717</field>
+        <field name="Description">Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land</field>
+      </fields>
+      <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="LCSC" value="C151170"/>
+      <property name="Manufacturer" value="Littelfuse"/>
+      <property name="MPN" value="1812L075/33DR"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
+      <property name="ki_fp_filters" value="*polyfuse* *PTC*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41e11189-48e3-42ca-a63e-8b1b0b9b844e</tstamps>
+    </comp>
+    <comp ref="F2">
+      <value>1812L075/33DR</value>
+      <footprint>GEA_Rev3C:Fuse_Littelfuse_1812L_Recommended</footprint>
+      <datasheet>https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717</datasheet>
+      <description>Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land</description>
+      <fields>
+        <field name="LCSC">C151170</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="MPN">1812L075/33DR</field>
+        <field name="Footprint">GEA_Rev3C:Fuse_Littelfuse_1812L_Recommended</field>
+        <field name="Datasheet">https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717</field>
+        <field name="Description">Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land</field>
+      </fields>
+      <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="LCSC" value="C151170"/>
+      <property name="Manufacturer" value="Littelfuse"/>
+      <property name="MPN" value="1812L075/33DR"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
+      <property name="ki_fp_filters" value="*polyfuse* *PTC*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f3289a9</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_DIN965</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f6837da-9a3c-4d1c-96a9-1d7065db7755</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_DIN965</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_DIN965</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3501035-f81d-48a3-b153-7b734b4fc8c0</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>8P8C</value>
+      <footprint>OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/EVERCOM-53018P8C/C3097717</datasheet>
+      <description>EVERCOM horizontal through-hole 8P8C appliance connector</description>
+      <fields>
+        <field name="LCSC">C3097717</field>
+        <field name="Manufacturer">EVERCOM</field>
+        <field name="MPN">5301-8P8C</field>
+        <field name="Footprint">OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/EVERCOM-53018P8C/C3097717</field>
+        <field name="Description">EVERCOM horizontal through-hole 8P8C appliance connector</field>
+      </fields>
+      <libsource lib="Connector" part="8P8C" description="RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61"/>
+      <property name="LCSC" value="C3097717"/>
+      <property name="Manufacturer" value="EVERCOM"/>
+      <property name="MPN" value="5301-8P8C"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="8P8C RJ socket connector"/>
+      <property name="ki_fp_filters" value="8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f2dfac0</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Socket_XIAO_A</value>
+      <footprint>GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370</datasheet>
+      <description>HCTL PM254-1-07-Z-8.5 female socket; J5 row for user-installed XIAO module D0..D6 signals</description>
+      <fields>
+        <field name="LCSC">C2897370</field>
+        <field name="Manufacturer">HCTL</field>
+        <field name="MPN">PM254-1-07-Z-8.5</field>
+        <field name="Footprint">GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370</field>
+        <field name="Description">HCTL PM254-1-07-Z-8.5 female socket; J5 row for user-installed XIAO module D0..D6 signals</field>
+      </fields>
+      <libsource lib="GEA_Rev3C" part="Socket_XIAO_A" description="HCTL PM254-1-07-Z-8.5 (LCSC C2897370) female socket; J5 row for user-installed XIAO module D0..D6 signals"/>
+      <property name="LCSC" value="C2897370"/>
+      <property name="Manufacturer" value="HCTL"/>
+      <property name="MPN" value="PM254-1-07-Z-8.5"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc71aa51-d694-4c19-9c64-5966956e6c6d</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Socket_XIAO_B</value>
+      <footprint>GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254</footprint>
+      <datasheet>https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370</datasheet>
+      <description>HCTL PM254-1-07-Z-8.5 female socket; J6 row for user-installed XIAO module RX_D7..VBUS signals</description>
+      <fields>
+        <field name="LCSC">C2897370</field>
+        <field name="Manufacturer">HCTL</field>
+        <field name="MPN">PM254-1-07-Z-8.5</field>
+        <field name="Footprint">GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370</field>
+        <field name="Description">HCTL PM254-1-07-Z-8.5 female socket; J6 row for user-installed XIAO module RX_D7..VBUS signals</field>
+      </fields>
+      <libsource lib="GEA_Rev3C" part="Socket_XIAO_B" description="HCTL PM254-1-07-Z-8.5 (LCSC C2897370) female socket; J6 row for user-installed XIAO module RX_D7..VBUS signals"/>
+      <property name="LCSC" value="C2897370"/>
+      <property name="Manufacturer" value="HCTL"/>
+      <property name="MPN" value="PM254-1-07-Z-8.5"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc71aa51-d694-4c19-9c64-5966956e6c6e</tstamps>
+    </comp>
+    <comp ref="JP1">
+      <value>FirstBuild</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels</footprint>
+      <datasheet>~</datasheet>
+      <description>SolderJumper_3_Bridged12; default pads 1-2 copper bridge (FirstBuild-compatible signal mapping); cutting/rebridging 2-3 is engineering-only alternate signal mapping; DNP means no separate assembled component</description>
+      <fields>
+        <field name="Footprint">Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">SolderJumper_3_Bridged12; default pads 1-2 copper bridge (FirstBuild-compatible signal mapping); cutting/rebridging 2-3 is engineering-only alternate signal mapping; DNP means no separate assembled component</field>
+      </fields>
+      <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="Solder Jumper SPDT"/>
+      <property name="ki_fp_filters" value="SolderJumper*Bridged12*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>600a6d65-feb0-4d96-85b3-f5e8f234e27b</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>4.7uH</value>
+      <footprint>Inductor_SMD:L_Panasonic_PCC-M0530M</footprint>
+      <description>Inductor</description>
+      <fields>
+        <field name="Manufacturer">Panasonic Industry</field>
+        <field name="MPN">ETQP3M4R7KVP</field>
+        <field name="LCSC">C412309</field>
+        <field name="Rated_Current">3.4A</field>
+        <field name="Saturation_Current">6.7A</field>
+        <field name="Footprint">Inductor_SMD:L_Panasonic_PCC-M0530M</field>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
+      <property name="MPN" value="ETQP3M4R7KVP"/>
+      <property name="LCSC" value="C412309"/>
+      <property name="Rated_Current" value="3.4A"/>
+      <property name="Saturation_Current" value="6.7A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1212a047-fb4f-436b-a003-79050cd2da2e</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>CJ3407</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf</datasheet>
+      <description>P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903</description>
+      <fields>
+        <field name="LCSC">C15903</field>
+        <field name="Manufacturer">Jiangsu Changjing</field>
+        <field name="MPN">CJ3407</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf</field>
+        <field name="Description">P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
+      <property name="LCSC" value="C15903"/>
+      <property name="Manufacturer" value="Jiangsu Changjing"/>
+      <property name="MPN" value="CJ3407"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="transistor PMOS P-MOS P-MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc14b953-8faf-4fe4-80c5-a79be03edee4</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>CJ3407</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf</datasheet>
+      <description>P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903</description>
+      <fields>
+        <field name="LCSC">C15903</field>
+        <field name="Manufacturer">Jiangsu Changjing</field>
+        <field name="MPN">CJ3407</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf</field>
+        <field name="Description">P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
+      <property name="LCSC" value="C15903"/>
+      <property name="Manufacturer" value="Jiangsu Changjing"/>
+      <property name="MPN" value="CJ3407"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="transistor PMOS P-MOS P-MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dccde25b-a512-478a-8ed9-3c246c50015c</tstamps>
+    </comp>
+    <comp ref="Q5">
+      <value>MMBT3904</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2303061533_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT3904_C20526.pdf</datasheet>
+      <description>40 V, 200 mA NPN transistor, SOT-23; JLCPCB C20526</description>
+      <fields>
+        <field name="LCSC">C20526</field>
+        <field name="Manufacturer">Jiangsu Changjing</field>
+        <field name="MPN">MMBT3904</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/lcsc/2303061533_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT3904_C20526.pdf</field>
+        <field name="Description">40 V, 200 mA NPN transistor, SOT-23; JLCPCB C20526</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
+      <property name="LCSC" value="C20526"/>
+      <property name="Manufacturer" value="Jiangsu Changjing"/>
+      <property name="MPN" value="MMBT3904"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="NPN Transistor"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aec35ce7-a145-4c91-8700-9c0416e5dc81</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f3373f5-767b-4613-a1f9-211dc0897cb5</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0757ed83-5a92-4f2e-b97f-91bc828e2721</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F2200T5E 220 Ω 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17557</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F2200T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F2200T5E 220 Ω 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17557"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F2200T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41210ed9-4981-424c-be35-381675a4fb21</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffe0aff5-9976-4496-a824-b04d7fffa1b3</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F2200T5E 220 Ω 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17557</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F2200T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F2200T5E 220 Ω 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17557"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F2200T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3cf02de4-0b1a-4ce7-abdb-516d921496f0</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F2200T5E 220 Ω 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17557</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F2200T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F2200T5E 220 Ω 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17557"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F2200T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2bfdc927-c633-48be-891b-4ea5e8c343e8</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1001T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1001T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45cbe67a-154d-4abe-8838-59de0b0a29fa</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1001T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1001T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cea3e60b-5877-4f16-a2ba-67fcdb3208ff</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1001T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1001T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce71ef5f-2de2-4d90-ac78-835f57bd8be9</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1001T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1001T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f31ba49</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed7c54c8-eb1f-4548-b828-59ecb89c3d82</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87787b7b-0950-4e3b-8130-4503b072059b</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74b5b296-9fe7-44d8-86e8-7daabc6561b1</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffb09ab6-f372-4027-9c8e-6ae354d34df1</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>220k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>RALEC RTT052203FTP 220 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C104108</field>
+        <field name="Manufacturer">RALEC</field>
+        <field name="MPN">RTT052203FTP</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">RALEC RTT052203FTP 220 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C104108"/>
+      <property name="Manufacturer" value="RALEC"/>
+      <property name="MPN" value="RTT052203FTP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fc42c3e-1792-49df-8a3c-986ac005f602</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07fbf78d-d7d2-4dee-95aa-02b6682e55e4</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c28ad6d7-faea-478b-ba48-fab1c6eceb40</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>220k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>RALEC RTT052203FTP 220 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C104108</field>
+        <field name="Manufacturer">RALEC</field>
+        <field name="MPN">RTT052203FTP</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">RALEC RTT052203FTP 220 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C104108"/>
+      <property name="Manufacturer" value="RALEC"/>
+      <property name="MPN" value="RTT052203FTP"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a3706fc-3bf8-472e-83d0-e2bb4ccc58e0</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F4701T5E 4.7 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17673</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F4701T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F4701T5E 4.7 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17673"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F4701T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f36072d</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1001T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1001T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46e03cc7-89a1-45c3-8938-ea082ea4aa72</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1001T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1001T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a291dc52-db30-477b-9b12-9628ee562cf0</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1001T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">UNI-ROYAL 0805W8F1001T5E 1 kΩ 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1001T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1cd3ba5a-51bc-4e01-8769-894fb06c2229</tstamps>
+    </comp>
+    <comp ref="R31">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf</datasheet>
+      <description>5.1 kOhm, 1%, 0805; JLCPCB C27834</description>
+      <fields>
+        <field name="LCSC">C27834</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F5101T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf</field>
+        <field name="Description">5.1 kOhm, 1%, 0805; JLCPCB C27834</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C27834"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F5101T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>777a1116-1a44-495b-a63d-41d642b1d99d</tstamps>
+    </comp>
+    <comp ref="R32">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf</datasheet>
+      <description>5.1 kOhm, 1%, 0805; JLCPCB C27834</description>
+      <fields>
+        <field name="LCSC">C27834</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F5101T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf</field>
+        <field name="Description">5.1 kOhm, 1%, 0805; JLCPCB C27834</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C27834"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F5101T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f7f35e91-be2c-4e25-9ff0-f5503503fc52</tstamps>
+    </comp>
+    <comp ref="R33">
+      <value>51R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F510JT5E_C17738.pdf</datasheet>
+      <description>51 Ohm, 1%, 0805; JLCPCB C17738</description>
+      <fields>
+        <field name="LCSC">C17738</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F510JT5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F510JT5E_C17738.pdf</field>
+        <field name="Description">51 Ohm, 1%, 0805; JLCPCB C17738</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17738"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F510JT5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cde48f09-748b-4523-a435-0e7af13541dc</tstamps>
+    </comp>
+    <comp ref="R34">
+      <value>51R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F510JT5E_C17738.pdf</datasheet>
+      <description>51 Ohm, 1%, 0805; JLCPCB C17738</description>
+      <fields>
+        <field name="LCSC">C17738</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F510JT5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F510JT5E_C17738.pdf</field>
+        <field name="Description">51 Ohm, 1%, 0805; JLCPCB C17738</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17738"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F510JT5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ff8653f7-7568-4dcb-a3ac-3c0f1affe7f6</tstamps>
+    </comp>
+    <comp ref="R35">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>319978d6-43aa-4b58-b589-f14288c9da02</tstamps>
+    </comp>
+    <comp ref="R36">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>47973d6d-57ca-4aa9-a6b9-f1bd8c03f20b</tstamps>
+    </comp>
+    <comp ref="R37">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414</datasheet>
+      <description>UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor</description>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414</field>
+        <field name="Description">UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05fde765-c268-42c9-97a6-4b215cba61a9</tstamps>
+    </comp>
+    <comp ref="R38">
+      <value>3.3k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.royalohm.com/assets/pdf/products/smd/1.pdf</datasheet>
+      <description>3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified</description>
+      <fields>
+        <field name="LCSC">C22978</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0603WAF3301T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.royalohm.com/assets/pdf/products/smd/1.pdf</field>
+        <field name="Description">3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C22978"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0603WAF3301T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>60f6a0c2-605e-43dd-92ef-e5da1dbca13a</tstamps>
+    </comp>
+    <comp ref="R39">
+      <value>3.3k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://www.royalohm.com/assets/pdf/products/smd/1.pdf</datasheet>
+      <description>3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified</description>
+      <fields>
+        <field name="LCSC">C22978</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0603WAF3301T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">https://www.royalohm.com/assets/pdf/products/smd/1.pdf</field>
+        <field name="Description">3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C22978"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0603WAF3301T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8f8263b1-b2c0-4ece-8b83-107c35d57a0b</tstamps>
+    </comp>
+    <comp ref="R40">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/C149504</datasheet>
+      <description>100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry</description>
+      <fields>
+        <field name="LCSC">C149504</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1003T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/C149504</field>
+        <field name="Description">100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C149504"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1003T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>421ff5b6-9fd9-4c94-9f2b-e02b2c2d623c</tstamps>
+    </comp>
+    <comp ref="R41">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/C149504</datasheet>
+      <description>100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry</description>
+      <fields>
+        <field name="LCSC">C149504</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="MPN">0805W8F1003T5E</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://jlcpcb.com/partdetail/C149504</field>
+        <field name="Description">100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C149504"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="MPN" value="0805W8F1003T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03ed46ee-7ac7-4fcf-bbc5-42ff583fb59a</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2acbebc0-467b-48e3-a214-5ba9b872d3f1</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8add6fe9-7f74-4c57-82c4-edb6e74c9b88</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38823c36-e0ed-4070-86a5-46e652097b3c</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d1c5b745-ce67-4ce0-80ab-5e4ad8f382c1</tstamps>
+    </comp>
+    <comp ref="TP5">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0584b35-d467-4eb5-b7b5-a3c30f001e0a</tstamps>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2e9d393-35fc-479a-83b3-161fe52af241</tstamps>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D2.0mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c0f2f9c-7d49-4bed-a929-0ae6b029dcc5</tstamps>
+    </comp>
+    <comp ref="TP8">
+      <value>PIN1_FUSED</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e76084f-ab02-490f-8766-1aafaebde69c</tstamps>
+    </comp>
+    <comp ref="TP9">
+      <value>PIN3_FUSED</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9014ecbf-a651-46f2-8bf1-e302854f03f6</tstamps>
+    </comp>
+    <comp ref="TP10">
+      <value>PIN1_PROTECTED</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b12caeb8-d0e5-4523-83c4-661816e776e0</tstamps>
+    </comp>
+    <comp ref="TP11">
+      <value>PIN3_PROTECTED</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a248d3c5-a8a1-4ea7-a1fa-356d6ad5effe</tstamps>
+    </comp>
+    <comp ref="TP12">
+      <value>PIN1_SW_OUT</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e1859368-8cee-4533-a3de-38c08d081c1d</tstamps>
+    </comp>
+    <comp ref="TP13">
+      <value>PIN3_SW_OUT</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a232602d-d068-45f8-b568-9eb703ac5a85</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>74LVC2G07</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/74LVC2G07.pdf</datasheet>
+      <description>Dual buffer with open-drain outputs and partial-power-down Ioff</description>
+      <fields>
+        <field name="LCSC">C151607</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="MPN">74LVC2G07W6-7</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/74LVC2G07.pdf</field>
+        <field name="Description">Dual buffer with open-drain outputs and partial-power-down Ioff</field>
+      </fields>
+      <libsource lib="GEA_Rev3B" part="74LVC2G07" description="Dual Buffer w/ Open Drain, Low-Voltage CMOS"/>
+      <property name="LCSC" value="C151607"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="MPN" value="74LVC2G07W6-7"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="Dual Gate Buffer Open Drain LVC CMOS"/>
+      <property name="ki_fp_filters" value="SG-* SOT*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b09bb8c1-5e3c-46cc-b227-1374b14bc907 2a5f40f9-54b1-4a76-9a48-74db65fd2317</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>74LVC2G07_3v3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/74LVC2G07.pdf</datasheet>
+      <description>Dual buffer with open-drain outputs and partial-power-down Ioff</description>
+      <fields>
+        <field name="LCSC">C151607</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="MPN">74LVC2G07W6-7</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/74LVC2G07.pdf</field>
+        <field name="Description">Dual buffer with open-drain outputs and partial-power-down Ioff</field>
+      </fields>
+      <libsource lib="onionStraws" part="74LVC2G07_3v3" description="Dual Buffer w/ Open Drain, Low-Voltage CMOS"/>
+      <property name="LCSC" value="C151607"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="MPN" value="74LVC2G07W6-7"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="Dual Gate Buffer Open Drain LVC CMOS"/>
+      <property name="ki_fp_filters" value="SG-* SOT*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fec659a6-de89-4d09-aa02-43e085d6bd42 3ba96a36-c37b-4297-b8dd-0261e172da3d</tstamps>
+    </comp>
+    <comp ref="U8">
+      <value>AP63205WU</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23-6</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf</datasheet>
+      <description>2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6</description>
+      <fields>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="MPN">AP63205WU-7</field>
+        <field name="LCSC">C2071056</field>
+        <field name="Input_Range">3.8V to 32V</field>
+        <field name="Output_Current">2A</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-6</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf</field>
+        <field name="Description">2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6</field>
+      </fields>
+      <libsource lib="Regulator_Switching" part="AP63205WU" description="2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="MPN" value="AP63205WU-7"/>
+      <property name="LCSC" value="C2071056"/>
+      <property name="Input_Range" value="3.8V to 32V"/>
+      <property name="Output_Current" value="2A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <property name="ki_keywords" value="2A Buck DC/DC"/>
+      <property name="ki_fp_filters" value="TSOT?23*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5449b854-20e9-4e7c-8b5d-9cbe2961acae</tstamps>
+    </comp>
+    <comp ref="U9">
+      <value>TPS1H200AQDGNRQ1</value>
+      <footprint>GEA_Rev3C:TPS1H200A_DGN0008K_TI_RevE</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf</datasheet>
+      <description>40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD</description>
+      <fields>
+        <field name="LCSC">C2653785</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">TPS1H200AQDGNRQ1</field>
+        <field name="Footprint">GEA_Rev3C:TPS1H200A_DGN0008K_TI_RevE</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf</field>
+        <field name="Description">40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD</field>
+      </fields>
+      <libsource lib="GEA_Rev3C" part="TPS1H200A_Q1" description="40 V high-side switch, adjustable current limit; TI Rev E May 2026; DGN 8 + thermal pad"/>
+      <property name="LCSC" value="C2653785"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="TPS1H200AQDGNRQ1"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>22763551-bb13-425f-a332-2644c24af7cd</tstamps>
+    </comp>
+    <comp ref="U10">
+      <value>TPS1H200AQDGNRQ1</value>
+      <footprint>GEA_Rev3C:TPS1H200A_DGN0008K_TI_RevE</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf</datasheet>
+      <description>40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD</description>
+      <fields>
+        <field name="LCSC">C2653785</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="MPN">TPS1H200AQDGNRQ1</field>
+        <field name="Footprint">GEA_Rev3C:TPS1H200A_DGN0008K_TI_RevE</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf</field>
+        <field name="Description">40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD</field>
+      </fields>
+      <libsource lib="GEA_Rev3C" part="TPS1H200A_Q1" description="40 V high-side switch, adjustable current limit; TI Rev E May 2026; DGN 8 + thermal pad"/>
+      <property name="LCSC" value="C2653785"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="MPN" value="TPS1H200AQDGNRQ1"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="GEA-Adapter-Rev3C.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7c30ae6-3a89-42e0-80f9-e2ff0bb9c7cf</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="8P8C">
+      <description>RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>8P8C*</fp>
+        <fp>RJ31*</fp>
+        <fp>RJ32*</fp>
+        <fp>RJ33*</fp>
+        <fp>RJ34*</fp>
+        <fp>RJ35*</fp>
+        <fp>RJ41*</fp>
+        <fp>RJ45*</fp>
+        <fp>RJ49*</fp>
+        <fp>RJ61*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">8P8C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+        <pin num="7" name="" type="passive"/>
+        <pin num="8" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Schottky diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Zener diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Polyfuse">
+      <description>Resettable fuse, polymeric positive temperature coefficient</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resettable fuse, polymeric positive temperature coefficient</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="BAV99">
+      <description>BAV99 High-speed switching diodes, SOT-23</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">BAV99</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf</field>
+        <field name="Description">BAV99 High-speed switching diodes, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="K2" type="passive"/>
+        <pin num="3" name="K1,A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="MBR0540">
+      <description>40V 0.5A Schottky Power Rectifier Diode, SOD-123</description>
+      <docs>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</docs>
+      <footprints>
+        <fp>D*SOD?123*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">MBR0540</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet">http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</field>
+        <field name="Description">40V 0.5A Schottky Power Rectifier Diode, SOD-123</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GEA_Rev3B" part="74LVC2G07">
+      <description>Dual Buffer w/ Open Drain, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
+      <footprints>
+        <fp>SG-*</fp>
+        <fp>SOT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC2G07</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+        <field name="Description">Dual Buffer w/ Open Drain, Low-Voltage CMOS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="open_collector"/>
+        <pin num="5" name="+5V" type="power_in"/>
+        <pin num="6" name="" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="GEA_Rev3C" part="Socket_XIAO_A">
+      <description>HCTL PM254-1-07-Z-8.5 (LCSC C2897370) female socket; J5 row for user-installed XIAO module D0..D6 signals</description>
+      <docs>https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Socket_XIAO_A</field>
+        <field name="Footprint">GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370</field>
+        <field name="Description">HCTL PM254-1-07-Z-8.5 (LCSC C2897370) female socket; J5 row for user-installed XIAO module D0..D6 signals</field>
+        <field name="LCSC">C2897370</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DBG_LED" type="passive"/>
+        <pin num="2" name="LED2" type="passive"/>
+        <pin num="3" name="LED1" type="passive"/>
+        <pin num="4" name="GEA2_MCU_TX" type="passive"/>
+        <pin num="5" name="D4_NC" type="no_connect"/>
+        <pin num="6" name="D5_NC" type="no_connect"/>
+        <pin num="7" name="GEA3_RX" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GEA_Rev3C" part="Socket_XIAO_B">
+      <description>HCTL PM254-1-07-Z-8.5 (LCSC C2897370) female socket; J6 row for user-installed XIAO module RX_D7..VBUS signals</description>
+      <docs>https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Socket_XIAO_B</field>
+        <field name="Footprint">GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370</field>
+        <field name="Description">HCTL PM254-1-07-Z-8.5 (LCSC C2897370) female socket; J6 row for user-installed XIAO module RX_D7..VBUS signals</field>
+        <field name="LCSC">C2897370</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GEA3_TX" type="passive"/>
+        <pin num="2" name="BOOT_SEL" type="passive"/>
+        <pin num="3" name="BOOT" type="passive"/>
+        <pin num="4" name="GEA2_RX" type="passive"/>
+        <pin num="5" name="3V3_OUT" type="power_out"/>
+        <pin num="6" name="GND" type="passive"/>
+        <pin num="7" name="VBUS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GEA_Rev3C" part="TPS1H200A_Q1">
+      <description>40 V high-side switch, adjustable current limit; TI Rev E May 2026; DGN 8 + thermal pad</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS1H200A_Q1</field>
+        <field name="Footprint">GEA_Rev3C:TPS1H200A_DGN0008K_TI_RevE</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf</field>
+        <field name="Description">40 V high-side switch, adjustable current limit; TI Rev E May 2026; DGN 8 + thermal pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="input"/>
+        <pin num="2" name="DIAG_EN" type="input"/>
+        <pin num="3" name="FAULT" type="open_collector"/>
+        <pin num="4" name="CL" type="output"/>
+        <pin num="5" name="DELAY" type="input"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="OUT" type="power_out"/>
+        <pin num="8" name="VS" type="power_in"/>
+        <pin num="9" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_3_Bridged12">
+      <description>3-pole Solder Jumper, pins 1+2 closed/bridged</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Bridged12*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_3_Bridged12</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">3-pole Solder Jumper, pins 1+2 closed/bridged</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole without connection</field>
+      </fields>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="AP63205WU">
+      <description>2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf</docs>
+      <footprints>
+        <fp>TSOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP63205WU</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-6</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf</field>
+        <field name="Description">2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="input"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="IN" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SW" type="output"/>
+        <pin num="6" name="BST" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="MMBT3904">
+      <description>0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23</description>
+      <docs>https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">MMBT3904</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf</field>
+        <field name="Description">0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23</field>
+        <field name="Sim.Device">NPN</field>
+        <field name="Sim.Pins">1=B 2=E 3=C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="Q_PMOS_GSD">
+      <description>P-MOSFET transistor, gate/source/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_GSD</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">P-MOSFET transistor, gate/source/drain</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="onionStraws" part="74LVC2G07_3v3">
+      <description>Dual Buffer w/ Open Drain, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
+      <footprints>
+        <fp>SG-*</fp>
+        <fp>SOT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">74LVC2G07_3v3</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+        <field name="Description">Dual Buffer w/ Open Drain, Low-Voltage CMOS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="open_collector"/>
+        <pin num="5" name="+3V3" type="power_in"/>
+        <pin num="6" name="" type="open_collector"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Diode.kicad_sym</uri>
+    </library>
+    <library logical="GEA_Rev3B">
+      <uri>/workspace/shared/ge-oct3-rev3c-rated-switch/pcb/rev3c/design/symbols/GEA_Rev3B.kicad_sym</uri>
+    </library>
+    <library logical="GEA_Rev3C">
+      <uri>/workspace/shared/ge-oct3-rev3c-rated-switch/pcb/rev3c/design/symbols/GEA_Rev3C.kicad_sym</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Jumper.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Regulator_Switching.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Transistor_BJT.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>/workspace/shared/ge-oct3-tools/kicad-symbols-9.0.9/Transistor_FET.kicad_sym</uri>
+    </library>
+    <library logical="onionStraws">
+      <uri>/workspace/shared/ge-oct3-rev3c-rated-switch/pcb/rev3c/design/symbols/onionStraws.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3" class="Power">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="J6" pin="5" pinfunction="3V3_OUT" pintype="power_out"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="+3V3" pintype="power_in"/>
+    </net>
+    <net code="2" name="+5V" class="Power">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="K2" pintype="passive"/>
+      <node ref="D11" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="K2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="K2" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J6" pin="7" pinfunction="VBUS" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="+5V" pintype="power_in"/>
+    </net>
+    <net code="3" name="/ALT_PWR" class="Power">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="3" pintype="passive"/>
+    </net>
+    <net code="4" name="/BOOT_SEL" class="Default">
+      <node ref="J6" pin="2" pinfunction="BOOT_SEL" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/BUCK_5V" class="Power">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="D11" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U8" pin="1" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="6" name="/BUCK_BST" class="Switching">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="U8" pin="6" pinfunction="BST" pintype="passive"/>
+    </net>
+    <net code="7" name="/BUCK_SW" class="Switching">
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="5" pinfunction="SW" pintype="output"/>
+    </net>
+    <net code="8" name="/DBG_LED" class="Default">
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="DBG_LED" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/GEA2_MCU_TX" class="Default">
+      <node ref="J5" pin="4" pinfunction="GEA2_MCU_TX" pintype="passive"/>
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="10" name="/LED1" class="Default">
+      <node ref="J5" pin="3" pinfunction="LED1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="/LED2" class="Default">
+      <node ref="J5" pin="2" pinfunction="LED2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="/PIN1_CL" class="Default">
+      <node ref="R38" pin="1" pintype="passive"/>
+      <node ref="U9" pin="4" pinfunction="CL" pintype="output"/>
+    </net>
+    <net code="13" name="/PIN1_DELAY" class="Default">
+      <node ref="R40" pin="2" pintype="passive"/>
+      <node ref="U9" pin="5" pinfunction="DELAY" pintype="input"/>
+    </net>
+    <net code="14" name="/PIN1_FUSED" class="Power">
+      <node ref="F2" pin="2" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="15" name="/PIN1_GATE" class="Default">
+      <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R33" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="/PIN1_GATE_CLAMP" class="Default">
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="D16" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+      <node ref="R33" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="/PIN1_PROTECTED" class="Power">
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="D16" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D18" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R35" pin="1" pintype="passive"/>
+      <node ref="R40" pin="1" pintype="passive"/>
+      <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U9" pin="1" pinfunction="IN" pintype="input"/>
+      <node ref="U9" pin="8" pinfunction="VS" pintype="power_in"/>
+    </net>
+    <net code="18" name="/PIN1_SW_OUT" class="Power">
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="D14" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U9" pin="7" pinfunction="OUT" pintype="power_out"/>
+    </net>
+    <net code="19" name="/PIN3_CL" class="Default">
+      <node ref="R39" pin="1" pintype="passive"/>
+      <node ref="U10" pin="4" pinfunction="CL" pintype="output"/>
+    </net>
+    <net code="20" name="/PIN3_DELAY" class="Default">
+      <node ref="R41" pin="2" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="DELAY" pintype="input"/>
+    </net>
+    <net code="21" name="/PIN3_EN" class="Default">
+      <node ref="Q5" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R36" pin="2" pintype="passive"/>
+      <node ref="U10" pin="1" pinfunction="IN" pintype="input"/>
+    </net>
+    <net code="22" name="/PIN3_FUSED" class="Power">
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="23" name="/PIN3_GATE" class="Default">
+      <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R34" pin="2" pintype="passive"/>
+    </net>
+    <net code="24" name="/PIN3_GATE_CLAMP" class="Default">
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="D17" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R32" pin="2" pintype="passive"/>
+      <node ref="R34" pin="1" pintype="passive"/>
+    </net>
+    <net code="25" name="/PIN3_PROTECTED" class="Power">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="D17" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D20" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R36" pin="1" pintype="passive"/>
+      <node ref="R41" pin="1" pintype="passive"/>
+      <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="8" pinfunction="VS" pintype="power_in"/>
+    </net>
+    <net code="26" name="/PIN3_SW_OUT" class="Power">
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="D15" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="7" pinfunction="OUT" pintype="power_out"/>
+    </net>
+    <net code="27" name="/PRIORITY_BASE" class="Default">
+      <node ref="Q5" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R35" pin="2" pintype="passive"/>
+      <node ref="R37" pin="1" pintype="passive"/>
+    </net>
+    <net code="28" name="/V_INPUT" class="Power">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D14" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D15" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="EN" pintype="input"/>
+      <node ref="U8" pin="3" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="29" name="BOOT" class="Default">
+      <node ref="J6" pin="3" pinfunction="BOOT" pintype="passive"/>
+      <node ref="JP1" pin="3" pinfunction="B" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="30" name="GEA2_RX" class="Default">
+      <node ref="J6" pin="4" pinfunction="GEA2_RX" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="31" name="GEA2_TX" class="Default">
+      <node ref="JP1" pin="2" pinfunction="C" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="32" name="GEA3_RX" class="Default">
+      <node ref="J5" pin="7" pinfunction="GEA3_RX" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="33" name="GEA3_TX" class="Default">
+      <node ref="J6" pin="1" pinfunction="GEA3_TX" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="GEA_FullRx" class="Default">
+      <node ref="D2" pin="3" pinfunction="K1,A2" pintype="passive"/>
+      <node ref="J1" pin="5" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+    </net>
+    <net code="35" name="GEA_FullTx" class="Default">
+      <node ref="D3" pin="3" pinfunction="K1,A2" pintype="passive"/>
+      <node ref="J1" pin="4" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+    </net>
+    <net code="36" name="GEA_HalfDplx" class="Default">
+      <node ref="D1" pin="3" pinfunction="K1,A2" pintype="passive"/>
+      <node ref="J1" pin="7" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+    </net>
+    <net code="37" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="A1" pintype="passive"/>
+      <node ref="D18" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="A1" pintype="passive"/>
+      <node ref="D20" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="A1" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="8" pintype="passive"/>
+      <node ref="J6" pin="6" pinfunction="GND" pintype="passive"/>
+      <node ref="Q5" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+      <node ref="R32" pin="1" pintype="passive"/>
+      <node ref="R37" pin="2" pintype="passive"/>
+      <node ref="R38" pin="2" pintype="passive"/>
+      <node ref="R39" pin="2" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="DIAG_EN" pintype="input"/>
+      <node ref="U10" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U10" pin="9" pinfunction="EP" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U8" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="U9" pin="2" pinfunction="DIAG_EN" pintype="input"/>
+      <node ref="U9" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U9" pin="9" pinfunction="EP" pintype="power_in"/>
+    </net>
+    <net code="38" name="Net-(D4-A)" class="Default">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="39" name="Net-(D5-A)" class="Default">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="40" name="Net-(D6-A)" class="Default">
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(D9-K1,A2)" class="Default">
+      <node ref="D9" pin="3" pinfunction="K1,A2" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U5" pin="6" pintype="open_collector"/>
+    </net>
+    <net code="42" name="Net-(D9-K2)" class="Default">
+      <node ref="D9" pin="2" pinfunction="K2" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="1" pintype="input"/>
+    </net>
+    <net code="43" name="Net-(R10-Pad2)" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U4" pin="6" pintype="open_collector"/>
+    </net>
+    <net code="44" name="Net-(R11-Pad2)" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U5" pin="1" pintype="input"/>
+    </net>
+    <net code="45" name="Net-(R12-Pad2)" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U5" pin="3" pintype="input"/>
+    </net>
+    <net code="46" name="Net-(R13-Pad2)" class="Default">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U4" pin="4" pintype="open_collector"/>
+    </net>
+    <net code="47" name="Net-(R20-Pad1)" class="Default">
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="4" pintype="open_collector"/>
+    </net>
+    <net code="48" name="Net-(R21-Pad1)" class="Default">
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="3" pintype="input"/>
+    </net>
+    <net code="49" name="VDC" class="Power">
+      <node ref="F2" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pintype="passive"/>
+    </net>
+    <net code="50" name="unconnected-(D9-A1-Pad1)" class="Default">
+      <node ref="D9" pin="1" pinfunction="A1" pintype="passive+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(J1-Pad2)" class="Default">
+      <node ref="J1" pin="2" pintype="passive+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(J1-Pad6)" class="Default">
+      <node ref="J1" pin="6" pintype="passive+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(J5-D4_NC-Pad5)" class="Default">
+      <node ref="J5" pin="5" pinfunction="D4_NC" pintype="no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(J5-D5_NC-Pad6)" class="Default">
+      <node ref="J5" pin="6" pinfunction="D5_NC" pintype="no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U9-FAULT-Pad3)" class="Default">
+      <node ref="U9" pin="3" pinfunction="FAULT" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U10-FAULT-Pad3)" class="Default">
+      <node ref="U10" pin="3" pinfunction="FAULT" pintype="open_collector+no_connect"/>
+    </net>
+  </nets>
+</export>

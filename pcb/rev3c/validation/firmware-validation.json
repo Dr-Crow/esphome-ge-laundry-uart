@@ -1,0 +1,108 @@
+{
+  "verification": "Prior real builds revalidated by unchanged source and artifact hashes; no compilation rerun",
+  "esphome": "2026.9.1",
+  "esp_idf": "5.5.5",
+  "gea_component_commit": "283ff2b0dfe90a6d14a5417a23176d433be8a5b3",
+  "source_sha256": {
+    "c3-gea3.yaml": "fccf7ceeb9638114f44925c1f027158e83848b64d52a153256890ba379e4fb43",
+    "c3-gea2.yaml": "ff4362e214c9c99cc8c3df64c8d4c63769355111e632fc4fad29cddec79b3b0d",
+    "c6-gea2.yaml": "69f30f6813e7dc3fd24cbe693601f8291b7b76e178d568c4a67e2f73fe8005fc",
+    "c6-gea3.yaml": "bd3d016407627988c481bf9d66fdbc1ea8e2a5f2f58c87b345a1b1c4f7e5b3e3",
+    "packages/common.yaml": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4",
+    "packages/gea2.yaml": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba",
+    "packages/c6-rf.yaml": "55979b14a8a3dc9414c42ebc613fe2d036b72a1b447329d6be5f9c27c470d943",
+    "packages/gea3.yaml": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76"
+  },
+  "prior_compile_results": [
+    {
+      "profile": "c3-gea2.yaml",
+      "compile_exit_code": 0,
+      "seconds": 164.0,
+      "artifacts": [
+        {
+          "path": "shared-source/.esphome/build/rev3c-c3-gea2/build/firmware.factory.bin",
+          "bytes": 1002416,
+          "sha256": "d0cff351b3935e22dc9bbb9d920cb10b71ccab26f6ab0d1205647cd4888e95f6"
+        },
+        {
+          "path": "shared-source/.esphome/build/rev3c-c3-gea2/build/firmware.ota.bin",
+          "bytes": 936880,
+          "sha256": "790dcdc9c5e09bf8546d56ffa279083aac45822016534dafa3c58eb389169214"
+        },
+        {
+          "path": "shared-source/.esphome/build/rev3c-c3-gea2/build/firmware.elf",
+          "bytes": 15121260,
+          "sha256": "33b03f735aa7a38da2c4ae3e5e87de297ac246a6bdc48655841c4a5fda1038f0"
+        }
+      ]
+    },
+    {
+      "profile": "c3-gea3.yaml",
+      "compile_exit_code": 0,
+      "seconds": 63.5,
+      "artifacts": [
+        {
+          "path": "shared-source/.esphome/build/rev3c-c3-gea3/build/firmware.factory.bin",
+          "bytes": 999232,
+          "sha256": "9b9438f0c210accbeadb801b0aa91b5ee84c53913a9dd1605ef6b02cef9b296c"
+        },
+        {
+          "path": "shared-source/.esphome/build/rev3c-c3-gea3/build/firmware.ota.bin",
+          "bytes": 933696,
+          "sha256": "4682d68f2eba17e5f1290e3d6e1e95c086c8856a3ef5fd9f8622031731f7565d"
+        },
+        {
+          "path": "shared-source/.esphome/build/rev3c-c3-gea3/build/firmware.elf",
+          "bytes": 15046176,
+          "sha256": "003c4cf279e897ecc0699c8e07d798add38dd14c9f97522878577b2cd2f6ff05"
+        }
+      ]
+    },
+    {
+      "profile": "c6-gea2.yaml",
+      "compile_exit_code": 0,
+      "seconds": 78.0,
+      "artifacts": [
+        {
+          "path": "shared-source/.esphome/build/rev3c-c6-gea2/build/firmware.factory.bin",
+          "bytes": 1059184,
+          "sha256": "d8b7e8f61b977f2e013b1136963316358fa0dfd5086feaa8a8aa8a707bd66821"
+        },
+        {
+          "path": "shared-source/.esphome/build/rev3c-c6-gea2/build/firmware.ota.bin",
+          "bytes": 993648,
+          "sha256": "f3d75d3948de355c21922d97d47015b759dafaf4a918d462c19836b61aa0e260"
+        },
+        {
+          "path": "shared-source/.esphome/build/rev3c-c6-gea2/build/firmware.elf",
+          "bytes": 15402444,
+          "sha256": "f4e2a3fc2889c6aa1e28e60de1b696f6532fefb16a9512dce7b060d762459286"
+        }
+      ]
+    },
+    {
+      "profile": "c6-gea3.yaml",
+      "compile_exit_code": 0,
+      "seconds": 70.4,
+      "artifacts": [
+        {
+          "path": "shared-source/.esphome/build/rev3c-c6-gea3/build/firmware.factory.bin",
+          "bytes": 1056032,
+          "sha256": "0ec5fbfbbbf9694d1496c68fbb3c2cebbf647c48879623ccb627e655fabe5c4f"
+        },
+        {
+          "path": "shared-source/.esphome/build/rev3c-c6-gea3/build/firmware.ota.bin",
+          "bytes": 990496,
+          "sha256": "2f15a4f84cd3673f4e1a8895528be53b9cf0744be8feac404de7d83921387283"
+        },
+        {
+          "path": "shared-source/.esphome/build/rev3c-c6-gea3/build/firmware.elf",
+          "bytes": 15323660,
+          "sha256": "02005606b07d798527c5fc0519b014ff7b3fc6f773f8a149eab925b85ebda349"
+        }
+      ]
+    }
+  ],
+  "dummy_secrets_used_in_prior_validation": true,
+  "network_or_appliance_connection_tested": false
+}
