@@ -1,7 +1,7 @@
 {
   "candidate": "Selected rated dual-input Rev3C prototype; C3 first with C6 flexibility; electrical/thermal/physical qualification open",
   "base_commit": "8f95555022eec353f8c9e3b9c54b612ee2541eaa",
-  "manifest_updated_utc": "2026-10-04T22:34:12.723053+00:00",
+  "manifest_updated_utc": "2026-10-05T02:47:18Z",
   "counts": {
     "native_footprints": 100,
     "schematic_components": 100,
@@ -24,7 +24,7 @@
   },
   "status": {
     "native_cad": "Fresh KiCad9.0.9 full-severity ERC/all-track/parity DRC0 errors/0 warnings/0 unconnected/0 parity on October4,2026 after drill-marker plot-policy correction.",
-    "manufacturing": "Fresh native14-file factory regeneration/parity and83 BOM/CPL/source binding pass. ZIP removes unwanted drill markers. Historical134.64/168.91USD quotes used previousGerbers; refreshed supplier quote/stencil/process review and all release qualifications remain open.",
+    "manufacturing": "Fresh native 14-file factory regeneration/parity and 83-reference BOM/CPL/source binding pass. ZIP removes unwanted drill markers. October 5 current exact-trio quotes are USD 134.64/168.92 for 5/10 assembled carriers, with no shortages or substitutions. Actual placement/stencil/process approval and all release qualifications remain open.",
     "source_current_startup_transient_thermal_environment_fit": "Unqualified; see RATED-SWITCH-OPTION.md and POWER-QUALIFICATION.md",
     "original_80_part_supplier_quote_baseline": "Frozen separately at8f95555; no quote/order action in this candidate",
     "frozen_quote_snapshots": "8f95555 and46173b6 source/quote snapshots unchanged"
@@ -431,6 +431,16 @@
       "path": "pcb/rev3c/images/stencil-marker-comparison.png",
       "bytes": 229874,
       "sha256": "b493b77a1fc4986d64f52fba5f28c7b65f5aafdc7ad859dd0e4802a1b35def5e"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/corrected-five-board-complete-quote-2026-10-05.jpg",
+      "bytes": 114174,
+      "sha256": "e05a48267c14645d0263f17c1fe3d0753f201c9b6b4aa21570271ddfedf9b0d5"
+    },
+    {
+      "path": "pcb/rev3c/images/ordering/corrected-ten-board-complete-quote-2026-10-05.jpg",
+      "bytes": 122927,
+      "sha256": "9b4e1888e381cae07a7c5a8a9a701bc4d64e4ec5af23e37553d50fae3e1d4f55"
     }
   ],
   "firmware_sources": [
@@ -498,13 +508,13 @@
     },
     {
       "path": "pcb/rev3c/README.md",
-      "bytes": 8950,
-      "sha256": "efd3cda13a23ff806c515eb9354c90c3024c9fa51956d95d26e441319020f822"
+      "bytes": 9101,
+      "sha256": "5a163924cc7e98aa2fe8d761b5eddf13987b3df07cbc562b354cf37ae0d2324f"
     },
     {
       "path": "pcb/rev3c/ORDERING.md",
-      "bytes": 12049,
-      "sha256": "3cfdc8a1f2087cc601f2d83a63b10a5b4c1043c9ddbba53faade387be1c1ba5e"
+      "bytes": 12791,
+      "sha256": "982b59b833a446294a56eb973ee780000e10e34fbfe8d9e8c7563fe2aea87d0a"
     },
     {
       "path": "pcb/rev3c/images/ordering/all-83-confirmed.jpg",
@@ -563,8 +573,13 @@
     },
     {
       "path": "pcb/rev3c/STENCIL-REVIEW.md",
-      "bytes": 3272,
-      "sha256": "3feccf932e88bcef1d7e47bfaae0f06c84f1f242294bfd65d9a792dca23cc9d9"
+      "bytes": 3451,
+      "sha256": "e378d008bbb0e82ee04d1e309f8b0037cac6d8d3b1e8829516978115005353f0"
+    },
+    {
+      "path": "pcb/rev3c/validation/JLCPCB-QUOTE-2026-10-05.json",
+      "bytes": 7165,
+      "sha256": "9cd77960bd3b2c8db909de038d57267258a2260890a953c7d93024a4c13c91e8"
     }
   ],
   "export_notes": {
@@ -584,6 +599,8 @@
   "sourcing_correction_base_commit": "46173b61546d1e51993c1376399b2614f3577df3",
   "selection_date_utc": "2026-10-03",
   "quoted_electrical_source_commit": "7bb455fbc85c748f3125ed091a54375de69fbbcc",
-  "quote_refresh_utc": "2026-10-04T04:16:00Z",
-  "quoted_current_placement_source": "b53cfca83c4433b2288f882439c16e083c1fb50d"
+  "quote_refresh_utc": "2026-10-05T02:47:18Z",
+  "quoted_current_placement_source": "b53cfca83c4433b2288f882439c16e083c1fb50d",
+  "corrected_gerber_quote_source": "2d5a42cc7a9440aef784fe827d0e25690bb74bfd",
+  "current_quote_receipt": "pcb/rev3c/validation/JLCPCB-QUOTE-2026-10-05.json"
 }

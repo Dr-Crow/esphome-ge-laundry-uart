@@ -2,23 +2,23 @@
 
 [Comparison](README.md) · [Validation](VALIDATION.md) · [Finish plan](FINISH-PLAN.md)
 
-All prices are USD. The selected exact Rev3C quotes refreshed October 4, 2026 at 04:16 UTC and the historical October 3 baseline quotes are complete PCB plus Economic top-side assembly for **all five or all ten carriers**, with exact reference/part-code matching at both quantities. Shipping, tax, XIAO modules and module-side headers/installation, programming, functional tests, enclosures and appliance cables are excluded. No order has been placed.
+All prices are USD. The selected exact Rev3C quotes refreshed October 5, 2026 at 02:47 UTC and the historical October 3 baseline quotes are complete PCB plus Economic top-side assembly for **all five or all ten carriers**, with exact reference/part-code matching at both quantities. Shipping, tax, XIAO modules and module-side headers/installation, programming, functional tests, enclosures and appliance cables are excluded. No order has been placed.
 
 ## Selected Rev3C and historical baseline
 
 | Matched factory source | References / unique purchasing groups | Five carriers | Ten carriers |
 | --- | ---: | ---: | ---: |
-| Selected placement-corrected `b53cfca83c4433b2288f882439c16e083c1fb50d` | 83 / 34 | **$134.64** | **$168.91** |
+| Current selected corrected trio, integration `2d5a42cc7a9440aef784fe827d0e25690bb74bfd` | 83 / 34 | **$134.64** | **$168.92** |
 | Historical baseline `ca1fdb1261af8b32a1bf353d37f40439ead5c3b0` | 80 / 33 | $130.39 | $160.37 |
-| Selected-source premium | | **$4.25** | **$8.54** |
+| Difference from historical baseline | | **$4.25** | **$8.55** |
 
-The premium is approximately $0.85 per carrier. Restored source `5542734` adds source-preserving partial C3/C6 models and quote documentation. Current selected source `b87d3e8` additionally disables unwanted drill-marker plotting and regenerates the Gerber ZIP; BOM/CPL are unchanged. Refresh the quote for that corrected ZIP before ordering. The previously quoted factory trio is the corrected J1 body-datum package at `b53cfca`; all 83 exact codes matched and were stocked at both quantities in the 04:16 refresh. The earlier `7bb455f` CPL is historical; do not use it as the current placement file. The 80-reference baseline changed only D16/D17 sourcing to reviewed MCC C668891; its original TPS22810 switches, fuses and topology remain. It is a historical price comparison, not the selected design.
+The premium is approximately $0.85 per carrier. Restored source `5542734` adds source-preserving partial C3/C6 models and quote documentation. Current selected source `b87d3e8` additionally disables unwanted drill-marker plotting and regenerates the Gerber ZIP; BOM/CPL are unchanged. The October 5, 02:47 UTC [fresh quote receipt](../../pcb/rev3c/validation/JLCPCB-QUOTE-2026-10-05.json) verifies this corrected ZIP and matching BOM/CPL. All 83 references/34 parts matched without shortage warnings or substitutions; stock is not reserved. This current quote is compared with an October 3 baseline snapshot, rather than a new simultaneous baseline quote. The previously quoted factory trio is the corrected J1 body-datum package at `b53cfca`; all 83 exact codes matched and were stocked at both quantities in the 04:16 refresh. The earlier `7bb455f` CPL is historical; do not use it as the current placement file. The 80-reference baseline changed only D16/D17 sourcing to reviewed MCC C668891; its original TPS22810 switches, fuses and topology remain. It is a historical price comparison, not the selected design.
 
 | Included subtotal | Selected, five | Selected, ten | Baseline, five | Baseline, ten |
 | --- | ---: | ---: | ---: | ---: |
 | PCB | 29.81 | 36.07 | 29.81 | 36.07 |
-| PCBA | 104.83 | 132.84 | 100.58 | 124.30 |
-| Components within PCBA | 34.18 | 58.70 | 30.02 | 50.36 |
+| PCBA | 104.83 | 132.85 | 100.58 | 124.30 |
+| Components within PCBA | 34.18 | 58.71 | 30.02 | 50.36 |
 | Extended-part fees within PCBA | 52.53 | 52.53 | 52.53 | 52.53 |
 
 PCBA also includes setup, stencil, SMT, hand-soldering, manual assembly and nitrogen reflow. Rounded lines are not substitutes for the supplier's total. The quote includes J1 RJ45 and J5/J6 female sockets with no unapproved omissions or substitutions.

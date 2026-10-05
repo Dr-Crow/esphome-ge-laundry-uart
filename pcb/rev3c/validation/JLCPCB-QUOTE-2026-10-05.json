@@ -1,0 +1,413 @@
+{
+  "observed_at_utc": "2026-10-05T02:47:18Z",
+  "merchant": "JLCPCB",
+  "currency": "USD",
+  "configuration": {
+    "layers": 4,
+    "dimensions_mm": [
+      99,
+      40
+    ],
+    "material": "FR4 TG135",
+    "thickness_mm": 1.6,
+    "color": "Green",
+    "silkscreen": "White",
+    "finish": "LeadFree HASL",
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 1,
+    "assembly": "Economic Top Side",
+    "via_covering": "Plugged",
+    "references": 83,
+    "unique_component_items": 34
+  },
+  "source_sha256": {
+    "gerber": "73d319df01ec65f1b8ba60b49da10fd3a226887d75be6d6e6170832a2cdf3c13",
+    "bom": "27a9dfa850fe996a36c792fb6146548bc59342eda2b05732fa24e173bade1406",
+    "cpl": "a1f17d5e6018b582694428e374c18ecc110410482ab69022347bd8cf62ea37b2"
+  },
+  "quotes": [
+    {
+      "quantity": 5,
+      "total": 134.64,
+      "pcb": 29.81,
+      "pcba": 104.83,
+      "components": 34.18,
+      "extended_fee": 52.53,
+      "setup": 8.24,
+      "stencil": 1.55,
+      "smt": 1.99,
+      "hand_solder": 3.61,
+      "manual_assembly": 1.82,
+      "nitrogen": 0.91,
+      "pcb_build_days": "3",
+      "assembly_build_days": "4-5"
+    },
+    {
+      "quantity": 10,
+      "total": 168.92,
+      "pcb": 36.07,
+      "pcba": 132.85,
+      "components": 58.71,
+      "extended_fee": 52.53,
+      "setup": 8.24,
+      "stencil": 1.55,
+      "smt": 3.59,
+      "hand_solder": 3.61,
+      "manual_assembly": 3.63,
+      "nitrogen": 0.99,
+      "pcb_build_days": "3-4",
+      "assembly_build_days": "4-5"
+    }
+  ],
+  "excludes": [
+    "Shipping",
+    "Tax"
+  ],
+  "coupon_applied": false,
+  "orders_submitted": 0,
+  "cart_submissions": 0,
+  "parts_substituted": 0,
+  "stock_result": "All 83 references matched and selected for both quantities, quote reached without shortage warnings. Stock was not reserved.",
+  "part_code_audit": "83 UI references compared against source BOM; exact match.",
+  "matched_parts": [
+    {
+      "part": "C106243",
+      "ref": "C1"
+    },
+    {
+      "part": "C106243",
+      "ref": "C3"
+    },
+    {
+      "part": "C106243",
+      "ref": "C4"
+    },
+    {
+      "part": "C106243",
+      "ref": "C5"
+    },
+    {
+      "part": "C106243",
+      "ref": "C6"
+    },
+    {
+      "part": "C106243",
+      "ref": "C7"
+    },
+    {
+      "part": "C106243",
+      "ref": "C12"
+    },
+    {
+      "part": "C106243",
+      "ref": "C14"
+    },
+    {
+      "part": "C106243",
+      "ref": "C24"
+    },
+    {
+      "part": "C106243",
+      "ref": "C25"
+    },
+    {
+      "part": "C91185",
+      "ref": "C2"
+    },
+    {
+      "part": "C91185",
+      "ref": "C20"
+    },
+    {
+      "part": "C91185",
+      "ref": "C21"
+    },
+    {
+      "part": "C303950",
+      "ref": "C9"
+    },
+    {
+      "part": "C286510",
+      "ref": "C10"
+    },
+    {
+      "part": "C15850",
+      "ref": "C11"
+    },
+    {
+      "part": "C15850",
+      "ref": "C13"
+    },
+    {
+      "part": "C161181",
+      "ref": "C15"
+    },
+    {
+      "part": "C309062",
+      "ref": "C16"
+    },
+    {
+      "part": "C309062",
+      "ref": "C17"
+    },
+    {
+      "part": "C1546",
+      "ref": "C18"
+    },
+    {
+      "part": "C1546",
+      "ref": "C19"
+    },
+    {
+      "part": "C2500",
+      "ref": "D1"
+    },
+    {
+      "part": "C2500",
+      "ref": "D2"
+    },
+    {
+      "part": "C2500",
+      "ref": "D3"
+    },
+    {
+      "part": "C2500",
+      "ref": "D9"
+    },
+    {
+      "part": "C2297",
+      "ref": "D4"
+    },
+    {
+      "part": "C84256",
+      "ref": "D5"
+    },
+    {
+      "part": "C2296",
+      "ref": "D6"
+    },
+    {
+      "part": "C82288",
+      "ref": "D11"
+    },
+    {
+      "part": "C78744",
+      "ref": "D14"
+    },
+    {
+      "part": "C78744",
+      "ref": "D15"
+    },
+    {
+      "part": "C668891",
+      "ref": "D16"
+    },
+    {
+      "part": "C668891",
+      "ref": "D17"
+    },
+    {
+      "part": "C399290",
+      "ref": "D18"
+    },
+    {
+      "part": "C399290",
+      "ref": "D20"
+    },
+    {
+      "part": "C151170",
+      "ref": "F1"
+    },
+    {
+      "part": "C151170",
+      "ref": "F2"
+    },
+    {
+      "part": "C3097717",
+      "ref": "J1"
+    },
+    {
+      "part": "C2897370",
+      "ref": "J5"
+    },
+    {
+      "part": "C2897370",
+      "ref": "J6"
+    },
+    {
+      "part": "C412309",
+      "ref": "L1"
+    },
+    {
+      "part": "C15903",
+      "ref": "Q3"
+    },
+    {
+      "part": "C15903",
+      "ref": "Q4"
+    },
+    {
+      "part": "C20526",
+      "ref": "Q5"
+    },
+    {
+      "part": "C17414",
+      "ref": "R1"
+    },
+    {
+      "part": "C17414",
+      "ref": "R2"
+    },
+    {
+      "part": "C17414",
+      "ref": "R5"
+    },
+    {
+      "part": "C17414",
+      "ref": "R14"
+    },
+    {
+      "part": "C17414",
+      "ref": "R15"
+    },
+    {
+      "part": "C17414",
+      "ref": "R16"
+    },
+    {
+      "part": "C17414",
+      "ref": "R17"
+    },
+    {
+      "part": "C17414",
+      "ref": "R19"
+    },
+    {
+      "part": "C17414",
+      "ref": "R20"
+    },
+    {
+      "part": "C17414",
+      "ref": "R35"
+    },
+    {
+      "part": "C17414",
+      "ref": "R36"
+    },
+    {
+      "part": "C17414",
+      "ref": "R37"
+    },
+    {
+      "part": "C17557",
+      "ref": "R4"
+    },
+    {
+      "part": "C17557",
+      "ref": "R6"
+    },
+    {
+      "part": "C17557",
+      "ref": "R7"
+    },
+    {
+      "part": "C17513",
+      "ref": "R10"
+    },
+    {
+      "part": "C17513",
+      "ref": "R11"
+    },
+    {
+      "part": "C17513",
+      "ref": "R12"
+    },
+    {
+      "part": "C17513",
+      "ref": "R13"
+    },
+    {
+      "part": "C17513",
+      "ref": "R23"
+    },
+    {
+      "part": "C17513",
+      "ref": "R24"
+    },
+    {
+      "part": "C17513",
+      "ref": "R25"
+    },
+    {
+      "part": "C104108",
+      "ref": "R18"
+    },
+    {
+      "part": "C104108",
+      "ref": "R21"
+    },
+    {
+      "part": "C17673",
+      "ref": "R22"
+    },
+    {
+      "part": "C27834",
+      "ref": "R31"
+    },
+    {
+      "part": "C27834",
+      "ref": "R32"
+    },
+    {
+      "part": "C17738",
+      "ref": "R33"
+    },
+    {
+      "part": "C17738",
+      "ref": "R34"
+    },
+    {
+      "part": "C22978",
+      "ref": "R38"
+    },
+    {
+      "part": "C22978",
+      "ref": "R39"
+    },
+    {
+      "part": "C149504",
+      "ref": "R40"
+    },
+    {
+      "part": "C149504",
+      "ref": "R41"
+    },
+    {
+      "part": "C151607",
+      "ref": "U4"
+    },
+    {
+      "part": "C151607",
+      "ref": "U5"
+    },
+    {
+      "part": "C2071056",
+      "ref": "U8"
+    },
+    {
+      "part": "C2653785",
+      "ref": "U9"
+    },
+    {
+      "part": "C2653785",
+      "ref": "U10"
+    }
+  ],
+  "caveats": [
+    "3D models cannot render in this cloud browser. Quote progression is not a physical placement or manufacturing approval.",
+    "Five-board screenshot preserves its quote; the same corrected live quote is currently set to ten."
+  ],
+  "source_integration_commit": "2d5a42cc7a9440aef784fe827d0e25690bb74bfd",
+  "selected_stencil_source_commit": "b87d3e8edc0e078946b980988fd45dc0d3b8e482",
+  "scope": "Carrier only; XIAO modules, module-side headers/installation, programming, functional tests and enclosure are separate. Quote does not qualify placement, assembly or appliance operation."
+}

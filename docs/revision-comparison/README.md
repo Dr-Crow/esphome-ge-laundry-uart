@@ -21,13 +21,13 @@ Rev3B/C require one physical power source at a time because the module's side-he
 
 ## Current quote comparison
 
-USD, complete PCB plus Economic top-side assembly, with all carriers assembled. The historical selected quote refreshed October 4 at 04:16 UTC includes the selected exact parts, RJ45 and female sockets. The current corrected Gerber ZIP needs a refreshed quote and stencil/process review. Shipping, tax, separately purchased XIAO modules/headers, installation, programming, tests and cases are excluded.
+USD, complete PCB plus Economic top-side assembly, with all carriers assembled. The selected quote refreshed October 5 at 02:47 UTC uses the current stencil-corrected trio from integration `2d5a42c`, including the selected exact parts, RJ45 and female sockets. All 83 references/34 parts matched without shortages or substitutions; placement and stencil/process review remain open. Shipping, tax, separately purchased XIAO modules/headers, installation, programming, tests and cases are excluded.
 
 | Matched Rev3C source | Fitted references | Five carriers | Ten carriers |
 | --- | ---: | ---: | ---: |
-| Previous quoted factory trio `b53cfca` | 83 | **$134.64** | **$168.91** |
+| Current corrected trio, integration `2d5a42c` | 83 | **$134.64** | **$168.92** |
 | Historical clamp-sourced baseline `ca1fdb1` | 80 | $130.39 | $160.37 |
-| Selected design premium | +3 | **$4.25** | **$8.54** |
+| Difference from historical baseline | +3 | **$4.25** | **$8.55** |
 
 The premium is about $0.85 per carrier. These are quote observations, not an order or delivered cost. Older architecture prices and module snapshots are clearly separated in [PRICING.md](PRICING.md). Current A includes its processor at $178.90/5 or $227.86/10; B remains stock-blocked. The selected source contains the illustrated `pcb/rev3c/ORDERING.md` and matching relative assets; use that guide only with its exact three-file package.
 

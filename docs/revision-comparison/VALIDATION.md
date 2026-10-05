@@ -8,7 +8,7 @@ Fresh local checks on October 4 after source restoration use the exact KiCad 9.0
 
 The current [CI review receipt](../../ci/validation/INTEGRATED-CI-REVIEW.json) binds all 380 CAD dependencies, current configuration/test hashes and eight profile/include inventories. CircleCI schema validation accepted the exact current configuration on October 4 using CLI 1.0.51932; its [separate receipt](../../ci/validation/INTEGRATED-CIRCLECI-SCHEMA.json) records the hashes. All 21 power/source/physical release gates remain blocked. Fresh firmware config/compile and hosted jobs have not run in this integration. Older compilation and integration reports below retain their historical source boundaries; their binaries are not freshly verified.
 
-Rev3C's [stencil review](../../pcb/rev3c/STENCIL-REVIEW.md) removes 26 unintended openings from each paste layer; existing SMT geometry and BOM/CPL are preserved. Rev2.1/2.2/3A/3B already use drillshape 0, and independent fresh native paste/CAM audits pass. Unplaced source-paste apertures remain for Rev2.2 U1 and Rev3A/3B/3C D8 and require assembler review. Prior Rev3C quote totals apply to the earlier Gerber ZIP and need refresh.
+Rev3C's [stencil review](../../pcb/rev3c/STENCIL-REVIEW.md) removes 26 unintended openings from each paste layer; existing SMT geometry and BOM/CPL are preserved. Rev2.1/2.2/3A/3B already use drillshape 0, and independent fresh native paste/CAM audits pass. Unplaced source-paste apertures remain for Rev2.2 U1 and Rev3A/3B/3C D8 and require assembler review. Rev3C’s October 5 quote now matches the corrected ZIP: USD 134.64 for five or 168.92 for ten assembled carriers; placement/stencil/process qualification remains open.
 
 ## Prior engineering checkpoints
 

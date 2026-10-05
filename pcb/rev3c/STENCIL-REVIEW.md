@@ -20,7 +20,7 @@ Fresh checks on October 4, 2026 used genuine KiCad 9.0.9 with the pinned officia
 
 The [source-bound proof](validation/stencil-marker-repair-proof.json) records exact source, factory-file and tool pins. The [native ERC](validation/native-kicad-9.0.9-erc.json) and [DRC](validation/native-kicad-9.0.9-drc.json) are fresh reports. The original 9.0.2 installation produced library-link/content warnings; replacing it with the declared 9.0.9 tool and libraries resolved those warnings without changing electrical rules.
 
-Use the current [Gerber ZIP](manufacturing/GERBER-GEA-Adapter-Rev3C.zip) with its matching BOM/CPL listed in the [ordering guide](ORDERING.md). Prior quote screenshots describe the previous frozen Gerber package; refresh the quote for this corrected ZIP before ordering.
+Use the current [Gerber ZIP](manufacturing/GERBER-GEA-Adapter-Rev3C.zip) with its matching BOM/CPL listed in the [ordering guide](ORDERING.md). The October 5 [quote receipt](validation/JLCPCB-QUOTE-2026-10-05.json) and current ordering-guide cost screenshots use this corrected ZIP: USD 134.64 for five or 168.92 for ten assembled carriers, before shipping, tax and separate XIAO modules. Actual placement, stencil and assembly approval remain open.
 
 Two preserved front-paste apertures belong to unplaced D8 (DNI). The assembler must review stencil handling for that unplaced part, the TI exposed pad, solder delivery, placement and through-hole processes. A source-matched export is not supplier process approval. Appliance voltage/current/transient limits, loaded startup and thermal behavior, enclosure/RF fit and physical testing remain open in [POWER-QUALIFICATION.md](POWER-QUALIFICATION.md). Disconnect the appliance before powered USB and keep UART VCC disconnected.
 

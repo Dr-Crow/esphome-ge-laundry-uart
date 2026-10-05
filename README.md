@@ -19,7 +19,7 @@ Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 c
 
 The selected development focus is the socketed C3/C6 Rev3C with both appliance inputs, automatic priority and rated protection. This integration includes all seven editable board revisions, eight firmware profiles, native validation and the [illustrated Rev3C ordering guide](pcb/rev3c/ORDERING.md). Start with the [current comparison and validation](docs/revision-comparison/README.md), [exact source handoff](docs/revision-comparison/HANDOFF.md) and [finish registry](docs/revision-comparison/FINISH-PLAN.md).
 
-Fresh pinned KiCad 9.0.9 ERC/DRC and intended-rule checks pass for all seven revisions. The [Rev3C stencil correction](pcb/rev3c/STENCIL-REVIEW.md) removes unintended drill-marker openings. Native/CAM agreement is separate from supplier process, appliance power and physical qualification. The previous Rev3C $134.64/$168.91 quotes require refresh for its corrected Gerber ZIP; Rev2.2's old $78.07 quote is historical.
+Fresh pinned KiCad 9.0.9 ERC/DRC and intended-rule checks pass for all seven revisions. The [Rev3C stencil correction](pcb/rev3c/STENCIL-REVIEW.md) removes unintended drill-marker openings. Native/CAM agreement is separate from supplier process, appliance power and physical qualification. The corrected Rev3C trio has refreshed October 5 quotes of $134.64 for five or $168.92 for ten assembled carriers, before shipping, tax and XIAO modules; Rev2.2's old $78.07 quote is historical.
 
 Older boards and the complete change history are listed in the [PCB revision index](pcb/README.md). Hardware contributors should also read the [contribution guide](CONTRIBUTING.md).
 

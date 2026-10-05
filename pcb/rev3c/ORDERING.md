@@ -2,13 +2,13 @@
 
 ## Start with a quote and review
 
-The selected 83-part Rev3C prototype source has complete JLCPCB quotes of **$134.64 for 5 assembled carriers** and **$168.91 for 10**, refreshed October4,2026 at04:16 UTC against corrected source `b53cfca`, with all83 exact codes stocked. The totals remain the same as October3.  Shipping, taxes, separately purchased XIAO modules, module-side headers/installation, programming, functional testing and a case are excluded. This design was selected on October 3, 2026. It remains **unqualified for manufacture or appliance connection** until the release gates below are closed.
+The selected 83-reference Rev3C prototype has complete JLCPCB quotes of **$134.64 for 5 assembled carriers** and **$168.92 for 10**, refreshed October 5, 2026 at 02:47 UTC against the current stencil-corrected files from integration `2d5a42c`. All 83 references and 34 unique parts matched exactly, with no shortage warnings or substitutions. See the [source-bound quote receipt](validation/JLCPCB-QUOTE-2026-10-05.json).  Shipping, taxes, separately purchased XIAO modules, module-side headers/installation, programming, functional testing and a case are excluded. This design was selected on October 3, 2026. It remains **unqualified for manufacture or appliance connection** until the release gates below are closed.
 
 Both GE power inputs, automatic PIN1 priority, the buck and C3/C6 interfaces remain. No extra USB circuitry was added. Disconnect the appliance before powered USB.
 
-The current Gerber ZIP includes the October 4 [stencil correction](STENCIL-REVIEW.md): drill-center graphics are disabled so they cannot create unintended paste openings at drilled holes. BOM and CPL bytes are unchanged. The quoted totals and screenshots above used the previous frozen Gerber ZIP; refresh the supplier quote and stencil/process review for the current ZIP before ordering. Its SHA-256 is listed below.
+The current Gerber ZIP includes the October 4 [stencil correction](STENCIL-REVIEW.md): drill-center graphics are disabled so they cannot create unintended paste openings at drilled holes. BOM and CPL bytes are unchanged. The current quote and the two selected-source screenshots below use this corrected ZIP, with its unchanged matching BOM/CPL. All three upload hashes were verified. Its SHA-256 is listed below; actual stencil/process approval remains open.
 
-For historical cost comparison, the stock-corrected **80-part baseline** has complete quotes of **$130.39 for 5** and **$160.37 for 10**, under the same observed PCB and assembly settings. Its source is `ca1fdb1261af8b32a1bf353d37f40439ead5c3b0`; only D16/D17 sourcing changes to reviewed MCC C668891, with original switches, fuses and topology retained. The higher-rated option costs **$4.25 more per five-board batch** or **$8.54 more per ten-board batch**, about **$0.85 per carrier**. These are complete assembly quote differences, before shipping and tax.
+For historical cost comparison, the stock-corrected **80-part baseline** has complete quotes of **$130.39 for 5** and **$160.37 for 10**, under the same observed PCB and assembly settings. Its source is `ca1fdb1261af8b32a1bf353d37f40439ead5c3b0`; only D16/D17 sourcing changes to reviewed MCC C668891, with original switches, fuses and topology retained. The October 3 comparison priced the higher-rated option **$4.25 more per five-board batch** or **$8.54 more per ten-board batch**, about **$0.85 per carrier**. Those are historical matched-session differences; the current ten-carrier total is one cent higher. Shipping and tax remain excluded.
 
 ## Keep the selected three files together
 
@@ -16,7 +16,7 @@ Download [Gerber ZIP](manufacturing/GERBER-GEA-Adapter-Rev3C.zip), [BOM](manufac
 
 ![Three files from one frozen source](images/ordering/three-file-map.png)
 
-The download links above select the current paired review files. The CAD input checkpoint is **d662d1e**; J1’s CPL X/Y now use a documented nominal body datum, with native rotation retained. See the [placement review](validation/PLACEMENT-DATUM-REVIEW.md) and its source-bound proof. Familiar filenames alone do not identify the version.
+The download links above select the current paired review files. The current upload trio is verified from integration **2d5a42c**, including stencil source **b87d3e8**. The earlier geometry input **d662d1e** is placement-proof provenance; J1’s CPL X/Y use a documented nominal body datum, with native rotation retained. See the [placement review](validation/PLACEMENT-DATUM-REVIEW.md) and its source-bound proof. Familiar filenames alone do not identify the version.
 
 The October3 quote/screenshot snapshot was source **7bb455fbc85c748f3125ed091a54375de69fbbcc**, frozen package `rev3c-rated-option-7bb455f`, with its older pin-1-anchor CPL. Its frozen CPL was3157 bytes, SHA256 `aedf3c96a88d4ced3028111d3d5cf2d13d135eaa57dc472c9e84bd6f84a9221b`. The corrected `b53cfca` package was uploaded and re-quoted at04:16 UTC on October4: all83 codes matched/stocked for5/10, totals unchanged at$134.64/$168.91. Actual2D/3D library alignment remained unverified because the supplier preview still showed generic placeholders. Refresh stock and approve real placement/process before ordering.
 
@@ -44,7 +44,7 @@ The 80-part baseline uses a different matched trio from source **ca1fdb1261af8b3
 
 3. Enable **PCB Assembly**, then choose **Economic, Top Side**, with assembled quantity equal to PCB quantity. Use **By Customer (Self-Service)** part selection. The successful quote includes J1 RJ45 and J5/J6 female module sockets. XIAO C3/C6 modules and their male headers are separate purchases. [Actual assembly settings screenshot](images/ordering/five-board-assembly-settings.jpg), [published assembly capabilities](https://jlcpcb.com/capabilities/pcb-assembly-capabilities)
 
-4. Continue to Bill of Materials. Upload the matching **BOM** and **CPL**, verify both filenames, then click **Process BOM & CPL**. Check every reference, exact JLC part code/MPN, package, value/rating and stock. The end state must be **83 detected / 83 confirmed for selected 7bb455f**, or **80 detected / 80 confirmed for baseline ca1fdb1**. Both quantities were independently checked against each source's frozen BOM. Duplicate-match advisories can leave matching rows initially unchecked; confirm exact matches before selecting them. Resolve any shortage explicitly. Do not silently substitute or choose **Do not place** to make the quote appear complete. [BOM format](https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly), [CPL format](https://jlcpcb.com/help/article/pick-place-file-for-pcb-assembly)
+4. Continue to Bill of Materials. Upload the matching **BOM** and **CPL**, verify both filenames, then click **Process BOM & CPL**. Check every reference, exact JLC part code/MPN, package, value/rating and stock. The end state must be **83 detected / 83 confirmed for the current selected package**, or **80 detected / 80 confirmed for baseline ca1fdb1**. Both quantities were independently checked against each source's frozen BOM. Duplicate-match advisories can leave matching rows initially unchecked; confirm exact matches before selecting them. Resolve any shortage explicitly. Do not silently substitute or choose **Do not place** to make the quote appear complete. [BOM format](https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly), [CPL format](https://jlcpcb.com/help/article/pick-place-file-for-pcb-assembly)
 
 ![Actual supplier state with all 83 references confirmed](images/ordering/all-83-confirmed.jpg)
 
@@ -52,20 +52,20 @@ The 80-part baseline uses a different matched trio from source **ca1fdb1261af8b3
 
    Genuine KiCad 9.0.9 native ERC/DRC report zero findings; CAD/CAM parity has passed; the separately typed body-datum export requires current validation and actual supplier-library pose review. Those results do not establish electrical, functional or thermal qualification.
 
-6. Open **Quote & Order** and record the complete PCB + PCBA total. Stop here for quote review. The supplier counts **34 unique component groups for selected 7bb455f**, versus **33 for baseline ca1fdb1**. The placed reference counts remain **83 and 80 per board**, respectively. These quotes include exact parts with no omissions or substitutions.
+6. Open **Quote & Order** and record the complete PCB + PCBA total. Stop here for quote review. The supplier counts **34 unique component groups for the current selected package**, versus **33 for baseline ca1fdb1**. The placed reference counts remain **83 and 80 per board**, respectively. These quotes include exact parts with no omissions or substitutions.
 
-## Observed complete quote totals
+## Current complete quote totals - October 5, 2026
 
 | USD | 5 assembled carriers | 10 assembled carriers |
 | --- | ---: | ---: |
 | PCB | 29.81 | 36.07 |
-| Economic PCBA | 104.83 | 132.84 |
-| PCB + PCBA total | **134.64** | **168.91** |
+| Economic PCBA | 104.83 | 132.85 |
+| PCB + PCBA total | **134.64** | **168.92** |
 | Per carrier, rounded | 26.93 | 16.89 |
-| Components, included in PCBA | 34.18 | 58.70 |
+| Components, included in PCBA | 34.18 | 58.71 |
 | Extended-part fee, included in PCBA | 52.53 | 52.53 |
 
-| Matched source comparison, USD | 5 assembled carriers | 10 assembled carriers |
+| Historical October 3 matched-source comparison, USD | 5 assembled carriers | 10 assembled carriers |
 | --- | ---: | ---: |
 | 80-reference baseline ca1fdb1 | **130.39** | **160.37** |
 | 83-reference selected 7bb455f | **134.64** | **168.91** |
@@ -75,9 +75,9 @@ The baseline PCB subtotals are the same $29.81 / $36.07; its Economic PCBA subto
 
 Extended-part fees are separate from component purchase cost. PCBA also includes setup, stencil, SMT assembly, hand-soldering, manual assembly and nitrogen reflow. No fixture fee/warning appeared in the final quote; engineering review may still add process charges. Prices and stock can change.
 
-![Actual complete five-carrier quote](images/ordering/five-board-complete-quote.jpg)
+![Actual complete five-carrier quote](images/ordering/corrected-five-board-complete-quote-2026-10-05.jpg)
 
-![Actual complete ten-carrier quote](images/ordering/ten-board-complete-quote.jpg)
+![Actual complete ten-carrier quote](images/ordering/corrected-ten-board-complete-quote-2026-10-05.jpg)
 
 ![Actual complete five-carrier baseline quote](images/ordering/baseline-five-board-complete-quote.jpg)
 
@@ -91,4 +91,4 @@ Before ordering, close the engineering gates: actual appliance source/current/tr
 
 After source qualification, complete exact-part and supplier production/placement review. Refresh stock and prices, verify the final quantity and total including shipping and tax, delivery method, payment and visible cancellation/refund terms. The later **Save to Cart → item review → Secure Checkout → shipping/payment** flow was not exercised for this source. [Official PCBA ordering guide](https://jlcpcb.com/help/article/how-do-i-place-a-pcba-order)
 
-Screenshots are unchanged captures of the official JLCPCB cloud quote sessions, inspected for account/address/payment details. They contain no entered address or payment data. Selected-source quote observations are from approximately 21:46–21:48 UTC on October 3, 2026; baseline quotes followed later that evening. The displayed build estimates are not delivery promises; the observed banner listed an October 1–4 factory closure. No landed shipping total has been verified.
+Screenshots are unchanged captures of the official JLCPCB cloud quote sessions, inspected for account/address/payment details. They contain no entered address or payment data. The selected-source cost screenshots and receipt are from October 5, 2026 at 02:47 UTC and use the corrected trio. Earlier settings/placement illustrations and baseline quotes remain historical October 3 captures. Stock was not reserved. The quoted build estimates are PCB 3 days plus assembly 4–5 days for five carriers, and PCB 3–4 days plus assembly 4–5 days for ten. The displayed build estimates are not delivery promises; the observed banner listed an October 1–4 factory closure. No landed shipping total has been verified.
