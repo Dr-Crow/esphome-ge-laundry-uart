@@ -41,7 +41,17 @@ fail. No command flashes hardware, places orders or publishes a release.
 - Hardware uses an isolated dependency copy so native project migration cannot
   rewrite committed source. ERC/DRC include all severities; DRC includes all-track
   errors and schematic parity. Every nonzero exit, including violation exit 5,
-  fails. Missing tools/reports and infrastructure errors fail too.
+  fails. Missing tools/reports and infrastructure errors fail too. After both
+  strict checks pass, the same isolated copy produces `review/schematic.pdf`
+  (all sheets), `review/board-top.svg` (F.Cu, F.SilkS, Edge.Cuts) and
+  `review/board-bottom-mirrored.svg` (B.Cu, B.SilkS, Edge.Cuts, mirrored).
+  `review-exports.json` binds every fresh file's SHA-256 and byte count to the
+  complete current source identity and the actual pinned native version. A
+  nonzero export, missing/empty file, malformed SVG or wrong-kind/incomplete
+  output fails as a review-export infrastructure/output problem even when
+  ERC/DRC pass. Reruns remove older review outputs first. These are native 2D
+  review views; they do not approve populated 3D geometry, mechanics or release.
+  The flags follow the official [KiCad 9 CLI reference](https://docs.kicad.org/9.0/en/cli/cli.html).
 - Manufacturing first requires the declared `fabrication_plot` policy to be
   exactly `{"drillshape": 0}` and the native board setting to be 0. Drill markers
   can create positive stencil apertures even when CAM perfectly matches source.

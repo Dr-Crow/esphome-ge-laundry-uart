@@ -207,9 +207,62 @@ def firmware_inventory(output, manifest):
     return result
 
 
+def review_exports(sch, pcb, output, identity, version):
+    """Three native 2D review files, bound to the current design input closure."""
+    review = output / "review"
+    review.mkdir(exist_ok=True)
+    specifications = [
+        ("schematic.pdf", sch, ["sch", "export", "pdf"], "Schematic, all sheets"),
+        ("board-top.svg", pcb, ["pcb", "export", "svg", "--mode-single",
+                               "--layers", "F.Cu,F.SilkS,Edge.Cuts", "--page-size-mode", "2",
+                               "--exclude-drawing-sheet"], "Top: F.Cu, F.SilkS, Edge.Cuts"),
+        ("board-bottom-mirrored.svg", pcb, ["pcb", "export", "svg", "--mode-single",
+                                           "--layers", "B.Cu,B.SilkS,Edge.Cuts", "--mirror",
+                                           "--page-size-mode", "2", "--exclude-drawing-sheet"],
+         "Bottom, mirrored: B.Cu, B.SilkS, Edge.Cuts"),
+    ]
+    result = {"kicad_version": version, "source_sha256": identity, "files": {}, "findings": [],
+              "notice": "Native schematic and 2D PCB review only; no populated 3D, mechanical or release qualification"}
+    for name, source, arguments, view in specifications:
+        file = review / name
+        file.unlink(missing_ok=True)
+        record = {"view": view}
+        result["files"][str(file.relative_to(output))] = record
+        try:
+            record["native_exit_code"] = command(["kicad-cli", *arguments, "--output", file, source],
+                                                  output, "review-" + file.stem)
+            require(record["native_exit_code"] == 0,
+                    f"{name}: native export exited {record['native_exit_code']}; see review log")
+            require(file.is_file(), f"{name}: fresh native output missing")
+            data = file.read_bytes()
+            require(data, f"{name}: native output empty")
+            if file.suffix == ".pdf":
+                require(data.startswith(b"%PDF-") and data.rstrip().endswith(b"%%EOF") and
+                        re.search(rb"/Type\s*/Page\b", data), f"{name}: wrong-kind or incomplete PDF output")
+            else:
+                drawing = ET.fromstring(data)
+                namespace = "{http://www.w3.org/2000/svg}"
+                require(drawing.tag == namespace + "svg" and any(
+                    item.tag in {namespace + kind for kind in
+                                 ("path", "polyline", "polygon", "circle", "ellipse", "line", "rect", "text", "use")}
+                    for item in drawing.iter()), f"{name}: wrong-kind or empty SVG output")
+            record.update({"bytes": len(data), "sha256": sha(file)})
+        except (ValueError, OSError, ET.ParseError) as error:
+            result["findings"].append(f"{name}: {error}")
+    result["status"] = "failed" if result["findings"] else "passed"
+    (output / "review-exports.json").write_text(json.dumps(result, indent=2) + "\n")
+    require(not result["findings"], "Review export infrastructure/output problem: " + "; ".join(result["findings"]))
+    return result
+
+
 def hardware(board, output, manifest):
+    # A failed rerun must not leave an older review set looking current.
+    if (output / "review").exists():
+        shutil.rmtree(output / "review")
+    (output / "review-exports.json").unlink(missing_ok=True)
     inputs = design_inputs(board)
-    tool("kicad-cli", manifest["tools"]["kicad"])
+    identity = {str(p.relative_to(ROOT)): sha(p) for p in inputs}
+    version = tool("kicad-cli", manifest["tools"]["kicad"])
     _, sch, pcb = sources(board)
     results = {}
     # ERC can migrate old project metadata. Preserve committed inputs and libraries.
@@ -226,12 +279,14 @@ def hardware(board, output, manifest):
             results[mode] = command(["kicad-cli", "sch" if mode == "erc" else "pcb", mode,
                                     "--severity-all", "--exit-code-violations", "--format", "json",
                                     "--output", report, *extra, source], output, mode)
-    details = {"native_exit_codes": results, "source_sha256": {str(p.relative_to(ROOT)): sha(p) for p in inputs},
-               "external_kicad": external_identity(board, manifest)}
-    (output / "native-checks.json").write_text(json.dumps(details, indent=2) + "\n")
-    # Run both checks before failing so inherited issues remain available as artifacts.
-    require(all((output / f"{mode}.json").is_file() for mode in results), "Native report missing")
-    require(all(code == 0 for code in results.values()), f"Native checks failed: {results}; see reports")
+        details = {"native_exit_codes": results, "source_sha256": identity,
+                   "external_kicad": external_identity(board, manifest)}
+        (output / "native-checks.json").write_text(json.dumps(details, indent=2) + "\n")
+        # Run both checks before failing so inherited issues remain available as artifacts.
+        require(all((output / f"{mode}.json").is_file() for mode in results), "Native report missing")
+        require(all(code == 0 for code in results.values()), f"Native checks failed: {results}; see reports")
+        details["review_exports"] = review_exports(checkout / sch.relative_to(ROOT),
+                                                   checkout / pcb.relative_to(ROOT), output, identity, version)
     return details
 
 
