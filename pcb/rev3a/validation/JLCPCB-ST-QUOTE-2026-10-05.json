@@ -1,0 +1,536 @@
+{
+  "title": "Rev3A STPS140Z complete fitted-board quote",
+  "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+  "supplier": "JLCPCB",
+  "currency": "USD",
+  "quote_url": "https://cart.jlcpcb.com/smt-order/?pcbFileNo=651c9167d9504a75b858ba28a583ae6e",
+  "live_quote_quantity": 10,
+  "source_hashes": [
+    {
+      "file": "GERBER-GEA-Adapter-Rev3A.zip",
+      "bytes": 314043,
+      "sha256": "9872aee6ec71e0c89993295cd285b1781ab5071f4e20c068c01beb39f640d59e"
+    },
+    {
+      "file": "BOM-GEA-Adapter-Rev3A.csv",
+      "bytes": 12056,
+      "sha256": "7d9c522fef4c1ac65b4e2f2a882596d59e6392f6289ed3c30ae33f6efcd0a952"
+    },
+    {
+      "file": "CPL-GEA-Adapter-Rev3A.csv",
+      "bytes": 4660,
+      "sha256": "cd026b761d8623fc9cd2cc3225603449431454cc33e4a5576d27f3f01debdf3f"
+    }
+  ],
+  "source_verification": "All three frozen SHA256 hashes and byte counts matched before fresh upload. 97 BOM and CPL reference sets agree; all 97 UI supplier part codes exactly match the BOM.",
+  "outline_correction": {
+    "expected_metadata_original_mm": [
+      99,
+      40
+    ],
+    "automatically_detected_mm": [
+      88.7,
+      40
+    ],
+    "accepted_quote_mm": [
+      88.7,
+      40
+    ],
+    "reason": "Source owner independently checked frozen Edge.Cuts line endpoints at X0\u201388.7 and Y0\u201340 mm, confirmed detector correct and corrected copied metadata only. Gerber, BOM and CPL were not changed."
+  },
+  "scope": {
+    "included": "All 97 fitted references / 42 unique codes, including integrated U2 ESP32-C3-WROOM-02-N4 C2934560, J1 RJ45, J2 connector, and J4 USB-C C2765186.",
+    "excluded": [
+      "Shipping",
+      "Tax"
+    ],
+    "D14_D15": "STMicroelectronics STPS140Z/C155662 as explicitly frozen in the source BOM.",
+    "module_included": true
+  },
+  "settings": {
+    "layers": 4,
+    "outline_mm": [
+      88.7,
+      40
+    ],
+    "material": "FR4 TG135",
+    "thickness_mm": 1.6,
+    "solder_mask": "Green",
+    "silkscreen": "White",
+    "surface_finish": "LeadFree HASL",
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 1,
+    "via_covering": "Plugged",
+    "delivery_format": "Single PCB",
+    "assembly": "Economic top",
+    "parts_selection": "By Customer (Self-Service)",
+    "confirm_parts_placement": false,
+    "tooling_holes": "Added by JLCPCB",
+    "solder_paste": "High temp.",
+    "nitrogen_reflow": "Yes (for Economic)",
+    "packaging": "Antistatic bubble film",
+    "function_test": false
+  },
+  "quotes": [
+    {
+      "quantity": 5,
+      "observed_at_utc": "2026-10-05T18:06:53Z",
+      "total": 180.08,
+      "pcb": 29.79,
+      "pcba": 150.29,
+      "components": 55.23,
+      "extended_components_fee": 77.25,
+      "setup": 8.24,
+      "stencil": 1.55,
+      "panel": 0,
+      "large_size": 0,
+      "smt_assembly": 2.84,
+      "hand_soldering_labor": 3.61,
+      "manual_assembly": 0.66,
+      "nitrogen_reflow": 0.91,
+      "pcb_lead_time": "3 days",
+      "assembly_lead_time": "4-5 days",
+      "all_97_refs_selected": true,
+      "shortage_warnings": 0,
+      "U2_procurement_qty": 5,
+      "U2_component_line_price": 16.4435,
+      "J4_procurement_qty": 6,
+      "J4_component_line_price": 0.4458
+    },
+    {
+      "quantity": 10,
+      "observed_at_utc": "2026-10-05T18:09:31Z",
+      "total": 230.15,
+      "pcb": 36.03,
+      "pcba": 194.12,
+      "components": 95.99,
+      "extended_components_fee": 77.25,
+      "setup": 8.24,
+      "stencil": 1.55,
+      "panel": 0,
+      "large_size": 0,
+      "smt_assembly": 5.17,
+      "hand_soldering_labor": 3.61,
+      "manual_assembly": 1.32,
+      "nitrogen_reflow": 0.99,
+      "pcb_lead_time": "3-4 days",
+      "assembly_lead_time": "4-5 days",
+      "all_97_refs_selected": true,
+      "shortage_warnings": 0,
+      "U2_procurement_qty": 10,
+      "U2_component_line_price": 28.921,
+      "J4_procurement_qty": 11,
+      "J4_component_line_price": 0.8173
+    }
+  ],
+  "stock": "No inventory-shortage warning at either complete quote; all 97 refs selected. Stock is not reserved.",
+  "matched_parts": [
+    {
+      "part": "C106243",
+      "ref": "C1"
+    },
+    {
+      "part": "C106243",
+      "ref": "C3"
+    },
+    {
+      "part": "C106243",
+      "ref": "C4"
+    },
+    {
+      "part": "C106243",
+      "ref": "C5"
+    },
+    {
+      "part": "C106243",
+      "ref": "C6"
+    },
+    {
+      "part": "C106243",
+      "ref": "C7"
+    },
+    {
+      "part": "C106243",
+      "ref": "C12"
+    },
+    {
+      "part": "C106243",
+      "ref": "C14"
+    },
+    {
+      "part": "C106243",
+      "ref": "C24"
+    },
+    {
+      "part": "C106243",
+      "ref": "C25"
+    },
+    {
+      "part": "C91185",
+      "ref": "C2"
+    },
+    {
+      "part": "C91185",
+      "ref": "C20"
+    },
+    {
+      "part": "C91185",
+      "ref": "C21"
+    },
+    {
+      "part": "C91185",
+      "ref": "C26"
+    },
+    {
+      "part": "C303950",
+      "ref": "C9"
+    },
+    {
+      "part": "C286510",
+      "ref": "C10"
+    },
+    {
+      "part": "C15850",
+      "ref": "C11"
+    },
+    {
+      "part": "C15850",
+      "ref": "C13"
+    },
+    {
+      "part": "C161181",
+      "ref": "C15"
+    },
+    {
+      "part": "C309062",
+      "ref": "C16"
+    },
+    {
+      "part": "C309062",
+      "ref": "C17"
+    },
+    {
+      "part": "C1546",
+      "ref": "C18"
+    },
+    {
+      "part": "C1546",
+      "ref": "C19"
+    },
+    {
+      "part": "C2500",
+      "ref": "D1"
+    },
+    {
+      "part": "C2500",
+      "ref": "D2"
+    },
+    {
+      "part": "C2500",
+      "ref": "D3"
+    },
+    {
+      "part": "C2500",
+      "ref": "D9"
+    },
+    {
+      "part": "C2297",
+      "ref": "D4"
+    },
+    {
+      "part": "C84256",
+      "ref": "D5"
+    },
+    {
+      "part": "C2296",
+      "ref": "D6"
+    },
+    {
+      "part": "C82288",
+      "ref": "D10"
+    },
+    {
+      "part": "C82288",
+      "ref": "D11"
+    },
+    {
+      "part": "C155662",
+      "ref": "D14"
+    },
+    {
+      "part": "C155662",
+      "ref": "D15"
+    },
+    {
+      "part": "C668891",
+      "ref": "D16"
+    },
+    {
+      "part": "C668891",
+      "ref": "D17"
+    },
+    {
+      "part": "C399290",
+      "ref": "D18"
+    },
+    {
+      "part": "C399290",
+      "ref": "D19"
+    },
+    {
+      "part": "C151170",
+      "ref": "F1"
+    },
+    {
+      "part": "C151170",
+      "ref": "F2"
+    },
+    {
+      "part": "C163512",
+      "ref": "F3"
+    },
+    {
+      "part": "C3097717",
+      "ref": "J1"
+    },
+    {
+      "part": "C42391552",
+      "ref": "J2"
+    },
+    {
+      "part": "C2765186",
+      "ref": "J4"
+    },
+    {
+      "part": "C412309",
+      "ref": "L1"
+    },
+    {
+      "part": "C15903",
+      "ref": "Q3"
+    },
+    {
+      "part": "C15903",
+      "ref": "Q4"
+    },
+    {
+      "part": "C20526",
+      "ref": "Q5"
+    },
+    {
+      "part": "C17414",
+      "ref": "R1"
+    },
+    {
+      "part": "C17414",
+      "ref": "R2"
+    },
+    {
+      "part": "C17414",
+      "ref": "R3"
+    },
+    {
+      "part": "C17414",
+      "ref": "R5"
+    },
+    {
+      "part": "C17414",
+      "ref": "R14"
+    },
+    {
+      "part": "C17414",
+      "ref": "R15"
+    },
+    {
+      "part": "C17414",
+      "ref": "R16"
+    },
+    {
+      "part": "C17414",
+      "ref": "R17"
+    },
+    {
+      "part": "C17414",
+      "ref": "R19"
+    },
+    {
+      "part": "C17414",
+      "ref": "R20"
+    },
+    {
+      "part": "C17414",
+      "ref": "R35"
+    },
+    {
+      "part": "C17414",
+      "ref": "R36"
+    },
+    {
+      "part": "C17414",
+      "ref": "R37"
+    },
+    {
+      "part": "C17557",
+      "ref": "R4"
+    },
+    {
+      "part": "C17557",
+      "ref": "R6"
+    },
+    {
+      "part": "C17557",
+      "ref": "R7"
+    },
+    {
+      "part": "C17513",
+      "ref": "R10"
+    },
+    {
+      "part": "C17513",
+      "ref": "R11"
+    },
+    {
+      "part": "C17513",
+      "ref": "R12"
+    },
+    {
+      "part": "C17513",
+      "ref": "R13"
+    },
+    {
+      "part": "C17513",
+      "ref": "R23"
+    },
+    {
+      "part": "C17513",
+      "ref": "R24"
+    },
+    {
+      "part": "C17513",
+      "ref": "R25"
+    },
+    {
+      "part": "C104108",
+      "ref": "R18"
+    },
+    {
+      "part": "C104108",
+      "ref": "R21"
+    },
+    {
+      "part": "C104108",
+      "ref": "R38"
+    },
+    {
+      "part": "C17673",
+      "ref": "R22"
+    },
+    {
+      "part": "C105580",
+      "ref": "R26"
+    },
+    {
+      "part": "C105580",
+      "ref": "R27"
+    },
+    {
+      "part": "C107701",
+      "ref": "R28"
+    },
+    {
+      "part": "C107701",
+      "ref": "R29"
+    },
+    {
+      "part": "C27834",
+      "ref": "R31"
+    },
+    {
+      "part": "C27834",
+      "ref": "R32"
+    },
+    {
+      "part": "C17738",
+      "ref": "R33"
+    },
+    {
+      "part": "C17738",
+      "ref": "R34"
+    },
+    {
+      "part": "C22978",
+      "ref": "R39"
+    },
+    {
+      "part": "C22978",
+      "ref": "R40"
+    },
+    {
+      "part": "C149504",
+      "ref": "R41"
+    },
+    {
+      "part": "C149504",
+      "ref": "R42"
+    },
+    {
+      "part": "C318884",
+      "ref": "SW1"
+    },
+    {
+      "part": "C318884",
+      "ref": "SW2"
+    },
+    {
+      "part": "C2934560",
+      "ref": "U2"
+    },
+    {
+      "part": "C151607",
+      "ref": "U4"
+    },
+    {
+      "part": "C151607",
+      "ref": "U5"
+    },
+    {
+      "part": "C51118",
+      "ref": "U6"
+    },
+    {
+      "part": "C7519",
+      "ref": "U7"
+    },
+    {
+      "part": "C2071056",
+      "ref": "U8"
+    },
+    {
+      "part": "C2653785",
+      "ref": "U9"
+    },
+    {
+      "part": "C2653785",
+      "ref": "U10"
+    }
+  ],
+  "shipping_tax": {
+    "included": false,
+    "note": "A generic fabrication-page $31.23 DHL Express (DDP), 2\u20134 business day estimate was visible. Final assembled shipping, destination details and tax were not verified; it is not confirmed full-order freight."
+  },
+  "supplier_warnings": {
+    "new_blocker_observed": false,
+    "browser": "3D models cannot render in this cloud browser; placeholders only.",
+    "duplicate_code_rows": "Repeated-code selections were checked against the exact BOM and all selected.",
+    "qualification": "A quote is not approval of J4 recessed-shell solder delivery, inspection, retention, solder/pose/process, power/transient/load/thermal or physical qualification. These remain open."
+  },
+  "actions": {
+    "orders": 0,
+    "cart_submissions": 0,
+    "payments": 0,
+    "substitutions": 0,
+    "omissions": 0,
+    "source_changes": 0
+  },
+  "evidence_files": []
+}

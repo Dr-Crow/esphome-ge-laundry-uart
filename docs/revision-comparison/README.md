@@ -1,6 +1,6 @@
 # Board and enclosure comparison
 
-Latest October5 pre-order analysis and committed fixes: [all-revision review](preorder-2026-10-05/README.md). Earlier checkpoint/quote/source boundaries below remain explicit.
+Latest October 5 pre-order analysis and committed fixes: [all-revision review](preorder-2026-10-05/README.md). The current Rev3 refinement uses STPS140Z input OR diodes across A/B/C and maximum-body socket/case screens. Fresh current-ST C quotes are $135.81/five or $171.20/ten; the older tables and galleries below retain their historical source boundaries.
 
 [Project overview](../../README.md) · [Current validation](VALIDATION.md) · [Pricing](PRICING.md) · [Finish plan](FINISH-PLAN.md) · [Source handoff](HANDOFF.md) · [C3/C6 and Matter](C6-MATTER.md)
 
@@ -21,13 +21,13 @@ C3 is the first target, with C6 interface and firmware flexibility retained. Rev
 
 Rev3B/C require one physical power source at a time because the module's side-header VBUS connects to USB VBUS. Disconnect appliance power before powered USB. Rev3A's separate isolation paths still require bench verification. UART programmer VCC remains disconnected. Selection of C6 does not remove these power-path limits.
 
-## Current quote comparison
+## Historical pre-ST quote comparison
 
 USD, complete PCB plus Economic top-side assembly, with all carriers assembled. The selected quote refreshed October 5 at 02:47 UTC uses the current stencil-corrected trio from integration `2d5a42c`, including the selected exact parts, RJ45 and female sockets. All 83 references/34 parts matched without shortages or substitutions; placement and stencil/process review remain open. Shipping, tax, separately purchased XIAO modules/headers, installation, programming, tests and cases are excluded.
 
 | Matched Rev3C source | Fitted references | Five carriers | Ten carriers |
 | --- | ---: | ---: | ---: |
-| Current corrected trio, integration `2d5a42c` | 83 | **$134.64** | **$168.92** |
+| Historical pre-ST corrected trio, integration `2d5a42c` | 83 | **$134.64** | **$168.92** |
 | Historical clamp-sourced baseline `ca1fdb1` | 80 | $130.39 | $160.37 |
 | Difference from historical baseline | +3 | **$4.25** | **$8.55** |
 

@@ -6,7 +6,7 @@ Updated October 5, 2026. Starting source: `77f4c8893db6c018640e25c55a3af624a3eb0
 
 | Finding | Rev3A | Rev3B | Rev3C | Next action and boundary |
 | --- | --- | --- | --- | --- |
-| D14/D15 input OR diodes rated 0.5 A/125 °C, below approximately 606 mA nominal switch limit | STPS140Z applied | STPS140Z applied | STPS140Z applied | Exact STPS140Z/C155662 repair applied; numerical nets, pads, placements and routes retained. New native/CAM/quote checks remain required. Preserve numbered nets, both inputs and priority. A part rating repair cannot establish enclosed thermal capability. |
+| D14/D15 input OR diodes rated 0.5 A/125 °C, below approximately 606 mA nominal switch limit | STPS140Z applied | STPS140Z applied | STPS140Z applied | Exact STPS140Z/C155662 repair applied; numerical nets, pads, placements and routes retained. Exact bf5c231 native/rules/tests/firmware checks pass; current-ST C quote matches all 83 references. A/B quote refreshes and supplier solder/pose remain open. Preserve numbered nets, both inputs and priority. A part rating repair cannot establish enclosed thermal capability. |
 | Downstream PMEG2010ER | D10/D11 already 1 A/20 V/150 °C | D11 already 1 A/20 V/150 °C | D11 already 1 A/20 V/150 °C | Retain unless a separate demonstrated issue justifies change. Input CL does not impose the same output-current limit after a buck. |
 | Actual input, fault-energy and hot-load envelope | Unknown | Unknown | Unknown | Complete bounded datasheet calculations; obtain the target appliance/model and reviewed limits before powered qualification. 40 V switch rating is not 40 V carrier capability. |
 | Module/regulator/USB implementation | WROOM/AP2112 and separate USB branch | Soldered XIAO C3 | Socketed XIAO C3/C6 | Assess each separately; do not copy carrier-specific assumptions. Disconnect appliance before powered USB on XIAO carriers. |
@@ -15,10 +15,10 @@ Updated October 5, 2026. Starting source: `77f4c8893db6c018640e25c55a3af624a3eb0
 
 | Finding | Feasible now | Remaining input or choice |
 | --- | --- | --- |
-| Accepted stack range 11.0–11.65 mm excludes part of the source's assumed socket/spacer range | Extend the analytical envelope to 10.35–11.65 mm and test new endpoints; retain explicit parameterization | Actual factory header and seated stack remain unmeasured. Assumed envelopes are not supplier guarantees. |
+| Accepted stack range 11.0–11.65 mm excludes part of the source's assumed socket/spacer range | Completed at bf5c231: 10.35–11.65 mm declared range, maximum socket body, eight endpoint cases and four new STEP/STL readbacks; explicit parameters retained | Actual factory header and seated stack remain unmeasured. Assumed envelopes are not supplier guarantees. |
 | C6 source switch identity changed between manufacturer archives | Keep named conditional profiles and explicit source/date/MPN evidence | Current schematic identifies TS-1001S while the PCB retains SKTAAAE010. Authenticate fitted lot before physical button calibration. |
-| Generic USB gauges do not identify a purchased cable | Use a primary StarTech USB2CC2M drawing for a candidate-specific body/shank screen | Authenticate the module's receptacle mating plane and final insertion relationship; no universal-cable fit claim. |
-| Common closure permits the wrong module lid | Prepare plastic-only keying options and measure first contact/closure | A base/lid key does not automatically identify the installed module. Common-base, extra-insert and keyed-base tradeoffs need a deliberate choice. |
+| Generic USB gauges do not identify a purchased cable | Named maximum-body corridor checker and three source-hashed sensitivities are committed; shoulder/axis inputs required | Authenticate the module's receptacle mating plane and final insertion relationship; no universal-cable fit claim. |
+| Common closure permits the wrong module lid | Separate straight-wall pair-key source/exports preserved; six STEP/STLs and four nominal closures pass, wrong-pair first contact +6.40 mm | A base/lid key does not automatically identify the installed module. Common-base, extra-insert and keyed-base tradeoffs need a deliberate choice. |
 | Printed mechanisms, guide relief and antenna routes | Complete source-bound geometry/tolerance screens with exact selected part maxima | Electrical make/overtravel, material/print/fatigue, optical/RF and full cable-route behavior remain physical gates. |
 
 ## Reproduction already complete
@@ -28,3 +28,5 @@ The [pinned checkpoint](../../../case/rev3c/analytical/review/pinned-reproductio
 Stage focused commits, refresh affected manufacturing/geometry evidence, verify the exact remote commit and preserve a complete backup at each substantive milestone. No order, upstream submission or physical equipment test follows from this map.
 
 [Independent Rev3 repair review](rev3-power-refinement/GE-Rev3-Remaining-Power-Defects-and-Bounded-Repairs.md) records the datasheet/pad/thermal decision and separate source-node correction.
+
+[Current mechanical facts and boundaries](../../../case/rev3c/analytical/MECHANICAL-DIMENSIONS.md) · [Signal and startup contracts](rev3-signal-contracts/GE-Rev3-Signal-Pin-And-Startup-Contracts.md). No required signal resistor/strap repair was established; loaded UART margin, vendor output-range wording and ROM/reset behavior remain qualification contracts.

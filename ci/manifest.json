@@ -351,7 +351,7 @@
         },
         "physical": {
           "state": "blocked",
-          "reason": "Actual module/header/socket fit, retention, vibration, USB/BOOT/RESET access, antenna/RF and enclosure qualification remain open; no default shared C3/C6 case CAD"
+          "reason": "Actual module/header/socket fit, retention, vibration, USB/BOOT/RESET access, antenna/RF and enclosure qualification remain open; editable shared prototype CAD is recovered and digitally screened, without physical qualification"
         }
       },
       "cpl_centroid_policy": {

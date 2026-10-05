@@ -1,0 +1,103 @@
+{
+  "warning": "Sensitivity and acceptance requirement only. Espressif does not specify guaranteed loaded VOL at this load/range; .1VDD is high-impedance at3.3V/25C. Do not treat mixed corners as guaranteed failure.",
+  "formula": "VI=(VOL*Rp+VDD*Rs)/(Rp+Rs)+Iin*Rp*Rs/(Rp+Rs)",
+  "cases": [
+    {
+      "vdd": 3.3,
+      "series_ohm": 1001,
+      "pullup_ohm": 10000,
+      "injected_leakage_A": 0,
+      "assumed_gpio_vol": 0.33,
+      "buffer_vi": 0.6002454322334333,
+      "required_gpio_vol_max": 0.5497500000000001
+    },
+    {
+      "vdd": 3.3,
+      "series_ohm": 1001,
+      "pullup_ohm": 10000,
+      "injected_leakage_A": 5e-06,
+      "assumed_gpio_vol": 0.33,
+      "buffer_vi": 0.6047950186346696,
+      "required_gpio_vol_max": 0.544745
+    },
+    {
+      "vdd": 3.3,
+      "series_ohm": 1001,
+      "pullup_ohm": 10000,
+      "injected_leakage_A": 2e-05,
+      "assumed_gpio_vol": 0.33,
+      "buffer_vi": 0.6184437778383783,
+      "required_gpio_vol_max": 0.52973
+    },
+    {
+      "vdd": 3.3,
+      "series_ohm": 1499,
+      "pullup_ohm": 10000,
+      "injected_leakage_A": 0,
+      "assumed_gpio_vol": 0.33,
+      "buffer_vi": 0.7171667101487087,
+      "required_gpio_vol_max": 0.42525
+    },
+    {
+      "vdd": 3.3,
+      "series_ohm": 1499,
+      "pullup_ohm": 10000,
+      "injected_leakage_A": 5e-06,
+      "assumed_gpio_vol": 0.33,
+      "buffer_vi": 0.7236846682320203,
+      "required_gpio_vol_max": 0.41775500000000004
+    },
+    {
+      "vdd": 3.3,
+      "series_ohm": 1499,
+      "pullup_ohm": 10000,
+      "injected_leakage_A": 2e-05,
+      "assumed_gpio_vol": 0.33,
+      "buffer_vi": 0.7432385424819551,
+      "required_gpio_vol_max": 0.39527
+    },
+    {
+      "vdd": 3.6,
+      "series_ohm": 1499,
+      "pullup_ohm": 10000,
+      "injected_leakage_A": 0,
+      "assumed_gpio_vol": 0.36000000000000004,
+      "buffer_vi": 0.7823636837985913,
+      "required_gpio_vol_max": 0.38028000000000006
+    },
+    {
+      "vdd": 3.6,
+      "series_ohm": 1499,
+      "pullup_ohm": 10000,
+      "injected_leakage_A": 5e-06,
+      "assumed_gpio_vol": 0.36000000000000004,
+      "buffer_vi": 0.7888816418819029,
+      "required_gpio_vol_max": 0.3727850000000001
+    },
+    {
+      "vdd": 3.6,
+      "series_ohm": 1499,
+      "pullup_ohm": 10000,
+      "injected_leakage_A": 2e-05,
+      "assumed_gpio_vol": 0.36000000000000004,
+      "buffer_vi": 0.8084355161318377,
+      "required_gpio_vol_max": 0.35030000000000006
+    },
+    {
+      "vdd": 3.6,
+      "series_ohm": 1513.99,
+      "pullup_ohm": 9900,
+      "injected_leakage_A": 2e-05,
+      "required_gpio_vol_max": 0.3415210080808081,
+      "description": "1% sensitivity; module-series tolerance assumed, not established"
+    },
+    {
+      "vdd": 3.6,
+      "series_ohm": 1513.99,
+      "pullup_ohm": 21780,
+      "injected_leakage_A": 2e-05,
+      "required_gpio_vol_max": 0.5750842036730947,
+      "description": "1% sensitivity; module-series tolerance assumed, not established"
+    }
+  ]
+}

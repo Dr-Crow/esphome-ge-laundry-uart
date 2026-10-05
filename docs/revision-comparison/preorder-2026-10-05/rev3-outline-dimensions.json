@@ -1,0 +1,46 @@
+{
+  "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+  "method": "Four Edge.Cuts line centre endpoints; stroke-expanded display bbox is excluded from manufacturing dimensions",
+  "revisions": {
+    "rev3a": {
+      "outline_mm": [
+        88.7,
+        40
+      ],
+      "native_rect_mm": [
+        0,
+        0,
+        88.7,
+        40
+      ],
+      "PCB_sha256": "1b22c7ac68dbe27ca4918431784c885aa2a7019e3ab4f01f44425844ded22f55"
+    },
+    "rev3b": {
+      "outline_mm": [
+        99,
+        40
+      ],
+      "native_rect_mm": [
+        0,
+        0,
+        99,
+        40
+      ],
+      "PCB_sha256": "415f3b791d34a33058ad906ff52ca9898c8b27ae055ee3c403284436002a2b71"
+    },
+    "rev3c": {
+      "outline_mm": [
+        99,
+        40
+      ],
+      "native_rect_mm": [
+        0,
+        0,
+        99,
+        40
+      ],
+      "PCB_sha256": "6c76a83a6cb1af65f7e8a70d77ad9ddd5911f9ab3843b6ca2c365eea0115904b"
+    }
+  },
+  "electrical_or_outline_changes": false
+}

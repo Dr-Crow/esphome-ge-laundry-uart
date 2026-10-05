@@ -1,12 +1,20 @@
 # Finish plan and outstanding work
 
-Latest October5 pre-order analysis and committed fixes: [all-revision review](preorder-2026-10-05/README.md). Earlier checkpoint/quote/source boundaries below remain explicit.
+Latest October 5 pre-order analysis and committed fixes: [all-revision review](preorder-2026-10-05/README.md). Earlier checkpoint/quote/source boundaries below remain explicit.
 
 [Comparison](README.md) · [Current validation](VALIDATION.md) · [Exact checkpoints](HANDOFF.md) · [Quote comparison](PRICING.md)
 
 Updated October 5, 2026 after shared-enclosure source recovery. Selected Rev3C retains the rated electrical design, corrected J1 CPL and stencil cleanup from `b87d3e8`; its fresh exact-part quote is $134.64/5 and $168.92/10. Published integration checkpoint `11826a7` passes hosted native/intended-rule checks for all seven revisions, 28 tests and eight actual firmware builds. Rev3B protection is reviewed at `ce2979b`; Rev3A rated protection and exact connector lands remain independently reviewed. Older revisions retain their separate architectures. The [Rev3C prototype qualification plan](../../pcb/rev3c/PROTOTYPE-QUALIFICATION.md) gives the next bounded sequence; orders, physical testing, PRs and upstream publication remain separate decisions.
 
-## Outstanding registry
+## Current Rev3 milestone and remaining work
+
+The [current refinement](preorder-2026-10-05/README.md#current-rev3-refinement-checkpoint) applies STPS140Z D14/D15 to all A/B/C and maximum-body socket/case corrections to C. Exact bf5c231 passes native KiCad 9.0.9, intended rules, 38 tests and eight firmware builds. Current-ST C quotes are $135.81/five and $171.20/ten; older A/B/C quote records below retain their original sources. A refresh is complete at $180.08/five or $230.15/ten, including its WROOM; B remains blocked only by exact-module stock, without a full assembled total. Future engineering is Rev3-only; prior Rev1/Rev2.x history and unresolved findings remain preserved, and upstream Rev2.2 receives no new redesign.
+
+Feasible analytical work now completed includes source/purchasing corrections, current numbered signal nets, named switch-height references, full assumed stack endpoints, maximum socket courtyards, explicit-coordinate USB cable screening and a preserved separate plastic pair-key option. Remaining vendor inputs are actual factory header/module/switch revision, engagement/retention/make/overtravel limits, native USB mating coordinates and the buffer's output-range clarification. Common versus keyed base/lid pairs is a user choice; the latter requires changing both base and lid when switching module family.
+
+OEM source/current/fault and loaded-voltage/thermal/RF/print/optical/assembly qualification remain distinct physical gates. Larger fuses, current-limit changes, fault-aware priority, regulators or added USB hardware are not silently adopted. Both appliance inputs and existing automatic priority stay required. Current supplier pose, solder/paste and process approval remains open.
+
+## Historical checkpoint registry
 
 | Work | Current checkpoint | Closeout evidence | State |
 | --- | --- | --- | --- |

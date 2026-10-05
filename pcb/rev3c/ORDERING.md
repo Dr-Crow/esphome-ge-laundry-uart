@@ -2,15 +2,15 @@
 
 ## Start with a quote and review
 
-**Current part-change boundary:** the current BOM now selects STPS140Z (`C155662`) for D14/D15. The complete prices and supplier screenshots below are the earlier MBR0540 quote snapshot, not a refreshed quote for these new diodes. Copper, drills, outlines and CPL are retained; exact new-source native/CAM checks and supplier matching must complete before this part-change package is treated as an ordering candidate. See the [bounded repair and proof](validation/INPUT-DIODE-REPAIR.md).
+**Current matched source:** `bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27` selects STPS140Z (`C155662`) for D14/D15 and the maximum-body socket courtyards. Fresh complete five/ten quotes below match its exact three manufacturing files. Copper, drills, outline and CPL are retained; exact-source native KiCad 9.0.9, intended rules, 38 validator tests and eight firmware builds pass. Supplier new-part pose, joint/process and all electrical/physical release gates remain open. See the [bounded repair](validation/INPUT-DIODE-REPAIR.md), [courtyard proof](validation/SOCKET-COURTYARD-REVIEW.md) and [current quote receipt](validation/JLCPCB-ST-QUOTE-2026-10-05.json).
 
-The selected 83-reference Rev3C prototype has complete JLCPCB quotes of **$134.64 for 5 assembled carriers** and **$168.92 for 10**, refreshed October 5, 2026 at 02:47 UTC against the current stencil-corrected files from integration `2d5a42c`. All 83 references and 34 unique parts matched exactly, with no shortage warnings or substitutions. See the [source-bound quote receipt](validation/JLCPCB-QUOTE-2026-10-05.json).  Shipping, taxes, separately purchased XIAO modules, module-side headers/installation, programming, functional testing and a case are excluded. This design was selected on October 3, 2026. It remains **unqualified for manufacture or appliance connection** until the release gates below are closed.
+The selected 83-reference Rev3C prototype has complete JLCPCB quotes of **$135.81 for 5 assembled carriers** and **$171.20 for 10**, refreshed October 5, 2026 at 17:53/17:55 UTC. All 83 references and 34 unique codes matched exactly, with no shortage warnings, omissions or substitutions. Shipping, taxes, separately purchased factory-preheadered XIAO modules, programming, functional testing and a case are excluded. Stock is not reserved. This design remains **unqualified for manufacture or appliance connection** until the release gates below are closed.
 
 Both GE power inputs, automatic PIN1 priority, the buck and C3/C6 interfaces remain. No extra USB circuitry was added. Disconnect the appliance before powered USB.
 
-The current Gerber ZIP includes the October 4 [stencil correction](STENCIL-REVIEW.md): drill-center graphics are disabled so they cannot create unintended paste openings at drilled holes. The CPL and copper/drill geometry are unchanged. The recorded quote and two selected-source screenshots used this corrected ZIP with the predecessor BOM. Those three historical upload hashes were verified; the current BOM changes the two input-diode selections. Its SHA-256 is listed below; actual stencil/process approval remains open.
+The current Gerber ZIP includes the October 4 [stencil correction](STENCIL-REVIEW.md): drill-center graphics are disabled so they cannot create unintended paste openings at drilled holes. The CPL and copper/drill geometry are unchanged. The fresh ST-parts quote used this corrected ZIP and current BOM/CPL; every byte count and SHA-256 below was verified before upload. Actual stencil/process approval remains open. Earlier settings/placement illustrations remain historical examples.
 
-For historical cost comparison, the stock-corrected **80-part baseline** has complete quotes of **$130.39 for 5** and **$160.37 for 10**, under the same observed PCB and assembly settings. Its source is `ca1fdb1261af8b32a1bf353d37f40439ead5c3b0`; only D16/D17 sourcing changes to reviewed MCC C668891, with original switches, fuses and topology retained. The October 3 comparison priced the higher-rated option **$4.25 more per five-board batch** or **$8.54 more per ten-board batch**, about **$0.85 per carrier**. Those are historical matched-session differences; the current ten-carrier total is one cent higher. Shipping and tax remain excluded.
+The earlier pre-ST, 83-reference quote was $134.64/five and $168.92/ten. The ST diode repair adds **$1.17/five or $2.28/ten**, about **$0.23 per carrier**, under the same observed settings. For historical architecture comparison, the 80-reference `ca1fdb1` baseline was $130.39/five and $160.37/ten with original switches/fuses retained. That October 3 snapshot is preserved below; it is not a new simultaneous quote or the selected design.
 
 ## Keep the selected three files together
 
@@ -18,9 +18,9 @@ Download [Gerber ZIP](manufacturing/GERBER-GEA-Adapter-Rev3C.zip), [BOM](manufac
 
 ![Three files from one frozen source](images/ordering/three-file-map.png)
 
-The download links above select the current paired review files. The earlier quoted upload trio was verified from integration **2d5a42c**, including stencil source **b87d3e8**. The current BOM is the subsequent STPS140Z part repair; it requires a fresh exact-part quote. The earlier geometry input **d662d1e** is placement-proof provenance; J1’s CPL X/Y use a documented nominal body datum, with native rotation retained. See the [placement review](validation/PLACEMENT-DATUM-REVIEW.md) and its source-bound proof. Familiar filenames alone do not identify the version.
+The download links above select the current paired review files, matched in the fresh quote at **bf5c231**. The earlier integration **2d5a42c** and stencil **b87d3e8** remain provenance. J1's CPL X/Y use a documented nominal body datum, with native rotation retained. See the [placement review](validation/PLACEMENT-DATUM-REVIEW.md). Familiar filenames alone do not identify the version.
 
-The October3 quote/screenshot snapshot was source **7bb455fbc85c748f3125ed091a54375de69fbbcc**, frozen package `rev3c-rated-option-7bb455f`, with its older pin-1-anchor CPL. Its frozen CPL was3157 bytes, SHA256 `aedf3c96a88d4ced3028111d3d5cf2d13d135eaa57dc472c9e84bd6f84a9221b`. The corrected `b53cfca` package was uploaded and re-quoted at04:16 UTC on October4: all83 codes matched/stocked for5/10, totals unchanged at$134.64/$168.91. Actual2D/3D library alignment remained unverified because the supplier preview still showed generic placeholders. Refresh stock and approve real placement/process before ordering.
+The October3 quote/screenshot snapshot was source **7bb455fbc85c748f3125ed091a54375de69fbbcc**, frozen package `rev3c-rated-option-7bb455f`, with its older pin-1-anchor CPL. Its frozen CPL was 3157 bytes, SHA256 `aedf3c96a88d4ced3028111d3d5cf2d13d135eaa57dc472c9e84bd6f84a9221b`. The corrected `b53cfca` package was uploaded and re-quoted at 04:16 UTC on October 4: all 83 codes matched/stocked for 5/10, totals unchanged at $134.64/$168.91. Actual 2D/3D library alignment remained unverified because the supplier preview still showed generic placeholders. Refresh stock and approve real placement/process before ordering.
 
 | File | What JLCPCB uses it for | Bytes | SHA-256 |
 | --- | --- | ---: | --- |
@@ -61,10 +61,10 @@ The 80-part baseline uses a different matched trio from source **ca1fdb1261af8b3
 | USD | 5 assembled carriers | 10 assembled carriers |
 | --- | ---: | ---: |
 | PCB | 29.81 | 36.07 |
-| Economic PCBA | 104.83 | 132.85 |
-| PCB + PCBA total | **134.64** | **168.92** |
-| Per carrier, rounded | 26.93 | 16.89 |
-| Components, included in PCBA | 34.18 | 58.71 |
+| Economic PCBA | 106.00 | 135.13 |
+| PCB + PCBA total | **135.81** | **171.20** |
+| Per carrier, rounded | 27.16 | 17.12 |
+| Components, included in PCBA | 35.36 | 61.00 |
 | Extended-part fee, included in PCBA | 52.53 | 52.53 |
 
 | Historical October 3 matched-source comparison, USD | 5 assembled carriers | 10 assembled carriers |
@@ -77,9 +77,15 @@ The baseline PCB subtotals are the same $29.81 / $36.07; its Economic PCBA subto
 
 Extended-part fees are separate from component purchase cost. PCBA also includes setup, stencil, SMT assembly, hand-soldering, manual assembly and nitrogen reflow. No fixture fee/warning appeared in the final quote; engineering review may still add process charges. Prices and stock can change.
 
-![Actual complete five-carrier quote](images/ordering/corrected-five-board-complete-quote-2026-10-05.jpg)
+![Fresh complete five-carrier STPS140Z quote](images/ordering/st-five-board-quote.jpg)
 
-![Actual complete ten-carrier quote](images/ordering/corrected-ten-board-complete-quote-2026-10-05.jpg)
+![Fresh complete ten-carrier STPS140Z quote](images/ordering/st-ten-board-quote.jpg)
+
+### Historical pre-ST and baseline screenshots
+
+![Historical pre-ST complete five-carrier quote](images/ordering/corrected-five-board-complete-quote-2026-10-05.jpg)
+
+![Historical pre-ST complete ten-carrier quote](images/ordering/corrected-ten-board-complete-quote-2026-10-05.jpg)
 
 ![Actual complete five-carrier baseline quote](images/ordering/baseline-five-board-complete-quote.jpg)
 
@@ -93,4 +99,4 @@ Before ordering, close the engineering gates: actual appliance source/current/tr
 
 After source qualification, complete exact-part and supplier production/placement review. Refresh stock and prices, verify the final quantity and total including shipping and tax, delivery method, payment and visible cancellation/refund terms. The later **Save to Cart → item review → Secure Checkout → shipping/payment** flow was not exercised for this source. [Official PCBA ordering guide](https://jlcpcb.com/help/article/how-do-i-place-a-pcba-order)
 
-Screenshots are unchanged captures of the official JLCPCB cloud quote sessions, inspected for account/address/payment details. They contain no entered address or payment data. The selected-source cost screenshots and receipt are from October 5, 2026 at 02:47 UTC and use the corrected trio. Earlier settings/placement illustrations and baseline quotes remain historical October 3 captures. Stock was not reserved. The quoted build estimates are PCB 3 days plus assembly 4–5 days for five carriers, and PCB 3–4 days plus assembly 4–5 days for ten. The displayed build estimates are not delivery promises; the observed banner listed an October 1–4 factory closure. No landed shipping total has been verified.
+Screenshots are unchanged captures of the official JLCPCB cloud quote sessions, inspected for account/address/payment details. They contain no entered address or payment data. The current ST-parts cost screenshots and receipt are from October 5 at 17:53/17:55 UTC and match bf5c231. The prior 02:47 screenshots are clearly historical pre-ST snapshots. Earlier settings/placement illustrations and baseline quotes remain historical October 3 captures. Stock was not reserved. The quoted build estimates are PCB 3 days plus assembly 4–5 days for five carriers, and PCB 3–4 days plus assembly 4–5 days for ten. The displayed build estimates are not delivery promises; the observed banner listed an October 1–4 factory closure. No landed shipping total has been verified.

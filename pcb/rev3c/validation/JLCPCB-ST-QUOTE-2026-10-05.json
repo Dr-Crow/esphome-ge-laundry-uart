@@ -1,0 +1,477 @@
+{
+  "title": "Rev3C STPS140Z full carrier quote",
+  "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+  "supplier": "JLCPCB",
+  "currency": "USD",
+  "quote_url": "https://cart.jlcpcb.com/smt-order/?pcbFileNo=26b2044505ce4991ac73727373206571",
+  "live_quote_quantity": 10,
+  "source_hashes": [
+    {
+      "file": "GERBER-GEA-Adapter-Rev3C.zip",
+      "bytes": 215452,
+      "sha256": "73d319df01ec65f1b8ba60b49da10fd3a226887d75be6d6e6170832a2cdf3c13"
+    },
+    {
+      "file": "BOM-GEA-Adapter-Rev3C.csv",
+      "bytes": 4766,
+      "sha256": "371f9a2f167241fb0967e6645af5c34ef91c2314a433388caf1102c7699cc97c"
+    },
+    {
+      "file": "CPL-GEA-Adapter-Rev3C.csv",
+      "bytes": 3156,
+      "sha256": "a1f17d5e6018b582694428e374c18ecc110410482ab69022347bd8cf62ea37b2"
+    }
+  ],
+  "source_verification": "All byte counts and SHA256 hashes verified before fresh upload; 83 BOM and CPL refs, same reference set, all Top. All 83 matched UI supplier codes exactly equal source BOM codes.",
+  "scope": {
+    "included": "Complete fitted carrier: all 83 references, 34 unique component codes, including RJ45 J1 and female sockets J5/J6.",
+    "excluded": [
+      "Separately purchased factory-preheadered XIAO module",
+      "Shipping",
+      "Tax"
+    ],
+    "D14_D15": "STMicroelectronics STPS140Z/C155662, the exact frozen BOM selection."
+  },
+  "settings": {
+    "layers": 4,
+    "automatic_detection_mm": [
+      99,
+      40
+    ],
+    "material": "FR4 TG135",
+    "thickness_mm": 1.6,
+    "solder_mask": "Green",
+    "silkscreen": "White",
+    "surface_finish": "LeadFree HASL",
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 1,
+    "via_covering": "Plugged",
+    "single_pcb": true,
+    "assembly": "Economic top",
+    "parts_selection": "By Customer (Self-Service)",
+    "confirm_parts_placement": false,
+    "tooling_holes": "Added by JLCPCB",
+    "solder_paste": "High temp.",
+    "nitrogen_reflow": "Yes (for Economic)",
+    "packaging": "Antistatic bubble film",
+    "function_test": false
+  },
+  "quotes": [
+    {
+      "quantity": 5,
+      "observed_at_utc": "2026-10-05T17:53:19Z",
+      "total": 135.81,
+      "pcb": 29.81,
+      "pcba": 106,
+      "components": 35.36,
+      "extended_components_fee": 52.53,
+      "setup": 8.24,
+      "stencil": 1.55,
+      "panel": 0,
+      "large_size": 0,
+      "smt_assembly": 1.98,
+      "hand_soldering_labor": 3.61,
+      "manual_assembly": 1.82,
+      "nitrogen_reflow": 0.91,
+      "pcb_lead_time": "3 days",
+      "assembly_lead_time": "4-5 days",
+      "all_83_refs_selected": true,
+      "shortage_warnings": 0,
+      "STPS140Z_procurement_qty": 12,
+      "STPS140Z_component_line_price": 1.7364
+    },
+    {
+      "quantity": 10,
+      "observed_at_utc": "2026-10-05T17:55:42Z",
+      "total": 171.2,
+      "pcb": 36.07,
+      "pcba": 135.13,
+      "components": 61,
+      "extended_components_fee": 52.53,
+      "setup": 8.24,
+      "stencil": 1.55,
+      "panel": 0,
+      "large_size": 0,
+      "smt_assembly": 3.58,
+      "hand_soldering_labor": 3.61,
+      "manual_assembly": 3.63,
+      "nitrogen_reflow": 0.99,
+      "pcb_lead_time": "3-4 days",
+      "assembly_lead_time": "4-5 days",
+      "all_83_refs_selected": true,
+      "shortage_warnings": 0,
+      "STPS140Z_procurement_qty": 22,
+      "STPS140Z_component_line_price": 3.1834
+    }
+  ],
+  "stock": "Both complete quote stages succeeded with all 83 refs selected and no shortage warnings. Stock is not reserved and may change.",
+  "matched_parts": [
+    {
+      "part": "C106243",
+      "ref": "C1"
+    },
+    {
+      "part": "C106243",
+      "ref": "C3"
+    },
+    {
+      "part": "C106243",
+      "ref": "C4"
+    },
+    {
+      "part": "C106243",
+      "ref": "C5"
+    },
+    {
+      "part": "C106243",
+      "ref": "C6"
+    },
+    {
+      "part": "C106243",
+      "ref": "C7"
+    },
+    {
+      "part": "C106243",
+      "ref": "C12"
+    },
+    {
+      "part": "C106243",
+      "ref": "C14"
+    },
+    {
+      "part": "C106243",
+      "ref": "C24"
+    },
+    {
+      "part": "C106243",
+      "ref": "C25"
+    },
+    {
+      "part": "C91185",
+      "ref": "C2"
+    },
+    {
+      "part": "C91185",
+      "ref": "C20"
+    },
+    {
+      "part": "C91185",
+      "ref": "C21"
+    },
+    {
+      "part": "C303950",
+      "ref": "C9"
+    },
+    {
+      "part": "C286510",
+      "ref": "C10"
+    },
+    {
+      "part": "C15850",
+      "ref": "C11"
+    },
+    {
+      "part": "C15850",
+      "ref": "C13"
+    },
+    {
+      "part": "C161181",
+      "ref": "C15"
+    },
+    {
+      "part": "C309062",
+      "ref": "C16"
+    },
+    {
+      "part": "C309062",
+      "ref": "C17"
+    },
+    {
+      "part": "C1546",
+      "ref": "C18"
+    },
+    {
+      "part": "C1546",
+      "ref": "C19"
+    },
+    {
+      "part": "C2500",
+      "ref": "D1"
+    },
+    {
+      "part": "C2500",
+      "ref": "D2"
+    },
+    {
+      "part": "C2500",
+      "ref": "D3"
+    },
+    {
+      "part": "C2500",
+      "ref": "D9"
+    },
+    {
+      "part": "C2297",
+      "ref": "D4"
+    },
+    {
+      "part": "C84256",
+      "ref": "D5"
+    },
+    {
+      "part": "C2296",
+      "ref": "D6"
+    },
+    {
+      "part": "C82288",
+      "ref": "D11"
+    },
+    {
+      "part": "C155662",
+      "ref": "D14"
+    },
+    {
+      "part": "C155662",
+      "ref": "D15"
+    },
+    {
+      "part": "C668891",
+      "ref": "D16"
+    },
+    {
+      "part": "C668891",
+      "ref": "D17"
+    },
+    {
+      "part": "C399290",
+      "ref": "D18"
+    },
+    {
+      "part": "C399290",
+      "ref": "D20"
+    },
+    {
+      "part": "C151170",
+      "ref": "F1"
+    },
+    {
+      "part": "C151170",
+      "ref": "F2"
+    },
+    {
+      "part": "C3097717",
+      "ref": "J1"
+    },
+    {
+      "part": "C2897370",
+      "ref": "J5"
+    },
+    {
+      "part": "C2897370",
+      "ref": "J6"
+    },
+    {
+      "part": "C412309",
+      "ref": "L1"
+    },
+    {
+      "part": "C15903",
+      "ref": "Q3"
+    },
+    {
+      "part": "C15903",
+      "ref": "Q4"
+    },
+    {
+      "part": "C20526",
+      "ref": "Q5"
+    },
+    {
+      "part": "C17414",
+      "ref": "R1"
+    },
+    {
+      "part": "C17414",
+      "ref": "R2"
+    },
+    {
+      "part": "C17414",
+      "ref": "R5"
+    },
+    {
+      "part": "C17414",
+      "ref": "R14"
+    },
+    {
+      "part": "C17414",
+      "ref": "R15"
+    },
+    {
+      "part": "C17414",
+      "ref": "R16"
+    },
+    {
+      "part": "C17414",
+      "ref": "R17"
+    },
+    {
+      "part": "C17414",
+      "ref": "R19"
+    },
+    {
+      "part": "C17414",
+      "ref": "R20"
+    },
+    {
+      "part": "C17414",
+      "ref": "R35"
+    },
+    {
+      "part": "C17414",
+      "ref": "R36"
+    },
+    {
+      "part": "C17414",
+      "ref": "R37"
+    },
+    {
+      "part": "C17557",
+      "ref": "R4"
+    },
+    {
+      "part": "C17557",
+      "ref": "R6"
+    },
+    {
+      "part": "C17557",
+      "ref": "R7"
+    },
+    {
+      "part": "C17513",
+      "ref": "R10"
+    },
+    {
+      "part": "C17513",
+      "ref": "R11"
+    },
+    {
+      "part": "C17513",
+      "ref": "R12"
+    },
+    {
+      "part": "C17513",
+      "ref": "R13"
+    },
+    {
+      "part": "C17513",
+      "ref": "R23"
+    },
+    {
+      "part": "C17513",
+      "ref": "R24"
+    },
+    {
+      "part": "C17513",
+      "ref": "R25"
+    },
+    {
+      "part": "C104108",
+      "ref": "R18"
+    },
+    {
+      "part": "C104108",
+      "ref": "R21"
+    },
+    {
+      "part": "C17673",
+      "ref": "R22"
+    },
+    {
+      "part": "C27834",
+      "ref": "R31"
+    },
+    {
+      "part": "C27834",
+      "ref": "R32"
+    },
+    {
+      "part": "C17738",
+      "ref": "R33"
+    },
+    {
+      "part": "C17738",
+      "ref": "R34"
+    },
+    {
+      "part": "C22978",
+      "ref": "R38"
+    },
+    {
+      "part": "C22978",
+      "ref": "R39"
+    },
+    {
+      "part": "C149504",
+      "ref": "R40"
+    },
+    {
+      "part": "C149504",
+      "ref": "R41"
+    },
+    {
+      "part": "C151607",
+      "ref": "U4"
+    },
+    {
+      "part": "C151607",
+      "ref": "U5"
+    },
+    {
+      "part": "C2071056",
+      "ref": "U8"
+    },
+    {
+      "part": "C2653785",
+      "ref": "U9"
+    },
+    {
+      "part": "C2653785",
+      "ref": "U10"
+    }
+  ],
+  "prior_quote_status": {
+    "description": "Historical pre-ST-diode BOM, not current pricing for this freeze",
+    "old_bom_sha256": "27a9dfa850fe996a36c792fb6146548bc59342eda2b05732fa24e173bade1406",
+    "five_total": 134.64,
+    "ten_total": 168.92,
+    "five_change": 1.17,
+    "ten_change": 2.28
+  },
+  "shipping_tax": {
+    "included": false,
+    "note": "Fabrication page displayed a $31.23 DHL Express (DDP), 2-4-business-day estimate, but full assembled shipment and final tax/destination details were not confirmed. Do not treat it as a completed checkout or add it as verified assembled freight."
+  },
+  "supplier_warnings": {
+    "new_stock_or_process_blocker_observed": false,
+    "existing_browser_warning": "Browser cannot render the 3D models; parts placeholders only.",
+    "matching_warning": "Several repeated BOM rows share a supplier code; all were reviewed against the source and selected.",
+    "manufacturing_approval": false,
+    "note": "Quote progression is not supplier approval of new-part orientation, lead overlap, solder joints or process. Electrical, source/transient/retry/load/thermal, exact module/header/case and physical qualification gates remain open."
+  },
+  "actions": {
+    "orders": 0,
+    "cart_submissions": 0,
+    "payments": 0,
+    "substitutions": 0,
+    "omissions": 0,
+    "source_changes": 0
+  },
+  "evidence_files": [
+    "st-five-board-quote.jpg",
+    "st-ten-board-quote.jpg"
+  ],
+  "evidence_sha256": {
+    "st-five-board-quote.jpg": "bc90f949fab98b8911179a3853163e0ad2b614ab3a16bb858a762de8ce198e8e",
+    "st-ten-board-quote.jpg": "7f2a3bb588f700b4c63ffaa8002ba87608760a20ac5274663c586e985553cfd2"
+  }
+}

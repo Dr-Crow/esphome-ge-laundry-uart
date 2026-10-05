@@ -1,0 +1,115 @@
+{
+  "result": "BLOCKED: full original 85-reference assembly quote cannot advance for either quantity because U2 has zero stock. No complete assembly total was obtained.",
+  "prepared_utc": "2026-10-05T18:16:40Z",
+  "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+  "required_bom": {
+    "fitted_references": 85,
+    "unique_codes": 35,
+    "module_included": {
+      "reference": "U2",
+      "code": "C18212168",
+      "mpn": "113991054",
+      "architecture": "Soldered XIAO ESP32-C3 v1.3, 22-pad"
+    },
+    "D14_D15": {
+      "code": "C155662",
+      "mpn": "STPS140Z"
+    }
+  },
+  "settings": {
+    "layers": 4,
+    "automatic_detected_size_mm": [
+      99,
+      40
+    ],
+    "material": "FR4 TG135",
+    "thickness_mm": 1.6,
+    "soldermask": "Green",
+    "silkscreen": "White",
+    "finish": "LeadFree HASL",
+    "inner_copper_oz": 1,
+    "outer_copper_oz": 1,
+    "via_covering": "Plugged",
+    "pcba_type": "Economic",
+    "assembly_side": "Top",
+    "quantity_scope": "All five or all ten fabricated boards assembled",
+    "other_process_defaults": "Single PCB; regular outline tolerance; standard quoted build time; no function test or special process approval"
+  },
+  "coverage_validation": {
+    "5": {
+      "rows": 85,
+      "unique_codes": 35,
+      "mapping_exact": true,
+      "all_available_selected": true,
+      "selected_count": 84,
+      "unchecked": [
+        "U2"
+      ],
+      "mismatches": {}
+    },
+    "10": {
+      "rows": 85,
+      "unique_codes": 35,
+      "mapping_exact": true,
+      "all_available_selected": true,
+      "selected_count": 84,
+      "unchecked": [
+        "U2"
+      ],
+      "mismatches": {},
+      "header": "Top Side\nTotal \u00a0\n85\n\u00a0 parts detected\n\u00a0\n84\n\u00a0 Parts confirmed\n\u00a0\n1\n\u00a0 parts Inventory shortage"
+    }
+  },
+  "source_hashes": [
+    {
+      "file": "GERBER-GEA-Adapter-Rev3B.zip",
+      "bytes": 213679,
+      "sha256": "8f0b11b89f4b1ca77e4e1f128bae8ff0698d54773f41c1063af04e52fea97639"
+    },
+    {
+      "file": "CPL-GEA-Adapter-Rev3B.csv",
+      "bytes": 3233,
+      "sha256": "85e6301cb7c32632b331c8cf9fa66c21c993ef165d50fedcdc8d9ca951263545"
+    },
+    {
+      "file": "BOM-GEA-Adapter-Rev3B.csv",
+      "bytes": 7736,
+      "sha256": "cdcf6acfe2ee042f79c11d023b5eccda2dde6d900f4df6d93d1c11f3fd88f254"
+    }
+  ],
+  "quotes": [
+    {
+      "board_quantity": 5,
+      "assembly_quantity": 5,
+      "quote_url": "https://cart.jlcpcb.com/smt-order/?pcbFileNo=e68b3b96a7ef441ca9fe3424e8b661e4",
+      "bare_pcb_price_usd": 29.81,
+      "assembly_observed_utc": "2026-10-05T18:07:45.443Z",
+      "detected_refs": 85,
+      "selected_refs": 84,
+      "shortage_refs": [
+        "U2"
+      ],
+      "module_required": 5,
+      "module_available": 0,
+      "module_shortfall": 5,
+      "full_assembly_total_usd": null
+    },
+    {
+      "board_quantity": 10,
+      "assembly_quantity": 10,
+      "quote_url": "https://cart.jlcpcb.com/smt-order/?pcbFileNo=7639af3cafa94f78ad6d3af6224e044a",
+      "bare_pcb_price_usd": 36.07,
+      "assembly_observed_utc": "2026-10-05T18:14:52.183Z",
+      "detected_refs": 85,
+      "selected_refs": 84,
+      "shortage_refs": [
+        "U2"
+      ],
+      "module_required": 10,
+      "module_available": 0,
+      "module_shortfall": 10,
+      "full_assembly_total_usd": null
+    }
+  ],
+  "qualification": "Stock-blocked full-scope quote only. No omitted/substituted parts, no order, no source/process/placement/physical qualification. Available-part subtotals are not complete assembled prices."
+}
