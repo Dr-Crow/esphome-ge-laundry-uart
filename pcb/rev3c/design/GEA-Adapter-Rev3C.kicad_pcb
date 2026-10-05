@@ -3375,8 +3375,8 @@
 			(uuid "8390fa63-53ba-4e32-af98-38cbd9df24f8")
 		)
 		(fp_rect
-			(start 1.72 -1.5)
-			(end -16.96 1.5)
+			(start 1.87 -1.575)
+			(end -17.11 1.575)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -18158,8 +18158,8 @@
 			(uuid "2d01f1b9-a9a4-408b-bb3a-12f07ece26c7")
 		)
 		(fp_rect
-			(start 1.72 -1.5)
-			(end -16.96 1.5)
+			(start 1.87 -1.575)
+			(end -17.11 1.575)
 			(stroke
 				(width 0.05)
 				(type solid)

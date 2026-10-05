@@ -1,0 +1,55 @@
+{
+  "references": [
+    "J5",
+    "J6"
+  ],
+  "source_baseline": "acbcb6c5a138fedeb8e93d92838b12381bbce4b4",
+  "manufacturer_drawing_url": "https://www.hctldz.com/static/upload/2026/01/28/202601285507.pdf",
+  "manufacturer_drawing_sha256": "4a744de94e980a7cfa277e8befe0b7fbebd95f388b81a9fbf933d5189d33c7f9",
+  "nominal_body_mm": [
+    18.18,
+    2.5,
+    8.5
+  ],
+  "maximum_body_mm": [
+    18.48,
+    2.65,
+    8.65
+  ],
+  "courtyard_margin_mm": 0.25,
+  "local_courtyard_before": [
+    [
+      1.72,
+      -1.5
+    ],
+    [
+      -16.96,
+      1.5
+    ]
+  ],
+  "local_courtyard_after": [
+    [
+      1.87,
+      -1.575
+    ],
+    [
+      -17.11,
+      1.575
+    ]
+  ],
+  "changes": [
+    {
+      "path": "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod",
+      "before_sha256": "c1579e5f623b6e83cd2f271eea57f69fcc128405f4546499ae1542f13c7bce1a",
+      "after_sha256": "aacc36540766be36302443fa89092423e977debb3032dd61d925a3258fb4472d"
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+      "before_sha256": "2e8af772f7cbce904c1799483f50452ad830150dacf8a707b27eeae91cff0fc9",
+      "after_sha256": "6c76a83a6cb1af65f7e8a70d77ad9ddd5911f9ab3843b6ca2c365eea0115904b"
+    }
+  ],
+  "limits": "Maximum symmetric body-centred screen; body/pin registration, mating contact depth, seating and solder remain unverified. No factory/header substitution.",
+  "independent_review": "pcb/rev3c/validation/socket-courtyard-independent-proof.json",
+  "native_KiCad_9p0p9": "Pending resulting exact commit; local9.0.2 supplement preserves identical93librarywarnings, zero geometry/unconnected/parity findings"
+}

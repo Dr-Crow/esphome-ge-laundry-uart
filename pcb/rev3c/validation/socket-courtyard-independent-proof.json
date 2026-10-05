@@ -1,0 +1,365 @@
+{
+  "checked_at_utc": "2026-10-05T17:41:23.144565+00:00",
+  "baseline_commit": "acbcb6c5a138fedeb8e93d92838b12381bbce4b4",
+  "scope": [
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+    "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod"
+  ],
+  "files": {
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb": {
+      "before_sha256": "2e8af772f7cbce904c1799483f50452ad830150dacf8a707b27eeae91cff0fc9",
+      "after_sha256": "6c76a83a6cb1af65f7e8a70d77ad9ddd5911f9ab3843b6ca2c365eea0115904b",
+      "allowed_coordinate_node_count": 4,
+      "changed_references": [
+        "J5",
+        "J6"
+      ],
+      "unchanged_bytes_after_replacing_allowed_nodes": true,
+      "normalized_source_sha256": "927c12a8f5d8d4c53acbf93dc8afaaba87fbf10cd31fee738c190efe2229866a"
+    },
+    "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod": {
+      "before_sha256": "c1579e5f623b6e83cd2f271eea57f69fcc128405f4546499ae1542f13c7bce1a",
+      "after_sha256": "aacc36540766be36302443fa89092423e977debb3032dd61d925a3258fb4472d",
+      "allowed_coordinate_node_count": 2,
+      "changed_references": [
+        "LIBRARY"
+      ],
+      "unchanged_bytes_after_replacing_allowed_nodes": true,
+      "normalized_source_sha256": "2a9a895cbabc98bdc5cd242582847d4cd0a6e67009a661a135b3d17e2c3fb4bc"
+    }
+  },
+  "assertions": {
+    "exactly_two_design_files_change": true,
+    "exactly_three_F_CrtYd_rectangles_change": true,
+    "all_other_source_bytes_unchanged": true,
+    "all_pads_drills_nets_placements_routes_copper_unchanged": true,
+    "library_and_embedded_rectangles_match": true,
+    "new_width_mm": 18.98,
+    "new_height_mm": 3.15,
+    "specified_maximum_body_mm": [
+      18.48,
+      2.65
+    ],
+    "margin_each_edge_mm": [
+      0.25,
+      0.25
+    ],
+    "nominal_body_center_local_xy_mm": [
+      -7.62,
+      0.0
+    ],
+    "specified_old_rectangle_mm": [
+      [
+        1.72,
+        -1.5
+      ],
+      [
+        -16.96,
+        1.5
+      ]
+    ],
+    "specified_new_rectangle_mm": [
+      [
+        1.87,
+        -1.575
+      ],
+      [
+        -17.11,
+        1.575
+      ]
+    ]
+  },
+  "native_source_invariance": {
+    "pads_including_numbers_geometry_drills_nets": {
+      "count": 239,
+      "sha256": "5817564533ce101fc8ce9910ae3793ae4b53d269f1d87c5143fb937139e6e48b"
+    },
+    "drill_nodes": {
+      "count": 26,
+      "sha256": "4d34e1a1acbb20d74ae40a2dd0d5b544aaae2e177f790f77775976baf52f2805"
+    },
+    "board_net_declarations": {
+      "count": 57,
+      "sha256": "7ce695e35aa633e557a073a913443fcedab1bc257ba7458d1524f89a1899b14e"
+    },
+    "footprint_placements": {
+      "count": 100,
+      "sha256": "d163c1d3de3747aa692986d29c609df461ff89ede77c7ecbf8c282f95d96be0a"
+    },
+    "segments": {
+      "count": 650,
+      "sha256": "0d9a1bf1815adbb69cc1d3bd170d267a24f4a7dae46c433ed37ecdfade620277"
+    },
+    "routed_arcs": {
+      "count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vias": {
+      "count": 103,
+      "sha256": "21689c7b6a3169cc72cb09f1c358681ac3d78870735bf6a1c6f579f9e8ea1886"
+    },
+    "zones_including_filled_copper": {
+      "count": 5,
+      "sha256": "7843ad3776309e3b731a684ca8fa48a31bd772818e6504fd0206e174d500a295"
+    },
+    "board_graphics": {
+      "count": 7,
+      "sha256": "a6e273a6f51dab850ca76198d211ca8b05761e0670bb11955ae7ffabafc097de"
+    },
+    "all_non_footprint_board_nodes": {
+      "count": 832,
+      "sha256": "53a65d57f4b632745f273bba24b9129a5d6b2abe8bab417170a7a0b1bb61ccdc"
+    }
+  },
+  "footprint_count": 100,
+  "native_geometry_baseline": {
+    "kicad_version": "9.0.2",
+    "board_outline_bbox_mm": [
+      0.0,
+      0.0,
+      99.0,
+      40.0
+    ],
+    "references": {
+      "J5": {
+        "anchor_xy_mm": [
+          95.51,
+          5.2975
+        ],
+        "rotation_degrees": 0.0,
+        "authored_courtyard_bbox_mm": [
+          78.55,
+          3.7975,
+          97.23,
+          6.7975
+        ],
+        "outline_centerline_gap_mm": 1.769999999999996,
+        "outline_gap_including_half_courtyard_stroke_mm": 1.744999999999996,
+        "native_cached_courtyard_collisions": [],
+        "other_front_courtyard_footprints_tested": 99,
+        "other_front_courtyard_shape_counts": {
+          "Line": 208,
+          "Rect": 61,
+          "Circle": 15
+        },
+        "nearest_front_courtyards": [
+          {
+            "reference": "D14",
+            "centerline_gap_mm": 3.200430635086475,
+            "gap_including_half_strokes_mm": 3.150430635086475
+          },
+          {
+            "reference": "TP12",
+            "centerline_gap_mm": 5.706228914225936,
+            "gap_including_half_strokes_mm": 5.656228914225936
+          },
+          {
+            "reference": "C24",
+            "centerline_gap_mm": 6.849999999999994,
+            "gap_including_half_strokes_mm": 6.7999999999999945
+          },
+          {
+            "reference": "U9",
+            "centerline_gap_mm": 10.399999999999991,
+            "gap_including_half_strokes_mm": 10.34999999999999
+          },
+          {
+            "reference": "R40",
+            "centerline_gap_mm": 10.852218955126174,
+            "gap_including_half_strokes_mm": 10.802218955126174
+          }
+        ],
+        "footprints_without_front_courtyard": []
+      },
+      "J6": {
+        "anchor_xy_mm": [
+          80.27,
+          20.5375
+        ],
+        "rotation_degrees": 180.0,
+        "authored_courtyard_bbox_mm": [
+          78.55,
+          19.0375,
+          97.23,
+          22.0375
+        ],
+        "outline_centerline_gap_mm": 1.769999999999996,
+        "outline_gap_including_half_courtyard_stroke_mm": 1.744999999999996,
+        "native_cached_courtyard_collisions": [],
+        "other_front_courtyard_footprints_tested": 99,
+        "other_front_courtyard_shape_counts": {
+          "Line": 208,
+          "Rect": 61,
+          "Circle": 15
+        },
+        "nearest_front_courtyards": [
+          {
+            "reference": "C13",
+            "centerline_gap_mm": 0.9824999999999982,
+            "gap_including_half_strokes_mm": 0.9324999999999981
+          },
+          {
+            "reference": "C3",
+            "centerline_gap_mm": 0.9824999999999982,
+            "gap_including_half_strokes_mm": 0.9324999999999981
+          },
+          {
+            "reference": "C2",
+            "centerline_gap_mm": 0.9824999999999982,
+            "gap_including_half_strokes_mm": 0.9324999999999981
+          },
+          {
+            "reference": "R4",
+            "centerline_gap_mm": 3.0124999999999993,
+            "gap_including_half_strokes_mm": 2.9624999999999995
+          },
+          {
+            "reference": "D6",
+            "centerline_gap_mm": 3.0124999999999993,
+            "gap_including_half_strokes_mm": 2.9624999999999995
+          }
+        ],
+        "footprints_without_front_courtyard": []
+      }
+    }
+  },
+  "native_geometry_current": {
+    "kicad_version": "9.0.2",
+    "board_outline_bbox_mm": [
+      0.0,
+      0.0,
+      99.0,
+      40.0
+    ],
+    "references": {
+      "J5": {
+        "anchor_xy_mm": [
+          95.51,
+          5.2975
+        ],
+        "rotation_degrees": 0.0,
+        "authored_courtyard_bbox_mm": [
+          78.4,
+          3.7225,
+          97.38,
+          6.8725
+        ],
+        "outline_centerline_gap_mm": 1.6200000000000045,
+        "outline_gap_including_half_courtyard_stroke_mm": 1.5950000000000046,
+        "native_cached_courtyard_collisions": [],
+        "other_front_courtyard_footprints_tested": 99,
+        "other_front_courtyard_shape_counts": {
+          "Line": 208,
+          "Rect": 61,
+          "Circle": 15
+        },
+        "nearest_front_courtyards": [
+          {
+            "reference": "D14",
+            "centerline_gap_mm": 3.0500000000000114,
+            "gap_including_half_strokes_mm": 3.0000000000000115
+          },
+          {
+            "reference": "TP12",
+            "centerline_gap_mm": 5.580748912547874,
+            "gap_including_half_strokes_mm": 5.530748912547875
+          },
+          {
+            "reference": "C24",
+            "centerline_gap_mm": 6.700000000000003,
+            "gap_including_half_strokes_mm": 6.650000000000003
+          },
+          {
+            "reference": "U9",
+            "centerline_gap_mm": 10.25,
+            "gap_including_half_strokes_mm": 10.2
+          },
+          {
+            "reference": "R40",
+            "centerline_gap_mm": 10.686435619513178,
+            "gap_including_half_strokes_mm": 10.636435619513177
+          }
+        ],
+        "footprints_without_front_courtyard": []
+      },
+      "J6": {
+        "anchor_xy_mm": [
+          80.27,
+          20.5375
+        ],
+        "rotation_degrees": 180.0,
+        "authored_courtyard_bbox_mm": [
+          78.4,
+          18.9625,
+          97.38,
+          22.1125
+        ],
+        "outline_centerline_gap_mm": 1.6200000000000045,
+        "outline_gap_including_half_courtyard_stroke_mm": 1.5950000000000046,
+        "native_cached_courtyard_collisions": [],
+        "other_front_courtyard_footprints_tested": 99,
+        "other_front_courtyard_shape_counts": {
+          "Line": 208,
+          "Rect": 61,
+          "Circle": 15
+        },
+        "nearest_front_courtyards": [
+          {
+            "reference": "C13",
+            "centerline_gap_mm": 0.9074999999999989,
+            "gap_including_half_strokes_mm": 0.8574999999999988
+          },
+          {
+            "reference": "C3",
+            "centerline_gap_mm": 0.9074999999999989,
+            "gap_including_half_strokes_mm": 0.8574999999999988
+          },
+          {
+            "reference": "C2",
+            "centerline_gap_mm": 0.9074999999999989,
+            "gap_including_half_strokes_mm": 0.8574999999999988
+          },
+          {
+            "reference": "R4",
+            "centerline_gap_mm": 2.9375,
+            "gap_including_half_strokes_mm": 2.8875
+          },
+          {
+            "reference": "D6",
+            "centerline_gap_mm": 2.9375,
+            "gap_including_half_strokes_mm": 2.8875
+          }
+        ],
+        "footprints_without_front_courtyard": []
+      }
+    }
+  },
+  "native_drc_baseline": {
+    "native_version": "9.0.2",
+    "exit_code": 5,
+    "violations_by_type_and_severity": {
+      "lib_footprint_issues:warning": 93
+    },
+    "unconnected_count": 0,
+    "schematic_parity_count": 0,
+    "result_content_sha256": "7f7292ba6b2519c79d3be7676b5c0a7fbfbdc713d0945e44d4d893e179532ed5",
+    "report_sha256": "0bbdc283600b52c449ffc9c40e4c7fd74860ebbd49e8ab492d17fd0a5bb97659"
+  },
+  "native_drc_current": {
+    "native_version": "9.0.2",
+    "exit_code": 5,
+    "violations_by_type_and_severity": {
+      "lib_footprint_issues:warning": 93
+    },
+    "unconnected_count": 0,
+    "schematic_parity_count": 0,
+    "result_content_sha256": "7f7292ba6b2519c79d3be7676b5c0a7fbfbdc713d0945e44d4d893e179532ed5",
+    "report_sha256": "0bbdc283600b52c449ffc9c40e4c7fd74860ebbd49e8ab492d17fd0a5bb97659"
+  },
+  "limitations": [
+    "Local native KiCad 9.0.2 supplemental check, not the required hosted pinned KiCad 9.0.9 check.",
+    "Both local strict DRC runs exit 5 with identical 93 footprint-library-configuration warnings; no non-library warnings, geometry/courtyard errors, unconnected items or schematic parity issues.",
+    "Courtyard test concerns authored front courtyard shapes; footprints without front courtyards are listed and component body, pin registration, mating/contact depth, seating, solder and physical qualification remain outside this check.",
+    "The requested manufacturer maximum body dimensions are task inputs; this audit does not independently reauthenticate the manufacturer drawing."
+  ]
+}

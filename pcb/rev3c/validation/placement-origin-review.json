@@ -2,11 +2,11 @@
   "source_reference_commit": "5542734e89c52fb34357d0d9f16744fcd508d7f3",
   "source_sha256": {
     "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
-    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb": "2e8af772f7cbce904c1799483f50452ad830150dacf8a707b27eeae91cff0fc9",
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb": "6c76a83a6cb1af65f7e8a70d77ad9ddd5911f9ab3843b6ca2c365eea0115904b",
     "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pro": "1e7fdc30cbb1eb191c4bb35cfb8b7d476023758b16cf30cf3651b9fe78621cde",
     "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch": "8e426ec017497c31de27e8d6d8ffef3d47a63dc1acdddf6d4f0972184b3a92f2",
     "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
-    "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod": "c1579e5f623b6e83cd2f271eea57f69fcc128405f4546499ae1542f13c7bce1a",
+    "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod": "aacc36540766be36302443fa89092423e977debb3032dd61d925a3258fb4472d",
     "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
     "pcb/rev3c/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
     "pcb/rev3c/design/footprints/OnionStraws.pretty/Recovery_Header_2x3_P2.54mm_Vertical.kicad_mod": "3dd6c2bd57cbd627d4c993c72472ce438884f7522fb43f9de412970250665e30",
@@ -72,5 +72,19 @@
     ],
     "native_pad_centers_net_numbers_rotations_and_CPL_unchanged": true,
     "supplier_new_part_pose_and_joint_approval": "PENDING; existing numeric datum proof is not assembly signoff"
+  },
+  "socket_courtyard_rebind": {
+    "references": [
+      "J5",
+      "J6"
+    ],
+    "nominal_body_and_numeric_centroids_pads_routes_and_CPL_unchanged": true,
+    "maximum_body_mm": [
+      18.48,
+      2.65,
+      8.65
+    ],
+    "courtyard_margin_mm": 0.25,
+    "physical_seating_and_supplier_acceptance": "PENDING"
   }
 }
