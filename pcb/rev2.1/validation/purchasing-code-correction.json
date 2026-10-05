@@ -1,0 +1,36 @@
+{
+  "review_base_commit": "8744a29446a1937134525496c2a5dfdc0a59a004",
+  "adopted_intent": "Declared 220k R18/R21 and 4.7k R22; follows source-bound recommendation and later Rev2.2 intended-part correction",
+  "changes": [
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_sch",
+      "before_sha256": "ae2e3d79fa1ce635c008c50e324ffd00f8516b461e4540c4f664fbb1f76da6d1",
+      "after_sha256": "f20c7d49507c158c6f5d6a5cf9e6166f228a4bf35232b0a7b06bad934134f10e",
+      "delta": "R18/R21/R22 purchasing fields only"
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_pcb",
+      "before_sha256": "d357d159ec1e54dfefb504e55ddaad09589a39156223a882fa454ee706762038",
+      "after_sha256": "3773690ea99292138f604bc76850f49619989679d7ed4c6ce87edcb16e0ec788",
+      "delta": "R18/R21/R22 purchasing fields only"
+    },
+    {
+      "path": "pcb/rev2.1/manufacturing/BOM-OnionStraws-rev2.1.csv",
+      "before_sha256": "86a7738bfbaa86448a011869867e1ede0dfbe026ac1e41d182f62257ea63469e",
+      "after_sha256": "ac4ecc0151973839fb5c3594cb42c1dcd62c2806d8d783b462981742d989baaf",
+      "delta": "three LCSC purchasing fields; original serialization retained"
+    }
+  ],
+  "unchanged_files": {
+    "pcb/rev2.1/manufacturing/CPL-OnionStraws-rev2.1.csv": "40175b80f76c1f4fbc8f7b59793946d180719c59aced4e46e163fae1502d3763",
+    "pcb/rev2.1/manufacturing/GERBER-OnionStraws-rev2.1.zip": "f6e8172560fa5ab99a14d38158f7448bfc6a7cf89092eca10df1f02b5be5c70a",
+    "pcb/rev2.1/manufacturing/original/BOM-OnionStraws-rev2.1.csv": "8349ac8f8b807fe495411aa3799bed70c92f1549b473bb296070cd7b8b49b8c0",
+    "pcb/rev2.1/manufacturing/original/CPL-OnionStraws-rev2.1.csv": "b789fc3fa47186a1867b89feef229c33f6abbcab6fd15f555752646f93e85563",
+    "pcb/rev2.1/manufacturing/original/GERBER-OnionStraws-rev2.1.zip": "4d8085f473667262989145ddda61a348569543c9b6867966967dd4a8369afd01",
+    "pcb/rev2.1/manufacturing/original/README.md": "4b4a07a563832c340f0fe5de94bd51dc887b63c3f2da912c4e3e864d035cd3ab"
+  },
+  "electrical_values_pin_nets_geometry_unchanged": true,
+  "native_validation": "New exact-commit 9.0.9 hosted checks required after publication; prior results remain bound to earlier source",
+  "physical_or_appliance_validation": false,
+  "recommendation_source": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/blob/bc0d52495bd97ed1504bd0ca0775e47feb01a648/pcb/rev2.2/README.md"
+}

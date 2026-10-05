@@ -5,9 +5,9 @@
   "convention": "Native pad bounding-box center for the three listed references; native footprint anchor for every other assembled reference. This validates export convention, not supplier model/package alignment.",
   "primary_reference": "https://github.com/bennymeg/Fabrication-Toolkit#-override-component-origin",
   "source_sha256": {
-    "pcb/rev2.1/design/OnionStraws.kicad_pcb": "d357d159ec1e54dfefb504e55ddaad09589a39156223a882fa454ee706762038",
+    "pcb/rev2.1/design/OnionStraws.kicad_pcb": "3773690ea99292138f604bc76850f49619989679d7ed4c6ce87edcb16e0ec788",
     "pcb/rev2.1/design/OnionStraws.kicad_pro": "9c0da6cf2a2461fb1aa63bb901daf51ec59951bdc1285554ee44495526249e11",
-    "pcb/rev2.1/design/OnionStraws.kicad_sch": "ae2e3d79fa1ce635c008c50e324ffd00f8516b461e4540c4f664fbb1f76da6d1",
+    "pcb/rev2.1/design/OnionStraws.kicad_sch": "f20c7d49507c158c6f5d6a5cf9e6166f228a4bf35232b0a7b06bad934134f10e",
     "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C10_C_0805_2012Metric.kicad_mod": "3dab99f31da83ab64f031a7f0ccb9232ef6c1d7bd1890aba0ff6c04f4af3e28a",
     "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C11_C_0805_2012Metric.kicad_mod": "d6b4b1647e2f2b7d582d317cfaaca76ebcf158c02c45809c7c0701803e588954",
     "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C12_C_0805_2012Metric.kicad_mod": "9c2a3f365888463ade1bdbfdfc40dd9b15e4044acaa65e877a1147e93931e941",
@@ -169,5 +169,13 @@
     "verification": "Fresh pcbnew geometry independently recomputed all three footprint IDs, native anchor XY, rotated native pad bounding-box extents, center XY and rotation. Every record matches within 0.00001 mm/degrees. Existing references and source/CAM coordinates remain byte-unchanged.",
     "local_dependency_files": 80,
     "additional_qualification": false
+  },
+  "purchasing_only_rebinding": {
+    "review_base_commit": "8744a29446a1937134525496c2a5dfdc0a59a004",
+    "changed_inputs": [
+      "pcb/rev2.1/design/OnionStraws.kicad_pcb",
+      "pcb/rev2.1/design/OnionStraws.kicad_sch"
+    ],
+    "reason": "Only R18/R21/R22 catalog metadata changed. All numeric placement/body inputs, values, pads, copper and original CPL remain unchanged. Fresh native CI checks still required."
   }
 }
