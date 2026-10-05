@@ -1,0 +1,518 @@
+{
+  "rev3a": {
+    "enclosure_source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+    "board_sha256": "5efc458034263d79291119351208acd0cf5e8b77b8c3979a2ed5e57b65f00b4a",
+    "components": {
+      "SW2": {
+        "historical_at": [
+          "13",
+          "3.4"
+        ],
+        "current_at": [
+          "13",
+          "3.4"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+        "current_library": "LegacyBoard:SW2_SW_Push_1P1T_XKB_TS-1187A",
+        "historical_value": "SW_Push",
+        "current_value": "SW_Push"
+      },
+      "D14": {
+        "historical_at": [
+          "65.5",
+          "11"
+        ],
+        "current_at": [
+          "66",
+          "11"
+        ],
+        "anchor_equal": false,
+        "pad_geometry_equal": true,
+        "historical_library": "Diode_SMD:D_SOD-123",
+        "current_library": "Diode_SMD:D_SOD-123",
+        "historical_value": "MBR0540-TP",
+        "current_value": "STPS140Z"
+      },
+      "U9": {
+        "historical_at": [
+          "59",
+          "11"
+        ],
+        "current_at": [
+          "59.8",
+          "10.6"
+        ],
+        "anchor_equal": false,
+        "pad_geometry_equal": false,
+        "historical_library": "Package_TO_SOT_SMD:SOT-23-6",
+        "current_library": "OnionStraws:TPS1H200A_DGN0008K_TI_RevE",
+        "historical_value": "TPS22810DBVR",
+        "current_value": "TPS1H200AQDGNRQ1"
+      },
+      "D5": {
+        "historical_at": [
+          "82.5",
+          "1.5"
+        ],
+        "current_at": [
+          "82.5",
+          "1.5"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "LED_SMD:LED_0805_2012Metric",
+        "current_library": "LED_SMD:LED_0805_2012Metric",
+        "historical_value": "RED",
+        "current_value": "RED"
+      },
+      "H2": {
+        "historical_at": [
+          "48",
+          "4"
+        ],
+        "current_at": [
+          "48",
+          "4"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+        "current_library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+        "historical_value": "MountingHole",
+        "current_value": "MountingHole"
+      },
+      "J4": {
+        "historical_at": [
+          "72",
+          "36.325"
+        ],
+        "current_at": [
+          "72",
+          "36.325"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": false,
+        "historical_library": "Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A",
+        "current_library": "OnionStraws:USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed",
+        "historical_value": "USB_C_Receptacle_USB2.0_16P",
+        "current_value": "USB_C_Receptacle_USB2.0_16P"
+      },
+      "U10": {
+        "historical_at": [
+          "59",
+          "27"
+        ],
+        "current_at": [
+          "57.5",
+          "26.8"
+        ],
+        "anchor_equal": false,
+        "pad_geometry_equal": false,
+        "historical_library": "Package_TO_SOT_SMD:SOT-23-6",
+        "current_library": "OnionStraws:TPS1H200A_DGN0008K_TI_RevE",
+        "historical_value": "TPS22810DBVR",
+        "current_value": "TPS1H200AQDGNRQ1"
+      },
+      "SW1": {
+        "historical_at": [
+          "5",
+          "3.4"
+        ],
+        "current_at": [
+          "5",
+          "3.4"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+        "current_library": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+        "historical_value": "SW_Push",
+        "current_value": "SW_Push"
+      },
+      "F2": {
+        "historical_at": [
+          "45",
+          "11"
+        ],
+        "current_at": [
+          "44.1",
+          "11"
+        ],
+        "anchor_equal": false,
+        "pad_geometry_equal": false,
+        "historical_library": "Fuse:Fuse_1812_4532Metric",
+        "current_library": "OnionStraws:Fuse_Littelfuse_1812L_Recommended",
+        "historical_value": "MF-MSMF075/24-2",
+        "current_value": "1812L075/33DR"
+      },
+      "J2": {
+        "historical_at": [
+          "11.7",
+          "32.5"
+        ],
+        "current_at": [
+          "11.7",
+          "32.5"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "OnionStraws:Recovery_Header_2x3_P2.54mm_Vertical",
+        "current_library": "OnionStraws:Recovery_Header_2x3_P2.54mm_Vertical",
+        "historical_value": "RECOVERY",
+        "current_value": "RECOVERY"
+      },
+      "D6": {
+        "historical_at": [
+          "80",
+          "36.5"
+        ],
+        "current_at": [
+          "80",
+          "36.5"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "LED_SMD:LED_0805_2012Metric",
+        "current_library": "LED_SMD:LED_0805_2012Metric",
+        "historical_value": "YLW",
+        "current_value": "YLW"
+      },
+      "F1": {
+        "historical_at": [
+          "45",
+          "27"
+        ],
+        "current_at": [
+          "45.9",
+          "27"
+        ],
+        "anchor_equal": false,
+        "pad_geometry_equal": false,
+        "historical_library": "Fuse:Fuse_1812_4532Metric",
+        "current_library": "OnionStraws:Fuse_Littelfuse_1812L_Recommended",
+        "historical_value": "MF-MSMF075/24-2",
+        "current_value": "1812L075/33DR"
+      },
+      "J1": {
+        "historical_at": [
+          "13.97",
+          "12.555",
+          "-90"
+        ],
+        "current_at": [
+          "13.97",
+          "12.555",
+          "-90"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+        "current_library": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+        "historical_value": "8P8C",
+        "current_value": "8P8C"
+      },
+      "D15": {
+        "historical_at": [
+          "64",
+          "27"
+        ],
+        "current_at": [
+          "64",
+          "27"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "Diode_SMD:D_SOD-123",
+        "current_library": "Diode_SMD:D_SOD-123",
+        "historical_value": "MBR0540-TP",
+        "current_value": "STPS140Z"
+      },
+      "D4": {
+        "historical_at": [
+          "49",
+          "24"
+        ],
+        "current_at": [
+          "49",
+          "24"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "LED_SMD:LED_0805_2012Metric",
+        "current_library": "LED_SMD:LED_0805_2012Metric",
+        "historical_value": "GRN",
+        "current_value": "GRN"
+      },
+      "U2": {
+        "historical_at": [
+          "81.6",
+          "17",
+          "-90"
+        ],
+        "current_at": [
+          "81.6",
+          "17",
+          "-90"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "RF_Module:ESP32-C3-WROOM-02",
+        "current_library": "LegacyBoard:U2_ESP32-C3-WROOM-02",
+        "historical_value": "ESP32-C3-WROOM-02",
+        "current_value": "ESP32-C3-WROOM-02"
+      },
+      "H1": {
+        "historical_at": [
+          "4",
+          "30"
+        ],
+        "current_at": [
+          "4",
+          "30"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+        "current_library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+        "historical_value": "MountingHole",
+        "current_value": "MountingHole"
+      }
+    }
+  },
+  "rev3b": {
+    "enclosure_source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+    "board_sha256": "dd58e2259b9992283eab703e8b555753d4468d2881dac597e777555e1cb8f6c9",
+    "components": {
+      "D14": {
+        "historical_at": [
+          "73",
+          "8"
+        ],
+        "current_at": [
+          "73",
+          "8"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "Diode_SMD:D_SOD-123",
+        "current_library": "Diode_SMD:D_SOD-123",
+        "historical_value": "MBR0540-TP",
+        "current_value": "STPS140Z"
+      },
+      "U9": {
+        "historical_at": [
+          "64",
+          "8"
+        ],
+        "current_at": [
+          "65",
+          "8"
+        ],
+        "anchor_equal": false,
+        "pad_geometry_equal": false,
+        "historical_library": "Package_TO_SOT_SMD:SOT-23-6",
+        "current_library": "GEA_Rev3B:TPS1H200A_DGN0008K_TI_RevE",
+        "historical_value": "TPS22810DBVR",
+        "current_value": "TPS1H200AQDGNRQ1"
+      },
+      "D5": {
+        "historical_at": [
+          "84",
+          "30"
+        ],
+        "current_at": [
+          "84",
+          "30"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "LED_SMD:LED_0805_2012Metric",
+        "current_library": "LED_SMD:LED_0805_2012Metric",
+        "historical_value": "RED",
+        "current_value": "RED"
+      },
+      "H2": {
+        "historical_at": [
+          "94",
+          "35"
+        ],
+        "current_at": [
+          "94",
+          "35"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+        "current_library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+        "historical_value": "MountingHole",
+        "current_value": "MountingHole"
+      },
+      "U10": {
+        "historical_at": [
+          "64",
+          "22.5"
+        ],
+        "current_at": [
+          "65",
+          "22.5"
+        ],
+        "anchor_equal": false,
+        "pad_geometry_equal": false,
+        "historical_library": "Package_TO_SOT_SMD:SOT-23-6",
+        "current_library": "GEA_Rev3B:TPS1H200A_DGN0008K_TI_RevE",
+        "historical_value": "TPS22810DBVR",
+        "current_value": "TPS1H200AQDGNRQ1"
+      },
+      "U2": {
+        "historical_at": [
+          "77.39",
+          "4",
+          "-90"
+        ],
+        "current_at": [
+          "77.39",
+          "4",
+          "-90"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD",
+        "current_library": "GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD",
+        "historical_value": "XIAO ESP32-C3 v1.3 (22-pad)",
+        "current_value": "XIAO ESP32-C3 v1.3 (22-pad)"
+      },
+      "F2": {
+        "historical_at": [
+          "44",
+          "7"
+        ],
+        "current_at": [
+          "45.5",
+          "7"
+        ],
+        "anchor_equal": false,
+        "pad_geometry_equal": false,
+        "historical_library": "Fuse:Fuse_1812_4532Metric",
+        "current_library": "GEA_Rev3B:Fuse_Littelfuse_1812L_Recommended",
+        "historical_value": "MF-MSMF075/24-2",
+        "current_value": "1812L075/33DR"
+      },
+      "J2": {
+        "historical_at": [
+          "20",
+          "32"
+        ],
+        "current_at": [
+          "20",
+          "32"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "OnionStraws:Recovery_Header_2x3_P2.54mm_Vertical",
+        "current_library": "OnionStraws:Recovery_Header_2x3_P2.54mm_Vertical",
+        "historical_value": "RECOVERY",
+        "current_value": "RECOVERY"
+      },
+      "D6": {
+        "historical_at": [
+          "88",
+          "26"
+        ],
+        "current_at": [
+          "88",
+          "26"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "LED_SMD:LED_0805_2012Metric",
+        "current_library": "LED_SMD:LED_0805_2012Metric",
+        "historical_value": "YLW",
+        "current_value": "YLW"
+      },
+      "F1": {
+        "historical_at": [
+          "44",
+          "21.5"
+        ],
+        "current_at": [
+          "45.5",
+          "21.5"
+        ],
+        "anchor_equal": false,
+        "pad_geometry_equal": false,
+        "historical_library": "Fuse:Fuse_1812_4532Metric",
+        "current_library": "GEA_Rev3B:Fuse_Littelfuse_1812L_Recommended",
+        "historical_value": "MF-MSMF075/24-2",
+        "current_value": "1812L075/33DR"
+      },
+      "J1": {
+        "historical_at": [
+          "13.97",
+          "12.55",
+          "-90"
+        ],
+        "current_at": [
+          "13.97",
+          "12.55",
+          "-90"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+        "current_library": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+        "historical_value": "8P8C",
+        "current_value": "8P8C"
+      },
+      "D15": {
+        "historical_at": [
+          "73",
+          "22.5"
+        ],
+        "current_at": [
+          "73",
+          "22.5"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "Diode_SMD:D_SOD-123",
+        "current_library": "Diode_SMD:D_SOD-123",
+        "historical_value": "MBR0540-TP",
+        "current_value": "STPS140Z"
+      },
+      "D4": {
+        "historical_at": [
+          "84",
+          "26"
+        ],
+        "current_at": [
+          "84",
+          "26"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "LED_SMD:LED_0805_2012Metric",
+        "current_library": "LED_SMD:LED_0805_2012Metric",
+        "historical_value": "GRN",
+        "current_value": "GRN"
+      },
+      "H1": {
+        "historical_at": [
+          "4.5",
+          "33"
+        ],
+        "current_at": [
+          "4.5",
+          "33"
+        ],
+        "anchor_equal": true,
+        "pad_geometry_equal": true,
+        "historical_library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+        "current_library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+        "historical_value": "MountingHole",
+        "current_value": "MountingHole"
+      }
+    }
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "review_baseline_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+  "review_baseline_repo": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-repo",
+  "recovery_source": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+  "originals_unchanged": true,
+  "files": [
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/README.md",
+      "git_blob": "07b71146663423294d4f417cdd37d34eef245f59",
+      "sha256": "8ab193ccf42c3e9a270463508e08a62b03feefe2209dc9550f0b5b228b2c2d88",
+      "bytes": 8155,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/README.md"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/button_case.py",
+      "git_blob": "5ff6f18375a726df560ea1f2b6a29422c86d4790",
+      "sha256": "fd1cdc35dcb7474ba2efdb96911ff218544c589dda06dff4967be65b92d70b78",
+      "bytes": 7087,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/button_case.py"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/check_button_geometry.py",
+      "git_blob": "c053ad6e6588d06757457957db35834593672813",
+      "sha256": "0531e6ba8da4df11fe85ebb58577632e78a6d635f0a530ae13d4724e665011af",
+      "bytes": 5963,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/check_button_geometry.py"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/check_geometry.py",
+      "git_blob": "63ff3e6dd1a2ddd39711757d2148e1a92152c42f",
+      "sha256": "29557dd047c2c267519e2e9989db5c8336908b7655eece55825b29e4a07cd8ac",
+      "bytes": 4119,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/check_geometry.py"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/enclosure.py",
+      "git_blob": "c1116174537da59a7fc80dffa7539adb6bf9546d",
+      "sha256": "8e41ca77d2f77533e04d5940233f44b601523b5949c31f8939c1028d043b1c6f",
+      "bytes": 9346,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/enclosure.py"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/images/case-options.png",
+      "git_blob": "ce9deaee7554f715a0bf0db262c4072331926c51",
+      "sha256": "90bf703026dd8d3b9cf7d687b3af87ac7f171f1d1543654ccba23b425d4b156e",
+      "bytes": 210945,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/images/case-options.png"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/requirements.txt",
+      "git_blob": "e39726d50b11c52346f40a9f43fa598ba2e5a71f",
+      "sha256": "afb0bb3272d1c1662329b3c09105692f861a14055a76ff22c8f8646afd48c8ed",
+      "bytes": 34,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/requirements.txt"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_base.step",
+      "git_blob": "a750bd06355672afad3868c58d314727d2eb4602",
+      "sha256": "16386dad541f55afd401b4b5fc898a01718fcd5a90c64e17deb6505df78e7ac1",
+      "bytes": 97661,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_base.step"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_base.stl",
+      "git_blob": "d7c4c1eb9f600ad75f860c4cac29cb2303d05467",
+      "sha256": "f29bfae4df73d1ac95c567c1d594b317baf192815159562080d5bed5bef722a2",
+      "bytes": 155284,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_base.stl"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_button_keeper.step",
+      "git_blob": "cc4d4cc448c546173788efb02dac2796f9d539be",
+      "sha256": "33aabd776e06ca5f7d3c1a805f055edc53410ede33e442c0e1f14071c6aa9166",
+      "bytes": 65151,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_button_keeper.step"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_button_keeper.stl",
+      "git_blob": "cff1a9456fb48d886c4a910aea8ed99a04aba32e",
+      "sha256": "5a90d0a0efd52f37cb5c5be6faceb284e64b6a9b211ecae47184a88ce9ba312d",
+      "bytes": 53884,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_button_keeper.stl"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_button_lid.step",
+      "git_blob": "31c68885b50858e5d7ac7e31d5961e629f7e6d81",
+      "sha256": "22767b74170844563e70628d70afd9f103f1e99bfeee805f46df7ef5b5bfeb76",
+      "bytes": 200302,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_button_lid.step"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_button_lid.stl",
+      "git_blob": "6a47ce45443c895f542a19bf6e2765b78c8bdaab",
+      "sha256": "713618d6ef8e022239de28302e9cc215a1e10c1fd57d6fc95528b9dd1fabd79b",
+      "bytes": 336484,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_button_lid.stl"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_button_plunger.step",
+      "git_blob": "c5825f4d30cf2061ca79d33641bb1f916d47a6a9",
+      "sha256": "3424b978e0cc2712f26f0d060c193c8f60cd68fef9dcc3957c9f5c4113015f16",
+      "bytes": 17270,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_button_plunger.step"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_button_plunger.stl",
+      "git_blob": "15cca0daf391949beb410f1404321d4e75ec896c",
+      "sha256": "9b40cca4786ad864100cf66a4e20d0b948884377068a60f913b64a9fad508db1",
+      "bytes": 100684,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_button_plunger.stl"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_lid.step",
+      "git_blob": "7a14ffa3342c35216849aca53e3bba737e6a3fe5",
+      "sha256": "25e376a39324cd75383790a8730f4a932beaefe58301e883c65d1e94676b4661",
+      "bytes": 139703,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_lid.step"
+    },
+    {
+      "revision": "rev3a",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_path": "case/rev3a/rev3a_lid.stl",
+      "git_blob": "777f0b85ead70a01e5a3c12da89c3a8c1db78d57",
+      "sha256": "2cfa56b6dab61706232b794de8342f04b004418ef9e513017d3379859f5c6dcf",
+      "bytes": 233284,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3a/rev3a_lid.stl"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/README.md",
+      "git_blob": "6e0a4cbdcec7aca225bd2979a70d863645a085b2",
+      "sha256": "eaeb62f3f8815030571ea1b0c3f834a8f8c9f3b4538107e6876ee4ede37a8eda",
+      "bytes": 5403,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/README.md"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/check_geometry.py",
+      "git_blob": "2a40262c972576c0a9418e2a0aa1cd29ff18d6fc",
+      "sha256": "20b310ac5091d58ff0f50b20acb4ccf40cb2f5279c82fde06a8208f0a248a9b1",
+      "bytes": 14058,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/check_geometry.py"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/enclosure.py",
+      "git_blob": "af59930916b90f2127a39965a3922c015c66e43f",
+      "sha256": "bc8e9b7bf8f4b480ad4ba88c4a5f85704dfb2671d858d78f93f285e5e421b375",
+      "bytes": 21146,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/enclosure.py"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_base.step",
+      "git_blob": "ed44a488aa45ffedaa64a306dbcc230fa021b19f",
+      "sha256": "a5df06b92f70ec0c347cbd85e82b206dbbf219b9b5ed08a4babf051a6a9fe658",
+      "bytes": 99053,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_base.step"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_base.stl",
+      "git_blob": "7dc0d06fbdf5c2ac67087e447ecc6bcbf45de034",
+      "sha256": "8ec65d09546ffdd0eb70c515679959b3995019445565c837bde2f3579169b32a",
+      "bytes": 155084,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_base.stl"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_base_ant-external.step",
+      "git_blob": "25f6a2c21fcf57091487bfb7caf15e6008a163bf",
+      "sha256": "60585545f2e1e70701c9325b4f81a80424be8af5e0ec5e9af8f5725f38a09527",
+      "bytes": 99053,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_base_ant-external.step"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_base_ant-external.stl",
+      "git_blob": "7dc0d06fbdf5c2ac67087e447ecc6bcbf45de034",
+      "sha256": "8ec65d09546ffdd0eb70c515679959b3995019445565c837bde2f3579169b32a",
+      "bytes": 155084,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_base_ant-external.stl"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_base_ant-internal.step",
+      "git_blob": "6ccfc501b8f8371fae6314d14d12b82be1eb048b",
+      "sha256": "d5ff87ee83908063bc4af75afd68807643c6499955ba3305d10a69181d3e3d28",
+      "bytes": 99053,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_base_ant-internal.step"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_base_ant-internal.stl",
+      "git_blob": "7dc0d06fbdf5c2ac67087e447ecc6bcbf45de034",
+      "sha256": "8ec65d09546ffdd0eb70c515679959b3995019445565c837bde2f3579169b32a",
+      "bytes": 155084,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_base_ant-internal.stl"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_base_magnets.step",
+      "git_blob": "a4108311aee9dc718509a23c2f0f9ec5282c9d08",
+      "sha256": "b48b2dbe6065b7d2bdf39de92ab6452c37b1700be3d1069c6c5730d36a42d632",
+      "bytes": 107856,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_base_magnets.step"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_base_magnets.stl",
+      "git_blob": "9e5e9e4f602df3f7580c3a0341e8cea22bfabe61",
+      "sha256": "956ad90448fa398d909e84fff369052a1b101171707416a8fcf05d5a8c6e5b1b",
+      "bytes": 205084,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_base_magnets.stl"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_lid.step",
+      "git_blob": "00d14e032fda608b1d92e1145cf23c7f01bd66a9",
+      "sha256": "43ff668aef5488fc29c982d1214d202bce0dc521fa11b74f107672841cabb0a1",
+      "bytes": 155756,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_lid.step"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_lid.stl",
+      "git_blob": "990bcdd065d55df5f18b1c5debb5adbfad956941",
+      "sha256": "62aa0935aa81529c4b846b34f5586e417b9faeb506c966c61b9c64ab90294941",
+      "bytes": 234084,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_lid.stl"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_lid_ant-external.step",
+      "git_blob": "f2527c4ecea7899ed5b840b607a522ab409b510b",
+      "sha256": "c337f8cc4dd31f864a6bc1f872fc56768d6d722cddda82d0c56172cdf78215c5",
+      "bytes": 175181,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_lid_ant-external.step"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_lid_ant-external.stl",
+      "git_blob": "850e04a5a43ea7267669034f55fde3f8fab3c642",
+      "sha256": "ab0578bc9627983524dc07cdf96a57f9d26c09a5818574f667d229e04d22d843",
+      "bytes": 260284,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_lid_ant-external.stl"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_lid_ant-internal.step",
+      "git_blob": "a0ba7975853e6f37d183513ec02a15e80aa4e0ca",
+      "sha256": "9bf1c5663e129ddf83e39b6a1aa3151e5b3c22eb3d55f82e7c0b82f403b8d6cf",
+      "bytes": 186427,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_lid_ant-internal.step"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_lid_ant-internal.stl",
+      "git_blob": "f3ba7cec5289d0578c56db21fce0b41c35b2b0cc",
+      "sha256": "13ba54abd8301324cdf61750435841adc9b3e9476ab350a39558a9de04ace325",
+      "bytes": 235684,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_lid_ant-internal.stl"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_lid_magnets.step",
+      "git_blob": "a621ab65b4dba5f0ed0d0869f085f88aed82b81f",
+      "sha256": "96275d3dcf3e883d9f64f185933db82a5c05da5d2d53b25d55dfed59f96ba7bc",
+      "bytes": 155947,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_lid_magnets.step"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/exports/rev3b_lid_magnets.stl",
+      "git_blob": "a61b28c64a25a37bccc755da2e226902a3286cb9",
+      "sha256": "4fd3d3a55910e5c1179f95ac9e7326a0663375626f6014f42cd426d217bbc680",
+      "bytes": 234084,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/exports/rev3b_lid_magnets.stl"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/images/rev3b-cad-preview.png",
+      "git_blob": "f3d739f62eb95565ad1c3df7150077e7722606c1",
+      "sha256": "f531b3bd07a97e7b7df738fb14d79825a7608384f22243a8014d5bca1ea09ff3",
+      "bytes": 33433,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/images/rev3b-cad-preview.png"
+    },
+    {
+      "revision": "rev3b",
+      "source_git_dir": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/backup-acbcb6c/complete-stage.git",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_path": "case/rev3b/requirements.txt",
+      "git_blob": "581225bc613e25f5c76093adb327d034e4915387",
+      "sha256": "90e31e125992be9eb1a0e7975dc1a40a62b887534a6a79834921f608cc338197",
+      "bytes": 34,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/case/rev3b/requirements.txt"
+    }
+  ],
+  "source_refs_verified": {
+    "refs/remotes/origin/design/rev3a-pr": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+    "refs/remotes/origin/design/rev3b-pr": "c5db989810663caa18226a091bfb105ad26fb00e"
+  },
+  "license_files": [
+    {
+      "revision": "rev3a",
+      "source_commit": "a5a9fac87cbcb59d337a1fb8d3084ad18867a3e6",
+      "source_ref": "refs/remotes/origin/design/rev3a-pr",
+      "source_path": "LICENSE",
+      "git_blob": "f89e03f5b4266ed3d0051c270cc9df91667e7dd4",
+      "sha256": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc",
+      "bytes": 1063,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/licenses/rev3a/LICENSE"
+    },
+    {
+      "revision": "rev3b",
+      "source_commit": "c5db989810663caa18226a091bfb105ad26fb00e",
+      "source_ref": "refs/remotes/origin/design/rev3b-pr",
+      "source_path": "LICENSE",
+      "git_blob": "f89e03f5b4266ed3d0051c270cc9df91667e7dd4",
+      "sha256": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc",
+      "bytes": 1063,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/originals/licenses/rev3b/LICENSE"
+    }
+  ],
+  "all_originals_byte_reverified": true
+}

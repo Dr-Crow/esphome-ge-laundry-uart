@@ -1,0 +1,468 @@
+{
+  "scope": "Default closed A/B source geometry and recovered default STL/STEP readback; source and exports preserved. Proxy diagnostics do not authenticate exact physical mating.",
+  "versions": {
+    "build123d": "0.11.1",
+    "trimesh": "5.1.0"
+  },
+  "baseline_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+  "revisions": {
+    "rev3a": {
+      "source_sha256": "8e41ca77d2f77533e04d5940233f44b601523b5949c31f8939c1028d043b1c6f",
+      "pcb_bottom_case_z": 3.65,
+      "pcb_top_case_z": 5.25,
+      "lid_underside_case_z": 19.4,
+      "base": {
+        "bounds": [
+          -4.0,
+          -4.0,
+          0.0,
+          103.7,
+          44.0,
+          10.0
+        ],
+        "valid": true,
+        "solids": 1
+      },
+      "lid": {
+        "bounds": [
+          -5.0,
+          -5.0,
+          5.2,
+          104.7,
+          45.0,
+          22.0
+        ],
+        "valid": true,
+        "solids": 1
+      },
+      "original_exports": {
+        "base": {
+          "step_valid": true,
+          "step_solids": 1,
+          "stl_watertight": true,
+          "stl_volume_positive": true,
+          "source_step_volume_abs_diff_mm3": 3.637978807091713e-12,
+          "step_stl_volume_relative_diff": 1.561955940444853e-06,
+          "source_step_bounds_match_1e_5": true
+        },
+        "lid": {
+          "step_valid": true,
+          "step_solids": 1,
+          "stl_watertight": true,
+          "stl_volume_positive": true,
+          "source_step_volume_abs_diff_mm3": 2.9103830456733704e-11,
+          "step_stl_volume_relative_diff": 5.0860211652150495e-06,
+          "source_step_bounds_match_1e_5": true
+        }
+      },
+      "probes": {
+        "actual_15_by_4p4_base_opening": {
+          "size_x_y_z_mm": [
+            15,
+            7,
+            4.4
+          ],
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0
+        },
+        "README_if_read_as_15_by_7_facing_aperture": {
+          "base_overlap_mm3": 136.49999999999997,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "README7mm is source cutter Y depth; source facing aperture Z height is4.4mm."
+        },
+        "generic_proxy_height_outward_corridor": {
+          "base_overlap_mm3": 94.21483554536431,
+          "lid_overlap_mm3": 2.7557744611140294,
+          "physical_mating_established": false
+        },
+        "drawing_body_height_outward_corridor_conditional_seat": {
+          "body_height_mm": 3.16,
+          "base_overlap_mm3": 62.892899999999976,
+          "lid_overlap_mm3": 0.0,
+          "seating_plane_explicitly_dimensioned": false,
+          "mating_axis_established": false,
+          "physical_mating_established": false
+        }
+      },
+      "J4_generic_proxy": {
+        "raw_model_bounds": [
+          -4.470030479496266,
+          -3.6650001000000056,
+          -2.580000000000004,
+          4.470030479496266,
+          3.9150000000000063,
+          1.5810001000000005
+        ],
+        "native_model_offset_z": 2.58,
+        "installed_case_bounds": [
+          67.52996952050373,
+          32.41,
+          5.2499999999999964,
+          76.47003047949627,
+          39.99000010000001,
+          9.4110001
+        ],
+        "part_identity_warning": "Retained STEP FILE_NAME identifies6-pin model; exact16-pin SHOU HAN authentication missing."
+      },
+      "rated_package_height_screens": {
+        "D14": {
+          "center_xy_mm": [
+            66.0,
+            11.0
+          ],
+          "maximum_height_above_seat_mm": 1.45,
+          "case_top_z": 6.7,
+          "roof_clearance_mm": 12.7,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "D15": {
+          "center_xy_mm": [
+            64.0,
+            27.0
+          ],
+          "maximum_height_above_seat_mm": 1.45,
+          "case_top_z": 6.7,
+          "roof_clearance_mm": 12.7,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "U9": {
+          "center_xy_mm": [
+            59.8,
+            10.6
+          ],
+          "maximum_height_above_seat_mm": 1.1,
+          "case_top_z": 6.35,
+          "roof_clearance_mm": 13.049999999999999,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "U10": {
+          "center_xy_mm": [
+            57.5,
+            26.8
+          ],
+          "maximum_height_above_seat_mm": 1.1,
+          "case_top_z": 6.35,
+          "roof_clearance_mm": 13.049999999999999,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "F1": {
+          "center_xy_mm": [
+            45.9,
+            27.0
+          ],
+          "maximum_height_above_seat_mm": 1.55,
+          "case_top_z": 6.8,
+          "roof_clearance_mm": 12.599999999999998,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "F2": {
+          "center_xy_mm": [
+            44.1,
+            11.0
+          ],
+          "maximum_height_above_seat_mm": 1.55,
+          "case_top_z": 6.8,
+          "roof_clearance_mm": 12.599999999999998,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        }
+      },
+      "LED_aperture_datums": {
+        "D4": {
+          "case_xy": [
+            49.0,
+            24.0
+          ],
+          "current_carrier_xy": [
+            49.0,
+            24.0
+          ],
+          "aligned": true,
+          "lid_overlap_mm3": 0.0,
+          "optical_visibility_qualified": false
+        },
+        "D5": {
+          "case_xy": [
+            82.5,
+            1.5
+          ],
+          "current_carrier_xy": [
+            82.5,
+            1.5
+          ],
+          "aligned": true,
+          "lid_overlap_mm3": 0.0,
+          "optical_visibility_qualified": false
+        },
+        "D6": {
+          "case_xy": [
+            80.0,
+            36.5
+          ],
+          "current_carrier_xy": [
+            80.0,
+            36.5
+          ],
+          "aligned": true,
+          "lid_overlap_mm3": 0.0,
+          "optical_visibility_qualified": false
+        }
+      },
+      "button_aperture_datums": {
+        "SW1_RESET": {
+          "case_xy": [
+            5.0,
+            3.4
+          ],
+          "lid_overlap_mm3": 0.0,
+          "physical_actuation_qualified": false
+        },
+        "SW2_BOOT": {
+          "case_xy": [
+            13.0,
+            3.4
+          ],
+          "lid_overlap_mm3": 0.0,
+          "physical_actuation_qualified": false
+        }
+      },
+      "J1_primary_nominal_body_corridor": {
+        "bounds": [
+          -0.379999999999999,
+          9.4,
+          5.25,
+          17.67,
+          24.6,
+          16.7
+        ],
+        "base_overlap_mm3": 0.0,
+        "lid_overlap_mm3": 0.0,
+        "mating_latch_qualified": false,
+        "full_plating_material_suffix_verified": false
+      }
+    },
+    "rev3b": {
+      "source_sha256": "bc8e9b7bf8f4b480ad4ba88c4a5f85704dfb2671d858d78f93f285e5e421b375",
+      "pcb_bottom_case_z": 3.65,
+      "pcb_top_case_z": 5.25,
+      "lid_underside_case_z": 18.7,
+      "base": {
+        "bounds": [
+          -4.5,
+          -4.5,
+          0.0,
+          103.5,
+          44.5,
+          9.0
+        ],
+        "valid": true,
+        "solids": 1
+      },
+      "lid": {
+        "bounds": [
+          -5.5,
+          -5.5,
+          5.2,
+          104.5,
+          45.5,
+          20.9
+        ],
+        "valid": true,
+        "solids": 1
+      },
+      "original_exports": {
+        "base": {
+          "step_valid": true,
+          "step_solids": 1,
+          "stl_watertight": true,
+          "stl_volume_positive": true,
+          "source_step_volume_abs_diff_mm3": 1.4551915228366852e-11,
+          "step_stl_volume_relative_diff": 1.545913373203906e-06,
+          "source_step_bounds_match_1e_5": true
+        },
+        "lid": {
+          "step_valid": true,
+          "step_solids": 1,
+          "stl_watertight": true,
+          "stl_volume_positive": true,
+          "source_step_volume_abs_diff_mm3": 6.912159733474255e-11,
+          "step_stl_volume_relative_diff": 6.6097561281911126e-06,
+          "source_step_bounds_match_1e_5": true
+        }
+      },
+      "probes": {
+        "recovered_USB_assumed_corridor": {
+          "bounds": [
+            98.0,
+            2.536,
+            4.75,
+            105.2,
+            23.125,
+            12.25
+          ],
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "physical_mating_established": false
+        }
+      },
+      "rated_package_height_screens": {
+        "D14": {
+          "center_xy_mm": [
+            73.0,
+            8.0
+          ],
+          "maximum_height_above_seat_mm": 1.45,
+          "case_top_z": 6.7,
+          "roof_clearance_mm": 12.0,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "D15": {
+          "center_xy_mm": [
+            73.0,
+            22.5
+          ],
+          "maximum_height_above_seat_mm": 1.45,
+          "case_top_z": 6.7,
+          "roof_clearance_mm": 12.0,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "U9": {
+          "center_xy_mm": [
+            65.0,
+            8.0
+          ],
+          "maximum_height_above_seat_mm": 1.1,
+          "case_top_z": 6.35,
+          "roof_clearance_mm": 12.35,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "U10": {
+          "center_xy_mm": [
+            65.0,
+            22.5
+          ],
+          "maximum_height_above_seat_mm": 1.1,
+          "case_top_z": 6.35,
+          "roof_clearance_mm": 12.35,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "F1": {
+          "center_xy_mm": [
+            45.5,
+            21.5
+          ],
+          "maximum_height_above_seat_mm": 1.55,
+          "case_top_z": 6.8,
+          "roof_clearance_mm": 11.899999999999999,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        },
+        "F2": {
+          "center_xy_mm": [
+            45.5,
+            7.0
+          ],
+          "maximum_height_above_seat_mm": 1.55,
+          "case_top_z": 6.8,
+          "roof_clearance_mm": 11.899999999999999,
+          "base_overlap_mm3": 0.0,
+          "lid_overlap_mm3": 0.0,
+          "caveat": "Nominal assembly positions and no extra solder lift; package dimensions only, not actual mounted or thermal qualification."
+        }
+      },
+      "LED_aperture_datums": {
+        "D4": {
+          "case_xy": [
+            84.0,
+            26.0
+          ],
+          "current_carrier_xy": [
+            84.0,
+            26.0
+          ],
+          "aligned": true,
+          "lid_overlap_mm3": 0.0,
+          "optical_visibility_qualified": false
+        },
+        "D5": {
+          "case_xy": [
+            84.0,
+            30.0
+          ],
+          "current_carrier_xy": [
+            84.0,
+            30.0
+          ],
+          "aligned": true,
+          "lid_overlap_mm3": 0.0,
+          "optical_visibility_qualified": false
+        },
+        "D6": {
+          "case_xy": [
+            88.0,
+            26.0
+          ],
+          "current_carrier_xy": [
+            88.0,
+            26.0
+          ],
+          "aligned": true,
+          "lid_overlap_mm3": 0.0,
+          "optical_visibility_qualified": false
+        }
+      },
+      "button_aperture_datums": {
+        "BOOT0": {
+          "case_xy": [
+            79.0,
+            8.4725
+          ],
+          "lid_overlap_mm3": 0.0,
+          "physical_actuation_qualified": false
+        },
+        "RST0": {
+          "case_xy": [
+            79.0,
+            17.3625
+          ],
+          "lid_overlap_mm3": 0.0,
+          "physical_actuation_qualified": false
+        }
+      },
+      "J1_primary_nominal_body_corridor": {
+        "bounds": [
+          -0.379999999999999,
+          9.395000000000001,
+          5.25,
+          17.67,
+          24.595,
+          16.7
+        ],
+        "base_overlap_mm3": 0.0,
+        "lid_overlap_mm3": 0.0,
+        "mating_latch_qualified": false,
+        "full_plating_material_suffix_verified": false
+      }
+    }
+  }
+}

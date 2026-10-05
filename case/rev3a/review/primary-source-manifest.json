@@ -1,0 +1,24 @@
+[
+  {
+    "source_url": "https://atta.szlcsc.com/upload/public/pdf/source/20250421/4251387FDD0B70FDBB4F5FD36EE975AA.pdf",
+    "review_date": "2026-10-05",
+    "local_file": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/primary/SHOU-HAN-C2765186-drawing.pdf",
+    "sha256": "39110c4af62ba9309f87e6405ce58368b479fcf233e9166d54fc6ffae5b366ba",
+    "bytes": 1212516,
+    "matches_pinned_primary_receipt": true
+  },
+  {
+    "source_url": "https://www.st.com/resource/en/datasheet/stps140z.pdf",
+    "cached_source_path": "/workspace/scratch/c9ec93994789/rev3-power-gap-review/stps140z.pdf",
+    "local_file": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/primary/stps140z.pdf",
+    "sha256": "534d489866db36539e474e5576e829db0bd26696b4cd9dfae63c7450f77e5da3",
+    "bytes": 235431
+  },
+  {
+    "source_url": "https://www.st.com/resource/en/datasheet/stps140z.pdf",
+    "cached_source_path": "/workspace/scratch/c9ec93994789/rev3-power-gap-review/stps140z.txt",
+    "local_file": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/primary/stps140z.txt",
+    "sha256": "b02f91c52ba97d8fe4edc6b80be5597cacf369e03a4aa0b87f46083b3942acaa",
+    "bytes": 16213
+  }
+]

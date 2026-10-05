@@ -12,7 +12,7 @@ Rev3C socket courtyards now cover the published maximum body plus 0.25 mm margin
 
 Fresh complete current-ST Rev3C quotes are **$135.81/five and $171.20/ten** at the matched bf5c231 trio, with all 83 references/34 codes and no omissions, substitutions or shortages. This is about $0.23 per carrier above the prior pre-ST snapshot. Current-ST A quotes are $180.08/five or $230.15/ten with all 97 refs including WROOM. B matches all 85 codes but its exact U2 module has zero supplier stock (five/ten short), so no full assembly total is available. Earlier snapshots retain their dates. [Current receipt](../../../pcb/rev3c/validation/JLCPCB-ST-QUOTE-2026-10-05.json).
 
-The true source outlines are Rev3A **88.7 × 40 mm**, Rev3B/C **99 × 40 mm**; [numbered source proof](rev3-outline-dimensions.json) preserves that distinction. The Rev3C socketed case is not an asserted A/B enclosure fit.
+The true source outlines are Rev3A **88.7 × 40 mm**, Rev3B/C **99 × 40 mm**; [numbered source proof](rev3-outline-dimensions.json) preserves that distinction. The Rev3C socketed case is not an asserted A/B enclosure fit. The [recovered A/B companion review](../../../case/rev3a/review/REV3AB-ENCLOSURE-SOURCE-REVIEW.md) verifies their original source/interface datums and corrects A’s facing USB window to **15 × 4.4 mm**; 7 mm is cutter depth, not opening height. No physical resize is adopted from the generic model.
 
 ## Earlier all-revision digital checkpoint
 

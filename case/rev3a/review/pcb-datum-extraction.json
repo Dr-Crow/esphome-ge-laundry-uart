@@ -1,0 +1,5689 @@
+{
+  "commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+  "boards": {
+    "rev3a": {
+      "source_path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+      "pcb_sha256": "1b22c7ac68dbe27ca4918431784c885aa2a7019e3ab4f01f44425844ded22f55",
+      "thickness": "1.6",
+      "edges": [
+        {
+          "start": [
+            "0",
+            "0"
+          ],
+          "end": [
+            "88.7",
+            "0"
+          ]
+        },
+        {
+          "start": [
+            "0",
+            "40"
+          ],
+          "end": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "start": [
+            "88.7",
+            "0"
+          ],
+          "end": [
+            "88.7",
+            "40"
+          ]
+        },
+        {
+          "start": [
+            "88.7",
+            "40"
+          ],
+          "end": [
+            "0",
+            "40"
+          ]
+        }
+      ],
+      "footprints": {
+        "SW2": {
+          "library": "LegacyBoard:SW2_SW_Push_1P1T_XKB_TS-1187A",
+          "at": [
+            "13",
+            "3.4"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "SW2",
+            "Value": "SW_Push",
+            "Datasheet": "~",
+            "Description": "C318884",
+            "LCSC": "C318884"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/SW1-SW2-XKB-TS-1187A-B-A-B.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-3",
+                "-1.875"
+              ],
+              "size": [
+                "1",
+                "0.75"
+              ],
+              "drill": null
+            },
+            {
+              "number": "1",
+              "at": [
+                "3",
+                "-1.875"
+              ],
+              "size": [
+                "1",
+                "0.75"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "-3",
+                "1.875"
+              ],
+              "size": [
+                "1",
+                "0.75"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "3",
+                "1.875"
+              ],
+              "size": [
+                "1",
+                "0.75"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-2.9",
+                "-2.1"
+              ],
+              "end": [
+                "-2.9",
+                "-1.6"
+              ]
+            },
+            {
+              "start": [
+                "-2.9",
+                "2.1"
+              ],
+              "end": [
+                "-2.9",
+                "1.6"
+              ]
+            },
+            {
+              "start": [
+                "-2.4",
+                "-1.4"
+              ],
+              "end": [
+                "-1.4",
+                "-2.4"
+              ]
+            },
+            {
+              "start": [
+                "-2.4",
+                "-1.25"
+              ],
+              "end": [
+                "-2.4",
+                "-1.4"
+              ]
+            },
+            {
+              "start": [
+                "-2.4",
+                "1.4"
+              ],
+              "end": [
+                "-2.4",
+                "1.25"
+              ]
+            },
+            {
+              "start": [
+                "-1.4",
+                "-2.4"
+              ],
+              "end": [
+                "-1.25",
+                "-2.4"
+              ]
+            },
+            {
+              "start": [
+                "-1.4",
+                "2.4"
+              ],
+              "end": [
+                "-2.4",
+                "1.4"
+              ]
+            },
+            {
+              "start": [
+                "-1.25",
+                "2.4"
+              ],
+              "end": [
+                "-1.4",
+                "2.4"
+              ]
+            },
+            {
+              "start": [
+                "1.25",
+                "-2.4"
+              ],
+              "end": [
+                "1.4",
+                "-2.4"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "-2.4"
+              ],
+              "end": [
+                "2.4",
+                "-1.4"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "2.4"
+              ],
+              "end": [
+                "1.25",
+                "2.4"
+              ]
+            },
+            {
+              "start": [
+                "2.4",
+                "-1.4"
+              ],
+              "end": [
+                "2.4",
+                "-1.25"
+              ]
+            },
+            {
+              "start": [
+                "2.4",
+                "1.25"
+              ],
+              "end": [
+                "2.4",
+                "1.4"
+              ]
+            },
+            {
+              "start": [
+                "2.4",
+                "1.4"
+              ],
+              "end": [
+                "1.4",
+                "2.4"
+              ]
+            },
+            {
+              "start": [
+                "2.9",
+                "-2.1"
+              ],
+              "end": [
+                "2.9",
+                "-1.6"
+              ]
+            },
+            {
+              "start": [
+                "2.9",
+                "2.1"
+              ],
+              "end": [
+                "2.9",
+                "1.6"
+              ]
+            }
+          ]
+        },
+        "D14": {
+          "library": "Diode_SMD:D_SOD-123",
+          "at": [
+            "66",
+            "11"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D14",
+            "Value": "STPS140Z",
+            "Datasheet": "https://www.st.com/resource/en/datasheet/stps140z.pdf",
+            "Description": "40 V, 1 A Schottky rectifier, SOD-123; maximum junction 150 degC; LCSC C155662",
+            "LCSC": "C155662",
+            "Manufacturer": "STMicroelectronics",
+            "MPN": "STPS140Z"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-1.65",
+                "0"
+              ],
+              "size": [
+                "0.9",
+                "1.2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "1.65",
+                "0"
+              ],
+              "size": [
+                "0.9",
+                "1.2"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1.4",
+                "-0.9"
+              ],
+              "end": [
+                "1.4",
+                "-0.9"
+              ]
+            },
+            {
+              "start": [
+                "-1.4",
+                "0.9"
+              ],
+              "end": [
+                "-1.4",
+                "-0.9"
+              ]
+            },
+            {
+              "start": [
+                "-0.75",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "-0.55"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "0.55"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "0.25",
+                "-0.4"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "-0.4"
+              ],
+              "end": [
+                "0.25",
+                "0.4"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "0"
+              ],
+              "end": [
+                "0.75",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "0.4"
+              ],
+              "end": [
+                "-0.35",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "-0.9"
+              ],
+              "end": [
+                "1.4",
+                "0.9"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "0.9"
+              ],
+              "end": [
+                "-1.4",
+                "0.9"
+              ]
+            }
+          ]
+        },
+        "U9": {
+          "library": "OnionStraws:TPS1H200A_DGN0008K_TI_RevE",
+          "at": [
+            "59.8",
+            "10.6"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "U9",
+            "Value": "TPS1H200AQDGNRQ1",
+            "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+            "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD",
+            "LCSC": "C2653785",
+            "Manufacturer": "Texas Instruments",
+            "MPN": "TPS1H200AQDGNRQ1"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/TPS1H200A-DGN0008K-max-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "1.57",
+                "1.89"
+              ],
+              "drill": null
+            },
+            {
+              "number": "1",
+              "at": [
+                "-2.2",
+                "-0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "-2.2",
+                "-0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "3",
+              "at": [
+                "-2.2",
+                "0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "4",
+              "at": [
+                "-2.2",
+                "0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "5",
+              "at": [
+                "2.2",
+                "0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "6",
+              "at": [
+                "2.2",
+                "0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "7",
+              "at": [
+                "2.2",
+                "-0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "8",
+              "at": [
+                "2.2",
+                "-0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "9",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "2",
+                "3"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1.5",
+                "-1.5"
+              ],
+              "end": [
+                "1.5",
+                "-1.5"
+              ]
+            },
+            {
+              "start": [
+                "-1.5",
+                "1.5"
+              ],
+              "end": [
+                "-1.5",
+                "-1.5"
+              ]
+            },
+            {
+              "start": [
+                "1.5",
+                "-1.5"
+              ],
+              "end": [
+                "1.5",
+                "1.5"
+              ]
+            },
+            {
+              "start": [
+                "1.5",
+                "1.5"
+              ],
+              "end": [
+                "-1.5",
+                "1.5"
+              ]
+            }
+          ]
+        },
+        "D5": {
+          "library": "LED_SMD:LED_0805_2012Metric",
+          "at": [
+            "82.5",
+            "1.5"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D5",
+            "Value": "RED",
+            "Datasheet": "~",
+            "Description": "C84256",
+            "LCSC": "C84256"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1",
+                "-0.3"
+              ],
+              "end": [
+                "-1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-0.7",
+                "-0.6"
+              ],
+              "end": [
+                "-1",
+                "-0.3"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "-0.6"
+              ],
+              "end": [
+                "-0.7",
+                "-0.6"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "-0.6"
+              ]
+            }
+          ]
+        },
+        "H2": {
+          "library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+          "at": [
+            "48",
+            "4"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "H2",
+            "Value": "MountingHole",
+            "Datasheet": "~",
+            "Description": ""
+          },
+          "models": [],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "3.2",
+                "3.2"
+              ],
+              "drill": [
+                "3.2"
+              ]
+            }
+          ]
+        },
+        "J4": {
+          "library": "OnionStraws:USB_C_SHOU_HAN_TYPE_C_16PIN_2MD_073_Reviewed",
+          "at": [
+            "72",
+            "36.325"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "J4",
+            "Value": "USB_C_Receptacle_USB2.0_16P",
+            "Datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20250421/4251387FDD0B70FDBB4F5FD36EE975AA.pdf",
+            "Description": "SHOU HAN TYPE-C 16PIN 2MD(073), C2765186, USB2.0 top-mount receptacle, 3A/5V; reviewed manufacturer shell slots; retained enlarged signal lands; 1.6mm PCB solder/retention qualification required",
+            "MPN": "TYPE-C 16PIN 2MD(073)",
+            "Manufacturer": "SHOU HAN",
+            "LCSC": "C2765186"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/J4-SHOU-HAN-TYPE-C-16PIN-2MD-073.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "2.58"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "-2.89",
+                "-2.605"
+              ],
+              "size": [
+                "0.65",
+                "0.65"
+              ],
+              "drill": [
+                "0.65"
+              ]
+            },
+            {
+              "number": "",
+              "at": [
+                "2.89",
+                "-2.605"
+              ],
+              "size": [
+                "0.65",
+                "0.65"
+              ],
+              "drill": [
+                "0.65"
+              ]
+            },
+            {
+              "number": "A1",
+              "at": [
+                "-3.2",
+                "-3.745"
+              ],
+              "size": [
+                "0.6",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "A4",
+              "at": [
+                "-2.4",
+                "-3.745"
+              ],
+              "size": [
+                "0.6",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "A5",
+              "at": [
+                "-1.25",
+                "-3.745"
+              ],
+              "size": [
+                "0.3",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "A6",
+              "at": [
+                "-0.25",
+                "-3.745"
+              ],
+              "size": [
+                "0.3",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "A7",
+              "at": [
+                "0.25",
+                "-3.745"
+              ],
+              "size": [
+                "0.3",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "A8",
+              "at": [
+                "1.25",
+                "-3.745"
+              ],
+              "size": [
+                "0.3",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "A9",
+              "at": [
+                "2.4",
+                "-3.745"
+              ],
+              "size": [
+                "0.6",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "A12",
+              "at": [
+                "3.2",
+                "-3.745"
+              ],
+              "size": [
+                "0.6",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "B1",
+              "at": [
+                "3.2",
+                "-3.745"
+              ],
+              "size": [
+                "0.6",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "B4",
+              "at": [
+                "2.4",
+                "-3.745"
+              ],
+              "size": [
+                "0.6",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "B5",
+              "at": [
+                "1.75",
+                "-3.745"
+              ],
+              "size": [
+                "0.3",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "B6",
+              "at": [
+                "0.75",
+                "-3.745"
+              ],
+              "size": [
+                "0.3",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "B7",
+              "at": [
+                "-0.75",
+                "-3.745"
+              ],
+              "size": [
+                "0.3",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "B8",
+              "at": [
+                "-1.75",
+                "-3.745"
+              ],
+              "size": [
+                "0.3",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "B9",
+              "at": [
+                "-2.4",
+                "-3.745"
+              ],
+              "size": [
+                "0.6",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "B12",
+              "at": [
+                "-3.2",
+                "-3.745"
+              ],
+              "size": [
+                "0.6",
+                "1.3"
+              ],
+              "drill": null
+            },
+            {
+              "number": "S1",
+              "at": [
+                "-4.32",
+                "-3.105"
+              ],
+              "size": [
+                "1",
+                "2.1"
+              ],
+              "drill": [
+                "oval",
+                "0.6",
+                "1.7"
+              ]
+            },
+            {
+              "number": "S1",
+              "at": [
+                "-4.32",
+                "1.075"
+              ],
+              "size": [
+                "1",
+                "1.8"
+              ],
+              "drill": [
+                "oval",
+                "0.6",
+                "1.4"
+              ]
+            },
+            {
+              "number": "S1",
+              "at": [
+                "4.32",
+                "-3.105"
+              ],
+              "size": [
+                "1",
+                "2.1"
+              ],
+              "drill": [
+                "oval",
+                "0.6",
+                "1.7"
+              ]
+            },
+            {
+              "number": "S1",
+              "at": [
+                "4.32",
+                "1.075"
+              ],
+              "size": [
+                "1",
+                "1.8"
+              ],
+              "drill": [
+                "oval",
+                "0.6",
+                "1.4"
+              ]
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-4.47",
+                "-3.675"
+              ],
+              "end": [
+                "-4.47",
+                "3.675"
+              ]
+            },
+            {
+              "start": [
+                "-4.47",
+                "-3.675"
+              ],
+              "end": [
+                "4.47",
+                "-3.675"
+              ]
+            },
+            {
+              "start": [
+                "-4.47",
+                "3.675"
+              ],
+              "end": [
+                "4.47",
+                "3.675"
+              ]
+            },
+            {
+              "start": [
+                "-3.2",
+                "-2.675"
+              ],
+              "end": [
+                "-4.2",
+                "-3.675"
+              ]
+            },
+            {
+              "start": [
+                "-3.2",
+                "-2.675"
+              ],
+              "end": [
+                "-2.2",
+                "-3.675"
+              ]
+            },
+            {
+              "start": [
+                "4.47",
+                "-3.675"
+              ],
+              "end": [
+                "4.47",
+                "3.675"
+              ]
+            }
+          ]
+        },
+        "U10": {
+          "library": "OnionStraws:TPS1H200A_DGN0008K_TI_RevE",
+          "at": [
+            "57.5",
+            "26.8"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "U10",
+            "Value": "TPS1H200AQDGNRQ1",
+            "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+            "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD",
+            "LCSC": "C2653785",
+            "Manufacturer": "Texas Instruments",
+            "MPN": "TPS1H200AQDGNRQ1"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/TPS1H200A-DGN0008K-max-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "1.57",
+                "1.89"
+              ],
+              "drill": null
+            },
+            {
+              "number": "1",
+              "at": [
+                "-2.2",
+                "-0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "-2.2",
+                "-0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "3",
+              "at": [
+                "-2.2",
+                "0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "4",
+              "at": [
+                "-2.2",
+                "0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "5",
+              "at": [
+                "2.2",
+                "0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "6",
+              "at": [
+                "2.2",
+                "0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "7",
+              "at": [
+                "2.2",
+                "-0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "8",
+              "at": [
+                "2.2",
+                "-0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "9",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "2",
+                "3"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1.5",
+                "-1.5"
+              ],
+              "end": [
+                "1.5",
+                "-1.5"
+              ]
+            },
+            {
+              "start": [
+                "-1.5",
+                "1.5"
+              ],
+              "end": [
+                "-1.5",
+                "-1.5"
+              ]
+            },
+            {
+              "start": [
+                "1.5",
+                "-1.5"
+              ],
+              "end": [
+                "1.5",
+                "1.5"
+              ]
+            },
+            {
+              "start": [
+                "1.5",
+                "1.5"
+              ],
+              "end": [
+                "-1.5",
+                "1.5"
+              ]
+            }
+          ]
+        },
+        "SW1": {
+          "library": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+          "at": [
+            "5",
+            "3.4"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "SW1",
+            "Value": "SW_Push",
+            "Datasheet": "~",
+            "Description": "C318884",
+            "LCSC": "C318884"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/SW1-SW2-XKB-TS-1187A-B-A-B.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-3",
+                "-1.875"
+              ],
+              "size": [
+                "1",
+                "0.75"
+              ],
+              "drill": null
+            },
+            {
+              "number": "1",
+              "at": [
+                "3",
+                "-1.875"
+              ],
+              "size": [
+                "1",
+                "0.75"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "-3",
+                "1.875"
+              ],
+              "size": [
+                "1",
+                "0.75"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "3",
+                "1.875"
+              ],
+              "size": [
+                "1",
+                "0.75"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-2.9",
+                "-2.1"
+              ],
+              "end": [
+                "-2.9",
+                "-1.6"
+              ]
+            },
+            {
+              "start": [
+                "-2.9",
+                "2.1"
+              ],
+              "end": [
+                "-2.9",
+                "1.6"
+              ]
+            },
+            {
+              "start": [
+                "-2.4",
+                "-1.4"
+              ],
+              "end": [
+                "-1.4",
+                "-2.4"
+              ]
+            },
+            {
+              "start": [
+                "-2.4",
+                "-1.25"
+              ],
+              "end": [
+                "-2.4",
+                "-1.4"
+              ]
+            },
+            {
+              "start": [
+                "-2.4",
+                "1.4"
+              ],
+              "end": [
+                "-2.4",
+                "1.25"
+              ]
+            },
+            {
+              "start": [
+                "-1.4",
+                "-2.4"
+              ],
+              "end": [
+                "-1.25",
+                "-2.4"
+              ]
+            },
+            {
+              "start": [
+                "-1.4",
+                "2.4"
+              ],
+              "end": [
+                "-2.4",
+                "1.4"
+              ]
+            },
+            {
+              "start": [
+                "-1.25",
+                "2.4"
+              ],
+              "end": [
+                "-1.4",
+                "2.4"
+              ]
+            },
+            {
+              "start": [
+                "1.25",
+                "-2.4"
+              ],
+              "end": [
+                "1.4",
+                "-2.4"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "-2.4"
+              ],
+              "end": [
+                "2.4",
+                "-1.4"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "2.4"
+              ],
+              "end": [
+                "1.25",
+                "2.4"
+              ]
+            },
+            {
+              "start": [
+                "2.4",
+                "-1.4"
+              ],
+              "end": [
+                "2.4",
+                "-1.25"
+              ]
+            },
+            {
+              "start": [
+                "2.4",
+                "1.25"
+              ],
+              "end": [
+                "2.4",
+                "1.4"
+              ]
+            },
+            {
+              "start": [
+                "2.4",
+                "1.4"
+              ],
+              "end": [
+                "1.4",
+                "2.4"
+              ]
+            },
+            {
+              "start": [
+                "2.9",
+                "-2.1"
+              ],
+              "end": [
+                "2.9",
+                "-1.6"
+              ]
+            },
+            {
+              "start": [
+                "2.9",
+                "2.1"
+              ],
+              "end": [
+                "2.9",
+                "1.6"
+              ]
+            }
+          ]
+        },
+        "F2": {
+          "library": "OnionStraws:Fuse_Littelfuse_1812L_Recommended",
+          "at": [
+            "44.1",
+            "11"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "F2",
+            "Value": "1812L075/33DR",
+            "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+            "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land",
+            "LCSC": "C151170",
+            "Manufacturer": "Littelfuse",
+            "MPN": "1812L075/33DR"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/1812L075-33DR-max-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-2.615",
+                "0"
+              ],
+              "size": [
+                "1.78",
+                "3.15"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "2.615",
+                "0"
+              ],
+              "size": [
+                "1.78",
+                "3.15"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_rect": [
+            {
+              "start": [
+                "-2.25",
+                "-1.6"
+              ],
+              "end": [
+                "2.25",
+                "1.6"
+              ]
+            }
+          ]
+        },
+        "J2": {
+          "library": "OnionStraws:Recovery_Header_2x3_P2.54mm_Vertical",
+          "at": [
+            "11.7",
+            "32.5"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "J2",
+            "Value": "RECOVERY",
+            "Datasheet": "https://jlcpcb.com/partdetail/hanxia-HX_PZ_2_54_02_03_S_PB32/C42391552",
+            "Description": "Populated 2x3, 2.54 mm surface-mount male recovery header for 3.3 V UART flashing",
+            "MPN": "HX PZ-2.54-02-03-S-PB3.2",
+            "Manufacturer": "hanxia",
+            "LCSC": "C42391552"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/J2-hanxia-HX-PZ-2.54-02-03-S.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "90"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-2.73",
+                "-2.54"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "-2.73",
+                "0"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "3",
+              "at": [
+                "2.73",
+                "-2.54"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "4",
+              "at": [
+                "2.73",
+                "2.54"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "5",
+              "at": [
+                "2.73",
+                "0"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "6",
+              "at": [
+                "-2.73",
+                "2.54"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            }
+          ]
+        },
+        "D6": {
+          "library": "LED_SMD:LED_0805_2012Metric",
+          "at": [
+            "80",
+            "36.5"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D6",
+            "Value": "YLW",
+            "Datasheet": "~",
+            "Description": "C2296",
+            "LCSC": "C2296"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1",
+                "-0.3"
+              ],
+              "end": [
+                "-1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-0.7",
+                "-0.6"
+              ],
+              "end": [
+                "-1",
+                "-0.3"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "-0.6"
+              ],
+              "end": [
+                "-0.7",
+                "-0.6"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "-0.6"
+              ]
+            }
+          ]
+        },
+        "F1": {
+          "library": "OnionStraws:Fuse_Littelfuse_1812L_Recommended",
+          "at": [
+            "45.9",
+            "27"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "F1",
+            "Value": "1812L075/33DR",
+            "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+            "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land",
+            "LCSC": "C151170",
+            "Manufacturer": "Littelfuse",
+            "MPN": "1812L075/33DR"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/1812L075-33DR-max-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-2.615",
+                "0"
+              ],
+              "size": [
+                "1.78",
+                "3.15"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "2.615",
+                "0"
+              ],
+              "size": [
+                "1.78",
+                "3.15"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_rect": [
+            {
+              "start": [
+                "-2.25",
+                "-1.6"
+              ],
+              "end": [
+                "2.25",
+                "1.6"
+              ]
+            }
+          ]
+        },
+        "J1": {
+          "library": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+          "at": [
+            "13.97",
+            "12.555",
+            "-90"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "J1",
+            "Value": "8P8C",
+            "Datasheet": "",
+            "Description": "C3097717",
+            "LCSC": "C3097717",
+            "MPN": "5301-8P8C",
+            "Manufacturer": "EVERCOM"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/J1-EVERCOM-5301-8P8C-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "-1.27",
+                "6.35",
+                "270"
+              ],
+              "size": [
+                "3.2",
+                "3.2"
+              ],
+              "drill": [
+                "3.2"
+              ]
+            },
+            {
+              "number": "",
+              "at": [
+                "10.16",
+                "6.35",
+                "270"
+              ],
+              "size": [
+                "3.2",
+                "3.2"
+              ],
+              "drill": [
+                "3.2"
+              ]
+            },
+            {
+              "number": "1",
+              "at": [
+                "0",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "2",
+              "at": [
+                "1.27",
+                "-2.54",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "3",
+              "at": [
+                "2.54",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "4",
+              "at": [
+                "3.81",
+                "-2.54",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "5",
+              "at": [
+                "5.08",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "6",
+              "at": [
+                "6.35",
+                "-2.54",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "7",
+              "at": [
+                "7.62",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "8",
+              "at": [
+                "8.89",
+                "-2.54",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-3.205",
+                "13.97"
+              ],
+              "end": [
+                "-3.205",
+                "-2.77"
+              ]
+            },
+            {
+              "start": [
+                "12.095",
+                "13.97"
+              ],
+              "end": [
+                "-3.205",
+                "13.97"
+              ]
+            },
+            {
+              "start": [
+                "-3.205",
+                "-2.77"
+              ],
+              "end": [
+                "-2.205",
+                "-3.77"
+              ]
+            },
+            {
+              "start": [
+                "-2.205",
+                "-3.77"
+              ],
+              "end": [
+                "12.095",
+                "-3.77"
+              ]
+            },
+            {
+              "start": [
+                "12.095",
+                "-3.77"
+              ],
+              "end": [
+                "12.095",
+                "13.97"
+              ]
+            }
+          ]
+        },
+        "D15": {
+          "library": "Diode_SMD:D_SOD-123",
+          "at": [
+            "64",
+            "27"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D15",
+            "Value": "STPS140Z",
+            "Datasheet": "https://www.st.com/resource/en/datasheet/stps140z.pdf",
+            "Description": "40 V, 1 A Schottky rectifier, SOD-123; maximum junction 150 degC; LCSC C155662",
+            "LCSC": "C155662",
+            "Manufacturer": "STMicroelectronics",
+            "MPN": "STPS140Z"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-1.65",
+                "0"
+              ],
+              "size": [
+                "0.9",
+                "1.2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "1.65",
+                "0"
+              ],
+              "size": [
+                "0.9",
+                "1.2"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1.4",
+                "-0.9"
+              ],
+              "end": [
+                "1.4",
+                "-0.9"
+              ]
+            },
+            {
+              "start": [
+                "-1.4",
+                "0.9"
+              ],
+              "end": [
+                "-1.4",
+                "-0.9"
+              ]
+            },
+            {
+              "start": [
+                "-0.75",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "-0.55"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "0.55"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "0.25",
+                "-0.4"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "-0.4"
+              ],
+              "end": [
+                "0.25",
+                "0.4"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "0"
+              ],
+              "end": [
+                "0.75",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "0.4"
+              ],
+              "end": [
+                "-0.35",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "-0.9"
+              ],
+              "end": [
+                "1.4",
+                "0.9"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "0.9"
+              ],
+              "end": [
+                "-1.4",
+                "0.9"
+              ]
+            }
+          ]
+        },
+        "D4": {
+          "library": "LED_SMD:LED_0805_2012Metric",
+          "at": [
+            "49",
+            "24"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D4",
+            "Value": "GRN",
+            "Datasheet": "~",
+            "Description": "C2297",
+            "LCSC": "C2297"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1",
+                "-0.3"
+              ],
+              "end": [
+                "-1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-0.7",
+                "-0.6"
+              ],
+              "end": [
+                "-1",
+                "-0.3"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "-0.6"
+              ],
+              "end": [
+                "-0.7",
+                "-0.6"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "-0.6"
+              ]
+            }
+          ]
+        },
+        "U2": {
+          "library": "LegacyBoard:U2_ESP32-C3-WROOM-02",
+          "at": [
+            "81.6",
+            "17",
+            "-90"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "U2",
+            "Value": "ESP32-C3-WROOM-02",
+            "Datasheet": "https://documentation.espressif.com/ESP32-C3-Wroom-02_datasheet_en.pdf",
+            "Description": "ESP32-C3 Wi-Fi and Bluetooth LE module, 4MB flash, PCB antenna",
+            "LCSC": "C2934560",
+            "MPN": "ESP32-C3-WROOM-02-N4",
+            "Manufacturer": "Espressif Systems"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-C3-WROOM-02.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "-0.14",
+                "-0.9",
+                "270"
+              ],
+              "size": [
+                "0.7",
+                "0.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "",
+              "at": [
+                "-0.14",
+                "0.2",
+                "270"
+              ],
+              "size": [
+                "0.7",
+                "0.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "",
+              "at": [
+                "-0.14",
+                "1.3",
+                "270"
+              ],
+              "size": [
+                "0.7",
+                "0.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "",
+              "at": [
+                "0.96",
+                "-0.9",
+                "270"
+              ],
+              "size": [
+                "0.7",
+                "0.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "",
+              "at": [
+                "0.96",
+                "0.2",
+                "270"
+              ],
+              "size": [
+                "0.7",
+                "0.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "",
+              "at": [
+                "0.96",
+                "1.3",
+                "270"
+              ],
+              "size": [
+                "0.7",
+                "0.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "",
+              "at": [
+                "2.06",
+                "-0.9",
+                "270"
+              ],
+              "size": [
+                "0.7",
+                "0.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "",
+              "at": [
+                "2.06",
+                "0.2",
+                "270"
+              ],
+              "size": [
+                "0.7",
+                "0.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "",
+              "at": [
+                "2.06",
+                "1.3",
+                "270"
+              ],
+              "size": [
+                "0.7",
+                "0.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "1",
+              "at": [
+                "-8.75",
+                "-6",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "-8.75",
+                "-4.5",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "3",
+              "at": [
+                "-8.75",
+                "-3",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "4",
+              "at": [
+                "-8.75",
+                "-1.5",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "5",
+              "at": [
+                "-8.75",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "6",
+              "at": [
+                "-8.75",
+                "1.5",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "7",
+              "at": [
+                "-8.75",
+                "3",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "8",
+              "at": [
+                "-8.75",
+                "4.5",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "9",
+              "at": [
+                "-8.75",
+                "6",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "10",
+              "at": [
+                "8.75",
+                "6",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "11",
+              "at": [
+                "8.75",
+                "4.5",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "12",
+              "at": [
+                "8.75",
+                "3",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "13",
+              "at": [
+                "8.75",
+                "1.5",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "14",
+              "at": [
+                "8.75",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "15",
+              "at": [
+                "8.75",
+                "-1.5",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "16",
+              "at": [
+                "8.75",
+                "-3",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "17",
+              "at": [
+                "8.75",
+                "-4.5",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "18",
+              "at": [
+                "8.75",
+                "-6",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "0.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "19",
+              "at": [
+                "-0.14",
+                "-0.35",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "-0.14",
+                "0.75",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "0.41",
+                "-0.9",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "0.41",
+                "0.2",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "0.41",
+                "1.3",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "0.96",
+                "-0.35",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "0.96",
+                "0.2",
+                "270"
+              ],
+              "size": [
+                "2.9",
+                "2.9"
+              ],
+              "drill": null
+            },
+            {
+              "number": "19",
+              "at": [
+                "0.96",
+                "0.75",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "1.51",
+                "-0.9",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "1.51",
+                "0.2",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "1.51",
+                "1.3",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "2.06",
+                "-0.35",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            },
+            {
+              "number": "19",
+              "at": [
+                "2.06",
+                "0.75",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.6"
+              ],
+              "drill": [
+                "0.3"
+              ]
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-9",
+                "6.9"
+              ],
+              "end": [
+                "9",
+                "6.9"
+              ]
+            },
+            {
+              "start": [
+                "9",
+                "6.9"
+              ],
+              "end": [
+                "9",
+                "-13.1"
+              ]
+            },
+            {
+              "start": [
+                "-9",
+                "-5.5"
+              ],
+              "end": [
+                "-9",
+                "6.9"
+              ]
+            },
+            {
+              "start": [
+                "-8.5",
+                "-6"
+              ],
+              "end": [
+                "-9",
+                "-5.5"
+              ]
+            },
+            {
+              "start": [
+                "-9",
+                "-6.5"
+              ],
+              "end": [
+                "-8.5",
+                "-6"
+              ]
+            },
+            {
+              "start": [
+                "-9",
+                "-13.1"
+              ],
+              "end": [
+                "-9",
+                "-6.5"
+              ]
+            },
+            {
+              "start": [
+                "-9",
+                "-13.1"
+              ],
+              "end": [
+                "9",
+                "-13.1"
+              ]
+            },
+            {
+              "start": [
+                "-9.11",
+                "-13.21"
+              ],
+              "end": [
+                "-9.11",
+                "-7.4"
+              ]
+            },
+            {
+              "start": [
+                "-9.11",
+                "-13.21"
+              ],
+              "end": [
+                "9.11",
+                "-13.21"
+              ]
+            },
+            {
+              "start": [
+                "9.11",
+                "-13.21"
+              ],
+              "end": [
+                "9.11",
+                "-6.71"
+              ]
+            }
+          ]
+        },
+        "H1": {
+          "library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+          "at": [
+            "4",
+            "30"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "H1",
+            "Value": "MountingHole",
+            "Datasheet": "~",
+            "Description": ""
+          },
+          "models": [],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "3.2",
+                "3.2"
+              ],
+              "drill": [
+                "3.2"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "rev3b": {
+      "source_path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb",
+      "pcb_sha256": "415f3b791d34a33058ad906ff52ca9898c8b27ae055ee3c403284436002a2b71",
+      "thickness": "1.6",
+      "edges": [
+        {
+          "start": [
+            "0",
+            "0"
+          ],
+          "end": [
+            "99",
+            "0"
+          ]
+        },
+        {
+          "start": [
+            "0",
+            "40"
+          ],
+          "end": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "start": [
+            "99",
+            "0"
+          ],
+          "end": [
+            "99",
+            "40"
+          ]
+        },
+        {
+          "start": [
+            "99",
+            "40"
+          ],
+          "end": [
+            "0",
+            "40"
+          ]
+        }
+      ],
+      "footprints": {
+        "U10": {
+          "library": "GEA_Rev3B:TPS1H200A_DGN0008K_TI_RevE",
+          "at": [
+            "65",
+            "22.5"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "U10",
+            "Value": "TPS1H200AQDGNRQ1",
+            "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+            "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD",
+            "LCSC": "C2653785",
+            "Manufacturer": "Texas Instruments",
+            "MPN": "TPS1H200AQDGNRQ1"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/TPS1H200A-DGN0008K-max-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "1.57",
+                "1.89"
+              ],
+              "drill": null
+            },
+            {
+              "number": "1",
+              "at": [
+                "-2.2",
+                "-0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "-2.2",
+                "-0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "3",
+              "at": [
+                "-2.2",
+                "0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "4",
+              "at": [
+                "-2.2",
+                "0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "5",
+              "at": [
+                "2.2",
+                "0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "6",
+              "at": [
+                "2.2",
+                "0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "7",
+              "at": [
+                "2.2",
+                "-0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "8",
+              "at": [
+                "2.2",
+                "-0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "9",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "2",
+                "3"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1.5",
+                "-1.5"
+              ],
+              "end": [
+                "1.5",
+                "-1.5"
+              ]
+            },
+            {
+              "start": [
+                "-1.5",
+                "1.5"
+              ],
+              "end": [
+                "-1.5",
+                "-1.5"
+              ]
+            },
+            {
+              "start": [
+                "1.5",
+                "-1.5"
+              ],
+              "end": [
+                "1.5",
+                "1.5"
+              ]
+            },
+            {
+              "start": [
+                "1.5",
+                "1.5"
+              ],
+              "end": [
+                "-1.5",
+                "1.5"
+              ]
+            }
+          ]
+        },
+        "D14": {
+          "library": "Diode_SMD:D_SOD-123",
+          "at": [
+            "73",
+            "8"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D14",
+            "Value": "STPS140Z",
+            "Datasheet": "https://www.st.com/resource/en/datasheet/stps140z.pdf",
+            "Description": "40 V, 1 A Schottky rectifier, SOD-123; maximum junction 150 degC; LCSC C155662",
+            "LCSC": "C155662",
+            "Manufacturer": "STMicroelectronics",
+            "MPN": "STPS140Z"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-1.65",
+                "0"
+              ],
+              "size": [
+                "0.9",
+                "1.2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "1.65",
+                "0"
+              ],
+              "size": [
+                "0.9",
+                "1.2"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1.4",
+                "-0.9"
+              ],
+              "end": [
+                "1.4",
+                "-0.9"
+              ]
+            },
+            {
+              "start": [
+                "-1.4",
+                "0.9"
+              ],
+              "end": [
+                "-1.4",
+                "-0.9"
+              ]
+            },
+            {
+              "start": [
+                "-0.75",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "-0.55"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "0.55"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "0.25",
+                "-0.4"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "-0.4"
+              ],
+              "end": [
+                "0.25",
+                "0.4"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "0"
+              ],
+              "end": [
+                "0.75",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "0.4"
+              ],
+              "end": [
+                "-0.35",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "-0.9"
+              ],
+              "end": [
+                "1.4",
+                "0.9"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "0.9"
+              ],
+              "end": [
+                "-1.4",
+                "0.9"
+              ]
+            }
+          ]
+        },
+        "D5": {
+          "library": "LED_SMD:LED_0805_2012Metric",
+          "at": [
+            "84",
+            "30"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D5",
+            "Value": "RED",
+            "Datasheet": "~",
+            "Description": "C84256",
+            "LCSC": "C84256"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1",
+                "-0.3"
+              ],
+              "end": [
+                "-1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-0.7",
+                "-0.6"
+              ],
+              "end": [
+                "-1",
+                "-0.3"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "-0.6"
+              ],
+              "end": [
+                "-0.7",
+                "-0.6"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "-0.6"
+              ]
+            }
+          ]
+        },
+        "H2": {
+          "library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+          "at": [
+            "94",
+            "35"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "H2",
+            "Value": "MountingHole",
+            "Datasheet": "~",
+            "Description": ""
+          },
+          "models": [],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "3.2",
+                "3.2"
+              ],
+              "drill": [
+                "3.2"
+              ]
+            }
+          ]
+        },
+        "U2": {
+          "library": "GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD",
+          "at": [
+            "77.39",
+            "4",
+            "-90"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "U2",
+            "Value": "XIAO ESP32-C3 v1.3 (22-pad)",
+            "Datasheet": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_SCH_260116.pdf",
+            "Description": "Seeed Studio XIAO ESP32-C3 rev1.3 SMD module, official 22-pad land pattern with carrier-side U.FL copper keepout",
+            "MPN": "113991054",
+            "Manufacturer": "Seeed Studio",
+            "LCSC": "C18212168"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "8.9175",
+                  "10.5",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "-90"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "0.835",
+                "-18.12",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "0.835",
+                "-15.58",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "3",
+              "at": [
+                "0.835",
+                "-13.04",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "4",
+              "at": [
+                "0.835",
+                "-10.5",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "5",
+              "at": [
+                "0.835",
+                "-7.96",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "6",
+              "at": [
+                "0.835",
+                "-5.42",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "7",
+              "at": [
+                "0.835",
+                "-2.88",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "8",
+              "at": [
+                "17",
+                "-2.88",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "9",
+              "at": [
+                "17",
+                "-5.42",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "10",
+              "at": [
+                "17",
+                "-7.96",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "11",
+              "at": [
+                "17",
+                "-10.5",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "12",
+              "at": [
+                "17",
+                "-13.04",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "13",
+              "at": [
+                "17",
+                "-15.58",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "14",
+              "at": [
+                "17",
+                "-18.12",
+                "270"
+              ],
+              "size": [
+                "2.75",
+                "2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "15",
+              "at": [
+                "7.62",
+                "-19.132",
+                "270"
+              ],
+              "size": [
+                "1.7",
+                "1.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "16",
+              "at": [
+                "10.16",
+                "-19.132",
+                "270"
+              ],
+              "size": [
+                "1.7",
+                "1.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "17",
+              "at": [
+                "7.62",
+                "-16.592",
+                "270"
+              ],
+              "size": [
+                "1.7",
+                "1.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "18",
+              "at": [
+                "10.16",
+                "-16.592",
+                "270"
+              ],
+              "size": [
+                "1.7",
+                "1.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "19",
+              "at": [
+                "7.62",
+                "-14.052",
+                "270"
+              ],
+              "size": [
+                "1.7",
+                "1.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "20",
+              "at": [
+                "10.16",
+                "-14.052",
+                "270"
+              ],
+              "size": [
+                "1.7",
+                "1.7"
+              ],
+              "drill": null
+            },
+            {
+              "number": "21",
+              "at": [
+                "4.445",
+                "-10.882",
+                "90"
+              ],
+              "size": [
+                "2.5",
+                "1.1"
+              ],
+              "drill": null
+            },
+            {
+              "number": "22",
+              "at": [
+                "4.445",
+                "-12.787",
+                "90"
+              ],
+              "size": [
+                "2.5",
+                "1.1"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_rect": [
+            {
+              "start": [
+                "6.858",
+                "-2.794"
+              ],
+              "end": [
+                "10.922",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "0",
+                "-21"
+              ],
+              "end": [
+                "17.8",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "4.395",
+                "-21.037"
+              ],
+              "end": [
+                "13.394",
+                "-22.547"
+              ]
+            }
+          ]
+        },
+        "J2": {
+          "library": "OnionStraws:Recovery_Header_2x3_P2.54mm_Vertical",
+          "at": [
+            "20",
+            "32"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "J2",
+            "Value": "RECOVERY",
+            "Datasheet": "https://jlcpcb.com/partdetail/hanxia-HX_PZ_2_54_02_03_S_PB32/C42391552",
+            "Description": "Populated 2x3, 2.54 mm surface-mount male recovery header for 3.3 V UART flashing",
+            "MPN": "HX PZ-2.54-02-03-S-PB3.2",
+            "Manufacturer": "hanxia",
+            "LCSC": "C42391552"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-2.73",
+                "-2.54"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "-2.73",
+                "0"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "3",
+              "at": [
+                "2.73",
+                "-2.54"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "4",
+              "at": [
+                "2.73",
+                "2.54"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "5",
+              "at": [
+                "2.73",
+                "0"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            },
+            {
+              "number": "6",
+              "at": [
+                "-2.73",
+                "2.54"
+              ],
+              "size": [
+                "3.56",
+                "1.27"
+              ],
+              "drill": null
+            }
+          ]
+        },
+        "D6": {
+          "library": "LED_SMD:LED_0805_2012Metric",
+          "at": [
+            "88",
+            "26"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D6",
+            "Value": "YLW",
+            "Datasheet": "~",
+            "Description": "C2296",
+            "LCSC": "C2296"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1",
+                "-0.3"
+              ],
+              "end": [
+                "-1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-0.7",
+                "-0.6"
+              ],
+              "end": [
+                "-1",
+                "-0.3"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "-0.6"
+              ],
+              "end": [
+                "-0.7",
+                "-0.6"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "-0.6"
+              ]
+            }
+          ]
+        },
+        "F1": {
+          "library": "GEA_Rev3B:Fuse_Littelfuse_1812L_Recommended",
+          "at": [
+            "45.5",
+            "21.5"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "F1",
+            "Value": "1812L075/33DR",
+            "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+            "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land",
+            "LCSC": "C151170",
+            "Manufacturer": "Littelfuse",
+            "MPN": "1812L075/33DR"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/1812L075-33DR-max-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-2.615",
+                "0"
+              ],
+              "size": [
+                "1.78",
+                "3.15"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "2.615",
+                "0"
+              ],
+              "size": [
+                "1.78",
+                "3.15"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_rect": [
+            {
+              "start": [
+                "-2.25",
+                "-1.6"
+              ],
+              "end": [
+                "2.25",
+                "1.6"
+              ]
+            }
+          ]
+        },
+        "F2": {
+          "library": "GEA_Rev3B:Fuse_Littelfuse_1812L_Recommended",
+          "at": [
+            "45.5",
+            "7"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "F2",
+            "Value": "1812L075/33DR",
+            "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+            "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land",
+            "LCSC": "C151170",
+            "Manufacturer": "Littelfuse",
+            "MPN": "1812L075/33DR"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/1812L075-33DR-max-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-2.615",
+                "0"
+              ],
+              "size": [
+                "1.78",
+                "3.15"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "2.615",
+                "0"
+              ],
+              "size": [
+                "1.78",
+                "3.15"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_rect": [
+            {
+              "start": [
+                "-2.25",
+                "-1.6"
+              ],
+              "end": [
+                "2.25",
+                "1.6"
+              ]
+            }
+          ]
+        },
+        "J1": {
+          "library": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+          "at": [
+            "13.97",
+            "12.55",
+            "-90"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "J1",
+            "Value": "8P8C",
+            "Datasheet": "",
+            "Description": "C3097717",
+            "LCSC": "C3097717",
+            "MPN": "5301-8P8C",
+            "Manufacturer": "EVERCOM"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/J1-EVERCOM-5301-8P8C-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "-1.27",
+                "6.35",
+                "270"
+              ],
+              "size": [
+                "3.2",
+                "3.2"
+              ],
+              "drill": [
+                "3.2"
+              ]
+            },
+            {
+              "number": "",
+              "at": [
+                "10.16",
+                "6.35",
+                "270"
+              ],
+              "size": [
+                "3.2",
+                "3.2"
+              ],
+              "drill": [
+                "3.2"
+              ]
+            },
+            {
+              "number": "1",
+              "at": [
+                "0",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "2",
+              "at": [
+                "1.27",
+                "-2.54",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "3",
+              "at": [
+                "2.54",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "4",
+              "at": [
+                "3.81",
+                "-2.54",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "5",
+              "at": [
+                "5.08",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "6",
+              "at": [
+                "6.35",
+                "-2.54",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "7",
+              "at": [
+                "7.62",
+                "0",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            },
+            {
+              "number": "8",
+              "at": [
+                "8.89",
+                "-2.54",
+                "270"
+              ],
+              "size": [
+                "1.5",
+                "1.5"
+              ],
+              "drill": [
+                "0.9"
+              ]
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-3.205",
+                "13.97"
+              ],
+              "end": [
+                "-3.205",
+                "-2.77"
+              ]
+            },
+            {
+              "start": [
+                "12.095",
+                "13.97"
+              ],
+              "end": [
+                "-3.205",
+                "13.97"
+              ]
+            },
+            {
+              "start": [
+                "-3.205",
+                "-2.77"
+              ],
+              "end": [
+                "-2.205",
+                "-3.77"
+              ]
+            },
+            {
+              "start": [
+                "-2.205",
+                "-3.77"
+              ],
+              "end": [
+                "12.095",
+                "-3.77"
+              ]
+            },
+            {
+              "start": [
+                "12.095",
+                "-3.77"
+              ],
+              "end": [
+                "12.095",
+                "13.97"
+              ]
+            }
+          ]
+        },
+        "D15": {
+          "library": "Diode_SMD:D_SOD-123",
+          "at": [
+            "73",
+            "22.5"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D15",
+            "Value": "STPS140Z",
+            "Datasheet": "https://www.st.com/resource/en/datasheet/stps140z.pdf",
+            "Description": "40 V, 1 A Schottky rectifier, SOD-123; maximum junction 150 degC; LCSC C155662",
+            "LCSC": "C155662",
+            "Manufacturer": "STMicroelectronics",
+            "MPN": "STPS140Z"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-1.65",
+                "0"
+              ],
+              "size": [
+                "0.9",
+                "1.2"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "1.65",
+                "0"
+              ],
+              "size": [
+                "0.9",
+                "1.2"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1.4",
+                "-0.9"
+              ],
+              "end": [
+                "1.4",
+                "-0.9"
+              ]
+            },
+            {
+              "start": [
+                "-1.4",
+                "0.9"
+              ],
+              "end": [
+                "-1.4",
+                "-0.9"
+              ]
+            },
+            {
+              "start": [
+                "-0.75",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "-0.55"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "-0.35",
+                "0.55"
+              ]
+            },
+            {
+              "start": [
+                "-0.35",
+                "0"
+              ],
+              "end": [
+                "0.25",
+                "-0.4"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "-0.4"
+              ],
+              "end": [
+                "0.25",
+                "0.4"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "0"
+              ],
+              "end": [
+                "0.75",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "0.25",
+                "0.4"
+              ],
+              "end": [
+                "-0.35",
+                "0"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "-0.9"
+              ],
+              "end": [
+                "1.4",
+                "0.9"
+              ]
+            },
+            {
+              "start": [
+                "1.4",
+                "0.9"
+              ],
+              "end": [
+                "-1.4",
+                "0.9"
+              ]
+            }
+          ]
+        },
+        "U9": {
+          "library": "GEA_Rev3B:TPS1H200A_DGN0008K_TI_RevE",
+          "at": [
+            "65",
+            "8"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "U9",
+            "Value": "TPS1H200AQDGNRQ1",
+            "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+            "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD",
+            "LCSC": "C2653785",
+            "Manufacturer": "Texas Instruments",
+            "MPN": "TPS1H200AQDGNRQ1"
+          },
+          "models": [
+            [
+              "model",
+              "${KIPRJMOD}/models/TPS1H200A-DGN0008K-max-envelope.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "1.57",
+                "1.89"
+              ],
+              "drill": null
+            },
+            {
+              "number": "1",
+              "at": [
+                "-2.2",
+                "-0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "-2.2",
+                "-0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "3",
+              "at": [
+                "-2.2",
+                "0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "4",
+              "at": [
+                "-2.2",
+                "0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "5",
+              "at": [
+                "2.2",
+                "0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "6",
+              "at": [
+                "2.2",
+                "0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "7",
+              "at": [
+                "2.2",
+                "-0.325"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "8",
+              "at": [
+                "2.2",
+                "-0.975"
+              ],
+              "size": [
+                "1.4",
+                "0.45"
+              ],
+              "drill": null
+            },
+            {
+              "number": "9",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "2",
+                "3"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1.5",
+                "-1.5"
+              ],
+              "end": [
+                "1.5",
+                "-1.5"
+              ]
+            },
+            {
+              "start": [
+                "-1.5",
+                "1.5"
+              ],
+              "end": [
+                "-1.5",
+                "-1.5"
+              ]
+            },
+            {
+              "start": [
+                "1.5",
+                "-1.5"
+              ],
+              "end": [
+                "1.5",
+                "1.5"
+              ]
+            },
+            {
+              "start": [
+                "1.5",
+                "1.5"
+              ],
+              "end": [
+                "-1.5",
+                "1.5"
+              ]
+            }
+          ]
+        },
+        "D4": {
+          "library": "LED_SMD:LED_0805_2012Metric",
+          "at": [
+            "84",
+            "26"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "D4",
+            "Value": "GRN",
+            "Datasheet": "~",
+            "Description": "C2297",
+            "LCSC": "C2297"
+          },
+          "models": [
+            [
+              "model",
+              "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+              [
+                "offset",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ],
+              [
+                "scale",
+                [
+                  "xyz",
+                  "1",
+                  "1",
+                  "1"
+                ]
+              ],
+              [
+                "rotate",
+                [
+                  "xyz",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              ]
+            ]
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                "-0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            },
+            {
+              "number": "2",
+              "at": [
+                "0.9375",
+                "0"
+              ],
+              "size": [
+                "0.975",
+                "1.4"
+              ],
+              "drill": null
+            }
+          ],
+          "fp_line": [
+            {
+              "start": [
+                "-1",
+                "-0.3"
+              ],
+              "end": [
+                "-1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "0.6"
+              ]
+            },
+            {
+              "start": [
+                "-0.7",
+                "-0.6"
+              ],
+              "end": [
+                "-1",
+                "-0.3"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "-0.6"
+              ],
+              "end": [
+                "-0.7",
+                "-0.6"
+              ]
+            },
+            {
+              "start": [
+                "1",
+                "0.6"
+              ],
+              "end": [
+                "1",
+                "-0.6"
+              ]
+            }
+          ]
+        },
+        "H1": {
+          "library": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+          "at": [
+            "4.5",
+            "33"
+          ],
+          "layer": "F.Cu",
+          "properties": {
+            "Reference": "H1",
+            "Value": "MountingHole",
+            "Datasheet": "~",
+            "Description": ""
+          },
+          "models": [],
+          "pads": [
+            {
+              "number": "",
+              "at": [
+                "0",
+                "0"
+              ],
+              "size": [
+                "3.2",
+                "3.2"
+              ],
+              "drill": [
+                "3.2"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

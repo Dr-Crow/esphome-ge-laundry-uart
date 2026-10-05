@@ -1,0 +1,350 @@
+{
+  "source_repo": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-repo",
+  "commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+  "files": [
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "case/rev3c/analytical/review/dimensions/dimension-evidence.json",
+      "git_blob": "a4bd48d30b84346c05dae48eb193bef98fb489b7",
+      "sha256": "7620d889a7bbf4c53b2136acee424ed90c1b63b8beb842c45e783f29e248fa8d",
+      "bytes": 8384,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/case/rev3c/analytical/review/dimensions/dimension-evidence.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "case/rev3c/analytical/review/dimensions/reused-module-coordinate-evidence.json",
+      "git_blob": "90258c57e411601d28f3f1674b1d19b4e10b8718",
+      "sha256": "8d0de83d46428e20eac7b0056f018c41cdfe75c60fd11170a5cb3d71d738c055",
+      "bytes": 12670,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/case/rev3c/analytical/review/dimensions/reused-module-coordinate-evidence.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "docs/revision-comparison/preorder-2026-10-05/rev3-power-refinement/GE-Rev3-Remaining-Power-Defects-and-Bounded-Repairs.md",
+      "git_blob": "546ae6ecea49c35869c8a58cbb0cfee24eb11124",
+      "sha256": "e0c67f2a539d56522b72888de83be71b89bc889e450755496ad5e8e0e94d380f",
+      "bytes": 18234,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/docs/revision-comparison/preorder-2026-10-05/rev3-power-refinement/GE-Rev3-Remaining-Power-Defects-and-Bounded-Repairs.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/README.md",
+      "git_blob": "6033f41e891b90d7e5ea71153c2083a5de0d3aae",
+      "sha256": "5c8144b84f12dbb733e4428a94ed4eddc3e1ebf65f6b7a077068d03fde86eba1",
+      "bytes": 18550,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/README.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+      "git_blob": "959519bfd43088b9a3b0265b08c6d1f8c17c4989",
+      "sha256": "1b22c7ac68dbe27ca4918431784c885aa2a7019e3ab4f01f44425844ded22f55",
+      "bytes": 1773276,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch",
+      "git_blob": "f741d27f115daefe9db815733f6c3597c597cf79",
+      "sha256": "ecbab8ea22d0b75d53340d4674f813a06639d951b208bab072f2e219dc7827be",
+      "bytes": 449589,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/design/models/1812L075-33DR-max-envelope.step",
+      "git_blob": "3d52bac2e2aba2c2a4686dd80260b4003b913afc",
+      "sha256": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+      "bytes": 16948,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/design/models/1812L075-33DR-max-envelope.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step",
+      "git_blob": "59340e04ccaab84379e8ee9afcd4efb7595c1881",
+      "sha256": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea",
+      "bytes": 1254620,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/design/models/J1-EVERCOM-5301-8P8C-envelope.step",
+      "git_blob": "046689e89109b921976b298c4da6d57ad3e2f4cb",
+      "sha256": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+      "bytes": 29952,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/design/models/J1-EVERCOM-5301-8P8C-envelope.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/design/models/J2-hanxia-HX-PZ-2.54-02-03-S.step",
+      "git_blob": "a9122547426b6db4ee1678b0f72023d58f239d1a",
+      "sha256": "3ea4193c78935fb6de70fb37c46ca892b3b275335dfee51ac666b65ac2c3fd0d",
+      "bytes": 2482612,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/design/models/J2-hanxia-HX-PZ-2.54-02-03-S.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/design/models/J4-SHOU-HAN-TYPE-C-16PIN-2MD-073.step",
+      "git_blob": "956e93547f010d07a5d0b754f4503804df452a6b",
+      "sha256": "4c2fffc9e40808e5033388d77f59a14f6c8ff674e8fbe7790579c30cf4077eda",
+      "bytes": 2072408,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/design/models/J4-SHOU-HAN-TYPE-C-16PIN-2MD-073.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/design/models/SW1-SW2-XKB-TS-1187A-B-A-B.step",
+      "git_blob": "cdba8ba424e4d5738408a58df3d07c8c7f3533a1",
+      "sha256": "6f57eea6a999f1f7e20a0b13d82708e199205cd17c636936e60b9d928778dfd5",
+      "bytes": 1534129,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/design/models/SW1-SW2-XKB-TS-1187A-B-A-B.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/design/models/TPS1H200A-DGN0008K-max-envelope.step",
+      "git_blob": "10d8636fce5ac49c017a4a50ac8a016c488a87a6",
+      "sha256": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+      "bytes": 160460,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/design/models/TPS1H200A-DGN0008K-max-envelope.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/manufacturing/README.md",
+      "git_blob": "919ff6229b917ff323a00b2b9a1533baf7b149e3",
+      "sha256": "cdfdd447a67808425c173f1fdc6c13cccae984af9af69ab5ca6b1581366dba0b",
+      "bytes": 2916,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/manufacturing/README.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/README.md",
+      "git_blob": "402d18dd65d39d0a12a622cb7568db521859c499",
+      "sha256": "b27374bb4271077da64ebaa3d2d53fb3b5c4c4f143ceb33188aa37a1a5833b6d",
+      "bytes": 3717,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/README.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/erc-normalization/README.md",
+      "git_blob": "cacb7cb4f4b24af4428e05d251edb0440f8fa5e8",
+      "sha256": "60303db9d4500a855a4527172815419a050d600bee03787c788b3ba254dfd1db",
+      "bytes": 6086,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/erc-normalization/README.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/native-placement.csv",
+      "git_blob": "987fe8a40ee313fb7cd5afc46f15a7c06004e4a1",
+      "sha256": "3dc47d487f227f51cc415232c964d25f821191f5d8e1dfe106e9e1d09b31598f",
+      "bytes": 6711,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/native-placement.csv"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/placement-anchor-screen.json",
+      "git_blob": "4e10f87c370fa5d55ed651c6eaae02e3d8487ea9",
+      "sha256": "d8364309560a932628945c239cae41d8a3f6a04926b86ec82e21ab7ec38c8e8c",
+      "bytes": 87753,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/placement-anchor-screen.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/placement-body-review/J4-BODY-DATUM-REVIEW.json",
+      "git_blob": "e2d742703cf09a058716734b6380768ff9632387",
+      "sha256": "d42d975cae4528f3a420305a378747f9c1cf62f6dad1020c759d9bd8db0d2374",
+      "bytes": 15699,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/placement-body-review/J4-BODY-DATUM-REVIEW.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/placement-body-review/J4-BODY-DATUM-REVIEW.md",
+      "git_blob": "a1de66108a8419b744704af6c4dcd512d5ea07b7",
+      "sha256": "a8d5d187bed70619059e40910badc0fa1059ee7d7ed128a13a7fd8493751a62a",
+      "bytes": 5410,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/placement-body-review/J4-BODY-DATUM-REVIEW.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/placement-body-review/U2-REVIEW.md",
+      "git_blob": "2ae1bbd046f001d357188515eddd08e21737feb2",
+      "sha256": "6a38782d0a17b62cecf5a92b0539f32a0ee013332a928037281e55ca092789be",
+      "bytes": 2793,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/placement-body-review/U2-REVIEW.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/placement-body-review/U2-typed-facts.json",
+      "git_blob": "7dd64f89bbecaa30e449b04f6e78976817c5f3dd",
+      "sha256": "957b866bca52e1cec81dc24b85d85019b3646018ad1204c021518ee0eb1ce693",
+      "bytes": 3068,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/placement-body-review/U2-typed-facts.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/placement-datum-sources.json",
+      "git_blob": "7d19b2de95edbe5ff4e531786711e0d43fd1bf4b",
+      "sha256": "75b3aecdd461a8ade83eef4c6fde5362f6fde264e30ab9429f8a434b0ab3430b",
+      "bytes": 4347,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/placement-datum-sources.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/placement-origin-review.json",
+      "git_blob": "29012caa471f765258d36f59236db52d0a5c30f6",
+      "sha256": "8200269d70ad8256489b89a18262b7a6ff4b0554d86165852d66ba973db804da",
+      "bytes": 7839,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/placement-origin-review.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3a/validation/rated-protection-proof.json",
+      "git_blob": "1c72bad752f0f24a54ff1788f954cc1d53875473",
+      "sha256": "903f4f4927cef386540eaccdd02beebb8df6d977264f4a2960bee59ccd6abcfa",
+      "bytes": 589367,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3a/validation/rated-protection-proof.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/MODEL-ACCURACY.md",
+      "git_blob": "77786b20506ff7f746471775e4dae6819545491b",
+      "sha256": "bdf9dd4039ec74c3aafd682d0fbc16be5674495f5d3f0a1fb86379d7ae977220",
+      "bytes": 7113,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/MODEL-ACCURACY.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/README.md",
+      "git_blob": "cd284d89207d0291d2288e8a749566f9c102495e",
+      "sha256": "dda468004439a16d8be5b68312c77ee8d82eeacbe3437e22185311be38614f77",
+      "bytes": 9765,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/README.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb",
+      "git_blob": "8b663a92c894b50a574f8acdac18824f06fd2d6c",
+      "sha256": "415f3b791d34a33058ad906ff52ca9898c8b27ae055ee3c403284436002a2b71",
+      "bytes": 1176273,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch",
+      "git_blob": "10d2f8a1e6eadaf86db8b93b3aa4675c5633b76c",
+      "sha256": "6cca96da94793331303c569514d46a45f3b82b2c9ab6846a12d5208cd251fb22",
+      "bytes": 411238,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/models/1812L075-33DR-max-envelope.step",
+      "git_blob": "3d52bac2e2aba2c2a4686dd80260b4003b913afc",
+      "sha256": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+      "bytes": 16948,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/models/1812L075-33DR-max-envelope.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step",
+      "git_blob": "59340e04ccaab84379e8ee9afcd4efb7595c1881",
+      "sha256": "95ff5a91727ad874d43d64c0841fd454f6d8b059f141a110e965f170505411ea",
+      "bytes": 1254620,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/models/F1-F2-Bourns-MF-MSMF075-24-2.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/models/J1-EVERCOM-5301-8P8C-envelope.step",
+      "git_blob": "046689e89109b921976b298c4da6d57ad3e2f4cb",
+      "sha256": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+      "bytes": 29952,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/models/J1-EVERCOM-5301-8P8C-envelope.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/models/J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step",
+      "git_blob": "85b066a23eaa547b7b36c56cdf8a2018a540e6e6",
+      "sha256": "121f1070cd6a16336abf762283f6729797d65949ee19b2c53b6302145b87edaa",
+      "bytes": 191218,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/models/J2-hanxia-HX-PZ-2.54-02-03-S-drawing.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/models/README.md",
+      "git_blob": "e609bd3c0e463f1161cf8241603b99b4d5ced510",
+      "sha256": "f9d854a07def6ccfb8190196e9e5be73815922d2823768fd066fc90bc6598fb6",
+      "bytes": 3781,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/models/README.md"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/models/TPS1H200A-DGN0008K-max-envelope.step",
+      "git_blob": "10d8636fce5ac49c017a4a50ac8a016c488a87a6",
+      "sha256": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+      "bytes": 160460,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/models/TPS1H200A-DGN0008K-max-envelope.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/models/XIAO-ESP32-C3-v1.3-envelope.step",
+      "git_blob": "829bd64d559a78c1ff38fb1f07f9557787c957db",
+      "sha256": "cbc6c2757da1e784924280c9be17e86113a9392fcdd52e96931ddb69184fc54e",
+      "bytes": 87657,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/models/XIAO-ESP32-C3-v1.3-envelope.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+      "git_blob": "6a6dbcd9c16cfe41c2eaa8dec2f53cfb4abb3cea",
+      "sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+      "bytes": 10792728,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/validation/placement-datum-sources.json",
+      "git_blob": "e4ee04733fd9089fe1f7dbf43fcc53cd8bbe4d28",
+      "sha256": "466512526074e75e7e072008d514d69b0d2543c1ced97461af8ac07442b048a8",
+      "bytes": 2309,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/validation/placement-datum-sources.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/validation/placement-origin-review.json",
+      "git_blob": "97cf566dbbf7ff3c775b5f487bf1e10d420a0fee",
+      "sha256": "3190ca66dd9db064156cb7ca268a559a8717d8a19cb290bf8946f4238025ae1c",
+      "bytes": 6095,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/validation/placement-origin-review.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/validation/rated-protection-proof.json",
+      "git_blob": "981905d207921da1dd7456b9480f57343e725b47",
+      "sha256": "41248a49fc262d443694fd547c3d58bde3a05f9dfe113f146f12bcb1fe332177",
+      "bytes": 7392,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/validation/rated-protection-proof.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3b/validation/verified-c3-installed-geometry.json",
+      "git_blob": "45e9c2badf0974ce018e62ee8c57d8c779b49820",
+      "sha256": "adfb26064172a9815536f78115edc76842a1bddc08ad2b9c82ade3993d5bf66e",
+      "bytes": 6485,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3b/validation/verified-c3-installed-geometry.json"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3c/design/models/generate_rated_part_envelopes.py",
+      "git_blob": "59d972d5041a2247c23d53a848dc54eb6aa0e913",
+      "sha256": "631b6cd7efef8023e141f45573da24417083c97f6deb8ee226d1c9ad0f84eb7c",
+      "bytes": 996,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3c/design/models/generate_rated_part_envelopes.py"
+    },
+    {
+      "source_commit": "bf5c2318b4c9ee775c19f7b9327cd1a8fea02d27",
+      "source_path": "pcb/rev3c/design/models/generate_connector_detail.py",
+      "git_blob": "b559c7d643047d2421dccbf7376f80b5999b81d6",
+      "sha256": "2272bed8ce14018dfc6e705903dca6ad44f757a85ab9bf8e3c31463d394a6d2b",
+      "bytes": 3801,
+      "extracted_path": "/workspace/scratch/c9ec93994789/ge-rev3ab-case-source-review-2026-10-05/baseline/pcb/rev3c/design/models/generate_connector_detail.py"
+    }
+  ]
+}
