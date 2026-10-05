@@ -48,7 +48,7 @@ Disconnect the appliance RJ45 before powered USB. The case does not add USB back
 
 ## Closure, light and antenna checks
 
-The common base permits the wrong lid. A C3 BOOT foot can contact the C6 U.FL connector. Labels and an assembly check remain necessary. A separate review study demonstrates integral keyed base/lid pairs with nominal wrong-pair contact before latch engagement; these require changing both base and lid when changing module. They detect the pair, not the actual module. That tradeoff is not adopted into the common-base default.
+The common base permits the wrong lid. A C3 BOOT foot can contact the C6 U.FL connector. Labels and an assembly check remain necessary. A [preserved separate review study](../review-studies/wrong-lid-pairs/README.md) demonstrates integral keyed base/lid pairs with nominal wrong-pair contact before latch engagement; these require changing both base and lid when changing module. They detect the pair, not the actual module. That tradeoff is not adopted into the common-base default.
 
 Maximum capacitor relief, LED inlet registration and roof retention remain source-bound review features. Optical transmission, snap fatigue, print shrinkage, safe button force, antenna pigtail bend/slack, exact bulkhead hardware and RF performance require additional evidence. Partial module STEP models cannot close those limits.
 

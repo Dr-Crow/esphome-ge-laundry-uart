@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="820" viewBox="0 0 1100 820">
+<defs><pattern id="plastic" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#adb8c7" stroke-width="1"/></pattern></defs>
+<rect width="1100" height="820" fill="#f6f8fb"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#1f2937">
+<text x="40" y="44" font-size="24" font-weight="bold">Rev3C straight-wall pair keys · REVIEW ONLY</text>
+<text x="40" y="74" font-size="15">Mechanical base/lid coding; does not identify the installed module. All dimensions in mm.</text>
+<text x="40" y="108" font-size="18" font-weight="bold">Plan in the existing carrier XY datum</text>
+<g transform="translate(104 182) scale(7)">
+<rect x="-7.5" y="-7" width="114" height="54" rx="6" fill="#e9eef5" stroke="#516075" stroke-width=".25"/>
+<rect x="0" y="0" width="99" height="40" fill="#c9d8d2" stroke="#596f64" stroke-width=".25"/>
+<rect x="77.476" y="4.0275" width="20.955" height="17.78" rx="1.905" fill="#deedff" stroke="#507797" stroke-width=".2"/>
+<rect x="77.3325" y="7.1215" width="3.1" height="3" fill="#f8ab71" stroke="#d65c10" stroke-width=".18"/>
+<circle cx="79" cy="8.4725" r=".52" fill="#ac2648"/>
+<circle cx="79" cy="17.3625" r=".52" fill="#ac2648"/>
+<circle cx="97.3483" cy="6.3355" r=".52" fill="#a268d5"/>
+<circle cx="97.3483" cy="19.4927" r=".52" fill="#a268d5"/>
+<g fill="#1d65a6" stroke="#104770" stroke-width=".15"><rect x="9" y="-3.3" width="2" height="2"/><rect x="89" y="-3.3" width="2" height="2"/><rect x="9" y="41.3" width="2" height="2"/><rect x="89" y="41.3" width="2" height="2"/></g>
+<g fill="#eb8b35" stroke="#9e581d" stroke-width=".15"><rect x="13" y="-3.3" width="2" height="2"/><rect x="93" y="-3.3" width="2" height="2"/><rect x="13" y="41.3" width="2" height="2"/><rect x="93" y="41.3" width="2" height="2"/></g>
+<g stroke="#96a1b0" stroke-width=".15" fill="none"><rect x="8.5" y="-3.6" width="7" height="2.6"/><rect x="88.5" y="-3.6" width="7" height="2.6"/><rect x="8.5" y="41" width="7" height="2.6"/><rect x="88.5" y="41" width="7" height="2.6"/></g>
+<g stroke="#516075" stroke-width=".15"><path d="M0 50H99M0 48V52M99 48V52"/><path d="M111 0V40M109 0H113M109 40H113"/></g>
+<g font-size="1.8"><text x="39" y="52.5">Carrier 99 × 40</text><text x="107" y="22" transform="rotate(90 107 22)">40</text><text x="20" y="19">Carrier interface unchanged</text><text x="20" y="23">Added keys outside PCB perimeter</text><text x="80" y="28">Source C3/C6 module</text></g>
+</g>
+<rect x="40" y="590" width="14" height="14" fill="#1d65a6"/><text x="65" y="603" font-size="15">C3 base towers: X10 / 90, Y−2.3 / 42.3</text>
+<rect x="40" y="618" width="14" height="14" fill="#eb8b35"/><text x="65" y="631" font-size="15">C6 base towers: X14 / 94, Y−2.3 / 42.3</text>
+<circle cx="47" cy="650" r="6" fill="#ac2648"/><text x="65" y="655" font-size="15">C3 BOOT tip overlaps C6 bare U.FL at nominal full press</text>
+<text x="40" y="700" font-size="15">Each assembled option retains five printed pieces: keyed base, two-button lid, three guides.</text>
+<text x="40" y="726" font-size="15">Own-code channel: 2.60 × 2.60, 0.30 per-side trial allowance. Tower: 2.0 × 2.0.</text>
+<text x="40" y="752" font-size="15">Modules share the same outer contour/header centers; 0.0101 mm slot shift is not a proven key.</text>
+<text x="40" y="783" font-size="14" fill="#a33b26">No physical, print, material, arbitrary tilt, force, switch or mated-cable qualification.</text>
+<g transform="translate(905 120)">
+<text x="0" y="0" font-size="17" font-weight="bold">Axial stop</text>
+<text x="0" y="24" font-size="13">Wrong coded pair</text>
+<rect x="30" y="74" width="28" height="235" fill="url(#plastic)" stroke="#516075"/>
+<text x="66" y="202" font-size="13">Base</text>
+<text x="66" y="220" font-size="13">tower</text>
+<rect x="15" y="28" width="58" height="46" fill="#deedff" stroke="#1d65a6"/>
+<text x="3" y="52" font-size="13">Lid fin</text>
+<path d="M5 74H93" stroke="#a33b26" stroke-width="2"/>
+<text x="-9" y="330" font-size="13">Tower tip Z14.80</text>
+<text x="-9" y="352" font-size="13">Fin bottom Z8.40</text>
+<text x="-9" y="374" font-size="13">Lid lift: +6.40</text>
+<text x="-9" y="408" font-size="13">Contact is plastic</text>
+<text x="-9" y="430" font-size="13">before latch closure</text>
+<text x="-9" y="470" font-size="12">Schematic; not to scale</text>
+</g>
+</g></svg>
