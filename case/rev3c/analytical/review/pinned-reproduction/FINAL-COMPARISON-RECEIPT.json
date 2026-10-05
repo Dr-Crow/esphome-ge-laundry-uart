@@ -1,0 +1,170 @@
+{
+  "source_commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+  "status": "PASS",
+  "comparison_scope": "Nominal solids, bounds and stated component/relief screens; no geometric identity/physical qualification claim",
+  "shape_comparisons": [
+    {
+      "shape": "base",
+      "volume_difference_mm3": 0.0007820047503628302,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "default_c3_internal",
+      "volume_difference_mm3": 0.0008415045740548521,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "default_c3_external",
+      "volume_difference_mm3": 0.0008492013803333975,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "default_c6_internal",
+      "volume_difference_mm3": 0.0008823506541375536,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "default_c6_external",
+      "volume_difference_mm3": 0.0008859481458785012,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c3_internal_11.0",
+      "volume_difference_mm3": 0.000827818461402785,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c3_internal_11.325",
+      "volume_difference_mm3": 0.0008298688844661228,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c3_internal_11.65",
+      "volume_difference_mm3": 0.0008416239179496188,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c3_external_11.0",
+      "volume_difference_mm3": 0.0008359990606550127,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c3_external_11.325",
+      "volume_difference_mm3": 0.0008376210207643453,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c3_external_11.65",
+      "volume_difference_mm3": 0.0008490832697134465,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c6_internal_11.0",
+      "volume_difference_mm3": 0.000869862618856132,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c6_internal_11.325",
+      "volume_difference_mm3": 0.0008719282523088623,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c6_internal_11.65",
+      "volume_difference_mm3": 0.0008823506541375536,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c6_external_11.0",
+      "volume_difference_mm3": 0.0008736311247048434,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c6_external_11.325",
+      "volume_difference_mm3": 0.0008754731243243441,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "stack_c6_external_11.65",
+      "volume_difference_mm3": 0.0008859481458785012,
+      "bounds_difference_mm": 1.4566126083082054e-13,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "guide_WIFI",
+      "volume_difference_mm3": 0.0,
+      "bounds_difference_mm": 0.0,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "guide_AUX",
+      "volume_difference_mm3": 0.0,
+      "bounds_difference_mm": 0.0,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    },
+    {
+      "shape": "guide_BUS",
+      "volume_difference_mm3": 0.0,
+      "bounds_difference_mm": 0.0,
+      "valid_and_single_in_both": true,
+      "agree_within_volume_0p01_mm3_and_bounds_0p0001_mm": true
+    }
+  ],
+  "stack_sample_count": 12,
+  "component_screens_clear_in_both": true,
+  "guide_expanded_cap_screens_clear_in_both": true,
+  "max_volume_difference_mm3": 0.0008859481458785012,
+  "max_bounds_difference_mm": 1.4566126083082054e-13,
+  "known_wrong_lid_intersection_mm3": {
+    "baseline_0100": 0.08494866535306629,
+    "pinned_0111": 0.08494866535306629
+  },
+  "source_tree_changed": false,
+  "automatic_design_changes": false,
+  "new_source_geometry_defects_found": false,
+  "tool_api_note": {
+    "build123d_0p11_intersection_result": "ShapeList",
+    "result_shape_count": 1,
+    "handling": "Sum disjoint returned shapes; generator source unchanged. Sweep already completed; only this tail was rerun."
+  },
+  "limits": [
+    "Known wrong-lid interference remains; no physical module key.",
+    "Switch identities, electrical make/overtravel/force and actual seated header stack remain unverified.",
+    "Actual USB plug corridor, antenna cable routing, printed tolerances/material/fatigue, optical and RF behavior remain unqualified.",
+    "Valid positive solids and mesh checks establish nominal export integrity only."
+  ]
+}

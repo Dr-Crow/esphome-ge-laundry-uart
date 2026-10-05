@@ -1,0 +1,81 @@
+{
+  "scope": "STEP roundtrip fidelity of analytical pieces, distinct from inter-engine comparison; volume/bounds only, not exact geometry identity",
+  "status": "PASS",
+  "checks": [
+    {
+      "part": "review_base",
+      "in_memory_volume_mm3": 28171.030836403257,
+      "reimported_step_volume_mm3": 28171.032237306572,
+      "volume_difference_mm3": 0.001400903314788593,
+      "volume_difference_percent": 4.972850737781002e-06,
+      "max_bounds_difference_mm": 1.4566126083082054e-13,
+      "within_0p01_percent_volume_and_0p0001_mm_bounds": true
+    },
+    {
+      "part": "review_guide_wifi",
+      "in_memory_volume_mm3": 152.1570485210563,
+      "reimported_step_volume_mm3": 152.15704852106145,
+      "volume_difference_mm3": 5.144329406903125e-12,
+      "volume_difference_percent": 3.3809340131825873e-12,
+      "max_bounds_difference_mm": 0.0,
+      "within_0p01_percent_volume_and_0p0001_mm_bounds": true
+    },
+    {
+      "part": "review_guide_aux",
+      "in_memory_volume_mm3": 152.30216455052982,
+      "reimported_step_volume_mm3": 152.30216455052783,
+      "volume_difference_mm3": 1.9895196601282805e-12,
+      "volume_difference_percent": 1.3062976918284117e-12,
+      "max_bounds_difference_mm": 0.0,
+      "within_0p01_percent_volume_and_0p0001_mm_bounds": true
+    },
+    {
+      "part": "review_guide_bus",
+      "in_memory_volume_mm3": 152.05820629212573,
+      "reimported_step_volume_mm3": 152.05820629211962,
+      "volume_difference_mm3": 6.110667527536862e-12,
+      "volume_difference_percent": 4.0186371236008065e-12,
+      "max_bounds_difference_mm": 0.0,
+      "within_0p01_percent_volume_and_0p0001_mm_bounds": true
+    },
+    {
+      "part": "review_lid_c3_internal",
+      "in_memory_volume_mm3": 24899.566984814523,
+      "reimported_step_volume_mm3": 24899.39164015771,
+      "volume_difference_mm3": 0.17534465681092115,
+      "volume_difference_percent": 0.0007042076551686961,
+      "max_bounds_difference_mm": 1.4654943925052066e-13,
+      "within_0p01_percent_volume_and_0p0001_mm_bounds": true
+    },
+    {
+      "part": "review_lid_c3_external",
+      "in_memory_volume_mm3": 24839.040951433537,
+      "reimported_step_volume_mm3": 24838.865962148753,
+      "volume_difference_mm3": 0.1749892847838055,
+      "volume_difference_percent": 0.0007044929195372429,
+      "max_bounds_difference_mm": 1.4654943925052066e-13,
+      "within_0p01_percent_volume_and_0p0001_mm_bounds": true
+    },
+    {
+      "part": "review_lid_c6_internal",
+      "in_memory_volume_mm3": 24681.95023767269,
+      "reimported_step_volume_mm3": 24681.774677877955,
+      "volume_difference_mm3": 0.1755597947339993,
+      "volume_difference_percent": 0.000711288180404958,
+      "max_bounds_difference_mm": 1.4654943925052066e-13,
+      "within_0p01_percent_volume_and_0p0001_mm_bounds": true
+    },
+    {
+      "part": "review_lid_c6_external",
+      "in_memory_volume_mm3": 24856.417077032445,
+      "reimported_step_volume_mm3": 24856.242136673918,
+      "volume_difference_mm3": 0.17494035852723755,
+      "volume_difference_percent": 0.000703803601239392,
+      "max_bounds_difference_mm": 1.4654943925052066e-13,
+      "within_0p01_percent_volume_and_0p0001_mm_bounds": true
+    }
+  ],
+  "max_volume_difference_mm3": 0.1755597947339993,
+  "max_volume_difference_percent": 0.000711288180404958,
+  "max_bounds_difference_mm": 1.4654943925052066e-13
+}

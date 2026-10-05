@@ -1,0 +1,700 @@
+{
+  "status": "PASS",
+  "part_count": 43,
+  "source_commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+  "checks": [
+    {
+      "part": "base",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 28171.032237306572,
+      "mesh_volume_mm3": 28170.23304462885,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00283693075563959,
+      "pass": true,
+      "file_hashes": {
+        "base.step": "b4a71c649dee6f7c1816e84b3491abcaaee6361e1425bafd52ababa813fcc5f5",
+        "base.stl": "63cbae3f68c42e6477f86cb2104dd3ced49715fc7817b7f61b712446ab035e58"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "cc5763efce1b88ad07da23bb259ff67db14397ff26e7e504ad42ba4f02d1f6d2",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "base_magnets",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 28094.584721299765,
+      "mesh_volume_mm3": 28093.856801911887,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0025909597707156444,
+      "pass": true,
+      "file_hashes": {
+        "base_magnets.step": "1cfcc8c9a64fcfe7904a5bc46256cf4d41d4987fabd84bc1d1267ee4bf5fb8b6",
+        "base_magnets.stl": "8f8608898b06f13434a12f9306802d08d8affb43646dada424e7f64a9008b0c4"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "351e1ec3d42c13f1e54975e20c40609a618d98daae85ce5b687984f745efaa83",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "c3_BOOT0",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 6.239999999999993,
+      "mesh_volume_mm3": 6.2400235748282284,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00037780173454070315,
+      "pass": true,
+      "file_hashes": {
+        "c3_BOOT0.step": "96b149ce2a144f139a3a720cdd958d01b06522b7a0b5c4e55ec0d802413ec00a",
+        "c3_BOOT0.stl": "30b5117e3484ab74806d206ea0cab9f66350d0819d4293a2c1efd79267808874"
+      }
+    },
+    {
+      "part": "c3_D4",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 1.0239999999999991,
+      "mesh_volume_mm3": 1.024003173825103,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00030994385779702815,
+      "pass": true,
+      "file_hashes": {
+        "c3_D4.step": "e06e31b4396de929fe73e3b293c3ff833e424da8d3a799565b07b05e195252d3",
+        "c3_D4.stl": "3d0a80be03c6e7adf89b3aa13fbf9a69287d6eb51e261ecaee8ac2610501009a"
+      }
+    },
+    {
+      "part": "c3_D5",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 1.0239999999999991,
+      "mesh_volume_mm3": 1.024003173825103,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00030994385779702815,
+      "pass": true,
+      "file_hashes": {
+        "c3_D5.step": "4302e85991ed8895eea5a390926f9ff8632c76ca13442e163480df3e5c9485b1",
+        "c3_D5.stl": "efdc2387cc80d24ee3dcea6151b8c21f65a8284990ff3c8a14e2846a3ff69c42"
+      }
+    },
+    {
+      "part": "c3_D6",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 1.0239999999999991,
+      "mesh_volume_mm3": 1.024003173825103,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00030994385779702815,
+      "pass": true,
+      "file_hashes": {
+        "c3_D6.step": "1c7f80f51b509ea23e603f8a9a978c392090da5dad25c105f1b4a64aa521b98a",
+        "c3_D6.stl": "92c023effe6b08708ea8e04ed316945e8e5b2048cec63aed86bc9a1f25eab8c3"
+      }
+    },
+    {
+      "part": "c3_RST0",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 6.239999999999994,
+      "mesh_volume_mm3": 6.240024719241774,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0003961416951877206,
+      "pass": true,
+      "file_hashes": {
+        "c3_RST0.step": "440d0dd178f77b8989602c050d641bd0947c31d3d45e09fc6b93a3b8b633bcdb",
+        "c3_RST0.stl": "e8e6ae27520dae154feaa03cc5c83f88c0bdaefb914d431d369f3a7d8689d3f4"
+      }
+    },
+    {
+      "part": "c3_carrier",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 6310.264072981792,
+      "mesh_volume_mm3": 6310.287684004489,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0003741685359581417,
+      "pass": true,
+      "file_hashes": {
+        "c3_carrier.step": "2c99075735efe104ea35fa94e781f0d0189fbb07483f22f67592ca9fc06e808e",
+        "c3_carrier.stl": "c4b4133d5b7a26565f61ed037e6032bd1878d80f34cc3b0c967de8e196ada425"
+      }
+    },
+    {
+      "part": "c3_module",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 597.7067280000001,
+      "mesh_volume_mm3": 597.7069447252001,
+      "watertight": true,
+      "mesh_volume_error_percent": 3.6259454644801454e-05,
+      "pass": true,
+      "file_hashes": {
+        "c3_module.step": "919c8765906412c02210bbc80c2fc055aae99761499c7750032d4f4354df47cf",
+        "c3_module.stl": "7d2553247d1e4b3c2b116ed8cd8dcc4d3cc6c5bd1f545318b506b71ba0964997"
+      }
+    },
+    {
+      "part": "c3_rj45",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 3589.7026674999993,
+      "mesh_volume_mm3": 3589.7026706315482,
+      "watertight": true,
+      "mesh_volume_error_percent": 8.723700136453298e-08,
+      "pass": true,
+      "file_hashes": {
+        "c3_rj45.step": "6823864cf824f318a38fd9c0948c06fb93e2718570312a45503b337099cc985a",
+        "c3_rj45.stl": "6c3233d38edc95f3ee794a2722d4aaebfdf0bb562de6e51a2089178af8fed7e1"
+      }
+    },
+    {
+      "part": "c3_shield",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 388.8,
+      "mesh_volume_mm3": 388.80010986328125,
+      "watertight": true,
+      "mesh_volume_error_percent": 2.8257016779483365e-05,
+      "pass": true,
+      "file_hashes": {
+        "c3_shield.step": "995ec0958c408be5039d49d7dc2a618d45fa487ce46dd8ca7505a04b163af29e",
+        "c3_shield.stl": "ab9866c249f9627d8dfe6e68fb64c9736c6cec0dac7ee227b57bac5f94688c81"
+      }
+    },
+    {
+      "part": "c3_socket0",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 393.1425,
+      "mesh_volume_mm3": 393.1424892616269,
+      "watertight": true,
+      "mesh_volume_error_percent": 2.7314200519802672e-06,
+      "pass": true,
+      "file_hashes": {
+        "c3_socket0.step": "cbed3f822a315d78a35d53deffcc056026dab890ebf520c52b2bbcd2a1f82de5",
+        "c3_socket0.stl": "e00eb61b998f5aca29b3ec0e629424e72004ee4519086966592e41f5ccdf5134"
+      }
+    },
+    {
+      "part": "c3_socket1",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 393.1424999999999,
+      "mesh_volume_mm3": 393.1424892616269,
+      "watertight": true,
+      "mesh_volume_error_percent": 2.7314200375215364e-06,
+      "pass": true,
+      "file_hashes": {
+        "c3_socket1.step": "35e5b19c5a1d38677afa215a3d561b7c0768411ccea2bbe3f653c2f4bf5fa5ae",
+        "c3_socket1.stl": "b3177a4ede5f3cc63d10a0055e4939463190b657ba6de9167639eeed2809742a"
+      }
+    },
+    {
+      "part": "c3_ufl",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 4.071504079052373,
+      "mesh_volume_mm3": 4.067705694926313,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.09329191503459466,
+      "pass": true,
+      "file_hashes": {
+        "c3_ufl.step": "911a4624839fd7c3597f240854b69f0ae2d3aadd367794e739d333942a9e054e",
+        "c3_ufl.stl": "5a2e84ed258303e4656e7883822b78250be68d98819be42bdcd79d171b7b5b3e"
+      }
+    },
+    {
+      "part": "c3_usb",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 306.72794879999987,
+      "mesh_volume_mm3": 306.727750516345,
+      "watertight": true,
+      "mesh_volume_error_percent": 6.464479537762195e-05,
+      "pass": true,
+      "file_hashes": {
+        "c3_usb.step": "272107dbe37e1b603eeb20586612f737b01ea272d2ad5dfb48662326c3961475",
+        "c3_usb.stl": "3d4c55c801755601c7382ddf3b45438cc8959a932a5858e0cfa7a4fac37e229b"
+      }
+    },
+    {
+      "part": "c6_BOOT0",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 2.2047999999999996,
+      "mesh_volume_mm3": 2.204801077267897,
+      "watertight": true,
+      "mesh_volume_error_percent": 4.8860118720676203e-05,
+      "pass": true,
+      "file_hashes": {
+        "c6_BOOT0.step": "eabd3017e37ab9900b680ed2f75f7318f9bb9b6d47dcecf916f52e7e10ec23fc",
+        "c6_BOOT0.stl": "4d12a89ca7cf621c08a4b7c454ee9b1b21bcd6025b7c7115d38bdee2ed20cafc"
+      }
+    },
+    {
+      "part": "c6_D4",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 1.0239999999999991,
+      "mesh_volume_mm3": 1.024003173825103,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00030994385779702815,
+      "pass": true,
+      "file_hashes": {
+        "c6_D4.step": "34a33cb3e010fa64c28d631269b1aecc85d96cea700977fdf77384f3ca27e187",
+        "c6_D4.stl": "3d0a80be03c6e7adf89b3aa13fbf9a69287d6eb51e261ecaee8ac2610501009a"
+      }
+    },
+    {
+      "part": "c6_D5",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 1.0239999999999991,
+      "mesh_volume_mm3": 1.024003173825103,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00030994385779702815,
+      "pass": true,
+      "file_hashes": {
+        "c6_D5.step": "7ab1b1891a3e2626cd185cee0dc11480e437ca9e81245b0ec62fc4722b40e9fb",
+        "c6_D5.stl": "efdc2387cc80d24ee3dcea6151b8c21f65a8284990ff3c8a14e2846a3ff69c42"
+      }
+    },
+    {
+      "part": "c6_D6",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 1.0239999999999991,
+      "mesh_volume_mm3": 1.024003173825103,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00030994385779702815,
+      "pass": true,
+      "file_hashes": {
+        "c6_D6.step": "e186f8f49ebb38ce595e440afcb506d84d52a9fbba8409a97291d4ab663bdfbd",
+        "c6_D6.stl": "92c023effe6b08708ea8e04ed316945e8e5b2048cec63aed86bc9a1f25eab8c3"
+      }
+    },
+    {
+      "part": "c6_RST0",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 2.2047999999999996,
+      "mesh_volume_mm3": 2.2048006729098497,
+      "watertight": true,
+      "mesh_volume_error_percent": 3.052022179170532e-05,
+      "pass": true,
+      "file_hashes": {
+        "c6_RST0.step": "6d553ca29214c3d2e1a6e66d25897b85ae75c7e199f803a8a7385f2502ba1e81",
+        "c6_RST0.stl": "d5d501409b85aeb92a4d531671f515e9614507752603dfb054fb93d55ffd93f9"
+      }
+    },
+    {
+      "part": "c6_carrier",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 6310.264072981792,
+      "mesh_volume_mm3": 6310.287684004489,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0003741685359581417,
+      "pass": true,
+      "file_hashes": {
+        "c6_carrier.step": "7d67624efa03af68f5f79ca48ddfd5b0395eb993bf1dc72c566aa7c1f9da4925",
+        "c6_carrier.stl": "c4b4133d5b7a26565f61ed037e6032bd1878d80f34cc3b0c967de8e196ada425"
+      }
+    },
+    {
+      "part": "c6_ceramic",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 11.440000000000007,
+      "mesh_volume_mm3": 11.440005645752535,
+      "watertight": true,
+      "mesh_volume_error_percent": 4.935098364155208e-05,
+      "pass": true,
+      "file_hashes": {
+        "c6_ceramic.step": "143f48ee89c35a77ab4a5ec747e0c0e698541cb3213455650c78a05a9e17693e",
+        "c6_ceramic.stl": "377482227ad22a3899b38a8236bee47a297ca42c3fa34f1e3353ef4bbd2f7e90"
+      }
+    },
+    {
+      "part": "c6_module",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 597.7067280000001,
+      "mesh_volume_mm3": 597.7069447252001,
+      "watertight": true,
+      "mesh_volume_error_percent": 3.6259454644801454e-05,
+      "pass": true,
+      "file_hashes": {
+        "c6_module.step": "357d19074bd5fdbb594c4e65d4d53fee2c02e8cbf51cccc86727bf3cd32c8834",
+        "c6_module.stl": "7d2553247d1e4b3c2b116ed8cd8dcc4d3cc6c5bd1f545318b506b71ba0964997"
+      }
+    },
+    {
+      "part": "c6_rj45",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 3589.7026674999993,
+      "mesh_volume_mm3": 3589.7026706315482,
+      "watertight": true,
+      "mesh_volume_error_percent": 8.723700136453298e-08,
+      "pass": true,
+      "file_hashes": {
+        "c6_rj45.step": "887da26a63599bfab474e72015990d1daecd43ab2fbabde3dd1520ef5435ec35",
+        "c6_rj45.stl": "6c3233d38edc95f3ee794a2722d4aaebfdf0bb562de6e51a2089178af8fed7e1"
+      }
+    },
+    {
+      "part": "c6_shield",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 388.8,
+      "mesh_volume_mm3": 388.80010986328125,
+      "watertight": true,
+      "mesh_volume_error_percent": 2.8257016779483365e-05,
+      "pass": true,
+      "file_hashes": {
+        "c6_shield.step": "a8a1e2fdd74215562973b4178604c7a837d4ad6e58cf224cba50d7d711c61630",
+        "c6_shield.stl": "ab9866c249f9627d8dfe6e68fb64c9736c6cec0dac7ee227b57bac5f94688c81"
+      }
+    },
+    {
+      "part": "c6_socket0",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 393.1425,
+      "mesh_volume_mm3": 393.1424892616269,
+      "watertight": true,
+      "mesh_volume_error_percent": 2.7314200519802672e-06,
+      "pass": true,
+      "file_hashes": {
+        "c6_socket0.step": "ed4f00b2935daf7792f4d6006c87abe4a9bb5687faa62890ef08856119786580",
+        "c6_socket0.stl": "e00eb61b998f5aca29b3ec0e629424e72004ee4519086966592e41f5ccdf5134"
+      }
+    },
+    {
+      "part": "c6_socket1",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 393.1424999999999,
+      "mesh_volume_mm3": 393.1424892616269,
+      "watertight": true,
+      "mesh_volume_error_percent": 2.7314200375215364e-06,
+      "pass": true,
+      "file_hashes": {
+        "c6_socket1.step": "df5fcbcf0be516576b7a7bbcea4355dd341cae687cd82b4716bb4953e556336e",
+        "c6_socket1.stl": "b3177a4ede5f3cc63d10a0055e4939463190b657ba6de9167639eeed2809742a"
+      }
+    },
+    {
+      "part": "c6_ufl",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 4.071504079052373,
+      "mesh_volume_mm3": 4.067708269657629,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.09322867719260407,
+      "pass": true,
+      "file_hashes": {
+        "c6_ufl.step": "0cb253de55666088ef4d5ec359600d9c4cbfc2278c84f922bd0cc7c81fcf77a8",
+        "c6_ufl.stl": "4f58bbed7ef7dd09dc01be4f232ae75ac5ba8318c177a76418ef15ad2bba57f9"
+      }
+    },
+    {
+      "part": "c6_usb",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 263.823139944,
+      "mesh_volume_mm3": 263.82303883985514,
+      "watertight": true,
+      "mesh_volume_error_percent": 3.832269787551307e-05,
+      "pass": true,
+      "file_hashes": {
+        "c6_usb.step": "05df61cbf6ecbdb4794d964fdd28b0a4354d80d204718590c89d29b16e6d6190",
+        "c6_usb.stl": "e0bea9e926935290a926d395db0069cb0e2c79b10c23ffe43f0093de1f5ba51f"
+      }
+    },
+    {
+      "part": "coupon_button_c3",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 648.5971734885404,
+      "mesh_volume_mm3": 648.4451298717771,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.023441917877243763,
+      "pass": true,
+      "file_hashes": {
+        "coupon_button_c3.step": "a30c49d8d02c0e0fb97b1ea9ab524d0f2bf24ede54a4a876b0bb427c1a7f79a1",
+        "coupon_button_c3.stl": "e07d54e1e098dd7b41f94e6b686f90ee4cd7d853811b1c0315b9eef60d3c3219"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "96a0e2b94836a6eefc7a8db80c3476504c2a160ee0eea5cfa6165427c9f3719d",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "coupon_button_c6",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 714.5616903651844,
+      "mesh_volume_mm3": 714.4840087592238,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.010871224557379535,
+      "pass": true,
+      "file_hashes": {
+        "coupon_button_c6.step": "81b1c34a143ad640969e191116c5d0cf5ae3c62b6b8a5808bc546bd72cabeb37",
+        "coupon_button_c6.stl": "bcfa2a77265df7fb5c0f61dcc0ab1bca67a9c5f8ffa3f944b58d485d45a98cfd"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "c85a452707943eaf6f3740965e3ee8beaabedfe8f27ccbf73d102fee4cb457b3",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "coupon_snap_base",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 948.6288173089331,
+      "mesh_volume_mm3": 948.6281555630541,
+      "watertight": true,
+      "mesh_volume_error_percent": 6.975814638501326e-05,
+      "pass": true,
+      "file_hashes": {
+        "coupon_snap_base.step": "b7941f2cf8c62fd0cfffb4ca4170738e389f6649a5237bed3a2f23539a5c132a",
+        "coupon_snap_base.stl": "b7c3588569dc5e27b5a4077a6ad9b5314a4dba55d5e6fa066df5b6bc110c5e69"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "ac0d574a07e6cac0bd7fa463a93df6b02c475fa9209569f11dca6e6ac91bf2f3",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "coupon_snap_lid",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 348.96666130962103,
+      "mesh_volume_mm3": 348.9666678170433,
+      "watertight": true,
+      "mesh_volume_error_percent": 1.864769038893859e-06,
+      "pass": true,
+      "file_hashes": {
+        "coupon_snap_lid.step": "fd4c43cbdf2792d9b9bb03cf73bf236d20156471a1c9132881bae14b89f312ce",
+        "coupon_snap_lid.stl": "20f04f9052396e693b7ae6ee72e4453511eeaab974c8bfb8d87cbe4b34a08780"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "4397956684aed1e0713c8d558be5a75d38248e6dac4a4511e02a53c0546b94d1",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "fpc_40x20_proxy",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 1440.0000000000002,
+      "mesh_volume_mm3": 1440.0009155273438,
+      "watertight": true,
+      "mesh_volume_error_percent": 6.357828774462681e-05,
+      "pass": true,
+      "file_hashes": {
+        "fpc_40x20_proxy.step": "ef0296641f9c05ac6c73420aaa92c849103e89e566c713974e132eb9d8b073d7",
+        "fpc_40x20_proxy.stl": "894ad40fd39c139896ef784163d0f0f08e51421a3d00c477904e46f41ee2671e"
+      }
+    },
+    {
+      "part": "label_inlay_c3_optional",
+      "valid_step": true,
+      "solid_count": 42,
+      "step_volume_mm3": 6.776459356399491,
+      "mesh_volume_mm3": 6.7740511958068055,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.03553715098153116,
+      "pass": true,
+      "file_hashes": {
+        "label_inlay_c3_optional.step": "7828aa18397f18fb4a9ed3fca40df9a691db11cb16754b2a04812695bb2b5b30",
+        "label_inlay_c3_optional.stl": "a014d57503a0b386c7d03f4e9b38cb65d8e2e1dff66a04aeb2260875f27bccb3"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "0125a7a70dffdbd16c1ceccceb96de8856cb74e2ceff328b4ac3b0d63726d0bf",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "label_inlay_c6_optional",
+      "valid_step": true,
+      "solid_count": 42,
+      "step_volume_mm3": 6.7921749221829835,
+      "mesh_volume_mm3": 6.789400418006001,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.04084853833668234,
+      "pass": true,
+      "file_hashes": {
+        "label_inlay_c6_optional.step": "c878aca23a6c7c22c3366ef8dcd72e6198b3789a4247a0228aab5565735db4b5",
+        "label_inlay_c6_optional.stl": "e962665faacb0ffe366835c2dbfa9a32861614775e0a013fb7a7040ce5e78a85"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "d39d9d996a4fa721c31f690f845468022eac7137290221c3bf39ff2616cba3a6",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "lid_c3_external",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 24852.984482332566,
+      "mesh_volume_mm3": 24853.162003769936,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0007142861956734258,
+      "pass": true,
+      "file_hashes": {
+        "lid_c3_external.step": "c44a9f24041955459a739023da796c5f7cecfbd3a58c3f176c76c87c3cccfc11",
+        "lid_c3_external.stl": "9035f9b1cde74d52719c09aeda0350329b6b6efb4c863bd2c927ce52b8ab4eaf"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "41ff81f5fb4b0b9793ed2b9c4a227e4c33a596d631963fc88159b907b6c46f78",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "lid_c3_internal",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 24912.64211412268,
+      "mesh_volume_mm3": 24912.76072069992,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00047608991731350094,
+      "pass": true,
+      "file_hashes": {
+        "lid_c3_internal.step": "8075c481625b546ea959225e6904a148ab001df5c48e2713b13c6d2321181047",
+        "lid_c3_internal.stl": "c1dd9bdcbcade546db54085ce5b367282282abd53445c8db375a884d38ece127"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "2671e5a371e57d53f1c86409434e9afb23281e871d4f602726f3acf83321d20c",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "lid_c6_external",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 24855.6887925564,
+      "mesh_volume_mm3": 24855.863839069265,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0007042513057082414,
+      "pass": true,
+      "file_hashes": {
+        "lid_c6_external.step": "dca8713a541926a0df3fcca1ea329e4b9c34ff3b22d6743b3159fb9ff4971ac1",
+        "lid_c6_external.stl": "0d999d8c65f02253695ca2f056eae3d9627f01c9fae6136778e12a7d4d6aae82"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "e430df1fff853d11c60440d628cdcf430b896a8dc4bed167dea6467cbce0fa03",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "lid_c6_internal",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 24681.2213294101,
+      "mesh_volume_mm3": 24681.337427602255,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00047039079066277543,
+      "pass": true,
+      "file_hashes": {
+        "lid_c6_internal.step": "dff6e892c201b502ab87d1ccb9a452837be7d20784f0a593c6d84b125a71121a",
+        "lid_c6_internal.stl": "bd02eb0581a627e46b8c01424b6fae8ed6f9af35a2cd2b28937215c8ccdd6d78"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "62e30ee8f8dec690cc7cd72fe2c0b51c6420420bc0f55a6eb1846d4c231f9e9b",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "lightpipe_aux",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 152.44728057999887,
+      "mesh_volume_mm3": 152.3051435437454,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.09323684601830902,
+      "pass": true,
+      "file_hashes": {
+        "lightpipe_aux.step": "3d26e26215720098260d7855fd1b96df1d9431549b6ae603c296953b545a12e6",
+        "lightpipe_aux.stl": "6fa1a6aa5718c5c288dcd5324e051f8527bffb635c5b65dcb1249914f8b4abae"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "5dcf03997b0d142a998e7a2392dcc92dd425f6d8d82850f3cd3aff79aac52251",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "lightpipe_bus",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 152.44728057999856,
+      "mesh_volume_mm3": 152.30514343128576,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.09323691978763596,
+      "pass": true,
+      "file_hashes": {
+        "lightpipe_bus.step": "28d2c929288704a2da634cbd295d49dad32acaa5e30d00b43261d85c7a956226",
+        "lightpipe_bus.stl": "2ee28f885ada39260d686beefa8e2fd91fd0018f9ec1d4f420b945448401c569"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "8bd0f95c0937b8778555c1129b37f026dc4b8051efd817722f6c4cd65e69780c",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    },
+    {
+      "part": "lightpipe_wifi",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 152.44728058000413,
+      "mesh_volume_mm3": 152.30514361290457,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.09323680065579587,
+      "pass": true,
+      "file_hashes": {
+        "lightpipe_wifi.step": "3c8676bc03c28df0d7ae8013b740ea99afeb73bfe7ecac782397efbbc8c62a55",
+        "lightpipe_wifi.stl": "88855ba538ac71759fff08029936d96158310db31ec8698137baa81a6d5a4fdf"
+      },
+      "delivered_subset_comparison": {
+        "reference_step_sha256": "3770b314fab4e7b9a35fd788832137230913befe2a246796eb794b54584a9283",
+        "volume_difference_mm3": 0.0,
+        "max_bounds_difference_mm": 0.0,
+        "equal_within_volume_1e-3_or_relative_1e-7_and_bounds_1e-4": true
+      }
+    }
+  ],
+  "scope": "Nominal STEP/STL integrity; 2 percent volume threshold matches historical helper. No physical print/fit/switch/RF qualification."
+}

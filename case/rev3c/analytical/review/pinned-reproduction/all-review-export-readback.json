@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "part_count": 8,
+  "source_commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+  "checks": [
+    {
+      "part": "review_base",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 28171.032237306572,
+      "mesh_volume_mm3": 28170.23304462885,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.00283693075563959,
+      "pass": true,
+      "file_hashes": {
+        "review_base.step": "f6b51cc93b3f834bfcffb47ab6a8ac4862375fb2b6a98e7a7fe062e149d871a9",
+        "review_base.stl": "63cbae3f68c42e6477f86cb2104dd3ced49715fc7817b7f61b712446ab035e58"
+      }
+    },
+    {
+      "part": "review_guide_aux",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 152.30216455052783,
+      "mesh_volume_mm3": 152.1623247341308,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.09181735322654272,
+      "pass": true,
+      "file_hashes": {
+        "review_guide_aux.step": "4def3d0bf30eb4d81150bb6b9afde3c08b328d9bba0dd9a6f6fa50ef4ad90165",
+        "review_guide_aux.stl": "31098a7e9e936991ec41e65595a19bc88ebc0abca7e02740ebdd0957e053d44f"
+      }
+    },
+    {
+      "part": "review_guide_bus",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 152.05820629211962,
+      "mesh_volume_mm3": 151.91952885584715,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.09120023157846534,
+      "pass": true,
+      "file_hashes": {
+        "review_guide_bus.step": "5c9f71b67761a753f3c32bd64e8bb2acd2c3af0b7992f2ef4f96d06890a9303d",
+        "review_guide_bus.stl": "2a3a8cb822b7ca9711becefc7ed39fbeb878f489fee8be379a49da489fbaee83"
+      }
+    },
+    {
+      "part": "review_guide_wifi",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 152.15704852106145,
+      "mesh_volume_mm3": 152.01782823552094,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0914977563600983,
+      "pass": true,
+      "file_hashes": {
+        "review_guide_wifi.step": "7cd157bb1442381a146af3f7157e7bd7b95585f0fbd1770861800c55e832cbbd",
+        "review_guide_wifi.stl": "d323de2b5d527c1efa742c41504e1569ad1fc47e2e79e6dfc33b45dd186b89fb"
+      }
+    },
+    {
+      "part": "review_lid_c3_external",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 24838.865962148753,
+      "mesh_volume_mm3": 24839.042593524267,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0007111088557079275,
+      "pass": true,
+      "file_hashes": {
+        "review_lid_c3_external.step": "510c28f57a0a8007eeb4cafba3fdca47e4de9c5eaa8ba7b23b3c7800381aa6ed",
+        "review_lid_c3_external.stl": "2ba770682a73be99a6f211dcdbefcaa06c5e0d3a9bfd876849f3ecb82dbce50d"
+      }
+    },
+    {
+      "part": "review_lid_c3_internal",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 24899.39164015771,
+      "mesh_volume_mm3": 24899.509314718103,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0004726001425746509,
+      "pass": true,
+      "file_hashes": {
+        "review_lid_c3_internal.step": "d9a90805d79691a69f73691b22fc878d36a96171a3b42253e62e452188be7d03",
+        "review_lid_c3_internal.stl": "460ebb20e21225f6fb41b6a3d88330bba541b2bd40d4ad38c36892c40c443367"
+      }
+    },
+    {
+      "part": "review_lid_c6_external",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 24856.242136673918,
+      "mesh_volume_mm3": 24856.416431734116,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0007012124328366778,
+      "pass": true,
+      "file_hashes": {
+        "review_lid_c6_external.step": "2d3a4c30f6ee385cd6153880ebaee599ec4e72354cbca274c508a8bd83b3d8f3",
+        "review_lid_c6_external.stl": "3fee539104b72dfb6da6ce1d40526bdecba71628487080d2236e4779970da3f9"
+      }
+    },
+    {
+      "part": "review_lid_c6_internal",
+      "valid_step": true,
+      "solid_count": 1,
+      "step_volume_mm3": 24681.774677877955,
+      "mesh_volume_mm3": 24681.890020267107,
+      "watertight": true,
+      "mesh_volume_error_percent": 0.0004673180541401666,
+      "pass": true,
+      "file_hashes": {
+        "review_lid_c6_internal.step": "5f867b20b49a55823f84fb90f3aa0882bbe81b87c3acdfb22f9738ac194b0cb8",
+        "review_lid_c6_internal.stl": "5a78e29038b9ed4ccd50cd4ca6ee130ae442c4c551c72012837be2bc1244a562"
+      }
+    }
+  ],
+  "scope": "Nominal STEP/STL integrity; 2 percent volume threshold matches historical helper. No physical print/fit/switch/RF qualification."
+}
