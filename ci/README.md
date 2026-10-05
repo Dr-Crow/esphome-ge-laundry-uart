@@ -53,6 +53,18 @@ fail. No command flashes hardware, places orders or publishes a release.
   BOM references, values, footprints and purchasing fields must match native
   schematic metadata. CPL coordinates, rotations and sides must match native
   placements or the specific committed, hash-matched centroid policy.
+- Manufacturing also checks every supplier-BOM R/C/L reference against the
+  independently reviewed primary catalog facts in `passive-catalog.json`.
+  Nominal values, declared footprint package identities and available exact MPNs
+  must agree; explicitly declared capacitor voltage/dielectric must match in both
+  BOM fields/value text and native schematic fields/value text. Unknown passive
+  codes fail and need an independently sourced catalog update. Regressions reject
+  the legacy 220k/C17539 (200k) and 4K7/C17713 (47k) conflicts even when BOM and
+  source agree. All five declared supplier BOMs are covered; the two legacy boards
+  without current supplier BOMs retain their existing missing-input failures.
+  The report binds the catalog hash. This check does not establish supplier stock,
+  land-pattern compatibility, DC bias, transient or thermal qualification.
+  Semiconductor and module identities remain outside this bounded passive check.
 - The current centroid policies cover Rev2.1's legacy pad-bounds convention,
   Rev3A/Rev3B's typed manufacturer/module body datums and Rev3C's typed nominal
   J1 manufacturer body datum. Complete source closure, documentary hashes,

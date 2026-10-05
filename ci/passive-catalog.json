@@ -1,0 +1,32 @@
+{
+  "reviewed": "2026-10-05",
+  "scope": "Independent R/C/L nominal value and declared package identity; explicit capacitor voltage/dielectric and available MPN. Excludes land-pattern, bias, transient, thermal, supply, stock and semiconductor/module qualification.",
+  "package_note": "R/C package codes use EIA imperial names with their metric equivalents. The Panasonic package-family token represents the catalog 5.5 x 5.0 mm body; no pad geometry is qualified.",
+  "parts": {
+    "C104108": {"kind": "R", "value": "220k", "package": "0805", "mpn": "RTT052203FTP", "source_url": "https://www.lcsc.com/product-detail/C104108.html"},
+    "C17673": {"kind": "R", "value": "4.7k", "package": "0805", "mpn": "0805W8F4701T5E", "source_url": "https://www.lcsc.com/product-detail/C17673.html"},
+    "C17539": {"kind": "R", "value": "200k", "package": "0805", "mpn": "0805W8F2003T5E", "source_url": "https://www.lcsc.com/product-detail/C17539.html"},
+    "C17713": {"kind": "R", "value": "47k", "package": "0805", "mpn": "0805W8F4702T5E", "source_url": "https://www.lcsc.com/product-detail/C17713.html"},
+    "C17414": {"kind": "R", "value": "10k", "package": "0805", "mpn": "0805W8F1002T5E", "source_url": "https://www.lcsc.com/product-detail/C17414.html"},
+    "C17513": {"kind": "R", "value": "1k", "package": "0805", "mpn": "0805W8F1001T5E", "source_url": "https://www.lcsc.com/product-detail/C17513.html"},
+    "C17514": {"kind": "R", "value": "1M", "package": "0805", "mpn": "0805W8F1004T5E", "source_url": "https://www.lcsc.com/product-detail/C17514.html"},
+    "C17557": {"kind": "R", "value": "220R", "package": "0805", "mpn": "0805W8F2200T5E", "source_url": "https://www.lcsc.com/product-detail/C17557.html"},
+    "C149504": {"kind": "R", "value": "100k", "package": "0805", "mpn": "0805W8F1003T5E", "source_url": "https://www.lcsc.com/product-detail/C149504.html"},
+    "C17738": {"kind": "R", "value": "51R", "package": "0805", "mpn": "0805W8F510JT5E", "source_url": "https://www.lcsc.com/product-detail/C17738.html"},
+    "C27834": {"kind": "R", "value": "5.1k", "package": "0805", "mpn": "0805W8F5101T5E", "source_url": "https://www.lcsc.com/product-detail/C27834.html"},
+    "C22978": {"kind": "R", "value": "3.3k", "package": "0603", "mpn": "0603WAF3301T5E", "source_url": "https://www.lcsc.com/product-detail/C22978.html"},
+    "C105580": {"kind": "R", "value": "5.1k", "package": "0603", "mpn": "RC0603FR-075K1L", "source_url": "https://www.lcsc.com/product-detail/C105580.html"},
+    "C107701": {"kind": "R", "value": "22R", "package": "0603", "mpn": "RC0603FR-0722RL", "source_url": "https://www.lcsc.com/product-detail/C107701.html"},
+    "C28233": {"kind": "C", "value": "100n", "package": "0805", "mpn": "CL21B104KCFNNNE", "source_url": "https://www.lcsc.com/product-detail/C28233.html", "voltage_v": 100, "dielectric": "X7R"},
+    "C28323": {"kind": "C", "value": "1u", "package": "0805", "mpn": "CL21B105KBFNNNE", "source_url": "https://www.lcsc.com/product-detail/C28323.html", "voltage_v": 50, "dielectric": "X7R"},
+    "C15850": {"kind": "C", "value": "10u", "package": "0805", "mpn": "CL21A106KAYNNNE", "source_url": "https://www.lcsc.com/product-detail/C15850.html", "voltage_v": 25, "dielectric": "X5R"},
+    "C91185": {"kind": "C", "value": "1u", "package": "0805", "mpn": "CC0805KKX7R9BB105", "source_url": "https://www.lcsc.com/product-detail/C91185.html", "voltage_v": 50, "dielectric": "X7R", "manufacturer_url": "https://yageogroup.com/download/specsheet/CC0805KKX7R9BB105"},
+    "C106243": {"kind": "C", "value": "100n", "package": "0805", "mpn": "CC0805KKX7R0BB104", "source_url": "https://www.lcsc.com/product-detail/C106243.html", "voltage_v": 100, "dielectric": "X7R", "manufacturer_url": "https://yageogroup.com/download/specsheet/CC0805KKX7R0BB104"},
+    "C1546": {"kind": "C", "value": "100p", "package": "0402", "mpn": "0402CG101J500NT", "source_url": "https://www.lcsc.com/product-detail/C1546.html", "voltage_v": 50, "dielectric": "C0G"},
+    "C161181": {"kind": "C", "value": "100n", "package": "0603", "mpn": "GCM188L81H104KA57D", "source_url": "https://www.lcsc.com/product-detail/C161181.html", "voltage_v": 50, "dielectric": "X8L"},
+    "C286510": {"kind": "C", "value": "100n", "package": "0603", "mpn": "0603B104M500NT", "source_url": "https://www.lcsc.com/product-detail/C286510.html", "voltage_v": 50, "dielectric": "X7R"},
+    "C303950": {"kind": "C", "value": "10u", "package": "1206", "mpn": "1206B106K500NT", "source_url": "https://www.lcsc.com/product-detail/C303950.html", "voltage_v": 50, "dielectric": "X7R"},
+    "C309062": {"kind": "C", "value": "22u", "package": "1210", "mpn": "CL32B226KAJNNNE", "source_url": "https://www.lcsc.com/product-detail/C309062.html", "voltage_v": 25, "dielectric": "X7R"},
+    "C412309": {"kind": "L", "value": "4.7uH", "package": "Panasonic_PCC-M0530M", "mpn": "ETQP3M4R7KVP", "source_url": "https://www.lcsc.com/product-detail/C412309.html", "manufacturer_url": "https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf"}
+  }
+}

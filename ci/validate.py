@@ -250,6 +250,71 @@ def rows(file, key):
     return result
 
 
+def passive_value(value, kind, ref):
+    """Parse the bounded engineering notation used by the supplier BOMs."""
+    token = value.split()[0] if value.split() else ""
+    match = re.fullmatch(r"(\d+(?:\.\d+)?)([RrKkMmUuNnPpµμ]?)(\d*)([FHΩ]?)", token)
+    require(match and (not match[3] or (match[2] and "." not in match[1])) and
+            match[4] in ("", {"R": "Ω", "C": "F", "L": "H"}[kind]),
+            f"Unsupported passive value: {ref}: {value}")
+    scale = {"": 1, "R": 1, "r": 1, "K": 1e3, "k": 1e3, "M": 1e6,
+             "m": 1e-3, "u": 1e-6, "U": 1e-6, "µ": 1e-6, "μ": 1e-6,
+             "n": 1e-9, "N": 1e-9, "p": 1e-12, "P": 1e-12}[match[2]]
+    return float(match[1] + ("." + match[3] if match[3] else "")) * scale
+
+
+def passive_catalog(bom, components=None):
+    """Independent purchasing facts, not stock, land-pattern or thermal approval."""
+    catalog_file = path("ci/passive-catalog.json")
+    catalog = json.loads(catalog_file.read_text())
+    checked = {}
+    for ref, row in bom.items():
+        if not re.fullmatch(r"[RCL]\d+", ref):
+            continue
+        code, kind = row.get("LCSC Part #", ""), ref[0]
+        require(code in catalog["parts"], f"Unknown passive catalog code: {ref}: {code or '(missing)'}")
+        part = catalog["parts"][code]
+        require(kind == part["kind"], f"Passive catalog type mismatch: {ref}: {code}")
+        declarations = [("BOM", row["Comment"], row["Footprint"], row)]
+        if components is not None:
+            require(ref in components, f"Passive source reference missing: {ref}")
+            declarations.append(("schematic", *components[ref]))
+        for origin, value, footprint, properties in declarations:
+            label = f"{ref}: {code} ({origin})"
+            require(math.isclose(passive_value(value, kind, ref),
+                                 passive_value(part["value"], kind, ref), rel_tol=1e-12),
+                    f"Passive catalog value mismatch: {label}: {value} != {part['value']}")
+            basename = footprint.split(":")[-1]
+            if kind in "RC":
+                metric = {"0402": "1005", "0603": "1608", "0805": "2012",
+                          "1206": "3216", "1210": "3225"}[part["package"]]
+                package = f"{kind}_{part['package']}_{metric}Metric"
+                # LegacyBoard prepends the individual reference to standard packages.
+                matches = basename in (package, ref + "_" + package)
+            else:
+                matches = basename == "L_" + part["package"]
+            require(matches, f"Passive catalog package mismatch: {label}: {footprint}")
+            if properties.get("MPN", "").strip():
+                require(properties["MPN"].strip() == part["mpn"],
+                        f"Passive catalog MPN mismatch: {label}: {properties['MPN']}")
+            if kind == "C":
+                voltages = re.findall(r"(?<![\w.])(\d+(?:\.\d+)?)\s*V\b", value, re.IGNORECASE)
+                if properties.get("Voltage", "").strip():
+                    rating = re.fullmatch(r"(\d+(?:\.\d+)?)\s*V?", properties["Voltage"].strip(), re.IGNORECASE)
+                    require(rating, f"Unsupported passive Voltage: {label}")
+                    voltages.append(rating[1])
+                require(all(float(voltage) == part["voltage_v"] for voltage in voltages),
+                        f"Passive catalog voltage mismatch: {label}")
+                dielectrics = re.findall(r"\b(?:[A-Z]\d[A-Z]|NP[0O])\b", value.upper())
+                if properties.get("Dielectric", "").strip():
+                    dielectrics.append(properties["Dielectric"].strip().upper())
+                require(all(dielectric == part["dielectric"] for dielectric in dielectrics),
+                        f"Passive catalog dielectric mismatch: {label}")
+        checked[ref] = code
+    return {"references": checked, "catalog_sha256": sha(catalog_file),
+            "reviewed": catalog["reviewed"], "scope": catalog["scope"]}
+
+
 def gerber_content(data):
     # Only creation timestamps are volatile. Keep geometry, attributes and generator version.
     return "\n".join(line for line in data.decode("utf-8").splitlines()
@@ -424,6 +489,7 @@ def fabrication_plot(board, output):
 def manufacturing(board, output, manifest):
     inputs = design_inputs(board)
     (output / "cam-parity.json").unlink(missing_ok=True)
+    (output / "passive-catalog.json").unlink(missing_ok=True)
     plot = fabrication_plot(board, output)
     tool("kicad-cli", manifest["tools"]["kicad"])
     _, sch, pcb = sources(board)
@@ -454,6 +520,8 @@ def manufacturing(board, output, manifest):
         if item.findtext("footprint") and not {"dnp", "exclude_from_bom"} & properties.keys():
             components[item.attrib["ref"]] = (item.findtext("value"), item.findtext("footprint"), properties)
     bom, cpl, pos = rows(path(board["bom"]), "Designator"), rows(path(board["cpl"]), "Designator"), rows(positions, "Ref")
+    passives = passive_catalog(bom, components)
+    (output / "passive-catalog.json").write_text(json.dumps(passives, indent=2) + "\n")
     origins = reviewed_placement_origins(board, inputs, pos, output, components)
     expected = set(components)
     require(set(origins) <= expected, "Placement-origin policy includes unassembled references")
@@ -478,6 +546,7 @@ def manufacturing(board, output, manifest):
             require(math.isfinite(value) and abs(delta) <= 0.00001, f"CPL {native} differs from PCB: {ref}")
         require(cpl[ref]["Layer"].lower() == pos[ref]["Side"].lower(), f"CPL side differs from PCB: {ref}")
     return {"assembled_references": len(expected), "reviewed_centroid_references": len(origins),
+            "passive_catalog": passives,
             "native_matched_gerber_and_drill_files": cam_count,
             "fabrication_plot": plot,
             "source_sha256": {str(p.relative_to(ROOT)): sha(p) for p in inputs},
