@@ -1,0 +1,116 @@
+[
+  {
+    "file": "ap63205.pdf",
+    "url": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "1812l.pdf",
+    "url": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+    "bytes": 588974,
+    "sha256": "410cca68bb84b17c956a5038fbd7feb38cf1610e913f59a5268aedce97116902",
+    "retrieved_at": "2026-10-05T13:26:11.096306+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "pmeg2010er.pdf",
+    "url": "https://assets.nexperia.com/documents/data-sheet/PMEG2010ER.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "mcc-bzt52.pdf",
+    "url": "https://www.mouser.com/datasheet/2/258/BZT52C2V4_7eBZT52C75_500mW__SOD_123_-2904721.pdf",
+    "bytes": 537724,
+    "sha256": "62433183c904e7cac0daac6e92b508468fb25b832a393a73d2878f10bbb08316",
+    "retrieved_at": "2026-10-05T13:26:10.156606+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "sunmate-smf16a.pdf",
+    "url": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736",
+    "bytes": 721054,
+    "sha256": "7b825d053f2797dcfd6efd8a268f79365b147bc57f7dc42c6da31fedab743e2b",
+    "retrieved_at": "2026-10-05T13:26:12.038983+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "cj3407.pdf",
+    "url": "https://datasheet.lcsc.com/lcsc/Changjiang-Electronics-Tech-CJ-CJ3407_C15903.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "mcc-mbr0540.pdf",
+    "url": "https://www.mccsemi.com/pdf/Products/MBR0520(SOD-123).pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "74lvc2g07.pdf",
+    "url": "https://www.diodes.com/datasheet/download/74LVC2G07.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "ap2112.pdf",
+    "url": "https://www.diodes.com/datasheet/download/AP2112.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "royalohm-smd.pdf",
+    "url": "https://www.royalohm.com/assets/pdf/products/smd/1.pdf",
+    "bytes": 3958769,
+    "sha256": "6344d3f6a60ea3d3a4c4726f3562df5847a0e5910ce0bd4356328c1363a25f0d",
+    "retrieved_at": "2026-10-05T13:26:18.443783+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "cj3407-v2.3.pdf",
+    "url": "https://www.jscj-elec.com/pdf/f3fb09e55afae446e8a8f8a35ab44e62.pdf",
+    "bytes": 789042,
+    "sha256": "cdbc9162ee565e3b0cc58d662c105c90786a04697fecd5928c27ae0e678276f1",
+    "retrieved_at": "2026-10-05T13:28:48.899743+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "mcc-mbr0540-2020.pdf",
+    "url": "https://www.megastar.com/content/pdfs/MBR0520-MBR0580%28SOD123%29.pdf",
+    "bytes": 439190,
+    "sha256": "a47bb205fa12027a78baba74ceb848c636cc5bfc22b7585429825eb052564d58",
+    "retrieved_at": "2026-10-05T13:28:46.707097+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "panasonic-lp.pdf",
+    "url": "https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C63.pdf",
+    "bytes": 1091765,
+    "sha256": "3181caa00e4f342cbcccd4adabed32e007abd62172fe56d5eab0e52c58b53ee2",
+    "retrieved_at": "2026-10-05T13:28:48.010006+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "1206l.pdf",
+    "url": "https://www.mouser.com/datasheet/2/240/Littelfuse_PTC_1206L_Datasheet_pdf-2956361.pdf",
+    "bytes": 765413,
+    "sha256": "d19d2bcdb52ec7e8c65c4d75ecb2d43b6c0594e54bc13ae132189bde7955ed01",
+    "retrieved_at": "2026-10-05T13:31:18.988560+00:00",
+    "status": "downloaded"
+  },
+  {
+    "file": "ap63205-mirror.pdf",
+    "url": "https://www.mouser.com/datasheet/2/115/Diodes_Inc_DIO_S_A0011707333_1-2542936.pdf",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "tps1h200a-q1.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+    "bytes": 1634634,
+    "sha256": "63c6e4bb4861029c21f0e9bd684ac833d0a905ea5586e08cb5d8234eff4dcb57",
+    "retrieved_at": "2026-10-05T13:24:35+00:00",
+    "status": "downloaded"
+  }
+]

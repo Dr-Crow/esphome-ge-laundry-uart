@@ -1,0 +1,34 @@
+[
+  {
+    "file": "uni-royal-chip-smd-sp-001-v10-2025-07-28.pdf",
+    "url": "https://www.uni-royal.cn/en/images/userfile/file/1769240915c56505e6d9ab55c7.pdf",
+    "resolved_url": "https://www.uni-royal.cn/en/images/userfile/file/1769240915c56505e6d9ab55c7.pdf",
+    "bytes": 703408,
+    "sha256": "f296aaf4fc2efcd2d719c9875de2f2dacb576a64e745c7779aed4e2d4b62cc7c",
+    "observed_at_utc": "2026-10-05T12:48:02.318504+00:00"
+  },
+  {
+    "file": "nexperia-bav99-2022-07-01.pdf",
+    "url": "https://assets.nexperia.com/documents/data-sheet/BAV99.pdf",
+    "resolved_url": "https://assets.nexperia.com/documents/data-sheet/BAV99.pdf",
+    "bytes": 203011,
+    "sha256": "826c982f4f2bbefcc047abea7ed2be517c09cf46bf61c10c25e4b7c378369b2f",
+    "observed_at_utc": "2026-10-05T12:48:03.647749+00:00"
+  },
+  {
+    "file": "diodes-74lvc2g07-ds35162-rev6-2.pdf",
+    "url": "https://www.diodes.com/datasheet/download/74LVC2G07.pdf",
+    "resolved_url": "https://www.diodes.com/datasheet/download/74LVC2G07.pdf",
+    "bytes": 613427,
+    "sha256": "c281bc51d2007258510d48626b4054b16366fba1cbb6e590a93db0316e73f92e",
+    "observed_at_utc": "2026-10-05T12:48:04.724325+00:00"
+  },
+  {
+    "file": "ralec-rtt-ie-sp-010-2026-01-27.pdf",
+    "url": "https://www.ralec.com/upload/media/product/file/IE-SP-010%20.pdf",
+    "resolved_url": "https://www.ralec.com/upload/media/product/file/IE-SP-010%20.pdf",
+    "bytes": 642216,
+    "sha256": "d79baf9af8dce5a67889e50e4a5e6a1d31a2519883aed10ec655240d8fad5dec",
+    "observed_at_utc": "2026-10-05T12:48:53.866518+00:00"
+  }
+]

@@ -1,5 +1,7 @@
 # Board and enclosure comparison
 
+Latest October5 pre-order analysis and committed fixes: [all-revision review](preorder-2026-10-05/README.md). Earlier checkpoint/quote/source boundaries below remain explicit.
+
 [Project overview](../../README.md) · [Current validation](VALIDATION.md) · [Pricing](PRICING.md) · [Finish plan](FINISH-PLAN.md) · [Source handoff](HANDOFF.md) · [C3/C6 and Matter](C6-MATTER.md)
 
 Updated October 4, 2026 after source restoration and fresh seven-revision native/CAM checks. The user selected the shared Rev3C design with two **40 V-rated TPS1H200A switches**, both GE power inputs and automatic PIN1 priority. Current selected source is `b87d3e8`, adding the reviewed stencil correction to restored `5542734`; its BOM/CPL remain placement-corrected `b53cfca`, while its Gerber ZIP is regenerated. The original electrical protection source is `7bb455f`. Selection does not establish a 40 V carrier rating, appliance compatibility or manufacturing readiness.

@@ -1,0 +1,560 @@
+{
+  "scope": "Separate candidate; no board, frozen source or analytical-artifact edit",
+  "aperture_dimensions_before_mm": [
+    14.8,
+    9.0,
+    2.2
+  ],
+  "aperture_dimensions_candidate_mm": [
+    16.0,
+    10.0,
+    2.2
+  ],
+  "gauges": [
+    {
+      "module": "c3",
+      "stack_mm": 11.0,
+      "center_mode": "original",
+      "opening_center_Z_mm": 20.7,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 19.8,
+      "volume_outside_rounded_aperture_mm3": 1.22762615,
+      "profile_pass": false,
+      "internal": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 0.27242021,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.2495602,
+        "USB_face_corridor_X_mm": [
+          100.003,
+          110
+        ]
+      },
+      "external": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 0.27242021,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.2495602,
+        "USB_face_corridor_X_mm": [
+          100.003,
+          110
+        ]
+      }
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.0,
+      "center_mode": "original",
+      "opening_center_Z_mm": 20.7,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 19.8,
+      "volume_outside_rounded_aperture_mm3": 1.22623852,
+      "profile_pass": false,
+      "internal": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 5.88812081,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.2495602,
+        "USB_face_corridor_X_mm": [
+          100.0143,
+          110
+        ]
+      },
+      "external": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 5.88812081,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.2495602,
+        "USB_face_corridor_X_mm": [
+          100.0143,
+          110
+        ]
+      }
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.0,
+      "center_mode": "per_assembly",
+      "opening_center_Z_mm": 20.049999999999997,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 19.8,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true,
+      "internal": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 0.02286001,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.003,
+          110
+        ]
+      },
+      "external": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 0.02286001,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.003,
+          110
+        ]
+      }
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.0,
+      "center_mode": "per_assembly",
+      "opening_center_Z_mm": 20.049999999999997,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 19.8,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true,
+      "internal": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 5.63856061,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.0143,
+          110
+        ]
+      },
+      "external": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 5.63856061,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.0143,
+          110
+        ]
+      }
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.325,
+      "center_mode": "original",
+      "opening_center_Z_mm": 20.7,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.125,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.325,
+      "center_mode": "original",
+      "opening_center_Z_mm": 20.7,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.125,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.325,
+      "center_mode": "per_assembly",
+      "opening_center_Z_mm": 20.375,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.125,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.325,
+      "center_mode": "per_assembly",
+      "opening_center_Z_mm": 20.375,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.125,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.65,
+      "center_mode": "original",
+      "opening_center_Z_mm": 20.7,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.45,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true,
+      "internal": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 0.0,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.003,
+          110
+        ]
+      },
+      "external": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 0.0,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.003,
+          110
+        ]
+      }
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.65,
+      "center_mode": "original",
+      "opening_center_Z_mm": 20.7,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.45,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true,
+      "internal": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 8.4235509,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.0143,
+          110
+        ]
+      },
+      "external": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 8.4235509,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.0143,
+          110
+        ]
+      }
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.65,
+      "center_mode": "per_assembly",
+      "opening_center_Z_mm": 20.7,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.45,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true,
+      "internal": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 0.0,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.003,
+          110
+        ]
+      },
+      "external": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 0.0,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.003,
+          110
+        ]
+      }
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.65,
+      "center_mode": "per_assembly",
+      "opening_center_Z_mm": 20.7,
+      "synthetic_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.45,
+      "volume_outside_rounded_aperture_mm3": 0,
+      "profile_pass": true,
+      "internal": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 8.4235509,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.0143,
+          110
+        ]
+      },
+      "external": {
+        "actual_lid_whole_body_corridor_intersection_mm3": 8.4235509,
+        "wall_band_X103_to110_gauge_intersection_mm3": 0.0,
+        "USB_face_corridor_X_mm": [
+          100.0143,
+          110
+        ]
+      }
+    }
+  ],
+  "lids": {
+    "c3_internal_centerZ20.05": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "volume_mm3": 24859.484396958607,
+      "old_cut_volume_outside_new_cut_mm3": 0,
+      "roof_web_above_aperture_to_roof_under_mm": 3.4499999999999993,
+      "roof_web_to_outer_roof_top_mm": 5.449999999999999,
+      "bottom_of_opening_above_base_tongue_top_mm": 6.9
+    },
+    "c3_external_centerZ20.05": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "volume_mm3": 24799.826310898952,
+      "old_cut_volume_outside_new_cut_mm3": 0,
+      "roof_web_above_aperture_to_roof_under_mm": 3.4499999999999993,
+      "roof_web_to_outer_roof_top_mm": 5.449999999999999,
+      "bottom_of_opening_above_base_tongue_top_mm": 6.9
+    },
+    "c6_internal_centerZ20.05": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "volume_mm3": 24628.063449232155,
+      "old_cut_volume_outside_new_cut_mm3": 0,
+      "roof_web_above_aperture_to_roof_under_mm": 3.4499999999999993,
+      "roof_web_to_outer_roof_top_mm": 5.449999999999999,
+      "bottom_of_opening_above_base_tongue_top_mm": 6.9
+    },
+    "c6_external_centerZ20.05": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "volume_mm3": 24802.53026071435,
+      "old_cut_volume_outside_new_cut_mm3": 0,
+      "roof_web_above_aperture_to_roof_under_mm": 3.4499999999999993,
+      "roof_web_to_outer_roof_top_mm": 5.449999999999999,
+      "bottom_of_opening_above_base_tongue_top_mm": 6.9
+    },
+    "c3_internal_centerZ20.7": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "volume_mm3": 24858.378637095542,
+      "old_cut_volume_outside_new_cut_mm3": 0,
+      "roof_web_above_aperture_to_roof_under_mm": 2.8000000000000007,
+      "roof_web_to_outer_roof_top_mm": 4.800000000000001,
+      "bottom_of_opening_above_base_tongue_top_mm": 7.549999999999999
+    },
+    "c3_external_centerZ20.7": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "volume_mm3": 24798.720562604758,
+      "old_cut_volume_outside_new_cut_mm3": 0,
+      "roof_web_above_aperture_to_roof_under_mm": 2.8000000000000007,
+      "roof_web_to_outer_roof_top_mm": 4.800000000000001,
+      "bottom_of_opening_above_base_tongue_top_mm": 7.549999999999999
+    },
+    "c6_internal_centerZ20.7": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "volume_mm3": 24626.957756098258,
+      "old_cut_volume_outside_new_cut_mm3": 0,
+      "roof_web_above_aperture_to_roof_under_mm": 2.8000000000000007,
+      "roof_web_to_outer_roof_top_mm": 4.800000000000001,
+      "bottom_of_opening_above_base_tongue_top_mm": 7.549999999999999
+    },
+    "c6_external_centerZ20.7": {
+      "valid": true,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "volume_mm3": 24801.424567310874,
+      "old_cut_volume_outside_new_cut_mm3": 0,
+      "roof_web_above_aperture_to_roof_under_mm": 2.8000000000000007,
+      "roof_web_to_outer_roof_top_mm": 4.800000000000001,
+      "bottom_of_opening_above_base_tongue_top_mm": 7.549999999999999
+    }
+  },
+  "component_clearance": {
+    "c3_internal_stack11.0": {},
+    "c3_external_stack11.0": {},
+    "c6_internal_stack11.0": {},
+    "c6_external_stack11.0": {},
+    "c3_internal_stack11.65": {},
+    "c3_external_stack11.65": {},
+    "c6_internal_stack11.65": {},
+    "c6_external_stack11.65": {}
+  },
+  "features": {
+    "c3_stack11.0": {
+      "corner_closure_datum_intersection_mm3": 0.02286001,
+      "button_stop_intersections_mm3": {
+        "BOOT": 0.0,
+        "RESET": 0.0
+      },
+      "button_moving_release_intersections_mm3": {
+        "BOOT": 0.0,
+        "RESET": 0.0
+      },
+      "datum_and_button_solids_not_trimmed": true,
+      "gauge_shank_length_and_real_plug_corner_geometry": "UNKNOWN"
+    },
+    "c3_stack11.65": {
+      "corner_closure_datum_intersection_mm3": 0.0,
+      "button_stop_intersections_mm3": {
+        "BOOT": 0.0,
+        "RESET": 0.0
+      },
+      "button_moving_release_intersections_mm3": {
+        "BOOT": 0.0,
+        "RESET": 0.0
+      },
+      "datum_and_button_solids_not_trimmed": true,
+      "gauge_shank_length_and_real_plug_corner_geometry": "UNKNOWN"
+    },
+    "c6_stack11.0": {
+      "corner_closure_datum_intersection_mm3": 0.02286001,
+      "button_stop_intersections_mm3": {
+        "BOOT": 2.81396758,
+        "RESET": 2.80173302
+      },
+      "button_moving_release_intersections_mm3": {
+        "BOOT": 0.0,
+        "RESET": 0.0
+      },
+      "datum_and_button_solids_not_trimmed": true,
+      "gauge_shank_length_and_real_plug_corner_geometry": "UNKNOWN"
+    },
+    "c6_stack11.65": {
+      "corner_closure_datum_intersection_mm3": 0.0,
+      "button_stop_intersections_mm3": {
+        "BOOT": 4.22095137,
+        "RESET": 4.20259953
+      },
+      "button_moving_release_intersections_mm3": {
+        "BOOT": 0.0,
+        "RESET": 0.0
+      },
+      "datum_and_button_solids_not_trimmed": true,
+      "gauge_shank_length_and_real_plug_corner_geometry": "UNKNOWN"
+    }
+  },
+  "source_hashes": {
+    "enclosure.py": {
+      "before_sha256": "1e1fa20b4edf2fcd1ce176e366295f79c27d1e7b89889a7c5b819aaf8b44391a",
+      "candidate_sha256": "c2c8c565d5b6d931c6b99d60ef632ab9eb98fb7069fe1d018a6020bcb2bbf946",
+      "unchanged": false
+    },
+    "interface_baseline.py": {
+      "before_sha256": "593b3b699f498c7b1ea4990fd2cfb6a97bb3ea0452b3a37ce91b51958d66cd2a",
+      "candidate_sha256": "593b3b699f498c7b1ea4990fd2cfb6a97bb3ea0452b3a37ce91b51958d66cd2a",
+      "unchanged": true
+    },
+    "component_envelopes.py": {
+      "before_sha256": "b1e6999f8d384f402c474b28ed4c182bec8c8fd3e77bc9d6e7f8d9cd27e9788a",
+      "candidate_sha256": "b1e6999f8d384f402c474b28ed4c182bec8c8fd3e77bc9d6e7f8d9cd27e9788a",
+      "unchanged": true
+    },
+    "current_carrier_bounds.json": {
+      "before_sha256": "e87a0e64ba7c13c15044dd260866fe93e3923b29762aecedc4883ec62f880b2d",
+      "candidate_sha256": "e87a0e64ba7c13c15044dd260866fe93e3923b29762aecedc4883ec62f880b2d",
+      "unchanged": true
+    }
+  },
+  "tool_versions": {
+    "build123d": "0.10.0",
+    "cadquery-ocp": "7.8.1.1.post1"
+  },
+  "interpretation": "16x10 aperture passes14x8 profile with per-assembly Z shift; fixedZ20.7 fails low stack. Full-body corridor remains blocked by re-added internal features. Narrow aperture-only change does not establish complete plug fit."
+}

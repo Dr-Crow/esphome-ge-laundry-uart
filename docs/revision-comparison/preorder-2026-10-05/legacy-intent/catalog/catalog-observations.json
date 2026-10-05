@@ -1,0 +1,85 @@
+{
+  "observation_window_utc": [
+    "2026-10-05T12:44:51Z",
+    "2026-10-05T12:45:00Z"
+  ],
+  "method": "Primary LCSC pages returned through web reader; cached/crawled evidence, not live ordering confirmation",
+  "parts": [
+    {
+      "lcsc_id": "C17539",
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0805W8F2003T5E",
+      "resistance_ohm": 200000,
+      "stock_indication_pieces": 450500,
+      "crawl_label": "today",
+      "primary_url": "https://www.lcsc.com/product-detail/C17539.html",
+      "package": "0805",
+      "tolerance_percent": 1,
+      "power_watt": 0.125,
+      "catalog_voltage_volt": 150,
+      "tcr_ppm_per_celsius": 100,
+      "operating_temperature_celsius": [
+        -55,
+        155
+      ],
+      "calculated_nominal_continuous_voltage_ceiling_at_full_power_volt": 150
+    },
+    {
+      "lcsc_id": "C17713",
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0805W8F4702T5E",
+      "resistance_ohm": 47000,
+      "stock_indication_pieces": 1145200,
+      "crawl_label": "today",
+      "primary_url": "https://www.lcsc.com/product-detail/C17713.html",
+      "package": "0805",
+      "tolerance_percent": 1,
+      "power_watt": 0.125,
+      "catalog_voltage_volt": 150,
+      "tcr_ppm_per_celsius": 100,
+      "operating_temperature_celsius": [
+        -55,
+        155
+      ],
+      "calculated_nominal_continuous_voltage_ceiling_at_full_power_volt": 76.64854858377946
+    },
+    {
+      "lcsc_id": "C104108",
+      "manufacturer": "RALEC",
+      "mpn": "RTT052203FTP",
+      "resistance_ohm": 220000,
+      "stock_indication_pieces": 500,
+      "crawl_label": "last month",
+      "primary_url": "https://www.lcsc.com/product-detail/C104108.html",
+      "package": "0805",
+      "tolerance_percent": 1,
+      "power_watt": 0.125,
+      "catalog_voltage_volt": 150,
+      "tcr_ppm_per_celsius": 100,
+      "operating_temperature_celsius": [
+        -55,
+        155
+      ],
+      "calculated_nominal_continuous_voltage_ceiling_at_full_power_volt": 150
+    },
+    {
+      "lcsc_id": "C17673",
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0805W8F4701T5E",
+      "resistance_ohm": 4700,
+      "stock_indication_pieces": 2253500,
+      "crawl_label": "today",
+      "primary_url": "https://www.lcsc.com/product-detail/C17673.html",
+      "package": "0805",
+      "tolerance_percent": 1,
+      "power_watt": 0.125,
+      "catalog_voltage_volt": 150,
+      "tcr_ppm_per_celsius": 100,
+      "operating_temperature_celsius": [
+        -55,
+        155
+      ],
+      "calculated_nominal_continuous_voltage_ceiling_at_full_power_volt": 24.238399287081645
+    }
+  ]
+}

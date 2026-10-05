@@ -1,0 +1,5 @@
+{
+  "status": "Electrical make UNKNOWN",
+  "reason": "0.15/0.11mm conditional contact depression does not establish actual switch electrical make or allowed overtravel. Historical conditional_make fields are example geometric screens, not manufacturer make specifications.",
+  "geometry_changed": false
+}

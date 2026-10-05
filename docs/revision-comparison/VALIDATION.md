@@ -1,5 +1,7 @@
 # Board validation and current decisions
 
+Latest October5 pre-order analysis and committed fixes: [all-revision review](preorder-2026-10-05/README.md). Earlier checkpoint/quote/source boundaries below remain explicit.
+
 ## Current integration recheck
 
 The new `integration/ge-restored-final-2026-10-04` branch combines the complete genuine final per-revision, firmware, CI and comparison histories. It includes the selected Rev3C stencil correction `b87d3e8`. It is a newly identified integration; the earlier `f85ba98` integration's omitted ancestor/tree remains unavailable.

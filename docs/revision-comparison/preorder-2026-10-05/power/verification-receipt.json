@@ -1,0 +1,21 @@
+{
+  "verified_at_utc": "2026-10-05T13:46:52.994127+00:00",
+  "commit": "ba4dc5a5779bb48e63756db0a8a1791df6bd427c",
+  "checkout_clean": true,
+  "checks": {
+    "JSON_files": 24,
+    "common_primary_bytes_verified": 9,
+    "module_primary_bytes_verified": 13,
+    "legacy_primary_bytes_verified": 13,
+    "source_schematic_pcb_netlist_bytes_verified": 21,
+    "main_and_companion_relative_links_verified": true,
+    "revision_physical_net_membership_agreement": 7,
+    "conditional_sweep_rows": {
+      "conditional-input-sweep.csv": 15,
+      "conditional-derating.csv": 24,
+      "conditional-c6-input-sweep.csv": 20
+    }
+  },
+  "errors": [],
+  "scope": "Read-only source/primary bytes, links and numeric evidence. No rerun of native ERC/DRC, physical qualification or manufacturing release."
+}

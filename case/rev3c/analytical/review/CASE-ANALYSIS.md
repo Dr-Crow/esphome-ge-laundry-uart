@@ -21,7 +21,7 @@ PASS below means the stated nominal/proxy geometry passed the stated check. It i
 | Valid, single-solid case parts | PASS | PASS | PASS | PASS | Actual generated geometry, not an old cassette render |
 | Case versus current registered body screens at three installed stacks | PASS | PASS | PASS | PASS | Selected U9/U10 and F1/F2 drawing maxima included; Six neighboring caps now use primary manufacturer maxima; D20 and other missing models use explicitly assumed screens |
 | Original fixed reaches at 11.0 mm | FAIL | FAIL | FAIL | FAIL | 0.90 mm release gap; 0.50/0.54 mm residual gap at cap stop |
-| Per-assembly conditional nominal make | PASS* | PASS* | PASS* | PASS* | 0.25 mm release gap gives 0.15/0.11 mm nominal depression; exact switch identity and permitted travel unresolved |
+| Per-assembly conditional nominal contact/depression | PASS* | PASS* | PASS* | PASS* | 0.25 mm release gap gives 0.15/0.11 mm nominal depression; electrical make, exact switch identity and permitted travel unresolved |
 | Worst-case make and safe overtravel | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | No manufacturer maximum overtravel/force bound; print, seating, solder and closure errors unmeasured |
 | C3 lid cannot be fitted to C6 | FAIL | FAIL | FAIL | FAIL | Common base/closure has no physical module key |
 | Source USB shell screen / 12 × 6 mm synthetic plug gauge | PASS | PASS | PASS | PASS | Fixed and stack-shifted apertures; actual plug shank/body/strain relief remains UNKNOWN |
@@ -69,7 +69,7 @@ All three corrected guides are valid single solids and have zero intersections w
 
 Lower inlet area changes from 6.424 mm² circular to **5.595 WIFI /6.010 AUX /5.313 BUS mm²**, with only 0.290/0.145/0.389 mm³ removed. The relief is 0.35 mm high; no guide is moved and no contact is added to electronics. Edge light/reflection, actual emitter/solder height, translucency, surface roughness, retention and printing still need testing. This is a separately labeled correction candidate, not a physically selected release. The original guides remain available for comparison.
 
-![Actual CAD guide-relief inlet cross-sections](results/guide-relief-candidate.png)
+![Actual CAD guide-relief inlet cross-sections](guide-relief-candidate.png)
 
 ## Printing and next evidence
 

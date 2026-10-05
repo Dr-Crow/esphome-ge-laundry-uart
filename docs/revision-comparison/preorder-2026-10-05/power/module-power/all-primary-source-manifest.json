@@ -1,0 +1,101 @@
+[
+  {
+    "filename": "tlv757p-rev-c.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tlv757p.pdf",
+    "bytes": 2856593,
+    "sha256": "9f5e9602ed9366124dfee01dd773ceafca6b54c5c22cf3a7999453432c5cefb9",
+    "retrieved_utc": "2026-10-05T13:25:34.978097+00:00"
+  },
+  {
+    "filename": "sgm6029.pdf",
+    "url": "https://www.sg-micro.com/rect/assets/3323f5dc-718f-4b81-b820-398ddb702989/SGM6029.pdf",
+    "bytes": 1989485,
+    "sha256": "79d7e25abc3acfd18ab9c394e082663e07dc169151b4bfe0314c13510ced63e0",
+    "retrieved_utc": "2026-10-05T13:25:41.587850+00:00"
+  },
+  {
+    "filename": "esp32-c3-datasheet.pdf",
+    "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf",
+    "bytes": 900158,
+    "sha256": "833fc000b4b3c3d39c496fcbd597fed5806956503ce7390b19cc8ae82f19f968",
+    "retrieved_utc": "2026-10-05T13:25:49.670182+00:00"
+  },
+  {
+    "filename": "esp32-c6-datasheet.pdf",
+    "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf",
+    "bytes": 975625,
+    "sha256": "372a5b42b2900c83ef4309149c8835e9ae2d1be19244995bf2fb83af4dc5edf1",
+    "retrieved_utc": "2026-10-05T13:25:57.981169+00:00"
+  },
+  {
+    "filename": "lmbr4010bst5g-rev-c.pdf",
+    "url": "https://www.lrc.cn/Upload/PDF/Product/SBD/LMBR4010BST5G.pdf",
+    "bytes": 297475,
+    "sha256": "01ccbfe48afb88d1bf5ba8c0556b1b8ebcf9d181f20eb6c6911c0f8eca804e0d",
+    "retrieved_utc": "2026-10-05T13:27:52.612844+00:00"
+  },
+  {
+    "filename": "esp32-c3-hardware-schematic-checklist.html",
+    "url": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/schematic-checklist.html",
+    "bytes": 58707,
+    "sha256": "d0adaaa47edb386021557d0532813921608ca464db9bc4ac16c187a1a7fadfa1",
+    "retrieved_utc": "2026-10-05T13:28:01.405967+00:00"
+  },
+  {
+    "filename": "esp32-c6-hardware-schematic-checklist.html",
+    "url": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c6/schematic-checklist.html",
+    "bytes": 61793,
+    "sha256": "5c68ddfa0ef1674f6e6c8b7d4d2bcd0aa2494a36d412307bd6a5f50c234c1479",
+    "retrieved_utc": "2026-10-05T13:28:06.199652+00:00"
+  },
+  {
+    "filename": "shikues-official-product-catalog.pdf",
+    "url": "https://api.shikues.com/product_category.pdf",
+    "bytes": 5010024,
+    "sha256": "ef9f76dea05fa3226bc4cb3ac480d8688589f6a8d1e2b409eb241576972c7dc4",
+    "retrieved_utc": "2026-10-05T13:29:40.281160+00:00"
+  },
+  {
+    "filename": "c3-v1.3-260116.zip",
+    "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+    "http_status": 200,
+    "bytes": 339671,
+    "sha256": "477bc61cec652eaeefa887cb1f97abb1514e8a61ea9659240b88be7213c3b6ff",
+    "retrieved_utc": "2026-10-05T13:00:46.686380+00:00",
+    "relative_local_path": "module-sourcing/primary-sources/c3-v1.3-260116.zip"
+  },
+  {
+    "filename": "c3-v1.3-schematic.pdf",
+    "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_SCH_260116.pdf",
+    "http_status": 200,
+    "bytes": 424362,
+    "sha256": "60d7d447d0d37b0c3ff6c50d372a45d50f750070b8b9d68ca7b906df43365081",
+    "retrieved_utc": "2026-10-05T13:00:51.252153+00:00",
+    "relative_local_path": "module-sourcing/primary-sources/c3-v1.3-schematic.pdf"
+  },
+  {
+    "filename": "c6-v1.0-260114.zip",
+    "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip",
+    "http_status": 200,
+    "bytes": 1126886,
+    "sha256": "cea2ed66da575e4a1dd6c7a9acd60583ed4a9adbf6b1d2952851c1e4199c05fc",
+    "retrieved_utc": "2026-10-05T13:05:05.317749+00:00",
+    "relative_local_path": "module-sourcing/primary-sources/c6-v1.0-260114.zip"
+  },
+  {
+    "filename": "c6-v1.0-schematic.pdf",
+    "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH_260114.pdf",
+    "http_status": 200,
+    "bytes": 614070,
+    "sha256": "510f3f917bcded1201ca5c63374409183457c1ef83a836988517d6802180dad7",
+    "retrieved_utc": "2026-10-05T13:00:57.964631+00:00",
+    "relative_local_path": "module-sourcing/primary-sources/c6-v1.0-schematic.pdf"
+  },
+  {
+    "filename": "tdk-tfm160808alc-20250616.pdf",
+    "url": "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_power_tfm160808alc_en.pdf",
+    "bytes": 246836,
+    "sha256": "08f8e6ef673f42079334351f17cfdb35d7a738f40d3a02dedfd867381229af27",
+    "retrieved_utc": "2026-10-05T13:39:51.848557+00:00"
+  }
+]

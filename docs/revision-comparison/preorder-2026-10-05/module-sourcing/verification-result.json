@@ -1,0 +1,44 @@
+{
+  "verified_utc": "2026-10-05T13:19:39.179908+00:00",
+  "source_commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+  "input_hash_count": 54,
+  "input_hash_failures": [],
+  "all_json_parse": true,
+  "local_report_links_exist": true,
+  "c3_normalized_land_matches": 22,
+  "rev1_row_spacing_mm": 22.86,
+  "official_devkitc_v4_row_spacing_mm": 25.4,
+  "source_checkout_clean": true,
+  "deliverables": [
+    {
+      "filename": "GE-Exact-Module-Sourcing-Review.md",
+      "bytes": 18012,
+      "sha256": "90e9040b243c304d8e9dbed621f6ac9d1fd0552f80cdf2ac0096c1562df72d3d"
+    },
+    {
+      "filename": "carrier-module-pads.csv",
+      "bytes": 27627,
+      "sha256": "453974fa3480b0ad9f5ab93f379079ca1f80b7f7b5003ab94bb17183b6298b40"
+    },
+    {
+      "filename": "module-pad-evidence.json",
+      "bytes": 299479,
+      "sha256": "a81e0ca74ee430530a5eb96a0fa1bf51b20580ab9705d01f1e0891d1b7968f00"
+    },
+    {
+      "filename": "land-pattern-comparison.json",
+      "bytes": 10440,
+      "sha256": "381d32ec84fb8004a896e6cb4daa448eb416901977de992fb0d02508d9343005"
+    },
+    {
+      "filename": "input-hashes.json",
+      "bytes": 12917,
+      "sha256": "f95afe68f9dd68e2657199204c7005683e8a65a58d4a96f230795241a6255550"
+    },
+    {
+      "filename": "public-stock/module-availability-2026-10-05.json",
+      "bytes": 14674,
+      "sha256": "6e6391a086acf6e19e349f05cc0c763c44912c690b5047819f0fba73b227d957"
+    }
+  ]
+}

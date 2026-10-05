@@ -1,0 +1,34 @@
+[
+  {
+    "revision": "rev1.0",
+    "commit": "bf581ac1804bab982c78b9e2f6a6292d695e49cc",
+    "source_path": "pcb/rev1.0/design/OnionStraws.kicad_sch",
+    "git_blob": "7f2b86ed4ab8b7a270d3428a4fb11637befb5424",
+    "sha256": "ded9db1a9f1b2e56d73509cd068acb9709b5f97b9fec8ab2d99018710c7689cb",
+    "current_sha256": "ded9db1a9f1b2e56d73509cd068acb9709b5f97b9fec8ab2d99018710c7689cb"
+  },
+  {
+    "revision": "rev2.0",
+    "commit": "bf581ac1804bab982c78b9e2f6a6292d695e49cc",
+    "source_path": "pcb/rev2.0/design/OnionStraws.kicad_sch",
+    "git_blob": "0c00ef78ad236571b8a0170d8c8aaea1c31d80d6",
+    "sha256": "610c3b04388a7e27648c91a5b90e0d5cceb3e90095ac20de17c02c77d15252be",
+    "current_sha256": "610c3b04388a7e27648c91a5b90e0d5cceb3e90095ac20de17c02c77d15252be"
+  },
+  {
+    "revision": "rev2.1",
+    "commit": "bf581ac1804bab982c78b9e2f6a6292d695e49cc",
+    "source_path": "pcb/rev2.1/design/OnionStraws.kicad_sch",
+    "git_blob": "b41802d5bdfbffcae95b5cd1fde0d588bc80319e",
+    "sha256": "f20c7d49507c158c6f5d6a5cf9e6166f228a4bf35232b0a7b06bad934134f10e",
+    "current_sha256": "f20c7d49507c158c6f5d6a5cf9e6166f228a4bf35232b0a7b06bad934134f10e"
+  },
+  {
+    "revision": "rev2.2",
+    "commit": "bf581ac1804bab982c78b9e2f6a6292d695e49cc",
+    "source_path": "pcb/rev2.2/design/OnionStraws.kicad_sch",
+    "git_blob": "2f48783c11c45e56240d61449b893b3afe269fef",
+    "sha256": "7539dabb37bba58a1f0139a136ca00b1b62a4883beeb737e22f4da655a057443",
+    "current_sha256": "7539dabb37bba58a1f0139a136ca00b1b62a4883beeb737e22f4da655a057443"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev1.0/design/OnionStraws.kicad_pcb",
+    "bytes": 810884,
+    "sha256": "fbee229893652b7e36fe99563679229b8be1422968c2087ffb71ad33aeba7655"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev1.0/design/OnionStraws.kicad_sch",
+    "bytes": 290856,
+    "sha256": "ded9db1a9f1b2e56d73509cd068acb9709b5f97b9fec8ab2d99018710c7689cb"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.0/design/OnionStraws.kicad_pcb",
+    "bytes": 864000,
+    "sha256": "73cf5b1aec5182b9e162540e9a4b7897b89c961b958dfe228d6fe3530fc8826c"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.0/design/OnionStraws.kicad_sch",
+    "bytes": 1580308,
+    "sha256": "e07d25f2fbaa58c997bd973c13ca19893bb1126050f3a1af5f74108f0d7d4b43"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.1/design/OnionStraws.kicad_pcb",
+    "bytes": 882465,
+    "sha256": "d357d159ec1e54dfefb504e55ddaad09589a39156223a882fa454ee706762038"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.1/design/OnionStraws.kicad_sch",
+    "bytes": 1587654,
+    "sha256": "ae2e3d79fa1ce635c008c50e324ffd00f8516b461e4540c4f664fbb1f76da6d1"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.2/design/OnionStraws.kicad_pcb",
+    "bytes": 882068,
+    "sha256": "4e98a77322d5f7a416f03c71dd2c724a4dd39c0ff49f3e16eb12916a8eeed187"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.2/design/OnionStraws.kicad_sch",
+    "bytes": 1587657,
+    "sha256": "7539dabb37bba58a1f0139a136ca00b1b62a4883beeb737e22f4da655a057443"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+    "bytes": 1771881,
+    "sha256": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch",
+    "bytes": 449519,
+    "sha256": "c64844158d72df072a88e4d64342f31abea2f3cc1f7112e64a6e38ae18de0b53"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb",
+    "bytes": 1174878,
+    "sha256": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch",
+    "bytes": 411168,
+    "sha256": "5aa8998b7820a3f00f2b0b18424f478989efacae7c6f33a47c488224012fba03"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+    "bytes": 1176201,
+    "sha256": "4fba3feea4161f7e6bdfbd7f20ac677a485948fac540d7bda1c246a451c4bab9"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch",
+    "bytes": 403238,
+    "sha256": "0c4abc0c24b55c4e7813596ad224bb1f4fb4776476184da79baf45af45187080"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/XIAO-ESP32-S3-SMD.kicad_mod",
+    "bytes": 525579,
+    "sha256": "b093cd9a70feb3b00d0ee3f9d4b828b69aa605c28bd0c3e55347676db2994243"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/XIAO-ESP32-C6-SMD.kicad_mod",
+    "bytes": 9591,
+    "sha256": "8c7051e4e8fe46595e57d930cb0a95743c7fab67e5e07034f2ee6bd81267c0ec"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/XIAO-ESP32-C3-SMD.kicad_mod",
+    "bytes": 9260,
+    "sha256": "f850def2f4829bd58a1a7f1773277de398930232a521d6a9607d8550aded3784"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3b/design/footprints/GEA_XIAO.pretty/XIAO-ESP32-C3-v1.3-SMD.kicad_mod",
+    "bytes": 8096,
+    "sha256": "dd5c7fc37281f0ddb85c987c7974d45df259a9fe9a5396c7383c1fe6b28ffd21"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3b/design/symbols/GEA_Rev3B.kicad_sym",
+    "bytes": 9368,
+    "sha256": "e02116db811a5e2da4c9c634fb87d1c7434ce472f0c953f4126403d80a6e2bb4"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/Seeed_Studio_XIAO_Series.kicad_sym",
+    "bytes": 173901,
+    "sha256": "c203a046580c33efdfb771e76c4c1eb10138c6d2d368f9517c4c4503b7d0bb71"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-24028/XIAO ESP32 C6.kicad_pcb",
+    "bytes": 2799986,
+    "sha256": "9d1c00d4455f42fe9fafa9e3d45e8edfbe862fc001a3e67e1f35b29044766a6b"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c3-v1.3-260116/202003511_XIAO ESP32C3_v1.3_SCH&PCB_260116/XIAO ESP32C3_v1.3.kicad_pcb",
+    "bytes": 697553,
+    "sha256": "a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-260114/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_pcb",
+    "bytes": 2756545,
+    "sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/gea3.yaml",
+    "bytes": 3541,
+    "sha256": "ccf00643afadcfd2d3ed7618d12c5b1c368cd73abef7b29114a9716ba122f988"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/gea2.yaml",
+    "bytes": 4335,
+    "sha256": "5678bf257cc8a0080db58d2a44f96d289cc344f8ec5abe0d94f439e0ac7d7b70"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/shared-rev3c/c6-gea3.yaml",
+    "bytes": 740,
+    "sha256": "bd3d016407627988c481bf9d66fdbc1ea8e2a5f2f58c87b345a1b1c4f7e5b3e3"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/shared-rev3c/c6-gea2.yaml",
+    "bytes": 740,
+    "sha256": "69f30f6813e7dc3fd24cbe693601f8291b7b76e178d568c4a67e2f73fe8005fc"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/shared-rev3c/c3-gea3.yaml",
+    "bytes": 672,
+    "sha256": "fccf7ceeb9638114f44925c1f027158e83848b64d52a153256890ba379e4fb43"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/shared-rev3c/c3-gea2.yaml",
+    "bytes": 671,
+    "sha256": "ff4362e214c9c99cc8c3df64c8d4c63769355111e632fc4fad29cddec79b3b0d"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/rev1-classic/gea3.yaml",
+    "bytes": 495,
+    "sha256": "f19dd6cf0f94040edeef8220ea92284848e00f77c80998892bec5d0f44cf9714"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/rev1-classic/gea2.yaml",
+    "bytes": 495,
+    "sha256": "d3c2da26b218933aa081bde1d869d10aa7dad59b8aa9455f9962d96753eb04e1"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/shared-rev3c/packages/gea3.yaml",
+    "bytes": 255,
+    "sha256": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/shared-rev3c/packages/c6-rf.yaml",
+    "bytes": 475,
+    "sha256": "55979b14a8a3dc9414c42ebc613fe2d036b72a1b447329d6be5f9c27c470d943"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/shared-rev3c/packages/common.yaml",
+    "bytes": 3451,
+    "sha256": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/shared-rev3c/packages/gea2.yaml",
+    "bytes": 637,
+    "sha256": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/rev1-classic/packages/gea3.yaml",
+    "bytes": 255,
+    "sha256": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/rev1-classic/packages/common.yaml",
+    "bytes": 2450,
+    "sha256": "e0c7b2c2b716fc57204dfebbee810bb5e3374cb7720535526e9474838d62655d"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/firmware/rev1-classic/packages/gea2.yaml",
+    "bytes": 637,
+    "sha256": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3c/validation/xiao-model-provenance.json",
+    "bytes": 190252,
+    "sha256": "50eaeb022a04a01077cf9b5b6a99e8e81ab993c58ce3cc85da09ef64ddb6b251"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3b/design/footprints/SOURCE.md",
+    "bytes": 2335,
+    "sha256": "fc37daeabe574a7cc3b2197c028cee18cc7b26a43e7ee4e181d96a8b73694dfb"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.1/manufacturing/BOM-OnionStraws-rev2.1.csv",
+    "bytes": 3050,
+    "sha256": "86a7738bfbaa86448a011869867e1ede0dfbe026ac1e41d182f62257ea63469e"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.1/manufacturing/original/BOM-OnionStraws-rev2.1.csv",
+    "bytes": 1070,
+    "sha256": "8349ac8f8b807fe495411aa3799bed70c92f1549b473bb296070cd7b8b49b8c0"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3b/manufacturing/BOM-GEA-Adapter-Rev3B.csv",
+    "bytes": 7711,
+    "sha256": "23ec68c57f4a09124a1bc0cb251dbc1fe21fd55b554e9ad74ef809fdc4cdb186"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3c/manufacturing/BOM-GEA-Adapter-Rev3C.csv",
+    "bytes": 4768,
+    "sha256": "27a9dfa850fe996a36c792fb6146548bc59342eda2b05732fa24e173bade1406"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3a/manufacturing/BOM-GEA-Adapter-Rev3A.csv",
+    "bytes": 12031,
+    "sha256": "70158d51f3caa9abd827e995d92ee816c3ed2edbd5727d149c0acf95a3a480d5"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.2/manufacturing/BOM-OnionStraws-rev2.2.csv",
+    "bytes": 2999,
+    "sha256": "58d18dd196cfed0d6a76b9732f944739d80af323acf3575dd4654f8420bdf94d"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.2/manufacturing/original/BOM-OnionStraws-rev2.2.csv",
+    "bytes": 1040,
+    "sha256": "9e2f0106f4a4bf769b8a727dc4e5215770da58eaab379b476eec8ff6c86d0e68"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.0/native-review/native-bom.csv",
+    "bytes": 4728,
+    "sha256": "57b8a4349baa25266e77fcf5ae235dc10a7378afa972aecafe5ae98aeca05007"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3c/validation/JLCPCB-QUOTE-2026-10-05.json",
+    "bytes": 7165,
+    "sha256": "9cd77960bd3b2c8db909de038d57267258a2260890a953c7d93024a4c13c91e8"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.0/design/footprints/LegacyBoard.pretty/U2_ESP32-C3-WROOM-02.kicad_mod",
+    "bytes": 15346,
+    "sha256": "aff99218c347ae4e6e3bf5e735d6390f7f0841944bcd871c0c63637457a97251"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.1/design/footprints/LegacyBoard.pretty/U2_ESP32-C3-WROOM-02.kicad_mod",
+    "bytes": 15246,
+    "sha256": "2f4b642529d54b9fac418914bcf18f0fbc04a643168cf967e201ae6090043f5f"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev2.2/design/footprints/LegacyBoard.pretty/U2_ESP32-C3-WROOM-02.kicad_mod",
+    "bytes": 15246,
+    "sha256": "eb8aa0f1ca6eb78566e44616e1a1ec73455a13980536f8ab891a93ceda236c6f"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev3a/design/footprints/LegacyBoard.pretty/U2_ESP32-C3-WROOM-02.kicad_mod",
+    "bytes": 16332,
+    "sha256": "bae9c15b21292b4b65712a82328cc53d4a19b3f52770234f1f5c16b45556776e"
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-restored-final-publish-0235/pcb/rev1.0/design/footprints/LegacyBoard.pretty/U3_DIP-38_900_ELL.kicad_mod",
+    "bytes": 9990,
+    "sha256": "61212d56febaf1eb090cf3f7bee217e3a5188093efda425fa40b983b88f7d3ca"
+  }
+]

@@ -1,0 +1,371 @@
+{
+  "not_a_simulation": true,
+  "not_a_guaranteed_bound": true,
+  "scope": "DC algebraic sensitivity only. Batteries absent; no startup, wire drop, carrier load, thermal coupling, or load dynamics included. Input voltages are actual module side VBUS, after carrier losses.",
+  "assumptions": {
+    "rf_chip_proxy_c3_a": 0.335,
+    "rf_chip_proxy_c6_a": 0.354,
+    "stress_total_3v3_load_a": 0.5,
+    "diode_proxy_v": 0.35,
+    "c3_fuse_proxy_ohm": 0.2,
+    "c3_dropout_proxy_ohm": 0.3,
+    "c6_highside_proxy_ohm": 0.185,
+    "c6_inductor_proxy_dcr_ohm": 0.08,
+    "c6_efficiency_sweep": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "c3_thermal_reference_sweep_c_per_w": [
+      100.8,
+      231.1
+    ],
+    "c6_converter_thermal_reference_c_per_w": 214,
+    "c6_diode_thermal_reference_c_per_w": 400
+  },
+  "rows": [
+    {
+      "module": "c3",
+      "side_vbus_v": 3.2,
+      "rail_load_a": 0.335,
+      "regulator_input_v": 2.783,
+      "estimated_rail_v": 2.6825,
+      "rail_meets_3v3": false,
+      "rail_meets_3v0": false,
+      "approx_module_input_a": 0.335,
+      "ldo_loss_w": 0.03366749999999994,
+      "diode_loss_w": 0.11725,
+      "fuse_loss_w": 0.022445000000000003,
+      "ldo_reference_delta_t_c": [
+        3.3936839999999937,
+        7.780559249999986
+      ]
+    },
+    {
+      "module": "c3",
+      "side_vbus_v": 3.7,
+      "rail_load_a": 0.335,
+      "regulator_input_v": 3.283,
+      "estimated_rail_v": 3.1825,
+      "rail_meets_3v3": false,
+      "rail_meets_3v0": true,
+      "approx_module_input_a": 0.335,
+      "ldo_loss_w": 0.03366749999999994,
+      "diode_loss_w": 0.11725,
+      "fuse_loss_w": 0.022445000000000003,
+      "ldo_reference_delta_t_c": [
+        3.3936839999999937,
+        7.780559249999986
+      ]
+    },
+    {
+      "module": "c3",
+      "side_vbus_v": 4.5,
+      "rail_load_a": 0.335,
+      "regulator_input_v": 4.083,
+      "estimated_rail_v": 3.3,
+      "rail_meets_3v3": true,
+      "rail_meets_3v0": true,
+      "approx_module_input_a": 0.335,
+      "ldo_loss_w": 0.2623050000000001,
+      "diode_loss_w": 0.11725,
+      "fuse_loss_w": 0.022445000000000003,
+      "ldo_reference_delta_t_c": [
+        26.44034400000001,
+        60.618685500000026
+      ]
+    },
+    {
+      "module": "c3",
+      "side_vbus_v": 5.0,
+      "rail_load_a": 0.335,
+      "regulator_input_v": 4.583,
+      "estimated_rail_v": 3.3,
+      "rail_meets_3v3": true,
+      "rail_meets_3v0": true,
+      "approx_module_input_a": 0.335,
+      "ldo_loss_w": 0.42980500000000016,
+      "diode_loss_w": 0.11725,
+      "fuse_loss_w": 0.022445000000000003,
+      "ldo_reference_delta_t_c": [
+        43.32434400000002,
+        99.32793550000004
+      ]
+    },
+    {
+      "module": "c3",
+      "side_vbus_v": 3.2,
+      "rail_load_a": 0.5,
+      "regulator_input_v": 2.75,
+      "estimated_rail_v": 2.6,
+      "rail_meets_3v3": false,
+      "rail_meets_3v0": false,
+      "approx_module_input_a": 0.5,
+      "ldo_loss_w": 0.07499999999999996,
+      "diode_loss_w": 0.175,
+      "fuse_loss_w": 0.05,
+      "ldo_reference_delta_t_c": [
+        7.559999999999995,
+        17.33249999999999
+      ]
+    },
+    {
+      "module": "c3",
+      "side_vbus_v": 3.7,
+      "rail_load_a": 0.5,
+      "regulator_input_v": 3.25,
+      "estimated_rail_v": 3.1,
+      "rail_meets_3v3": false,
+      "rail_meets_3v0": true,
+      "approx_module_input_a": 0.5,
+      "ldo_loss_w": 0.07499999999999996,
+      "diode_loss_w": 0.175,
+      "fuse_loss_w": 0.05,
+      "ldo_reference_delta_t_c": [
+        7.559999999999995,
+        17.33249999999999
+      ]
+    },
+    {
+      "module": "c3",
+      "side_vbus_v": 4.5,
+      "rail_load_a": 0.5,
+      "regulator_input_v": 4.050000000000001,
+      "estimated_rail_v": 3.3,
+      "rail_meets_3v3": true,
+      "rail_meets_3v0": true,
+      "approx_module_input_a": 0.5,
+      "ldo_loss_w": 0.37500000000000044,
+      "diode_loss_w": 0.175,
+      "fuse_loss_w": 0.05,
+      "ldo_reference_delta_t_c": [
+        37.80000000000005,
+        86.6625000000001
+      ]
+    },
+    {
+      "module": "c3",
+      "side_vbus_v": 5.0,
+      "rail_load_a": 0.5,
+      "regulator_input_v": 4.550000000000001,
+      "estimated_rail_v": 3.3,
+      "rail_meets_3v3": true,
+      "rail_meets_3v0": true,
+      "approx_module_input_a": 0.5,
+      "ldo_loss_w": 0.6250000000000004,
+      "diode_loss_w": 0.175,
+      "fuse_loss_w": 0.05,
+      "ldo_reference_delta_t_c": [
+        63.00000000000004,
+        144.43750000000009
+      ]
+    },
+    {
+      "module": "c6",
+      "side_vbus_v": 3.2,
+      "rail_load_a": 0.354,
+      "regulator_input_v": 2.85,
+      "estimated_rail_v": 2.75619,
+      "rail_meets_3v3": false,
+      "rail_meets_3v0": false,
+      "dropout_mode_input_proxy_a": 0.354,
+      "converter_conduction_proxy_w": 0.03320874,
+      "note": "Do not apply regulated 3.3V efficiency formula in this dropout case."
+    },
+    {
+      "module": "c6",
+      "side_vbus_v": 3.7,
+      "rail_load_a": 0.354,
+      "regulator_input_v": 3.35,
+      "estimated_rail_v": 3.25619,
+      "rail_meets_3v3": false,
+      "rail_meets_3v0": true,
+      "dropout_mode_input_proxy_a": 0.354,
+      "converter_conduction_proxy_w": 0.03320874,
+      "note": "Do not apply regulated 3.3V efficiency formula in this dropout case."
+    },
+    {
+      "module": "c6",
+      "side_vbus_v": 4.5,
+      "rail_load_a": 0.354,
+      "regulator_input_v": 4.15,
+      "estimated_rail_v": 3.3,
+      "rail_meets_3v3": true,
+      "rail_meets_3v0": true,
+      "efficiency_sweep": [
+        {
+          "converter_efficiency": 0.8,
+          "module_input_a": 0.351867469879518,
+          "converter_total_loss_w": 0.29205,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 62.49869999999999,
+          "diode_loss_w": 0.12315361445783128,
+          "diode_reference_delta_t_c": 49.26144578313253
+        },
+        {
+          "converter_efficiency": 0.9,
+          "module_input_a": 0.31277108433734935,
+          "converter_total_loss_w": 0.12980000000000005,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 27.777200000000008,
+          "diode_loss_w": 0.10946987951807226,
+          "diode_reference_delta_t_c": 43.787951807228914
+        },
+        {
+          "converter_efficiency": 0.95,
+          "module_input_a": 0.2963094483195941,
+          "converter_total_loss_w": 0.06148421052631572,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 13.157621052631562,
+          "diode_loss_w": 0.10370830691185792,
+          "diode_reference_delta_t_c": 41.48332276474318
+        }
+      ]
+    },
+    {
+      "module": "c6",
+      "side_vbus_v": 5.0,
+      "rail_load_a": 0.354,
+      "regulator_input_v": 4.65,
+      "estimated_rail_v": 3.3,
+      "rail_meets_3v3": true,
+      "rail_meets_3v0": true,
+      "efficiency_sweep": [
+        {
+          "converter_efficiency": 0.8,
+          "module_input_a": 0.31403225806451607,
+          "converter_total_loss_w": 0.29205,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 62.49869999999999,
+          "diode_loss_w": 0.1099112903225806,
+          "diode_reference_delta_t_c": 43.96451612903225
+        },
+        {
+          "converter_efficiency": 0.9,
+          "module_input_a": 0.2791397849462365,
+          "converter_total_loss_w": 0.12980000000000005,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 27.777200000000008,
+          "diode_loss_w": 0.09769892473118276,
+          "diode_reference_delta_t_c": 39.07956989247312
+        },
+        {
+          "converter_efficiency": 0.95,
+          "module_input_a": 0.26444821731748724,
+          "converter_total_loss_w": 0.06148421052631572,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 13.157621052631562,
+          "diode_loss_w": 0.09255687606112051,
+          "diode_reference_delta_t_c": 37.02275042444821
+        }
+      ]
+    },
+    {
+      "module": "c6",
+      "side_vbus_v": 3.2,
+      "rail_load_a": 0.5,
+      "regulator_input_v": 2.85,
+      "estimated_rail_v": 2.7175000000000002,
+      "rail_meets_3v3": false,
+      "rail_meets_3v0": false,
+      "dropout_mode_input_proxy_a": 0.5,
+      "converter_conduction_proxy_w": 0.06625,
+      "note": "Do not apply regulated 3.3V efficiency formula in this dropout case."
+    },
+    {
+      "module": "c6",
+      "side_vbus_v": 3.7,
+      "rail_load_a": 0.5,
+      "regulator_input_v": 3.35,
+      "estimated_rail_v": 3.2175000000000002,
+      "rail_meets_3v3": false,
+      "rail_meets_3v0": true,
+      "dropout_mode_input_proxy_a": 0.5,
+      "converter_conduction_proxy_w": 0.06625,
+      "note": "Do not apply regulated 3.3V efficiency formula in this dropout case."
+    },
+    {
+      "module": "c6",
+      "side_vbus_v": 4.5,
+      "rail_load_a": 0.5,
+      "regulator_input_v": 4.15,
+      "estimated_rail_v": 3.3,
+      "rail_meets_3v3": true,
+      "rail_meets_3v0": true,
+      "efficiency_sweep": [
+        {
+          "converter_efficiency": 0.8,
+          "module_input_a": 0.4969879518072288,
+          "converter_total_loss_w": 0.4125,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 88.27499999999999,
+          "diode_loss_w": 0.17394578313253006,
+          "diode_reference_delta_t_c": 69.57831325301204
+        },
+        {
+          "converter_efficiency": 0.9,
+          "module_input_a": 0.4417670682730923,
+          "converter_total_loss_w": 0.1833333333333334,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 39.23333333333335,
+          "diode_loss_w": 0.15461847389558228,
+          "diode_reference_delta_t_c": 61.847389558232926
+        },
+        {
+          "converter_efficiency": 0.95,
+          "module_input_a": 0.41851616994292956,
+          "converter_total_loss_w": 0.08684210526315779,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 18.58421052631577,
+          "diode_loss_w": 0.14648065948002534,
+          "diode_reference_delta_t_c": 58.592263792010144
+        }
+      ]
+    },
+    {
+      "module": "c6",
+      "side_vbus_v": 5.0,
+      "rail_load_a": 0.5,
+      "regulator_input_v": 4.65,
+      "estimated_rail_v": 3.3,
+      "rail_meets_3v3": true,
+      "rail_meets_3v0": true,
+      "efficiency_sweep": [
+        {
+          "converter_efficiency": 0.8,
+          "module_input_a": 0.4435483870967741,
+          "converter_total_loss_w": 0.4125,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 88.27499999999999,
+          "diode_loss_w": 0.1552419354838709,
+          "diode_reference_delta_t_c": 62.09677419354838
+        },
+        {
+          "converter_efficiency": 0.9,
+          "module_input_a": 0.39426523297491034,
+          "converter_total_loss_w": 0.1833333333333334,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 39.23333333333335,
+          "diode_loss_w": 0.1379928315412186,
+          "diode_reference_delta_t_c": 55.19713261648745
+        },
+        {
+          "converter_efficiency": 0.95,
+          "module_input_a": 0.3735144312393887,
+          "converter_total_loss_w": 0.08684210526315779,
+          "all_converter_loss_assigned_to_ic_delta_t_proxy_c": 18.58421052631577,
+          "diode_loss_w": 0.13073005093378604,
+          "diode_reference_delta_t_c": 52.292020373514426
+        }
+      ]
+    }
+  ],
+  "carrier_inclusive_sensitivity": {
+    "carrier_case_3v3_a": 0.020626,
+    "carrier_case_5v_a": 0.001033,
+    "not_guaranteed": true,
+    "c3": {
+      "rail_proxy_a": 0.355626,
+      "moderate_side_vbus_min_for_3v0_v": 3.527813,
+      "moderate_side_vbus_min_for_3v3_v": 3.827813,
+      "moderate_rail_at_3v7_v": 3.172187,
+      "high_drop_no_fuse_rail_at_3v7_v": 3.04107765,
+      "additional_resistance_threshold_for_3v0_ohm": 0.11550800560139018
+    },
+    "c6": {
+      "rail_proxy_a": 0.37462599999999996,
+      "moderate_side_vbus_min_for_3v0_v": 3.44927589,
+      "moderate_side_vbus_min_for_3v3_v": 3.74927589,
+      "moderate_rail_at_3v7_v": 3.25072411
+    }
+  }
+}

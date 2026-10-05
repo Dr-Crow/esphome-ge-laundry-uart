@@ -1,0 +1,235 @@
+revision,reference,footprint,pad,type,position,size,net,pinfunction
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,1,thru_hole,"[""-22.86"", ""11.43""]","[""1.2"", ""2""]",+3V3,3v3
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,2,thru_hole,"[""-20.32"", ""11.43""]","[""1.2"", ""2""]",Net-(U3-EN),EN
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,3,thru_hole,"[""-17.78"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO36-Pad3),GPIO36
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,4,thru_hole,"[""-15.24"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO39-Pad4),GPIO39
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,5,thru_hole,"[""-12.7"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO34-Pad5),GPIO34
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,6,thru_hole,"[""-10.16"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO35-Pad6),GPIO35
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,7,thru_hole,"[""-7.62"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO32-Pad7),GPIO32
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,8,thru_hole,"[""-5.08"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO33-Pad8),GPIO33
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,9,thru_hole,"[""-2.54"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO25-Pad9),GPIO25
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,10,thru_hole,"[""0"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO26-Pad10),GPIO26
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,11,thru_hole,"[""2.54"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO27-Pad11),GPIO27
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,12,thru_hole,"[""5.08"", ""11.43""]","[""1.2"", ""2""]",Net-(U3-GPIO14),GPIO14
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,13,thru_hole,"[""7.62"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-NC-Pad13),NC
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,14,thru_hole,"[""10.16"", ""11.43""]","[""1.2"", ""2""]",GND,GND
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,15,thru_hole,"[""12.7"", ""11.43""]","[""1.2"", ""2""]",Net-(U3-GPIO13),GPIO13
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,16,thru_hole,"[""15.24"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-NC-Pad16),NC
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,17,thru_hole,"[""17.78"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-NC-Pad17),NC
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,18,thru_hole,"[""20.32"", ""11.43""]","[""1.2"", ""2""]",unconnected-(U3-NC-Pad18),NC
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,19,thru_hole,"[""22.86"", ""11.43""]","[""1.2"", ""2""]",+5V,5VIN
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,20,thru_hole,"[""22.86"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-NC-Pad20),NC
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,21,thru_hole,"[""20.32"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-NC-Pad21),NC
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,22,thru_hole,"[""17.78"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-NC-Pad22),NC
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,23,thru_hole,"[""15.24"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO15-Pad23),GPIO15
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,24,thru_hole,"[""12.7"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-OB_LED-Pad24),OB_LED
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,25,thru_hole,"[""10.16"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-OB_BUT-Pad25),OB_BUT
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,26,thru_hole,"[""7.62"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO4-Pad26),GPIO4
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,27,thru_hole,"[""5.08"", ""-11.43""]","[""1.2"", ""2""]",Net-(U3-GPIO16),GPIO16
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,28,thru_hole,"[""2.54"", ""-11.43""]","[""1.2"", ""2""]",Net-(U3-GPIO17),GPIO17
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,29,thru_hole,"[""0"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO5-Pad29),GPIO5
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,30,thru_hole,"[""-2.54"", ""-11.43""]","[""1.2"", ""2""]",Net-(U3-GPIO18),GPIO18
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,31,thru_hole,"[""-5.08"", ""-11.43""]","[""1.2"", ""2""]",Net-(U3-GPIO19),GPIO19
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,32,thru_hole,"[""-7.62"", ""-11.43""]","[""1.2"", ""2""]",GND,GND
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,33,thru_hole,"[""-10.16"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO21-Pad33),GPIO21
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,34,thru_hole,"[""-12.7"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-NC-Pad34),NC
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,35,thru_hole,"[""-15.24"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-NC-Pad35),NC
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,36,thru_hole,"[""-17.78"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO22-Pad36),GPIO22
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,37,thru_hole,"[""-20.32"", ""-11.43""]","[""1.2"", ""2""]",unconnected-(U3-GPIO23-Pad37),GPIO23
+rev1.0,U3,LegacyBoard:U3_DIP-38_900_ELL,38,thru_hole,"[""-22.86"", ""-11.43""]","[""1.2"", ""2""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""-0.9"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""0.2"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""1.3"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""-0.9"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""0.2"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""1.3"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""-0.9"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""0.2"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""1.3"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,1,smd,"[""-8.75"", ""-6"", ""90""]","[""1.5"", ""0.9""]",+3V3,3V3
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,2,smd,"[""-8.75"", ""-4.5"", ""90""]","[""1.5"", ""0.9""]",/EN,EN
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,3,smd,"[""-8.75"", ""-3"", ""90""]","[""1.5"", ""0.9""]",/LED1,IO4
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,4,smd,"[""-8.75"", ""-1.5"", ""90""]","[""1.5"", ""0.9""]",Net-(JP1-A),IO5
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,5,smd,"[""-8.75"", ""0"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO6-Pad5),IO6
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,6,smd,"[""-8.75"", ""1.5"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO7-Pad6),IO7
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,7,smd,"[""-8.75"", ""3"", ""90""]","[""1.5"", ""0.9""]",/BOOT_SEL,IO8
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,8,smd,"[""-8.75"", ""4.5"", ""90""]","[""1.5"", ""0.9""]",/BOOT,IO9
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,9,smd,"[""-8.75"", ""6"", ""90""]","[""1.5"", ""0.9""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,10,smd,"[""8.75"", ""6"", ""90""]","[""1.5"", ""0.9""]",GEA2_RX,IO10
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,11,smd,"[""8.75"", ""4.5"", ""90""]","[""1.5"", ""0.9""]",GEA3_TX,IO20/RXD
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,12,smd,"[""8.75"", ""3"", ""90""]","[""1.5"", ""0.9""]",GEA3_RX,IO21/TXD
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,13,smd,"[""8.75"", ""1.5"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO18-Pad13),IO18
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,14,smd,"[""8.75"", ""0"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO19-Pad14),IO19
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,15,smd,"[""8.75"", ""-1.5"", ""90""]","[""1.5"", ""0.9""]",/LED2,IO3
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,16,smd,"[""8.75"", ""-3"", ""90""]","[""1.5"", ""0.9""]",/DBG_LED,IO2
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,17,smd,"[""8.75"", ""-4.5"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO1-Pad17),IO1
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,18,smd,"[""8.75"", ""-6"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO0-Pad18),IO0
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""-0.14"", ""-0.35"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""-0.14"", ""0.75"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""-0.9"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""0.2"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""1.3"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.96"", ""-0.35"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,smd,"[""0.96"", ""0.2"", ""90""]","[""2.9"", ""2.9""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.96"", ""0.75"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""-0.9"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""0.2"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""1.3"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""2.06"", ""-0.35"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.0,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""2.06"", ""0.75"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""-0.9"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""0.2"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""1.3"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""-0.9"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""0.2"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""1.3"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""-0.9"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""0.2"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""1.3"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,1,smd,"[""-8.75"", ""-6"", ""90""]","[""1.5"", ""0.9""]",+3V3,3V3
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,2,smd,"[""-8.75"", ""-4.5"", ""90""]","[""1.5"", ""0.9""]",/EN,EN
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,3,smd,"[""-8.75"", ""-3"", ""90""]","[""1.5"", ""0.9""]",/LED1,IO4
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,4,smd,"[""-8.75"", ""-1.5"", ""90""]","[""1.5"", ""0.9""]",Net-(JP1-A),IO5
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,5,smd,"[""-8.75"", ""0"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO6-Pad5),IO6
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,6,smd,"[""-8.75"", ""1.5"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO7-Pad6),IO7
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,7,smd,"[""-8.75"", ""3"", ""90""]","[""1.5"", ""0.9""]",/BOOT_SEL,IO8
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,8,smd,"[""-8.75"", ""4.5"", ""90""]","[""1.5"", ""0.9""]",/BOOT,IO9
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,9,smd,"[""-8.75"", ""6"", ""90""]","[""1.5"", ""0.9""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,10,smd,"[""8.75"", ""6"", ""90""]","[""1.5"", ""0.9""]",GEA2_RX,IO10
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,11,smd,"[""8.75"", ""4.5"", ""90""]","[""1.5"", ""0.9""]",GEA3_TX,IO20/RXD
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,12,smd,"[""8.75"", ""3"", ""90""]","[""1.5"", ""0.9""]",GEA3_RX,IO21/TXD
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,13,smd,"[""8.75"", ""1.5"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO18-Pad13),IO18
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,14,smd,"[""8.75"", ""0"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO19-Pad14),IO19
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,15,smd,"[""8.75"", ""-1.5"", ""90""]","[""1.5"", ""0.9""]",/LED2,IO3
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,16,smd,"[""8.75"", ""-3"", ""90""]","[""1.5"", ""0.9""]",/DBG_LED,IO2
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,17,smd,"[""8.75"", ""-4.5"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO1-Pad17),IO1
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,18,smd,"[""8.75"", ""-6"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO0-Pad18),IO0
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""-0.14"", ""-0.35"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""-0.14"", ""0.75"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""-0.9"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""0.2"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""1.3"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.96"", ""-0.35"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,smd,"[""0.96"", ""0.2"", ""90""]","[""2.9"", ""2.9""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.96"", ""0.75"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""-0.9"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""0.2"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""1.3"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""2.06"", ""-0.35"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.1,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""2.06"", ""0.75"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""-0.9"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""0.2"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""1.3"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""-0.9"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""0.2"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""1.3"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""-0.9"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""0.2"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""1.3"", ""90""]","[""0.7"", ""0.7""]",,
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,1,smd,"[""-8.75"", ""-6"", ""90""]","[""1.5"", ""0.9""]",+3V3,3V3
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,2,smd,"[""-8.75"", ""-4.5"", ""90""]","[""1.5"", ""0.9""]",/EN,EN
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,3,smd,"[""-8.75"", ""-3"", ""90""]","[""1.5"", ""0.9""]",/LED1,IO4
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,4,smd,"[""-8.75"", ""-1.5"", ""90""]","[""1.5"", ""0.9""]",Net-(JP1-A),IO5
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,5,smd,"[""-8.75"", ""0"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO6-Pad5),IO6
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,6,smd,"[""-8.75"", ""1.5"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO7-Pad6),IO7
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,7,smd,"[""-8.75"", ""3"", ""90""]","[""1.5"", ""0.9""]",/BOOT_SEL,IO8
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,8,smd,"[""-8.75"", ""4.5"", ""90""]","[""1.5"", ""0.9""]",/BOOT,IO9
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,9,smd,"[""-8.75"", ""6"", ""90""]","[""1.5"", ""0.9""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,10,smd,"[""8.75"", ""6"", ""90""]","[""1.5"", ""0.9""]",GEA2_RX,IO10
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,11,smd,"[""8.75"", ""4.5"", ""90""]","[""1.5"", ""0.9""]",GEA3_TX,IO20/RXD
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,12,smd,"[""8.75"", ""3"", ""90""]","[""1.5"", ""0.9""]",GEA3_RX,IO21/TXD
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,13,smd,"[""8.75"", ""1.5"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO18-Pad13),IO18
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,14,smd,"[""8.75"", ""0"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO19-Pad14),IO19
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,15,smd,"[""8.75"", ""-1.5"", ""90""]","[""1.5"", ""0.9""]",/LED2,IO3
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,16,smd,"[""8.75"", ""-3"", ""90""]","[""1.5"", ""0.9""]",/DBG_LED,IO2
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,17,smd,"[""8.75"", ""-4.5"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO1-Pad17),IO1
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,18,smd,"[""8.75"", ""-6"", ""90""]","[""1.5"", ""0.9""]",unconnected-(U2-IO0-Pad18),IO0
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""-0.14"", ""-0.35"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""-0.14"", ""0.75"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""-0.9"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""0.2"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""1.3"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.96"", ""-0.35"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,smd,"[""0.96"", ""0.2"", ""90""]","[""2.9"", ""2.9""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.96"", ""0.75"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""-0.9"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""0.2"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""1.3"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""2.06"", ""-0.35"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev2.2,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""2.06"", ""0.75"", ""90""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""-0.9"", ""270""]","[""0.7"", ""0.7""]",,
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""0.2"", ""270""]","[""0.7"", ""0.7""]",,
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""-0.14"", ""1.3"", ""270""]","[""0.7"", ""0.7""]",,
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""-0.9"", ""270""]","[""0.7"", ""0.7""]",,
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""0.2"", ""270""]","[""0.7"", ""0.7""]",,
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""0.96"", ""1.3"", ""270""]","[""0.7"", ""0.7""]",,
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""-0.9"", ""270""]","[""0.7"", ""0.7""]",,
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""0.2"", ""270""]","[""0.7"", ""0.7""]",,
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,,smd,"[""2.06"", ""1.3"", ""270""]","[""0.7"", ""0.7""]",,
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,1,smd,"[""-8.75"", ""-6"", ""270""]","[""1.5"", ""0.9""]",+3V3,3V3
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,2,smd,"[""-8.75"", ""-4.5"", ""270""]","[""1.5"", ""0.9""]",/EN,EN
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,3,smd,"[""-8.75"", ""-3"", ""270""]","[""1.5"", ""0.9""]",/LED1,IO4
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,4,smd,"[""-8.75"", ""-1.5"", ""270""]","[""1.5"", ""0.9""]",Net-(JP1-A),IO5
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,5,smd,"[""-8.75"", ""0"", ""270""]","[""1.5"", ""0.9""]",unconnected-(U2-IO6-Pad5),IO6
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,6,smd,"[""-8.75"", ""1.5"", ""270""]","[""1.5"", ""0.9""]",unconnected-(U2-IO7-Pad6),IO7
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,7,smd,"[""-8.75"", ""3"", ""270""]","[""1.5"", ""0.9""]",/BOOT_SEL,IO8
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,8,smd,"[""-8.75"", ""4.5"", ""270""]","[""1.5"", ""0.9""]",/BOOT,IO9
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,9,smd,"[""-8.75"", ""6"", ""270""]","[""1.5"", ""0.9""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,10,smd,"[""8.75"", ""6"", ""270""]","[""1.5"", ""0.9""]",GEA2_RX,IO10
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,11,smd,"[""8.75"", ""4.5"", ""270""]","[""1.5"", ""0.9""]",GEA3_TX,IO20/RXD
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,12,smd,"[""8.75"", ""3"", ""270""]","[""1.5"", ""0.9""]",GEA3_RX,IO21/TXD
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,13,smd,"[""8.75"", ""1.5"", ""270""]","[""1.5"", ""0.9""]",/USB_MCU_N,IO18
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,14,smd,"[""8.75"", ""0"", ""270""]","[""1.5"", ""0.9""]",/USB_MCU_P,IO19
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,15,smd,"[""8.75"", ""-1.5"", ""270""]","[""1.5"", ""0.9""]",/LED2,IO3
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,16,smd,"[""8.75"", ""-3"", ""270""]","[""1.5"", ""0.9""]",/DBG_LED,IO2
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,17,smd,"[""8.75"", ""-4.5"", ""270""]","[""1.5"", ""0.9""]",unconnected-(U2-IO1-Pad17),IO1
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,18,smd,"[""8.75"", ""-6"", ""270""]","[""1.5"", ""0.9""]",unconnected-(U2-IO0-Pad18),IO0
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""-0.14"", ""-0.35"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""-0.14"", ""0.75"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""-0.9"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""0.2"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.41"", ""1.3"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.96"", ""-0.35"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,smd,"[""0.96"", ""0.2"", ""270""]","[""2.9"", ""2.9""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""0.96"", ""0.75"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""-0.9"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""0.2"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""1.51"", ""1.3"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""2.06"", ""-0.35"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3a,U2,LegacyBoard:U2_ESP32-C3-WROOM-02,19,thru_hole,"[""2.06"", ""0.75"", ""270""]","[""0.6"", ""0.6""]",GND,GND
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,1,smd,"[""0.835"", ""-18.12"", ""270""]","[""2.75"", ""2""]",/DBG_LED,D0
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,2,smd,"[""0.835"", ""-15.58"", ""270""]","[""2.75"", ""2""]",/LED2,D1
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,3,smd,"[""0.835"", ""-13.04"", ""270""]","[""2.75"", ""2""]",/LED1,D2
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,4,smd,"[""0.835"", ""-10.5"", ""270""]","[""2.75"", ""2""]",/GEA2_MCU_TX,D3
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,5,smd,"[""0.835"", ""-7.96"", ""270""]","[""2.75"", ""2""]",unconnected-(U2-D4-Pad5),D4
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,6,smd,"[""0.835"", ""-5.42"", ""270""]","[""2.75"", ""2""]",unconnected-(U2-D5-Pad6),D5
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,7,smd,"[""0.835"", ""-2.88"", ""270""]","[""2.75"", ""2""]",GEA3_RX,D6
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,8,smd,"[""17"", ""-2.88"", ""270""]","[""2.75"", ""2""]",GEA3_TX,D7
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,9,smd,"[""17"", ""-5.42"", ""270""]","[""2.75"", ""2""]",/BOOT_SEL,D8
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,10,smd,"[""17"", ""-7.96"", ""270""]","[""2.75"", ""2""]",BOOT,D9/BOOT
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,11,smd,"[""17"", ""-10.5"", ""270""]","[""2.75"", ""2""]",GEA2_RX,D10
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,12,smd,"[""17"", ""-13.04"", ""270""]","[""2.75"", ""2""]",+3V3,3V3_OUT
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,13,smd,"[""17"", ""-15.58"", ""270""]","[""2.75"", ""2""]",GND,GND
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,14,smd,"[""17"", ""-18.12"", ""270""]","[""2.75"", ""2""]",+5V,VBUS
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,15,smd,"[""7.62"", ""-19.132"", ""270""]","[""1.7"", ""1.7""]",unconnected-(U2-D3{slash}MTDI-Pad15),D3/MTDI
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,16,smd,"[""10.16"", ""-19.132"", ""270""]","[""1.7"", ""1.7""]",unconnected-(U2-D5{slash}MTDO-Pad16),D5/MTDO
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,17,smd,"[""7.62"", ""-16.592"", ""270""]","[""1.7"", ""1.7""]",EN,EN
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,18,smd,"[""10.16"", ""-16.592"", ""270""]","[""1.7"", ""1.7""]",GND,GND
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,19,smd,"[""7.62"", ""-14.052"", ""270""]","[""1.7"", ""1.7""]",unconnected-(U2-D2{slash}MTMS-Pad19),D2/MTMS
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,20,smd,"[""10.16"", ""-14.052"", ""270""]","[""1.7"", ""1.7""]",unconnected-(U2-D4{slash}MTCK-Pad20),D4/MTCK
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,21,smd,"[""4.445"", ""-10.882"", ""90""]","[""2.5"", ""1.1""]",unconnected-(U2-VBAT-Pad21),VBAT
+rev3b,U2,GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD,22,smd,"[""4.445"", ""-12.787"", ""90""]","[""2.5"", ""1.1""]",GND,GND
+rev3c,J5,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,1,thru_hole,"[""0"", ""0""]","[""1.8"", ""1.8""]",/DBG_LED,D0
+rev3c,J5,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,2,thru_hole,"[""-2.54"", ""0""]","[""1.8"", ""1.8""]",/LED2,D1
+rev3c,J5,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,3,thru_hole,"[""-5.08"", ""0""]","[""1.8"", ""1.8""]",/LED1,D2
+rev3c,J5,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,4,thru_hole,"[""-7.62"", ""0""]","[""1.8"", ""1.8""]",/GEA2_MCU_TX,D3
+rev3c,J5,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,5,thru_hole,"[""-10.16"", ""0""]","[""1.8"", ""1.8""]",unconnected-(J5-D4_NC-Pad5),D4
+rev3c,J5,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,6,thru_hole,"[""-12.7"", ""0""]","[""1.8"", ""1.8""]",unconnected-(J5-D5_NC-Pad6),D5
+rev3c,J5,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,7,thru_hole,"[""-15.24"", ""0""]","[""1.8"", ""1.8""]",GEA3_RX,D6
+rev3c,J6,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,1,thru_hole,"[""0"", ""0"", ""180""]","[""1.8"", ""1.8""]",GEA3_TX,D7
+rev3c,J6,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,2,thru_hole,"[""-2.54"", ""0"", ""180""]","[""1.8"", ""1.8""]",/BOOT_SEL,D8
+rev3c,J6,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,3,thru_hole,"[""-5.08"", ""0"", ""180""]","[""1.8"", ""1.8""]",BOOT,D9
+rev3c,J6,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,4,thru_hole,"[""-7.62"", ""0"", ""180""]","[""1.8"", ""1.8""]",GEA2_RX,D10
+rev3c,J6,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,5,thru_hole,"[""-10.16"", ""0"", ""180""]","[""1.8"", ""1.8""]",+3V3,3V3_OUT
+rev3c,J6,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,6,thru_hole,"[""-12.7"", ""0"", ""180""]","[""1.8"", ""1.8""]",GND,GND
+rev3c,J6,GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254,7,thru_hole,"[""-15.24"", ""0"", ""180""]","[""1.8"", ""1.8""]",+5V,VBUS

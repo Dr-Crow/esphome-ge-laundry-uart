@@ -1,0 +1,130 @@
+[
+  {
+    "filename": "c3-v1.3-260116.zip",
+    "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+    "http_status": 200,
+    "bytes": 339671,
+    "sha256": "477bc61cec652eaeefa887cb1f97abb1514e8a61ea9659240b88be7213c3b6ff",
+    "retrieved_utc": "2026-10-05T13:00:46.686380+00:00"
+  },
+  {
+    "filename": "c3-v1.3-schematic.pdf",
+    "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_SCH_260116.pdf",
+    "http_status": 200,
+    "bytes": 424362,
+    "sha256": "60d7d447d0d37b0c3ff6c50d372a45d50f750070b8b9d68ca7b906df43365081",
+    "retrieved_utc": "2026-10-05T13:00:51.252153+00:00"
+  },
+  {
+    "filename": "c6-v1.0-schematic.pdf",
+    "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH_260114.pdf",
+    "http_status": 200,
+    "bytes": 614070,
+    "sha256": "510f3f917bcded1201ca5c63374409183457c1ef83a836988517d6802180dad7",
+    "retrieved_utc": "2026-10-05T13:00:57.964631+00:00"
+  },
+  {
+    "filename": "c3-wroom02-datasheet.pdf",
+    "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf",
+    "http_status": 200,
+    "bytes": 958836,
+    "sha256": "2375b1be75ebbfcffa050e6a26c3ee7957bc7171b319066081a491d1b2e21161",
+    "retrieved_utc": "2026-10-05T13:01:08.485084+00:00"
+  },
+  {
+    "filename": "XIAO-ESP32-C3-SMD.kicad_mod",
+    "url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C3-SMD.kicad_mod",
+    "http_status": 200,
+    "bytes": 9260,
+    "sha256": "f850def2f4829bd58a1a7f1773277de398930232a521d6a9607d8550aded3784",
+    "retrieved_utc": "2026-10-05T13:03:13.994017+00:00"
+  },
+  {
+    "filename": "XIAO-ESP32-C6-SMD.kicad_mod",
+    "url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-C6-SMD.kicad_mod",
+    "http_status": 200,
+    "bytes": 9591,
+    "sha256": "8c7051e4e8fe46595e57d930cb0a95743c7fab67e5e07034f2ee6bd81267c0ec",
+    "retrieved_utc": "2026-10-05T13:03:13.951534+00:00"
+  },
+  {
+    "filename": "XIAO-ESP32-S3-SMD.kicad_mod",
+    "url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/XIAO-ESP32-S3-SMD.kicad_mod",
+    "http_status": 200,
+    "bytes": 525579,
+    "sha256": "b093cd9a70feb3b00d0ee3f9d4b828b69aa605c28bd0c3e55347676db2994243",
+    "retrieved_utc": "2026-10-05T13:03:14.020461+00:00"
+  },
+  {
+    "filename": "Seeed_Studio_XIAO_Series.kicad_sym",
+    "url": "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/Seeed%20Studio%20XIAO%20Series%20Library/Seeed_Studio_XIAO_Series.kicad_sym",
+    "http_status": 200,
+    "bytes": 173901,
+    "sha256": "c203a046580c33efdfb771e76c4c1eb10138c6d2d368f9517c4c4503b7d0bb71",
+    "retrieved_utc": "2026-10-05T13:03:13.923130+00:00"
+  },
+  {
+    "filename": "c6-v1.0-24028.zip",
+    "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO-ESP32-C6_v1.0_SCH%26PCB_24028.zip",
+    "http_status": 200,
+    "bytes": 1057996,
+    "sha256": "1ac0597f59d3f904bd5f0a1acee470141102664ed7c41b0594a7515c38debc72",
+    "retrieved_utc": "2026-10-05T13:03:12.164999+00:00"
+  },
+  {
+    "filename": "c6-v1.0-260114.zip",
+    "url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip",
+    "http_status": 200,
+    "bytes": 1126886,
+    "sha256": "cea2ed66da575e4a1dd6c7a9acd60583ed4a9adbf6b1d2952851c1e4199c05fc",
+    "retrieved_utc": "2026-10-05T13:05:05.317749+00:00"
+  },
+  {
+    "filename": "c3-v1.2-dimensioning.zip",
+    "url": "https://files.seeedstudio.com/wiki/Seeed-Studio-XIAO-ESP32/XIAO_ESP32C3_v1.2_Dimensioning.zip",
+    "http_status": 200,
+    "bytes": 106090,
+    "sha256": "a75fe366c4fa160db8d50891da84820062011e9fd06343ae047ab67763035bd7",
+    "retrieved_utc": "2026-10-05T13:07:12.144626+00:00"
+  },
+  {
+    "filename": "c3-v1.0-schematic.pdf",
+    "url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf",
+    "http_status": 200,
+    "bytes": 456706,
+    "sha256": "10eacb7cd87f93f4823bb92d21fc3aa618b75bc9088fe112932f01bb2ce9b24a",
+    "retrieved_utc": "2026-10-05T13:07:12.143860+00:00"
+  },
+  {
+    "filename": "c3-package-design.pdf",
+    "url": "https://statics3.seeedstudio.com/fusion/opl/datasheet/113991054.pdf",
+    "http_status": 200,
+    "bytes": 664768,
+    "sha256": "0a840a76754f3bf63a39eb7da20a23fc94bd7ca4df98e843b2d85107f5811317",
+    "retrieved_utc": "2026-10-05T13:07:11.387851+00:00"
+  },
+  {
+    "filename": "esp32-devkitc-v4-dimensions.pdf",
+    "url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.pdf",
+    "http_status": 200,
+    "bytes": 901070,
+    "sha256": "93769872f5640475a25e6c367230b407606771e4bbee0aba56903263b17d8d30",
+    "retrieved_utc": "2026-10-05T13:08:17.851740+00:00"
+  },
+  {
+    "filename": "c3-tape-reel-datasheet.pdf",
+    "url": "https://files.seeedstudio.com/Bazaar/product_pdf/101991467.pdf",
+    "http_status": 200,
+    "bytes": 1041297,
+    "sha256": "99f2217d5336940bee2ca7bab9bb9be23fcd8aa93c0d423c37b665aeba600b00",
+    "retrieved_utc": "2026-10-05T13:12:42.537138+00:00"
+  },
+  {
+    "filename": "xiao-packaging-pcn-2025.pdf",
+    "url": "https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/PCN-XIAO_Series_Packaging_Upgrade.pdf",
+    "http_status": 200,
+    "bytes": 427082,
+    "sha256": "24fd7e2fd10e24f0964d0a341486b2521cf1849c86eea00ff318bf68470f0117",
+    "retrieved_utc": "2026-10-05T13:12:42.442067+00:00"
+  }
+]

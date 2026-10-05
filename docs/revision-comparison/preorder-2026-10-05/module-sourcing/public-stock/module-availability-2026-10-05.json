@@ -1,0 +1,289 @@
+{
+  "report_title": "Exact module public availability evidence",
+  "verified_at_utc": "2026-10-05T13:00:49Z",
+  "method": "Read-only public primary manufacturer, distributor and assembler pages retrieved with web search/open/find. No authenticated supplier sessions, reservations, RFQs, carts or orders were used.",
+  "freshness_policy": "The verification timestamp records when evidence was inspected, not a guarantee of live inventory. The web tool's reported crawl age is preserved separately. Same-day public page observations have priority over older snippets; conflicting cached counts are retained as historical evidence. Public catalog presence does not establish allocated assembly stock.",
+  "requested_parts": [
+    {
+      "requested_identity": "Seeed Studio XIAO ESP32C3",
+      "manufacturer_sku": "113991054",
+      "lcsc_part": "C18212168",
+      "exact_identity_verified": true,
+      "manufacturer": {
+        "name": "Seeed Studio",
+        "url": "https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html",
+        "crawl_age_reported": "today",
+        "public_status": "in_stock",
+        "quantity": null,
+        "price_observed": {
+          "currency": "USD",
+          "unit": 4.9
+        },
+        "notes": "Manufacturer page identifies SKU113991054 and displays In stock. No numerical stock quantity was exposed. An older two-week search result displayed $4.99; the same-day opened page is the price basis here."
+      },
+      "distributors": [
+        {
+          "name": "LCSC",
+          "url": "https://www.lcsc.com/product-detail/C18212168.html",
+          "crawl_age_reported": "today",
+          "public_status": "out_of_stock",
+          "quantity": null,
+          "price_observed": {
+            "currency": "USD",
+            "unit_qty1_reference_only": 6.5586,
+            "unit_qty10_reference_only": 6.4012
+          },
+          "minimum": 1,
+          "multiple": 1,
+          "standard_packaging_observed": "1/Full Box",
+          "identity": {
+            "manufacturer": "Seeed",
+            "mpn": "113991054",
+            "lcsc_part": "C18212168",
+            "package": "SMD,21x17.8mm"
+          },
+          "notes": "The same-day canonical product page displays Out of Stock and Notify Me. This overrides older positive-stock snapshots for the present report, but does not establish authenticated allocation or lead time.",
+          "conflicting_cached_evidence": [
+            {
+              "url": "https://www.lcsc.com/product-image/C18212168.html?whichImg=0",
+              "evidence_type": "opened_page",
+              "crawl_age_reported": "2 weeks ago",
+              "quantity": 42
+            },
+            {
+              "url": "https://www.lcsc.com/product-image/C18212168.html?whichImg=0",
+              "evidence_type": "search_result",
+              "crawl_age_reported": "3 weeks ago",
+              "quantity": 63
+            },
+            {
+              "url": "https://www.lcsc.com/brand/854-12007.html",
+              "evidence_type": "opened_category_page",
+              "crawl_age_reported": "4 weeks ago",
+              "quantity": 64
+            },
+            {
+              "url": "https://www.lcsc.com/brand/854-12007.html",
+              "evidence_type": "search_result",
+              "crawl_age_reported": "3 weeks ago",
+              "quantity": 58
+            }
+          ]
+        },
+        {
+          "name": "DigiKey US",
+          "url": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/113991054/16652880",
+          "crawl_age_reported": "today",
+          "public_status": "in_stock",
+          "quantity": 9888,
+          "price_observed": {
+            "currency": "USD",
+            "unit_qty1": 5.25
+          },
+          "distributor_part": "1597-113991054-ND",
+          "manufacturer_product_number": "113991054",
+          "header_configuration": "Header(s) Not Installed",
+          "manufacturer_standard_lead_time_observed": "4 Weeks",
+          "notes": "Public distributor stock for loose-board purchase. DigiKey's standard manufacturer lead time is separate from its in-stock quantity. Tariff may apply to US shipping; shipping/tax/cart totals were not checked. This stock does not establish availability in JLCPCB's assembly library."
+        }
+      ],
+      "jlcpcb": {
+        "url": "https://jlcpcb.com/partdetail/SEEED_DEVELOPMENTLTD-113991054/C18212168",
+        "crawl_age_reported": "last month",
+        "public_catalog_listing_verified": true,
+        "manufacturer": "Seeed",
+        "mpn": "113991054",
+        "jlcpcb_part": "C18212168",
+        "classification": "Extended",
+        "package": "SMD,21x17.8mm",
+        "assembly_type": "SMT Assembly",
+        "pcba_type": "Economic and Standard",
+        "public_current_stock_status": "unverified",
+        "quantity": null,
+        "available_order_quantity": null,
+        "notes": "Opened public JLCPCB page establishes listing and assembly metadata but exposes no stock quantity or orderable quantity in retrieved text. Do not infer stock from listing presence or transfer LCSC stock to JLCPCB. JLCPCB says purchased components are stored for future PCBA orders and cannot be shipped separately."
+      }
+    },
+    {
+      "requested_identity": "Seeed preheadered alternate SKU113991355",
+      "requested_manufacturer_sku": "113991355",
+      "exact_identity_verified": false,
+      "public_status": "unverified_identity",
+      "notes": "Exact-number searches including Seeed, ESP32 and ESP32C3, plus manufacturer-domain searches, did not return a matching manufacturer or distributor product. Absence of a search result is not proof that the SKU never existed. Do not place113991355 into a purchasing BOM as a verified XIAO ESP32C3 part.",
+      "related_manufacturer_confirmed_product": {
+        "product_name": "Seeed Studio XIAO ESP32-C3 (Pre-Soldered)",
+        "manufacturer_sku": "102010633",
+        "relationship": "Manufacturer calls it the pre-soldered version of XIAO ESP32C3. This confirms product identity and header configuration only; no carrier fit or electrical equivalence approval is asserted.",
+        "manufacturer_url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html",
+        "crawl_age_reported": "today",
+        "public_status": "in_stock",
+        "quantity": null,
+        "price_observed": {
+          "currency": "USD",
+          "unit": 5.9
+        },
+        "corroborating_manufacturer_document": "https://files.seeedstudio.com/Bazaar/product_pdf/102010633.pdf",
+        "corroborating_packaging_pcn": "https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/PCN-XIAO_Series_Packaging_Upgrade.pdf",
+        "distributor_stock": "not independently checked for corrected SKU",
+        "jlcpcb_stock": "not independently checked for corrected SKU",
+        "notes": "An older three-week search result showed $5.99; same-day opened manufacturer page showed $5.90. The requested113991355 has not been silently substituted by102010633."
+      }
+    },
+    {
+      "requested_identity": "Espressif ESP32-C3-WROOM-02-N4",
+      "manufacturer_part_number": "ESP32-C3-WROOM-02-N4",
+      "lcsc_part": "C2934560",
+      "exact_identity_verified": true,
+      "manufacturer": {
+        "name": "Espressif Systems",
+        "url": "https://www.espressif.com/en/products/modules/esp32-c3",
+        "crawl_age_reported": "today",
+        "catalog_listing_verified": true,
+        "public_stock_status": "not_published",
+        "quantity": null,
+        "bulk_order_moq_observed": 3250,
+        "bulk_route": "Contact Us",
+        "notes": "Manufacturer lists the exact N4 variant with sample/distributor links and a bulk contact route. It does not expose manufacturer-held inventory. The $1.90 AliExpress sample reference price is not a direct manufacturer fulfillment quote.",
+        "identity_document": "https://documentation.espressif.com/esp32-c3-wroom-02_datasheet_en.html",
+        "identity_document_crawl_age_reported": "4 days ago",
+        "identity_document_version": "v1.7, revision2026-03-05"
+      },
+      "distributors": [
+        {
+          "name": "LCSC",
+          "url": "https://www.lcsc.com/product-detail/C2934560.html",
+          "crawl_age_reported": "today",
+          "public_status": "in_stock",
+          "quantity": 4369,
+          "price_observed": {
+            "currency": "USD",
+            "unit_qty1": 3.3224,
+            "unit_qty10": 2.9217,
+            "unit_qty100": 2.4454
+          },
+          "minimum": 1,
+          "multiple": 1,
+          "standard_packaging_observed": "650/Full Reel",
+          "identity": {
+            "manufacturer": "ESPRESSIF",
+            "mpn": "ESP32-C3-WROOM-02-N4",
+            "lcsc_part": "C2934560",
+            "package": "SMD,20x18mm"
+          },
+          "notes": "Same-day canonical public stock observation. Stock is volatile and has not been reserved. The product FAQ contains4514 units, which conflicts with the main quantity display; the main stock display is used.",
+          "conflicting_cached_evidence": [
+            {
+              "url": "https://www.lcsc.com/product-detail/span-style-background-color-ff0-WiFi-span-Modules_Espressif-Systems-ESP32-C3-WROOM-02-N4_C2934560.html",
+              "evidence_type": "opened_alias_page",
+              "crawl_age_reported": "yesterday",
+              "quantity": 5833
+            },
+            {
+              "url": "https://www.lcsc.com/product-detail/span-style-background-color-ff0-WiFi-span-Modules_Espressif-Systems-ESP32-C3-WROOM-02-N4_C2934560.html",
+              "evidence_type": "search_result",
+              "crawl_age_reported": "3 weeks ago",
+              "quantity": 6257
+            }
+          ]
+        }
+      ],
+      "jlcpcb": {
+        "url": "https://jlcpcb.com/partdetail/ESP32-C3-WROOM-02-N4/C2934560",
+        "crawl_age_reported": "yesterday",
+        "public_catalog_listing_verified": true,
+        "manufacturer": "Espressif Systems",
+        "mpn": "ESP32-C3-WROOM-02-N4",
+        "jlcpcb_part": "C2934560",
+        "classification": "Extended",
+        "package": "SMD,20x18mm",
+        "assembly_type": "SMT Assembly",
+        "pcba_type": "Economic and Standard",
+        "public_current_stock_status": "unverified",
+        "quantity": null,
+        "available_order_quantity": null,
+        "historical_search_snapshot": {
+          "crawl_age_reported": "3 weeks ago",
+          "quantity": 6055,
+          "available_order_quantity": 5167,
+          "price_observed": {
+            "currency": "USD",
+            "unit_qty1": 3.2867
+          },
+          "minimum": 1,
+          "full_reel": 650,
+          "url": "https://jlcpcb.com/partdetail/ESP32-C3-WROOM-02-N4/C2934560"
+        },
+        "notes": "Yesterday-crawled opened page lists the exact part and assembly metadata but does not expose stock/order quantity in retrieved text. The6055/5167 counts come only from a three-week search cache and cannot establish current JLCPCB allocation. JLCPCB says purchased components are for future PCBA orders and cannot be shipped separately."
+      }
+    }
+  ],
+  "decision_limits": [
+    "Seeed manufacturer and DigiKey availability for113991054 support an external procurement route, subject to fresh confirmation, but do not prove JLCPCB warehouse eligibility or consignment acceptance.",
+    "The freshest public LCSC observation for C18212168 is Out of Stock. Historical positive counts should not be used as current stock.",
+    "C2934560 has positive same-day LCSC public stock, but its current JLCPCB orderable quantity is unverified in this public-only pass.",
+    "Seeed113991355 remains unresolved. Manufacturer-confirmed pre-soldered ESP32C3 SKU102010633 is documented as a separate finding.",
+    "No electrical, firmware, pinout, footprint, antenna-placement or carrier-fit equivalence between XIAO and WROOM modules is asserted by this sourcing report.",
+    "Search cache ages are relative tool labels. Exact supplier inventory-update timestamps were not provided, and none of these counts is a reservation or fulfillment commitment."
+  ],
+  "manufacturer_distributor_relationship": {
+    "source": "https://www.seeedstudio.com/blog/distribution-service/",
+    "inspected_utc": "2026-10-05T13:11:07.874130+00:00",
+    "crawl_age_reported": "2 weeks ago",
+    "finding": "Seeed names DigiKey, Mouser and Arrow in its distribution network. DigiKey exact113991054 listing is a manufacturer-named distributor route."
+  },
+  "supplemental_verified_at_utc": "2026-10-05T13:13:52.017232+00:00",
+  "supplemental_public_observations": [
+    {
+      "mpn": "ESP32-C3-WROOM-02-N4",
+      "vendor": "DigiKey US",
+      "url": "https://www.digikey.com/en/products/detail/espressif-systems/ESP32-C3-WROOM-02-N4/14553036",
+      "crawl_age_reported": "3 days ago",
+      "quantity": 5185,
+      "unit_usd": 3.38,
+      "scope": "loose module distribution; not live assembly allocation"
+    },
+    {
+      "mpn": "ESP32-C3-WROOM-02-N4",
+      "vendor": "Mouser US",
+      "url": "https://www.mouser.com/en/ProductDetail/Espressif-Systems/ESP32-C3-WROOM-02-N4?qs=stqOd1AaK7%2FqjTZKEOgfUg%3D%3D",
+      "crawl_age_reported": "4 days ago",
+      "quantity": 8238,
+      "unit_usd": 3.64,
+      "scope": "loose module distribution; not live assembly allocation"
+    },
+    {
+      "mpn": "113991254",
+      "vendor": "Seeed Studio",
+      "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html",
+      "crawl_age_reported": "today",
+      "status": "In stock",
+      "quantity": null,
+      "unit_usd": 5.2,
+      "scope": "separately installed Rev3C C6; not Rev3B replacement"
+    },
+    {
+      "mpn": "113991254",
+      "vendor": "DigiKey US",
+      "url": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/113991254/24613066",
+      "crawl_age_reported": "today",
+      "quantity": 229,
+      "unit_usd": 5.38,
+      "headers": "not installed",
+      "antenna": "chip antenna onboard; U.FL antenna not included",
+      "scope": "separately installed Rev3C C6; not Rev3B replacement"
+    },
+    {
+      "mpn": "101991467",
+      "vendor": "Seeed Studio",
+      "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Tape-Reel-p-6471.html",
+      "crawl_age_reported": "today",
+      "status": "In stock",
+      "quantity": null,
+      "unit_usd": 4.49,
+      "qty10_unit_usd": 4.2,
+      "manufacturer_datasheet": "https://files.seeedstudio.com/Bazaar/product_pdf/101991467.pdf",
+      "datasheet_updated": "2026-09-20 06:17:04",
+      "scope": "distinct tape/reel SKU, no through-hole headers; review candidate pending lot/pad/RF/process proof; no JLC code verified"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "classification": "Bounded synthetic corridor; internal lid only because externalbulkhead features are atX56 and do not change this corridor",
+  "preserves_all_button_and_closure_supports": true,
+  "checks": [
+    {
+      "module": "c3",
+      "installed_stack_mm": 11.0,
+      "candidate_center_mode": "per_assembly",
+      "candidate_center_Z_mm": 20.049999999999997,
+      "synthetic_body_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "body_Y_mm": [
+        6.9175,
+        18.9175
+      ],
+      "body_Z_mm": [
+        16.8,
+        22.8
+      ],
+      "body_corridor_X_mm": [
+        100.003,
+        110.0
+      ],
+      "USB_face_basis": "Frozen C3/C6 source-derived conservativeUSB shell screen maximumX; not authenticated supplier mating datum",
+      "candidate_lid_corridor_intersection_mm3": 0.0,
+      "candidate_wall_band_X103_to110_intersection_mm3": 0.0,
+      "original14p8x9_fixed_center_profile_outside_mm3": 0,
+      "actual_plug_body_front_shank_rounding_step": "UNKNOWN; supplied synthetic rectangular corridor is not a selected cable model"
+    },
+    {
+      "module": "c3",
+      "installed_stack_mm": 11.0,
+      "candidate_center_mode": "per_assembly",
+      "candidate_center_Z_mm": 20.049999999999997,
+      "synthetic_body_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "body_Y_mm": [
+        5.9175,
+        19.9175
+      ],
+      "body_Z_mm": [
+        15.8,
+        23.8
+      ],
+      "body_corridor_X_mm": [
+        100.003,
+        110.0
+      ],
+      "USB_face_basis": "Frozen C3/C6 source-derived conservativeUSB shell screen maximumX; not authenticated supplier mating datum",
+      "candidate_lid_corridor_intersection_mm3": 0.02286001,
+      "candidate_wall_band_X103_to110_intersection_mm3": 0.0,
+      "original14p8x9_fixed_center_profile_outside_mm3": 66.03289215,
+      "actual_plug_body_front_shank_rounding_step": "UNKNOWN; supplied synthetic rectangular corridor is not a selected cable model"
+    },
+    {
+      "module": "c6",
+      "installed_stack_mm": 11.0,
+      "candidate_center_mode": "per_assembly",
+      "candidate_center_Z_mm": 20.049999999999997,
+      "synthetic_body_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "body_Y_mm": [
+        6.9175,
+        18.9175
+      ],
+      "body_Z_mm": [
+        16.8,
+        22.8
+      ],
+      "body_corridor_X_mm": [
+        100.0143,
+        110.0
+      ],
+      "USB_face_basis": "Frozen C3/C6 source-derived conservativeUSB shell screen maximumX; not authenticated supplier mating datum",
+      "candidate_lid_corridor_intersection_mm3": 0.46553091,
+      "candidate_wall_band_X103_to110_intersection_mm3": 0.0,
+      "original14p8x9_fixed_center_profile_outside_mm3": 0,
+      "actual_plug_body_front_shank_rounding_step": "UNKNOWN; supplied synthetic rectangular corridor is not a selected cable model"
+    },
+    {
+      "module": "c6",
+      "installed_stack_mm": 11.0,
+      "candidate_center_mode": "per_assembly",
+      "candidate_center_Z_mm": 20.049999999999997,
+      "synthetic_body_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "body_Y_mm": [
+        5.9175,
+        19.9175
+      ],
+      "body_Z_mm": [
+        15.8,
+        23.8
+      ],
+      "body_corridor_X_mm": [
+        100.0143,
+        110.0
+      ],
+      "USB_face_basis": "Frozen C3/C6 source-derived conservativeUSB shell screen maximumX; not authenticated supplier mating datum",
+      "candidate_lid_corridor_intersection_mm3": 5.63856061,
+      "candidate_wall_band_X103_to110_intersection_mm3": 0.0,
+      "original14p8x9_fixed_center_profile_outside_mm3": 65.95825259,
+      "actual_plug_body_front_shank_rounding_step": "UNKNOWN; supplied synthetic rectangular corridor is not a selected cable model"
+    },
+    {
+      "module": "c3",
+      "installed_stack_mm": 11.65,
+      "candidate_center_mode": "per_assembly",
+      "candidate_center_Z_mm": 20.7,
+      "synthetic_body_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "body_Y_mm": [
+        6.9175,
+        18.9175
+      ],
+      "body_Z_mm": [
+        17.45,
+        23.45
+      ],
+      "body_corridor_X_mm": [
+        100.003,
+        110.0
+      ],
+      "USB_face_basis": "Frozen C3/C6 source-derived conservativeUSB shell screen maximumX; not authenticated supplier mating datum",
+      "candidate_lid_corridor_intersection_mm3": 0.0,
+      "candidate_wall_band_X103_to110_intersection_mm3": 0.0,
+      "original14p8x9_fixed_center_profile_outside_mm3": 0,
+      "actual_plug_body_front_shank_rounding_step": "UNKNOWN; supplied synthetic rectangular corridor is not a selected cable model"
+    },
+    {
+      "module": "c3",
+      "installed_stack_mm": 11.65,
+      "candidate_center_mode": "per_assembly",
+      "candidate_center_Z_mm": 20.7,
+      "synthetic_body_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "body_Y_mm": [
+        5.9175,
+        19.9175
+      ],
+      "body_Z_mm": [
+        16.45,
+        24.45
+      ],
+      "body_corridor_X_mm": [
+        100.003,
+        110.0
+      ],
+      "USB_face_basis": "Frozen C3/C6 source-derived conservativeUSB shell screen maximumX; not authenticated supplier mating datum",
+      "candidate_lid_corridor_intersection_mm3": 0.0,
+      "candidate_wall_band_X103_to110_intersection_mm3": 0.0,
+      "original14p8x9_fixed_center_profile_outside_mm3": 4.74644366,
+      "actual_plug_body_front_shank_rounding_step": "UNKNOWN; supplied synthetic rectangular corridor is not a selected cable model"
+    },
+    {
+      "module": "c6",
+      "installed_stack_mm": 11.65,
+      "candidate_center_mode": "per_assembly",
+      "candidate_center_Z_mm": 20.7,
+      "synthetic_body_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "body_Y_mm": [
+        6.9175,
+        18.9175
+      ],
+      "body_Z_mm": [
+        17.45,
+        23.45
+      ],
+      "body_corridor_X_mm": [
+        100.0143,
+        110.0
+      ],
+      "USB_face_basis": "Frozen C3/C6 source-derived conservativeUSB shell screen maximumX; not authenticated supplier mating datum",
+      "candidate_lid_corridor_intersection_mm3": 1.47418121,
+      "candidate_wall_band_X103_to110_intersection_mm3": 0.0,
+      "original14p8x9_fixed_center_profile_outside_mm3": 0,
+      "actual_plug_body_front_shank_rounding_step": "UNKNOWN; supplied synthetic rectangular corridor is not a selected cable model"
+    },
+    {
+      "module": "c6",
+      "installed_stack_mm": 11.65,
+      "candidate_center_mode": "per_assembly",
+      "candidate_center_Z_mm": 20.7,
+      "synthetic_body_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "body_Y_mm": [
+        5.9175,
+        19.9175
+      ],
+      "body_Z_mm": [
+        16.45,
+        24.45
+      ],
+      "body_corridor_X_mm": [
+        100.0143,
+        110.0
+      ],
+      "USB_face_basis": "Frozen C3/C6 source-derived conservativeUSB shell screen maximumX; not authenticated supplier mating datum",
+      "candidate_lid_corridor_intersection_mm3": 8.4235509,
+      "candidate_wall_band_X103_to110_intersection_mm3": 0.0,
+      "original14p8x9_fixed_center_profile_outside_mm3": 4.74107857,
+      "actual_plug_body_front_shank_rounding_step": "UNKNOWN; supplied synthetic rectangular corridor is not a selected cable model"
+    }
+  ]
+}

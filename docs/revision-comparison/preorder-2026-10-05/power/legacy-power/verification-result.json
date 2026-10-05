@@ -1,0 +1,32 @@
+{
+  "commit": "bf581ac1804bab982c78b9e2f6a6292d695e49cc",
+  "utc": "2026-10-05T13:39:20.801411+00:00",
+  "extraction_engine": "KiCad 9.0.2 netlist export only; no ERC/DRC/physical qualification in this review",
+  "comparisons": [
+    {
+      "revision": "rev1.0",
+      "numbered_populated_pad_primitives_checked": 157,
+      "all_board_netlist_memberships_equal": true,
+      "prior_firmware_coverage_numbered_membership_equal": true
+    },
+    {
+      "revision": "rev2.0",
+      "numbered_populated_pad_primitives_checked": 192,
+      "all_board_netlist_memberships_equal": true,
+      "prior_firmware_coverage_numbered_membership_equal": true
+    },
+    {
+      "revision": "rev2.1",
+      "numbered_populated_pad_primitives_checked": 192,
+      "all_board_netlist_memberships_equal": true,
+      "prior_firmware_coverage_numbered_membership_equal": true
+    },
+    {
+      "revision": "rev2.2",
+      "numbered_populated_pad_primitives_checked": 192,
+      "all_board_netlist_memberships_equal": true,
+      "prior_firmware_coverage_numbered_membership_equal": true
+    }
+  ],
+  "all_captured_source_files_still_current_identical": true
+}

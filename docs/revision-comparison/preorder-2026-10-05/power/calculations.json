@@ -1,0 +1,48 @@
+{
+  "assumptions": {
+    "assumed_led_forward_V": [
+      1.8,
+      2.0,
+      2.0
+    ],
+    "carrier_3v3_A": 0.02062636363636363,
+    "carrier_5v_A": 0.0010327272727272728,
+    "carrier_total_linear_input_A": 0.021659090909090902,
+    "resistor_only_ceiling_3v3_3p6V_A": 0.05180859504132231,
+    "resistor_only_ceiling_5v_5p5V_A": 0.0011763636363636364,
+    "RF_typical_only_A": {
+      "xiao_c3_chip": 0.335,
+      "xiao_c6_chip": 0.354,
+      "wroom02": 0.345
+    },
+    "unknowns": "Module overhead, GPIO source/sink drops, LED VF variation, bus-clamp loading, buffer midrail/dynamic ICC and startup/firmware peaks are not bounded by this example."
+  },
+  "loads_A": {
+    "xiao_c3_RF_example": 0.3566590909090909,
+    "wroom_RF_example": 0.3666590909090909,
+    "500mA_3v3_stress": 0.5216590909090909
+  },
+  "CL_A_nominal": 0.6060606060606061,
+  "CL_A_partial_bounds": [
+    0.51005100510051,
+    0.7040097949188858
+  ],
+  "CL_bounds_at_85C_R_drift": [
+    0.5070089513921571,
+    0.708259351025036
+  ],
+  "unloaded_charge_min_C": 0.017851785178517852,
+  "hardshort_26V_channel_energy_J_for45ms_at_partialCLmax": 0.8236914600550963,
+  "hardshort_13p6V_channel_energy_J_for45ms_at_partialCLmax": 0.43085399449035805,
+  "retry_duty_partial_max": 0.05325443786982248,
+  "TVS_8A_26V_0p2s_rectangular_energy_J": 41.6,
+  "reverse_CJ3407_charged26V_minus_negative13p6V_VDS": 39.6,
+  "nominal_carrier_cap_energy_J": {
+    "C9_10u_at26V": 0.00338,
+    "C20_or_C21_1u_at26V": 0.000338,
+    "C16_C17_44u_at5V": 0.00055
+  },
+  "AP2112_thermal_4p7VIN_at_WROOM_example_W": 0.5122529090909091,
+  "AP2112_reference_rise_C": 94.25453527272728,
+  "unknown_fault_envelope": "The rectangular fault examples are demands, not allowable energies; upstream TVS source current is not bounded by CL. Datasheet thermal metrics do not predict the assembled board."
+}

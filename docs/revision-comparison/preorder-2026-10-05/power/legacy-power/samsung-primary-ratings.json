@@ -1,0 +1,41 @@
+[
+  {
+    "file": "samsung-CL21B104KCFNNN.html",
+    "ratings": {
+      "Size Code": "0805 (2012)",
+      "L Size": "2.00\u00b10.10mm",
+      "W Size": "1.25\u00b10.10mm",
+      "T Size": "1.25\u00b10.10mm",
+      "Temperature Characteristic": "X7R(-55 ~ +125)",
+      "Capacitance": "100.0nF",
+      "Tolerance": "\u00b110%",
+      "Rated Voltage": "100.0Vdc"
+    }
+  },
+  {
+    "file": "samsung-CL21B105KBFNNN.html",
+    "ratings": {
+      "Size Code": "0805 (2012)",
+      "L Size": "2.00\u00b10.10mm",
+      "W Size": "1.25\u00b10.10mm",
+      "T Size": "1.25\u00b10.10mm",
+      "Temperature Characteristic": "X7R(-55 ~ +125)",
+      "Capacitance": "1.0uF",
+      "Tolerance": "\u00b110%",
+      "Rated Voltage": "50.0Vdc"
+    }
+  },
+  {
+    "file": "samsung-CL21A106KAYNNN.html",
+    "ratings": {
+      "Size Code": "0805 (2012)",
+      "L Size": "2.00\u00b10.20mm",
+      "W Size": "1.25\u00b10.20mm",
+      "T Size": "1.25\u00b10.20mm",
+      "Temperature Characteristic": "X5R(-55 ~ +85)",
+      "Capacitance": "10.0uF",
+      "Tolerance": "\u00b110%",
+      "Rated Voltage": "25.0Vdc"
+    }
+  }
+]

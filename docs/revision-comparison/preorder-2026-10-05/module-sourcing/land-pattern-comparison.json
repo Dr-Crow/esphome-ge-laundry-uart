@@ -1,0 +1,591 @@
+{
+  "XIAO-ESP32-S3-SMD.kicad_mod": {
+    "carrier_pad_count": 22,
+    "vendor_pad_count": 25,
+    "same_pads": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "different_pads": [
+      {
+        "pad": "21",
+        "carrier": {
+          "number": "21",
+          "type": "smd",
+          "shape": "roundrect",
+          "at": [
+            4.445,
+            -10.882,
+            180.0
+          ],
+          "size": [
+            2.5,
+            1.1
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "21",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            7.62,
+            -11.512,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      },
+      {
+        "pad": "22",
+        "carrier": {
+          "number": "22",
+          "type": "smd",
+          "shape": "roundrect",
+          "at": [
+            4.445,
+            -12.787,
+            180.0
+          ],
+          "size": [
+            2.5,
+            1.1
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "22",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            10.16,
+            -11.512,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      }
+    ],
+    "extra_vendor_pads": [
+      {
+        "number": "23",
+        "type": "smd",
+        "shape": "roundrect",
+        "at": [
+          4.445,
+          -10.882,
+          180.0
+        ],
+        "size": [
+          2.5,
+          1.1
+        ],
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "24",
+        "type": "smd",
+        "shape": "roundrect",
+        "at": [
+          4.445,
+          -12.787,
+          180.0
+        ],
+        "size": [
+          2.5,
+          1.1
+        ],
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "25",
+        "type": "smd",
+        "shape": "roundrect",
+        "at": [
+          10.01,
+          -8.5,
+          0.0
+        ],
+        "size": [
+          2.75,
+          2.5
+        ],
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      }
+    ]
+  },
+  "XIAO-ESP32-C6-SMD.kicad_mod": {
+    "carrier_pad_count": 22,
+    "vendor_pad_count": 24,
+    "same_pads": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "different_pads": [
+      {
+        "pad": "15",
+        "carrier": {
+          "number": "15",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            7.62,
+            -19.132,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "15",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            7.6166,
+            -19.1415,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      },
+      {
+        "pad": "16",
+        "carrier": {
+          "number": "16",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            10.16,
+            -19.132,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "16",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            10.1566,
+            -19.1415,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      },
+      {
+        "pad": "17",
+        "carrier": {
+          "number": "17",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            7.62,
+            -16.592,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "17",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            7.6166,
+            -16.6015,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      },
+      {
+        "pad": "18",
+        "carrier": {
+          "number": "18",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            10.16,
+            -16.592,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "18",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            10.1566,
+            -16.6015,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      },
+      {
+        "pad": "19",
+        "carrier": {
+          "number": "19",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            7.62,
+            -14.052,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "19",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            7.6166,
+            -14.0615,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      },
+      {
+        "pad": "20",
+        "carrier": {
+          "number": "20",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            10.16,
+            -14.052,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "20",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            10.1566,
+            -14.0615,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      },
+      {
+        "pad": "21",
+        "carrier": {
+          "number": "21",
+          "type": "smd",
+          "shape": "roundrect",
+          "at": [
+            4.445,
+            -10.882,
+            180.0
+          ],
+          "size": [
+            2.5,
+            1.1
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "21",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            7.6166,
+            -11.5215,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      },
+      {
+        "pad": "22",
+        "carrier": {
+          "number": "22",
+          "type": "smd",
+          "shape": "roundrect",
+          "at": [
+            4.445,
+            -12.787,
+            180.0
+          ],
+          "size": [
+            2.5,
+            1.1
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        "vendor": {
+          "number": "22",
+          "type": "smd",
+          "shape": "circle",
+          "at": [
+            10.064,
+            -11.5783,
+            0.0
+          ],
+          "size": [
+            1.7,
+            1.7
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      }
+    ],
+    "extra_vendor_pads": [
+      {
+        "number": "23",
+        "type": "smd",
+        "shape": "roundrect",
+        "at": [
+          7.1086,
+          -4.9683,
+          270.0
+        ],
+        "size": [
+          2.5,
+          1.1
+        ],
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "24",
+        "type": "smd",
+        "shape": "roundrect",
+        "at": [
+          9.6486,
+          -4.9683,
+          270.0
+        ],
+        "size": [
+          2.5,
+          1.1
+        ],
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      }
+    ]
+  },
+  "XIAO-ESP32-C3-SMD.kicad_mod": {
+    "carrier_pad_count": 22,
+    "vendor_pad_count": 22,
+    "same_pads": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22"
+    ],
+    "different_pads": [],
+    "extra_vendor_pads": []
+  }
+}

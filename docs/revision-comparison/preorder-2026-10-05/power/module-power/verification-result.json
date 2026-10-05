@@ -1,0 +1,50 @@
+{
+  "all_primary_downloaded_byte_hashes_verified": true,
+  "primary_sources": 13,
+  "native_module_board_hashes_verified": true,
+  "dc_rows": 16,
+  "carrier_inclusive_thresholds": {
+    "carrier_case_3v3_a": 0.020626,
+    "carrier_case_5v_a": 0.001033,
+    "not_guaranteed": true,
+    "c3": {
+      "rail_proxy_a": 0.355626,
+      "moderate_side_vbus_min_for_3v0_v": 3.527813,
+      "moderate_side_vbus_min_for_3v3_v": 3.827813,
+      "moderate_rail_at_3v7_v": 3.172187,
+      "high_drop_no_fuse_rail_at_3v7_v": 3.04107765,
+      "additional_resistance_threshold_for_3v0_ohm": 0.11550800560139018
+    },
+    "c6": {
+      "rail_proxy_a": 0.37462599999999996,
+      "moderate_side_vbus_min_for_3v0_v": 3.44927589,
+      "moderate_side_vbus_min_for_3v3_v": 3.74927589,
+      "moderate_rail_at_3v7_v": 3.25072411
+    }
+  },
+  "source_edits": false,
+  "simulation_run": false,
+  "physical_test": false,
+  "artifacts": [
+    {
+      "filename": "GE-XIAO-Module-Power-Evidence.md",
+      "bytes": 14499,
+      "sha256": "c74d531eac0223cb5d5482d2472e5a48029115a909fc0033682e0c3c11c8ff08"
+    },
+    {
+      "filename": "all-primary-source-manifest.json",
+      "bytes": 4477,
+      "sha256": "901106c25092c3d40a33ed9a09ea7c608f14f76f8ab0197e3eb5de950df95c21"
+    },
+    {
+      "filename": "dc-sensitivity.json",
+      "bytes": 11907,
+      "sha256": "ebed631b8045a0897228c3c89afddc5746408fed2a9fa6956535e3626bb075f1"
+    },
+    {
+      "filename": "module-path-evidence.json",
+      "bytes": 56235,
+      "sha256": "74bf65914726ce86a968596e5fdf018c8aad7dba62fcef9a241606e592302380"
+    }
+  ]
+}

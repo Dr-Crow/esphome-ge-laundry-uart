@@ -1,0 +1,132 @@
+{
+  "commit": "ba4dc5a5779bb48e63756db0a8a1791df6bd427c",
+  "electrical_baseline": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+  "files": [
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+      "bytes": 1176202,
+      "sha256": "71ff988b2baec7ae7f1d1b1592d7a2002c6da23e0a05e7ac9e9671a296511911",
+      "git_blob": "e7b318c89ba74d80177510858db9e5d1807fa961"
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch",
+      "bytes": 403239,
+      "sha256": "03e00580dc38adf4a2b26edc7ae21c93a3e93da194cb93c79d89680e305cd697",
+      "git_blob": "ce7f0b4f6cd169ca9b4494cc5b74fa3255ff7ca1"
+    },
+    {
+      "path": "pcb/rev3c/validation/netlist.xml",
+      "bytes": 158803,
+      "sha256": "ee32172573a93e33e7d770a3cb8316a5033ac59549243c2da792508dce2d341e",
+      "git_blob": "b52e7252b1991600258b1c781bfab04d7714ad75"
+    },
+    {
+      "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb",
+      "bytes": 1174879,
+      "sha256": "fb8d49cbdf5206b326a66d5a6dd98171155f1258bb99d39c65f6d8dff1f141c5",
+      "git_blob": "fb1305a1344b5921a565986a9833de4c26257ba2"
+    },
+    {
+      "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch",
+      "bytes": 411169,
+      "sha256": "9abb83f512ccb98bfdb8d43f6d3328d69aad1e2b17fa840edd5b13872aec2f88",
+      "git_blob": "4fabb6eed6acf977c4c26eda6ddf456683d88d3e"
+    },
+    {
+      "path": "pcb/rev3b/validation/netlist.xml",
+      "bytes": 164595,
+      "sha256": "dbf964d4f271452bf5d6ac285721384f29d4f5e90a57dbfcb6fb2d5c2d5afa14",
+      "git_blob": "f30b9ae23ad54bb27b5cdb19b407519e09c5719d"
+    },
+    {
+      "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+      "bytes": 1771882,
+      "sha256": "aa1bf9cce5845eb456d03965eca54434c483f241771d2a7de8f1406e56094b64",
+      "git_blob": "ea56f25646b8a86ad46a4840b3e5d83106e9202c"
+    },
+    {
+      "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch",
+      "bytes": 449520,
+      "sha256": "af102b88021d755c866e9d2d31d22445ecffded57c63c379e6109ea7fb29139c",
+      "git_blob": "22099524562e9c15ab5ca20e92cb9f868f488980"
+    },
+    {
+      "path": "pcb/rev3a/validation/rated-protection-netlist.xml",
+      "bytes": 190129,
+      "sha256": "2ff1583cce8de4f09dda9e5229a2fee3e0637908769adcb82bc40dc9b30e8d4f",
+      "git_blob": "94c30c81fb90505e2409b07bb195d2cba4cc768b"
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_pcb",
+      "bytes": 882068,
+      "sha256": "4e98a77322d5f7a416f03c71dd2c724a4dd39c0ff49f3e16eb12916a8eeed187",
+      "git_blob": "369f5b5afa88eee5cd5313a03b770e4831d728ad"
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_sch",
+      "bytes": 1587657,
+      "sha256": "7539dabb37bba58a1f0139a136ca00b1b62a4883beeb737e22f4da655a057443",
+      "git_blob": "2f48783c11c45e56240d61449b893b3afe269fef"
+    },
+    {
+      "path": "pcb/rev2.2/validation/native-netlist.xml",
+      "bytes": 97543,
+      "sha256": "6473dbd99e48efe2251d4d18d484810150d2812ab3bc2ac3a05b62f869b263af",
+      "git_blob": "ea66747aa50a1d8bbfcd592e00188776576be0d8"
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_pcb",
+      "bytes": 882469,
+      "sha256": "3773690ea99292138f604bc76850f49619989679d7ed4c6ce87edcb16e0ec788",
+      "git_blob": "8106a31dba78a1b22854324049ab5e1cddee53c6"
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_sch",
+      "bytes": 1587658,
+      "sha256": "f20c7d49507c158c6f5d6a5cf9e6166f228a4bf35232b0a7b06bad934134f10e",
+      "git_blob": "b41802d5bdfbffcae95b5cd1fde0d588bc80319e"
+    },
+    {
+      "path": "pcb/rev2.1/validation/native-netlist.xml",
+      "bytes": 97464,
+      "sha256": "e4158b7e29a1c698ace4b996b9089658dea7397fb53e3e667950cbf48a707208",
+      "git_blob": "bbbe06009eb963b56530217f95c1dadec0aaaafb"
+    },
+    {
+      "path": "pcb/rev2.0/design/OnionStraws.kicad_pcb",
+      "bytes": 864002,
+      "sha256": "94ed5be4db40291f03ff75cf2e046e779a1b4a131a75aeb8628f2597b6e0c4eb",
+      "git_blob": "eed9a2dce940fb99954f01cc947435fcbe78c997"
+    },
+    {
+      "path": "pcb/rev2.0/design/OnionStraws.kicad_sch",
+      "bytes": 1580310,
+      "sha256": "610c3b04388a7e27648c91a5b90e0d5cceb3e90095ac20de17c02c77d15252be",
+      "git_blob": "0c00ef78ad236571b8a0170d8c8aaea1c31d80d6"
+    },
+    {
+      "path": "pcb/rev2.0/native-review/netlist.xml",
+      "bytes": 92528,
+      "sha256": "46f2ad7498073aee8ad6dcd8520203c1d110fea300f6e9b6a9f663776b83e9c5",
+      "git_blob": "a008c62c1d716d8b09095ab872d84c4ce6c20379"
+    },
+    {
+      "path": "pcb/rev1.0/design/OnionStraws.kicad_pcb",
+      "bytes": 810884,
+      "sha256": "fbee229893652b7e36fe99563679229b8be1422968c2087ffb71ad33aeba7655",
+      "git_blob": "9541f5c27eadba50b794e45da02af0b2847e43f3"
+    },
+    {
+      "path": "pcb/rev1.0/design/OnionStraws.kicad_sch",
+      "bytes": 290856,
+      "sha256": "ded9db1a9f1b2e56d73509cd068acb9709b5f97b9fec8ab2d99018710c7689cb",
+      "git_blob": "7f2b86ed4ab8b7a270d3428a4fb11637befb5424"
+    },
+    {
+      "path": "pcb/rev1.0/validation/native-kicad-9.0.9/netlist.xml",
+      "bytes": 75920,
+      "sha256": "580d0e8b010b9dd00701f478c8dbb8c5e4c0ec3435e82d4749e4792956f61b07",
+      "git_blob": "4735835e86c05a0d95469aaebdc843e1114e4339"
+    }
+  ]
+}

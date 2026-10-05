@@ -1,0 +1,320 @@
+{
+  "assumptions": "Ideal illustrative steady state; exact p3 voltage is assumed, Iq and ancillary loads excluded. Datasheet thermal references are not measured carrier thermal resistances.",
+  "U3_thermal_examples": [
+    {
+      "p3_voltage_V": 7.5,
+      "ambient_C": 25,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 0.25,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 40.625,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.64
+    },
+    {
+      "p3_voltage_V": 7.5,
+      "ambient_C": 25,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 0.5,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 56.25,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.64
+    },
+    {
+      "p3_voltage_V": 7.5,
+      "ambient_C": 25,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 0.75,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 71.875,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.64
+    },
+    {
+      "p3_voltage_V": 7.5,
+      "ambient_C": 50,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 0.25,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 65.625,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.48
+    },
+    {
+      "p3_voltage_V": 7.5,
+      "ambient_C": 50,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 0.5,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 81.25,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.48
+    },
+    {
+      "p3_voltage_V": 7.5,
+      "ambient_C": 50,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 0.75,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 96.875,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.48
+    },
+    {
+      "p3_voltage_V": 7.5,
+      "ambient_C": 85,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 0.25,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 100.625,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.256
+    },
+    {
+      "p3_voltage_V": 7.5,
+      "ambient_C": 85,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 0.5,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 116.25,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.256
+    },
+    {
+      "p3_voltage_V": 7.5,
+      "ambient_C": 85,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 0.75,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 131.875,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.256
+    },
+    {
+      "p3_voltage_V": 9,
+      "ambient_C": 25,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 0.4,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 50.0,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.4
+    },
+    {
+      "p3_voltage_V": 9,
+      "ambient_C": 25,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 0.8,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 75.0,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.4
+    },
+    {
+      "p3_voltage_V": 9,
+      "ambient_C": 25,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 1.2,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 100.0,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.4
+    },
+    {
+      "p3_voltage_V": 9,
+      "ambient_C": 50,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 0.4,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 75.0,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.3
+    },
+    {
+      "p3_voltage_V": 9,
+      "ambient_C": 50,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 0.8,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 100.0,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.3
+    },
+    {
+      "p3_voltage_V": 9,
+      "ambient_C": 50,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 1.2,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 125.0,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.3
+    },
+    {
+      "p3_voltage_V": 9,
+      "ambient_C": 85,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 0.4,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 110.0,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.16
+    },
+    {
+      "p3_voltage_V": 9,
+      "ambient_C": 85,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 0.8,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 135.0,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.16
+    },
+    {
+      "p3_voltage_V": 9,
+      "ambient_C": 85,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 1.2,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 160.0,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.16
+    },
+    {
+      "p3_voltage_V": 12,
+      "ambient_C": 25,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 0.7000000000000001,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 68.75,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.22857142857142856
+    },
+    {
+      "p3_voltage_V": 12,
+      "ambient_C": 25,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 1.4000000000000001,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 112.50000000000001,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.22857142857142856
+    },
+    {
+      "p3_voltage_V": 12,
+      "ambient_C": 25,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 2.1,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 156.25,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.22857142857142856
+    },
+    {
+      "p3_voltage_V": 12,
+      "ambient_C": 50,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 0.7000000000000001,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 93.75,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.17142857142857143
+    },
+    {
+      "p3_voltage_V": 12,
+      "ambient_C": 50,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 1.4000000000000001,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 137.5,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.17142857142857143
+    },
+    {
+      "p3_voltage_V": 12,
+      "ambient_C": 50,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 2.1,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 181.25,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.17142857142857143
+    },
+    {
+      "p3_voltage_V": 12,
+      "ambient_C": 85,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 0.7000000000000001,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 128.75,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.09142857142857143
+    },
+    {
+      "p3_voltage_V": 12,
+      "ambient_C": 85,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 1.4000000000000001,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 172.5,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.09142857142857143
+    },
+    {
+      "p3_voltage_V": 12,
+      "ambient_C": 85,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 2.1,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 216.25,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.09142857142857143
+    },
+    {
+      "p3_voltage_V": 18,
+      "ambient_C": 25,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 1.3,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 106.25,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.12307692307692308
+    },
+    {
+      "p3_voltage_V": 18,
+      "ambient_C": 25,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 2.6,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 187.5,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.12307692307692308
+    },
+    {
+      "p3_voltage_V": 18,
+      "ambient_C": 25,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 3.9,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 268.75,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.12307692307692308
+    },
+    {
+      "p3_voltage_V": 18,
+      "ambient_C": 50,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 1.3,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 131.25,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.09230769230769231
+    },
+    {
+      "p3_voltage_V": 18,
+      "ambient_C": 50,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 2.6,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 212.5,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.09230769230769231
+    },
+    {
+      "p3_voltage_V": 18,
+      "ambient_C": 50,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 3.9,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 293.75,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.09230769230769231
+    },
+    {
+      "p3_voltage_V": 18,
+      "ambient_C": 85,
+      "load_A": 0.1,
+      "U3_ideal_W_excluding_Iq": 1.3,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 166.25,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.04923076923076923
+    },
+    {
+      "p3_voltage_V": 18,
+      "ambient_C": 85,
+      "load_A": 0.2,
+      "U3_ideal_W_excluding_Iq": 2.6,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 247.5,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.04923076923076923
+    },
+    {
+      "p3_voltage_V": 18,
+      "ambient_C": 85,
+      "load_A": 0.3,
+      "U3_ideal_W_excluding_Iq": 3.9,
+      "U3_estimated_Tj_C_using_datasheet_62p5_C_per_W": 328.75,
+      "ideal_current_ceiling_A_for_125C_excluding_Iq": 0.04923076923076923
+    }
+  ],
+  "U6_thermal_examples": [
+    {
+      "part": "Diodes AP2205 Y",
+      "load_A": 0.2,
+      "input_V": 5,
+      "output_V": 3.3,
+      "power_W_excluding_Iq": 0.34,
+      "theta_JA_reference_C_per_W": 129,
+      "ideal_Tj_at_85C": 128.86,
+      "ideal_current_ceiling_A_at_85C_for_Tj_125C": 0.18239854081167353
+    },
+    {
+      "part": "TECH PUBLIC TPAP2205",
+      "load_A": 0.2,
+      "input_V": 5,
+      "output_V": 3.3,
+      "power_W_excluding_Iq": 0.34,
+      "theta_JA_reference_C_per_W": 120,
+      "ideal_Tj_at_85C": 125.80000000000001,
+      "ideal_current_ceiling_A_at_85C_for_Tj_125C": 0.19607843137254902
+    }
+  ],
+  "ideal_nominal_3V3_capacitance_uF": 11.3,
+  "ideal_cap_hold_time_us_345mA_load_minus_200mA_supply_3p3_to_3p0V": 23.37931034482759,
+  "ideal_R9_C8_gate_RC_s": 1.0,
+  "gate_rating_comparison_at_assumed_p2_32p4_V_excess_V": 12.399999999999999,
+  "C9_rating_comparison_at_assumed_p3_32p4_V_excess_V": 7.399999999999999
+}

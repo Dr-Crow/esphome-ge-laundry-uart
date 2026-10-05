@@ -1,5 +1,7 @@
 # GE adapter source handoff
 
+Latest October5 pre-order analysis and committed fixes: [all-revision review](preorder-2026-10-05/README.md). Earlier checkpoint/quote/source boundaries below remain explicit.
+
 Updated October 4, 2026 after complete independent-source restoration and fresh seven-revision checks. [Validation](VALIDATION.md), [pricing](PRICING.md) and the [finish plan](FINISH-PLAN.md) form the current review checkpoint. The selected shared Rev3C preserves both GE inputs and automatic PIN1 priority. C3 is first; C6 interface/firmware flexibility remains. The Rev3B rated-protection backport is digitally reviewed; Rev3A rated protection, exact connector lands and zero-warning schematic normalization are independently reviewed and staged; all seven revisions now have zero native findings. C/B pin-type corrections and focused current-main candidates have current source-bound evidence. The [fork integration backup](https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/integration/ge-restored-final-2026-10-04) is published with intact histories. No order, PR or upstream submission is included.
 
 ## Current local checkpoints

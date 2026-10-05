@@ -1,5 +1,7 @@
 # Recorded assembly quotes
 
+Latest October5 pre-order analysis and committed fixes: [all-revision review](preorder-2026-10-05/README.md). Earlier checkpoint/quote/source boundaries below remain explicit.
+
 [Comparison](README.md) · [Validation](VALIDATION.md) · [Finish plan](FINISH-PLAN.md)
 
 All prices are USD. The selected exact Rev3C quotes refreshed October 5, 2026 at 02:47 UTC and the historical October 3 baseline quotes are complete PCB plus Economic top-side assembly for **all five or all ten carriers**, with exact reference/part-code matching at both quantities. Shipping, tax, XIAO modules and module-side headers/installation, programming, functional tests, enclosures and appliance cables are excluded. No order has been placed.

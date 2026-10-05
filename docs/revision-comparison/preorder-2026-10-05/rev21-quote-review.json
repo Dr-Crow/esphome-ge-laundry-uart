@@ -1,0 +1,360 @@
+{
+  "title": "Rev2.1 frozen JLCPCB quote attempt",
+  "observed_at_utc": "2026-10-05T14:01:31Z",
+  "supplier": "JLCPCB",
+  "currency": "USD",
+  "source_commit": "167dad48c7b8d1f015e24191f523d5c7facf623b",
+  "source_hashes_verified_before_upload": [
+    {
+      "file": "GERBER-OnionStraws-rev2.1.zip",
+      "bytes": 127372,
+      "sha256": "f6e8172560fa5ab99a14d38158f7448bfc6a7cf89092eca10df1f02b5be5c70a"
+    },
+    {
+      "file": "BOM-OnionStraws-rev2.1.csv",
+      "bytes": 3052,
+      "sha256": "ac4ecc0151973839fb5c3594cb42c1dcd62c2806d8d783b462981742d989baaf"
+    },
+    {
+      "file": "CPL-OnionStraws-rev2.1.csv",
+      "bytes": 2374,
+      "sha256": "40175b80f76c1f4fbc8f7b59793946d180719c59aced4e46e163fae1502d3763"
+    }
+  ],
+  "settings": {
+    "automatically_detected_layers": 2,
+    "automatically_detected_dimensions_mm": [
+      88.6,
+      30
+    ],
+    "material": "FR4 TG135",
+    "thickness_mm": 1.6,
+    "outer_copper_oz": 1,
+    "solder_mask": "Green",
+    "silkscreen": "White",
+    "surface_finish": "LeadFree HASL",
+    "via_covering": "Tented",
+    "delivery_format": "Single PCB",
+    "assembly": "Economic top",
+    "deburring": "Yes (site restored this when returning to saved specifications)",
+    "quoted_references_required": 60,
+    "unique_part_codes_required": 24
+  },
+  "part_matching": {
+    "bom_refs": 60,
+    "cpl_refs": 60,
+    "ui_refs": 60,
+    "all_source_codes_match": true,
+    "stock_confirmed_refs": 59,
+    "stock_shortage_refs": 1,
+    "shortage_ref": "U6",
+    "matched_rows": [
+      {
+        "ref": "C1",
+        "part": "C28233",
+        "shortage": false
+      },
+      {
+        "ref": "C3",
+        "part": "C28233",
+        "shortage": false
+      },
+      {
+        "ref": "C4",
+        "part": "C28233",
+        "shortage": false
+      },
+      {
+        "ref": "C5",
+        "part": "C28233",
+        "shortage": false
+      },
+      {
+        "ref": "C6",
+        "part": "C28233",
+        "shortage": false
+      },
+      {
+        "ref": "C7",
+        "part": "C28233",
+        "shortage": false
+      },
+      {
+        "ref": "C10",
+        "part": "C28233",
+        "shortage": false
+      },
+      {
+        "ref": "C12",
+        "part": "C28233",
+        "shortage": false
+      },
+      {
+        "ref": "C14",
+        "part": "C28233",
+        "shortage": false
+      },
+      {
+        "ref": "C2",
+        "part": "C28323",
+        "shortage": false
+      },
+      {
+        "ref": "C8",
+        "part": "C28323",
+        "shortage": false
+      },
+      {
+        "ref": "C9",
+        "part": "C15850",
+        "shortage": false
+      },
+      {
+        "ref": "C11",
+        "part": "C15850",
+        "shortage": false
+      },
+      {
+        "ref": "C13",
+        "part": "C15850",
+        "shortage": false
+      },
+      {
+        "ref": "D1",
+        "part": "C2500",
+        "shortage": false
+      },
+      {
+        "ref": "D2",
+        "part": "C2500",
+        "shortage": false
+      },
+      {
+        "ref": "D3",
+        "part": "C2500",
+        "shortage": false
+      },
+      {
+        "ref": "D9",
+        "part": "C2500",
+        "shortage": false
+      },
+      {
+        "ref": "D4",
+        "part": "C2297",
+        "shortage": false
+      },
+      {
+        "ref": "D5",
+        "part": "C84256",
+        "shortage": false
+      },
+      {
+        "ref": "D6",
+        "part": "C2296",
+        "shortage": false
+      },
+      {
+        "ref": "D7",
+        "part": "C309871",
+        "shortage": false
+      },
+      {
+        "ref": "D8",
+        "part": "C78479",
+        "shortage": false
+      },
+      {
+        "ref": "F1",
+        "part": "C12604",
+        "shortage": false
+      },
+      {
+        "ref": "F2",
+        "part": "C12604",
+        "shortage": false
+      },
+      {
+        "ref": "J1",
+        "part": "C3097717",
+        "shortage": false
+      },
+      {
+        "ref": "Q1",
+        "part": "C10493",
+        "shortage": false
+      },
+      {
+        "ref": "Q2",
+        "part": "C10493",
+        "shortage": false
+      },
+      {
+        "ref": "R1",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R2",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R3",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R5",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R14",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R15",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R16",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R17",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R19",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R20",
+        "part": "C17414",
+        "shortage": false
+      },
+      {
+        "ref": "R4",
+        "part": "C17557",
+        "shortage": false
+      },
+      {
+        "ref": "R6",
+        "part": "C17557",
+        "shortage": false
+      },
+      {
+        "ref": "R7",
+        "part": "C17557",
+        "shortage": false
+      },
+      {
+        "ref": "R9",
+        "part": "C17514",
+        "shortage": false
+      },
+      {
+        "ref": "R10",
+        "part": "C17513",
+        "shortage": false
+      },
+      {
+        "ref": "R11",
+        "part": "C17513",
+        "shortage": false
+      },
+      {
+        "ref": "R12",
+        "part": "C17513",
+        "shortage": false
+      },
+      {
+        "ref": "R13",
+        "part": "C17513",
+        "shortage": false
+      },
+      {
+        "ref": "R23",
+        "part": "C17513",
+        "shortage": false
+      },
+      {
+        "ref": "R24",
+        "part": "C17513",
+        "shortage": false
+      },
+      {
+        "ref": "R25",
+        "part": "C17513",
+        "shortage": false
+      },
+      {
+        "ref": "R18",
+        "part": "C104108",
+        "shortage": false
+      },
+      {
+        "ref": "R21",
+        "part": "C104108",
+        "shortage": false
+      },
+      {
+        "ref": "R22",
+        "part": "C17673",
+        "shortage": false
+      },
+      {
+        "ref": "SW1",
+        "part": "C318884",
+        "shortage": false
+      },
+      {
+        "ref": "SW2",
+        "part": "C318884",
+        "shortage": false
+      },
+      {
+        "ref": "U1",
+        "part": "C2067355",
+        "shortage": false
+      },
+      {
+        "ref": "U2",
+        "part": "C2934560",
+        "shortage": false
+      },
+      {
+        "ref": "U3",
+        "part": "C86206",
+        "shortage": false
+      },
+      {
+        "ref": "U4",
+        "part": "C151607",
+        "shortage": false
+      },
+      {
+        "ref": "U5",
+        "part": "C151607",
+        "shortage": false
+      },
+      {
+        "ref": "U6",
+        "part": "C5205181",
+        "shortage": true
+      }
+    ]
+  },
+  "result": "All60 references/24 codes matched; exact U6 stock4, shortage1 at5 and6 at10. Complete assembly total unavailable; no omission or substitution.",
+  "persisted_bare_pcb_usd": {
+    "5": 5.3,
+    "10": 6.4
+  },
+  "excludes": "Shipping/tax, complete assembly unavailable; source/electrical/placement release gates remain."
+}

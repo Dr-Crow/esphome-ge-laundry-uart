@@ -1,0 +1,247 @@
+[
+  {
+    "commit": "87984047ee029efb83bf9947dc21818fd18e39b3",
+    "path": "pcb/OnionStraws.kicad_sch",
+    "git_blob": "884cae1950066274f54545e730efb9746e1474ba",
+    "sha256": "b9a4536ed52c3db2e1f59729567c4f31da2791ec26258c31146fe947e9e77757",
+    "capture": "evidence/rev1-original.kicad_sch"
+  },
+  {
+    "commit": "af1f2c40029ef67c56910fb2c55feac835553525",
+    "path": "pcb/OnionStraws.kicad_sch",
+    "git_blob": "b2a47102c9f4718cca5bd68c6b0e2a07f662b998",
+    "sha256": "370d1233b040b76d2c7aed67e4ea63dd7515476bd08beb63c6982ed69c4b261d",
+    "capture": "evidence/rev2-beta.kicad_sch"
+  },
+  {
+    "commit": "4c6741e78f3ed8fa0120dc4741aaa30917405e29",
+    "path": "pcb/OnionStraws.kicad_sch",
+    "git_blob": "2dae2db6f61d03fb496c37fa938fcb2d1ec86ec4",
+    "sha256": "b113058ca3f9cb3c67f5b12ee94cc014a25c2a14fd496fe29cc52ae366342c6c",
+    "capture": "evidence/rev21-mods.kicad_sch"
+  },
+  {
+    "commit": "1fba9cf944bd46b2e4f8d8331c75f0fc4578f848",
+    "path": "pcb/OnionStraws.kicad_sch",
+    "git_blob": "6e02076d06b0a212caf1a6172767bbc30622afc5",
+    "sha256": "0516df5b71988cc33c75ab3701dde6ef7aa0a483fd9b1eb9c3252266e6b7db67",
+    "capture": "evidence/rev21-kicad9.kicad_sch"
+  },
+  {
+    "commit": "bc0d52495bd97ed1504bd0ca0775e47feb01a648",
+    "path": "pcb/rev2.1/design/OnionStraws.kicad_sch",
+    "git_blob": "6e02076d06b0a212caf1a6172767bbc30622afc5",
+    "sha256": "0516df5b71988cc33c75ab3701dde6ef7aa0a483fd9b1eb9c3252266e6b7db67",
+    "capture": "evidence/rev21-reorg.kicad_sch"
+  },
+  {
+    "commit": "bc0d52495bd97ed1504bd0ca0775e47feb01a648",
+    "path": "pcb/rev2.2/design/OnionStraws.kicad_sch",
+    "git_blob": "56913e0d6186b10b8d7e86670ca77abb5f18b1ff",
+    "sha256": "64e337f7aef6713dfdf343f069d1c66acd1d1aac2e8557b6e3c50e32f9545cf8",
+    "capture": "evidence/rev22-reorg.kicad_sch"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev1.0/design/OnionStraws.kicad_sch",
+    "git_blob": "7f2b86ed4ab8b7a270d3428a4fb11637befb5424",
+    "sha256": "ded9db1a9f1b2e56d73509cd068acb9709b5f97b9fec8ab2d99018710c7689cb",
+    "capture": "evidence/rev1.0.kicad_sch"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev1.0/design/OnionStraws.kicad_pcb",
+    "git_blob": "9541f5c27eadba50b794e45da02af0b2847e43f3",
+    "sha256": "fbee229893652b7e36fe99563679229b8be1422968c2087ffb71ad33aeba7655",
+    "capture": "evidence/rev1.0.kicad_pcb"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.0/design/OnionStraws.kicad_sch",
+    "git_blob": "7de6fee453a3b6c39e23ea9eefd30626e7804242",
+    "sha256": "e07d25f2fbaa58c997bd973c13ca19893bb1126050f3a1af5f74108f0d7d4b43",
+    "capture": "evidence/rev2.0.kicad_sch"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.0/design/OnionStraws.kicad_pcb",
+    "git_blob": "0d06e2a70449a727027aa543524a341bac6af191",
+    "sha256": "73cf5b1aec5182b9e162540e9a4b7897b89c961b958dfe228d6fe3530fc8826c",
+    "capture": "evidence/rev2.0.kicad_pcb"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.1/design/OnionStraws.kicad_sch",
+    "git_blob": "21abd50f942125a4034bc671c11a363279c66487",
+    "sha256": "ae2e3d79fa1ce635c008c50e324ffd00f8516b461e4540c4f664fbb1f76da6d1",
+    "capture": "evidence/rev2.1.kicad_sch"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.1/design/OnionStraws.kicad_pcb",
+    "git_blob": "e126b79af3313514cf1142b81a4b2fd68b0fabbd",
+    "sha256": "d357d159ec1e54dfefb504e55ddaad09589a39156223a882fa454ee706762038",
+    "capture": "evidence/rev2.1.kicad_pcb"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.2/design/OnionStraws.kicad_sch",
+    "git_blob": "2f48783c11c45e56240d61449b893b3afe269fef",
+    "sha256": "7539dabb37bba58a1f0139a136ca00b1b62a4883beeb737e22f4da655a057443",
+    "capture": "evidence/rev2.2.kicad_sch"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.2/design/OnionStraws.kicad_pcb",
+    "git_blob": "369f5b5afa88eee5cd5313a03b770e4831d728ad",
+    "sha256": "4e98a77322d5f7a416f03c71dd2c724a4dd39c0ff49f3e16eb12916a8eeed187",
+    "capture": "evidence/rev2.2.kicad_pcb"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch",
+    "git_blob": "27763e0e3b5bac6177f251374e9085fb8f62b007",
+    "sha256": "c64844158d72df072a88e4d64342f31abea2f3cc1f7112e64a6e38ae18de0b53",
+    "capture": "evidence/rev3a.kicad_sch"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+    "git_blob": "9a6ee1872d228e06aa3b9ce7a1b3bdd37937e791",
+    "sha256": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+    "capture": "evidence/rev3a.kicad_pcb"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch",
+    "git_blob": "9b5bdcad4b5c49170aa668f6323c9538346a2f13",
+    "sha256": "5aa8998b7820a3f00f2b0b18424f478989efacae7c6f33a47c488224012fba03",
+    "capture": "evidence/rev3b.kicad_sch"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb",
+    "git_blob": "c8bb43445e2573c548d98141773a0d7ddf5c28fe",
+    "sha256": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1",
+    "capture": "evidence/rev3b.kicad_pcb"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch",
+    "git_blob": "2a6101830f21328a4242544086ce9a626ceb5f4c",
+    "sha256": "0c4abc0c24b55c4e7813596ad224bb1f4fb4776476184da79baf45af45187080",
+    "capture": "evidence/rev3c.kicad_sch"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+    "git_blob": "3e9875c840530a632cdd6534900f309c771f2740",
+    "sha256": "4fba3feea4161f7e6bdfbd7f20ac677a485948fac540d7bda1c246a451c4bab9",
+    "capture": "evidence/rev3c.kicad_pcb"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev1.0/validation/erc-normalization/after.net.xml",
+    "git_blob": "4735835e86c05a0d95469aaebdc843e1114e4339",
+    "sha256": "580d0e8b010b9dd00701f478c8dbb8c5e4c0ec3435e82d4749e4792956f61b07",
+    "capture": "evidence/rev1.0.net.xml"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.0/reports/current-netlist.xml",
+    "git_blob": "794fc4e160b8156072eec729eb740e7814aa6341",
+    "sha256": "503d243014ca8a05e87dd5f4e3c9318a2013ab7e741b4f7c21d6d694f16d1ff8",
+    "capture": "evidence/rev2.0.net.xml"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.1/validation/native-netlist.xml",
+    "git_blob": "bbbe06009eb963b56530217f95c1dadec0aaaafb",
+    "sha256": "e4158b7e29a1c698ace4b996b9089658dea7397fb53e3e667950cbf48a707208",
+    "capture": "evidence/rev2.1.net.xml"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.2/validation/native-netlist.xml",
+    "git_blob": "ea66747aa50a1d8bbfcd592e00188776576be0d8",
+    "sha256": "6473dbd99e48efe2251d4d18d484810150d2812ab3bc2ac3a05b62f869b263af",
+    "capture": "evidence/rev2.2.net.xml"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev3a/validation/erc-normalization/after.net.xml",
+    "git_blob": "45d1fa97a3798c8c1f7d1dd09b9af61bee0f9577",
+    "sha256": "bd4a94d53a58c5fa2b37c27533a6e94e247a7cb4ef783e884e9f5f215876f5d2",
+    "capture": "evidence/rev3a.net.xml"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev3b/validation/netlist.xml",
+    "git_blob": "f30b9ae23ad54bb27b5cdb19b407519e09c5719d",
+    "sha256": "dbf964d4f271452bf5d6ac285721384f29d4f5e90a57dbfcb6fb2d5c2d5afa14",
+    "capture": "evidence/rev3b.net.xml"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev3c/validation/netlist.xml",
+    "git_blob": "b52e7252b1991600258b1c781bfab04d7714ad75",
+    "sha256": "ee32172573a93e33e7d770a3cb8316a5033ac59549243c2da792508dce2d341e",
+    "capture": "evidence/rev3c.net.xml"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.0/design/footprints/LegacyBoard.pretty/R18_R_0805_2012Metric.kicad_mod",
+    "git_blob": "88246bb8ed98ee8e90f5232bf4008f40f16a71b9",
+    "sha256": "0b669f2705231d6235ba7140e0bacf64ac4871e37c3bc2656f48ac796815dfe7",
+    "capture": "evidence/R18-rev20.kicad_mod"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.0/design/footprints/LegacyBoard.pretty/R21_R_0805_2012Metric.kicad_mod",
+    "git_blob": "e1e782e0d71d285dca98fb12ae129710de268ea6",
+    "sha256": "a34386bff76b2c90976b6f439b11bc64dfcb0b2f5621f600ed3fdaca6271ec74",
+    "capture": "evidence/R21-rev20.kicad_mod"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.0/design/footprints/LegacyBoard.pretty/R22_R_0805_2012Metric.kicad_mod",
+    "git_blob": "c14a26bf662d7317575f35f6f2bf8bfa25be256b",
+    "sha256": "3cd8e31f868908beefe8dbac0753617215702d75c57f839e449552f83e4c4199",
+    "capture": "evidence/R22-rev20.kicad_mod"
+  },
+  {
+    "commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+    "path": "pcb/rev2.0/design/symbols/LegacySymbols.kicad_sym",
+    "git_blob": "5fad3b0e4ae269314d6edeecccb870de719bcffd",
+    "sha256": "d24de4348847d065aa91dc08d4289c8a5fbd098078c884f0a7e4cfc802798dd3",
+    "capture": "evidence/rev20-LegacySymbols.kicad_sym"
+  },
+  {
+    "commit": "af1f2c40029ef67c56910fb2c55feac835553525",
+    "path": "pcb/gerber5/bom.csv",
+    "git_blob": "f9315c6b9c47a4f850eb6f7d09f02a27ce285806",
+    "sha256": "efbc55acdeaf260a364b21dcc726d3ffcd5959dfcea9fb40c45beb2a50124bc2",
+    "capture": "evidence/rev2-beta-bom.csv"
+  },
+  {
+    "commit": "87984047ee029efb83bf9947dc21818fd18e39b3",
+    "path": "pcb/readme.md",
+    "git_blob": "331f6625bdd08ae44c8b08c2e1ac9fc30cc7bc12",
+    "sha256": "52ba9c8a9c6ca7a3a18b0bba7e175958de1ed3abee6615abee6f1629b94cb824",
+    "capture": "evidence/rev1-original-readme.md"
+  },
+  {
+    "commit": "34310643c68029a4ac42b9dff5e0c0f0269ab771",
+    "path": "README.md",
+    "git_blob": "9df0ed52eb9204bd82c0d43b82c2297400fa7b43",
+    "sha256": "aa0be98f06db2db0b329bec1d57f6dc67e45e904071277c7d3e7e6710e9705dd",
+    "capture": "evidence/legacy-current-status-readme.md"
+  },
+  {
+    "commit": "bc0d52495bd97ed1504bd0ca0775e47feb01a648",
+    "path": "pcb/rev2.2/README.md",
+    "git_blob": "22fa0b7e616f14a002c9f221769901612f534c93",
+    "sha256": "40fed1971c21ead8cb3a3582842100d32f4a0fc609523c008f0b37455ed27b83",
+    "capture": "evidence/rev22-intended-parts-readme.md"
+  }
+]

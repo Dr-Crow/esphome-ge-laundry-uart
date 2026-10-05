@@ -1,0 +1,104 @@
+[
+  {
+    "path": "primary-sources/diodes-ap2205.pdf",
+    "url": "https://www.diodes.com/assets/Datasheets/AP2205.pdf",
+    "final_url": "https://www.diodes.com/assets/Datasheets/AP2205.pdf",
+    "bytes": 1767845,
+    "sha256": "ce4c5ce349628e9a431652848290bb095a3304ecd4eb115fd1bc359fe34b6b80",
+    "utc": "2026-10-05T13:27:19.069444+00:00"
+  },
+  {
+    "path": "primary-sources/diodes-ap2205-mirror.pdf",
+    "url": "https://datasheet.lcsc.com/datasheet/pdf/fa6be8724268a1faf560880483dfb299.pdf?productCode=C3745183",
+    "final_url": "https://datasheet.lcsc.com/datasheet/pdf/fa6be8724268a1faf560880483dfb299.pdf?productCode=C3745183",
+    "bytes": 1767845,
+    "sha256": "ce4c5ce349628e9a431652848290bb095a3304ecd4eb115fd1bc359fe34b6b80",
+    "utc": "2026-10-05T13:27:19.082320+00:00"
+  },
+  {
+    "path": "primary-sources/bourns-mf-msmf.pdf",
+    "url": "https://bourns.com/docs/product-datasheets/mf-msmf.pdf",
+    "final_url": "https://bourns.com/docs/product-datasheets/mf-msmf.pdf",
+    "bytes": 1327051,
+    "sha256": "50d80228581842471d563e28ba0f1b67ab095ee95dfac4079f4a49f7f7bbf3c8",
+    "utc": "2026-10-05T13:27:20.794410+00:00"
+  },
+  {
+    "path": "primary-sources/bourns-mf-usmf.pdf",
+    "url": "https://bourns.com/docs/product-datasheets/mf-usmf.pdf",
+    "final_url": "https://bourns.com/docs/product-datasheets/mf-usmf.pdf",
+    "bytes": 996066,
+    "sha256": "6d2c2eeff73645a07860acdfdca08bff367f42bf82ea9c7fb5454efad5769731",
+    "utc": "2026-10-05T13:27:20.065997+00:00"
+  },
+  {
+    "path": "primary-sources/st-l78.pdf",
+    "url": "https://www.st.com/resource/en/datasheet/l78.pdf",
+    "final_url": "https://www.st.com/resource/en/datasheet/l78.pdf",
+    "bytes": 3251121,
+    "sha256": "ccba643d1b7ced872f7048c58d32edf23cc165febedc984a8592254c47b0ca1a",
+    "utc": "2026-10-05T13:27:19.344107+00:00"
+  },
+  {
+    "path": "primary-sources/brightking-smaj-c309871.html",
+    "url": "https://www.lcsc.com/datasheet/C309871.pdf",
+    "final_url": "https://www.lcsc.com/datasheet/C309871.pdf",
+    "bytes": 9421,
+    "sha256": "cf7038f5a3f9817a363692f797a4af912f996ae00a329cf3728b135bfbe730b1",
+    "utc": "2026-10-05T13:27:19.441418+00:00"
+  },
+  {
+    "path": "primary-sources/tech-public-tpap2205-c19268131.pdf",
+    "url": "https://atta.szlcsc.com/upload/public/pdf/source/20231201/421357A3C66CA1DC6983E93125C75712.pdf",
+    "bytes": 1975379,
+    "sha256": "3383d7174c77a722922668aeb001d415bbbefe81fbb6480c288b524baa244f9c",
+    "utc": "2026-10-05T13:32:00.666477+00:00",
+    "authority": "TECH_PUBLIC_manufacturer_authored_exact_C19268131_sheet_from_supplier_catalog"
+  },
+  {
+    "path": "primary-sources/samsung-CL21A106KAYNNN.html",
+    "url": "https://product.samsungsem.com/mlcc/CL21A106KAYNNN.do",
+    "bytes": 169887,
+    "sha256": "2009f9eefdf7c287fba348c32bd6c6efc597feebac82c714d3fe771ecef03ac5",
+    "utc": "2026-10-05T13:33:00.619382+00:00"
+  },
+  {
+    "path": "primary-sources/samsung-CL21B105KBFNNN.html",
+    "url": "https://product.samsungsem.com/mlcc/CL21B105KBFNNN.do",
+    "bytes": 179067,
+    "sha256": "77168ee9a23463a579d1757f9074551af4c306e952e0b91c56dbee46a124f662",
+    "utc": "2026-10-05T13:33:00.745912+00:00"
+  },
+  {
+    "path": "primary-sources/samsung-CL21B104KCFNNN.html",
+    "url": "https://product.samsungsem.com/mlcc/CL21B104KCFNNN.do",
+    "bytes": 167788,
+    "sha256": "e046ddaa5840bfc4f1ad2048ae4f3d0e2282e3ea8ecf0f96ab431c1f3b06b0b8",
+    "utc": "2026-10-05T13:33:00.775588+00:00"
+  },
+  {
+    "path": "primary-sources/vishay-si2309cds.pdf",
+    "url": "https://www.vishay.com/docs/68980/si2309cd.pdf",
+    "bytes": 173085,
+    "sha256": "feb0974dd371494fec838fecc864abe5c1e33002fd4082be5001a2899b04e045",
+    "capture_file_mtime_utc": "2026-10-05T13:26:17.933968+00:00",
+    "authority": "manufacturer official host"
+  },
+  {
+    "path": "primary-sources/brightking-datasheet.pdf",
+    "url": "https://files.rct.ru/pdf/diode/201112231713448321.pdf",
+    "bytes": 330125,
+    "sha256": "e0f1dbfb9fe131d633984e2ba1bf740cc2efacb39b3a1d534cbf2c4a081690e2",
+    "capture_file_mtime_utc": "2026-10-05T13:30:52.619771+00:00",
+    "authority": "manufacturer-authored distributor mirror; family sheet21July2014, not established latest supplier revision"
+  },
+  {
+    "path": "primary-sources/espressif-c3-wroom02.pdf",
+    "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf",
+    "bytes": 958836,
+    "sha256": "2375b1be75ebbfcffa050e6a26c3ee7957bc7171b319066081a491d1b2e21161",
+    "retrieved_utc": "2026-10-05T13:01:08.485084+00:00",
+    "reused_from": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c3-wroom02-datasheet.pdf",
+    "authority": "manufacturer official host; reused verified earlier same-day capture"
+  }
+]

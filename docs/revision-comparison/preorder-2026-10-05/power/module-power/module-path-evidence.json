@@ -1,0 +1,2335 @@
+{
+  "reviewed_utc": "2026-10-05T13:33:01.299335+00:00",
+  "requested_carrier_base": "bf581ac",
+  "observed_repository_head": "ba4dc5a5779bb48e63756db0a8a1791df6bd427c",
+  "module_boards": {
+    "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c3-v1.3-260116/202003511_XIAO ESP32C3_v1.3_SCH&PCB_260116/XIAO ESP32C3_v1.3.kicad_pcb": {
+      "sha256": "a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db",
+      "footprints": [
+        {
+          "reference": "J2",
+          "properties": {
+            "Reference": "J2",
+            "Value": "DNP",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:H7-HALF-HOLE-2.54",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "27",
+                "D0"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "29",
+                "D1"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "3",
+              "net": [
+                "30",
+                "D2"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "4",
+              "net": [
+                "31",
+                "D3"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "5",
+              "net": [
+                "32",
+                "D4"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "6",
+              "net": [
+                "33",
+                "D5"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "7",
+              "net": [
+                "38",
+                "TX_D6"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "13",
+              "net": [
+                "27",
+                "D0"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "14",
+              "net": [
+                "29",
+                "D1"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "15",
+              "net": [
+                "30",
+                "D2"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "16",
+              "net": [
+                "31",
+                "D3"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "17",
+              "net": [
+                "32",
+                "D4"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "18",
+              "net": [
+                "33",
+                "D5"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "19",
+              "net": [
+                "38",
+                "TX_D6"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "C40",
+          "properties": {
+            "Reference": "C40",
+            "Value": "2.2uF",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:C0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "9",
+                "VBAT"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "R9",
+          "properties": {
+            "Reference": "R9",
+            "Value": "100k",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:R0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "8",
+                "USB_FUSED_5V"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "D1",
+          "properties": {
+            "Reference": "D1",
+            "Value": "MSK4005",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:SOD-523",
+          "pads": [
+            {
+              "number": "+",
+              "net": [
+                "8",
+                "USB_FUSED_5V"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "-",
+              "net": [
+                "23",
+                "VIN"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "U2",
+          "properties": {
+            "Reference": "U2",
+            "Value": "TLV75733PDBVR",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:SOT-25",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "23",
+                "VIN"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "3",
+              "net": [
+                "23",
+                "VIN"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "4",
+              "net": [
+                "39",
+                "N$5"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "5",
+              "net": [
+                "7",
+                "VCC_3V3"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "C10",
+          "properties": {
+            "Reference": "C10",
+            "Value": "100nF",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:C0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "8",
+                "USB_FUSED_5V"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "C4",
+          "properties": {
+            "Reference": "C4",
+            "Value": "2.2uF",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:C0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "23",
+                "VIN"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "J1",
+          "properties": {
+            "Reference": "J1",
+            "Value": "DNP",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:H7-HALF-HOLE-2.54",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "16",
+                "RX_D7"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "34",
+                "D8"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "3",
+              "net": [
+                "35",
+                "D9"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "4",
+              "net": [
+                "36",
+                "D10"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "5",
+              "net": [
+                "7",
+                "VCC_3V3"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "6",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "7",
+              "net": [
+                "2",
+                "VUSB"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "13",
+              "net": [
+                "16",
+                "RX_D7"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "14",
+              "net": [
+                "34",
+                "D8"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "15",
+              "net": [
+                "35",
+                "D9"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "16",
+              "net": [
+                "36",
+                "D10"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "17",
+              "net": [
+                "7",
+                "VCC_3V3"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "18",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "19",
+              "net": [
+                "2",
+                "VUSB"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "Q1",
+          "properties": {
+            "Reference": "Q1",
+            "Value": "LP0404N3T5G",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:PMOS_1.0_0.6_0.35MM",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "9",
+                "VBAT"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "8",
+                "USB_FUSED_5V"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "3",
+              "net": [
+                "23",
+                "VIN"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "C39",
+          "properties": {
+            "Reference": "C39",
+            "Value": "2.2uF",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:C0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "8",
+                "USB_FUSED_5V"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "USB0",
+          "properties": {
+            "Reference": "USB0",
+            "Value": "UBF31-0171",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:USB2.0-TYPE-C",
+          "pads": [
+            {
+              "number": "",
+              "net": [],
+              "pin_function": []
+            },
+            {
+              "number": "",
+              "net": [],
+              "pin_function": []
+            },
+            {
+              "number": "A1_B12",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "A4_B9",
+              "net": [
+                "2",
+                "VUSB"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "A5",
+              "net": [
+                "3",
+                "N$1"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "A6",
+              "net": [
+                "5",
+                "DP"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "A7",
+              "net": [
+                "6",
+                "DM"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "A8",
+              "net": [],
+              "pin_function": []
+            },
+            {
+              "number": "B1_A12",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "B4_A9",
+              "net": [
+                "2",
+                "VUSB"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "B5",
+              "net": [
+                "4",
+                "N$2"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "B6",
+              "net": [
+                "5",
+                "DP"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "B7",
+              "net": [
+                "6",
+                "DM"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "B8",
+              "net": [],
+              "pin_function": []
+            },
+            {
+              "number": "S1",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "S2",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "S3",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "S4",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "S5",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "S6",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "F1",
+          "properties": {
+            "Reference": "F1",
+            "Value": "6V_500mA_Fuse",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:F0603",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "2",
+                "VUSB"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "8",
+                "USB_FUSED_5V"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "C1",
+          "properties": {
+            "Reference": "C1",
+            "Value": "2.2uF",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:C0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "23",
+                "VIN"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "C23",
+          "properties": {
+            "Reference": "C23",
+            "Value": "2.2uF",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:C0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "7",
+                "VCC_3V3"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "U1",
+          "properties": {
+            "Reference": "U1",
+            "Value": "",
+            "Datasheet": "",
+            "Description": ""
+          },
+          "footprint": "XIAO ESP32C3_v1.3:SOT-25",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "12",
+                "~{CHG}"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "1",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "3",
+              "net": [
+                "9",
+                "VBAT"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "4",
+              "net": [
+                "8",
+                "USB_FUSED_5V"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "5",
+              "net": [
+                "10",
+                "N$11"
+              ],
+              "pin_function": []
+            }
+          ]
+        }
+      ]
+    },
+    "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-260114/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_pcb": {
+      "sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027",
+      "footprints": [
+        {
+          "reference": "C1",
+          "properties": {
+            "Reference": "C1",
+            "Value": "10uF",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD CAP Ceramic 10uF-6.3V-20%-X5R;0402",
+            "Dielectric": "",
+            "MPN": "CC0402MRX5R6BB106",
+            "Manufacturer": "YAGEO",
+            "Part Type": "Ceramic",
+            "SKU": "302010519",
+            "Status": "ST",
+            "Temperature": "-55\u00b0C to 85\u00b0C",
+            "Voltage Rating": "10V,X5R"
+          },
+          "footprint": "Capacitor:C0402",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "4",
+                "+5V"
+              ],
+              "pin_function": [
+                "1"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "C9",
+          "properties": {
+            "Reference": "C9",
+            "Value": "1uF",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD CAP Ceramic;1uF-6.3V-\u00b120%-X5R;0201",
+            "Dielectric": "",
+            "MPN": "CC0201MRX5R5BB105",
+            "Manufacturer": "YAGEO",
+            "Part Type": "Ceramic",
+            "SKU": "302010270",
+            "Status": "ODYSSEY-i.MX8M",
+            "Temperature": "-55\u00b0C to 85\u00b0C",
+            "Voltage Rating": "6.3V,X5R"
+          },
+          "footprint": "Capacitor:C0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "9",
+                "VBAT"
+              ],
+              "pin_function": [
+                "1"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "D3",
+          "properties": {
+            "Reference": "D3",
+            "Value": "LNZ8F5V6T5G",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD Diode Schottky 40V-1A;SOD-882",
+            "MPN": "LNZ8F5V6T5G",
+            "Manufacturer": "LRC",
+            "Part Type": "Diode",
+            "Rating": "Zener 5.6V 200mW",
+            "SKU": "",
+            "Status": "",
+            "Temperature": "-40\u00b0C to 85\u00b0C"
+          },
+          "footprint": "Diode:DFN1006-2L",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "21",
+                "Net-(Q2-G)"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "Q2",
+          "properties": {
+            "Reference": "Q2",
+            "Value": "LN237N3T5G",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD MOSFET N-CH 50V-200mA;SOT-323-3",
+            "MPN": "LN237N3T5G",
+            "Manufacturer": "LRC",
+            "Part Type": "NMOS",
+            "Rating": "30V 1.5A",
+            "SKU": "",
+            "Status": "XIAO ESP32 C6",
+            "Temperature": "-55\u00b0C to 150\u00b0C"
+          },
+          "footprint": "Mosfet:PMOS_1.0X0.6X0.35MM",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "21",
+                "Net-(Q2-G)"
+              ],
+              "pin_function": [
+                "G"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "S"
+              ]
+            },
+            {
+              "number": "3",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "D"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "U1",
+          "properties": {
+            "Reference": "U1",
+            "Value": "SMD IC PMIC;DCDC Buck-ADJ-1A,Vin 1.95V to 5.5V,Vout 1.8V to 3.3V;WLCSP-6B",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD IC PMIC;DCDC Buck-ADJ-1A,Vin 1.95V to 5.5V,Vout 1.8V to 3.3V;WLCSP-6B",
+            "MPN": "SGM6029CYG/TR\t",
+            "Manufacturer": "SGMICRO",
+            "Part Type": "DCDC",
+            "Rating": "",
+            "SKU": "310032702",
+            "Status": "",
+            "Temperature": "-40\u00b0C to 125\u00b0C"
+          },
+          "footprint": "Ic:BGA6-0.35-0.745X10.95X0.4MM",
+          "pads": [
+            {
+              "number": "A1",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "GND"
+              ]
+            },
+            {
+              "number": "A2",
+              "net": [
+                "6",
+                "+3V3"
+              ],
+              "pin_function": [
+                "VOS"
+              ]
+            },
+            {
+              "number": "B1",
+              "net": [
+                "4",
+                "+5V"
+              ],
+              "pin_function": [
+                "VIN"
+              ]
+            },
+            {
+              "number": "B2",
+              "net": [
+                "55",
+                "Net-(U1-SW)"
+              ],
+              "pin_function": [
+                "SW"
+              ]
+            },
+            {
+              "number": "C1",
+              "net": [
+                "56",
+                "Net-(U1-MODE)"
+              ],
+              "pin_function": [
+                "MODE"
+              ]
+            },
+            {
+              "number": "C2",
+              "net": [
+                "4",
+                "+5V"
+              ],
+              "pin_function": [
+                "EN"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "C4",
+          "properties": {
+            "Reference": "C4",
+            "Value": "10uF",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD CAP Ceramic 10uF-6.3V-20%-X5R;0402",
+            "Dielectric": "",
+            "MPN": "CC0402MRX5R6BB106",
+            "Manufacturer": "YAGEO",
+            "Part Type": "Ceramic",
+            "SKU": "302010519",
+            "Status": "ST",
+            "Temperature": "-55\u00b0C to 85\u00b0C",
+            "Voltage Rating": "10V,X5R"
+          },
+          "footprint": "Capacitor:C0402",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "6",
+                "+3V3"
+              ],
+              "pin_function": [
+                "1"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "D2",
+          "properties": {
+            "Reference": "D2",
+            "Value": "ESDPSA0402V05",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "ESDPSA0402V05",
+            "Manufacturer": "SEMITEL",
+            "Part Type": "ESD",
+            "Rating": "",
+            "SKU": "304060074",
+            "Status": "",
+            "Temperature": ""
+          },
+          "footprint": "Diode:ESD-0402",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "1"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "C2",
+          "properties": {
+            "Reference": "C2",
+            "Value": "100nF",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD CAP Ceramic 100nF-10V-10%-X5R;0201",
+            "Dielectric": "",
+            "MPN": "CC0201KRX5R6BB104",
+            "Manufacturer": "YAGEO",
+            "Part Type": "Ceramic",
+            "SKU": "302010271",
+            "Status": "ODYSSEY-i.MX8M",
+            "Temperature": "-55\u00b0C to 85\u00b0C",
+            "Voltage Rating": "10V,X5R"
+          },
+          "footprint": "Capacitor:C0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "1"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "R19",
+          "properties": {
+            "Reference": "R19",
+            "Value": "2.2K",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD RES 2.2K-1%-1/20W;0201",
+            "MPN": "RC0201FR-072K2L",
+            "Manufacturer": "YAGEO",
+            "Part Type": "RES",
+            "Power Rating": "1%",
+            "Resistance": "2.2K",
+            "SKU": "301010753",
+            "Status": "BeagleBone AI TDA4VM",
+            "Temperature": "-55\u00b0C to 125\u00b0C",
+            "Tolerance": ""
+          },
+          "footprint": "Resistor:R0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "21",
+                "Net-(Q2-G)"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "R1",
+          "properties": {
+            "Reference": "R1",
+            "Value": "249K",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD RES 249K-1%-1/20W;0201",
+            "MPN": "RC0201FR-07249KL",
+            "Manufacturer": "YAGEO",
+            "Part Type": "RES",
+            "Power Rating": "1%",
+            "Resistance": "249K",
+            "SKU": "301013554",
+            "Status": "XIAO",
+            "Temperature": "-55\u00b0C to 125\u00b0C",
+            "Tolerance": ""
+          },
+          "footprint": "Resistor:R0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "56",
+                "Net-(U1-MODE)"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "USB1",
+          "properties": {
+            "Reference": "USB1",
+            "Value": "USB2.0 Type C",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD USB Type-c;12P+4-8.9*7.3*3.2mm",
+            "MPN": "UBF31-0171",
+            "Manufacturer": "MTCONN",
+            "Part Type": "",
+            "Rating": "",
+            "SKU": "320011358",
+            "Status": "",
+            "Temperature": ""
+          },
+          "footprint": "Connector:USB2.0-TYPE-C",
+          "pads": [
+            {
+              "number": "",
+              "net": [],
+              "pin_function": []
+            },
+            {
+              "number": "",
+              "net": [],
+              "pin_function": []
+            },
+            {
+              "number": "A1_B12",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "A1/B12/GND"
+              ]
+            },
+            {
+              "number": "A4_B9",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "A4/B9/VBUS"
+              ]
+            },
+            {
+              "number": "A5",
+              "net": [
+                "25",
+                "Net-(USB1-A5{slash}CC1)"
+              ],
+              "pin_function": [
+                "A5/CC1"
+              ]
+            },
+            {
+              "number": "A6",
+              "net": [
+                "28",
+                "/03 Power/USB_DP"
+              ],
+              "pin_function": [
+                "A6/DP1"
+              ]
+            },
+            {
+              "number": "A7",
+              "net": [
+                "27",
+                "/03 Power/USB_DN"
+              ],
+              "pin_function": [
+                "A7/DN1"
+              ]
+            },
+            {
+              "number": "A8",
+              "net": [
+                "52",
+                "unconnected-(USB1-A8{slash}SBU1-PadA8)"
+              ],
+              "pin_function": [
+                "A8/SBU1"
+              ]
+            },
+            {
+              "number": "B1_A12",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "B1/A12/GND"
+              ]
+            },
+            {
+              "number": "B4_A9",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "B4/A9/VBUS"
+              ]
+            },
+            {
+              "number": "B5",
+              "net": [
+                "26",
+                "Net-(USB1-B5{slash}CC2)"
+              ],
+              "pin_function": [
+                "B5/CC2"
+              ]
+            },
+            {
+              "number": "B6",
+              "net": [
+                "28",
+                "/03 Power/USB_DP"
+              ],
+              "pin_function": [
+                "B6/DP2"
+              ]
+            },
+            {
+              "number": "B7",
+              "net": [
+                "27",
+                "/03 Power/USB_DN"
+              ],
+              "pin_function": [
+                "B7/DN2"
+              ]
+            },
+            {
+              "number": "B8",
+              "net": [
+                "53",
+                "unconnected-(USB1-B8{slash}SBU2-PadB8)"
+              ],
+              "pin_function": [
+                "B8/SBU2"
+              ]
+            },
+            {
+              "number": "S1",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "S1"
+              ]
+            },
+            {
+              "number": "S2",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "S2"
+              ]
+            },
+            {
+              "number": "S3",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "S3"
+              ]
+            },
+            {
+              "number": "S4",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "S4"
+              ]
+            },
+            {
+              "number": "S5",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "S5"
+              ]
+            },
+            {
+              "number": "S6",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "S6"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "C8",
+          "properties": {
+            "Reference": "C8",
+            "Value": "1uF",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD CAP Ceramic;1uF-6.3V-\u00b120%-X5R;0201",
+            "Dielectric": "",
+            "MPN": "CC0201MRX5R5BB105",
+            "Manufacturer": "YAGEO",
+            "Part Type": "Ceramic",
+            "SKU": "302010270",
+            "Status": "ODYSSEY-i.MX8M",
+            "Temperature": "-55\u00b0C to 85\u00b0C",
+            "Voltage Rating": "6.3V,X5R"
+          },
+          "footprint": "Capacitor:C0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "1"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "D1",
+          "properties": {
+            "Reference": "D1",
+            "Value": "LMBR4010BST5G",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD Diode Schottky 40V-1A;SOD-882",
+            "MPN": "LMBR4010BST5G",
+            "Manufacturer": "LRC",
+            "Part Type": "Diode",
+            "Rating": "40V 1A 600mV@1A",
+            "SKU": "304021082",
+            "Status": "",
+            "Temperature": "-50\u00b0C to 125\u00b0C"
+          },
+          "footprint": "Diode:DFN1006-2L",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "4",
+                "+5V"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "U2",
+          "properties": {
+            "Reference": "U2",
+            "Value": "~",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "",
+            "Manufacturer": "",
+            "Part Type": "",
+            "Rating": "",
+            "SKU": "XIAO-HALF-HOLE",
+            "Status": "",
+            "Temperature": ""
+          },
+          "footprint": "Module:MOUDLE14P-XIAO-HALF-HOLE",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "43",
+                "GPIO0{slash}XTAL_32K_P{slash}ADC1_CH0"
+              ],
+              "pin_function": [
+                "PA02_A0_D0"
+              ]
+            },
+            {
+              "number": "1",
+              "net": [
+                "43",
+                "GPIO0{slash}XTAL_32K_P{slash}ADC1_CH0"
+              ],
+              "pin_function": [
+                "PA02_A0_D0"
+              ]
+            },
+            {
+              "number": "1",
+              "net": [
+                "43",
+                "GPIO0{slash}XTAL_32K_P{slash}ADC1_CH0"
+              ],
+              "pin_function": [
+                "PA02_A0_D0"
+              ]
+            },
+            {
+              "number": "1",
+              "net": [
+                "43",
+                "GPIO0{slash}XTAL_32K_P{slash}ADC1_CH0"
+              ],
+              "pin_function": [
+                "PA02_A0_D0"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "44",
+                "GPIO1{slash}XTAL_32K_N{slash}ADC1_CH1"
+              ],
+              "pin_function": [
+                "PA4_A1_D1"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "44",
+                "GPIO1{slash}XTAL_32K_N{slash}ADC1_CH1"
+              ],
+              "pin_function": [
+                "PA4_A1_D1"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "44",
+                "GPIO1{slash}XTAL_32K_N{slash}ADC1_CH1"
+              ],
+              "pin_function": [
+                "PA4_A1_D1"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "44",
+                "GPIO1{slash}XTAL_32K_N{slash}ADC1_CH1"
+              ],
+              "pin_function": [
+                "PA4_A1_D1"
+              ]
+            },
+            {
+              "number": "3",
+              "net": [
+                "45",
+                "GPIO2{slash}ADC1_CH2"
+              ],
+              "pin_function": [
+                "PA10_A2_D2"
+              ]
+            },
+            {
+              "number": "3",
+              "net": [
+                "45",
+                "GPIO2{slash}ADC1_CH2"
+              ],
+              "pin_function": [
+                "PA10_A2_D2"
+              ]
+            },
+            {
+              "number": "3",
+              "net": [
+                "45",
+                "GPIO2{slash}ADC1_CH2"
+              ],
+              "pin_function": [
+                "PA10_A2_D2"
+              ]
+            },
+            {
+              "number": "3",
+              "net": [
+                "45",
+                "GPIO2{slash}ADC1_CH2"
+              ],
+              "pin_function": [
+                "PA10_A2_D2"
+              ]
+            },
+            {
+              "number": "4",
+              "net": [
+                "48",
+                "GPIO21{slash}SDIO_D1"
+              ],
+              "pin_function": [
+                "PA11_A3_D3"
+              ]
+            },
+            {
+              "number": "4",
+              "net": [
+                "48",
+                "GPIO21{slash}SDIO_D1"
+              ],
+              "pin_function": [
+                "PA11_A3_D3"
+              ]
+            },
+            {
+              "number": "4",
+              "net": [
+                "48",
+                "GPIO21{slash}SDIO_D1"
+              ],
+              "pin_function": [
+                "PA11_A3_D3"
+              ]
+            },
+            {
+              "number": "4",
+              "net": [
+                "48",
+                "GPIO21{slash}SDIO_D1"
+              ],
+              "pin_function": [
+                "PA11_A3_D3"
+              ]
+            },
+            {
+              "number": "5",
+              "net": [
+                "47",
+                "GPIO22{slash}SDIO_D2"
+              ],
+              "pin_function": [
+                "PA8_A4_D4_SDA"
+              ]
+            },
+            {
+              "number": "5",
+              "net": [
+                "47",
+                "GPIO22{slash}SDIO_D2"
+              ],
+              "pin_function": [
+                "PA8_A4_D4_SDA"
+              ]
+            },
+            {
+              "number": "5",
+              "net": [
+                "47",
+                "GPIO22{slash}SDIO_D2"
+              ],
+              "pin_function": [
+                "PA8_A4_D4_SDA"
+              ]
+            },
+            {
+              "number": "5",
+              "net": [
+                "47",
+                "GPIO22{slash}SDIO_D2"
+              ],
+              "pin_function": [
+                "PA8_A4_D4_SDA"
+              ]
+            },
+            {
+              "number": "6",
+              "net": [
+                "46",
+                "GPIO23{slash}SDIO_D3"
+              ],
+              "pin_function": [
+                "PA9_A5_D5_SCL"
+              ]
+            },
+            {
+              "number": "6",
+              "net": [
+                "46",
+                "GPIO23{slash}SDIO_D3"
+              ],
+              "pin_function": [
+                "PA9_A5_D5_SCL"
+              ]
+            },
+            {
+              "number": "6",
+              "net": [
+                "46",
+                "GPIO23{slash}SDIO_D3"
+              ],
+              "pin_function": [
+                "PA9_A5_D5_SCL"
+              ]
+            },
+            {
+              "number": "6",
+              "net": [
+                "46",
+                "GPIO23{slash}SDIO_D3"
+              ],
+              "pin_function": [
+                "PA9_A5_D5_SCL"
+              ]
+            },
+            {
+              "number": "7",
+              "net": [
+                "33",
+                "D6{slash}TX"
+              ],
+              "pin_function": [
+                "PB08_A6_D6_TX"
+              ]
+            },
+            {
+              "number": "7",
+              "net": [
+                "33",
+                "D6{slash}TX"
+              ],
+              "pin_function": [
+                "PB08_A6_D6_TX"
+              ]
+            },
+            {
+              "number": "7",
+              "net": [
+                "33",
+                "D6{slash}TX"
+              ],
+              "pin_function": [
+                "PB08_A6_D6_TX"
+              ]
+            },
+            {
+              "number": "7",
+              "net": [
+                "33",
+                "D6{slash}TX"
+              ],
+              "pin_function": [
+                "PB08_A6_D6_TX"
+              ]
+            },
+            {
+              "number": "8",
+              "net": [
+                "49",
+                "D7{slash}RX"
+              ],
+              "pin_function": [
+                "PB09_A7_D7_RX"
+              ]
+            },
+            {
+              "number": "8",
+              "net": [
+                "49",
+                "D7{slash}RX"
+              ],
+              "pin_function": [
+                "PB09_A7_D7_RX"
+              ]
+            },
+            {
+              "number": "8",
+              "net": [
+                "49",
+                "D7{slash}RX"
+              ],
+              "pin_function": [
+                "PB09_A7_D7_RX"
+              ]
+            },
+            {
+              "number": "8",
+              "net": [
+                "49",
+                "D7{slash}RX"
+              ],
+              "pin_function": [
+                "PB09_A7_D7_RX"
+              ]
+            },
+            {
+              "number": "9",
+              "net": [
+                "35",
+                "GPIO19{slash}SDIO_CLK"
+              ],
+              "pin_function": [
+                "PA7_A8_D8_SCK"
+              ]
+            },
+            {
+              "number": "9",
+              "net": [
+                "35",
+                "GPIO19{slash}SDIO_CLK"
+              ],
+              "pin_function": [
+                "PA7_A8_D8_SCK"
+              ]
+            },
+            {
+              "number": "9",
+              "net": [
+                "35",
+                "GPIO19{slash}SDIO_CLK"
+              ],
+              "pin_function": [
+                "PA7_A8_D8_SCK"
+              ]
+            },
+            {
+              "number": "9",
+              "net": [
+                "35",
+                "GPIO19{slash}SDIO_CLK"
+              ],
+              "pin_function": [
+                "PA7_A8_D8_SCK"
+              ]
+            },
+            {
+              "number": "10",
+              "net": [
+                "50",
+                "GPIO20{slash}SDIO_D0"
+              ],
+              "pin_function": [
+                "PA5_A9_D9_MISO"
+              ]
+            },
+            {
+              "number": "10",
+              "net": [
+                "50",
+                "GPIO20{slash}SDIO_D0"
+              ],
+              "pin_function": [
+                "PA5_A9_D9_MISO"
+              ]
+            },
+            {
+              "number": "10",
+              "net": [
+                "50",
+                "GPIO20{slash}SDIO_D0"
+              ],
+              "pin_function": [
+                "PA5_A9_D9_MISO"
+              ]
+            },
+            {
+              "number": "10",
+              "net": [
+                "50",
+                "GPIO20{slash}SDIO_D0"
+              ],
+              "pin_function": [
+                "PA5_A9_D9_MISO"
+              ]
+            },
+            {
+              "number": "11",
+              "net": [
+                "51",
+                "GPIO18{slash}SDIO_CMD"
+              ],
+              "pin_function": [
+                "PA6_A10_D10_MOSI"
+              ]
+            },
+            {
+              "number": "11",
+              "net": [
+                "51",
+                "GPIO18{slash}SDIO_CMD"
+              ],
+              "pin_function": [
+                "PA6_A10_D10_MOSI"
+              ]
+            },
+            {
+              "number": "11",
+              "net": [
+                "51",
+                "GPIO18{slash}SDIO_CMD"
+              ],
+              "pin_function": [
+                "PA6_A10_D10_MOSI"
+              ]
+            },
+            {
+              "number": "11",
+              "net": [
+                "51",
+                "GPIO18{slash}SDIO_CMD"
+              ],
+              "pin_function": [
+                "PA6_A10_D10_MOSI"
+              ]
+            },
+            {
+              "number": "12",
+              "net": [
+                "6",
+                "+3V3"
+              ],
+              "pin_function": [
+                "3V3"
+              ]
+            },
+            {
+              "number": "12",
+              "net": [
+                "6",
+                "+3V3"
+              ],
+              "pin_function": [
+                "3V3"
+              ]
+            },
+            {
+              "number": "12",
+              "net": [
+                "6",
+                "+3V3"
+              ],
+              "pin_function": [
+                "3V3"
+              ]
+            },
+            {
+              "number": "12",
+              "net": [
+                "6",
+                "+3V3"
+              ],
+              "pin_function": [
+                "3V3"
+              ]
+            },
+            {
+              "number": "13",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "GND"
+              ]
+            },
+            {
+              "number": "13",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "GND"
+              ]
+            },
+            {
+              "number": "13",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "GND"
+              ]
+            },
+            {
+              "number": "13",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "GND"
+              ]
+            },
+            {
+              "number": "14",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "5V"
+              ]
+            },
+            {
+              "number": "14",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "5V"
+              ]
+            },
+            {
+              "number": "14",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "5V"
+              ]
+            },
+            {
+              "number": "14",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "5V"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "U3",
+          "properties": {
+            "Reference": "U3",
+            "Value": "SGM40567-4.2XG/TR",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD IC PMIC;Li-Ion Battery Liner charger-4.2V-700mA;WLCSP-6B-0.92*1.16",
+            "MPN": "SGM40567-4.2XG/TR",
+            "Manufacturer": "SGMICRO",
+            "Part Type": "PMIC",
+            "Rating": "",
+            "SKU": "310032697",
+            "Status": "",
+            "Temperature": ""
+          },
+          "footprint": "Ic:WLCSP-0.4-0.92X1.16X0.4MM",
+          "pads": [
+            {
+              "number": "A1",
+              "net": [
+                "9",
+                "VBAT"
+              ],
+              "pin_function": [
+                "BAT"
+              ]
+            },
+            {
+              "number": "A2",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": [
+                "VIN"
+              ]
+            },
+            {
+              "number": "B1",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "F"
+              ]
+            },
+            {
+              "number": "B2",
+              "net": [
+                "20",
+                "Net-(CHG1--)"
+              ],
+              "pin_function": [
+                "NCHG"
+              ]
+            },
+            {
+              "number": "C1",
+              "net": [
+                "29",
+                "Net-(U3-IREF)"
+              ],
+              "pin_function": [
+                "IREF"
+              ]
+            },
+            {
+              "number": "C2",
+              "net": [
+                "3",
+                "GND"
+              ],
+              "pin_function": [
+                "GND"
+              ]
+            }
+          ]
+        },
+        {
+          "reference": "R20",
+          "properties": {
+            "Reference": "R20",
+            "Value": "100R",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD RES 100R-\u00b11%-1/20W;0201",
+            "MPN": "RC0201FR-07100RL",
+            "Manufacturer": "YAGEO",
+            "Part Type": "RES",
+            "Power Rating": "1%",
+            "Resistance": "100R",
+            "SKU": "301010524",
+            "Status": "BeagleBone AI TDA4VM",
+            "Temperature": "-55\u00b0C to 125\u00b0C",
+            "Tolerance": ""
+          },
+          "footprint": "Resistor:R0201",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "5",
+                "VBUS"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "24",
+                "Net-(Q1-G)"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "L1",
+          "properties": {
+            "Reference": "L1",
+            "Value": "0.47uH",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD Inductor 470nH-20%-2.6A;0603",
+            "MPN": "TFM160808ALC-R47MTAA",
+            "Manufacturer": "TDK",
+            "Part Type": "Inductor",
+            "Rating": "2.6A",
+            "SKU": "303011858",
+            "Status": "XIAO",
+            "Temperature": "-40\u00b0C to 125\u00b0C"
+          },
+          "footprint": "Inductor:L0603",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "55",
+                "Net-(U1-SW)"
+              ],
+              "pin_function": []
+            },
+            {
+              "number": "2",
+              "net": [
+                "6",
+                "+3V3"
+              ],
+              "pin_function": []
+            }
+          ]
+        },
+        {
+          "reference": "Q1",
+          "properties": {
+            "Reference": "Q1",
+            "Value": "LP0404N3T5G",
+            "Footprint": "",
+            "Datasheet": "",
+            "Description": "SMD MOSFET P-CH 20V-1.4A;SOT-883",
+            "MPN": "LP0404N3T5G",
+            "Manufacturer": "LRC",
+            "Part Type": "PMOS",
+            "Rating": "",
+            "SKU": "305031466",
+            "Status": "",
+            "Temperature": "-50\u00b0C to 150\u00b0C"
+          },
+          "footprint": "Mosfet:PMOS_1.0X0.6X0.35MM",
+          "pads": [
+            {
+              "number": "1",
+              "net": [
+                "24",
+                "Net-(Q1-G)"
+              ],
+              "pin_function": [
+                "G"
+              ]
+            },
+            {
+              "number": "2",
+              "net": [
+                "4",
+                "+5V"
+              ],
+              "pin_function": [
+                "S"
+              ]
+            },
+            {
+              "number": "3",
+              "net": [
+                "9",
+                "VBAT"
+              ],
+              "pin_function": [
+                "D"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scope": "Read-only primary source and CAD review; no native board modification or physical test."
+}

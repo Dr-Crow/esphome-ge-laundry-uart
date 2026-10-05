@@ -1,5 +1,7 @@
 # Finish plan and outstanding work
 
+Latest October5 pre-order analysis and committed fixes: [all-revision review](preorder-2026-10-05/README.md). Earlier checkpoint/quote/source boundaries below remain explicit.
+
 [Comparison](README.md) · [Current validation](VALIDATION.md) · [Exact checkpoints](HANDOFF.md) · [Quote comparison](PRICING.md)
 
 Updated October 5, 2026 after shared-enclosure source recovery. Selected Rev3C retains the rated electrical design, corrected J1 CPL and stencil cleanup from `b87d3e8`; its fresh exact-part quote is $134.64/5 and $168.92/10. Published integration checkpoint `11826a7` passes hosted native/intended-rule checks for all seven revisions, 28 tests and eight actual firmware builds. Rev3B protection is reviewed at `ce2979b`; Rev3A rated protection and exact connector lands remain independently reviewed. Older revisions retain their separate architectures. The [Rev3C prototype qualification plan](../../pcb/rev3c/PROTOTYPE-QUALIFICATION.md) gives the next bounded sequence; orders, physical testing, PRs and upstream publication remain separate decisions.
