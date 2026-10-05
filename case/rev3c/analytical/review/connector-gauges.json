@@ -1,0 +1,188 @@
+{
+  "USB": [
+    {
+      "stack_mm": 11.0,
+      "aperture_mode": "original",
+      "synthetic_plug_gauge_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "gauge_center_Z_mm": 19.8,
+      "volume_outside_aperture_mm3": 0,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.0,
+      "aperture_mode": "original",
+      "synthetic_plug_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 19.8,
+      "volume_outside_aperture_mm3": 79.26325,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.0,
+      "aperture_mode": "per_assembly",
+      "synthetic_plug_gauge_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "gauge_center_Z_mm": 19.8,
+      "volume_outside_aperture_mm3": 0,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.0,
+      "aperture_mode": "per_assembly",
+      "synthetic_plug_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 19.8,
+      "volume_outside_aperture_mm3": 5.697442,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.325,
+      "aperture_mode": "original",
+      "synthetic_plug_gauge_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "gauge_center_Z_mm": 20.125,
+      "volume_outside_aperture_mm3": 0,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.325,
+      "aperture_mode": "original",
+      "synthetic_plug_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.125,
+      "volume_outside_aperture_mm3": 24.66325,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.325,
+      "aperture_mode": "per_assembly",
+      "synthetic_plug_gauge_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "gauge_center_Z_mm": 20.125,
+      "volume_outside_aperture_mm3": 0,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.325,
+      "aperture_mode": "per_assembly",
+      "synthetic_plug_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.125,
+      "volume_outside_aperture_mm3": 5.697442,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.65,
+      "aperture_mode": "original",
+      "synthetic_plug_gauge_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "gauge_center_Z_mm": 20.45,
+      "volume_outside_aperture_mm3": 0,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.65,
+      "aperture_mode": "original",
+      "synthetic_plug_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.45,
+      "volume_outside_aperture_mm3": 5.697442,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.65,
+      "aperture_mode": "per_assembly",
+      "synthetic_plug_gauge_YZ_mm": [
+        12.0,
+        6.0
+      ],
+      "gauge_center_Z_mm": 20.45,
+      "volume_outside_aperture_mm3": 0,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    },
+    {
+      "stack_mm": 11.65,
+      "aperture_mode": "per_assembly",
+      "synthetic_plug_gauge_YZ_mm": [
+        14.0,
+        8.0
+      ],
+      "gauge_center_Z_mm": 20.45,
+      "volume_outside_aperture_mm3": 5.697442,
+      "actual_plug_body_insertion_shank_strain_relief": "UNKNOWN"
+    }
+  ],
+  "RJ45_and_tails": {
+    "window_mm": {
+      "Y": [
+        7.74,
+        25.925
+      ],
+      "Z": [
+        4.75,
+        18.2
+      ]
+    },
+    "current_body_mm": {
+      "Y": [
+        9.395,
+        24.595
+      ],
+      "Z": [
+        5.25,
+        16.7
+      ]
+    },
+    "nominal_margins_mm": {
+      "Y_low": 1.655,
+      "Y_high": 1.33,
+      "Z_low": 0.5,
+      "Z_high": 1.5
+    },
+    "body_front_x_mm": -0.38,
+    "typical_case_left_recess_to_body_front_mm": 7.12,
+    "nominal_J1_tail_bottom_Z_mm": 2.25,
+    "J1_pocket_floor_Z_mm": 0.65,
+    "socket_max_tail_bottom_Z_mm": 1.8,
+    "socket_pocket_floor_Z_mm": 1.25,
+    "socket_max_tail_to_pocket_floor_gap_mm": 0.55,
+    "J1_post_pitch_drawing_vs_footprint_mm": [
+      11.5,
+      11.43
+    ],
+    "post_profile_solder_blob_male_pin_mating_depth": "UNKNOWN"
+  },
+  "pigtail_screens": {
+    "external_RG178_minimum_length_mm": 99.0,
+    "external_RG178_maximum_collision_OD_mm": 1.83,
+    "external_RG178_minimum_centerline_radius_mm": 11.0,
+    "FPC_cable_length_mm": [
+      78.0,
+      82.0
+    ],
+    "FPC_maximum_collision_OD_mm": 1.23,
+    "FPC_feed_point_bend_radius_lid_opening_slack": "UNKNOWN",
+    "full_connector_termination_and_route_clearance": "UNKNOWN"
+  }
+}

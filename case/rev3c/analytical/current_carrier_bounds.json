@@ -1,0 +1,2027 @@
+{
+  "source_pcb_sha256": "4fba3feea4161f7e6bdfbd7f20ac677a485948fac540d7bda1c246a451c4bab9",
+  "records": [
+    {
+      "reference": "D2",
+      "MPN": "BAV99,215",
+      "LCSC": "C2500",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "position": [
+        22.0,
+        15.5,
+        0
+      ],
+      "bounds_mm": [
+        20.07,
+        23.93,
+        13.8,
+        17.2,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ]
+    },
+    {
+      "reference": "C13",
+      "MPN": "10u 25V X5R",
+      "LCSC": "C15850",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        93.0,
+        24.0,
+        0
+      ],
+      "bounds_mm": [
+        91.3,
+        94.7,
+        23.02,
+        24.98,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C5",
+      "MPN": "100n",
+      "LCSC": "C106243",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        83.0,
+        28.0,
+        0
+      ],
+      "bounds_mm": [
+        81.9,
+        84.1,
+        27.275,
+        28.725,
+        5.25,
+        6.7
+      ],
+      "bound_kind": "manufacturer maximum2.20x1.45x1.45mm; zero solder standoff datum; explicit separate standoff sweep",
+      "height_assumed_mm": null,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ],
+      "previous_courtyard_screen_bounds_mm": [
+        81.3,
+        84.7,
+        27.02,
+        28.98,
+        5.25,
+        8.25
+      ],
+      "body_max_dimensions_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "manufacturer_specsheet_url": "https://yageogroup.com/download/specsheet/CC0805KKX7R0BB104",
+      "primary_source_verification": "Parent inspected manufacturer specsheet page1 on2026-10-05"
+    },
+    {
+      "reference": "R35",
+      "MPN": "10k",
+      "LCSC": null,
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        63.0,
+        15.0,
+        0
+      ],
+      "bounds_mm": [
+        61.32,
+        64.68,
+        14.05,
+        15.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R34",
+      "MPN": "51R",
+      "LCSC": null,
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        55.5,
+        19.8,
+        180.0
+      ],
+      "bounds_mm": [
+        53.82,
+        57.18,
+        18.85,
+        20.75,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R16",
+      "MPN": "10K",
+      "LCSC": "C17414",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        32.0,
+        10.0,
+        0
+      ],
+      "bounds_mm": [
+        30.32,
+        33.68,
+        9.05,
+        10.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R12",
+      "MPN": "1K",
+      "LCSC": "C17513",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        25.0,
+        3.0,
+        0
+      ],
+      "bounds_mm": [
+        23.32,
+        26.68,
+        2.05,
+        3.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "D14",
+      "MPN": "MBR0540-TP",
+      "LCSC": null,
+      "footprint": "Diode_SMD:D_SOD-123",
+      "position": [
+        73.0,
+        8.0,
+        0
+      ],
+      "bounds_mm": [
+        70.65,
+        75.35,
+        6.85,
+        9.15,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+      ]
+    },
+    {
+      "reference": "D11",
+      "MPN": "PMEG2010ER,115",
+      "LCSC": null,
+      "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+      "position": [
+        76.0,
+        37.0,
+        0
+      ],
+      "bounds_mm": [
+        73.75,
+        78.25,
+        35.9,
+        38.1,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/Nexperia_CFP3_SOD-123W.step"
+      ]
+    },
+    {
+      "reference": "C21",
+      "MPN": "1u 50V X7R",
+      "LCSC": null,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        60.0,
+        22.5,
+        -90.0
+      ],
+      "bounds_mm": [
+        59.275,
+        60.725,
+        21.4,
+        23.6,
+        5.25,
+        6.7
+      ],
+      "bound_kind": "manufacturer maximum2.20x1.45x1.45mm; zero solder standoff datum; explicit separate standoff sweep",
+      "height_assumed_mm": null,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ],
+      "previous_courtyard_screen_bounds_mm": [
+        59.02,
+        60.98,
+        20.8,
+        24.2,
+        5.25,
+        8.25
+      ],
+      "body_max_dimensions_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "manufacturer_specsheet_url": "https://yageogroup.com/download/specsheet/CC0805KKX7R9BB105",
+      "primary_source_verification": "Parent inspected manufacturer specsheet page1 on2026-10-05"
+    },
+    {
+      "reference": "R14",
+      "MPN": "10K",
+      "LCSC": "C17414",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        43.0,
+        13.0,
+        0
+      ],
+      "bounds_mm": [
+        41.32,
+        44.68,
+        12.05,
+        13.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R19",
+      "MPN": "10K",
+      "LCSC": "C17414",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        39.0,
+        22.5,
+        0
+      ],
+      "bounds_mm": [
+        37.32,
+        40.68,
+        21.55,
+        23.45,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "D3",
+      "MPN": "BAV99,215",
+      "LCSC": "C2500",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "position": [
+        22.0,
+        22.0,
+        0
+      ],
+      "bounds_mm": [
+        20.07,
+        23.93,
+        20.3,
+        23.7,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ]
+    },
+    {
+      "reference": "R40",
+      "MPN": "0805W8F1003T5E",
+      "LCSC": "C149504",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        68.0,
+        14.0,
+        0
+      ],
+      "bounds_mm": [
+        66.32,
+        69.68,
+        13.05,
+        14.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "D5",
+      "MPN": "RED",
+      "LCSC": "C84256",
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "position": [
+        84.0,
+        30.0,
+        0
+      ],
+      "bounds_mm": [
+        82.32,
+        85.68,
+        29.05,
+        30.95,
+        5.25,
+        6.05
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 0.8,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R31",
+      "MPN": "5.1k",
+      "LCSC": null,
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        50.0,
+        3.0,
+        0
+      ],
+      "bounds_mm": [
+        48.32,
+        51.68,
+        2.05,
+        3.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R4",
+      "MPN": "220",
+      "LCSC": "C17557",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        78.0,
+        26.0,
+        0
+      ],
+      "bounds_mm": [
+        76.32,
+        79.68,
+        25.05,
+        26.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R6",
+      "MPN": "220",
+      "LCSC": "C17557",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        78.0,
+        30.0,
+        0
+      ],
+      "bounds_mm": [
+        76.32,
+        79.68,
+        29.05,
+        30.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "U8",
+      "MPN": "AP63205WU-7",
+      "LCSC": "C2071056",
+      "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "position": [
+        54.0,
+        34.0,
+        0
+      ],
+      "bounds_mm": [
+        51.95,
+        56.05,
+        32.3,
+        35.7,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step"
+      ]
+    },
+    {
+      "reference": "C3",
+      "MPN": "100n",
+      "LCSC": "C106243",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        88.0,
+        24.0,
+        0
+      ],
+      "bounds_mm": [
+        86.9,
+        89.1,
+        23.275,
+        24.725,
+        5.25,
+        6.7
+      ],
+      "bound_kind": "manufacturer maximum2.20x1.45x1.45mm; zero solder standoff datum; explicit separate standoff sweep",
+      "height_assumed_mm": null,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ],
+      "previous_courtyard_screen_bounds_mm": [
+        86.3,
+        89.7,
+        23.02,
+        24.98,
+        5.25,
+        8.25
+      ],
+      "body_max_dimensions_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "manufacturer_specsheet_url": "https://yageogroup.com/download/specsheet/CC0805KKX7R0BB104",
+      "primary_source_verification": "Parent inspected manufacturer specsheet page1 on2026-10-05"
+    },
+    {
+      "reference": "R1",
+      "MPN": "10K",
+      "LCSC": "C17414",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        28.0,
+        7.0,
+        0
+      ],
+      "bounds_mm": [
+        26.32,
+        29.68,
+        6.05,
+        7.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C12",
+      "MPN": "100n",
+      "LCSC": "C106243",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        30.0,
+        37.0,
+        0
+      ],
+      "bounds_mm": [
+        28.3,
+        31.7,
+        36.02,
+        37.98,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C4",
+      "MPN": "100n",
+      "LCSC": "C106243",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        33.0,
+        22.0,
+        180.0
+      ],
+      "bounds_mm": [
+        31.3,
+        34.7,
+        21.02,
+        22.98,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "Q5",
+      "MPN": "MMBT3904",
+      "LCSC": null,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "position": [
+        57.0,
+        25.0,
+        0
+      ],
+      "bounds_mm": [
+        55.07,
+        58.93,
+        23.3,
+        26.7,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ]
+    },
+    {
+      "reference": "R23",
+      "MPN": "1K",
+      "LCSC": "C17513",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        25.0,
+        26.0,
+        0
+      ],
+      "bounds_mm": [
+        23.32,
+        26.68,
+        25.05,
+        26.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R36",
+      "MPN": "10k",
+      "LCSC": null,
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        63.0,
+        29.0,
+        0
+      ],
+      "bounds_mm": [
+        61.32,
+        64.68,
+        28.05,
+        29.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R20",
+      "MPN": "10K",
+      "LCSC": "C17414",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        35.0,
+        26.0,
+        0
+      ],
+      "bounds_mm": [
+        33.32,
+        36.68,
+        25.05,
+        26.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R32",
+      "MPN": "5.1k",
+      "LCSC": null,
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        50.0,
+        17.5,
+        0
+      ],
+      "bounds_mm": [
+        48.32,
+        51.68,
+        16.55,
+        18.45,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C1",
+      "MPN": "100n",
+      "LCSC": "C106243",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        33.0,
+        15.5,
+        0
+      ],
+      "bounds_mm": [
+        31.3,
+        34.7,
+        14.52,
+        16.48,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "D18",
+      "MPN": "SMF16A",
+      "LCSC": null,
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "position": [
+        58.0,
+        14.0,
+        0
+      ],
+      "bounds_mm": [
+        55.8,
+        60.2,
+        12.85,
+        15.15,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step"
+      ]
+    },
+    {
+      "reference": "R38",
+      "MPN": "0603WAF3301T5E",
+      "LCSC": "C22978",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "position": [
+        64.5,
+        11.5,
+        0
+      ],
+      "bounds_mm": [
+        63.02,
+        65.98,
+        10.77,
+        12.23,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "reference": "R33",
+      "MPN": "51R",
+      "LCSC": null,
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        55.5,
+        5.3,
+        180.0
+      ],
+      "bounds_mm": [
+        53.82,
+        57.18,
+        4.35,
+        6.25,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C25",
+      "MPN": "100nF",
+      "LCSC": null,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        70.0,
+        19.0,
+        0
+      ],
+      "bounds_mm": [
+        68.3,
+        71.7,
+        18.02,
+        19.98,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R5",
+      "MPN": "10K",
+      "LCSC": "C17414",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        40.0,
+        4.0,
+        0
+      ],
+      "bounds_mm": [
+        38.32,
+        41.68,
+        3.05,
+        4.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "D20",
+      "MPN": "SMF16A",
+      "LCSC": "C399290",
+      "footprint": "Diode_SMD:D_SOD-123F",
+      "position": [
+        47.0,
+        15.0,
+        0
+      ],
+      "bounds_mm": [
+        44.8,
+        49.2,
+        13.85,
+        16.15,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step"
+      ]
+    },
+    {
+      "reference": "Q3",
+      "MPN": "CJ3407",
+      "LCSC": null,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "position": [
+        52.0,
+        7.0,
+        0
+      ],
+      "bounds_mm": [
+        50.07,
+        53.93,
+        5.3,
+        8.7,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ]
+    },
+    {
+      "reference": "C16",
+      "MPN": "CL32B226KAJNNNE",
+      "LCSC": "C309062",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "position": [
+        66.5,
+        33.5,
+        90.0
+      ],
+      "bounds_mm": [
+        64.9,
+        68.1,
+        31.2,
+        35.8,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+      ]
+    },
+    {
+      "reference": "D6",
+      "MPN": "YLW",
+      "LCSC": "C2296",
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "position": [
+        88.0,
+        26.0,
+        0
+      ],
+      "bounds_mm": [
+        86.32,
+        89.68,
+        25.05,
+        26.95,
+        5.25,
+        6.05
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 0.8,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C18",
+      "MPN": "100pF",
+      "LCSC": null,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "position": [
+        55.0,
+        3.0,
+        0
+      ],
+      "bounds_mm": [
+        54.09,
+        55.91,
+        2.54,
+        3.46,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ]
+    },
+    {
+      "reference": "C15",
+      "MPN": "GCM188L81H104KA57",
+      "LCSC": "C161181",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "position": [
+        57.0,
+        31.3,
+        0
+      ],
+      "bounds_mm": [
+        55.52,
+        58.48,
+        30.57,
+        32.03,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "reference": "L1",
+      "MPN": "ETQP3M4R7KVP",
+      "LCSC": "C412309",
+      "footprint": "Inductor_SMD:L_Panasonic_PCC-M0530M",
+      "position": [
+        60.2,
+        36.0,
+        0
+      ],
+      "bounds_mm": [
+        56.35,
+        64.05,
+        33.25,
+        38.75,
+        5.25,
+        11.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 6.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Panasonic_PCC-M0530M.step"
+      ]
+    },
+    {
+      "reference": "C14",
+      "MPN": "100n",
+      "LCSC": "C106243",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        88.0,
+        34.0,
+        0
+      ],
+      "bounds_mm": [
+        86.3,
+        89.7,
+        33.02,
+        34.98,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C9",
+      "MPN": "1206B106K500NT",
+      "LCSC": "C303950",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "position": [
+        49.5,
+        34.0,
+        180.0
+      ],
+      "bounds_mm": [
+        47.2,
+        51.8,
+        32.85,
+        35.15,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      ]
+    },
+    {
+      "reference": "D8",
+      "MPN": "DNI",
+      "LCSC": null,
+      "footprint": "Diode_SMD:D_SOD-123",
+      "position": [
+        20.0,
+        4.0,
+        0
+      ],
+      "bounds_mm": [
+        17.65,
+        22.35,
+        2.85,
+        5.15,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+      ]
+    },
+    {
+      "reference": "R7",
+      "MPN": "220",
+      "LCSC": "C17557",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        88.0,
+        30.0,
+        0
+      ],
+      "bounds_mm": [
+        86.32,
+        89.68,
+        29.05,
+        30.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R18",
+      "MPN": "220k",
+      "LCSC": "C104108",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        39.0,
+        19.0,
+        0
+      ],
+      "bounds_mm": [
+        37.32,
+        40.68,
+        18.05,
+        19.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R11",
+      "MPN": "1K",
+      "LCSC": "C17513",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        38.0,
+        15.0,
+        0
+      ],
+      "bounds_mm": [
+        36.32,
+        39.68,
+        14.05,
+        15.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "D15",
+      "MPN": "MBR0540-TP",
+      "LCSC": null,
+      "footprint": "Diode_SMD:D_SOD-123",
+      "position": [
+        73.0,
+        22.5,
+        0
+      ],
+      "bounds_mm": [
+        70.65,
+        75.35,
+        21.35,
+        23.65,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+      ]
+    },
+    {
+      "reference": "R2",
+      "MPN": "10K",
+      "LCSC": "C17414",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        32.0,
+        4.0,
+        0
+      ],
+      "bounds_mm": [
+        30.32,
+        33.68,
+        3.05,
+        4.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R10",
+      "MPN": "1K",
+      "LCSC": "C17513",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        35.0,
+        13.0,
+        0
+      ],
+      "bounds_mm": [
+        33.32,
+        36.68,
+        12.05,
+        13.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C10",
+      "MPN": "0603B104M500NT",
+      "LCSC": "C286510",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "position": [
+        50.0,
+        37.0,
+        0
+      ],
+      "bounds_mm": [
+        48.52,
+        51.48,
+        36.27,
+        37.73,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ]
+    },
+    {
+      "reference": "D17",
+      "MPN": "BZT52C12-TP",
+      "LCSC": "C668891",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "position": [
+        60.0,
+        17.5,
+        0
+      ],
+      "bounds_mm": [
+        57.65,
+        62.35,
+        16.35,
+        18.65,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+      ]
+    },
+    {
+      "reference": "C20",
+      "MPN": "1u 50V X7R",
+      "LCSC": null,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        60.8,
+        8.0,
+        -90.0
+      ],
+      "bounds_mm": [
+        60.074999999999996,
+        61.525,
+        6.9,
+        9.1,
+        5.25,
+        6.7
+      ],
+      "bound_kind": "manufacturer maximum2.20x1.45x1.45mm; zero solder standoff datum; explicit separate standoff sweep",
+      "height_assumed_mm": null,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ],
+      "previous_courtyard_screen_bounds_mm": [
+        59.82,
+        61.779999999999994,
+        6.3,
+        9.7,
+        5.25,
+        8.25
+      ],
+      "body_max_dimensions_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "manufacturer_specsheet_url": "https://yageogroup.com/download/specsheet/CC0805KKX7R9BB105",
+      "primary_source_verification": "Parent inspected manufacturer specsheet page1 on2026-10-05"
+    },
+    {
+      "reference": "D9",
+      "MPN": "BAV99,215",
+      "LCSC": "C2500",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "position": [
+        35.0,
+        19.0,
+        0
+      ],
+      "bounds_mm": [
+        33.07,
+        36.93,
+        17.3,
+        20.7,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ]
+    },
+    {
+      "reference": "U4",
+      "MPN": "74LVC2G07W6-7",
+      "LCSC": "C151607",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "position": [
+        29.0,
+        15.5,
+        0
+      ],
+      "bounds_mm": [
+        26.95,
+        31.05,
+        13.8,
+        17.2,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+      ]
+    },
+    {
+      "reference": "R41",
+      "MPN": "0805W8F1003T5E",
+      "LCSC": "C149504",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        68.0,
+        27.5,
+        0
+      ],
+      "bounds_mm": [
+        66.32,
+        69.68,
+        26.55,
+        28.45,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R22",
+      "MPN": "4K7",
+      "LCSC": "C17673",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        43.0,
+        25.0,
+        0
+      ],
+      "bounds_mm": [
+        41.32,
+        44.68,
+        24.05,
+        25.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R13",
+      "MPN": "1K",
+      "LCSC": "C17513",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        39.0,
+        11.5,
+        0
+      ],
+      "bounds_mm": [
+        37.32,
+        40.68,
+        10.55,
+        12.45,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C17",
+      "MPN": "CL32B226KAJNNNE",
+      "LCSC": "C309062",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "position": [
+        70.5,
+        33.5,
+        90.0
+      ],
+      "bounds_mm": [
+        68.9,
+        72.1,
+        31.2,
+        35.8,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
+      ]
+    },
+    {
+      "reference": "C7",
+      "MPN": "100n",
+      "LCSC": "C106243",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        93.0,
+        28.0,
+        0
+      ],
+      "bounds_mm": [
+        91.3,
+        94.7,
+        27.02,
+        28.98,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "U5",
+      "MPN": "74LVC2G07W6-7",
+      "LCSC": "C151607",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "position": [
+        29.0,
+        22.0,
+        0
+      ],
+      "bounds_mm": [
+        26.95,
+        31.05,
+        20.3,
+        23.7,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+      ]
+    },
+    {
+      "reference": "C6",
+      "MPN": "100n",
+      "LCSC": "C106243",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        88.0,
+        28.0,
+        0
+      ],
+      "bounds_mm": [
+        86.9,
+        89.1,
+        27.275,
+        28.725,
+        5.25,
+        6.7
+      ],
+      "bound_kind": "manufacturer maximum2.20x1.45x1.45mm; zero solder standoff datum; explicit separate standoff sweep",
+      "height_assumed_mm": null,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ],
+      "previous_courtyard_screen_bounds_mm": [
+        86.3,
+        89.7,
+        27.02,
+        28.98,
+        5.25,
+        8.25
+      ],
+      "body_max_dimensions_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "manufacturer_specsheet_url": "https://yageogroup.com/download/specsheet/CC0805KKX7R0BB104",
+      "primary_source_verification": "Parent inspected manufacturer specsheet page1 on2026-10-05"
+    },
+    {
+      "reference": "C2",
+      "MPN": "1u",
+      "LCSC": "C91185",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        83.0,
+        24.0,
+        0
+      ],
+      "bounds_mm": [
+        81.9,
+        84.1,
+        23.275,
+        24.725,
+        5.25,
+        6.7
+      ],
+      "bound_kind": "manufacturer maximum2.20x1.45x1.45mm; zero solder standoff datum; explicit separate standoff sweep",
+      "height_assumed_mm": null,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ],
+      "previous_courtyard_screen_bounds_mm": [
+        81.3,
+        84.7,
+        23.02,
+        24.98,
+        5.25,
+        8.25
+      ],
+      "body_max_dimensions_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "manufacturer_specsheet_url": "https://yageogroup.com/download/specsheet/CC0805KKX7R9BB105",
+      "primary_source_verification": "Parent inspected manufacturer specsheet page1 on2026-10-05"
+    },
+    {
+      "reference": "D4",
+      "MPN": "GRN",
+      "LCSC": "C2297",
+      "footprint": "LED_SMD:LED_0805_2012Metric",
+      "position": [
+        84.0,
+        26.0,
+        0
+      ],
+      "bounds_mm": [
+        82.32,
+        85.68,
+        25.05,
+        26.95,
+        5.25,
+        6.05
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 0.8,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "Q4",
+      "MPN": "CJ3407",
+      "LCSC": null,
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "position": [
+        52.0,
+        21.5,
+        0
+      ],
+      "bounds_mm": [
+        50.07,
+        53.93,
+        19.8,
+        23.2,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ]
+    },
+    {
+      "reference": "R25",
+      "MPN": "1K",
+      "LCSC": "C17513",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        44.0,
+        27.5,
+        0
+      ],
+      "bounds_mm": [
+        42.32,
+        45.68,
+        26.55,
+        28.45,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R21",
+      "MPN": "220k",
+      "LCSC": "C104108",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        39.0,
+        26.0,
+        0
+      ],
+      "bounds_mm": [
+        37.32,
+        40.68,
+        25.05,
+        26.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C24",
+      "MPN": "100nF",
+      "LCSC": null,
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        70.0,
+        4.5,
+        0
+      ],
+      "bounds_mm": [
+        68.3,
+        71.7,
+        3.52,
+        5.48,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "D16",
+      "MPN": "BZT52C12-TP",
+      "LCSC": "C668891",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "position": [
+        60.0,
+        3.0,
+        0
+      ],
+      "bounds_mm": [
+        57.65,
+        62.35,
+        1.85,
+        4.15,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+      ]
+    },
+    {
+      "reference": "C11",
+      "MPN": "10u 25V X5R",
+      "LCSC": "C15850",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "position": [
+        81.0,
+        38.0,
+        0
+      ],
+      "bounds_mm": [
+        79.3,
+        82.7,
+        37.02,
+        38.98,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R37",
+      "MPN": "10k",
+      "LCSC": null,
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        52.0,
+        25.0,
+        0
+      ],
+      "bounds_mm": [
+        50.32,
+        53.68,
+        24.05,
+        25.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "D1",
+      "MPN": "BAV99,215",
+      "LCSC": "C2500",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "position": [
+        22.0,
+        9.0,
+        0
+      ],
+      "bounds_mm": [
+        20.07,
+        23.93,
+        7.3,
+        10.7,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ]
+    },
+    {
+      "reference": "R15",
+      "MPN": "10K",
+      "LCSC": "C17414",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        43.0,
+        16.0,
+        0
+      ],
+      "bounds_mm": [
+        41.32,
+        44.68,
+        15.05,
+        16.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "R17",
+      "MPN": "10K",
+      "LCSC": "C17414",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        43.0,
+        10.0,
+        0
+      ],
+      "bounds_mm": [
+        41.32,
+        44.68,
+        9.05,
+        10.95,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    },
+    {
+      "reference": "C19",
+      "MPN": "100pF",
+      "LCSC": null,
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "position": [
+        55.0,
+        17.5,
+        0
+      ],
+      "bounds_mm": [
+        54.09,
+        55.91,
+        17.04,
+        17.96,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ]
+    },
+    {
+      "reference": "R39",
+      "MPN": "0603WAF3301T5E",
+      "LCSC": "C22978",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "position": [
+        64.5,
+        26.0,
+        0
+      ],
+      "bounds_mm": [
+        63.02,
+        65.98,
+        25.27,
+        26.73,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+      ]
+    },
+    {
+      "reference": "R24",
+      "MPN": "1K",
+      "LCSC": "C17513",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "position": [
+        38.0,
+        7.5,
+        0
+      ],
+      "bounds_mm": [
+        36.32,
+        39.68,
+        6.55,
+        8.45,
+        5.25,
+        8.25
+      ],
+      "bound_kind": "source courtyard XY + assumed screening height; not production maximum",
+      "height_assumed_mm": 3.0,
+      "models": [
+        "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+      ]
+    }
+  ],
+  "no_model_references": [
+    {
+      "reference": "TP13",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "value": "PIN3_SW_OUT"
+    },
+    {
+      "reference": "H2",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+      "value": "MountingHole"
+    },
+    {
+      "reference": "TP9",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "value": "PIN3_FUSED"
+    },
+    {
+      "reference": "TP3",
+      "footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+      "value": "TestPoint"
+    },
+    {
+      "reference": "TP5",
+      "footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+      "value": "TestPoint"
+    },
+    {
+      "reference": "TP4",
+      "footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+      "value": "TestPoint"
+    },
+    {
+      "reference": "TP6",
+      "footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+      "value": "TestPoint"
+    },
+    {
+      "reference": "TP10",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "value": "PIN1_PROTECTED"
+    },
+    {
+      "reference": "TP8",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "value": "PIN1_FUSED"
+    },
+    {
+      "reference": "TP11",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "value": "PIN3_PROTECTED"
+    },
+    {
+      "reference": "TP2",
+      "footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+      "value": "TestPoint"
+    },
+    {
+      "reference": "TP1",
+      "footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+      "value": "TestPoint"
+    },
+    {
+      "reference": "TP12",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "value": "PIN1_SW_OUT"
+    },
+    {
+      "reference": "TP7",
+      "footprint": "TestPoint:TestPoint_Pad_D2.0mm",
+      "value": "TestPoint"
+    },
+    {
+      "reference": "H1",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3_DIN965",
+      "value": "MountingHole"
+    },
+    {
+      "reference": "JP1",
+      "footprint": "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels",
+      "value": "FirstBuild"
+    }
+  ],
+  "J2_present": false,
+  "D19_present": false
+}

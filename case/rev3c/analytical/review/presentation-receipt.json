@@ -1,0 +1,99 @@
+{
+  "Blender": "4.3.2",
+  "classification": "Presentation variants only; all analytical outputs and source meshes frozen",
+  "geometry_changes": "None. Native STL vertices/faces imported unchanged. Comparison uses rigid+134mm X scene translation only.",
+  "materials": "Neutral gray lid, darker base/backdrop, local geometric ambient shading; no invented labeling or texture overlays",
+  "lighting": {
+    "sun_energy": 4.0,
+    "sun_angular_size_degrees": 1.0,
+    "fill_energy": 35000,
+    "fill_size": 100,
+    "world_color": [
+      0.065,
+      0.08,
+      0.095
+    ],
+    "world_strength": 0.6,
+    "cycles_samples": 32,
+    "denoising": false
+  },
+  "input_meshes": {
+    "base_analysis_0100.stl": {
+      "sha256": "a3d9ef666c3880549e1fcbf43bdfae555b7a3309585f73f2e7496b25d03650dc",
+      "bytes": 202084
+    },
+    "lightpipe_wifi_analysis_0100.stl": {
+      "sha256": "68886ef4bab08d640ca62cf2a3148f019a7a56c9bd81e1e5a47c0b93178fae51",
+      "bytes": 25084
+    },
+    "lightpipe_aux_analysis_0100.stl": {
+      "sha256": "7b1bbe3c1ffe8c37dd252c59f38e10c05ed3bc8a610a6a6ae81f7b50a1e5bdbc",
+      "bytes": 25084
+    },
+    "lightpipe_bus_analysis_0100.stl": {
+      "sha256": "a42f6a7fd82264240ebfbcccc24c443bbfcc6796f93d36f6fce2b7354959a4c0",
+      "bytes": 25084
+    },
+    "lid_c3_internal_original_reaches_analysis_0100.stl": {
+      "sha256": "65063c2e6fcc1c585b42917cacf06f31d19b2aa5209fecbd0fadf848f9258561",
+      "bytes": 1275984
+    },
+    "lid_c6_internal_original_reaches_analysis_0100.stl": {
+      "sha256": "afa0a3cce0531cb61cb9613a6d7bf490fd672763321fec7ca77849c0c3f5f240",
+      "bytes": 1273084
+    }
+  },
+  "script_sha256": "e2d41306d20aa46ee1efe6b03dd3f8c28a6f4da00142d91af57e14263bffcf63",
+  "outputs": {
+    "presentation_compare_c3_c6.png": {
+      "sha256": "7ae6a7b328cbc5647710dcee600609ac58c6e99d7cd7afe5d6a0dd6009aa5ac3",
+      "bytes": 2495375
+    },
+    "presentation_roof_c3.png": {
+      "sha256": "197489a770cea6b73d6975c05dc38fd694d5d1cf7bd872b6f8592d1b81d1370a",
+      "bytes": 1700554
+    },
+    "presentation_roof_c6.png": {
+      "sha256": "cbc05306d667cacc51957b4d63f556ea516ca4d0f9e08278cf50d0ab4352e8bc",
+      "bytes": 1698973
+    }
+  },
+  "input_meshes_verified_against_FINAL_HASHES": {
+    "base_analysis_0100.stl": {
+      "matches_frozen_analytical_mesh_hash": true,
+      "sha256": "a3d9ef666c3880549e1fcbf43bdfae555b7a3309585f73f2e7496b25d03650dc"
+    },
+    "lightpipe_wifi_analysis_0100.stl": {
+      "matches_frozen_analytical_mesh_hash": true,
+      "sha256": "68886ef4bab08d640ca62cf2a3148f019a7a56c9bd81e1e5a47c0b93178fae51"
+    },
+    "lightpipe_aux_analysis_0100.stl": {
+      "matches_frozen_analytical_mesh_hash": true,
+      "sha256": "7b1bbe3c1ffe8c37dd252c59f38e10c05ed3bc8a610a6a6ae81f7b50a1e5bdbc"
+    },
+    "lightpipe_bus_analysis_0100.stl": {
+      "matches_frozen_analytical_mesh_hash": true,
+      "sha256": "a42f6a7fd82264240ebfbcccc24c443bbfcc6796f93d36f6fce2b7354959a4c0"
+    },
+    "lid_c3_internal_original_reaches_analysis_0100.stl": {
+      "matches_frozen_analytical_mesh_hash": true,
+      "sha256": "65063c2e6fcc1c585b42917cacf06f31d19b2aa5209fecbd0fadf848f9258561"
+    },
+    "lid_c6_internal_original_reaches_analysis_0100.stl": {
+      "matches_frozen_analytical_mesh_hash": true,
+      "sha256": "afa0a3cce0531cb61cb9613a6d7bf490fd672763321fec7ca77849c0c3f5f240"
+    }
+  },
+  "all_frozen_analytical_artifacts_byte_identical": 75,
+  "verified_utc": "2026-10-05T14:05:16Z",
+  "visual_review": "Both roof views and the comparison explicitly inspected; actual engraved labels read clearly. No generated or inferred geometry/labels.",
+  "render_settings": {
+    "engine": "Cycles",
+    "samples": 32,
+    "max_bounces": 4,
+    "diffuse_bounces": 2,
+    "glossy_bounces": 2,
+    "view_transform": "AgX",
+    "look": "Medium High Contrast"
+  }
+}

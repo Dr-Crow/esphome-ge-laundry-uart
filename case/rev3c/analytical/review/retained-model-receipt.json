@@ -1,0 +1,189 @@
+[
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-prototype-planning-repo/pcb/rev3c/design/models/TPS1H200A-DGN0008K-max-envelope.step",
+    "sha256": "8f30abcefe9bf48578f844ba0d491a30e6511478a4a2325614049f62caa72cb3",
+    "valid": true,
+    "solid_count": 9,
+    "bounds_native_mm": [
+      [
+        -2.525,
+        -1.55,
+        0.0
+      ],
+      [
+        2.525,
+        1.55,
+        1.1
+      ]
+    ],
+    "volume_mm3": 10.84214
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-prototype-planning-repo/pcb/rev3c/design/models/1812L075-33DR-max-envelope.step",
+    "sha256": "53d4dda024533aebedc0e8f2cd8567f9c2846f31b8ce63c225345a00e326d95a",
+    "valid": true,
+    "solid_count": 1,
+    "bounds_native_mm": [
+      [
+        -2.365,
+        -1.705,
+        0.0
+      ],
+      [
+        2.365,
+        1.705,
+        1.55
+      ]
+    ],
+    "volume_mm3": 25.000415000000004
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-prototype-planning-repo/pcb/rev3c/design/models/RJ45_EVERCOM_5301-8P8C-RevA-drawing-detail.step",
+    "sha256": "2dd0fad1b3f731095d418325b7213b68477a9fc6b63a950a9d7fed368039e809",
+    "valid": true,
+    "solid_count": 17,
+    "bounds_native_mm": [
+      [
+        -3.155,
+        -14.35,
+        -3.0
+      ],
+      [
+        12.045,
+        3.700000000000001,
+        11.45
+      ]
+    ],
+    "volume_mm3": 1659.1397110329974
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-prototype-planning-repo/pcb/rev3c/design/models/Socket_HCTL_PM254-1-07-Z-8.5-drawing-detail.step",
+    "sha256": "4567f7426543c3946b75e5153f8eed87556cc254caa2858d83bfffe307479394",
+    "valid": true,
+    "solid_count": 8,
+    "bounds_native_mm": [
+      [
+        -16.71,
+        -1.25,
+        -3.2
+      ],
+      [
+        1.47,
+        1.25,
+        8.5
+      ]
+    ],
+    "volume_mm3": 379.84090000000054
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-prototype-planning-repo/pcb/rev3c/design/models/U.FL_Hirose_U.FL-R-SMT-1_Vertical-kicad-9.0.9.step",
+    "sha256": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
+    "valid": true,
+    "solid_count": 1,
+    "bounds_native_mm": [
+      [
+        -1.55,
+        -1.5000000000000016,
+        0.0
+      ],
+      [
+        1.5500000000000005,
+        1.5,
+        1.2500000000000007
+      ]
+    ],
+    "volume_mm3": 3.0916200439238075
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-prototype-planning-repo/pcb/rev3c/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step",
+    "sha256": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
+    "valid": true,
+    "solid_count": 1083,
+    "bounds_native_mm": [
+      [
+        -10.414000000000465,
+        -9.524999000000001,
+        -0.04
+      ],
+      [
+        11.874000099999998,
+        9.524999000000001,
+        4.9050001000000005
+      ]
+    ],
+    "volume_mm3": 699.8396093925545,
+    "registered_case_bounds_by_stack_mm": {
+      "11.0": [
+        [
+          77.47599999999953,
+          3.3925009999999998,
+          16.21
+        ],
+        [
+          99.76400009999999,
+          22.442499,
+          21.155000100000002
+        ]
+      ],
+      "11.65": [
+        [
+          77.47599999999953,
+          3.3925009999999998,
+          16.86
+        ],
+        [
+          99.76400009999999,
+          22.442499,
+          21.8050001
+        ]
+      ]
+    },
+    "transform": "Mirror nativeY into case +KiCadY; translate87.89,12.9175,5.25+stack. No scaling."
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-prototype-planning-repo/pcb/rev3c/design/models/XIAO_ESP32C6_v1.0_vendor_pcb_visual_reference.step",
+    "sha256": "629b2beb967833819be0ac0365e305d6ef3ce673a9d5281df7a5c7ea37a4c9c1",
+    "valid": true,
+    "solid_count": 907,
+    "bounds_native_mm": [
+      [
+        -10.414000000000465,
+        -9.524999000000001,
+        -0.04
+      ],
+      [
+        11.908700099999999,
+        9.524999000000001,
+        4.9050001000000005
+      ]
+    ],
+    "volume_mm3": 720.1963701240835,
+    "registered_case_bounds_by_stack_mm": {
+      "11.0": [
+        [
+          77.47599999999953,
+          3.3925009999999998,
+          16.21
+        ],
+        [
+          99.79870009999999,
+          22.442499,
+          21.155000100000002
+        ]
+      ],
+      "11.65": [
+        [
+          77.47599999999953,
+          3.3925009999999998,
+          16.86
+        ],
+        [
+          99.79870009999999,
+          22.442499,
+          21.8050001
+        ]
+      ]
+    },
+    "transform": "Mirror nativeY into case +KiCadY; translate87.89,12.9175,5.25+stack. No scaling."
+  }
+]

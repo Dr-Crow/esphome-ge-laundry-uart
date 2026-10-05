@@ -1,0 +1,114 @@
+{
+  "tip_checks": [
+    {
+      "side": -1,
+      "rigid_tip_deflection_mm": 0.0,
+      "stop_intersection_mm3": 0.0,
+      "closed_lid_intersection_mm3": 0.0
+    },
+    {
+      "side": -1,
+      "rigid_tip_deflection_mm": 0.8,
+      "stop_intersection_mm3": 0.0,
+      "closed_lid_intersection_mm3": 0.0
+    },
+    {
+      "side": -1,
+      "rigid_tip_deflection_mm": 0.85,
+      "stop_intersection_mm3": 0.0,
+      "closed_lid_intersection_mm3": 0.0
+    },
+    {
+      "side": -1,
+      "rigid_tip_deflection_mm": 0.9,
+      "stop_intersection_mm3": 0.36,
+      "closed_lid_intersection_mm3": 0.0
+    },
+    {
+      "side": -1,
+      "compressed_0p8mm_lid_insertion_poses": [
+        {
+          "lid_lift_mm": 0,
+          "tip_lid_intersection_mm3": 0.0
+        },
+        {
+          "lid_lift_mm": 0.5,
+          "tip_lid_intersection_mm3": 0.0
+        },
+        {
+          "lid_lift_mm": 1,
+          "tip_lid_intersection_mm3": 0.0
+        },
+        {
+          "lid_lift_mm": 2,
+          "tip_lid_intersection_mm3": 0.0
+        },
+        {
+          "lid_lift_mm": 3,
+          "tip_lid_intersection_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "side": 1,
+      "rigid_tip_deflection_mm": 0.0,
+      "stop_intersection_mm3": 0.0,
+      "closed_lid_intersection_mm3": 0.0
+    },
+    {
+      "side": 1,
+      "rigid_tip_deflection_mm": 0.8,
+      "stop_intersection_mm3": 0.0,
+      "closed_lid_intersection_mm3": 0.0
+    },
+    {
+      "side": 1,
+      "rigid_tip_deflection_mm": 0.85,
+      "stop_intersection_mm3": 0.0,
+      "closed_lid_intersection_mm3": 0.0
+    },
+    {
+      "side": 1,
+      "rigid_tip_deflection_mm": 0.9,
+      "stop_intersection_mm3": 0.36,
+      "closed_lid_intersection_mm3": 0.0
+    },
+    {
+      "side": 1,
+      "compressed_0p8mm_lid_insertion_poses": [
+        {
+          "lid_lift_mm": 0,
+          "tip_lid_intersection_mm3": 0.0
+        },
+        {
+          "lid_lift_mm": 0.5,
+          "tip_lid_intersection_mm3": 0.0
+        },
+        {
+          "lid_lift_mm": 1,
+          "tip_lid_intersection_mm3": 0.0
+        },
+        {
+          "lid_lift_mm": 2,
+          "tip_lid_intersection_mm3": 0.0
+        },
+        {
+          "lid_lift_mm": 3,
+          "tip_lid_intersection_mm3": 0.0
+        }
+      ]
+    }
+  ],
+  "minimum_nominal_inward_stop_gap_at_0p8mm": 0.05,
+  "boundary_conditions": "Tip/ramp rigid envelope only; no elastic beam root translation or FEA",
+  "independent_stop_geometry_check": {
+    "BOOT": {
+      "ring_contact_top_z_mm": 29.200000000000003,
+      "configured_stop_travel_mm": 0.4
+    },
+    "RESET": {
+      "ring_contact_top_z_mm": 29.150000000000002,
+      "configured_stop_travel_mm": 0.45
+    }
+  }
+}

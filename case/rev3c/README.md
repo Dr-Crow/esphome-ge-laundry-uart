@@ -6,6 +6,14 @@ The editable all-printed enclosure source has been recovered. It has one common 
 
 The [independent mechanical finding matrix](review/recovered-enclosure-review.md) and [compact check receipt](review/provenance-counts.json) record actual source/STEP/STL inspection, current-board datums and unresolved fit assumptions. [Detailed export checks](review/inspection-receipt.json) and the [current datum comparison](review/current-datum-comparison.json) preserve the individual measurements and hashes.
 
+## Current analytical derivative
+
+[Parametric review source](analytical/README.md) now registers current component screens and samples installed stacks from11.0 to11.65 mm. It offers separately reviewed longer-leaf and local guide-relief candidates, with explicit per-button controls and five-piece review exports. Correct-lid nominal screens pass; original fixed reaches and wrong-lid prevention fail their stated checks. Actual switch, plug, print, optical, thermal and RF qualification stays open.
+
+![Actual C3/C6 prototype geometry](analytical/review/presentation_compare_c3_c6.png)
+
+These are fresh source-derived presentation renders, with recorded geometry/tool hashes and illustrative materials. The following original-recovery evidence remains historical; its uncorrected proxy and regeneration limitations are preserved rather than relabeled as a current result.
+
 ## Recovered source
 
 The [build123d source](prototype/enclosure.py), [interface datums](prototype/interface_baseline.py), [electronic proxies](prototype/component_envelopes.py), [pinned dependencies](prototype/requirements.txt) and [license](prototype/LICENSE) are copied without changes from `GE-enclosure-CAD-and-review.zip`. [Source provenance](prototype/SOURCE-PROVENANCE.json) records the archive and individual file hashes. STEP and STL exports are geometry outputs; the Python files are the editable parametric source.

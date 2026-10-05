@@ -1,0 +1,56 @@
+{
+  "originals_byte_identical_to_recovered_repo": {
+    "enclosure.py": "a016dbfcab8d10214f3d6880a9fdc76e442041a8baee49cf65e8edc957415607",
+    "component_envelopes.py": "146a54c71920b71695831971c02fd93bb14e48ca4e6f9e1468e78b22f915c7ab",
+    "interface_baseline.py": "c5ca15aec72c429d78d5d4894f15078fb322e3282d7e5468ff64fbd1ca431ceb"
+  },
+  "final_candidate_sha256": {
+    "enclosure.py": "1e1fa20b4edf2fcd1ce176e366295f79c27d1e7b89889a7c5b819aaf8b44391a",
+    "component_envelopes.py": "b1e6999f8d384f402c474b28ed4c182bec8c8fd3e77bc9d6e7f8d9cd27e9788a",
+    "interface_baseline.py": "593b3b699f498c7b1ea4990fd2cfb6a97bb3ea0452b3a37ce91b51958d66cd2a"
+  },
+  "default_case_geometry_preserved": {
+    "c3_internal": {
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 24912.818310367034,
+      "original_analysis_volume_mm3": 24912.81831,
+      "equal_within_1e-4_mm3": true
+    },
+    "c3_external": {
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 24853.16033146537,
+      "original_analysis_volume_mm3": 24853.160331,
+      "equal_within_1e-4_mm3": true
+    },
+    "c6_internal": {
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 24681.397782447086,
+      "original_analysis_volume_mm3": 24681.397782,
+      "equal_within_1e-4_mm3": true
+    },
+    "c6_external": {
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 24855.864629542786,
+      "original_analysis_volume_mm3": 24855.86463,
+      "equal_within_1e-4_mm3": true
+    }
+  },
+  "independent_button_parameter_geometry": {
+    "BOOT": {
+      "actual_release_gap_mm": 0.25,
+      "actual_ring_stop_top_Z_mm": 29.200000000000003,
+      "switch_body_top_Z_mm": 19.35,
+      "foot_bottom_Z_mm": 19.6
+    },
+    "RESET": {
+      "actual_release_gap_mm": 0.3000000000000007,
+      "actual_ring_stop_top_Z_mm": 29.150000000000002,
+      "switch_body_top_Z_mm": 19.55,
+      "foot_bottom_Z_mm": 19.85
+    }
+  }
+}

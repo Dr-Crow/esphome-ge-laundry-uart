@@ -1,0 +1,17 @@
+{
+  "review_source": "8744a29446a1937134525496c2a5dfdc0a59a004",
+  "current_board_metadata_commit": "dd2437438129dd7d9f9c7dd537150a7459fd290b",
+  "geometry_note": "Later changes affect only capacitor ordering metadata; outline, component locations, pads and copper are preserved. Original case recovery source stays in ../prototype/.",
+  "tool_versions": {
+    "build123d": "0.10.0",
+    "cadquery-ocp": "7.8.1.1.post1"
+  },
+  "files": {
+    "enclosure.py": "1e1fa20b4edf2fcd1ce176e366295f79c27d1e7b89889a7c5b819aaf8b44391a",
+    "interface_baseline.py": "593b3b699f498c7b1ea4990fd2cfb6a97bb3ea0452b3a37ce91b51958d66cd2a",
+    "component_envelopes.py": "b1e6999f8d384f402c474b28ed4c182bec8c8fd3e77bc9d6e7f8d9cd27e9788a",
+    "current_carrier_bounds.json": "e87a0e64ba7c13c15044dd260866fe93e3923b29762aecedc4883ec62f880b2d",
+    "LICENSE": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc"
+  },
+  "qualification": "Analytical derivative, with conditional part heights and explicit assembly allowances; not a qualified printed assembly."
+}

@@ -1,0 +1,399 @@
+{
+  "source": "Parent verified manufacturer spec sheets page1; URLs retained in current_carrier_bounds.json",
+  "solder_standoff_is_not_a_verified_manufacturer_bound": true,
+  "new_envelopes_at_0p1mm_standoff_subset_previous_passed_case_screens": {
+    "C5": true,
+    "C21": true,
+    "C3": true,
+    "C20": true,
+    "C6": true,
+    "C2": true
+  },
+  "checks": [
+    {
+      "reference": "C5",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0,
+      "body_max_top_Z_mm": 6.7,
+      "guide_inlet_vertical_gap_mm": 0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C5",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.025,
+      "body_max_top_Z_mm": 6.7250000000000005,
+      "guide_inlet_vertical_gap_mm": 0.025,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C5",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.05,
+      "body_max_top_Z_mm": 6.75,
+      "guide_inlet_vertical_gap_mm": 0.0,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C5",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.1,
+      "body_max_top_Z_mm": 6.8,
+      "guide_inlet_vertical_gap_mm": -0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.00415269,
+        "AUX": 0.00415269,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C21",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0,
+      "body_max_top_Z_mm": 6.7,
+      "guide_inlet_vertical_gap_mm": 0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C21",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.025,
+      "body_max_top_Z_mm": 6.7250000000000005,
+      "guide_inlet_vertical_gap_mm": 0.025,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C21",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.05,
+      "body_max_top_Z_mm": 6.75,
+      "guide_inlet_vertical_gap_mm": 0.0,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C21",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.1,
+      "body_max_top_Z_mm": 6.8,
+      "guide_inlet_vertical_gap_mm": -0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C3",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0,
+      "body_max_top_Z_mm": 6.7,
+      "guide_inlet_vertical_gap_mm": 0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C3",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.025,
+      "body_max_top_Z_mm": 6.7250000000000005,
+      "guide_inlet_vertical_gap_mm": 0.025,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C3",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.05,
+      "body_max_top_Z_mm": 6.75,
+      "guide_inlet_vertical_gap_mm": 0.0,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C3",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.1,
+      "body_max_top_Z_mm": 6.8,
+      "guide_inlet_vertical_gap_mm": -0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.00676705
+      }
+    },
+    {
+      "reference": "C20",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0,
+      "body_max_top_Z_mm": 6.7,
+      "guide_inlet_vertical_gap_mm": 0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C20",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.025,
+      "body_max_top_Z_mm": 6.7250000000000005,
+      "guide_inlet_vertical_gap_mm": 0.025,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C20",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.05,
+      "body_max_top_Z_mm": 6.75,
+      "guide_inlet_vertical_gap_mm": 0.0,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C20",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.1,
+      "body_max_top_Z_mm": 6.8,
+      "guide_inlet_vertical_gap_mm": -0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C6",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0,
+      "body_max_top_Z_mm": 6.7,
+      "guide_inlet_vertical_gap_mm": 0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C6",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.025,
+      "body_max_top_Z_mm": 6.7250000000000005,
+      "guide_inlet_vertical_gap_mm": 0.025,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C6",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.05,
+      "body_max_top_Z_mm": 6.75,
+      "guide_inlet_vertical_gap_mm": 0.0,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C6",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.1,
+      "body_max_top_Z_mm": 6.8,
+      "guide_inlet_vertical_gap_mm": -0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.00676705
+      }
+    },
+    {
+      "reference": "C2",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0,
+      "body_max_top_Z_mm": 6.7,
+      "guide_inlet_vertical_gap_mm": 0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C2",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.025,
+      "body_max_top_Z_mm": 6.7250000000000005,
+      "guide_inlet_vertical_gap_mm": 0.025,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C2",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.05,
+      "body_max_top_Z_mm": 6.75,
+      "guide_inlet_vertical_gap_mm": 0.0,
+      "guide_intersection_mm3": {
+        "WIFI": 0.0,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    },
+    {
+      "reference": "C2",
+      "source_max_body_mm": [
+        2.2,
+        1.45,
+        1.45
+      ],
+      "assumed_solder_standoff_mm": 0.1,
+      "body_max_top_Z_mm": 6.8,
+      "guide_inlet_vertical_gap_mm": -0.05,
+      "guide_intersection_mm3": {
+        "WIFI": 0.00415269,
+        "AUX": 0.0,
+        "BUS": 0.0
+      }
+    }
+  ],
+  "interpretation": "Body-only false overlaps close at zero standoff.0.05mm vertical margin is consumed by solder/print/warp; assembly clearance remains UNKNOWN without those bounds."
+}

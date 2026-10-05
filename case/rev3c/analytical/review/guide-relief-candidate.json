@@ -1,0 +1,199 @@
+{
+  "solder_standoff_allowance_design_requirement_mm": 0.15,
+  "clearance_design_requirement_mm": 0.25,
+  "physical_supplier_solder_bound_verified": false,
+  "guide_inlet_Z_unchanged_mm": 6.75,
+  "relief_top_Z_mm": 7.1,
+  "separately_labeled_candidate_not_physically_selected_release": true,
+  "guides": {
+    "WIFI": {
+      "valid": true,
+      "solid_count": 1,
+      "original_volume_mm3": 152.4472805800028,
+      "candidate_volume_mm3": 152.1570485210563,
+      "removed_lower_crescent_mm3": 0.2902320589464864,
+      "removed_bounds_mm": [
+        [
+          83.00286660872278,
+          24.57,
+          6.75
+        ],
+        [
+          84.35000000000012,
+          27.43,
+          7.1000000000000005
+        ]
+      ],
+      "original_circular_inlet_area_mm2": 6.424242817325767,
+      "remaining_inlet_area_mm2": 5.5950083631974366,
+      "nominal_LED_2x1p2_inlet_projection_preserved": true,
+      "upper_path_and_roof_retention_unchanged": true,
+      "cap_body_collision_at_015_solder_mm3": {
+        "C5": 0.0,
+        "C21": 0.0,
+        "C3": 0.0,
+        "C20": 0.0,
+        "C6": 0.0,
+        "C2": 0.0
+      },
+      "cap_025_expanded_clearance_collision_mm3": {
+        "C5": 0.0,
+        "C21": 0.0,
+        "C3": 0.0,
+        "C20": 0.0,
+        "C6": 0.0,
+        "C2": 0.0
+      },
+      "all_current_neighbor_collisions_mm3": {},
+      "lid_insertion_poses": [
+        {
+          "guide_z_translation_mm": -20,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": -10,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": -5,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": -2,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": 0,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        }
+      ],
+      "optical_print_retention_qualification": "UNKNOWN; nominal inlet retained, light losses and printed surfaces require tests"
+    },
+    "AUX": {
+      "valid": true,
+      "solid_count": 1,
+      "original_volume_mm3": 152.44728058000197,
+      "candidate_volume_mm3": 152.30216455052982,
+      "removed_lower_crescent_mm3": 0.14511602947214897,
+      "removed_bounds_mm": [
+        [
+          83.00286660872278,
+          28.57,
+          6.75
+        ],
+        [
+          84.35,
+          28.975,
+          7.1000000000000005
+        ]
+      ],
+      "original_circular_inlet_area_mm2": 6.424242817325767,
+      "remaining_inlet_area_mm2": 6.009625590262615,
+      "nominal_LED_2x1p2_inlet_projection_preserved": true,
+      "upper_path_and_roof_retention_unchanged": true,
+      "cap_body_collision_at_015_solder_mm3": {
+        "C5": 0.0,
+        "C21": 0.0,
+        "C3": 0.0,
+        "C20": 0.0,
+        "C6": 0.0,
+        "C2": 0.0
+      },
+      "cap_025_expanded_clearance_collision_mm3": {
+        "C5": 0.0,
+        "C21": 0.0,
+        "C3": 0.0,
+        "C20": 0.0,
+        "C6": 0.0,
+        "C2": 0.0
+      },
+      "all_current_neighbor_collisions_mm3": {},
+      "lid_insertion_poses": [
+        {
+          "guide_z_translation_mm": -20,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": -10,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": -5,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": -2,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": 0,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        }
+      ],
+      "optical_print_retention_qualification": "UNKNOWN; nominal inlet retained, light losses and printed surfaces require tests"
+    },
+    "BUS": {
+      "valid": true,
+      "solid_count": 1,
+      "original_volume_mm3": 152.4472805800027,
+      "candidate_volume_mm3": 152.05820629212573,
+      "removed_lower_crescent_mm3": 0.38907428787697995,
+      "removed_bounds_mm": [
+        [
+          87.00286660872153,
+          24.57,
+          6.75
+        ],
+        [
+          88.99713339127848,
+          27.43,
+          7.1000000000000005
+        ]
+      ],
+      "original_circular_inlet_area_mm2": 6.424242817325767,
+      "remaining_inlet_area_mm2": 5.312601994812589,
+      "nominal_LED_2x1p2_inlet_projection_preserved": true,
+      "upper_path_and_roof_retention_unchanged": true,
+      "cap_body_collision_at_015_solder_mm3": {
+        "C5": 0.0,
+        "C21": 0.0,
+        "C3": 0.0,
+        "C20": 0.0,
+        "C6": 0.0,
+        "C2": 0.0
+      },
+      "cap_025_expanded_clearance_collision_mm3": {
+        "C5": 0.0,
+        "C21": 0.0,
+        "C3": 0.0,
+        "C20": 0.0,
+        "C6": 0.0,
+        "C2": 0.0
+      },
+      "all_current_neighbor_collisions_mm3": {},
+      "lid_insertion_poses": [
+        {
+          "guide_z_translation_mm": -20,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": -10,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": -5,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": -2,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        },
+        {
+          "guide_z_translation_mm": 0,
+          "lid_collision_outside_pressfit_mm3": 0.0
+        }
+      ],
+      "optical_print_retention_qualification": "UNKNOWN; nominal inlet retained, light losses and printed surfaces require tests"
+    }
+  }
+}

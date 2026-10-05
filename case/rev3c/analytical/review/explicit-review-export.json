@@ -1,0 +1,121 @@
+{
+  "qualification": "Unqualified review geometry; no measured assembly or switch-travel proof",
+  "parameters": {
+    "module": "c3",
+    "antenna": "internal",
+    "stack": 11.325,
+    "boot_height": 1.5,
+    "reset_height": 1.5,
+    "boot_stop": 0.4,
+    "reset_stop": 0.4,
+    "gap": 0.25,
+    "leaf_offset": 17.3,
+    "relieved_guides": true,
+    "output": "Generated review directory; not a source-tree factory package"
+  },
+  "source_sha256": {
+    "enclosure.py": "1e1fa20b4edf2fcd1ce176e366295f79c27d1e7b89889a7c5b819aaf8b44391a",
+    "interface_baseline.py": "593b3b699f498c7b1ea4990fd2cfb6a97bb3ea0452b3a37ce91b51958d66cd2a",
+    "component_envelopes.py": "b1e6999f8d384f402c474b28ed4c182bec8c8fd3e77bc9d6e7f8d9cd27e9788a",
+    "current_carrier_bounds.json": "e87a0e64ba7c13c15044dd260866fe93e3923b29762aecedc4883ec62f880b2d"
+  },
+  "parts": {
+    "review_base": {
+      "volume_mm3": 28171.03,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5,
+          -7.0,
+          -1.0
+        ],
+        [
+          106.5,
+          47.0,
+          9.4
+        ]
+      ]
+    },
+    "review_lid_c3_internal": {
+      "volume_mm3": 24899.568,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          -7.5,
+          -7.0,
+          5.65
+        ],
+        [
+          106.5,
+          47.0,
+          30.5
+        ]
+      ]
+    },
+    "review_guide_wifi": {
+      "volume_mm3": 152.157,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          68.57,
+          24.57,
+          6.75
+        ],
+        [
+          85.43,
+          33.43,
+          30.48
+        ]
+      ]
+    },
+    "review_guide_aux": {
+      "volume_mm3": 152.302,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          78.82,
+          28.57,
+          6.75
+        ],
+        [
+          85.43,
+          33.43,
+          30.48
+        ]
+      ]
+    },
+    "review_guide_bus": {
+      "volume_mm3": 152.058,
+      "solid_count": 1,
+      "bounds_mm": [
+        [
+          86.57,
+          24.57,
+          6.75
+        ],
+        [
+          91.93,
+          33.43,
+          30.48
+        ]
+      ]
+    }
+  },
+  "verification": {
+    "engine": "build123d0.10.0 / OCP7.8.1.1.post1",
+    "result": "Five positive-volume valid single-solid review pieces exported successfully",
+    "physical_test": false
+  },
+  "file_hashes": {
+    "review_base.stl": "b62eb80e2f6bda695502cdd1a1f529038794f9265d5bd40d53e60a5da44686e2",
+    "review_guide_bus.step": "7cf60b351bcb8b870ee73e436d1f7fde791d11dc8fd4a5aa13fdcb4961fb8148",
+    "review_guide_wifi.step": "aedbed58c67613b20289658b718db3bc60129a53471ed8ba3f18ef830dd31f29",
+    "review_guide_bus.stl": "2a3a8cb822b7ca9711becefc7ed39fbeb878f489fee8be379a49da489fbaee83",
+    "review_lid_c3_internal.stl": "eb4e3968656a1f7e26e2ad414754484cd2e216519f99db444edd5476622ed51d",
+    "review_guide_aux.stl": "31098a7e9e936991ec41e65595a19bc88ebc0abca7e02740ebdd0957e053d44f",
+    "review_guide_aux.step": "55538624aff7f50262cb389be3fdd8461c3d0ff2c1348ce0b0e8390a26c4f0c2",
+    "review_base.step": "2d490f4e32a76bd9f62d1600e37d2c2f659006f0eee329c09c8e48eecdb44a6c",
+    "review_guide_wifi.stl": "d323de2b5d527c1efa742c41504e1569ad1fc47e2e79e6dfc33b45dd186b89fb",
+    "review_lid_c3_internal.step": "e1c6cf118c123022753ff18fdc7f15b5528c96d3d29433df99a88a0e153efbca"
+  }
+}

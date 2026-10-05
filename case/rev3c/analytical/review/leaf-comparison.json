@@ -1,0 +1,84 @@
+{
+  "variants": [
+    {
+      "leaf_root_offset_mm": 16.6,
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 24913.921233835306,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "source_effective_free_span_mm": [
+        13.221450021546742,
+        14.297118577920463
+      ],
+      "C3_fixed_guided_strain_percent_at_0p4mm": [
+        0.4696498573108103,
+        0.5491779071608485
+      ],
+      "maximum_electronics_z_below_leaf_mm": 7.200000000000003,
+      "component_collisions_mm3": {},
+      "self_imposed_0p5pct_screen_only": false,
+      "fatigue_material_qualification": "UNKNOWN; not established by this screening model"
+    },
+    {
+      "leaf_root_offset_mm": 17.3,
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 24900.117233868434,
+      "bounds_mm": [
+        [
+          -7.5000001,
+          -7.000000100000001,
+          5.65
+        ],
+        [
+          106.5000001,
+          47.00000010000001,
+          30.5000001
+        ]
+      ],
+      "source_effective_free_span_mm": [
+        13.921450021546741,
+        14.997118577920462
+      ],
+      "C3_fixed_guided_strain_percent_at_0p4mm": [
+        0.4268306348118222,
+        0.49533873172780457
+      ],
+      "maximum_electronics_z_below_leaf_mm": 7.200000000000003,
+      "component_collisions_mm3": {},
+      "self_imposed_0p5pct_screen_only": true,
+      "fatigue_material_qualification": "UNKNOWN; not established by this screening model"
+    }
+  ],
+  "independent_button_parameter_example": {
+    "BOOT": {
+      "foot_bottom_z_mm": 19.6,
+      "stop_upper_z_mm": 30.5,
+      "collar_contact_stop_z_mm": 29.200000000000003
+    },
+    "RESET": {
+      "foot_bottom_z_mm": 19.85,
+      "stop_upper_z_mm": 30.5,
+      "collar_contact_stop_z_mm": 29.150000000000002
+    }
+  },
+  "example_is_not_a_safe_switch_overtravel_specification": true,
+  "final_candidate_source_hashes": {
+    "LICENSE": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc",
+    "interface_baseline.py": "593b3b699f498c7b1ea4990fd2cfb6a97bb3ea0452b3a37ce91b51958d66cd2a",
+    "enclosure.py": "a41b6828bf7f27abd51bfee8acc0dbd1ecfcd8f75fb57d5eb1e1457c21ce2d28",
+    "component_envelopes.py": "c9a5cbb269788abb5e5d78a698795f41af9e5836555287852236913822cf5519",
+    "current_carrier_bounds.json": "f2c6a695a9a85b48c21a4462c8047135ba0706540079a37d3ae9914372d4e5e7"
+  }
+}

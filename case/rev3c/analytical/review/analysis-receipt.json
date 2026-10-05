@@ -1,0 +1,1569 @@
+{
+  "status": "ANALYTICAL ONLY; physical/print/qualified switch bounds remain open",
+  "tool_versions": {
+    "build123d": "0.10.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "pillow": "12.3.0"
+  },
+  "original_source_sha256": {
+    "interface_baseline.py": "c5ca15aec72c429d78d5d4894f15078fb322e3282d7e5468ff64fbd1ca431ceb",
+    "enclosure.py": "a016dbfcab8d10214f3d6880a9fdc76e442041a8baee49cf65e8edc957415607",
+    "component_envelopes.py": "146a54c71920b71695831971c02fd93bb14e48ca4e6f9e1468e78b22f915c7ab"
+  },
+  "candidate_source_sha256": {
+    "LICENSE": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc",
+    "interface_baseline.py": "593b3b699f498c7b1ea4990fd2cfb6a97bb3ea0452b3a37ce91b51958d66cd2a",
+    "enclosure.py": "b1d3cc55a3fe38f56bcb3fdf0c4e137511fb84271debd990f8e93dd8bb626c3d",
+    "component_envelopes.py": "c9a5cbb269788abb5e5d78a698795f41af9e5836555287852236913822cf5519",
+    "current_carrier_bounds.json": "f2c6a695a9a85b48c21a4462c8047135ba0706540079a37d3ae9914372d4e5e7"
+  },
+  "checks": {
+    "base": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28171.030054,
+      "bounds_mm": [
+        [
+          -7.5,
+          -7.0,
+          -1.0
+        ],
+        [
+          106.5,
+          47.0,
+          9.4
+        ]
+      ]
+    },
+    "buttons": {
+      "c3": {
+        "BOOT": {
+          "foot_release_z_mm": 19.6,
+          "foot_at_stop_z_mm": 19.200000000000003,
+          "guide_radial_clearance_mm": 0.17,
+          "stop_collision_at_nominal_mm3": 0.0,
+          "stop_collision_0.02_beyond_mm3": 0.331224,
+          "correct_other_component_stop_collisions_mm3": {}
+        },
+        "RESET": {
+          "foot_release_z_mm": 19.6,
+          "foot_at_stop_z_mm": 19.200000000000003,
+          "guide_radial_clearance_mm": 0.17,
+          "stop_collision_at_nominal_mm3": 0.0,
+          "stop_collision_0.02_beyond_mm3": 0.331224,
+          "correct_other_component_stop_collisions_mm3": {}
+        }
+      },
+      "c6": {
+        "BOOT": {
+          "foot_release_z_mm": 18.630000000000003,
+          "foot_at_stop_z_mm": 18.270000000000003,
+          "guide_radial_clearance_mm": 0.17,
+          "stop_collision_at_nominal_mm3": 0.0,
+          "stop_collision_0.02_beyond_mm3": 0.331224,
+          "correct_other_component_stop_collisions_mm3": {}
+        },
+        "RESET": {
+          "foot_release_z_mm": 18.630000000000003,
+          "foot_at_stop_z_mm": 18.270000000000003,
+          "guide_radial_clearance_mm": 0.17,
+          "stop_collision_at_nominal_mm3": 0.0,
+          "stop_collision_0.02_beyond_mm3": 0.331224,
+          "correct_other_component_stop_collisions_mm3": {}
+        }
+      }
+    },
+    "wrong_lid": {
+      "shared_closure_interlock_present": false,
+      "result": "FAIL: no physical module key",
+      "C3_foot_at_stop_on_C6_mm3": {
+        "BOOT": {
+          "ufl_max": 0.084949,
+          "ceramic_screen": 0.0
+        },
+        "RESET": {
+          "ufl_max": 0.0,
+          "ceramic_screen": 0.0
+        }
+      },
+      "BOOT_to_C6_UFL_xy_distance_mm": 0.18975576407582812
+    },
+    "USB_parameterized_aperture": [
+      {
+        "module": "c3",
+        "stack_mm": 11.0,
+        "aperture_center_z_mm": 20.049999999999997,
+        "shell_screen_outside_aperture_mm3": 0
+      },
+      {
+        "module": "c6",
+        "stack_mm": 11.0,
+        "aperture_center_z_mm": 20.049999999999997,
+        "shell_screen_outside_aperture_mm3": 0
+      },
+      {
+        "module": "c3",
+        "stack_mm": 11.325,
+        "aperture_center_z_mm": 20.375,
+        "shell_screen_outside_aperture_mm3": 0
+      },
+      {
+        "module": "c6",
+        "stack_mm": 11.325,
+        "aperture_center_z_mm": 20.375,
+        "shell_screen_outside_aperture_mm3": 0
+      },
+      {
+        "module": "c3",
+        "stack_mm": 11.65,
+        "aperture_center_z_mm": 20.7,
+        "shell_screen_outside_aperture_mm3": 0
+      },
+      {
+        "module": "c6",
+        "stack_mm": 11.65,
+        "aperture_center_z_mm": 20.7,
+        "shell_screen_outside_aperture_mm3": 0
+      }
+    ]
+  },
+  "variant_checks": {
+    "c3_internal": {
+      "lid": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 24912.81831,
+        "bounds_mm": [
+          [
+            -7.5,
+            -7.0,
+            5.65
+          ],
+          [
+            106.5,
+            47.0,
+            30.5
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "stack_checks": [
+        {
+          "stack_mm": 11.0,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        },
+        {
+          "stack_mm": 11.325,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        },
+        {
+          "stack_mm": 11.65,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        }
+      ],
+      "lightguide_insertion": {
+        "WIFI": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ],
+        "AUX": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ],
+        "BUS": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ]
+      },
+      "FPC_max_body_collision_mm3": 0,
+      "FPC_rails_nominal_top_gap_mm": 0.15,
+      "FPC_max_xy_gap_mm": {
+        "left": 0.45,
+        "right": 0.45,
+        "entry": 0.2,
+        "back": 0.3
+      }
+    },
+    "c3_external": {
+      "lid": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 24853.160331,
+        "bounds_mm": [
+          [
+            -7.5,
+            -7.0,
+            5.65
+          ],
+          [
+            106.5,
+            47.0,
+            30.5
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "stack_checks": [
+        {
+          "stack_mm": 11.0,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        },
+        {
+          "stack_mm": 11.325,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        },
+        {
+          "stack_mm": 11.65,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        }
+      ],
+      "lightguide_insertion": {
+        "WIFI": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ],
+        "AUX": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ],
+        "BUS": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ]
+      },
+      "bulkhead_checks": {
+        "washer10.2ODx0.5_collision_mm3": 0,
+        "nut_AF8_circumscribed_x1.6_collision_mm3": 0,
+        "shell_front5.4OD_collision_mm3": 0,
+        "panel_land_thickness_mm": 1.5,
+        "nut_recess_radial_gap_to_washer_mm": 0.9,
+        "tool_access_opening_diameter_mm": 12.0,
+        "full_whip_length_mm": 120.0,
+        "full_whip_max_diameter_mm": 10.7
+      }
+    },
+    "c6_internal": {
+      "lid": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 24681.397782,
+        "bounds_mm": [
+          [
+            -7.5,
+            -7.0,
+            5.65
+          ],
+          [
+            106.5,
+            47.0,
+            30.5
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "stack_checks": [
+        {
+          "stack_mm": 11.0,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        },
+        {
+          "stack_mm": 11.325,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        },
+        {
+          "stack_mm": 11.65,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        }
+      ],
+      "lightguide_insertion": {
+        "WIFI": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ],
+        "AUX": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ],
+        "BUS": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ]
+      }
+    },
+    "c6_external": {
+      "lid": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 24855.86463,
+        "bounds_mm": [
+          [
+            -7.5,
+            -7.0,
+            5.65
+          ],
+          [
+            106.5,
+            47.0,
+            30.5
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "stack_checks": [
+        {
+          "stack_mm": 11.0,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        },
+        {
+          "stack_mm": 11.325,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        },
+        {
+          "stack_mm": 11.65,
+          "case_component_intersections_mm3": {},
+          "pipe_component_intersections_mm3": {
+            "WIFI": {
+              "C5": 0.792533,
+              "C2": 0.792533
+            },
+            "AUX": {
+              "C5": 0.792533
+            },
+            "BUS": {
+              "C3": 0.848726,
+              "C6": 0.848726
+            }
+          }
+        }
+      ],
+      "lightguide_insertion": {
+        "WIFI": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ],
+        "AUX": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ],
+        "BUS": [
+          {
+            "pose_translation_z_mm": -20,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -10,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -5,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": -2,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0
+          },
+          {
+            "pose_translation_z_mm": 0,
+            "outside_pressfit_collision_mm3": 0,
+            "total_collision_mm3": 0.316673
+          }
+        ]
+      },
+      "bulkhead_checks": {
+        "washer10.2ODx0.5_collision_mm3": 0,
+        "nut_AF8_circumscribed_x1.6_collision_mm3": 0,
+        "shell_front5.4OD_collision_mm3": 0,
+        "panel_land_thickness_mm": 1.5,
+        "nut_recess_radial_gap_to_washer_mm": 0.9,
+        "tool_access_opening_diameter_mm": 12.0,
+        "full_whip_length_mm": 120.0,
+        "full_whip_max_diameter_mm": 10.7
+      }
+    }
+  },
+  "stack_sweep": [
+    {
+      "module": "c3",
+      "stack_mm": 11.0,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.9,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": -0.5,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.0,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.7,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": -0.3,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.0,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.15,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.0,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.05,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.35,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.0,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 1.0,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.64,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.0,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.9,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.54,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.0,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.8,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.44,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.0,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.35,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.01,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.0,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.11,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.0,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.15,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.21,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.13,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.77,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": -0.37,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.13,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.57,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": -0.17,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.13,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.15,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.13,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.05,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.35,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.13,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.87,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.51,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.13,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.77,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.41,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.13,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.67,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.31,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.13,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.35,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.01,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.13,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.11,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.13,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.15,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.21,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.26,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.64,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": -0.24,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.26,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.44,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": -0.04,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.26,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.15,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.26,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.05,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.35,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.26,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.74,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.38,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.26,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.64,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.28,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.26,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.54,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.18,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.26,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.35,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.01,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.26,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.11,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.26,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.15,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.21,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.39,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.51,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": -0.11,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.39,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.31,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.09,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.39,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.15,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.39,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.05,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.35,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.39,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.61,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.25,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.39,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.51,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.15,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.39,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.41,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.05,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.39,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.35,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.01,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.39,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.11,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.39,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.15,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.21,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.52,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.38,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.02,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.52,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.18,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.22,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.52,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.15,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.52,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.05,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.35,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.52,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.48,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.12,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.52,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.38,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": -0.02,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.52,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.28,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.08,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.52,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.35,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.01,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.52,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.11,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.52,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.15,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.21,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.65,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.15,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.65,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.05,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.35,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.65,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.5,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.15,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c3",
+      "stack_mm": 11.65,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 1.7,
+      "released_gap_mm": 0.05,
+      "cap_stop_travel_mm": 0.4,
+      "geometric_depression_at_stop_mm": 0.35,
+      "conditional_nominal_make_travel_mm": 0.15,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.65,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.35,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.01,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.65,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.11,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.65,
+      "reach_mode": "original",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.15,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.21,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.65,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.43,
+      "released_gap_mm": 0.35,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.01,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": false,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.65,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.53,
+      "released_gap_mm": 0.25,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.11,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    },
+    {
+      "module": "c6",
+      "stack_mm": 11.65,
+      "reach_mode": "per_assembly",
+      "assumed_switch_height_mm": 0.63,
+      "released_gap_mm": 0.15,
+      "cap_stop_travel_mm": 0.36,
+      "geometric_depression_at_stop_mm": 0.21,
+      "conditional_nominal_make_travel_mm": 0.11,
+      "no_released_preload": true,
+      "conditional_make_by_stop": true,
+      "safe_overtravel": "UNKNOWN; no verified manufacturer maximum or force bound"
+    }
+  ],
+  "elapsed_seconds": 789.86
+}
