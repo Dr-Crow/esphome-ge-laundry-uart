@@ -10,6 +10,10 @@ The current [CI review receipt](../../ci/validation/INTEGRATED-CI-REVIEW.json) b
 
 Rev3C's [stencil review](../../pcb/rev3c/STENCIL-REVIEW.md) removes 26 unintended openings from each paste layer; existing SMT geometry and BOM/CPL are preserved. Rev2.1/2.2/3A/3B already use drillshape 0, and independent fresh native paste/CAM audits pass. Unplaced source-paste apertures remain for Rev2.2 U1 and Rev3A/3B/3C D8 and require assembler review. Rev3C’s October 5 quote now matches the corrected ZIP: USD 134.64 for five or 168.92 for ten assembled carriers; placement/stencil/process qualification remains open.
 
+## Newly verified legacy sourcing blockers
+
+Rev2.0 and Rev2.1 have three references whose purchasing codes conflict with their stated values: R18/R21 declare 220k but C17539 is 200k; R22 declares 4K7 but C17713 is 47k. Their intended electrical values require an explicit reviewed decision before ordering. Rev2.2 and current A/B/C use matching-value codes for these three references. The [catalog and numbered-net review](LEGACY-SOURCING.md) documents the conditional interface effects, stale historical BAV99 labels and recovered AP2205 identity. No resistor, symbol, footprint, population or connection is changed. Existing release gates stay blocked; source/BOM parity is separate from catalog correctness.
+
 ## Prior engineering checkpoints
 
 [Comparison](README.md) · [Exact source heads](HANDOFF.md) · [Pricing](PRICING.md) · [Finish plan](FINISH-PLAN.md)

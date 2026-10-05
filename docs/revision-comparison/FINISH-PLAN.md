@@ -28,6 +28,10 @@ A successful quote, native pass or compilation cannot close the electrical/physi
 - Supplier part stock, footprint-zero/pin1 and assembly process remain gates. Rev3A's quote is complete but J4 solder/retention is unapproved; Rev3B's exact module is unavailable. Rev1 lacks purchasing provenance; Rev2's 60 archived component codes need explicit source/identity/rotation review before a current supplier package can be declared.
 - Fork publication is pending the existing tool approval; no alternate route is used. PR creation/upstream submission, merge and orders are not performed. Hosted checks require the permitted published exact commit. Local native checks use the exact official OCI runtime/libraries; a Docker service is unavailable and fresh firmware builds have not run.
 
+## Legacy sourcing decision
+
+Before any Rev2.0/2.1 order, resolve the [confirmed resistor-code conflicts](LEGACY-SOURCING.md): declared 220k/4.7k versus historically coded 200k/47k. The later matching codes are documented as evidence, not selected replacements. Review historical diode pin labels and regulator aliases using physical numbered pins. Rev1's prose purchasing history can aid completion, but its unresolved values, packages, module identities and population choices still prevent a qualified supplier package. No gate or rule is waived.
+
 ## Physical qualification checklist
 
 1. Identify the actual appliance model and purchased module/buck revisions. Measure loaded source voltage/current allowance and relevant transient/pulse energy across the intended operating envelope.

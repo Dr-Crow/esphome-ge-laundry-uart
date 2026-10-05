@@ -1,5 +1,7 @@
 # PCB Rev 2.0
 
+> **Purchasing review required:** R18/R21 state 220k but C17539 is 200k; R22 states 4K7 but C17713 is 47k. Resolve the intended values before ordering. Native/source-export parity does not approve these catalog mappings. See the [legacy sourcing review](../../docs/revision-comparison/LEGACY-SOURCING.md). No parts or connections have been changed.
+
 Rev 2.0 reworked the board for automated assembly and adopted an ESP32-C3 module and pinout compatible with the project direction at the time.
 
 > [!WARNING]
