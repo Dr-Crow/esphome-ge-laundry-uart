@@ -149,7 +149,7 @@ output:
       inverted: false
     id: led2_output
 
-  # GPIO10: Output for Yellow LED, active high
+  # GPIO4: Output for Yellow LED, active high
   - platform: ledc
     pin:
       number: 4

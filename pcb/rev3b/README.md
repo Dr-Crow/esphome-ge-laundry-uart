@@ -68,7 +68,7 @@ The board also has two mounting points and three status LEDs on GPIO2, GPIO3, an
 | GEA2 | GPIO5 | GPIO10 |
 | GEA3 | GPIO21 | GPIO20 |
 
-Use the `seeed_xiao_esp32c3` ESPHome board setting and the bus/LED GPIO mapping in this package. The repository’s legacy firmware examples require a revision-matched configuration and do not establish Rev3B runtime qualification. No C6 profile is supported by this soldered-C3 carrier.
+Use the existing shared [C3 GEA2](../../firmware/shared-rev3c/c3-gea2.yaml) or [C3 GEA3](../../firmware/shared-rev3c/c3-gea3.yaml) profile with `seeed_xiao_esp32c3`, default JP1 1–2 and a device-specific name. Their UART and LED maps match this soldered C3 source independently of Rev3C. [The coverage review](../../firmware/BOARD-COVERAGE.md) records that proof; compilation does not establish Rev3B runtime qualification. No C6 profile is supported by this soldered-C3 carrier.
 
 ## Case and ordering status
 
