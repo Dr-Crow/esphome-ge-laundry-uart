@@ -1,0 +1,92 @@
+{
+  "physical_qualification": false,
+  "parameters": {
+    "module": "c6",
+    "antenna": "internal",
+    "cable": "startech_usb2cc2m",
+    "stack": 11.65,
+    "boot_height": 0.65,
+    "reset_height": 0.65,
+    "boot_stop": 0.36,
+    "reset_stop": 0.36,
+    "axis_y": 12.9175,
+    "axis_z": 20.45,
+    "shoulder_x": [
+      100.0,
+      101.0,
+      102.0,
+      104.0
+    ],
+    "datum_note": "Hypothetical sensitivity only; axis and shoulder are not authenticated native USB mating coordinates",
+    "clearance": 0.25,
+    "gap": 0.25,
+    "output": "/workspace/scratch/c9ec93994789/ge-rev3-refinement-work/cable-corridor/c6-upper.json"
+  },
+  "candidate": {
+    "manufacturer": "StarTech",
+    "mpn": "USB2CC2M",
+    "selected": false,
+    "body_width_max_mm": 12.2,
+    "body_height_max_mm": 6.5,
+    "body_length_max_mm": 22.7,
+    "exposed_shank_mm": [
+      6.55,
+      6.75
+    ],
+    "strain_relief_length_max_mm": 12.4,
+    "source_url": "https://sgcdn.startech.com/005329/media/sets/USB2CC2M/Diagram/USB2CC2M_Diagram.PDF",
+    "source_sha256": "eaa6da83f13039a1b3f5c2747a088e88aa3f16ba403156599f290608e5982f0f",
+    "limits": [
+      "Native mating plane, insertion depth and axis remain unverified.",
+      "Overmold corners, metal-shank cross-section and relief cross-section are not dimensioned.",
+      "Cable OD 4.7 mm is nominal only; no cable tolerance or bend limit is assigned."
+    ]
+  },
+  "source_sha256": {
+    "enclosure.py": "d93a9172817fc0a39d1685deb0da1548d72d350c19fe5a30c00a73117534e18b",
+    "interface_baseline.py": "28a9daacfb6538dc28f25813331c43a0f7403a44770eab2ad1ba44736d7c30bc",
+    "component_envelopes.py": "ded676844d3feb5ca825863bd36d3a6db62eab23e72f9164219eec8f65be3f13",
+    "current_carrier_bounds.json": "5e178afe3bf9caa14334abc751373917133d56c1c47828009323dd44805fa4e9",
+    "review_dimensions.py": "d94c6ce22027eb17b1a417ab82ad1a9f50257f50b8d589352f522dabdb15396c",
+    "review_usb_corridor.py": "791f66c9e8f520b23612c3b95a096ab8f4e75d5468a99ce04d1a6c8461b2855c"
+  },
+  "results": [
+    {
+      "shoulder_x_mm": 100.0,
+      "overmold_intersections_mm3": {
+        "base_mm3": 0.0,
+        "lid_mm3": 5.272140198935109
+      },
+      "conditional_body_clear": false
+    },
+    {
+      "shoulder_x_mm": 101.0,
+      "overmold_intersections_mm3": {
+        "base_mm3": 0.0,
+        "lid_mm3": 0.7922614979999868
+      },
+      "conditional_body_clear": false
+    },
+    {
+      "shoulder_x_mm": 102.0,
+      "overmold_intersections_mm3": {
+        "base_mm3": 0.0,
+        "lid_mm3": 0.0
+      },
+      "conditional_body_clear": true
+    },
+    {
+      "shoulder_x_mm": 104.0,
+      "overmold_intersections_mm3": {
+        "base_mm3": 0.0,
+        "lid_mm3": 0.0
+      },
+      "conditional_body_clear": true
+    }
+  ],
+  "limits": [
+    "Conditional rectangular overmold screen only; no insertion, metal-shank, finger, strain-relief bend, retention or printed-tolerance proof.",
+    "Supplied axis and shoulder coordinates are not authenticated by this program.",
+    "Switch heights/stops remain explicitly supplied review parameters; electrical make/overtravel are unverified."
+  ]
+}

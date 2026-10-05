@@ -42,6 +42,8 @@ The [Jinbeili drawing](https://www.jbl-ec.com/uploads/TS-1001S1_1.png), [Alps pa
 
 Both module archives identify native receptacle UBF31-0171. The retained GCT USB4105 body is a visual substitute, so its front face and axis height cannot establish native mating coordinates. With carrier +X pointing outward, define native mouth X as M, full metal-tip insertion as D and exposed shank as S. At full insertion, tip X is M−D and overmold shoulder X is M−D+S. The overmold then extends 22.7 mm, followed by up to 12.4 mm of relief. **Native M, D and axis Z are unresolved.** A parameterized corridor is useful, but a final cable-fit claim requires these coordinates or an actual seated-shoulder measurement.
 
+The [named cable corridor screen](review/cable-corridor/README.md) now accepts explicitly supplied shoulder and axis coordinates, with source-hashed conditional results. It shows why the C6 body corridor depends on those unknown coordinates; it does not adopt a support cut or turn the GCT substitute into a native datum.
+
 Disconnect the appliance RJ45 before powered USB. The case does not add USB backfeed isolation.
 
 ## Closure, light and antenna checks
