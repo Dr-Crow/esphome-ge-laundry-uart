@@ -43,7 +43,8 @@ def configure(stack_mm=11.0, reach_mode='original', usb_mode='original',
     """
     global STACK_MM, REACH_MODE, USB_CENTER_Z, SW_HEIGHT, CONTACT_GAP
     global LEAF_ROOT_OFFSET, BUTTON_TRAVEL
-    if not 11.0 <= stack_mm <= 11.65: raise ValueError('analysis range is 11.0–11.65 mm')
+    if not e.REVIEW_STACK_MIN <= stack_mm <= e.REVIEW_STACK_MAX:
+        raise ValueError('declared socket/assumed-spacer review range is 10.35–11.65 mm; fitted header bounds are unverified')
     if reach_mode not in ('original','per_assembly'): raise ValueError(reach_mode)
     if usb_mode not in ('original','per_assembly'): raise ValueError(usb_mode)
     STACK_MM,REACH_MODE=stack_mm,reach_mode

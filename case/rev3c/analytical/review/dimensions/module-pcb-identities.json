@@ -1,0 +1,642 @@
+[
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c3-v1.3-260116/202003511_XIAO ESP32C3_v1.3_SCH&PCB_260116/XIAO ESP32C3_v1.3.kicad_pcb",
+    "sha256": "a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db",
+    "board_thickness_mm": 1.6,
+    "footprints": [
+      {
+        "reference": "BOOT0",
+        "value": "TD-1183SN-A3N-D1R",
+        "footprint": "BUTTON_TD1183SA",
+        "xy_mm": [
+          139.5476,
+          100.5586
+        ],
+        "rotation_deg": 90.0
+      },
+      {
+        "reference": "J2",
+        "value": "DNP",
+        "footprint": "H7-HALF-HOLE-2.54",
+        "xy_mm": [
+          148.4376,
+          97.3836
+        ],
+        "rotation_deg": -90.0
+      },
+      {
+        "reference": "U2",
+        "value": "TLV75733PDBVR",
+        "footprint": "SOT-25",
+        "xy_mm": [
+          148.1836,
+          100.5586
+        ],
+        "rotation_deg": 90.0
+      },
+      {
+        "reference": "RST0",
+        "value": "TD-1183SN-A3N-D1R",
+        "footprint": "BUTTON_TD1183SA",
+        "xy_mm": [
+          139.5476,
+          109.4486
+        ],
+        "rotation_deg": -90.0
+      },
+      {
+        "reference": "J1",
+        "value": "DNP",
+        "footprint": "H7-HALF-HOLE-2.54",
+        "xy_mm": [
+          148.4376,
+          112.6236
+        ],
+        "rotation_deg": 90.0
+      },
+      {
+        "reference": "USB0",
+        "value": "UBF31-0171",
+        "footprint": "USB2.0-TYPE-C",
+        "xy_mm": [
+          153.1366,
+          105.0036
+        ],
+        "rotation_deg": 180.0,
+        "graphical_items": [
+          {
+            "layer": "In1.Cu",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "In1.Cu",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "In1.Cu",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "In1.Cu",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              153.1366,
+              100.5036
+            ],
+            "end_mm": [
+              160.4866,
+              100.5036
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              153.1366,
+              109.5036
+            ],
+            "end_mm": [
+              153.1366,
+              100.5036
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              160.4866,
+              100.5036
+            ],
+            "end_mm": [
+              160.4866,
+              109.5036
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              160.4866,
+              109.5036
+            ],
+            "end_mm": [
+              153.1366,
+              109.5036
+            ]
+          },
+          {
+            "layer": "In2.Cu",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "In2.Cu",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "In2.Cu",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "In2.Cu",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "F.Paste",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "F.Paste",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "F.Paste",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "F.Paste",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              153.0366,
+              105.0286
+            ],
+            "end_mm": [
+              153.0366,
+              104.9786
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              153.0616,
+              105.0036
+            ],
+            "end_mm": [
+              153.0116,
+              105.0036
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-260114/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/XIAO ESP32 C6.kicad_pcb",
+    "sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027",
+    "board_thickness_mm": 1.6,
+    "footprints": [
+      {
+        "reference": "K2",
+        "value": "SKTAAAE010",
+        "footprint": "SW4-SMD-2.8-2.6X1.6X0.53MM",
+        "xy_mm": [
+          117.856,
+          79.4512
+        ],
+        "rotation_deg": -90.0
+      },
+      {
+        "reference": "K1",
+        "value": "SKTAAAE010",
+        "footprint": "SW4-SMD-2.8-2.6X1.6X0.53MM",
+        "xy_mm": [
+          117.856,
+          66.294
+        ],
+        "rotation_deg": 90.0
+      },
+      {
+        "reference": "USB1",
+        "value": "USB2.0 Type C",
+        "footprint": "USB2.0-TYPE-C",
+        "xy_mm": [
+          113.1314,
+          72.88
+        ],
+        "rotation_deg": 180.0,
+        "graphical_items": [
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              115.0364,
+              68.38
+            ],
+            "end_mm": [
+              116.6714,
+              68.38
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              116.6714,
+              77.38
+            ],
+            "end_mm": [
+              114.9094,
+              77.38
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              119.1004,
+              68.38
+            ],
+            "end_mm": [
+              120.4814,
+              68.38
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              120.4814,
+              68.38
+            ],
+            "end_mm": [
+              120.4814,
+              77.38
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              120.4814,
+              77.38
+            ],
+            "end_mm": [
+              119.1004,
+              77.38
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              113.0314,
+              72.905
+            ],
+            "end_mm": [
+              113.0314,
+              72.855
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              113.0564,
+              72.88
+            ],
+            "end_mm": [
+              113.0064,
+              72.88
+            ]
+          },
+          {
+            "layer": "F.Courtyard",
+            "start_mm": [
+              120.5314,
+              77.48
+            ],
+            "end_mm": [
+              113.1314,
+              68.28
+            ]
+          },
+          {
+            "layer": "F.Fab",
+            "start_mm": [
+              120.1164,
+              66.63
+            ],
+            "end_mm": [
+              120.1164,
+              79.13
+            ]
+          },
+          {
+            "layer": "F.Fab",
+            "start_mm": [
+              120.1164,
+              79.13
+            ],
+            "end_mm": [
+              121.7674,
+              79.13
+            ]
+          },
+          {
+            "layer": "F.Fab",
+            "start_mm": [
+              121.7674,
+              66.63
+            ],
+            "end_mm": [
+              120.1164,
+              66.63
+            ]
+          },
+          {
+            "layer": "F.Fab",
+            "start_mm": [
+              121.7674,
+              79.13
+            ],
+            "end_mm": [
+              121.7674,
+              66.63
+            ]
+          },
+          {
+            "layer": "F.Fab",
+            "start_mm": [
+              120.472,
+              77.3758
+            ],
+            "end_mm": [
+              113.1314,
+              68.3842
+            ]
+          }
+        ]
+      },
+      {
+        "reference": "U2",
+        "value": "~",
+        "footprint": "MOUDLE14P-XIAO-HALF-HOLE",
+        "xy_mm": [
+          108.3977,
+          72.876
+        ],
+        "rotation_deg": 0.0
+      }
+    ]
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-24028/XIAO ESP32 C6.kicad_pcb",
+    "sha256": "9d1c00d4455f42fe9fafa9e3d45e8edfbe862fc001a3e67e1f35b29044766a6b",
+    "board_thickness_mm": 1.6,
+    "footprints": [
+      {
+        "reference": "K2",
+        "value": "SKTAAAE010",
+        "footprint": "SW4-SMD-2.8-2.6X1.6X0.53MM",
+        "xy_mm": [
+          117.856,
+          79.4512
+        ],
+        "rotation_deg": -90.0
+      },
+      {
+        "reference": "K1",
+        "value": "SKTAAAE010",
+        "footprint": "SW4-SMD-2.8-2.6X1.6X0.53MM",
+        "xy_mm": [
+          117.856,
+          66.294
+        ],
+        "rotation_deg": 90.0
+      },
+      {
+        "reference": "USB1",
+        "value": "USB2.0 Type C",
+        "footprint": "USB2.0-TYPE-C",
+        "xy_mm": [
+          113.1314,
+          72.88
+        ],
+        "rotation_deg": 180.0,
+        "graphical_items": [
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              115.0364,
+              68.38
+            ],
+            "end_mm": [
+              116.6714,
+              68.38
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              116.6714,
+              77.38
+            ],
+            "end_mm": [
+              114.9094,
+              77.38
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              119.1004,
+              68.38
+            ],
+            "end_mm": [
+              120.4814,
+              68.38
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              120.4814,
+              68.38
+            ],
+            "end_mm": [
+              120.4814,
+              77.38
+            ]
+          },
+          {
+            "layer": "F.Silkscreen",
+            "start_mm": [
+              120.4814,
+              77.38
+            ],
+            "end_mm": [
+              119.1004,
+              77.38
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              113.0314,
+              72.905
+            ],
+            "end_mm": [
+              113.0314,
+              72.855
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              113.0564,
+              72.88
+            ],
+            "end_mm": [
+              113.0064,
+              72.88
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              120.1164,
+              66.63
+            ],
+            "end_mm": [
+              120.1164,
+              79.13
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              120.1164,
+              79.13
+            ],
+            "end_mm": [
+              121.7674,
+              79.13
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              121.7674,
+              66.63
+            ],
+            "end_mm": [
+              120.1164,
+              66.63
+            ]
+          },
+          {
+            "layer": "User.Comments",
+            "start_mm": [
+              121.7674,
+              79.13
+            ],
+            "end_mm": [
+              121.7674,
+              66.63
+            ]
+          },
+          {
+            "layer": "F.Courtyard",
+            "start_mm": [
+              120.5314,
+              77.48
+            ],
+            "end_mm": [
+              113.1314,
+              68.28
+            ]
+          }
+        ]
+      },
+      {
+        "reference": "U2",
+        "value": "~",
+        "footprint": "MOUDLE14P-XIAO-HALF-HOLE",
+        "xy_mm": [
+          108.3977,
+          72.876
+        ],
+        "rotation_deg": 0.0
+      }
+    ]
+  }
+]

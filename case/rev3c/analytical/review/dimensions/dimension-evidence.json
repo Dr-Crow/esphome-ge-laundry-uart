@@ -1,0 +1,300 @@
+{
+  "reviewed_utc": "2026-10-05T16:21:58.084980+00:00",
+  "baseline_commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+  "classification": "Primary drawing and vendor source review. No installed lot measurement, no selected male header or cable, no repository mutation.",
+  "socket": {
+    "selected_mpn": "HCTL PM254-1-07-Z-8.5",
+    "lcsc": "C2897370",
+    "drawing": "PM254-1-N-Z-8.5-XX RevA, N7",
+    "body_length_mm": {
+      "nominal": 18.18,
+      "tolerance": 0.3,
+      "min": 17.88,
+      "max": 18.48
+    },
+    "body_width_mm": {
+      "nominal": 2.5,
+      "tolerance": 0.15,
+      "min": 2.35,
+      "max": 2.65
+    },
+    "body_height_above_seat_mm": {
+      "nominal": 8.5,
+      "tolerance": 0.15,
+      "min": 8.35,
+      "max": 8.65
+    },
+    "tail_below_body_seat_mm": {
+      "nominal": 3.2,
+      "tolerance": 0.25,
+      "min": 2.95,
+      "max": 3.45
+    },
+    "tail_section_mm": {
+      "nominal": [
+        0.64,
+        0.4
+      ],
+      "general_tolerance_each": 0.2,
+      "bound_if_general_applies": [
+        [
+          0.44,
+          0.84
+        ],
+        [
+          0.2,
+          0.6
+        ]
+      ]
+    },
+    "pitch_mm": {
+      "nominal": 2.54,
+      "explicit_tolerance": 0.1
+    },
+    "first_last_center_span_mm": {
+      "nominal": 15.24,
+      "explicit_tolerance": 0.2
+    },
+    "receiving_mouth_contact_start_cavity_depth_mating_pin_range_insertion_stop_contact_wipe_retention_force": "UNSPECIFIED on authenticated drawing",
+    "socket_seating_solder_lift_mm": "UNMEASURED; extra installed stack term, not in part tolerance",
+    "nominal_1p6_carrier_tail_protrusion_mm": {
+      "min": 1.35,
+      "max": 1.85,
+      "includes_solder": false
+    },
+    "body_bounds_carrier_mm_max": [
+      {
+        "xmin": 78.65,
+        "xmax": 97.13,
+        "ymin": 3.9725,
+        "ymax": 6.6225
+      },
+      {
+        "xmin": 78.65,
+        "xmax": 97.13,
+        "ymin": 19.2125,
+        "ymax": 21.8625
+      }
+    ],
+    "body_to_pin_registration_and_assembly_position_tolerance": "UNSPECIFIED; max symmetric carrier-coordinate screens assume nominal centred registration"
+  },
+  "retail_modules": [
+    {
+      "family": "C3",
+      "preheadered_sku": "102010633",
+      "base_bare_sku": "113991054",
+      "published_preheader_outline_mm": [
+        21,
+        17.8
+      ],
+      "factory_header_mpn_tolerance_drawing": "UNRESOLVED",
+      "retail_lot_pcb_revision": "UNRESOLVED"
+    },
+    {
+      "family": "C6",
+      "preheadered_sku": "102010636",
+      "base_bare_sku": "113991254",
+      "published_preheader_outline_mm": [
+        21,
+        17.8
+      ],
+      "factory_header_mpn_tolerance_drawing": "UNRESOLVED",
+      "retail_lot_pcb_revision": "UNRESOLVED"
+    }
+  ],
+  "male_header_candidates": [
+    {
+      "mpn": "Seeed 102010490",
+      "classification": "Loose XIAO-specific vendor accessory; not authenticated as fitted factory header",
+      "published_dimensions_mm": [
+        15.84,
+        11.57,
+        2.43
+      ],
+      "pitch_mm": 2.54,
+      "spacer_height_pin_section_shank_lengths_tolerances": "UNSPECIFIED; do not scale gallery photo"
+    },
+    {
+      "mpn": "Samtec TSW-107-07-G-S",
+      "classification": "Nominal-interface factory-assembly candidate only; not selected, not fitted retail header",
+      "pins": 7,
+      "pitch_mm": 2.54,
+      "mating_post_mm": {
+        "nominal": 5.84,
+        "tolerance": 0.2
+      },
+      "pin_section_mm": {
+        "nominal": 0.64,
+        "reference_only": true
+      },
+      "spacer_mm": {
+        "nominal": 2.54,
+        "reference_only": true
+      },
+      "body_length_mm": {
+        "nominal": 17.78,
+        "tolerance": 0.38
+      },
+      "oal_mm": {
+        "nominal": 10.92,
+        "product_page_value": true
+      },
+      "solder_tail_mm": {
+        "nominal": 2.54,
+        "catalog_value": true
+      },
+      "body_spacer_production_tolerance": "UNRESOLVED because REF drawing size; do not infer \u00b10.13"
+    },
+    {
+      "mpn": "Wurth 61300711121",
+      "classification": "Nominal-interface factory-assembly candidate only; not selected, not fitted retail header",
+      "pins": 7,
+      "pitch_mm": {
+        "nominal": 2.54,
+        "tolerance": 0.05
+      },
+      "mating_post_mm": {
+        "nominal": 6.0,
+        "tolerance": 0.2
+      },
+      "solder_tail_mm": {
+        "nominal": 3.0,
+        "tolerance": 0.2
+      },
+      "oal_mm": {
+        "nominal": 11.54,
+        "tolerance": 0.2
+      },
+      "pin_section_mm": {
+        "nominal": 0.64,
+        "tolerance": 0.15
+      },
+      "body_length_mm": {
+        "nominal": 17.78,
+        "tolerance": 0.35
+      },
+      "body_width_mm": {
+        "nominal": 2.54,
+        "tolerance": 0.15
+      },
+      "spacer_inferred_by_subtraction_mm": {
+        "nominal": 2.54,
+        "independent_worst_case_min": 1.94,
+        "independent_worst_case_max": 3.14,
+        "not_directly_dimensioned": true
+      },
+      "socket_plus_inferred_spacer_stack_mm_before_seating_lift": {
+        "nominal": 11.04,
+        "min": 10.29,
+        "max": 11.79
+      }
+    }
+  ],
+  "switches": {
+    "c3": {
+      "source_value": "TD-1183SN-A3N-D1R",
+      "source_footprint_alias": "BUTTON_TD1183SA",
+      "verified_complete_suffix_supplier_drawing": false,
+      "manufacturer_authored_family": "DEALON TD-1183S-XXH-XX drawing2015/5/19 viaLCSC",
+      "conditional_family_A_height_mm": {
+        "nominal": 1.5,
+        "general_tolerance": 0.1
+      },
+      "conditional_family_B_height_mm": {
+        "nominal": 1.7,
+        "general_tolerance": 0.1
+      },
+      "nominal_family_travel_mm": 0.15,
+      "allowed_overtravel_electrical_make_force_complete_suffix": "UNRESOLVED"
+    },
+    "c6": {
+      "archive24028_schematic": "ALPSALPINE SKTAAAE010 SKU311021459",
+      "archive260114_schematic": "JINBEILI TS-1001S SKU311021801",
+      "archive260114_pcb_value": "SKTAAAE010",
+      "retail_fitted_identity": "UNRESOLVED due archive conflict and unspecified retail lot",
+      "jbl_reference_height_mm": {
+        "nominal": 0.55,
+        "explicit_tolerance": 0.1
+      },
+      "jbl_reference_body_mm": {
+        "nominal": [
+          2.6,
+          1.6
+        ],
+        "tolerance": [
+          0.15,
+          0.15
+        ]
+      },
+      "jbl_reference_actuator_diameter_mm": {
+        "nominal": 0.75,
+        "reference_only": true
+      },
+      "jbl_allowed_overtravel_and_travel_mm": "UNSPECIFIED",
+      "alps_reference_height_mm": {
+        "nominal": 0.53,
+        "explicit_tolerance": 0.1
+      },
+      "alps_nominal_travel_mm": 0.11
+    }
+  },
+  "usb": {
+    "c3_archive_value": "UBF31-0171",
+    "c6_archive_manufacturer": "MTCONN",
+    "c6_archive_mpn": "UBF31-0171",
+    "c6_internal_sku": "320011358",
+    "actual_native_receptacle_shell_mating_plane_axisZ_depth_bound": "UNRESOLVED",
+    "retained_GCT_USB4105_STEP": "generic visual substitute; cannot authenticate native mating plane"
+  },
+  "cable_candidate": {
+    "mpn": "StarTech USB2CC2M",
+    "classification": "Named commercially available engineering candidate only; not purchased or selected",
+    "drawing_upload_date": "2022-03-03",
+    "exposed_shank_tip_to_overmold_front_mm": {
+      "nominal": 6.65,
+      "tolerance": 0.1,
+      "min": 6.55,
+      "max": 6.75
+    },
+    "overmold_length_mm": {
+      "nominal": 22.5,
+      "tolerance": 0.2,
+      "min": 22.3,
+      "max": 22.7
+    },
+    "overmold_width_mm": {
+      "nominal": 12.0,
+      "tolerance": 0.2,
+      "max": 12.2
+    },
+    "overmold_height_mm": {
+      "nominal": 6.3,
+      "tolerance": 0.2,
+      "max": 6.5
+    },
+    "strain_relief_length_mm": {
+      "nominal": 12.2,
+      "tolerance": 0.2,
+      "max": 12.4
+    },
+    "cable_od_mm": {
+      "nominal": 4.7,
+      "tolerance": "UNSPECIFIED"
+    },
+    "cable_length_mm": {
+      "nominal": 2000,
+      "tolerance": 50
+    },
+    "plug_shell_section_and_overmold_corner_radius": "UNSPECIFIED by candidate drawing",
+    "position_equations_plusX_outward": {
+      "final_metal_tip_x": "native_mating_plane_x - actual_insertion_depth",
+      "overmold_front_x": "native_mating_plane_x - actual_insertion_depth + exposed_shank",
+      "overmold_back_x": "overmold_front_x + overmold_length",
+      "relief_back_x": "overmold_back_x + strain_relief_length"
+    },
+    "candidate_max_cross_section_gauge_mm": [
+      12.2,
+      6.5
+    ]
+  }
+}

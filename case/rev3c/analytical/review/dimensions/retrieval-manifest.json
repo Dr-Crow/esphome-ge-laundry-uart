@@ -1,0 +1,189 @@
+[
+  {
+    "filename": "startech-usb2cc2m-drawing.pdf",
+    "url": "https://sgcdn.startech.com/005329/media/sets/USB2CC2M/Diagram/USB2CC2M_Diagram.PDF",
+    "status": 200,
+    "bytes": 655395,
+    "sha256": "eaa6da83f13039a1b3f5c2747a088e88aa3f16ba403156599f290608e5982f0f",
+    "retrieved_utc": "2026-10-05T16:07:17.719241+00:00",
+    "validated_pdf_header": true
+  },
+  {
+    "filename": "samtec-tsw-drawing.pdf",
+    "url": "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf",
+    "status": 200,
+    "bytes": 1075572,
+    "sha256": "047ecedcc921fb0aed7127f08b9ba0fc1200d92d33fb7ded1b311d0ed8f42063",
+    "retrieved_utc": "2026-10-05T16:08:07.670352+00:00",
+    "validated_pdf_header": true
+  },
+  {
+    "filename": "hctl-pm254-original-response.html",
+    "url": "https://datasheet.lcsc.com/lcsc/2306091006_HCTL-PM254-1-07-Z-8-5_C2897370.pdf",
+    "status": 200,
+    "bytes": 9397,
+    "sha256": "b73bbd46603c550740f0eb542a8ea70f7d833fd5b9fd1df584fd95d0bfa80ae1",
+    "retrieved_utc": "2026-10-05T16:08:17.843982+00:00",
+    "usable_as_drawing": false,
+    "validation": "HTTP200 response was HTML, not a PDF; rejected as mechanical evidence"
+  },
+  {
+    "filename": "dealon-td1183-family.pdf",
+    "url": "https://atta.szlcsc.com/upload/public/pdf/source/20220901/234954DA4D26CA925E3AFEBBCE0B4B64.pdf",
+    "status": 200,
+    "bytes": 305779,
+    "sha256": "28a50fe01a47304e6daeca1d327fb9f7dc24bc51089cb445ec47b6b4cddb8b89",
+    "retrieved_utc": "2026-10-05T16:08:23.426673+00:00",
+    "validated_pdf_header": true
+  },
+  {
+    "filename": "jbl-ts1001s-page.html",
+    "url": "https://www.jbl-ec.com/ts-1001s-2-61-6mm-low-profile-tactile-switch-surface-mount-product/",
+    "status": 200,
+    "bytes": 80487,
+    "sha256": "635080a6a2a3020dc5c15eded3356ce8bdf8aa6b048e25442f4d2f2be579f4dd",
+    "retrieved_utc": "2026-10-05T16:08:33.548544+00:00"
+  },
+  {
+    "filename": "hctl-pm254-manufacturer.pdf",
+    "url": "https://www.hctldz.com/static/upload/2026/01/28/202601285507.pdf",
+    "status": 200,
+    "bytes": 358300,
+    "sha256": "4a744de94e980a7cfa277e8befe0b7fbebd95f388b81a9fbf933d5189d33c7f9",
+    "retrieved_utc": "2026-10-05T16:09:17.651810+00:00",
+    "validated_pdf_header": true
+  },
+  {
+    "filename": "hctl-pm254-manufacturer-page.html",
+    "url": "https://www.hctldz.com/product-5-8/550.html",
+    "status": 200,
+    "bytes": 86931,
+    "sha256": "7bab782c570d8ed76521a27b56bfd6cfafc4f06be6cb328d522671e1d76c5121",
+    "retrieved_utc": "2026-10-05T16:09:26.567016+00:00"
+  },
+  {
+    "filename": "jbl-ts1001s-drawing.png",
+    "url": "https://www.jbl-ec.com/uploads/TS-1001S1_1.png",
+    "bytes": 204251,
+    "sha256": "c4333ff3c250c03dc00fbc293f628df8e1385c6b3ef49b088b039f0d62ba6994",
+    "retrieved_utc": "2026-10-05T16:09:59.946582+00:00"
+  },
+  {
+    "filename": "seeed-preheader-c3-102010633.pdf",
+    "url": "https://files.seeedstudio.com/Bazaar/product_pdf/102010633.pdf",
+    "status": 200,
+    "bytes": 1497047,
+    "sha256": "eb9d99adef54fe8fba132a0de9ba12c28ad3a9715b8ce79bfd32a7366b1344ee",
+    "retrieved_utc": "2026-10-05T16:10:56.950601+00:00",
+    "validated_pdf_header": true
+  },
+  {
+    "filename": "seeed-preheader-c6-102010636.pdf",
+    "url": "https://files.seeedstudio.com/Bazaar/product_pdf/102010636.pdf",
+    "status": 200,
+    "bytes": 1618268,
+    "sha256": "88d3bd182facc166603ad2c6acd6164c88b996e082762ba499d287e33915183d",
+    "retrieved_utc": "2026-10-05T16:11:01.777930+00:00",
+    "validated_pdf_header": true
+  },
+  {
+    "filename": "wurth-61300711121.pdf",
+    "url": "https://www.we-online.com/components/products/datasheet/61300711121.pdf",
+    "status": 200,
+    "bytes": 384028,
+    "sha256": "de4a8b11ee5fd57d8e9f7d611248d9eac45c4325b9c754d8e06d28275e4dd52f",
+    "retrieved_utc": "2026-10-05T16:11:28.721869+00:00",
+    "validated_pdf_header": true
+  },
+  {
+    "filename": "seeed-102010490-header.pdf",
+    "url": "https://files.seeedstudio.com/Bazaar/product_pdf/102010490.pdf",
+    "status": 200,
+    "bytes": 459410,
+    "sha256": "41481ee38d79f633414695183410f2ac28c5efab67098dce64bec2c4980ca866",
+    "retrieved_utc": "2026-10-05T16:12:34.019338+00:00",
+    "validated_pdf_header": true
+  },
+  {
+    "filename": "dealon-official-home.html",
+    "url": "https://www.moralityele.com/",
+    "status": 200,
+    "bytes": 117659,
+    "sha256": "816787a68d6464e4d9c2bc6031fea8e5916b7cbe5c271931dc7b5927f1413abc",
+    "retrieved_utc": "2026-10-05T16:16:34.126207+00:00"
+  },
+  {
+    "filename": "mtconn-official-home.html",
+    "url": "https://www.mtconntech.com/",
+    "status": 200,
+    "bytes": 127438,
+    "sha256": "7a14899ef72381e1ba0b1ca308a6c92f6ec8ad6238873ea78965d719cf5abc69",
+    "retrieved_utc": "2026-10-05T16:16:45.983106+00:00"
+  },
+  {
+    "filename": "dealon-products.html",
+    "url": "https://www.moralityele.com/deproduct.html",
+    "status": 200,
+    "bytes": 55217,
+    "sha256": "f38ca393aa8c66c6c0652f676bf4f08724f99eda4df70706d1e0209a48994b70",
+    "retrieved_utc": "2026-10-05T16:17:42.988420+00:00"
+  },
+  {
+    "filename": "dealon-search.js",
+    "url": "https://www.moralityele.com/Static/Home/moralityele/js/search.js",
+    "status": 200,
+    "bytes": 785,
+    "sha256": "ac17dfe1543bfaaa0743f94263b89c11f534fe5fcb93a4ec249515bbb74802a2",
+    "retrieved_utc": "2026-10-05T16:17:41.550681+00:00"
+  },
+  {
+    "filename": "mtconn-usb-catalog.html",
+    "url": "https://www.mtconntech.com/usb-connector/",
+    "status": 200,
+    "bytes": 81147,
+    "sha256": "b9b4f09ab399303ffa97944e019f512df1a617375d32df72c50bb9c81d31c6bb",
+    "retrieved_utc": "2026-10-05T16:17:41.092478+00:00"
+  },
+  {
+    "filename": "dealon-search-1183.html",
+    "url": "https://www.moralityele.com/search.html?keyword=1183",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "filename": "dealon-search-1183sn.html",
+    "url": "https://www.moralityele.com/search.html?keyword=TD-1183SN",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "filename": "mtconn-search-ubf31.html",
+    "url": "https://www.mtconntech.com/index.php/Search/Index/index.html?q=UBF31-0171",
+    "status": 200,
+    "bytes": 53310,
+    "sha256": "51b4b4a7851030d69dd4fcf68f125204d6b9c0f5b3c8e114637f68a9b1ec58cb",
+    "retrieved_utc": "2026-10-05T16:18:19.811222+00:00"
+  },
+  {
+    "filename": "dealon-tactile-catalog.html",
+    "url": "https://www.moralityele.com/deprolist/2930.html",
+    "status": 200,
+    "bytes": 54224,
+    "sha256": "9cad88d0e5ea7854eb22bf4b1f35af54c62542f8e967de63ad8a16d86d537090",
+    "retrieved_utc": "2026-10-05T16:20:22.874919+00:00"
+  },
+  {
+    "filename": "dealon-tactile-feature.html",
+    "url": "https://www.moralityele.com/deproparam/24.html",
+    "status": 200,
+    "bytes": 53561,
+    "sha256": "8620622bd09505c4de6d7fc482fd2dcae9921406b0a58004b09e33bafc8eddfe",
+    "retrieved_utc": "2026-10-05T16:20:22.926321+00:00"
+  },
+  {
+    "filename": "dealon-tactile-catalog-page2.html",
+    "url": "https://www.moralityele.com/deprolist/2930/p/2.html",
+    "status": 200,
+    "bytes": 54199,
+    "sha256": "17ffb6088694e9870090705b1831e85aee0c7aaedadf17a964fdb61e88385c1c",
+    "retrieved_utc": "2026-10-05T16:22:38.255122+00:00"
+  }
+]

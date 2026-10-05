@@ -1,5 +1,5 @@
 {
-  "source_pcb_sha256": "4fba3feea4161f7e6bdfbd7f20ac677a485948fac540d7bda1c246a451c4bab9",
+  "source_pcb_sha256": "6c76a83a6cb1af65f7e8a70d77ad9ddd5911f9ab3843b6ca2c365eea0115904b",
   "records": [
     {
       "reference": "D2",
@@ -186,8 +186,8 @@
     },
     {
       "reference": "D14",
-      "MPN": "MBR0540-TP",
-      "LCSC": null,
+      "MPN": "STPS140Z",
+      "LCSC": "C155662",
       "footprint": "Diode_SMD:D_SOD-123",
       "position": [
         73.0,
@@ -206,7 +206,14 @@
       "height_assumed_mm": 3.0,
       "models": [
         "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
-      ]
+      ],
+      "manufacturer_package_max_mm": [
+        3.95,
+        1.7,
+        1.45
+      ],
+      "manufacturer_source": "https://www.st.com/resource/en/datasheet/stps140z.pdf",
+      "bound_note": "Original courtyard/3mm screening box retained; it contains the published maximum package plus an illustrative0.15mm seating allowance, without claiming a measured solder bound."
     },
     {
       "reference": "D11",
@@ -1176,8 +1183,8 @@
     },
     {
       "reference": "D15",
-      "MPN": "MBR0540-TP",
-      "LCSC": null,
+      "MPN": "STPS140Z",
+      "LCSC": "C155662",
       "footprint": "Diode_SMD:D_SOD-123",
       "position": [
         73.0,
@@ -1196,7 +1203,14 @@
       "height_assumed_mm": 3.0,
       "models": [
         "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
-      ]
+      ],
+      "manufacturer_package_max_mm": [
+        3.95,
+        1.7,
+        1.45
+      ],
+      "manufacturer_source": "https://www.st.com/resource/en/datasheet/stps140z.pdf",
+      "bound_note": "Original courtyard/3mm screening box retained; it contains the published maximum package plus an illustrative0.15mm seating allowance, without claiming a measured solder bound."
     },
     {
       "reference": "R2",

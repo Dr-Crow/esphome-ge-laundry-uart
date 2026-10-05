@@ -1,0 +1,153 @@
+[
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c3-v1.3-260116/202003511_XIAO ESP32C3_v1.3_SCH&PCB_260116/02 XIAO ESP32-C3.kicad_sch",
+    "file_sha256": "f2d4a788fda969994542680a6be022f7ac8e0bb94338607480e1d97f6c5c0c89",
+    "reference": "USB0",
+    "properties": {
+      "Reference": "USB0",
+      "Value": "UBF31-0171",
+      "Footprint": "XIAO ESP32C3_v1.3:USB2.0-TYPE-C",
+      "Datasheet": "",
+      "Description": ""
+    }
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c3-v1.3-260116/202003511_XIAO ESP32C3_v1.3_SCH&PCB_260116/02 XIAO ESP32-C3.kicad_sch",
+    "file_sha256": "f2d4a788fda969994542680a6be022f7ac8e0bb94338607480e1d97f6c5c0c89",
+    "reference": "BOOT0",
+    "properties": {
+      "Reference": "BOOT0",
+      "Value": "TD-1183SN-A3N-D1R",
+      "Footprint": "XIAO ESP32C3_v1.3:BUTTON_TD1183SA",
+      "Datasheet": "",
+      "Description": ""
+    }
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c3-v1.3-260116/202003511_XIAO ESP32C3_v1.3_SCH&PCB_260116/02 XIAO ESP32-C3.kicad_sch",
+    "file_sha256": "f2d4a788fda969994542680a6be022f7ac8e0bb94338607480e1d97f6c5c0c89",
+    "reference": "RST0",
+    "properties": {
+      "Reference": "RST0",
+      "Value": "TD-1183SN-A3N-D1R",
+      "Footprint": "XIAO ESP32C3_v1.3:BUTTON_TD1183SA",
+      "Datasheet": "",
+      "Description": ""
+    }
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-260114/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/04 ESP32 C6.kicad_sch",
+    "file_sha256": "9adb7444f9657442b9f4dbc63f2d0f50628eb225e1cf09e40970d2d1a49efc88",
+    "reference": "K1",
+    "properties": {
+      "Reference": "K1",
+      "Value": "TS-1001S",
+      "Footprint": "Switch:SW4-SMD-2.8-2.6X1.6X0.53MM",
+      "Datasheet": "",
+      "Description": "SMD Top Button 163gf:4P-2.6*1.6*0.53mm",
+      "Manufacturer": "JINBEILI",
+      "MPN": "TS-1001S",
+      "SKU": "311021801",
+      "Part Type": "Button",
+      "Rating": "",
+      "Status": "",
+      "Temperature": "-20\u00b0C to 70\u00b0C",
+      "Priority": ""
+    }
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-260114/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/04 ESP32 C6.kicad_sch",
+    "file_sha256": "9adb7444f9657442b9f4dbc63f2d0f50628eb225e1cf09e40970d2d1a49efc88",
+    "reference": "K2",
+    "properties": {
+      "Reference": "K2",
+      "Value": "TS-1001S",
+      "Footprint": "Switch:SW4-SMD-2.8-2.6X1.6X0.53MM",
+      "Datasheet": "",
+      "Description": "SMD Top Button 163gf:4P-2.6*1.6*0.53mm",
+      "Manufacturer": "JINBEILI",
+      "MPN": "TS-1001S",
+      "SKU": "311021801",
+      "Part Type": "Button",
+      "Rating": "",
+      "Status": "",
+      "Temperature": "-20\u00b0C to 70\u00b0C"
+    }
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-260114/202003916_XIAO ESP32 C6_v1.0_SCH&PCB_260114/03 Power.kicad_sch",
+    "file_sha256": "b8209426898fd519211ce9258eb9164940545bce3a0851966995ad236d414fee",
+    "reference": "USB1",
+    "properties": {
+      "Reference": "USB1",
+      "Value": "USB2.0 Type C",
+      "Footprint": "Connector:USB2.0-TYPE-C",
+      "Datasheet": "",
+      "Description": "",
+      "Manufacturer": "MTCONN",
+      "MPN": "UBF31-0171",
+      "SKU": "320011358",
+      "Part Type": "",
+      "Rating": "",
+      "Status": "",
+      "Temperature": ""
+    }
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-24028/04 ESP32 C6.kicad_sch",
+    "file_sha256": "9107cb08066a944ffc017ee5d469f75e21b4d168ce4a58663a0d46cd1512032d",
+    "reference": "K1",
+    "properties": {
+      "Reference": "K1",
+      "Value": "SKTAAAE010",
+      "Footprint": "Switch:SW4-SMD-2.8-2.6X1.6X0.53MM",
+      "Datasheet": "",
+      "Description": "",
+      "Manufacturer": "ALPSALPINE",
+      "MPN": "SKTAAAE010",
+      "SKU": "311021459",
+      "Part Type": "Button",
+      "Rating": "",
+      "Status": "",
+      "Temperature": "-30\u00b0C to 85\u00b0C"
+    }
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-24028/04 ESP32 C6.kicad_sch",
+    "file_sha256": "9107cb08066a944ffc017ee5d469f75e21b4d168ce4a58663a0d46cd1512032d",
+    "reference": "K2",
+    "properties": {
+      "Reference": "K2",
+      "Value": "SKTAAAE010",
+      "Footprint": "Switch:SW4-SMD-2.8-2.6X1.6X0.53MM",
+      "Datasheet": "",
+      "Description": "",
+      "Manufacturer": "ALPSALPINE",
+      "MPN": "SKTAAAE010",
+      "SKU": "311021459",
+      "Part Type": "Button",
+      "Rating": "",
+      "Status": "",
+      "Temperature": "-30\u00b0C to 85\u00b0C"
+    }
+  },
+  {
+    "path": "/workspace/scratch/c9ec93994789/ge-all-revision-closeout-2026-10-05/module-sourcing/primary-sources/c6-v1.0-24028/03 Power.kicad_sch",
+    "file_sha256": "dcad533d9088017b650bb48a3f824e1b5e724030c1ec3fd3ecf708a8f09afdbf",
+    "reference": "USB1",
+    "properties": {
+      "Reference": "USB1",
+      "Value": "USB2.0 Type C",
+      "Footprint": "Connector:USB2.0-TYPE-C",
+      "Datasheet": "",
+      "Description": "",
+      "Manufacturer": "MTCONN",
+      "MPN": "UBF31-0171",
+      "SKU": "320011358",
+      "Part Type": "",
+      "Rating": "",
+      "Status": "",
+      "Temperature": ""
+    }
+  }
+]

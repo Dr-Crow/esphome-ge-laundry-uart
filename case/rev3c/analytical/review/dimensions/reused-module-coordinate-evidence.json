@@ -1,0 +1,554 @@
+{
+  "c3": {
+    "vendor_archive_url": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_KiCad_260116.zip",
+    "vendor_archive_sha256": "477bc61cec652eaeefa887cb1f97abb1514e8a61ea9659240b88be7213c3b6ff",
+    "original_pcb_sha256": "a761393935ff261a58fee3e3d7ecfb65152eaba8620de64ff7758fb0c043d1db",
+    "schematic_title_block_evidence": [
+      "CCBY-SA4.0   Size: A3",
+      "Date: 2026-01-15   Rev: v1.3",
+      "CCBY-SA4.0         Size: A3",
+      "Date: 2026-01-15   Rev: v1.3",
+      "CCBY-SA4.0                               Size: A3",
+      "Date: 2026-01-15                                   Rev: v1.3"
+    ],
+    "source_to_carrier_translation_mm": [
+      -60.5476,
+      -92.0861
+    ],
+    "fourteen_pin_centers": [
+      {
+        "pin": 1,
+        "source_reference": "J2",
+        "source_pad_number": "1",
+        "source_net": "D0",
+        "carrier_kicad_xy_mm": [
+          95.51,
+          5.2975
+        ],
+        "step_xy_mm": [
+          7.62,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 2,
+        "source_reference": "J2",
+        "source_pad_number": "2",
+        "source_net": "D1",
+        "carrier_kicad_xy_mm": [
+          92.97,
+          5.2975
+        ],
+        "step_xy_mm": [
+          5.08,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 3,
+        "source_reference": "J2",
+        "source_pad_number": "3",
+        "source_net": "D2",
+        "carrier_kicad_xy_mm": [
+          90.43,
+          5.2975
+        ],
+        "step_xy_mm": [
+          2.54,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 4,
+        "source_reference": "J2",
+        "source_pad_number": "4",
+        "source_net": "D3",
+        "carrier_kicad_xy_mm": [
+          87.89,
+          5.2975
+        ],
+        "step_xy_mm": [
+          0.0,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 5,
+        "source_reference": "J2",
+        "source_pad_number": "5",
+        "source_net": "D4",
+        "carrier_kicad_xy_mm": [
+          85.35,
+          5.2975
+        ],
+        "step_xy_mm": [
+          -2.54,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 6,
+        "source_reference": "J2",
+        "source_pad_number": "6",
+        "source_net": "D5",
+        "carrier_kicad_xy_mm": [
+          82.81,
+          5.2975
+        ],
+        "step_xy_mm": [
+          -5.08,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 7,
+        "source_reference": "J2",
+        "source_pad_number": "7",
+        "source_net": "TX_D6",
+        "carrier_kicad_xy_mm": [
+          80.27,
+          5.2975
+        ],
+        "step_xy_mm": [
+          -7.62,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 8,
+        "source_reference": "J1",
+        "source_pad_number": "1",
+        "source_net": "RX_D7",
+        "carrier_kicad_xy_mm": [
+          80.27,
+          20.5375
+        ],
+        "step_xy_mm": [
+          -7.62,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 9,
+        "source_reference": "J1",
+        "source_pad_number": "2",
+        "source_net": "D8",
+        "carrier_kicad_xy_mm": [
+          82.81,
+          20.5375
+        ],
+        "step_xy_mm": [
+          -5.08,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 10,
+        "source_reference": "J1",
+        "source_pad_number": "3",
+        "source_net": "D9",
+        "carrier_kicad_xy_mm": [
+          85.35,
+          20.5375
+        ],
+        "step_xy_mm": [
+          -2.54,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 11,
+        "source_reference": "J1",
+        "source_pad_number": "4",
+        "source_net": "D10",
+        "carrier_kicad_xy_mm": [
+          87.89,
+          20.5375
+        ],
+        "step_xy_mm": [
+          0.0,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 12,
+        "source_reference": "J1",
+        "source_pad_number": "5",
+        "source_net": "VCC_3V3",
+        "carrier_kicad_xy_mm": [
+          90.43,
+          20.5375
+        ],
+        "step_xy_mm": [
+          2.54,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 13,
+        "source_reference": "J1",
+        "source_pad_number": "6",
+        "source_net": "GND",
+        "carrier_kicad_xy_mm": [
+          92.97,
+          20.5375
+        ],
+        "step_xy_mm": [
+          5.08,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 14,
+        "source_reference": "J1",
+        "source_pad_number": "7",
+        "source_net": "VUSB",
+        "carrier_kicad_xy_mm": [
+          95.51,
+          20.5375
+        ],
+        "step_xy_mm": [
+          7.62,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      }
+    ],
+    "source_board_edge_stroke_bbox_carrier_mm": {
+      "x_min": 77.4633,
+      "y_min": 4.0148,
+      "x_max": 98.4437,
+      "y_max": 21.8202
+    },
+    "pcb_nominal_thickness_mm": 1.6,
+    "feature_centers": {
+      "BOOT0": {
+        "center": [
+          79.0,
+          8.4725
+        ],
+        "rotation": 90.0,
+        "value": "TD-1183SN-A3N-D1R"
+      },
+      "RST0": {
+        "center": [
+          79.0,
+          17.3625
+        ],
+        "rotation": -90.0,
+        "value": "TD-1183SN-A3N-D1R"
+      },
+      "ANT0": {
+        "center": [
+          78.873,
+          12.9175
+        ],
+        "rotation": 180.0,
+        "value": "U.FL-R-SMT-1"
+      },
+      "USB0": {
+        "center": [
+          92.589,
+          12.9175
+        ],
+        "rotation": 180.0,
+        "value": "UBF31-0171"
+      }
+    }
+  },
+  "c6": {
+    "vendor_archive_url": "https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO_ESP32_C6_v1.0_SCH%26PCB_260114.zip",
+    "vendor_archive_sha256": "cea2ed66da575e4a1dd6c7a9acd60583ed4a9adbf6b1d2952851c1e4199c05fc",
+    "original_pcb_sha256": "44da2bb3ffb76ae0443ef384af0c338d7ac616c4bdfb2c58258ee7ad47c95027",
+    "schematic_title_block_evidence": [
+      "CCBY-SA4.0           Size: A3",
+      "Date: 2026-01-14   Rev: V1.0",
+      "CCBY-SA4.0      Size: A3",
+      "Date: 2026-01-14   Rev: V1.0",
+      "CCBY-SA4.0   Size: A3",
+      "Date: 2026-01-14   Rev: V1.0",
+      "CCBY-SA4.0                         Size: A3",
+      "Date: 2026-01-14                                                                       Rev: V1.0",
+      "CCBY-SA4.0                              Size: A3",
+      "Date: 2026-01-14             Rev: V1.0"
+    ],
+    "source_to_carrier_translation_mm": [
+      -20.5077,
+      -59.9585
+    ],
+    "fourteen_pin_centers": [
+      {
+        "pin": 1,
+        "source_reference": "U2",
+        "source_pad_number": "1",
+        "source_net": "GPIO0{slash}XTAL_32K_P{slash}ADC1_CH0",
+        "carrier_kicad_xy_mm": [
+          95.51,
+          5.2975
+        ],
+        "step_xy_mm": [
+          7.62,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 2,
+        "source_reference": "U2",
+        "source_pad_number": "2",
+        "source_net": "GPIO1{slash}XTAL_32K_N{slash}ADC1_CH1",
+        "carrier_kicad_xy_mm": [
+          92.97,
+          5.2975
+        ],
+        "step_xy_mm": [
+          5.08,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 3,
+        "source_reference": "U2",
+        "source_pad_number": "3",
+        "source_net": "GPIO2{slash}ADC1_CH2",
+        "carrier_kicad_xy_mm": [
+          90.43,
+          5.2975
+        ],
+        "step_xy_mm": [
+          2.54,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 4,
+        "source_reference": "U2",
+        "source_pad_number": "4",
+        "source_net": "GPIO21{slash}SDIO_D1",
+        "carrier_kicad_xy_mm": [
+          87.89,
+          5.2975
+        ],
+        "step_xy_mm": [
+          0.0,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 5,
+        "source_reference": "U2",
+        "source_pad_number": "5",
+        "source_net": "GPIO22{slash}SDIO_D2",
+        "carrier_kicad_xy_mm": [
+          85.35,
+          5.2975
+        ],
+        "step_xy_mm": [
+          -2.54,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 6,
+        "source_reference": "U2",
+        "source_pad_number": "6",
+        "source_net": "GPIO23{slash}SDIO_D3",
+        "carrier_kicad_xy_mm": [
+          82.81,
+          5.2975
+        ],
+        "step_xy_mm": [
+          -5.08,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 7,
+        "source_reference": "U2",
+        "source_pad_number": "7",
+        "source_net": "D6{slash}TX",
+        "carrier_kicad_xy_mm": [
+          80.27,
+          5.2975
+        ],
+        "step_xy_mm": [
+          -7.62,
+          7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 8,
+        "source_reference": "U2",
+        "source_pad_number": "8",
+        "source_net": "D7{slash}RX",
+        "carrier_kicad_xy_mm": [
+          80.27,
+          20.5375
+        ],
+        "step_xy_mm": [
+          -7.62,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 9,
+        "source_reference": "U2",
+        "source_pad_number": "9",
+        "source_net": "GPIO19{slash}SDIO_CLK",
+        "carrier_kicad_xy_mm": [
+          82.81,
+          20.5375
+        ],
+        "step_xy_mm": [
+          -5.08,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 10,
+        "source_reference": "U2",
+        "source_pad_number": "10",
+        "source_net": "GPIO20{slash}SDIO_D0",
+        "carrier_kicad_xy_mm": [
+          85.35,
+          20.5375
+        ],
+        "step_xy_mm": [
+          -2.54,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 11,
+        "source_reference": "U2",
+        "source_pad_number": "11",
+        "source_net": "GPIO18{slash}SDIO_CMD",
+        "carrier_kicad_xy_mm": [
+          87.89,
+          20.5375
+        ],
+        "step_xy_mm": [
+          0.0,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 12,
+        "source_reference": "U2",
+        "source_pad_number": "12",
+        "source_net": "+3V3",
+        "carrier_kicad_xy_mm": [
+          90.43,
+          20.5375
+        ],
+        "step_xy_mm": [
+          2.54,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 13,
+        "source_reference": "U2",
+        "source_pad_number": "13",
+        "source_net": "GND",
+        "carrier_kicad_xy_mm": [
+          92.97,
+          20.5375
+        ],
+        "step_xy_mm": [
+          5.08,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      },
+      {
+        "pin": 14,
+        "source_reference": "U2",
+        "source_pad_number": "14",
+        "source_net": "VBUS",
+        "carrier_kicad_xy_mm": [
+          95.51,
+          20.5375
+        ],
+        "step_xy_mm": [
+          7.62,
+          -7.62
+        ],
+        "exported_hole_face_match": true
+      }
+    ],
+    "source_board_edge_stroke_bbox_carrier_mm": {
+      "x_min": 77.4633,
+      "y_min": 4.0148,
+      "x_max": 98.4437,
+      "y_max": 21.8202
+    },
+    "pcb_nominal_thickness_mm": 1.6,
+    "feature_centers": {
+      "ANT1": {
+        "center": [
+          78.6285,
+          16.0415
+        ],
+        "rotation": -90.0,
+        "value": "KH5220-A36"
+      },
+      "K2": {
+        "center": [
+          97.3483,
+          19.4927
+        ],
+        "rotation": -90.0,
+        "value": "SKTAAAE010"
+      },
+      "K1": {
+        "center": [
+          97.3483,
+          6.3355
+        ],
+        "rotation": 90.0,
+        "value": "SKTAAAE010"
+      },
+      "USB1": {
+        "center": [
+          92.6237,
+          12.9215
+        ],
+        "rotation": 180.0,
+        "value": "USB2.0 Type C"
+      },
+      "ANT2": {
+        "center": [
+          78.8825,
+          8.6215
+        ],
+        "rotation": 180.0,
+        "value": "U.FL-R-SMT-1"
+      }
+    }
+  }
+}

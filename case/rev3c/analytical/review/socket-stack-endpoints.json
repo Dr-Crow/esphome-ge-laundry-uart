@@ -1,0 +1,357 @@
+{
+  "source_baseline": "acbcb6c5a138fedeb8e93d92838b12381bbce4b4",
+  "source_state": "Uncommitted bounded socket/range repair",
+  "source_sha256": {
+    "enclosure.py": "d93a9172817fc0a39d1685deb0da1548d72d350c19fe5a30c00a73117534e18b",
+    "interface_baseline.py": "28a9daacfb6538dc28f25813331c43a0f7403a44770eab2ad1ba44736d7c30bc",
+    "component_envelopes.py": "ded676844d3feb5ca825863bd36d3a6db62eab23e72f9164219eec8f65be3f13",
+    "current_carrier_bounds.json": "5e178afe3bf9caa14334abc751373917133d56c1c47828009323dd44805fa4e9"
+  },
+  "tools": {
+    "build123d": "0.11.1",
+    "trimesh": "5.1.0",
+    "cadquery-ocp-novtk": "7.9.3.1.1"
+  },
+  "qualification": false,
+  "parameters": {
+    "stack_range_mm": [
+      10.35,
+      11.65
+    ],
+    "socket_max_body_mm": [
+      18.48,
+      2.65,
+      8.65
+    ],
+    "switch_heights_mm": {
+      "c3": [
+        1.4,
+        1.6
+      ],
+      "c6": [
+        0.45,
+        0.65
+      ]
+    },
+    "release_gap_mm": 0.25,
+    "illustrative_stop_mm": {
+      "c3": 0.4,
+      "c6": 0.36
+    },
+    "C6_switch_identity": "Conditional TS-1001S height only; travel and fitted identity unverified"
+  },
+  "cases": {
+    "c3_internal_10.35": {
+      "shape": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24901.391801775448,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.000000100000147,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.00000010000014,
+            30.5000001
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "component_intersections_mm3": {},
+      "button_release_gaps_mm": {
+        "BOOT": 0.25,
+        "RESET": 0.25
+      },
+      "switch_height_mm": 1.4,
+      "step_readback": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24901.21648806829,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.0000001,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.0000001,
+            30.5000001
+          ]
+        ]
+      },
+      "stl_readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_mm3": 24901.334239172214,
+        "relative_step_volume_delta": 2.311621924246516e-06
+      }
+    },
+    "c3_internal_11.65": {
+      "shape": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24898.84357094731,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.000000100000147,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.00000010000014,
+            30.5000001
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "component_intersections_mm3": {},
+      "button_release_gaps_mm": {
+        "BOOT": 0.25,
+        "RESET": 0.25
+      },
+      "switch_height_mm": 1.6
+    },
+    "c3_external_10.35": {
+      "shape": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24840.865818248072,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.000000100000147,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.00000010000014,
+            30.5000001
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "component_intersections_mm3": {},
+      "button_release_gaps_mm": {
+        "BOOT": 0.25,
+        "RESET": 0.25
+      },
+      "switch_height_mm": 1.4,
+      "step_readback": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24840.690861285333,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.0000001,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.0000001,
+            30.5000001
+          ]
+        ]
+      },
+      "stl_readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_mm3": 24840.867517978375,
+        "relative_step_volume_delta": 6.842476084471374e-08
+      }
+    },
+    "c3_external_11.65": {
+      "shape": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24838.31758474167,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.000000100000147,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.00000010000014,
+            30.5000001
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "component_intersections_mm3": {},
+      "button_release_gaps_mm": {
+        "BOOT": 0.25,
+        "RESET": 0.25
+      },
+      "switch_height_mm": 1.6
+    },
+    "c6_internal_10.35": {
+      "shape": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24683.741281401584,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.000000100000147,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.00000010000014,
+            30.5000001
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "component_intersections_mm3": {},
+      "button_release_gaps_mm": {
+        "BOOT": 0.25,
+        "RESET": 0.25
+      },
+      "switch_height_mm": 0.45,
+      "step_readback": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24683.56575458728,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.0000001,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.0000001,
+            30.5000001
+          ]
+        ]
+      },
+      "stl_readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_mm3": 24683.6810179382,
+        "relative_step_volume_delta": 2.441423392681331e-06
+      }
+    },
+    "c6_internal_11.65": {
+      "shape": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24681.193022858155,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.000000100000147,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.00000010000014,
+            30.5000001
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "component_intersections_mm3": {},
+      "button_release_gaps_mm": {
+        "BOOT": 0.25,
+        "RESET": 0.25
+      },
+      "switch_height_mm": 0.65
+    },
+    "c6_external_10.35": {
+      "shape": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24858.208120909472,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.000000100000147,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.00000010000014,
+            30.5000001
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "component_intersections_mm3": {},
+      "button_release_gaps_mm": {
+        "BOOT": 0.25,
+        "RESET": 0.25
+      },
+      "switch_height_mm": 0.45,
+      "step_readback": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24858.033212889735,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.0000001,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.0000001,
+            30.5000001
+          ]
+        ]
+      },
+      "stl_readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "volume_mm3": 24858.207429405204,
+        "relative_step_volume_delta": 2.781794509292541e-08
+      }
+    },
+    "c6_external_11.65": {
+      "shape": {
+        "valid": true,
+        "solid_count": 1,
+        "volume_mm3": 24855.659866385668,
+        "bounds_mm": [
+          [
+            -7.5000001,
+            -7.000000100000147,
+            5.65
+          ],
+          [
+            106.5000001,
+            47.00000010000014,
+            30.5000001
+          ]
+        ]
+      },
+      "base_lid_intersection_mm3": 0.0,
+      "component_intersections_mm3": {},
+      "button_release_gaps_mm": {
+        "BOOT": 0.25,
+        "RESET": 0.25
+      },
+      "switch_height_mm": 0.65
+    }
+  },
+  "limits": [
+    "Assumed generic male spacer 2\u20133 mm; factory-fitted header/contact depth unknown.",
+    "Body centred on nominal socket row; unpublished body-to-pin registration not bounded.",
+    "Illustrative stops are not manufacturer safe overtravel.",
+    "No printed tolerance, force, wear, optical, RF, USB mating or physical proof."
+  ],
+  "elapsed_seconds": 266.4830696582794,
+  "complete": true
+}

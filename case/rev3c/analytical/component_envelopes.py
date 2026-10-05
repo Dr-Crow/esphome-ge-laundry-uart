@@ -12,7 +12,7 @@ CYL=e._cylinder
 
 def proxies(module,stack_mm=11.0,switch_height=None):
     if module not in ('c3','c6'): raise ValueError(module)
-    if not 11.0 <= stack_mm <= 11.65: raise ValueError(stack_mm)
+    if not e.REVIEW_STACK_MIN <= stack_mm <= e.REVIEW_STACK_MAX: raise ValueError(stack_mm)
     bottom=e.PCB_TOP_Z+stack_mm; top=bottom+1.6
     p={}
     pcb=BOX(0,99,0,40,e.PCB_SEAT_Z,e.PCB_TOP_Z)
@@ -23,10 +23,13 @@ def proxies(module,stack_mm=11.0,switch_height=None):
     p['J1_body']=BOX(-.38,17.67,9.395,24.595,e.PCB_TOP_Z,e.PCB_TOP_Z+11.45)
     for n in range(8):
         p['J1_tail_'+str(n+1)]=CYL(.23,e.PCB_TOP_Z-3.0,e.PCB_TOP_Z,13.97+(2.54 if n%2 else 0),12.55+1.27*n)
-    for i,b in enumerate(e.SOCKET_BBOX):
+    for i,b in enumerate(e.SOCKET_MAX_BBOX):
         p['J'+str(i+5)+'_body']=BOX(b['x_min'],b['x_max'],b['y_min'],b['y_max'],e.PCB_TOP_Z,e.SOCKET_TOP_Z_MAX)
         # Conservative full-row maximum-tail prism, not detailed pin/solder CAD.
         p['J'+str(i+5)+'_tails']=BOX(b['x_min'],b['x_max'],b['y_min'],b['y_max'],e.PCB_TOP_Z-3.45,e.PCB_SEAT_Z)
+        # Reserved independent clearance screen, not a fitted header solid or
+        # proof of engagement. Maximum socket height and minimum total stack
+        # are deliberately combined as pessimistic, independent bounds.
         p['male_spacer_'+str(i)]=BOX(b['x_min'],b['x_max'],b['y_min'],b['y_max'],e.SOCKET_TOP_Z_MAX,bottom)
     for ref,(x,y) in {'U9':(65.,8.),'U10':(65.,22.5)}.items():
         p[ref]=BOX(x-2.525,x+2.525,y-1.55,y+1.55,e.PCB_TOP_Z,e.PCB_TOP_Z+1.1)

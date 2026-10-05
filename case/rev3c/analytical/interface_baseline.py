@@ -87,6 +87,8 @@ SOCKET_ROW_Y = (5.2975, 20.5375)
 SOCKET_PIN_X0, SOCKET_PIN_X1 = 80.27, 95.51
 SOCKET_BODY_LENGTH = 18.18   # 2.54 * 7 pins + 0.40, per drawing formula
 SOCKET_BODY_WIDTH = 2.5
+SOCKET_LENGTH_TOL = 0.30
+SOCKET_WIDTH_TOL = 0.15
 SOCKET_CENTER_X = (SOCKET_PIN_X0 + SOCKET_PIN_X1) / 2  # 87.89
 SOCKET_BODY_HEIGHT = 8.5     # manufacturer-confirmed nominal
 SOCKET_HEIGHT_TOL = 0.15     # manufacturer-confirmed tolerance
@@ -98,6 +100,17 @@ SOCKET_BBOX = tuple(
         "x_max": SOCKET_CENTER_X + SOCKET_BODY_LENGTH / 2,
         "y_min": y - SOCKET_BODY_WIDTH / 2,
         "y_max": y + SOCKET_BODY_WIDTH / 2,
+    }
+    for y in SOCKET_ROW_Y
+)
+# Published maximum body, centred on the nominal row datum. The drawing does
+# not specify body-to-pin registration or assembled seating tolerances.
+SOCKET_MAX_BBOX = tuple(
+    {
+        "x_min": SOCKET_CENTER_X - (SOCKET_BODY_LENGTH + SOCKET_LENGTH_TOL) / 2,
+        "x_max": SOCKET_CENTER_X + (SOCKET_BODY_LENGTH + SOCKET_LENGTH_TOL) / 2,
+        "y_min": y - (SOCKET_BODY_WIDTH + SOCKET_WIDTH_TOL) / 2,
+        "y_max": y + (SOCKET_BODY_WIDTH + SOCKET_WIDTH_TOL) / 2,
     }
     for y in SOCKET_ROW_Y
 )
@@ -115,6 +128,8 @@ SOCKET_TAIL_FLOOR_SKIN = 0.6
 # breakaway-header insulator-base heights), not a measured figure.
 MALE_HEADER_SPACER_HEIGHT_MIN = 2.0
 MALE_HEADER_SPACER_HEIGHT_MAX = 3.0
+REVIEW_STACK_MIN = SOCKET_BODY_HEIGHT_MIN + MALE_HEADER_SPACER_HEIGHT_MIN
+REVIEW_STACK_MAX = SOCKET_BODY_HEIGHT_MAX + MALE_HEADER_SPACER_HEIGHT_MAX
 
 # Complete plugged-in module envelope, measured from the module's OWN PCB
 # underside (where it rests on the male header) to its tallest top-side
