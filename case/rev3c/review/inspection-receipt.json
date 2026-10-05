@@ -1,0 +1,1399 @@
+{
+  "review_utc": "2026-10-05",
+  "checks": "Independent read-only export/file inspection; no source generation, slicer or physical qualification",
+  "build123d_version": "0.10.0",
+  "packages": {
+    "GE-printed-case": {
+      "files_sha256": {
+        "BOM.md": "9df5ff08f958db747179eaf563a306ac1cca517f763057276598588e5a8b8e19",
+        "C3-FPC-ROUTE.md": "2f90bb97c821353948fc967432c4c651343a7e99b021f5db274d1745810c4312",
+        "LICENSE": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc",
+        "PRINT-TEST-GUIDE.md": "aa4446060f60f9b8ad4076ae255919c6d167e8e031e17cf55080a362e5982053",
+        "README.md": "e45284c23263ba64723b776846c9e1d3f213160b9183f2d8f5f6fee15ceaaae7",
+        "REMOTE-ANTENNA-OPTIONS.md": "7b519e9af14b8540aa1f812fd2a09bc893d1a62b427260dd4891e92f4d3a73f3",
+        "SOURCING.md": "638eac5ba92dd7763c3bae3d22009300b07fa595fe711daa49c67fac0237568e",
+        "VALIDATION.md": "622359b8c7c28bcd20ba6bda8da64d3cadfad02f2a0f9ede4b1c13fcb13a4c8c",
+        "antenna_manifest.json": "81d58798b5e1ba8dbf2aa372ce182d8d4146dd4036ddc20a29f8fc11fac4b3e2",
+        "c6_rf_final_manifest.json": "2468b4eb423ae448bb49ad8a066638baadc2113cb69100e3ea649cd92d60228e",
+        "component_envelopes.py": "146a54c71920b71695831971c02fd93bb14e48ca4e6f9e1468e78b22f915c7ab",
+        "detail_manifest.json": "bf10dfe9e0eb61176095d190cf8f80a6896102066014644058ae10f1b6ffa402",
+        "detail_views.py": "65795c1dd4746141931364ee2cadc9e5df6ed9cefd8ba1f4d5e1f96e2d566742",
+        "enclosure.py": "a016dbfcab8d10214f3d6880a9fdc76e442041a8baee49cf65e8edc957415607",
+        "exploded_manifest.json": "d9e532ea9e81670c2e4b85d65ddcef2f27b7fea448961101ff99955c54d7c60a",
+        "exports/base.step": "cc5763efce1b88ad07da23bb259ff67db14397ff26e7e504ad42ba4f02d1f6d2",
+        "exports/base.stl": "63cbae3f68c42e6477f86cb2104dd3ced49715fc7817b7f61b712446ab035e58",
+        "exports/base_magnets.step": "351e1ec3d42c13f1e54975e20c40609a618d98daae85ce5b687984f745efaa83",
+        "exports/base_magnets.stl": "8f8608898b06f13434a12f9306802d08d8affb43646dada424e7f64a9008b0c4",
+        "exports/coupon_button_c3.step": "96a0e2b94836a6eefc7a8db80c3476504c2a160ee0eea5cfa6165427c9f3719d",
+        "exports/coupon_button_c3.stl": "e07d54e1e098dd7b41f94e6b686f90ee4cd7d853811b1c0315b9eef60d3c3219",
+        "exports/coupon_button_c6.step": "c85a452707943eaf6f3740965e3ee8beaabedfe8f27ccbf73d102fee4cb457b3",
+        "exports/coupon_button_c6.stl": "bcfa2a77265df7fb5c0f61dcc0ab1bca67a9c5f8ffa3f944b58d485d45a98cfd",
+        "exports/coupon_snap_base.step": "ac0d574a07e6cac0bd7fa463a93df6b02c475fa9209569f11dca6e6ac91bf2f3",
+        "exports/coupon_snap_base.stl": "b7c3588569dc5e27b5a4077a6ad9b5314a4dba55d5e6fa066df5b6bc110c5e69",
+        "exports/coupon_snap_lid.step": "4397956684aed1e0713c8d558be5a75d38248e6dac4a4511e02a53c0546b94d1",
+        "exports/coupon_snap_lid.stl": "20f04f9052396e693b7ae6ee72e4453511eeaab974c8bfb8d87cbe4b34a08780",
+        "exports/label_inlay_c3_optional.step": "0125a7a70dffdbd16c1ceccceb96de8856cb74e2ceff328b4ac3b0d63726d0bf",
+        "exports/label_inlay_c3_optional.stl": "dea5c1d2b06a0ecc88de05e438fc50df7d240e20125402449c617f90aa7800f7",
+        "exports/label_inlay_c6_optional.step": "d39d9d996a4fa721c31f690f845468022eac7137290221c3bf39ff2616cba3a6",
+        "exports/label_inlay_c6_optional.stl": "61fe301b25f517f34d1084fc61501b157c5c957f44e0efb2faa716521643651e",
+        "exports/lid_c3_external.step": "41ff81f5fb4b0b9793ed2b9c4a227e4c33a596d631963fc88159b907b6c46f78",
+        "exports/lid_c3_external.stl": "9035f9b1cde74d52719c09aeda0350329b6b6efb4c863bd2c927ce52b8ab4eaf",
+        "exports/lid_c3_internal.step": "2671e5a371e57d53f1c86409434e9afb23281e871d4f602726f3acf83321d20c",
+        "exports/lid_c3_internal.stl": "c1dd9bdcbcade546db54085ce5b367282282abd53445c8db375a884d38ece127",
+        "exports/lid_c6_external.step": "e430df1fff853d11c60440d628cdcf430b896a8dc4bed167dea6467cbce0fa03",
+        "exports/lid_c6_external.stl": "0d999d8c65f02253695ca2f056eae3d9627f01c9fae6136778e12a7d4d6aae82",
+        "exports/lid_c6_internal.step": "62e30ee8f8dec690cc7cd72fe2c0b51c6420420bc0f55a6eb1846d4c231f9e9b",
+        "exports/lid_c6_internal.stl": "bd02eb0581a627e46b8c01424b6fae8ed6f9af35a2cd2b28937215c8ccdd6d78",
+        "exports/lightpipe_aux.step": "5dcf03997b0d142a998e7a2392dcc92dd425f6d8d82850f3cd3aff79aac52251",
+        "exports/lightpipe_aux.stl": "6fa1a6aa5718c5c288dcd5324e051f8527bffb635c5b65dcb1249914f8b4abae",
+        "exports/lightpipe_bus.step": "8bd0f95c0937b8778555c1129b37f026dc4b8051efd817722f6c4cd65e69780c",
+        "exports/lightpipe_bus.stl": "2ee28f885ada39260d686beefa8e2fd91fd0018f9ec1d4f420b945448401c569",
+        "exports/lightpipe_wifi.step": "3770b314fab4e7b9a35fd788832137230913befe2a246796eb794b54584a9283",
+        "exports/lightpipe_wifi.stl": "88855ba538ac71759fff08029936d96158310db31ec8698137baa81a6d5a4fdf",
+        "interface_baseline.py": "c5ca15aec72c429d78d5d4894f15078fb322e3282d7e5468ff64fbd1ca431ceb",
+        "prepare_rf_render_inputs.py": "350cb166f22899b5aafb7181cf998f17320971405b1db73116314a04037b2a27",
+        "render_manifest.json": "38f3338a2181257a463ff6110745cde0f6ff8cb0c3f943b56f6e6028c53e7eb6",
+        "renderer.py": "5073c5e7c296d097ce8e963da275669b138ff7ba84c3774c9c43d93e49845b54",
+        "requirements.txt": "0cc484bca9656a92d55d8bad637a832364d58419b67be3250143e70952102075",
+        "validate_exports.py": "f2c4853c9f8a429edd13dc1abfbcc4c9802a625d3b8db3381f2935fba6cc104d",
+        "validation.json": "c0eea6fd9910b7e83f78570ccea3e1ae171348ff81cf558932bf63043a0c62e6"
+      },
+      "source_syntax": {
+        "interface_baseline.py": "parse_pass",
+        "enclosure.py": "parse_pass",
+        "component_envelopes.py": "parse_pass",
+        "detail_views.py": "parse_pass",
+        "validate_exports.py": "parse_pass",
+        "renderer.py": "parse_pass",
+        "prepare_rf_render_inputs.py": "parse_pass"
+      },
+      "manifest_missing_inputs": {
+        "antenna_manifest.json": [
+          "../references/bulkhead_reference.stl",
+          "../references/dipole_reference.stl",
+          "../references/remote_whip_reference.stl",
+          "c3_rj45.stl",
+          "c6_BOOT0.stl",
+          "c6_RST0.stl",
+          "c6_ceramic.stl",
+          "c6_module.stl",
+          "c6_rf_cutaway.stl",
+          "c6_shield.stl",
+          "c6_socket0.stl",
+          "c6_socket1.stl",
+          "c6_ufl.stl",
+          "c6_usb.stl",
+          "fpc_40x20_proxy.stl",
+          "viz_60mm_stand_proxy.stl",
+          "viz_remote_rpsma_plug_proxy.stl",
+          "viz_stand_rpsma_connector_proxy.stl"
+        ],
+        "exploded_manifest.json": [
+          "c3_BOOT0.stl",
+          "c3_D4.stl",
+          "c3_D5.stl",
+          "c3_D6.stl",
+          "c3_RST0.stl",
+          "c3_carrier.stl",
+          "c3_module.stl",
+          "c3_rj45.stl",
+          "c3_shield.stl",
+          "c3_socket0.stl",
+          "c3_socket1.stl",
+          "c3_ufl.stl",
+          "c3_usb.stl",
+          "c6_BOOT0.stl",
+          "c6_D4.stl",
+          "c6_D5.stl",
+          "c6_D6.stl",
+          "c6_RST0.stl",
+          "c6_carrier.stl",
+          "c6_ceramic.stl",
+          "c6_module.stl",
+          "c6_rj45.stl",
+          "c6_shield.stl",
+          "c6_socket0.stl",
+          "c6_socket1.stl",
+          "c6_ufl.stl",
+          "c6_usb.stl",
+          "fpc_40x20_proxy.stl"
+        ],
+        "c6_rf_final_manifest.json": [
+          "c6_BOOT0.stl",
+          "c6_RST0.stl",
+          "c6_ceramic.stl",
+          "c6_module.stl",
+          "c6_rf_cutaway.stl",
+          "c6_shield.stl",
+          "c6_socket0.stl",
+          "c6_socket1.stl",
+          "c6_ufl.stl",
+          "c6_usb.stl"
+        ],
+        "render_manifest.json": [
+          "c3_BOOT0.stl",
+          "c3_D4.stl",
+          "c3_D5.stl",
+          "c3_D6.stl",
+          "c3_RST0.stl",
+          "c3_carrier.stl",
+          "c3_module.stl",
+          "c3_rj45.stl",
+          "c3_shield.stl",
+          "c3_socket0.stl",
+          "c3_socket1.stl",
+          "c3_ufl.stl",
+          "c3_usb.stl",
+          "c6_BOOT0.stl",
+          "c6_D4.stl",
+          "c6_D5.stl",
+          "c6_D6.stl",
+          "c6_RST0.stl",
+          "c6_carrier.stl",
+          "c6_ceramic.stl",
+          "c6_module.stl",
+          "c6_rj45.stl",
+          "c6_shield.stl",
+          "c6_socket0.stl",
+          "c6_socket1.stl",
+          "c6_ufl.stl",
+          "c6_usb.stl",
+          "fpc_40x20_proxy.stl"
+        ],
+        "detail_manifest.json": [
+          "c3_BOOT0.stl",
+          "c3_RST0.stl",
+          "c3_carrier.stl",
+          "c3_module.stl",
+          "c3_shield.stl",
+          "c3_socket0.stl",
+          "c3_socket1.stl",
+          "c3_ufl.stl",
+          "c3_usb.stl",
+          "c6_BOOT0.stl",
+          "c6_RST0.stl",
+          "c6_carrier.stl",
+          "c6_ceramic.stl",
+          "c6_module.stl",
+          "c6_rf_cutaway.stl",
+          "c6_shield.stl",
+          "c6_socket0.stl",
+          "c6_socket1.stl",
+          "c6_ufl.stl",
+          "c6_usb.stl",
+          "fpc_40x20_proxy.stl",
+          "section_base_c3.stl",
+          "section_base_c6.stl",
+          "section_lid_c3.stl",
+          "section_lid_c6.stl",
+          "snap_base_detail.stl",
+          "snap_lid_detail.stl"
+        ]
+      },
+      "exports": [
+        {
+          "part": "base",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 28171.032237,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              -1.0
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              9.4000001
+            ]
+          ],
+          "stl_facets": 5224,
+          "stl_volume_mm3": 28170.233045,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              -1.0
+            ],
+            [
+              106.5,
+              47.0,
+              9.399999618530273
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.002837
+        },
+        {
+          "part": "base_magnets",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 28094.584721,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              -1.0
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              9.4000001
+            ]
+          ],
+          "stl_facets": 5896,
+          "stl_volume_mm3": 28093.856802,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              -1.0
+            ],
+            [
+              106.5,
+              47.0,
+              9.399999618530273
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.002591
+        },
+        {
+          "part": "coupon_button_c3",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 648.597173,
+          "step_bounds_mm": [
+            [
+              57.9999999,
+              2.999999899999792,
+              20.25
+            ],
+            [
+              85.0000001,
+              13.0000001,
+              30.500000100000005
+            ]
+          ],
+          "stl_facets": 4818,
+          "stl_volume_mm3": 648.44513,
+          "stl_bounds_mm": [
+            [
+              58.0,
+              3.0,
+              20.25
+            ],
+            [
+              85.0,
+              13.0,
+              30.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.023442
+        },
+        {
+          "part": "coupon_button_c6",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 714.56169,
+          "step_bounds_mm": [
+            [
+              78.9999999,
+              0.9999998999985801,
+              17.999999899999928
+            ],
+            [
+              104.0000001,
+              11.0000001,
+              30.5000001
+            ]
+          ],
+          "stl_facets": 5114,
+          "stl_volume_mm3": 714.484009,
+          "stl_bounds_mm": [
+            [
+              79.0,
+              1.0,
+              18.0
+            ],
+            [
+              104.0,
+              11.0,
+              30.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.010871
+        },
+        {
+          "part": "coupon_snap_base",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 948.628817,
+          "step_bounds_mm": [
+            [
+              17.9999999,
+              40.4999999,
+              -1.0000001
+            ],
+            [
+              44.0000001,
+              47.0000001,
+              9.4000001
+            ]
+          ],
+          "stl_facets": 328,
+          "stl_volume_mm3": 948.628156,
+          "stl_bounds_mm": [
+            [
+              18.0,
+              40.5,
+              -1.0
+            ],
+            [
+              44.0,
+              47.0,
+              9.399999618530273
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 7e-05
+        },
+        {
+          "part": "coupon_snap_lid",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 348.966661,
+          "step_bounds_mm": [
+            [
+              17.9999999,
+              43.83870957742,
+              6.999999899999999
+            ],
+            [
+              44.0000001,
+              47.0000001,
+              14.000000100000001
+            ]
+          ],
+          "stl_facets": 48,
+          "stl_volume_mm3": 348.966668,
+          "stl_bounds_mm": [
+            [
+              18.0,
+              43.83871078491211,
+              7.0
+            ],
+            [
+              44.0,
+              47.0,
+              14.0
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 2e-06
+        },
+        {
+          "part": "label_inlay_c3_optional",
+          "step_valid": true,
+          "step_solids": 42,
+          "step_volume_mm3": 6.776459,
+          "step_bounds_mm": [
+            [
+              20.700378417969,
+              2.9234374,
+              30.239999899999997
+            ],
+            [
+              96.822021584375,
+              37.43359385,
+              30.4900001
+            ]
+          ],
+          "stl_facets": 15126,
+          "stl_volume_mm3": 6.774051,
+          "stl_bounds_mm": [
+            [
+              20.70037841796875,
+              2.9234375953674316,
+              30.239999771118164
+            ],
+            [
+              96.822021484375,
+              37.43359375,
+              30.489999771118164
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.035537
+        },
+        {
+          "part": "label_inlay_c6_optional",
+          "step_valid": true,
+          "step_solids": 42,
+          "step_volume_mm3": 6.792175,
+          "step_bounds_mm": [
+            [
+              20.700378417969,
+              1.1734373999999999,
+              30.239999899999997
+            ],
+            [
+              96.845947365625,
+              37.43359385,
+              30.4900001
+            ]
+          ],
+          "stl_facets": 15280,
+          "stl_volume_mm3": 6.7894,
+          "stl_bounds_mm": [
+            [
+              20.70037841796875,
+              1.173437476158142,
+              30.239999771118164
+            ],
+            [
+              96.845947265625,
+              37.43359375,
+              30.489999771118164
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.040849
+        },
+        {
+          "part": "lid_c3_external",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 24852.984482,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              5.65
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              30.5000001
+            ]
+          ],
+          "stl_facets": 36434,
+          "stl_volume_mm3": 24853.162004,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              5.650000095367432
+            ],
+            [
+              106.5,
+              47.0,
+              30.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.000714
+        },
+        {
+          "part": "lid_c3_internal",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 24912.642114,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              5.65
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              30.5000001
+            ]
+          ],
+          "stl_facets": 35588,
+          "stl_volume_mm3": 24912.760721,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              5.650000095367432
+            ],
+            [
+              106.5,
+              47.0,
+              30.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.000476
+        },
+        {
+          "part": "lid_c6_external",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 24855.688793,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              5.65
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              30.5000001
+            ]
+          ],
+          "stl_facets": 36608,
+          "stl_volume_mm3": 24855.863839,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              5.650000095367432
+            ],
+            [
+              106.5,
+              47.0,
+              30.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.000704
+        },
+        {
+          "part": "lid_c6_internal",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 24681.221329,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              5.65
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              30.5000001
+            ]
+          ],
+          "stl_facets": 35594,
+          "stl_volume_mm3": 24681.337428,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              5.650000095367432
+            ],
+            [
+              106.5,
+              47.0,
+              30.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.00047
+        },
+        {
+          "part": "lightpipe_aux",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 152.447281,
+          "step_bounds_mm": [
+            [
+              78.8199999,
+              28.5699999,
+              6.7499999
+            ],
+            [
+              85.4300001,
+              33.4300001,
+              30.4800001
+            ]
+          ],
+          "stl_facets": 668,
+          "stl_volume_mm3": 152.305144,
+          "stl_bounds_mm": [
+            [
+              78.81999969482422,
+              28.56999969482422,
+              6.75
+            ],
+            [
+              85.43000030517578,
+              33.43000030517578,
+              30.479999542236328
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.093237
+        },
+        {
+          "part": "lightpipe_bus",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 152.447281,
+          "step_bounds_mm": [
+            [
+              86.5699999,
+              24.5699999,
+              6.7499999
+            ],
+            [
+              91.9300001,
+              33.4300001,
+              30.4800001
+            ]
+          ],
+          "stl_facets": 668,
+          "stl_volume_mm3": 152.305143,
+          "stl_bounds_mm": [
+            [
+              86.56999969482422,
+              24.56999969482422,
+              6.75
+            ],
+            [
+              91.93000030517578,
+              33.43000030517578,
+              30.479999542236328
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.093237
+        },
+        {
+          "part": "lightpipe_wifi",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 152.447281,
+          "step_bounds_mm": [
+            [
+              68.5699999,
+              24.5699999,
+              6.7499999
+            ],
+            [
+              85.4300001,
+              33.4300001,
+              30.4800001
+            ]
+          ],
+          "stl_facets": 668,
+          "stl_volume_mm3": 152.305144,
+          "stl_bounds_mm": [
+            [
+              68.56999969482422,
+              24.56999969482422,
+              6.75
+            ],
+            [
+              85.43000030517578,
+              33.43000030517578,
+              30.479999542236328
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.093237
+        }
+      ]
+    },
+    "GE-tapered-enclosure-review": {
+      "files_sha256": {
+        "BOM.md": "b9112a920780179205fcf9807c952826de96e97ec368a4e9d48b7f636f0358ad",
+        "LICENSE": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc",
+        "README.md": "18c9ece47544ba1982290743ee7892dbfc24428f1f6e3a8adf9381b7ccb1dd90",
+        "REMOTE-ANTENNA-OPTIONS.md": "7b519e9af14b8540aa1f812fd2a09bc893d1a62b427260dd4891e92f4d3a73f3",
+        "SOURCING.md": "e917d83e282728805e2e6245a732b95dcf547edd0280dd580a71a3bcbcaf176b",
+        "VALIDATION.md": "2fd67185f8c85b07accdda00fab63472a93ed938147ba0267de4c1157130c7bd",
+        "component_envelopes.py": "146a54c71920b71695831971c02fd93bb14e48ca4e6f9e1468e78b22f915c7ab",
+        "enclosure.py": "89452f9390ed309497f51db7d4091a4d4d46f0cc1bc54093d59232a8ac869aa2",
+        "exports/base.step": "1ffef4a681727b9d9ef93f8f6c890e35f3839a18afae8c913872ad734368fb86",
+        "exports/base.stl": "5cb5403bc2af08d41b7e4aa97117da550da8b2c7768c01077cbd397daaa253c7",
+        "exports/base_magnets.step": "f1a751101397dbc8ba484cdd77ba11392753fe95c47e42ca5898075aa44af2ae",
+        "exports/base_magnets.stl": "2e8a65ac0935de9cd617c5a531ac025765bcb329ea369c51126e91c3f35b840b",
+        "exports/button_cap_boot.step": "f3e30b1f69aac77d80d1900cc5c417e8204cdc0cbacf9cd562bc122ec997e7d3",
+        "exports/button_cap_boot.stl": "6a6c7dbd4587112012f3dd38f26d47505f0aa1184322c54fdee9905c8cc2b0e6",
+        "exports/button_cap_reset.step": "06bae79c5dbda06fbbef7310b7f657de055a866ffe4ae5c98457ec136366ac69",
+        "exports/button_cap_reset.stl": "6dab145439eac00815cb2f4e895e7ce6e417e7a6f549d99fec025ac75d92fe39",
+        "exports/c3_boot.step": "1ebccd9765cde2d64568d65f48b502d0ee67b18376fe02449fafb0ae6542ad17",
+        "exports/c3_boot.stl": "4c4e85a01fa5f4a02330d043ef56c011345334ef5bbd2c346dfa4f4eb80d2799",
+        "exports/c3_guide_bed.step": "eba89f453a123128006a664e7e08a7d8433fb192e8ff413179970297222fb1b2",
+        "exports/c3_guide_bed.stl": "d8cf7a3b33695674425d9c7603118e46cf069eb7dc055320e999ff6354a687a4",
+        "exports/c3_keeper.step": "cf7eaff45adf9403cdee647a88989ef061871cd3cb2a9db1c06d4c8463509828",
+        "exports/c3_keeper.stl": "4ff6b76540b79f86d950fcb10cc2c64e6dc3db17938eb5342b53c429658844c3",
+        "exports/c3_reset.step": "dccb187df943c3465700f53407c38322d32bdacc5a0c01f4e327490cb6fada79",
+        "exports/c3_reset.stl": "997cd78184ebf081404132c60e0a816e2c5d7ee717460f104fa6b854aff8e1fe",
+        "exports/c6_boot.step": "3b1ee1f381186ccec83edeff72c09308064914bdd7c2d826e9979b6d1f413cf9",
+        "exports/c6_boot.stl": "17b97ea62b2bcc10e07f582c559847086f894dce15371c7c726a2b432a6a1e90",
+        "exports/c6_guide_bed.step": "0c6e6e446422c08e60c8df72892acd9f27c467fc7ddc1bf3e588ebbf620fe8c2",
+        "exports/c6_guide_bed.stl": "b871fa9fdb2a564fcd4da457054ef1b812f6819e36df17cc6c3bb11951b53cbe",
+        "exports/c6_keeper.step": "e23ce71ba16cf2cb38c0f2f9a473b88d6674bba586eb23b723bde9b54ca4b278",
+        "exports/c6_keeper.stl": "55ae64b7048b42b5d64496aa159e8b2bd88eb8f7ae3c5d5a17139e778ed4a617",
+        "exports/c6_reset.step": "fba1464ff31b51e32558d9989f8d3f8fb2f40d0a86ef2891d3d8ff3bfcf9112d",
+        "exports/c6_reset.stl": "873b0725edfdc6bf78cf0b7a1147c1d9672f7f4593733c901b9082882c489597",
+        "exports/label_inlay_optional.step": "4f1a1c5645a69a2a133c82e93488cee9f1ed4b41e0a4d551ea652a7736689083",
+        "exports/label_inlay_optional.stl": "d8c28f8280b94684c304ec5e1137afa8f91b974485c110e67b5ac22890414d63",
+        "exports/lightpipe_aux.step": "302fee558489bb4def0c8af07e190d3a3d470cb7e6dcfd36b7e218c427a77c8e",
+        "exports/lightpipe_aux.stl": "6fa1a6aa5718c5c288dcd5324e051f8527bffb635c5b65dcb1249914f8b4abae",
+        "exports/lightpipe_bus.step": "bc25bb3938c8b7be43ec32fa0881c8e3b475ec5cee5c4d23850ba8c7c596d6db",
+        "exports/lightpipe_bus.stl": "2ee28f885ada39260d686beefa8e2fd91fd0018f9ec1d4f420b945448401c569",
+        "exports/lightpipe_wifi.step": "8f823fd1357b8b81d96ea271fc4407e0a7c9ec6aaae0856e8d45da284798bca4",
+        "exports/lightpipe_wifi.stl": "88855ba538ac71759fff08029936d96158310db31ec8698137baa81a6d5a4fdf",
+        "exports/shell_external.step": "c17ff7a7c5233e9450d470647ee3c656b7a8fb3a70a5dc1c946ce388c255e645",
+        "exports/shell_external.stl": "73c3999d056e833ca25448ddca7b97ba296cfc0d63028ba968dcb5096855171e",
+        "exports/shell_internal.step": "1a287f3d0ee6fbdce0dd0ffffc28240253294ecf8b56b5e35f1324137b1b43c2",
+        "exports/shell_internal.stl": "75d5002350b144fe5c10f6e6c3b04a1d8bb62d5800c2a1b1288644f65a94cdc2",
+        "exports/summary.json": "b200ceac71d1baa23835f4c2de97404b434a745a67e15eee89f76db46bbe1375",
+        "indicator_view.py": "ddfee37b89393850bcebd51eac889bed094d457222ebf0f03bb6f46d99fd57e6",
+        "interface_baseline.py": "c5ca15aec72c429d78d5d4894f15078fb322e3282d7e5468ff64fbd1ca431ceb",
+        "make_manifest.py": "5201d97bf56e5f8b7b59681a45abb357af6b93cb448836e69a11cd8e58a36e3e",
+        "remote_stand_view.py": "6c215948cc71e364544a5e52e155e0963e6b234268e53b26d653329c03e3eeba",
+        "renderer.py": "68fefb3ed4660bf2795dcdcd6b3079d1226ee81fe1865bb1849cc6dc6f75caad",
+        "renders/01_tapered_internal_exterior.png": "0ffc8929ce54afb135210d95f064858d1562ba248b643aaab37ea492639cf3f3",
+        "renders/02_tapered_external_dipole.png": "f231ce7b2c1d2701fbab5ef60b0808545b26c124b04ece46ffe8473d1174416a",
+        "renders/03_exploded_C3.png": "70ddbaf19756627cd5d8014edeb4ba599c74a1aaf1a7e3cbd17b9cfd79b5d96c",
+        "renders/04_section_C3.png": "3f5054032a50e02c90c2b40a689ede914737284e9df869d567cd00c599da0fb1",
+        "renders/04_section_C6.png": "ac7640bca0b7de237e378ad8fdaca0e35e09c6ab6e56b5989172fe8a2c0f60bc",
+        "renders/05_remote_antenna_option.png": "5ae7adb1a6194b76568b51b94261b99393f9437e0f96b4a737354434d83b85bc",
+        "renders/06_mechanism_C3.png": "e2224358fadaeb7a9e8b82d12957ebe1b64433540509c444f6dd8727760d268d",
+        "renders/06_mechanism_C6.png": "d426b88918cd0a5186c543cfe2edbdb113cbcc2f55cdf1134d8f9e154cc8319f",
+        "renders/07_indicator_guides.png": "e4c31295e1c31b82d0ae6b0b571c391af29f81735dc2d1a4cc75977964e008b7",
+        "renders/08_remote_magnetic_stand.png": "769e38ea74ffa956cb9348402b2b5a288f2e76cf62947d50503b78560c6bf52d",
+        "requirements.txt": "0cc484bca9656a92d55d8bad637a832364d58419b67be3250143e70952102075",
+        "validate_exports.py": "011d42df5c9450e093eec12bf07b1bb520249e14b88adfd015feb3efe1b6a5ad",
+        "validation.json": "ba26afedd443c475154e717e20b2fa0c1eceedcf7eb235e4973433c6bfbf9877"
+      },
+      "source_syntax": {
+        "interface_baseline.py": "parse_pass",
+        "enclosure.py": "parse_pass",
+        "component_envelopes.py": "parse_pass",
+        "remote_stand_view.py": "parse_pass",
+        "validate_exports.py": "parse_pass",
+        "renderer.py": "parse_pass",
+        "indicator_view.py": "parse_pass",
+        "make_manifest.py": "parse_pass"
+      },
+      "manifest_missing_inputs": {},
+      "exports": [
+        {
+          "part": "base",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 28710.639754,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              -1.0
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              8.150000105661263
+            ]
+          ],
+          "stl_facets": 7344,
+          "stl_volume_mm3": 28710.051796,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              -1.0
+            ],
+            [
+              106.5,
+              47.0,
+              8.149999618530273
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.002048
+        },
+        {
+          "part": "base_magnets",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 28634.192239,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              -1.0
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              8.150000105661263
+            ]
+          ],
+          "stl_facets": 8016,
+          "stl_volume_mm3": 28633.675553,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              -1.0
+            ],
+            [
+              106.5,
+              47.0,
+              8.149999618530273
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.001804
+        },
+        {
+          "part": "button_cap_boot",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 19.822507,
+          "step_bounds_mm": [
+            [
+              85.60000000000001,
+              5.9,
+              28.45
+            ],
+            [
+              90.8,
+              11.1,
+              30.47
+            ]
+          ],
+          "stl_facets": 668,
+          "stl_volume_mm3": 19.803997,
+          "stl_bounds_mm": [
+            [
+              85.5999984741211,
+              5.900000095367432,
+              28.450000762939453
+            ],
+            [
+              90.80000305175781,
+              11.100000381469727,
+              30.469999313354492
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.093381
+        },
+        {
+          "part": "button_cap_reset",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 19.822507,
+          "step_bounds_mm": [
+            [
+              85.60000000000001,
+              14.799999999999999,
+              28.45
+            ],
+            [
+              90.8,
+              20.0,
+              30.47
+            ]
+          ],
+          "stl_facets": 668,
+          "stl_volume_mm3": 19.803996,
+          "stl_bounds_mm": [
+            [
+              85.5999984741211,
+              14.800000190734863,
+              28.450000762939453
+            ],
+            [
+              90.80000305175781,
+              20.0,
+              30.469999313354492
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.093383
+        },
+        {
+          "part": "c3_boot",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 64.330131,
+          "step_bounds_mm": [
+            [
+              77.5,
+              6.9725,
+              20.25
+            ],
+            [
+              92.80000000000001,
+              9.9725,
+              29.72
+            ]
+          ],
+          "stl_facets": 1684,
+          "stl_volume_mm3": 64.293885,
+          "stl_bounds_mm": [
+            [
+              77.50000762939453,
+              6.972505569458008,
+              20.25
+            ],
+            [
+              92.80000305175781,
+              9.972492218017578,
+              29.719999313354492
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.056344
+        },
+        {
+          "part": "c3_guide_bed",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 193.944866,
+          "step_bounds_mm": [
+            [
+              73.0,
+              -0.3500000000000001,
+              21.0
+            ],
+            [
+              100.9,
+              26.349999999999998,
+              28.5
+            ]
+          ],
+          "stl_facets": 3918,
+          "stl_volume_mm3": 193.874537,
+          "stl_bounds_mm": [
+            [
+              73.0,
+              -0.3499999940395355,
+              21.0
+            ],
+            [
+              100.9000015258789,
+              26.350000381469727,
+              28.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.036262
+        },
+        {
+          "part": "c3_keeper",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 242.10263,
+          "step_bounds_mm": [
+            [
+              74.79999999999983,
+              1.4999999999996607,
+              24.1
+            ],
+            [
+              100.80000000000045,
+              24.500000000000156,
+              28.5
+            ]
+          ],
+          "stl_facets": 1738,
+          "stl_volume_mm3": 242.109943,
+          "stl_bounds_mm": [
+            [
+              74.80000305175781,
+              1.5,
+              24.100000381469727
+            ],
+            [
+              100.80000305175781,
+              24.5,
+              28.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.003021
+        },
+        {
+          "part": "c3_reset",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 54.06358,
+          "step_bounds_mm": [
+            [
+              77.5,
+              15.8625,
+              20.25
+            ],
+            [
+              92.80000000000001,
+              18.8625,
+              29.72
+            ]
+          ],
+          "stl_facets": 1684,
+          "stl_volume_mm3": 54.036899,
+          "stl_bounds_mm": [
+            [
+              77.50001525878906,
+              15.862510681152344,
+              20.25
+            ],
+            [
+              92.80000305175781,
+              18.862485885620117,
+              29.719999313354492
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.049351
+        },
+        {
+          "part": "c6_boot",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 79.587149,
+          "step_bounds_mm": [
+            [
+              83.6,
+              7.1,
+              19.28
+            ],
+            [
+              98.8483,
+              20.9927,
+              29.72
+            ]
+          ],
+          "stl_facets": 1780,
+          "stl_volume_mm3": 79.548606,
+          "stl_bounds_mm": [
+            [
+              83.5999984741211,
+              7.099999904632568,
+              19.280000686645508
+            ],
+            [
+              98.84797668457031,
+              20.992368698120117,
+              29.719999313354492
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.048429
+        },
+        {
+          "part": "c6_guide_bed",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 188.296314,
+          "step_bounds_mm": [
+            [
+              73.0,
+              -0.3500000000000001,
+              21.0
+            ],
+            [
+              100.9,
+              26.349999999999998,
+              28.5
+            ]
+          ],
+          "stl_facets": 3866,
+          "stl_volume_mm3": 188.226147,
+          "stl_bounds_mm": [
+            [
+              73.0,
+              -0.3499999940395355,
+              21.0
+            ],
+            [
+              100.9000015258789,
+              26.350000381469727,
+              28.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.037264
+        },
+        {
+          "part": "c6_keeper",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 242.079668,
+          "step_bounds_mm": [
+            [
+              74.79999999999983,
+              1.4999999999996607,
+              24.1
+            ],
+            [
+              100.80000000000045,
+              24.500000000000156,
+              28.5
+            ]
+          ],
+          "stl_facets": 1754,
+          "stl_volume_mm3": 242.086981,
+          "stl_bounds_mm": [
+            [
+              74.80000305175781,
+              1.5,
+              24.100000381469727
+            ],
+            [
+              100.80000305175781,
+              24.5,
+              28.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.003021
+        },
+        {
+          "part": "c6_reset",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 69.432791,
+          "step_bounds_mm": [
+            [
+              83.6,
+              4.8355,
+              19.28
+            ],
+            [
+              98.8483,
+              18.8,
+              29.72
+            ]
+          ],
+          "stl_facets": 1780,
+          "stl_volume_mm3": 69.403827,
+          "stl_bounds_mm": [
+            [
+              83.5999984741211,
+              4.835737705230713,
+              19.280000686645508
+            ],
+            [
+              98.84806823730469,
+              18.799999237060547,
+              29.719999313354492
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.041715
+        },
+        {
+          "part": "label_inlay_optional",
+          "step_valid": true,
+          "step_solids": 40,
+          "step_volume_mm3": 6.641513,
+          "step_bounds_mm": [
+            [
+              20.700378417969,
+              7.9234374,
+              30.239999899999997
+            ],
+            [
+              92.05312509999999,
+              37.43359385,
+              30.4900001
+            ]
+          ],
+          "stl_facets": 24732,
+          "stl_volume_mm3": 6.639608,
+          "stl_bounds_mm": [
+            [
+              20.70037841796875,
+              7.923437595367432,
+              30.239999771118164
+            ],
+            [
+              92.0531234741211,
+              37.43359375,
+              30.489999771118164
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.02868
+        },
+        {
+          "part": "lightpipe_aux",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 152.447281,
+          "step_bounds_mm": [
+            [
+              78.8199999,
+              28.5699999,
+              6.7499999
+            ],
+            [
+              85.4300001,
+              33.4300001,
+              30.4800001
+            ]
+          ],
+          "stl_facets": 668,
+          "stl_volume_mm3": 152.305144,
+          "stl_bounds_mm": [
+            [
+              78.81999969482422,
+              28.56999969482422,
+              6.75
+            ],
+            [
+              85.43000030517578,
+              33.43000030517578,
+              30.479999542236328
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.093237
+        },
+        {
+          "part": "lightpipe_bus",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 152.447281,
+          "step_bounds_mm": [
+            [
+              86.5699999,
+              24.5699999,
+              6.7499999
+            ],
+            [
+              91.9300001,
+              33.4300001,
+              30.4800001
+            ]
+          ],
+          "stl_facets": 668,
+          "stl_volume_mm3": 152.305143,
+          "stl_bounds_mm": [
+            [
+              86.56999969482422,
+              24.56999969482422,
+              6.75
+            ],
+            [
+              91.93000030517578,
+              33.43000030517578,
+              30.479999542236328
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.093237
+        },
+        {
+          "part": "lightpipe_wifi",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 152.447281,
+          "step_bounds_mm": [
+            [
+              68.5699999,
+              24.5699999,
+              6.7499999
+            ],
+            [
+              85.4300001,
+              33.4300001,
+              30.4800001
+            ]
+          ],
+          "stl_facets": 668,
+          "stl_volume_mm3": 152.305144,
+          "stl_bounds_mm": [
+            [
+              68.56999969482422,
+              24.56999969482422,
+              6.75
+            ],
+            [
+              85.43000030517578,
+              33.43000030517578,
+              30.479999542236328
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.093237
+        },
+        {
+          "part": "shell_external",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 24747.197265,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              5.65
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              30.5000001
+            ]
+          ],
+          "stl_facets": 38656,
+          "stl_volume_mm3": 24746.298162,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              5.650000095367432
+            ],
+            [
+              106.5,
+              47.0,
+              30.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.003633
+        },
+        {
+          "part": "shell_internal",
+          "step_valid": true,
+          "step_solids": 1,
+          "step_volume_mm3": 24572.729334,
+          "step_bounds_mm": [
+            [
+              -7.5000001,
+              -7.0000001,
+              5.65
+            ],
+            [
+              106.5000001,
+              47.0000001,
+              30.5000001
+            ]
+          ],
+          "stl_facets": 37642,
+          "stl_volume_mm3": 24571.769852,
+          "stl_bounds_mm": [
+            [
+              -7.5,
+              -7.0,
+              5.650000095367432
+            ],
+            [
+              106.5,
+              47.0,
+              30.5
+            ]
+          ],
+          "stl_all_edges_two_incident": true,
+          "volume_error_percent": 0.003905
+        }
+      ]
+    }
+  }
+}

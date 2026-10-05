@@ -48,6 +48,6 @@ The selected switches add approximately 86 mV of illustrative path loss at 364 m
 
 ## Enclosure
 
-No Rev3C enclosure is included as the default for this shared candidate. The original C3-specific Rev3C case was not copied into it and is not a shared C3/C6 or C6 case. Physical socket height, retention, vibration, USB access, both modules' BOOT/RESET access, antenna/pigtail clearance and RF performance in a final enclosure remain untested.
+The [editable shared enclosure review prototype](../../case/rev3c/README.md) is recovered, with one common base and separate C3/C6 lids. It is not a qualified default: its historical electronic proxies need the current component envelopes, and actual socket height, actuator calibration, printing, retention, USB/RJ45 access, antenna cables and RF remain untested. The original C3-specific case does not qualify C6 fit. Follow the [prototype qualification plan](PROTOTYPE-QUALIFICATION.md) before assembly or powered testing.
 
 The [placement-datum review](validation/PLACEMENT-DATUM-REVIEW.md) corrects J1’s CPL body centre without changing CAD, BOM or rotation. Earlier quote hashes remain historical; actual supplier-library pose/process approval is still required.

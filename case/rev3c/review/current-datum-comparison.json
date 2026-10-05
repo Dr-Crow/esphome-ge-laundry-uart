@@ -1,0 +1,127 @@
+{
+  "verified_utc": "2026-10-05T11:57:58.856769+00:00",
+  "review_commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+  "current_source_hashes": {
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb": "4fba3feea4161f7e6bdfbd7f20ac677a485948fac540d7bda1c246a451c4bab9",
+    "pcb/rev3c/README.md": "5a163924cc7e98aa2fe8d761b5eddf13987b3df07cbc562b354cf37ae0d2324f",
+    "pcb/rev3c/MODEL-ACCURACY.md": "48f75343ef5c49efff01245bbda22309ec7f651ff901d9fd2d56625598f6417b",
+    "pcb/rev3c/ANTENNA-REVIEW.md": "fdc6fac484f8842f7de608e01e96f2fbc5226ec0e54877116dfc1b5eaef0a2b5",
+    "firmware/shared-rev3c/packages/common.yaml": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4",
+    "firmware/shared-rev3c/README.md": "a063fa258c31e125894c9e384b581246a55c0ef13b05d91957c03314cb386002",
+    "pcb/rev3c/design/models/generate_connector_detail.py": "2272bed8ce14018dfc6e705903dca6ad44f757a85ab9bf8e3c31463d394a6d2b",
+    "pcb/rev3c/design/models/generate_rated_part_envelopes.py": "631b6cd7efef8023e141f45573da24417083c97f6deb8ee226d1c9ad0f84eb7c"
+  },
+  "board_outline_mm": [
+    99,
+    40
+  ],
+  "mounts_mm": [
+    [
+      4.5,
+      33
+    ],
+    [
+      94,
+      35
+    ]
+  ],
+  "socket_origins_mm": {
+    "J5": [
+      95.51,
+      5.2975,
+      0
+    ],
+    "J6": [
+      80.27,
+      20.5375,
+      180
+    ]
+  },
+  "LED_xy_mm": {
+    "D4": [
+      84,
+      26
+    ],
+    "D5": [
+      84,
+      30
+    ],
+    "D6": [
+      88,
+      26
+    ]
+  },
+  "appliance_J1": {
+    "origin_mm": [
+      13.97,
+      12.55,
+      -90
+    ],
+    "PIN1_net": "VDC",
+    "PIN3_net": "/ALT_PWR",
+    "both_inputs_same_connector": true
+  },
+  "J2_present": false,
+  "D19_present": false,
+  "power_component_placements_mm": {
+    "U9": [
+      65,
+      8
+    ],
+    "U10": [
+      65,
+      22.5
+    ],
+    "F1": [
+      45.5,
+      21.5
+    ],
+    "F2": [
+      45.5,
+      7
+    ],
+    "D20": [
+      47,
+      15
+    ]
+  },
+  "fixed_case_z_mm": {
+    "carrier_underside": 3.65,
+    "carrier_top": 5.25,
+    "module_bottom_min": 15.6,
+    "module_bottom_max": 16.9,
+    "module_nominal_bottom_under_current_visual_assumption": 16.25,
+    "roof_under": 28.5,
+    "roof_top": 30.5,
+    "case_floor_bottom": -1.0,
+    "switch_top_assumed": {
+      "C3": 20.0,
+      "C6": 19.03
+    },
+    "released_foot_bottom": {
+      "C3": 20.25,
+      "C6": 19.28
+    },
+    "cap_stop_travel": {
+      "C3": 0.4,
+      "C6": 0.36
+    },
+    "released_gap_under_current_11_mm_visual_assumption": {
+      "C3": 0.9,
+      "C6": 0.9
+    },
+    "residual_gap_at_stop_under_current_visual_assumption": {
+      "C3": 0.5,
+      "C6": 0.54
+    }
+  },
+  "wrong_lid_gate": {
+    "C3_BOOT_to_C6_UFL_origin_distance_mm": 0.18975576407582812,
+    "C3_RESET_within_C6_ceramic_max_xy_projection": true
+  },
+  "limits": [
+    "PCB datum and component positions independently parsed from read-only source.",
+    "Module switch/U.FL/ceramic XY follow source-datum references already documented in current repo and recovered package; no new supplier geometry downloaded.",
+    "Z values are assumption comparisons, not measurements; no regenerated or modified enclosure."
+  ]
+}

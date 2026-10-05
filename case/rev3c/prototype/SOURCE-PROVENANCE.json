@@ -1,0 +1,41 @@
+{
+  "status": "Recovered historical editable prototype, not qualified for the selected board",
+  "review_base_commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+  "archive_filename": "GE-enclosure-CAD-and-review.zip",
+  "archive_bytes": 6875607,
+  "archive_sha256": "156b6b5315473f511fdcf61b1657f987718f45eb057cb6fdce4b357d615d1e56",
+  "files": [
+    {
+      "path": "enclosure.py",
+      "bytes": 11412,
+      "sha256": "a016dbfcab8d10214f3d6880a9fdc76e442041a8baee49cf65e8edc957415607",
+      "copied_without_changes": true
+    },
+    {
+      "path": "interface_baseline.py",
+      "bytes": 22289,
+      "sha256": "c5ca15aec72c429d78d5d4894f15078fb322e3282d7e5468ff64fbd1ca431ceb",
+      "copied_without_changes": true
+    },
+    {
+      "path": "component_envelopes.py",
+      "bytes": 1457,
+      "sha256": "146a54c71920b71695831971c02fd93bb14e48ca4e6f9e1468e78b22f915c7ab",
+      "copied_without_changes": true
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 33,
+      "sha256": "0cc484bca9656a92d55d8bad637a832364d58419b67be3250143e70952102075",
+      "copied_without_changes": true
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1063,
+      "sha256": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc",
+      "copied_without_changes": true
+    }
+  ],
+  "exports_and_historical_validation": "Intentionally retained in original source archive; not promoted as current board evidence",
+  "current_native_or_physical_fit": "Not run or established by this source recovery"
+}

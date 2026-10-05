@@ -1,0 +1,99 @@
+{
+  "review_utc": "2026-10-05T12:00:58.343977+00:00",
+  "base_commit": "11826a7f6ba1ed19131ddba46e4d62b06196a8c6",
+  "current_pcb_sha256": "4fba3feea4161f7e6bdfbd7f20ac677a485948fac540d7bda1c246a451c4bab9",
+  "scope": "Original-source/export integrity review; no enclosure generation, slicing or physical qualification.",
+  "versions": {
+    "build123d": "0.10.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "ocp": null,
+    "numpy": "2.3.5",
+    "trimesh": null
+  },
+  "pinned_versions": {
+    "build123d": "0.11.1",
+    "trimesh": "5.1.0"
+  },
+  "method": {
+    "python_files": "stdlib ast.parse: syntax only; no retrieved source executed",
+    "STEP": "installed build123d.import_step using OCP; recorded is_valid, solid count, volume, bounding box; did not regenerate shapes",
+    "STL": "stdlib struct binary little-endian parser; exact file size 84 + 50*facet_count; signed triangle tetrahedron sum for volume; exact float vertex tuples with undirected edge counter; every edge must have 2 incidents. This is a closed-edge screen, not a general self-intersection/normal-consistency proof.",
+    "STEP_STL_comparison": "absolute signed-mesh-volume minus STEP-volume divided by STEP-volume; positive mesh volume required",
+    "manifest_inputs": "JSON part file references resolved relative to exports_dir; checked files exist",
+    "physical_or_motion_checks_run": false
+  },
+  "packages": {
+    "GE-printed-case": {
+      "core_source_sha256": {
+        "enclosure.py": "a016dbfcab8d10214f3d6880a9fdc76e442041a8baee49cf65e8edc957415607",
+        "interface_baseline.py": "c5ca15aec72c429d78d5d4894f15078fb322e3282d7e5468ff64fbd1ca431ceb",
+        "component_envelopes.py": "146a54c71920b71695831971c02fd93bb14e48ca4e6f9e1468e78b22f915c7ab",
+        "requirements.txt": "0cc484bca9656a92d55d8bad637a832364d58419b67be3250143e70952102075",
+        "LICENSE": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc"
+      },
+      "python_syntax_files_count": 7,
+      "STEP_STL_pairs_checked": 15,
+      "all_STEP_valid": true,
+      "all_STL_positive_volume": true,
+      "all_STL_edges_two_incident": true,
+      "maximum_volume_error_percent": 0.093237,
+      "single_solid_pair_count": 13,
+      "multi_solid_pairs": {
+        "label_inlay_c3_optional": 42,
+        "label_inlay_c6_optional": 42
+      },
+      "render_png_count": 0,
+      "summary_json_present": false,
+      "manifest_missing_input_count": {
+        "antenna_manifest.json": 18,
+        "exploded_manifest.json": 28,
+        "c6_rf_final_manifest.json": 10,
+        "render_manifest.json": 28,
+        "detail_manifest.json": 27
+      }
+    },
+    "GE-tapered-enclosure-review": {
+      "core_source_sha256": {
+        "enclosure.py": "89452f9390ed309497f51db7d4091a4d4d46f0cc1bc54093d59232a8ac869aa2",
+        "interface_baseline.py": "c5ca15aec72c429d78d5d4894f15078fb322e3282d7e5468ff64fbd1ca431ceb",
+        "component_envelopes.py": "146a54c71920b71695831971c02fd93bb14e48ca4e6f9e1468e78b22f915c7ab",
+        "requirements.txt": "0cc484bca9656a92d55d8bad637a832364d58419b67be3250143e70952102075",
+        "LICENSE": "afe63539b2327691d96c052672d922211823b761e28f33d7cceea1f890d943cc"
+      },
+      "python_syntax_files_count": 8,
+      "STEP_STL_pairs_checked": 18,
+      "all_STEP_valid": true,
+      "all_STL_positive_volume": true,
+      "all_STL_edges_two_incident": true,
+      "maximum_volume_error_percent": 0.093383,
+      "single_solid_pair_count": 17,
+      "multi_solid_pairs": {
+        "label_inlay_optional": 40
+      },
+      "render_png_count": 10,
+      "summary_json_present": true,
+      "manifest_missing_input_count": {}
+    }
+  },
+  "Z_assumptions_mm": {
+    "carrier_top_case_datum": 5.25,
+    "recovered_module_bottom_max_above_carrier_top": 11.65,
+    "current_model_module_bottom_above_carrier_top": 11.0,
+    "assumption_delta": 0.65,
+    "case_nominal_release_gap": 0.25,
+    "release_gap_if_current_model_stack_is_used": 0.9,
+    "stop_travel_C3": 0.4,
+    "stop_travel_C6": 0.36,
+    "remaining_gap_at_stop_if_current_model_stack_is_used_C3": 0.5,
+    "remaining_gap_at_stop_if_current_model_stack_is_used_C6": 0.54,
+    "measured": false
+  },
+  "reproducibility_gates": [
+    "No regenerated-source geometry comparison performed under pinned build123d version.",
+    "Export-check build123d differs from source-generation pin; trimesh unavailable.",
+    "GE-printed-case/exports/summary.json absent; package validator requires source regeneration first.",
+    "GE-printed-case renderer manifests reference omitted proxy/cutaway/supplier meshes; no printed-case render PNGs delivered.",
+    "Old make_manifest.py requires absent supplier inputs; downloaded supplier licensing must be checked before redistribution.",
+    "Historical moving/collision counts are not reproduced by validate_exports.py or these read-only checks."
+  ]
+}
