@@ -16,7 +16,7 @@ Fresh checks on October 4, 2026 used genuine KiCad 9.0.9 with the pinned officia
 | Bottom paste | 26 to 0 flashes |
 | Factory comparison | All 14 files agree after removing creation timestamps and the old appended drill markers |
 | Assembly sources | 83 matching BOM/CPL references; geometry and purchasing records unchanged |
-| Shared firmware source audit | 150 static checks passed on restored `5542734e`; firmware and hardware pin geometry are unchanged; fresh config/compile has not run |
+| Shared firmware source audit | 150 static checks passed on restored `5542734e`; firmware and hardware pin geometry are unchanged; hosted job 47 passes all eight config/compile profiles at `2d5a42c`, including the four shared C3/C6 variants |
 
 The [source-bound proof](validation/stencil-marker-repair-proof.json) records exact source, factory-file and tool pins. The [native ERC](validation/native-kicad-9.0.9-erc.json) and [DRC](validation/native-kicad-9.0.9-drc.json) are fresh reports. The original 9.0.2 installation produced library-link/content warnings; replacing it with the declared 9.0.9 tool and libraries resolved those warnings without changing electrical rules.
 

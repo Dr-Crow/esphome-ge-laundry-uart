@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-10-05T03:32:39.391928+00:00",
+  "tested_commit": "2d5a42cc7a9440aef784fe827d0e25690bb74bfd",
+  "repository": "Dr-Crow/esphome-ge-laundry-uart",
+  "scope": "Actual hosted digital validation; no physical/appliance/supplier release",
+  "jobs": {
+    "native_hardware": {
+      "number": 49,
+      "state": "success",
+      "url": "https://app.circleci.com/pipelines/github/Dr-Crow/esphome-ge-laundry-uart/187/workflows/d66a6dd2-2257-4088-8ceb-1b0d2e21dd3b/jobs/49",
+      "boards": 7
+    },
+    "intended_rules": {
+      "number": 50,
+      "state": "success",
+      "url": "https://app.circleci.com/pipelines/github/Dr-Crow/esphome-ge-laundry-uart/187/workflows/d66a6dd2-2257-4088-8ceb-1b0d2e21dd3b/jobs/50",
+      "boards": 7
+    },
+    "validator_tests": {
+      "number": 51,
+      "state": "success",
+      "url": "https://app.circleci.com/pipelines/github/Dr-Crow/esphome-ge-laundry-uart/187/workflows/d66a6dd2-2257-4088-8ceb-1b0d2e21dd3b/jobs/51"
+    },
+    "firmware": {
+      "number": 47,
+      "state": "success",
+      "url": "https://app.circleci.com/pipelines/github/Dr-Crow/esphome-ge-laundry-uart/187/workflows/d66a6dd2-2257-4088-8ceb-1b0d2e21dd3b/jobs/47",
+      "profiles": 8,
+      "all_config_compile_exit_codes": 0,
+      "runtime": "9m49s",
+      "compile_step": "9m32s"
+    },
+    "inventory": {
+      "number": 52,
+      "state": "failure",
+      "url": "https://app.circleci.com/pipelines/github/Dr-Crow/esphome-ge-laundry-uart/187/workflows/d66a6dd2-2257-4088-8ceb-1b0d2e21dd3b/jobs/52",
+      "verified_cause": "Only Rev1.0/Rev2.0 current supplier BOM/CPL undeclared; five other board inventories and firmware pass"
+    },
+    "manufacturing": {
+      "number": 48,
+      "state": "failure",
+      "url": "https://app.circleci.com/pipelines/github/Dr-Crow/esphome-ge-laundry-uart/187/workflows/d66a6dd2-2257-4088-8ceb-1b0d2e21dd3b/jobs/48",
+      "verified_cause": "CAM/source parity passes all seven; BOM/CPL source consistency passes five; Rev1.0/Rev2.0 current supplier inputs absent/unqualified"
+    },
+    "release_readiness": {
+      "number": 53,
+      "state": "failure",
+      "url": "https://app.circleci.com/pipelines/github/Dr-Crow/esphome-ge-laundry-uart/187/workflows/d66a6dd2-2257-4088-8ceb-1b0d2e21dd3b/jobs/53",
+      "verified_cause": "Exactly 21 power/source/physical gates blocked, three categories per board; no waiver"
+    }
+  },
+  "firmware_receipt": {
+    "path": "ci/validation/hosted-2d5a42c/firmware-profiles.json",
+    "sha256": "92762d7d94f133dbdd540cf2718e99f92e33f0c5018ef134f109d7ef7d6c9830",
+    "representation": "Normalized parsed copy of the visible CircleCI JSON artifact; not labeled byte-identical to server response",
+    "artifact_url": "https://output.circle-artifacts.com/output/job/48e2f2f3-d769-42a9-95ce-7b5d85a4e661/artifacts/0/firmware/firmware/firmware/profiles.json",
+    "verified_declared_input_hash_entries": 22,
+    "unique_input_files": 15,
+    "recorded_factory_ota_elf_outputs": 24,
+    "binary_verification": "Host-recorded path/size/hash entries; no binaries downloaded or independently rehashed"
+  },
+  "executed_ci_source_sha256": {
+    "ci/validate.py": "68b0d1347ff71e5d0b6200dc4bf6c939462899cef853cfdbe9a25dc55803c454",
+    "ci/manifest.json": "2533abbfd8501af45ac91263c376d7b25aa5157f693fc8f415c79c76a1cbc914",
+    ".circleci/config.yml": "648a19a3e05d02ecfa5f5cf1af42f50a01535556515573aedda8a2c9c8813a5a"
+  },
+  "later_documentation": "Quote and legacy sourcing-warning commits change no executed driver, manifest, configuration, CAD or firmware inputs",
+  "qualification": "Successful digital jobs do not qualify supplier catalog identities, placement/process, actual appliance rails/current/transients, thermal behavior, RF, enclosure or physical operation."
+}

@@ -69,9 +69,11 @@ fail. No command flashes hardware, places orders or publishes a release.
   using synthetic credentials in a temporary copy. Results bind profile/include
   hashes. A compile requires a fresh binary; config-only, missing dependencies and
   network/tool failures stay red. The exact local ESPHome environment is
-  unavailable, so fresh integrated config/compile remains **not run**. Use the
-  pinned ESPHome runtime to complete that check. Historical build receipts do
-  not establish a fresh integrated run.
+  unavailable. Hosted job 47 completed fresh config and compilation for all
+  **eight profiles** at published source `2d5a42c`; the
+  [hosted receipt](validation/hosted-2d5a42c/REVIEW.json) binds all 22 declared
+  input hashes and records 24 factory/OTA/ELF outputs. Test credentials were
+  synthetic; no device was flashed or functionally qualified.
 - Release requires separate power, source and physical qualification evidence
   for every board: **all 21 gates remain explicitly blocked**. Passed evidence
   must be committed at HEAD, hash-matched, bound to the complete current source
@@ -108,8 +110,11 @@ manifest or its fresh hosted execution. The integrated local review is recorded
 separately after the exact final files are checked. CircleCI accepted the current
 configuration through its schema validator on October 4; the
 [schema receipt](validation/INTEGRATED-CIRCLECI-SCHEMA.json) binds the CLI and
-configuration hashes. Hosted jobs, fresh full-container execution and fresh
-integrated ESPHome builds remain unverified.
+configuration hashes. Hosted native, intended-rule, validator-test and firmware jobs succeeded on
+`2d5a42c`. Inventory/manufacturing correctly fail on the two legacy supplier
+packages, and all 21 release gates remain blocked. The
+[hosted receipt](validation/hosted-2d5a42c/REVIEW.json) separates these results
+from physical qualification and the earlier local review.
 
 Do not turn failures green by ignoring native exit codes, lowering rules,
 omitting intended coverage, inventing assembly data or removing gates. Add a real

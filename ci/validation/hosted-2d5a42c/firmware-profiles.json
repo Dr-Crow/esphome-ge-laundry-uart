@@ -1,0 +1,216 @@
+{
+  "firmware/gea2.yaml": {
+    "source_sha256": "5678bf257cc8a0080db58d2a44f96d289cc344f8ec5abe0d94f439e0ac7d7b70",
+    "input_sha256": {
+      "firmware/gea2.yaml": "5678bf257cc8a0080db58d2a44f96d289cc344f8ec5abe0d94f439e0ac7d7b70"
+    },
+    "config_exit_code": 0,
+    "compile_exit_code": 0,
+    "artifacts": [
+      {
+        "path": "firmware/.esphome/build/gea2_template/build/firmware.factory.bin",
+        "bytes": 1000912,
+        "sha256": "e2d206cfe94c9bc02e8ffd5ab7d338364b1a8434ef443bb229225373952c5345"
+      },
+      {
+        "path": "firmware/.esphome/build/gea2_template/build/firmware.ota.bin",
+        "bytes": 935376,
+        "sha256": "0193d77f24426220731611d0733a3cc56304811f7cc5bfc2696d124124a83bc5"
+      },
+      {
+        "path": "firmware/.esphome/build/gea2_template/build/firmware.elf",
+        "bytes": 15075308,
+        "sha256": "fcfaab472cb3894812fa78716fd714213cbb83da2219e2bfc5b1d8ff2e608eb4"
+      }
+    ]
+  },
+  "firmware/gea3.yaml": {
+    "source_sha256": "ccf00643afadcfd2d3ed7618d12c5b1c368cd73abef7b29114a9716ba122f988",
+    "input_sha256": {
+      "firmware/gea3.yaml": "ccf00643afadcfd2d3ed7618d12c5b1c368cd73abef7b29114a9716ba122f988"
+    },
+    "config_exit_code": 0,
+    "compile_exit_code": 0,
+    "artifacts": [
+      {
+        "path": "firmware/.esphome/build/gea3_template/build/firmware.factory.bin",
+        "bytes": 996960,
+        "sha256": "9d03d9626a379dea3cc2d53b4f4503edcce52f84eafe27a7b720a393808bf4c7"
+      },
+      {
+        "path": "firmware/.esphome/build/gea3_template/build/firmware.ota.bin",
+        "bytes": 931424,
+        "sha256": "24d2e3bf293151ed0655e5d9cdb5b413f37d9a1b7e7d06ad8eab58d797f9c249"
+      },
+      {
+        "path": "firmware/.esphome/build/gea3_template/build/firmware.elf",
+        "bytes": 14985516,
+        "sha256": "249280b3d88608bc31d54c888aba891120aa9f1c9bffc557d9ed5dcf23390092"
+      }
+    ]
+  },
+  "firmware/rev1-classic/gea2.yaml": {
+    "source_sha256": "d3c2da26b218933aa081bde1d869d10aa7dad59b8aa9455f9962d96753eb04e1",
+    "input_sha256": {
+      "firmware/rev1-classic/gea2.yaml": "d3c2da26b218933aa081bde1d869d10aa7dad59b8aa9455f9962d96753eb04e1",
+      "firmware/rev1-classic/packages/common.yaml": "e0c7b2c2b716fc57204dfebbee810bb5e3374cb7720535526e9474838d62655d",
+      "firmware/rev1-classic/packages/gea2.yaml": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba"
+    },
+    "config_exit_code": 0,
+    "compile_exit_code": 0,
+    "artifacts": [
+      {
+        "path": "firmware/rev1-classic/.esphome/build/rev1-classic-gea2/build/firmware.factory.bin",
+        "bytes": 947152,
+        "sha256": "babf7072f5e4b6852ee59455807beea044582a2891678d9b2b130c216f6bf620"
+      },
+      {
+        "path": "firmware/rev1-classic/.esphome/build/rev1-classic-gea2/build/firmware.ota.bin",
+        "bytes": 881616,
+        "sha256": "57ee439aa414e8732ced4ea7c21f97522bcf091f4e022a4b7345957918085d59"
+      },
+      {
+        "path": "firmware/rev1-classic/.esphome/build/rev1-classic-gea2/build/firmware.elf",
+        "bytes": 14136384,
+        "sha256": "41e617a307de346bc42716b7deef01b6c091e2721f9654524a4fb4d07cbf164b"
+      }
+    ]
+  },
+  "firmware/rev1-classic/gea3.yaml": {
+    "source_sha256": "f19dd6cf0f94040edeef8220ea92284848e00f77c80998892bec5d0f44cf9714",
+    "input_sha256": {
+      "firmware/rev1-classic/gea3.yaml": "f19dd6cf0f94040edeef8220ea92284848e00f77c80998892bec5d0f44cf9714",
+      "firmware/rev1-classic/packages/common.yaml": "e0c7b2c2b716fc57204dfebbee810bb5e3374cb7720535526e9474838d62655d",
+      "firmware/rev1-classic/packages/gea3.yaml": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76"
+    },
+    "config_exit_code": 0,
+    "compile_exit_code": 0,
+    "artifacts": [
+      {
+        "path": "firmware/rev1-classic/.esphome/build/rev1-classic-gea3/build/firmware.factory.bin",
+        "bytes": 944240,
+        "sha256": "ee90c4a6514915b6b8b6674b03cc08bb23013f01057d27dc720f670159562916"
+      },
+      {
+        "path": "firmware/rev1-classic/.esphome/build/rev1-classic-gea3/build/firmware.ota.bin",
+        "bytes": 878704,
+        "sha256": "5efd2e3d1ee38f40460a33b6fcc5b7bb8c7288e56357ed6f38a51f6b49fe1f48"
+      },
+      {
+        "path": "firmware/rev1-classic/.esphome/build/rev1-classic-gea3/build/firmware.elf",
+        "bytes": 14051496,
+        "sha256": "87ceab524fbe9126ab6087edfe063f7fe132c1ebd0a49e7b7d6aa7521c880f0d"
+      }
+    ]
+  },
+  "firmware/shared-rev3c/c3-gea2.yaml": {
+    "source_sha256": "ff4362e214c9c99cc8c3df64c8d4c63769355111e632fc4fad29cddec79b3b0d",
+    "input_sha256": {
+      "firmware/shared-rev3c/c3-gea2.yaml": "ff4362e214c9c99cc8c3df64c8d4c63769355111e632fc4fad29cddec79b3b0d",
+      "firmware/shared-rev3c/packages/common.yaml": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4",
+      "firmware/shared-rev3c/packages/gea2.yaml": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba"
+    },
+    "config_exit_code": 0,
+    "compile_exit_code": 0,
+    "artifacts": [
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c3-gea2/build/firmware.factory.bin",
+        "bytes": 1002352,
+        "sha256": "ca457c90fcd8a29a4832faa197733456b53a5d085d0feb9e1b9cc4fa46b3071b"
+      },
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c3-gea2/build/firmware.ota.bin",
+        "bytes": 936816,
+        "sha256": "129a1f15f7a2adcd6a856df1550aeb6f999f5aa74bb4430c36a6b2644680b5a6"
+      },
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c3-gea2/build/firmware.elf",
+        "bytes": 15111756,
+        "sha256": "544dba16f0d91641efff3f3f2bbdaa88a9f8f75959a9acc4c12ad66b8794e6b4"
+      }
+    ]
+  },
+  "firmware/shared-rev3c/c3-gea3.yaml": {
+    "source_sha256": "fccf7ceeb9638114f44925c1f027158e83848b64d52a153256890ba379e4fb43",
+    "input_sha256": {
+      "firmware/shared-rev3c/c3-gea3.yaml": "fccf7ceeb9638114f44925c1f027158e83848b64d52a153256890ba379e4fb43",
+      "firmware/shared-rev3c/packages/common.yaml": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4",
+      "firmware/shared-rev3c/packages/gea3.yaml": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76"
+    },
+    "config_exit_code": 0,
+    "compile_exit_code": 0,
+    "artifacts": [
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c3-gea3/build/firmware.factory.bin",
+        "bytes": 999104,
+        "sha256": "f2d6636048b6358ea5341f1823fb64ee0dc68e2dac9f53996f0b9fa334c84beb"
+      },
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c3-gea3/build/firmware.ota.bin",
+        "bytes": 933568,
+        "sha256": "bf00992ceeb3a6ae7b907959aad2249b244a4c1e758970087b24fb61f1c605a3"
+      },
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c3-gea3/build/firmware.elf",
+        "bytes": 15035756,
+        "sha256": "ad7873b329b8fe99ba52ddd509175744d3f5e04c2d965041c49794c9f6031981"
+      }
+    ]
+  },
+  "firmware/shared-rev3c/c6-gea2.yaml": {
+    "source_sha256": "69f30f6813e7dc3fd24cbe693601f8291b7b76e178d568c4a67e2f73fe8005fc",
+    "input_sha256": {
+      "firmware/shared-rev3c/c6-gea2.yaml": "69f30f6813e7dc3fd24cbe693601f8291b7b76e178d568c4a67e2f73fe8005fc",
+      "firmware/shared-rev3c/packages/c6-rf.yaml": "55979b14a8a3dc9414c42ebc613fe2d036b72a1b447329d6be5f9c27c470d943",
+      "firmware/shared-rev3c/packages/common.yaml": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4",
+      "firmware/shared-rev3c/packages/gea2.yaml": "0d63323144af1145995f29e290d8d3df09dff0f8240e88c9432179e1350987ba"
+    },
+    "config_exit_code": 0,
+    "compile_exit_code": 0,
+    "artifacts": [
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c6-gea2/build/firmware.factory.bin",
+        "bytes": 1059120,
+        "sha256": "292c589ebabb76e560b775e9ba2ac9902b18868de528e1c0fb4c3afb4e6e7d8d"
+      },
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c6-gea2/build/firmware.ota.bin",
+        "bytes": 993584,
+        "sha256": "7d691f0b7195bd6315f7868e1f3a0284fe965a943163dc6ec4d585c73bd4101f"
+      },
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c6-gea2/build/firmware.elf",
+        "bytes": 15392216,
+        "sha256": "ac41c4a8e8c6878ee0dd28e7832ff2d08878b425d0b7f53f7ded25e246f925d9"
+      }
+    ]
+  },
+  "firmware/shared-rev3c/c6-gea3.yaml": {
+    "source_sha256": "bd3d016407627988c481bf9d66fdbc1ea8e2a5f2f58c87b345a1b1c4f7e5b3e3",
+    "input_sha256": {
+      "firmware/shared-rev3c/c6-gea3.yaml": "bd3d016407627988c481bf9d66fdbc1ea8e2a5f2f58c87b345a1b1c4f7e5b3e3",
+      "firmware/shared-rev3c/packages/c6-rf.yaml": "55979b14a8a3dc9414c42ebc613fe2d036b72a1b447329d6be5f9c27c470d943",
+      "firmware/shared-rev3c/packages/common.yaml": "ff53c86b0ef693053de75f427323fa6d9227210fe80621500094c13bd97fedf4",
+      "firmware/shared-rev3c/packages/gea3.yaml": "08efabb20a4daa28520ab3c42dd6cdc8b5d33389d4fd1c1c489e7ba86f92fb76"
+    },
+    "config_exit_code": 0,
+    "compile_exit_code": 0,
+    "artifacts": [
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c6-gea3/build/firmware.factory.bin",
+        "bytes": 1055872,
+        "sha256": "8dbcea302620250dfa1b1290c807ad17e01d40b59140013ace52a65db7fe7c32"
+      },
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c6-gea3/build/firmware.ota.bin",
+        "bytes": 990336,
+        "sha256": "8fe2945157697a0a13a726d829e47953553a34508028f8f4b9d07da5b448fe57"
+      },
+      {
+        "path": "firmware/shared-rev3c/.esphome/build/rev3c-c6-gea3/build/firmware.elf",
+        "bytes": 15312548,
+        "sha256": "c2b9134c55ba8d93ab50b376a80142fee1a18fb561708d84e88dc35b49822e7e"
+      }
+    ]
+  }
+}
