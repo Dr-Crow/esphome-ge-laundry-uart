@@ -7278,7 +7278,7 @@
 				)
 			)
 		)
-		(property "Description" "C17539"
+		(property "Description" "C104108"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12910,7 +12910,7 @@
 				)
 			)
 		)
-		(property "Description" "C17539"
+		(property "Description" "C104108"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13314,7 +13314,7 @@
 				)
 			)
 		)
-		(property "Description" "C17713"
+		(property "Description" "C17673"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

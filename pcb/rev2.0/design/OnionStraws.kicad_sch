@@ -24577,7 +24577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17713"
+		(property "Description" "C17673"
 			(at 344.805 133.35 0)
 			(effects
 				(font
@@ -26336,7 +26336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17539"
+		(property "Description" "C104108"
 			(at 335.915 179.705 0)
 			(effects
 				(font
@@ -28180,7 +28180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C17539"
+		(property "Description" "C104108"
 			(at 335.915 118.745 0)
 			(effects
 				(font

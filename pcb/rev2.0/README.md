@@ -1,6 +1,6 @@
 # PCB Rev 2.0
 
-> **Purchasing review required:** R18/R21 state 220k but C17539 is 200k; R22 states 4K7 but C17713 is 47k. Resolve the intended values before ordering. Native/source-export parity does not approve these catalog mappings. See the [legacy sourcing review](../../docs/revision-comparison/LEGACY-SOURCING.md). No parts or connections have been changed.
+> **Current purchasing correction:** R18/R21 now record C104108 (220k) and R22 records C17673 (4.7k), matching the declared values and later intended-part correction. [The exact review](native-review/RESISTOR-CATALOG-CORRECTION.md) preserves original conflicting purchasing evidence and unchanged physical/electrical geometry. Current supplier BOM/CPL, D8 identity, loaded power/interface and physical qualification remain open.
 
 Rev 2.0 reworked the board for automated assembly and adopted an ESP32-C3 module and pinout compatible with the project direction at the time.
 

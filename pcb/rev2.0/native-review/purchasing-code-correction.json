@@ -1,0 +1,24 @@
+{
+  "review_base_commit": "8744a29446a1937134525496c2a5dfdc0a59a004",
+  "adopted_intent": "Declared 220k R18/R21 and 4.7k R22 for newly reviewed procurement",
+  "changes": [
+    {
+      "path": "pcb/rev2.0/design/OnionStraws.kicad_sch",
+      "before_sha256": "e07d25f2fbaa58c997bd973c13ca19893bb1126050f3a1af5f74108f0d7d4b43",
+      "after_sha256": "610c3b04388a7e27648c91a5b90e0d5cceb3e90095ac20de17c02c77d15252be",
+      "delta": "R18/R21/R22 Description purchasing-code fields only; physical/electrical values preserved"
+    },
+    {
+      "path": "pcb/rev2.0/design/OnionStraws.kicad_pcb",
+      "before_sha256": "73cf5b1aec5182b9e162540e9a4b7897b89c961b958dfe228d6fe3530fc8826c",
+      "after_sha256": "94ed5be4db40291f03ff75cf2e046e779a1b4a131a75aeb8628f2597b6e0c4eb",
+      "delta": "R18/R21/R22 Description purchasing-code fields only; physical/electrical values preserved"
+    }
+  ],
+  "current_supplier_BOM_CPL": "Still absent/unqualified; no supplier inputs or identity invented by this correction",
+  "historical_archives_and_current_CAM_unchanged": true,
+  "electrical_values_pin_nets_geometry_unchanged": true,
+  "native_validation": "Fresh exact-commit KiCad9.0.9/CI checks required after publication; stored reports remain earlier-source evidence",
+  "physical_or_appliance_validation": false,
+  "recommendation_source": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/blob/bc0d52495bd97ed1504bd0ca0775e47feb01a648/pcb/rev2.2/README.md"
+}
