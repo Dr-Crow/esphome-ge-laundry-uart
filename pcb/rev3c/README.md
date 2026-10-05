@@ -1,5 +1,7 @@
 # Selected Rev3C prototype: shared XIAO C3/C6 carrier
 
+D14/D15 now use the reviewed 1 A STPS140Z input OR diode; numbered nets and board routing are retained. [Current part-repair evidence](validation/INPUT-DIODE-REPAIR.md) distinguishes this new source from earlier validation and quote snapshots. Exact new-source checks and supplier matching remain required.
+
 The selected development design uses two **TPS1H200A 40 V-rated switches**, 33 V resettable input fuses, and coordinated review of both GE power branches. It preserves PIN1 and PIN3 inputs, automatic PIN1 priority, the AP63205 buck and all C3/C6 side-header functions. C3 is the first implementation focus; C6 firmware and mechanical flexibility remain. Selection does not qualify the appliance supply, surge energy, loaded startup, thermal behavior or enclosure.
 
 The switch change adds voltage margin against the conditional 26 V SMF16A clamp example that exceeds the former TPS22810’s 20 V absolute input limit. It does not give the entire carrier a 40 V rating or prove that a GE appliance produces that pulse. Read the [rated-input review](RATED-SWITCH-OPTION.md) and [qualification gates](POWER-QUALIFICATION.md).

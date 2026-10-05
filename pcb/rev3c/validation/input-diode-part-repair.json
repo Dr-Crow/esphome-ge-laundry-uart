@@ -1,0 +1,74 @@
+{
+  "revision": "rev3c",
+  "prior_part": "MCC MBR0540-TP/C78744",
+  "selected_part": "STMicroelectronics STPS140Z/C155662",
+  "source_baseline": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+  "changed_fields": {
+    "Value": "STPS140Z",
+    "Datasheet": "https://www.st.com/resource/en/datasheet/stps140z.pdf",
+    "Description": "40 V, 1 A Schottky rectifier, SOD-123; maximum junction 150 degC; LCSC C155662",
+    "LCSC": "C155662",
+    "Manufacturer": "STMicroelectronics",
+    "MPN": "STPS140Z"
+  },
+  "files": [
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch",
+      "before_sha256": "03e00580dc38adf4a2b26edc7ae21c93a3e93da194cb93c79d89680e305cd697",
+      "after_sha256": "8e426ec017497c31de27e8d6d8ffef3d47a63dc1acdddf6d4f0972184b3a92f2",
+      "non_part_field_AST_sha256": "b8fda4ac5c5375f448f8cfcea7691b3ed0aa92ca5e84a03d032131b9a6a96e64",
+      "refs": [
+        "D14",
+        "D15"
+      ]
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+      "before_sha256": "71ff988b2baec7ae7f1d1b1592d7a2002c6da23e0a05e7ac9e9671a296511911",
+      "after_sha256": "2e8af772f7cbce904c1799483f50452ad830150dacf8a707b27eeae91cff0fc9",
+      "non_part_field_AST_sha256": "e83648f5bdcf07cd5dceb6d3e79f08509d519627a3a2a62e8ba68f7af6f74e57",
+      "refs": [
+        "D14",
+        "D15"
+      ]
+    },
+    {
+      "path": "pcb/rev3c/manufacturing/BOM-GEA-Adapter-Rev3C.csv",
+      "before_sha256": "27a9dfa850fe996a36c792fb6146548bc59342eda2b05732fa24e173bade1406",
+      "after_sha256": "371f9a2f167241fb0967e6645af5c34ef91c2314a433388caf1102c7699cc97c",
+      "refs": [
+        "D14",
+        "D15"
+      ]
+    }
+  ],
+  "electrical_part_specification_changed": true,
+  "numerical_pin_nets_pad_geometry_routes_and_placement_unchanged": true,
+  "inherited_graphical_alias": "MBR0540 symbol retained for generic K1/A2 Schottky drawing; exact part fields govern procurement; no old simulation-model assignment",
+  "limits": "Current/junction-rating repair only; existing lands give terminal overlap, not identical ST recommended pads. Supplier joint/paste/pose and actual thermal/OEM/fault qualification remain open.",
+  "isolated_native_metadata_check": {
+    "native_export_exit": 0,
+    "numerical_net_membership_unchanged": true,
+    "net_groups": 56,
+    "BOM_refs": 83,
+    "selected_parts": {
+      "D14": {
+        "value": "STPS140Z",
+        "LCSC": "C155662",
+        "MPN": "STPS140Z",
+        "Manufacturer": "STMicroelectronics"
+      },
+      "D15": {
+        "value": "STPS140Z",
+        "LCSC": "C155662",
+        "MPN": "STPS140Z",
+        "Manufacturer": "STMicroelectronics"
+      }
+    },
+    "source_sch_sha256": "8e426ec017497c31de27e8d6d8ffef3d47a63dc1acdddf6d4f0972184b3a92f2",
+    "source_pcb_sha256": "2e8af772f7cbce904c1799483f50452ad830150dacf8a707b27eeae91cff0fc9",
+    "native_netlist_sha256": "8136228a5cd3a961b6e85da632b8504d4a9b193afb1d98f94d6186f7fd644866"
+  },
+  "native_metadata_engine": "KiCad9.0.2 isolated metadata/net extraction only; full9.0.9 checks pending hostedCI",
+  "strict_native_ERC_DRC": "Pending exact new commit hosted KiCad9.0.9; prior passes not relabeled"
+}
