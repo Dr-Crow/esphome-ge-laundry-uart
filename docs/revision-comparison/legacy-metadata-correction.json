@@ -1,0 +1,110 @@
+{
+  "base_commit": "167dad48c7b8d1f015e24191f523d5c7facf623b",
+  "changes": [
+    {
+      "path": "pcb/rev1.0/design/OnionStraws.kicad_pcb",
+      "before_sha256": "fbee229893652b7e36fe99563679229b8be1422968c2087ffb71ad33aeba7655",
+      "after_sha256": "26f33deb176646e4e262bfc3f274d8620dbea1bfeb7b66b7d79a49350dca97e5"
+    },
+    {
+      "path": "pcb/rev1.0/design/OnionStraws.kicad_sch",
+      "before_sha256": "ded9db1a9f1b2e56d73509cd068acb9709b5f97b9fec8ab2d99018710c7689cb",
+      "after_sha256": "1423bb0ddbb4ff9612b9c8851943fa68474f077b2e1a5413d8f85ee7c10db2e6"
+    },
+    {
+      "path": "pcb/rev2.0/design/OnionStraws.kicad_pcb",
+      "before_sha256": "94ed5be4db40291f03ff75cf2e046e779a1b4a131a75aeb8628f2597b6e0c4eb",
+      "after_sha256": "591d8471f739b0922fbfec20ebbe9396ec7057879fbc2df9c709d5db4cc133dc"
+    },
+    {
+      "path": "pcb/rev2.0/design/OnionStraws.kicad_sch",
+      "before_sha256": "610c3b04388a7e27648c91a5b90e0d5cceb3e90095ac20de17c02c77d15252be",
+      "after_sha256": "103ee0fbf827b3eac473318d4cbdda0b26ea38b74653d60a716faa195cd37fba"
+    },
+    {
+      "path": "pcb/rev2.0/design/symbols/LegacySymbols.kicad_sym",
+      "before_sha256": "d24de4348847d065aa91dc08d4289c8a5fbd098078c884f0a7e4cfc802798dd3",
+      "after_sha256": "244f0459b8d56b02c2ee69150908eaf4a48db0712a01a8d35dc3cfd09bdb0e1b"
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_pcb",
+      "before_sha256": "3773690ea99292138f604bc76850f49619989679d7ed4c6ce87edcb16e0ec788",
+      "after_sha256": "c623e0cc2a0f88c72cdd5368e0fc3d618f74dffb077b22a07cc7343b3e3fb355"
+    },
+    {
+      "path": "pcb/rev2.1/design/OnionStraws.kicad_sch",
+      "before_sha256": "f20c7d49507c158c6f5d6a5cf9e6166f228a4bf35232b0a7b06bad934134f10e",
+      "after_sha256": "da46d112d335c8d687910673961a9ba825234dca29e5da889d581a527117e02b"
+    },
+    {
+      "path": "pcb/rev2.1/design/symbols/LegacySymbols.kicad_sym",
+      "before_sha256": "2b271d73d80135c821a2b6fb49d620be75afb63389e66b4ff3e8ab0ab06745da",
+      "after_sha256": "b9ff5b12a1a966972c8d78f99593b530642ed64c7c5dcf636cb1ec3841d997c6"
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_pcb",
+      "before_sha256": "4e98a77322d5f7a416f03c71dd2c724a4dd39c0ff49f3e16eb12916a8eeed187",
+      "after_sha256": "0493be81e398ebafa9237291305d1d4a74e5d59d71b2315ad7b30471ba4d747e"
+    },
+    {
+      "path": "pcb/rev2.2/design/OnionStraws.kicad_sch",
+      "before_sha256": "7539dabb37bba58a1f0139a136ca00b1b62a4883beeb737e22f4da655a057443",
+      "after_sha256": "46c2b9106c746002f668a0c3c6a33a4fb217448e4d624dce7a868ca5cc7cec15"
+    },
+    {
+      "path": "pcb/rev2.2/design/symbols/LegacySymbols.kicad_sym",
+      "before_sha256": "2b271d73d80135c821a2b6fb49d620be75afb63389e66b4ff3e8ab0ab06745da",
+      "after_sha256": "b774eb9a3608e533f4608271d7a1e3273625d98a619ec8d1cd2bccd0db2e52e0"
+    }
+  ],
+  "population_corrections": {
+    "rev1.0": {
+      "excluded_board_features": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "TP1",
+        "TP2",
+        "TP3",
+        "TP4",
+        "TP5",
+        "TP6",
+        "TP7"
+      ],
+      "explicit_dnp": [
+        "R1"
+      ]
+    },
+    "rev2.0": {
+      "excluded_board_features": [
+        "H1",
+        "H2"
+      ]
+    }
+  },
+  "regulator_metadata": {
+    "rev2.0/rev2.1": "Exact Diodes AP2205-33Y-13 C5205181: 200mA, VIN1/GND2/VOUT3; historical AP2204R symbol alias retained with corrected datasheet/description.",
+    "rev2.2": "Exact TECH PUBLIC TPAP2205-33Y C19268131: 200mA; exact manufacturer sheet selected. Its pin-table typo remains a release gate."
+  },
+  "population_choice": "Rev1 mutually exclusive pull-up/down banks and optional LED/switch preserved; no assembly-variant selection inferred. No supplier BOM/CPL invented.",
+  "no_hardware_substitution": true,
+  "no_route_or_numeric_pin_change": true,
+  "independent_nonmetadata_ast_comparison": "passed; only explicit BOM/DNP flags and datasheet/description fields differ",
+  "local_native_extraction": {
+    "engine": "KiCad9.0.2",
+    "purpose": "Verify explicit assembly metadata is parsed; not9.0.9qualification",
+    "revisions": [
+      "rev1.0",
+      "rev2.0",
+      "rev2.1",
+      "rev2.2"
+    ],
+    "exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

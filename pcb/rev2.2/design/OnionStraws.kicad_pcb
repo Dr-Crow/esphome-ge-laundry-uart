@@ -13292,7 +13292,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/products_inactive_data/AP2204.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20231201/421357A3C66CA1DC6983E93125C75712.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")

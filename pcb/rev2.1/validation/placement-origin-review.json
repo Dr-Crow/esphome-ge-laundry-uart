@@ -5,9 +5,9 @@
   "convention": "Native pad bounding-box center for the three listed references; native footprint anchor for every other assembled reference. This validates export convention, not supplier model/package alignment.",
   "primary_reference": "https://github.com/bennymeg/Fabrication-Toolkit#-override-component-origin",
   "source_sha256": {
-    "pcb/rev2.1/design/OnionStraws.kicad_pcb": "3773690ea99292138f604bc76850f49619989679d7ed4c6ce87edcb16e0ec788",
+    "pcb/rev2.1/design/OnionStraws.kicad_pcb": "c623e0cc2a0f88c72cdd5368e0fc3d618f74dffb077b22a07cc7343b3e3fb355",
     "pcb/rev2.1/design/OnionStraws.kicad_pro": "9c0da6cf2a2461fb1aa63bb901daf51ec59951bdc1285554ee44495526249e11",
-    "pcb/rev2.1/design/OnionStraws.kicad_sch": "f20c7d49507c158c6f5d6a5cf9e6166f228a4bf35232b0a7b06bad934134f10e",
+    "pcb/rev2.1/design/OnionStraws.kicad_sch": "da46d112d335c8d687910673961a9ba825234dca29e5da889d581a527117e02b",
     "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C10_C_0805_2012Metric.kicad_mod": "3dab99f31da83ab64f031a7f0ccb9232ef6c1d7bd1890aba0ff6c04f4af3e28a",
     "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C11_C_0805_2012Metric.kicad_mod": "d6b4b1647e2f2b7d582d317cfaaca76ebcf158c02c45809c7c0701803e588954",
     "pcb/rev2.1/design/footprints/LegacyBoard.pretty/C12_C_0805_2012Metric.kicad_mod": "9c2a3f365888463ade1bdbfdfc40dd9b15e4044acaa65e877a1147e93931e941",
@@ -84,7 +84,7 @@
     "pcb/rev2.1/design/footprints/LegacyBoard.pretty/U6_SOT-89-3.kicad_mod": "b4876846e007a9361cb8939c2eb2c94955510ae65dffb655062da329bf27f830",
     "pcb/rev2.1/design/fp-lib-table": "b2ae60a953882ae0cc5023de68ea2d36dffdfb9cbeeaf6cdd658b85efec77ca6",
     "pcb/rev2.1/design/sym-lib-table": "636ce07b8f47da8d40333d93cc71479b84148cec7dfd3ab5175947eb45625dda",
-    "pcb/rev2.1/design/symbols/LegacySymbols.kicad_sym": "2b271d73d80135c821a2b6fb49d620be75afb63389e66b4ff3e8ab0ab06745da"
+    "pcb/rev2.1/design/symbols/LegacySymbols.kicad_sym": "b9ff5b12a1a966972c8d78f99593b530642ed64c7c5dcf636cb1ec3841d997c6"
   },
   "references": {
     "U3": {
@@ -177,5 +177,6 @@
       "pcb/rev2.1/design/OnionStraws.kicad_sch"
     ],
     "reason": "Only R18/R21/R22 catalog metadata changed. All numeric placement/body inputs, values, pads, copper and original CPL remain unchanged. Fresh native CI checks still required."
-  }
+  },
+  "metadata_only_identity_note": "Purchasing values/codes and exact-part datasheet descriptions were reviewed independently. Hash rebinding preserves the original numerical placement datum; current native exports still verify those positions."
 }

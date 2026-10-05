@@ -4161,7 +4161,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:MountingHole") (at 223.52 228.6 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 08d2780d-73f8-499b-bea0-b768891162eb)
     (property "Reference" "H3" (id 0) (at 226.06 227.6915 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4178,7 +4178,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:TestPoint") (at 135.255 100.33 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 0c5b07a8-2014-4c77-a0fd-30a502606c80)
     (property "Reference" "TP3" (id 0) (at 136.652 96.1195 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4332,7 +4332,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:TestPoint") (at 37.465 139.065 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 2acbebc0-467b-48e3-a214-5ba9b872d3f1)
     (property "Reference" "TP5" (id 0) (at 38.862 134.8545 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4381,7 +4381,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:MountingHole") (at 200.025 221.615 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 2f6837da-9a3c-4d1c-96a9-1d7065db7755)
     (property "Reference" "H1" (id 0) (at 202.565 220.7065 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4448,7 +4448,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:TestPoint") (at 125.095 26.035 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 38823c36-e0ed-4070-86a5-46e652097b3c)
     (property "Reference" "TP1" (id 0) (at 126.492 21.8245 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4950,7 +4950,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:TestPoint") (at 38.1 166.37 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 8add6fe9-7f74-4c57-82c4-edb6e74c9b88)
     (property "Reference" "TP7" (id 0) (at 39.497 162.1595 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5154,7 +5154,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:MountingHole") (at 224.155 221.615 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid aa982b43-16ef-4dda-a055-36faea17455b)
     (property "Reference" "H2" (id 0) (at 226.695 220.7065 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5221,7 +5221,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:MountingHole") (at 200.025 229.235 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid b3501035-f81d-48a3-b153-7b734b4fc8c0)
     (property "Reference" "H4" (id 0) (at 202.565 228.3265 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5401,7 +5401,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:TestPoint") (at 235.585 123.825 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid d0584b35-d467-4eb5-b7b5-a3c30f001e0a)
     (property "Reference" "TP4" (id 0) (at 236.982 119.6145 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5419,7 +5419,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:TestPoint") (at 235.585 80.01 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid d1c5b745-ce67-4ce0-80ab-5e4ad8f382c1)
     (property "Reference" "TP2" (id 0) (at 236.982 75.7995 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5586,7 +5586,7 @@
   )
 
   (symbol (lib_id "LegacySymbols:TestPoint") (at 236.855 140.97 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid f2e9d393-35fc-479a-83b3-161fe52af241)
     (property "Reference" "TP6" (id 0) (at 238.252 136.7595 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5619,7 +5619,8 @@
   )
 
   (symbol (lib_id "LegacySymbols:R") (at 173.355 40.64 180) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board yes)
+		(dnp yes)
     (uuid fe1a1342-6757-4ac5-8483-c69aea7943ee)
     (property "Reference" "R1" (id 0) (at 175.895 40.64 90))
     (property "Value" "DNP" (id 1) (at 173.355 40.64 90))

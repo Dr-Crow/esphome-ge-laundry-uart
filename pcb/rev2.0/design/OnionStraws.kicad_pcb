@@ -4206,7 +4206,7 @@
 		(path "/2f6837da-9a3c-4d1c-96a9-1d7065db7755")
 		(sheetname "Root")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.8 0)
@@ -10804,7 +10804,7 @@
 		(path "/b3501035-f81d-48a3-b153-7b734b4fc8c0")
 		(sheetname "Root")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.8 0)
@@ -12627,7 +12627,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/products_inactive_data/AP2204.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2205.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")

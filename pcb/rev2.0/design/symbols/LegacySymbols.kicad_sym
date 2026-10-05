@@ -3062,7 +3062,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/products_inactive_data/AP2204.pdf"
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2205.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3071,7 +3071,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "150mA low dropout linear regulator, wide input voltage range, 3.3V fixed positive output, SOT-89-3 package"
+			(property "Description" "Diodes AP2205-33Y-13, 200mA 3.3V regulator; retained AP2204R symbol alias, numerical pins 1 VIN / 2 GND / 3 VOUT"
 				(at 0 0 0)
 				(effects
 					(font

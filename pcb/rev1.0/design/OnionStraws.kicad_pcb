@@ -234,7 +234,7 @@
 		)
 		(path "/f2e9d393-35fc-479a-83b3-161fe52af241")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.45)
@@ -926,7 +926,7 @@
 		)
 		(path "/0c5b07a8-2014-4c77-a0fd-30a502606c80")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.45)
@@ -1619,7 +1619,7 @@
 		)
 		(path "/b3501035-f81d-48a3-b153-7b734b4fc8c0")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.8 0)
@@ -3166,7 +3166,7 @@
 		)
 		(path "/08d2780d-73f8-499b-bea0-b768891162eb")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.8 0)
@@ -3460,7 +3460,7 @@
 		)
 		(path "/38823c36-e0ed-4070-86a5-46e652097b3c")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.45)
@@ -4575,7 +4575,7 @@
 		)
 		(path "/2f6837da-9a3c-4d1c-96a9-1d7065db7755")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.8 0)
@@ -6111,7 +6111,7 @@
 		)
 		(path "/fe1a1342-6757-4ac5-8483-c69aea7943ee")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_bom dnp)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -7532,7 +7532,7 @@
 		)
 		(path "/2acbebc0-467b-48e3-a214-5ba9b872d3f1")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.45)
@@ -8328,7 +8328,7 @@
 		)
 		(path "/8add6fe9-7f74-4c57-82c4-edb6e74c9b88")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.45)
@@ -8430,7 +8430,7 @@
 		)
 		(path "/aa982b43-16ef-4dda-a055-36faea17455b")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 2.8 0)
@@ -9904,7 +9904,7 @@
 		)
 		(path "/d1c5b745-ce67-4ce0-80ab-5e4ad8f382c1")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.45)
@@ -12310,7 +12310,7 @@
 		)
 		(path "/d0584b35-d467-4eb5-b7b5-a3c30f001e0a")
 		(sheetfile "OnionStraws.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.45)
