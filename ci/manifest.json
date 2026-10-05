@@ -240,7 +240,7 @@
       },
       "cpl_centroid_policy": {
         "evidence": "pcb/rev3a/validation/placement-origin-review.json",
-        "sha256": "8516127be4e3285d1b5f5a76e4e3c301552b5723b533e461074dc2109239a9ba",
+        "sha256": "8200269d70ad8256489b89a18262b7a6ff4b0554d86165852d66ba973db804da",
         "required_references": [
           "J1",
           "U2",

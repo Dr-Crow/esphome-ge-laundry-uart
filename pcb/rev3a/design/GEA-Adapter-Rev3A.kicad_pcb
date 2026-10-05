@@ -2094,7 +2094,7 @@
 				)
 			)
 		)
-		(property "Value" "MBR0540-TP"
+		(property "Value" "STPS140Z"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "6d35d828-eee3-4a79-908b-adb0978b47ec")
@@ -2105,7 +2105,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stps140z.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2118,7 +2118,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "40 V, 1 A Schottky rectifier, SOD-123; maximum junction 150 degC; LCSC C155662"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2350,6 +2350,27 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+		(property "LCSC" "C155662"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8a2ee7f-732e-5de5-8041-a1b178bbd1b1")
+			(effects (font (size 1.27 1.27) (thickness 0.15)))
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9a98c86-92c1-5c2b-8f9c-a3fa3bb86d64")
+			(effects (font (size 1.27 1.27) (thickness 0.15)))
+		)
+		(property "MPN" "STPS140Z"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "caedda49-38af-5649-b8d2-ddbce4c8e88e")
+			(effects (font (size 1.27 1.27) (thickness 0.15)))
 		)
 	)
 	(footprint "Diode_SMD:Nexperia_CFP3_SOD-123W"
@@ -14820,7 +14841,7 @@
 				)
 			)
 		)
-		(property "Value" "MBR0540-TP"
+		(property "Value" "STPS140Z"
 			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "67878f9e-25e4-4a1f-ac1e-8aa11f203824")
@@ -14831,7 +14852,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stps140z.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14844,7 +14865,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "40 V, 1 A Schottky rectifier, SOD-123; maximum junction 150 degC; LCSC C155662"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15076,6 +15097,27 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+		(property "LCSC" "C155662"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c384f0d-1672-5d19-94c7-14fc8ee9a51c")
+			(effects (font (size 1.27 1.27) (thickness 0.15)))
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ddde976f-3cc0-5a43-ada8-47dcdb44c509")
+			(effects (font (size 1.27 1.27) (thickness 0.15)))
+		)
+		(property "MPN" "STPS140Z"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e99eda5d-7f29-542d-836b-f4b70666f8c2")
+			(effects (font (size 1.27 1.27) (thickness 0.15)))
 		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric"

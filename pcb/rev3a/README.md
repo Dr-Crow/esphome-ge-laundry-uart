@@ -1,5 +1,7 @@
 # Revision 3A PCB
 
+D14/D15 now use the reviewed 1 A STPS140Z input OR diode; numbered nets and board routing are retained. [Current part-repair evidence](validation/INPUT-DIODE-REPAIR.md) distinguishes this new source from earlier validation and quote snapshots. Exact new-source checks and supplier matching remain required.
+
 The current branch backports the selected rated protection circuit and adds the
 recommended CHIP_EN capacitor to the integrated Rev3A architecture. See
 [RATED-PROTECTION.md](RATED-PROTECTION.md) and

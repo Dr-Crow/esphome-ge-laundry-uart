@@ -21139,7 +21139,7 @@
 				)
 			)
 		)
-		(property "Value" "MBR0540-TP"
+		(property "Value" "STPS140Z"
 			(at 299.72 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21161,7 +21161,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stps140z.pdf"
 			(at 284.48 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -21172,7 +21172,7 @@
 				)
 			)
 		)
-		(property "Description" "40 V, 0.5 A Schottky rectifier, SOD-123; JLCPCB C78744"
+		(property "Description" "40 V, 1 A Schottky rectifier, SOD-123; maximum junction 150 degC; LCSC C155662"
 			(at 284.48 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -21183,7 +21183,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C78744"
+		(property "LCSC" "C155662"
 			(at 0 0 0)
 			(effects
 				(font
@@ -21192,7 +21192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "MCC"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 0 0 0)
 			(effects
 				(font
@@ -21201,7 +21201,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "MBR0540-TP"
+		(property "MPN" "STPS140Z"
 			(at 0 0 0)
 			(effects
 				(font
@@ -21244,7 +21244,7 @@
 				)
 			)
 		)
-		(property "Value" "MBR0540-TP"
+		(property "Value" "STPS140Z"
 			(at 299.72 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21266,7 +21266,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stps140z.pdf"
 			(at 284.48 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -21277,7 +21277,7 @@
 				)
 			)
 		)
-		(property "Description" "40V 0.5A Schottky Power Rectifier Diode, SOD-123"
+		(property "Description" "40 V, 1 A Schottky rectifier, SOD-123; maximum junction 150 degC; LCSC C155662"
 			(at 284.48 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -21288,7 +21288,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C78744"
+		(property "LCSC" "C155662"
 			(at 0 0 0)
 			(effects
 				(font
@@ -21297,7 +21297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "MCC"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 0 0 0)
 			(effects
 				(font
@@ -21306,7 +21306,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "MBR0540-TP"
+		(property "MPN" "STPS140Z"
 			(at 0 0 0)
 			(effects
 				(font
