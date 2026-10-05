@@ -6,7 +6,7 @@ Updated October 5, 2026. Starting source: `77f4c8893db6c018640e25c55a3af624a3eb0
 
 | Finding | Rev3A | Rev3B | Rev3C | Next action and boundary |
 | --- | --- | --- | --- | --- |
-| D14/D15 input OR diodes rated 0.5 A/125 °C, below approximately 606 mA nominal switch limit | Present | Present | Present | Review a supported 1 A same-land-pattern replacement with exact terminal, loss, leakage and thermal evidence. Preserve numbered nets, both inputs and priority. A part rating repair cannot establish enclosed thermal capability. |
+| D14/D15 input OR diodes rated 0.5 A/125 °C, below approximately 606 mA nominal switch limit | STPS140Z applied | STPS140Z applied | STPS140Z applied | Exact STPS140Z/C155662 repair applied; numerical nets, pads, placements and routes retained. New native/CAM/quote checks remain required. Preserve numbered nets, both inputs and priority. A part rating repair cannot establish enclosed thermal capability. |
 | Downstream PMEG2010ER | D10/D11 already 1 A/20 V/150 °C | D11 already 1 A/20 V/150 °C | D11 already 1 A/20 V/150 °C | Retain unless a separate demonstrated issue justifies change. Input CL does not impose the same output-current limit after a buck. |
 | Actual input, fault-energy and hot-load envelope | Unknown | Unknown | Unknown | Complete bounded datasheet calculations; obtain the target appliance/model and reviewed limits before powered qualification. 40 V switch rating is not 40 V carrier capability. |
 | Module/regulator/USB implementation | WROOM/AP2112 and separate USB branch | Soldered XIAO C3 | Socketed XIAO C3/C6 | Assess each separately; do not copy carrier-specific assumptions. Disconnect appliance before powered USB on XIAO carriers. |
@@ -26,3 +26,5 @@ Updated October 5, 2026. Starting source: `77f4c8893db6c018640e25c55a3af624a3eb0
 The [pinned checkpoint](../../../case/rev3c/analytical/review/pinned-reproduction/GE-Pinned-CAD-Reproduction-2026-10-05.md) records build123d 0.11.1/trimesh 5.1.0 reproduction of the frozen 77f4c88 case source. All 43 recovered-prototype and eight analytical STEP/STL pairs pass readback. Across 20 shape comparisons and 12 stack cases, prior 0.10 and pinned 0.11.1 results agree within the stated tolerances. The known wrong-lid interference remains. That checkpoint is historical evidence for the stated source, not a pass for future edits.
 
 Stage focused commits, refresh affected manufacturing/geometry evidence, verify the exact remote commit and preserve a complete backup at each substantive milestone. No order, upstream submission or physical equipment test follows from this map.
+
+[Independent Rev3 repair review](rev3-power-refinement/GE-Rev3-Remaining-Power-Defects-and-Bounded-Repairs.md) records the datasheet/pad/thermal decision and separate source-node correction.

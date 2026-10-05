@@ -1,0 +1,1825 @@
+{
+  "reviewed_at": "2026-10-05T16:15:51.577954+00:00",
+  "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+  "files": [
+    {
+      "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+      "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+      "bytes": 1771882,
+      "sha256": "aa1bf9cce5845eb456d03965eca54434c483f241771d2a7de8f1406e56094b64",
+      "git_blob": "ea56f25646b8a86ad46a4840b3e5d83106e9202c"
+    },
+    {
+      "path": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch",
+      "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+      "bytes": 449520,
+      "sha256": "af102b88021d755c866e9d2d31d22445ecffded57c63c379e6109ea7fb29139c",
+      "git_blob": "22099524562e9c15ab5ca20e92cb9f868f488980"
+    },
+    {
+      "path": "pcb/rev3a/validation/rated-protection-netlist.xml",
+      "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+      "bytes": 190129,
+      "sha256": "2ff1583cce8de4f09dda9e5229a2fee3e0637908769adcb82bc40dc9b30e8d4f",
+      "git_blob": "94c30c81fb90505e2409b07bb195d2cba4cc768b"
+    },
+    {
+      "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb",
+      "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+      "bytes": 1174879,
+      "sha256": "fb8d49cbdf5206b326a66d5a6dd98171155f1258bb99d39c65f6d8dff1f141c5",
+      "git_blob": "fb1305a1344b5921a565986a9833de4c26257ba2"
+    },
+    {
+      "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch",
+      "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+      "bytes": 411169,
+      "sha256": "9abb83f512ccb98bfdb8d43f6d3328d69aad1e2b17fa840edd5b13872aec2f88",
+      "git_blob": "4fabb6eed6acf977c4c26eda6ddf456683d88d3e"
+    },
+    {
+      "path": "pcb/rev3b/validation/netlist.xml",
+      "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+      "bytes": 164595,
+      "sha256": "dbf964d4f271452bf5d6ac285721384f29d4f5e90a57dbfcb6fb2d5c2d5afa14",
+      "git_blob": "f30b9ae23ad54bb27b5cdb19b407519e09c5719d"
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+      "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+      "bytes": 1176202,
+      "sha256": "71ff988b2baec7ae7f1d1b1592d7a2002c6da23e0a05e7ac9e9671a296511911",
+      "git_blob": "e7b318c89ba74d80177510858db9e5d1807fa961"
+    },
+    {
+      "path": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch",
+      "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+      "bytes": 403239,
+      "sha256": "03e00580dc38adf4a2b26edc7ae21c93a3e93da194cb93c79d89680e305cd697",
+      "git_blob": "ce7f0b4f6cd169ca9b4494cc5b74fa3255ff7ca1"
+    },
+    {
+      "path": "pcb/rev3c/validation/netlist.xml",
+      "commit": "77f4c8893db6c018640e25c55a3af624a3eb06b3",
+      "bytes": 158803,
+      "sha256": "ee32172573a93e33e7d770a3cb8316a5033ac59549243c2da792508dce2d341e",
+      "git_blob": "b52e7252b1991600258b1c781bfab04d7714ad75"
+    }
+  ],
+  "components": {
+    "rev3a": {
+      "D10": {
+        "value": "PMEG2010ER",
+        "fields": {
+          "Manufacturer": "Nexperia",
+          "MPN": "PMEG2010ER,115",
+          "Forward_Current": "1A",
+          "Reverse_Voltage": "20V",
+          "LCSC": "C82288",
+          "Footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+          "Datasheet": null,
+          "Description": "Schottky diode"
+        },
+        "pins": {
+          "1": "+5V",
+          "2": "/USB_VBUS_FUSED"
+        }
+      },
+      "D11": {
+        "value": "PMEG2010ER",
+        "fields": {
+          "Manufacturer": "Nexperia",
+          "MPN": "PMEG2010ER,115",
+          "Forward_Current": "1A",
+          "Reverse_Voltage": "20V",
+          "LCSC": "C82288",
+          "Footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+          "Datasheet": null,
+          "Description": "Schottky diode"
+        },
+        "pins": {
+          "1": "+5V",
+          "2": "/BUCK_5V"
+        }
+      },
+      "D14": {
+        "value": "MBR0540-TP",
+        "fields": {
+          "LCSC": "C78744",
+          "Manufacturer": "MCC",
+          "MPN": "MBR0540-TP",
+          "Footprint": "Diode_SMD:D_SOD-123",
+          "Datasheet": "https://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf",
+          "Description": "40 V, 0.5 A Schottky rectifier, SOD-123; JLCPCB C78744"
+        },
+        "pins": {
+          "2": "/PIN1_SW_OUT",
+          "1": "/V_INPUT"
+        }
+      },
+      "D15": {
+        "value": "MBR0540-TP",
+        "fields": {
+          "LCSC": "C78744",
+          "Manufacturer": "MCC",
+          "MPN": "MBR0540-TP",
+          "Footprint": "Diode_SMD:D_SOD-123",
+          "Datasheet": "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf",
+          "Description": "40V 0.5A Schottky Power Rectifier Diode, SOD-123"
+        },
+        "pins": {
+          "2": "/PIN3_SW_OUT",
+          "1": "/V_INPUT"
+        }
+      },
+      "D18": {
+        "value": "SMF16A",
+        "fields": {
+          "LCSC": "C399290",
+          "Manufacturer": "SUNMATE Elec",
+          "MPN": "SMF16A",
+          "Footprint": "Diode_SMD:D_SOD-123F",
+          "Datasheet": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736",
+          "Description": "SMF16A unidirectional TVS, 16 V standoff / 19.7 V breakdown / 26 V clamp, 200 W (10/1000 us), SOD-123FL"
+        },
+        "pins": {
+          "1": "/PIN1_PROTECTED",
+          "2": "GND"
+        }
+      },
+      "D19": {
+        "value": "SMF16A",
+        "fields": {
+          "LCSC": "C399290",
+          "Manufacturer": "SUNMATE Elec",
+          "MPN": "SMF16A",
+          "Footprint": "Diode_SMD:D_SOD-123F",
+          "Datasheet": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736",
+          "Description": "SMF16A unidirectional TVS, 16 V standoff / 19.7 V breakdown / 26 V clamp, 200 W (10/1000 us), SOD-123FL"
+        },
+        "pins": {
+          "1": "/PIN3_PROTECTED",
+          "2": "GND"
+        }
+      },
+      "F1": {
+        "value": "1812L075/33DR",
+        "fields": {
+          "LCSC": "C151170",
+          "Manufacturer": "Littelfuse",
+          "MPN": "1812L075/33DR",
+          "Footprint": "OnionStraws:Fuse_Littelfuse_1812L_Recommended",
+          "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+          "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land"
+        },
+        "pins": {
+          "1": "/ALT_PWR",
+          "2": "/PIN3_FUSED"
+        }
+      },
+      "F2": {
+        "value": "1812L075/33DR",
+        "fields": {
+          "LCSC": "C151170",
+          "Manufacturer": "Littelfuse",
+          "MPN": "1812L075/33DR",
+          "Footprint": "OnionStraws:Fuse_Littelfuse_1812L_Recommended",
+          "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+          "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land"
+        },
+        "pins": {
+          "2": "/PIN1_FUSED",
+          "1": "VDC"
+        }
+      },
+      "F3": {
+        "value": "500mA",
+        "fields": {
+          "Manufacturer": "Littelfuse",
+          "MPN": "1206L050YR",
+          "Hold_Current": "500mA",
+          "LCSC": "C163512",
+          "Footprint": "Fuse:Fuse_1206_3216Metric",
+          "Datasheet": null,
+          "Description": "Resettable fuse, polymeric positive temperature coefficient"
+        },
+        "pins": {
+          "1": "/USB_VBUS",
+          "2": "/USB_VBUS_FUSED"
+        }
+      },
+      "J1": {
+        "value": "8P8C",
+        "fields": {
+          "LCSC": "C3097717",
+          "Manufacturer": "EVERCOM",
+          "MPN": "5301-8P8C",
+          "Footprint": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+          "Datasheet": "https://jlcpcb.com/partdetail/EVERCOM-53018P8C/C3097717",
+          "Description": "EVERCOM horizontal through-hole 8P8C appliance connector"
+        },
+        "pins": {
+          "3": "/ALT_PWR",
+          "5": "GEA_FullRx",
+          "4": "GEA_FullTx",
+          "7": "GEA_HalfDplx",
+          "8": "GND",
+          "1": "VDC",
+          "2": "unconnected-(J1-Pad2)",
+          "6": "unconnected-(J1-Pad6)"
+        }
+      },
+      "Q3": {
+        "value": "CJ3407",
+        "fields": {
+          "LCSC": "C15903",
+          "Manufacturer": "Jiangsu Changjing",
+          "MPN": "CJ3407",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23",
+          "Datasheet": "https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf",
+          "Description": "P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903"
+        },
+        "pins": {
+          "3": "/PIN1_FUSED",
+          "1": "/PIN1_GATE",
+          "2": "/PIN1_PROTECTED"
+        }
+      },
+      "Q4": {
+        "value": "CJ3407",
+        "fields": {
+          "LCSC": "C15903",
+          "Manufacturer": "Jiangsu Changjing",
+          "MPN": "CJ3407",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23",
+          "Datasheet": "https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf",
+          "Description": "P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903"
+        },
+        "pins": {
+          "3": "/PIN3_FUSED",
+          "1": "/PIN3_GATE",
+          "2": "/PIN3_PROTECTED"
+        }
+      },
+      "Q5": {
+        "value": "MMBT3904",
+        "fields": {
+          "LCSC": "C20526",
+          "Manufacturer": "Jiangsu Changjing",
+          "MPN": "MMBT3904",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23",
+          "Datasheet": "https://datasheet.lcsc.com/lcsc/2303061533_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT3904_C20526.pdf",
+          "Description": "40 V, 200 mA NPN transistor, SOT-23; JLCPCB C20526"
+        },
+        "pins": {
+          "3": "/PIN3_EN",
+          "1": "/PRIORITY_BASE",
+          "2": "GND"
+        }
+      },
+      "R31": {
+        "value": "5.1k",
+        "fields": {
+          "LCSC": "C27834",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F5101T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf",
+          "Description": "5.1 kOhm, 1%, 0805; JLCPCB C27834"
+        },
+        "pins": {
+          "2": "/PIN1_GATE_CLAMP",
+          "1": "GND"
+        }
+      },
+      "R32": {
+        "value": "5.1k",
+        "fields": {
+          "LCSC": "C27834",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F5101T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf",
+          "Description": "5.1 kOhm, 1%, 0805; JLCPCB C27834"
+        },
+        "pins": {
+          "2": "/PIN3_GATE_CLAMP",
+          "1": "GND"
+        }
+      },
+      "R35": {
+        "value": "10k",
+        "fields": {
+          "LCSC": "C17414",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1002T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414",
+          "Description": "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "1": "/PIN1_PROTECTED",
+          "2": "/PRIORITY_BASE"
+        }
+      },
+      "R36": {
+        "value": "10k",
+        "fields": {
+          "LCSC": "C17414",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1002T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414",
+          "Description": "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "2": "/PIN3_EN",
+          "1": "/PIN3_PROTECTED"
+        }
+      },
+      "R37": {
+        "value": "10k",
+        "fields": {
+          "LCSC": "C17414",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1002T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414",
+          "Description": "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "1": "/PRIORITY_BASE",
+          "2": "GND"
+        }
+      },
+      "R38": {
+        "value": "220k",
+        "fields": {
+          "LCSC": "C104108",
+          "Manufacturer": "RALEC",
+          "MPN": "RTT052203FTP",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "~",
+          "Description": "RALEC RTT052203FTP 220 k\u03a9 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "1": "/USB_VBUS",
+          "2": "GND"
+        }
+      },
+      "R39": {
+        "value": "3.3k 1%",
+        "fields": {
+          "LCSC": "C22978",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0603WAF3301T5E",
+          "Footprint": "Resistor_SMD:R_0603_1608Metric",
+          "Datasheet": "https://www.royalohm.com/assets/pdf/products/smd/1.pdf",
+          "Description": "3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified"
+        },
+        "pins": {
+          "1": "/PIN1_CL",
+          "2": "GND"
+        }
+      },
+      "R40": {
+        "value": "3.3k 1%",
+        "fields": {
+          "LCSC": "C22978",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0603WAF3301T5E",
+          "Footprint": "Resistor_SMD:R_0603_1608Metric",
+          "Datasheet": "https://www.royalohm.com/assets/pdf/products/smd/1.pdf",
+          "Description": "3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified"
+        },
+        "pins": {
+          "1": "/PIN3_CL",
+          "2": "GND"
+        }
+      },
+      "R41": {
+        "value": "100k 1%",
+        "fields": {
+          "LCSC": "C149504",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1003T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504",
+          "Description": "100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry"
+        },
+        "pins": {
+          "2": "/PIN1_DELAY",
+          "1": "/PIN1_PROTECTED"
+        }
+      },
+      "R42": {
+        "value": "100k 1%",
+        "fields": {
+          "LCSC": "C149504",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1003T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504",
+          "Description": "100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry"
+        },
+        "pins": {
+          "2": "/PIN3_DELAY",
+          "1": "/PIN3_PROTECTED"
+        }
+      },
+      "U2": {
+        "value": "ESP32-C3-WROOM-02",
+        "fields": {
+          "LCSC": "C2934560",
+          "Manufacturer": "Espressif Systems",
+          "MPN": "ESP32-C3-WROOM-02-N4",
+          "Footprint": "LegacyBoard:U2_ESP32-C3-WROOM-02",
+          "Datasheet": "https://documentation.espressif.com/ESP32-C3-Wroom-02_datasheet_en.pdf",
+          "Description": "ESP32-C3 Wi-Fi and Bluetooth LE module, 4MB flash, PCB antenna"
+        },
+        "pins": {
+          "1": "+3V3",
+          "8": "/BOOT",
+          "7": "/BOOT_SEL",
+          "16": "/DBG_LED",
+          "2": "/EN",
+          "3": "/LED1",
+          "15": "/LED2",
+          "13": "/USB_MCU_N",
+          "14": "/USB_MCU_P",
+          "10": "GEA2_RX",
+          "12": "GEA3_RX",
+          "11": "GEA3_TX",
+          "19": "GND",
+          "9": "GND",
+          "4": "Net-(JP1-A)",
+          "18": "unconnected-(U2-IO0-Pad18)",
+          "17": "unconnected-(U2-IO1-Pad17)",
+          "5": "unconnected-(U2-IO6-Pad5)",
+          "6": "unconnected-(U2-IO7-Pad6)"
+        }
+      },
+      "U6": {
+        "value": "AP2112K-3.3",
+        "fields": {
+          "LCSC": "C51118",
+          "Manufacturer": "Diodes Incorporated",
+          "MPN": "AP2112K-3.3TRG1",
+          "Output_Current": "600mA",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+          "Datasheet": "https://www.diodes.com/datasheet/download/AP2112.pdf",
+          "Description": "600mA CMOS low-dropout regulator, fixed 3.3V, SOT-25"
+        },
+        "pins": {
+          "5": "+3V3",
+          "1": "+5V",
+          "3": "+5V",
+          "2": "GND",
+          "4": "unconnected-(U6-NC-Pad4)"
+        }
+      },
+      "U8": {
+        "value": "AP63205WU",
+        "fields": {
+          "Manufacturer": "Diodes Incorporated",
+          "MPN": "AP63205WU-7",
+          "LCSC": "C2071056",
+          "Input_Range": "3.8V to 32V",
+          "Output_Current": "2A",
+          "Footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+          "Datasheet": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+          "Description": "2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"
+        },
+        "pins": {
+          "1": "/BUCK_5V",
+          "6": "/BUCK_BST",
+          "5": "/BUCK_SW",
+          "2": "/V_INPUT",
+          "3": "/V_INPUT",
+          "4": "GND"
+        }
+      },
+      "U9": {
+        "value": "TPS1H200AQDGNRQ1",
+        "fields": {
+          "LCSC": "C2653785",
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TPS1H200AQDGNRQ1",
+          "Footprint": "OnionStraws:TPS1H200A_DGN0008K_TI_RevE",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+          "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD"
+        },
+        "pins": {
+          "4": "/PIN1_CL",
+          "5": "/PIN1_DELAY",
+          "1": "/PIN1_PROTECTED",
+          "8": "/PIN1_PROTECTED",
+          "7": "/PIN1_SW_OUT",
+          "2": "GND",
+          "6": "GND",
+          "9": "GND",
+          "3": "unconnected-(U9-FAULT-Pad3)"
+        }
+      },
+      "U10": {
+        "value": "TPS1H200AQDGNRQ1",
+        "fields": {
+          "LCSC": "C2653785",
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TPS1H200AQDGNRQ1",
+          "Footprint": "OnionStraws:TPS1H200A_DGN0008K_TI_RevE",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+          "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD"
+        },
+        "pins": {
+          "4": "/PIN3_CL",
+          "5": "/PIN3_DELAY",
+          "1": "/PIN3_EN",
+          "8": "/PIN3_PROTECTED",
+          "7": "/PIN3_SW_OUT",
+          "2": "GND",
+          "6": "GND",
+          "9": "GND",
+          "3": "unconnected-(U10-FAULT-Pad3)"
+        }
+      }
+    },
+    "rev3b": {
+      "D11": {
+        "value": "PMEG2010ER",
+        "fields": {
+          "Manufacturer": "Nexperia",
+          "MPN": "PMEG2010ER,115",
+          "Forward_Current": "1A",
+          "Reverse_Voltage": "20V",
+          "LCSC": "C82288",
+          "Footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+          "Datasheet": null,
+          "Description": "Schottky diode"
+        },
+        "pins": {
+          "1": "+5V",
+          "2": "/BUCK_5V"
+        }
+      },
+      "D14": {
+        "value": "MBR0540-TP",
+        "fields": {
+          "LCSC": "C78744",
+          "Manufacturer": "MCC",
+          "MPN": "MBR0540-TP",
+          "Footprint": "Diode_SMD:D_SOD-123",
+          "Datasheet": "https://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf",
+          "Description": "40 V, 0.5 A Schottky rectifier, SOD-123; JLCPCB C78744"
+        },
+        "pins": {
+          "2": "/PIN1_SW_OUT",
+          "1": "/V_INPUT"
+        }
+      },
+      "D15": {
+        "value": "MBR0540-TP",
+        "fields": {
+          "LCSC": "C78744",
+          "Manufacturer": "MCC",
+          "MPN": "MBR0540-TP",
+          "Footprint": "Diode_SMD:D_SOD-123",
+          "Datasheet": "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf",
+          "Description": "40V 0.5A Schottky Power Rectifier Diode, SOD-123"
+        },
+        "pins": {
+          "2": "/PIN3_SW_OUT",
+          "1": "/V_INPUT"
+        }
+      },
+      "D18": {
+        "value": "SMF16A",
+        "fields": {
+          "LCSC": "C399290",
+          "Manufacturer": "SUNMATE Elec",
+          "MPN": "SMF16A",
+          "Footprint": "Diode_SMD:D_SOD-123F",
+          "Datasheet": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736",
+          "Description": "SMF16A unidirectional TVS, 16 V standoff / 19.7 V breakdown / 26 V clamp, 200 W (10/1000 us), SOD-123FL"
+        },
+        "pins": {
+          "1": "/PIN1_PROTECTED",
+          "2": "GND"
+        }
+      },
+      "D19": {
+        "value": "PMEG2010ER",
+        "fields": {
+          "Manufacturer": "Nexperia",
+          "MPN": "PMEG2010ER,115",
+          "Forward_Current": "1A",
+          "Reverse_Voltage": "20V",
+          "LCSC": "C82288",
+          "Footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+          "Datasheet": null,
+          "Description": "Schottky diode"
+        },
+        "pins": {
+          "1": "+5V",
+          "2": "/5V_IN"
+        }
+      },
+      "F1": {
+        "value": "1812L075/33DR",
+        "fields": {
+          "LCSC": "C151170",
+          "Manufacturer": "Littelfuse",
+          "MPN": "1812L075/33DR",
+          "Footprint": "GEA_Rev3B:Fuse_Littelfuse_1812L_Recommended",
+          "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+          "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land"
+        },
+        "pins": {
+          "1": "/ALT_PWR",
+          "2": "/PIN3_FUSED"
+        }
+      },
+      "F2": {
+        "value": "1812L075/33DR",
+        "fields": {
+          "LCSC": "C151170",
+          "Manufacturer": "Littelfuse",
+          "MPN": "1812L075/33DR",
+          "Footprint": "GEA_Rev3B:Fuse_Littelfuse_1812L_Recommended",
+          "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+          "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land"
+        },
+        "pins": {
+          "2": "/PIN1_FUSED",
+          "1": "VDC"
+        }
+      },
+      "J1": {
+        "value": "8P8C",
+        "fields": {
+          "LCSC": "C3097717",
+          "Manufacturer": "EVERCOM",
+          "MPN": "5301-8P8C",
+          "Footprint": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+          "Datasheet": "https://jlcpcb.com/partdetail/EVERCOM-53018P8C/C3097717",
+          "Description": "EVERCOM horizontal through-hole 8P8C appliance connector"
+        },
+        "pins": {
+          "3": "/ALT_PWR",
+          "5": "GEA_FullRx",
+          "4": "GEA_FullTx",
+          "7": "GEA_HalfDplx",
+          "8": "GND",
+          "1": "VDC",
+          "2": "unconnected-(J1-Pad2)",
+          "6": "unconnected-(J1-Pad6)"
+        }
+      },
+      "Q3": {
+        "value": "CJ3407",
+        "fields": {
+          "LCSC": "C15903",
+          "Manufacturer": "Jiangsu Changjing",
+          "MPN": "CJ3407",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23",
+          "Datasheet": "https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf",
+          "Description": "P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903"
+        },
+        "pins": {
+          "3": "/PIN1_FUSED",
+          "1": "/PIN1_GATE",
+          "2": "/PIN1_PROTECTED"
+        }
+      },
+      "Q4": {
+        "value": "CJ3407",
+        "fields": {
+          "LCSC": "C15903",
+          "Manufacturer": "Jiangsu Changjing",
+          "MPN": "CJ3407",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23",
+          "Datasheet": "https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf",
+          "Description": "P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903"
+        },
+        "pins": {
+          "3": "/PIN3_FUSED",
+          "1": "/PIN3_GATE",
+          "2": "/PIN3_PROTECTED"
+        }
+      },
+      "Q5": {
+        "value": "MMBT3904",
+        "fields": {
+          "LCSC": "C20526",
+          "Manufacturer": "Jiangsu Changjing",
+          "MPN": "MMBT3904",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23",
+          "Datasheet": "https://datasheet.lcsc.com/lcsc/2303061533_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT3904_C20526.pdf",
+          "Description": "40 V, 200 mA NPN transistor, SOT-23; JLCPCB C20526"
+        },
+        "pins": {
+          "3": "/PIN3_EN",
+          "1": "/PRIORITY_BASE",
+          "2": "GND"
+        }
+      },
+      "R31": {
+        "value": "5.1k",
+        "fields": {
+          "LCSC": "C27834",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F5101T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf",
+          "Description": "5.1 kOhm, 1%, 0805; JLCPCB C27834"
+        },
+        "pins": {
+          "2": "/PIN1_GATE_CLAMP",
+          "1": "GND"
+        }
+      },
+      "R32": {
+        "value": "5.1k",
+        "fields": {
+          "LCSC": "C27834",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F5101T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf",
+          "Description": "5.1 kOhm, 1%, 0805; JLCPCB C27834"
+        },
+        "pins": {
+          "2": "/PIN3_GATE_CLAMP",
+          "1": "GND"
+        }
+      },
+      "R35": {
+        "value": "10k",
+        "fields": {
+          "LCSC": "C17414",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1002T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414",
+          "Description": "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "1": "/PIN1_PROTECTED",
+          "2": "/PRIORITY_BASE"
+        }
+      },
+      "R36": {
+        "value": "10k",
+        "fields": {
+          "LCSC": "C17414",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1002T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414",
+          "Description": "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "2": "/PIN3_EN",
+          "1": "/PIN3_PROTECTED"
+        }
+      },
+      "R37": {
+        "value": "10k",
+        "fields": {
+          "LCSC": "C17414",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1002T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414",
+          "Description": "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "1": "/PRIORITY_BASE",
+          "2": "GND"
+        }
+      },
+      "R38": {
+        "value": "3.3k 1%",
+        "fields": {
+          "LCSC": "C22978",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0603WAF3301T5E",
+          "Footprint": "Resistor_SMD:R_0603_1608Metric",
+          "Datasheet": "https://www.royalohm.com/assets/pdf/products/smd/1.pdf",
+          "Description": "3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified"
+        },
+        "pins": {
+          "1": "/PIN1_CL",
+          "2": "GND"
+        }
+      },
+      "R39": {
+        "value": "3.3k 1%",
+        "fields": {
+          "LCSC": "C22978",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0603WAF3301T5E",
+          "Footprint": "Resistor_SMD:R_0603_1608Metric",
+          "Datasheet": "https://www.royalohm.com/assets/pdf/products/smd/1.pdf",
+          "Description": "3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified"
+        },
+        "pins": {
+          "1": "/PIN3_CL",
+          "2": "GND"
+        }
+      },
+      "R40": {
+        "value": "100k 1%",
+        "fields": {
+          "LCSC": "C149504",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1003T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504",
+          "Description": "100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry"
+        },
+        "pins": {
+          "2": "/PIN1_DELAY",
+          "1": "/PIN1_PROTECTED"
+        }
+      },
+      "R41": {
+        "value": "100k 1%",
+        "fields": {
+          "LCSC": "C149504",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1003T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504",
+          "Description": "100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry"
+        },
+        "pins": {
+          "2": "/PIN3_DELAY",
+          "1": "/PIN3_PROTECTED"
+        }
+      },
+      "U2": {
+        "value": "XIAO ESP32-C3 v1.3 (22-pad)",
+        "fields": {
+          "LCSC": "C18212168",
+          "Manufacturer": "Seeed Studio",
+          "MPN": "113991054",
+          "Footprint": "GEA_XIAO:XIAO-ESP32-C3-v1.3-SMD",
+          "Datasheet": "https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO_ESP32C3_v1.3_SCH_260116.pdf",
+          "Description": "Seeed Studio XIAO ESP32-C3 module; native USB with onboard BOOT and RESET"
+        },
+        "pins": {
+          "12": "+3V3",
+          "14": "+5V",
+          "9": "/BOOT_SEL",
+          "1": "/DBG_LED",
+          "4": "/GEA2_MCU_TX",
+          "3": "/LED1",
+          "2": "/LED2",
+          "10": "BOOT",
+          "17": "EN",
+          "11": "GEA2_RX",
+          "7": "GEA3_RX",
+          "8": "GEA3_TX",
+          "13": "GND",
+          "18": "GND",
+          "22": "GND",
+          "19": "unconnected-(U2-D2/MTMS-Pad19)",
+          "15": "unconnected-(U2-D3/MTDI-Pad15)",
+          "5": "unconnected-(U2-D4-Pad5)",
+          "20": "unconnected-(U2-D4/MTCK-Pad20)",
+          "6": "unconnected-(U2-D5-Pad6)",
+          "16": "unconnected-(U2-D5/MTDO-Pad16)",
+          "21": "unconnected-(U2-VBAT-Pad21)"
+        }
+      },
+      "U8": {
+        "value": "AP63205WU",
+        "fields": {
+          "Manufacturer": "Diodes Incorporated",
+          "MPN": "AP63205WU-7",
+          "LCSC": "C2071056",
+          "Input_Range": "3.8V to 32V",
+          "Output_Current": "2A",
+          "Footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+          "Datasheet": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+          "Description": "2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"
+        },
+        "pins": {
+          "1": "/BUCK_5V",
+          "6": "/BUCK_BST",
+          "5": "/BUCK_SW",
+          "2": "/V_INPUT",
+          "3": "/V_INPUT",
+          "4": "GND"
+        }
+      },
+      "U9": {
+        "value": "TPS1H200AQDGNRQ1",
+        "fields": {
+          "LCSC": "C2653785",
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TPS1H200AQDGNRQ1",
+          "Footprint": "GEA_Rev3B:TPS1H200A_DGN0008K_TI_RevE",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+          "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD"
+        },
+        "pins": {
+          "4": "/PIN1_CL",
+          "5": "/PIN1_DELAY",
+          "1": "/PIN1_PROTECTED",
+          "8": "/PIN1_PROTECTED",
+          "7": "/PIN1_SW_OUT",
+          "2": "GND",
+          "6": "GND",
+          "9": "GND",
+          "3": "unconnected-(U9-FAULT-Pad3)"
+        }
+      },
+      "U10": {
+        "value": "TPS1H200AQDGNRQ1",
+        "fields": {
+          "LCSC": "C2653785",
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TPS1H200AQDGNRQ1",
+          "Footprint": "GEA_Rev3B:TPS1H200A_DGN0008K_TI_RevE",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+          "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD"
+        },
+        "pins": {
+          "4": "/PIN3_CL",
+          "5": "/PIN3_DELAY",
+          "1": "/PIN3_EN",
+          "8": "/PIN3_PROTECTED",
+          "7": "/PIN3_SW_OUT",
+          "2": "GND",
+          "6": "GND",
+          "9": "GND",
+          "3": "unconnected-(U10-FAULT-Pad3)"
+        }
+      }
+    },
+    "rev3c": {
+      "D11": {
+        "value": "PMEG2010ER",
+        "fields": {
+          "Manufacturer": "Nexperia",
+          "MPN": "PMEG2010ER,115",
+          "Forward_Current": "1A",
+          "Reverse_Voltage": "20V",
+          "LCSC": "C82288",
+          "Footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+          "Datasheet": null,
+          "Description": "Schottky diode"
+        },
+        "pins": {
+          "1": "+5V",
+          "2": "/BUCK_5V"
+        }
+      },
+      "D14": {
+        "value": "MBR0540-TP",
+        "fields": {
+          "LCSC": "C78744",
+          "Manufacturer": "MCC",
+          "MPN": "MBR0540-TP",
+          "Footprint": "Diode_SMD:D_SOD-123",
+          "Datasheet": "https://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf",
+          "Description": "40 V, 0.5 A Schottky rectifier, SOD-123; JLCPCB C78744"
+        },
+        "pins": {
+          "2": "/PIN1_SW_OUT",
+          "1": "/V_INPUT"
+        }
+      },
+      "D15": {
+        "value": "MBR0540-TP",
+        "fields": {
+          "LCSC": "C78744",
+          "Manufacturer": "MCC",
+          "MPN": "MBR0540-TP",
+          "Footprint": "Diode_SMD:D_SOD-123",
+          "Datasheet": "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf",
+          "Description": "40V 0.5A Schottky Power Rectifier Diode, SOD-123"
+        },
+        "pins": {
+          "2": "/PIN3_SW_OUT",
+          "1": "/V_INPUT"
+        }
+      },
+      "D18": {
+        "value": "SMF16A",
+        "fields": {
+          "LCSC": "C399290",
+          "Manufacturer": "SUNMATE Elec",
+          "MPN": "SMF16A",
+          "Footprint": "Diode_SMD:D_SOD-123F",
+          "Datasheet": "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8757789523080564736",
+          "Description": "SMF16A unidirectional TVS, 16 V standoff / 19.7 V breakdown / 26 V clamp, 200 W (10/1000 us), SOD-123FL"
+        },
+        "pins": {
+          "1": "/PIN1_PROTECTED",
+          "2": "GND"
+        }
+      },
+      "F1": {
+        "value": "1812L075/33DR",
+        "fields": {
+          "LCSC": "C151170",
+          "Manufacturer": "Littelfuse",
+          "MPN": "1812L075/33DR",
+          "Footprint": "GEA_Rev3C:Fuse_Littelfuse_1812L_Recommended",
+          "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+          "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land"
+        },
+        "pins": {
+          "1": "/ALT_PWR",
+          "2": "/PIN3_FUSED"
+        }
+      },
+      "F2": {
+        "value": "1812L075/33DR",
+        "fields": {
+          "LCSC": "C151170",
+          "Manufacturer": "Littelfuse",
+          "MPN": "1812L075/33DR",
+          "Footprint": "GEA_Rev3C:Fuse_Littelfuse_1812L_Recommended",
+          "Datasheet": "https://www.littelfuse.com/assetdocs/resettable-ptcs-1812l-datasheet?assetguid=ca5c80cb-504e-4a8a-8e74-0107520a1717",
+          "Description": "Littelfuse 1812L075/33DR PPTC; 0.75 A hold / 1.5 A trip at 20 C; 33 V / 20 A maximum fault rating; manufacturer recommended land"
+        },
+        "pins": {
+          "2": "/PIN1_FUSED",
+          "1": "VDC"
+        }
+      },
+      "J1": {
+        "value": "8P8C",
+        "fields": {
+          "LCSC": "C3097717",
+          "Manufacturer": "EVERCOM",
+          "MPN": "5301-8P8C",
+          "Footprint": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+          "Datasheet": "https://jlcpcb.com/partdetail/EVERCOM-53018P8C/C3097717",
+          "Description": "EVERCOM horizontal through-hole 8P8C appliance connector"
+        },
+        "pins": {
+          "3": "/ALT_PWR",
+          "5": "GEA_FullRx",
+          "4": "GEA_FullTx",
+          "7": "GEA_HalfDplx",
+          "8": "GND",
+          "1": "VDC",
+          "2": "unconnected-(J1-Pad2)",
+          "6": "unconnected-(J1-Pad6)"
+        }
+      },
+      "J6": {
+        "value": "Socket_XIAO_B",
+        "fields": {
+          "LCSC": "C2897370",
+          "Manufacturer": "HCTL",
+          "MPN": "PM254-1-07-Z-8.5",
+          "Footprint": "GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254",
+          "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370",
+          "Description": "HCTL PM254-1-07-Z-8.5 female socket; J6 row for user-installed XIAO module RX_D7..VBUS signals"
+        },
+        "pins": {
+          "5": "+3V3",
+          "7": "+5V",
+          "2": "/BOOT_SEL",
+          "3": "BOOT",
+          "4": "GEA2_RX",
+          "1": "GEA3_TX",
+          "6": "GND"
+        }
+      },
+      "Q3": {
+        "value": "CJ3407",
+        "fields": {
+          "LCSC": "C15903",
+          "Manufacturer": "Jiangsu Changjing",
+          "MPN": "CJ3407",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23",
+          "Datasheet": "https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf",
+          "Description": "P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903"
+        },
+        "pins": {
+          "3": "/PIN1_FUSED",
+          "1": "/PIN1_GATE",
+          "2": "/PIN1_PROTECTED"
+        }
+      },
+      "Q4": {
+        "value": "CJ3407",
+        "fields": {
+          "LCSC": "C15903",
+          "Manufacturer": "Jiangsu Changjing",
+          "MPN": "CJ3407",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23",
+          "Datasheet": "https://www.jscj-elec.com/gallery/file/CJ3407%20SOT-23%20V2.2.pdf",
+          "Description": "P-channel MOSFET, -30 V, 4.1 A, SOT-23; pin 1=G, 2=S, 3=D; JLCPCB C15903"
+        },
+        "pins": {
+          "3": "/PIN3_FUSED",
+          "1": "/PIN3_GATE",
+          "2": "/PIN3_PROTECTED"
+        }
+      },
+      "Q5": {
+        "value": "MMBT3904",
+        "fields": {
+          "LCSC": "C20526",
+          "Manufacturer": "Jiangsu Changjing",
+          "MPN": "MMBT3904",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23",
+          "Datasheet": "https://datasheet.lcsc.com/lcsc/2303061533_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT3904_C20526.pdf",
+          "Description": "40 V, 200 mA NPN transistor, SOT-23; JLCPCB C20526"
+        },
+        "pins": {
+          "3": "/PIN3_EN",
+          "1": "/PRIORITY_BASE",
+          "2": "GND"
+        }
+      },
+      "R31": {
+        "value": "5.1k",
+        "fields": {
+          "LCSC": "C27834",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F5101T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf",
+          "Description": "5.1 kOhm, 1%, 0805; JLCPCB C27834"
+        },
+        "pins": {
+          "2": "/PIN1_GATE_CLAMP",
+          "1": "GND"
+        }
+      },
+      "R32": {
+        "value": "5.1k",
+        "fields": {
+          "LCSC": "C27834",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F5101T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://datasheet.lcsc.com/lcsc/1912111437_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf",
+          "Description": "5.1 kOhm, 1%, 0805; JLCPCB C27834"
+        },
+        "pins": {
+          "2": "/PIN3_GATE_CLAMP",
+          "1": "GND"
+        }
+      },
+      "R35": {
+        "value": "10k",
+        "fields": {
+          "LCSC": "C17414",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1002T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414",
+          "Description": "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "1": "/PIN1_PROTECTED",
+          "2": "/PRIORITY_BASE"
+        }
+      },
+      "R36": {
+        "value": "10k",
+        "fields": {
+          "LCSC": "C17414",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1002T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414",
+          "Description": "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "2": "/PIN3_EN",
+          "1": "/PIN3_PROTECTED"
+        }
+      },
+      "R37": {
+        "value": "10k",
+        "fields": {
+          "LCSC": "C17414",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1002T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/UNIROYAL-0805W8F1002T5E/C17414",
+          "Description": "UNI-ROYAL 0805W8F1002T5E 10 kOhm 1% 1/8 W 0805 thick-film resistor"
+        },
+        "pins": {
+          "1": "/PRIORITY_BASE",
+          "2": "GND"
+        }
+      },
+      "R38": {
+        "value": "3.3k 1%",
+        "fields": {
+          "LCSC": "C22978",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0603WAF3301T5E",
+          "Footprint": "Resistor_SMD:R_0603_1608Metric",
+          "Datasheet": "https://www.royalohm.com/assets/pdf/products/smd/1.pdf",
+          "Description": "3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified"
+        },
+        "pins": {
+          "1": "/PIN1_CL",
+          "2": "GND"
+        }
+      },
+      "R39": {
+        "value": "3.3k 1%",
+        "fields": {
+          "LCSC": "C22978",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0603WAF3301T5E",
+          "Footprint": "Resistor_SMD:R_0603_1608Metric",
+          "Datasheet": "https://www.royalohm.com/assets/pdf/products/smd/1.pdf",
+          "Description": "3.3 kOhm 1% 0603 100 mW / 75 V; provisional TPS1H200 0.606 A nominal current limit; source allowance and startup unqualified"
+        },
+        "pins": {
+          "1": "/PIN3_CL",
+          "2": "GND"
+        }
+      },
+      "R40": {
+        "value": "100k 1%",
+        "fields": {
+          "LCSC": "C149504",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1003T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504",
+          "Description": "100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry"
+        },
+        "pins": {
+          "2": "/PIN1_DELAY",
+          "1": "/PIN1_PROTECTED"
+        }
+      },
+      "R41": {
+        "value": "100k 1%",
+        "fields": {
+          "LCSC": "C149504",
+          "Manufacturer": "UNI-ROYAL",
+          "MPN": "0805W8F1003T5E",
+          "Footprint": "Resistor_SMD:R_0805_2012Metric",
+          "Datasheet": "https://jlcpcb.com/partdetail/C149504",
+          "Description": "100 kOhm 1% 0805 1/8 W; own-VS DELAY pull-up for TI standalone auto-retry"
+        },
+        "pins": {
+          "2": "/PIN3_DELAY",
+          "1": "/PIN3_PROTECTED"
+        }
+      },
+      "U8": {
+        "value": "AP63205WU",
+        "fields": {
+          "Manufacturer": "Diodes Incorporated",
+          "MPN": "AP63205WU-7",
+          "LCSC": "C2071056",
+          "Input_Range": "3.8V to 32V",
+          "Output_Current": "2A",
+          "Footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+          "Datasheet": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+          "Description": "2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"
+        },
+        "pins": {
+          "1": "/BUCK_5V",
+          "6": "/BUCK_BST",
+          "5": "/BUCK_SW",
+          "2": "/V_INPUT",
+          "3": "/V_INPUT",
+          "4": "GND"
+        }
+      },
+      "U9": {
+        "value": "TPS1H200AQDGNRQ1",
+        "fields": {
+          "LCSC": "C2653785",
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TPS1H200AQDGNRQ1",
+          "Footprint": "GEA_Rev3C:TPS1H200A_DGN0008K_TI_RevE",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+          "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD"
+        },
+        "pins": {
+          "4": "/PIN1_CL",
+          "5": "/PIN1_DELAY",
+          "1": "/PIN1_PROTECTED",
+          "8": "/PIN1_PROTECTED",
+          "7": "/PIN1_SW_OUT",
+          "2": "GND",
+          "6": "GND",
+          "9": "GND",
+          "3": "unconnected-(U9-FAULT-Pad3)"
+        }
+      },
+      "U10": {
+        "value": "TPS1H200AQDGNRQ1",
+        "fields": {
+          "LCSC": "C2653785",
+          "Manufacturer": "Texas Instruments",
+          "MPN": "TPS1H200AQDGNRQ1",
+          "Footprint": "GEA_Rev3C:TPS1H200A_DGN0008K_TI_RevE",
+          "Datasheet": "https://www.ti.com/lit/ds/symlink/tps1h200a-q1.pdf",
+          "Description": "40 V high-side switch; 3.3 kOhm CL provisional 0.606 A; auto-retry; DGN PowerPAD"
+        },
+        "pins": {
+          "4": "/PIN3_CL",
+          "5": "/PIN3_DELAY",
+          "1": "/PIN3_EN",
+          "8": "/PIN3_PROTECTED",
+          "7": "/PIN3_SW_OUT",
+          "2": "GND",
+          "6": "GND",
+          "9": "GND",
+          "3": "unconnected-(U10-FAULT-Pad3)"
+        }
+      }
+    }
+  },
+  "pads": {
+    "rev3a": {
+      "D14": {
+        "footprint": "Diode_SMD:D_SOD-123",
+        "at": [
+          "66",
+          "11"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "40",
+              "/V_INPUT"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "57",
+              "/PIN1_SW_OUT"
+            ]
+          }
+        ]
+      },
+      "D11": {
+        "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+        "at": [
+          "14.5",
+          "38.8"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "2",
+              "+5V"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "65",
+              "/BUCK_5V"
+            ]
+          }
+        ]
+      },
+      "D10": {
+        "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+        "at": [
+          "21.6703",
+          "23.6533"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "2",
+              "+5V"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "45",
+              "/USB_VBUS_FUSED"
+            ]
+          }
+        ]
+      },
+      "D19": {
+        "footprint": "Diode_SMD:D_SOD-123F",
+        "at": [
+          "55.2",
+          "18.4",
+          "-90"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.4",
+              "0",
+              "270"
+            ],
+            "size": [
+              "1.1",
+              "1.1"
+            ],
+            "net": [
+              "66",
+              "/PIN3_PROTECTED"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.4",
+              "0",
+              "270"
+            ],
+            "size": [
+              "1.1",
+              "1.1"
+            ],
+            "net": [
+              "16",
+              "GND"
+            ]
+          }
+        ]
+      },
+      "D15": {
+        "footprint": "Diode_SMD:D_SOD-123",
+        "at": [
+          "64",
+          "27"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "40",
+              "/V_INPUT"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "61",
+              "/PIN3_SW_OUT"
+            ]
+          }
+        ]
+      }
+    },
+    "rev3b": {
+      "D14": {
+        "footprint": "Diode_SMD:D_SOD-123",
+        "at": [
+          "73",
+          "8"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "30",
+              "/V_INPUT"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "39",
+              "/PIN1_SW_OUT"
+            ]
+          }
+        ]
+      },
+      "D11": {
+        "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+        "at": [
+          "76",
+          "37"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "2",
+              "+5V"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "45",
+              "/BUCK_5V"
+            ]
+          }
+        ]
+      },
+      "D15": {
+        "footprint": "Diode_SMD:D_SOD-123",
+        "at": [
+          "73",
+          "22.5"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "30",
+              "/V_INPUT"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "42",
+              "/PIN3_SW_OUT"
+            ]
+          }
+        ]
+      },
+      "D19": {
+        "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+        "at": [
+          "29",
+          "33.5"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "2",
+              "+5V"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "50",
+              "/5V_IN"
+            ]
+          }
+        ]
+      }
+    },
+    "rev3c": {
+      "D14": {
+        "footprint": "Diode_SMD:D_SOD-123",
+        "at": [
+          "73",
+          "8"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "30",
+              "/V_INPUT"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "39",
+              "/PIN1_SW_OUT"
+            ]
+          }
+        ]
+      },
+      "D11": {
+        "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+        "at": [
+          "76",
+          "37"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "2",
+              "+5V"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.4",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "1.2"
+            ],
+            "net": [
+              "45",
+              "/BUCK_5V"
+            ]
+          }
+        ]
+      },
+      "D15": {
+        "footprint": "Diode_SMD:D_SOD-123",
+        "at": [
+          "73",
+          "22.5"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "at": [
+              "-1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "30",
+              "/V_INPUT"
+            ]
+          },
+          {
+            "number": "2",
+            "at": [
+              "1.65",
+              "0"
+            ],
+            "size": [
+              "0.9",
+              "1.2"
+            ],
+            "net": [
+              "42",
+              "/PIN3_SW_OUT"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

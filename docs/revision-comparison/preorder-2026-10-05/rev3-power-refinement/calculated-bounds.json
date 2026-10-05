@@ -1,0 +1,21 @@
+{
+  "CL_nominal_A": 0.6060606060606061,
+  "CL_partial_min_25C_A": 0.51005100510051,
+  "CL_partial_max_25C_A": 0.7040097949188858,
+  "CL_partial_min_85C_A": 0.5070089513921571,
+  "CL_partial_max_85C_A": 0.7082593510250359,
+  "minimum_unloaded_charge_C": 0.017851785178517852,
+  "max_partial_retry_duty": 0.05325443786982248,
+  "max_partial_diode_attempt_energy_J": 0.01752941893786964,
+  "MBR_85C_reference_current_at_0p55V_A": 0.2980625931445603,
+  "B140_0p704A_forward_screen_W": 0.3520048974594429,
+  "B140_0p704A_junction_over_terminal_C": 7.0400979491888585,
+  "loads_A": {
+    "C3_RF_plus_carrier": 0.35665939393939394,
+    "WROOM_RF_plus_carrier": 0.36665939393939395,
+    "500mA_chip_plus_carrier_stress": 0.5216593939393939,
+    "TPS_partial_limit_upper_25C": 0.7040097949188858,
+    "TPS_partial_limit_upper_85C": 0.7082593510250359
+  },
+  "caveat": "Current limit accuracy requires VS-OUT >=2.5V and stated current setting. Thermal figures are reference-only. RF operating points do not bound actual board maximum."
+}
