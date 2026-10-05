@@ -2,9 +2,9 @@
   "source_reference_commit": "f885fa225c5e39f56f5050e26d57b739277a0308",
   "source_sha256": {
     "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
-    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1",
+    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb": "fb8d49cbdf5206b326a66d5a6dd98171155f1258bb99d39c65f6d8dff1f141c5",
     "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pro": "abea7adbb5a1ee515cd443d6735b7c1808d31d0cef98924e77ab61f694fccbc9",
-    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch": "5aa8998b7820a3f00f2b0b18424f478989efacae7c6f33a47c488224012fba03",
+    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch": "9abb83f512ccb98bfdb8d43f6d3328d69aad1e2b17fa840edd5b13872aec2f88",
     "pcb/rev3b/design/footprints/GEA_Rev3B.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
     "pcb/rev3b/design/footprints/GEA_Rev3B.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
     "pcb/rev3b/design/footprints/GEA_XIAO.pretty/XIAO-ESP32-C3-v1.3-SMD.kicad_mod": "dd5c7fc37281f0ddb85c987c7974d45df259a9fe9a5396c7383c1fe6b28ffd21",
@@ -78,5 +78,10 @@
     }
   },
   "supplier_qualification": "Blocked; nominal geometric datum correction only. Rotation unchanged; actual supplier zero/pin1/process/placement remains open.",
-  "source_binding_note": "Current model-only CAD dependency closure; nominal J1/U2 placement geometry, CPL, angles and manufacturing bytes unchanged. See verified-c3-model-preservation.json."
+  "source_binding_note": "Current model-only CAD dependency closure; nominal J1/U2 placement geometry, CPL, angles and manufacturing bytes unchanged. See verified-c3-model-preservation.json.",
+  "ordering_suffix_rebinding": {
+    "reason": "Only existing C161181 MPN ordering suffix corrected; code/value/package, placement/body geometry and CPL/CAM unchanged",
+    "source_before_commit": "8744a29446a1937134525496c2a5dfdc0a59a004",
+    "current_native_checks": "Required on new commit; old reports retain original source scope"
+  }
 }

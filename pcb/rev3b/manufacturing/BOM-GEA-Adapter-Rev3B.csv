@@ -12,7 +12,7 @@
 "100n","C12","Capacitor_SMD:C_0805_2012Metric","C106243","CC0805KKX7R0BB104","Yageo","1"
 "10u 25V X5R","C13","Capacitor_SMD:C_0805_2012Metric","C15850","CL21A106KAYNNNE","Samsung","1"
 "100n","C14","Capacitor_SMD:C_0805_2012Metric","C106243","CC0805KKX7R0BB104","Yageo","1"
-"100n 50V X8L","C15","Capacitor_SMD:C_0603_1608Metric","C161181","GCM188L81H104KA57","Murata","1"
+"100n 50V X8L","C15","Capacitor_SMD:C_0603_1608Metric","C161181","GCM188L81H104KA57D","Murata","1"
 "22u 25V X7R","C16","Capacitor_SMD:C_1210_3225Metric","C309062","CL32B226KAJNNNE","Samsung Electro-Mechanics","1"
 "22u 25V X7R","C17","Capacitor_SMD:C_1210_3225Metric","C309062","CL32B226KAJNNNE","Samsung Electro-Mechanics","1"
 "100pF","C18","Capacitor_SMD:C_0402_1005Metric","C1546","0402CG101J500NT","FH","1"

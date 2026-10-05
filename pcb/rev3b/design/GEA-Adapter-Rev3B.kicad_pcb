@@ -10794,7 +10794,7 @@
 				)
 			)
 		)
-		(property "MPN" "GCM188L81H104KA57"
+		(property "MPN" "GCM188L81H104KA57D"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)

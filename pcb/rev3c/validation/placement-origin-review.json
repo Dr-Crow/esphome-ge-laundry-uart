@@ -2,9 +2,9 @@
   "source_reference_commit": "5542734e89c52fb34357d0d9f16744fcd508d7f3",
   "source_sha256": {
     "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
-    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb": "4fba3feea4161f7e6bdfbd7f20ac677a485948fac540d7bda1c246a451c4bab9",
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb": "71ff988b2baec7ae7f1d1b1592d7a2002c6da23e0a05e7ac9e9671a296511911",
     "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pro": "1e7fdc30cbb1eb191c4bb35cfb8b7d476023758b16cf30cf3651b9fe78621cde",
-    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch": "0c4abc0c24b55c4e7813596ad224bb1f4fb4776476184da79baf45af45187080",
+    "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch": "03e00580dc38adf4a2b26edc7ae21c93a3e93da194cb93c79d89680e305cd697",
     "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
     "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod": "c1579e5f623b6e83cd2f271eea57f69fcc128405f4546499ae1542f13c7bce1a",
     "pcb/rev3c/design/footprints/GEA_Rev3C.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
@@ -58,5 +58,10 @@
     }
   },
   "supplier_qualification": "Blocked; nominal body datum only; no actual supplier zero/orientation/process/placement approval.",
-  "source_rebind_note": "The reference commit is the unchanged pre-repair base. Current dependency hashes rebind only the drillshape1-to0 plot-policy change; all native pad/anchor/body geometry, placements, rotations and manufacturer evidence are unchanged. Supplier placement/process remains unqualified."
+  "source_rebind_note": "The reference commit is the unchanged pre-repair base. Current dependency hashes rebind only the drillshape1-to0 plot-policy change; all native pad/anchor/body geometry, placements, rotations and manufacturer evidence are unchanged. Supplier placement/process remains unqualified.",
+  "ordering_suffix_rebinding": {
+    "reason": "Only existing C161181 MPN ordering suffix corrected; code/value/package, placement/body geometry and CPL/CAM unchanged",
+    "source_before_commit": "8744a29446a1937134525496c2a5dfdc0a59a004",
+    "current_native_checks": "Required on new commit; old reports retain original source scope"
+  }
 }

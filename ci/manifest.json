@@ -240,7 +240,7 @@
       },
       "cpl_centroid_policy": {
         "evidence": "pcb/rev3a/validation/placement-origin-review.json",
-        "sha256": "c5840c153fe881d90e41500d090e6d07607638208b77917e1c53f204cf7e73a5",
+        "sha256": "8516127be4e3285d1b5f5a76e4e3c301552b5723b533e461074dc2109239a9ba",
         "required_references": [
           "J1",
           "U2",
@@ -299,7 +299,7 @@
       },
       "cpl_centroid_policy": {
         "evidence": "pcb/rev3b/validation/placement-origin-review.json",
-        "sha256": "bfae54bfd08b30a399aed0ae23ae661aa7530ca54cc7e8cc4613eaa3a971b6b8",
+        "sha256": "bfa792fd38312b417d42bc405c7212d9416261cc8892787b2543d5ce3ae0ce49",
         "required_references": [
           "J1",
           "U2"
@@ -356,7 +356,7 @@
       },
       "cpl_centroid_policy": {
         "evidence": "pcb/rev3c/validation/placement-origin-review.json",
-        "sha256": "3cb652b50c235e524239c43f0a7a6a991031e8f2cfc25e076a26d69a7a93832b",
+        "sha256": "e23be018c9ec0875f8863298091c0005ba43c5ca6dcc9d655a18b46f23809f80",
         "required_references": [
           "J1"
         ]

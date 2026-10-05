@@ -2,9 +2,9 @@
   "source_reference_commit": "d1769b25c206fe86f60e37c415d4a60da7bb8334",
   "source_sha256": {
     "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_dru": "5f8f99cc6b6c369cff6866a9189005c3aa4da367f660f0123ae1fa1ede565dec",
-    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb": "e7b67f01753202dea5f0d32f77bbb5b0a03be6a92996cc57e1ce6f16804fad6a",
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb": "aa1bf9cce5845eb456d03965eca54434c483f241771d2a7de8f1406e56094b64",
     "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pro": "cec8fcd7b44b3b54cbc25cf5f8b8dcf4751d23573ec8a5afdb04459a80b3bfd6",
-    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch": "c64844158d72df072a88e4d64342f31abea2f3cc1f7112e64a6e38ae18de0b53",
+    "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch": "af102b88021d755c866e9d2d31d22445ecffded57c63c379e6109ea7fb29139c",
     "pcb/rev3a/design/footprints/LegacyBoard.pretty/C5_C_0805_2012Metric.kicad_mod": "3f6bd08022c46fe7529fbe2badf34e1a978ca985826ea45304cca1f2ee1c9c88",
     "pcb/rev3a/design/footprints/LegacyBoard.pretty/D2_SOT-23.kicad_mod": "e46553553c7d85df3e96d44e8a02773d3c949522871866cfd6cc3ef68db0ff12",
     "pcb/rev3a/design/footprints/LegacyBoard.pretty/SW2_SW_Push_1P1T_XKB_TS-1187A.kicad_mod": "f9bba750dc3d6ea77b3f17dfb03448bd4fd5a3396c69a2a863f672eb969b6a79",
@@ -109,5 +109,10 @@
   },
   "screened_fitted_references": 97,
   "supplier_qualification": "Blocked: nominal body datums reviewed, actual supplier zero/orientation/process and connector board-thickness/land compatibility remain open.",
-  "source_binding_note": "Current25-dependency closure after schematic-only ERC normalization. All301 physical memberships, PCB geometry, nominal J1/J4/U2 body points and CPL remain unchanged; supplier BOM separately expanded with tuple-equivalence proof."
+  "source_binding_note": "Current25-dependency closure after schematic-only ERC normalization. All301 physical memberships, PCB geometry, nominal J1/J4/U2 body points and CPL remain unchanged; supplier BOM separately expanded with tuple-equivalence proof.",
+  "ordering_suffix_rebinding": {
+    "reason": "Only existing C161181 MPN ordering suffix corrected; code/value/package, placement/body geometry and CPL/CAM unchanged",
+    "source_before_commit": "8744a29446a1937134525496c2a5dfdc0a59a004",
+    "current_native_checks": "Required on new commit; old reports retain original source scope"
+  }
 }

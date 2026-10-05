@@ -1,0 +1,29 @@
+{
+  "source_catalog_url": "https://www.lcsc.com/product-detail/C161181.html",
+  "review_date": "2026-10-05",
+  "part_code_unchanged": "C161181",
+  "manufacturer": "Murata",
+  "MPN_before": "GCM188L81H104KA57",
+  "MPN_after": "GCM188L81H104KA57D",
+  "rating_value_package_unchanged": "100nF,50V,X8L,0603,\u00b110%",
+  "changes": [
+    {
+      "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch",
+      "before": "5aa8998b7820a3f00f2b0b18424f478989efacae7c6f33a47c488224012fba03",
+      "after": "9abb83f512ccb98bfdb8d43f6d3328d69aad1e2b17fa840edd5b13872aec2f88"
+    },
+    {
+      "path": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb",
+      "before": "08d7cf622f585912f33b385d7a0a72706189b0d0447020772d500b19d6a68fa1",
+      "after": "fb8d49cbdf5206b326a66d5a6dd98171155f1258bb99d39c65f6d8dff1f141c5"
+    },
+    {
+      "path": "pcb/rev3b/manufacturing/BOM-GEA-Adapter-Rev3B.csv",
+      "before": "23ec68c57f4a09124a1bc0cb251dbc1fe21fd55b554e9ad74ef809fdc4cdb186",
+      "after": "94d669b4e2309b809cb41fc1cc11b1800da40b1d00e0a0280f478cf07658a85d"
+    }
+  ],
+  "physical_electrical_geometry_unchanged": true,
+  "CPL_CAM_and_firmware_unchanged": true,
+  "native_evidence": "Fresh source-bound checks required; no historical report relabelled"
+}
