@@ -1,5 +1,7 @@
 # PCB Rev 3B review candidate
 
+D14/D15 now use the reviewed 1 A STPS140Z input OR diode; numbered nets and board routing are retained. [Current part-repair evidence](validation/INPUT-DIODE-REPAIR.md) distinguishes this new source from earlier validation and quote snapshots. Exact new-source checks and supplier matching remain required.
+
 Rev 3B is a routed design under review with a bounded rated-protection backport. It passes KiCad 9's PCB and schematic checks, and manufacturing files are available for review and quoting. It is not ready to order. The [PCB revision index](../README.md) distinguishes this prototype from the retained historical designs; none is an appliance-qualified fallback.
 
 [Back to the PCB revision index](../README.md) · [Historical ordering guide](../ORDERING.md)

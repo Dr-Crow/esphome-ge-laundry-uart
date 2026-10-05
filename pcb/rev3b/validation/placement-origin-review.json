@@ -2,9 +2,9 @@
   "source_reference_commit": "f885fa225c5e39f56f5050e26d57b739277a0308",
   "source_sha256": {
     "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_dru": "e554982cc3654d5baaed9eba564ed0a7ba4cc0e81e7c80c31a68d5b17f545454",
-    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb": "fb8d49cbdf5206b326a66d5a6dd98171155f1258bb99d39c65f6d8dff1f141c5",
+    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb": "415f3b791d34a33058ad906ff52ca9898c8b27ae055ee3c403284436002a2b71",
     "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pro": "abea7adbb5a1ee515cd443d6735b7c1808d31d0cef98924e77ab61f694fccbc9",
-    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch": "9abb83f512ccb98bfdb8d43f6d3328d69aad1e2b17fa840edd5b13872aec2f88",
+    "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch": "6cca96da94793331303c569514d46a45f3b82b2c9ab6846a12d5208cd251fb22",
     "pcb/rev3b/design/footprints/GEA_Rev3B.pretty/Fuse_Littelfuse_1812L_Recommended.kicad_mod": "ddf2777f51d6a132ab17ab0da2aa16c47b39581350939bba8cbbacbbd1c65384",
     "pcb/rev3b/design/footprints/GEA_Rev3B.pretty/TPS1H200A_DGN0008K_TI_RevE.kicad_mod": "32dea967f7b05ddfb7e18d81b41e8b940a87b8a1095bebdcf4730853cb4cd8ac",
     "pcb/rev3b/design/footprints/GEA_XIAO.pretty/XIAO-ESP32-C3-v1.3-SMD.kicad_mod": "dd5c7fc37281f0ddb85c987c7974d45df259a9fe9a5396c7383c1fe6b28ffd21",
@@ -83,5 +83,14 @@
     "reason": "Only existing C161181 MPN ordering suffix corrected; code/value/package, placement/body geometry and CPL/CAM unchanged",
     "source_before_commit": "8744a29446a1937134525496c2a5dfdc0a59a004",
     "current_native_checks": "Required on new commit; old reports retain original source scope"
+  },
+  "input_diode_part_rebind": {
+    "part": "STPS140Z/C155662",
+    "references": [
+      "D14",
+      "D15"
+    ],
+    "native_pad_centers_net_numbers_rotations_and_CPL_unchanged": true,
+    "supplier_new_part_pose_and_joint_approval": "PENDING; existing numeric datum proof is not assembly signoff"
   }
 }
