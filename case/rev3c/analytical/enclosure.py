@@ -45,9 +45,36 @@ LEAF_ROOT_OFFSET=16.6
 TRAVEL={'c3':.40,'c6':.36}
 BUTTON_TRAVEL={m:{n:TRAVEL[m] for n in SW[m]} for m in SW}
 
+# USB-C END STYLE. 'original': end wall ~4.3 mm in front of the module's USB-C
+# mouth, so the opening (14.8 x 9.0 mm) must pass a cable overmold. 'flush': the
+# end wall is moved out to the port. Its outer face sits USB_RECESS in front of
+# the mouth and has a snug opening around the receptacle shell. The lid drops on
+# from above, so the port is a slot open at the bottom, filled below the port by
+# a tower on the base.
+USB_STYLE='original'
+USB_MOUTH_X=e.USB_BBOX['x_max']   # 100.003: module USB-C front from the official KiCad files (not measured)
+USB_RECESS=0.5        # mouth behind the outer face; most cable overmolds must clear this. Measure with the coupon.
+USB_PLATE_T=1.2       # end-plate thickness (3 perimeters at 0.4 mm)
+USB_SHELL_W,USB_SHELL_H=8.94,3.26  # standard Type-C receptacle shell; UBF31-0171 drawing not checked
+USB_CLEAR=.35         # per-side clearance around the shell
+MODULE_PCB_T_RANGE=(1.2,1.6)       # 1.6 per Seeed KiCad files; ~1.2 reported measured on retail boards
+USB_TOWER_GAP=.2      # sliding fit between the base tower and the lid slot
+USB_SLOT_R=1.2        # top-corner radius of the port
+USB_STEP_SKIN=.8      # min wall left in front of a roof button release void
+
+def usb_face_x(): return USB_MOUTH_X+USB_RECESS
+def usb_port_z():
+    """Port z range: covers module-PCB thickness uncertainty at the configured stack (shell top-mounted, assumed)."""
+    zb=[e.PCB_TOP_Z+STACK_MM+t for t in MODULE_PCB_T_RANGE]
+    return min(zb)-USB_CLEAR, max(zb)+USB_SHELL_H+USB_CLEAR
+def usb_step(module):
+    """(x of the upper end face, z where it starts): clears roof button voids that reach past the flush face."""
+    vx=max(x+3.20 for x,_ in SW[module].values())+USB_STEP_SKIN
+    return (max(usb_face_x(),vx), UNDER-.1-USB_STEP_SKIN)
+
 def configure(stack_mm=11.0, reach_mode='original', usb_mode='original',
               switch_heights=None, contact_gaps=None, button_travel=None,
-              leaf_root_offset=16.6):
+              leaf_root_offset=16.6, usb_style=None):
     """Set only analysis parameters, never release or qualify a button stop.
 
     Per-assembly reaches still need actual switch/print/closure measurements.
@@ -55,7 +82,10 @@ def configure(stack_mm=11.0, reach_mode='original', usb_mode='original',
     Heights/gaps can be overridden independently for each BOOT/RESET button.
     """
     global STACK_MM, REACH_MODE, USB_CENTER_Z, SW_HEIGHT, CONTACT_GAP
-    global LEAF_ROOT_OFFSET, BUTTON_TRAVEL
+    global LEAF_ROOT_OFFSET, BUTTON_TRAVEL, USB_STYLE
+    if usb_style is not None:
+        if usb_style not in ('original','flush'): raise ValueError(usb_style)
+        USB_STYLE=usb_style
     if not e.REVIEW_STACK_MIN <= stack_mm <= e.REVIEW_STACK_MAX:
         raise ValueError('declared socket/assumed-spacer review range is 10.35–11.65 mm; fitted header bounds are unverified')
     if reach_mode not in ('original','per_assembly'): raise ValueError(reach_mode)
@@ -150,6 +180,29 @@ def latch(side=1, deflection=0):
     if deflection: s=Pos(0,-side*deflection,0)*s
     return s
 
+def _usb_y(): return e.USB0_POSITION[1]
+def usb_keep(module=None):
+    """Everything kept in flush mode: up to the flush face, plus the upper step for roof buttons."""
+    xf=usb_face_x(); k=B(-50,xf,-50,90,-5,40)
+    if module:
+        xh,zs=usb_step(module)
+        if xh>xf+1e-6: k+=B(-50,xh,-50,90,zs,40)
+    return k
+def usb_slot():
+    """Open-bottom port slot through the end plate, rounded top corners."""
+    xf=usb_face_x(); xi=xf-USB_PLATE_T; z0,z1=usb_port_z(); w=USB_SHELL_W+2*USB_CLEAR; y=_usb_y(); r=USB_SLOT_R
+    s=B(xi-.2,xf+.2,y-w/2,y+w/2,SEAM-.5,z1-r)
+    h=2*r+1.0  # rounded rectangle whose top edge is z1; only its upper corners matter
+    return s+(xopening(w,h,r,y,z1-h/2)&B(xi-.2,xf+.2,-50,90,z1-r-.01,z1))
+def usb_tower():
+    """Base tower that fills the lid slot below the port; its top is the port's bottom edge."""
+    xf=usb_face_x(); xi=xf-USB_PLATE_T; z0,_=usb_port_z(); w=USB_SHELL_W+2*USB_CLEAR-2*USB_TOWER_GAP; y=_usb_y()
+    return B(xi,xf,y-w/2,y+w/2,SEAM-.05,z0)
+def usb_tongue_clearance():
+    """The base tongue grown by 0.25 mm, so the lid end plate drops over it."""
+    t=loft([rr(110.1,50.1,4.55,SEAM-.1),rr(109.6,49.6,4.55,8.45)],ruled=True)
+    return t-loft([rr(105.1,45.1,3.05,SEAM-.2),rr(104.6,44.6,3.05,8.6)],ruled=True)
+
 def base(magnets=False):
     s=rrsolid(114,54,6,-1.,SEAM)
     s-=rrsolid(101,42,3,2.4,SEAM+.2)
@@ -164,6 +217,7 @@ def base(magnets=False):
     s-=B(-10,1,7.74,25.925,4.75,18.2)
     # Preserve a stable closed-height datum without any tightening operation.
     for x,y in SCREWS:
+        if USB_STYLE=='flush' and x>usb_face_x()-3.5: continue  # USB-end datum lands fall outside the shortened end
         s-=C(3.3,SEAM,8.3,x,y)
         s+=C(2.85,SEAM-.1,SEAM+.2,x,y)
     for side in [-1,1]:
@@ -182,6 +236,12 @@ def base(magnets=False):
         s+=stop+roots
     if magnets:
         for x,y in [(33.,34.),(60.,34.)]: s-=C(2.3,-1.1,1.3,x,y)
+    if USB_STYLE=='flush':
+        xf=usb_face_x()
+        s=s&usb_keep()
+        # end wall: carrier edge (x 99.05) keeps >= 0.4 mm clearance; fill the cavity strip up to the face
+        s+=rrsolid(114,54,6,-1.,SEAM)&B(99.45,xf,-50,90,-1.,SEAM)
+        s+=usb_tower()
     return s
 
 def flexure(module,name):
@@ -235,9 +295,17 @@ def shell(module='c3',antenna='internal'):
     cavity=loft([rr(110,50,4.5,SEAM),rr(103,43,4.3,UNDER)],ruled=True)
     s=outer-cavity
     s-=B(-10,1,7.74,25.925,4.75,18.2)
-    s-=xopening(14.8,9.0,2.2,12.9175,USB_CENTER_Z)&B(98,110,-10,50,10,30)
+    if USB_STYLE=='flush':
+        xf=usb_face_x(); xi=xf-USB_PLATE_T; xh,zs=usb_step(module)
+        s=s&usb_keep(module)
+        plate=outer&B(xi,xf,-50,90,SEAM+.1,ROOF+1)
+        if xh>xf+1e-6: plate+=outer&B(xi,xh,-50,90,zs,ROOF+1)
+        s+=plate-usb_tongue_clearance()-usb_slot()
+    else:
+        s-=xopening(14.8,9.0,2.2,12.9175,USB_CENTER_Z)&B(98,110,-10,50,10,30)
     # Four small plastic datum lands stay outside PCB, set seam closure height.
     for x,y in SCREWS:
+        if USB_STYLE=='flush' and x>usb_face_x()-3.5: continue  # outside the shortened end
         s+=C(3.1,7.0,12.,x,y)+loft([Pos(x,y,11.9)*Circle(3.1),Pos(x,y,20.)*Circle(1.3),Pos(x,y,UNDER+.1)*Circle(1.3)],ruled=True)
     for x,y in e.MOUNT_HOLES:
         s+=C(2.4,5.65,UNDER+.1,x,y)-C(1.5,5.5,9.,x,y)
@@ -269,6 +337,8 @@ def shell(module='c3',antenna='internal'):
         anchor=B(51.5,60.5,36.0,38.2,12.7,UNDER+.1)
         anchor-=B(53.0,59.0,35.8,38.4,13.2,17.8)
         s+=anchor
+    if USB_STYLE=='flush':
+        s=s&usb_keep(module)  # trims button-stop collars that would stand proud of the flush face
     return s
 
 def component_proxies(module):
