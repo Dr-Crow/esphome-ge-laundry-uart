@@ -47,11 +47,23 @@ Expect much less holding force on thin, painted or curved panels than the catalo
 
 The `fpc` export also writes `proxy_fpc_antenna_40x20`, a reference body for checking clearance. It is not a printed part. Checks: in every option, all 67 Rev3D 3D models clear printed solid. The FPC body sits at z 26.4–28.2 mm, clear of the lid and every part (module top ≤ 22.4 mm). The keeper fit, cable bend room, bulkhead hardware and RF performance are unverified. The C6 module's own U.FL position is taken from the C3 layout and is not modelled separately.
 
+## Flush RJ45 end and two-colour labels (2026-11-23)
+
+`--rj45-style flush` replaces the tapered J1 end wall with a vertical 1.2 mm end plate 0.35 mm past the carrier edge (face at x −1.55 mm).
+
+- **Window.** It frames the jack body with 0.3 mm a side: 17.29 × 12.05 mm around the 16.69 × 11.45 mm EVERCOM body, with 0.8 mm top corners, cut through both the base and the lid.
+- **Jack position.** The jack mouth sits 1.0 mm behind the face instead of 4–7 mm, so the plug's latch tab stays outside where a finger can press it.
+- **Checked clear.** The jack body, the lid's drop past the jack front, and an 11.7 mm plug corridor in front of the mouth are all clear of printed solid.
+- **Seam pads.** Both flush ends drop the end datum lands. Four 0.2 mm seam pads on the base long sides (x 12/88 mm) set the closed height instead.
+- **Corners.** With both ends flush the case is 101.75 mm long (was 114 mm). The end corners are rounded to 3 mm in plan, which keeps at least 0.9 mm of wall at the inner corner.
+
+`--label-inlay` also exports `review_label_inlay_<module>`, the lid text as separate bodies that fill the 0.25 mm debossed recess. Print it in a second colour on a multi-material printer (Bambu AMS, Prusa MMU) for flush two-colour labels. Single-extruder prints keep the debossed text, which can be filled with paint if wanted. The inlay overlaps the lid by 0 mm³.
+
 ## Flush USB-C port option (2026-11-23)
 
 With the original end wall, the module's USB-C mouth (x ≈ 100.0 mm) sits about 4.3 mm behind the outer face, so the 14.8 × 9.0 mm opening must pass a cable overmold. `--usb-style flush` moves the end wall out to the port instead:
 
-- **End face.** The outer face sits `USB_RECESS` = 0.5 mm in front of the mouth, on a 1.2 mm end plate, so the USB end is 6 mm shorter.
+- **End face.** The outer face sits `USB_RECESS` = 0.2 mm in front of the mouth, on a 1.2 mm end plate, so the USB end is 6.3 mm shorter. A plug's exposed metal shank (6.55–6.75 mm on the StarTech USB2CC2M reference) has to reach past the face to seat. Any overmold size works, because the overmold stays outside against the flat face. Only cables with an unusually short shank are at risk.
 - **Opening.** 9.64 × 4.36 mm with rounded top corners. That is a Type-C shell (8.94 × 3.26 mm) plus 0.35 mm a side. The height also covers a module PCB of 1.2–1.6 mm at the configured stack.
 - **Assembly.** The lid drops on from above, so the port is a slot open at the bottom. A tower on the base fills it below the port, with a 0.2 mm sliding gap.
 - **C6 lid.** Its BOOT/RESET release voids reach x 100.55, so above z 27.6 the end face steps out to x 101.35 to keep 0.8 mm of skin.

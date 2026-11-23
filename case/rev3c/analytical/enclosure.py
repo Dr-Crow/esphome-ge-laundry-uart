@@ -53,7 +53,8 @@ BUTTON_TRAVEL={m:{n:TRAVEL[m] for n in SW[m]} for m in SW}
 # a tower on the base.
 USB_STYLE='original'
 USB_MOUTH_X=e.USB_BBOX['x_max']   # 100.003: module USB-C front from the official KiCad files (not measured)
-USB_RECESS=0.5        # mouth behind the outer face; most cable overmolds must clear this. Measure with the coupon.
+USB_RECESS=0.2        # face this far in front of the mouth: a plug's exposed shank (6.55-6.75 mm, e.g. StarTech USB2CC2M)
+                      # must reach past it to seat, so keep it small. Measure with the coupon.
 USB_PLATE_T=1.2       # end-plate thickness (3 perimeters at 0.4 mm)
 USB_SHELL_W,USB_SHELL_H=8.94,3.26  # standard Type-C receptacle shell; UBF31-0171 drawing not checked
 USB_CLEAR=.35         # per-side clearance around the shell
@@ -63,6 +64,36 @@ USB_SLOT_R=1.2        # top-corner radius of the port
 USB_STEP_SKIN=.8      # min wall left in front of a roof button release void
 
 def usb_face_x(): return USB_MOUTH_X+USB_RECESS
+
+# RJ45 END STYLE. 'original': the J1 jack sits 4-7 mm behind a tapered end wall in an 18.2 x 13.45 mm window.
+# 'flush': a vertical 1.2 mm end plate just past the carrier edge, with a window that frames the jack body
+# (+0.3 mm a side), so the jack mouth sits about 1 mm behind the face and the plug latch stays outside.
+RJ_STYLE='original'
+RJ_PLATE_T=1.2
+RJ_BOARD_CLEAR=.35
+RJ_CLEAR=.3
+RJ_WINDOW_R=.8          # top-corner radius; 0.8 keeps the jack's square corners inside the window
+def rj_face_x(): return e.PCB_X0-RJ_BOARD_CLEAR-RJ_PLATE_T   # -1.55; jack mouth at J1 x_min -0.525
+def rj_window():
+    b=e.J1_BBOX; y0,y1=b['y_min']-RJ_CLEAR,b['y_max']+RJ_CLEAR
+    z0,z1=e.PCB_TOP_Z-RJ_CLEAR,e.PCB_TOP_Z+e.RJ45_BODY_HEIGHT+RJ_CLEAR
+    xa,xb=rj_face_x()-.2,rj_face_x()+RJ_PLATE_T+.3
+    r=RJ_WINDOW_R; h=2*r+1.0
+    top=extrude(Plane.YZ.offset(xa)*Pos((y0+y1)/2,z1-h/2)*RectangleRounded(y1-y0,h,r),amount=xb-xa)&B(xa,xb,-50,90,z1-r-.01,z1)
+    return B(xa,xb,y0,y1,z0,z1-r)+top
+def flush_ends(): return USB_STYLE=='flush' or RJ_STYLE=='flush'
+def end_x0(): return rj_face_x() if RJ_STYLE=='flush' else -7.5
+END_R=3.0             # plan-view corner radius on flush ends; keeps >= 0.9 mm wall at the inner corner
+SEAM_PADS=((12.,-6.),(88.,-6.),(12.,46.),(88.,46.))  # replace the end datum lands that flush ends remove
+def end_round(module=None):
+    """Rounded-corner prism(s) that every flush-end part is intersected with (plan view only)."""
+    x0=end_x0(); x1=usb_face_x() if USB_STYLE=='flush' else 106.5
+    k=extrude(Pos((x0+x1)/2,CY,-5)*RectangleRounded(x1-x0,54.,END_R),amount=50)
+    if module and USB_STYLE=='flush':
+        xh,zs=usb_step(module)
+        if xh>x1+1e-6:
+            k=(k&B(-50,200,-50,90,-5,zs))+(extrude(Pos((x0+xh)/2,CY,zs)*RectangleRounded(xh-x0,54.,END_R),amount=40-zs))
+    return k
 def usb_port_z():
     """Port z range: covers module-PCB thickness uncertainty at the configured stack (shell top-mounted, assumed)."""
     zb=[e.PCB_TOP_Z+STACK_MM+t for t in MODULE_PCB_T_RANGE]
@@ -74,7 +105,7 @@ def usb_step(module):
 
 def configure(stack_mm=11.0, reach_mode='original', usb_mode='original',
               switch_heights=None, contact_gaps=None, button_travel=None,
-              leaf_root_offset=16.6, usb_style=None):
+              leaf_root_offset=16.6, usb_style=None, rj45_style=None):
     """Set only analysis parameters, never release or qualify a button stop.
 
     Per-assembly reaches still need actual switch/print/closure measurements.
@@ -82,7 +113,10 @@ def configure(stack_mm=11.0, reach_mode='original', usb_mode='original',
     Heights/gaps can be overridden independently for each BOOT/RESET button.
     """
     global STACK_MM, REACH_MODE, USB_CENTER_Z, SW_HEIGHT, CONTACT_GAP
-    global LEAF_ROOT_OFFSET, BUTTON_TRAVEL, USB_STYLE
+    global LEAF_ROOT_OFFSET, BUTTON_TRAVEL, USB_STYLE, RJ_STYLE
+    if rj45_style is not None:
+        if rj45_style not in ('original','flush'): raise ValueError(rj45_style)
+        RJ_STYLE=rj45_style
     if usb_style is not None:
         if usb_style not in ('original','flush'): raise ValueError(usb_style)
         USB_STYLE=usb_style
@@ -183,10 +217,11 @@ def latch(side=1, deflection=0):
 def _usb_y(): return e.USB0_POSITION[1]
 def usb_keep(module=None):
     """Everything kept in flush mode: up to the flush face, plus the upper step for roof buttons."""
-    xf=usb_face_x(); k=B(-50,xf,-50,90,-5,40)
-    if module:
+    xf=usb_face_x() if USB_STYLE=='flush' else 200.; x0=rj_face_x() if RJ_STYLE=='flush' else -50.
+    k=B(x0,xf,-50,90,-5,40)
+    if module and USB_STYLE=='flush':
         xh,zs=usb_step(module)
-        if xh>xf+1e-6: k+=B(-50,xh,-50,90,zs,40)
+        if xh>xf+1e-6: k+=B(x0,xh,-50,90,zs,40)
     return k
 def usb_slot():
     """Open-bottom port slot through the end plate, rounded top corners."""
@@ -259,10 +294,11 @@ def base(magnets=False):
     tongue=loft([rr(109.6,49.6,4.3,SEAM-.1),rr(109.1,49.1,4.3,8.15)],ruled=True)
     tongue-=loft([rr(105.6,45.6,3.3,SEAM-.2),rr(105.1,45.1,3.3,8.3)],ruled=True)
     s+=tongue
-    s-=B(-10,1,7.74,25.925,4.75,18.2)
+    if RJ_STYLE!='flush': s-=B(-10,1,7.74,25.925,4.75,18.2)
     # Preserve a stable closed-height datum without any tightening operation.
     for x,y in SCREWS:
         if USB_STYLE=='flush' and x>usb_face_x()-3.5: continue  # USB-end datum lands fall outside the shortened end
+        if RJ_STYLE=='flush' and x<rj_face_x()+3.5: continue
         s-=C(3.3,SEAM,8.3,x,y)
         s+=C(2.85,SEAM-.1,SEAM+.2,x,y)
     for side in [-1,1]:
@@ -284,12 +320,17 @@ def base(magnets=False):
     elif magnets:
         size,_,style=str(magnets).partition(':')  # e.g. '8x2' or '8x2:embedded'
         s-=magnet_cut(size, style or 'glue')
-    if USB_STYLE=='flush':
-        xf=usb_face_x()
+    if flush_ends():
         s=s&usb_keep()
-        # end wall: carrier edge (x 99.05) keeps >= 0.4 mm clearance; fill the cavity strip up to the face
-        s+=rrsolid(114,54,6,-1.,SEAM)&B(99.45,xf,-50,90,-1.,SEAM)
-        s+=usb_tower()
+        if USB_STYLE=='flush':
+            # end wall: carrier edge (x 99.05) keeps 0.3 mm clearance; fill the cavity strip up to the face
+            s+=rrsolid(114,54,6,-1.,SEAM)&B(99.35,usb_face_x(),-50,90,-1.,SEAM)
+            s+=usb_tower()
+        if RJ_STYLE=='flush':
+            s+=rrsolid(114,54,6,-1.,SEAM)&B(rj_face_x(),rj_face_x()+RJ_PLATE_T,-50,90,-1.,SEAM)
+            s-=rj_window()  # through the plate and any remaining original end wall
+        for x,y in SEAM_PADS: s+=B(x-2.,x+2.,y-.6,y+.6,SEAM-.05,SEAM+.2)
+        s=s&end_round()
     return s
 
 def flexure(module,name):
@@ -342,7 +383,12 @@ def shell(module='c3',antenna='internal'):
     except Exception: pass
     cavity=loft([rr(110,50,4.5,SEAM),rr(103,43,4.3,UNDER)],ruled=True)
     s=outer-cavity
-    s-=B(-10,1,7.74,25.925,4.75,18.2)
+    if RJ_STYLE=='flush':
+        s=s&usb_keep(module)
+        s+=(outer&B(rj_face_x(),rj_face_x()+RJ_PLATE_T,-50,90,SEAM+.1,ROOF+1))-usb_tongue_clearance()
+        s-=rj_window()
+    else:
+        s-=B(-10,1,7.74,25.925,4.75,18.2)
     if USB_STYLE=='flush':
         xf=usb_face_x(); xi=xf-USB_PLATE_T; xh,zs=usb_step(module)
         s=s&usb_keep(module)
@@ -354,6 +400,7 @@ def shell(module='c3',antenna='internal'):
     # Four small plastic datum lands stay outside PCB, set seam closure height.
     for x,y in SCREWS:
         if USB_STYLE=='flush' and x>usb_face_x()-3.5: continue  # outside the shortened end
+        if RJ_STYLE=='flush' and x<rj_face_x()+3.5: continue
         s+=C(3.1,7.0,12.,x,y)+loft([Pos(x,y,11.9)*Circle(3.1),Pos(x,y,20.)*Circle(1.3),Pos(x,y,UNDER+.1)*Circle(1.3)],ruled=True)
     for x,y in e.MOUNT_HOLES:
         s+=C(2.4,5.65,UNDER+.1,x,y)-C(1.5,5.5,9.,x,y)
@@ -389,9 +436,13 @@ def shell(module='c3',antenna='internal'):
         anchor=B(51.5,60.5,36.0,38.2,12.7,UNDER+.1)
         anchor-=B(53.0,59.0,35.8,38.4,13.2,17.8)
         s+=anchor
-    if USB_STYLE=='flush':
-        s=s&usb_keep(module)  # trims button-stop collars that would stand proud of the flush face
+    if flush_ends():
+        s=s&usb_keep(module)&end_round(module)  # trims stop collars proud of the face; rounds the end corners
     return s
+
+def label_inlay(module):
+    """The debossed lid text as a separate body (fills the 0.25 mm recess) for a second colour on multi-material printers."""
+    return Compound([legend(name,x,y,size) for name,x,y,size in labels(module)])&B(-10,110,-10,50,ROOF-.26,ROOF-.01)
 
 def component_proxies(module):
     import component_envelopes as p

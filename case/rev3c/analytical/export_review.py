@@ -21,6 +21,9 @@ parser.add_argument('--magnets', default='none', choices=['none', '6x2', '8x2', 
                     help='four open-bottom pockets in the base for N52 disc magnets (diameter x thickness, mm)')
 parser.add_argument('--magnet-style', default='glue', choices=['glue', 'press', 'embedded'],
                     help='glue: open pocket, glue flush; press: open pocket with crush ribs; embedded: sealed pocket, pause the print to insert')
+parser.add_argument('--rj45-style', default='original', choices=['original', 'flush'],
+                    help='flush: vertical end plate with a window framing the RJ45 jack (+0.3 mm), jack ~1 mm behind the face')
+parser.add_argument('--label-inlay', action='store_true', help='also export the lid text as a separate inlay body (two-colour printing)')
 parser.add_argument('--usb-style', default='original', choices=['original', 'flush'],
                     help='flush: end wall at the USB-C port with a snug opening (adds a USB-end fit coupon)')
 parser.add_argument('--output', required=True, type=Path)
@@ -33,7 +36,7 @@ gaps = {module: dict(case.CONTACT_GAP[module]) for module in case.SW}
 heights[args.module] = {'BOOT': args.boot_height, 'RESET': args.reset_height}
 stops[args.module] = {'BOOT': args.boot_stop, 'RESET': args.reset_stop}
 gaps[args.module] = {'BOOT': args.gap, 'RESET': args.gap}
-case.configure(args.stack, 'per_assembly', 'per_assembly', heights, gaps, stops, args.leaf_offset, args.usb_style)
+case.configure(args.stack, 'per_assembly', 'per_assembly', heights, gaps, stops, args.leaf_offset, args.usb_style, args.rj45_style)
 case.OUT = args.output.resolve()
 case.OUT.mkdir(parents=True, exist_ok=True)
 MAG = False if args.magnets == 'none' else f'{args.magnets}:{args.magnet_style}'
@@ -62,6 +65,8 @@ receipt = {'qualification': 'Unqualified review geometry; no measured assembly o
                                           'component_envelopes.py', 'current_carrier_bounds.json']},
            'parts': {name: case.export(shape, name) for name, shape in pieces.items()},
            'coupons': {name: case.export(shape, name) for name, shape in coupons.items()}}
+if args.label_inlay:
+    receipt['parts'][f'review_label_inlay_{args.module}'] = case.export(case.label_inlay(args.module), f'review_label_inlay_{args.module}', False)
 if MAG:
     receipt['magnets'] = {'size': args.magnets, 'style': args.magnet_style,
                           'pockets': [[round(v, 3) for v in p] for p in case.magnet_pockets(args.magnets, args.magnet_style)],
