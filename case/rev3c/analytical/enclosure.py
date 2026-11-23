@@ -209,12 +209,44 @@ def usb_tongue_clearance():
 # The base bottom is z = -1 and the cavity floor is z = 2.4, so a 2 mm magnet leaves >= 1.2 mm skin.
 MAGNET_SIZES={'6x2':(6.0,2.0),'8x2':(8.0,2.0),'10x2':(10.0,2.0)}  # diameter, thickness (mm)
 MAGNET_XY=((9.0,1.5),(9.0,38.5),(70.0,1.5),(70.0,38.5))
-MAGNET_CLEAR=.15      # radial: glue gap / light press fit
+MAGNET_CLEAR=.15      # radial: glue gap (glue/press styles); embedded uses its own drop-in clearance
 MAGNET_DEPTH_EXTRA=.1 # pocket a little deeper than the magnet so it sits flush or just below
-def magnet_pockets(size):
+# Styles. 'glue': open pocket on the outside, magnet glued flush (strongest hold, visible).
+# 'press': same pocket plus three 0.6 mm crush ribs that stand 0.25 mm into it, so the magnet
+# pushes in without glue and tolerates printer hole shrink. 'embedded': a sealed pocket inside
+# the floor. Pause the print at the reported height, drop the magnets in, and resume. Invisible
+# and cannot fall out, but the bottom skin costs roughly a third of the holding force.
+MAGNET_STYLES=('glue','press','embedded')
+EMBED_BOTTOM_SKIN=.55   # = 0.35 first layer + one 0.2 layer
+EMBED_TOP_PRINT_Z=2.75  # pocket top as a print height: a layer boundary for 0.35/0.2 layers
+EMBED_CLEAR=.2          # radial drop-in clearance
+PRESS_RIB_R,PRESS_RIB_IN=.3,.25
+def magnet_pockets(size, style='glue'):
+    """(x, y, radius, z0, z1) of each pocket in the KiCad build frame; z = -1 is the base bottom."""
     if size not in MAGNET_SIZES: raise ValueError(f'magnets: {size} (choose {sorted(MAGNET_SIZES)})')
+    if style not in MAGNET_STYLES: raise ValueError(f'magnet style: {style} (choose {MAGNET_STYLES})')
     d,t=MAGNET_SIZES[size]
-    return [(x,y,d/2+MAGNET_CLEAR,-1.+t+MAGNET_DEPTH_EXTRA) for x,y in MAGNET_XY]
+    if style=='embedded':
+        z1=-1.+EMBED_TOP_PRINT_Z
+        z0=-1.+EMBED_BOTTOM_SKIN
+        if z1-z0<t+.1: raise ValueError(f'{size}: embedded pocket {z1-z0:.2f} mm is too shallow')
+        return [(x,y,d/2+EMBED_CLEAR,z0,z1) for x,y in MAGNET_XY]
+    return [(x,y,d/2+MAGNET_CLEAR,-1.2,-1.+t+MAGNET_DEPTH_EXTRA) for x,y in MAGNET_XY]
+def magnet_pause_print_z(layer=.2, first=.35):
+    """Print height to pause BEFORE (embedded style): the first layer that bridges over the pocket."""
+    z=first
+    while z<=EMBED_TOP_PRINT_Z+1e-6: z+=layer
+    return round(z,3)
+def magnet_cut(size, style='glue'):
+    cut=None
+    for x,y,r,z0,z1 in magnet_pockets(size, style):
+        c=C(r,z0,z1,x,y)
+        if style=='press':
+            for k in range(3):
+                a=math.radians(90+120*k); rx,ry=x+(r+PRESS_RIB_R-PRESS_RIB_IN)*math.cos(a),y+(r+PRESS_RIB_R-PRESS_RIB_IN)*math.sin(a)
+                c-=C(PRESS_RIB_R,z0,z1,rx,ry)
+        cut=c if cut is None else cut+c
+    return cut
 
 def base(magnets=False):
     s=rrsolid(114,54,6,-1.,SEAM)
@@ -250,7 +282,8 @@ def base(magnets=False):
     if magnets is True:  # original two-pocket option, kept for reproducing earlier exports
         for x,y in [(33.,34.),(60.,34.)]: s-=C(2.3,-1.1,1.3,x,y)
     elif magnets:
-        for x,y,r,z1 in magnet_pockets(magnets): s-=C(r,-1.2,z1,x,y)
+        size,_,style=str(magnets).partition(':')  # e.g. '8x2' or '8x2:embedded'
+        s-=magnet_cut(size, style or 'glue')
     if USB_STYLE=='flush':
         xf=usb_face_x()
         s=s&usb_keep()

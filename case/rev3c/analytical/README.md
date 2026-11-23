@@ -22,13 +22,17 @@ Geometry is still built and checked in the KiCad frame, so every existing cleara
 
 ## Magnet mount option (2026-11-23)
 
-`--magnets 6x2|8x2|10x2` adds four open-bottom pockets to the base for N52 disc magnets (diameter × thickness in mm), so the case can sit on a steel appliance panel.
+`--magnets 6x2|8x2|10x2` adds four corner pockets to the base for N52 disc magnets (diameter × thickness in mm), so the case can sit on a steel appliance panel. `--magnet-style` picks how the magnets are held:
 
-- **Placement.** Pockets are at x 9/70 mm, y 1.5/38.5 mm (KiCad frame), with 0.15 mm radial clearance, 0.1 mm deeper than the magnet. Glue the magnets in with CA or epoxy.
-- **Checks.** For all three sizes the base stays one valid solid, with 1.3 mm of skin to the cavity floor and a solid 0.8 mm wall around each pocket. The removed volume equals exactly four pockets, so none breaks into the J1 or socket tail recesses.
-- **Default.** Without the flag the base is unchanged. `base(magnets=True)` still gives the original two-pocket layout.
+| Style | How | Hold | Skin to cavity floor |
+|---|---|---|---|
+| `glue` (default) | Open pocket on the bottom; glue the disc flush (CA or epoxy) | Strongest: the magnet touches the steel | 1.3 mm |
+| `press` | Open pocket with three 0.6 mm crush ribs standing 0.25 mm into it; press the disc in, no glue | Same as glue | 1.3 mm |
+| `embedded` | Sealed pocket 0.55 mm above the bottom face. Pause the print before the reported layer (2.95 mm for a 0.35 mm first layer and 0.2 mm layers), drop the discs in with the same pole up, and resume | About a third less, because of the 0.55 mm skin; invisible and cannot fall out | 0.65 mm |
 
-Expect much less holding force on thin, painted or curved panels than the catalogue pull rating. A metal panel behind the module also shortens Wi-Fi range; the external-antenna lid helps if range suffers. Avoid hot spots near compressors or heating elements: PLA softens around 55–60 °C.
+Pockets are at x 9/70 mm, y 1.5/38.5 mm (KiCad frame). Every size and style keeps a single valid solid with full skins. Pressed discs meet only the ribs (about 0.18 mm³ of interference), and the embedded pockets are fully enclosed. The export receipt records the pocket coordinates and the pause height. Gluing magnets inside the case is not offered: the floor would leave about 1.2 mm of plastic between magnet and steel, and the magnets would sit under the electronics. For no reprint at all, put adhesive magnet tape on a plain base. Without `--magnets` the base is unchanged, and `base(magnets=True)` keeps the original two-pocket layout.
+
+Expect much less holding force on thin, painted or curved panels than the catalogue pull rating. Sliding on a vertical panel is the weak direction. A metal panel behind the module also shortens Wi-Fi range; the external-antenna lid helps if range suffers. Keep away from hot spots: PLA softens around 55–60 °C, so use PETG or ASA there.
 
 ## Antenna options (2026-11-23)
 

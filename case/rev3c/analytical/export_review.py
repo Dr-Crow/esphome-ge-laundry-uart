@@ -19,6 +19,8 @@ parser.add_argument('--leaf-offset', default=16.6, type=float)
 parser.add_argument('--relieved-guides', action='store_true')
 parser.add_argument('--magnets', default='none', choices=['none', '6x2', '8x2', '10x2'],
                     help='four open-bottom pockets in the base for N52 disc magnets (diameter x thickness, mm)')
+parser.add_argument('--magnet-style', default='glue', choices=['glue', 'press', 'embedded'],
+                    help='glue: open pocket, glue flush; press: open pocket with crush ribs; embedded: sealed pocket, pause the print to insert')
 parser.add_argument('--usb-style', default='original', choices=['original', 'flush'],
                     help='flush: end wall at the USB-C port with a snug opening (adds a USB-end fit coupon)')
 parser.add_argument('--output', required=True, type=Path)
@@ -34,7 +36,7 @@ gaps[args.module] = {'BOOT': args.gap, 'RESET': args.gap}
 case.configure(args.stack, 'per_assembly', 'per_assembly', heights, gaps, stops, args.leaf_offset, args.usb_style)
 case.OUT = args.output.resolve()
 case.OUT.mkdir(parents=True, exist_ok=True)
-MAG = False if args.magnets == 'none' else args.magnets
+MAG = False if args.magnets == 'none' else f'{args.magnets}:{args.magnet_style}'
 pieces = {'review_base': case.base(MAG),
           f'review_lid_{args.module}_{args.antenna}': case.shell(args.module, args.antenna)}
 for name, (bottom, roof) in case.PIPES.items():
@@ -60,6 +62,11 @@ receipt = {'qualification': 'Unqualified review geometry; no measured assembly o
                                           'component_envelopes.py', 'current_carrier_bounds.json']},
            'parts': {name: case.export(shape, name) for name, shape in pieces.items()},
            'coupons': {name: case.export(shape, name) for name, shape in coupons.items()}}
+if MAG:
+    receipt['magnets'] = {'size': args.magnets, 'style': args.magnet_style,
+                          'pockets': [[round(v, 3) for v in p] for p in case.magnet_pockets(args.magnets, args.magnet_style)],
+                          'pause_before_print_z_mm': case.magnet_pause_print_z() if args.magnet_style == 'embedded' else None,
+                          'pause_note': 'For 0.35 mm first layer and 0.2 mm layers with the base printed floor-down; recompute for other layer settings.' if args.magnet_style == 'embedded' else None}
 if args.usb_style == 'flush':
     z0, z1 = case.usb_port_z()
     receipt['usb_flush'] = {'face_x_kicad': round(case.usb_face_x(), 3), 'mouth_x_kicad': case.USB_MOUTH_X,
