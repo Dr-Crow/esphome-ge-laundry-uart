@@ -8,6 +8,18 @@ The [source-bound report](review/CASE-ANALYSIS.md) records valid solids, install
 
 The [subsequent pinned reproduction](review/pinned-reproduction/GE-Pinned-CAD-Reproduction-2026-10-05.md) closes that setup/reproduction limitation for the frozen 77f4c88 source. build123d 0.11.1/trimesh 5.1.0 produces 51 independently checked STEP/STL pairs, and the 20 nominal shape comparisons and 12 stack samples agree with the prior engine. The original two top-level requirements do not establish the old transitive dependency closure; all 47 packages used in the new run are recorded. Future parameter/source changes require their own checks. Printed fit and physical qualification remain open.
 
+## Coordinate frame fix (2026-11-23)
+
+**Exports made before this change are mirror images of the real part and must not be printed.** All dimensions in `enclosure.py`, `interface_baseline.py` and `current_carrier_bounds.json` are KiCad board coordinates: x right, y *down* in the top view. The geometry was built in that frame with z up, which is left-handed. The printed case therefore had the J1 (RJ45), USB-C and light-guide features on the wrong long side of the board.
+
+Three checks confirmed this:
+
+- **Handedness.** KiCad's own 3D export maps board +y to −y in a z-up frame, and the Rev2 Fusion case also uses y = −KiCad y.
+- **Placement sampling.** With the corrected exports, sample points inside the J1 body and both XIAO socket rows of the real Rev3D board are clear of printed solid. The old convention collides at J1 and J5.
+- **End-wall opening.** The J1 opening used to span physical y 7.8–25.9 mm against an RJ45 body at y 14.8–31.2 mm, so the plug would hit the wall. It now spans 14.1–32.2 mm.
+
+Geometry is still built and checked in the KiCad frame, so every existing clearance screen keeps its meaning. `enclosure.export()` and `interface_baseline._export()` now mirror each part once about the board centreline (y = 20 mm) into the physical frame. `legend()` pre-mirrors each label glyph about its own centre so the embossed text still reads correctly. The check: a readable text solid at each label's physical position overlaps the carved lid by 0 mm³, and a mirrored one does not. Volumes are unchanged. Earlier slicer times and filament figures still apply, but re-slice before printing.
+
 ## Reviewable corrections
 
 - `configure()` sets the declared generic installed stack from 10.35 to 11.65 mm, independent BOOT/RESET heights, gaps and stops, plus optional stack-adjusted USB height. It does not establish a safe switch overtravel limit.

@@ -38,7 +38,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from build123d import Align, Box, Cylinder, Location, Part, export_step, export_stl
+from build123d import Align, Box, Cylinder, Location, Part, Plane, export_step, export_stl
 
 
 # ---------------------------------------------------------------------------
@@ -527,6 +527,10 @@ def make_internal_antenna_ledge() -> Part:
 
 
 def _export(shape: Part, stem: str, out_dir: Path) -> None:
+    # Constants here are KiCad board coordinates (y down) with z up, a left-handed
+    # frame. Mirror about the board centreline (y = 20) so the exported part is the
+    # physical, right-handed shape. Same convention as enclosure.export().
+    shape = shape.mirror(Plane.XZ.offset(-20.0))
     out_dir.mkdir(parents=True, exist_ok=True)
     export_stl(shape, out_dir / f"{stem}.stl")
     export_step(shape, out_dir / f"{stem}.step")

@@ -11,6 +11,19 @@ import interface_baseline as e
 ROOT=Path(__file__).parent
 OUT=ROOT/'exports'
 CX,CY=49.5,20.0
+# COORDINATE FRAME. Every dimension in this file and in interface_baseline.py is
+# written in KiCad board coordinates (x right, y DOWN in the top view) with z up.
+# That frame is left-handed: modelled as-is, the printed case is a mirror image of
+# the real board (J1, USB and LED features on the wrong long side). Geometry is
+# still built and checked in the KiCad frame, so every clearance check stays valid,
+# and export() converts to the physical frame with one mirror about the board
+# centreline: y_physical = 2*CY - y_kicad. Viewed from above, physical +y is the
+# board's top edge in KiCad's top view. legend() pre-mirrors each glyph about its
+# own centre so the printed labels still read correctly.
+PHYSICAL_MIRROR=Plane.XZ.offset(-CY)
+def to_physical(s):
+    """KiCad-frame (left-handed) solid -> physical right-handed frame, y' = 2*CY - y."""
+    return s.mirror(PHYSICAL_MIRROR)
 SEAM=6.8
 ROOF=30.5
 UNDER=28.5
@@ -103,7 +116,8 @@ def pipe_with_cap_relief(name,solder_allowance=.15,clearance=.25):
     return s
 def legend(text,x,y,size=1.7):
     sk=Pos(x,y,ROOF-.26)*Text(text,size,font_path='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
-    return extrude(sk,amount=.28)
+    # Pre-mirrored about its own centre line: export()'s frame mirror makes it read normally.
+    return extrude(sk,amount=.28).mirror(Plane.XZ.offset(-y))
 
 
 # Nominal prototype dimensions, not measured or material-qualified.
@@ -262,6 +276,7 @@ def component_proxies(module):
     return p.proxies(module,STACK_MM,SW_HEIGHT[module])
 
 def export(s,name,one=True):
+    s=to_physical(s)  # see COORDINATE FRAME at the top of this file
     assert s.is_valid,(name,'invalid')
     assert not one or len(s.solids())==1,(name,'not single solid',len(s.solids()))
     assert s.volume>0,(name,'empty')
