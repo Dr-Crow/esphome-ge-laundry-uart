@@ -27,6 +27,13 @@
     "C286510": {"kind": "C", "value": "100n", "package": "0603", "mpn": "0603B104M500NT", "source_url": "https://www.lcsc.com/product-detail/C286510.html", "voltage_v": 50, "dielectric": "X7R"},
     "C303950": {"kind": "C", "value": "10u", "package": "1206", "mpn": "1206B106K500NT", "source_url": "https://www.lcsc.com/product-detail/C303950.html", "voltage_v": 50, "dielectric": "X7R"},
     "C309062": {"kind": "C", "value": "22u", "package": "1210", "mpn": "CL32B226KAJNNNE", "source_url": "https://www.lcsc.com/product-detail/C309062.html", "voltage_v": 25, "dielectric": "X7R"},
-    "C412309": {"kind": "L", "value": "4.7uH", "package": "Panasonic_PCC-M0530M", "mpn": "ETQP3M4R7KVP", "source_url": "https://www.lcsc.com/product-detail/C412309.html", "manufacturer_url": "https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf"}
+    "C412309": {"kind": "L", "value": "4.7uH", "package": "Panasonic_PCC-M0530M", "mpn": "ETQP3M4R7KVP", "source_url": "https://www.lcsc.com/product-detail/C412309.html", "manufacturer_url": "https://industrial.panasonic.com/cdbs/www-data/pdf/AGL0000/AGL0000C59.pdf"},
+    "C22807": {"kind": "R", "value": "150k", "package": "0603", "mpn": "0603WAF1503T5E", "source_url": "https://www.lcsc.com/product-detail/C22807.html"},
+    "C23146": {"kind": "R", "value": "360k", "package": "0603", "mpn": "0603WAF3603T5E", "source_url": "https://www.lcsc.com/product-detail/C23146.html"},
+    "C23242": {"kind": "R", "value": "75k", "package": "0603", "mpn": "0603WAF7502T5E", "source_url": "https://www.lcsc.com/product-detail/C23242.html"},
+    "C25803": {"kind": "R", "value": "100k", "package": "0603", "mpn": "0603WAF1003T5E", "source_url": "https://www.lcsc.com/product-detail/C25803.html"},
+    "C305174": {"kind": "L", "value": "4.7uH", "package": "Sunlord_SWPA5040S", "mpn": "SWPA5040S4R7NT", "source_url": "https://www.lcsc.com/product-detail/C305174.html", "manufacturer_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA5040S4R7NT_C305174.pdf"},
+    "C22935": {"kind": "R", "value": "1M", "package": "0603", "mpn": "0603WAF1004T5E", "source_url": "https://www.lcsc.com/product-detail/C22935.html"},
+    "C23231": {"kind": "R", "value": "68k", "package": "0603", "mpn": "0603WAF6802T5E", "source_url": "https://www.lcsc.com/product-detail/C23231.html"}
   }
 }

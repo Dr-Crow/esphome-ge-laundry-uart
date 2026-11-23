@@ -361,6 +361,56 @@
           "J1"
         ]
       }
+    },
+    "rev3d": {
+      "source": "pcb/rev3d/design/GEA-Adapter-Rev3D",
+      "bom": "pcb/rev3d/manufacturing/BOM-GEA-Adapter-Rev3D.csv",
+      "cpl": "pcb/rev3d/manufacturing/CPL-GEA-Adapter-Rev3D.csv",
+      "archive": "pcb/rev3d/manufacturing/GERBER-GEA-Adapter-Rev3D.zip",
+      "status": "Rev3D candidate: FirstBuild-aligned TPS259470A eFuse priority mux replaces out-of-stock TPS1H200A path; release qualification blocked",
+      "design_rules": "pcb/rev3d/design/GEA-Adapter-Rev3D.kicad_dru",
+      "library_tables": [
+        "pcb/rev3d/design/fp-lib-table",
+        "pcb/rev3d/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/ALT_PWR": "Power",
+        "/BUCK_5V": "Power",
+        "/BUCK_BST": "Switching",
+        "/BUCK_SW": "Switching",
+        "/V_INPUT": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.25,
+        "Switching": 0.3
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "TPS259470A eFuse path and AP63205 low-dropout headroom are digitally reviewed only; appliance pin voltages/current budget, transient energy vs SMF17A/eFuse 28 V abs max, priority switchover, loaded startup and thermal qualification remain open"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Exact RJ45 suffix and other purchasing identities, supplier library pose/zero/orientation, stencil/assembly process and current quote review remain unqualified"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Actual module/header/socket fit, retention, vibration, USB/BOOT/RESET access, antenna/RF and enclosure qualification remain open; editable shared prototype CAD is recovered and digitally screened, without physical qualification"
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev3d/validation/placement-origin-review.json",
+        "sha256": "305409eb156f5b0acdcf37a0abf66f9c9b492d63194ca811ecf3eb972d9c82e0",
+        "required_references": [
+          "J1"
+        ]
+      }
     }
   },
   "firmware": [
