@@ -203,6 +203,19 @@ def usb_tongue_clearance():
     t=loft([rr(110.1,50.1,4.55,SEAM-.1),rr(109.6,49.6,4.55,8.45)],ruled=True)
     return t-loft([rr(105.1,45.1,3.05,SEAM-.2),rr(104.6,44.6,3.05,8.6)],ruled=True)
 
+# MAGNET MOUNT. Four open-bottom pockets for N52 disc magnets so the case can sit on a steel
+# appliance panel; glue the magnets in (CA or epoxy). Corners clear of the J1 tail pocket
+# (x < 19, y 7.7-26), the socket tail pockets (x > 78), the latch pockets and the datum lands.
+# The base bottom is z = -1 and the cavity floor is z = 2.4, so a 2 mm magnet leaves >= 1.2 mm skin.
+MAGNET_SIZES={'6x2':(6.0,2.0),'8x2':(8.0,2.0),'10x2':(10.0,2.0)}  # diameter, thickness (mm)
+MAGNET_XY=((9.0,1.5),(9.0,38.5),(70.0,1.5),(70.0,38.5))
+MAGNET_CLEAR=.15      # radial: glue gap / light press fit
+MAGNET_DEPTH_EXTRA=.1 # pocket a little deeper than the magnet so it sits flush or just below
+def magnet_pockets(size):
+    if size not in MAGNET_SIZES: raise ValueError(f'magnets: {size} (choose {sorted(MAGNET_SIZES)})')
+    d,t=MAGNET_SIZES[size]
+    return [(x,y,d/2+MAGNET_CLEAR,-1.+t+MAGNET_DEPTH_EXTRA) for x,y in MAGNET_XY]
+
 def base(magnets=False):
     s=rrsolid(114,54,6,-1.,SEAM)
     s-=rrsolid(101,42,3,2.4,SEAM+.2)
@@ -234,8 +247,10 @@ def base(magnets=False):
             stop=stop.mirror(Plane.XZ.offset(-20.))
             roots=roots.mirror(Plane.XZ.offset(-20.))
         s+=stop+roots
-    if magnets:
+    if magnets is True:  # original two-pocket option, kept for reproducing earlier exports
         for x,y in [(33.,34.),(60.,34.)]: s-=C(2.3,-1.1,1.3,x,y)
+    elif magnets:
+        for x,y,r,z1 in magnet_pockets(magnets): s-=C(r,-1.2,z1,x,y)
     if USB_STYLE=='flush':
         xf=usb_face_x()
         s=s&usb_keep()

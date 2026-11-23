@@ -17,6 +17,8 @@ for name in ['boot-height', 'reset-height', 'boot-stop', 'reset-stop']:
 parser.add_argument('--gap', default=0.25, type=float)
 parser.add_argument('--leaf-offset', default=16.6, type=float)
 parser.add_argument('--relieved-guides', action='store_true')
+parser.add_argument('--magnets', default='none', choices=['none', '6x2', '8x2', '10x2'],
+                    help='four open-bottom pockets in the base for N52 disc magnets (diameter x thickness, mm)')
 parser.add_argument('--usb-style', default='original', choices=['original', 'flush'],
                     help='flush: end wall at the USB-C port with a snug opening (adds a USB-end fit coupon)')
 parser.add_argument('--output', required=True, type=Path)
@@ -32,7 +34,8 @@ gaps[args.module] = {'BOOT': args.gap, 'RESET': args.gap}
 case.configure(args.stack, 'per_assembly', 'per_assembly', heights, gaps, stops, args.leaf_offset, args.usb_style)
 case.OUT = args.output.resolve()
 case.OUT.mkdir(parents=True, exist_ok=True)
-pieces = {'review_base': case.base(),
+MAG = False if args.magnets == 'none' else args.magnets
+pieces = {'review_base': case.base(MAG),
           f'review_lid_{args.module}_{args.antenna}': case.shell(args.module, args.antenna)}
 for name, (bottom, roof) in case.PIPES.items():
     pieces['review_guide_' + name.lower()] = (case.pipe_with_cap_relief(name)
@@ -44,7 +47,7 @@ if args.usb_style == 'flush':
     end = case.B(86., 110., -10., 50., -2., 40.)
     # Keep the largest solid: the cut can free a slice of a button leaf, which is not part of the USB fit test.
     biggest = lambda s: max(s.solids(), key=lambda p: p.volume)
-    coupons = {'coupon_usb_end_base': biggest(case.base() & end),
+    coupons = {'coupon_usb_end_base': biggest(case.base(MAG) & end),
                f'coupon_usb_end_lid_{args.module}': biggest(case.shell(args.module, args.antenna) & end)}
 if args.antenna == 'fpc' or (args.antenna == 'internal' and args.module == 'c3'):
     # Reference body for the 40 x 20 mm flat antenna in its keeper (viewing and clearance only; do not print).

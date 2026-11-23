@@ -20,6 +20,16 @@ Three checks confirmed this:
 
 Geometry is still built and checked in the KiCad frame, so every existing clearance screen keeps its meaning. `enclosure.export()` and `interface_baseline._export()` now mirror each part once about the board centreline (y = 20 mm) into the physical frame. `legend()` pre-mirrors each label glyph about its own centre so the embossed text still reads correctly. The check: a readable text solid at each label's physical position overlaps the carved lid by 0 mm³, and a mirrored one does not. Volumes are unchanged. Earlier slicer times and filament figures still apply, but re-slice before printing.
 
+## Magnet mount option (2026-11-23)
+
+`--magnets 6x2|8x2|10x2` adds four open-bottom pockets to the base for N52 disc magnets (diameter × thickness in mm), so the case can sit on a steel appliance panel.
+
+- **Placement.** Pockets are at x 9/70 mm, y 1.5/38.5 mm (KiCad frame), with 0.15 mm radial clearance, 0.1 mm deeper than the magnet. Glue the magnets in with CA or epoxy.
+- **Checks.** For all three sizes the base stays one valid solid, with 1.3 mm of skin to the cavity floor and a solid 0.8 mm wall around each pocket. The removed volume equals exactly four pockets, so none breaks into the J1 or socket tail recesses.
+- **Default.** Without the flag the base is unchanged. `base(magnets=True)` still gives the original two-pocket layout.
+
+Expect much less holding force on thin, painted or curved panels than the catalogue pull rating. A metal panel behind the module also shortens Wi-Fi range; the external-antenna lid helps if range suffers. Avoid hot spots near compressors or heating elements: PLA softens around 55–60 °C.
+
 ## Antenna options (2026-11-23)
 
 `--antenna` picks the lid roof. The options apply to both modules:
