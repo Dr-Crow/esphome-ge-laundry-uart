@@ -8,7 +8,9 @@ import enclosure as case
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--module', required=True, choices=['c3', 'c6'])
-parser.add_argument('--antenna', default='internal', choices=['internal', 'external'])
+parser.add_argument('--antenna', default='internal', choices=['internal', 'fpc', 'smooth', 'external'],
+                    help="fpc: flat-antenna keeper rails; smooth: plain roof; external: SMA bulkhead; "
+                         "internal: original pairing (C3 fpc, C6 smooth)")
 parser.add_argument('--stack', required=True, type=float)
 for name in ['boot-height', 'reset-height', 'boot-stop', 'reset-stop']:
     parser.add_argument('--' + name, required=True, type=float)
@@ -44,6 +46,9 @@ if args.usb_style == 'flush':
     biggest = lambda s: max(s.solids(), key=lambda p: p.volume)
     coupons = {'coupon_usb_end_base': biggest(case.base() & end),
                f'coupon_usb_end_lid_{args.module}': biggest(case.shell(args.module, args.antenna) & end)}
+if args.antenna == 'fpc' or (args.antenna == 'internal' and args.module == 'c3'):
+    # Reference body for the 40 x 20 mm flat antenna in its keeper (viewing and clearance only; do not print).
+    coupons['proxy_fpc_antenna_40x20'] = case.B(*case.FPC_BOX)
 receipt = {'qualification': 'Unqualified review geometry; no measured assembly or switch-travel proof',
            'parameters': {key: str(value) if isinstance(value, Path) else value
                           for key, value in vars(args).items()},

@@ -20,6 +20,19 @@ Three checks confirmed this:
 
 Geometry is still built and checked in the KiCad frame, so every existing clearance screen keeps its meaning. `enclosure.export()` and `interface_baseline._export()` now mirror each part once about the board centreline (y = 20 mm) into the physical frame. `legend()` pre-mirrors each label glyph about its own centre so the embossed text still reads correctly. The check: a readable text solid at each label's physical position overlaps the carved lid by 0 mm³, and a mirrored one does not. Volumes are unchanged. Earlier slicer times and filament figures still apply, but re-slice before printing.
 
+## Antenna options (2026-11-23)
+
+`--antenna` picks the lid roof. The options apply to both modules:
+
+| Option | What the lid has | Use it for |
+|---|---|---|
+| `fpc` | Keeper rails, an entry stop and two cable keepers under the roof for a 40 × 20 mm flat FPC antenna on the module U.FL | The FPC antenna that ships with the XIAO C3 (the C3 has no onboard antenna), or a C6 set to its U.FL port |
+| `smooth` | Plain roof, no antenna features | The C6 onboard ceramic antenna, or your own antenna mounting |
+| `external` | 12 mm bulkhead bore through the long side wall at x 56 mm, z 15.5 mm, plus a printed cable keeper | An SMA/RP-SMA pigtail from the module U.FL |
+| `internal` | The original pairing: C3 → `fpc`, C6 → `smooth` | Reproducing earlier exports |
+
+The `fpc` export also writes `proxy_fpc_antenna_40x20`, a reference body for checking clearance. It is not a printed part. Checks: in every option, all 67 Rev3D 3D models clear printed solid. The FPC body sits at z 26.4–28.2 mm, clear of the lid and every part (module top ≤ 22.4 mm). The keeper fit, cable bend room, bulkhead hardware and RF performance are unverified. The C6 module's own U.FL position is taken from the C3 layout and is not modelled separately.
+
 ## Flush USB-C port option (2026-11-23)
 
 With the original end wall, the module's USB-C mouth (x ≈ 100.0 mm) sits about 4.3 mm behind the outer face, so the 14.8 × 9.0 mm opening must pass a cable overmold. `--usb-style flush` moves the end wall out to the port instead:

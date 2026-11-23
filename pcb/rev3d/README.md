@@ -41,6 +41,20 @@ AP63205 behaviour near a 5 V input: datasheet "low dropout mode … effective du
 about 4.6 V at the XIAO 5V pin (FirstBuild's LDO chain gives about 4.3 V). This is a calculation only;
 bench measurement is still required.
 
+## Power, USB and batteries
+
+The appliance powers the board through PIN1 or PIN3. No battery is needed or supported: there is no room in the case, and a lithium cell inside an appliance adds heat and safety risk.
+
+**Do not connect USB and the appliance at the same time.** Flash the module over USB with the carrier out of the appliance, then use ESPHome OTA updates. What the hardware does and does not protect:
+
+| Situation | Protected? | Why |
+|---|---|---|
+| USB power flowing back into the appliance's power pins | Yes | U9/U10 TPS259470A eFuses block reverse current |
+| USB power flowing back into the buck | Yes | D11 (PMEG2010ER) blocks it |
+| Appliance power flowing into the USB host | **No** | On both XIAO C3 and C6 the 5V pin *is* USB VBUS. The carrier puts ~4.8 V on VBUS; it only stays out of the host while the host holds VBUS higher, and an unpowered host or a sagging port can be back-fed |
+| Appliance and USB grounds joined | **No** | USB ground ties the computer to the appliance's logic ground. The appliance's isolation from mains is not documented, so this ground connection could be hazardous |
+| USB-only: appliance data lines | Partly | USB-powered +5V drives the bus pull-ups and BAV99 clamps on J1 pins 4, 5 and 7, even with the appliance off |
+
 ## Debug and rework provisions
 
 | Provision | Purpose |

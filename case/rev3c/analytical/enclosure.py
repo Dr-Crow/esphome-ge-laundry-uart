@@ -328,7 +328,11 @@ def shell(module='c3',antenna='internal'):
         # Nominal 0.12 mm diametral press-fit band, coupon-specific.
         s+=C(2.12,28.65,29.25,tx,ty)-C(1.37,28.55,29.35,tx,ty)
     for name,x,y,size in labels(module): s-=legend(name,x,y,size)
-    if module=='c3' and antenna=='internal': s+=fpc_retention()
+    # Antenna options. 'fpc': keeper rails under the roof for the flat FPC antenna that ships with
+    # both XIAO C3 and C6 (U.FL). 'smooth': plain roof (C6 onboard antenna, or the user's own mount).
+    # 'external': SMA bulkhead below. 'internal' keeps the original pairing: C3 -> fpc, C6 -> smooth.
+    if antenna not in ('internal','fpc','smooth','external'): raise ValueError(antenna)
+    if antenna=='fpc' or (antenna=='internal' and module=='c3'): s+=fpc_retention()
     if antenna=='external':
         s-=cy(6.,44.4,48.,56.,15.5)
         s+=cy(7.,42.9,44.4,56.,15.5)
