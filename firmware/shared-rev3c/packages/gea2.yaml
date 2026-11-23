@@ -7,6 +7,9 @@ uart:
     number: ${gea_rx_gpio}
     inverted: true
   baud_rate: 19200
+  # Interrupt per received byte so half-duplex echo/collision checks see each byte promptly
+  # (reported to cut GEA2 collisions on ESP32-C3: mguaylam/esphome-gea#43).
+  rx_full_threshold: 1
 
 gea:
   id: gea_hub
