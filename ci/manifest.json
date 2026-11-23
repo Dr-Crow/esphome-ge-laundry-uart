@@ -411,6 +411,57 @@
           "J1"
         ]
       }
+    },
+    "rev3e": {
+      "source": "pcb/rev3e/design/GEA-Adapter-Rev3E",
+      "bom": "pcb/rev3e/manufacturing/BOM-GEA-Adapter-Rev3E.csv",
+      "cpl": "pcb/rev3e/manufacturing/CPL-GEA-Adapter-Rev3E.csv",
+      "archive": "pcb/rev3e/manufacturing/GERBER-GEA-Adapter-Rev3E.zip",
+      "status": "Rev3E candidate: Rev3D plus PIN3 overvoltage lockout (Q1/R45/R37, TI Fig. 8-13 option 2), SRV05-4 data-line ESD array replacing BAV99 clamps, R47 5 V debug link, TP12, optional C30 bulk; release qualification blocked",
+      "design_rules": "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_dru",
+      "library_tables": [
+        "pcb/rev3e/design/fp-lib-table",
+        "pcb/rev3e/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/ALT_PWR": "Power",
+        "/BUCK_5V": "Power",
+        "/BUCK_BST": "Switching",
+        "/BUCK_SW": "Switching",
+        "/D11_K": "Power",
+        "/V_INPUT": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.25,
+        "Switching": 0.3
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "TPS259470A eFuse path, PIN3 OVLO source-follower bias and AP63205 low-dropout headroom are digitally reviewed only; appliance pin voltages/current budget, transient energy vs SMF17A/eFuse 28 V abs max, priority switchover with Q1, loaded startup and thermal qualification remain open"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Exact RJ45 suffix and other purchasing identities, supplier library pose/zero/orientation, stencil/assembly process and current quote review remain unqualified"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Actual module/header/socket fit, retention, vibration, USB/BOOT/RESET access, antenna/RF and enclosure qualification remain open; editable shared prototype CAD is recovered and digitally screened, without physical qualification"
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev3e/validation/placement-origin-review.json",
+        "sha256": "0a6d340001d59e07a0d8b5eec42108fa81bfcbef4cb296e1c9560743447aa8d1",
+        "required_references": [
+          "J1"
+        ]
+      }
     }
   },
   "firmware": [

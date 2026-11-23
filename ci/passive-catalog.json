@@ -34,6 +34,9 @@
     "C25803": {"kind": "R", "value": "100k", "package": "0603", "mpn": "0603WAF1003T5E", "source_url": "https://www.lcsc.com/product-detail/C25803.html"},
     "C305174": {"kind": "L", "value": "4.7uH", "package": "Sunlord_SWPA5040S", "mpn": "SWPA5040S4R7NT", "source_url": "https://www.lcsc.com/product-detail/C305174.html", "manufacturer_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA5040S4R7NT_C305174.pdf"},
     "C22935": {"kind": "R", "value": "1M", "package": "0603", "mpn": "0603WAF1004T5E", "source_url": "https://www.lcsc.com/product-detail/C22935.html"},
-    "C23231": {"kind": "R", "value": "68k", "package": "0603", "mpn": "0603WAF6802T5E", "source_url": "https://www.lcsc.com/product-detail/C23231.html"}
+    "C23231": {"kind": "R", "value": "68k", "package": "0603", "mpn": "0603WAF6802T5E", "source_url": "https://www.lcsc.com/product-detail/C23231.html"},
+    "C14663": {"kind": "C", "value": "100n", "package": "0603", "mpn": "CC0603KRX7R9BB104", "source_url": "https://www.lcsc.com/product-detail/C14663.html", "voltage_v": 50, "dielectric": "X7R"},
+    "C17556": {"kind": "R", "value": "220k", "package": "0805", "mpn": "0805W8F2203T5E", "source_url": "https://www.lcsc.com/product-detail/C17556.html"},
+    "C17477": {"kind": "R", "value": "0R", "package": "0805", "mpn": "0805W8F0000T5E", "source_url": "https://www.lcsc.com/product-detail/C17477.html"}
   }
 }
