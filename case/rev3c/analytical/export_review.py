@@ -79,6 +79,8 @@ if args.usb_style == 'flush':
                             'opening_mm': [round(case.USB_SHELL_W + 2 * case.USB_CLEAR, 3), round(z1 - z0, 3)],
                             'opening_z': [round(z0, 3), round(z1, 3)],
                             'upper_step': [round(v, 3) for v in case.usb_step(args.module)],
+                            'base_colour_change_before_print_z_mm': (lambda seam: next(round(.35 + .2 * k, 2) for k in range(200) if .35 + .2 * k > seam + .05))(case.SEAM + 1.0),
+                            'base_colour_change_note': 'Optional: swap to the lid colour at this layer (0.35 mm first layer, 0.2 mm layers) so the USB port filler matches the lid; everything else above the seam is hidden.',
                             'assumptions': 'Mouth x from the official module KiCad files; Type-C shell 8.94 x 3.26 top-mounted; '
                                            'module PCB 1.2-1.6 mm. Unmeasured: print the coupon first.'}
 (case.OUT / 'REVIEW-PARAMETERS.json').write_text(json.dumps(receipt, indent=2) + '\n')

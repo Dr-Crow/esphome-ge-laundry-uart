@@ -67,6 +67,7 @@ With the original end wall, the module's USB-C mouth (x ≈ 100.0 mm) sits about
 - **Opening.** 9.64 × 4.36 mm with rounded top corners. That is a Type-C shell (8.94 × 3.26 mm) plus 0.35 mm a side. The height also covers a module PCB of 1.2–1.6 mm at the configured stack.
 - **Assembly.** The lid drops on from above, so the port is a slot open at the bottom. A tower on the base fills it below the port, with a 0.2 mm sliding gap.
 - **C6 lid.** Its BOOT/RESET release voids reach x 100.55, so above z 27.6 the end face steps out to x 101.35 to keep 0.8 mm of skin.
+- **Colour.** The port filler belongs to the base. For a two-tone print, change to the lid colour at the first layer above the seam: 7.95 mm print height for a 0.35 mm first layer and 0.2 mm layers (recorded in the receipt). Everything else above the seam is hidden inside the lid.
 - **Removed.** The two USB-end datum lands no longer fit and are omitted. Closure height rests on the other two lands and the end plate.
 
 Checks, done in the build frame against the review parameters:
