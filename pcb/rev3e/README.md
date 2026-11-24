@@ -16,7 +16,7 @@ Rev3D cases fit unchanged.
 | Test points | TP1–TP11 | **TP12** on BUCK_5V, before D11. Pad only, not populated |
 | Bulk input cap | C9 10 µF | Optional **C30 47 µF 35 V 1210** footprint on V_INPUT, near C9 (not fitted) |
 | Basic-part swaps | 5 extended passives | Swapped to basic parts with the same footprint and equal or better ratings: 100n 100V X7R 0805 → C28233, 1u 50V X7R 0805 → C28323, 100n 50V 0603 → C14663 (C10, and C15, where X7R replaces X8L; fine for the buck bootstrap cap), 220k 0805 → C17556 |
-| Parts | 68 assembled refs, 31 unique, 15 with the extended setup fee | 69 assembled refs, 32 unique, **10** with the extended setup fee. $15.35 less per order in fees, $0.22 more per board in parts (JLC list prices, 5 boards, 2026-11-23) |
+| Parts | 68 assembled refs, 31 unique. 16 non-basic: 15 extended + 1 preferred (no fee). Of the 15, 13 are SMT and carry the setup fee; J1 and J5/J6 are through-hole and appear fee-free | 69 assembled refs, 32 unique. 12 non-basic: 10 extended + 2 preferred (no fee). **8** SMT parts carry the setup fee, five fewer: $15.35 less per order in setup fees, $0.22 more per board in parts (JLC list prices, 2026-11-23). Estimated 5-board order ≈$102.66 vs ≈$116.66 for Rev3D |
 
 Why Option 2 and not Option 3 (a single shared divider): with Option 3, PIN3-only operation would sit right at
 the OVLO threshold with no margin. Option 2 keeps the full Rev3D PIN1 priority behaviour and gives PIN3 the
