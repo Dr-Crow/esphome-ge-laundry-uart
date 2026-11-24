@@ -2,7 +2,7 @@
 
 This is an editable analytical derivative of the [recovered prototype](../prototype/). It keeps a common base, module-specific C3/C6 lids and three light guides. The selected carrier outline and both appliance power inputs are preserved. The four lids support internal/external antenna concepts; exact cable, switch and printed-assembly qualification remains open.
 
-**Use review exports for dimensional review and coupons. They are not approved production files.** Fixed original button reaches fail nominal actuation at an installed stack of 11.0 mm. The common closure permits a wrong lid: a C3 BOOT foot can contact C6 U.FL. Check the module label before assembly; labels do not mechanically prevent this mistake.
+**Use review exports for dimensional review and coupons. They are not approved production files.** Fixed original button reaches fail nominal actuation at an installed stack of 11.0 mm. The common closure permits a wrong lid: a C3 BOOT foot sits over the C6 U.FL. No simple mechanical key could be found (see [Module identification](#module-identification-2026-11-24)), so each lid carries a large C3/C6 label on the roof and inside. Check it before assembly; labels do not mechanically prevent this mistake.
 
 The [source-bound report](review/CASE-ANALYSIS.md) records valid solids, installed-stack samples, component envelopes, actual guide routes, plug gauges and antenna provisions. Analytical geometry was generated with build123d 0.10.0 / cadquery-ocp 7.8.1.1.post1. The original analysis used a different toolchain from the recovered historical requirements; the subsequent pinned reproduction is recorded below. These versioned checks are not physical fit, material or RF tests.
 
@@ -46,6 +46,46 @@ Expect much less holding force on thin, painted or curved panels than the catalo
 | `internal` | The original pairing: C3 → `fpc`, C6 → `smooth` | Reproducing earlier exports |
 
 The `fpc` export also writes `proxy_fpc_antenna_40x20`, a reference body for checking clearance. It is not a printed part. Checks: in every option, all 67 Rev3D 3D models clear printed solid. The FPC body sits at z 26.4–28.2 mm, clear of the lid and every part (module top ≤ 22.4 mm). The keeper fit, cable bend room, bulkhead hardware and RF performance are unverified. The C6 module's own U.FL position is taken from the C3 layout and is not modelled separately.
+
+## Module identification (2026-11-24)
+
+**There is no mechanical key. A C3 lid still closes on a C6 module and the reverse. Each lid is labelled instead, and you must check the label.**
+
+### What differs between the modules (as modelled)
+
+The base, carrier and module outline are shared (both modules: 77.46-98.44 x 4.02-21.82 mm in carrier coordinates), so a key has to sense the module, not the base. Heights are above the module PCB top; the Rev3D stack puts that at z 18.175 mm.
+
+| Feature | C3 | C6 | Height | Source quality |
+|---|---|---|---|---|
+| BOOT / RESET switch | x 79.0, y 8.47 / 17.36 | x 97.35, y 19.49 / 6.34 | 1.5 / 0.53 mm | conditional, parts unconfirmed |
+| U.FL | x 78.87, y 12.92 | x 78.88, y 8.62 | 1.45 mm | screen |
+| Ceramic antenna | none | x 77.5-79.7, y 13.3-18.7 | 1.2 mm | assumed screen |
+| SoC package | x 84.8-89.8, y 12.8-17.8 | x 83.8-88.8, y 13.4-18.4 | 0.84 mm | official KiCad |
+| Small passives | none modelled | four at x 82-87, y 7.4-18.4 | 0.5-0.8 mm | official KiCad |
+| USB-C shell | x 92.4-99.8 | x 92.5-99.8 | same | official KiCad |
+
+The vendor STEP models are bare-PCB-derived. They do not contain the RF shield, switches, U.FL, ceramic antenna or header, and the shield's position and height are not in the repository.
+
+### Why a key was not added
+
+A key must land on something sturdy that is on one module only, at least 1 mm of lid travel before any lid tab reaches a fragile part. Every modelled feature that is 1 mm or taller and differs between the modules is one the key must not use: the U.FL, the ceramic antenna and the switches. What is left is 0.84 mm tall at most (the SoC package, offset only 0.5-0.9 mm between modules) or small passives. A post that sits 0.3 mm above bare PCB on the right module would touch the SoC on the wrong one when the lid is only about 0.5 mm from seated, which is too late and lands on a chip. The RF shield could be a good stop, but its position, height and strength are unmeasured, so none was invented. If you measure real modules and find a shield or other body on one that is absent on the other, a post on that lid is easy to add.
+
+Wrong-lid geometry at the review parameters (stack 11.325 mm), foot bottom to the highest module body under the foot:
+
+| Lid on module | Contact | Vertical gap |
+|---|---|---|
+| C3 on C6 | BOOT foot over U.FL (1.45 mm) | 0.30 mm; the foot's 0.40 mm button travel crosses it |
+| C3 on C6 | RESET foot over ceramic antenna (1.2 mm, assumed) | 0.55 mm |
+| C6 on C3 | both feet over bare module PCB | 0.78 mm; lid rests on its feet, 0.78 mm proud |
+
+The reverse (C6 lid on C3) is harmless to the module: the lid stops short, the feet sit on bare PCB. The C3 lid on a C6 is the harmful direction, and only when a button is pressed or a U.FL plug is fitted.
+
+### How to tell lids apart
+
+- **Roof:** a large debossed `C3` or `C6` (3.6 mm type, about 2.6 mm tall letters) next to the USB end. It shows in the label inlay export, so a second-colour print makes it stand out.
+- **Inside:** `XIAO ESP32-C3` or `XIAO ESP32-C6`, 4.2 mm type, debossed 0.5 mm into the roof underside at x 34, y 32 (KiCad frame). It reads normally when the lid is turned over about its long axis. Turn it off with `--no-module-tag` (`enclosure.MODULE_TAG = False`). The roof label is part of the normal label set.
+- **Also:** print the two lids in different filament colours. That costs nothing and is the most visible cue.
+- **Check on the board:** the C6 has a ceramic antenna chip beside its U.FL; the C3 has only the U.FL.
 
 ## Flush RJ45 end and two-colour labels (2026-11-23)
 

@@ -26,6 +26,8 @@ parser.add_argument('--rj45-style', default='original', choices=['original', 'fl
 parser.add_argument('--label-inlay', action='store_true', help='also export the lid text as a separate inlay body (two-colour printing)')
 parser.add_argument('--usb-style', default='original', choices=['original', 'flush'],
                     help='flush: end wall at the USB-C port with a snug opening (adds a USB-end fit coupon)')
+parser.add_argument('--no-module-tag', action='store_true',
+                    help="omit the 'XIAO ESP32-C3/C6' text debossed on the lid's roof underside (on by default)")
 parser.add_argument('--output', required=True, type=Path)
 args = parser.parse_args()
 if min(args.boot_height, args.reset_height, args.boot_stop, args.reset_stop, args.gap) <= 0:
@@ -37,6 +39,7 @@ heights[args.module] = {'BOOT': args.boot_height, 'RESET': args.reset_height}
 stops[args.module] = {'BOOT': args.boot_stop, 'RESET': args.reset_stop}
 gaps[args.module] = {'BOOT': args.gap, 'RESET': args.gap}
 case.configure(args.stack, 'per_assembly', 'per_assembly', heights, gaps, stops, args.leaf_offset, args.usb_style, args.rj45_style)
+case.MODULE_TAG = not args.no_module_tag
 case.OUT = args.output.resolve()
 case.OUT.mkdir(parents=True, exist_ok=True)
 MAG = False if args.magnets == 'none' else f'{args.magnets}:{args.magnet_style}'

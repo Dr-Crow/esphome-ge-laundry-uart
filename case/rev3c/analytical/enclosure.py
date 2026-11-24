@@ -196,11 +196,30 @@ LATCH_TIP_X=40.0
 LATCH_DEFLECT=.80  # conservative insertion envelope, must be coupon-tested
 FPC_BOX=(22.,62.,4.,24.,26.4,28.2) # conservative 40x20 footprint / 1.8 tall
 
+# MODULE IDENTIFICATION. The C3 and C6 lids are different parts but the base and the module outline are
+# shared, and no printable key could be found that senses the module harmlessly (see README, 'Module
+# identification'). So each lid says which module it is for: a large debossed C3/C6 on the roof (in labels())
+# and a debossed 'XIAO ESP32-C3/C6' on the roof underside, readable when the lid is turned over. MODULE_TAG
+# switches the underside text; the roof label is part of labels().
+MODULE_TAG=True
+MODULE_TAG_TEXT={'c3':'XIAO ESP32-C3','c6':'XIAO ESP32-C6'}
+MODULE_TAG_XY=(34.,32.)   # centre, KiCad frame; clear of the FPC rails (y <= 25.2), pipe collars (x >= 67.9) and the external-antenna keeper (y >= 36)
+MODULE_TAG_SIZE=4.2
+MODULE_TAG_DEPTH=.5       # cut into the 2.0 mm roof from below, leaves 1.5 mm
+MODULE_LABEL_SIZE=3.6
+def module_tag(module):
+    """Underside text. Plain (un-mirrored) in the build frame: export()'s frame mirror plus turning the lid over
+    about its long axis makes it read normally from inside."""
+    x,y=MODULE_TAG_XY
+    sk=Pos(x,y,UNDER-.05)*Text(MODULE_TAG_TEXT[module],MODULE_TAG_SIZE,font_path='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
+    return extrude(sk,amount=MODULE_TAG_DEPTH+.05)
+
 def labels(module):
     common=[('WIFI',70.,36.8,1.6),('AUX',80.25,36.8,1.6),('BUS',90.5,36.8,1.6),
             ('GEA',28.,20.,5.2),('LOCAL APPLIANCE LINK',29.,14.4,1.45)]
-    if module=='c3': return common+[('BOOT',79.,3.50,1.6),('RESET',79.,22.10,1.6),('C3',96.,25.5,1.4)]
-    return common+[('RESET',89.,1.75,1.6),('BOOT',91.,24.3,1.6),('C6',96.,27.,1.4)]
+    # The roof module label is large (cap height ~2.6 mm) so a wrong lid is obvious at a glance.
+    if module=='c3': return common+[('BOOT',79.,3.50,1.6),('RESET',79.,22.10,1.6),('C3',95.,26.,MODULE_LABEL_SIZE)]
+    return common+[('RESET',89.,1.75,1.6),('BOOT',91.,24.3,1.6),('C6',95.,27.5,MODULE_LABEL_SIZE)]
 
 def latch(side=1, deflection=0):
     # Deflection is a diagnostic rigid-envelope translation, not elastic CAD.
@@ -423,6 +442,7 @@ def shell(module='c3',antenna='internal'):
         # Nominal 0.12 mm diametral press-fit band, coupon-specific.
         s+=C(2.12,28.65,29.25,tx,ty)-C(1.37,28.55,29.35,tx,ty)
     for name,x,y,size in labels(module): s-=legend(name,x,y,size)
+    if MODULE_TAG: s-=module_tag(module)
     # Antenna options. 'fpc': keeper rails under the roof for the flat FPC antenna that ships with
     # both XIAO C3 and C6 (U.FL). 'smooth': plain roof (C6 onboard antenna, or the user's own mount).
     # 'external': SMA bulkhead below. 'internal' keeps the original pairing: C3 -> fpc, C6 -> smooth.
