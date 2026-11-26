@@ -1,0 +1,22 @@
+{
+  "native_baseline_sha256": "9e42fb13d9c7ec79316f2304bb3c406b4a7b5e84a9e8059c5d43735f26d18e9b",
+  "native_candidate_sha256": "2f394a1174c3cd103a384dfa40c458ab71606c081f3580b9a242d767f874af75",
+  "logical_nets_matched": 59,
+  "footprints_matched": 98,
+  "track_and_via_identifiers_types_nets_layers_widths_matched": 680,
+  "placed_top_references": 72,
+  "only_order_code_change": [
+    "C9",
+    "C303950",
+    "C13585"
+  ],
+  "power_switch_and_bootstrap_copper": "rigid translation verified",
+  "RF_keepout_to_module_translation": "matched",
+  "CPL_coordinate_checks": "all refs passed; J1 reviewed datum retained",
+  "CAM_copper_thickness_mm": {
+    "F.Cu": 0.035,
+    "In1.Cu": 0.0152,
+    "In2.Cu": 0.0152,
+    "B.Cu": 0.035
+  }
+}

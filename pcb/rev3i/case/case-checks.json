@@ -1,0 +1,45 @@
+{
+  "matching-base": {
+    "width_before_after_mm": [
+      114.0,
+      105.1317
+    ],
+    "splice_x_mm": 42.0,
+    "interface_slice_difference_mm3": 0,
+    "pin_free_depth_mm": {
+      "J7": [
+        3.5,
+        3.5,
+        3.5,
+        3.5
+      ],
+      "JP3": [
+        3.5,
+        3.5
+      ]
+    },
+    "solid_count": 1
+  },
+  "closed-usb-lid-c3": {
+    "width_before_after_mm": [
+      114.0,
+      105.1317
+    ],
+    "splice_x_mm": 43.0,
+    "interface_slice_difference_mm3": 0,
+    "solid_count": 1,
+    "baseline_lid_base_interference_mm3": 0,
+    "compact_lid_base_interference_mm3": 0
+  },
+  "closed-usb-lid-c6": {
+    "width_before_after_mm": [
+      114.0,
+      105.1317
+    ],
+    "splice_x_mm": 41.0,
+    "interface_slice_difference_mm3": 0,
+    "solid_count": 1,
+    "baseline_lid_base_interference_mm3": 0,
+    "compact_lid_base_interference_mm3": 0
+  }
+}
