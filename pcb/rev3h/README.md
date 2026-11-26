@@ -14,7 +14,8 @@ The editable source is in `design/` (KiCad 9.0.9). The pinned toolchain is
 | Bus monitor | Only a way to probe the back of J6's socket joints for RX; no module-side view of GEA3 transmit | **J7**, a fitted 1x4 2.54 mm header (LCSC C492403, PZ254V-11-04P) with **R48-R50** 1k 0603 (C21190) in series with each tap |
 | C16, C17 (buck output, /BUCK_5V) | 22u 25V X7R 1210, CL32B226KAJNNNE, **C309062** (extended) | 22u 25V X5R 1206, Samsung CL31A226KAHNNNE, **C12891** (basic), same centre and rotation |
 | C9 (raw input) | 10u 50V X7R 1206, C303950 | **Unchanged** |
-| Case | Rev3G closed-USB case | Shared, not copied. The Rev3G case in `pcb/rev3g/case` applies; J7 lid clearance is not checked (below) |
+| JP4 via | Via at (29.1, 22.9) straddles the edge of the exposed JP4.1 land | Moved to (31.5, 23.0), 0.78 mm clear of the land (commit ec3752c) |
+| Case | Rev3G closed-USB case | Rev3G's closed-USB lids and light pipes, plus a new base with pin-tail pockets under J7 and JP3 in `case/` (the Rev3G base leaves only 1.25 mm under the board; J7's tails are about 3 mm) |
 
 ### Why J7
 
@@ -76,7 +77,7 @@ count (242244) and byte size, with no missing-model warnings.
 | ERC, `--severity-all` | 0 violations | `validation/ERC.json` |
 | DRC, `--schematic-parity --all-track-errors --severity-all`, run on a fresh rsync copy of `design/` | 0 violations, 0 unconnected, 0 parity | `validation/DRC.json` |
 | Netlist diff vs Rev3G (Sheetfile rename ignored) | Added J7, R48, R49, R50 and nets `Net-(J7-Pin_2/3/4)`; the three taps join `GEA2_RX`, `GEA3_TX`, `GEA3_RX` and J7.1 joins `GND`; C16/C17 value, footprint, datasheet, MPN, LCSC and Dielectric fields. Nothing else | `validation/netlist-diff-vs-rev3g.txt` |
-| Board diff vs Rev3G | Footprints added J7, R48-R50; C16/C17 footprint changed at the same centre and rotation; 12 tracks/vias added, none removed or moved | `validation/pcb-diff-vs-rev3g.txt` |
+| Board diff vs Rev3G | Footprints added J7, R48-R50; C16/C17 footprint changed at the same centre and rotation; 15 tracks/vias added and 3 removed (the old JP4 via and its two tracks) | `validation/pcb-diff-vs-rev3g.txt` |
 | `.kicad_pro` | Identical to Rev3G apart from the filename | |
 | BOM/CPL | 72 assembled references, 32 unique LCSC codes; CPL is identical to Rev3G's review CPL except the four added references; J1 uses the reviewed body datum 8.645, -16.995 | `manufacturing/BOM-GEA-Adapter-Rev3H.csv`, `manufacturing/CPL-GEA-Adapter-Rev3H.csv` |
 
@@ -90,13 +91,17 @@ pinned image, after the receipt.
 
 - Nothing has been built or measured. J7 has not been exercised with a real adapter, and the loading of the bus taps (1k plus
   the adapter's input) on the 3.3 V buffer nets is only reasoned, not measured.
-- Case fit: the Rev3G case is reused unchanged. J7 is a standard vertical 2.54 mm header (its overall height was not taken from the datasheet) and was not checked against the lid in CAD
-  (the light-pipe geometry in `pcb/rev3g/case/src/enclosure.py` was read, not modelled with J7). "Reachable with the lid off" is a
-  placement judgement from the board outline and the sockets.
+- Case fit is CAD-only. Above the board, J7 (8.6 mm) has at least 19.4 mm under both Rev3G closed-USB lids (ray-cast, both frame
+  orientations). Below the board, J7's ~3 mm pin tails need the pocketed base in `case/`; the Rev3G base would be hit. Not printed.
 - The C16/C17 effective capacitance, ripple and load-step behaviour are an estimate (above). The datasheet window of 22-68 uF is as
   given in the design brief, not re-read here.
 - JLC basic/extended status of C12891, C21190 and C492403, stock and price are as given, not re-checked against a live quote.
 - Gerbers (`manufacturing/GERBER-GEA-Adapter-Rev3H.zip`) are generated from the source but were not opened in a viewer or put through
   a fabricator DFM check.
-- Rev3H is not registered in `ci/manifest.json` yet, so none of the repository CI runs on it.
+- Rev3H is registered in `ci/manifest.json` (commit 4d8cb8c): inventory, hardware, manufacturing and rules pass; release is blocked
+  by design until bench evidence exists.
+- **Order with 1 oz inner copper.** The board file has no stackup block, so the copper weight is chosen at order time; the
+  quoted Rev 3E reference used 1 oz inner, and the In2 power routing (from Rev3F) was sized for it.
+- The JP4 via's new spot is the only free one nearby; its tightest gaps are 0.222 mm (In2 `Net-(JP4-B)`) and 0.227 mm
+  (B.Cu `GEA_FullTx`) against the 0.2 mm rule.
 - All the Rev3G open items (supplier datum, socket and module fit, power qualification) carry over unchanged.
