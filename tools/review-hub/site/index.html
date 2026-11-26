@@ -239,6 +239,8 @@ dialog select{border:1px solid var(--line);background:var(--panel-2);border-radi
   .brand .sub{display:none}
   .layerpanel{min-width:0}
 }
+/* outside the Claude-hosted copy there is no feedback store: hide every feedback control */
+.no-fb #fbNew,.no-fb [data-v="feedback"],.no-fb [data-fb],.no-fb #docFb,.no-fb #caseFb,.no-fb #cmpFb,.no-fb #costFb,.no-fb #ovFb{display:none!important}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 
@@ -867,8 +869,8 @@ async function showOverview() {
      <div class="body"><div class="t"><span class="dot ${stCls(r.status)}"></span>${esc(r.label)}<span style="margin-left:auto">${stPill(r.status)}</span></div><div class="s">${esc(r.summary || '')}</div>
      <div class="stats"><span>${r.layers ?? '?'}L</span><span>${r.size_mm ? r.size_mm.map(v => Math.round(v)).join('×') + ' mm' : ''}</span><span>${fmtN(r.parts_assembled)} placed</span><span>${fmtN(r.unique_lcsc)} codes</span><span>${esc(r.date || '')}</span></div></div></button>`).join('')}</div>
    <div class="two"><div class="sec card" style="border-radius:var(--r)"><h3>Recent updates</h3><div class="feed">${S.updates.map(u => `<div class="it"><span class="d">${esc(u.date)}</span><span><b>${esc(u.title)}</b>${u.rev ? ' · ' + esc(S.byId[u.rev]?.label || u.rev) : ''}<br><span class="muted">${esc(u.text)}</span></span></div>`).join('') || '<span class="muted">No updates logged.</span>'}</div></div>
-   <div class="sec card" style="border-radius:var(--r)"><h3>Open feedback</h3>${!S.fbReady ? '<span class="muted">Connecting to the feedback store…</span>' : open.length ? `<div class="feed">${open.slice(0, 6).map(f => `<div class="it"><span class="d">${esc(S.byId[f.rev]?.label || 'General')}</span><span><b>${esc(f.target?.label || f.view || '')}</b><br><span class="muted">${esc(String(f.text).slice(0, 140))}</span></span></div>`).join('')}</div><button class="btn" type="button" id="ovFb">See all feedback</button>` : '<span class="muted">Nothing open. Use “Leave feedback” on any part, layer, doc or case.</span>'}
-   <h3 style="margin-top:8px">Where to start</h3><div class="row"><button class="btn" type="button" data-go="board">Inspect ${esc(cand?.label || 'board')} in 3D</button><button class="btn" type="button" data-go="compare">Compare Rev3C → Rev3D</button><button class="btn" type="button" data-go="cost">Cost</button><button class="btn" type="button" data-go="docs">Reddit drafts</button></div></div></div>`;
+   <div class="sec card" style="border-radius:var(--r)"><h3>Open feedback</h3>${!S.fbReady ? '<span class="muted">Connecting to the feedback store…</span>' : !S.db ? '<span class="muted">Feedback is only available in the Claude-hosted copy of this hub.</span>' : open.length ? `<div class="feed">${open.slice(0, 6).map(f => `<div class="it"><span class="d">${esc(S.byId[f.rev]?.label || 'General')}</span><span><b>${esc(f.target?.label || f.view || '')}</b><br><span class="muted">${esc(String(f.text).slice(0, 140))}</span></span></div>`).join('')}</div><button class="btn" type="button" id="ovFb">See all feedback</button>` : '<span class="muted">Nothing open. Use “Leave feedback” on any part, layer, doc or case.</span>'}
+   <h3 style="margin-top:8px">Where to start</h3><div class="row"><button class="btn" type="button" data-go="board">Inspect ${esc(cand?.label || 'board')} in 3D</button><button class="btn" type="button" data-go="compare">Compare Rev3C → Rev3D</button><button class="btn" type="button" data-go="cost">Cost</button><button class="btn" type="button" data-go="docs">${S.docs.some(x => x.group === 'Reddit drafts') ? 'Reddit drafts' : 'Docs'}</button></div></div></div>`;
   $$('.revcard', el).forEach(b => b.onclick = () => { S.cur = b.dataset.id; store.set('rev', S.cur); go('board'); });
   $$('[data-go]', el).forEach(b => b.onclick = () => { const v = b.dataset.go; if (v === 'compare') go('compare', 'rev3c-vs-rev3d'); else if (v === 'docs') { const d = S.docs.find(x => x.group === 'Reddit drafts'); go('docs', d?.id); } else go(v); });
   $('#ovFb')?.addEventListener('click', () => go('feedback'));
@@ -1107,7 +1109,7 @@ let fbCtx = null;
 function openFeedback(ctx) {
   fbCtx = ctx; const r = S.byId[ctx.rev];
   $('#fbCtx').innerHTML = `<b>${esc(ctx.target?.label || 'General')}</b>${r ? ' · ' + esc(r.label) : ''} · <span class="muted">${esc(ctx.view)} view</span>`;
-  $('#fbAvail').textContent = S.db ? 'Saved to this hub. The next Claude session reads it.' : 'The feedback store is not reachable in this view (open the hub on claude.ai while signed in). You can still copy your note.';
+  $('#fbAvail').textContent = S.db ? 'Saved to this hub. The next Claude session reads it.' : 'Feedback is only available in the Claude-hosted copy of this hub. You can still copy your note.';
   $('#fbSave').textContent = S.db ? 'Save feedback' : 'Copy note';
   $('#fbText').value = store.get('draft', ''); $('#fbDlg').showModal(); $('#fbText').focus();
 }
@@ -1122,11 +1124,16 @@ $('#fbForm').addEventListener('submit', async e => {
   catch (err) { toast(err?.code === 'quota_exceeded' ? 'The feedback store is full. Resolve or delete old items.' : 'Could not save. ' + (err?.message || 'Try again.')); }
   finally { $('#fbSave').disabled = false; }
 });
+function feedbackUnavailable() {  // static hosting or no store: hide feedback controls and settle the "Connecting…" placeholders
+  S.fbReady = true; document.documentElement.classList.add('no-fb');
+  if (S.view === 'feedback') showFeedback(); if (S.view === 'overview') showOverview();
+}
 async function initFeedbackStore() {
-  if (!window.claude?.use) { S.fbReady = true; return; }
-  const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
+  if (!window.claude?.use) { feedbackUnavailable(); return; }
+  let db, user;
+  try { [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]); } catch (e) { feedbackUnavailable(); return; }
   S.db = db; S.user = user; S.uid = user ? await user.id() : null;
-  if (!db) { S.fbReady = true; if (S.view === 'feedback') showFeedback(); return; }
+  if (!db) { feedbackUnavailable(); return; }
   let timer = setTimeout(() => { S.fbSlow = true; if (S.view === 'feedback') showFeedback(); }, 10000);
   db.collection('feedback').orderBy('created', 'desc').onSnapshot(snap => {
     if (!snap.metadata.fromCache) { clearTimeout(timer); S.fbSlow = false; }
@@ -1141,7 +1148,7 @@ function showFeedback() {
   const kindPill = { issue: 'warn', question: 'info', idea: 'acc', approve: 'good' };
   el.innerHTML = `<div class="hero"><div class="lbl">Feedback</div><h2>Notes on the designs</h2><p>Everything left here is stored with the hub, so the next working session can read it, act on it and reply. Pin feedback to a part by clicking it in the Board view first.</p></div>
    <div class="row"><div class="seg" id="fbFilt">${['open', 'resolved', 'all'].map(k => `<button type="button" data-k="${k}" aria-pressed="${k === filt}">${k[0].toUpperCase() + k.slice(1)}</button>`).join('')}</div><button class="btn primary" type="button" id="fbAdd">New feedback</button></div>
-   ${!S.db && S.fbReady ? '<div class="note">The feedback store is not reachable in this view. Open the hub on claude.ai while signed in to save and see feedback.</div>' : ''}
+   ${!S.db && S.fbReady ? '<div class="note">Feedback is only available in the Claude-hosted copy of this hub.</div>' : ''}
    ${S.fbErr ? `<div class="note">The feedback store stopped answering (${esc(S.fbErr.code)}). Reload the page to reconnect.</div>` : ''}
    ${S.fbSlow ? '<div class="note">The feedback store has not answered yet; what is shown may be out of date.</div>' : ''}
    ${!S.fbReady ? '<div class="empty">Connecting to the feedback store…</div>' : list.length ? list.map(f => `<div class="fbitem"><div class="meta"><span class="pill ${kindPill[f.kind] || ''}">${esc(f.kind)}</span>${f.status === 'resolved' ? '<span class="pill good">resolved</span>' : ''}<b style="color:var(--ink)">${esc(f.target?.label || 'General')}</b>${f.rev ? '<span>' + esc(S.byId[f.rev]?.label || f.rev) + '</span>' : ''}<span>${esc(f.view || '')}</span><span class="mono">${esc((f.created || '').slice(0, 16).replace('T', ' '))}</span></div>
