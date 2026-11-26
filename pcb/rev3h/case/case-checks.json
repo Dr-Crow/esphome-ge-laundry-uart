@@ -1,0 +1,73 @@
+{
+  "settings": {
+    "stack_mm": 11.0,
+    "reach_mode": "per_assembly",
+    "usb_mode": "per_assembly",
+    "usb_style": "original",
+    "rj45_style": "original",
+    "magnets": null,
+    "tail_pockets": true
+  },
+  "without_pockets_volume_mm3": 28171.031,
+  "base": {
+    "volume_mm3": 28071.743,
+    "solid_count": 1,
+    "bounds_mm": [
+      [
+        -7.5,
+        -7.0,
+        -1.0
+      ],
+      [
+        106.5,
+        47.0,
+        9.4
+      ]
+    ]
+  },
+  "pockets_mm": {
+    "J7": {
+      "x": [
+        67.6,
+        70.4
+      ],
+      "y_kicad": [
+        4.8,
+        15.22
+      ],
+      "bottom_z": 0.15,
+      "floor_under_mm": 1.15
+    },
+    "JP3": {
+      "x": [
+        67.33,
+        72.67
+      ],
+      "y_kicad": [
+        35.6,
+        38.4
+      ],
+      "bottom_z": 0.15,
+      "floor_under_mm": 1.15
+    }
+  },
+  "difference_vs_rev3g": {
+    "rev3g_volume_mm3": 28171.032,
+    "rev3h_volume_mm3": 28071.744,
+    "removed_mm3": 99.288,
+    "expected_pocket_mm3": 99.288,
+    "added_mm3": 0.0
+  },
+  "free_depth_under_board_mm": {
+    "J7": [
+      3.5,
+      3.5,
+      3.5,
+      3.5
+    ],
+    "JP3": [
+      3.5,
+      3.5
+    ]
+  }
+}

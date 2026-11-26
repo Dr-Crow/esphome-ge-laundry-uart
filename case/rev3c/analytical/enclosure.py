@@ -4,7 +4,7 @@ Common snap-fit base; chip-specific tops with direct printed compliant buttons.
 PCB/firmware are not modified. Heights and moving fits remain prototypes.
 """
 from pathlib import Path
-import json, math
+import json, math, warnings
 from build123d import *
 import interface_baseline as e
 
@@ -302,12 +302,63 @@ def magnet_cut(size, style='glue'):
         cut=c if cut is None else cut+c
     return cut
 
-def base(magnets=False):
+# TAIL POCKETS FOR FITTED THROUGH-HOLE PARTS. The cavity floor top is z = 2.4 and the board bottom is
+# z = e.PCB_SEAT_Z = 3.65, so only 1.25 mm is free under the PCB. The J1 and J5/J6 socket pockets below
+# already make room under their pins. These two add the same for the parts that arrived with Rev 3G/3H:
+#   J7  : fitted 1x4 2.54 mm vertical header (LCSC C492403, PZ254V-11-04P), Rev 3H only; pins at
+#         x 69.0, y 13.82 / 11.28 / 8.74 / 6.2; ~3.0 mm of pin below the board.
+#   JP3 : two 1.0 mm plated holes on 2.54 mm centres (Rev 3G/3H) where a technician may fit a 2-pin
+#         header and shunt; same ~3 mm tails.
+# Each pocket is one rectangle over the pin row(s): TAIL_ROW_W per pin row (solder-joint fillet) plus
+# TAIL_MARGIN each side (J7 2.8 x 10.42 mm, JP3 5.34 x 2.8 mm). It is cut from the board-bottom level down to TAIL_BOTTOM_Z, which leaves
+# tail + TAIL_CLEAR of free depth under the board (3.5 mm, so a 3.2 mm tail clears with 0.3 mm) and
+# a floor of TAIL_BOTTOM_Z+1.0 = 1.15 mm. Default ON: the pockets are harmless on boards without
+# J7/JP3 (about 100 mm3 of floor). TAIL_POCKETS=False or base(tail_pockets=False) reproduces the older base.
+# The corner magnets (MAGNET_XY) overlap the pins: JP3 lies inside the (70, 38.5) magnet circle and J7 pin 4
+# is 0.65 mm outside the 8x2 pocket. With --magnets the tail pockets are trimmed to keep a wall, and
+# a warning names the pins that no longer clear (see _tail_cut). Use no magnets, or 6x2 on Rev 3H without JP3.
+TAIL_POCKETS=True
+TAIL_LEN=3.2            # longest tail below the board bottom (C492403 nominal ~3.0, +0.2)
+TAIL_CLEAR=.3           # between tail tip and pocket floor
+TAIL_BOTTOM_Z=e.PCB_SEAT_Z-TAIL_LEN-TAIL_CLEAR   # 0.15
+TAIL_ROW_W=1.8          # width allowed per pin row: solder joint on the underside
+TAIL_MARGIN=.5
+TAIL_FLOOR_MIN=1.0      # base bottom is z = -1, so the floor under a pocket is TAIL_BOTTOM_Z+1.0
+TAIL_MAGNET_WALL=.8     # wall kept between a tail pocket and a magnet pocket
+TAIL_PIN_R=.4           # a pin tail (0.64 mm square, 0.45 mm half-diagonal) plus a little
+TAIL_PINS={'J7':((69.0,13.82),(69.0,11.28),(69.0,8.74),(69.0,6.2)),
+           'JP3':((68.73,37.0),(71.27,37.0))}   # KiCad frame
+def tail_pocket_boxes():
+    """(name, x0, x1, y0, y1) of each tail pocket in the KiCad build frame."""
+    h=TAIL_ROW_W/2+TAIL_MARGIN
+    return [(n,min(x for x,_ in p)-h,max(x for x,_ in p)+h,min(y for _,y in p)-h,max(y for _,y in p)+h) for n,p in TAIL_PINS.items()]
+def _tail_cut(magnets=False):
+    """The tail pockets, trimmed to keep TAIL_MAGNET_WALL of plastic round any magnet pocket. JP3 sits
+    inside the (70, 38.5) magnet circle, so with magnets the JP3 pocket is trimmed and a fitted header's
+    tails would meet the magnet: choose one or the other (a warning says so)."""
+    cut=None
+    keep=None
+    if magnets:
+        size,_,style=str(magnets).partition(':')
+        if magnets is True: mp=[]
+        else: mp=magnet_pockets(size,style or 'glue')
+        for x,y,r,z0,z1 in mp: keep=C(r+TAIL_MAGNET_WALL,z0,z1+TAIL_MAGNET_WALL,x,y) if keep is None else keep+C(r+TAIL_MAGNET_WALL,z0,z1+TAIL_MAGNET_WALL,x,y)
+        for n in TAIL_PINS:
+            bad=[(i+1,round(math.hypot(px-x,py-y),2)) for i,(px,py) in enumerate(TAIL_PINS[n]) for x,y,r,_,_ in mp
+                 if math.hypot(px-x,py-y)<r+TAIL_MAGNET_WALL+TAIL_PIN_R]
+            if bad: warnings.warn(f'{n}: with these magnets the tail pocket is trimmed at pin(s) (pin, distance to magnet centre mm) {bad}; a fitted header there will not clear the base')
+    for n,x0,x1,y0,y1 in tail_pocket_boxes():
+        c=B(x0,x1,y0,y1,TAIL_BOTTOM_Z,2.45)
+        cut=c if cut is None else cut+c
+    return cut-keep if keep is not None else cut
+
+def base(magnets=False,tail_pockets=None):
     s=rrsolid(114,54,6,-1.,SEAM)
     s-=rrsolid(101,42,3,2.4,SEAM+.2)
     s-=B(-.2,19.,7.7,26.,.65,2.45)
     for p in e.SOCKET_BBOX:
         s-=B(p['x_min']-.75,p['x_max']+.75,p['y_min']-.75,p['y_max']+.75,1.25,2.45)
+    if TAIL_POCKETS if tail_pockets is None else tail_pockets: s-=_tail_cut(magnets)
     for x,y in e.MOUNT_HOLES:
         s+=C(3.,2.35,3.65,x,y)+C(1.25,2.35,5.55,x,y)
     tongue=loft([rr(109.6,49.6,4.3,SEAM-.1),rr(109.1,49.1,4.3,8.15)],ruled=True)
@@ -395,7 +446,11 @@ def fpc_retention():
         s+=B(x-1,x+1,y-1.3,y+1.8,24.5,25.3)
     return s
 
-def shell(module='c3',antenna='internal'):
+def shell(module='c3',antenna='internal',*,closed_usb=False):
+    """closed_usb: omit the USB port opening so the lid closes the recessed original USB end (Rev 3G/3H
+    'closed-USB' lids; the port is then reached some other way). Only valid with the original USB style."""
+    if closed_usb and USB_STYLE!='original':
+        raise ValueError('Closed USB lid requires the original recessed USB end and its matching base')
     outer=loft([rr(114,54,6,SEAM+.2),rr(107,47,6,28.7),rr(107,47,6,ROOF)],ruled=True)
     try:
         outer=outer.fillet(1.05,[a for a in outer.edges() if a.bounding_box().min.Z>ROOF-.01])
@@ -414,7 +469,7 @@ def shell(module='c3',antenna='internal'):
         plate=outer&B(xi,xf,-50,90,SEAM+.1,ROOF+1)
         if xh>xf+1e-6: plate+=outer&B(xi,xh,-50,90,zs,ROOF+1)
         s+=plate-usb_tongue_clearance()-usb_slot()
-    else:
+    elif not closed_usb:
         s-=xopening(14.8,9.0,2.2,12.9175,USB_CENTER_Z)&B(98,110,-10,50,10,30)
     # Four small plastic datum lands stay outside PCB, set seam closure height.
     for x,y in SCREWS:

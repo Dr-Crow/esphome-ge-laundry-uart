@@ -28,10 +28,16 @@ parser.add_argument('--usb-style', default='original', choices=['original', 'flu
                     help='flush: end wall at the USB-C port with a snug opening (adds a USB-end fit coupon)')
 parser.add_argument('--no-module-tag', action='store_true',
                     help="omit the 'XIAO ESP32-C3/C6' text debossed on the lid's roof underside (on by default)")
+parser.add_argument('--closed-usb', action='store_true',
+                    help='lid without the USB port opening, for the original recessed USB end (Rev 3G/3H closed-USB lids); needs --usb-style original')
+parser.add_argument('--no-tail-pockets', action='store_true',
+                    help='omit the base pockets under the J7 header and JP3 (default: on; the pockets are harmless without those parts)')
 parser.add_argument('--output', required=True, type=Path)
 args = parser.parse_args()
 if min(args.boot_height, args.reset_height, args.boot_stop, args.reset_stop, args.gap) <= 0:
     parser.error('Switch heights, stops and release gap must be positive review dimensions')
+if args.closed_usb and args.usb_style != 'original':
+    parser.error('--closed-usb requires --usb-style original')
 heights = {module: dict(case.SW_HEIGHT[module]) for module in case.SW}
 stops = {module: dict(case.BUTTON_TRAVEL[module]) for module in case.SW}
 gaps = {module: dict(case.CONTACT_GAP[module]) for module in case.SW}
@@ -40,11 +46,12 @@ stops[args.module] = {'BOOT': args.boot_stop, 'RESET': args.reset_stop}
 gaps[args.module] = {'BOOT': args.gap, 'RESET': args.gap}
 case.configure(args.stack, 'per_assembly', 'per_assembly', heights, gaps, stops, args.leaf_offset, args.usb_style, args.rj45_style)
 case.MODULE_TAG = not args.no_module_tag
+case.TAIL_POCKETS = not args.no_tail_pockets
 case.OUT = args.output.resolve()
 case.OUT.mkdir(parents=True, exist_ok=True)
 MAG = False if args.magnets == 'none' else f'{args.magnets}:{args.magnet_style}'
 pieces = {'review_base': case.base(MAG),
-          f'review_lid_{args.module}_{args.antenna}': case.shell(args.module, args.antenna)}
+          f'review_lid_{args.module}_{args.antenna}': case.shell(args.module, args.antenna, closed_usb=args.closed_usb)}
 for name, (bottom, roof) in case.PIPES.items():
     pieces['review_guide_' + name.lower()] = (case.pipe_with_cap_relief(name)
         if args.relieved_guides else case.pipe_shape(bottom, roof, 1.43))
