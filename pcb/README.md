@@ -18,6 +18,11 @@ This directory keeps every board revision in a separate package so source files,
 
 | Revision | Status | Available material |
 | --- | --- | --- |
+| [Rev 3H](rev3h/README.md) | Review candidate; qualification open | Rev 3G plus the J7 3.3 V listen-only GEA bus monitor header (R48–R50) and C16/C17 moved to a JLC basic part. Base with J7/JP3 tail pockets in `rev3h/case`. |
+| [Rev 3G](rev3g/OPEN-FIRST.html) | Service prototype for review (ChatGPT); qualification open | Rev 3F with the cuttable JP3 5 V link (replaces R47), JP4 GEA3-TX mute link, plated TP4–TP7 probe holes and closed-USB lids. |
+| [Rev 3F](rev3f/README.md) | Cost-down review (ChatGPT); qualification open | Rev 3E with 8 bypass caps moved to 0603 C14663, widened In2 power traces and split eFuse paste. |
+| [Rev 3E](rev3e/README.md) | As-quoted probe-pad prototype; qualification open | The board of the 2026-11-25 JLC quote ($94.22 for 5): PIN3 overvoltage lockout, SRV05-4 ESD, TP12–TP18. Quote and cost review in `rev3e/`. |
+| [Rev 3D](rev3d/README.md) | Candidate; qualification open | TPS259470A eFuse priority mux, PIN1 overvoltage lockout, SMF17A input TVS. |
 | [Rev 3C](rev3c/README.md) | Selected socketed C3/C6 prototype; qualification open | Rated dual-input source, four firmware profiles, corrected stencils, factory trio, partial component previews and illustrated ordering guide. |
 | [Rev 3B](rev3b/README.md) | Rated soldered-C3 alternative; qualification open | Native source, matched factory package, typed placement evidence and partial C3 previews; exact module stock remains a gate. |
 | [Rev 3A](rev3a/README.md) | Rated integrated-C3 alternative; qualification open | Native source, matched factory package, reviewed USB shell slots/lands and placement evidence; assembler solder/retention review remains open. |

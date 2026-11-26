@@ -16,7 +16,8 @@ TP2/+3.3 V, each input current and, on transition runs, TP13/14 and time marks.
 Use differential probes and short local returns. For fast transients, probe
 hardware near eFuse IN and the buck VIN capacitor, not solely the connector
 TPs. For calibrated current use current probes or measured Kelvin shunts;
-account for fixture resistance. TP15 is local mux return; TP16 is TVS return.
+account for fixture resistance. TP15 is local mux return; TP16 is the local ground beside U11 (the SRV05-4 data-line ESD
+array), not the D18/D20 input-TVS return. TP14 and TP18 are on the bottom side.
 
 | Gate | Check on dummy fixture | Decision |
 |---|---|---|
@@ -24,7 +25,7 @@ account for fixture resistance. TP15 is local mux return; TP16 is TVS return.
 | Low supply | Both modules, each input independently; screen 4.3, 5 and 15 V at the connector before load, repeat during TX with documented source impedance | Proposed screen: 10 starts per combination; no resets/chatter, sustained TX and bench bus exchange. Verify operating range for exact installed module before applying a provisional 3.0–3.6 V rail bound. Record measured sag and source current margin |
 | Dual rail | Test both arrival/removal sequences and weak PIN1 while valid PIN3 is present | Record actual priority, rail minimum, restart and transfer time; scope inactive-rail current against a stated measurement floor. No silent backfeed; don't claim seamless until service survives |
 | Controlled hot plug | After stable bench bring-up, scope local eFuse and buck inputs separately with representative cable/source extremes | Target eFuse ≤23 V incl. uncertainty; above that requires justified transient budget; ≥28 V is failure. Check negative ringing and buck bounds separately. Stop at unexplained excursion or heating |
-| Fault classification | Bounded dummy-only UVLO/OVLO and load tests | Predicted trip/recovery are planning points, not acceptance limits. 19 V is cutoff characterization, not supported continuous operation. Do not add C30 to hide an unknown failure |
+| Fault classification | Bounded dummy-only UVLO/OVLO and load tests | Predicted trip/recovery are planning points, not acceptance limits. 19 V is cutoff characterization, not supported continuous operation. Limit the source to about 100 mA and keep each step above 18 V short (about 1 s): D18/D20 (SMF17A) begin to conduct near 18.9 V (minimum breakdown; confirm in the datasheet), so an unlimited source can overheat them during this sweep. Do not add C30 to hide an unknown failure |
 
 TP17/18 have no onboard pull-up. Use a weak pull-up referenced to DUT
 ground only on a reviewed isolated fixture, within ratings and without
@@ -56,14 +57,16 @@ The TI RPW0010A example uses 0.100 mm stencil foil. The nominal Rev 3F
 rounded apertures (0.05 mm corner radius) give these geometric area ratios,
 using opening area divided by wall area:
 
-| Foil | 0.28 × 1.06 mm split power windows | 0.25 × 0.60 mm side signal windows |
-|---|---:|---:|
-| 0.100 mm | 1.14 | 0.92 |
-| 0.120 mm | 0.95 | 0.76 |
-| 0.150 mm | 0.76 | 0.61 |
+| Foil | 0.28 × 1.06 mm split power windows | 0.25 × 0.60 mm side signal windows | 0.25 × 0.25 mm corner pads (1, 4, 7, 10) |
+|---|---:|---:|---:|
+| 0.100 mm | 1.14 | 0.92 | 0.62 |
+| 0.120 mm | 0.95 | 0.76 | 0.52 |
+| 0.150 mm | 0.76 | 0.61 | 0.42 |
 
 At 0.150 mm, the side openings fall below the usual 0.66 paste-release
-screen even though the split power windows do not. This is not a factory
+screen even though the split power windows do not. The four small corner
+pads are below 0.66 at every foil, including TI's 0.100 mm (corner-pad
+row added 2026-11-26; the same pads exist on Rev 3E). This is not a factory
 defect prediction or sign-off. Ask the assembler for the intended foil
 thickness and as-cut aperture drawing, including the side and custom
 corner openings, the split-pad web, and paste adjustments. Ask what
