@@ -1,4 +1,4 @@
-# Rev3E first-article acceptance
+# Rev 3F first-article acceptance (Rev 3E control when compared)
 Prototype only. These are planned checks, not bench results. Do not attach
 to a mains-powered appliance under this plan. Work on a current-limited,
 isolated dummy fixture with a qualified operator. Keep USB-only, isolated
@@ -7,7 +7,7 @@ real USB host alongside an attached appliance. Verify grounding paths before
 connecting probes and verify J1 pinout before enabling either rail.
 
 ## Evidence record
-One row per run: board/assembly ID, exact socket and module lot, C3/C6 and
+One row per run: board/assembly ID, actual revision, artwork SHA-256, factory stack ID and inner copper, exact socket and module lot, C3/C6 and
 firmware SHA, current limit, harness length and measured source impedance,
 voltage at connector and eFuse VIN, temperature, waveform ID, boot/reset
 reason, Wi-Fi sustained TX, GE bench emulator transactions, disposition.
@@ -49,3 +49,26 @@ First determine the transition from raw PIN3 (TP9) and switched V_INPUT
 (TP3), leaving TP14 untouched. Use characterized high-input-resistance,
 low-capacitance probing for the separate control trace, and repeat without
 the probe if handoff timing is ambiguous. Never use 50 Ω termination here.
+
+## Review the actual eFuse stencil before releasing assembly
+
+The TI RPW0010A example uses 0.100 mm stencil foil. The nominal Rev 3F
+rounded apertures (0.05 mm corner radius) give these geometric area ratios,
+using opening area divided by wall area:
+
+| Foil | 0.28 × 1.06 mm split power windows | 0.25 × 0.60 mm side signal windows |
+|---|---:|---:|
+| 0.100 mm | 1.14 | 0.92 |
+| 0.120 mm | 0.95 | 0.76 |
+| 0.150 mm | 0.76 | 0.61 |
+
+At 0.150 mm, the side openings fall below the usual 0.66 paste-release
+screen even though the split power windows do not. This is not a factory
+defect prediction or sign-off. Ask the assembler for the intended foil
+thickness and as-cut aperture drawing, including the side and custom
+corner openings, the split-pad web, and paste adjustments. Ask what
+inspection is available for hidden U9/U10 joints. Confirm on the exact
+assembly revision rather than inferring the stencil from the Gerbers.
+
+[TI stencil example, PDF p. 74](https://www.ti.com/lit/ds/symlink/tps25947.pdf#page=74)
+· [JLCPCB aperture guidance](https://jlcpcb.com/blog/stencil-aperture-design-geometry-area-ratio-tips).
