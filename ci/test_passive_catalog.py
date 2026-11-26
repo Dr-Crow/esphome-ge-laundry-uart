@@ -24,7 +24,7 @@ class PassiveCatalogTest(unittest.TestCase):
 
     def test_all_declared_supplier_boms_match_primary_passive_facts(self):
         revisions = [revision for revision, board in self.boards.items() if board.get("bom")]
-        self.assertEqual(revisions, ["rev2.1", "rev2.2", "rev3a", "rev3b", "rev3c", "rev3d", "rev3e", "rev3f"])
+        self.assertEqual(revisions, ["rev2.1", "rev2.2", "rev3a", "rev3b", "rev3c", "rev3d", "rev3e", "rev3f", "rev3g"])
         codes = set()
         for revision in revisions:
             with self.subTest(revision=revision):

@@ -513,6 +513,57 @@
           "J1"
         ]
       }
+    },
+    "rev3g": {
+      "source": "pcb/rev3g/design/GEA-Adapter-Rev3G",
+      "bom": "pcb/rev3g/manufacturing/BOM-GEA-Adapter-Rev3G.csv",
+      "cpl": "pcb/rev3g/manufacturing/CPL-GEA-Adapter-Rev3G.csv",
+      "archive": "pcb/rev3g/manufacturing/GERBER-GEA-Adapter-Rev3G.zip",
+      "status": "Rev3G service prototype for engineering review: Rev3F base with service access (labelled probe lands TP4-TP7, TP15/TP16 return references, J6 receive-only header, JP3/JP4 cuttable links with GEA_Service footprints); not released for ordering or appliance use; release qualification blocked",
+      "design_rules": "pcb/rev3g/design/GEA-Adapter-Rev3G.kicad_dru",
+      "library_tables": [
+        "pcb/rev3g/design/fp-lib-table",
+        "pcb/rev3g/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/ALT_PWR": "Power",
+        "/BUCK_5V": "Power",
+        "/BUCK_BST": "Switching",
+        "/BUCK_SW": "Switching",
+        "/D11_K": "Power",
+        "/V_INPUT": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.25,
+        "Switching": 0.3
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "The service-access changes (JP3 5 V feed bridge replacing R47, JP4 link, probe lands) and the Rev3E/Rev3F eFuse/PIN3 OVLO/AP63205 power path are digitally reviewed only; no powered testing on the isolated dummy fixture, appliance pin voltages/current budget, transient energy, priority switchover, loaded startup or thermal qualification"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Exact RJ45 suffix and other purchasing identities, supplier library pose/zero/orientation, stencil/assembly process and an assembled Rev3G quote remain unqualified; BOM/CPL are generated from source for CI and have not been supplier-reviewed"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Actual module/header/socket fit, retention, vibration, USB inaccessibility with the appliance cable attached, BOOT/RESET access, antenna/RF, probe-land usability, JP3/JP4 rework, closed-lid fit and enclosure qualification remain open; no bench testing of Rev3G has been done"
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev3g/validation/placement-origin-review.json",
+        "sha256": "0db9736acaa6a7fc283515c74409c273a82b779335102ca948ddd21bde8f6106",
+        "required_references": [
+          "J1"
+        ]
+      }
     }
   },
   "firmware": [
