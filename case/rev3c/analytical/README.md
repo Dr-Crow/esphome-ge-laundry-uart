@@ -129,6 +129,33 @@ python export_review.py --module c3 --stack 11.325 --boot-height 1.5 --reset-hei
   --output exports-review-c3-flush
 ```
 
+## Tail pockets for J7 and JP3 (2026-11-26)
+
+**The base now has two pockets in its floor for through-hole pin tails.** With the board seated, its underside is at z 3.65 mm and the cavity floor top at z 2.4 mm, so only 1.25 mm is free under the PCB (except at J1 and the J5/J6 sockets, which already have pockets). Ray-casts straight down from the board bottom gave 1.25 mm under every J7 and JP3 pin, on this tree's exports and on `pcb/rev3g/case/parts/matching-base.stl`. A fitted header's tails are about 3 mm, so they would have dug about 1.75 mm into the plastic.
+
+| Pocket | For | Footprint (KiCad frame) | Pins |
+|---|---|---|---|
+| J7 | Rev 3H 1x4 2.54 mm vertical header, LCSC C492403 (PZ254V-11-04P): 2.5 mm body, 6.1 mm pin above the board, about 3.0 mm tail below | x 67.6-70.4, y 4.8-15.22 | x 69.0, y 13.82 / 11.28 / 8.74 / 6.2 |
+| JP3 | Rev 3G/3H: two 1.0 mm plated holes on 2.54 mm centres, where a technician may fit a 2-pin header and shunt (same tails) | x 67.33-72.67, y 35.6-38.4 | (68.73, 37.0), (71.27, 37.0) |
+
+- **Size.** Each is one rectangle per pin group: 1.8 mm per pin row (solder joint) plus 0.5 mm margin each side, so 2.8 mm wide.
+- **Depth.** The pocket floor is at z 0.15 mm: a 3.2 mm tail plus 0.3 mm gives 3.5 mm free under the board. That leaves a **1.15 mm floor** (the base bottom is z -1), above the 1.0 mm minimum. The pockets are open to the cavity above and closed at the bottom; they do not reach the outside.
+- **Cost.** 99.288 mm3 of floor in total. The pockets are harmless on boards without J7 or JP3.
+- **Switch.** On by default. `enclosure.TAIL_POCKETS` (or `base(tail_pockets=False)`, or `export_review.py --no-tail-pockets`) restores the older base; with the pockets off and the Rev 3G parameters the base has Rev 3G's recorded volume (28171.03 mm3). The constants (`TAIL_LEN`, `TAIL_CLEAR`, `TAIL_ROW_W`, `TAIL_MARGIN`, `TAIL_PINS`) are at the top of the block above `base()`.
+- **Checks.** Ray-casts down from z 3.65 under each pin: 3.50 mm free at all 6 pins (and over the 0.4 mm tail footprint). A boolean against the Rev 3G base shows 99.288 mm3 removed, equal to the pocket boxes intersected with it, and 0 mm3 added. Rays up from below the pockets find 1.15 mm of floor at every sample. All 67 Rev3D models still clear the printed solids, and the ends, flush-end and label checks reproduce their earlier logs exactly. The magnet-skin check reproduces its earlier log exactly with the pockets off, and with them on every top skin is still 1.30 mm and fully solid. The Rev3D model set has no J7, so its tails are checked by the ray-casts only.
+- **Magnets.** The corner magnet pockets (`--magnets`) sit under these pins: JP3 lies inside the pocket at (70, 38.5) for every size, and J7 pin 4 is 0.65 mm outside the 8x2 pocket (clear of 6x2). With `--magnets` the tail pockets are trimmed to keep 0.8 mm of wall round each magnet pocket (a valid single solid for all nine size/style combinations), and a warning names the pins whose tails then no longer clear. **A fitted header at JP3 cannot be combined with magnets, and J7 only with 6x2 magnets.** Moving the magnets would fix that but changes the magnet layout, so it is not done here.
+
+## Closed-USB lid option (2026-11-26)
+
+`--closed-usb` (`shell(..., closed_usb=True)`) omits the USB port opening, so the lid closes the recessed original USB end. This is the lid Rev 3G ships in `pcb/rev3g/case/parts/closed-usb-lid-c3|c6`. It was ported from the private copy in `pcb/rev3g/case/src/enclosure.py` so that one source builds every variant. It needs `--usb-style original` (the option is refused with `flush`, because the flush end has its own port). Nothing else changes: the default lid is identical to before (c3 24898.821 mm3, c6 24667.074 mm3), and the closed lid adds 262.253 mm3 of material only inside the port (x 101.64-105.12, y 5.52-20.32, z 15.55-24.55).
+
+Rev 3G's lids were exported before the roof labels were enlarged and the module tag was added, so lids built from this tree differ from the Rev 3G files by those texts (about 2.5 mm3 removed and 1.6 mm3 added in the label; the module tag is extra). Rev 3H reuses the Rev 3G lids unchanged; see `pcb/rev3h/case/README.md`.
+
+```sh
+python export_review.py --module c3 --stack 11.0 --boot-height 1.5 --reset-height 1.5 \
+  --boot-stop 0.4 --reset-stop 0.4 --leaf-offset 17.3 --closed-usb --no-module-tag --output exports-closed-c3
+```
+
 ## Reviewable corrections
 
 - `configure()` sets the declared generic installed stack from 10.35 to 11.65 mm, independent BOOT/RESET heights, gaps and stops, plus optional stack-adjusted USB height. It does not establish a safe switch overtravel limit.
