@@ -14518,7 +14518,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u 25V X7R"
+		(property "Value" "22u 25V X5R"
 			(at 469.9 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14529,7 +14529,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 299.72 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -14540,7 +14540,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do"
 			(at 299.72 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -14551,7 +14551,7 @@
 				)
 			)
 		)
-		(property "Description" "22 uF 25 V X7R 1210 MLCC"
+		(property "Description" "22 uF 25 V X5R 1206 MLCC (buck output; AP63205 datasheet asks 22-68 uF ceramic; X5R derates with DC bias)"
 			(at 299.72 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -14571,7 +14571,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL32B226KAJNNNE"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 299.72 91.44 0)
 			(effects
 				(font
@@ -14589,7 +14589,7 @@
 				(hide yes)
 			)
 		)
-		(property "Dielectric" "X7R"
+		(property "Dielectric" "X5R"
 			(at 299.72 91.44 0)
 			(effects
 				(font
@@ -14598,7 +14598,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C309062"
+		(property "LCSC" "C12891"
 			(at 299.72 91.44 0)
 			(effects
 				(font
@@ -14651,7 +14651,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u 25V X7R"
+		(property "Value" "22u 25V X5R"
 			(at 500.38 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14662,7 +14662,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 309.88 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -14673,7 +14673,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do"
 			(at 309.88 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -14684,7 +14684,7 @@
 				)
 			)
 		)
-		(property "Description" "22 uF 25 V X7R 1210 MLCC"
+		(property "Description" "22 uF 25 V X5R 1206 MLCC (buck output; AP63205 datasheet asks 22-68 uF ceramic; X5R derates with DC bias)"
 			(at 309.88 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -14704,7 +14704,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL32B226KAJNNNE"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 309.88 91.44 0)
 			(effects
 				(font
@@ -14722,7 +14722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Dielectric" "X7R"
+		(property "Dielectric" "X5R"
 			(at 309.88 91.44 0)
 			(effects
 				(font
@@ -14731,7 +14731,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C309062"
+		(property "LCSC" "C12891"
 			(at 309.88 91.44 0)
 			(effects
 				(font
