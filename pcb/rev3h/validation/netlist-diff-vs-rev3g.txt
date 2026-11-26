@@ -1,0 +1,22 @@
+components added: ['J7', 'R48', 'R49', 'R50']
+components removed: []
+CHANGED C16
+    value 22u 25V X7R -> 22u 25V X5R
+    footprint Capacitor_SMD:C_1210_3225Metric -> Capacitor_SMD:C_1206_3216Metric
+    datasheet https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do -> https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do
+    prop Dielectric X7R -> X5R
+    prop LCSC C309062 -> C12891
+    prop MPN CL32B226KAJNNNE -> CL31A226KAHNNNE
+CHANGED C17
+    value 22u 25V X7R -> 22u 25V X5R
+    footprint Capacitor_SMD:C_1210_3225Metric -> Capacitor_SMD:C_1206_3216Metric
+    datasheet https://product.samsungsem.com/mlcc/CL32B226KAJNNN.do -> https://product.samsungsem.com/mlcc/CL31A226KAHNNN.do
+    prop Dielectric X7R -> X5R
+    prop LCSC C309062 -> C12891
+    prop MPN CL32B226KAJNNNE -> CL31A226KAHNNNE
+nets added: ['Net-(J7-Pin_2)', 'Net-(J7-Pin_3)', 'Net-(J7-Pin_4)']
+nets removed: []
+NET CHANGED GEA2_RX added [('R48', '1')] removed []
+NET CHANGED GEA3_RX added [('R50', '1')] removed []
+NET CHANGED GEA3_TX added [('R49', '1')] removed []
+NET CHANGED GND added [('J7', '1')] removed []
