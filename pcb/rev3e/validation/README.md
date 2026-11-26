@@ -30,3 +30,10 @@ function labels. The BOM and CPL regenerate byte-identical to the quoted ones
 `placement-origin-review.json` was rebound to the current Rev 3E source hashes (the probe-pad board changed the
 `.kicad_pcb` and `.kicad_sch`). The J1 datum (EVERCOM body centre, CPL 8.645, -16.995) is unchanged. The matching
 line in `AS-QUOTED-SHA256SUMS` was updated to the new hash.
+
+### Files edited after the quote
+
+`AS-QUOTED-SHA256SUMS` records the files as they were quoted, so it is expected to stop matching any of them that is
+edited later. `pcb/rev3e/README.md` was edited after the quote (commit e3ca848: the fee-bearing count corrected to the
+8 SMT extended SKUs the quote actually charged). It is documentation only and is not part of the fabrication package.
+The design, Gerber archive under `as-quoted/`, BOM and CPL still match their recorded hashes.

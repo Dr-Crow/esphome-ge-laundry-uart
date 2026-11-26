@@ -519,7 +519,7 @@
       "bom": "pcb/rev3g/manufacturing/BOM-GEA-Adapter-Rev3G.csv",
       "cpl": "pcb/rev3g/manufacturing/CPL-GEA-Adapter-Rev3G.csv",
       "archive": "pcb/rev3g/manufacturing/GERBER-GEA-Adapter-Rev3G.zip",
-      "status": "Rev3G service prototype for engineering review: Rev3F base with service access (labelled probe lands TP4-TP7, TP15/TP16 return references, J6 receive-only header, JP3/JP4 cuttable links with GEA_Service footprints); not released for ordering or appliance use; release qualification blocked",
+      "status": "Rev3G service prototype for engineering review: Rev3F with R47 replaced by the normally-closed JP3 5 V link (two plated holes for an optional shunt header), a normally-closed JP4 link that can be cut to mute GEA3 TX, plated 1 mm probe holes on TP4-TP7 (receive-side probing is at the back of the J6 socket joints; no header is added), and closed-USB lids; not released for ordering or appliance use; release qualification blocked",
       "design_rules": "pcb/rev3g/design/GEA-Adapter-Rev3G.kicad_dru",
       "library_tables": [
         "pcb/rev3g/design/fp-lib-table",
