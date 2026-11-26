@@ -1,6 +1,6 @@
 fp added ['J7', 'R48', 'R49', 'R50'] removed []
 fp changed [('C16', (66.5, 33.5, 90.0, 'F.Cu', 'Capacitor_SMD:C_1210_3225Metric'), (66.5, 33.5, 90.0, 'F.Cu', 'Capacitor_SMD:C_1206_3216Metric')), ('C17', (70.5, 33.5, 90.0, 'F.Cu', 'Capacitor_SMD:C_1210_3225Metric'), (70.5, 33.5, 90.0, 'F.Cu', 'Capacitor_SMD:C_1206_3216Metric'))]
-tracks/vias added 12 removed 0
+tracks/vias added 15 removed 3
   + ('trk', 'GEA2_RX', 'F.Cu', 73.46, 11.28, 73.463, 15.683, 0.2)
   + ('trk', 'GEA3_RX', 'F.Cu', 73.46, 6.2, 73.46, 1.28, 0.2)
   + ('trk', 'GEA3_TX', 'F.Cu', 73.46, 8.74, 74.8, 8.74, 0.2)
@@ -10,6 +10,12 @@ tracks/vias added 12 removed 0
   + ('trk', 'Net-(J7-Pin_2)', 'F.Cu', 69.0, 11.28, 71.81, 11.28, 0.2)
   + ('trk', 'Net-(J7-Pin_3)', 'F.Cu', 69.0, 8.74, 71.81, 8.74, 0.2)
   + ('trk', 'Net-(J7-Pin_4)', 'F.Cu', 69.0, 6.2, 71.81, 6.2, 0.2)
+  + ('trk', 'Net-(JP4-A)', 'B.Cu', 31.5, 23.0, 29.75, 22.85, 0.2)
+  + ('trk', 'Net-(JP4-A)', 'F.Cu', 30.1375, 22.95, 31.5, 23.0, 0.2)
   + ('via', 'GEA3_TX', 73.6, 25.297)
   + ('via', 'GEA3_TX', 74.8, 17.4)
   + ('via', 'GEA3_TX', 74.8, 8.74)
+  + ('via', 'Net-(JP4-A)', 31.5, 23.0)
+  - ('trk', 'Net-(JP4-A)', 'B.Cu', 29.1, 22.9, 29.75, 22.85, 0.2)
+  - ('trk', 'Net-(JP4-A)', 'F.Cu', 30.1375, 22.95, 29.1, 22.9, 0.2)
+  - ('via', 'Net-(JP4-A)', 29.1, 22.9)
