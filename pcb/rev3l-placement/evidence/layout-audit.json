@@ -3,18 +3,34 @@
     65,
     30
   ],
-  "parent": [
-    90.13165,
-    37.94012
-  ],
-  "pad_net_comparison": "all equivalently numbered pads and nets matched",
-  "pad_records": 232,
+  "kicad_drc_version": "9.0.9",
+  "geometry_editor": "9.0.2+dfsg-1",
+  "sha256": "8d86cbcf1a12b6e15ace2d1e3eeee70081afdc3978cf3d7eb4a5bb02f857e9c9",
   "footprints": 98,
-  "baseline_assembly_references": 72,
+  "pad_records": 232,
+  "pad_net_comparison": "All 232 reference, pad number and net name records compared to Rev 3K.",
+  "fitted_refs_top": 72,
+  "fitted_refs_bottom": 0,
+  "tp_refs_in_fitted_bom": 0,
+  "BOM_comparison": "Values, footprints, LCSC codes and fitted references match 3K.",
   "unique_skus": 32,
-  "vias": 168,
-  "vias_with_hole_on_fitted_pad": 0,
-  "vias_with_less_than_0p1_mm_hole_margin_to_fitted_pad": 0,
+  "review_CAM_paste_objects": {
+    "F_Paste": 178,
+    "B_Paste": 0
+  },
+  "vias": 248,
+  "via_holes_on_smd_lands_both_faces": [],
+  "min_via_gap_to_smd_land_mm": [
+    -0.0527,
+    0.1223,
+    "TP12",
+    "1"
+  ],
+  "open_connections": 14,
+  "drc_findings": {
+    "track_dangling": 1
+  },
+  "schematic_parity": 0,
   "below_2p5_body_edge": {
     "C10": 1.81,
     "C11": 0.95,
@@ -45,5 +61,13 @@
     "R6": 0.95,
     "R7": 0.575,
     "U11": 0.9875
+  },
+  "top_probe_points": {
+    "TP1": "Module 5 V",
+    "TP2": "Module 3.3 V",
+    "TP3": "Protected input",
+    "TP12": "Buck 5 V",
+    "TP15": "Ground \u00b7 plated",
+    "TP16": "Ground \u00b7 surface"
   }
 }

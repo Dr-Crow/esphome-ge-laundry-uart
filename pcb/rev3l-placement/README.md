@@ -1,11 +1,46 @@
-# Rev 3L · 65 × 30 mm routing study
+# Rev 3L · 65 × 30 mm engineering prototype
 
-**Incomplete electrical layout. Do not fabricate.** Open design/GEA-Adapter-Rev3L.kicad_pro to see the furthest routing pass. All 72 fitted parts remain on top. Capacitors, protection devices, the RJ45, both module sockets, J7, both mounting holes and the service links share the Rev 3K parts list. Moving only unpopulated probe pads to the underside frees front-side area. The plated through-hole service pads still reserve both copper faces and were placed clear of fitted bodies. Probe access needs the carrier out of its case.
+**Incomplete electrical layout. Do not fabricate.** Open design/GEA-Adapter-Rev3L.kicad_pro for the editable board. [Top probe guide](evidence/probes.svg) · [Top copper](evidence/rev3l-top.svg) · [Bottom copper](evidence/rev3l-bottom.svg) · [DRC and schematic parity](evidence/routing-DRC.json) · [ERC](evidence/ERC.json). Keep the routed 70 × 32 mm [Rev 3K](../rev3k/) as the prototype-review baseline.
 
-This design occupies 1,950 mm², 12.95% less than 3K and about 18.6% more than FirstBuild. The initial all-front packing study left 20 of 88 component groups unplaced. A trial assigning probe footprints to the back, followed by constrained packing and exact physical pad checks, fits all footprints. The pre-routing native board is retained in evidence/unrouted-placement and its ERC, parity and placement-DRC evidence are included. Every electrical pad matches the parent circuit. Keep the original pin and bus behavior if refining it.
+## Electrical status
 
-The initial placement has 128 unrouted items. The best routed native checkpoint has **32 open connections and 94 DRC violations**, including 77 copper-clearance violations. Power and return paths remain open. Thermal spokes and silkscreen also need work. The next floorplan should keep each protection IC with its input capacitor, clamp, programming resistors and ground via, and reserve a continuous return beneath the power routes before packing the remaining passives. The 3K case does not fit this board.
+The first 65 mm checkpoint had 32 opens and 94 other DRC findings. The present KiCad 9.0.9 all-severity, all-track-errors run has **14 open connections, one dangling track, zero ERC findings and zero schematic-parity differences**. There are no reported copper-clearance violations. The main supply and ground nets have no open connections in this report.
 
-**Factory handling is unresolved.** Of the 72 fitted bodies, 29 screen within 2.5 mm of the edge using the manufacturer jack/socket dimensions and package fabrication outlines for the others. The intentional jack overhang is 0.38 mm. See evidence/component-body-edge.csv. Confirm which removable tooling and through-hole operations are compatible with five single, lead-free Economic assemblies. There is no quoted cost or manufacturing file set for this routing study. Use 3K for the prototype review.
+Remaining open nets are /DBG_LED × 2, GEA_HalfDplx, Net-(D5-A), Net-(D9-K2) × 2, Net-(R12-Pad2), Net-(R21-Pad1), /GEA3_TX_D6, /PIN1_ILM × 2, /PIN1_UV, /PIN1_OV, /PIN1_FLT_N. An open current-limit, voltage-threshold, fault or appliance-data connection can change behavior even when the supply rails show continuity. The current layout needs a local placement and routing pass for the protection control and interface networks. Keep the eFuse thresholds, input priority, clamp, USB isolation parts, XIAO pin mapping and debug series resistors intact.
 
-The [top assembly map](evidence/top-assembly-map.svg) labels every fitted body by designator in PCB coordinates. Probe pads and mounting holes are also shown.
+The update reroutes interconnects on all four layers, separates the input/output escapes of the two eFuses, adds local ground vias and joins sections of the ground reference. The regulator switching and bootstrap copper retain the prior local geometry. The board keeps all 98 footprints and the 232 reference/pad/net records of 3K. The schematic and fitted component selection are unchanged. Footprint geometry work used KiCad pcbnew 9.0.2. The board SHA-256 is `8d86cbcf1a12b6e15ace2d1e3eeee70081afdc3978cf3d7eb4a5bb02f857e9c9`.
+
+## Probe access and isolation
+
+The three 2 mm exposed top pads are TP1 for module 5 V, TP2 for module 3.3 V and TP3 for the protected input. TP12 exposes the buck output on a 1 mm top pad. Use TP16 at the buck or the TP15 plated ground near TP1. The ground connection at TP15 is solid for probing. TP7 is under the module in the populated XY assembly and should be approached from the back or with the module removed. The other service points and the top J7 monitor remain available. The [pad map](evidence/debug-pad-map.csv) distinguishes a footprint's nominal placement side from the actual copper faces of plated holes.
+
+The [probe reach check](evidence/probe-clearance.json) registered both partial Seeed C3 and C6 STEP models to J5 and screened a straight 2 mm diameter probe at each of the six named top landmarks. All six clear the modeled module and fitted bodies with the carrier out of its enclosure. The tightest modeled body-to-probe-edge clearance is 0.44 mm. Confirm the real probe barrel, installed module, C3 antenna lead and cable access before adoption. Use the guide to identify the 3.3 V pad. The compact top legend has limited space.
+
+J7 is a 3.3 V monitor for an isolated fixture. Pin 1 is shared ground. Pins 2–4 are the protected monitor taps with series resistors. Keep the external transmitter and its supply disconnected. Unplug the appliance cable before using USB. Neither the J7 resistors nor the carrier diode provides galvanic isolation. Use the designated service links to isolate their documented sections. Keep the eFuses and transient protection in circuit.
+
+## Size, assembly and cost
+
+FirstBuild measures 59.944 × 27.432 mm across its outline artwork, approximately 1,644.4 mm². The 65 × 30 mm Rev 3L is 5.056 mm longer, 2.568 mm wider and 18.6% larger by area. Its 1,950 mm² footprint saves 290 mm² (12.95%) versus the 70 × 32 mm Rev 3K. These are board dimensions. The 3K case is 77.2 × 40 × 31.9 mm externally and does not fit 3L. A matching 3L case remains open pending layout freeze. [FirstBuild outline Gerber](https://github.com/geappliances/home-assistant-adapter/blob/4888a7df56e8ce6382ed91e4b95bd5020f1802f6/doc/pcb/HA%20Adapter%20Gerbers%2011-15-24.zip)
+
+The fitted BOM comparison gives 72 references and 32 distinct LCSC codes, all top-side. No TP reference is fitted. Review Gerbers contain 178 top paste objects and zero bottom paste objects. The unpopulated underside pads use copper and a mask opening. They require no bottom stencil, placement, solder joint or second reflow. A physical probe fixture or paid functional test is a separate service. There is no new assembly quote or independently verified dollar saving from the smaller outline. Use five fully assembled, single-board, single-sided, lead-free Economic assemblies as the pricing basis. The prior part and fee review is in [3K sourcing](../rev3k/PARTS-AND-COST.md). [JLC assembly pricing](https://jlcpcb.com/help/article/pcb-assembly-price) · [JLC functional test](https://jlcpcb.com/help/article/functional-test-service)
+
+Twenty-nine fitted component bodies screen within JLC's 2.5 mm edge distance, including the intentional 0.38 mm jack overhang. Obtain tooling, removal and insertion approval and price any tooling separately. The body screen uses the jack drawing, maximum socket body dimensions and other package fabrication outlines. The [via audit](evidence/via-to-land.csv) records close mask/copper geometry. No drilled via overlaps a surface land. At TP12 a same-net via annulus reaches the exposed probe copper. Verify tenting, mask registration and finished drill clearances. [JLC assembly capabilities](https://jlcpcb.com/capabilities/pcb-assembly-capabilities) · [JLC assembly terms](https://jlcpcb.com/help/article/terms-and-conditions-of-jlcpcb-assembly-service)
+
+## Gates before fabrication
+
+Review the complete routed design, ground return continuity, buck and eFuse loop geometry, stackup and minimum finished copper and plating. The proposed four-layer stack uses 1 oz outers and 0.5 oz inners. The 0.60 A load screen and roughly 1.01 A nominal input current limit are distinct. Compare any completed layout with the 1 oz alternative. Confirm all 72 placements, QFN aperture and angle, connector body origins and through-hole insertion with the factory. Test both XIAO variants on an isolated current-limited bench for startup and load steps, current limiting, source priority, reverse leakage, fault behavior and USB backfeed in both directions. Dry-fit both modules, the actual antenna and a latched plug before finalizing a case. No powered test or order was made.
+
+The earlier all-rear probe placement and its placement-only DRC are retained in evidence/unrouted-placement and evidence/placement-DRC.json. The routed file and its evidence are the current review material.
+
+## Copper-only screening
+
+The inherited Rev 3K model uses 35 µm outer copper, 15.2 versus 30.48 µm finished inner copper and 20 µm via-wall plating. Rail endpoints, both stack assumptions and the 0.60 A and 1.01 A sensitivity cases are in [rail paths](evidence/rail-paths.csv). The resistive model excludes component and connector losses. Remaining opens prevent functional qualification.
+
+- J1.1 to U9.5 (VDC) models 42.313 mV of copper drop at 0.60 A on the thinner stack.
+- J1.3 to U10.5 (/ALT_PWR) models 12.05 mV of copper drop at 0.60 A on the thinner stack.
+- JP3.2 to J6.7 (+5V) models 49.013 mV of copper drop at 0.60 A on the thinner stack.
+- J6.5 to U5.5 (+3V3) models 23.015 mV of copper drop at 0.60 A on the thinner stack.
+
+The [ground return mesh](evidence/ground-return.csv) samples the actual fills, tracks and through connections on a 0.25 mm grid. Ground continuity in this model does not establish transient or RF behavior.
+
+On the 15.2 µm inner-copper assumption at 0.60 A, the module 5 V feed is 49.0 mV on 3L versus 32.3 mV on 3K. The J1.8-to-J6.6 return is 17.3 mV versus 3.3 mV. The 30.48 µm inner model for 3L gives 33.7 mV on the 5 V feed and 9.6 mV on the return. These are pin-to-pin copper-only sensitivity results. Give the next layout wider and more direct supply and return routes before choosing the production copper weight.
