@@ -69,6 +69,12 @@ for e in docs:
             if t and not re.match(r'^[a-z]+:', t) and Path(t).suffix.lower() in ('.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp'):
                 if not (f.parent / unquote(t)).exists(): miss += 1; print('  unresolved image', e['path'], '->', t)
 print(f'docs: {len(docs)} entries, {miss} unresolved image links')
+# A whole line shaped like a Dropbox token makes GitHub push protection refuse the gh-pages push.
+TOKEN_LINE = re.compile(r'^[A-Za-z0-9]{11}AAAAAAAAAA[A-Za-z0-9_=\-]{43}$', re.M)
+for f in SITE.rglob('*'):
+    if f.is_file() and f.suffix in ('.svg', '.json', '.html', '.md', '.txt', '.csv'):
+        n = len(TOKEN_LINE.findall(f.read_text(encoding='utf-8', errors='replace')))
+        if n: fail(f'{f.relative_to(SITE)}: {n} line(s) shaped like a credential (GitHub push protection); run publish_prep.py')
 tot = sum(f.stat().st_size for f in SITE.rglob('*') if f.is_file())
 print(f'site total {tot / 1e6:.1f} MB ({sum(1 for f in SITE.rglob("*") if f.is_file())} files, budget {BUDGET_MB:g})')
 if tot > BUDGET_MB * 1e6: fail('site over budget')
