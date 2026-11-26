@@ -446,7 +446,11 @@ def fpc_retention():
         s+=B(x-1,x+1,y-1.3,y+1.8,24.5,25.3)
     return s
 
-def shell(module='c3',antenna='internal'):
+def shell(module='c3',antenna='internal',*,closed_usb=False):
+    """closed_usb: omit the USB port opening so the lid closes the recessed original USB end (Rev 3G/3H
+    'closed-USB' lids; the port is then reached some other way). Only valid with the original USB style."""
+    if closed_usb and USB_STYLE!='original':
+        raise ValueError('Closed USB lid requires the original recessed USB end and its matching base')
     outer=loft([rr(114,54,6,SEAM+.2),rr(107,47,6,28.7),rr(107,47,6,ROOF)],ruled=True)
     try:
         outer=outer.fillet(1.05,[a for a in outer.edges() if a.bounding_box().min.Z>ROOF-.01])
@@ -465,7 +469,7 @@ def shell(module='c3',antenna='internal'):
         plate=outer&B(xi,xf,-50,90,SEAM+.1,ROOF+1)
         if xh>xf+1e-6: plate+=outer&B(xi,xh,-50,90,zs,ROOF+1)
         s+=plate-usb_tongue_clearance()-usb_slot()
-    else:
+    elif not closed_usb:
         s-=xopening(14.8,9.0,2.2,12.9175,USB_CENTER_Z)&B(98,110,-10,50,10,30)
     # Four small plastic datum lands stay outside PCB, set seam closure height.
     for x,y in SCREWS:
