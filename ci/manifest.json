@@ -462,6 +462,57 @@
           "J1"
         ]
       }
+    },
+    "rev3f": {
+      "source": "pcb/rev3f/design/GEA-Adapter-Rev3F",
+      "bom": "pcb/rev3f/manufacturing/BOM-GEA-Adapter-Rev3F.csv",
+      "cpl": "pcb/rev3f/manufacturing/CPL-GEA-Adapter-Rev3F.csv",
+      "archive": "pcb/rev3f/manufacturing/GERBER-GEA-Adapter-Rev3F.zip",
+      "status": "Rev3F experimental review candidate: Rev3E with eight regulated-rail bypass sites changed from C28233 to C14663 (100 nF 50 V X7R), 16 widened In2 segments, one added ground stitching via and split U9/U10 paste openings; half-ounce inner copper not signed off; release qualification blocked",
+      "design_rules": "pcb/rev3f/design/GEA-Adapter-Rev3F.kicad_dru",
+      "library_tables": [
+        "pcb/rev3f/design/fp-lib-table",
+        "pcb/rev3f/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/ALT_PWR": "Power",
+        "/BUCK_5V": "Power",
+        "/BUCK_BST": "Switching",
+        "/BUCK_SW": "Switching",
+        "/D11_K": "Power",
+        "/V_INPUT": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.25,
+        "Switching": 0.3
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Eight regulated-rail bypass swaps, widened In2 segments and the Rev3E eFuse/PIN3 OVLO/AP63205 path are digitally reviewed only; no powered testing, appliance pin voltages/current budget, transient energy vs SMF17A/eFuse 28 V abs max, priority switchover, loaded startup or thermal qualification; half-ounce inner copper voltage drop and current capacity unqualified"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Exact RJ45 suffix and other purchasing identities, supplier library pose/zero/orientation, stencil/assembly process and an assembled Rev3F quote remain unqualified; BOM/CPL are generated from source for CI and have not been supplier-reviewed"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Actual module/header/socket fit, retention, vibration, USB/BOOT/RESET access, antenna/RF and enclosure qualification remain open; no bench or first-article testing of Rev3F has been done"
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev3f/validation/placement-origin-review.json",
+        "sha256": "69b7eb7b5417b6c8614b4e62a7c3908df274b1d2644f888f84b1808cea49f897",
+        "required_references": [
+          "J1"
+        ]
+      }
     }
   },
   "firmware": [
