@@ -191,10 +191,38 @@
       "bom": "pcb/rev3e/manufacturing/BOM-GEA-Adapter-Rev3E.csv",
       "case": "rev3d-c3-fpc",
       "status": "candidate",
-      "date": "2026-11-24",
-      "date_basis": "commit 844e6bb",
-      "summary": "Rev 3D plus PIN3 overvoltage lockout (Q1 source follower), an SRV05-4 ESD array on the data lines, an R47 5 V debug link, TP12, a J7 3.3 V GEA bus monitor header and basic-part swaps; digital checks only.",
+      "date": "2026-11-26",
+      "date_basis": "commit 9102917 (as-quoted probe-pad design restored; quoted 2026-11-25)",
+      "summary": "As-quoted Rev 3E with TP13-TP18 bring-up probe pads: the board behind the 2026-11-25 JLCPCB quote of $94.22 for 5 assembled boards.",
       "readme": "pcb/rev3e/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3f",
+      "label": "Rev 3F",
+      "pcb": "pcb/rev3f/design/GEA-Adapter-Rev3F.kicad_pcb",
+      "sch": "pcb/rev3f/design/GEA-Adapter-Rev3F.kicad_sch",
+      "bom": "pcb/rev3f/assembly-review/BOM-3F-review.csv",
+      "case": "rev3d-c3-fpc",
+      "status": "candidate",
+      "date": "2026-11-26",
+      "date_basis": "commit 08112eb",
+      "summary": "Rev 3E with 8 regulated-rail bypass caps moved to 0603 C14663, widened In2 power traces and split eFuse paste; ChatGPT, review only.",
+      "readme": "pcb/rev3f/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3g",
+      "label": "Rev 3G",
+      "pcb": "pcb/rev3g/design/GEA-Adapter-Rev3G.kicad_pcb",
+      "sch": "pcb/rev3g/design/GEA-Adapter-Rev3G.kicad_sch",
+      "bom": "pcb/rev3g/assembly-review/BOM-3G-review.csv",
+      "case": null,
+      "status": "candidate",
+      "date": "2026-11-26",
+      "date_basis": "commit 790349f",
+      "summary": "Rev 3F service prototype: R47 replaced by cuttable JP3 link, JP4 GEA3 TX mute link, plated probe holes on TP4-TP7, closed-USB lids.",
+      "readme": null,
       "documented_quotes": []
     }
   ]
