@@ -16335,10 +16335,8 @@
 		)
 		(uuid "bab59af1-ea5f-486e-979c-45ff01206fd7")
 	)
-	(no_connect
-		(at 391.16 287.02)
-		(uuid "27c718a0-efb1-4640-b77d-643260318a9e")
-	)
+	(wire (pts (xy 391.16 287.02) (xy 396.24 287.02)) (stroke (width 0) (type default)) (uuid "ae1d3b03-3a10-5ad3-9bb8-4fc778343986"))
+	(label "PIN1_FLT_N" (at 396.24 287.02 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f01090ad-fe3e-5d0e-a5cc-139d698b3980"))
 	(wire
 		(pts
 			(xy 391.160 289.560) (xy 396.240 289.560)
@@ -18194,10 +18192,8 @@
 		(at 391.16 335.28)
 		(uuid "6eb09235-05be-4b73-829c-bf8ae42f0094")
 	)
-	(no_connect
-		(at 391.16 337.82)
-		(uuid "b82de554-cd98-4edb-b998-93790fdf89b5")
-	)
+	(wire (pts (xy 391.16 337.82) (xy 396.24 337.82)) (stroke (width 0) (type default)) (uuid "a9aa8da5-a0b1-5002-baaa-cb9dd43fae24"))
+	(label "PIN3_FLT_N" (at 396.24 337.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "527d0774-9bfe-5ebb-9be0-8553cc07b9f3"))
 	(wire
 		(pts
 			(xy 391.160 340.360) (xy 396.240 340.360)
@@ -21768,6 +21764,492 @@
 		)
 		(uuid "325edb9a-9226-4db4-940a-9405fda4217b")
 	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 463.55 358.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "f711cdbe-f5b9-5433-8f09-6de63fe2dc9f")
+		(property "Reference" "TP13"
+			(at 465.55 356.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AUXOFF1"
+			(at 465.55 359.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 463.55 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 463.55 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "AUXOFF1 command to Q1"
+			(at 463.55 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "8ae1a39d-b1ab-5a76-9616-388ea7e18c2c")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3E"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "TP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 463.55 358.14) (xy 463.55 360.68)) (stroke (width 0) (type default)) (uuid "e8d4a7a6-c1d6-54e9-ba6e-51494f487d37"))
+	(label "AUXOFF1" (at 463.55 360.68 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0a535703-8bc6-5b4a-b28d-5afd1612d3e7"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 487.68 358.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "b325338f-d717-57b5-aaa3-bbf12150bfd4")
+		(property "Reference" "TP14"
+			(at 489.68 356.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PIN3_OV"
+			(at 489.68 359.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 487.68 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 487.68 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "PIN3 OVLO sense at U10"
+			(at 487.68 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "47ac0726-ac70-5c19-b70c-5eeb2b7de6a8")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3E"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 487.68 358.14) (xy 487.68 360.68)) (stroke (width 0) (type default)) (uuid "958a17a8-c8b6-598c-8508-ad43b9880cfe"))
+	(label "PIN3_OV" (at 487.68 360.68 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "46f1f1d9-8130-5ce5-9a98-1875430a326a"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 511.81 358.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "317ccd37-97a2-5703-8b0d-c0037e743589")
+		(property "Reference" "TP15"
+			(at 513.81 356.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND_MUX"
+			(at 513.81 359.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 511.81 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 511.81 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Local ground for mux probes"
+			(at 511.81 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "760885e3-edd0-59f8-af39-93a225524e61")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3E"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "TP15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 511.81 358.14) (xy 511.81 360.68)) (stroke (width 0) (type default)) (uuid "05c36aec-6c66-572c-8551-f25316157b09"))
+	(label "GND" (at 511.81 360.68 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b5549eda-14c6-5d46-88a5-784dbebe6d14"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 535.94 358.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "cf944456-0b8f-51dc-9067-77b806a5ae36")
+		(property "Reference" "TP16"
+			(at 537.94 356.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND_ESD"
+			(at 537.94 359.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 535.94 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 535.94 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Ground next to U11 return via"
+			(at 535.94 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "f965abbf-1c16-5333-b963-8dd8193496ac")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3E"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 535.94 358.14) (xy 535.94 360.68)) (stroke (width 0) (type default)) (uuid "fcbc57ec-eca0-54a0-ba42-c8abfee8b305"))
+	(label "GND" (at 535.94 360.68 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fd6d141f-17aa-57a8-96a4-303eedbbd176"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 463.55 370.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "1bc3ca08-00df-5072-b24e-dfd8fdbc1155")
+		(property "Reference" "TP17"
+			(at 465.55 369.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PIN1_FLT_N"
+			(at 465.55 372.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 463.55 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 463.55 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "U9 open-drain fault, external 3.3 V pull-up only"
+			(at 463.55 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "bbae4f41-1848-522f-bebd-121af9052b02")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3E"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 463.55 370.84) (xy 463.55 373.38)) (stroke (width 0) (type default)) (uuid "81f37423-2968-518b-a6e2-0bf713e899a4"))
+	(label "PIN1_FLT_N" (at 463.55 373.38 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "2b088cc1-558f-58f2-b8cc-ee72202fd3d2"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 487.68 370.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "061d15b5-bf45-52be-ba56-eef4c75f07d2")
+		(property "Reference" "TP18"
+			(at 489.68 369.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PIN3_FLT_N"
+			(at 489.68 372.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 487.68 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 487.68 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "U10 open-drain fault, external 3.3 V pull-up only"
+			(at 487.68 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "8a42e6ef-3ab3-5673-ab33-05530179cbf5")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3E"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "TP18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 487.68 370.84) (xy 487.68 373.38)) (stroke (width 0) (type default)) (uuid "482374bf-ab94-5b89-82da-13c298ebac92"))
+	(label "PIN3_FLT_N" (at 487.68 373.38 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "abacd61f-f5f0-5b0f-ac92-8a1dc50d19fa"))
 	(sheet_instances
 		(path "/"
 			(page "1")
