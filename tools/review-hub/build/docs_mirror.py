@@ -1,4 +1,8 @@
-"""Mirror markdown/notes into site/docs and write data/docs.json.
+"""Mirror the repository's markdown into site/docs and write data/docs.json.
+
+Private working notes are NOT part of the public build. They are mirrored only when a notes folder is configured
+explicitly (HUB_NOTES or "notes" in build/config.local.json); the repo-only build has no "Plan & findings",
+"Research" or "Reddit drafts" groups.
 
 Never copies certs/, logs/, venvs/, ci-local*/, scratch-repo/, esphome-cache/, or anything under a dotfile path.
 Candidates are scanned for credential-like patterns first; a file with any hit is NOT copied and is listed in
@@ -6,6 +10,8 @@ build/cache/docs-skipped.json (path + pattern name + hit count only, never the m
 import json, re, shutil
 from pathlib import Path
 from urllib.parse import unquote
+
+import hubenv
 
 IMG_EXT = {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp'}
 BLOCK_DIRS = ('certs', 'logs', 'venvs', 'scratch-repo', 'esphome-cache')
@@ -58,7 +64,8 @@ def linked_images(md_text):
 
 
 def run(CFG, SITE):
-    repo, notes = Path(CFG['repo']), Path(CFG['notes'])
+    repo = Path(CFG['repo'])
+    notes = Path(CFG['notes']) if CFG.get('notes') else None
     docs_root = SITE / 'docs'
     if docs_root.exists(): shutil.rmtree(docs_root)
     docs_root.mkdir(parents=True)
@@ -98,19 +105,20 @@ def run(CFG, SITE):
                 shutil.copy2(img, d)
                 copied_assets.append(str(d.relative_to(docs_root)))
 
-    # (a) notes
-    for name, group in (('PLAN.md', 'Plan & findings'), ('FINDINGS.md', 'Plan & findings')):
-        add_doc(notes / name, notes, 'notes', group, None, str(notes / name))
-    for f in sorted((notes / 'research').glob('*')):
-        if f.suffix in ('.md', '.txt'):
-            add_doc(f, notes, 'notes', 'Research', None, str(f))
-    add_doc(notes / 'reddit' / 'DRAFTS.md', notes, 'notes', 'Reddit drafts', None, str(notes / 'reddit' / 'DRAFTS.md'))
-    for f in sorted((notes / 'reddit' / 'assets').glob('*')):
-        if f.suffix.lower() in IMG_EXT | {'.pdf'} and f.is_file():
-            d = docs_root / 'notes' / 'reddit' / 'assets' / f.name
-            d.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(f, d)
-            copied_assets.append(str(d.relative_to(docs_root)))
+    # (a) private notes: only when a notes folder is configured explicitly
+    if notes:
+        for name, group in (('PLAN.md', 'Plan & findings'), ('FINDINGS.md', 'Plan & findings')):
+            add_doc(notes / name, notes, 'notes', group, None, f'notes/{name}')
+        for f in sorted((notes / 'research').glob('*')):
+            if f.suffix in ('.md', '.txt'):
+                add_doc(f, notes, 'notes', 'Research', None, f'notes/{f.relative_to(notes)}')
+        add_doc(notes / 'reddit' / 'DRAFTS.md', notes, 'notes', 'Reddit drafts', None, 'notes/reddit/DRAFTS.md')
+        for f in sorted((notes / 'reddit' / 'assets').glob('*')):
+            if f.suffix.lower() in IMG_EXT | {'.pdf'} and f.is_file():
+                d = docs_root / 'notes' / 'reddit' / 'assets' / f.name
+                d.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(f, d)
+                copied_assets.append(str(d.relative_to(docs_root)))
 
     # (b) repo
     singles = ['README.md', 'CONTRIBUTING.md', 'pcb/README.md', 'pcb/ORDERING.md', 'case/README.md',
@@ -133,8 +141,8 @@ def run(CFG, SITE):
     entries.sort(key=lambda e: (order[e['group']], e['rev'] or '', e['path']))
     (SITE / 'data').mkdir(parents=True, exist_ok=True)
     (SITE / 'data' / 'docs.json').write_text(json.dumps(entries, indent=1) + '\n')
-    (Path(__file__).parent / 'cache').mkdir(exist_ok=True)
-    (Path(__file__).parent / 'cache' / 'docs-skipped.json').write_text(json.dumps({'skipped': skipped, 'assets_copied': len(copied_assets)}, indent=1))
+    hubenv.CACHE.mkdir(parents=True, exist_ok=True)
+    (hubenv.CACHE / 'docs-skipped.json').write_text(json.dumps({'skipped': skipped, 'assets_copied': len(copied_assets)}, indent=1))
     print(f'docs: {len(entries)} documents, {len(copied_assets)} images/pdfs, {len(skipped)} skipped')
     for s in skipped:
         print('  skipped:', s['file'], s.get('patterns') or s['reason'])
