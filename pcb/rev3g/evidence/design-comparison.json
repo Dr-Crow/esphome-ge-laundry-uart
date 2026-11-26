@@ -1,0 +1,93 @@
+{
+  "KiCad": "9.0.9",
+  "prior_project_board_sha256": "023dd58b5d61d78ba01a1af2627c19f45c7807842e6551b202099ec8b208a6c1",
+  "service_project_board_sha256": "b7c28d793059341ae938f8fb5a4f80bcfe293a4bbba3d5c73e2229cff43112bc",
+  "closed_link_netlist_equivalence_to_3F": true,
+  "added_signal_disconnect": "U5.4 to JP4.1, JP4.2 to R20.1/R24.1/TP5.1",
+  "prior_pin_memberships": 216,
+  "placements": 68,
+  "distinct_fitted_skus": 30,
+  "BOM_CPL_exact_3F_less": "R47",
+  "layer_vector_changed": {
+    "bottom copper": true,
+    "bottom mask": true,
+    "bottom paste": false,
+    "bottom silk": true,
+    "inner_1 copper": true,
+    "inner_2 copper": true,
+    "mechanical outline": false,
+    "top copper": true,
+    "top mask": true,
+    "top paste": true,
+    "top silk": true
+  },
+  "PTH_added_KiCad_X_Gerber_Y_diameter_mm": [
+    [
+      28.0,
+      -29.5,
+      1.0
+    ],
+    [
+      29.1,
+      -22.9,
+      0.3
+    ],
+    [
+      31.75,
+      -29.5,
+      1.0
+    ],
+    [
+      39.5,
+      -32.5,
+      1.0
+    ],
+    [
+      59.5,
+      -28.7,
+      1.0
+    ],
+    [
+      68.73,
+      -37.0,
+      1.0
+    ],
+    [
+      71.27,
+      -37.0,
+      1.0
+    ]
+  ],
+  "PTH_removed": [
+    [
+      30.523,
+      -19.659,
+      0.4
+    ]
+  ],
+  "non_plated_drill_identical": true,
+  "local_copper_continuity": {
+    "JP3": {
+      "side": "F",
+      "local_CAM_pixels_per_mm": 100,
+      "area_mm": [
+        6,
+        6
+      ],
+      "normally_connected": true,
+      "separate_after_virtual_0.30mm_gap": true,
+      "bridge_width_mm": 0.6
+    },
+    "JP4": {
+      "side": "B",
+      "local_CAM_pixels_per_mm": 100,
+      "area_mm": [
+        6,
+        6
+      ],
+      "normally_connected": true,
+      "separate_after_virtual_0.30mm_gap": true,
+      "bridge_width_mm": 0.4
+    }
+  }
+}
