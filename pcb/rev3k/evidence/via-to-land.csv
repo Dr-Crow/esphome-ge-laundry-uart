@@ -1,0 +1,5 @@
+ref,pad,via_x,via_y,hole_to_copper_mm,annulus_to_copper_mm,factory_fitted
+C14,2,47.106633,11.426654,0.2128,0.1028,True
+C7,1,50.88,25.68,0.2204,0.0954,True
+R19,2,32.7,18.24,0.2178,0.0928,True
+R17,1,40.32,29.52,0.2024,0.0924,True

@@ -1,0 +1,32 @@
+{
+  "3J": {
+    "('top', 'copper')": 747,
+    "('top', 'mask')": 231,
+    "('top', 'silk')": 1824,
+    "('top', 'paste')": 178,
+    "('bottom', 'copper')": 196,
+    "('bottom', 'mask')": 42,
+    "('bottom', 'silk')": 471,
+    "('bottom', 'paste')": 0,
+    "('inner_2', 'copper')": 270,
+    "('inner_1', 'copper')": 136,
+    "('mechanical', 'outline')": 4,
+    "drilled_plated": 135,
+    "drilled_nonplated": 4
+  },
+  "3K": {
+    "('top', 'copper')": 1629,
+    "('top', 'mask')": 231,
+    "('top', 'silk')": 428,
+    "('top', 'paste')": 178,
+    "('bottom', 'copper')": 955,
+    "('bottom', 'mask')": 42,
+    "('bottom', 'silk')": 1169,
+    "('bottom', 'paste')": 0,
+    "('inner_2', 'copper')": 837,
+    "('inner_1', 'copper')": 345,
+    "('mechanical', 'outline')": 4,
+    "drilled_plated": 225,
+    "drilled_nonplated": 4
+  }
+}

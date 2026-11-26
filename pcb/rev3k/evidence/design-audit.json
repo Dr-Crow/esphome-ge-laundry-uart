@@ -1,0 +1,35 @@
+{
+  "board": [
+    70,
+    32
+  ],
+  "parent": [
+    90.13165,
+    37.94012
+  ],
+  "pad_net_comparison": "all equivalently numbered pads and nets matched",
+  "pad_records": 232,
+  "footprints": 98,
+  "top_positions": 72,
+  "unique_skus": 32,
+  "vias": 192,
+  "vias_with_hole_on_fitted_pad": 0,
+  "vias_with_less_than_0p1_mm_hole_margin_to_fitted_pad": 0,
+  "below_2p5_body_edge": {
+    "C6": 0.65,
+    "D18": 1.7725,
+    "J1": -0.38,
+    "J5": 2.1834,
+    "J6": 2.1834,
+    "J7": 1.91,
+    "L1": 1.57,
+    "R1": 0.89,
+    "R14": 1.065,
+    "R17": 1.065,
+    "R2": 1.985,
+    "R31": 0.6375,
+    "R32": 0.6375,
+    "R36": 1.33,
+    "R4": 2.345
+  }
+}

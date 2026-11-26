@@ -1,0 +1,13 @@
+{
+  "pcb_sha256": "2264af8c3fb7f53ab2f09d6178c083af46004eea95f2af5bf6c7a4f1950a5cc5",
+  "CPL_top_records_verified_xy_rotation": 72,
+  "cam_plated_drills_vs_native_count": 225,
+  "both_sides_minimum_annulus_and_hole_to_smd_pad_mm_ref_pad_side": [
+    0.092444,
+    0.202444,
+    "R17",
+    "1",
+    "F.Cu"
+  ],
+  "via_drill_smd_land_intersections_both_sides": []
+}

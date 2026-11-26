@@ -1,0 +1,11 @@
+# Rev 3L · 65 × 30 mm routing study
+
+**Incomplete electrical layout. Do not fabricate.** Open design/GEA-Adapter-Rev3L.kicad_pro to see the furthest routing pass. All 72 fitted parts remain on top. Capacitors, protection devices, the RJ45, both module sockets, J7, both mounting holes and the service links share the Rev 3K parts list. Moving only unpopulated probe pads to the underside frees front-side area. The plated through-hole service pads still reserve both copper faces and were placed clear of fitted bodies. Probe access needs the carrier out of its case.
+
+This design occupies 1,950 mm², 12.95% less than 3K and about 18.6% more than FirstBuild. The initial all-front packing study left 20 of 88 component groups unplaced. A trial assigning probe footprints to the back, followed by constrained packing and exact physical pad checks, fits all footprints. The pre-routing native board is retained in evidence/unrouted-placement and its ERC, parity and placement-DRC evidence are included. Every electrical pad matches the parent circuit. Keep the original pin and bus behavior if refining it.
+
+The initial placement has 128 unrouted items. The best routed native checkpoint has **32 open connections and 94 DRC violations**, including 77 copper-clearance violations. Power and return paths remain open. Thermal spokes and silkscreen also need work. The next floorplan should keep each protection IC with its input capacitor, clamp, programming resistors and ground via, and reserve a continuous return beneath the power routes before packing the remaining passives. The 3K case does not fit this board.
+
+**Factory handling is unresolved.** Of the 72 fitted bodies, 29 screen within 2.5 mm of the edge using the manufacturer jack/socket dimensions and package fabrication outlines for the others. The intentional jack overhang is 0.38 mm. See evidence/component-body-edge.csv. Confirm which removable tooling and through-hole operations are compatible with five single, lead-free Economic assemblies. There is no quoted cost or manufacturing file set for this routing study. Use 3K for the prototype review.
+
+The [top assembly map](evidence/top-assembly-map.svg) labels every fitted body by designator in PCB coordinates. Probe pads and mounting holes are also shown.
