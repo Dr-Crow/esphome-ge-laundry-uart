@@ -417,7 +417,7 @@
       "bom": "pcb/rev3e/manufacturing/BOM-GEA-Adapter-Rev3E.csv",
       "cpl": "pcb/rev3e/manufacturing/CPL-GEA-Adapter-Rev3E.csv",
       "archive": "pcb/rev3e/manufacturing/GERBER-GEA-Adapter-Rev3E.zip",
-      "status": "Rev3E candidate: Rev3D plus PIN3 overvoltage lockout (Q1/R45/R37, TI Fig. 8-13 option 2), SRV05-4 data-line ESD array replacing BAV99 clamps, R47 5 V debug link, TP12, optional C30 bulk; release qualification blocked",
+      "status": "Rev3E as-quoted probe-pad board (TP13-TP18 bring-up pads): Rev3D plus PIN3 overvoltage lockout (Q1/R45/R37, TI Fig. 8-13 option 2), SRV05-4 data-line ESD array replacing BAV99 clamps, R47 5 V debug link, TP12, optional C30 bulk; manufacturing zip regenerated with pinned KiCad 9.0.9 (quoted 9.0.2 zip archived under validation/as-quoted); release qualification blocked",
       "design_rules": "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_dru",
       "library_tables": [
         "pcb/rev3e/design/fp-lib-table",
@@ -457,7 +457,7 @@
       },
       "cpl_centroid_policy": {
         "evidence": "pcb/rev3e/validation/placement-origin-review.json",
-        "sha256": "0a6d340001d59e07a0d8b5eec42108fa81bfcbef4cb296e1c9560743447aa8d1",
+        "sha256": "c6fc279d2ad5a5608d43d290e7c59ae991bcbfab212621b96d2a2f1183871c44",
         "required_references": [
           "J1"
         ]

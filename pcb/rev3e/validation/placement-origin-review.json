@@ -2,9 +2,9 @@
   "source_reference_commit": "87c93d249b641d8abe0ecabc039018aa60343f8c",
   "source_sha256": {
     "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_dru": "0a47b92aa8ba5053c67de458c9edfcabf2ed2b040c2dc5f726a8e1b390ffd421",
-    "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_pcb": "689b8018ba6eda4ab3affcd054dbbdd8fa1b1458c5bb0a2f22a6ff1497dd8726",
+    "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_pcb": "e8716943b1592e1db04d44629961b07b5542274b1f697e51494bfff88f046313",
     "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_pro": "9cd9a9e7b2493886041bc45dc194847ab6c04fda3182ada7e555def3af1465d3",
-    "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_sch": "9486359c61a5f8d22284c4c70e24136931c921efcb5ea9f80f69144f15f0cbc7",
+    "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_sch": "ea7c72f9e8ec995da9f32ef4fa83f1d640d2850784460d5d98d641aaa4b06d5f",
     "pcb/rev3e/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod": "aacc36540766be36302443fa89092423e977debb3032dd61d925a3258fb4472d",
     "pcb/rev3e/design/footprints/GEA_Rev3D.pretty/TI_RPW0010A_VQFN-HR-10_2x2mm.kicad_mod": "b17121a2956a351655db80ea22bce919f9f2fc758f88bd4e3754c6bcc13a2722",
     "pcb/rev3e/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": "7dc6debf533caab0abfa2a13fe5aa7732ec1b99ee2dafb986edabb74ff39b6bc",
