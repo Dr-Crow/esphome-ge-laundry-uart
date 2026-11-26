@@ -1,5 +1,5 @@
 {
-  "source_reference_commit": "87c93d249b641d8abe0ecabc039018aa60343f8c",
+  "source_reference_commit": "a6a0bf61548c499ecddfd4ae857c4d306d72df1e",
   "source_sha256": {
     "pcb/rev3e/design/models/J1-EVERCOM-5301-8P8C-envelope.step": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
     "pcb/rev3e/design/models/RJ45_EVERCOM_5301-8P8C-RevA-drawing-detail.step": "2dd0fad1b3f731095d418325b7213b68477a9fc6b63a950a9d7fed368039e809",
@@ -8,21 +8,21 @@
     "pcb/rev3e/design/models/U.FL_Hirose_U.FL-R-SMT-1_Vertical-kicad-9.0.9.step": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
     "pcb/rev3e/design/models/VQFN-10_L2.0-W2.0-P0.45-TL.step": "0025f1dedc381f5f41c45293bb158eed1acdcfda3c3bba5184aa83503f3e1576",
     "pcb/rev3e/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80",
-    "pcb/rev3h/design/GEA-Adapter-Rev3H.kicad_dru": "0a47b92aa8ba5053c67de458c9edfcabf2ed2b040c2dc5f726a8e1b390ffd421",
-    "pcb/rev3h/design/GEA-Adapter-Rev3H.kicad_pcb": "9e42fb13d9c7ec79316f2304bb3c406b4a7b5e84a9e8059c5d43735f26d18e9b",
-    "pcb/rev3h/design/GEA-Adapter-Rev3H.kicad_pro": "cc7fc0ad3a16ea7b4de452579fadd022e85d2a06d43da76ca955cb3e1110ff02",
-    "pcb/rev3h/design/GEA-Adapter-Rev3H.kicad_sch": "859406735ec5121695683c9faf1fd5f7e868f12f2c122ae6adc9c4366d9c75d9",
-    "pcb/rev3h/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod": "5542b78b475dfaa42b05178367e0805fd871109fa88f4ab91ea12b233a757466",
-    "pcb/rev3h/design/footprints/GEA_Rev3D.pretty/TI_RPW0010A_VQFN-HR-10_2x2mm.kicad_mod": "e5e8949095e1568fcc4edec04e20afb15c70b87c299030af6a782c81e26db0a2",
-    "pcb/rev3h/design/footprints/GEA_Service.pretty/ServiceLink_NC_P2.54mm.kicad_mod": "928f9f09f6568fb8a518973d155bcb1193b24306dabee99f66ee0e511b145c86",
-    "pcb/rev3h/design/footprints/GEA_Service.pretty/SignalLink_NC_P1.8mm.kicad_mod": "252bdd6fa50a0a3df462ea5e503b6da0260e9c089ba693eccbaf3650f693de53",
-    "pcb/rev3h/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": "113ecbab7d8bfcf76d9907aa3f845dd6ce18c6e7d4262b97a251cbc8f648c4fa",
-    "pcb/rev3h/design/fp-lib-table": "3c05c5e6299d51f2334f3104e776c16f1d0f0e60376540abc84326abc6bee959",
-    "pcb/rev3h/design/sym-lib-table": "ca53eb30338769d707e2186368e5d6b980962ce1a310a71907a41116fe1f18ac",
-    "pcb/rev3h/design/symbols/GEA_Rev3B.kicad_sym": "da13a21843a34f4b7de0930c5781151c5b681cc78f5aad3714abd96f97335a60",
-    "pcb/rev3h/design/symbols/GEA_Rev3C.kicad_sym": "3d522e6b90c809e0295d1ef111abc87245dbafe8bc0ce0169acd0cc39f9011a0",
-    "pcb/rev3h/design/symbols/GEA_Rev3D.kicad_sym": "f787048736662e361b9452d8977ae3d72d805ece5a718a12fcf6e68cd44f8398",
-    "pcb/rev3h/design/symbols/onionStraws.kicad_sym": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c"
+    "pcb/rev3i/design/GEA-Adapter-Rev3I.kicad_dru": "0a47b92aa8ba5053c67de458c9edfcabf2ed2b040c2dc5f726a8e1b390ffd421",
+    "pcb/rev3i/design/GEA-Adapter-Rev3I.kicad_pcb": "a971f29bcab73250cb728bed42f144128b3d33cacdfcfe264831d71f35b62704",
+    "pcb/rev3i/design/GEA-Adapter-Rev3I.kicad_pro": "77fb440c6ea10ff6bcc18af68af47ca147b33c35f95fed174b2beee92aa059f9",
+    "pcb/rev3i/design/GEA-Adapter-Rev3I.kicad_sch": "418aff033c7d32916a7d05442c8b625b1d6cb2811f8a24efe48405f27051fc59",
+    "pcb/rev3i/design/footprints/GEA_Rev3C.pretty/Socket_1x07_P2.54mm_HCTL_PM254.kicad_mod": "5542b78b475dfaa42b05178367e0805fd871109fa88f4ab91ea12b233a757466",
+    "pcb/rev3i/design/footprints/GEA_Rev3D.pretty/TI_RPW0010A_VQFN-HR-10_2x2mm.kicad_mod": "e5e8949095e1568fcc4edec04e20afb15c70b87c299030af6a782c81e26db0a2",
+    "pcb/rev3i/design/footprints/GEA_Service.pretty/ServiceLink_NC_P2.54mm.kicad_mod": "928f9f09f6568fb8a518973d155bcb1193b24306dabee99f66ee0e511b145c86",
+    "pcb/rev3i/design/footprints/GEA_Service.pretty/SignalLink_NC_P1.8mm.kicad_mod": "252bdd6fa50a0a3df462ea5e503b6da0260e9c089ba693eccbaf3650f693de53",
+    "pcb/rev3i/design/footprints/OnionStraws.pretty/RJ45_EVERCOM_5301-8P8C_Horizontal.kicad_mod": "113ecbab7d8bfcf76d9907aa3f845dd6ce18c6e7d4262b97a251cbc8f648c4fa",
+    "pcb/rev3i/design/fp-lib-table": "3c05c5e6299d51f2334f3104e776c16f1d0f0e60376540abc84326abc6bee959",
+    "pcb/rev3i/design/sym-lib-table": "ca53eb30338769d707e2186368e5d6b980962ce1a310a71907a41116fe1f18ac",
+    "pcb/rev3i/design/symbols/GEA_Rev3B.kicad_sym": "da13a21843a34f4b7de0930c5781151c5b681cc78f5aad3714abd96f97335a60",
+    "pcb/rev3i/design/symbols/GEA_Rev3C.kicad_sym": "3d522e6b90c809e0295d1ef111abc87245dbafe8bc0ce0169acd0cc39f9011a0",
+    "pcb/rev3i/design/symbols/GEA_Rev3D.kicad_sym": "f787048736662e361b9452d8977ae3d72d805ece5a718a12fcf6e68cd44f8398",
+    "pcb/rev3i/design/symbols/onionStraws.kicad_sym": "ebd24c573f771cb448027e81c2b5e4eaac231ba4369881cfe909d74c7323d12c"
   },
   "references": {
     "J1": {
@@ -53,7 +53,6 @@
     }
   },
   "supplier_qualification": "Blocked; nominal body datum only; no actual supplier zero/orientation/process/placement approval.",
-  "source_rebind_note": "Rev3H keeps the Rev3C/Rev3D/Rev3E/Rev3G J1 footprint, native anchor, rotation and EVERCOM manufacturer datum unchanged (checked against the exported Rev3H position file when this receipt was generated). Rev3H changes are the J7 bus-monitor header with R48-R50 and C16/C17 to C12891; this receipt rebinds the unchanged J1 datum to the Rev3H source hashes.",
-  "candidate_board_sha256": "2f394a1174c3cd103a384dfa40c458ab71606c081f3580b9a242d767f874af75",
-  "compact_note": "The candidate retains the same J1 footprint, rotation, native origin and manufacturer body center. See the all-reference CPL comparison in design-comparison.json. Source hashes below refer to upstream references."
+  "source_rebind_note": "Rev 3I retains the reviewed J1 native anchor, rotation and manufacturer body datum. source_sha256 covers this exact revision and its dependencies.",
+  "candidate_board_sha256": "a971f29bcab73250cb728bed42f144128b3d33cacdfcfe264831d71f35b62704"
 }

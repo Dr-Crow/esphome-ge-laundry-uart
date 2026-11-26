@@ -1,6 +1,6 @@
 {
   "native_baseline_sha256": "9e42fb13d9c7ec79316f2304bb3c406b4a7b5e84a9e8059c5d43735f26d18e9b",
-  "native_candidate_sha256": "2f394a1174c3cd103a384dfa40c458ab71606c081f3580b9a242d767f874af75",
+  "native_candidate_sha256": "a971f29bcab73250cb728bed42f144128b3d33cacdfcfe264831d71f35b62704",
   "logical_nets_matched": 59,
   "footprints_matched": 98,
   "track_and_via_identifiers_types_nets_layers_widths_matched": 680,
@@ -18,5 +18,7 @@
     "In1.Cu": 0.0152,
     "In2.Cu": 0.0152,
     "B.Cu": 0.035
-  }
+  },
+  "silkscreen_review": "Warning on F.SilkS, horizontal at (15.5,36) mm. Original 3I warning lay wholly outside the outline.",
+  "board_object_identifiers": "All board object UUIDs unique, including R48/R49/R50 and their children."
 }

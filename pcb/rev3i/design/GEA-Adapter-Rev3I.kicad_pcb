@@ -11975,6 +11975,205 @@
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
+		(uuid "a86e2401-307d-5b92-b593-b2cdca258fdb")
+		(at 64.951689 8.74 180)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "resistor")
+		(property "Reference" "R49"
+			(at 0 -1.43 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "464f42ce-3085-5da4-ab49-e669d21a0fa8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 0 1.43 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da4deab0-4ad7-5210-a5f6-1719a19f0732")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe8c4005-0fcf-50b7-b0ee-dcd69c289a05")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Bus monitor series resistor (G3IN appliance to module): isolates the J7 tap from the 3.3 V buffer net"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7c9a909-cee7-59b0-89db-bab1cb3fac81")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc07e8c6-6b80-4d18-b5ac-1be4795f96c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f2b4d62-19cd-4835-b864-58fdecb71f67")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e95fc66-69ab-42c4-911f-56ba90916798")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sheetname" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45bc39cd-7297-4897-962b-d980cff22622")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sheetfile" "GEA-Adapter-Rev3I.kicad_sch"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d9f4716-3d2e-494f-9ad7-1a46578e77b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/9d28ff4e-8803-43a4-83f7-1fea79e472f5")
+		(sheetfile "GEA-Adapter-Rev3I.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "710551a5-11cb-5a61-9bc6-cafec9bc5dda")
+		)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8062c1a1-51bd-5ab5-baeb-cf680c9bfeab")
+		)
+		(fp_rect
+			(start -1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "0d7c50f4-f5aa-52b8-8645-850ad5582fb4")
+		)
+		(fp_rect
+			(start -0.8 -0.4125)
+			(end 0.8 0.4125)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "fcc4ca45-89d2-5e33-b878-61b682c6a41a")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(uuid "27d86831-9222-546b-a352-4fc5f579c9d4")
+			(effects
+				(font
+					(size 0.4 0.4)
+					(thickness 0.06)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.825 0 180)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 11 "GEA3_TX")
+			(uuid "926c40b6-9a72-5c5a-a1c0-026d931be0d5")
+		)
+		(pad "2" smd roundrect
+			(at 0.825 0 180)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 58 "Net-(J7-Pin_3)")
+			(uuid "aaf819b1-d138-5cf6-8dea-6a641e7346f4")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0603_1608Metric"
+		(layer "F.Cu")
 		(uuid "b135b5d4-7dea-4e5d-8819-735a9839b81e")
 		(at 64.951689 11.28 180)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
@@ -12174,206 +12373,7 @@
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
-		(uuid "b135b5d4-7dea-4e5d-8819-735a9839b81e")
-		(at 64.951689 8.74 180)
-		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
-		(tags "resistor")
-		(property "Reference" "R49"
-			(at 0 -1.43 180)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "e9f8af11-6f6d-44a5-9258-29b22bdab0b8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 0 1.43 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ea2f4c7f-60fb-4ebe-9818-d252ebaef62f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1097c36c-f8fb-4497-9f16-6b457c4f61e9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Bus monitor series resistor (G3IN appliance to module): isolates the J7 tap from the 3.3 V buffer net"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8f1e0b8d-c7e7-4cd1-9f30-7e3ba0ed9807")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C21190"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fc07e8c6-6b80-4d18-b5ac-1be4795f96c8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3f2b4d62-19cd-4835-b864-58fdecb71f67")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MPN" "0603WAF1001T5E"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2e95fc66-69ab-42c4-911f-56ba90916798")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sheetname" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "45bc39cd-7297-4897-962b-d980cff22622")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sheetfile" "GEA-Adapter-Rev3I.kicad_sch"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8d9f4716-3d2e-494f-9ad7-1a46578e77b4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/9d28ff4e-8803-43a4-83f7-1fea79e472f5")
-		(sheetfile "GEA-Adapter-Rev3I.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -0.237258 0.5225)
-			(end 0.237258 0.5225)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "dcbe0996-0f16-450e-b42f-6099edce9ecc")
-		)
-		(fp_line
-			(start -0.237258 -0.5225)
-			(end 0.237258 -0.5225)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "1e6f9a1c-f90f-438d-b437-e398c89ba1d7")
-		)
-		(fp_rect
-			(start -1.48 -0.73)
-			(end 1.48 0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "31aa8bac-0973-465f-8776-2f8d2befaee2")
-		)
-		(fp_rect
-			(start -0.8 -0.4125)
-			(end 0.8 0.4125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "d25d78d0-996e-4a49-bcd8-055cd65b03bb")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(uuid "85169e89-f7cb-4974-813e-014304b08d55")
-			(effects
-				(font
-					(size 0.4 0.4)
-					(thickness 0.06)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.825 0 180)
-			(size 0.8 0.95)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 11 "GEA3_TX")
-			(uuid "e0219734-cc90-49d1-bdac-79fd008c548f")
-		)
-		(pad "2" smd roundrect
-			(at 0.825 0 180)
-			(size 0.8 0.95)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 58 "Net-(J7-Pin_3)")
-			(uuid "19615d6b-3ece-4cdb-a256-bdcac1d1a91f")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Resistor_SMD:R_0603_1608Metric"
-		(layer "F.Cu")
-		(uuid "b135b5d4-7dea-4e5d-8819-735a9839b81e")
+		(uuid "58e9000b-50df-5e94-a413-9095e8cae47d")
 		(at 64.951689 6.2 180)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
@@ -12381,7 +12381,7 @@
 			(at 0 -1.43 180)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "e9f8af11-6f6d-44a5-9258-29b22bdab0b8")
+			(uuid "c91fa6b9-a84f-5525-a30e-b6d031d77304")
 			(effects
 				(font
 					(size 1 1)
@@ -12393,7 +12393,7 @@
 			(at 0 1.43 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ea2f4c7f-60fb-4ebe-9818-d252ebaef62f")
+			(uuid "438d06bf-aa0b-5f12-9ba4-0d19fe68fa62")
 			(effects
 				(font
 					(size 1 1)
@@ -12405,7 +12405,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1097c36c-f8fb-4497-9f16-6b457c4f61e9")
+			(uuid "176d86fb-5974-5467-b22b-4fc190abc67f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12417,7 +12417,7 @@
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8f1e0b8d-c7e7-4cd1-9f30-7e3ba0ed9807")
+			(uuid "659800c1-75cf-563e-85f4-734ebc6602d9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12496,7 +12496,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "dcbe0996-0f16-450e-b42f-6099edce9ecc")
+			(uuid "96d015a6-d0ac-586a-9c18-a35a9f475b7e")
 		)
 		(fp_line
 			(start -0.237258 -0.5225)
@@ -12506,7 +12506,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1e6f9a1c-f90f-438d-b437-e398c89ba1d7")
+			(uuid "40052572-e83d-591c-bc84-ea692a77b4f8")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -12517,7 +12517,7 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "31aa8bac-0973-465f-8776-2f8d2befaee2")
+			(uuid "35478df0-628f-56aa-921a-a49af74b4299")
 		)
 		(fp_rect
 			(start -0.8 -0.4125)
@@ -12528,12 +12528,12 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "d25d78d0-996e-4a49-bcd8-055cd65b03bb")
+			(uuid "620dae29-d249-5692-9cd5-06402e4e9fd1")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 180)
 			(layer "F.Fab")
-			(uuid "85169e89-f7cb-4974-813e-014304b08d55")
+			(uuid "e2c1cac7-450d-549d-a229-975ecf850574")
 			(effects
 				(font
 					(size 0.4 0.4)
@@ -12547,7 +12547,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 10 "GEA3_RX")
-			(uuid "e0219734-cc90-49d1-bdac-79fd008c548f")
+			(uuid "e64c45f9-b55d-5782-82ee-839a2e5a8146")
 		)
 		(pad "2" smd roundrect
 			(at 0.825 0 180)
@@ -12555,7 +12555,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 59 "Net-(J7-Pin_4)")
-			(uuid "19615d6b-3ece-4cdb-a256-bdcac1d1a91f")
+			(uuid "1deb849a-4357-500f-bbcb-eb26392f295c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
@@ -17683,10 +17683,10 @@
 			)
 		)
 	)
-	(gr_text "3I PROTO"
-		(at 56.13165 3 0)
+	(gr_text "UNPLUG RJ45 BEFORE USB"
+		(at 15.5 36 0)
 		(layer "F.SilkS")
-		(uuid "09b69d9d-7419-4d78-91b5-5e93163315d1")
+		(uuid "6e6d9593-2347-456a-aefa-ba571c840b54")
 		(effects
 			(font
 				(size 1 1)
@@ -17694,10 +17694,10 @@
 			)
 		)
 	)
-	(gr_text "UNPLUG RJ45 BEFORE USB"
-		(at 94.82054 27.4 90)
+	(gr_text "3I PROTO"
+		(at 56.13165 3 0)
 		(layer "F.SilkS")
-		(uuid "6e6d9593-2347-456a-aefa-ba571c840b54")
+		(uuid "09b69d9d-7419-4d78-91b5-5e93163315d1")
 		(effects
 			(font
 				(size 1 1)

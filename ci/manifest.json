@@ -615,6 +615,57 @@
           "J1"
         ]
       }
+    },
+    "rev3i": {
+      "source": "pcb/rev3i/design/GEA-Adapter-Rev3I",
+      "bom": "pcb/rev3i/manufacturing/BOM-GEA-Adapter-Rev3I.csv",
+      "cpl": "pcb/rev3i/manufacturing/CPL-GEA-Adapter-Rev3I.csv",
+      "archive": "pcb/rev3i/manufacturing/CAM-GEA-Adapter-Rev3I-review.zip",
+      "status": "Rev 3I compact hardware prototype, 90.13 \u00d7 40 mm with Basic C9 and 0.5 oz inner copper. Electrical and physical qualification remains open.",
+      "design_rules": "pcb/rev3i/design/GEA-Adapter-Rev3I.kicad_dru",
+      "library_tables": [
+        "pcb/rev3i/design/fp-lib-table",
+        "pcb/rev3i/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/ALT_PWR": "Power",
+        "/BUCK_5V": "Power",
+        "/BUCK_BST": "Switching",
+        "/BUCK_SW": "Switching",
+        "/D11_K": "Power",
+        "/V_INPUT": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.25,
+        "Switching": 0.3
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "Input startup, eFuse handoff, weak-supply margin, module resets and USB backfeed require isolated bench measurements of this hardware. Inner copper and C9 are simulation-screened."
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Physical qualification of the final compact case, C3/C6 fit, probe access, antenna and factory assembly remains open."
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Physical qualification of the final compact case, C3/C6 fit, probe access, antenna and factory assembly remains open."
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev3i/manufacturing/placement-origin-review.json",
+        "sha256": "31452f65e48e8163cce9694819ee45b39d0edd00f1de08bc1de8af1df135161a",
+        "required_references": [
+          "J1"
+        ]
+      }
     }
   },
   "firmware": [
