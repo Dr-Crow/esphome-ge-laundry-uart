@@ -1,0 +1,22 @@
+{
+  "nets": 55,
+  "pin_memberships": 216,
+  "identical_exported_net_pin_sets": true,
+  "populated": 69,
+  "baseline_unique_skus": 32,
+  "candidate_unique_skus": 31,
+  "CPL_exact_quoted_bytes": true,
+  "all_board_footprint_positions_rotations_and_sides_unchanged": true,
+  "all_zone_boundaries_and_keepout_flags_equal": true,
+  "origin_override": "J1 body center from traced Rev 3E receipt",
+  "BOM_changed": [
+    "C1",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C12",
+    "C14"
+  ]
+}

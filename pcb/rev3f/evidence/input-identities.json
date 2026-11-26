@@ -1,0 +1,40 @@
+{
+  "as_quoted": {
+    "source_archive": "Rev3E-probe-pads-review.zip",
+    "archive_sha256": "388c968ded9360f3c055ac3c00e15bd130e05aa3b00f60142a86be047196010e",
+    "files": {
+      "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_dru": "0a47b92aa8ba5053c67de458c9edfcabf2ed2b040c2dc5f726a8e1b390ffd421",
+      "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_pcb": "e8716943b1592e1db04d44629961b07b5542274b1f697e51494bfff88f046313",
+      "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_pro": "9cd9a9e7b2493886041bc45dc194847ab6c04fda3182ada7e555def3af1465d3",
+      "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_sch": "ea7c72f9e8ec995da9f32ef4fa83f1d640d2850784460d5d98d641aaa4b06d5f",
+      "pcb/rev3e/manufacturing/BOM-GEA-Adapter-Rev3E.csv": "f33a44678766fc2c1c54dc60b9990edde1ef8319110114325dc0690c90e0599f",
+      "pcb/rev3e/manufacturing/CPL-GEA-Adapter-Rev3E.csv": "7eb98361e1433bae70d847cbfbb1f075fbef3454e121ba8c46cb595002205536",
+      "pcb/rev3e/manufacturing/GERBER-GEA-Adapter-Rev3E.zip": "5dee78db1b0f063ca466b24a3e38bc04b384d9f8ef3ac13e3cd4ee561787cff2"
+    }
+  },
+  "labeled_preflight": {
+    "source_archive": "Rev3E-prototype-preflight-review.zip",
+    "archive_sha256": "f80ce0820335691b39d99e9d42b44673aad65b302d4d3020279df933e0291a6a",
+    "files": {
+      "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_dru": "0a47b92aa8ba5053c67de458c9edfcabf2ed2b040c2dc5f726a8e1b390ffd421",
+      "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_pcb": "af5ac25f2d90386e9839136fdb6057eabe55a13371bffb57a84a7091d8325ffc",
+      "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_pro": "9cd9a9e7b2493886041bc45dc194847ab6c04fda3182ada7e555def3af1465d3",
+      "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_sch": "ea7c72f9e8ec995da9f32ef4fa83f1d640d2850784460d5d98d641aaa4b06d5f",
+      "pcb/rev3e/manufacturing/BOM-GEA-Adapter-Rev3E.csv": "f33a44678766fc2c1c54dc60b9990edde1ef8319110114325dc0690c90e0599f",
+      "pcb/rev3e/manufacturing/CPL-GEA-Adapter-Rev3E.csv": "7eb98361e1433bae70d847cbfbb1f075fbef3454e121ba8c46cb595002205536",
+      "pcb/rev3e/manufacturing/GERBER-GEA-Adapter-Rev3E.zip": "1c3b21d6273d660b85928183d6e3403b1be949f42c37822adf809d33f74ee25e"
+    }
+  },
+  "input_working_copies": {
+    "copper-study/refill--0.6/GEA-Adapter-Rev3E.kicad_pcb": "492e7bb754593afdce91e6417ed3f8b3c4a826cc75b57f169f8e2ddd20f83711",
+    "copper-study/refill-0.0/GEA-Adapter-Rev3E.kicad_pcb": "6607966f45c2ec8f46a59d94be099d88da0d6ee10ae93a2243c00bf4fb0a02c3"
+  },
+  "final_board_sha256": "023dd58b5d61d78ba01a1af2627c19f45c7807842e6551b202099ec8b208a6c1",
+  "toolchain": {
+    "CLI": "9.0.9",
+    "board_engine": "9.0.9.1",
+    "AppImage_SHA256": "48c687fe66409b681ea6e2141fb9b63414cd96fd8958d9aa40e14996377612c9",
+    "source": "https://kicad-downloads.s3.cern.ch/appimage/stable/kicad-9.0.9.1-x86_64-lite.AppImage.tar",
+    "libraries": "bundled symbols and footprints; project-local symbols/footprints also included"
+  }
+}

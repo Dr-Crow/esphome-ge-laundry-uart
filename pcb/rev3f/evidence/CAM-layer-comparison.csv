@@ -1,0 +1,14 @@
+layer (Gerbonara),quoted objects,3F objects,quoted vs fresh 3E identical vector rendering or drill hits,fresh 3E vs 3F identical vector rendering or drill hits
+bottom copper,176,177,True,False
+bottom mask,29,29,True,False
+bottom paste,0,0,True,True
+bottom silk,104,104,True,False
+inner_1 copper,122,123,True,False
+inner_2 copper,252,253,True,False
+mechanical outline,4,4,True,True
+top copper,716,718,True,False
+top mask,220,220,True,False
+top paste,170,174,True,False
+top silk,1218,1474,True,False
+drill_pth,121,122,True,False
+drill_npth,4,4,True,True

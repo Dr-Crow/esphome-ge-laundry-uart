@@ -1,0 +1,96 @@
+--- quoted-board
++++ preflight-board
+@@ -154,8 +154,8 @@
+ 			(uuid "05e5c6e1-c3a5-53aa-ae0f-34337332ace3")
+ 			(effects
+ 				(font
+-					(size 0.8 0.8)
+-					(thickness 0.12)
++					(size 1 1)
++					(thickness 0.15)
+ 				)
+ 			)
+ 		)
+@@ -252,8 +252,8 @@
+ 			(uuid "5c9b6b91-f1ec-53c6-a4e0-b37c07eedf4a")
+ 			(effects
+ 				(font
+-					(size 0.8 0.8)
+-					(thickness 0.12)
++					(size 1 1)
++					(thickness 0.15)
+ 				)
+ 				(justify mirror)
+ 			)
+@@ -355,8 +355,8 @@
+ 			(uuid "8359e428-0070-521f-b10c-4ee3f14c3a27")
+ 			(effects
+ 				(font
+-					(size 0.8 0.8)
+-					(thickness 0.12)
++					(size 1 1)
++					(thickness 0.15)
+ 				)
+ 			)
+ 		)
+@@ -441,7 +441,7 @@
+ 			(net 14 "GND")
+ 			(uuid "a5a9264c-94d1-5d07-940d-aa3bad9aff01")
+ 		)
+-		(fp_text user "TP15" (at 0 1.7) (layer "B.SilkS") (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)) (uuid "fe0299ed-1400-58b9-90be-1041a926a42b"))
++		(fp_text user "TP15" (at 0 1.7) (layer "B.SilkS") (effects (font (size 1 1) (thickness 0.15)) (justify mirror)) (uuid "fe0299ed-1400-58b9-90be-1041a926a42b"))
+ 		(embedded_fonts no)
+ 	)
+ 	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
+@@ -456,8 +456,8 @@
+ 			(uuid "218d1a20-7958-5e6e-a073-78c1892101e4")
+ 			(effects
+ 				(font
+-					(size 0.8 0.8)
+-					(thickness 0.12)
++					(size 1 1)
++					(thickness 0.15)
+ 				)
+ 			)
+ 		)
+@@ -549,13 +549,13 @@
+ 		(descr "SMD pad as test Point, diameter 1.0mm")
+ 		(tags "test point SMD pad")
+ 		(property "Reference" "TP17"
+-			(at 2.15 0 0)
++			(at 2.65 0 0)
+ 			(layer "F.SilkS")
+ 			(uuid "eed81176-7fa8-5827-8fba-68caa7b013ce")
+ 			(effects
+ 				(font
+-					(size 0.8 0.8)
+-					(thickness 0.12)
++					(size 1 1)
++					(thickness 0.15)
+ 				)
+ 			)
+ 		)
+@@ -652,8 +652,8 @@
+ 			(uuid "9dd6efe7-da0d-5c97-b884-39baf4dcf650")
+ 			(effects
+ 				(font
+-					(size 0.8 0.8)
+-					(thickness 0.12)
++					(size 1 1)
++					(thickness 0.15)
+ 				)
+ 				(justify mirror)
+ 			)
+@@ -16329,6 +16329,12 @@
+ 				(thickness 0.12)
+ 			)
+ 		)
++	)
++	(gr_text "UNPLUG RJ45 BEFORE USB"
++		(at 98.15 27.4 90)
++		(layer "F.SilkS")
++		(uuid "6e6d9593-2347-456a-aefa-ba571c840b54")
++		(effects (font (size 1 1) (thickness 0.15)))
+ 	)
+ 	(gr_text "USB SIDE"
+ 		(at 97.3 12.9 90)

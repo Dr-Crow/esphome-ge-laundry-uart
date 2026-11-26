@@ -1,0 +1,12 @@
+layer,equivalence at 30 pixels/mm,difference bounding box in image px
+bottom copper,same,
+bottom mask,same,
+bottom paste,same,
+bottom silk,different,"(1459, 686, 1771, 865)"
+inner_1 copper,same,
+inner_2 copper,different,"(470, 194, 2741, 1220)"
+mechanical outline,same,
+top copper,different,"(878, 468, 2872, 1170)"
+top mask,different,"(886, 473, 2864, 1162)"
+top paste,different,"(886, 403, 2864, 1162)"
+top silk,different,"(650, 101, 2991, 1164)"
