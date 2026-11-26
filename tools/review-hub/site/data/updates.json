@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-11-26",
+  "rev": "rev3h",
+  "title": "Audit of Rev 3E as-quoted, 3F and 3G; Rev 3H added (review branch, not pushed)",
+  "text": "Independent audit of the as-quoted Rev 3E, Rev 3F and Rev 3G: ERC/DRC clean on pinned KiCad 9.0.9, netlists and BOM/CPL as described, quote arithmetic correct. Fixed: the as-quoted Gerber job file numbered the inner layers L5/L7 (regenerated with 9.0.9, artwork identical; quoted zip archived); Rev 3F/3G registered in CI; fee ledger now the 8 SMT extended parts the quote charged; bench-plan and service-page corrections. Rev 3H adds the J7 3.3 V listen-only bus monitor header and moves C16/C17 to a basic part; its base adds pin-tail pockets (3.5 mm) because the old base leaves only 1.25 mm under the board. Details: docs/reviews/2026-11-26-audit-and-integration.md."
+ },
+ {
   "date": "2026-11-24",
   "rev": "rev3e",
   "title": "Rev3E: bus monitor header, two more basic swaps, lid labels (not pushed)",
