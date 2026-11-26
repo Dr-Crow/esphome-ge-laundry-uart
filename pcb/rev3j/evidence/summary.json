@@ -1,0 +1,16 @@
+{
+  "parent_rev3i_commit": "d67937524d98449e3d1d1b75bcf4cefdbac733b2",
+  "study_board_sha256": "c10889110584ce430520e20d5a938f8e9b693de74c423fadd95d20551afa0fec",
+  "outline_mm": [
+    90.13165,
+    37.94012
+  ],
+  "assembly": {
+    "top": 72,
+    "bottom": 0,
+    "unique_BOM_codes": 32
+  },
+  "gates": [
+    "Factory assembly, printed case and module fit, board-level power, ground, thermal and EMI measurements, USB backfeed and both-input qualification."
+  ]
+}

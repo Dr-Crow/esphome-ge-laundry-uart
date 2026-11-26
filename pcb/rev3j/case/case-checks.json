@@ -1,0 +1,72 @@
+{
+  "case_frame": "physical y = 39.45 - PCB y, x unchanged; board bottom z = 3.65",
+  "units": "mm",
+  "post_centers": {
+    "H1": [
+      4.5,
+      7.115500000000004
+    ],
+    "H2": [
+      85.13165,
+      5.1788799999999995
+    ]
+  },
+  "tail_free_depth": {
+    "J7": [
+      3.5,
+      3.5,
+      3.5,
+      3.5
+    ],
+    "JP3": [
+      3.5,
+      3.5
+    ],
+    "J5": [
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4
+    ],
+    "J6": [
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4
+    ],
+    "J1": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ]
+  },
+  "pcb_to_base_intersection_mm3": 0,
+  "c3": {
+    "base_overlap_mm3": 0,
+    "carrier_overlap_mm3": 0,
+    "RJ45_window_overlap_mm3": 0,
+    "min_usb_wall_over_20_rays": 2.032
+  },
+  "c6": {
+    "base_overlap_mm3": 0,
+    "carrier_overlap_mm3": 0,
+    "RJ45_window_overlap_mm3": 0,
+    "min_usb_wall_over_20_rays": 2.032
+  },
+  "outside_xyz_mm": [
+    105.1317,
+    54.0,
+    10.4
+  ]
+}
