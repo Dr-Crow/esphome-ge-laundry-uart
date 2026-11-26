@@ -1,0 +1,350 @@
+[
+ {
+  "id": "rev1.0",
+  "label": "Rev 1.0",
+  "status": "original",
+  "date": "2022-03-24",
+  "date_basis": "Gerber job file timestamp in manufacturing zip",
+  "summary": "One-input carrier for a 38-pin classic ESP32 DevKit and an external buck module; no BOM exists, so it cannot be ordered or qualified.",
+  "commit": "dd24374",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 2,
+  "size_mm": [
+   100.1,
+   50.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 61,
+  "parts_assembled": 0,
+  "unique_lcsc": null,
+  "extended": null,
+  "case": null,
+  "readme": "repo/pcb/rev1.0/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": false,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev2.0",
+  "label": "Rev 2.0",
+  "status": "superseded",
+  "date": "2025-05-22",
+  "date_basis": "Gerber/PCBA archive timestamp",
+  "summary": "First JLC-assembled ESP32-C3-WROOM-02 board with an L7805 linear 5 V rail and manual JP2 power-input selection; as-ordered resistor codes were wrong.",
+  "commit": "dd24374",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 2,
+  "size_mm": [
+   88.7,
+   30.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 73,
+  "parts_assembled": 71,
+  "unique_lcsc": 24,
+  "extended": 10,
+  "case": "rev2",
+  "readme": "repo/pcb/rev2.0/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev2.1",
+  "label": "Rev 2.1",
+  "status": "superseded",
+  "date": "2026-09-22",
+  "date_basis": "first commit in this repo; original design date not recorded",
+  "summary": "Rev 2.0 with a ground test point added; the U1 supervisor makes the ESP32 boot-loop and the board is retired.",
+  "commit": "dd24374",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 2,
+  "size_mm": [
+   88.7,
+   30.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 74,
+  "parts_assembled": 60,
+  "unique_lcsc": 24,
+  "extended": 11,
+  "case": "rev2",
+  "readme": "repo/pcb/rev2.1/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev2.2",
+  "label": "Rev 2.2",
+  "status": "superseded",
+  "date": "2026-09-22",
+  "date_basis": "first commit in this repo; original design date not recorded",
+  "summary": "Rev 2.1 with U1 left unpopulated and corrected resistor codes; still a 200 mA 3.3 V LDO and a manual jumper for input selection.",
+  "commit": "dd24374",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 2,
+  "size_mm": [
+   88.7,
+   30.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 74,
+  "parts_assembled": 59,
+  "unique_lcsc": 23,
+  "extended": 10,
+  "case": "rev2",
+  "readme": "repo/pcb/rev2.2/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev3a",
+  "label": "Rev 3A",
+  "status": "pivot option",
+  "date": "2026-10-04",
+  "date_basis": "first commit in this repo",
+  "summary": "ESP32-C3-WROOM-02 with native USB-C, AP63205 buck and automatic PIN1/PIN3 power priority; independent review rates it the best fallback with fixes.",
+  "commit": "c60f3c6",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 4,
+  "size_mm": [
+   88.8,
+   40.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 115,
+  "parts_assembled": 97,
+  "unique_lcsc": 42,
+  "extended": 26,
+  "case": null,
+  "readme": "repo/pcb/rev3a/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev3b",
+  "label": "Rev 3B",
+  "status": "pivot option",
+  "date": "2026-10-03",
+  "date_basis": "first commit in this repo",
+  "summary": "Rev 3A power chain with a Seeed XIAO ESP32-C3 soldered flat in place of the WROOM module; viable with fixes, with module-sourcing caveats.",
+  "commit": "fcbded4",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 4,
+  "size_mm": [
+   99.1,
+   40.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 102,
+  "parts_assembled": 85,
+  "unique_lcsc": 35,
+  "extended": 20,
+  "case": null,
+  "readme": "repo/pcb/rev3b/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev3c",
+  "label": "Rev 3C",
+  "status": "blocked",
+  "date": "2026-10-03",
+  "date_basis": "first commit in this repo",
+  "summary": "Socketed XIAO C3/C6 carrier with TPS1H200A input switches; blocked: U9/U10 and L1 are out of stock and a 5 V port pin leaves no margin.",
+  "commit": "1b2b342",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 4,
+  "size_mm": [
+   99.1,
+   40.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 100,
+  "parts_assembled": 83,
+  "unique_lcsc": 34,
+  "extended": 19,
+  "case": "rev3d-c3-fpc",
+  "readme": "repo/pcb/rev3c/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev3d",
+  "label": "Rev 3D",
+  "status": "superseded",
+  "date": "2026-11-22",
+  "date_basis": "first commit in this repo",
+  "summary": "Rev 3C with the power input replaced by TPS259470A eFuses and a FirstBuild-style topology; no supplier quote or bench test yet.",
+  "commit": "78ca61b",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 4,
+  "size_mm": [
+   99.1,
+   40.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 84,
+  "parts_assembled": 68,
+  "unique_lcsc": 31,
+  "extended": 16,
+  "case": "rev3d-c3-fpc",
+  "readme": "repo/pcb/rev3d/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev3e",
+  "label": "Rev 3E",
+  "status": "candidate",
+  "date": "2026-11-26",
+  "date_basis": "commit 9102917 (as-quoted probe-pad design restored; quoted 2026-11-25)",
+  "summary": "As-quoted Rev 3E with TP13-TP18 bring-up probe pads: the board behind the 2026-11-25 JLCPCB quote of $94.22 for 5 assembled boards.",
+  "commit": "9102917",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 4,
+  "size_mm": [
+   99.1,
+   40.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 93,
+  "parts_assembled": 69,
+  "unique_lcsc": 32,
+  "extended": 12,
+  "case": "rev3d-c3-fpc",
+  "readme": "repo/pcb/rev3e/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev3f",
+  "label": "Rev 3F",
+  "status": "candidate",
+  "date": "2026-11-26",
+  "date_basis": "commit 08112eb",
+  "summary": "Rev 3E with 8 regulated-rail bypass caps moved to 0603 C14663, widened In2 power traces and split eFuse paste; ChatGPT, review only.",
+  "commit": "08112eb",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 4,
+  "size_mm": [
+   99.1,
+   40.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 93,
+  "parts_assembled": 69,
+  "unique_lcsc": 31,
+  "extended": 12,
+  "case": "rev3d-c3-fpc",
+  "readme": "repo/pcb/rev3f/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev3g",
+  "label": "Rev 3G",
+  "status": "candidate",
+  "date": "2026-11-26",
+  "date_basis": "commit 790349f",
+  "summary": "Rev 3F service prototype: R47 replaced by cuttable JP3 link, JP4 GEA3 TX mute link, plated probe holes on TP4-TP7, closed-USB lids.",
+  "commit": "790349f",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 4,
+  "size_mm": [
+   99.1,
+   40.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 94,
+  "parts_assembled": 68,
+  "unique_lcsc": 30,
+  "extended": 12,
+  "case": null,
+  "readme": null,
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ },
+ {
+  "id": "rev3h",
+  "label": "Rev 3H",
+  "status": "candidate",
+  "date": "2026-11-26",
+  "date_basis": "commit 90155a9",
+  "summary": "Rev 3G plus the J7 3.3 V listen-only GEA bus monitor header and C16/C17 moved to a JLC basic part; review only.",
+  "commit": "ec3752c",
+  "commit_basis": "last commit touching the revision design/ folder",
+  "layers": 4,
+  "size_mm": [
+   99.1,
+   40.1
+  ],
+  "thickness_mm": 1.6,
+  "parts_total": 98,
+  "parts_assembled": 72,
+  "unique_lcsc": 32,
+  "extended": 12,
+  "case": null,
+  "readme": "repo/pcb/rev3h/README.md",
+  "has": {
+   "glb": true,
+   "layers": true,
+   "sch": true,
+   "cost": true,
+   "renders": true
+  }
+ }
+]

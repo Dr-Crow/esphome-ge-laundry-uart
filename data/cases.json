@@ -1,0 +1,2646 @@
+[
+ {
+  "id": "rev3d-c3-fpc",
+  "label": "Rev3D case \u00b7 C3 \u00b7 Flat antenna holder",
+  "module": "c3",
+  "antenna": "fpc",
+  "antenna_label": "Flat antenna holder",
+  "revisions": [
+   "rev3d",
+   "rev3c"
+  ],
+  "parts": [
+   {
+    "name": "Base (common)",
+    "role": "base",
+    "file": "cases/rev3d-c3-fpc/review_base.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 43m 54s",
+     "filament_m": 6.347,
+     "filament_cm3": 15.27,
+     "grams": 18.9,
+     "source": "cache/slice/rev3d-c3-fpc/review_base.gcode"
+    },
+    "bytes": 10968
+   },
+   {
+    "name": "Base, magnets: Glue-in (open pocket, flush)",
+    "role": "base",
+    "variant": "magnets-glue",
+    "magnet_style": "glue",
+    "magnet_label": "Glue-in (open pocket, flush)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c3-fpc/review_base_magnets_8x2_glue.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 12s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_glue.gcode"
+    },
+    "bytes": 15376,
+    "note": "Open-bottom pockets; glue N52 8 x 2 mm discs flush (CA or epoxy). Strongest hold. 1.3 mm skin to the cavity floor."
+   },
+   {
+    "name": "Base, magnets: Press-fit (crush ribs)",
+    "role": "base",
+    "variant": "magnets-press",
+    "magnet_style": "press",
+    "magnet_label": "Press-fit (crush ribs)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c3-fpc/review_base_magnets_8x2_press.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 20s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_press.gcode"
+    },
+    "bytes": 20652,
+    "note": "Open-bottom pockets with three 0.6 mm crush ribs (0.25 mm into the pocket); press the discs in, no glue. Hold as glue-in."
+   },
+   {
+    "name": "Base, magnets: Embedded (pause print, sealed)",
+    "role": "base",
+    "variant": "magnets-embedded",
+    "magnet_style": "embedded",
+    "magnet_label": "Embedded (pause print, sealed)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c3-fpc/review_base_magnets_8x2_embedded.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 24s",
+     "filament_m": 6.41,
+     "filament_cm3": 15.42,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_embedded.gcode"
+    },
+    "bytes": 15288,
+    "note": "Sealed pockets 0.55 mm above the bottom face. Pause BEFORE print height 2.95 mm (0.35 mm first layer, 0.2 mm layers), drop the discs in (all the same pole up), resume. Invisible; roughly a third less hold through the skin."
+   },
+   {
+    "name": "C3 lid, flat antenna holder",
+    "role": "lid",
+    "file": "cases/rev3d-c3-fpc/review_lid_c3_fpc.glb",
+    "color_hint": "#c5ccd4",
+    "print": {
+     "time": "3h 11m 23s",
+     "filament_m": 12.213,
+     "filament_cm3": 29.38,
+     "grams": 36.4,
+     "source": "cache/slice/rev3d-c3-fpc/review_lid_c3_fpc.gcode"
+    },
+    "bytes": 107524
+   },
+   {
+    "name": "Light guide: Wi-Fi",
+    "role": "guide",
+    "file": "cases/rev3d-c3-fpc/review_guide_wifi.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4136
+   },
+   {
+    "name": "Light guide: bus",
+    "role": "guide",
+    "file": "cases/rev3d-c3-fpc/review_guide_bus.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4128
+   },
+   {
+    "name": "Light guide: aux",
+    "role": "guide",
+    "file": "cases/rev3d-c3-fpc/review_guide_aux.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4044
+   },
+   {
+    "name": "Label inlay, second colour (multi-material printers)",
+    "role": "inlay",
+    "file": "cases/rev3d-c3-fpc/review_label_inlay_c3.glb",
+    "color_hint": "#3c4249",
+    "print": null,
+    "bytes": 45104
+   },
+   {
+    "name": "Flat antenna 40 x 20 mm (reference, not printed)",
+    "role": "proxy",
+    "file": "cases/rev3d-c3-fpc/proxy_fpc_antenna_40x20.glb",
+    "color_hint": "#c8742c",
+    "print": null,
+    "bytes": 1768
+   }
+  ],
+  "board_placement": {
+   "map": "Case export frame (physical, right-handed) = (x, y, z) mm with x = KiCad x, y = 40 - KiCad y (mirror about the board centreline, applied by enclosure.export() since the 2026-11-23 frame fix), z up with the board bottom at z = 3.65 (FLOOR 2.4 + PCB_STANDOFF 1.25) and the board top at z = 5.25 (interface_baseline.py). Case GLBs keep these CAD axes (z up) scaled to metres; matrix_mm maps case mm -> board-GLB mm: X = x - cx, Y = z - seat_z + board_bottom_y, Z = (40 - y) - cy. Determinant +1: a proper rotation, so the board needs no mirroring to sit in the case. Before the fix the exports used y = KiCad y (determinant -1, a mirror-image case).",
+   "verified": true,
+   "matrix_mm": [
+    [
+     1,
+     0,
+     0,
+     -49.5
+    ],
+    [
+     0,
+     0,
+     1,
+     -3.65
+    ],
+    [
+     0,
+     -1,
+     0,
+     20.0
+    ],
+    [
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "matrix_mm_by_revision": {
+    "rev3d": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "rev3c": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ]
+   },
+   "matrix_determinant": 1.0,
+   "note": "Verified by sampling: points inside the J1 body, the J5/J6 socket rows and a grid over the board plate are not inside printed solid (except mounting posts/standoffs) with y = 40 - ky, while the old y = ky convention collides at J1 and J5. See checks.",
+   "checks": {
+    "placement_y_equals_40_minus_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "control_old_convention_y_equals_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 3
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 15
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "case_bounds_mm": [
+     [
+      -1.55,
+      -7.0,
+      -1.0
+     ],
+     [
+      100.203,
+      47.0,
+      30.5
+     ]
+    ],
+    "board_bbox_inside_case_xy": true,
+    "board_z_range_mm": [
+     3.65,
+     5.25
+    ]
+   }
+  },
+  "params": {
+   "module": "c3",
+   "antenna": "fpc",
+   "stack": 11.325,
+   "boot_height": 1.5,
+   "reset_height": 1.5,
+   "boot_stop": 0.4,
+   "reset_stop": 0.4,
+   "gap": 0.25,
+   "leaf_offset": 17.3,
+   "relieved_guides": true,
+   "magnets": "none",
+   "magnet_style": "glue",
+   "rj45_style": "flush",
+   "label_inlay": true,
+   "usb_style": "flush",
+   "no_module_tag": false,
+   "closed_usb": false,
+   "no_tail_pockets": false,
+   "qualification": "Unqualified review geometry; no measured assembly or switch-travel proof",
+   "command": "python export_review.py --module c3 --antenna fpc --stack 11.325 --boot-height 1.5 --reset-height 1.5 --boot-stop 0.4 --reset-stop 0.4 --leaf-offset 17.3 --relieved-guides --usb-style flush --rj45-style flush --label-inlay --output <dir>",
+   "usb_flush": {
+    "face_x_kicad": 100.203,
+    "mouth_x_kicad": 100.003,
+    "recess_mm": 0.2,
+    "plate_mm": 1.2,
+    "opening_mm": [
+     9.64,
+     4.36
+    ],
+    "opening_z": [
+     17.425,
+     21.785
+    ],
+    "upper_step": [
+     100.203,
+     27.6
+    ],
+    "base_colour_change_before_print_z_mm": 7.95,
+    "base_colour_change_note": "Optional: swap to the lid colour at this layer (0.35 mm first layer, 0.2 mm layers) so the USB port filler matches the lid; everything else above the seam is hidden.",
+    "assumptions": "Mouth x from the official module KiCad files; Type-C shell 8.94 x 3.26 top-mounted; module PCB 1.2-1.6 mm. Unmeasured: print the coupon first."
+   }
+  },
+  "source_files": [
+   {
+    "path": "case/rev3c/analytical/enclosure.py",
+    "sha256": "708d2e4aae4f792c52b118704e6bd9ac3c29bd382abaea9e6bf60ce4a45e7169"
+   },
+   {
+    "path": "case/rev3c/analytical/interface_baseline.py",
+    "sha256": "ad394fbb5a76df7bb368640beca2339d51c93d20bfaa9c79a3dca962ddc1cbb5"
+   },
+   {
+    "path": "case/rev3c/analytical/export_review.py",
+    "sha256": "f2e15ee0f5f4372b3661c03a11c67be8bf7bbab593e7674593d85990cb625955"
+   },
+   {
+    "path": "cache/exports-review-c3-fpc-flush/REVIEW-PARAMETERS.json",
+    "sha256": "3d84c47187f7d8f1ab2da5ce876e5e28960061d67104c2ab1d5044570be68016"
+   }
+  ],
+  "status_note": "Shared by Rev3D and Rev3C (same outline, holes, J1 and sockets); every Rev3D 3D model checked clear of printed solid. Flush USB-C port (0.5 mm in front of the module mouth, 9.64 x 4.36 mm opening); mouth position and shell are unmeasured, so print the USB-end coupon first. Flat antenna holder: keeper rails and two cable keepers under the roof for the 40 x 20 mm FPC antenna that ships with the XIAO (plugs into its U.FL). Unqualified review geometry."
+ },
+ {
+  "id": "rev3d-c3-smooth",
+  "label": "Rev3D case \u00b7 C3 \u00b7 Smooth top",
+  "module": "c3",
+  "antenna": "smooth",
+  "antenna_label": "Smooth top",
+  "revisions": [
+   "rev3d",
+   "rev3c"
+  ],
+  "parts": [
+   {
+    "name": "Base (common)",
+    "role": "base",
+    "file": "cases/rev3d-c3-smooth/review_base.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 43m 54s",
+     "filament_m": 6.347,
+     "filament_cm3": 15.27,
+     "grams": 18.9,
+     "source": "cache/slice/rev3d-c3-smooth/review_base.gcode"
+    },
+    "bytes": 10968
+   },
+   {
+    "name": "Base, magnets: Glue-in (open pocket, flush)",
+    "role": "base",
+    "variant": "magnets-glue",
+    "magnet_style": "glue",
+    "magnet_label": "Glue-in (open pocket, flush)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c3-smooth/review_base_magnets_8x2_glue.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 12s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_glue.gcode"
+    },
+    "bytes": 15376,
+    "note": "Open-bottom pockets; glue N52 8 x 2 mm discs flush (CA or epoxy). Strongest hold. 1.3 mm skin to the cavity floor."
+   },
+   {
+    "name": "Base, magnets: Press-fit (crush ribs)",
+    "role": "base",
+    "variant": "magnets-press",
+    "magnet_style": "press",
+    "magnet_label": "Press-fit (crush ribs)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c3-smooth/review_base_magnets_8x2_press.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 20s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_press.gcode"
+    },
+    "bytes": 20652,
+    "note": "Open-bottom pockets with three 0.6 mm crush ribs (0.25 mm into the pocket); press the discs in, no glue. Hold as glue-in."
+   },
+   {
+    "name": "Base, magnets: Embedded (pause print, sealed)",
+    "role": "base",
+    "variant": "magnets-embedded",
+    "magnet_style": "embedded",
+    "magnet_label": "Embedded (pause print, sealed)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c3-smooth/review_base_magnets_8x2_embedded.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 24s",
+     "filament_m": 6.41,
+     "filament_cm3": 15.42,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_embedded.gcode"
+    },
+    "bytes": 15288,
+    "note": "Sealed pockets 0.55 mm above the bottom face. Pause BEFORE print height 2.95 mm (0.35 mm first layer, 0.2 mm layers), drop the discs in (all the same pole up), resume. Invisible; roughly a third less hold through the skin."
+   },
+   {
+    "name": "C3 lid, smooth top",
+    "role": "lid",
+    "file": "cases/rev3d-c3-smooth/review_lid_c3_smooth.glb",
+    "color_hint": "#c5ccd4",
+    "print": {
+     "time": "3h 1m 52s",
+     "filament_m": 11.224,
+     "filament_cm3": 27.0,
+     "grams": 33.5,
+     "source": "cache/slice/rev3d-c3-smooth/review_lid_c3_smooth.gcode"
+    },
+    "bytes": 107356
+   },
+   {
+    "name": "Light guide: Wi-Fi",
+    "role": "guide",
+    "file": "cases/rev3d-c3-smooth/review_guide_wifi.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4136
+   },
+   {
+    "name": "Light guide: bus",
+    "role": "guide",
+    "file": "cases/rev3d-c3-smooth/review_guide_bus.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4128
+   },
+   {
+    "name": "Light guide: aux",
+    "role": "guide",
+    "file": "cases/rev3d-c3-smooth/review_guide_aux.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4044
+   },
+   {
+    "name": "Label inlay, second colour (multi-material printers)",
+    "role": "inlay",
+    "file": "cases/rev3d-c3-smooth/review_label_inlay_c3.glb",
+    "color_hint": "#3c4249",
+    "print": null,
+    "bytes": 45064
+   }
+  ],
+  "board_placement": {
+   "map": "Case export frame (physical, right-handed) = (x, y, z) mm with x = KiCad x, y = 40 - KiCad y (mirror about the board centreline, applied by enclosure.export() since the 2026-11-23 frame fix), z up with the board bottom at z = 3.65 (FLOOR 2.4 + PCB_STANDOFF 1.25) and the board top at z = 5.25 (interface_baseline.py). Case GLBs keep these CAD axes (z up) scaled to metres; matrix_mm maps case mm -> board-GLB mm: X = x - cx, Y = z - seat_z + board_bottom_y, Z = (40 - y) - cy. Determinant +1: a proper rotation, so the board needs no mirroring to sit in the case. Before the fix the exports used y = KiCad y (determinant -1, a mirror-image case).",
+   "verified": true,
+   "matrix_mm": [
+    [
+     1,
+     0,
+     0,
+     -49.5
+    ],
+    [
+     0,
+     0,
+     1,
+     -3.65
+    ],
+    [
+     0,
+     -1,
+     0,
+     20.0
+    ],
+    [
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "matrix_mm_by_revision": {
+    "rev3d": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "rev3c": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ]
+   },
+   "matrix_determinant": 1.0,
+   "note": "Verified by sampling: points inside the J1 body, the J5/J6 socket rows and a grid over the board plate are not inside printed solid (except mounting posts/standoffs) with y = 40 - ky, while the old y = ky convention collides at J1 and J5. See checks.",
+   "checks": {
+    "placement_y_equals_40_minus_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "control_old_convention_y_equals_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 3
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 15
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "case_bounds_mm": [
+     [
+      -1.55,
+      -7.0,
+      -1.0
+     ],
+     [
+      100.203,
+      47.0,
+      30.5
+     ]
+    ],
+    "board_bbox_inside_case_xy": true,
+    "board_z_range_mm": [
+     3.65,
+     5.25
+    ]
+   }
+  },
+  "params": {
+   "module": "c3",
+   "antenna": "smooth",
+   "stack": 11.325,
+   "boot_height": 1.5,
+   "reset_height": 1.5,
+   "boot_stop": 0.4,
+   "reset_stop": 0.4,
+   "gap": 0.25,
+   "leaf_offset": 17.3,
+   "relieved_guides": true,
+   "magnets": "none",
+   "magnet_style": "glue",
+   "rj45_style": "flush",
+   "label_inlay": true,
+   "usb_style": "flush",
+   "no_module_tag": false,
+   "closed_usb": false,
+   "no_tail_pockets": false,
+   "qualification": "Unqualified review geometry; no measured assembly or switch-travel proof",
+   "command": "python export_review.py --module c3 --antenna smooth --stack 11.325 --boot-height 1.5 --reset-height 1.5 --boot-stop 0.4 --reset-stop 0.4 --leaf-offset 17.3 --relieved-guides --usb-style flush --rj45-style flush --label-inlay --output <dir>",
+   "usb_flush": {
+    "face_x_kicad": 100.203,
+    "mouth_x_kicad": 100.003,
+    "recess_mm": 0.2,
+    "plate_mm": 1.2,
+    "opening_mm": [
+     9.64,
+     4.36
+    ],
+    "opening_z": [
+     17.425,
+     21.785
+    ],
+    "upper_step": [
+     100.203,
+     27.6
+    ],
+    "base_colour_change_before_print_z_mm": 7.95,
+    "base_colour_change_note": "Optional: swap to the lid colour at this layer (0.35 mm first layer, 0.2 mm layers) so the USB port filler matches the lid; everything else above the seam is hidden.",
+    "assumptions": "Mouth x from the official module KiCad files; Type-C shell 8.94 x 3.26 top-mounted; module PCB 1.2-1.6 mm. Unmeasured: print the coupon first."
+   }
+  },
+  "source_files": [
+   {
+    "path": "case/rev3c/analytical/enclosure.py",
+    "sha256": "708d2e4aae4f792c52b118704e6bd9ac3c29bd382abaea9e6bf60ce4a45e7169"
+   },
+   {
+    "path": "case/rev3c/analytical/interface_baseline.py",
+    "sha256": "ad394fbb5a76df7bb368640beca2339d51c93d20bfaa9c79a3dca962ddc1cbb5"
+   },
+   {
+    "path": "case/rev3c/analytical/export_review.py",
+    "sha256": "f2e15ee0f5f4372b3661c03a11c67be8bf7bbab593e7674593d85990cb625955"
+   },
+   {
+    "path": "cache/exports-review-c3-smooth-flush/REVIEW-PARAMETERS.json",
+    "sha256": "96d5a4fbc4a680fed4610f77fbdd032b52efabba80b69f9a12b7fd5979d84f34"
+   }
+  ],
+  "status_note": "Shared by Rev3D and Rev3C (same outline, holes, J1 and sockets); every Rev3D 3D model checked clear of printed solid. Flush USB-C port (0.5 mm in front of the module mouth, 9.64 x 4.36 mm opening); mouth position and shell are unmeasured, so print the USB-end coupon first. Smooth top: plain roof with no antenna features, for the C6 onboard ceramic antenna or your own mounting (tape, other antennas). The C3 has no onboard antenna, so it needs an FPC or external antenna. Unqualified review geometry."
+ },
+ {
+  "id": "rev3d-c3-external",
+  "label": "Rev3D case \u00b7 C3 \u00b7 External SMA",
+  "module": "c3",
+  "antenna": "external",
+  "antenna_label": "External SMA",
+  "revisions": [
+   "rev3d",
+   "rev3c"
+  ],
+  "parts": [
+   {
+    "name": "Base (common)",
+    "role": "base",
+    "file": "cases/rev3d-c3-external/review_base.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 43m 54s",
+     "filament_m": 6.347,
+     "filament_cm3": 15.27,
+     "grams": 18.9,
+     "source": "cache/slice/rev3d-c3-external/review_base.gcode"
+    },
+    "bytes": 10968
+   },
+   {
+    "name": "Base, magnets: Glue-in (open pocket, flush)",
+    "role": "base",
+    "variant": "magnets-glue",
+    "magnet_style": "glue",
+    "magnet_label": "Glue-in (open pocket, flush)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c3-external/review_base_magnets_8x2_glue.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 12s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_glue.gcode"
+    },
+    "bytes": 15376,
+    "note": "Open-bottom pockets; glue N52 8 x 2 mm discs flush (CA or epoxy). Strongest hold. 1.3 mm skin to the cavity floor."
+   },
+   {
+    "name": "Base, magnets: Press-fit (crush ribs)",
+    "role": "base",
+    "variant": "magnets-press",
+    "magnet_style": "press",
+    "magnet_label": "Press-fit (crush ribs)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c3-external/review_base_magnets_8x2_press.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 20s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_press.gcode"
+    },
+    "bytes": 20652,
+    "note": "Open-bottom pockets with three 0.6 mm crush ribs (0.25 mm into the pocket); press the discs in, no glue. Hold as glue-in."
+   },
+   {
+    "name": "Base, magnets: Embedded (pause print, sealed)",
+    "role": "base",
+    "variant": "magnets-embedded",
+    "magnet_style": "embedded",
+    "magnet_label": "Embedded (pause print, sealed)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c3-external/review_base_magnets_8x2_embedded.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 24s",
+     "filament_m": 6.41,
+     "filament_cm3": 15.42,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_embedded.gcode"
+    },
+    "bytes": 15288,
+    "note": "Sealed pockets 0.55 mm above the bottom face. Pause BEFORE print height 2.95 mm (0.35 mm first layer, 0.2 mm layers), drop the discs in (all the same pole up), resume. Invisible; roughly a third less hold through the skin."
+   },
+   {
+    "name": "C3 lid, external sma",
+    "role": "lid",
+    "file": "cases/rev3d-c3-external/review_lid_c3_external.glb",
+    "color_hint": "#c5ccd4",
+    "print": {
+     "time": "3h 14m 27s",
+     "filament_m": 11.55,
+     "filament_cm3": 27.78,
+     "grams": 34.5,
+     "source": "cache/slice/rev3d-c3-external/review_lid_c3_external.gcode"
+    },
+    "bytes": 110372
+   },
+   {
+    "name": "Light guide: Wi-Fi",
+    "role": "guide",
+    "file": "cases/rev3d-c3-external/review_guide_wifi.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4136
+   },
+   {
+    "name": "Light guide: bus",
+    "role": "guide",
+    "file": "cases/rev3d-c3-external/review_guide_bus.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4128
+   },
+   {
+    "name": "Light guide: aux",
+    "role": "guide",
+    "file": "cases/rev3d-c3-external/review_guide_aux.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4044
+   },
+   {
+    "name": "Label inlay, second colour (multi-material printers)",
+    "role": "inlay",
+    "file": "cases/rev3d-c3-external/review_label_inlay_c3.glb",
+    "color_hint": "#3c4249",
+    "print": null,
+    "bytes": 45076
+   },
+   {
+    "name": "RP-SMA bulkhead, nut and washer (reference)",
+    "role": "proxy",
+    "file": "cases/rev3d-c3-external/proxy_rpsma_bulkhead.glb",
+    "color_hint": "#c9a24a",
+    "print": null,
+    "bytes": 3276,
+    "metal": true
+   },
+   {
+    "name": "120 mm half-wave dipole, straight (reference)",
+    "role": "proxy",
+    "file": "cases/rev3d-c3-external/proxy_dipole_120mm.glb",
+    "color_hint": "#2b2f34",
+    "print": null,
+    "bytes": 4156,
+    "whip_pose": "straight",
+    "whip_label": "Straight out"
+   },
+   {
+    "name": "120 mm tilt-swivel dipole, turned upright (reference)",
+    "role": "proxy",
+    "file": "cases/rev3d-c3-external/proxy_dipole_swivel_up.glb",
+    "color_hint": "#2b2f34",
+    "print": null,
+    "bytes": 9064,
+    "whip_pose": "swivel",
+    "whip_label": "Swivel, upright"
+   }
+  ],
+  "board_placement": {
+   "map": "Case export frame (physical, right-handed) = (x, y, z) mm with x = KiCad x, y = 40 - KiCad y (mirror about the board centreline, applied by enclosure.export() since the 2026-11-23 frame fix), z up with the board bottom at z = 3.65 (FLOOR 2.4 + PCB_STANDOFF 1.25) and the board top at z = 5.25 (interface_baseline.py). Case GLBs keep these CAD axes (z up) scaled to metres; matrix_mm maps case mm -> board-GLB mm: X = x - cx, Y = z - seat_z + board_bottom_y, Z = (40 - y) - cy. Determinant +1: a proper rotation, so the board needs no mirroring to sit in the case. Before the fix the exports used y = KiCad y (determinant -1, a mirror-image case).",
+   "verified": true,
+   "matrix_mm": [
+    [
+     1,
+     0,
+     0,
+     -49.5
+    ],
+    [
+     0,
+     0,
+     1,
+     -3.65
+    ],
+    [
+     0,
+     -1,
+     0,
+     20.0
+    ],
+    [
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "matrix_mm_by_revision": {
+    "rev3d": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "rev3c": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ]
+   },
+   "matrix_determinant": 1.0,
+   "note": "Verified by sampling: points inside the J1 body, the J5/J6 socket rows and a grid over the board plate are not inside printed solid (except mounting posts/standoffs) with y = 40 - ky, while the old y = ky convention collides at J1 and J5. See checks.",
+   "checks": {
+    "placement_y_equals_40_minus_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "control_old_convention_y_equals_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 3
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 15
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "case_bounds_mm": [
+     [
+      -1.55,
+      -7.0,
+      -1.0
+     ],
+     [
+      100.203,
+      47.0,
+      30.5
+     ]
+    ],
+    "board_bbox_inside_case_xy": true,
+    "board_z_range_mm": [
+     3.65,
+     5.25
+    ]
+   }
+  },
+  "params": {
+   "module": "c3",
+   "antenna": "external",
+   "stack": 11.325,
+   "boot_height": 1.5,
+   "reset_height": 1.5,
+   "boot_stop": 0.4,
+   "reset_stop": 0.4,
+   "gap": 0.25,
+   "leaf_offset": 17.3,
+   "relieved_guides": true,
+   "magnets": "none",
+   "magnet_style": "glue",
+   "rj45_style": "flush",
+   "label_inlay": true,
+   "usb_style": "flush",
+   "no_module_tag": false,
+   "closed_usb": false,
+   "no_tail_pockets": false,
+   "qualification": "Unqualified review geometry; no measured assembly or switch-travel proof",
+   "command": "python export_review.py --module c3 --antenna external --stack 11.325 --boot-height 1.5 --reset-height 1.5 --boot-stop 0.4 --reset-stop 0.4 --leaf-offset 17.3 --relieved-guides --usb-style flush --rj45-style flush --label-inlay --output <dir>",
+   "usb_flush": {
+    "face_x_kicad": 100.203,
+    "mouth_x_kicad": 100.003,
+    "recess_mm": 0.2,
+    "plate_mm": 1.2,
+    "opening_mm": [
+     9.64,
+     4.36
+    ],
+    "opening_z": [
+     17.425,
+     21.785
+    ],
+    "upper_step": [
+     100.203,
+     27.6
+    ],
+    "base_colour_change_before_print_z_mm": 7.95,
+    "base_colour_change_note": "Optional: swap to the lid colour at this layer (0.35 mm first layer, 0.2 mm layers) so the USB port filler matches the lid; everything else above the seam is hidden.",
+    "assumptions": "Mouth x from the official module KiCad files; Type-C shell 8.94 x 3.26 top-mounted; module PCB 1.2-1.6 mm. Unmeasured: print the coupon first."
+   }
+  },
+  "source_files": [
+   {
+    "path": "case/rev3c/analytical/enclosure.py",
+    "sha256": "708d2e4aae4f792c52b118704e6bd9ac3c29bd382abaea9e6bf60ce4a45e7169"
+   },
+   {
+    "path": "case/rev3c/analytical/interface_baseline.py",
+    "sha256": "ad394fbb5a76df7bb368640beca2339d51c93d20bfaa9c79a3dca962ddc1cbb5"
+   },
+   {
+    "path": "case/rev3c/analytical/export_review.py",
+    "sha256": "f2e15ee0f5f4372b3661c03a11c67be8bf7bbab593e7674593d85990cb625955"
+   },
+   {
+    "path": "cache/exports-review-c3-external-flush/REVIEW-PARAMETERS.json",
+    "sha256": "e60e9cb1a3855109382b03331af19640fb1d3ad67ed28687c5b36955fd4d312b"
+   }
+  ],
+  "status_note": "Shared by Rev3D and Rev3C (same outline, holes, J1 and sockets); every Rev3D 3D model checked clear of printed solid. Flush USB-C port (0.5 mm in front of the module mouth, 9.64 x 4.36 mm opening); mouth position and shell are unmeasured, so print the USB-end coupon first. External SMA: 12 mm bulkhead bore in the long side wall at x 56 mm for an SMA/RP-SMA pigtail from the module U.FL, plus a printed cable keeper; hardware, bend room and RF unverified. Unqualified review geometry."
+ },
+ {
+  "id": "rev3d-c6-fpc",
+  "label": "Rev3D case \u00b7 C6 \u00b7 Flat antenna holder",
+  "module": "c6",
+  "antenna": "fpc",
+  "antenna_label": "Flat antenna holder",
+  "revisions": [
+   "rev3d",
+   "rev3c"
+  ],
+  "parts": [
+   {
+    "name": "Base (common)",
+    "role": "base",
+    "file": "cases/rev3d-c6-fpc/review_base.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 43m 54s",
+     "filament_m": 6.347,
+     "filament_cm3": 15.27,
+     "grams": 18.9,
+     "source": "cache/slice/rev3d-c6-fpc/review_base.gcode"
+    },
+    "bytes": 10968
+   },
+   {
+    "name": "Base, magnets: Glue-in (open pocket, flush)",
+    "role": "base",
+    "variant": "magnets-glue",
+    "magnet_style": "glue",
+    "magnet_label": "Glue-in (open pocket, flush)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c6-fpc/review_base_magnets_8x2_glue.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 12s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_glue.gcode"
+    },
+    "bytes": 15376,
+    "note": "Open-bottom pockets; glue N52 8 x 2 mm discs flush (CA or epoxy). Strongest hold. 1.3 mm skin to the cavity floor."
+   },
+   {
+    "name": "Base, magnets: Press-fit (crush ribs)",
+    "role": "base",
+    "variant": "magnets-press",
+    "magnet_style": "press",
+    "magnet_label": "Press-fit (crush ribs)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c6-fpc/review_base_magnets_8x2_press.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 20s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_press.gcode"
+    },
+    "bytes": 20652,
+    "note": "Open-bottom pockets with three 0.6 mm crush ribs (0.25 mm into the pocket); press the discs in, no glue. Hold as glue-in."
+   },
+   {
+    "name": "Base, magnets: Embedded (pause print, sealed)",
+    "role": "base",
+    "variant": "magnets-embedded",
+    "magnet_style": "embedded",
+    "magnet_label": "Embedded (pause print, sealed)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c6-fpc/review_base_magnets_8x2_embedded.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 24s",
+     "filament_m": 6.41,
+     "filament_cm3": 15.42,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_embedded.gcode"
+    },
+    "bytes": 15288,
+    "note": "Sealed pockets 0.55 mm above the bottom face. Pause BEFORE print height 2.95 mm (0.35 mm first layer, 0.2 mm layers), drop the discs in (all the same pole up), resume. Invisible; roughly a third less hold through the skin."
+   },
+   {
+    "name": "C6 lid, flat antenna holder",
+    "role": "lid",
+    "file": "cases/rev3d-c6-fpc/review_lid_c6_fpc.glb",
+    "color_hint": "#c5ccd4",
+    "print": {
+     "time": "3h 22m 14s",
+     "filament_m": 13.309,
+     "filament_cm3": 32.01,
+     "grams": 39.7,
+     "source": "cache/slice/rev3d-c6-fpc/review_lid_c6_fpc.gcode"
+    },
+    "bytes": 106616
+   },
+   {
+    "name": "Light guide: Wi-Fi",
+    "role": "guide",
+    "file": "cases/rev3d-c6-fpc/review_guide_wifi.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4136
+   },
+   {
+    "name": "Light guide: bus",
+    "role": "guide",
+    "file": "cases/rev3d-c6-fpc/review_guide_bus.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4128
+   },
+   {
+    "name": "Light guide: aux",
+    "role": "guide",
+    "file": "cases/rev3d-c6-fpc/review_guide_aux.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4044
+   },
+   {
+    "name": "Label inlay, second colour (multi-material printers)",
+    "role": "inlay",
+    "file": "cases/rev3d-c6-fpc/review_label_inlay_c6.glb",
+    "color_hint": "#3c4249",
+    "print": null,
+    "bytes": 45120
+   },
+   {
+    "name": "Flat antenna 40 x 20 mm (reference, not printed)",
+    "role": "proxy",
+    "file": "cases/rev3d-c6-fpc/proxy_fpc_antenna_40x20.glb",
+    "color_hint": "#c8742c",
+    "print": null,
+    "bytes": 1768
+   }
+  ],
+  "board_placement": {
+   "map": "Case export frame (physical, right-handed) = (x, y, z) mm with x = KiCad x, y = 40 - KiCad y (mirror about the board centreline, applied by enclosure.export() since the 2026-11-23 frame fix), z up with the board bottom at z = 3.65 (FLOOR 2.4 + PCB_STANDOFF 1.25) and the board top at z = 5.25 (interface_baseline.py). Case GLBs keep these CAD axes (z up) scaled to metres; matrix_mm maps case mm -> board-GLB mm: X = x - cx, Y = z - seat_z + board_bottom_y, Z = (40 - y) - cy. Determinant +1: a proper rotation, so the board needs no mirroring to sit in the case. Before the fix the exports used y = KiCad y (determinant -1, a mirror-image case).",
+   "verified": true,
+   "matrix_mm": [
+    [
+     1,
+     0,
+     0,
+     -49.5
+    ],
+    [
+     0,
+     0,
+     1,
+     -3.65
+    ],
+    [
+     0,
+     -1,
+     0,
+     20.0
+    ],
+    [
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "matrix_mm_by_revision": {
+    "rev3d": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "rev3c": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ]
+   },
+   "matrix_determinant": 1.0,
+   "note": "Verified by sampling: points inside the J1 body, the J5/J6 socket rows and a grid over the board plate are not inside printed solid (except mounting posts/standoffs) with y = 40 - ky, while the old y = ky convention collides at J1 and J5. See checks.",
+   "checks": {
+    "placement_y_equals_40_minus_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "control_old_convention_y_equals_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 3
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 15
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "case_bounds_mm": [
+     [
+      -1.55,
+      -7.0,
+      -1.0
+     ],
+     [
+      101.348,
+      47.0,
+      30.5
+     ]
+    ],
+    "board_bbox_inside_case_xy": true,
+    "board_z_range_mm": [
+     3.65,
+     5.25
+    ]
+   }
+  },
+  "params": {
+   "module": "c6",
+   "antenna": "fpc",
+   "stack": 11.325,
+   "boot_height": 0.53,
+   "reset_height": 0.53,
+   "boot_stop": 0.36,
+   "reset_stop": 0.36,
+   "gap": 0.25,
+   "leaf_offset": 16.6,
+   "relieved_guides": true,
+   "magnets": "none",
+   "magnet_style": "glue",
+   "rj45_style": "flush",
+   "label_inlay": true,
+   "usb_style": "flush",
+   "no_module_tag": false,
+   "closed_usb": false,
+   "no_tail_pockets": false,
+   "qualification": "Unqualified review geometry; no measured assembly or switch-travel proof",
+   "command": "python export_review.py --module c6 --antenna fpc --stack 11.325 --boot-height 0.53 --reset-height 0.53 --boot-stop 0.36 --reset-stop 0.36 --leaf-offset 16.6 --relieved-guides --usb-style flush --rj45-style flush --label-inlay --output <dir>",
+   "usb_flush": {
+    "face_x_kicad": 100.203,
+    "mouth_x_kicad": 100.003,
+    "recess_mm": 0.2,
+    "plate_mm": 1.2,
+    "opening_mm": [
+     9.64,
+     4.36
+    ],
+    "opening_z": [
+     17.425,
+     21.785
+    ],
+    "upper_step": [
+     101.348,
+     27.6
+    ],
+    "base_colour_change_before_print_z_mm": 7.95,
+    "base_colour_change_note": "Optional: swap to the lid colour at this layer (0.35 mm first layer, 0.2 mm layers) so the USB port filler matches the lid; everything else above the seam is hidden.",
+    "assumptions": "Mouth x from the official module KiCad files; Type-C shell 8.94 x 3.26 top-mounted; module PCB 1.2-1.6 mm. Unmeasured: print the coupon first."
+   }
+  },
+  "source_files": [
+   {
+    "path": "case/rev3c/analytical/enclosure.py",
+    "sha256": "708d2e4aae4f792c52b118704e6bd9ac3c29bd382abaea9e6bf60ce4a45e7169"
+   },
+   {
+    "path": "case/rev3c/analytical/interface_baseline.py",
+    "sha256": "ad394fbb5a76df7bb368640beca2339d51c93d20bfaa9c79a3dca962ddc1cbb5"
+   },
+   {
+    "path": "case/rev3c/analytical/export_review.py",
+    "sha256": "f2e15ee0f5f4372b3661c03a11c67be8bf7bbab593e7674593d85990cb625955"
+   },
+   {
+    "path": "cache/exports-review-c6-fpc-flush/REVIEW-PARAMETERS.json",
+    "sha256": "0227525c90eb51cc0e5a7da864692cc0d20d821f884fe28900d2e0fe64eb582f"
+   }
+  ],
+  "status_note": "Shared by Rev3D and Rev3C (same outline, holes, J1 and sockets); every Rev3D 3D model checked clear of printed solid. Flush USB-C port (0.5 mm in front of the module mouth, 9.64 x 4.36 mm opening); mouth position and shell are unmeasured, so print the USB-end coupon first. Flat antenna holder: keeper rails and two cable keepers under the roof for the 40 x 20 mm FPC antenna that ships with the XIAO (plugs into its U.FL). C6 switch values are composed from documented nominals. Unqualified review geometry."
+ },
+ {
+  "id": "rev3d-c6-smooth",
+  "label": "Rev3D case \u00b7 C6 \u00b7 Smooth top",
+  "module": "c6",
+  "antenna": "smooth",
+  "antenna_label": "Smooth top",
+  "revisions": [
+   "rev3d",
+   "rev3c"
+  ],
+  "parts": [
+   {
+    "name": "Base (common)",
+    "role": "base",
+    "file": "cases/rev3d-c6-smooth/review_base.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 43m 54s",
+     "filament_m": 6.347,
+     "filament_cm3": 15.27,
+     "grams": 18.9,
+     "source": "cache/slice/rev3d-c6-smooth/review_base.gcode"
+    },
+    "bytes": 10968
+   },
+   {
+    "name": "Base, magnets: Glue-in (open pocket, flush)",
+    "role": "base",
+    "variant": "magnets-glue",
+    "magnet_style": "glue",
+    "magnet_label": "Glue-in (open pocket, flush)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c6-smooth/review_base_magnets_8x2_glue.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 12s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_glue.gcode"
+    },
+    "bytes": 15376,
+    "note": "Open-bottom pockets; glue N52 8 x 2 mm discs flush (CA or epoxy). Strongest hold. 1.3 mm skin to the cavity floor."
+   },
+   {
+    "name": "Base, magnets: Press-fit (crush ribs)",
+    "role": "base",
+    "variant": "magnets-press",
+    "magnet_style": "press",
+    "magnet_label": "Press-fit (crush ribs)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c6-smooth/review_base_magnets_8x2_press.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 20s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_press.gcode"
+    },
+    "bytes": 20652,
+    "note": "Open-bottom pockets with three 0.6 mm crush ribs (0.25 mm into the pocket); press the discs in, no glue. Hold as glue-in."
+   },
+   {
+    "name": "Base, magnets: Embedded (pause print, sealed)",
+    "role": "base",
+    "variant": "magnets-embedded",
+    "magnet_style": "embedded",
+    "magnet_label": "Embedded (pause print, sealed)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c6-smooth/review_base_magnets_8x2_embedded.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 24s",
+     "filament_m": 6.41,
+     "filament_cm3": 15.42,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_embedded.gcode"
+    },
+    "bytes": 15288,
+    "note": "Sealed pockets 0.55 mm above the bottom face. Pause BEFORE print height 2.95 mm (0.35 mm first layer, 0.2 mm layers), drop the discs in (all the same pole up), resume. Invisible; roughly a third less hold through the skin."
+   },
+   {
+    "name": "C6 lid, smooth top",
+    "role": "lid",
+    "file": "cases/rev3d-c6-smooth/review_lid_c6_smooth.glb",
+    "color_hint": "#c5ccd4",
+    "print": {
+     "time": "3h 8m 3s",
+     "filament_m": 11.899,
+     "filament_cm3": 28.62,
+     "grams": 35.5,
+     "source": "cache/slice/rev3d-c6-smooth/review_lid_c6_smooth.gcode"
+    },
+    "bytes": 105932
+   },
+   {
+    "name": "Light guide: Wi-Fi",
+    "role": "guide",
+    "file": "cases/rev3d-c6-smooth/review_guide_wifi.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4136
+   },
+   {
+    "name": "Light guide: bus",
+    "role": "guide",
+    "file": "cases/rev3d-c6-smooth/review_guide_bus.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4128
+   },
+   {
+    "name": "Light guide: aux",
+    "role": "guide",
+    "file": "cases/rev3d-c6-smooth/review_guide_aux.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4044
+   },
+   {
+    "name": "Label inlay, second colour (multi-material printers)",
+    "role": "inlay",
+    "file": "cases/rev3d-c6-smooth/review_label_inlay_c6.glb",
+    "color_hint": "#3c4249",
+    "print": null,
+    "bytes": 45064
+   }
+  ],
+  "board_placement": {
+   "map": "Case export frame (physical, right-handed) = (x, y, z) mm with x = KiCad x, y = 40 - KiCad y (mirror about the board centreline, applied by enclosure.export() since the 2026-11-23 frame fix), z up with the board bottom at z = 3.65 (FLOOR 2.4 + PCB_STANDOFF 1.25) and the board top at z = 5.25 (interface_baseline.py). Case GLBs keep these CAD axes (z up) scaled to metres; matrix_mm maps case mm -> board-GLB mm: X = x - cx, Y = z - seat_z + board_bottom_y, Z = (40 - y) - cy. Determinant +1: a proper rotation, so the board needs no mirroring to sit in the case. Before the fix the exports used y = KiCad y (determinant -1, a mirror-image case).",
+   "verified": true,
+   "matrix_mm": [
+    [
+     1,
+     0,
+     0,
+     -49.5
+    ],
+    [
+     0,
+     0,
+     1,
+     -3.65
+    ],
+    [
+     0,
+     -1,
+     0,
+     20.0
+    ],
+    [
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "matrix_mm_by_revision": {
+    "rev3d": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "rev3c": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ]
+   },
+   "matrix_determinant": 1.0,
+   "note": "Verified by sampling: points inside the J1 body, the J5/J6 socket rows and a grid over the board plate are not inside printed solid (except mounting posts/standoffs) with y = 40 - ky, while the old y = ky convention collides at J1 and J5. See checks.",
+   "checks": {
+    "placement_y_equals_40_minus_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "control_old_convention_y_equals_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 3
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 15
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "case_bounds_mm": [
+     [
+      -1.55,
+      -7.0,
+      -1.0
+     ],
+     [
+      101.348,
+      47.0,
+      30.5
+     ]
+    ],
+    "board_bbox_inside_case_xy": true,
+    "board_z_range_mm": [
+     3.65,
+     5.25
+    ]
+   }
+  },
+  "params": {
+   "module": "c6",
+   "antenna": "smooth",
+   "stack": 11.325,
+   "boot_height": 0.53,
+   "reset_height": 0.53,
+   "boot_stop": 0.36,
+   "reset_stop": 0.36,
+   "gap": 0.25,
+   "leaf_offset": 16.6,
+   "relieved_guides": true,
+   "magnets": "none",
+   "magnet_style": "glue",
+   "rj45_style": "flush",
+   "label_inlay": true,
+   "usb_style": "flush",
+   "no_module_tag": false,
+   "closed_usb": false,
+   "no_tail_pockets": false,
+   "qualification": "Unqualified review geometry; no measured assembly or switch-travel proof",
+   "command": "python export_review.py --module c6 --antenna smooth --stack 11.325 --boot-height 0.53 --reset-height 0.53 --boot-stop 0.36 --reset-stop 0.36 --leaf-offset 16.6 --relieved-guides --usb-style flush --rj45-style flush --label-inlay --output <dir>",
+   "usb_flush": {
+    "face_x_kicad": 100.203,
+    "mouth_x_kicad": 100.003,
+    "recess_mm": 0.2,
+    "plate_mm": 1.2,
+    "opening_mm": [
+     9.64,
+     4.36
+    ],
+    "opening_z": [
+     17.425,
+     21.785
+    ],
+    "upper_step": [
+     101.348,
+     27.6
+    ],
+    "base_colour_change_before_print_z_mm": 7.95,
+    "base_colour_change_note": "Optional: swap to the lid colour at this layer (0.35 mm first layer, 0.2 mm layers) so the USB port filler matches the lid; everything else above the seam is hidden.",
+    "assumptions": "Mouth x from the official module KiCad files; Type-C shell 8.94 x 3.26 top-mounted; module PCB 1.2-1.6 mm. Unmeasured: print the coupon first."
+   }
+  },
+  "source_files": [
+   {
+    "path": "case/rev3c/analytical/enclosure.py",
+    "sha256": "708d2e4aae4f792c52b118704e6bd9ac3c29bd382abaea9e6bf60ce4a45e7169"
+   },
+   {
+    "path": "case/rev3c/analytical/interface_baseline.py",
+    "sha256": "ad394fbb5a76df7bb368640beca2339d51c93d20bfaa9c79a3dca962ddc1cbb5"
+   },
+   {
+    "path": "case/rev3c/analytical/export_review.py",
+    "sha256": "f2e15ee0f5f4372b3661c03a11c67be8bf7bbab593e7674593d85990cb625955"
+   },
+   {
+    "path": "cache/exports-review-c6-smooth-flush/REVIEW-PARAMETERS.json",
+    "sha256": "6ab2f796cd78f184398e668c3a60f3d466b32c11d41cbf8e17325c9c2f5e3d48"
+   }
+  ],
+  "status_note": "Shared by Rev3D and Rev3C (same outline, holes, J1 and sockets); every Rev3D 3D model checked clear of printed solid. Flush USB-C port (0.5 mm in front of the module mouth, 9.64 x 4.36 mm opening); mouth position and shell are unmeasured, so print the USB-end coupon first. Smooth top: plain roof with no antenna features, for the C6 onboard ceramic antenna or your own mounting (tape, other antennas). The C3 has no onboard antenna, so it needs an FPC or external antenna. C6 switch values are composed from documented nominals. Unqualified review geometry."
+ },
+ {
+  "id": "rev3d-c6-external",
+  "label": "Rev3D case \u00b7 C6 \u00b7 External SMA",
+  "module": "c6",
+  "antenna": "external",
+  "antenna_label": "External SMA",
+  "revisions": [
+   "rev3d",
+   "rev3c"
+  ],
+  "parts": [
+   {
+    "name": "Base (common)",
+    "role": "base",
+    "file": "cases/rev3d-c6-external/review_base.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 43m 54s",
+     "filament_m": 6.347,
+     "filament_cm3": 15.27,
+     "grams": 18.9,
+     "source": "cache/slice/rev3d-c6-external/review_base.gcode"
+    },
+    "bytes": 10968
+   },
+   {
+    "name": "Base, magnets: Glue-in (open pocket, flush)",
+    "role": "base",
+    "variant": "magnets-glue",
+    "magnet_style": "glue",
+    "magnet_label": "Glue-in (open pocket, flush)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c6-external/review_base_magnets_8x2_glue.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 12s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_glue.gcode"
+    },
+    "bytes": 15376,
+    "note": "Open-bottom pockets; glue N52 8 x 2 mm discs flush (CA or epoxy). Strongest hold. 1.3 mm skin to the cavity floor."
+   },
+   {
+    "name": "Base, magnets: Press-fit (crush ribs)",
+    "role": "base",
+    "variant": "magnets-press",
+    "magnet_style": "press",
+    "magnet_label": "Press-fit (crush ribs)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -1.0,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -1.0,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c6-external/review_base_magnets_8x2_press.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 20s",
+     "filament_m": 6.405,
+     "filament_cm3": 15.41,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_press.gcode"
+    },
+    "bytes": 20652,
+    "note": "Open-bottom pockets with three 0.6 mm crush ribs (0.25 mm into the pocket); press the discs in, no glue. Hold as glue-in."
+   },
+   {
+    "name": "Base, magnets: Embedded (pause print, sealed)",
+    "role": "base",
+    "variant": "magnets-embedded",
+    "magnet_style": "embedded",
+    "magnet_label": "Embedded (pause print, sealed)",
+    "magnet_discs": [
+     [
+      9.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      9.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      38.5,
+      -0.45,
+      8.0,
+      2.0
+     ],
+     [
+      70.0,
+      1.5,
+      -0.45,
+      8.0,
+      2.0
+     ]
+    ],
+    "file": "cases/rev3d-c6-external/review_base_magnets_8x2_embedded.glb",
+    "color_hint": "#8d98a5",
+    "print": {
+     "time": "1h 47m 24s",
+     "filament_m": 6.41,
+     "filament_cm3": 15.42,
+     "grams": 19.1,
+     "source": "cache/slice/magnets/review_base_magnets_8x2_embedded.gcode"
+    },
+    "bytes": 15288,
+    "note": "Sealed pockets 0.55 mm above the bottom face. Pause BEFORE print height 2.95 mm (0.35 mm first layer, 0.2 mm layers), drop the discs in (all the same pole up), resume. Invisible; roughly a third less hold through the skin."
+   },
+   {
+    "name": "C6 lid, external sma",
+    "role": "lid",
+    "file": "cases/rev3d-c6-external/review_lid_c6_external.glb",
+    "color_hint": "#c5ccd4",
+    "print": {
+     "time": "3h 23m 22s",
+     "filament_m": 12.229,
+     "filament_cm3": 29.41,
+     "grams": 36.5,
+     "source": "cache/slice/rev3d-c6-external/review_lid_c6_external.gcode"
+    },
+    "bytes": 109524
+   },
+   {
+    "name": "Light guide: Wi-Fi",
+    "role": "guide",
+    "file": "cases/rev3d-c6-external/review_guide_wifi.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4136
+   },
+   {
+    "name": "Light guide: bus",
+    "role": "guide",
+    "file": "cases/rev3d-c6-external/review_guide_bus.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4128
+   },
+   {
+    "name": "Light guide: aux",
+    "role": "guide",
+    "file": "cases/rev3d-c6-external/review_guide_aux.glb",
+    "color_hint": "#ffd24a",
+    "print": null,
+    "bytes": 4044
+   },
+   {
+    "name": "Label inlay, second colour (multi-material printers)",
+    "role": "inlay",
+    "file": "cases/rev3d-c6-external/review_label_inlay_c6.glb",
+    "color_hint": "#3c4249",
+    "print": null,
+    "bytes": 45056
+   },
+   {
+    "name": "RP-SMA bulkhead, nut and washer (reference)",
+    "role": "proxy",
+    "file": "cases/rev3d-c6-external/proxy_rpsma_bulkhead.glb",
+    "color_hint": "#c9a24a",
+    "print": null,
+    "bytes": 3276,
+    "metal": true
+   },
+   {
+    "name": "120 mm half-wave dipole, straight (reference)",
+    "role": "proxy",
+    "file": "cases/rev3d-c6-external/proxy_dipole_120mm.glb",
+    "color_hint": "#2b2f34",
+    "print": null,
+    "bytes": 4156,
+    "whip_pose": "straight",
+    "whip_label": "Straight out"
+   },
+   {
+    "name": "120 mm tilt-swivel dipole, turned upright (reference)",
+    "role": "proxy",
+    "file": "cases/rev3d-c6-external/proxy_dipole_swivel_up.glb",
+    "color_hint": "#2b2f34",
+    "print": null,
+    "bytes": 9064,
+    "whip_pose": "swivel",
+    "whip_label": "Swivel, upright"
+   }
+  ],
+  "board_placement": {
+   "map": "Case export frame (physical, right-handed) = (x, y, z) mm with x = KiCad x, y = 40 - KiCad y (mirror about the board centreline, applied by enclosure.export() since the 2026-11-23 frame fix), z up with the board bottom at z = 3.65 (FLOOR 2.4 + PCB_STANDOFF 1.25) and the board top at z = 5.25 (interface_baseline.py). Case GLBs keep these CAD axes (z up) scaled to metres; matrix_mm maps case mm -> board-GLB mm: X = x - cx, Y = z - seat_z + board_bottom_y, Z = (40 - y) - cy. Determinant +1: a proper rotation, so the board needs no mirroring to sit in the case. Before the fix the exports used y = KiCad y (determinant -1, a mirror-image case).",
+   "verified": true,
+   "matrix_mm": [
+    [
+     1,
+     0,
+     0,
+     -49.5
+    ],
+    [
+     0,
+     0,
+     1,
+     -3.65
+    ],
+    [
+     0,
+     -1,
+     0,
+     20.0
+    ],
+    [
+     0,
+     0,
+     0,
+     1
+    ]
+   ],
+   "matrix_mm_by_revision": {
+    "rev3d": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "rev3c": [
+     [
+      1,
+      0,
+      0,
+      -49.5
+     ],
+     [
+      0,
+      0,
+      1,
+      -3.65
+     ],
+     [
+      0,
+      -1,
+      0,
+      20.0
+     ],
+     [
+      0,
+      0,
+      0,
+      1
+     ]
+    ]
+   },
+   "matrix_determinant": 1.0,
+   "note": "Verified by sampling: points inside the J1 body, the J5/J6 socket rows and a grid over the board plate are not inside printed solid (except mounting posts/standoffs) with y = 40 - ky, while the old y = ky convention collides at J1 and J5. See checks.",
+   "checks": {
+    "placement_y_equals_40_minus_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "control_old_convention_y_equals_ky": {
+     "J1 RJ45 body (z top+0.5..top+8)": {
+      "points": 75,
+      "inside_solid": 3
+     },
+     "J5 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 15
+     },
+     "J6 socket row (z top+0.5..top+7)": {
+      "points": 75,
+      "inside_solid": 0
+     },
+     "board plate (z mid-board, grid 40x16)": {
+      "points": 640,
+      "inside_solid": 2
+     }
+    },
+    "case_bounds_mm": [
+     [
+      -1.55,
+      -7.0,
+      -1.0
+     ],
+     [
+      101.348,
+      47.0,
+      30.5
+     ]
+    ],
+    "board_bbox_inside_case_xy": true,
+    "board_z_range_mm": [
+     3.65,
+     5.25
+    ]
+   }
+  },
+  "params": {
+   "module": "c6",
+   "antenna": "external",
+   "stack": 11.325,
+   "boot_height": 0.53,
+   "reset_height": 0.53,
+   "boot_stop": 0.36,
+   "reset_stop": 0.36,
+   "gap": 0.25,
+   "leaf_offset": 16.6,
+   "relieved_guides": true,
+   "magnets": "none",
+   "magnet_style": "glue",
+   "rj45_style": "flush",
+   "label_inlay": true,
+   "usb_style": "flush",
+   "no_module_tag": false,
+   "closed_usb": false,
+   "no_tail_pockets": false,
+   "qualification": "Unqualified review geometry; no measured assembly or switch-travel proof",
+   "command": "python export_review.py --module c6 --antenna external --stack 11.325 --boot-height 0.53 --reset-height 0.53 --boot-stop 0.36 --reset-stop 0.36 --leaf-offset 16.6 --relieved-guides --usb-style flush --rj45-style flush --label-inlay --output <dir>",
+   "usb_flush": {
+    "face_x_kicad": 100.203,
+    "mouth_x_kicad": 100.003,
+    "recess_mm": 0.2,
+    "plate_mm": 1.2,
+    "opening_mm": [
+     9.64,
+     4.36
+    ],
+    "opening_z": [
+     17.425,
+     21.785
+    ],
+    "upper_step": [
+     101.348,
+     27.6
+    ],
+    "base_colour_change_before_print_z_mm": 7.95,
+    "base_colour_change_note": "Optional: swap to the lid colour at this layer (0.35 mm first layer, 0.2 mm layers) so the USB port filler matches the lid; everything else above the seam is hidden.",
+    "assumptions": "Mouth x from the official module KiCad files; Type-C shell 8.94 x 3.26 top-mounted; module PCB 1.2-1.6 mm. Unmeasured: print the coupon first."
+   }
+  },
+  "source_files": [
+   {
+    "path": "case/rev3c/analytical/enclosure.py",
+    "sha256": "708d2e4aae4f792c52b118704e6bd9ac3c29bd382abaea9e6bf60ce4a45e7169"
+   },
+   {
+    "path": "case/rev3c/analytical/interface_baseline.py",
+    "sha256": "ad394fbb5a76df7bb368640beca2339d51c93d20bfaa9c79a3dca962ddc1cbb5"
+   },
+   {
+    "path": "case/rev3c/analytical/export_review.py",
+    "sha256": "f2e15ee0f5f4372b3661c03a11c67be8bf7bbab593e7674593d85990cb625955"
+   },
+   {
+    "path": "cache/exports-review-c6-external-flush/REVIEW-PARAMETERS.json",
+    "sha256": "7258c1b1b462fabedeb708519c22cc793d450e994e17ad1b996600a0e4b5a597"
+   }
+  ],
+  "status_note": "Shared by Rev3D and Rev3C (same outline, holes, J1 and sockets); every Rev3D 3D model checked clear of printed solid. Flush USB-C port (0.5 mm in front of the module mouth, 9.64 x 4.36 mm opening); mouth position and shell are unmeasured, so print the USB-end coupon first. External SMA: 12 mm bulkhead bore in the long side wall at x 56 mm for an SMA/RP-SMA pigtail from the module U.FL, plus a printed cable keeper; hardware, bend room and RF unverified. C6 switch values are composed from documented nominals. Unqualified review geometry."
+ },
+ {
+  "id": "rev2",
+  "label": "Rev 2 case (Fusion export)",
+  "revisions": [
+   "rev2.0",
+   "rev2.1",
+   "rev2.2"
+  ],
+  "parts": [
+   {
+    "name": "Base",
+    "role": "base",
+    "file": "cases/rev2/v2-case-base.glb",
+    "color_hint": "#8d98a5",
+    "print": null,
+    "bytes": 7656
+   },
+   {
+    "name": "Lid",
+    "role": "lid",
+    "file": "cases/rev2/v2-case-lid.glb",
+    "color_hint": "#c5ccd4",
+    "print": null,
+    "bytes": 47336
+   }
+  ],
+  "board_placement": {
+   "map": "Not established: Rev2 STL bounds (mm): x 34.60..136.79, y -112.00..-78.00, z -3.00..16.85. Rev2.x board bbox in KiCad: x 42.95..131.65, y 79.95..110.05. The case y range equals the NEGATED board y range with equal 1.95/1.95 mm margins and x lies in the same numeric range (J1 overhangs the board to x 136.94 vs case x max 136.79), so the working hypothesis is case x = KiCad x, case y = -KiCad y (a proper rotation, unlike the Rev3C case). The board z level could not be established: only 2 of the 4 board holes (J1 locating holes) coincide with printed solid, so no placement was verified and no matrix is given.",
+   "verified": false,
+   "matrix_mm": null,
+   "matrix_mm_by_revision": {},
+   "note": "Rev2 STL bounds (mm): x 34.60..136.79, y -112.00..-78.00, z -3.00..16.85. Rev2.x board bbox in KiCad: x 42.95..131.65, y 79.95..110.05. The case y range equals the NEGATED board y range with equal 1.95/1.95 mm margins and x lies in the same numeric range (J1 overhangs the board to x 136.94 vs case x max 136.79), so the working hypothesis is case x = KiCad x, case y = -KiCad y (a proper rotation, unlike the Rev3C case). The board z level could not be established: only 2 of the 4 board holes (J1 locating holes) coincide with printed solid, so no placement was verified and no matrix is given.",
+   "checks": null
+  },
+  "params": {
+   "format": "STL exported from v2-case.f3z (Fusion 360)",
+   "units_assumed": "mm"
+  },
+  "source_files": [
+   {
+    "path": "case/rev2/exports/v2-case-base.stl",
+    "sha256": "739c5f7357e1d10d52c355661ea8c1f811e291f216ba126e091cffd9928b71c3"
+   },
+   {
+    "path": "case/rev2/exports/v2-case-lid.stl",
+    "sha256": "4500f0ee8a07d7c433e72eb5f8c367609b7006373a47c26fb710467b33f0bc84"
+   }
+  ],
+  "status_note": "Designed around the Rev 2.x outline (case/rev2/README.md). Units assumed to be mm; not verified against a board."
+ }
+]

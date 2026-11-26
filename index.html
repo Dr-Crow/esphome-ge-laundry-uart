@@ -1,0 +1,1168 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GEA Adapter Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a one-screen review bench. Header carries the revision rail and the views;
+   the stage (3D / schematic / renders) fills the left, an inspector column holds detail. */
+:root{
+  --bg:#eef1ee; --panel:#ffffff; --panel-2:#f6f8f6; --ink:#16201b; --ink-2:#3a4841; --muted:#69766f;
+  --line:#d6ddd8; --accent:#b0602a; --accent-ink:#ffffff; --accent-soft:#f6e6da; --mask:#1e6b49;
+  --stage:#e4e8e4; --paper:#fbfaf6;
+  --good:#1f7a4d; --warn:#9a6a00; --bad:#b3261e; --info:#2d6aa6;
+  --good-soft:#e2f2e8; --warn-soft:#f8eed2; --bad-soft:#f8e1df; --info-soft:#e1ecf7;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-label:"IBM Plex Sans Condensed","IBM Plex Sans",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1311; --panel:#151c19; --panel-2:#1a221f; --ink:#e4ebe7; --ink-2:#b8c3bd; --muted:#83918a;
+  --line:#28332e; --accent:#e39457; --accent-ink:#1a0f07; --accent-soft:#3a281b; --mask:#45a87a;
+  --stage:#0a0e0c; --paper:#f4f2ea;
+  --good:#5cc48d; --warn:#e0b04a; --bad:#ef7a70; --info:#78aee6;
+  --good-soft:#163326; --warn-soft:#382d12; --bad-soft:#3d1b19; --info-soft:#152a3f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1311; --panel:#151c19; --panel-2:#1a221f; --ink:#e4ebe7; --ink-2:#b8c3bd; --muted:#83918a;
+  --line:#28332e; --accent:#e39457; --accent-ink:#1a0f07; --accent-soft:#3a281b; --mask:#45a87a;
+  --stage:#0a0e0c; --paper:#f4f2ea;
+  --good:#5cc48d; --warn:#e0b04a; --bad:#ef7a70; --info:#78aee6;
+  --good-soft:#163326; --warn-soft:#382d12; --bad-soft:#3d1b19; --info-soft:#152a3f; color-scheme:dark}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font:14px/1.45 var(--f-body);display:flex;flex-direction:column;overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--panel)}
+button,select,input,textarea{font:inherit;color:inherit}
+a{color:var(--accent)}
+.mono{font-family:var(--f-mono)}
+.num{font-variant-numeric:tabular-nums}
+.lbl{font-family:var(--f-label);text-transform:uppercase;letter-spacing:.06em;font-size:11px;color:var(--muted);font-weight:600}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* header */
+header{background:var(--panel);border-bottom:1px solid var(--line);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px 0;display:flex;flex-direction:column;gap:8px;flex:none}
+.hrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;min-width:0}
+.brand{display:flex;align-items:baseline;gap:10px;margin-right:auto;min-width:0}
+.brand h1{font:600 17px/1.1 var(--f-label);letter-spacing:.02em;margin:0;white-space:nowrap}
+.brand .sub{color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.revrail{display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px;max-width:100%}
+.revchip{flex:none;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel-2);border-radius:999px;padding:3px 10px 3px 8px;cursor:pointer;font:500 13px var(--f-label)}
+.revchip[aria-pressed="true"]{background:var(--ink);color:var(--panel);border-color:var(--ink)}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;background:var(--muted)}
+.st-candidate{background:var(--accent)} .st-blocked{background:var(--bad)} .st-superseded{background:var(--muted)}
+.st-original{background:var(--info)} .st-pivot{background:var(--warn)}
+nav.views{display:flex;gap:2px;overflow-x:auto;max-width:100%}
+nav.views button{border:0;background:none;padding:8px 12px 9px;cursor:pointer;font:600 13px var(--f-label);letter-spacing:.03em;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap}
+nav.views button[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+.badge{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;background:var(--accent);color:var(--accent-ink);font:600 11px/18px var(--f-mono);text-align:center;margin-left:4px}
+
+/* main */
+main{flex:1;min-height:0;display:flex}
+.view{flex:1;min-height:0;min-width:0;display:flex}
+.view[hidden]{display:none!important}
+.split{display:grid;grid-template-columns:minmax(0,1fr) 380px;flex:1;min-height:0}
+.stagewrap{position:relative;min-width:0;min-height:0;background:var(--stage);overflow:hidden}
+.stagewrap canvas{display:block;width:100%;height:100%;touch-action:none}
+aside.insp{border-left:1px solid var(--line);background:var(--panel);overflow:auto;min-width:0;display:flex;flex-direction:column}
+.sec{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.sec h2,.sec h3{margin:0;font:600 15px/1.25 var(--f-label);letter-spacing:.02em;text-wrap:balance}
+.scroll{overflow:auto;min-height:0;flex:1}
+.pad{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.page{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+
+/* toolbars over the stage */
+.tb{position:absolute;display:flex;gap:6px;flex-wrap:wrap;align-items:center;z-index:2}
+.tb.top{top:10px;left:10px;right:10px}
+.seg{display:inline-flex;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.seg button{border:0;background:none;padding:5px 10px;cursor:pointer;font:500 12px var(--f-label);letter-spacing:.03em;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--panel)}
+.seg button+button{border-left:1px solid var(--line)}
+.ctl{display:inline-flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:3px 8px;font:500 12px var(--f-label);color:var(--ink-2)}
+.ctl select,.ctl input[type=range]{background:transparent;border:0;font-size:12px}
+.ctl select{max-width:150px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r)}
+.layerpanel{position:absolute;left:10px;bottom:10px;z-index:2;padding:8px 10px;display:flex;flex-direction:column;gap:3px;max-height:calc(100% - 70px);overflow:auto;min-width:170px}
+.layerpanel label{display:flex;align-items:center;gap:8px;font:500 12px var(--f-mono);cursor:pointer;white-space:nowrap}
+.sw{width:12px;height:12px;border-radius:2px;flex:none;border:1px solid rgba(0,0,0,.25)}
+.legend{position:absolute;right:10px;bottom:10px;z-index:2;padding:8px 10px;display:flex;flex-direction:column;gap:4px;font-size:12px}
+.legend div{display:flex;align-items:center;gap:8px}
+.tip{position:absolute;z-index:3;pointer-events:none;background:var(--panel);color:var(--ink);border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.25);font-size:12.5px;line-height:1.4;padding:8px 10px;border-radius:6px;width:max-content;max-width:min(320px,calc(100% - 16px));display:flex;flex-direction:column;gap:3px}
+.tip .h{display:flex;gap:8px;align-items:baseline}.tip .h b{font:500 14px var(--f-mono)}.tip .h span{color:var(--ink-2)}
+.tip .role{color:var(--ink)}.tip .sub{color:var(--muted);font-size:11.5px}.tip .cost{font:500 12px var(--f-mono);color:var(--accent)}
+.tip .hint{color:var(--muted);font-size:11px;border-top:1px solid var(--line);padding-top:3px;margin-top:2px}
+.loading{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font:500 13px var(--f-label);letter-spacing:.05em;z-index:1;pointer-events:none}
+.reflabel{font:500 10px var(--f-mono);color:#fff;background:rgba(10,14,12,.72);padding:0 3px;border-radius:2px;pointer-events:none;white-space:nowrap}
+
+/* inspector content */
+.kv{display:grid;grid-template-columns:96px minmax(0,1fr);gap:4px 10px;font-size:13px}
+.kv dt{color:var(--muted);font-family:var(--f-label);font-size:12px;letter-spacing:.03em}
+.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.refbig{font:500 26px/1 var(--f-mono);letter-spacing:-.01em}
+.pills{display:flex;gap:6px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:5px;border-radius:999px;padding:1px 8px;font:600 11px/18px var(--f-label);letter-spacing:.04em;text-transform:uppercase;background:var(--panel-2);color:var(--ink-2);border:1px solid var(--line)}
+.pill.good{background:var(--good-soft);color:var(--good);border-color:transparent}
+.pill.warn{background:var(--warn-soft);color:var(--warn);border-color:transparent}
+.pill.bad{background:var(--bad-soft);color:var(--bad);border-color:transparent}
+.pill.info{background:var(--info-soft);color:var(--info);border-color:transparent}
+.pill.acc{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel-2);border-radius:var(--r);padding:6px 11px;cursor:pointer;font:600 12px var(--f-label);letter-spacing:.03em;color:var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input.search{width:100%;border:1px solid var(--line);background:var(--panel-2);border-radius:var(--r);padding:7px 10px}
+.plist{display:flex;flex-direction:column}
+/* board inspector: details stay put, only the parts list scrolls */
+#bInsp{overflow:hidden}
+#bSel{flex:none;max-height:60%;overflow:auto}
+#bInsp > .sec:nth-child(2){flex:none}
+#bList{flex:1;min-height:0;overflow:auto}
+.prow{display:grid;grid-template-columns:62px minmax(0,1fr) auto;gap:8px;align-items:center;padding:5px 16px;border:0;background:none;text-align:left;cursor:pointer;border-top:1px solid var(--line);font-size:13px}
+.prow:hover{background:var(--panel-2)}
+.prow[aria-current="true"]{background:var(--accent-soft)}
+.prow .r{font:500 13px var(--f-mono)}
+.prow .v{color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mk{width:8px;height:8px;border-radius:2px;display:inline-block}
+.nets{font:12px/1.6 var(--f-mono);color:var(--ink-2);display:grid;grid-template-columns:auto 1fr;gap:0 10px}
+.muted{color:var(--muted)}
+.note{font-size:12.5px;color:var(--ink-2);background:var(--panel-2);border:1px solid var(--line);border-radius:var(--r);padding:8px 10px}
+
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 11px var(--f-label);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--panel-2);white-space:nowrap}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+tbody tr.click{cursor:pointer} tbody tr.click:hover{background:var(--panel-2)}
+
+/* overview */
+.hero{display:flex;flex-direction:column;gap:6px}
+.hero h2{font:600 26px/1.15 var(--f-label);margin:0;letter-spacing:.01em;text-wrap:balance}
+.hero p{margin:0;color:var(--ink-2);max-width:72ch}
+.grid-revs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.revcard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);overflow:hidden;cursor:pointer;text-align:left;padding:0}
+.revcard:hover{border-color:var(--ink-2)}
+.revcard .thumb{aspect-ratio:99/48;background:var(--stage);display:grid;place-items:center;max-width:100%}
+.revcard .thumb img{width:100%;height:100%;object-fit:contain}
+.revcard .body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:6px}
+.revcard .t{display:flex;align-items:center;gap:8px;font:600 16px var(--f-label)}
+.revcard .s{font-size:12.5px;color:var(--ink-2)}
+.stats{display:flex;gap:12px;flex-wrap:wrap;font:12px var(--f-mono);color:var(--muted)}
+.two{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px}
+.feed{display:flex;flex-direction:column;gap:10px}
+.feed .it{display:grid;grid-template-columns:86px minmax(0,1fr);gap:10px;font-size:13px}
+.feed .it .d{font:12px var(--f-mono);color:var(--muted)}
+.feed .it b{font-weight:600}
+
+/* compare */
+.cmpbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.cmpbar select{border:1px solid var(--line);background:var(--panel);border-radius:var(--r);padding:6px 8px}
+.renders{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.renders figure{margin:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--stage)}
+.renders figcaption{padding:6px 10px;font:600 12px var(--f-label);background:var(--panel);border-top:1px solid var(--line)}
+.renders img{display:block;width:100%;aspect-ratio:99/48;object-fit:contain}
+.chg-added{color:var(--good)} .chg-removed{color:var(--bad)} .chg-changed{color:var(--warn)} .chg-moved{color:var(--info)}
+
+/* cost chart */
+.bars{display:flex;flex-direction:column;gap:6px}
+.bar{display:grid;grid-template-columns:70px minmax(0,1fr) 92px;gap:10px;align-items:center;font-size:13px}
+.bar .track{height:18px;position:relative}
+.bar .fill{position:absolute;left:0;top:2px;bottom:2px;border-radius:0 4px 4px 0;background:var(--accent)}
+.bar .fill.est{background:transparent;border:2px solid var(--accent);border-left-width:0;background-image:repeating-linear-gradient(135deg,var(--accent-soft) 0 4px,transparent 4px 8px)}
+.bar .fill.none{display:none}
+.bar .val{text-align:right;font:500 13px var(--f-mono)}
+.bar:hover .track{background:var(--panel-2)}
+.axis{display:grid;grid-template-columns:70px minmax(0,1fr) 92px;gap:10px;font:11px var(--f-mono);color:var(--muted)}
+.axis .ticks{position:relative;height:14px;border-top:1px solid var(--line)}
+.axis .ticks span{position:absolute;top:2px;transform:translateX(-50%)}
+.calc{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.calc label{display:flex;flex-direction:column;gap:4px;font-size:13px}
+.calc select{border:1px solid var(--line);background:var(--panel);border-radius:var(--r);padding:6px 8px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.tile{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.tile .big{font:500 22px/1.2 var(--f-mono)}
+.tile .s{font-size:12px;color:var(--muted)}
+
+/* docs */
+.docs{display:grid;grid-template-columns:270px minmax(0,1fr);flex:1;min-height:0}
+.docnav{border-right:1px solid var(--line);background:var(--panel);overflow:auto;padding:10px 0 30px}
+.docnav h4{margin:14px 16px 4px;font:600 11px var(--f-label);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.docnav button{display:block;width:100%;text-align:left;border:0;background:none;padding:5px 16px;cursor:pointer;font-size:13px;color:var(--ink-2)}
+.docnav button[aria-current="true"]{background:var(--accent-soft);color:var(--ink);font-weight:500}
+.docnav input{margin:0 16px 4px;width:calc(100% - 32px)}
+.md{max-width:78ch;font-size:14.5px;line-height:1.6;overflow-wrap:anywhere}
+.md h1{font:600 26px/1.2 var(--f-label);margin:0 0 .6em;text-wrap:balance}
+.md h2{font:600 19px/1.25 var(--f-label);margin:1.6em 0 .5em;text-wrap:balance}
+.md h3{font:600 16px/1.3 var(--f-label);margin:1.3em 0 .4em}
+.md code{font:13px var(--f-mono);background:var(--panel-2);border:1px solid var(--line);border-radius:3px;padding:0 4px}
+.md pre{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;overflow:auto}
+.md pre code{border:0;padding:0;background:none}
+.md table{display:block;overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);margin:1em 0}
+.md img{max-width:100%;border:1px solid var(--line);border-radius:var(--r)}
+.md blockquote{margin:1em 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--ink-2)}
+.md hr{border:0;border-top:1px solid var(--line);margin:2em 0}
+.md a.missing{color:var(--muted);text-decoration:underline dotted}
+.dochead{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px;color:var(--muted);font-size:12px}
+
+/* schematic */
+.schwrap{position:absolute;inset:0;background:var(--paper);overflow:hidden;cursor:grab}
+.schwrap img{position:absolute;left:0;top:0;transform-origin:0 0;user-select:none;-webkit-user-drag:none;max-width:none}
+.rendersview{position:absolute;inset:0;overflow:auto;padding:56px 16px 16px;display:grid;gap:14px;align-content:start}
+.rendersview img{width:100%;max-width:1200px;justify-self:center;border-radius:var(--r)}
+
+/* feedback */
+dialog{border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);padding:0;width:min(520px,calc(100vw - 32px))}
+dialog::backdrop{background:rgba(5,8,7,.45)}
+dialog form{display:flex;flex-direction:column;gap:12px;padding:18px}
+dialog textarea{min-height:120px;border:1px solid var(--line);background:var(--panel-2);border-radius:var(--r);padding:8px 10px;resize:vertical}
+dialog select{border:1px solid var(--line);background:var(--panel-2);border-radius:var(--r);padding:6px 8px}
+.fbitem{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.fbitem .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted)}
+.fbitem .txt{white-space:pre-wrap;font-size:14px}
+.fbitem .reply{border-left:3px solid var(--accent);padding:4px 10px;background:var(--panel-2);font-size:13px;white-space:pre-wrap}
+.empty{border:1px dashed var(--line);border-radius:var(--r);padding:22px;color:var(--ink-2);text-align:center}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--panel);padding:8px 14px;border-radius:6px;font-size:13px;z-index:20}
+
+@media (max-width:900px){
+  body{overflow:auto}
+  main{display:block}
+  .view{display:block}
+  .split{display:flex;flex-direction:column}
+  .stagewrap{height:62vh;min-height:360px}
+  aside.insp{border-left:0;border-top:1px solid var(--line)}
+  #bInsp{overflow:visible} #bSel{max-height:none} #bList{max-height:60vh}
+  .docs{display:flex;flex-direction:column}
+  .docnav{max-height:40vh;border-right:0;border-bottom:1px solid var(--line)}
+  .two,.renders{grid-template-columns:1fr}
+  .brand .sub{display:none}
+  .layerpanel{min-width:0}
+}
+/* outside the Claude-hosted copy there is no feedback store: hide every feedback control */
+.no-fb #fbNew,.no-fb [data-v="feedback"],.no-fb [data-fb],.no-fb #docFb,.no-fb #caseFb,.no-fb #cmpFb,.no-fb #costFb,.no-fb #ovFb{display:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header>
+  <div class="hrow">
+    <div class="brand"><h1>GEA Adapter Review</h1><span class="sub">GE appliance service-port carrier · XIAO ESP32-C3/C6 · every revision, case, cost and doc</span></div>
+    <button class="btn" id="fbNew" type="button">Leave feedback</button>
+  </div>
+  <div class="hrow"><div class="revrail" id="revrail" role="toolbar" aria-label="Revisions"></div></div>
+  <nav class="views" id="views" aria-label="Views">
+    <button data-v="overview" type="button">Overview</button>
+    <button data-v="board" type="button">Board</button>
+    <button data-v="compare" type="button">Compare</button>
+    <button data-v="cost" type="button">Cost</button>
+    <button data-v="case" type="button">Case</button>
+    <button data-v="docs" type="button">Docs</button>
+    <button data-v="feedback" type="button">Feedback<span class="badge" id="fbCount" hidden>0</span></button>
+  </nav>
+</header>
+
+<main>
+  <!-- OVERVIEW -->
+  <section class="view" id="v-overview"><div class="scroll pad"><div class="page" id="ovPage">
+    <div class="hero"><h2>Eight revisions, one adapter</h2><p>Loading revisions…</p></div>
+  </div></div></section>
+
+  <!-- BOARD -->
+  <section class="view" id="v-board" hidden>
+    <div class="split">
+      <div class="stagewrap" id="bStageWrap">
+        <div class="tb top">
+          <div class="seg" id="bMode" role="group" aria-label="Display">
+            <button data-m="3d" aria-pressed="true" type="button">3D</button>
+            <button data-m="sch" type="button">Schematic</button>
+            <button data-m="renders" type="button">Renders</button>
+          </div>
+          <div class="seg" id="bLook" role="group" aria-label="3D look">
+            <button data-l="assembled" aria-pressed="true" type="button">Assembled</button>
+            <button data-l="layers" type="button">Layers</button>
+            <button data-l="xray" type="button">X-ray</button>
+          </div>
+          <div class="seg" id="bCam" role="group" aria-label="Camera">
+            <button data-c="iso" type="button">3/4</button>
+            <button data-c="top" type="button">Top</button>
+            <button data-c="bottom" type="button">Bottom</button>
+          </div>
+          <label class="ctl" id="bExplodeCtl" hidden>Explode <input id="bExplode" type="range" min="0" max="1" step="0.01" value="0.35"></label>
+          <label class="ctl"><input id="bLabels" type="checkbox"> Refs</label>
+          <label class="ctl">Diff vs <select id="bDiff"><option value="">none</option></select></label>
+        </div>
+        <canvas id="bCanvas"></canvas>
+        <div class="layerpanel card" id="bLayers" hidden></div>
+        <div class="legend card" id="bLegend" hidden></div>
+        <div class="tip" id="bTip" hidden></div>
+        <div class="loading" id="bLoading">Loading board…</div>
+        <div class="schwrap" id="bSch" hidden></div>
+        <div class="rendersview" id="bRenders" hidden></div>
+      </div>
+      <aside class="insp" id="bInsp">
+        <div class="sec" id="bSel"></div>
+        <div class="sec"><input class="search" id="bSearch" type="search" placeholder="Find part: ref, value, LCSC, net…" aria-label="Find part"></div>
+        <div class="plist" id="bList"></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section class="view" id="v-compare" hidden><div class="scroll pad"><div class="page" id="cmpPage"></div></div></section>
+
+  <!-- COST -->
+  <section class="view" id="v-cost" hidden><div class="scroll pad"><div class="page" id="costPage"></div></div></section>
+
+  <!-- CASE -->
+  <section class="view" id="v-case" hidden>
+    <div class="split">
+      <div class="stagewrap">
+        <div class="tb top">
+          <div class="seg" id="cCam" role="group" aria-label="Camera">
+            <button data-c="iso" type="button">3/4</button>
+            <button data-c="top" type="button">Top</button>
+            <button data-c="side" type="button">Side</button>
+            <button data-c="end" type="button">USB end</button>
+            <button data-c="rjend" type="button">RJ45 end</button>
+            <button data-c="bottom" type="button">Bottom</button>
+          </div>
+          <label class="ctl" id="cWhipCtl" hidden>Antenna <select id="cWhip"></select></label>
+          <label class="ctl" id="cMagCtl" hidden>Magnets <select id="cMagnets"><option value="">None</option></select></label>
+          <label class="ctl">Lid opacity <input id="cOpacity" type="range" min="0.08" max="1" step="0.01" value="0.35"></label>
+          <label class="ctl">Explode <input id="cExplode" type="range" min="0" max="1" step="0.01" value="0"></label>
+          <label class="ctl"><input id="cBoard" type="checkbox" checked> Board inside</label>
+        </div>
+        <canvas id="cCanvas"></canvas>
+        <div class="tip" id="cTip" hidden></div>
+        <div class="loading" id="cLoading">Loading case…</div>
+      </div>
+      <aside class="insp" id="cInsp"></aside>
+    </div>
+  </section>
+
+  <!-- DOCS -->
+  <section class="view" id="v-docs" hidden>
+    <div class="docs">
+      <div class="docnav" id="docNav"></div>
+      <div class="scroll pad"><div id="docBody"></div></div>
+    </div>
+  </section>
+
+  <!-- FEEDBACK -->
+  <section class="view" id="v-feedback" hidden><div class="scroll pad"><div class="page" id="fbPage"></div></div></section>
+</main>
+
+<dialog id="fbDlg">
+  <form id="fbForm" method="dialog">
+    <h3 style="margin:0;font:600 17px var(--f-label)">Leave feedback</h3>
+    <div class="note" id="fbCtx"></div>
+    <label class="lbl" for="fbKind">Type</label>
+    <select id="fbKind">
+      <option value="issue">Issue / change request</option>
+      <option value="question">Question</option>
+      <option value="idea">Idea</option>
+      <option value="approve">Looks good / approved</option>
+    </select>
+    <label class="lbl" for="fbText">Feedback</label>
+    <textarea id="fbText" required placeholder="What should change, or what do you want checked?"></textarea>
+    <div class="muted" id="fbAvail" style="font-size:12px"></div>
+    <div class="row" style="justify-content:flex-end">
+      <button class="btn" type="button" id="fbCancel">Cancel</button>
+      <button class="btn primary" type="submit" id="fbSave">Save feedback</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+/* ---------- helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const money = v => v == null || isNaN(v) ? '—' : '$' + Number(v).toFixed(2);
+const fmtN = v => v == null ? '—' : Number(v).toLocaleString();
+const slug = id => String(id).replace(/[^A-Za-z0-9]+/g, '-');
+const cache = new Map();
+async function getJSON(url, fallback) {
+  if (cache.has(url)) return cache.get(url);
+  const p = fetch(url).then(r => { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); })
+    .catch(e => { if (fallback !== undefined) return fallback; throw e; });
+  cache.set(url, p); return p;
+}
+function toast(msg) { const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; document.body.append(t); setTimeout(() => t.remove(), 2600); }
+const store = { get(k, d) { try { const v = localStorage.getItem('gea.' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('gea.' + k, JSON.stringify(v)); } catch {} } };
+
+const STATUS = { candidate: ['st-candidate', 'acc'], blocked: ['st-blocked', 'bad'], superseded: ['st-superseded', ''], original: ['st-original', 'info'], 'pivot option': ['st-pivot', 'warn'] };
+const stCls = s => (STATUS[s] || ['', ''])[0];
+const stPill = s => `<span class="pill ${(STATUS[s] || ['', ''])[1]}">${esc(s || 'unknown')}</span>`;
+
+/* ---------- state ---------- */
+const S = { revs: [], byId: {}, bySlug: {}, cur: null, view: 'overview', pricing: null, cases: [], docs: [], updates: [], fb: [], fbReady: false, db: null, user: null, uid: null };
+
+/* ---------- boot ---------- */
+async function boot() {
+  const [revs, pricing, cases, docs, updates] = await Promise.all([
+    getJSON('data/revisions.json', []), getJSON('data/pricing.json', null), getJSON('data/cases.json', []),
+    getJSON('data/docs.json', []), getJSON('data/updates.json', [])]);
+  S.revs = revs; S.pricing = pricing; S.cases = cases; S.docs = docs; S.updates = updates;
+  revs.forEach(r => { S.byId[r.id] = r; S.bySlug[slug(r.id)] = r.id; });
+  S.cur = store.get('rev', null);
+  if (!S.byId[S.cur]) S.cur = (revs.find(r => r.status === 'candidate') || revs[revs.length - 1] || {}).id;
+  renderRail();
+  $$('#views button').forEach(b => b.onclick = () => go(b.dataset.v));
+  $('#fbNew').onclick = () => openFeedback(currentContext());
+  window.addEventListener('hashchange', route);
+  route();
+  initFeedbackStore();
+}
+function renderRail() {
+  $('#revrail').innerHTML = S.revs.map(r => `<button class="revchip" type="button" data-id="${esc(r.id)}" aria-pressed="${r.id === S.cur}" title="${esc(r.status + ' — ' + (r.summary || ''))}"><span class="dot ${stCls(r.status)}"></span>${esc(r.label)}</button>`).join('');
+  $$('#revrail .revchip').forEach(b => b.onclick = () => selectRev(b.dataset.id));
+}
+function selectRev(id) {
+  S.cur = id; store.set('rev', id);
+  $$('#revrail .revchip').forEach(b => b.setAttribute('aria-pressed', b.dataset.id === id));
+  if (['overview', 'docs', 'feedback'].includes(S.view)) go('board'); else go(S.view);
+}
+
+/* ---------- routing (#view-arg) ---------- */
+function go(view, arg) {
+  let h = view;
+  if (view === 'board') h += '-' + slug(arg || S.cur);
+  if (view === 'compare') h += '-' + (arg || (slug(cmpA()) + '-vs-' + slug(S.cur)));
+  if (view === 'cost') h += '-' + slug(arg || S.cur);
+  if (view === 'case' && (arg || S.caseId)) h += '-' + slug(arg || S.caseId);
+  if (view === 'docs' && (arg || S.docId)) h += '-' + slug(arg || S.docId);
+  if (location.hash.slice(1) === h) route(); else location.hash = h;
+}
+function route() {
+  const h = decodeURIComponent(location.hash.slice(1));
+  const i = h.indexOf('-'); const view = (i < 0 ? h : h.slice(0, i)) || 'overview'; const arg = i < 0 ? '' : h.slice(i + 1);
+  const valid = ['overview', 'board', 'compare', 'cost', 'case', 'docs', 'feedback'];
+  S.view = valid.includes(view) ? view : 'overview';
+  $$('#views button').forEach(b => { if (b.dataset.v === S.view) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+  $$('main > .view').forEach(v => v.hidden = v.id !== 'v-' + S.view);
+  if ((S.view === 'board' || S.view === 'cost') && S.bySlug[arg]) { S.cur = S.bySlug[arg]; store.set('rev', S.cur); }
+  $$('#revrail .revchip').forEach(b => b.setAttribute('aria-pressed', b.dataset.id === S.cur));
+  const chip = $('#revrail .revchip[aria-pressed="true"]'), rail = $('#revrail');
+  if (chip && (chip.offsetLeft < rail.scrollLeft || chip.offsetLeft + chip.offsetWidth > rail.scrollLeft + rail.clientWidth)) rail.scrollLeft = chip.offsetLeft - 8;
+  ({ overview: showOverview, board: showBoard, compare: () => showCompare(arg), cost: showCost, case: () => showCase(arg), docs: () => showDocs(arg), feedback: showFeedback })[S.view]();
+}
+
+/* ---------- 3D stage ---------- */
+const loader = new GLTFLoader(); loader.setMeshoptDecoder(MeshoptDecoder);
+const servedGltf = u => u.replace(/\.glb$/i, '.gltf.json'); // artifacts serve .json, not .glb (build/glb_to_gltf.py)
+class Stage {
+  constructor(canvas) {
+    this.canvas = canvas; this.wrap = canvas.parentElement;
+    this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    this.renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    this.renderer.outputColorSpace = THREE.SRGBColorSpace;
+    this.scene = new THREE.Scene();
+    this.camera = new THREE.PerspectiveCamera(35, 1, 0.5, 5000);
+    this.controls = new OrbitControls(this.camera, canvas);
+    this.controls.enableDamping = true; this.controls.dampingFactor = 0.12; this.controls.screenSpacePanning = true;
+    // Studio look: soft room reflections, filmic tone mapping, one shadow-casting key light.
+    this.renderer.toneMapping = THREE.ACESFilmicToneMapping; this.renderer.toneMappingExposure = 0.85;
+    this.renderer.shadowMap.enabled = true; this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    this.renderer.localClippingEnabled = true; // two-colour base: charcoal below the seam, lid colour above
+    const pm = new THREE.PMREMGenerator(this.renderer); this.scene.environment = pm.fromScene(new RoomEnvironment(), 0.04).texture;
+    this.scene.add(new THREE.HemisphereLight(0xffffff, 0x445048, 0.55));
+    const d1 = new THREE.DirectionalLight(0xffffff, 1.5); d1.position.set(70, 160, 90); d1.castShadow = true;
+    Object.assign(d1.shadow.camera, { left: -140, right: 140, top: 140, bottom: -140, near: 1, far: 600 }); d1.shadow.mapSize.set(2048, 2048); d1.shadow.bias = -0.0004; d1.shadow.radius = 6;
+    this.scene.add(d1); this.key = d1;
+    const d2 = new THREE.DirectionalLight(0xffffff, 0.35); d2.position.set(-80, -120, -60); this.scene.add(d2);
+    this.labels = new CSS2DRenderer(); Object.assign(this.labels.domElement.style, { position: 'absolute', inset: '0', pointerEvents: 'none' });
+    this.wrap.append(this.labels.domElement);
+    this.root = new THREE.Group(); this.scene.add(this.root);
+    new ResizeObserver(() => this.resize()).observe(this.wrap); this.resize();
+    const loop = () => { requestAnimationFrame(loop); if (!this.wrap.offsetParent && this.wrap.offsetWidth === 0) return; this.controls.update(); this.renderer.render(this.scene, this.camera); this.labels.render(this.scene, this.camera); };
+    loop();
+  }
+  resize() { const w = this.wrap.clientWidth || 1, h = this.wrap.clientHeight || 1; this.renderer.setSize(w, h, false); this.labels.setSize(w, h); this.camera.aspect = w / h; this.camera.updateProjectionMatrix(); }
+  clear() { this.root.traverse(o => { if (o.isCSS2DObject) o.element.remove(); }); this.scene.remove(this.root); this.root.traverse(o => { o.geometry?.dispose?.(); }); this.root = new THREE.Group(); this.scene.add(this.root); }
+  frame(box, view = 'iso', pad = 1.15) {
+    const c = box.getCenter(new THREE.Vector3()), s = box.getSize(new THREE.Vector3());
+    const r = (view === 'end' || view === 'rjend' ? Math.max(s.z, s.y) * 1.6 : Math.max(s.x, s.z, s.y)) * 0.5; const dist = r / Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2)) * (this.camera.aspect < 1 ? 1.9 : pad);
+    // camera.up stays +Y (OrbitControls fixes its up axis at creation); a tiny +Z offset makes "top" read like KiCad's top view (+Y down the screen)
+    const dir = { iso: new THREE.Vector3(0.55, 0.85, 1.05), top: new THREE.Vector3(0, 1, 0.002), bottom: new THREE.Vector3(0, -1, 0.002), side: new THREE.Vector3(0, 0.12, 1), end: new THREE.Vector3(1, 0.22, 0.12), rjend: new THREE.Vector3(-1, 0.22, 0.12) }[view].normalize();
+    this.camera.position.copy(c).addScaledVector(dir, dist); this.controls.target.copy(c); this.camera.near = dist / 100; this.camera.far = dist * 20; this.camera.updateProjectionMatrix(); this.controls.update();
+  }
+  pick(ev, targets) {
+    const r = this.canvas.getBoundingClientRect(); const p = new THREE.Vector2(((ev.clientX - r.left) / r.width) * 2 - 1, -((ev.clientY - r.top) / r.height) * 2 + 1);
+    const rc = new THREE.Raycaster(); rc.setFromCamera(p, this.camera); return rc.intersectObjects(targets, true);
+  }
+}
+
+/* layer colours: KiCad-like so they read the same as the editor */
+const LAYER_COLOR = { 'F.Cu': '#d0473b', 'In1.Cu': '#c9b23a', 'In2.Cu': '#b45fc4', 'B.Cu': '#4a83d0', 'F.SilkS': '#f2f1e8', 'B.SilkS': '#e8d9f2', 'F.Mask': '#2f8a5c', 'B.Mask': '#2f8a5c', 'F.Paste': '#a9b2b7', 'B.Paste': '#a9b2b7', 'Edge.Cuts': '#e8cf5e', 'F.Fab': '#9db3c9', 'B.Fab': '#9db3c9', drill: '#151515' };
+const layerColor = n => LAYER_COLOR[n] || (/drill|Drill|PTH/.test(n) ? '#151515' : '#8a9a92');
+const DEFAULT_ON = new Set(['F.Cu', 'In1.Cu', 'In2.Cu', 'B.Cu', 'F.SilkS', 'Edge.Cuts']);
+
+/* ---------- board view ---------- */
+const PROXY_MAT = new THREE.MeshStandardMaterial({ color: 0x3b3f42, roughness: 0.6, metalness: 0.1, transparent: true, opacity: 0.92 });
+const B = { stage: null, rev: null, data: null, glbRefs: {}, pickTargets: [], boxes: {}, sel: null, look: 'assembled', mode: '3d', layerMeshes: [], layerOn: store.get('layers', null), diffAgainst: '', diff: null, labelObjs: [], schIdx: 0 };
+async function loadRev(id) {
+  const base = `data/${id}/`;
+  const [board, parts, cost, sch] = await Promise.all([getJSON(base + 'board.json', null), getJSON(base + 'parts.json', []), getJSON(base + 'cost.json', null), getJSON(base + 'sch/index.json', [])]);
+  thtCache[id] = Object.fromEntries(parts.map(p => [p.ref, p]));
+  return { id, base, board, parts, cost, sch, partBy: thtCache[id], costBy: indexCost(cost) };
+}
+function indexCost(cost) { const m = {}; (cost?.lines || []).forEach(l => (l.refs || []).forEach(r => m[r] = l)); return m; }
+
+/* KiCad mm -> world (mm), using the GLB origin the build recorded */
+function mapper(board) {
+  const g = board?.glb || {}; const [ox, oy] = g.origin_mm || [((board?.bbox_mm?.x0 ?? 0) + (board?.bbox_mm?.x1 ?? 0)) / 2, ((board?.bbox_mm?.y0 ?? 0) + (board?.bbox_mm?.y1 ?? 0)) / 2];
+  const zs = g.kicad_y_to === '-Z' ? -1 : 1; const bot = g.board_bottom_y_mm ?? 0; const top = g.board_top_y_mm ?? (bot + (board?.thickness_mm ?? 1.6));
+  return { k2w: (x, y, h = 0) => new THREE.Vector3(x - ox, h, (y - oy) * zs), zs, bot, top, scale: g.scale_to_mm || 1000 };
+}
+
+function showBoard() {
+  if (!B.stage) initBoardStage();
+  const id = S.cur; fillDiffSelect();
+  if (B.rev !== id) buildBoard(id); else { setMode(B.mode); B.stage.resize(); }
+}
+function initBoardStage() {
+  B.stage = new Stage($('#bCanvas'));
+  $$('#bMode button').forEach(b => b.onclick = () => setMode(b.dataset.m));
+  $$('#bLook button').forEach(b => b.onclick = () => setLook(b.dataset.l));
+  $$('#bCam button').forEach(b => b.onclick = () => frameBoard(b.dataset.c));
+  $('#bExplode').oninput = () => placeLayers();
+  $('#bLabels').onchange = () => B.labelObjs.forEach(o => o.visible = $('#bLabels').checked);
+  $('#bDiff').onchange = () => { B.diffAgainst = $('#bDiff').value; applyDiff(); };
+  $('#bSearch').oninput = () => renderPartList();
+  const c = $('#bCanvas'); let down = null;
+  c.addEventListener('pointerdown', e => down = [e.clientX, e.clientY]);
+  c.addEventListener('pointerup', e => { if (down && Math.hypot(e.clientX - down[0], e.clientY - down[1]) < 5) { const ref = pickRef(e); selectPart(ref, false); } down = null; });
+  let t = 0; c.addEventListener('pointermove', e => { const now = performance.now(); if (now - t < 40 || e.buttons) return; t = now; const ref = pickRef(e); const tip = $('#bTip');
+    if (ref) { const p = B.data.partBy[ref]; if (tip.dataset.ref !== ref) { tip.innerHTML = tipHTML(p, B.data); tip.dataset.ref = ref; }
+      const r = B.stage.wrap.getBoundingClientRect(); const x = e.clientX - r.left, y = e.clientY - r.top; tip.hidden = false;
+      tip.style.left = Math.min(x + 14, r.width - tip.offsetWidth - 8) + 'px'; tip.style.top = (y + tip.offsetHeight + 24 > r.height ? y - tip.offsetHeight - 10 : y + 14) + 'px'; c.style.cursor = 'pointer'; }
+    else { tip.hidden = true; c.style.cursor = ''; } });
+  c.addEventListener('pointerleave', () => $('#bTip').hidden = true);
+}
+function fillDiffSelect() {
+  const sel = $('#bDiff'); const cur = B.diffAgainst;
+  sel.innerHTML = '<option value="">none</option>' + S.revs.filter(r => r.id !== S.cur).map(r => `<option value="${esc(r.id)}">${esc(r.label)}</option>`).join('');
+  sel.value = S.byId[cur] && cur !== S.cur ? cur : ''; B.diffAgainst = sel.value;
+}
+async function buildBoard(id) {
+  B.rev = id; B.sel = null; B.glbRefs = {}; B.glbNodes = new Map(); B.model = null; B.proxies = []; B.boxes = {}; B.pickTargets = []; B.layerMeshes = []; B.labelObjs = []; B.diff = null;
+  B.stage.clear(); $('#bLoading').hidden = false; $('#bLoading').textContent = 'Loading ' + (S.byId[id]?.label || id) + '…';
+  let d; try { d = await loadRev(id); } catch (e) { $('#bLoading').textContent = 'Could not load this revision’s data.'; return; }
+  if (B.rev !== id) return; B.data = d; renderSel(); renderPartList();
+  const M = mapper(d.board); B.M = M; const root = B.stage.root;
+  // pick boxes from footprint bounding boxes, so every part is clickable even without a 3D model
+  const boxMat = new THREE.MeshBasicMaterial({ visible: false });
+  for (const p of d.parts) {
+    const bb = p.bbox_mm || [p.x - 0.5, p.y - 0.5, p.x + 0.5, p.y + 0.5];
+    const w = Math.max(0.3, bb[2] - bb[0]), dpt = Math.max(0.3, bb[3] - bb[1]), h = 1.2;
+    const g = new THREE.Mesh(new THREE.BoxGeometry(w, h, dpt), boxMat);
+    const top = p.side !== 'bottom'; const c = M.k2w((bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2, top ? M.top + h / 2 : M.bot - h / 2);
+    g.position.copy(c); g.userData.ref = p.ref; g.userData.pickbox = true; root.add(g); B.boxes[p.ref] = g; B.pickTargets.push(g);
+    if (!p.glb_node && !/^(H|TP|MH|Fid|FID|G\*|LOGO|REF)/i.test(p.ref)) { // stand-in body for parts with no 3D model in the export
+      const ph = /^(R|C|L|D|F)\d/.test(p.ref) ? 0.6 : 1.0; const pw = Math.max(0.3, w * 0.7), pd = Math.max(0.3, dpt * 0.7);
+      const px = new THREE.Mesh(new THREE.BoxGeometry(pw, ph, pd), PROXY_MAT); px.position.copy(M.k2w((bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2, top ? M.top + ph / 2 : M.bot - ph / 2));
+      px.userData.ref = p.ref; px.userData.pickbox = true; root.add(px); B.proxies.push(px); }
+    const el = document.createElement('div'); el.className = 'reflabel'; el.textContent = p.ref;
+    const lab = new CSS2DObject(el); lab.position.copy(c).add(new THREE.Vector3(0, top ? 1.2 : -1.2, 0)); lab.visible = $('#bLabels').checked; root.add(lab); B.labelObjs.push(lab);
+  }
+  // GLB
+  if (d.board?.glb?.file !== null) {
+    try {
+      const gltf = await loader.loadAsync(servedGltf(d.base + (d.board?.glb?.file || 'board.glb')));
+      if (B.rev !== id) return;
+      const model = gltf.scene; model.scale.setScalar(M.scale); root.add(model); B.model = model;
+      const top = model.children.length === 1 && !model.children[0].name ? model.children[0] : model;
+      model.traverse(o => { if (o.isMesh) { o.material = o.material.clone(); o.userData.op = o.material.opacity; o.userData.tr = o.material.transparent; } });
+      // GLTFLoader de-duplicates names scene-wide ("R4" -> "R4_1" when the XIAO model also has an R4), so strip that suffix
+      for (const ch of top.children) { const nm = d.partBy[ch.name] ? ch.name : (ch.name || '').replace(/_\d+$/, ''); if (d.partBy[nm]) { B.glbNodes.set(ch, nm); (B.glbRefs[nm] ||= []).push(ch); } }
+      // KiCad names footprints that share one model as "=>[..]" instances; match those to parts by origin (map residual < 1e-12 mm)
+      const free = d.parts.filter(p => !B.glbRefs[p.ref]);
+      for (const ch of top.children) { if (B.glbNodes.has(ch) || !/^=>/.test(ch.name || '')) continue;
+        const x = ch.position.x * M.scale, z = ch.position.z * M.scale;
+        const hit = free.find(p => { const w = M.k2w(p.x, p.y); return Math.abs(w.x - x) < 0.01 && Math.abs(w.z - z) < 0.01; });
+        if (hit) { B.glbNodes.set(ch, hit.ref); (B.glbRefs[hit.ref] ||= []).push(ch); free.splice(free.indexOf(hit), 1); } }
+    } catch (e) { console.warn('GLB load failed', e); }
+  }
+  // layers
+  await buildLayers(d, M);
+  if (B.rev !== id) return;
+  $('#bLoading').hidden = true; setLook(B.look); applyDiff(); frameBoard('iso'); setMode(B.mode);
+}
+const toBox = b => Array.isArray(b) ? { x0: b[0], y0: b[1], x1: b[2], y1: b[3] } : b;
+async function buildLayers(d, M) {
+  const layers = d.board?.layers || []; if (!layers.length) { $('#bLayers').innerHTML = '<span class="muted">No layer images</span>'; return; }
+  const tl = new THREE.TextureLoader();
+  if (!B.layerOn) B.layerOn = {};
+  for (const L of layers) {
+    const bb = toBox(L.bbox_mm || d.board.bbox_mm); const w = bb.x1 - bb.x0, h = bb.y1 - bb.y0;
+    let tex; try { tex = await tl.loadAsync(d.base + L.file); } catch { continue; }
+    tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 8;
+    const isMask = L.kind === 'mask';
+    const mat = new THREE.MeshBasicMaterial({ map: tex, color: layerColor(L.name), transparent: true, opacity: isMask ? 0.45 : (L.kind === 'paste' ? 0.7 : 0.95), side: THREE.DoubleSide, depthWrite: false, alphaTest: isMask ? 0 : 0.02 });
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
+    m.rotation.x = M.zs > 0 ? -Math.PI / 2 : Math.PI / 2;
+    const c = M.k2w((bb.x0 + bb.x1) / 2, (bb.y0 + bb.y1) / 2, 0); m.position.set(c.x, 0, c.z);
+    m.userData.layer = L; m.renderOrder = 10 + (L.order ?? 0); B.stage.root.add(m); B.layerMeshes.push(m);
+  }
+  // substrate slab for the layer view
+  const bb = d.board.bbox_mm; const sl = new THREE.Mesh(new THREE.BoxGeometry(bb.x1 - bb.x0, Math.max(0.2, M.top - M.bot), bb.y1 - bb.y0), new THREE.MeshStandardMaterial({ color: 0x7c7a4a, transparent: true, opacity: 0.18, depthWrite: false }));
+  const c = M.k2w((bb.x0 + bb.x1) / 2, (bb.y0 + bb.y1) / 2, (M.top + M.bot) / 2); sl.position.copy(c); sl.userData.substrate = true; B.stage.root.add(sl); B.substrate = sl;
+  renderLayerPanel(); placeLayers();
+}
+function layerZ(L, M) {
+  if (L.z_mm != null) return M.bot + L.z_mm;
+  const t = M.top, b = M.bot, n = L.name || '';
+  if (L.side === 'top') return t + ({ copper: 0.01, mask: 0.03, paste: 0.05, silk: 0.06 }[L.kind] ?? 0.02);
+  if (L.side === 'bottom') return b - ({ copper: 0.01, mask: 0.03, paste: 0.05, silk: 0.06 }[L.kind] ?? 0.02);
+  const inner = /In(\d+)/.exec(n); if (inner) { const k = +inner[1]; return b + (t - b) * (1 - k / 3); }
+  return t + 0.07;
+}
+function placeLayers() {
+  if (!B.M) return; const ex = B.look === 'layers' ? +$('#bExplode').value : 0; const M = B.M;
+  const order = B.layerMeshes.map(m => m.userData.layer).filter(L => L.kind === 'copper').sort((a, b) => layerZ(a, M) - layerZ(b, M)).map(L => L.name);
+  for (const m of B.layerMeshes) {
+    const L = m.userData.layer; let z = layerZ(L, M);
+    if (ex > 0) { // spread copper layers apart, keep mask/silk/paste riding with their copper side
+      const ref = L.kind === 'copper' ? L.name : (L.side === 'top' ? order[order.length - 1] : L.side === 'bottom' ? order[0] : null);
+      const idx = ref ? order.indexOf(ref) : order.length; const mid = (order.length - 1) / 2;
+      z += (idx - mid) * ex * 14;
+    }
+    m.position.y = z;
+  }
+  if (B.substrate) B.substrate.visible = B.look !== 'assembled' && ex < 0.05;
+}
+function renderLayerPanel() {
+  const names = B.layerMeshes.map(m => m.userData.layer.name);
+  $('#bLayers').innerHTML = '<div class="lbl" style="margin-bottom:4px">Layers</div>' + names.map(n => `<label><input type="checkbox" data-n="${esc(n)}" ${layerVisible(n) ? 'checked' : ''}><span class="sw" style="background:${layerColor(n)}"></span>${esc(n)}</label>`).join('') +
+    '<div class="row" style="margin-top:6px"><button class="btn" type="button" id="lyAll">All</button><button class="btn" type="button" id="lyCu">Copper</button></div>';
+  $$('#bLayers input').forEach(i => i.onchange = () => { B.layerOn[i.dataset.n] = i.checked; store.set('layers', B.layerOn); applyLayerVis(); });
+  $('#lyAll').onclick = () => { names.forEach(n => B.layerOn[n] = true); store.set('layers', B.layerOn); renderLayerPanel(); applyLayerVis(); };
+  $('#lyCu').onclick = () => { names.forEach(n => B.layerOn[n] = /\.Cu$/.test(n)); store.set('layers', B.layerOn); renderLayerPanel(); applyLayerVis(); };
+}
+const layerVisible = n => B.layerOn && n in B.layerOn ? B.layerOn[n] : DEFAULT_ON.has(n);
+function applyLayerVis() { for (const m of B.layerMeshes) m.visible = B.look !== 'assembled' && layerVisible(m.userData.layer.name); }
+function setLook(l) {
+  B.look = l; $$('#bLook button').forEach(b => b.setAttribute('aria-pressed', b.dataset.l === l));
+  $('#bLayers').hidden = l === 'assembled' || B.mode !== '3d'; $('#bExplodeCtl').hidden = l !== 'layers';
+  (B.proxies || []).forEach(p => p.visible = l !== 'layers');
+  PROXY_MAT.opacity = l === 'xray' ? 0.18 : 0.92; PROXY_MAT.transparent = true; PROXY_MAT.depthWrite = l !== 'xray';
+  if (B.model) { B.model.visible = l !== 'layers'; B.model.traverse(o => { if (o.isMesh) { const x = l === 'xray'; o.material.transparent = x || o.userData.tr; o.material.opacity = x ? 0.16 : o.userData.op; o.material.depthWrite = !x; o.material.needsUpdate = true; } }); }
+  applyLayerVis(); placeLayers(); highlight();
+}
+function setMode(m) {
+  B.mode = m; $$('#bMode button').forEach(b => b.setAttribute('aria-pressed', b.dataset.m === m));
+  const is3d = m === '3d'; $('#bCanvas').hidden = !is3d; B.stage.labels.domElement.hidden = !is3d;
+  $('#bLook').hidden = !is3d; $('#bCam').hidden = !is3d; $('#bLabels').parentElement.hidden = !is3d; $('#bDiff').parentElement.hidden = !is3d;
+  $('#bExplodeCtl').hidden = !is3d || B.look !== 'layers'; $('#bLayers').hidden = !is3d || B.look === 'assembled'; $('#bLegend').hidden = !is3d || !B.diff;
+  $('#bSch').hidden = m !== 'sch'; $('#bRenders').hidden = m !== 'renders';
+  if (m === 'sch') renderSch(); if (m === 'renders') renderRenders(); if (is3d) B.stage.resize();
+}
+function frameBoard(view) {
+  if (!B.data?.board) return; const bb = B.data.board.bbox_mm, M = B.M;
+  const box = new THREE.Box3().setFromPoints([M.k2w(bb.x0, bb.y0, M.bot - 2), M.k2w(bb.x1, bb.y1, M.top + 10)]);
+  B.stage.frame(box, view);
+}
+function pickRef(ev) {
+  if (!B.data || B.mode !== '3d') return null;
+  const targets = [...B.pickTargets]; if (B.model && B.model.visible && B.look === 'assembled') targets.push(B.model);
+  const hits = B.stage.pick(ev, targets);
+  for (const h of hits) {
+    if (h.object.userData.pickbox) return h.object.userData.ref;
+    let o = h.object, found = null; while (o) { if (B.glbNodes.has(o)) found = B.glbNodes.get(o); o = o.parent; }
+    if (found) return found;
+  }
+  return null;
+}
+let hl = [];
+function highlight() {
+  hl.forEach(h => { B.stage.root.remove(h); h.geometry?.dispose(); }); hl = [];
+  const ref = B.sel; if (!ref || !B.data) return;
+  const box = new THREE.Box3(); const nodes = B.glbRefs[ref];
+  if (nodes && B.model?.visible) nodes.forEach(n => box.expandByObject(n)); else if (B.boxes[ref]) box.setFromObject(B.boxes[ref]);
+  if (box.isEmpty()) return; box.expandByScalar(0.35);
+  const h = new THREE.Box3Helper(box, new THREE.Color(getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#e39457'));
+  h.material.depthTest = false; h.renderOrder = 99; B.stage.root.add(h); hl.push(h);
+}
+function selectPart(ref, zoom) {
+  B.sel = ref || null; highlight(); renderSel(); $$('#bList .prow').forEach(r => r.setAttribute('aria-current', r.dataset.ref === B.sel));
+  if (ref && zoom && B.boxes[ref]) { const p = B.boxes[ref].position; const c = B.stage.controls; const off = B.stage.camera.position.clone().sub(c.target); const dist = Math.min(off.length(), 45); c.target.copy(p); B.stage.camera.position.copy(p).addScaledVector(off.normalize(), dist); }
+  if (ref) { const row = $(`#bList .prow[data-ref="${CSS.escape(ref)}"]`); row?.scrollIntoView({ block: 'nearest' }); }
+}
+function revSummaryHTML(r, d) {
+  const c = d?.cost?.totals; const est = estimate(r, d?.cost);
+  return `<div class="row" style="justify-content:space-between"><h2>${esc(r.label)}</h2>${stPill(r.status)}</div>
+  <p style="margin:0;color:var(--ink-2)">${esc(r.summary || '')}</p>
+  <dl class="kv"><dt>Size</dt><dd class="mono">${r.size_mm ? r.size_mm.map(v => (+v).toFixed(1)).join(' × ') + ' mm' : '—'}${r.thickness_mm ? ', ' + r.thickness_mm + ' mm thick' : ''}</dd>
+  <dt>Copper</dt><dd>${r.layers ?? '—'} layers</dd><dt>Parts</dt><dd>${fmtN(r.parts_total)} footprints, ${fmtN(r.parts_assembled)} assembled</dd>
+  <dt>BOM</dt><dd>${fmtN(r.unique_lcsc)} unique codes, ${fmtN(r.extended)} extended</dd>
+  <dt>Parts cost</dt><dd class="mono">${c ? money(c.parts?.[5]) + ' (5) · ' + money(c.parts?.[10]) + ' (10)' : '—'}</dd>
+  <dt>Board cost</dt><dd>${quoteLine(r, d?.cost, est)}</dd><dt>Commit</dt><dd class="mono">${esc(r.commit || '—')}</dd><dt>Date</dt><dd class="mono">${esc(r.date || '—')}</dd></dl>
+  <div class="row">${r.readme ? `<button class="btn" type="button" data-doc="${esc(r.readme)}">Open README</button>` : ''}<button class="btn" type="button" data-fb="rev">Feedback on ${esc(r.label)}</button></div>
+  <div class="muted" style="font-size:12px">Click any part in 3D or in the list below. Drag to orbit, right-drag to pan, scroll to zoom.</div>`;
+}
+function wireSecButtons(el, ctx) {
+  $$('[data-doc]', el).forEach(b => b.onclick = () => { const d = S.docs.find(x => x.path === b.dataset.doc || x.id === b.dataset.doc); if (d) go('docs', d.id); else toast('That document is not in the hub yet.'); });
+  $$('[data-fb]', el).forEach(b => b.onclick = () => openFeedback(ctx()));
+}
+/* what a part is for, and what it costs, in plain words */
+const KIND = [[/^(R|RN)\d/, 'Resistor'], [/^C\d/, 'Capacitor'], [/^L\d/, 'Inductor'], [/^D\d/, 'Diode'], [/^LED\d/, 'LED'], [/^Q\d/, 'Transistor'], [/^U\d/, 'IC'], [/^J\d/, 'Connector'], [/^(SW|S)\d/, 'Switch'], [/^F\d/, 'Fuse'], [/^TP\d/, 'Test point'], [/^JP\d/, 'Solder jumper'], [/^H\d/, 'Mounting hole'], [/^Y\d/, 'Crystal']];
+const GENERIC_DESC = /^(resistor|unpolarized capacitor|capacitor|inductor|diode|led|light emitting diode|test point|mounting hole|generic connector)/i;
+function partInfo(p, d) {
+  const kind = (KIND.find(([re]) => re.test(p.ref)) || [, 'Part'])[1];
+  const desc = (p.description || p.fields?.Description || '').trim();
+  const role = desc && !GENERIC_DESC.test(desc) ? desc : `${kind}${p.value ? ' ' + p.value : ''}`;
+  const nets = [...new Set((p.pads || []).map(x => x.net).filter(n => n && !/^unconnected|^Net-\(/i.test(n)))];
+  const cl = d?.costBy?.[p.ref]; const q = store.get('qty', 5);
+  const unit = cl?.unit_price?.[q] ?? cl?.unit_price?.[5]; const per = cl ? (cl.line_total?.[q] != null ? cl.line_total[q] / q : unit * (cl.qty_per_board || 1)) : null;
+  const tot = d?.cost?.totals?.parts?.[q];
+  return { kind, role, nets, cl, unit, per, share: per != null && tot ? per / (tot / q) : null, q };
+}
+function tipHTML(p, d) {
+  const i = partInfo(p, d);
+  const n = i.cl?.qty_per_board || 1;
+  const cost = i.cl ? `${money(i.unit)} each${n > 1 ? ` × ${n} on the board = ${money(i.per)}` : ''}${i.share != null ? ` · ${(i.share * 100).toFixed(1)}% of the board's parts cost` : ''}` : (p.assembled ? 'no live price' : (p.dnp ? 'not fitted (DNP)' : 'not in the assembly BOM'));
+  return `<div class="h"><b>${esc(p.ref)}</b><span>${esc(p.value || '')}</span></div><div class="role">${esc(i.role)}</div>
+   ${i.nets.length ? `<div class="sub">Connects ${esc(i.nets.slice(0, 5).join(', '))}${i.nets.length > 5 ? ' …' : ''}</div>` : ''}
+   <div class="cost">${esc(cost)}</div>${i.cl ? `<div class="sub">${esc(i.cl.lcsc)} · ${esc(i.cl.class)} · stock ${fmtN(i.cl.stock)}${i.cl.problem ? ' · ' + esc(i.cl.problem) : ''}</div>` : ''}<div class="hint">Click for full details and feedback</div>`;
+}
+function renderSel() {
+  const el = $('#bSel'); const d = B.data; const r = S.byId[S.cur]; if (!r) { el.innerHTML = ''; return; }
+  if (!B.sel || !d?.partBy[B.sel]) { el.innerHTML = revSummaryHTML(r, d); wireSecButtons(el, () => ({ rev: r.id, view: 'board', target: { type: 'revision', id: r.id, label: r.label } })); return; }
+  const p = d.partBy[B.sel]; const cl = d.costBy[p.ref]; const ch = B.diff?.status[p.ref]; const info = partInfo(p, d);
+  const fbN = S.fb.filter(f => f.rev === r.id && f.target?.type === 'part' && f.target?.id === p.ref && f.status !== 'resolved').length;
+  const pads = (p.pads || []).filter(x => x.net); const nets = [...new Map(pads.map(x => [x.num, x.net])).entries()];
+  el.innerHTML = `<div class="row" style="justify-content:space-between;align-items:flex-start"><div><div class="lbl">${esc(r.label)} · ${esc(p.side || '')}</div><div class="refbig">${esc(p.ref)}</div></div><button class="btn" type="button" id="selClose">Back to revision</button></div>
+  <div style="font-size:15px;font-weight:500">${esc(p.value)}</div>
+  <div style="color:var(--ink-2)">${esc(info.role)}${info.nets.length ? `<br><span class="muted" style="font-size:12.5px">Connects ${esc(info.nets.join(', '))}</span>` : ''}</div>
+  <div class="pills">${p.assembled ? '<span class="pill good">assembled by JLC</span>' : (p.dnp ? '<span class="pill warn">DNP</span>' : '<span class="pill">not in BOM</span>')}
+   ${cl ? `<span class="pill ${cl.class === 'basic' ? 'info' : 'acc'}">${esc(cl.class)}</span>` : ''}${cl?.problem ? '<span class="pill bad">stock problem</span>' : ''}
+   ${ch ? `<span class="pill ${{ added: 'good', changed: 'warn', moved: 'info' }[ch.kind]}">${esc(ch.kind)} vs ${esc(S.byId[B.diffAgainst]?.label)}</span>` : ''}${fbN ? `<span class="pill acc">${fbN} open feedback</span>` : ''}</div>
+  <dl class="kv"><dt>Footprint</dt><dd class="mono" style="font-size:12px">${esc(p.footprint)}</dd>
+  ${p.lcsc ? `<dt>LCSC</dt><dd class="mono"><a href="https://www.lcsc.com/product-detail/${encodeURIComponent(p.lcsc)}.html" target="_blank" rel="noopener">${esc(p.lcsc)}</a></dd>` : ''}
+  ${p.mpn ? `<dt>MPN</dt><dd>${esc(p.mpn)}${p.manufacturer ? ' · ' + esc(p.manufacturer) : ''}</dd>` : ''}
+  ${p.description ? `<dt>Description</dt><dd>${esc(p.description)}</dd>` : ''}
+  ${cl ? `<dt>Stock</dt><dd class="mono">${fmtN(cl.stock)}${cl.problem ? ' · ' + esc(cl.problem) : ''}</dd><dt>Unit price</dt><dd class="mono">${money(cl.unit_price?.[5])} @5 boards · ${money(cl.unit_price?.[10])} @10</dd>
+   <dt>Per board</dt><dd class="mono">${money(info.per)} (${cl.qty_per_board || 1} placed)${info.share != null ? ` · ${(info.share * 100).toFixed(1)}% of parts cost` : ''}</dd><dt>Batch of ${info.q}</dt><dd class="mono">${money(cl.line_total?.[info.q])}</dd><dt>Shares code</dt><dd class="mono" style="font-size:12px">${esc((cl.refs || []).join(', '))}</dd>` : ''}
+  <dt>Position</dt><dd class="mono">${(+p.x).toFixed(2)}, ${(+p.y).toFixed(2)} mm · ${(+p.rot || 0).toFixed(0)}°</dd>
+  ${p.datasheet && /^https?:/.test(p.datasheet) ? `<dt>Datasheet</dt><dd><a href="${esc(p.datasheet)}" target="_blank" rel="noopener">open</a></dd>` : ''}
+  ${ch?.detail ? `<dt>Change</dt><dd>${esc(ch.detail)}</dd>` : ''}</dl>
+  ${nets.length ? `<details ${nets.length <= 10 ? 'open' : ''}><summary class="lbl" style="cursor:pointer">Pads and nets (${nets.length})</summary><div class="nets" style="margin-top:6px">${nets.map(([n, net]) => `<span class="muted">${esc(n)}</span><span>${esc(net)}</span>`).join('')}</div></details>` : ''}
+  <div class="row"><button class="btn" type="button" id="selZoom">Zoom to part</button><button class="btn primary" type="button" data-fb="part">Feedback on ${esc(p.ref)}</button></div>`;
+  $('#selClose').onclick = () => selectPart(null);
+  $('#selZoom').onclick = () => { if (B.mode !== '3d') setMode('3d'); selectPart(p.ref, true); };
+  wireSecButtons(el, () => ({ rev: r.id, view: 'board', target: { type: 'part', id: p.ref, label: `${p.ref} (${p.value})` } }));
+}
+function renderPartList() {
+  const d = B.data; if (!d) { $('#bList').innerHTML = ''; return; }
+  const q = $('#bSearch').value.trim().toLowerCase();
+  const fbRefs = new Set(S.fb.filter(f => f.rev === d.id && f.target?.type === 'part' && f.status !== 'resolved').map(f => f.target.id));
+  const nat = (a, b) => a.ref.localeCompare(b.ref, undefined, { numeric: true });
+  const rows = d.parts.filter(p => !q || [p.ref, p.value, p.lcsc, p.mpn, p.footprint, ...(p.pads || []).map(x => x.net)].some(v => String(v || '').toLowerCase().includes(q))).sort(nat);
+  const dc = { added: 'var(--good)', changed: 'var(--warn)', moved: 'var(--info)' };
+  $('#bList').innerHTML = `<div class="lbl" style="padding:8px 16px">${rows.length} of ${d.parts.length} parts</div>` + rows.map(p => { const ch = B.diff?.status[p.ref];
+    return `<button class="prow" type="button" data-ref="${esc(p.ref)}" aria-current="${p.ref === B.sel}"><span class="r">${esc(p.ref)}</span><span class="v">${esc(p.value)}${p.dnp ? ' · DNP' : ''}</span><span class="row" style="gap:6px;flex-wrap:nowrap">${d.costBy[p.ref] ? `<span class="mono muted" style="font-size:11.5px" title="unit price">${money(d.costBy[p.ref].unit_price?.[store.get('qty', 5)] ?? d.costBy[p.ref].unit_price?.[5])}</span>` : ''}${ch ? `<span class="mk" title="${esc(ch.kind)}" style="background:${dc[ch.kind]}"></span>` : ''}${fbRefs.has(p.ref) ? ' <span class="badge" title="open feedback">!</span>' : ''}</span></button>`; }).join('');
+  $$('#bList .prow').forEach(b => b.onclick = () => { if (B.mode !== '3d') setMode('3d'); selectPart(b.dataset.ref, true); });
+}
+
+/* diff between two revisions, keyed by reference */
+function diffParts(A, Bp) {
+  const a = Object.fromEntries(A.map(p => [p.ref, p])), b = Object.fromEntries(Bp.map(p => [p.ref, p]));
+  const status = {}, removed = [];
+  for (const p of Bp) { const o = a[p.ref];
+    if (!o) { status[p.ref] = { kind: 'added', detail: `new: ${p.value}` }; continue; }
+    const ch = []; if ((o.value || '') !== (p.value || '')) ch.push(`value ${o.value} → ${p.value}`); if ((o.lcsc || '') !== (p.lcsc || '')) ch.push(`LCSC ${o.lcsc || '—'} → ${p.lcsc || '—'}`); if ((o.footprint || '') !== (p.footprint || '')) ch.push('footprint changed');
+    if (ch.length) { status[p.ref] = { kind: 'changed', detail: ch.join('; ') }; continue; }
+    const mv = Math.hypot(o.x - p.x, o.y - p.y); if (mv > 0.25 || Math.abs((o.rot || 0) - (p.rot || 0)) > 0.5) status[p.ref] = { kind: 'moved', detail: `moved ${mv.toFixed(2)} mm${Math.abs((o.rot || 0) - (p.rot || 0)) > 0.5 ? ', rotated' : ''}` };
+  }
+  for (const p of A) if (!b[p.ref]) removed.push(p);
+  return { status, removed };
+}
+let diffMeshes = [];
+async function applyDiff() {
+  diffMeshes.forEach(m => { B.stage.root.remove(m); m.geometry.dispose(); }); diffMeshes = []; B.diff = null;
+  if (!B.diffAgainst || !B.data) { $('#bLegend').hidden = true; renderPartList(); renderSel(); return; }
+  const other = await loadRev(B.diffAgainst); B.diff = diffParts(other.parts, B.data.parts);
+  const col = { added: 0x2fbf71, changed: 0xe0b04a, moved: 0x5aa0e6 };
+  for (const [ref, st] of Object.entries(B.diff.status)) { const bx = B.boxes[ref]; if (!bx) continue;
+    const m = new THREE.Mesh(bx.geometry.clone(), new THREE.MeshBasicMaterial({ color: col[st.kind], transparent: true, opacity: 0.38, depthWrite: false })); m.position.copy(bx.position); m.scale.set(1.05, 1.6, 1.05); m.renderOrder = 50; B.stage.root.add(m); diffMeshes.push(m); }
+  const n = k => Object.values(B.diff.status).filter(s => s.kind === k).length;
+  $('#bLegend').innerHTML = `<div class="lbl">vs ${esc(S.byId[B.diffAgainst]?.label)}</div><div><span class="sw" style="background:#2fbf71"></span>Added ${n('added')}</div><div><span class="sw" style="background:#e0b04a"></span>Changed ${n('changed')}</div><div><span class="sw" style="background:#5aa0e6"></span>Moved ${n('moved')}</div><div><span class="sw" style="background:transparent;border-style:dashed"></span>Removed ${B.diff.removed.length}${B.diff.removed.length ? ': <span class="mono" style="font-size:11px">' + esc(B.diff.removed.slice(0, 14).map(p => p.ref).join(' ')) + (B.diff.removed.length > 14 ? ' …' : '') + '</span>' : ''}</div>`;
+  $('#bLegend').hidden = B.mode !== '3d'; renderPartList(); renderSel();
+}
+
+/* schematic: pan/zoom an SVG sheet */
+function renderSch() {
+  const el = $('#bSch'); const d = B.data; const sheets = d?.sch || [];
+  if (!sheets.length) { el.innerHTML = '<div class="loading" style="color:#5a625d">No schematic export for this revision.</div>'; return; }
+  B.schIdx = Math.min(B.schIdx, sheets.length - 1); const s = sheets[B.schIdx];
+  el.innerHTML = `<img alt="Schematic sheet ${esc(s.title || '')}" src="${esc(d.base + 'sch/' + s.file)}">` + (sheets.length > 1 ? `<div class="tb" style="left:10px;bottom:10px"><div class="seg">${sheets.map((x, i) => `<button type="button" data-i="${i}" aria-pressed="${i === B.schIdx}">${esc(x.title || 'Sheet ' + (i + 1))}</button>`).join('')}</div></div>` : '') +
+    `<div class="tb" style="right:10px;bottom:10px"><a class="btn" href="${esc(d.base + 'sch/' + s.file)}" target="_blank" rel="noopener">Open sheet in new tab</a></div>`;
+  $$('#bSch .seg button').forEach(b => b.onclick = () => { B.schIdx = +b.dataset.i; renderSch(); });
+  const img = $('img', el); let k = 1, tx = 0, ty = 0;
+  const apply = () => img.style.transform = `translate(${tx}px,${ty}px) scale(${k})`;
+  img.onload = () => { const W = el.clientWidth, H = el.clientHeight - 50; k = Math.min(W / img.naturalWidth, H / img.naturalHeight) * 0.96; tx = (W - img.naturalWidth * k) / 2; ty = 50 + (H - img.naturalHeight * k) / 2; img.style.width = img.naturalWidth + 'px'; apply(); };
+  el.onwheel = e => { e.preventDefault(); const r = el.getBoundingClientRect(); const mx = e.clientX - r.left, my = e.clientY - r.top; const f = Math.exp(-e.deltaY * 0.0015); tx = mx - (mx - tx) * f; ty = my - (my - ty) * f; k *= f; apply(); };
+  let drag = null; el.onpointerdown = e => { if (e.target.closest('.tb')) return; drag = [e.clientX - tx, e.clientY - ty]; el.setPointerCapture(e.pointerId); el.style.cursor = 'grabbing'; };
+  el.onpointermove = e => { if (drag) { tx = e.clientX - drag[0]; ty = e.clientY - drag[1]; apply(); } };
+  el.onpointerup = () => { drag = null; el.style.cursor = ''; };
+}
+function renderRenders() {
+  const d = B.data; const r = S.byId[S.cur]; const has = r?.has?.renders !== false;
+  $('#bRenders').innerHTML = has ? `<div class="lbl">Top</div><img alt="${esc(r.label)} top render" src="${esc(d.base)}renders/top.png" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'empty',textContent:'No top render'}))"><div class="lbl">Bottom</div><img alt="${esc(r.label)} bottom render" src="${esc(d.base)}renders/bottom.png" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'empty',textContent:'No bottom render'}))">` : '<div class="empty">No renders for this revision.</div>';
+}
+
+/* ---------- cost model ---------- */
+function estimate(r, cost) {
+  const J = S.pricing?.jlc_model; if (!J || !cost?.totals || !r) return null;
+  const sz = r.size_mm || [0, 0]; const fits = r.layers === 4 && Math.abs(sz[0] - 99) < 1.5 && Math.abs(sz[1] - 40) < 1.5; if (!fits) return null;
+  const extSmt = (cost.lines || []).filter(l => l.class === 'extended' && !(l.refs || []).every(ref => isTHT(r.id, ref))).length;
+  const out = {};
+  for (const q of [5, 10]) { const parts = (cost.totals.parts?.[q] ?? 0) * J.parts_overage[q]; out[q] = { pcb: J.pcb_usd[q], parts, ext: extSmt * J.extended_fee_usd, process: J.process_usd[q], extSmt }; out[q].total = out[q].pcb + parts + out[q].ext + out[q].process; }
+  return out;
+}
+const thtCache = {};
+function isTHT(rev, ref) { const p = thtCache[rev]?.[ref]; if (p) return p.mount === 'tht' || /THT|RJ45|Socket|PinHeader|PinSocket|Horizontal|TerminalBlock/i.test(p.footprint || ''); return /^J\d/.test(ref); }
+function bestQuote(cost, q) { const qs = (cost?.documented_quotes || []).filter(x => +x.boards === q); return qs.sort((a, b) => String(b.date).localeCompare(String(a.date)))[0] || null; }
+function quoteLine(r, cost, est) {
+  const q5 = bestQuote(cost, 5), q10 = bestQuote(cost, 10);
+  if (q5 || q10) return `<span class="mono">${money(q5?.total_usd)} (5) · ${money(q10?.total_usd)} (10)</span> <span class="pill info">quoted ${esc((q5 || q10).date)}</span>`;
+  if (est) return `<span class="mono">≈${money(est[5].total)} (5) · ≈${money(est[10].total)} (10)</span> <span class="pill">estimate</span>`;
+  return '<span class="muted">no quote or estimate</span>';
+}
+
+function extCell(r, cost, est) {
+  const t = cost?.totals; if (!t) return fmtN(r.extended);
+  const ext = t.extended_fee_applies ?? t.extended, pref = t.preferred ?? 0;
+  const tht = est ? ext - est[5].extSmt : null;
+  return `${fmtN(t.extended)} <span class="muted" style="font-size:12px;display:block">${fmtN(ext)} extended${tht ? ` (${tht} through-hole, assumed fee-free)` : ''} · ${fmtN(pref)} preferred (no fee)</span>`;
+}
+function orderCell(cost, est, q) {
+  const qt = bestQuote(cost, q);
+  if (qt) return `<span class="mono">${money(qt.total_usd)}</span> <span class="pill info">quoted ${esc(qt.date)}</span>`;
+  if (!est) return '<span class="muted">no quote or estimate</span>';
+  const e = est[q], f = S.pricing.jlc_model.extended_fee_usd;
+  return `<span class="mono">≈${money(e.total)}</span> <span class="pill">estimate</span><span class="muted" style="font-size:12px;display:block">PCB ${money(e.pcb)} + parts ${money(e.parts)} + setup fees ${money(e.ext)} (${e.extSmt} × ${money(f)}) + assembly ${money(e.process)}</span>`;
+}
+function cmpA() { const i = S.revs.findIndex(r => r.id === S.cur); return (S.revs[i - 1] || S.revs[0] || {}).id; }
+
+/* ---------- overview ---------- */
+async function showOverview() {
+  const el = $('#ovPage'); const cand = S.revs.find(r => r.status === 'candidate');
+  const open = S.fb.filter(f => f.status !== 'resolved');
+  el.innerHTML = `<div class="hero"><div class="lbl">Design review hub</div><h2>${S.revs.length} board revisions, ${S.cases.length} cases, one adapter</h2>
+   <p>The carrier plugs into a GE appliance's 8P8C service port and hosts a socketed XIAO ESP32-C3 or C6 running ESPHome. ${cand ? `<b>${esc(cand.label)}</b> is the current candidate: ${esc(cand.summary || '')}` : ''}</p></div>
+   <div class="grid-revs">${S.revs.slice().reverse().map(r => `<button class="revcard" type="button" data-id="${esc(r.id)}"><div class="thumb">${r.has?.renders !== false ? `<img loading="lazy" alt="" src="data/${esc(r.id)}/renders/top.png" onerror="this.remove()">` : ''}</div>
+     <div class="body"><div class="t"><span class="dot ${stCls(r.status)}"></span>${esc(r.label)}<span style="margin-left:auto">${stPill(r.status)}</span></div><div class="s">${esc(r.summary || '')}</div>
+     <div class="stats"><span>${r.layers ?? '?'}L</span><span>${r.size_mm ? r.size_mm.map(v => Math.round(v)).join('×') + ' mm' : ''}</span><span>${fmtN(r.parts_assembled)} placed</span><span>${fmtN(r.unique_lcsc)} codes</span><span>${esc(r.date || '')}</span></div></div></button>`).join('')}</div>
+   <div class="two"><div class="sec card" style="border-radius:var(--r)"><h3>Recent updates</h3><div class="feed">${S.updates.map(u => `<div class="it"><span class="d">${esc(u.date)}</span><span><b>${esc(u.title)}</b>${u.rev ? ' · ' + esc(S.byId[u.rev]?.label || u.rev) : ''}<br><span class="muted">${esc(u.text)}</span></span></div>`).join('') || '<span class="muted">No updates logged.</span>'}</div></div>
+   <div class="sec card" style="border-radius:var(--r)"><h3>Open feedback</h3>${!S.fbReady ? '<span class="muted">Connecting to the feedback store…</span>' : !S.db ? '<span class="muted">Feedback is only available in the Claude-hosted copy of this hub.</span>' : open.length ? `<div class="feed">${open.slice(0, 6).map(f => `<div class="it"><span class="d">${esc(S.byId[f.rev]?.label || 'General')}</span><span><b>${esc(f.target?.label || f.view || '')}</b><br><span class="muted">${esc(String(f.text).slice(0, 140))}</span></span></div>`).join('')}</div><button class="btn" type="button" id="ovFb">See all feedback</button>` : '<span class="muted">Nothing open. Use “Leave feedback” on any part, layer, doc or case.</span>'}
+   <h3 style="margin-top:8px">Where to start</h3><div class="row"><button class="btn" type="button" data-go="board">Inspect ${esc(cand?.label || 'board')} in 3D</button><button class="btn" type="button" data-go="compare">Compare Rev3C → Rev3D</button><button class="btn" type="button" data-go="cost">Cost</button><button class="btn" type="button" data-go="docs">${S.docs.some(x => x.group === 'Reddit drafts') ? 'Reddit drafts' : 'Docs'}</button></div></div></div>`;
+  $$('.revcard', el).forEach(b => b.onclick = () => { S.cur = b.dataset.id; store.set('rev', S.cur); go('board'); });
+  $$('[data-go]', el).forEach(b => b.onclick = () => { const v = b.dataset.go; if (v === 'compare') go('compare', 'rev3c-vs-rev3d'); else if (v === 'docs') { const d = S.docs.find(x => x.group === 'Reddit drafts'); go('docs', d?.id); } else go(v); });
+  $('#ovFb')?.addEventListener('click', () => go('feedback'));
+}
+
+/* ---------- compare ---------- */
+async function showCompare(arg) {
+  const el = $('#cmpPage'); let [a, b] = (arg || '').split('-vs-').map(s => S.bySlug[s]);
+  if (!a) a = cmpA(); if (!b) b = S.cur; if (a === b) a = cmpA();
+  el.innerHTML = '<div class="muted">Loading…</div>';
+  const [A, Bd] = await Promise.all([loadRev(a), loadRev(b)]); const ra = S.byId[a], rb = S.byId[b];
+  A.parts.forEach(p => (thtCache[a] ||= {})[p.ref] = p); Bd.parts.forEach(p => (thtCache[b] ||= {})[p.ref] = p);
+  const df = diffParts(A.parts, Bd.parts); const ea = estimate(ra, A.cost), eb = estimate(rb, Bd.cost);
+  const opt = sel => S.revs.map(r => `<option value="${esc(r.id)}" ${r.id === sel ? 'selected' : ''}>${esc(r.label)}</option>`).join('');
+  const rowsS = [['Status', stPill(ra.status), stPill(rb.status)], ['Size (mm)', ra.size_mm?.map(v => (+v).toFixed(1)).join(' × '), rb.size_mm?.map(v => (+v).toFixed(1)).join(' × ')], ['Copper layers', ra.layers, rb.layers],
+    ['Footprints', fmtN(ra.parts_total), fmtN(rb.parts_total)], ['Assembled refs', fmtN(ra.parts_assembled), fmtN(rb.parts_assembled)], ['Unique LCSC codes', fmtN(ra.unique_lcsc), fmtN(rb.unique_lcsc)], ['Non-basic codes', extCell(ra, A.cost, ea), extCell(rb, Bd.cost, eb)],
+    ['Parts, 5 boards (list)', money(A.cost?.totals?.parts?.[5]), money(Bd.cost?.totals?.parts?.[5])], ['Parts, 10 boards (list)', money(A.cost?.totals?.parts?.[10]), money(Bd.cost?.totals?.parts?.[10])],
+    ['Order, 5 boards', orderCell(A.cost, ea, 5), orderCell(Bd.cost, eb, 5)], ['Order, 10 boards', orderCell(A.cost, ea, 10), orderCell(Bd.cost, eb, 10)], ['Commit', `<span class="mono">${esc(ra.commit || '—')}</span>`, `<span class="mono">${esc(rb.commit || '—')}</span>`]];
+  const ent = Object.entries(df.status); const by = k => ent.filter(([, s]) => s.kind === k);
+  const pr = (p, s) => `<tr class="click" data-ref="${esc(p.ref)}"><td class="mono">${esc(p.ref)}</td><td>${esc(p.value)}</td><td class="mono" style="font-size:12px">${esc(p.lcsc || '')}</td><td>${esc(s?.detail || '')}</td></tr>`;
+  const sect = (title, cls, list) => list.length ? `<h3 class="${cls}" style="margin:6px 0 0;font:600 15px var(--f-label)">${title} (${list.length})</h3><div class="tw"><table><thead><tr><th>Ref</th><th>Value</th><th>LCSC</th><th>Detail</th></tr></thead><tbody>${list.join('')}</tbody></table></div>` : '';
+  el.innerHTML = `<div class="hero"><div class="lbl">Compare revisions</div><h2>${esc(ra.label)} → ${esc(rb.label)}</h2><p>Parts are matched by reference designator. Across the OnionStraws (Rev1–2) and GEA Adapter (Rev3) families the numbering changed, so a big added/removed list there means renumbering as much as redesign.</p></div>
+   <div class="cmpbar"><label class="lbl" for="cmpA">From</label><select id="cmpA">${opt(a)}</select><label class="lbl" for="cmpB">To</label><select id="cmpB">${opt(b)}</select><button class="btn" type="button" id="cmpSwap">Swap</button><button class="btn primary" type="button" id="cmp3d">Show changes in 3D</button><button class="btn" type="button" id="cmpFb">Feedback on this change</button></div>
+   <div class="renders"><figure><img alt="${esc(ra.label)} top" src="data/${esc(a)}/renders/top.png" onerror="this.style.visibility='hidden'"><figcaption>${esc(ra.label)} · top</figcaption></figure><figure><img alt="${esc(rb.label)} top" src="data/${esc(b)}/renders/top.png" onerror="this.style.visibility='hidden'"><figcaption>${esc(rb.label)} · top</figcaption></figure></div>
+   <div class="tw"><table><thead><tr><th></th><th>${esc(ra.label)}</th><th>${esc(rb.label)}</th></tr></thead><tbody>${rowsS.map(([k, x, y]) => `<tr><th style="background:none">${k}</th><td>${x ?? '—'}</td><td>${y ?? '—'}</td></tr>`).join('')}</tbody></table></div>
+   <div class="tiles"><div class="tile"><span class="lbl chg-added">Added</span><span class="big">${by('added').length}</span></div><div class="tile"><span class="lbl chg-removed">Removed</span><span class="big">${df.removed.length}</span></div><div class="tile"><span class="lbl chg-changed">Changed</span><span class="big">${by('changed').length}</span></div><div class="tile"><span class="lbl chg-moved">Moved</span><span class="big">${by('moved').length}</span></div></div>
+   ${sect('Added in ' + esc(rb.label), 'chg-added', by('added').map(([r, s]) => pr(Bd.partBy[r], s)))}
+   ${sect('Removed from ' + esc(ra.label), 'chg-removed', df.removed.map(p => pr(p, { detail: 'removed' })))}
+   ${sect('Changed', 'chg-changed', by('changed').map(([r, s]) => pr(Bd.partBy[r], s)))}
+   ${sect('Moved or rotated', 'chg-moved', by('moved').map(([r, s]) => pr(Bd.partBy[r], s)))}`;
+  const upd = () => go('compare', slug($('#cmpA').value) + '-vs-' + slug($('#cmpB').value));
+  $('#cmpA').onchange = upd; $('#cmpB').onchange = upd; $('#cmpSwap').onclick = () => go('compare', slug(b) + '-vs-' + slug(a));
+  $('#cmp3d').onclick = () => { S.cur = b; store.set('rev', b); B.diffAgainst = a; go('board'); };
+  $('#cmpFb').onclick = () => openFeedback({ rev: b, view: 'compare', target: { type: 'diff', id: a + '..' + b, label: `${ra.label} → ${rb.label}` } });
+  $$('tr.click', el).forEach(tr => tr.onclick = () => { const ref = tr.dataset.ref; const inB = !!Bd.partBy[ref]; S.cur = inB ? b : a; B.diffAgainst = inB ? a : ''; go('board'); setTimeout(() => B.data && selectPart(ref, true), 900); });
+}
+
+/* ---------- cost ---------- */
+async function showCost() {
+  const el = $('#costPage'); const P = S.pricing; const q = store.get('qty', 5); const mod = store.get('module', 'c3-pre'); const withCase = store.get('case', true);
+  el.innerHTML = '<div class="muted">Loading cost data…</div>';
+  const all = await Promise.all(S.revs.map(r => loadRev(r.id).catch(() => null)));
+  all.forEach(d => d && d.parts.forEach(p => (thtCache[d.id] ||= {})[p.ref] = p));
+  const modUsd = P?.modules?.find(m => m.id === mod)?.usd ?? 0; const caseUsd = withCase ? (P?.case?.usd ?? 0) : 0;
+  const rows = S.revs.map((r, i) => { const d = all[i]; const qt = bestQuote(d?.cost, q); const est = estimate(r, d?.cost); const batch = qt ? +qt.total_usd : est ? est[q].total : null;
+    return { r, d, qt, est, batch, per: batch != null ? batch / q : null, all: batch != null ? batch / q + modUsd + caseUsd : null }; });
+  const max = Math.max(1, ...rows.map(x => x.per || 0)); const nice = Math.ceil(max / 5) * 5; const ticks = [0, nice / 4, nice / 2, nice * 3 / 4, nice];
+  const cur = rows.find(x => x.r.id === S.cur) || rows[rows.length - 1];
+  const c3 = rows.find(x => x.r.id === 'rev3c'), c4 = rows.find(x => x.r.id === 'rev3d');
+  el.innerHTML = `<div class="hero"><div class="lbl">Cost</div><h2>What a batch costs, per revision</h2><p>Quoted totals come from saved JLCPCB quotes. Where none exists, the estimate reuses the Oct 5 Rev3C quote’s structure with each revision’s live parts prices and extended-part count (${esc(P?.jlc_model?.applies_to || '')}). Shipping and tax are excluded.</p></div>
+   <div class="calc"><label>Batch size<select id="cQty"><option value="5" ${q == 5 ? 'selected' : ''}>5 boards</option><option value="10" ${q == 10 ? 'selected' : ''}>10 boards</option></select></label>
+     <label>Module per unit<select id="cMod">${(P?.modules || []).map(m => `<option value="${esc(m.id)}" ${m.id === mod ? 'selected' : ''}>${esc(m.label)} (${money(m.usd)})</option>`).join('')}</select></label>
+     <label>Printed case<select id="cCase"><option value="1" ${withCase ? 'selected' : ''}>Include (${money(P?.case?.usd)})</option><option value="0" ${!withCase ? 'selected' : ''}>Exclude</option></select></label></div>
+   ${c3 && c4 && c3.batch && c4.batch ? `<div class="tiles"><div class="tile"><span class="lbl">Rev3C, ${q} boards</span><span class="big">${money(c3.batch)}</span><span class="s">${c3.qt ? 'JLCPCB quote ' + esc(c3.qt.date) : 'estimate'}</span></div>
+     <div class="tile"><span class="lbl">Rev3D, ${q} boards</span><span class="big">${c4.qt ? '' : '≈'}${money(c4.batch)}</span><span class="s">${c4.qt ? 'JLCPCB quote ' + esc(c4.qt.date) : 'estimate, ±$' + (P?.jlc_model?.plus_minus_usd ?? 4)}</span></div>
+     <div class="tile"><span class="lbl">Rev3D vs Rev3C</span><span class="big">${c4.batch - c3.batch < 0 ? '−' : '+'}${money(Math.abs(c4.batch - c3.batch))}</span><span class="s">${money(Math.abs(c4.batch - c3.batch) / q)} per carrier</span></div>
+     <div class="tile"><span class="lbl">Rev3D all-in per unit</span><span class="big">${money(c4.all)}</span><span class="s">carrier + module + case</span></div></div>` : ''}
+   <div class="sec card" style="border-radius:var(--r)"><h3>Assembled carrier, per board (${q}-board batch)</h3>
+     <div class="bars">${rows.map(x => `<div class="bar" title="${esc(x.r.label)}: ${x.per != null ? money(x.per) + ' per board' : 'no data'}${x.qt ? ' (quoted)' : x.est ? ' (estimate)' : ''}"><span class="mono">${esc(x.r.label)}</span><div class="track">${x.per != null ? `<div class="fill ${x.qt ? '' : 'est'}" style="width:${(x.per / nice * 100).toFixed(2)}%"></div>` : ''}</div><span class="val">${x.per != null ? (x.qt ? '' : '≈') + money(x.per) : '<span class="muted">no data</span>'}</span></div>`).join('')}
+     <div class="axis"><span></span><div class="ticks">${ticks.map(t => `<span style="left:${t / nice * 100}%">$${t.toFixed(0)}</span>`).join('')}</div><span></span></div></div>
+     <div class="row muted" style="font-size:12px"><span class="sw" style="background:var(--accent);border:0"></span>Saved JLCPCB quote <span class="sw" style="border:2px solid var(--accent);background-image:repeating-linear-gradient(135deg,var(--accent-soft) 0 3px,transparent 3px 6px)"></span>Estimate from the cost model. Revisions without a quote, a BOM, or the 99 × 40 mm 4-layer outline show no bar.</div></div>
+   <div class="tw"><table><thead><tr><th>Revision</th><th>Source</th><th class="n">Batch</th><th class="n">Per board</th><th class="n">Parts (list)</th><th class="n">Unique</th><th class="n">Extended</th><th class="n">All-in / unit</th></tr></thead><tbody>
+     ${rows.map(x => `<tr class="click" data-id="${esc(x.r.id)}"><td><span class="dot ${stCls(x.r.status)}" style="display:inline-block;margin-right:6px"></span>${esc(x.r.label)}</td><td>${x.qt ? `quote ${esc(x.qt.date)}` : x.est ? 'estimate' : '<span class="muted">' + esc(x.d?.cost?.note || 'none') + '</span>'}</td><td class="n">${money(x.batch)}</td><td class="n">${money(x.per)}</td><td class="n">${money(x.d?.cost?.totals?.parts?.[q])}</td><td class="n">${fmtN(x.d?.cost?.totals?.unique ?? x.r.unique_lcsc)}</td><td class="n">${fmtN(x.d?.cost?.totals?.extended ?? x.r.extended)}</td><td class="n"><b>${money(x.all)}</b></td></tr>`).join('')}</tbody></table></div>
+   <div id="costDetail"></div>
+   <div class="note">Model inputs live in <span class="mono">data/pricing.json</span>: ${esc(P?.jlc_model?.source || '')}. ${esc(P?.jlc_model?.parts_overage_note || '')} ${esc(P?.jlc_model?.extended_fee_note || '')} Module prices: ${esc((P?.modules || []).filter(m => m.source).map(m => m.label + ' ' + money(m.usd)).join('; '))}. Case: ${esc(P?.case?.source || '')}.</div>`;
+  $('#cQty').onchange = e => { store.set('qty', +e.target.value); showCost(); };
+  $('#cMod').onchange = e => { store.set('module', e.target.value); showCost(); };
+  $('#cCase').onchange = e => { store.set('case', e.target.value === '1'); showCost(); };
+  $$('tr.click', el).forEach(tr => tr.onclick = () => { S.cur = tr.dataset.id; store.set('rev', S.cur); $$('#revrail .revchip').forEach(b => b.setAttribute('aria-pressed', b.dataset.id === S.cur)); renderCostDetail(rows.find(x => x.r.id === S.cur), q); history.replaceState(null, '', '#cost-' + slug(S.cur)); });
+  renderCostDetail(cur, q);
+}
+function renderCostDetail(x, q) {
+  const el = $('#costDetail'); if (!x) { el.innerHTML = ''; return; } const lines = (x.d?.cost?.lines || []).slice().sort((a, b) => (b.line_total?.[q] ?? 0) - (a.line_total?.[q] ?? 0));
+  const e = x.est?.[q];
+  el.innerHTML = `<div class="sec card" style="border-radius:var(--r)"><div class="row" style="justify-content:space-between"><h3>${esc(x.r.label)} line items, ${q} boards</h3><button class="btn" type="button" id="costFb">Feedback on ${esc(x.r.label)} cost</button></div>
+   ${e ? `<div class="tiles"><div class="tile"><span class="lbl">PCB</span><span class="big">${money(e.pcb)}</span></div><div class="tile"><span class="lbl">Components</span><span class="big">${money(e.parts)}</span><span class="s">list × overage</span></div><div class="tile"><span class="lbl">Extended fees</span><span class="big">${money(e.ext)}</span><span class="s">${e.extSmt} SMT codes × ${money(S.pricing.jlc_model.extended_fee_usd)}</span></div><div class="tile"><span class="lbl">Assembly process</span><span class="big">${money(e.process)}</span></div><div class="tile"><span class="lbl">Modelled total</span><span class="big">${money(e.total)}</span>${x.qt ? `<span class="s">quote: ${money(x.qt.total_usd)}</span>` : ''}</div></div>` : ''}
+   ${(x.d?.cost?.documented_quotes || []).length ? `<div class="note"><b>Saved quotes:</b> ${x.d.cost.documented_quotes.map(dq => `${esc(dq.date)} · ${dq.boards} boards · ${money(dq.total_usd)} · ${esc(dq.what || '')} <span class="mono" style="font-size:11px">(${esc(dq.source_file || '')})</span>`).join('<br>')}</div>` : ''}
+   ${lines.length ? `<div class="tw"><table><thead><tr><th>LCSC</th><th>MPN</th><th>Class</th><th class="n">Stock</th><th class="n">Qty/board</th><th class="n">Unit</th><th class="n">Line, ${q}</th><th>Refs</th></tr></thead><tbody>${lines.map(l => `<tr><td class="mono"><a href="https://www.lcsc.com/product-detail/${encodeURIComponent(l.lcsc)}.html" target="_blank" rel="noopener">${esc(l.lcsc)}</a></td><td>${esc(l.mpn)}</td><td>${l.class === 'basic' ? '<span class="pill info">basic</span>' : `<span class="pill acc">${esc(l.class)}</span>`}</td><td class="n">${l.problem ? `<span class="pill bad" title="${esc(l.problem)}">${fmtN(l.stock)}</span>` : fmtN(l.stock)}</td><td class="n">${l.qty_per_board}</td><td class="n">${money(l.unit_price?.[q])}</td><td class="n">${money(l.line_total?.[q])}</td><td class="mono" style="font-size:12px">${esc((l.refs || []).join(', '))}</td></tr>`).join('')}</tbody></table></div><div class="muted" style="font-size:12px">Live JLCPCB parts data captured ${esc(x.d.cost.captured || '')}. Stock is not reserved.</div>` : `<div class="empty">${esc(x.d?.cost?.note || 'No BOM for this revision.')}</div>`}</div>`;
+  $('#costFb').onclick = () => openFeedback({ rev: x.r.id, view: 'cost', target: { type: 'cost', id: x.r.id, label: `${x.r.label} cost` } });
+}
+
+/* ---------- case ---------- */
+const C = { stage: null, id: null, parts: [], board: null };
+const ZUP = new THREE.Matrix4().makeRotationX(-Math.PI / 2); // CAD (x, y, z-up) -> viewer (x, z, -y)
+function showCase(arg) {
+  const id = S.bySlug[arg] ? null : (S.cases.find(c => slug(c.id) === arg)?.id);
+  S.caseId = id || S.caseId || (S.cases.find(c => (c.revisions || []).includes(S.cur)) || S.cases[0] || {}).id;
+  if (!C.stage) {
+    C.stage = new Stage($('#cCanvas'));
+    $$('#cCam button').forEach(b => b.onclick = () => frameCase(b.dataset.c));
+    $('#cOpacity').oninput = caseLook; $('#cExplode').oninput = caseLook; $('#cBoard').onchange = caseLook;
+    $('#cWhip').onchange = () => { store.set('whipPose', $('#cWhip').value); caseLook(); };
+    $('#cMagnets').onchange = () => { store.set('magnetStyle', $('#cMagnets').value); caseLook(); renderCaseInsp(S.cases.find(c => c.id === C.id)); };
+  }
+  if (!S.cases.length) { $('#cLoading').textContent = 'No case data yet.'; $('#cInsp').innerHTML = '<div class="sec"><div class="empty">No cases exported.</div></div>'; return; }
+  if (C.id !== S.caseId) buildCase(S.caseId); else C.stage.resize();
+}
+async function buildCase(id) {
+  const cs = S.cases.find(c => c.id === id); C.id = id; C.parts = []; C.board = null; C.stage.clear(); $('#cLoading').hidden = false; $('#cLoading').textContent = 'Loading ' + (cs?.label || id) + '…';
+  renderCaseInsp(cs);
+  // Two-tone product finish: satin off-white lid, charcoal base, frosted light guides. Reference parts keep their own colour.
+  const SEAM_Y = 6.9; // case seam (mm, viewer up axis); base material above it shows the lid colour
+  const FINISH = { lid: { color: 0xd4d8d3, roughness: 0.62, clearcoat: 0.1, envMapIntensity: 0.55 }, base: { color: 0x3c4249, roughness: 0.62, clearcoat: 0.05, envMapIntensity: 0.7 },
+                   guide: { color: 0xe4f4ec, roughness: 0.25, clearcoat: 0.3 },
+                   inlay: { color: 0x3c4249, roughness: 0.6, clearcoat: 0.05, envMapIntensity: 0.7 } };
+  for (const p of cs.parts || []) {
+    try { const g = await loader.loadAsync(servedGltf(/^data\//.test(p.file) ? p.file : 'data/' + p.file)); if (C.id !== id) return; const m = g.scene; m.scale.setScalar(1000);
+      const inner = new THREE.Group(); inner.add(m); inner.applyMatrix4(ZUP);
+      const grp = new THREE.Group(); grp.add(inner);
+      // STL-derived meshes carry no normals: flat shading lights them from screen-space derivatives instead
+      const meshes = []; m.traverse(o => { if (o.isMesh) meshes.push(o); });
+      meshes.forEach(o => { { if (!o.geometry.attributes.normal) o.geometry.computeVertexNormals();
+        const f = FINISH[p.role] || { color: new THREE.Color(p.color_hint || '#9aa0a6'), roughness: p.metal ? 0.3 : 0.5, metalness: p.metal ? 0.85 : 0 };
+        o.material = new THREE.MeshPhysicalMaterial({ ...f, flatShading: true, transparent: true, side: THREE.DoubleSide }); o.castShadow = true; o.receiveShadow = true;
+        if (p.role === 'base') { // filament change at the seam: everything above it (the USB port filler, hidden tongue and pads) prints in the lid colour
+          o.material.clippingPlanes = [new THREE.Plane(new THREE.Vector3(0, -1, 0), SEAM_Y)];
+          const up = new THREE.Mesh(o.geometry, new THREE.MeshPhysicalMaterial({ ...FINISH.lid, flatShading: true, transparent: true, side: THREE.DoubleSide, clippingPlanes: [new THREE.Plane(new THREE.Vector3(0, 1, 0), -SEAM_Y)] }));
+          up.position.copy(o.position); up.quaternion.copy(o.quaternion); up.scale.copy(o.scale); up.castShadow = true; up.receiveShadow = true; o.parent.add(up); } } });
+      grp.userData = { part: p }; C.stage.root.add(grp); C.parts.push(grp);
+    } catch (e) { console.warn('case part failed', p.file, e); }
+  }
+  // Case CAD is Z-up; show it as printed with a proper rotation (no mirroring) into the viewer's Y-up frame.
+  const brev = (cs.revisions || []).includes(S.cur) ? S.cur : (cs.revisions || [])[0];
+  const mx = cs.board_placement?.matrix_mm_by_revision?.[brev] || cs.board_placement?.matrix_mm;
+  C.det = null;
+  if (brev && mx) { try { const d = await loadRev(brev); const g = await loader.loadAsync(servedGltf(d.base + 'board.glb')); if (C.id !== id) return; const bm = g.scene; bm.scale.setScalar(d.board?.glb?.scale_to_mm || 1000);
+      const holder = new THREE.Group(); holder.add(bm);
+      // matrix maps case mm -> board mm. Board in case frame = inverse(matrix); then the same Z-up -> Y-up rotation as the case.
+      const M4 = new THREE.Matrix4().set(...mx.flat()); C.det = M4.determinant();
+      holder.applyMatrix4(ZUP.clone().multiply(M4.clone().invert()));
+      holder.userData.rev = brev; C.board = holder; C.stage.root.add(holder); } catch (e) { console.warn('case board failed', e); } }
+  // soft contact shadow on an invisible floor just under the case
+  const fb = new THREE.Box3(); C.parts.forEach(g => fb.expandByObject(g));
+  if (!fb.isEmpty()) { const fl = new THREE.Mesh(new THREE.PlaneGeometry(900, 900), new THREE.ShadowMaterial({ opacity: 0.22 }));
+    fl.rotation.x = -Math.PI / 2; fl.position.set((fb.min.x + fb.max.x) / 2, fb.min.y - 0.05, (fb.min.z + fb.max.z) / 2); fl.receiveShadow = true; fl.userData.floor = true; C.stage.root.add(fl); }
+  if (C.board) C.board.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+  $('#cLoading').hidden = true; caseLook(); frameCase('iso'); renderCaseInsp(cs);
+}
+function caseLook() {
+  const op = +$('#cOpacity').value, ex = +$('#cExplode').value;
+  // Magnet styles: each style is its own base part; "None" shows the plain base. Discs are drawn where the magnets sit.
+  const magParts = C.parts.map(g => g.userData.part).filter(p => p.magnet_style);
+  const sel = $('#cMagnets'); $('#cMagCtl').hidden = !magParts.length;
+  if (magParts.length && sel.options.length !== magParts.length + 1) {
+    sel.innerHTML = '<option value="">None</option>' + magParts.map(p => `<option value="${esc(p.magnet_style)}">${esc(p.magnet_label || p.magnet_style)}</option>`).join('');
+    const want = store.get('magnetStyle', ''); sel.value = magParts.some(p => p.magnet_style === want) ? want : '';
+  }
+  const style = magParts.length ? sel.value : '';
+  if (C.discs) { C.stage.root.remove(C.discs); C.discs.traverse(o => o.geometry?.dispose?.()); C.discs = null; }
+  const mp = magParts.find(p => p.magnet_style === style);
+  if (mp?.magnet_discs) {
+    C.discs = new THREE.Group(); const mat = new THREE.MeshStandardMaterial({ color: 0x9aa4ad, metalness: 0.8, roughness: 0.3 });
+    for (const [x, y, zb, d, t] of mp.magnet_discs) { const m = new THREE.Mesh(new THREE.CylinderGeometry(d / 2, d / 2, t, 40), mat); m.position.set(x, zb + t / 2, -y); C.discs.add(m); }
+    C.stage.root.add(C.discs);
+  }
+  // Antenna pose (external lids): straight out or swivelled upright; one shown at a time.
+  const whips = C.parts.map(g => g.userData.part).filter(p => p.whip_pose); const ws = $('#cWhip'); $('#cWhipCtl').hidden = !whips.length;
+  if (whips.length && ws.options.length !== whips.length) { ws.innerHTML = whips.map(p => `<option value="${esc(p.whip_pose)}">${esc(p.whip_label)}</option>`).join(''); const w = store.get('whipPose', 'swivel'); ws.value = whips.some(p => p.whip_pose === w) ? w : whips[0].whip_pose; }
+  for (const g of C.parts) { const role = g.userData.part.role; const ms = g.userData.part.magnet_style || ''; const wp = g.userData.part.whip_pose;
+    const vis = g.userData.on !== false && (role !== 'base' || !magParts.length || ms === style) && (!wp || wp === ws.value); g.visible = vis;
+    g.position.y = ex * ({ lid: 32, proxy: 32, inlay: 32, guide: 18, base: 0 }[role] ?? 0);
+    g.traverse(o => { if (o.isMesh) { const t = role === 'base' ? Math.min(1, op + 0.35) : role === 'proxy' ? 1 : op; o.material.opacity = t; o.material.transparent = t < 1; o.material.depthWrite = t >= 1; } }); }
+  if (C.board) C.board.visible = $('#cBoard').checked;
+}
+function frameCase(view) { const box = new THREE.Box3(); C.parts.forEach(g => g.visible && g.userData.part.role !== 'proxy' && box.expandByObject(g)); if (box.isEmpty() && C.board) box.setFromObject(C.board); if (!box.isEmpty()) C.stage.frame(box, view, 1.5); }
+function renderCaseInsp(cs) {
+  const el = $('#cInsp'); if (!cs) { el.innerHTML = ''; return; }
+  const bp = cs.board_placement || {};
+  // Cases that carry module/antenna fields form one family with two pickers; anything else is listed as its own case.
+  const fam = S.cases.filter(c => c.module && c.antenna); const others = S.cases.filter(c => !(c.module && c.antenna));
+  const mods = [...new Set(fam.map(c => c.module))]; const ants = [...new Map(fam.map(c => [c.antenna, c.antenna_label || c.antenna])).entries()];
+  const pick = (m, a) => (fam.find(c => c.module === m && c.antenna === a) || fam.find(c => c.module === m) || {}).id;
+  const inFam = !!(cs.module && cs.antenna);
+  el.innerHTML = `<div class="sec"><div class="lbl">Case</div>
+   ${fam.length ? `<div class="row"><span class="lbl" style="min-width:58px">Module</span><div class="seg" role="group" aria-label="Module">${mods.map(m => `<button type="button" data-case="${esc(pick(m, inFam ? cs.antenna : ants[0][0]))}" aria-pressed="${inFam && cs.module === m}">${esc(m.toUpperCase())}</button>`).join('')}</div></div>
+   <div class="row"><span class="lbl" style="min-width:58px">Antenna</span><div class="seg" role="group" aria-label="Antenna">${ants.map(([a, l]) => `<button type="button" data-case="${esc(pick(inFam ? cs.module : mods[0], a))}" aria-pressed="${inFam && cs.antenna === a}">${esc(l)}</button>`).join('')}</div></div>` : ''}
+   ${others.length ? `<div class="row"><span class="lbl" style="min-width:58px">Other</span>${others.map(c => `<button class="btn ${c.id === cs.id ? 'primary' : ''}" type="button" data-case="${esc(c.id)}">${esc(c.label)}</button>`).join('')}</div>` : ''}</div>
+   <div class="sec"><h2>${esc(cs.label)}</h2><div class="muted" style="font-size:13px">Fits ${esc((cs.revisions || []).map(r => S.byId[r]?.label || r).join(', ') || '—')}</div>
+   ${cs.status_note ? `<div class="note">${esc(cs.status_note)}</div>` : ''}
+   <div class="pills">${C.board ? `<span class="pill ${bp.verified ? 'good' : 'warn'}">positions ${bp.verified ? 'line up' : 'not verified'}</span>` : '<span class="pill">board placement unknown</span>'}${C.det != null && C.det < 0 ? '<span class="pill bad">case is mirrored</span>' : ''}</div>
+   ${C.det != null && C.det < 0 ? `<div class="note"><b>The exported case is a mirror image of the board.</b> The case CAD takes KiCad coordinates as-is (y = KiCad y, which points down the board in the top view) and builds with z up. That is a left-handed frame, so features land where the board's parts are only after mirroring the board. Here the case is drawn as it would print, and the board is mirrored to line up: its silkscreen reads backwards. A real board in this printed case would have J1 and the XIAO openings on the wrong long side. The Rev2 case uses y = −KiCad y and does not have this problem. Check before printing.</div>` : ''}
+   ${(() => { const st = $('#cMagnets')?.value; const p = (cs.parts || []).find(q => q.magnet_style && q.magnet_style === st); return p ? `<div class="note"><b>Magnets: ${esc(p.magnet_label)}.</b> ${esc(p.note || '')} Four N52 8 × 2 mm discs; 6 × 2 and 10 × 2 are also available from the CAD (<span class="mono">--magnets</span>). Stick-on magnet tape on a plain base works too, with no reprint.</div>` : ''; })()}
+   ${bp.map ? `<details><summary class="lbl" style="cursor:pointer">How the board is placed</summary><div class="muted" style="font-size:12.5px;margin-top:6px">${esc(bp.map)}</div></details>` : ''}</div>
+   <div class="sec"><div class="lbl">Pieces</div><div class="tw"><table><thead><tr><th></th><th>Piece</th><th class="n">Print time</th><th class="n">Filament</th><th class="n">Grams</th></tr></thead><tbody>
+   ${(cs.parts || []).map((p, i) => `<tr><td><input type="checkbox" data-i="${i}" checked aria-label="Show ${esc(p.name)}"></td><td>${esc(p.name)} <span class="muted">${esc(p.role)}</span></td><td class="n">${esc(p.print?.time ?? '—')}</td><td class="n">${p.print?.filament_m != null ? (+p.print.filament_m).toFixed(2) + ' m' : '—'}</td><td class="n">${p.print?.grams != null ? (+p.print.grams).toFixed(0) : '—'}</td></tr>`).join('')}</tbody></table></div></div>
+   ${cs.params ? `<div class="sec"><details><summary class="lbl" style="cursor:pointer">Export parameters</summary><pre class="mono" style="font-size:11.5px;white-space:pre-wrap;margin:8px 0 0">${esc(JSON.stringify(cs.params, null, 1))}</pre></details></div>` : ''}
+   ${(cs.source_files || []).length ? `<div class="sec"><div class="lbl">Sources</div><div class="mono" style="font-size:11.5px;overflow-wrap:anywhere">${cs.source_files.map(esc).join('<br>')}</div></div>` : ''}
+   <div class="sec"><div class="row"><button class="btn primary" type="button" id="caseFb">Feedback on ${esc(cs.label)}</button>${S.docs.find(d => /case\/rev3c\/analytical\/README/.test(d.path)) ? '<button class="btn" type="button" id="caseDoc">Case README</button>' : ''}</div></div>`;
+  $$('[data-case]', el).forEach(b => b.onclick = () => go('case', b.dataset.case));
+  $$('input[data-i]', el).forEach(i => i.onchange = () => { const g = C.parts.find(g => g.userData.part === cs.parts[+i.dataset.i]); if (g) { g.userData.on = i.checked; caseLook(); } });
+  $('#caseFb').onclick = () => openFeedback({ rev: (cs.revisions || [])[0] || null, view: 'case', target: { type: 'case', id: cs.id, label: cs.label } });
+  $('#caseDoc')?.addEventListener('click', () => go('docs', S.docs.find(d => /case\/rev3c\/analytical\/README/.test(d.path)).id));
+}
+
+/* ---------- docs ---------- */
+const docUrl = d => /^docs\//.test(d.path) ? d.path : 'docs/' + d.path;
+const GROUPS = ['Plan & findings', 'Reddit drafts', 'Research', 'Revision docs', 'Case docs', 'Repo'];
+async function showDocs(arg) {
+  const nav = $('#docNav'); const q = (S.docQ || '').toLowerCase();
+  const doc = S.docs.find(d => slug(d.id) === arg) || S.docs.find(d => d.id === S.docId) || S.docs.find(d => d.group === 'Plan & findings') || S.docs[0];
+  if (!doc) { $('#docBody').innerHTML = '<div class="empty">No documents yet.</div>'; return; }
+  S.docId = doc.id;
+  const groups = [...GROUPS, ...new Set(S.docs.map(d => d.group).filter(g => !GROUPS.includes(g)))];
+  nav.innerHTML = `<input class="search" id="docQ" type="search" placeholder="Filter docs" value="${esc(S.docQ || '')}" aria-label="Filter docs">` + groups.map(g => { const ds = S.docs.filter(d => d.group === g && (!q || (d.title + ' ' + d.path).toLowerCase().includes(q))); if (!ds.length) return '';
+    return `<h4>${esc(g)}</h4>` + ds.map(d => `<button type="button" data-id="${esc(d.id)}" aria-current="${d.id === doc.id}">${d.rev ? `<span class="mono muted" style="font-size:11px">${esc(S.byId[d.rev]?.label || d.rev)}</span> ` : ''}${esc(d.title)}</button>`).join(''); }).join('');
+  $('#docQ').oninput = e => { S.docQ = e.target.value; const pos = e.target.selectionStart; showDocs(slug(doc.id)).then(() => { const i = $('#docQ'); i.focus(); i.setSelectionRange(pos, pos); }); };
+  $$('button[data-id]', nav).forEach(b => b.onclick = () => go('docs', b.dataset.id));
+  const body = $('#docBody'); body.innerHTML = '<div class="muted">Loading…</div>';
+  let txt; try { const r = await fetch(docUrl(doc)); if (!r.ok) throw 0; txt = await r.text(); } catch { body.innerHTML = '<div class="empty">Could not load this document.</div>'; return; }
+  if (S.docId !== doc.id) return;
+  const base = new URL(docUrl(doc), location.href);
+  const html = /\.md$/i.test(doc.path) ? DOMPurify.sanitize(marked.parse(txt, { gfm: true })) : `<pre>${esc(txt)}</pre>`;
+  body.innerHTML = `<div class="dochead"><span class="pill">${esc(doc.group)}</span><span class="mono">${esc(doc.source || doc.path)}</span><button class="btn" type="button" id="docFb">Feedback on this doc</button></div><article class="md">${html}</article>`;
+  const byPath = new Map(S.docs.map(d => [new URL(docUrl(d), location.href).href.split('#')[0], d]));
+  $$('article img', body).forEach(im => { const s = im.getAttribute('src'); if (s && !/^(https?:|data:)/.test(s)) im.src = new URL(s, base).href; im.loading = 'lazy'; im.onerror = () => { im.replaceWith(Object.assign(document.createElement('span'), { className: 'muted', textContent: `[image not included: ${s}]` })); }; });
+  $$('article a', body).forEach(a => { const h = a.getAttribute('href'); if (!h || h.startsWith('#')) return; if (/^https?:/.test(h)) { a.target = '_blank'; a.rel = 'noopener'; return; }
+    const abs = new URL(h, base).href.split('#')[0]; const d = byPath.get(abs);
+    if (d) a.onclick = e => { e.preventDefault(); go('docs', d.id); };
+    else if (/\.(png|jpe?g|svg|pdf|gif|webp)$/i.test(abs)) { a.href = abs; a.target = '_blank'; }
+    else { a.classList.add('missing'); a.title = 'Not included in the hub; see the repository'; a.onclick = e => { e.preventDefault(); toast('That file is in the repository, not in the hub.'); }; } });
+  body.parentElement.scrollTop = 0;
+  $('#docFb').onclick = () => openFeedback({ rev: doc.rev || null, view: 'docs', target: { type: 'doc', id: doc.id, label: doc.title } });
+}
+
+/* ---------- feedback (db) ---------- */
+function currentContext() {
+  const r = S.byId[S.cur];
+  if (S.view === 'board' && B.sel) { const p = B.data?.partBy[B.sel]; return { rev: S.cur, view: 'board', target: { type: 'part', id: B.sel, label: `${B.sel} (${p?.value || ''})` } }; }
+  if (S.view === 'board' && B.look !== 'assembled') return { rev: S.cur, view: 'board', target: { type: 'layers', id: Object.keys(B.layerOn || {}).filter(layerVisible).join(','), label: `${r?.label} layers` } };
+  if (S.view === 'docs') { const d = S.docs.find(x => x.id === S.docId); return { rev: d?.rev || null, view: 'docs', target: { type: 'doc', id: d?.id, label: d?.title } }; }
+  if (S.view === 'case') { const c = S.cases.find(x => x.id === S.caseId); return { rev: null, view: 'case', target: { type: 'case', id: c?.id, label: c?.label } }; }
+  if (['board', 'cost', 'compare'].includes(S.view)) return { rev: S.cur, view: S.view, target: { type: 'revision', id: S.cur, label: r?.label } };
+  return { rev: null, view: S.view, target: { type: 'general', id: 'general', label: 'General' } };
+}
+let fbCtx = null;
+function openFeedback(ctx) {
+  fbCtx = ctx; const r = S.byId[ctx.rev];
+  $('#fbCtx').innerHTML = `<b>${esc(ctx.target?.label || 'General')}</b>${r ? ' · ' + esc(r.label) : ''} · <span class="muted">${esc(ctx.view)} view</span>`;
+  $('#fbAvail').textContent = S.db ? 'Saved to this hub. The next Claude session reads it.' : 'Feedback is only available in the Claude-hosted copy of this hub. You can still copy your note.';
+  $('#fbSave').textContent = S.db ? 'Save feedback' : 'Copy note';
+  $('#fbText').value = store.get('draft', ''); $('#fbDlg').showModal(); $('#fbText').focus();
+}
+$('#fbText').addEventListener('input', e => store.set('draft', e.target.value));
+$('#fbCancel').onclick = () => $('#fbDlg').close();
+$('#fbForm').addEventListener('submit', async e => {
+  e.preventDefault(); const text = $('#fbText').value.trim(); if (!text) return;
+  const docBody = { text, kind: $('#fbKind').value, status: 'open', rev: fbCtx?.rev || null, view: fbCtx?.view || null, target: fbCtx?.target || null, created: new Date().toISOString(), author: S.uid || null, reply: null };
+  if (!S.db) { const s = `[${docBody.kind}] ${docBody.target?.label || ''} (${S.byId[docBody.rev]?.label || 'general'}): ${text}`; try { await navigator.clipboard.writeText(s); toast('Copied. Paste it into the chat.'); } catch { toast('Copy failed. Select the text and copy it.'); return; } $('#fbDlg').close(); return; }
+  $('#fbSave').disabled = true;
+  try { await S.db.collection('feedback').add(docBody); store.set('draft', ''); $('#fbDlg').close(); toast('Feedback saved'); }
+  catch (err) { toast(err?.code === 'quota_exceeded' ? 'The feedback store is full. Resolve or delete old items.' : 'Could not save. ' + (err?.message || 'Try again.')); }
+  finally { $('#fbSave').disabled = false; }
+});
+function feedbackUnavailable() {  // static hosting or no store: hide feedback controls and settle the "Connecting…" placeholders
+  S.fbReady = true; document.documentElement.classList.add('no-fb');
+  if (S.view === 'feedback') showFeedback(); if (S.view === 'overview') showOverview();
+}
+async function initFeedbackStore() {
+  if (!window.claude?.use) { feedbackUnavailable(); return; }
+  let db, user;
+  try { [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]); } catch (e) { feedbackUnavailable(); return; }
+  S.db = db; S.user = user; S.uid = user ? await user.id() : null;
+  if (!db) { feedbackUnavailable(); return; }
+  let timer = setTimeout(() => { S.fbSlow = true; if (S.view === 'feedback') showFeedback(); }, 10000);
+  db.collection('feedback').orderBy('created', 'desc').onSnapshot(snap => {
+    if (!snap.metadata.fromCache) { clearTimeout(timer); S.fbSlow = false; }
+    S.fb = snap.docs.map(d => ({ id: d.id, ...d.data() })); S.fbReady = true; updateFbBadge();
+    if (S.view === 'feedback') showFeedback(); if (S.view === 'overview') showOverview(); if (S.view === 'board') { renderPartList(); renderSel(); }
+  }, err => { clearTimeout(timer); S.fbErr = err; S.fbReady = true; if (S.view === 'feedback') showFeedback(); });
+}
+function updateFbBadge() { const n = S.fb.filter(f => f.status !== 'resolved').length; $('#fbCount').textContent = n; $('#fbCount').hidden = !n; }
+function showFeedback() {
+  const el = $('#fbPage'); const filt = S.fbFilter || 'open';
+  const list = S.fb.filter(f => filt === 'all' || (filt === 'open' ? f.status !== 'resolved' : f.status === 'resolved'));
+  const kindPill = { issue: 'warn', question: 'info', idea: 'acc', approve: 'good' };
+  if (S.fbReady && !S.db) { el.innerHTML = '<div class="hero"><div class="lbl">Feedback</div><h2>Notes on the designs</h2><p>Feedback is only available in the Claude-hosted copy of this hub.</p></div>'; return; }
+  el.innerHTML = `<div class="hero"><div class="lbl">Feedback</div><h2>Notes on the designs</h2><p>Everything left here is stored with the hub, so the next working session can read it, act on it and reply. Pin feedback to a part by clicking it in the Board view first.</p></div>
+   <div class="row"><div class="seg" id="fbFilt">${['open', 'resolved', 'all'].map(k => `<button type="button" data-k="${k}" aria-pressed="${k === filt}">${k[0].toUpperCase() + k.slice(1)}</button>`).join('')}</div><button class="btn primary" type="button" id="fbAdd">New feedback</button></div>
+   ${S.fbErr ? `<div class="note">The feedback store stopped answering (${esc(S.fbErr.code)}). Reload the page to reconnect.</div>` : ''}
+   ${S.fbSlow ? '<div class="note">The feedback store has not answered yet; what is shown may be out of date.</div>' : ''}
+   ${!S.fbReady ? '<div class="empty">Connecting to the feedback store…</div>' : list.length ? list.map(f => `<div class="fbitem"><div class="meta"><span class="pill ${kindPill[f.kind] || ''}">${esc(f.kind)}</span>${f.status === 'resolved' ? '<span class="pill good">resolved</span>' : ''}<b style="color:var(--ink)">${esc(f.target?.label || 'General')}</b>${f.rev ? '<span>' + esc(S.byId[f.rev]?.label || f.rev) + '</span>' : ''}<span>${esc(f.view || '')}</span><span class="mono">${esc((f.created || '').slice(0, 16).replace('T', ' '))}</span></div>
+     <div class="txt">${esc(f.text)}</div>${f.reply ? `<div class="reply"><span class="lbl">Reply</span><br>${esc(f.reply)}</div>` : ''}
+     <div class="row">${f.target?.type === 'part' ? `<button class="btn" type="button" data-open="${esc(f.id)}">Show ${esc(f.target.id)} in 3D</button>` : f.target?.type === 'doc' ? `<button class="btn" type="button" data-open="${esc(f.id)}">Open doc</button>` : f.target?.type === 'case' ? `<button class="btn" type="button" data-open="${esc(f.id)}">Open case</button>` : ''}
+     ${S.db ? `<button class="btn" type="button" data-res="${esc(f.id)}">${f.status === 'resolved' ? 'Reopen' : 'Mark resolved'}</button>` : ''}</div></div>`).join('') : `<div class="empty">${filt === 'open' ? 'No open feedback. Click a part in the Board view and choose “Feedback on …”, or use “Leave feedback” at the top.' : 'Nothing here.'}</div>`}`;
+  $$('#fbFilt button').forEach(b => b.onclick = () => { S.fbFilter = b.dataset.k; showFeedback(); });
+  $('#fbAdd').onclick = () => openFeedback({ rev: null, view: 'feedback', target: { type: 'general', id: 'general', label: 'General' } });
+  $$('[data-res]', el).forEach(b => b.onclick = async () => { const f = S.fb.find(x => x.id === b.dataset.res); b.disabled = true; try { await S.db.collection('feedback').doc(f.id).update({ status: f.status === 'resolved' ? 'open' : 'resolved' }); } catch (e) { toast('Could not update: ' + (e?.message || e?.code)); b.disabled = false; } });
+  $$('[data-open]', el).forEach(b => b.onclick = () => { const f = S.fb.find(x => x.id === b.dataset.open);
+    if (f.target.type === 'part') { S.cur = f.rev; store.set('rev', S.cur); go('board'); const t = setInterval(() => { if (B.data?.id === f.rev && B.data.partBy[f.target.id]) { clearInterval(t); selectPart(f.target.id, true); } }, 200); setTimeout(() => clearInterval(t), 15000); }
+    else if (f.target.type === 'doc') go('docs', f.target.id); else if (f.target.type === 'case') go('case', f.target.id); });
+}
+
+window.__gea = { initFeedbackStore, B, S, C }; // lets a local test harness attach a stand-in store; inert on claude.ai
+boot().catch(e => { console.error(e); $('#ovPage').innerHTML = `<div class="empty">The hub could not load its data (${esc(e.message)}).</div>`; });
+</script>

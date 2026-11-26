@@ -1,0 +1,578 @@
+[
+ {
+  "id": "repo-pcb-rev1_0-README_md",
+  "title": "PCB Rev 1.0",
+  "group": "Revision docs",
+  "rev": "rev1.0",
+  "path": "repo/pcb/rev1.0/README.md",
+  "source": "pcb/rev1.0/README.md",
+  "bytes": 2085
+ },
+ {
+  "id": "repo-pcb-rev1_0-STANDALONE-REVIEW_md",
+  "title": "Rev 1.0 standalone source-review candidate",
+  "group": "Revision docs",
+  "rev": "rev1.0",
+  "path": "repo/pcb/rev1.0/STANDALONE-REVIEW.md",
+  "source": "pcb/rev1.0/STANDALONE-REVIEW.md",
+  "bytes": 3092
+ },
+ {
+  "id": "repo-pcb-rev2_0-README_md",
+  "title": "PCB Rev 2.0",
+  "group": "Revision docs",
+  "rev": "rev2.0",
+  "path": "repo/pcb/rev2.0/README.md",
+  "source": "pcb/rev2.0/README.md",
+  "bytes": 2642
+ },
+ {
+  "id": "repo-pcb-rev2_0-STANDALONE-REVIEW_md",
+  "title": "Rev 2.0 standalone source-review candidate",
+  "group": "Revision docs",
+  "rev": "rev2.0",
+  "path": "repo/pcb/rev2.0/STANDALONE-REVIEW.md",
+  "source": "pcb/rev2.0/STANDALONE-REVIEW.md",
+  "bytes": 3449
+ },
+ {
+  "id": "repo-pcb-rev2_1-README_md",
+  "title": "PCB Rev 2.1: retired, source review only",
+  "group": "Revision docs",
+  "rev": "rev2.1",
+  "path": "repo/pcb/rev2.1/README.md",
+  "source": "pcb/rev2.1/README.md",
+  "bytes": 3846
+ },
+ {
+  "id": "repo-pcb-rev2_1-STANDALONE-REVIEW_md",
+  "title": "Rev 2.1 standalone source-review candidate",
+  "group": "Revision docs",
+  "rev": "rev2.1",
+  "path": "repo/pcb/rev2.1/STANDALONE-REVIEW.md",
+  "source": "pcb/rev2.1/STANDALONE-REVIEW.md",
+  "bytes": 3790
+ },
+ {
+  "id": "repo-pcb-rev2_2-README_md",
+  "title": "PCB Rev 2.2: unqualified source review",
+  "group": "Revision docs",
+  "rev": "rev2.2",
+  "path": "repo/pcb/rev2.2/README.md",
+  "source": "pcb/rev2.2/README.md",
+  "bytes": 4597
+ },
+ {
+  "id": "repo-pcb-rev2_2-STANDALONE-REVIEW_md",
+  "title": "Rev 2.2 standalone source-review candidate",
+  "group": "Revision docs",
+  "rev": "rev2.2",
+  "path": "repo/pcb/rev2.2/STANDALONE-REVIEW.md",
+  "source": "pcb/rev2.2/STANDALONE-REVIEW.md",
+  "bytes": 2935
+ },
+ {
+  "id": "repo-pcb-rev3a-GATE-PROTECTION_md",
+  "title": "Rev3A source-referenced PMOS gate protection",
+  "group": "Revision docs",
+  "rev": "rev3a",
+  "path": "repo/pcb/rev3a/GATE-PROTECTION.md",
+  "source": "pcb/rev3a/GATE-PROTECTION.md",
+  "bytes": 3867
+ },
+ {
+  "id": "repo-pcb-rev3a-POWER-QUALIFICATION_md",
+  "title": "Rev3A architecture-specific power qualification",
+  "group": "Revision docs",
+  "rev": "rev3a",
+  "path": "repo/pcb/rev3a/POWER-QUALIFICATION.md",
+  "source": "pcb/rev3a/POWER-QUALIFICATION.md",
+  "bytes": 8710
+ },
+ {
+  "id": "repo-pcb-rev3a-RATED-PROTECTION_md",
+  "title": "Rev3A rated-protection backport",
+  "group": "Revision docs",
+  "rev": "rev3a",
+  "path": "repo/pcb/rev3a/RATED-PROTECTION.md",
+  "source": "pcb/rev3a/RATED-PROTECTION.md",
+  "bytes": 18192
+ },
+ {
+  "id": "repo-pcb-rev3a-README_md",
+  "title": "Revision 3A PCB",
+  "group": "Revision docs",
+  "rev": "rev3a",
+  "path": "repo/pcb/rev3a/README.md",
+  "source": "pcb/rev3a/README.md",
+  "bytes": 18550
+ },
+ {
+  "id": "repo-pcb-rev3a-STANDALONE-REVIEW_md",
+  "title": "Rev3A focused upstream candidate",
+  "group": "Revision docs",
+  "rev": "rev3a",
+  "path": "repo/pcb/rev3a/STANDALONE-REVIEW.md",
+  "source": "pcb/rev3a/STANDALONE-REVIEW.md",
+  "bytes": 1882
+ },
+ {
+  "id": "repo-pcb-rev3b-GATE-PROTECTION_md",
+  "title": "Rev3B source-referenced gate protection",
+  "group": "Revision docs",
+  "rev": "rev3b",
+  "path": "repo/pcb/rev3b/GATE-PROTECTION.md",
+  "source": "pcb/rev3b/GATE-PROTECTION.md",
+  "bytes": 2851
+ },
+ {
+  "id": "repo-pcb-rev3b-MODEL-ACCURACY_md",
+  "title": "Rev3B verified C3 visual reference",
+  "group": "Revision docs",
+  "rev": "rev3b",
+  "path": "repo/pcb/rev3b/MODEL-ACCURACY.md",
+  "source": "pcb/rev3b/MODEL-ACCURACY.md",
+  "bytes": 7113
+ },
+ {
+  "id": "repo-pcb-rev3b-POWER-QUALIFICATION_md",
+  "title": "Rev3B loaded-power qualification gates",
+  "group": "Revision docs",
+  "rev": "rev3b",
+  "path": "repo/pcb/rev3b/POWER-QUALIFICATION.md",
+  "source": "pcb/rev3b/POWER-QUALIFICATION.md",
+  "bytes": 6259
+ },
+ {
+  "id": "repo-pcb-rev3b-RATED-PROTECTION_md",
+  "title": "Rev3B bounded rated-protection backport",
+  "group": "Revision docs",
+  "rev": "rev3b",
+  "path": "repo/pcb/rev3b/RATED-PROTECTION.md",
+  "source": "pcb/rev3b/RATED-PROTECTION.md",
+  "bytes": 11183
+ },
+ {
+  "id": "repo-pcb-rev3b-README_md",
+  "title": "PCB Rev 3B review candidate",
+  "group": "Revision docs",
+  "rev": "rev3b",
+  "path": "repo/pcb/rev3b/README.md",
+  "source": "pcb/rev3b/README.md",
+  "bytes": 9765
+ },
+ {
+  "id": "repo-pcb-rev3c-ANTENNA-REVIEW_md",
+  "title": "Shared Rev3C antenna and mechanical review",
+  "group": "Revision docs",
+  "rev": "rev3c",
+  "path": "repo/pcb/rev3c/ANTENNA-REVIEW.md",
+  "source": "pcb/rev3c/ANTENNA-REVIEW.md",
+  "bytes": 5110
+ },
+ {
+  "id": "repo-pcb-rev3c-GATE-PROTECTION_md",
+  "title": "Historical Rev3C gate repair at frozen8f95555",
+  "group": "Revision docs",
+  "rev": "rev3c",
+  "path": "repo/pcb/rev3c/GATE-PROTECTION.md",
+  "source": "pcb/rev3c/GATE-PROTECTION.md",
+  "bytes": 10367
+ },
+ {
+  "id": "repo-pcb-rev3c-MODEL-ACCURACY_md",
+  "title": "Rev3C component model accuracy checkpoint",
+  "group": "Revision docs",
+  "rev": "rev3c",
+  "path": "repo/pcb/rev3c/MODEL-ACCURACY.md",
+  "source": "pcb/rev3c/MODEL-ACCURACY.md",
+  "bytes": 19128
+ },
+ {
+  "id": "repo-pcb-rev3c-ORDERING_md",
+  "title": "Rev3C JLCPCB quote and ordering guide",
+  "group": "Revision docs",
+  "rev": "rev3c",
+  "path": "repo/pcb/rev3c/ORDERING.md",
+  "source": "pcb/rev3c/ORDERING.md",
+  "bytes": 13340
+ },
+ {
+  "id": "repo-pcb-rev3c-POWER-QUALIFICATION_md",
+  "title": "Selected Rev3C power qualification gates",
+  "group": "Revision docs",
+  "rev": "rev3c",
+  "path": "repo/pcb/rev3c/POWER-QUALIFICATION.md",
+  "source": "pcb/rev3c/POWER-QUALIFICATION.md",
+  "bytes": 4478
+ },
+ {
+  "id": "repo-pcb-rev3c-PROTOTYPE-QUALIFICATION_md",
+  "title": "Rev3C prototype qualification plan",
+  "group": "Revision docs",
+  "rev": "rev3c",
+  "path": "repo/pcb/rev3c/PROTOTYPE-QUALIFICATION.md",
+  "source": "pcb/rev3c/PROTOTYPE-QUALIFICATION.md",
+  "bytes": 9580
+ },
+ {
+  "id": "repo-pcb-rev3c-RATED-SWITCH-OPTION_md",
+  "title": "Selected Rev3C rated-input prototype review",
+  "group": "Revision docs",
+  "rev": "rev3c",
+  "path": "repo/pcb/rev3c/RATED-SWITCH-OPTION.md",
+  "source": "pcb/rev3c/RATED-SWITCH-OPTION.md",
+  "bytes": 13623
+ },
+ {
+  "id": "repo-pcb-rev3c-README_md",
+  "title": "Selected Rev3C prototype: shared XIAO C3/C6 carrier",
+  "group": "Revision docs",
+  "rev": "rev3c",
+  "path": "repo/pcb/rev3c/README.md",
+  "source": "pcb/rev3c/README.md",
+  "bytes": 9591
+ },
+ {
+  "id": "repo-pcb-rev3c-STENCIL-REVIEW_md",
+  "title": "Rev3C stencil and fresh native checks",
+  "group": "Revision docs",
+  "rev": "rev3c",
+  "path": "repo/pcb/rev3c/STENCIL-REVIEW.md",
+  "source": "pcb/rev3c/STENCIL-REVIEW.md",
+  "bytes": 3528
+ },
+ {
+  "id": "repo-pcb-rev3d-README_md",
+  "title": "Rev3D candidate: FirstBuild-aligned eFuse power input",
+  "group": "Revision docs",
+  "rev": "rev3d",
+  "path": "repo/pcb/rev3d/README.md",
+  "source": "pcb/rev3d/README.md",
+  "bytes": 6694
+ },
+ {
+  "id": "repo-pcb-rev3e-HALF-OZ-CANDIDATE_md",
+  "title": "Rev 3E half-ounce inner copper candidate",
+  "group": "Revision docs",
+  "rev": "rev3e",
+  "path": "repo/pcb/rev3e/HALF-OZ-CANDIDATE.md",
+  "source": "pcb/rev3e/HALF-OZ-CANDIDATE.md",
+  "bytes": 4743
+ },
+ {
+  "id": "repo-pcb-rev3e-PRE-ORDER-DECISION_md",
+  "title": "Rev 3E pre-order engineering decision",
+  "group": "Revision docs",
+  "rev": "rev3e",
+  "path": "repo/pcb/rev3e/PRE-ORDER-DECISION.md",
+  "source": "pcb/rev3e/PRE-ORDER-DECISION.md",
+  "bytes": 4552
+ },
+ {
+  "id": "repo-pcb-rev3e-QUOTE-AND-COST-REVIEW_md",
+  "title": "Rev 3E prototype quote and cost review",
+  "group": "Revision docs",
+  "rev": "rev3e",
+  "path": "repo/pcb/rev3e/QUOTE-AND-COST-REVIEW.md",
+  "source": "pcb/rev3e/QUOTE-AND-COST-REVIEW.md",
+  "bytes": 7967
+ },
+ {
+  "id": "repo-pcb-rev3e-README_md",
+  "title": "Rev3E candidate: PIN3 overvoltage lockout, data-line ESD, debug provisions",
+  "group": "Revision docs",
+  "rev": "rev3e",
+  "path": "repo/pcb/rev3e/README.md",
+  "source": "pcb/rev3e/README.md",
+  "bytes": 7266
+ },
+ {
+  "id": "repo-pcb-rev3f-README_md",
+  "title": "Rev 3F GE appliance adapter: experimental review",
+  "group": "Revision docs",
+  "rev": "rev3f",
+  "path": "repo/pcb/rev3f/README.md",
+  "source": "pcb/rev3f/README.md",
+  "bytes": 3765
+ },
+ {
+  "id": "repo-pcb-rev3h-README_md",
+  "title": "Rev3H: Rev3G plus a GEA bus monitor header and one fewer extended part",
+  "group": "Revision docs",
+  "rev": "rev3h",
+  "path": "repo/pcb/rev3h/README.md",
+  "source": "pcb/rev3h/README.md",
+  "bytes": 9081
+ },
+ {
+  "id": "repo-case-README_md",
+  "title": "Enclosures",
+  "group": "Case docs",
+  "rev": null,
+  "path": "repo/case/README.md",
+  "source": "case/README.md",
+  "bytes": 715
+ },
+ {
+  "id": "repo-case-rev2-README_md",
+  "title": "Rev 2 enclosure",
+  "group": "Case docs",
+  "rev": null,
+  "path": "repo/case/rev2/README.md",
+  "source": "case/rev2/README.md",
+  "bytes": 1116
+ },
+ {
+  "id": "repo-case-rev3a-README_md",
+  "title": "Rev3A enclosure review",
+  "group": "Case docs",
+  "rev": null,
+  "path": "repo/case/rev3a/README.md",
+  "source": "case/rev3a/README.md",
+  "bytes": 2633
+ },
+ {
+  "id": "repo-case-rev3c-README_md",
+  "title": "Shared Rev3C enclosure review prototype",
+  "group": "Case docs",
+  "rev": null,
+  "path": "repo/case/rev3c/README.md",
+  "source": "case/rev3c/README.md",
+  "bytes": 6643
+ },
+ {
+  "id": "repo-case-rev3c-analytical-MECHANICAL-DIMENSIONS_md",
+  "title": "Rev3C assembly dimensions and review limits",
+  "group": "Case docs",
+  "rev": null,
+  "path": "repo/case/rev3c/analytical/MECHANICAL-DIMENSIONS.md",
+  "source": "case/rev3c/analytical/MECHANICAL-DIMENSIONS.md",
+  "bytes": 7735
+ },
+ {
+  "id": "repo-case-rev3c-analytical-README_md",
+  "title": "Parametric Rev3C enclosure review",
+  "group": "Case docs",
+  "rev": null,
+  "path": "repo/case/rev3c/analytical/README.md",
+  "source": "case/rev3c/analytical/README.md",
+  "bytes": 22487
+ },
+ {
+  "id": "repo-CONTRIBUTING_md",
+  "title": "Contributing",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/CONTRIBUTING.md",
+  "source": "CONTRIBUTING.md",
+  "bytes": 1498
+ },
+ {
+  "id": "repo-README_md",
+  "title": "ESPHome GE Laundry UART",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/README.md",
+  "source": "README.md",
+  "bytes": 3809
+ },
+ {
+  "id": "repo-docs-reviews-2026-11-26-audit-and-integration_md",
+  "title": "Audit and integration review, 2026-11-26 (Claude)",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/reviews/2026-11-26-audit-and-integration.md",
+  "source": "docs/reviews/2026-11-26-audit-and-integration.md",
+  "bytes": 5740
+ },
+ {
+  "id": "repo-docs-revision-comparison-C6-MATTER_md",
+  "title": "C3/C6 carrier compatibility and Matter options",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/C6-MATTER.md",
+  "source": "docs/revision-comparison/C6-MATTER.md",
+  "bytes": 8273
+ },
+ {
+  "id": "repo-docs-revision-comparison-FINISH-PLAN_md",
+  "title": "Finish plan and outstanding work",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/FINISH-PLAN.md",
+  "source": "docs/revision-comparison/FINISH-PLAN.md",
+  "bytes": 11600
+ },
+ {
+  "id": "repo-docs-revision-comparison-HANDOFF_md",
+  "title": "GE adapter source handoff",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/HANDOFF.md",
+  "source": "docs/revision-comparison/HANDOFF.md",
+  "bytes": 7895
+ },
+ {
+  "id": "repo-docs-revision-comparison-LEGACY-METADATA_md",
+  "title": "Legacy assembly and regulator metadata",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/LEGACY-METADATA.md",
+  "source": "docs/revision-comparison/LEGACY-METADATA.md",
+  "bytes": 2266
+ },
+ {
+  "id": "repo-docs-revision-comparison-LEGACY-SOURCING_md",
+  "title": "Legacy purchasing conflicts and release decisions",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/LEGACY-SOURCING.md",
+  "source": "docs/revision-comparison/LEGACY-SOURCING.md",
+  "bytes": 4733
+ },
+ {
+  "id": "repo-docs-revision-comparison-PRICING_md",
+  "title": "Recorded assembly quotes",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/PRICING.md",
+  "source": "docs/revision-comparison/PRICING.md",
+  "bytes": 8928
+ },
+ {
+  "id": "repo-docs-revision-comparison-README_md",
+  "title": "Board and enclosure comparison",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/README.md",
+  "source": "docs/revision-comparison/README.md",
+  "bytes": 11471
+ },
+ {
+  "id": "repo-docs-revision-comparison-VALIDATION_md",
+  "title": "Board validation and current decisions",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/VALIDATION.md",
+  "source": "docs/revision-comparison/VALIDATION.md",
+  "bytes": 16373
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-README_md",
+  "title": "All-revision pre-order review",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/README.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/README.md",
+  "bytes": 14836
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-REV3-FOLLOW-UP_md",
+  "title": "Rev3 follow-up defect and decision map",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/REV3-FOLLOW-UP.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/REV3-FOLLOW-UP.md",
+  "bytes": 4727
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-legacy-intent-GE-Legacy-Resistor-Intent-Review_md",
+  "title": "GE legacy resistor intent review",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/legacy-intent/GE-Legacy-Resistor-Intent-Review.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/legacy-intent/GE-Legacy-Resistor-Intent-Review.md",
+  "bytes": 15404
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-legacy-intent-catalog-catalog-verification-report_md",
+  "title": "Catalog and primary datasheet verification",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/legacy-intent/catalog/catalog-verification-report.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/legacy-intent/catalog/catalog-verification-report.md",
+  "bytes": 7247
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-module-sourcing-GE-Exact-Module-Sourcing-Review_md",
+  "title": "GE module sourcing and compatibility review",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/module-sourcing/GE-Exact-Module-Sourcing-Review.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/module-sourcing/GE-Exact-Module-Sourcing-Review.md",
+  "bytes": 18050
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-power-GE-All-Revision-Power-Margin-Review_md",
+  "title": "GE all-revision analytical power and USB review",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/power/GE-All-Revision-Power-Margin-Review.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/power/GE-All-Revision-Power-Margin-Review.md",
+  "bytes": 23444
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-power-legacy-power-GE-Legacy-Power-Limits-Review_md",
+  "title": "GE Rev1.0 / Rev2.0 / Rev2.1 / Rev2.2 power and protection limits",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/power/legacy-power/GE-Legacy-Power-Limits-Review.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/power/legacy-power/GE-Legacy-Power-Limits-Review.md",
+  "bytes": 21223
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-power-module-power-GE-XIAO-Module-Power-Evidence_md",
+  "title": "GE XIAO module power evidence and bounded assumptions",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/power/module-power/GE-XIAO-Module-Power-Evidence.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/power/module-power/GE-XIAO-Module-Power-Evidence.md",
+  "bytes": 14724
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-rev3-power-refinement-GE-Rev3-Remaining-Power-Defects-and-Bounded-Repairs_md",
+  "title": "GE Rev 3 remaining power defects and bounded repairs",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/rev3-power-refinement/GE-Rev3-Remaining-Power-Defects-and-Bounded-Repairs.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/rev3-power-refinement/GE-Rev3-Remaining-Power-Defects-and-Bounded-Repairs.md",
+  "bytes": 18234
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-rev3-power-refinement-PMOS-Transient-Example-Correction_md",
+  "title": "PMOS transient example correction",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/rev3-power-refinement/PMOS-Transient-Example-Correction.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/rev3-power-refinement/PMOS-Transient-Example-Correction.md",
+  "bytes": 1618
+ },
+ {
+  "id": "repo-docs-revision-comparison-preorder-2026-10-05-rev3-signal-contracts-GE-Rev3-Signal-Pin-And-Startup-Contracts_md",
+  "title": "GE Rev3 signal pin and startup contracts",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/docs/revision-comparison/preorder-2026-10-05/rev3-signal-contracts/GE-Rev3-Signal-Pin-And-Startup-Contracts.md",
+  "source": "docs/revision-comparison/preorder-2026-10-05/rev3-signal-contracts/GE-Rev3-Signal-Pin-And-Startup-Contracts.md",
+  "bytes": 12734
+ },
+ {
+  "id": "repo-pcb-ORDERING_md",
+  "title": "Order a Rev 2.2 board",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/pcb/ORDERING.md",
+  "source": "pcb/ORDERING.md",
+  "bytes": 2403
+ },
+ {
+  "id": "repo-pcb-README_md",
+  "title": "PCB revisions",
+  "group": "Repo",
+  "rev": null,
+  "path": "repo/pcb/README.md",
+  "source": "pcb/README.md",
+  "bytes": 5411
+ }
+]
