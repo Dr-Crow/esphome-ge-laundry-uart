@@ -1146,9 +1146,9 @@ function showFeedback() {
   const el = $('#fbPage'); const filt = S.fbFilter || 'open';
   const list = S.fb.filter(f => filt === 'all' || (filt === 'open' ? f.status !== 'resolved' : f.status === 'resolved'));
   const kindPill = { issue: 'warn', question: 'info', idea: 'acc', approve: 'good' };
+  if (S.fbReady && !S.db) { el.innerHTML = '<div class="hero"><div class="lbl">Feedback</div><h2>Notes on the designs</h2><p>Feedback is only available in the Claude-hosted copy of this hub.</p></div>'; return; }
   el.innerHTML = `<div class="hero"><div class="lbl">Feedback</div><h2>Notes on the designs</h2><p>Everything left here is stored with the hub, so the next working session can read it, act on it and reply. Pin feedback to a part by clicking it in the Board view first.</p></div>
    <div class="row"><div class="seg" id="fbFilt">${['open', 'resolved', 'all'].map(k => `<button type="button" data-k="${k}" aria-pressed="${k === filt}">${k[0].toUpperCase() + k.slice(1)}</button>`).join('')}</div><button class="btn primary" type="button" id="fbAdd">New feedback</button></div>
-   ${!S.db && S.fbReady ? '<div class="note">Feedback is only available in the Claude-hosted copy of this hub.</div>' : ''}
    ${S.fbErr ? `<div class="note">The feedback store stopped answering (${esc(S.fbErr.code)}). Reload the page to reconnect.</div>` : ''}
    ${S.fbSlow ? '<div class="note">The feedback store has not answered yet; what is shown may be out of date.</div>' : ''}
    ${!S.fbReady ? '<div class="empty">Connecting to the feedback store…</div>' : list.length ? list.map(f => `<div class="fbitem"><div class="meta"><span class="pill ${kindPill[f.kind] || ''}">${esc(f.kind)}</span>${f.status === 'resolved' ? '<span class="pill good">resolved</span>' : ''}<b style="color:var(--ink)">${esc(f.target?.label || 'General')}</b>${f.rev ? '<span>' + esc(S.byId[f.rev]?.label || f.rev) + '</span>' : ''}<span>${esc(f.view || '')}</span><span class="mono">${esc((f.created || '').slice(0, 16).replace('T', ' '))}</span></div>
