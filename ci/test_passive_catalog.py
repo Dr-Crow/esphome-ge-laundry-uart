@@ -24,7 +24,7 @@ class PassiveCatalogTest(unittest.TestCase):
 
     def test_all_declared_supplier_boms_match_primary_passive_facts(self):
         revisions = [revision for revision, board in self.boards.items() if board.get("bom")]
-        self.assertEqual(revisions, ["rev2.1", "rev2.2", "rev3a", "rev3b", "rev3c", "rev3d", "rev3e", "rev3f", "rev3g"])
+        self.assertEqual(revisions, ["rev2.1", "rev2.2", "rev3a", "rev3b", "rev3c", "rev3d", "rev3e", "rev3f", "rev3g", "rev3h"])
         codes = set()
         for revision in revisions:
             with self.subTest(revision=revision):
@@ -34,7 +34,7 @@ class PassiveCatalogTest(unittest.TestCase):
                                  {ref for ref in bom if re.fullmatch(r"[RCL]\d+", ref)})
                 self.assertEqual(result["catalog_sha256"], validate.sha(validate.path("ci/passive-catalog.json")))
                 codes.update(result["references"].values())
-        self.assertEqual(len(codes), 33)
+        self.assertEqual(len(codes), 35)
 
     def test_legacy_wrong_resistor_codes_fail_even_when_source_and_bom_agree(self):
         for revision in ("rev2.1", "rev2.2"):

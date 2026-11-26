@@ -564,6 +564,57 @@
           "J1"
         ]
       }
+    },
+    "rev3h": {
+      "source": "pcb/rev3h/design/GEA-Adapter-Rev3H",
+      "bom": "pcb/rev3h/manufacturing/BOM-GEA-Adapter-Rev3H.csv",
+      "cpl": "pcb/rev3h/manufacturing/CPL-GEA-Adapter-Rev3H.csv",
+      "archive": "pcb/rev3h/manufacturing/GERBER-GEA-Adapter-Rev3H.zip",
+      "status": "Rev3H review candidate: Rev3G plus J7, a fitted 1x4 2.54 mm 3.3 V listen-only GEA bus monitor header (GND, GEA2_RX, GEA3_TX appliance-to-module, GEA3_RX module-to-appliance, each through a 1k series resistor R48-R50), and C16/C17 moved to the JLC basic C12891 (22 uF 25 V X5R 1206), removing one setup fee; C9 stays X7R; footprint 3D models resolve from pcb/rev3e/design/models; not released for ordering or appliance use; release qualification blocked",
+      "design_rules": "pcb/rev3h/design/GEA-Adapter-Rev3H.kicad_dru",
+      "library_tables": [
+        "pcb/rev3h/design/fp-lib-table",
+        "pcb/rev3h/design/sym-lib-table"
+      ],
+      "intended_netclasses": {
+        "+3V3": "Power",
+        "+5V": "Power",
+        "/ALT_PWR": "Power",
+        "/BUCK_5V": "Power",
+        "/BUCK_BST": "Switching",
+        "/BUCK_SW": "Switching",
+        "/D11_K": "Power",
+        "/V_INPUT": "Power",
+        "VDC": "Power"
+      },
+      "intended_clearance_mm": {
+        "Power": 0.25,
+        "Switching": 0.3
+      },
+      "fabrication_plot": {
+        "drillshape": 0
+      },
+      "readiness": {
+        "power": {
+          "state": "blocked",
+          "reason": "The C16/C17 X5R output capacitance (estimated ~25 uF effective at 5 V, unmeasured ripple and load-step), the J7 taps, the service-access changes (JP3 5 V feed bridge replacing R47, JP4 link, probe lands) and the Rev3E/Rev3F eFuse/PIN3 OVLO/AP63205 power path are digitally reviewed only; no powered testing on the isolated dummy fixture, appliance pin voltages/current budget, transient energy, priority switchover, loaded startup or thermal qualification"
+        },
+        "source": {
+          "state": "blocked",
+          "reason": "Exact RJ45 suffix and other purchasing identities, supplier library pose/zero/orientation, stencil/assembly process and an assembled Rev3H quote remain unqualified; BOM/CPL are generated from source for CI and have not been supplier-reviewed"
+        },
+        "physical": {
+          "state": "blocked",
+          "reason": "Actual module/header/socket fit, retention, vibration, USB inaccessibility with the appliance cable attached, BOOT/RESET access, antenna/RF, probe-land usability, JP3/JP4 rework, closed-lid fit and enclosure qualification remain open; no bench testing of Rev3H has been done; J7 header fit checked in CAD only (>=19.4 mm under the Rev3G closed-USB lids for an 8.6 mm header)"
+        }
+      },
+      "cpl_centroid_policy": {
+        "evidence": "pcb/rev3h/validation/placement-origin-review.json",
+        "sha256": "6e8965fc6a3a7ac95bccbfcc0245e131926f4800d145fee76831d334a95e866f",
+        "required_references": [
+          "J1"
+        ]
+      }
     }
   },
   "firmware": [

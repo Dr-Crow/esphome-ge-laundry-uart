@@ -37,6 +37,8 @@
     "C23231": {"kind": "R", "value": "68k", "package": "0603", "mpn": "0603WAF6802T5E", "source_url": "https://www.lcsc.com/product-detail/C23231.html"},
     "C14663": {"kind": "C", "value": "100n", "package": "0603", "mpn": "CC0603KRX7R9BB104", "source_url": "https://www.lcsc.com/product-detail/C14663.html", "voltage_v": 50, "dielectric": "X7R"},
     "C17556": {"kind": "R", "value": "220k", "package": "0805", "mpn": "0805W8F2203T5E", "source_url": "https://www.lcsc.com/product-detail/C17556.html"},
-    "C17477": {"kind": "R", "value": "0R", "package": "0805", "mpn": "0805W8F0000T5E", "source_url": "https://www.lcsc.com/product-detail/C17477.html"}
+    "C17477": {"kind": "R", "value": "0R", "package": "0805", "mpn": "0805W8F0000T5E", "source_url": "https://www.lcsc.com/product-detail/C17477.html"},
+    "C12891": {"kind": "C", "value": "22u", "package": "1206", "mpn": "CL31A226KAHNNNE", "source_url": "https://www.lcsc.com/product-detail/C12891.html", "voltage_v": 25, "dielectric": "X5R"},
+    "C21190": {"kind": "R", "value": "1k", "package": "0603", "mpn": "0603WAF1001T5E", "source_url": "https://www.lcsc.com/product-detail/C21190.html"}
   }
 }
