@@ -1,0 +1,24 @@
+{
+  "updated": "2026-11-23",
+  "note": "Edit this file to change module/case prices or the JLCPCB cost model. The viewer reads it at load.",
+  "modules": [
+    {"id": "c3-pre", "label": "XIAO ESP32-C3, pre-soldered headers", "usd": 5.90, "source": "Seeed product page, checked 2026-11-22; stock not shown"},
+    {"id": "c3", "label": "XIAO ESP32-C3, no headers", "usd": 4.90, "source": "Seeed product page, checked 2026-11-22"},
+    {"id": "c6-pre", "label": "XIAO ESP32-C6, pre-soldered headers", "usd": 6.20, "source": "Seeed product page, checked 2026-11-22; zero stock on regional pages"},
+    {"id": "c6", "label": "XIAO ESP32-C6, no headers", "usd": 5.20, "source": "Seeed product page, checked 2026-11-22"},
+    {"id": "none", "label": "No module", "usd": 0, "source": ""}
+  ],
+  "case": {"usd": 1.13, "grams": 56.7, "print_hours": 5.1, "source": "PrusaSlicer 2.9.7 CLI, flush-port Rev3D base + C3 internal lid, PLA 20% stars, auto supports, 1.24 g/cm3, ~$20/kg (2026-11-23)"},
+  "jlc_model": {
+    "source": "JLCPCB assembly price page (fetched 2026-11-22) and pcb/rev3c/ORDERING.md (Oct 5 quote)",
+    "applies_to": "4-layer 99 x 40 mm boards, Economic PCBA top side, same settings as the Oct 5 Rev3C quote",
+    "pcb_usd": {"5": 29.81, "10": 36.07},
+    "parts_overage": {"5": 1.188, "10": 1.062},
+    "parts_overage_note": "Ratio of the Oct 5 Rev3C components line ($35.36 / $61.00) to its list-price sum ($29.77 / $57.42): JLCPCB buys extras and rounds up minimum buys.",
+    "extended_fee_usd": 3.07,
+    "extended_fee_note": "Charged per unique Extended SMT part. Through-hole Extended parts (J1, J5/J6) appear exempt in the Oct 5 quote; inferred, not documented.",
+    "process_usd": {"5": 17.98, "10": 21.45},
+    "process_note": "Setup + stencil + SMT + hand-solder + manual + nitrogen lines from the Oct 5 Rev3C quote, scaled 0.993 to the Nov 22 fee page. Held constant across revisions.",
+    "plus_minus_usd": 4
+  }
+}

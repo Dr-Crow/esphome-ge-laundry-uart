@@ -1,0 +1,12 @@
+{
+  "name": "viewer-build-tools",
+  "private": true,
+  "description": "Pinned gltf-transform libraries used by optimize_glb.mjs (same 4.3.0 release as the CLI)",
+  "dependencies": {
+    "@gltf-transform/core": "4.3.0",
+    "@gltf-transform/extensions": "4.3.0",
+    "@gltf-transform/functions": "4.3.0",
+    "@gltf-transform/cli": "4.3.0",
+    "meshoptimizer": "0.25.0"
+  }
+}

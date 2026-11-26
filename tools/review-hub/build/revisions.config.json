@@ -1,0 +1,229 @@
+{
+  "kicad_image": "kicad/kicad:9.0.9@sha256:e638b79b0321f29395a5b783e94bb9f3c73303e8da15da27b8f5cb4b67a37729",
+  "px_per_mm": 20,
+  "revisions": [
+    {
+      "id": "rev1.0",
+      "label": "Rev 1.0",
+      "pcb": "pcb/rev1.0/design/OnionStraws.kicad_pcb",
+      "sch": "pcb/rev1.0/design/OnionStraws.kicad_sch",
+      "bom": null,
+      "case": null,
+      "status": "original",
+      "date": "2022-03-24",
+      "date_basis": "Gerber job file timestamp in manufacturing zip",
+      "summary": "One-input carrier for a 38-pin classic ESP32 DevKit and an external buck module; no BOM exists, so it cannot be ordered or qualified.",
+      "readme": "pcb/rev1.0/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev2.0",
+      "label": "Rev 2.0",
+      "pcb": "pcb/rev2.0/design/OnionStraws.kicad_pcb",
+      "sch": "pcb/rev2.0/design/OnionStraws.kicad_sch",
+      "bom": {
+        "zip": "pcb/rev2.0/manufacturing/PCBA-OnionStraws-rev2.0.zip",
+        "member": "bom.csv"
+      },
+      "case": "rev2",
+      "status": "superseded",
+      "date": "2025-05-22",
+      "date_basis": "Gerber/PCBA archive timestamp",
+      "summary": "First JLC-assembled ESP32-C3-WROOM-02 board with an L7805 linear 5 V rail and manual JP2 power-input selection; as-ordered resistor codes were wrong.",
+      "readme": "pcb/rev2.0/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev2.1",
+      "label": "Rev 2.1",
+      "pcb": "pcb/rev2.1/design/OnionStraws.kicad_pcb",
+      "sch": "pcb/rev2.1/design/OnionStraws.kicad_sch",
+      "bom": "pcb/rev2.1/manufacturing/BOM-OnionStraws-rev2.1.csv",
+      "case": "rev2",
+      "status": "superseded",
+      "date": "2026-09-22",
+      "date_basis": "first commit in this repo; original design date not recorded",
+      "summary": "Rev 2.0 with a ground test point added; the U1 supervisor makes the ESP32 boot-loop and the board is retired.",
+      "readme": "pcb/rev2.1/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev2.2",
+      "label": "Rev 2.2",
+      "pcb": "pcb/rev2.2/design/OnionStraws.kicad_pcb",
+      "sch": "pcb/rev2.2/design/OnionStraws.kicad_sch",
+      "bom": "pcb/rev2.2/manufacturing/BOM-OnionStraws-rev2.2.csv",
+      "case": "rev2",
+      "status": "superseded",
+      "date": "2026-09-22",
+      "date_basis": "first commit in this repo; original design date not recorded",
+      "summary": "Rev 2.1 with U1 left unpopulated and corrected resistor codes; still a 200 mA 3.3 V LDO and a manual jumper for input selection.",
+      "readme": "pcb/rev2.2/README.md",
+      "documented_quotes": [
+        {
+          "date": "2026-09-19",
+          "boards": 5,
+          "total_usd": 78.07,
+          "what": "JLCPCB quote for five fully assembled boards, before shipping and tax (pcb/ORDERING.md; the Rev 2.2 README repeats it)",
+          "source_file": "docs/repo/pcb/ORDERING.md",
+          "source": "pcb/ORDERING.md"
+        },
+        {
+          "date": "2026-09-19",
+          "boards": 5,
+          "total_usd": 78.07,
+          "what": "Same five-board quote as cited in the Rev 2.2 README, described as historical pricing",
+          "source_file": "docs/repo/pcb/rev2.2/README.md",
+          "source": "pcb/rev2.2/README.md"
+        }
+      ]
+    },
+    {
+      "id": "rev3a",
+      "label": "Rev 3A",
+      "pcb": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_pcb",
+      "sch": "pcb/rev3a/design/GEA-Adapter-Rev3A.kicad_sch",
+      "bom": "pcb/rev3a/manufacturing/BOM-GEA-Adapter-Rev3A.csv",
+      "case": null,
+      "status": "pivot option",
+      "date": "2026-10-04",
+      "date_basis": "first commit in this repo",
+      "summary": "ESP32-C3-WROOM-02 with native USB-C, AP63205 buck and automatic PIN1/PIN3 power priority; independent review rates it the best fallback with fixes.",
+      "readme": "pcb/rev3a/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3b",
+      "label": "Rev 3B",
+      "pcb": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_pcb",
+      "sch": "pcb/rev3b/design/GEA-Adapter-Rev3B.kicad_sch",
+      "bom": "pcb/rev3b/manufacturing/BOM-GEA-Adapter-Rev3B.csv",
+      "case": null,
+      "status": "pivot option",
+      "date": "2026-10-03",
+      "date_basis": "first commit in this repo",
+      "summary": "Rev 3A power chain with a Seeed XIAO ESP32-C3 soldered flat in place of the WROOM module; viable with fixes, with module-sourcing caveats.",
+      "readme": "pcb/rev3b/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3c",
+      "label": "Rev 3C",
+      "pcb": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_pcb",
+      "sch": "pcb/rev3c/design/GEA-Adapter-Rev3C.kicad_sch",
+      "bom": "pcb/rev3c/manufacturing/BOM-GEA-Adapter-Rev3C.csv",
+      "case": "rev3d-c3-fpc",
+      "status": "blocked",
+      "date": "2026-10-03",
+      "date_basis": "first commit in this repo",
+      "summary": "Socketed XIAO C3/C6 carrier with TPS1H200A input switches; blocked: U9/U10 and L1 are out of stock and a 5 V port pin leaves no margin.",
+      "readme": "pcb/rev3c/README.md",
+      "documented_quotes": [
+        {
+          "date": "2026-10-05",
+          "boards": 5,
+          "total_usd": 135.81,
+          "what": "Complete JLCPCB PCB + Economic PCBA quote for 5 assembled carriers (PCB 29.81, PCBA 106.00; 83 references, 34 unique codes; excludes shipping, tax, XIAO modules)",
+          "source_file": "docs/repo/pcb/rev3c/ORDERING.md",
+          "source": "pcb/rev3c/ORDERING.md"
+        },
+        {
+          "date": "2026-10-05",
+          "boards": 10,
+          "total_usd": 171.2,
+          "what": "Complete JLCPCB PCB + Economic PCBA quote for 10 assembled carriers (PCB 36.07, PCBA 135.13)",
+          "source_file": "docs/repo/pcb/rev3c/ORDERING.md",
+          "source": "pcb/rev3c/ORDERING.md"
+        },
+        {
+          "date": "2026-10-03",
+          "boards": 5,
+          "total_usd": 134.64,
+          "what": "Earlier pre-STPS140Z 83-reference quote (source 7bb455f); ORDERING.md gives the 10-board figure as 168.92 in prose and 168.91 in its table",
+          "source_file": "docs/repo/pcb/rev3c/ORDERING.md",
+          "source": "pcb/rev3c/ORDERING.md"
+        },
+        {
+          "date": "2026-10-03",
+          "boards": 10,
+          "total_usd": 168.91,
+          "what": "Earlier pre-STPS140Z 83-reference quote (source 7bb455f), table value (prose says 168.92)",
+          "source_file": "docs/repo/pcb/rev3c/ORDERING.md",
+          "source": "pcb/rev3c/ORDERING.md"
+        },
+        {
+          "date": "2026-10-03",
+          "boards": 5,
+          "total_usd": 130.39,
+          "what": "80-reference baseline ca1fdb1 (original switches/fuses), historical comparison quote",
+          "source_file": "docs/repo/pcb/rev3c/ORDERING.md",
+          "source": "pcb/rev3c/ORDERING.md"
+        },
+        {
+          "date": "2026-10-03",
+          "boards": 10,
+          "total_usd": 160.37,
+          "what": "80-reference baseline ca1fdb1 (original switches/fuses), historical comparison quote",
+          "source_file": "docs/repo/pcb/rev3c/ORDERING.md",
+          "source": "pcb/rev3c/ORDERING.md"
+        }
+      ]
+    },
+    {
+      "id": "rev3d",
+      "label": "Rev 3D",
+      "pcb": "pcb/rev3d/design/GEA-Adapter-Rev3D.kicad_pcb",
+      "sch": "pcb/rev3d/design/GEA-Adapter-Rev3D.kicad_sch",
+      "bom": "pcb/rev3d/manufacturing/BOM-GEA-Adapter-Rev3D.csv",
+      "case": "rev3d-c3-fpc",
+      "status": "candidate",
+      "date": "2026-11-22",
+      "date_basis": "first commit in this repo",
+      "summary": "Rev 3C with the power input replaced by TPS259470A eFuses and a FirstBuild-style topology; no supplier quote or bench test yet.",
+      "readme": "pcb/rev3d/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3e",
+      "label": "Rev 3E",
+      "pcb": "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_pcb",
+      "sch": "pcb/rev3e/design/GEA-Adapter-Rev3E.kicad_sch",
+      "bom": "pcb/rev3e/manufacturing/BOM-GEA-Adapter-Rev3E.csv",
+      "case": "rev3d-c3-fpc",
+      "status": "candidate",
+      "date": "2026-11-26",
+      "date_basis": "commit 9102917 (as-quoted probe-pad design restored; quoted 2026-11-25)",
+      "summary": "As-quoted Rev 3E with TP13-TP18 bring-up probe pads: the board behind the 2026-11-25 JLCPCB quote of $94.22 for 5 assembled boards.",
+      "readme": "pcb/rev3e/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3f",
+      "label": "Rev 3F",
+      "pcb": "pcb/rev3f/design/GEA-Adapter-Rev3F.kicad_pcb",
+      "sch": "pcb/rev3f/design/GEA-Adapter-Rev3F.kicad_sch",
+      "bom": "pcb/rev3f/assembly-review/BOM-3F-review.csv",
+      "case": "rev3d-c3-fpc",
+      "status": "candidate",
+      "date": "2026-11-26",
+      "date_basis": "commit 08112eb",
+      "summary": "Rev 3E with 8 regulated-rail bypass caps moved to 0603 C14663, widened In2 power traces and split eFuse paste; ChatGPT, review only.",
+      "readme": "pcb/rev3f/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3g",
+      "label": "Rev 3G",
+      "pcb": "pcb/rev3g/design/GEA-Adapter-Rev3G.kicad_pcb",
+      "sch": "pcb/rev3g/design/GEA-Adapter-Rev3G.kicad_sch",
+      "bom": "pcb/rev3g/assembly-review/BOM-3G-review.csv",
+      "case": null,
+      "status": "candidate",
+      "date": "2026-11-26",
+      "date_basis": "commit 790349f",
+      "summary": "Rev 3F service prototype: R47 replaced by cuttable JP3 link, JP4 GEA3 TX mute link, plated probe holes on TP4-TP7, closed-USB lids.",
+      "readme": null,
+      "documented_quotes": []
+    }
+  ]
+}

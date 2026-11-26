@@ -1,0 +1,4 @@
+pillow==13.0.0
+numpy
+trimesh==5.2.2
+rtree
