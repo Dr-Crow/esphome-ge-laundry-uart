@@ -1,16 +1,22 @@
 #!/usr/bin/env python3
-"""Sanity checks over site/: JSON parses, GLBs load, GLB footprint nodes match parts.json, layer PNGs exist with the
+"""Sanity checks over a built site (default tools/review-hub/site, or the directory given as the first argument or by
+HUB_SITE): JSON parses, GLBs load, GLB footprint nodes match parts.json, layer PNGs exist with the
 declared size, doc image links resolve, site size. Exit code 1 on any failure."""
-import json, re, subprocess, sys
+import json, os, re, subprocess, sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
+import hubenv
+if __name__ == '__main__':
+    hubenv.ensure_env()
+    hubenv.ensure_node()
 import glbtools
 from PIL import Image
 import trimesh
 from urllib.parse import unquote
 
-SITE = HERE.parent / 'site'
+SITE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 and not sys.argv[1].startswith('-') else hubenv.SITE
+BUDGET_MB = float(os.environ.get('HUB_BUDGET_MB', 200))  # GitHub Pages: 1 GB per site, 100 MB per file
 D = SITE / 'data'
 bad = []
 
@@ -18,6 +24,7 @@ bad = []
 def fail(msg):
     bad.append(msg); print('FAIL', msg)
 
+print('validating', SITE)
 
 for p in list(D.rglob('*.json')):
     try: json.load(open(p))
@@ -63,6 +70,6 @@ for e in docs:
                 if not (f.parent / unquote(t)).exists(): miss += 1; print('  unresolved image', e['path'], '->', t)
 print(f'docs: {len(docs)} entries, {miss} unresolved image links')
 tot = sum(f.stat().st_size for f in SITE.rglob('*') if f.is_file())
-print(f'site total {tot / 1e6:.1f} MB (budget 60)')
-if tot > 60e6: fail('site over budget')
+print(f'site total {tot / 1e6:.1f} MB ({sum(1 for f in SITE.rglob("*") if f.is_file())} files, budget {BUDGET_MB:g})')
+if tot > BUDGET_MB * 1e6: fail('site over budget')
 sys.exit(1 if bad else 0)

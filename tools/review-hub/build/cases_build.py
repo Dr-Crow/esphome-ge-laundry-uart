@@ -2,14 +2,16 @@
 
 STL -> GLB with trimesh (mm -> m, case CAD axes kept untouched), then meshopt via optimize_glb.mjs.
 Board placement for the Rev3C case is derived from interface_baseline.py and verified geometrically."""
-import hashlib, json, re, shutil, subprocess, sys
+import hashlib, json, os, re, shutil, subprocess, sys
 from pathlib import Path
 
 import numpy as np
 import trimesh
 
+import hubenv
+
 HERE = Path(__file__).resolve().parent
-CACHE = HERE / 'cache'
+CACHE = hubenv.CACHE
 
 
 def sha256(p):
@@ -38,7 +40,7 @@ def stl_to_glb(stl, out, name):
     return trimesh.load(str(stl), force='mesh')  # mm mesh for checks
 
 
-def gcode_info(g):
+def gcode_info(g, repo=None):
     if not Path(g).exists():
         return None
     t = Path(g).read_text(errors='ignore')
@@ -50,10 +52,11 @@ def gcode_info(g):
             'filament_m': round(float(mm) / 1000, 3) if mm else None,
             'filament_cm3': float(grab(r'; filament used \[cm3\] = ([\d.]+)') or 0) or None,
             'grams': (lambda v: round(float(v), 1) if v and float(v) > 0 else None)(grab(r'; (?:total )?filament used \[g\] = ([\d.]+)')),
-            'source': str(g)}
+            'source': hubenv.display_path(g, repo or hubenv.HUB.parent.parent)}
 
 
-SLICER = Path('/Applications/PrusaSlicer.app/Contents/MacOS/PrusaSlicer')
+# Optional: without a slicer the case parts simply carry no print estimate. Set HUB_PRUSASLICER to override.
+SLICER = Path(os.environ.get('HUB_PRUSASLICER') or shutil.which('prusa-slicer') or '/Applications/PrusaSlicer.app/Contents/MacOS/PrusaSlicer')
 SLICE_ARGS = ['--layer-height', '0.2', '--first-layer-height', '0.35', '--perimeters', '3', '--top-solid-layers', '3',
               '--bottom-solid-layers', '3', '--fill-density', '20%', '--fill-pattern', 'stars', '--support-material',
               '--support-material-auto', '--nozzle-diameter', '0.4', '--filament-diameter', '1.75', '--filament-type', 'PLA',
@@ -65,7 +68,11 @@ def slice_stl(stl, gcode):
     if not SLICER.exists():
         return None
     gcode.parent.mkdir(parents=True, exist_ok=True)
-    sh([SLICER, '--export-gcode', *SLICE_ARGS, '--output', gcode, stl])
+    stamp = gcode.with_suffix('.stamp')
+    key = hashlib.sha256(Path(stl).read_bytes() + ' '.join(SLICE_ARGS).encode()).hexdigest()
+    if not (gcode.exists() and stamp.exists() and stamp.read_text() == key):  # the slicer is slow; reuse unchanged STLs
+        sh([SLICER, '--export-gcode', *SLICE_ARGS, '--output', gcode, stl])
+        stamp.write_text(key)
     return gcode_info(gcode)
 
 
@@ -80,7 +87,7 @@ def run_c6(cfg, src):
     if out.exists(): shutil.rmtree(out)
     params = dict(module='c6', antenna='internal', stack=11.325, boot_height=0.53, reset_height=0.53, boot_stop=0.36,
                   reset_stop=0.36, gap=0.25, leaf_offset=16.6, relieved_guides=True)
-    cmd = [cfg['cad_python'], 'export_review.py', '--module', 'c6', '--antenna', 'internal', '--stack', '11.325',
+    cmd = [hubenv.cad_python(cfg), 'export_review.py', '--module', 'c6', '--antenna', 'internal', '--stack', '11.325',
            '--boot-height', '0.53', '--reset-height', '0.53', '--boot-stop', '0.36', '--reset-stop', '0.36',
            '--leaf-offset', '16.6', '--relieved-guides', '--output', out]
     sh(cmd, cwd=work)
@@ -96,7 +103,7 @@ def run_export(cfg, src, module, antenna, argv, tag):
         shutil.copy2(f, work / f.name)
     out = CACHE / f'exports-review-{tag}'
     if out.exists(): shutil.rmtree(out)
-    cmd = [cfg['cad_python'], 'export_review.py', '--module', module, '--antenna', antenna, *argv, '--output', out]
+    cmd = [hubenv.cad_python(cfg), 'export_review.py', '--module', module, '--antenna', antenna, *argv, '--output', out]
     sh(cmd, cwd=work)
     return out, cmd
 
@@ -178,7 +185,7 @@ def placement_check(base, lid, ex_rev3d, seat_z, pcb_t, cx, cy):
 
 
 def run(CFG, SITE, DATA):
-    repo, notes = Path(CFG['repo']), Path(CFG['notes'])
+    repo = Path(CFG['repo'])
     ana = repo / 'case' / 'rev3c' / 'analytical'
     cases_dir = DATA / 'cases'
     if cases_dir.exists(): shutil.rmtree(cases_dir)
@@ -304,7 +311,7 @@ def run(CFG, SITE, DATA):
                 'placement was verified and no matrix is given.')
 
     def sources(files):
-        return [{'path': str(p), 'sha256': sha256(p)} for p in files]
+        return [{'path': hubenv.display_path(p, repo), 'sha256': sha256(p)} for p in files]
     cases += [
         *[{'id': cid, 'label': f'Rev3D case · {mod.upper()} · {ANTENNA[ant]}', 'module': mod, 'antenna': ant, 'antenna_label': ANTENNA[ant],
            'revisions': ['rev3d', 'rev3c'], 'parts': partsx,

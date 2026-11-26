@@ -13,41 +13,24 @@ import argparse, csv, datetime, hashlib, io, json, os, re, shutil, subprocess, s
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-VENV = HERE / '.venv'
-
-
-def ensure_env():
-    """Re-exec inside build/.venv (Pillow/numpy/trimesh); create it on first run."""
-    if Path(sys.prefix).resolve() == VENV.resolve():
-        return
-    py = VENV / 'bin' / 'python'
-    if not py.exists():
-        if shutil.which('uv'):
-            subprocess.check_call(['uv', 'venv', '--python', '3.12', str(VENV)])
-            subprocess.check_call(['uv', 'pip', 'install', '--python', str(py), '-r', str(HERE / 'requirements.txt')])
-        else:
-            subprocess.check_call([sys.executable, '-m', 'venv', str(VENV)])
-            subprocess.check_call([str(py), '-m', 'pip', 'install', '-r', str(HERE / 'requirements.txt')])
-    os.execv(str(py), [str(py)] + sys.argv)
-
+sys.path.insert(0, str(HERE))
+import hubenv
 
 if __name__ == '__main__':
-    ensure_env()
+    hubenv.ensure_env()  # re-exec inside build/.venv (Pillow/numpy/trimesh); created on first run
 
 import numpy as np
 from PIL import Image, ImageDraw
-sys.path.insert(0, str(HERE))
 import glbtools
 import sexp
 
-CFG = json.load(open(HERE / 'revisions.config.json'))
+CFG = hubenv.load_config()
 REPO = Path(CFG['repo'])
-NOTES = Path(CFG['notes'])
 IMAGE = CFG['kicad_image']
 PPM = CFG['px_per_mm']
-SITE = HERE.parent / 'site'
+SITE = hubenv.SITE          # --out / HUB_SITE; default tools/review-hub/site
 DATA = SITE / 'data'
-CACHE = HERE / 'cache'
+CACHE = hubenv.CACHE        # --cache / HUB_CACHE; default build/cache
 PKG3D = CACHE / 'packages3D'  # KiCad standard 3D models (build/models.py --fetch-models), mounted read-only into the container
 REVS = {r['id']: r for r in CFG['revisions']}
 GLTF_CLI = '@gltf-transform/cli@4.3.0'
@@ -66,8 +49,13 @@ def sh(cmd, **kw):
 
 def docker(argv):
     """Run a command in the pinned KiCad image (repo read-only, build/ and site/ writable)."""
-    return sh(['docker', 'run', '--rm', '--platform', 'linux/amd64',
-               '-v', f'{REPO}:{REPO}:ro', '-v', f'{HERE}:{HERE}', '-v', f'{SITE}:{SITE}', '-v', f'{PKG3D}:{PKG3D}:ro']
+    mounts = [(REPO, 'ro'), (HERE, 'rw'), (SITE, 'rw'), (CACHE, 'rw'), (PKG3D, 'ro')]
+    seen, vols = set(), []
+    for p, mode in mounts:
+        if p not in seen:
+            seen.add(p)
+            vols += ['-v', f'{p}:{p}:{mode}']
+    return sh(['docker', 'run', '--rm', '--platform', 'linux/amd64'] + vols
               + sum((['-e', f'KICAD{n}_3DMODEL_DIR={PKG3D}'] for n in (6, 7, 8, 9)), []) + [IMAGE] + [str(a) for a in argv])
 
 
@@ -747,6 +735,17 @@ def do_rev(rev, args):
     return info
 
 
+def assemble_site():
+    """Make SITE a complete static site: the viewer and the two hand-edited data files come from tools/review-hub/site."""
+    src = hubenv.HUB / 'site'
+    (DATA).mkdir(parents=True, exist_ok=True)
+    if SITE.resolve() == src.resolve():
+        return
+    shutil.copy2(src / 'index.html', SITE / 'index.html')
+    for name in ('pricing.json', 'updates.json'):
+        shutil.copy2(src / 'data' / name, DATA / name)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--rev', action='append', help='only this revision id (repeatable)')
@@ -757,12 +756,17 @@ def main():
     ap.add_argument('--fetch-models', action='store_true', help='download missing KiCad 3D models (kicad-packages3D 9.0.0) into build/cache/packages3D')
     ap.add_argument('--force', action='store_true', help='ignore stage caches')
     ap.add_argument('--jobs', type=int, default=3)
+    ap.add_argument('--out', help=f'site directory to build into (default {hubenv.HUB / "site"}); index.html and the hand-edited data files are copied in')
+    ap.add_argument('--cache', help=f'build cache directory (default {HERE / "cache"})')
     args = ap.parse_args()
+    hubenv.require_tools('docker', 'node', 'rsvg-convert')
+    hubenv.ensure_node()
     only = (args.cases or args.docs or args.cost)
     revs = args.rev or [r['id'] for r in CFG['revisions']]
     for r in revs:
         if r not in REVS: sys.exit(f'unknown revision {r}')
-    SITE.mkdir(parents=True, exist_ok=True)
+    assemble_site()
+    CACHE.mkdir(parents=True, exist_ok=True)
     if args.fetch_models or not (PKG3D / 'MANIFEST.json').exists():
         if not args.fetch_models:
             print('note: build/cache/packages3D is empty; GLBs will only contain project-local models. Use --fetch-models.')
