@@ -176,7 +176,7 @@
       "sch": "pcb/rev3d/design/GEA-Adapter-Rev3D.kicad_sch",
       "bom": "pcb/rev3d/manufacturing/BOM-GEA-Adapter-Rev3D.csv",
       "case": "rev3d-c3-fpc",
-      "status": "candidate",
+      "status": "superseded",
       "date": "2026-11-22",
       "date_basis": "first commit in this repo",
       "summary": "Rev 3C with the power input replaced by TPS259470A eFuses and a FirstBuild-style topology; no supplier quote or bench test yet.",
@@ -195,7 +195,16 @@
       "date_basis": "commit 9102917 (as-quoted probe-pad design restored; quoted 2026-11-25)",
       "summary": "As-quoted Rev 3E with TP13-TP18 bring-up probe pads: the board behind the 2026-11-25 JLCPCB quote of $94.22 for 5 assembled boards.",
       "readme": "pcb/rev3e/README.md",
-      "documented_quotes": []
+      "documented_quotes": [
+        {
+          "date": "2026-11-25",
+          "boards": 5,
+          "total_usd": 94.22,
+          "what": "JLCPCB PCB + Economic PCBA quote for 5 as-quoted carriers before freight and tax (PCB 24.71 incl. 1 oz inner copper 16.71; assembly 69.51 incl. extended fees 24.72 = 8 x 3.09; 69 placements). Transcribed in the quote review; no quote PDF in the repo",
+          "source_file": "docs/repo/pcb/rev3e/QUOTE-AND-COST-REVIEW.md",
+          "source": "pcb/rev3e/QUOTE-AND-COST-REVIEW.md"
+        }
+      ]
     },
     {
       "id": "rev3f",
@@ -223,6 +232,20 @@
       "date_basis": "commit 790349f",
       "summary": "Rev 3F service prototype: R47 replaced by cuttable JP3 link, JP4 GEA3 TX mute link, plated probe holes on TP4-TP7, closed-USB lids.",
       "readme": null,
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3h",
+      "label": "Rev 3H",
+      "pcb": "pcb/rev3h/design/GEA-Adapter-Rev3H.kicad_pcb",
+      "sch": "pcb/rev3h/design/GEA-Adapter-Rev3H.kicad_sch",
+      "bom": "pcb/rev3h/manufacturing/BOM-GEA-Adapter-Rev3H.csv",
+      "case": null,
+      "status": "candidate",
+      "date": "2026-11-26",
+      "date_basis": "commit 90155a9",
+      "summary": "Rev 3G plus the J7 3.3 V listen-only GEA bus monitor header and C16/C17 moved to a JLC basic part; review only.",
+      "readme": "pcb/rev3h/README.md",
       "documented_quotes": []
     }
   ]
