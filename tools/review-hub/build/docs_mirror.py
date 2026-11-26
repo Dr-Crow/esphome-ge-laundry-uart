@@ -15,7 +15,7 @@ import hubenv
 
 IMG_EXT = {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp'}
 BLOCK_DIRS = ('certs', 'logs', 'venvs', 'scratch-repo', 'esphome-cache')
-MAX_IMG = 2 * 1024 * 1024
+MAX_IMG = 4 * 1024 * 1024  # GitHub Pages has no tight per-site budget; one 2.5 MB comparison image is linked from two docs
 
 SECRET_PATTERNS = {
     'aws-access-key': r'AKIA[0-9A-Z]{16}',
