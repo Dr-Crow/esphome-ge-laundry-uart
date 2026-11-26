@@ -1,0 +1,104 @@
+[
+ {
+  "date": "2026-11-24",
+  "rev": "rev3e",
+  "title": "Rev3E: bus monitor header, two more basic swaps, lid labels (not pushed)",
+  "text": "Commits 844e6bb, 6453f1f and 25d68c4. J7 is a fitted 1x4 2.54 mm header for watching appliance traffic with a 3.3 V USB-serial adapter: pin 1 GND, pin 2 GEA2 bus, pin 3 GEA3 appliance to module, pin 4 GEA3 module to appliance, each behind a 1k resistor (R48-R50), listen only. It fits under every lid (23.25 mm to the roof). C9 and C16/C17 moved to basic X5R parts (C16/C17 now 1206), within the AP63205 capacitor guidance, so 6 SMT parts carry the setup fee (was 8). Estimated order: 5 boards about $95.27 vs $116.75 for Rev3D, both priced 2026-11-24. No safe C3/C6 lid key exists from the module models, so each lid now has a large C3/C6 roof label and the module name under the roof. ERC 0, DRC 0/0/0, CI passes except the release gate."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3e",
+  "title": "Rev3E built and pushed",
+  "text": "Commit 51290d4 (pushed with c782bf7 to work/rev3c-first-fit): Rev3D plus PIN3 overvoltage lockout (R45 1M / R37 68k on U10 OVLO, 18.85 V like PIN1; Q1 AO3400A source follower keeps PIN1 priority, TI Fig. 8-13 option 2), an SRV05-4 ESD array in place of the BAV99 clamps D1-D3, an R47 0R link between D11 and +5V, TP12 on the buck output, an optional C30 47 uF bulk cap, and five extended passives swapped to basic parts. ERC 0, DRC 0/0/0 with parity, 57 netlist assertions, all CI stages pass except the release gate (blocked by design). Parts +$0.22 per board, extended setup fees -$15.35 per order (8 fee-bearing SMT parts, was 13; through-hole J1 and J5/J6 appear fee-free). Same outline, so the Rev3D cases fit."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "USB port filler in the lid colour",
+  "text": "The base tower that fills the slot under the USB-C port now shows in the lid colour. Print it that way with one filament change at the 7.95 mm layer (0.35/0.2 mm layers); everything else above the seam is hidden. Commit c782bf7."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "Flush RJ45 end, two-colour labels, swivel antenna",
+  "text": "Commit 19f44f0. The RJ45 end is now a flat plate with a window framing the jack (+0.3 mm); the jack sits 1.0 mm behind the face instead of 4-7 mm. Both ends flush with 3 mm rounded corners: the case is 101.75 mm long (was 114). The USB-C face moved to 0.2 mm in front of the port so short-shank plugs seat; any overmold size works because it stays outside. Lid text is also exported as a separate inlay for multi-material printers, shown in charcoal. External lids show a straight or tilt-swivel dipole; the swivel clears the case from straight out to 40 degrees past upright. All 67 Rev3D parts clear in every lid."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "Case look and external antenna hardware",
+  "text": "Case view now renders the two-tone finish (satin light-grey lid, charcoal base, frosted light guides) with studio lighting and a soft shadow. External SMA lids show the RP-SMA bulkhead, nut and washer and a 120 mm screw-on half-wave dipole, placed from the documented D-flat hole (6.5 mm, 1.5 mm land, 12 mm nut recess): the hole axis is clear and only the D-flat sliver of the connector meets plastic. The older concept renders in the repo came from the pre-fix, mirror-image geometry and the overmold-sized USB opening."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "Magnet mount: three styles",
+  "text": "Four corner pockets for N52 disc magnets (6x2, 8x2 or 10x2 mm) so the case can sit on a steel panel. Glue-in: open pocket, glued flush, strongest. Press-fit: three crush ribs, no glue. Embedded: sealed in the floor; pause the print at 2.95 mm (0.35/0.2 mm layers) and drop the magnets in, about a third less hold. Pick a style under Case > Magnets; the discs are drawn in place. Stick-on magnet tape on the plain base also works. Commits cdf6bc7 and 694ec70."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "Antenna options for both modules",
+  "text": "Commit a317259: every module now has three lids: flat antenna holder (keeper rails for the 40 x 20 mm FPC antenna on the U.FL), smooth top, and external SMA. The Case view has Module and Antenna pickers. All six: every Rev3D part clear of printed solid; the flat antenna clears the lid and all parts. Rev3D README now says no battery is needed and USB must not be connected while on the appliance (appliance power can back-feed a USB host, and the grounds join)."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": null,
+  "title": "Real 3D parts, readable case, richer part info",
+  "text": "45 KiCad 9.0.0 library models added (fetched by build.py --fetch-models, checksums in packages3D/MANIFEST.json), so nearly every footprint now has its real body. Four models are missing from the library (Rev1-2 RJ45, Rev2 fuses and switches, Rev3A-3C inductor) and stay as boxes. Cases now render shaded instead of black. Hovering a part shows what it is, what it connects to and what it costs per board."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "Fixed: Rev3C/Rev3D case was a mirror image",
+  "text": "Commit c4cdec5: the enclosure now exports in the physical frame (mirror about the board centreline at export, labels pre-mirrored so text reads correctly). Checks: J1/XIAO sockets clear in the physical frame while the old convention collides; the J1 wall opening now spans y 14.1-32.2 mm around the 14.8-31.2 mm RJ45 body (was 7.8-25.9); label text overlap 0 mm3. Earlier exports must not be printed. External-antenna lids for C3 and C6 are now in the Case view."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "Rev3D case with a flush USB-C port",
+  "text": "New --usb-style flush in the case CAD (old style kept as the default). End face sits 0.5 mm in front of the USB-C mouth with a 9.64 x 4.36 mm opening (was 14.8 x 9.0); the case is 6 mm shorter. The lid drops on, so the port is an open-bottom slot filled by a base tower. Checks: all 67 Rev3D 3D models clear of printed solid; port and lid-drop sweep clear at 1.2 and 1.6 mm module PCB; full cable overmold clear in front; base and lid do not overlap. Four lids (C3/C6, internal/external antenna). C3 case 56.7 g, about 5 h 6 min. Mouth position and shell size are not measured: print the USB-end coupon (in the export) before a full case."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "Found: stale U9/U10 description text",
+  "text": "The U9/U10 Description fields in the Rev3D schematic still say 'ILIM ~0.71 A (4.7k)'. The fitted R34/R41 are 3.3k (~1.0 A), so the design is right and only the text is stale."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": null,
+  "title": "Review hub published",
+  "text": "3D boards with clickable parts, layer stack, revision diffs, cost model, cases and docs in one place."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "Hosted CI on 78ca61b",
+  "text": "Validator tests, firmware (8 builds), native hardware and net-class audit pass. Inventory and manufacturing parity fail only on the known Rev1.0/Rev2.0 missing supplier BOM/CPL; Rev3D passes every stage. Release readiness stays blocked by design."
+ },
+ {
+  "date": "2026-11-23",
+  "rev": "rev3d",
+  "title": "Rev3D committed and pushed",
+  "text": "Commits d611c4c (firmware) and 78ca61b (Rev3D board) on work/rev3c-first-fit, authored as Dr-Crow (noreply)."
+ },
+ {
+  "date": "2026-11-22",
+  "rev": "rev3d",
+  "title": "Rev3D built",
+  "text": "Power input replaced with one TPS259470A eFuse per pin in TI's priority power-mux arrangement, PIN1 overvoltage lockout, SMF17A TVS, in-stock SWPA5040S inductor. ERC 0, DRC 0, 64/64 netlist assertions, all parts in stock."
+ },
+ {
+  "date": "2026-11-22",
+  "rev": "rev3c",
+  "title": "Rev3C validation found 3 blockers",
+  "text": "U9/U10 TPS1H200A and L1 out of stock; about 3.85 V at the XIAO from a 5 V port pin; reports that PIN3 is 5 V on some appliances."
+ },
+ {
+  "date": "2026-10-05",
+  "rev": "rev3c",
+  "title": "Rev3C JLCPCB quote",
+  "text": "$135.81 for 5 and $171.20 for 10 assembled carriers, 83 refs / 34 unique codes matched (pcb/rev3c/ORDERING.md)."
+ }
+]
