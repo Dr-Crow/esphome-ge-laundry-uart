@@ -12,6 +12,206 @@
 		(comment 1 "UNQUALIFIED PROTOTYPE - REVIEW BEFORE FABRICATION")
 	)
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x04"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x04_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "Jumper:SolderJumper_2_Bridged"
 		(pin_numbers
 			(hide yes)
@@ -22411,6 +22611,752 @@
 	)
 	(wire (pts (xy 487.68 370.84) (xy 487.68 373.38)) (stroke (width 0) (type default)) (uuid "482374bf-ab94-5b89-82da-13c298ebac92"))
 	(label "PIN3_FLT_N" (at 487.68 373.38 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "abacd61f-f5f0-5b0f-ac92-8a1dc50d19fa"))
+	(text "10  REV3H ADDITION: GEA BUS MONITOR HEADER J7 (3.3 V, LISTEN ONLY)\nConnect a 3.3 V USB-serial adapter: its GND to pin 1 and its RX to ONE of pins 2-4 at a time.\nNever connect the adapter TX or 5 V. R48-R50 (1k) in series with each tap so a wrongly wired\nadapter cannot fight the buffers. Net names mix perspectives; directions traced through U4/U5:\nPin 2 GEA2: net GEA2_RX = U4 channel 1 output (3.3 V copy of the half-duplex bus the XIAO receives);\n   carries appliance traffic AND the module own transmissions (U5 drives the bus, U4 reads it back).\nPin 3 G3IN: net GEA3_TX = U4 channel 2 output, appliance to module (what the XIAO receives on J6.1).\nPin 4 G3OUT: net GEA3_RX = XIAO TX after the JP2 selector, module to appliance, the input of U5\n   channel 2. It is upstream of JP4, so it still shows module TX when JP4 is open."
+		(exclude_from_sim no)
+		(at 462.28 316.00 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb5419e3-f95c-4a34-9116-9ac1e0b90fa5")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 500.38 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6e6ac1d8-bfc3-4c41-a440-98108a3a8e9d")
+		(property "Reference" "J7"
+			(at 502.38 329.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BUS_MON_3V3"
+			(at 502.38 332.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 500.38 331.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XFCN-PZ254V-11-04P_C492403.pdf"
+			(at 500.38 331.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "GEA bus monitor, 3.3 V listen only: 1 GND, 2 GEA2 (half-duplex bus copy), 3 G3IN (appliance to module), 4 G3OUT (module to appliance)"
+			(at 500.38 331.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C492403"
+			(at 500.38 331.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "XFCN"
+			(at 500.38 331.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "PZ254V-11-04P"
+			(at 500.38 331.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "90cf6db9-d099-4b81-a6e2-1b324c78820f")
+		)
+		(pin "2"
+			(uuid "eeb514f1-07c6-455a-8b76-e8ba83b0ba54")
+		)
+		(pin "3"
+			(uuid "30af745e-1dc4-44e1-b184-b621e3a60e81")
+		)
+		(pin "4"
+			(uuid "f274df8d-d814-445b-9ff0-5fb696f72907")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3H"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 495.300 328.930) (xy 490.220 328.930)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db42a6f7-6343-4c01-8d90-b0e0f8c41db3")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 490.22 328.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba1f4b0e-843f-41a4-ad7d-24e8c9f820c8")
+		(property "Reference" "#PWR0410"
+			(at 492.22 327.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 492.22 330.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 490.22 328.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 490.22 328.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 490.22 328.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "15b8284f-44d0-45b4-8860-0b828ad4c6a1")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3H"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "#PWR0410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 495.300 331.470) (xy 485.140 331.470)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6510781-9237-4e57-a72b-a5670069f41f")
+	)
+	(wire
+		(pts
+			(xy 485.140 331.470) (xy 485.140 326.390)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a04e43f-16b1-48f4-b520-d76628d9e3a2")
+	)
+	(wire
+		(pts
+			(xy 485.140 326.390) (xy 483.870 326.390)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fade4bd-67ed-4cf3-b398-8aeb2e6bd1b1")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 480.06 326.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc8d0b85-1753-4d73-9396-d67303ac8e5c")
+		(property "Reference" "R48"
+			(at 482.06 324.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 482.06 327.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 480.06 326.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 480.06 326.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Bus monitor series resistor (GEA2): isolates the J7 tap from the 3.3 V buffer net"
+			(at 480.06 326.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 480.06 326.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 480.06 326.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 480.06 326.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "95ba9e24-8a1b-409f-b379-744e402106cc")
+		)
+		(pin "2"
+			(uuid "e612667f-bbbf-426f-91eb-a493bb873555")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3H"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 476.250 326.390) (xy 473.710 326.390)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2d6da1-f01d-4b39-a4a0-635166e224d9")
+	)
+	(global_label "GEA2_RX"
+		(shape passive)
+		(at 473.71 326.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8aff072e-6285-432c-89d1-7f0b58b99d6e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 473.71 326.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 495.300 334.010) (xy 483.870 334.010)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2067834d-e0c4-469f-b7b7-4f81a9b074f4")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 480.06 334.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d28ff4e-8803-43a4-83f7-1fea79e472f5")
+		(property "Reference" "R49"
+			(at 482.06 332.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 482.06 335.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 480.06 334.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 480.06 334.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Bus monitor series resistor (G3IN appliance to module): isolates the J7 tap from the 3.3 V buffer net"
+			(at 480.06 334.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 480.06 334.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 480.06 334.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 480.06 334.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "0e5036fc-77d5-4e83-934a-442309d8c029")
+		)
+		(pin "2"
+			(uuid "da799e4a-4b99-41da-847f-9901db14e475")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3H"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 476.250 334.010) (xy 473.710 334.010)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "508f77c1-c8cc-4b41-af11-5d429665e28c")
+	)
+	(global_label "GEA3_TX"
+		(shape passive)
+		(at 473.71 334.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cff3d7f4-838d-40eb-9636-2a28686edb13")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 473.71 334.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 495.300 336.550) (xy 485.140 336.550)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bdb1594-473b-42e0-b22f-a0668f0fcdeb")
+	)
+	(wire
+		(pts
+			(xy 485.140 336.550) (xy 485.140 341.630)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d54a1b4f-bd4a-48ee-8786-d86acc1e2d6c")
+	)
+	(wire
+		(pts
+			(xy 485.140 341.630) (xy 483.870 341.630)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a787de9-557e-4c2b-91ed-9ab8562737d7")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 480.06 341.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1dfdd5fd-97cd-4561-bb1d-4c3898a75bc7")
+		(property "Reference" "R50"
+			(at 482.06 340.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 482.06 343.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 480.06 341.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 480.06 341.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Bus monitor series resistor (G3OUT module to appliance): isolates the J7 tap from the 3.3 V buffer net"
+			(at 480.06 341.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 480.06 341.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 480.06 341.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 480.06 341.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "5d627339-5ff3-494c-aad4-f2a26578182c")
+		)
+		(pin "2"
+			(uuid "56c55961-48ef-4e29-845a-e83ef57a4bd0")
+		)
+		(instances
+			(project "GEA-Adapter-Rev3H"
+				(path "/477311b9-8f81-40c8-9c55-fd87e287247a"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 476.250 341.630) (xy 473.710 341.630)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e9ef8f6-d01d-46c9-abce-4ca12b7606c8")
+	)
+	(global_label "GEA3_RX"
+		(shape passive)
+		(at 473.71 341.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a534d862-29dd-4374-a3bc-29b91d6f7400")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 473.71 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
