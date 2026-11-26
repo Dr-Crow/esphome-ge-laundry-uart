@@ -345,7 +345,10 @@ def stage_layers(rev, ex, force):
     svgdir = cdir / 'svg'
     meta_f = cdir / 'layers.json'
     if fresh(cdir / 'layers.stamp', key, force) and meta_f.exists():
-        return json.load(open(meta_f))
+        meta = json.load(open(meta_f))
+        # The cache is keyed on the inputs only; a cache reused with a new --out has no PNGs there yet.
+        if all((DATA / rev / l['file']).exists() for l in meta['layers']):
+            return meta
     log(rev, 'svg export + rasterise layers')
     if svgdir.exists(): shutil.rmtree(svgdir)
     svgdir.mkdir(parents=True)
