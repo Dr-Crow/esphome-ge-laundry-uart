@@ -12,7 +12,7 @@
         "role": "base",
         "color_hint": "#384349",
         "print": null,
-        "bytes": 17894
+        "bytes": 13532
       },
       {
         "name": "C3 lid with integral printed buttons",
@@ -150,12 +150,14 @@
     "compact_revision": "rev3k",
     "module_variant": "c3",
     "source_sha256": {
-      "common-base.stl": "6452d945620bdffc300f66c8c1bec2aa77b841feeba0273fe33052fac4a5f96a",
+      "common-base.stl": "1197410fc1a38d0ab13ed50fed4e7764540e264d1aca08f1d00ddd93590d90b1",
       "closed-usb-lid-c3.stl": "ae231d2fa082602d705943f98a6894269035dd229dc2b09d17ae8c17215ca144",
       "lightpipe-wifi.stl": "eec2d037f51b7a774ab198267fdfff6ca361be0bcb8c4968912b53a87b21d2f0",
       "lightpipe-aux.stl": "f3af272001ef27873043bbecfb1b0ee604e895a9d1d90ff27472587dddbc9c52",
       "lightpipe-bus.stl": "5300b1e5412ae9aace39ac113ce91b77078c7363aab90f469b3952a2cf85e5bb"
-    }
+    },
+    "open_base_preview": "cases/rev3k/open-base.png",
+    "base_version": "1197410fc1a3"
   },
   {
     "id": "rev3k-c6",
@@ -170,7 +172,7 @@
         "role": "base",
         "color_hint": "#384349",
         "print": null,
-        "bytes": 17894
+        "bytes": 13532
       },
       {
         "name": "C6 lid with integral printed buttons",
@@ -308,12 +310,14 @@
     "compact_revision": "rev3k",
     "module_variant": "c6",
     "source_sha256": {
-      "common-base.stl": "6452d945620bdffc300f66c8c1bec2aa77b841feeba0273fe33052fac4a5f96a",
+      "common-base.stl": "1197410fc1a38d0ab13ed50fed4e7764540e264d1aca08f1d00ddd93590d90b1",
       "closed-usb-lid-c6.stl": "2536175c53db7c98e44f184fe54e766d4d4637c2856bf368f04ee0c79cc1e05d",
       "lightpipe-wifi.stl": "eec2d037f51b7a774ab198267fdfff6ca361be0bcb8c4968912b53a87b21d2f0",
       "lightpipe-aux.stl": "f3af272001ef27873043bbecfb1b0ee604e895a9d1d90ff27472587dddbc9c52",
       "lightpipe-bus.stl": "5300b1e5412ae9aace39ac113ce91b77078c7363aab90f469b3952a2cf85e5bb"
-    }
+    },
+    "open_base_preview": "cases/rev3k/open-base.png",
+    "base_version": "1197410fc1a3"
   },
   {
     "id": "rev3l-c3",
@@ -328,7 +332,7 @@
         "role": "base",
         "color_hint": "#384349",
         "print": null,
-        "bytes": 17892
+        "bytes": 13532
       },
       {
         "name": "C3 lid with integral printed buttons",
@@ -466,12 +470,14 @@
     "compact_revision": "rev3l",
     "module_variant": "c3",
     "source_sha256": {
-      "common-base.stl": "9e4f7b9380d35c345f518feaa7f63f9973cdc9ae763feff6db553d59d6b7c489",
+      "common-base.stl": "508a1fd58417ae4d1ce92f2f3e28a403666ed129af90977d7323124cf87ad285",
       "closed-usb-lid-c3.stl": "9be97975387fdf347810bdd75fbdef26f87f8552a1fc8c3d885f2bca4117c156",
       "lightpipe-D4.stl": "e504e348ae4f657a87f68897eb20ba6b1e13e13ebc76c4b30821d846e00ed9de",
       "lightpipe-D5.stl": "800613aa5ad6da91e9ff3f68eaf0e70e1590034c399b8be270f9c5e97225551d",
       "lightpipe-D6.stl": "5563f8e070539dddc0315cd9883c3188f3e1bbbe35c10989dbbd5751d7a6fe4f"
-    }
+    },
+    "open_base_preview": "cases/rev3l/open-base.png",
+    "base_version": "508a1fd58417"
   },
   {
     "id": "rev3l-c6",
@@ -486,7 +492,7 @@
         "role": "base",
         "color_hint": "#384349",
         "print": null,
-        "bytes": 17892
+        "bytes": 13532
       },
       {
         "name": "C6 lid with integral printed buttons",
@@ -624,12 +630,14 @@
     "compact_revision": "rev3l",
     "module_variant": "c6",
     "source_sha256": {
-      "common-base.stl": "9e4f7b9380d35c345f518feaa7f63f9973cdc9ae763feff6db553d59d6b7c489",
+      "common-base.stl": "508a1fd58417ae4d1ce92f2f3e28a403666ed129af90977d7323124cf87ad285",
       "closed-usb-lid-c6.stl": "d2bf6e66d8b879c34e5a86eea44ed100a13c874da891dcac2ea447ad8886620a",
       "lightpipe-D4.stl": "e504e348ae4f657a87f68897eb20ba6b1e13e13ebc76c4b30821d846e00ed9de",
       "lightpipe-D5.stl": "800613aa5ad6da91e9ff3f68eaf0e70e1590034c399b8be270f9c5e97225551d",
       "lightpipe-D6.stl": "5563f8e070539dddc0315cd9883c3188f3e1bbbe35c10989dbbd5751d7a6fe4f"
-    }
+    },
+    "open_base_preview": "cases/rev3l/open-base.png",
+    "base_version": "508a1fd58417"
   },
   {
     "id": "rev3m-c3",
@@ -644,7 +652,7 @@
         "role": "base",
         "color_hint": "#384349",
         "print": null,
-        "bytes": 17894
+        "bytes": 13532
       },
       {
         "name": "C3 lid with integral printed buttons",
@@ -782,12 +790,14 @@
     "compact_revision": "rev3m",
     "module_variant": "c3",
     "source_sha256": {
-      "common-base.stl": "a4d95f1d88bba7bda6793cfe914ea0bc2de8d02bc7e1121004e207cd1b0903a4",
+      "common-base.stl": "feef96a3a26570bf7d94fc0de728fd51dc7c1a7f9b471718f319e34a8ad6fdb9",
       "closed-usb-lid-c3.stl": "54fb845f970653e9dcf1e780d34a58db951ecbca74e7f4484ed73952e5b014fd",
       "lightpipe-D4.stl": "2e9fffba62adc4532b72934c3c70e6b89e7d554e1f0beada99de110780cdf1e4",
       "lightpipe-D5.stl": "145e95e3215032c949157ec73e2ea0e362903f88ad88e9e7a9e274a33e5714be",
       "lightpipe-D6.stl": "56ae267fa8aec349fd5333076ec91fe03b3ebfbf15cb96d84c7da8a655393f09"
-    }
+    },
+    "open_base_preview": "cases/rev3m/open-base.png",
+    "base_version": "feef96a3a265"
   },
   {
     "id": "rev3m-c6",
@@ -802,7 +812,7 @@
         "role": "base",
         "color_hint": "#384349",
         "print": null,
-        "bytes": 17894
+        "bytes": 13532
       },
       {
         "name": "C6 lid with integral printed buttons",
@@ -940,11 +950,13 @@
     "compact_revision": "rev3m",
     "module_variant": "c6",
     "source_sha256": {
-      "common-base.stl": "a4d95f1d88bba7bda6793cfe914ea0bc2de8d02bc7e1121004e207cd1b0903a4",
+      "common-base.stl": "feef96a3a26570bf7d94fc0de728fd51dc7c1a7f9b471718f319e34a8ad6fdb9",
       "closed-usb-lid-c6.stl": "098175fb126c82ae3366dfc4741e204d7b8dd218c2d62f7c6e3a4ab8116b3856",
       "lightpipe-D4.stl": "2e9fffba62adc4532b72934c3c70e6b89e7d554e1f0beada99de110780cdf1e4",
       "lightpipe-D5.stl": "145e95e3215032c949157ec73e2ea0e362903f88ad88e9e7a9e274a33e5714be",
       "lightpipe-D6.stl": "56ae267fa8aec349fd5333076ec91fe03b3ebfbf15cb96d84c7da8a655393f09"
-    }
+    },
+    "open_base_preview": "cases/rev3m/open-base.png",
+    "base_version": "feef96a3a265"
   }
 ]

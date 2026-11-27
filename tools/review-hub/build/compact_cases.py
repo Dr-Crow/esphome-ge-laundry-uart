@@ -8,6 +8,7 @@ from pathlib import Path
 import numpy as np
 
 import glbtools
+import compact_base_preview
 
 
 def save_case_mesh(stl, out):
@@ -39,6 +40,7 @@ def build(cfg, data, exporter):
     here = Path(__file__).resolve().parent
     repo = Path(cfg['repo'])
     records = json.loads((here / 'compact-cases.config.json').read_text())
+    generated = set()
     for record in records:
         rev = record['compact_revision']
         dest = data / 'cases' / rev
@@ -48,8 +50,11 @@ def build(cfg, data, exporter):
             if hashlib.sha256(stl.read_bytes()).hexdigest() != record['source_sha256'][stl.name]:
                 raise ValueError(f'{stl}: enclosure CAD changed; regenerate its preview and check the board registration')
             glb = data / part['file']
-            if not glb.exists():
+            if glb not in generated:
                 save_case_mesh(stl, glb)
+                generated.add(glb)
+                if part['role'] == 'base':
+                    compact_base_preview.render(stl, data / record['open_base_preview'])
             part['bytes'] = glb.stat().st_size
         del record['source_sha256']
         source = (repo / record['source_files'][0]).parent

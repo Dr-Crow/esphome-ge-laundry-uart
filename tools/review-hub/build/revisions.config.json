@@ -278,7 +278,7 @@
     },
     {
       "id": "rev3k",
-      "source_url": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/e0f99cc123d22c94610371f0735ccbd50c4abe2e/pcb/rev3k",
+      "source_url": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/8dbb1bd5ca55502e06ad757879ab8c9689b2ff41/pcb/rev3k",
       "silkscreen_review": true,
       "label": "Rev 3K",
       "pcb": "pcb/rev3k/design/GEA-Adapter-Rev3K.kicad_pcb",
@@ -306,7 +306,7 @@
       "summary": "65 × 30 mm service prototype. All connections, including the debug LED, are routed. KiCad 9.0.9 reports zero DRC, schematic parity and ERC findings. The revised enclosure has straight guides for all three LEDs. Physical and factory checks remain open.",
       "readme": "pcb/rev3l-placement/README.md",
       "documented_quotes": [],
-      "source_url": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/e0f99cc123d22c94610371f0735ccbd50c4abe2e/pcb/rev3l-placement"
+      "source_url": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/8dbb1bd5ca55502e06ad757879ab8c9689b2ff41/pcb/rev3l-placement"
     },
     {
       "id": "rev3m",
@@ -322,7 +322,7 @@
       "summary": "Compact prototype with 68 fitted parts and fixed D3/D6 interface choices. KiCad 9.0.9 reports zero open connections, DRC, parity and ERC findings. J7 and the 18 dedicated test points are omitted. Physical and factory checks remain open.",
       "readme": "pcb/rev3m/README.md",
       "documented_quotes": [],
-      "source_url": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/e0f99cc123d22c94610371f0735ccbd50c4abe2e/pcb/rev3m"
+      "source_url": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/8dbb1bd5ca55502e06ad757879ab8c9689b2ff41/pcb/rev3m"
     }
   ]
 }

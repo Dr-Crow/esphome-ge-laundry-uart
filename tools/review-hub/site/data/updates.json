@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-11-27",
+    "title": "Compact placement and enclosure corrections",
+    "text": "The current review package includes the checked placement lists, C3 antenna relief in all shared bases, revised firmware guidance and the electrical qualification register."
+  },
+  {
     "rev": "rev3m",
     "date": "2026-11-27",
     "title": "Rev 3M compact board",

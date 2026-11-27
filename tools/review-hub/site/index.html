@@ -405,7 +405,8 @@ const slug = id => String(id).replace(/[^A-Za-z0-9]+/g, '-');
 const cache = new Map();
 function assetUrl(path) {
   const id = path.match(/^data\/(?:cases\/)?(rev3[a-z])\//)?.[1];
-  const version = id && S.byId[id]?.asset_revision;
+  const isBase = /\/(common-base\.gltf\.json|open-base\.png)$/.test(path);
+  const version = isBase ? S.cases.find(c => c.compact_revision === id)?.base_version : id && S.byId[id]?.asset_revision;
   return version ? path + '?board=' + encodeURIComponent(version) : path;
 }
 async function getJSON(url, fallback) {
@@ -429,8 +430,8 @@ const S = { revs: [], byId: {}, bySlug: {}, cur: null, view: 'overview', pricing
 /* ---------- boot ---------- */
 async function boot() {
   const [revs, pricing, cases, docs, updates] = await Promise.all([
-    getJSON('data/revisions.json?atlas=silk-c120337846df', []), getJSON('data/pricing.json', null), getJSON('data/cases.json?atlas=compact-cases-018d83ee', []),
-    getJSON('data/docs.json', []), getJSON('data/updates.json?atlas=018d83ee', [])]);
+    getJSON('data/revisions.json?atlas=8dbb1bd5ca55', []), getJSON('data/pricing.json', null), getJSON('data/cases.json?atlas=compact-bases-b81a1d3', []),
+    getJSON('data/docs.json', []), getJSON('data/updates.json?atlas=8dbb1bd5ca55', [])]);
   S.revs = revs; S.pricing = pricing; S.cases = cases; S.docs = docs; S.updates = updates;
   revs.forEach(r => { S.byId[r.id] = r; S.bySlug[slug(r.id)] = r.id; });
   S.cur = store.get('rev', null);
@@ -948,7 +949,9 @@ async function showOverview() {
   const el = $('#ovPage'); const cand = S.byId.rev3l || S.byId.rev3k || S.revs.find(r => r.status === 'candidate');
   const open = S.fb.filter(f => f.status !== 'resolved');
   el.innerHTML = `<div class="hero"><div class="lbl">Design review hub</div><h2>${S.revs.length} board revisions, ${S.cases.length} cases, one adapter</h2>
-   <p>The carrier plugs into a GE appliance's 8P8C service port and hosts a socketed XIAO ESP32-C3 or C6 running ESPHome. ${cand ? `<b>${esc(cand.label)}</b> is the routed prototype for review. ${esc(cand.summary || '')}` : ''}</p></div>
+   <p>The carrier plugs into a GE appliance's 8P8C service port and hosts a socketed XIAO ESP32-C3 or C6 running ESPHome. ${cand ? `<b>${esc(cand.label)}</b> is the active compact service reference. ${esc(cand.summary || '')}` : ''}</p></div>
+   <section class="compact-review" aria-labelledby="fix-review-title"><h3 id="fix-review-title">Compact prototype review</h3>
+   <p>Updated 3K, 3L and 3M placement lists correct eight connector centers. All three printable bases now clear the C3 antenna in CAD. Disconnect the appliance before using USB. U11 can feed module 5 V from powered data lines with JP3 open. The register covers factory, harness and physical checks.</p><p>If you can build one electrical proof, choose the 3K two-capacitor trial for factory review first. It keeps the debug access and puts one capacitor at each eFuse output. Active 3L remains the 65 × 30 mm service reference. The smaller 3L trial tests one shared capacitor.</p><p>Separate power-layout studies: <a href="https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/458da5363a483e195f17c588546fca07acacde1e/pcb/rev3k-two-local">3K-C2 · two local capacitors</a> · <a href="https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/235c96f84b66ba7df3daeaea60213549442f9678/pcb/rev3l-efuse-eco">3L-E · one shared capacitor</a>. Both need physical validation.</p><div class="row"><a href="https://github.com/Dr-Crow/esphome-ge-laundry-uart/blob/8dbb1bd5ca55502e06ad757879ab8c9689b2ff41/pcb/COMPACT-FIX-REGISTER.md">Read the fix register</a> · <a href="https://github.com/Dr-Crow/esphome-ge-laundry-uart/blob/8dbb1bd5ca55502e06ad757879ab8c9689b2ff41/firmware/shared-rev3c/README.md">C3 and C6 firmware profiles</a> · <a href="https://github.com/Dr-Crow/esphome-ge-laundry-uart/blob/8dbb1bd5ca55502e06ad757879ab8c9689b2ff41/pcb/compact-review/GEA3-HARNESS.md">GEA3 signal-level and timing study</a></div></section>
    <section class="compact-review" aria-labelledby="compact-review-title"><h3 id="compact-review-title">Compact boards and enclosures</h3>
     <div class="compact-review-grid">${['rev3m','rev3l','rev3k'].filter(id => S.byId[id]).map(id => {const r=S.byId[id], cases=S.cases.filter(c=>c.compact_revision===id);return `<article class="compact-card"><h4>${esc(r.label)} · ${r.size_mm.map(esc).join(' × ')} mm</h4><p>${esc(r.summary)}</p><div class="row"><a class="btn primary" href="#board-${slug(id)}">Inspect board</a>${r.source_url ? `<a class="btn" href="${esc(r.source_url)}" target="_blank" rel="noopener">Native design</a>` : ''}${cases.map(c=>`<a class="btn" href="#case-${slug(c.id)}">${esc(c.module_variant.toUpperCase())} case</a>`).join('')}</div>${silkscreenReview(r)}</article>`}).join('')}</div>
     <p>FirstBuild measures 59.944 × 27.432 mm. Rev 3M matches both nominal FirstBuild outline dimensions. Both enclose the same board area. Rev 3L is 5.06 mm longer and 2.57 mm wider, occupying 18.6% more board area.</p></section><div class="grid-revs">${S.revs.slice().reverse().map(r => `<button class="revcard" type="button" data-id="${esc(r.id)}"><div class="thumb">${r.has?.renders !== false ? `<img loading="lazy" alt="" src="${esc(assetUrl('data/'+r.id+'/renders/top.png'))}" onerror="this.remove()">` : ''}</div>
@@ -1152,6 +1155,7 @@ function renderCaseInsp(cs) {
    ${others.length ? `<div class="row"><span class="lbl" style="min-width:58px">Other</span>${others.map(c => `<button class="btn ${c.id === cs.id ? 'primary' : ''}" type="button" data-case="${esc(c.id)}">${esc(c.label)}</button>`).join('')}</div>` : ''}</div>
    <div class="sec"><h2>${esc(cs.label)}</h2><div class="muted" style="font-size:13px">Fits ${esc((cs.revisions || []).map(r => S.byId[r]?.label || r).join(', ') || '—')}</div>
    ${cs.params?.enclosure_exterior_mm ? `<dl class="case-dims"><dt>PCB</dt><dd>${cs.params.pcb_mm.map(esc).join(' × ')} mm</dd><dt>Case exterior</dt><dd>${cs.params.enclosure_exterior_mm.map(esc).join(' × ')} mm</dd></dl>` : ''}
+   ${cs.open_base_preview ? `<figure style="margin:.8rem 0"><a href="${esc(assetUrl('data/'+cs.open_base_preview))}" target="_blank" rel="noopener"><img loading="lazy" style="width:100%;height:auto" src="${esc(assetUrl('data/'+cs.open_base_preview))}" alt="${esc(cs.label)} open base with the shortened antenna-side tongue highlighted"></a><figcaption>The highlighted tongue leaves 0.35 mm of modeled clearance under the C3 antenna. Print fit remains open.</figcaption></figure>` : ''}
    ${cs.status_note ? `<div class="note">${esc(cs.status_note)}</div>` : ''}
    <div class="pills">${C.board ? `<span class="pill ${bp.verified ? 'good' : 'warn'}">positions ${bp.verified ? 'line up' : 'not verified'}</span>` : (bp.verified ? '<span class="pill good">CAD registration verified</span>' : '<span class="pill">board placement unknown</span>')}${C.det != null && C.det < 0 ? '<span class="pill bad">case is mirrored</span>' : ''}</div>
    ${C.det != null && C.det < 0 ? `<div class="note"><b>The exported case is a mirror image of the board.</b> The case CAD takes KiCad coordinates as-is (y = KiCad y, which points down the board in the top view) and builds with z up. That is a left-handed frame, so features land where the board's parts are only after mirroring the board. Here the case is drawn as it would print, and the board is mirrored to line up: its silkscreen reads backwards. A real board in this printed case would have J1 and the XIAO openings on the wrong long side. The Rev2 case uses y = −KiCad y and does not have this problem. Check before printing.</div>` : ''}
