@@ -25,3 +25,7 @@ Unplug the appliance cable before using USB. The two closed lids physically rest
 Before ordering, close tooling, solder mask, 2D/3D placement, through-hole insertion, QFN stencil and orientation with the factory. Dry-fit both actual modules, antennas and a latched cable in a test print. Before any appliance connection, use an isolated current-limited fixture to check each input alone and together, switchover, reverse current, fault indication, C9 and rail transients during radio bursts, clamp overshoot, local temperature and USB backfeed in each direction. No powered test was performed.
 
 The [top assembly map](evidence/top-assembly-map.svg) labels every fitted body by designator in PCB coordinates. Probe pads and mounting holes are also shown.
+
+## Assembly and printed-case corrections
+
+The two XIAO sockets and the debug header now use their body centers in the placement list. The common case base has a shorter tongue below the C3 antenna pocket. Check the assembly overlay and print fit before ordering. [Corrected placement list](manufacturing/CPL-GEA-Adapter-Rev3K.csv) · [Connector verification](evidence/connector-centroid-review.md) · [Common base STEP](case/common-base.step) · [Print checks](case/PRINT-FIT.md)

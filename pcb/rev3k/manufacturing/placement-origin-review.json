@@ -25,9 +25,66 @@
         "source_url": "https://chinarj45.com/uploads/20260211/99f6f1d1acfb5da691ec9e117bc8ba1c.pdf",
         "datum_description": "EVERCOM5301-880XXX RevA2025-09-23 nominal unshielded8P8C family; STEP body bounds x[-3.155,12.045],y[-14.35,3.70]. STEP Y mirrors footprint Y, giving local footprint body centre(4.445,5.325). Full material/plating suffix remains unverified."
       }
+    },
+    "J5": {
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "footprint": "GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254",
+      "native_anchor_xy_mm": [
+        66.19665,
+        -3.7275
+      ],
+      "rotation_degrees": 0.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        -7.62,
+        0
+      ],
+      "body_center_xy_mm": [
+        58.57665,
+        -3.7275
+      ],
+      "basis": "HCTL PM254 1x07 socket. Pin 1 to pin 7 span 15.24 mm along local -X. Checked against the HCTL body dimensions in evidence/component-body-edge.csv."
+    },
+    "J6": {
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "footprint": "GEA_Rev3C:Socket_1x07_P2.54mm_HCTL_PM254",
+      "native_anchor_xy_mm": [
+        50.95665,
+        -18.9675
+      ],
+      "rotation_degrees": 180.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        -7.62,
+        0
+      ],
+      "body_center_xy_mm": [
+        58.57665,
+        -18.9675
+      ],
+      "basis": "HCTL PM254 1x07 socket. Pin 1 to pin 7 span 15.24 mm along local -X. Checked against the HCTL body dimensions in evidence/component-body-edge.csv."
+    },
+    "J7": {
+      "datum_type": "nominal_fabrication_outline_center",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "native_anchor_xy_mm": [
+        40.287501,
+        -10.85
+      ],
+      "rotation_degrees": 180.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        0,
+        3.81
+      ],
+      "body_center_xy_mm": [
+        40.287501,
+        -7.04
+      ],
+      "basis": "Pin 1 to pin 4 span 7.62 mm along local +Y. Checked against the fabrication outline in evidence/component-body-edge.csv."
     }
   },
-  "status": "Study only. J1 body offset propagated with the actual compact placement, in the exported CPL coordinate frame; assembly still requires supplier review.",
+  "status": "Study only. Local connector offsets are measured in footprint coordinates (X-right, Y-down). Native anchors and rotated body centers are snapshots in CPL coordinates (X-right, Y-up). Supplier overlay and handling review remain open.",
   "source_sha256": {
     "pcb/rev3e/design/models/J1-EVERCOM-5301-8P8C-envelope.step": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
     "pcb/rev3e/design/models/RJ45_EVERCOM_5301-8P8C-RevA-drawing-detail.step": "2dd0fad1b3f731095d418325b7213b68477a9fc6b63a950a9d7fed368039e809",
