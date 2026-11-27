@@ -4,6 +4,10 @@ The PCB measures 59.944 × 27.432 × 1.6 mm. Its enclosure measures 67.144 × 35
 
 [Editable generator](generate.py) · [Common base](common-base.step) · [C3 lid](closed-usb-lid-c3.step) · [C6 lid](closed-usb-lid-c6.step) · [Solid-model checks](case-checks.json)
 
-The two posts follow the routed hole centers. Each guide is registered to its LED. The C3 layout reserves a U.FL plug and a 28.31 mm cable path, with a 5 mm modeled bend radius and a 40 × 20 mm flexible-antenna pocket. The C6 ceramic antenna has 9.45 mm modeled lid clearance. The case uses an 11 mm module stack assumption. CAD checks report zero nominal intersection between the PCB envelope and each case half, and between each lid and its guides. The friction closures intentionally engage by 0.42 mm³ per lid.
+The two posts follow the routed hole centers. Each guide is registered to its LED. The C3 layout reserves a U.FL plug and a 28.31 mm cable path, with a 5 mm planar elbow and a 40 × 20 mm flexible-antenna pocket. The C6 ceramic antenna has 9.45 mm modeled lid clearance. The case uses an 11 mm module stack assumption. CAD checks report zero nominal intersection between the PCB envelope and each case half, and between each lid and its guides. The friction closures intentionally engage by 0.355 mm³ per lid.
 
 Dry-fit both module variants and the actual cable, socket headers, printed buttons, antenna and latched plug. Check retention, travel, light visibility and RF behavior. No physical sample has been tested. STEP and STL are in millimetres. To regenerate, run Python with build123d 0.10 and retain the sibling `pcb/rev3k/case/support` and `pcb/rev3e/design/models` directories.
+
+## Antenna clearance and print checks
+
+The common base now leaves **0.35 mm** below the C3 antenna envelope. The previous base reached 0.9 mm into its lower edge. Use the revised base with either module lid. The lid rails have only 0.12 mm nominal clearance to the antenna. Test the printed pocket with the supplied antenna before snapping the case shut. See the [shared antenna, button and guide fit checks](../../rev3k/case/PRINT-FIT.md).

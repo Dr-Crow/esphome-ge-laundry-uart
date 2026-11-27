@@ -5,6 +5,7 @@ import build123d as b
 root=Path(__file__).resolve().parent
 sys.path.insert(0,str(root/'support'))
 import enclosure as e
+from antenna_clearance import check_c3_reservations
 e.configure(stack_mm=11.,reach_mode='per_assembly',usb_mode='per_assembly')
 def box(x0,x1,y0,y1,z0,z1):
     return b.Pos(x0,y0,z0)*b.Box(x1-x0,y1-y0,z1-z0,align=(b.Align.MIN,)*3)
@@ -24,12 +25,14 @@ def point(x,y):
 seat=3.65
 posts=[(3.8,3.96),(65.96,3.96)]
 base=box(-2.4,74.8,-5,35,-1.4,0)+shell(-.1,6.8)
-# Three discontinuous tongues keep insertion tolerant. Bumps pressure the lid locally.
+# The tongue under the C3 antenna stays below its lower edge (z = 8 mm).
+# The three other tongues keep their full height for both module lids.
 for x0,x1 in [(4,17),(55,68)]:
     for y0,y1 in [(-3.35,-2.15),(32.15,33.35)]:
-        base+=box(x0,x1,y0,y1,6.35,8.9)
+        tongue_top = 7.65 if x0 == 4 and y0 < 0 else 8.9
+        base+=box(x0,x1,y0,y1,6.35,tongue_top)
         by=-3.18 if y0<0 else 33.18
-        base+=cyl((x0+x1)/2,by,.13,7.3,8.23)
+        base+=cyl((x0+x1)/2,by,.13,7.3,min(8.23, tongue_top))
 for x,y in posts:base+=cyl(x,y,2.6,-.03,seat)+cyl(x,y,1.23,seat-.05,5.55)
 # Jack external body extends to x=-0.38. Allow both connector insertion and plug latch.
 window=box(-4,1,10.65,29.15,4.65,18.45);base-=window
@@ -52,6 +55,7 @@ for a,c in zip(path,path[1:]):
     v=b.Vector(c)-b.Vector(a)
     seg=b.Solid.make_cylinder(1.0,v.length,b.Plane(origin=a,z_dir=v))
     tube=seg if tube is None else tube+seg
+checks.update(check_c3_reservations('base', base, fpc, tube))
 for name,x,y in led:
     pipe=cyl(x,y,.88,6.9,30.52)+cyl(x,y,1.18,27.95,28.5)
     save(pipe,'lightpipe-'+name)
@@ -75,8 +79,7 @@ for m in ['c3','c6']:
         for x0,x1 in [(18.0,20.4),(42.2,44.8)]:
             lid+=box(x0,x1,-3.8,-.7,7.3,7.85);lid+=box(x0,x1,-1.02,-.55,7.6,9.5)
             lid+=box(x0,x1,-3.3,-.7,28.12,28.65)
-        print('lid solids',[(round(o.volume,2),tuple(o.center())) for o in lid.solids()],flush=True);lid=lid.solids()[0].fuse(*lid.solids()[1:]) if len(lid.solids())>1 else lid.solids()[0];checks['c3_fpc_lid_overlap_mm3']=round(vol(lid & fpc),6)
-        checks['c3_coax_lid_overlap_mm3']=round(vol(lid & tube),6)
+        print('lid solids',[(round(o.volume,2),tuple(o.center())) for o in lid.solids()],flush=True);lid=lid.solids()[0].fuse(*lid.solids()[1:]) if len(lid.solids())>1 else lid.solids()[0]
         checks['c3_lead_path_mm']=round(sum(math.dist(a,c) for a,c in zip(path,path[1:])),2)
         checks['c3_coax_points_case_xyz']=path
     else:
@@ -86,6 +89,8 @@ for m in ['c3','c6']:
     for txt,x,y,size in [('UNPLUG RJ45 BEFORE USB',20.,31.1,1.7),('GEA 3K  '+m.upper(),18.,4.2,1.8)]+[(name,*[point(*xy)[0],point(*xy)[1]+4.65],1.35) for name,xy in e.SW[m].items()]:
         letters=b.Text(txt,font_size=size,font='DejaVu Sans')
         lid-=b.Pos(x,y,30.15)*b.extrude(letters,amount=.45)
+    if m == 'c3':
+        checks.update(check_c3_reservations('lid', lid, fpc, tube))
     checks[m+'_board_overlap_mm3']=round(vol(lid & carrier),6)
     checks[m+'_closure_interference_mm3']=round(vol(lid & base),6)
     checks[m+'_switches_case_xy']={name:point(*xy) for name,xy in e.SW[m].items()}

@@ -8,9 +8,13 @@ The lids have integral printed BOOT and RESET buttons and return springs. The cl
 
 ## Module and optical fit
 
-The C3 design reserves the U.FL plug, a 29.23 mm modeled lead path with a 5 mm minimum modeled bend radius, and a flexible antenna pocket. Check the actual assembly's unbent lead allowance, connector retention and cable bend specification. The C6 design leaves 9.45 mm from the modeled ceramic antenna to the lid. Confirm RF operation in the installed case.
+The C3 design reserves the U.FL plug, a 29.23 mm modeled lead path with a 5 mm planar elbow, and a flexible antenna pocket. Check the actual assembly's unbent lead allowance, connector retention and cable bend specification. The C6 design leaves 9.45 mm from the modeled ceramic antenna to the lid. Confirm RF operation in the installed case.
 
-The three light guides run straight from the relocated LED positions. Both posts follow the actual routed board mounting holes. In the solid-model checks, both lids clear the board envelope and all three guides. The captive PCB sleeve has 0.37 mm nominal vertical clearance at 1.6 mm PCB thickness. The friction features intentionally interfere by 0.42 mm³ per assembled lid. Confirm the print's latch force, button rest gaps, return travel, jack latch, light visibility and socket stack before adopting the enclosure. Physical print and populated fits remain open.
+The three light guides run straight from the relocated LED positions. Both posts follow the actual routed board mounting holes. In the solid-model checks, both lids clear the board envelope and all three guides. The captive PCB sleeve has 0.37 mm nominal vertical clearance at 1.6 mm PCB thickness. The friction features intentionally interfere by 0.355 mm³ per assembled lid. Confirm the print's latch force, button rest gaps, return travel, jack latch, light visibility and socket stack before adopting the enclosure. Physical print and populated fits remain open.
 
 STEP and STL pieces use millimetres. Run `python3 generate.py` with build123d 0.10 and the sibling Rev 3K case support directory available to regenerate all solids. The PCB is routed. Printed fit and bench verification remain open.
 
+
+## Antenna clearance and print checks
+
+The common base now leaves **0.35 mm** below the C3 antenna envelope. The previous base reached 0.9 mm into its lower edge. Use the revised base with either module lid. The lid rails have only 0.12 mm nominal clearance to the antenna. Test the printed pocket with the supplied antenna before snapping the case shut. See the [shared antenna, button and guide fit checks](../../rev3k/case/PRINT-FIT.md).
