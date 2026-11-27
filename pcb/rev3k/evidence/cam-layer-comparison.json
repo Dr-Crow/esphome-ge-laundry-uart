@@ -17,11 +17,11 @@
   "3K": {
     "('top', 'copper')": 1629,
     "('top', 'mask')": 231,
-    "('top', 'silk')": 428,
+    "('top', 'silk')": 544,
     "('top', 'paste')": 178,
     "('bottom', 'copper')": 955,
     "('bottom', 'mask')": 42,
-    "('bottom', 'silk')": 1169,
+    "('bottom', 'silk')": 1780,
     "('bottom', 'paste')": 0,
     "('inner_2', 'copper')": 837,
     "('inner_1', 'copper')": 345,
