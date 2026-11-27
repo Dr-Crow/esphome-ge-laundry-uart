@@ -1,0 +1,37 @@
+{
+  "baseline": "6cbbd821be8a46223176ca2b86a788c50dd09e2f",
+  "checks": [
+    "sch erc --format json --severity-all --exit-code-violations",
+    "pcb drc --format json --severity-all --all-track-errors --schematic-parity --exit-code-violations"
+  ],
+  "source_note": "Only applies to these board and schematic hashes. The electrical trial, printed fit, supplier checks and powered behavior need separate evidence.",
+  "carriers": {
+    "GEA-Adapter-Rev3K": {
+      "kicad_version": "9.0.9",
+      "schematic_sha256": "baf1f93aa3e56e6b0aec9c448a699b0e56d29a0ec7f2586eb21c3f3d93b71a96",
+      "pcb_sha256": "0fcda3eaebc90ee48d7c3c16e0c912ed5eea559f3e197cb45b85a00ca7103b04",
+      "erc_findings": 0,
+      "drc_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    },
+    "GEA-Adapter-Rev3L": {
+      "kicad_version": "9.0.9",
+      "schematic_sha256": "f72c81be76dde0d875b30da419a933f97973e7134d841a978f0875bf9fa5a69c",
+      "pcb_sha256": "67ede70ee3262740d28130c61713b0a2e946366fa02ab4ddc0bb64e0dca985c1",
+      "erc_findings": 0,
+      "drc_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    },
+    "GEA-Adapter-Rev3M": {
+      "kicad_version": "9.0.9",
+      "schematic_sha256": "122497c0ac2bb3f1c463bc337e662825312c4c29c9593cd946e7facb7aadd628",
+      "pcb_sha256": "c120337846df5238d40800c6ef0afda243c2a517b15f14e9aa9d5a918e84aa07",
+      "erc_findings": 0,
+      "drc_findings": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    }
+  }
+}
