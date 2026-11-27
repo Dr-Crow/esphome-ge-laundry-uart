@@ -1,0 +1,11 @@
+(version 1)
+# TI TPS259470A RPW0010A (VQFN-HR-10, 2x2 mm), SLVSFC9C p.73 example board layout: the IN/OUT bars sit
+# 0.20 mm apart and ~0.21 mm from the corner pads, so pad exits cannot meet the 0.25 mm Power-class
+# clearance. This relaxes clearance to 0.19 mm only between items that both touch the U9 or U10
+# courtyard (the eFuse pads and their escape traces). Everything else keeps netclass/global rules.
+(rule "TI RPW0010A U9 land pattern and pad exits"
+  (condition "A.intersectsCourtyard('U9') && B.intersectsCourtyard('U9')")
+  (constraint clearance (min 0.19mm)))
+(rule "TI RPW0010A U10 land pattern and pad exits"
+  (condition "A.intersectsCourtyard('U10') && B.intersectsCourtyard('U10')")
+  (constraint clearance (min 0.19mm)))
