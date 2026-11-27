@@ -7,7 +7,7 @@
         13.97,
         -7.9175
       ],
-      "rotation_degrees": -90,
+      "rotation_degrees": -90.0,
       "side": "top",
       "local_body_center_xy_mm": [
         4.445,
@@ -33,7 +33,7 @@
         61.22665,
         -3.5975
       ],
-      "rotation_degrees": 0,
+      "rotation_degrees": 0.0,
       "side": "top",
       "local_body_center_xy_mm": [
         -7.62,
@@ -52,7 +52,7 @@
         45.98665,
         -18.8375
       ],
-      "rotation_degrees": 180,
+      "rotation_degrees": 180.0,
       "side": "top",
       "local_body_center_xy_mm": [
         -7.62,
@@ -71,7 +71,7 @@
         37.571895,
         -10.409707
       ],
-      "rotation_degrees": 180,
+      "rotation_degrees": 180.0,
       "side": "top",
       "local_body_center_xy_mm": [
         0,

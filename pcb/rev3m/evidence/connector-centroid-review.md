@@ -20,6 +20,8 @@ python3 pcb/rev3l-placement/manufacturing/generate.py --check-cpl
 python3 pcb/rev3m/manufacturing/generate.py --check-cpl
 ```
 
+On 2026-11-27 UTC, Python 3.12.14 passed the three checked-in-file regressions at commit 1a708d61a8d46abe93627aa65b5ed487f527b970. Fresh full exports from all three native KiCad projects reproduced their CPL and BOM byte for byte. The CLI reported 9.0.9 and the plot header reported PCBNEW 9.0.9.1. Each review CAM archive contained the same 14 members, all byte-identical after creation timestamps were normalized. Regenerated connector-datum records matched the committed numeric values.
+
 The normal generator applies the same check before publishing its outputs. Refresh the independent body table after an intentional footprint, placement or population change. Confirm imported centers, rotation and pin 1 against the actual JLCPCB footprint overlays, and confirm through-hole handling and fit before release. This coordinate review does not establish supplier acceptance or bench performance.
 
 [JLCPCB pick-and-place format](https://jlcpcb.com/help/article/pick-place-file-for-pcb-assembly) · [JLCPCB assembly terms](https://jlcpcb.com/help/article/terms-and-conditions-of-jlcpcb-assembly-service)
