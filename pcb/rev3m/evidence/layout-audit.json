@@ -1,0 +1,61 @@
+{
+  "board": [
+    59.944,
+    27.432
+  ],
+  "kicad_drc_version": "9.0.9",
+  "geometry_editor": "9.0.2",
+  "sha256": "018d83ee3db954c605a91ce69614b1e621c8696e9ba8612e95651e9ed4dff903",
+  "schematic_sha256": "122497c0ac2bb3f1c463bc337e662825312c4c29c9593cd946e7facb7aadd628",
+  "footprints": 72,
+  "pad_records": 194,
+  "fitted_refs_top": 68,
+  "fitted_refs_bottom": 0,
+  "tp_refs_in_fitted_bom": 0,
+  "unique_skus": 30,
+  "review_CAM_paste_objects": {
+    "F_Paste": 168,
+    "B_Paste": 0
+  },
+  "vias": 185,
+  "open_connections": 0,
+  "drc_findings": {},
+  "schematic_parity": 0,
+  "erc_findings": 0,
+  "via_holes_on_smd_lands_both_faces": [],
+  "min_via_gap_to_smd_land_mm": [
+    0.105,
+    0.225,
+    "U5",
+    "4"
+  ],
+  "below_2p5_body_edge": {
+    "C10": 1.794,
+    "C11": 1.5897,
+    "C16": 2.1765,
+    "C17": 1.1587,
+    "C20": 2.2012,
+    "C6": 0.355,
+    "D11": 1.1067,
+    "D18": 0.8372,
+    "J1": -0.38,
+    "J5": 0.6225,
+    "J6": 2.1534,
+    "L1": 0.235,
+    "R1": 1.5067,
+    "R14": 0.357,
+    "R17": 0.8894,
+    "R2": 1.349,
+    "R23": 0.9829,
+    "R31": 0.3437,
+    "R32": 0.3425,
+    "R34": 1.1505,
+    "R36": 0.7348,
+    "R4": 1.825,
+    "R6": 2.1999,
+    "R7": 2.3285
+  },
+  "test_points": 0,
+  "source_design": "routed Rev 3L without dedicated probes, monitor header or DNP capacitor/diode",
+  "top_probe_points": {}
+}

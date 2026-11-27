@@ -1,0 +1,5 @@
+reference,pad,net,x_mm,y_mm,footprint_side,exposed_copper_faces,pad_type
+JP3,1,/D11_K,33.071411,24.963273,F.Cu,F.Cu/B.Cu,plated hole
+JP3,2,+5V,30.531411,24.963273,F.Cu,F.Cu/B.Cu,plated hole
+JP4,1,Net-(JP4-A),30.900515,21.23104,B.Cu,B.Cu,surface
+JP4,2,Net-(JP4-B),32.700515,21.23104,B.Cu,B.Cu,surface

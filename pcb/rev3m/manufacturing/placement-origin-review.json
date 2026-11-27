@@ -1,0 +1,41 @@
+{
+  "references": {
+    "J1": {
+      "datum_type": "manufacturer_nominal_body_bbox_center",
+      "footprint": "OnionStraws:RJ45_EVERCOM_5301-8P8C_Horizontal",
+      "native_anchor_xy_mm": [
+        13.97,
+        -6.856682
+      ],
+      "rotation_degrees": -90.0,
+      "side": "top",
+      "local_body_center_xy_mm": [
+        4.445,
+        5.325
+      ],
+      "body_center_xy_mm": [
+        8.645,
+        -11.301682
+      ],
+      "manufacturer_datum": {
+        "manufacturer": "EVERCOM",
+        "mpn": "5301-8P8C",
+        "evidence": "pcb/rev3c/validation/placement-datum-sources.json",
+        "sha256": "8629c3a9e1349b26b58f77c5207dd9aa3254f77319f18036f72d83828dc5057d",
+        "source_url": "https://chinarj45.com/uploads/20260211/99f6f1d1acfb5da691ec9e117bc8ba1c.pdf",
+        "datum_description": "EVERCOM5301-880XXX RevA2025-09-23 nominal unshielded8P8C family; STEP body bounds x[-3.155,12.045],y[-14.35,3.70]. STEP Y mirrors footprint Y, giving local footprint body centre(4.445,5.325). Full material/plating suffix remains unverified."
+      }
+    }
+  },
+  "status": "Study only. J1 body offset propagated with the actual compact placement, in the exported CPL coordinate frame; assembly still requires supplier review.",
+  "source_sha256": {
+    "pcb/rev3e/design/models/J1-EVERCOM-5301-8P8C-envelope.step": "03a28148c84beaf004460aaef33205c5a1f4e89be26e73916ac617c809b33539",
+    "pcb/rev3e/design/models/RJ45_EVERCOM_5301-8P8C-RevA-drawing-detail.step": "2dd0fad1b3f731095d418325b7213b68477a9fc6b63a950a9d7fed368039e809",
+    "pcb/rev3e/design/models/Socket_1x07_P2.54mm_HCTL_PM254.step": "ffc7112aad0ee3b6457b50cc4adc58366581d3a5c1c4cf1c174850ba5db299ec",
+    "pcb/rev3e/design/models/Socket_HCTL_PM254-1-07-Z-8.5-drawing-detail.step": "4567f7426543c3946b75e5153f8eed87556cc254caa2858d83bfffe307479394",
+    "pcb/rev3e/design/models/U.FL_Hirose_U.FL-R-SMT-1_Vertical-kicad-9.0.9.step": "bb861ac13b1fa3709690e81d82a64544b02d4420ea410f7334fc7a4b57f8e71a",
+    "pcb/rev3e/design/models/VQFN-10_L2.0-W2.0-P0.45-TL.step": "0025f1dedc381f5f41c45293bb158eed1acdcfda3c3bba5184aa83503f3e1576",
+    "pcb/rev3e/design/models/XIAO_ESP32C3_v1.3_vendor_pcb_visual_reference.step": "8ba2b9fd52c2a292f9fb0f3c2214738c83b830287490eef49d0962ddfbd56c80"
+  },
+  "source_reference_commit": "c89435367d6d32aac23be7610cbfe3ad9f6273dc"
+}
