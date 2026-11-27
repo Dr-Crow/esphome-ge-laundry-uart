@@ -2,3 +2,5 @@ pillow==13.0.0
 numpy
 trimesh==5.2.2
 rtree
+gerbonara==1.6.3
+CairoSVG==2.9.1

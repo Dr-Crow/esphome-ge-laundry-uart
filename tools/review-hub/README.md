@@ -40,12 +40,17 @@ tools/review-hub/
 
 Docker (the build runs the pinned image `kicad/kicad:9.0.9@sha256:e638b79b...` with `--platform linux/amd64`),
 Node 18+, `rsvg-convert` (librsvg) and Python 3.10+ (`uv` is used if present). That is all. On first run the build
-creates `build/.venv` (Pillow, numpy, trimesh) and runs `npm ci` in `build/` by itself; the first case build creates
+creates `build/.venv` (Pillow, numpy, trimesh, Gerbonara and CairoSVG) and runs `npm ci` in `build/` by itself; the first case build creates
 `build/.venv-cad` (build123d 0.11.1) the same way. The first build also downloads KiCad's 3D model library
 (`--fetch-models`, done by `pages.sh` automatically) and queries JLCPCB's public parts search for each LCSC code,
 caching every answer under `build/cache/`. PrusaSlicer is optional: without it the Case view has no print estimates.
 
 Nothing in the repository is modified by a build: the repo is mounted read-only into the container.
+
+The 3K, 3L and 3M silkscreen previews use the revision’s reviewed `evidence/silkscreen/top.png` and `bottom.png`.
+The rear preview is viewed from below. Explorer registers both transparent legend layers in the top-view coordinate
+system using the final manufacturing Gerbers and the Edge.Cuts raster dimensions. If you already have a build
+environment, update it with `uv pip install --python build/.venv/bin/python -r build/requirements.txt`.
 
 ## Build
 

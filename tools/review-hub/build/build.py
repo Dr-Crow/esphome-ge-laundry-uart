@@ -735,8 +735,9 @@ def build_index(revs):
             'id': rid, 'label': r['label'], 'status': r['status'], 'date': r['date'], 'date_basis': r.get('date_basis'),
             'summary': r['summary'], 'commit': commit,
             **({'source_url': r['source_url']} if r.get('source_url') else {}),
+            **({'silkscreen_review': True} if r.get('silkscreen_review') else {}),
             **({'asset_revision': hashlib.sha256((REPO / r['pcb']).read_bytes()).hexdigest()[:12]}
-               if rid in ('rev3l', 'rev3m') else {}),
+               if rid in ('rev3k', 'rev3l', 'rev3m') else {}),
             'commit_basis': 'last commit touching the revision design/ folder',
             'layers': board['copper_layers'].__len__(), 'size_mm': size_mm,
             'thickness_mm': board['thickness_mm'], 'parts_total': len(parts), 'parts_assembled': sum(1 for p in parts if p['assembled']),
@@ -759,7 +760,11 @@ def do_rev(rev, args):
     write_board_json(rev, ex, info, lm)
     stage_parts(rev, ex, info, force)
     stage_sch(rev, force)
-    stage_renders(rev, ex, force)
+    if REVS[rev].get('silkscreen_review'):
+        import compact_silkscreen
+        compact_silkscreen.stage((REPO / REVS[rev]['pcb']).parent.parent, DATA / rev, ex['bbox_mm'])
+    else:
+        stage_renders(rev, ex, force)
     log(rev, f'done in {time.time() - t0:.0f}s: {info["matched_footprints"]} glb footprints, max resid {info["max_abs_dx_mm"]:.4f}/{info["max_abs_dz_mm"]:.4f} mm, '
              f'glb {info["size_bytes"] / 1e6:.2f} MB, png shift {lm["alignment"]["max_abs_shift_px"]} px')
     return info
