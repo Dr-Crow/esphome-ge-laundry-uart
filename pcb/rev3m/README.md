@@ -1,5 +1,7 @@
 # GE Appliance Adapter Rev 3M · 59.944 × 27.432 mm
 
+[Prioritized fixes, exact checks and remaining first-article tests](../COMPACT-FIX-REGISTER.md)
+
 [Silkscreen review and scannable underside preview](evidence/silkscreen/README.md)
 **Fully routed engineering prototype for review. Physical verification and factory acceptance are open.** Start with [the editable KiCad project](design/GEA-Adapter-Rev3M.kicad_pro), [top assembly map](evidence/top-assembly-map.svg) and [printed case](case/).
  
@@ -23,7 +25,7 @@ There are 24 fitted bodies within JLC's 2.5 mm body-to-edge guideline. J1 intent
 
 ## Use and validation
 
-Disconnect the appliance cable before connecting USB. The closed case covers the USB port. D11 blocks reverse flow into the buck, but the inserted XIAO connects header 5 V to USB VBUS. The assembly has a shared ground and no verified simultaneous-source protection. Keep any appliance-facing work isolated from host USB and confirm interface voltage and pinout on an isolated test fixture. Do not bypass the input protection.
+Disconnect the appliance cable before connecting USB. Opening JP3 disconnects the buck feed. J1 data can still energize the module-side 5 V through U11 and through signal pull-ups. The closed case covers the USB port. D11 blocks reverse flow into the buck, but the inserted XIAO connects header 5 V to USB VBUS. The assembly has a shared ground and no verified simultaneous-source protection. Keep any appliance-facing work isolated from host USB and confirm interface voltage and pinout on an isolated test fixture. Do not bypass the input protection.
 
 Verify startup on each input, pin-1 priority and handover, overload/thermal behavior, clamps, GEA2/GEA3 communication and reset-time traffic on both module variants. Confirm XIAO socket height, RF operation, latched RJ45 and both printed lids with physical samples. These checks and a supplier assembly review remain open. There was no powered testing or vendor quote for this revision.
 
