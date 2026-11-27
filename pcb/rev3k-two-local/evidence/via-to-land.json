@@ -1,0 +1,199 @@
+{
+  "columns": [
+    "annulus_to_land_mm",
+    "drill_to_land_mm",
+    "ref",
+    "pad",
+    "via_net",
+    "pad_net",
+    "via_x",
+    "via_y"
+  ],
+  "scope": "Every through via against every surface pad on both outer copper layers, including connectors with surface lands, bare probes and same-net pairs. Via centers are measured to the native copper pad polygons with 0.0005 mm outward polygon approximation, then annulus and drill radii are subtracted. Positive values give copper and bore clearance.",
+  "results": {
+    "3K": {
+      "through_vias": 192,
+      "global_min": [
+        0.08895,
+        0.21395,
+        "R19",
+        "2",
+        "+5V",
+        "+5V",
+        32.7,
+        18.24
+      ],
+      "below_0p105": [
+        [
+          0.08895,
+          0.21395,
+          "R19",
+          "2",
+          "+5V",
+          "+5V",
+          32.7,
+          18.24
+        ],
+        [
+          0.08952,
+          0.19952,
+          "R17",
+          "1",
+          "Net-(R13-Pad2)",
+          "Net-(R13-Pad2)",
+          40.32,
+          29.52
+        ],
+        [
+          0.09497,
+          0.21997,
+          "C7",
+          "1",
+          "+5V",
+          "+5V",
+          50.88,
+          25.68
+        ],
+        [
+          0.10231,
+          0.21231,
+          "C14",
+          "2",
+          "+3V3",
+          "+3V3",
+          47.106633,
+          11.426654
+        ]
+      ],
+      "near_changed_refs": {
+        "R33": [
+          0.175,
+          0.325,
+          "R33",
+          "2",
+          "GND",
+          "GND",
+          27.52,
+          8.8
+        ],
+        "R18": [
+          0.21039,
+          0.33539,
+          "R18",
+          "1",
+          "Net-(D9-K2)",
+          "Net-(D9-K2)",
+          29.28,
+          8.88
+        ]
+      }
+    },
+    "3K-C2": {
+      "through_vias": 193,
+      "global_min": [
+        0.08895,
+        0.21395,
+        "R19",
+        "2",
+        "+5V",
+        "+5V",
+        32.7,
+        18.24
+      ],
+      "below_0p105": [
+        [
+          0.08895,
+          0.21395,
+          "R19",
+          "2",
+          "+5V",
+          "+5V",
+          32.7,
+          18.24
+        ],
+        [
+          0.08952,
+          0.19952,
+          "R17",
+          "1",
+          "Net-(R13-Pad2)",
+          "Net-(R13-Pad2)",
+          40.32,
+          29.52
+        ],
+        [
+          0.09497,
+          0.21997,
+          "C7",
+          "1",
+          "+5V",
+          "+5V",
+          50.88,
+          25.68
+        ],
+        [
+          0.10231,
+          0.21231,
+          "C14",
+          "2",
+          "+3V3",
+          "+3V3",
+          47.106633,
+          11.426654
+        ],
+        [
+          0.10312,
+          0.23312,
+          "U11",
+          "3",
+          "GEA_FullRx",
+          "GEA_FullRx",
+          23.3,
+          7.3
+        ]
+      ],
+      "near_changed_refs": {
+        "C32": [
+          0.3,
+          0.45,
+          "C32",
+          "2",
+          "GND",
+          "GND",
+          30.0,
+          9.75
+        ],
+        "C31": [
+          0.315,
+          0.44,
+          "C31",
+          "2",
+          "BOOT",
+          "GND",
+          25.86,
+          7.26
+        ],
+        "R33": [
+          0.2225,
+          0.4225,
+          "R33",
+          "2",
+          "GND",
+          "GND",
+          29.4025,
+          6.0125
+        ],
+        "R18": [
+          0.2775,
+          0.4075,
+          "R18",
+          "2",
+          "Net-(D9-K2)",
+          "GND",
+          24.7,
+          23.6
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "3K": {
+    "top/copper": 1629,
+    "top/mask": 231,
+    "top/silk": 544,
+    "top/paste": 178,
+    "bottom/copper": 955,
+    "bottom/mask": 42,
+    "bottom/silk": 1780,
+    "bottom/paste": 0,
+    "inner_2/copper": 837,
+    "inner_1/copper": 345,
+    "mechanical/outline": 4,
+    "drilled_plated": 225,
+    "drilled_nonplated": 4
+  },
+  "3K-C2": {
+    "top/copper": 1654,
+    "top/mask": 235,
+    "top/silk": 548,
+    "top/paste": 182,
+    "bottom/copper": 913,
+    "bottom/mask": 42,
+    "bottom/silk": 1787,
+    "bottom/paste": 0,
+    "inner_2/copper": 835,
+    "inner_1/copper": 358,
+    "mechanical/outline": 4,
+    "drilled_plated": 226,
+    "drilled_nonplated": 4
+  }
+}

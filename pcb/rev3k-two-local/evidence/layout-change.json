@@ -1,0 +1,74 @@
+{
+  "new_references": [
+    "C31",
+    "C32"
+  ],
+  "relocated_existing_refs": [
+    "R18",
+    "R33"
+  ],
+  "same_probe_lands_both_boards": 18,
+  "all_ILIM_trace_and_via_UUIDs_preserved": true,
+  "local_bypass": [
+    {
+      "cap": "C31",
+      "eFuse": "U9",
+      "positive_land_xy": [
+        28.725,
+        8.75
+      ],
+      "efuse_output_land_xy": [
+        27.7525,
+        5.0125
+      ],
+      "nominal_rectangular_pad_edge_gap_mm": 1.656,
+      "cap_ground_land_xy": [
+        25.775,
+        8.75
+      ],
+      "cap_ground_via_xy": [
+        24.68,
+        7.33
+      ],
+      "efuse_ground_land_xy": [
+        28.4125,
+        5.2425
+      ],
+      "existing_efuse_ground_via_xy": [
+        29.4025,
+        6.0125
+      ],
+      "ground_via_center_separation_mm": 4.903
+    },
+    {
+      "cap": "C32",
+      "eFuse": "U10",
+      "positive_land_xy": [
+        26.775,
+        11.25
+      ],
+      "efuse_output_land_xy": [
+        27.7525,
+        14.0125
+      ],
+      "nominal_rectangular_pad_edge_gap_mm": 0.709,
+      "cap_ground_land_xy": [
+        29.725,
+        11.25
+      ],
+      "cap_ground_via_xy": [
+        30,
+        9.75
+      ],
+      "efuse_ground_land_xy": [
+        28.4125,
+        14.2425
+      ],
+      "existing_efuse_ground_via_xy": [
+        29.36,
+        16.24
+      ],
+      "ground_via_center_separation_mm": 6.521
+    }
+  ]
+}
