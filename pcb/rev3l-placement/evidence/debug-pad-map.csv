@@ -1,33 +1,33 @@
 reference,pad,net,x_mm,y_mm,footprint_side,exposed_copper_faces,pad_type
-J7,1,GND,21.277501,9.71,F.Cu,F.Cu/B.Cu,plated hole
-J7,2,Net-(J7-Pin_2),21.277501,7.17,F.Cu,F.Cu/B.Cu,plated hole
-J7,3,Net-(J7-Pin_3),21.277501,4.63,F.Cu,F.Cu/B.Cu,plated hole
-J7,4,Net-(J7-Pin_4),21.277501,2.09,F.Cu,F.Cu/B.Cu,plated hole
-JP1,1,/GEA2_MCU_TX,36.3,6.85,F.Cu,F.Cu,surface
-JP1,2,GEA2_TX,37.6,6.85,F.Cu,F.Cu,surface
-JP1,3,BOOT,38.9,6.85,F.Cu,F.Cu,surface
-JP2,1,/GEA3_TX_D6,20.45,12.7,F.Cu,F.Cu,surface
-JP2,2,GEA3_RX,20.45,14.0,F.Cu,F.Cu,surface
-JP2,3,/GEA3_TX_D4,20.45,15.3,F.Cu,F.Cu,surface
-JP3,1,/D11_K,38.47,24.45,F.Cu,F.Cu/B.Cu,plated hole
-JP3,2,+5V,35.93,24.45,F.Cu,F.Cu/B.Cu,plated hole
-JP4,1,Net-(JP4-A),11.25,1.15,B.Cu,B.Cu,surface
-JP4,2,Net-(JP4-B),13.05,1.15,B.Cu,B.Cu,surface
-TP1,1,+5V,30.0,28.25,F.Cu,F.Cu,surface
-TP10,1,/PIN1_ILM,9.15,28.75,B.Cu,B.Cu,surface
-TP11,1,/PIN3_ILM,12.75,28.75,B.Cu,B.Cu,surface
-TP12,1,/BUCK_5V,14.75,21.75,F.Cu,F.Cu,surface
-TP13,1,/AUXOFF1,19.95,28.75,B.Cu,B.Cu,surface
-TP14,1,/PIN3_OV,23.55,28.75,B.Cu,B.Cu,surface
-TP15,1,GND,27.15,28.35,B.Cu,F.Cu/B.Cu,plated hole
-TP16,1,GND,20.25,22.75,F.Cu,F.Cu,surface
-TP17,1,/PIN1_FLT_N,34.35,28.75,B.Cu,B.Cu,surface
-TP18,1,/PIN3_FLT_N,40.35,28.75,B.Cu,B.Cu,surface
-TP2,1,+3V3,15.0,28.25,F.Cu,F.Cu,surface
-TP3,1,/V_INPUT,27.5,9.5,F.Cu,F.Cu,surface
-TP4,1,Net-(D9-K2),43.95,8.35,B.Cu,F.Cu/B.Cu,plated hole
-TP5,1,Net-(JP4-B),24.75,9.95,B.Cu,F.Cu/B.Cu,plated hole
-TP6,1,Net-(R21-Pad1),48.35,15.55,B.Cu,F.Cu/B.Cu,plated hole
-TP7,1,GND,48.35,12.35,B.Cu,F.Cu/B.Cu,plated hole
-TP8,1,VDC,33.55,25.55,B.Cu,B.Cu,surface
-TP9,1,/ALT_PWR,37.95,26.75,B.Cu,B.Cu,surface
+J7,1,GND,37.571895,10.409707,F.Cu,F.Cu/B.Cu,plated hole
+J7,2,Net-(J7-Pin_2),37.571895,7.869707,F.Cu,F.Cu/B.Cu,plated hole
+J7,3,Net-(J7-Pin_3),37.571895,5.329707,F.Cu,F.Cu/B.Cu,plated hole
+J7,4,Net-(J7-Pin_4),37.571895,2.789707,F.Cu,F.Cu/B.Cu,plated hole
+JP1,1,/GEA2_MCU_TX,40.072611,26.291,F.Cu,F.Cu,surface
+JP1,2,GEA2_TX,41.372611,26.291,F.Cu,F.Cu,surface
+JP1,3,BOOT,42.672611,26.291,F.Cu,F.Cu,surface
+JP2,1,/GEA3_TX_D6,45.517687,23.776,F.Cu,F.Cu,surface
+JP2,2,GEA3_RX,44.217687,23.776,F.Cu,F.Cu,surface
+JP2,3,/GEA3_TX_D4,42.917687,23.776,F.Cu,F.Cu,surface
+JP3,1,/D11_K,35.730121,28.12541,F.Cu,F.Cu/B.Cu,plated hole
+JP3,2,+5V,33.190121,28.12541,F.Cu,F.Cu/B.Cu,plated hole
+JP4,1,Net-(JP4-A),34.201324,22.969709,B.Cu,B.Cu,surface
+JP4,2,Net-(JP4-B),36.001324,22.969709,B.Cu,B.Cu,surface
+TP1,1,+5V,53.320461,28.06018,F.Cu,F.Cu,surface
+TP10,1,/PIN1_ILM,33.225193,2.94375,F.Cu,F.Cu,surface
+TP11,1,/PIN3_ILM,32.928375,17.94015,F.Cu,F.Cu,surface
+TP12,1,/BUCK_5V,1.077697,23.345387,F.Cu,F.Cu,surface
+TP13,1,/AUXOFF1,31.207663,2.9425,F.Cu,F.Cu,surface
+TP14,1,/PIN3_OV,30.897648,10.821256,B.Cu,B.Cu,surface
+TP15,1,GND,39.84099,18.686009,F.Cu,F.Cu/B.Cu,plated hole
+TP16,1,GND,1.959885,21.533773,F.Cu,F.Cu,surface
+TP17,1,/PIN1_FLT_N,30.892143,4.958125,F.Cu,F.Cu,surface
+TP18,1,/PIN3_FLT_N,21.736,18.3485,B.Cu,B.Cu,surface
+TP2,1,+3V3,56.441354,28.458238,F.Cu,F.Cu,surface
+TP3,1,/V_INPUT,19.752438,19.395162,F.Cu,F.Cu,surface
+TP4,1,Net-(D9-K2),34.783819,25.425774,F.Cu,F.Cu/B.Cu,plated hole
+TP5,1,Net-(JP4-B),39.906354,23.370441,F.Cu,F.Cu/B.Cu,plated hole
+TP6,1,Net-(R21-Pad1),45.863874,28.150636,F.Cu,F.Cu/B.Cu,plated hole
+TP7,1,GND,50.30888,28.225497,F.Cu,F.Cu/B.Cu,plated hole
+TP8,1,VDC,3.977287,1.142188,F.Cu,F.Cu,surface
+TP9,1,/ALT_PWR,2.024286,2.49375,F.Cu,F.Cu,surface

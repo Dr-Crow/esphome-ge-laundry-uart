@@ -22,7 +22,7 @@ def module(s):
 def point(x,y):
     return [x-34.28335,31.70-y]
 seat=3.65
-posts=[(3.75,3.85),(61.35,3.85)]
+posts=[(3.733584, 3.20126), (60.779357, 3.24403)]
 base=box(-2.4,69.8,-5,33,-1.4,0)+shell(-.1,6.8)
 # Three discontinuous tongues keep insertion tolerant. Bumps pressure the lid locally.
 for x0,x1 in [(4,17),(50,63)]:
@@ -38,7 +38,7 @@ for x,y in posts:carrier-=cyl(x,y,1.6,seat-.1,seat+1.7)
 assert vol(base & carrier)<1e-5
 save(base,'common-base')
 checks={'pcb_mm':[65,30,1.6],'assembled_outer_mm':[72.2,38,31.9],'floor_to_pcb_underside_mm':seat,'board_to_base_mm3':vol(carrier & base),'stack_assumption_mm':11,'case_frame':'x=PCB x, y=30 - PCB y, PCB underside z=3.65','posts_xy':posts,'c3_ufl_xy':point(78.873,12.9175)}
-led=[('D4',41.1,30-5.58),('D5',36.3,30-9.98),('D6',5.92,30-21.7)]
+led=[('D4', 50.176199, 6.549078), ('D5', 53.020803, 7.174744), ('D6', 57.164219, 7.588558)]
 fpc=box(4.5,44.5,-2.95,-1.15,8.,28.)
 # Side-mounted FPC leaves the roof leaves free. Feed exits the upper half near the right end.
 # Radius 5 mm elbow leading from antenna toward socket; z fixed above regulator.
@@ -53,13 +53,8 @@ for a,c in zip(path,path[1:]):
     seg=b.Solid.make_cylinder(1.0,v.length,b.Plane(origin=a,z_dir=v))
     tube=seg if tube is None else tube+seg
 for name,x,y in led:
-    # Offset the D4 outlet past the C3 BOOT leaf. The lower inlet still registers on D4.
-    oy=y+3.2 if name=='D4' else y
-    if oy!=y:
-        guide=b.loft([b.Pos(x,y,14.)*b.Circle(.88),b.Pos(x,oy,18.8)*b.Circle(.88)])
-        pipe=cyl(x,y,.88,6.9,14.02)+guide+cyl(x,oy,.88,18.78,30.52)
-    else:
-        pipe=cyl(x,y,.88,6.9,30.52)
+    oy=y
+    pipe=cyl(x,y,.88,6.9,30.52)
     pipe+=cyl(x,oy,1.18,27.95,28.5)
     save(pipe,'lightpipe-'+name)
 for m in ['c3','c6']:
@@ -76,7 +71,7 @@ for m in ['c3','c6']:
         lid+=cyl(x,y,2.0,5.62,28.6)-cyl(x,y,1.53,5.61,8.3)
     for name in ['BOOT','RESET']:
         lid-=module(e.flexure_void(m,name));lid+=module(e.flexure(m,name));lid+=module(e.button_stop(m,name))
-    for ref,x,y in led:lid-=cyl(x,y+(3.2 if ref=='D4' else 0),.99,28.35,30.65)
+    for ref,x,y in led:lid-=cyl(x,y,.99,28.35,30.65)
     if m=='c3':
         # Short upper/lower side-wall rails at both ends. Open installation face.
         for x0,x1 in [(18.0,20.4),(42.2,44.8)]:

@@ -1,15 +1,15 @@
 {
-  "method": "Vertical 2 mm diameter cylinder about the pad center, carrier removed from case. Distances are to XY body envelopes, not a measured access test. Both official partial STEP assemblies were loaded with Open CASCADE and their bounds transformed by the native J5 model placement. Cables, fingers, solder, module production tolerances and enclosure are excluded.",
+  "method": "Vertical 2 mm probe with the board removed from its enclosure. Distances use translated fitted-body envelopes and registered C3/C6 STEP XY envelopes. Ignores tip taper, cable and fingers. Verify by hand.",
   "module_xy_bounds_mm": {
     "C3": [
       43.19265,
-      1.6925000000000008,
+      1.6925,
       65.48065,
       20.7425
     ],
     "C6": [
       43.19265,
-      1.6925000000000008,
+      1.6925,
       65.51535,
       20.7425
     ]
@@ -18,107 +18,272 @@
     "TP1": {
       "net": "+5V",
       "xy_mm": [
-        30.0,
-        28.25
+        53.320461,
+        28.06018
       ],
-      "fitted_body_nearest_mm": 2.371,
-      "nearest_fitted_ref": "C17",
-      "probe_cylinder_diameter_assumed_mm": 2.0,
+      "fitted_body_nearest_mm": 1.793,
+      "nearest_fitted_ref": "R6",
       "module_edge_distance_mm": {
-        "C3": 15.179,
-        "C6": 15.179
+        "C3": 7.318,
+        "C6": 7.318
       },
+      "probe_cylinder_diameter_assumed_mm": 2,
       "straight_2mm_probe_approach_clear_in_plan": true
     },
-    "TP2": {
-      "net": "+3V3",
+    "TP10": {
+      "net": "/PIN1_ILM",
       "xy_mm": [
-        15.0,
-        28.25
+        33.225193,
+        2.94375
       ],
-      "fitted_body_nearest_mm": 2.01,
-      "nearest_fitted_ref": "U8",
-      "probe_cylinder_diameter_assumed_mm": 2.0,
+      "fitted_body_nearest_mm": 1.343,
+      "nearest_fitted_ref": "R23",
       "module_edge_distance_mm": {
-        "C3": 29.175,
-        "C6": 29.175
+        "C3": 9.967,
+        "C6": 9.967
       },
+      "probe_cylinder_diameter_assumed_mm": 2,
       "straight_2mm_probe_approach_clear_in_plan": true
     },
-    "TP3": {
-      "net": "/V_INPUT",
+    "TP11": {
+      "net": "/PIN3_ILM",
       "xy_mm": [
-        27.5,
-        9.5
+        32.928375,
+        17.94015
       ],
-      "fitted_body_nearest_mm": 2.265,
-      "nearest_fitted_ref": "U10",
-      "probe_cylinder_diameter_assumed_mm": 2.0,
+      "fitted_body_nearest_mm": 1.616,
+      "nearest_fitted_ref": "R11",
       "module_edge_distance_mm": {
-        "C3": 15.693,
-        "C6": 15.693
+        "C3": 10.264,
+        "C6": 10.264
       },
+      "probe_cylinder_diameter_assumed_mm": 2,
       "straight_2mm_probe_approach_clear_in_plan": true
     },
     "TP12": {
       "net": "/BUCK_5V",
       "xy_mm": [
-        14.75,
-        21.75
+        1.077697,
+        23.345387
       ],
-      "fitted_body_nearest_mm": 1.49,
-      "nearest_fitted_ref": "U8",
-      "probe_cylinder_diameter_assumed_mm": 2.0,
+      "fitted_body_nearest_mm": 3.383,
+      "nearest_fitted_ref": "J1",
       "module_edge_distance_mm": {
-        "C3": 28.46,
-        "C6": 28.46
+        "C3": 42.195,
+        "C6": 42.195
       },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP13": {
+      "net": "/AUXOFF1",
+      "xy_mm": [
+        31.207663,
+        2.9425
+      ],
+      "fitted_body_nearest_mm": 1.644,
+      "nearest_fitted_ref": "R34",
+      "module_edge_distance_mm": {
+        "C3": 11.985,
+        "C6": 11.985
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP14": {
+      "net": "/PIN3_OV",
+      "xy_mm": [
+        30.897648,
+        10.821256
+      ],
+      "fitted_body_nearest_mm": 1.318,
+      "nearest_fitted_ref": "D9",
+      "module_edge_distance_mm": {
+        "C3": 12.295,
+        "C6": 12.295
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
       "straight_2mm_probe_approach_clear_in_plan": true
     },
     "TP15": {
       "net": "GND",
       "xy_mm": [
-        27.15,
-        28.35
+        39.84099,
+        18.686009
       ],
-      "fitted_body_nearest_mm": 2.46,
-      "nearest_fitted_ref": "C16",
-      "probe_cylinder_diameter_assumed_mm": 2.0,
+      "fitted_body_nearest_mm": 1.542,
+      "nearest_fitted_ref": "R24",
       "module_edge_distance_mm": {
-        "C3": 17.755,
-        "C6": 17.755
+        "C3": 3.352,
+        "C6": 3.352
       },
+      "probe_cylinder_diameter_assumed_mm": 2,
       "straight_2mm_probe_approach_clear_in_plan": true
     },
     "TP16": {
       "net": "GND",
       "xy_mm": [
-        20.25,
-        22.75
+        1.959885,
+        21.533773
       ],
-      "fitted_body_nearest_mm": 1.44,
-      "nearest_fitted_ref": "L1",
-      "probe_cylinder_diameter_assumed_mm": 2.0,
+      "fitted_body_nearest_mm": 1.571,
+      "nearest_fitted_ref": "J1",
       "module_edge_distance_mm": {
-        "C3": 23.03,
-        "C6": 23.03
+        "C3": 41.24,
+        "C6": 41.24
       },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP17": {
+      "net": "/PIN1_FLT_N",
+      "xy_mm": [
+        30.892143,
+        4.958125
+      ],
+      "fitted_body_nearest_mm": 1.565,
+      "nearest_fitted_ref": "R34",
+      "module_edge_distance_mm": {
+        "C3": 12.301,
+        "C6": 12.301
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP18": {
+      "net": "/PIN3_FLT_N",
+      "xy_mm": [
+        21.736,
+        18.3485
+      ],
+      "fitted_body_nearest_mm": 0.711,
+      "nearest_fitted_ref": "R16",
+      "module_edge_distance_mm": {
+        "C3": 21.457,
+        "C6": 21.457
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": false
+    },
+    "TP2": {
+      "net": "+3V3",
+      "xy_mm": [
+        56.441354,
+        28.458238
+      ],
+      "fitted_body_nearest_mm": 2.191,
+      "nearest_fitted_ref": "R7",
+      "module_edge_distance_mm": {
+        "C3": 7.716,
+        "C6": 7.716
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP3": {
+      "net": "/V_INPUT",
+      "xy_mm": [
+        19.752438,
+        19.395162
+      ],
+      "fitted_body_nearest_mm": 2.082,
+      "nearest_fitted_ref": "J1",
+      "module_edge_distance_mm": {
+        "C3": 23.44,
+        "C6": 23.44
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP4": {
+      "net": "Net-(D9-K2)",
+      "xy_mm": [
+        34.783819,
+        25.425774
+      ],
+      "fitted_body_nearest_mm": 1.79,
+      "nearest_fitted_ref": "R15",
+      "module_edge_distance_mm": {
+        "C3": 9.625,
+        "C6": 9.625
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP5": {
+      "net": "Net-(JP4-B)",
+      "xy_mm": [
+        39.906354,
+        23.370441
+      ],
+      "fitted_body_nearest_mm": 1.793,
+      "nearest_fitted_ref": "R24",
+      "module_edge_distance_mm": {
+        "C3": 4.208,
+        "C6": 4.208
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP6": {
+      "net": "Net-(R21-Pad1)",
+      "xy_mm": [
+        45.863874,
+        28.150636
+      ],
+      "fitted_body_nearest_mm": 1.798,
+      "nearest_fitted_ref": "C5",
+      "module_edge_distance_mm": {
+        "C3": 7.408,
+        "C6": 7.408
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
       "straight_2mm_probe_approach_clear_in_plan": true
     },
     "TP7": {
       "net": "GND",
       "xy_mm": [
-        48.35,
-        12.35
+        50.30888,
+        28.225497
       ],
-      "fitted_body_nearest_mm": 5.162,
-      "nearest_fitted_ref": "J6",
-      "probe_cylinder_diameter_assumed_mm": 2.0,
+      "fitted_body_nearest_mm": 2.205,
+      "nearest_fitted_ref": "C11",
       "module_edge_distance_mm": {
-        "C3": 0.0,
-        "C6": 0.0
+        "C3": 7.483,
+        "C6": 7.483
       },
-      "straight_2mm_probe_approach_clear_in_plan": false
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP8": {
+      "net": "VDC",
+      "xy_mm": [
+        3.977287,
+        1.142188
+      ],
+      "fitted_body_nearest_mm": 3.62,
+      "nearest_fitted_ref": "J1",
+      "module_edge_distance_mm": {
+        "C3": 39.219,
+        "C6": 39.219
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
+    },
+    "TP9": {
+      "net": "/ALT_PWR",
+      "xy_mm": [
+        2.024286,
+        2.49375
+      ],
+      "fitted_body_nearest_mm": 2.269,
+      "nearest_fitted_ref": "J1",
+      "module_edge_distance_mm": {
+        "C3": 41.168,
+        "C6": 41.168
+      },
+      "probe_cylinder_diameter_assumed_mm": 2,
+      "straight_2mm_probe_approach_clear_in_plan": true
     }
   }
 }
