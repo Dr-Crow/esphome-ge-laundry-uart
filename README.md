@@ -5,6 +5,8 @@ Local Home Assistant control and monitoring for compatible GE appliances through
 > [!WARNING]
 > The appliance uses an 8P8C modular connector that looks like Ethernet, but it is **not Ethernet**. Do not connect it to network equipment.
 
+**Scanned a Rev 3K, 3L or 3M board?** Match the revision printed on the carrier and the C3 or C6 marking on the XIAO. Unplug the appliance cable before attaching USB. The compact boards are review prototypes. [Open the compact firmware and service guide](firmware/shared-rev3c/README.md)
+
 ![Assembled Rev 2-era adapter](pcb/rev2.0/images/assembled-board.jpg)
 
 The project began as an effort to integrate a GE washer and dryer with Home Assistant. An ESP32 powered by the appliance communication port reports information such as remaining time and cycle completion through ESPHome. Early work involved researching the GEA2 and GEA3 protocols and the U+ Connect module; later, [GE Appliances](https://github.com/geappliances) and [FirstBuild](https://firstbuild.com/inventions/home-assistant-adapter/) published additional hardware and protocol information. The maintained ESPHome implementation now lives in [mguaylam/esphome-gea](https://github.com/mguaylam/esphome-gea), while this repository provides compatible hardware, reference configurations, manufacturing files, and enclosures.
@@ -13,7 +15,7 @@ The project began as an effort to integrate a GE washer and dryer with Home Assi
 
 ### I already have a board
 
-Follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 configuration, flash the board, connect it to Home Assistant, and check the status LEDs. The [Rev 2 enclosure](case/rev2/README.md) includes ready-to-print files.
+For Rev 2.x, follow the [firmware setup guide](firmware/README.md) to choose a GEA2 or GEA3 configuration, flash the board, connect it to Home Assistant, and check the status LEDs. The [Rev 2 enclosure](case/rev2/README.md) includes ready-to-print files.
 
 ### I want to review a new board
 

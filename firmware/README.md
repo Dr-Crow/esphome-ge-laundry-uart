@@ -1,5 +1,7 @@
 # Firmware profiles and board service
 
+**Scanned a Rev 3K, 3L or 3M board?** Match the revision printed on the carrier and the C3 or C6 marking on the XIAO. Unplug the appliance cable before attaching USB. The compact boards are review prototypes. [Open the compact firmware and service guide](shared-rev3c/README.md)
+
 Choose the profile family for the actual board. [Shared profiles](shared-rev3c/README.md) cover socketed Rev3C C3/C6 and the compatible soldered Rev3B C3 interface; [classic Rev1 profiles](rev1-classic/README.md) cover its distinct ESP32 wiring. The two root reference configurations cover Rev2.x and the compatible Rev3A C3 interface. The [per-board coverage review](BOARD-COVERAGE.md) proves these mappings separately from compilation. All eight profiles compiled in hosted jobs [69 at11826a7](https://circleci.com/gh/Dr-Crow/esphome-ge-laundry-uart/69) and [81 at8744a29](https://circleci.com/gh/Dr-Crow/esphome-ge-laundry-uart/81). The committed detailed binary-hash receipt remains bound to earlier2d5a42c; it is not relabeled as a later build. Runtime/appliance behavior remains untested.
 
 ## Rev2.x reference setup
