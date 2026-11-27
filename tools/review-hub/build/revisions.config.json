@@ -295,14 +295,30 @@
       "label": "Rev 3L",
       "pcb": "pcb/rev3l-placement/design/GEA-Adapter-Rev3L.kicad_pcb",
       "sch": "pcb/rev3l-placement/design/GEA-Adapter-Rev3L.kicad_sch",
-      "bom": "pcb/rev3k/manufacturing/BOM-GEA-Adapter-Rev3K.csv",
+      "bom": "pcb/rev3l-placement/manufacturing/BOM-GEA-Adapter-Rev3L.csv",
       "case": "rev3l-c3",
-      "status": "routing study",
+      "status": "routed prototype",
       "date": "2026-11-27",
-      "date_basis": "frozen routing repair and native review",
-      "summary": "65 × 30 mm routing study. Thirteen connections remain open, including both sides of debug LED D5. The dangling track was removed. ERC, schematic parity and other DRC findings are zero. Do not fabricate.",
+      "date_basis": "native routed design review",
+      "summary": "65 × 30 mm service prototype. All connections, including the debug LED, are routed. KiCad 9.0.9 reports zero DRC, schematic parity and ERC findings. The revised enclosure has straight guides for all three LEDs. Physical and factory checks remain open.",
       "readme": "pcb/rev3l-placement/README.md",
-      "documented_quotes": []
+      "documented_quotes": [],
+      "source_url": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/6a61a2e97d065b6a5ecd57a05c38eff250cbd5d6/pcb/rev3l-placement"
+    },
+    {
+      "id": "rev3m",
+      "label": "Rev 3M",
+      "pcb": "pcb/rev3m/design/GEA-Adapter-Rev3M.kicad_pcb",
+      "sch": "pcb/rev3m/design/GEA-Adapter-Rev3M.kicad_sch",
+      "bom": "pcb/rev3m/manufacturing/BOM-GEA-Adapter-Rev3M.csv",
+      "case": "rev3m-c3",
+      "status": "routed prototype",
+      "date": "2026-11-27",
+      "date_basis": "native routed design review",
+      "summary": "Compact prototype with 68 fitted parts and fixed D3/D6 interface choices. KiCad 9.0.9 reports zero open connections, DRC, parity and ERC findings. J7 and the 18 dedicated test points are omitted. Physical and factory checks remain open.",
+      "readme": "pcb/rev3m/README.md",
+      "documented_quotes": [],
+      "source_url": "https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/5978c63549c29466ae3ddc310ec588976903af15/pcb/rev3m"
     }
   ]
 }

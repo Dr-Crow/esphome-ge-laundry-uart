@@ -336,7 +336,7 @@
         "role": "lid",
         "color_hint": "#dbddd7",
         "print": null,
-        "bytes": 267764
+        "bytes": 269076
       },
       {
         "name": "D4 light guide",
@@ -344,7 +344,7 @@
         "role": "guide",
         "color_hint": "#a4d8d2",
         "print": null,
-        "bytes": 18690
+        "bytes": 11874
       },
       {
         "name": "D5 light guide",
@@ -352,7 +352,7 @@
         "role": "guide",
         "color_hint": "#a4d8d2",
         "print": null,
-        "bytes": 11873
+        "bytes": 11874
       },
       {
         "name": "D6 light guide",
@@ -360,7 +360,7 @@
         "role": "guide",
         "color_hint": "#a4d8d2",
         "print": null,
-        "bytes": 11873
+        "bytes": 11875
       }
     ],
     "board_asset": "rev3l/board.glb",
@@ -462,15 +462,15 @@
       "pcb/rev3l-placement/case/lightpipe-D5.stl",
       "pcb/rev3l-placement/case/lightpipe-D6.stl"
     ],
-    "status_note": "The shared base uses the C3 lid, printed BOOT/RESET springs and three LED guides. The 11 mm installed module stack is a modeling assumption. Physical fit and RF performance remain open.",
+    "status_note": "The shared base uses the C3 lid, integral printed BOOT/RESET springs and three straight LED guides. The 11 mm installed module stack is a modeling assumption. Check the closure, button travel and RF performance on a printed sample.",
     "compact_revision": "rev3l",
     "module_variant": "c3",
     "source_sha256": {
-      "common-base.stl": "8f46f07e89c4fe1027656c922bef9f9227c59dffb7811b5838b7f4215b0da8e5",
-      "closed-usb-lid-c3.stl": "9510b2d51a00fe3132f28a349fa1175336761155eae828e1af5f9f7777a7cfe4",
-      "lightpipe-D4.stl": "585f8655f1373fb53a2e80f14ab5931b59b8e3ead2100138f58b3a41531a78bb",
-      "lightpipe-D5.stl": "71413f27d50a1b1725bcc2b3b4ff2dc5cf9645de857b1089b766d6ff58fe8b01",
-      "lightpipe-D6.stl": "c340349c4332706a220db1429b11fcf80a7e2bf6c5c56e976f93a45548cbf475"
+      "common-base.stl": "9e4f7b9380d35c345f518feaa7f63f9973cdc9ae763feff6db553d59d6b7c489",
+      "closed-usb-lid-c3.stl": "9be97975387fdf347810bdd75fbdef26f87f8552a1fc8c3d885f2bca4117c156",
+      "lightpipe-D4.stl": "e504e348ae4f657a87f68897eb20ba6b1e13e13ebc76c4b30821d846e00ed9de",
+      "lightpipe-D5.stl": "800613aa5ad6da91e9ff3f68eaf0e70e1590034c399b8be270f9c5e97225551d",
+      "lightpipe-D6.stl": "5563f8e070539dddc0315cd9883c3188f3e1bbbe35c10989dbbd5751d7a6fe4f"
     }
   },
   {
@@ -502,7 +502,7 @@
         "role": "guide",
         "color_hint": "#a4d8d2",
         "print": null,
-        "bytes": 18690
+        "bytes": 11874
       },
       {
         "name": "D5 light guide",
@@ -510,7 +510,7 @@
         "role": "guide",
         "color_hint": "#a4d8d2",
         "print": null,
-        "bytes": 11873
+        "bytes": 11874
       },
       {
         "name": "D6 light guide",
@@ -518,7 +518,7 @@
         "role": "guide",
         "color_hint": "#a4d8d2",
         "print": null,
-        "bytes": 11873
+        "bytes": 11875
       }
     ],
     "board_asset": "cases/rev3l/board-c6.glb",
@@ -620,15 +620,331 @@
       "pcb/rev3l-placement/case/lightpipe-D5.stl",
       "pcb/rev3l-placement/case/lightpipe-D6.stl"
     ],
-    "status_note": "The shared base uses the C6 lid, printed BOOT/RESET springs and three LED guides. The 11 mm installed module stack is a modeling assumption. Physical fit and RF performance remain open.",
+    "status_note": "The shared base uses the C6 lid, integral printed BOOT/RESET springs and three straight LED guides. The 11 mm installed module stack is a modeling assumption. Check the closure, button travel and RF performance on a printed sample.",
     "compact_revision": "rev3l",
     "module_variant": "c6",
     "source_sha256": {
-      "common-base.stl": "8f46f07e89c4fe1027656c922bef9f9227c59dffb7811b5838b7f4215b0da8e5",
-      "closed-usb-lid-c6.stl": "ac7ac573520695e65ffc0c81071556ef2a123f27de2e13d440ac4ea2101a00cd",
-      "lightpipe-D4.stl": "585f8655f1373fb53a2e80f14ab5931b59b8e3ead2100138f58b3a41531a78bb",
-      "lightpipe-D5.stl": "71413f27d50a1b1725bcc2b3b4ff2dc5cf9645de857b1089b766d6ff58fe8b01",
-      "lightpipe-D6.stl": "c340349c4332706a220db1429b11fcf80a7e2bf6c5c56e976f93a45548cbf475"
+      "common-base.stl": "9e4f7b9380d35c345f518feaa7f63f9973cdc9ae763feff6db553d59d6b7c489",
+      "closed-usb-lid-c6.stl": "d2bf6e66d8b879c34e5a86eea44ed100a13c874da891dcac2ea447ad8886620a",
+      "lightpipe-D4.stl": "e504e348ae4f657a87f68897eb20ba6b1e13e13ebc76c4b30821d846e00ed9de",
+      "lightpipe-D5.stl": "800613aa5ad6da91e9ff3f68eaf0e70e1590034c399b8be270f9c5e97225551d",
+      "lightpipe-D6.stl": "5563f8e070539dddc0315cd9883c3188f3e1bbbe35c10989dbbd5751d7a6fe4f"
+    }
+  },
+  {
+    "id": "rev3m-c3",
+    "label": "Rev 3M · C3 enclosure",
+    "revisions": [
+      "rev3m"
+    ],
+    "parts": [
+      {
+        "name": "Common friction-fit base",
+        "file": "cases/rev3m/common-base.glb",
+        "role": "base",
+        "color_hint": "#384349",
+        "print": null,
+        "bytes": 17894
+      },
+      {
+        "name": "C3 lid with integral printed buttons",
+        "file": "cases/rev3m/closed-usb-lid-c3.glb",
+        "role": "lid",
+        "color_hint": "#dbddd7",
+        "print": null,
+        "bytes": 270262
+      },
+      {
+        "name": "D4 light guide",
+        "file": "cases/rev3m/lightpipe-D4.glb",
+        "role": "guide",
+        "color_hint": "#a4d8d2",
+        "print": null,
+        "bytes": 11874
+      },
+      {
+        "name": "D5 light guide",
+        "file": "cases/rev3m/lightpipe-D5.glb",
+        "role": "guide",
+        "color_hint": "#a4d8d2",
+        "print": null,
+        "bytes": 11873
+      },
+      {
+        "name": "D6 light guide",
+        "file": "cases/rev3m/lightpipe-D6.glb",
+        "role": "guide",
+        "color_hint": "#a4d8d2",
+        "print": null,
+        "bytes": 11873
+      }
+    ],
+    "board_asset": "rev3m/board.glb",
+    "preview": "cases/rev3m/preview-c3.png",
+    "board_placement": {
+      "verified": true,
+      "map": "Case x = PCB x, case y = 27.432 − PCB y. The PCB underside sits 3.65 mm above the floor datum. The two locating posts and three guide inlets register to the mounting holes and LED centres.",
+      "matrix_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -29.972
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -3.65
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          13.715999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_mm_by_revision": {
+        "rev3m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -29.972
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -3.65
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            13.715999999999998
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "matrix_determinant": 1,
+      "note": "CAD registration verified. Module seating, button travel, connector latch, guide optics and closure still require a printed dry fit."
+    },
+    "params": {
+      "pcb_mm": [
+        59.944,
+        27.432,
+        1.6
+      ],
+      "enclosure_exterior_mm": [
+        67.144,
+        35.432,
+        31.9
+      ],
+      "including_guide_tips_mm": [
+        67.144,
+        35.432,
+        31.92
+      ],
+      "printed_closure": "Friction-fit base and module-specific lid",
+      "module_stack_assumption_mm": 11,
+      "switch_centres_case_xy_mm": {
+        "BOOT": [
+          39.66065,
+          22.309502
+        ],
+        "RESET": [
+          39.66065,
+          13.419501999999998
+        ]
+      },
+      "modeled_C3_lead_length_mm": 28.31
+    },
+    "source_files": [
+      "pcb/rev3m/case/common-base.stl",
+      "pcb/rev3m/case/closed-usb-lid-c3.stl",
+      "pcb/rev3m/case/lightpipe-D4.stl",
+      "pcb/rev3m/case/lightpipe-D5.stl",
+      "pcb/rev3m/case/lightpipe-D6.stl"
+    ],
+    "status_note": "The shared base uses the C3 lid, integral printed BOOT/RESET springs and three straight LED guides. The 11 mm installed module stack is a modeling assumption. Check the closure, button travel and RF performance on a printed sample.",
+    "compact_revision": "rev3m",
+    "module_variant": "c3",
+    "source_sha256": {
+      "common-base.stl": "a4d95f1d88bba7bda6793cfe914ea0bc2de8d02bc7e1121004e207cd1b0903a4",
+      "closed-usb-lid-c3.stl": "54fb845f970653e9dcf1e780d34a58db951ecbca74e7f4484ed73952e5b014fd",
+      "lightpipe-D4.stl": "2e9fffba62adc4532b72934c3c70e6b89e7d554e1f0beada99de110780cdf1e4",
+      "lightpipe-D5.stl": "145e95e3215032c949157ec73e2ea0e362903f88ad88e9e7a9e274a33e5714be",
+      "lightpipe-D6.stl": "56ae267fa8aec349fd5333076ec91fe03b3ebfbf15cb96d84c7da8a655393f09"
+    }
+  },
+  {
+    "id": "rev3m-c6",
+    "label": "Rev 3M · C6 enclosure",
+    "revisions": [
+      "rev3m"
+    ],
+    "parts": [
+      {
+        "name": "Common friction-fit base",
+        "file": "cases/rev3m/common-base.glb",
+        "role": "base",
+        "color_hint": "#384349",
+        "print": null,
+        "bytes": 17894
+      },
+      {
+        "name": "C6 lid with integral printed buttons",
+        "file": "cases/rev3m/closed-usb-lid-c6.glb",
+        "role": "lid",
+        "color_hint": "#dbddd7",
+        "print": null,
+        "bytes": 269878
+      },
+      {
+        "name": "D4 light guide",
+        "file": "cases/rev3m/lightpipe-D4.glb",
+        "role": "guide",
+        "color_hint": "#a4d8d2",
+        "print": null,
+        "bytes": 11874
+      },
+      {
+        "name": "D5 light guide",
+        "file": "cases/rev3m/lightpipe-D5.glb",
+        "role": "guide",
+        "color_hint": "#a4d8d2",
+        "print": null,
+        "bytes": 11873
+      },
+      {
+        "name": "D6 light guide",
+        "file": "cases/rev3m/lightpipe-D6.glb",
+        "role": "guide",
+        "color_hint": "#a4d8d2",
+        "print": null,
+        "bytes": 11873
+      }
+    ],
+    "board_asset": "cases/rev3m/board-c6.glb",
+    "preview": "cases/rev3m/preview-c6.png",
+    "board_placement": {
+      "verified": true,
+      "map": "Case x = PCB x, case y = 27.432 − PCB y. The PCB underside sits 3.65 mm above the floor datum. The two locating posts and three guide inlets register to the mounting holes and LED centres.",
+      "matrix_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -29.972
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -3.65
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          13.715999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_mm_by_revision": {
+        "rev3m": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -29.972
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -3.65
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            13.715999999999998
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "matrix_determinant": 1,
+      "note": "CAD registration verified. Module seating, button travel, connector latch, guide optics and closure still require a printed dry fit."
+    },
+    "params": {
+      "pcb_mm": [
+        59.944,
+        27.432,
+        1.6
+      ],
+      "enclosure_exterior_mm": [
+        67.144,
+        35.432,
+        31.9
+      ],
+      "including_guide_tips_mm": [
+        67.144,
+        35.432,
+        31.92
+      ],
+      "printed_closure": "Friction-fit base and module-specific lid",
+      "module_stack_assumption_mm": 11,
+      "switch_centres_case_xy_mm": {
+        "BOOT": [
+          58.00894999999999,
+          11.289302
+        ],
+        "RESET": [
+          58.00894999999999,
+          24.446502
+        ]
+      },
+      "modeled_C6_ceramic_lid_clearance_mm": 9.45
+    },
+    "source_files": [
+      "pcb/rev3m/case/common-base.stl",
+      "pcb/rev3m/case/closed-usb-lid-c6.stl",
+      "pcb/rev3m/case/lightpipe-D4.stl",
+      "pcb/rev3m/case/lightpipe-D5.stl",
+      "pcb/rev3m/case/lightpipe-D6.stl"
+    ],
+    "status_note": "The shared base uses the C6 lid, integral printed BOOT/RESET springs and three straight LED guides. The 11 mm installed module stack is a modeling assumption. Check the closure, button travel and RF performance on a printed sample.",
+    "compact_revision": "rev3m",
+    "module_variant": "c6",
+    "source_sha256": {
+      "common-base.stl": "a4d95f1d88bba7bda6793cfe914ea0bc2de8d02bc7e1121004e207cd1b0903a4",
+      "closed-usb-lid-c6.stl": "098175fb126c82ae3366dfc4741e204d7b8dd218c2d62f7c6e3a4ab8116b3856",
+      "lightpipe-D4.stl": "2e9fffba62adc4532b72934c3c70e6b89e7d554e1f0beada99de110780cdf1e4",
+      "lightpipe-D5.stl": "145e95e3215032c949157ec73e2ea0e362903f88ad88e9e7a9e274a33e5714be",
+      "lightpipe-D6.stl": "56ae267fa8aec349fd5333076ec91fe03b3ebfbf15cb96d84c7da8a655393f09"
     }
   }
 ]

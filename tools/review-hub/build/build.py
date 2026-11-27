@@ -171,7 +171,7 @@ def stage_glb(rev, ex, force):
     outdir.mkdir(parents=True, exist_ok=True)
     final = outdir / 'board.glb'
     key = sha(pcb, HERE / 'optimize_glb.mjs', HERE / 'glbtools.py', PKG3D / 'MANIFEST.json', f'{cx},{cy}'.encode())
-    compact = rev in ('rev3i', 'rev3j', 'rev3k', 'rev3l')
+    compact = rev in ('rev3i', 'rev3j', 'rev3k', 'rev3l', 'rev3m')
     if compact:
         key = sha(key.encode(), HERE / 'compact_fitted.py', REPO / REVS[rev]['bom'])
     if not fresh(cdir / 'glb.stamp', key, force) or not final.exists() or not raw.exists():
@@ -372,7 +372,7 @@ def stage_layers(rev, ex, force):
     names = [d[0] for d in LAYER_DEFS if d[2] != 'copper' or d[0] in ex['copper_layers']]
     kicad_cli('pcb', 'export', 'svg', '--mode-multi', '--layers', ','.join(names), '--page-size-mode', '2',
               '--exclude-drawing-sheet', '--black-and-white',
-              *(['--drill-shape-opt', '0'] if rev in ('rev3i', 'rev3j', 'rev3k', 'rev3l') else []), '-o', svgdir, pcb)
+              *(['--drill-shape-opt', '0'] if rev in ('rev3i', 'rev3j', 'rev3k', 'rev3l', 'rev3m') else []), '-o', svgdir, pcb)
     stem = pcb.stem
     bb = ex['bbox_mm']
     W, H = bb['x1'] - bb['x0'], bb['y1'] - bb['y0']
@@ -727,13 +727,17 @@ def build_index(revs):
         commit = subprocess.run(['git', '-C', str(REPO), 'log', '-1', '--format=%h', '--', str(Path(r['pcb']).parent)], capture_output=True, text=True).stdout.strip()
         uniq = cost['totals']['unique'] if cost and cost['lines'] else None
         size_mm = [round(bb['x1'] - bb['x0'], 2), round(bb['y1'] - bb['y0'], 2)]
-        if rid in ('rev3i', 'rev3j', 'rev3k', 'rev3l'):
+        if rid in ('rev3i', 'rev3j', 'rev3k', 'rev3l', 'rev3m'):
             # Drawing strokes extend beyond the nominal mechanical profile.
             size_mm = np.ptp(np.asarray(board['outline'][0]), axis=0).round(4).tolist()
             uniq = len({p['lcsc'] for p in parts if p['assembled'] and p['lcsc']})
         out.append({
             'id': rid, 'label': r['label'], 'status': r['status'], 'date': r['date'], 'date_basis': r.get('date_basis'),
-            'summary': r['summary'], 'commit': commit, 'commit_basis': 'last commit touching the revision design/ folder',
+            'summary': r['summary'], 'commit': commit,
+            **({'source_url': r['source_url']} if r.get('source_url') else {}),
+            **({'asset_revision': hashlib.sha256((REPO / r['pcb']).read_bytes()).hexdigest()[:12]}
+               if rid in ('rev3l', 'rev3m') else {}),
+            'commit_basis': 'last commit touching the revision design/ folder',
             'layers': board['copper_layers'].__len__(), 'size_mm': size_mm,
             'thickness_mm': board['thickness_mm'], 'parts_total': len(parts), 'parts_assembled': sum(1 for p in parts if p['assembled']),
             'unique_lcsc': uniq, 'extended': cost['totals']['extended'] if cost and cost['lines'] else None,

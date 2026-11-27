@@ -242,7 +242,7 @@ dialog select{border:1px solid var(--line);background:var(--panel-2);border-radi
 /* outside the Claude-hosted copy there is no feedback store: hide every feedback control */
 .no-fb #fbNew,.no-fb [data-v="feedback"],.no-fb [data-fb],.no-fb #docFb,.no-fb #caseFb,.no-fb #cmpFb,.no-fb #costFb,.no-fb #ovFb{display:none!important}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-.case-preview{display:block;width:100%;height:100%;object-fit:contain;background:#ecf1ef}.case-preview[hidden]{display:none}.compact-review{margin:0 0 1.25rem}.compact-review h3{margin:.6rem 0}.compact-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}.compact-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:.8rem 1rem}.compact-card h4{margin:0 0 .35rem;font-size:1.125rem}.compact-card p{margin:0 0 .65rem}.compact-card .row{gap:.45rem;flex-wrap:wrap}.compact-card a{text-decoration:none}.case-pickers{display:flex;flex-wrap:wrap;gap:.4rem}.case-dims{display:grid;grid-template-columns:auto 1fr;gap:.3rem .7rem;margin:.55rem 0;font-size:.9rem}.case-dims dt{color:var(--muted)}.case-dims dd{margin:0;font-variant-numeric:tabular-nums}
+.case-preview{display:block;width:100%;height:100%;object-fit:contain;background:#ecf1ef}.case-preview[hidden]{display:none}.compact-review{margin:0 0 1.25rem}.compact-review h3{margin:.6rem 0}.compact-review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:.75rem}.compact-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:.8rem 1rem}.compact-card h4{margin:0 0 .35rem;font-size:1.125rem}.compact-card p{margin:0 0 .65rem}.compact-card .row{gap:.45rem;flex-wrap:wrap}.compact-card a{text-decoration:none}.case-pickers{display:flex;flex-wrap:wrap;gap:.4rem}.case-dims{display:grid;grid-template-columns:auto 1fr;gap:.3rem .7rem;margin:.55rem 0;font-size:.9rem}.case-dims dt{color:var(--muted)}.case-dims dd{margin:0;font-variant-numeric:tabular-nums}
 @media(max-width:680px){.compact-review-grid{grid-template-columns:1fr}.case-preview{min-height:220px}}
 </style>
 
@@ -396,7 +396,13 @@ const money = v => v == null || isNaN(v) ? '—' : '$' + Number(v).toFixed(2);
 const fmtN = v => v == null ? '—' : Number(v).toLocaleString();
 const slug = id => String(id).replace(/[^A-Za-z0-9]+/g, '-');
 const cache = new Map();
+function assetUrl(path) {
+  const id = path.match(/^data\/(?:cases\/)?(rev3[a-z])\//)?.[1];
+  const version = id && S.byId[id]?.asset_revision;
+  return version ? path + '?board=' + encodeURIComponent(version) : path;
+}
 async function getJSON(url, fallback) {
+  url = assetUrl(url);
   if (cache.has(url)) return cache.get(url);
   const p = fetch(url).then(r => { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); })
     .catch(e => { if (fallback !== undefined) return fallback; throw e; });
@@ -416,8 +422,8 @@ const S = { revs: [], byId: {}, bySlug: {}, cur: null, view: 'overview', pricing
 /* ---------- boot ---------- */
 async function boot() {
   const [revs, pricing, cases, docs, updates] = await Promise.all([
-    getJSON('data/revisions.json?atlas=350d8b58', []), getJSON('data/pricing.json', null), getJSON('data/cases.json?atlas=compact-cases-350d8b58', []),
-    getJSON('data/docs.json', []), getJSON('data/updates.json', [])]);
+    getJSON('data/revisions.json?atlas=018d83ee', []), getJSON('data/pricing.json', null), getJSON('data/cases.json?atlas=compact-cases-018d83ee', []),
+    getJSON('data/docs.json', []), getJSON('data/updates.json?atlas=018d83ee', [])]);
   S.revs = revs; S.pricing = pricing; S.cases = cases; S.docs = docs; S.updates = updates;
   revs.forEach(r => { S.byId[r.id] = r; S.bySlug[slug(r.id)] = r.id; });
   S.cur = store.get('rev', null);
@@ -480,7 +486,7 @@ function route() {
 
 /* ---------- 3D stage ---------- */
 const loader = new GLTFLoader(); loader.setMeshoptDecoder(MeshoptDecoder);
-const servedGltf = u => u.replace(/\.glb$/i, '.gltf.json'); // artifacts serve .json, not .glb (build/glb_to_gltf.py)
+const servedGltf = u => assetUrl(u.replace(/\.glb$/i, '.gltf.json')); // artifacts serve .json, not .glb (build/glb_to_gltf.py)
 class Stage {
   constructor(canvas) {
     this.canvas = canvas; this.wrap = canvas.parentElement;
@@ -605,7 +611,7 @@ async function buildBoard(id) {
     const g = new THREE.Mesh(new THREE.BoxGeometry(w, h, dpt), boxMat);
     const top = p.side !== 'bottom'; const c = M.k2w((bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2, top ? M.top + h / 2 : M.bot - h / 2);
     g.position.copy(c); g.userData.ref = p.ref; g.userData.pickbox = true; root.add(g); B.boxes[p.ref] = g; B.pickTargets.push(g);
-    if (!p.glb_node && !p.dnp && (!/^rev3[ijkl]$/.test(id) || p.assembled) && !/^(H|TP|MH|Fid|FID|G\*|LOGO|REF)/i.test(p.ref)) { // stand-in body for parts with no 3D model in the export
+    if (!p.glb_node && !p.dnp && (!/^rev3[ijklm]$/.test(id) || p.assembled) && !/^(H|TP|MH|Fid|FID|G\*|LOGO|REF)/i.test(p.ref)) { // stand-in body for parts with no 3D model in the export
       const ph = /^(R|C|L|D|F)\d/.test(p.ref) ? 0.6 : 1.0; const pw = Math.max(0.3, w * 0.7), pd = Math.max(0.3, dpt * 0.7);
       const px = new THREE.Mesh(new THREE.BoxGeometry(pw, ph, pd), PROXY_MAT); px.position.copy(M.k2w((bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2, top ? M.top + ph / 2 : M.bot - ph / 2));
       px.userData.ref = p.ref; px.userData.pickbox = true; root.add(px); B.proxies.push(px); }
@@ -642,7 +648,7 @@ async function buildLayers(d, M) {
   if (!B.layerOn) B.layerOn = {};
   for (const L of layers) {
     const bb = toBox(L.bbox_mm || d.board.bbox_mm); const w = bb.x1 - bb.x0, h = bb.y1 - bb.y0;
-    let tex; try { tex = await tl.loadAsync(d.base + L.file); } catch { continue; }
+    let tex; try { tex = await tl.loadAsync(assetUrl(d.base + L.file)); } catch { continue; }
     tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 8;
     const isMask = L.kind === 'mask';
     const mat = new THREE.MeshBasicMaterial({ map: tex, color: layerColor(L.name), transparent: true, opacity: isMask ? 0.45 : (L.kind === 'paste' ? 0.7 : 0.95), side: THREE.DoubleSide, depthWrite: false, alphaTest: isMask ? 0 : 0.02 });
@@ -708,7 +714,7 @@ function setMode(m) {
     const menu = document.createElement('select'); menu.setAttribute('aria-label','Copper, mask, silkscreen or drill artwork');
     for (const l of layers) menu.add(new Option(l.name, l.file));
     const img = document.createElement('img');
-    const draw = () => { img.src=B.data.base+menu.value; img.alt=menu.selectedOptions[0]?.text+' artwork'; };
+    const draw = () => { img.src=assetUrl(B.data.base+menu.value); img.alt=menu.selectedOptions[0]?.text+' artwork'; };
     host.replaceChildren(menu,img);menu.value=(layers.find(l=>l.name==='F.Cu') || layers[0]).file;
     menu.onchange=draw;draw();
   }
@@ -741,7 +747,7 @@ function highlight() {
   h.material.depthTest = false; h.renderOrder = 99; B.stage.root.add(h); hl.push(h);
 }
 function selectPart(ref, zoom) {
-  B.sel = ref || null; highlight(); renderSel(); $$('#bList .prow').forEach(r => r.setAttribute('aria-current', r.dataset.ref === B.sel));
+  B.sel = ref || null; if (!B.flat) highlight(); renderSel(); $$('#bList .prow').forEach(r => r.setAttribute('aria-current', r.dataset.ref === B.sel));
   if (ref && zoom && B.boxes[ref]) { const p = B.boxes[ref].position; const c = B.stage.controls; const off = B.stage.camera.position.clone().sub(c.target); const dist = Math.min(off.length(), 45); c.target.copy(p); B.stage.camera.position.copy(p).addScaledVector(off.normalize(), dist); }
   if (ref) { const row = $(`#bList .prow[data-ref="${CSS.escape(ref)}"]`); row?.scrollIntoView({ block: 'nearest' }); }
 }
@@ -764,6 +770,15 @@ function wireSecButtons(el, ctx) {
 /* what a part is for, and what it costs, in plain words */
 const KIND = [[/^(R|RN)\d/, 'Resistor'], [/^C\d/, 'Capacitor'], [/^L\d/, 'Inductor'], [/^D\d/, 'Diode'], [/^LED\d/, 'LED'], [/^Q\d/, 'Transistor'], [/^U\d/, 'IC'], [/^J\d/, 'Connector'], [/^(SW|S)\d/, 'Switch'], [/^F\d/, 'Fuse'], [/^TP\d/, 'Test point'], [/^JP\d/, 'Solder jumper'], [/^H\d/, 'Mounting hole'], [/^Y\d/, 'Crystal']];
 const GENERIC_DESC = /^(resistor|unpolarized capacitor|capacitor|inductor|diode|led|light emitting diode|test point|mounting hole|generic connector)/i;
+function bareFeature(p) {
+  if (p.assembled) return '';
+  const fp = p.footprint || '';
+  if (/^TestPoint:TestPoint_(?:THT)?Pad_/.test(fp)) return 'bare probe land';
+  if (fp.startsWith('MountingHole:')) return 'mounting hole';
+  if (fp.startsWith('Jumper:SolderJumper')) return 'printed solder jumper';
+  if (/^GEA_Service:(?:Service|Signal)Link_/.test(fp)) return 'printed service link';
+  return '';
+}
 function partInfo(p, d) {
   const kind = (KIND.find(([re]) => re.test(p.ref)) || [, 'Part'])[1];
   const desc = (p.description || p.fields?.Description || '').trim();
@@ -777,7 +792,7 @@ function partInfo(p, d) {
 function tipHTML(p, d) {
   const i = partInfo(p, d);
   const n = i.cl?.qty_per_board || 1;
-  const cost = i.cl ? `${money(i.unit)} each${n > 1 ? ` × ${n} on the board = ${money(i.per)}` : ''}${i.share != null ? ` · ${(i.share * 100).toFixed(1)}% of the board's parts cost` : ''}` : (p.assembled ? 'no live price' : (p.dnp ? 'not fitted (DNP)' : 'not in the assembly BOM'));
+  const cost = i.cl ? `${money(i.unit)} each${n > 1 ? ` × ${n} on the board = ${money(i.per)}` : ''}${i.share != null ? ` · ${(i.share * 100).toFixed(1)}% of the board's parts cost` : ''}` : (p.assembled ? 'no live price' : (bareFeature(p) || (p.dnp ? 'not fitted (DNP)' : 'not in the assembly BOM')));
   return `<div class="h"><b>${esc(p.ref)}</b><span>${esc(p.value || '')}</span></div><div class="role">${esc(i.role)}</div>
    ${i.nets.length ? `<div class="sub">Connects ${esc(i.nets.slice(0, 5).join(', '))}${i.nets.length > 5 ? ' …' : ''}</div>` : ''}
    <div class="cost">${esc(cost)}</div>${i.cl ? `<div class="sub">${esc(i.cl.lcsc)} · ${esc(i.cl.class)} · stock ${fmtN(i.cl.stock)}${i.cl.problem ? ' · ' + esc(i.cl.problem) : ''}</div>` : ''}<div class="hint">Click for full details and feedback</div>`;
@@ -791,7 +806,7 @@ function renderSel() {
   el.innerHTML = `<div class="row" style="justify-content:space-between;align-items:flex-start"><div><div class="lbl">${esc(r.label)} · ${esc(p.side || '')}</div><div class="refbig">${esc(p.ref)}</div></div><button class="btn" type="button" id="selClose">Back to revision</button></div>
   <div style="font-size:15px;font-weight:500">${esc(p.value)}</div>
   <div style="color:var(--ink-2)">${esc(info.role)}${info.nets.length ? `<br><span class="muted" style="font-size:12.5px">Connects ${esc(info.nets.join(', '))}</span>` : ''}</div>
-  <div class="pills">${p.assembled ? '<span class="pill good">assembled by JLC</span>' : (p.dnp ? '<span class="pill warn">DNP</span>' : '<span class="pill">not in BOM</span>')}
+  <div class="pills">${p.assembled ? '<span class="pill good">in fitted BOM</span>' : (bareFeature(p) ? '<span class="pill">'+esc(bareFeature(p))+'</span>' : p.dnp ? '<span class="pill warn">DNP</span>' : '<span class="pill">not in BOM</span>')}
    ${cl ? `<span class="pill ${cl.class === 'basic' ? 'info' : 'acc'}">${esc(cl.class)}</span>` : ''}${cl?.problem ? '<span class="pill bad">stock problem</span>' : ''}
    ${ch ? `<span class="pill ${{ added: 'good', changed: 'warn', moved: 'info' }[ch.kind]}">${esc(ch.kind)} vs ${esc(S.byId[B.diffAgainst]?.label)}</span>` : ''}${fbN ? `<span class="pill acc">${fbN} open feedback</span>` : ''}</div>
   <dl class="kv"><dt>Footprint</dt><dd class="mono" style="font-size:12px">${esc(p.footprint)}</dd>
@@ -804,9 +819,9 @@ function renderSel() {
   ${p.datasheet && /^https?:/.test(p.datasheet) ? `<dt>Datasheet</dt><dd><a href="${esc(p.datasheet)}" target="_blank" rel="noopener">open</a></dd>` : ''}
   ${ch?.detail ? `<dt>Change</dt><dd>${esc(ch.detail)}</dd>` : ''}</dl>
   ${nets.length ? `<details ${nets.length <= 10 ? 'open' : ''}><summary class="lbl" style="cursor:pointer">Pads and nets (${nets.length})</summary><div class="nets" style="margin-top:6px">${nets.map(([n, net]) => `<span class="muted">${esc(n)}</span><span>${esc(net)}</span>`).join('')}</div></details>` : ''}
-  <div class="row"><button class="btn" type="button" id="selZoom">Zoom to part</button><button class="btn primary" type="button" data-fb="part">Feedback on ${esc(p.ref)}</button></div>`;
+  <div class="row"><button class="btn" type="button" id="selZoom" ${B.flat ? 'hidden' : ''}>Zoom to part</button><button class="btn primary" type="button" data-fb="part">Feedback on ${esc(p.ref)}</button></div>`;
   $('#selClose').onclick = () => selectPart(null);
-  $('#selZoom').onclick = () => { if (B.mode !== '3d') setMode('3d'); selectPart(p.ref, true); };
+  $('#selZoom').onclick = () => { if (!B.flat && B.mode !== '3d') setMode('3d'); selectPart(p.ref, true); };
   wireSecButtons(el, () => ({ rev: r.id, view: 'board', target: { type: 'part', id: p.ref, label: `${p.ref} (${p.value})` } }));
 }
 function renderPartList() {
@@ -817,8 +832,8 @@ function renderPartList() {
   const rows = d.parts.filter(p => !q || [p.ref, p.value, p.lcsc, p.mpn, p.footprint, ...(p.pads || []).map(x => x.net)].some(v => String(v || '').toLowerCase().includes(q))).sort(nat);
   const dc = { added: 'var(--good)', changed: 'var(--warn)', moved: 'var(--info)' };
   $('#bList').innerHTML = `<div class="lbl" style="padding:8px 16px">${rows.length} of ${d.parts.length} parts</div>` + rows.map(p => { const ch = B.diff?.status[p.ref];
-    return `<button class="prow" type="button" data-ref="${esc(p.ref)}" aria-current="${p.ref === B.sel}"><span class="r">${esc(p.ref)}</span><span class="v">${esc(p.value)}${p.dnp ? ' · DNP' : ''}</span><span class="row" style="gap:6px;flex-wrap:nowrap">${d.costBy[p.ref] ? `<span class="mono muted" style="font-size:11.5px" title="unit price">${money(d.costBy[p.ref].unit_price?.[store.get('qty', 5)] ?? d.costBy[p.ref].unit_price?.[5])}</span>` : ''}${ch ? `<span class="mk" title="${esc(ch.kind)}" style="background:${dc[ch.kind]}"></span>` : ''}${fbRefs.has(p.ref) ? ' <span class="badge" title="open feedback">!</span>' : ''}</span></button>`; }).join('');
-  $$('#bList .prow').forEach(b => b.onclick = () => { if (B.mode !== '3d') setMode('3d'); selectPart(b.dataset.ref, true); });
+    return `<button class="prow" type="button" data-ref="${esc(p.ref)}" aria-current="${p.ref === B.sel}"><span class="r">${esc(p.ref)}</span><span class="v">${esc(p.value)}${bareFeature(p) ? ' · '+esc(bareFeature(p)) : p.dnp ? ' · DNP' : ''}</span><span class="row" style="gap:6px;flex-wrap:nowrap">${d.costBy[p.ref] ? `<span class="mono muted" style="font-size:11.5px" title="unit price">${money(d.costBy[p.ref].unit_price?.[store.get('qty', 5)] ?? d.costBy[p.ref].unit_price?.[5])}</span>` : ''}${ch ? `<span class="mk" title="${esc(ch.kind)}" style="background:${dc[ch.kind]}"></span>` : ''}${fbRefs.has(p.ref) ? ' <span class="badge" title="open feedback">!</span>' : ''}</span></button>`; }).join('');
+  $$('#bList .prow').forEach(b => b.onclick = () => { if (!B.flat && B.mode !== '3d') setMode('3d'); selectPart(b.dataset.ref, true); });
 }
 
 /* diff between two revisions, keyed by reference */
@@ -852,8 +867,8 @@ function renderSch() {
   const el = $('#bSch'); const d = B.data; const sheets = d?.sch || [];
   if (!sheets.length) { el.innerHTML = '<div class="loading" style="color:#5a625d">No schematic export for this revision.</div>'; return; }
   B.schIdx = Math.min(B.schIdx, sheets.length - 1); const s = sheets[B.schIdx];
-  el.innerHTML = `<img alt="Schematic sheet ${esc(s.title || '')}" src="${esc(d.base + 'sch/' + s.file)}">` + (sheets.length > 1 ? `<div class="tb" style="left:10px;bottom:10px"><div class="seg">${sheets.map((x, i) => `<button type="button" data-i="${i}" aria-pressed="${i === B.schIdx}">${esc(x.title || 'Sheet ' + (i + 1))}</button>`).join('')}</div></div>` : '') +
-    `<div class="tb" style="right:10px;bottom:10px"><a class="btn" href="${esc(d.base + 'sch/' + s.file)}" target="_blank" rel="noopener">Open sheet in new tab</a></div>`;
+  el.innerHTML = `<img alt="Schematic sheet ${esc(s.title || '')}" src="${esc(assetUrl(d.base + 'sch/' + s.file))}">` + (sheets.length > 1 ? `<div class="tb" style="left:10px;bottom:10px"><div class="seg">${sheets.map((x, i) => `<button type="button" data-i="${i}" aria-pressed="${i === B.schIdx}">${esc(x.title || 'Sheet ' + (i + 1))}</button>`).join('')}</div></div>` : '') +
+    `<div class="tb" style="right:10px;bottom:10px"><a class="btn" href="${esc(assetUrl(d.base + 'sch/' + s.file))}" target="_blank" rel="noopener">Open sheet in new tab</a></div>`;
   $$('#bSch .seg button').forEach(b => b.onclick = () => { B.schIdx = +b.dataset.i; renderSch(); });
   const img = $('img', el); let k = 1, tx = 0, ty = 0;
   const apply = () => img.style.transform = `translate(${tx}px,${ty}px) scale(${k})`;
@@ -865,7 +880,7 @@ function renderSch() {
 }
 function renderRenders() {
   const d = B.data; const r = S.byId[S.cur]; const has = r?.has?.renders !== false;
-  $('#bRenders').innerHTML = has ? `<div class="lbl">Top</div><img alt="${esc(r.label)} top render" src="${esc(d.base)}renders/top.png" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'empty',textContent:'No top render'}))"><div class="lbl">Bottom</div><img alt="${esc(r.label)} bottom render" src="${esc(d.base)}renders/bottom.png" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'empty',textContent:'No bottom render'}))">` : '<div class="empty">No renders for this revision.</div>';
+  $('#bRenders').innerHTML = has ? `<div class="lbl">Top</div><img alt="${esc(r.label)} top render" src="${esc(assetUrl(d.base + 'renders/top.png'))}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'empty',textContent:'No top render'}))"><div class="lbl">Bottom</div><img alt="${esc(r.label)} bottom render" src="${esc(assetUrl(d.base + 'renders/bottom.png'))}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'empty',textContent:'No bottom render'}))">` : '<div class="empty">No renders for this revision.</div>';
 }
 
 /* ---------- cost model ---------- */
@@ -904,20 +919,20 @@ function cmpA() { const i = S.revs.findIndex(r => r.id === S.cur); return (S.rev
 
 /* ---------- overview ---------- */
 async function showOverview() {
-  const el = $('#ovPage'); const cand = S.byId.rev3k || S.revs.find(r => r.status === 'candidate');
+  const el = $('#ovPage'); const cand = S.byId.rev3l || S.byId.rev3k || S.revs.find(r => r.status === 'candidate');
   const open = S.fb.filter(f => f.status !== 'resolved');
   el.innerHTML = `<div class="hero"><div class="lbl">Design review hub</div><h2>${S.revs.length} board revisions, ${S.cases.length} cases, one adapter</h2>
    <p>The carrier plugs into a GE appliance's 8P8C service port and hosts a socketed XIAO ESP32-C3 or C6 running ESPHome. ${cand ? `<b>${esc(cand.label)}</b> is the routed prototype for review. ${esc(cand.summary || '')}` : ''}</p></div>
    <section class="compact-review" aria-labelledby="compact-review-title"><h3 id="compact-review-title">Compact boards and enclosures</h3>
-    <div class="compact-review-grid">${['rev3l','rev3k'].filter(id => S.byId[id]).map(id => {const r=S.byId[id], cases=S.cases.filter(c=>c.compact_revision===id);return `<article class="compact-card"><h4>${esc(r.label)} · ${r.size_mm.map(esc).join(' × ')} mm</h4><p>${esc(r.summary)}</p><div class="row"><a class="btn primary" href="#board-${slug(id)}">Inspect board</a>${cases.map(c=>`<a class="btn" href="#case-${slug(c.id)}">${esc(c.module_variant.toUpperCase())} case</a>`).join('')}</div></article>`}).join('')}</div>
-    <p>FirstBuild measures 59.944 × 27.432 mm. Rev 3L is 5.06 mm longer and 2.57 mm wider, occupying 18.6% more board area.</p></section><div class="grid-revs">${S.revs.slice().reverse().map(r => `<button class="revcard" type="button" data-id="${esc(r.id)}"><div class="thumb">${r.has?.renders !== false ? `<img loading="lazy" alt="" src="data/${esc(r.id)}/renders/top.png" onerror="this.remove()">` : ''}</div>
+    <div class="compact-review-grid">${['rev3m','rev3l','rev3k'].filter(id => S.byId[id]).map(id => {const r=S.byId[id], cases=S.cases.filter(c=>c.compact_revision===id);return `<article class="compact-card"><h4>${esc(r.label)} · ${r.size_mm.map(esc).join(' × ')} mm</h4><p>${esc(r.summary)}</p><div class="row"><a class="btn primary" href="#board-${slug(id)}">Inspect board</a>${r.source_url ? `<a class="btn" href="${esc(r.source_url)}" target="_blank" rel="noopener">Native design</a>` : ''}${cases.map(c=>`<a class="btn" href="#case-${slug(c.id)}">${esc(c.module_variant.toUpperCase())} case</a>`).join('')}</div></article>`}).join('')}</div>
+    <p>FirstBuild measures 59.944 × 27.432 mm. Rev 3M matches both nominal FirstBuild outline dimensions. Both enclose the same board area. Rev 3L is 5.06 mm longer and 2.57 mm wider, occupying 18.6% more board area.</p></section><div class="grid-revs">${S.revs.slice().reverse().map(r => `<button class="revcard" type="button" data-id="${esc(r.id)}"><div class="thumb">${r.has?.renders !== false ? `<img loading="lazy" alt="" src="${esc(assetUrl('data/'+r.id+'/renders/top.png'))}" onerror="this.remove()">` : ''}</div>
      <div class="body"><div class="t"><span class="dot ${stCls(r.status)}"></span>${esc(r.label)}<span style="margin-left:auto">${stPill(r.status)}</span></div><div class="s">${esc(r.summary || '')}</div>
      <div class="stats"><span>${r.layers ?? '?'}L</span><span>${r.size_mm ? r.size_mm.map(v => Math.round(v)).join('×') + ' mm' : ''}</span><span>${fmtN(r.parts_assembled)} placed</span><span>${fmtN(r.unique_lcsc)} codes</span><span>${esc(r.date || '')}</span></div></div></button>`).join('')}</div>
    <div class="two"><div class="sec card" style="border-radius:var(--r)"><h3>Recent updates</h3><div class="feed">${S.updates.map(u => `<div class="it"><span class="d">${esc(u.date)}</span><span><b>${esc(u.title)}</b>${u.rev ? ' · ' + esc(S.byId[u.rev]?.label || u.rev) : ''}<br><span class="muted">${esc(u.text)}</span></span></div>`).join('') || '<span class="muted">No updates logged.</span>'}</div></div>
    <div class="sec card" style="border-radius:var(--r)"><h3>Open feedback</h3>${!S.fbReady ? '<span class="muted">Connecting to the feedback store…</span>' : !S.db ? '<span class="muted">Feedback is only available in the Claude-hosted copy of this hub.</span>' : open.length ? `<div class="feed">${open.slice(0, 6).map(f => `<div class="it"><span class="d">${esc(S.byId[f.rev]?.label || 'General')}</span><span><b>${esc(f.target?.label || f.view || '')}</b><br><span class="muted">${esc(String(f.text).slice(0, 140))}</span></span></div>`).join('')}</div><button class="btn" type="button" id="ovFb">See all feedback</button>` : '<span class="muted">Nothing open. Use “Leave feedback” on any part, layer, doc or case.</span>'}
    <h3 style="margin-top:8px">Where to start</h3><div class="row"><button class="btn" type="button" data-go="board">Inspect ${esc(cand?.label || 'board')} in 3D</button><button class="btn" type="button" data-go="compare">Compare Rev3C → Rev3D</button><button class="btn" type="button" data-go="cost">Cost</button><button class="btn" type="button" data-go="docs">${S.docs.some(x => x.group === 'Reddit drafts') ? 'Reddit drafts' : 'Docs'}</button></div></div></div>`;
   $$('.revcard', el).forEach(b => b.onclick = () => { S.cur = b.dataset.id; store.set('rev', S.cur); go('board'); });
-  $$('[data-go]', el).forEach(b => b.onclick = () => { const v = b.dataset.go; if (v === 'compare') go('compare', 'rev3c-vs-rev3d'); else if (v === 'docs') { const d = S.docs.find(x => x.group === 'Reddit drafts'); go('docs', d?.id); } else go(v); });
+  $$('[data-go]', el).forEach(b => b.onclick = () => { const v = b.dataset.go; if (v === 'compare') go('compare', 'rev3c-vs-rev3d'); else if (v === 'docs') { const d = S.docs.find(x => x.group === 'Reddit drafts'); go('docs', d?.id); } else if (v === 'board' && cand) go('board', cand.id); else go(v); });
   $('#ovFb')?.addEventListener('click', () => go('feedback'));
 }
 
@@ -1014,7 +1029,7 @@ function showCase(arg) {
     const cs=S.cases.find(c=>c.id===S.caseId); C.id=S.caseId; C.board=null; C.det=null; C.parts=[];
     $('#cCanvas').hidden=true;$('#cCanvas').parentElement.querySelector('.tb').hidden=true;
     const img=$('#cPreview'); img.hidden=!cs?.preview;
-    if(cs?.preview){img.src='data/'+cs.preview;img.alt=cs.label+' assembled CAD preview';} else img.removeAttribute('src');
+    if(cs?.preview){img.src=assetUrl('data/'+cs.preview);img.alt=cs.label+' assembled CAD preview';} else img.removeAttribute('src');
     $('#cLoading').hidden=Boolean(cs?.preview);$('#cLoading').textContent='Interactive rotation requires WebGL.';
     if(cs)renderCaseInsp(cs);return;
   }

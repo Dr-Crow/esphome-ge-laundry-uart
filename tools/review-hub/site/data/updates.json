@@ -1,9 +1,15 @@
 [
   {
+    "rev": "rev3m",
+    "date": "2026-11-27",
+    "title": "Rev 3M compact board",
+    "text": "The compact board retains both protected appliance inputs, the buck reverse-current diode, both XIAO socket options, three LEDs and service links JP3/JP4. It fixes the D3/D6 selection and omits J7, its three resistors, the 18 dedicated test points and two optional footprints. See the 3L service board if development access matters."
+  },
+  {
     "rev": "rev3l",
     "date": "2026-11-27",
-    "title": "Rev 3L routing repair and printable case studies",
-    "text": "Thirteen PCB connections remain open. The dangling D5 branch was removed, but the LED still lacks complete anode and cathode connections. There are no other DRC findings, schematic differences or ERC violations. Open the Rev 3K and 3L case links for the C3 and C6 lids, common bases and LED guides."
+    "title": "Rev 3L routed with revised printed case",
+    "text": "The 65 × 30 mm service board is fully routed. The new base follows the moved mounting holes, and both module lids align three straight light guides with the relocated LEDs. KiCad 9.0.9 reports zero unconnected items, DRC violations, schematic parity issues and ERC violations. Vendor review and physical tests remain open."
   },
  {
   "date": "2026-11-26",
