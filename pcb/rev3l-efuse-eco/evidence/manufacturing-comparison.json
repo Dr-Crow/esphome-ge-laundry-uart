@@ -1,0 +1,97 @@
+{
+  "baseline_commit": "c7e102aaa9c85a485478ee5c403a945064977d56",
+  "board_sha256": "a03f99733d337c358b6f3299e666f42263c3d8cb844dea6cbb286324a991fa12",
+  "footprint_mm": [
+    65,
+    30
+  ],
+  "fitted": 73,
+  "top_placements": 73,
+  "distinct_lcsc_codes": 32,
+  "new_reference": "C31",
+  "existing_placement_changes": [
+    "R18",
+    "R33"
+  ],
+  "old_assembly_fields_changed": [],
+  "comparison": [
+    {
+      "layer": "bottom copper",
+      "baseline_objects": 962,
+      "eco_objects": 948,
+      "identical_svg_geometry": false
+    },
+    {
+      "layer": "bottom mask",
+      "baseline_objects": 42,
+      "eco_objects": 42,
+      "identical_svg_geometry": true
+    },
+    {
+      "layer": "bottom paste",
+      "baseline_objects": 0,
+      "eco_objects": 0,
+      "identical_svg_geometry": true
+    },
+    {
+      "layer": "bottom silk",
+      "baseline_objects": 1779,
+      "eco_objects": 1761,
+      "identical_svg_geometry": false
+    },
+    {
+      "layer": "inner_1 copper",
+      "baseline_objects": 345,
+      "eco_objects": 355,
+      "identical_svg_geometry": false
+    },
+    {
+      "layer": "inner_2 copper",
+      "baseline_objects": 840,
+      "eco_objects": 853,
+      "identical_svg_geometry": false
+    },
+    {
+      "layer": "mechanical outline",
+      "baseline_objects": 4,
+      "eco_objects": 4,
+      "identical_svg_geometry": true
+    },
+    {
+      "layer": "top copper",
+      "baseline_objects": 1634,
+      "eco_objects": 1643,
+      "identical_svg_geometry": false
+    },
+    {
+      "layer": "top mask",
+      "baseline_objects": 231,
+      "eco_objects": 233,
+      "identical_svg_geometry": false
+    },
+    {
+      "layer": "top paste",
+      "baseline_objects": 178,
+      "eco_objects": 180,
+      "identical_svg_geometry": false
+    },
+    {
+      "layer": "top silk",
+      "baseline_objects": 544,
+      "eco_objects": 546,
+      "identical_svg_geometry": false
+    },
+    {
+      "layer": "drill_pth",
+      "baseline_objects": 225,
+      "eco_objects": 225,
+      "identical_svg_geometry": false
+    },
+    {
+      "layer": "drill_npth",
+      "baseline_objects": 4,
+      "eco_objects": 4,
+      "identical_svg_geometry": true
+    }
+  ]
+}
