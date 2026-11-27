@@ -8,8 +8,9 @@ substitutions:
   led_red_ignore_strapping_warning: true
   led_green_gpio: GPIO3
   led_yellow_gpio: GPIO4
-  # Rev3D JP2: default 1-2 uses D6 (GPIO21, UART0 TX; prints ROM boot text at reset).
-  # After cutting JP2 1-2 and bridging 2-3, use D4 instead: gea_tx_gpio: GPIO6
+  # Compact carriers default to D6 (GPIO21, UART0 TX; prints ROM boot text at reset).
+  # 3K/3L with JP2 deliberately rerouted to D4: set gea_tx_gpio to GPIO6.
+  # 3M fixes the path to D6 in copper and has no JP2.
   gea_tx_gpio: GPIO21
   gea_rx_gpio: GPIO20
 
