@@ -1,0 +1,97 @@
+{
+  "revision": "3L",
+  "url": "https://github.com/Dr-Crow/esphome-ge-laundry-uart",
+  "qr": "4-M",
+  "qr_modules": 33,
+  "module_pitch_mm": 0.31,
+  "quiet_zone_modules": 4,
+  "field_mm": [
+    49.26665,
+    4.7075,
+    61.97665,
+    17.4175
+  ],
+  "labels_added": [
+    [
+      "B",
+      "5V",
+      61.227,
+      21.037
+    ],
+    [
+      "B",
+      "GND",
+      58.687,
+      21.518
+    ],
+    [
+      "B",
+      "3V3",
+      56.147,
+      21.398
+    ],
+    [
+      "B",
+      "GRN WIFI   RED USER   YEL BUS",
+      36.1,
+      15.0
+    ],
+    [
+      "F",
+      "BUS",
+      59.964,
+      23.811
+    ],
+    [
+      "F",
+      "XIAO USB >",
+      53.557,
+      11.218
+    ],
+    [
+      "B",
+      "APPLIANCE",
+      9.05,
+      11.65
+    ]
+  ],
+  "pcb_sha256": "67ede70ee3262740d28130c61713b0a2e946366fa02ab4ddc0bb64e0dca985c1",
+  "CAM_matches_prior_after_metadata_removal": {
+    ".gbl": true,
+    ".gbs": true,
+    ".gbp": true,
+    ".gbo": false,
+    ".gm1": true,
+    ".gtl": true,
+    ".gts": true,
+    ".gtp": true,
+    ".gto": false,
+    ".g1": true,
+    ".g2": true,
+    "NPTH.drl": true,
+    "PTH.drl": true
+  },
+  "top_stroke_widths_mm": [
+    0.15,
+    0.16,
+    0.19,
+    0.2
+  ],
+  "Gerber_decode": {
+    "full_board": "https://github.com/Dr-Crow/esphome-ge-laundry-uart",
+    "half_size": "https://github.com/Dr-Crow/esphome-ge-laundry-uart",
+    "blurred": "https://github.com/Dr-Crow/esphome-ge-laundry-uart",
+    "quarter_turn": "https://github.com/Dr-Crow/esphome-ge-laundry-uart"
+  },
+  "QR_field_mask_openings": 0,
+  "bottom_stroke_widths_mm": [
+    0.15,
+    0.16,
+    0.17
+  ],
+  "kicad_version": "9.0.9",
+  "open_connections": 0,
+  "drc_violations": 0,
+  "parity_issues": 0,
+  "erc_violations": 0
+}

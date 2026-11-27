@@ -1,4 +1,6 @@
 # GE Appliance Adapter Rev 3M · 59.944 × 27.432 mm
+
+[Silkscreen review and scannable underside preview](evidence/silkscreen/README.md)
 **Fully routed engineering prototype for review. Physical verification and factory acceptance are open.** Start with [the editable KiCad project](design/GEA-Adapter-Rev3M.kicad_pro), [top assembly map](evidence/top-assembly-map.svg) and [printed case](case/).
  
 This revision omits TP1–TP18, the J7 bus monitor and its R48–R50 series resistors, and the unpopulated C30 and D8 footprints. The D3 and D6 default signal paths are fixed in copper. The two engineering selectors JP1/JP2 are omitted. Both input eFuses, source priority, transient clamps, onboard pull-ups, JP3 and JP4 service links, all three indicators, RJ45 and both module sockets remain. Use 3L for a first bring-up that needs easy probing.
@@ -13,7 +15,7 @@ Removing four fitted references saves four placements per board and the monitor 
 
 ## Electrical and layout review
 
-KiCad 9.0.9 reports zero ERC violations, zero DRC violations, zero unconnected items and zero schematic-parity differences with all severities and track errors enabled. Geometry editing used pcbnew 9.0.2. The footprint, solder-mask and copper artwork, drill files, BOM and CPL are review outputs. Board SHA-256 is `018d83ee3db954c605a91ce69614b1e621c8696e9ba8612e95651e9ed4dff903`. [ERC](evidence/ERC.json) · [DRC and parity](evidence/routing-DRC.json) · [Top](evidence/rev3m-top.svg) · [Bottom](evidence/rev3m-bottom.svg)
+KiCad 9.0.9 reports zero ERC violations, zero DRC violations, zero unconnected items and zero schematic-parity differences with all severities and track errors enabled. Geometry editing used pcbnew 9.0.2. The footprint, solder-mask and copper artwork, drill files, BOM and CPL are review outputs. Board SHA-256 is `c120337846df5238d40800c6ef0afda243c2a517b15f14e9aa9d5a918e84aa07`. [ERC](evidence/ERC.json) · [DRC and parity](evidence/routing-DRC.json) · [Top](evidence/rev3m-top.svg) · [Bottom](evidence/rev3m-bottom.svg)
 
 With 35 µm outer copper, the 0.60 A module 5 V feed drop is 33.74 mV at 15.2 µm modeled inner copper and 29.62 mV at 30.48 µm. The J1.8 to J6.6 return drops 4.48 and 2.44 mV respectively on a 0.25 mm grid. The resistance screen includes routed rail segments, return pours and modeled 20 µm via plating. It excludes device/connector losses, transients and temperature rise. The 3.3 kΩ eFuse settings correspond to about 1.01 A nominal input current limit. [Both appliance inputs, buck and 3.3 V branches](evidence/rail-paths.csv) · [Return mesh](evidence/ground-return.csv) · [Model assumptions](../rev3k/evidence/power/README.md)
 

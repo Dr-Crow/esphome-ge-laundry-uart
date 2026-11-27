@@ -1,5 +1,7 @@
 # GE Appliance Adapter Rev 3K · 70 × 32 mm
 
+[Silkscreen review and scannable underside preview](evidence/silkscreen/README.md)
+
 **Experimental prototype for factory and bench review.** Open the native KiCad project in design/. For a quick view, open evidence/CAM/top.png. The editable case and printable parts are in case/. The source is the exact 90.13165 × 37.94012 mm Rev 3J from commit c89435367d6d32aac23be7610cbfe3ad9f6273dc. The 70 × 32 mm board uses 2,240 mm², a 34.50% reduction from 3J and a 43.43% reduction from 99 × 40 mm Rev 3H. FirstBuild is 59.944 × 27.432 mm, about 1,644 mm². This layout is 36.2% larger by area. [Rev 3J](https://github.com/Dr-Crow/esphome-ge-laundry-uart/tree/c89435367d6d32aac23be7610cbfe3ad9f6273dc/pcb/rev3j) · [FirstBuild outline artwork](https://github.com/geappliances/home-assistant-adapter/blob/4888a7df56e8ce6382ed91e4b95bd5020f1802f6/doc/pcb/HA%20Adapter%20Gerbers%2011-15-24.zip)
 
 ## What changed
