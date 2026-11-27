@@ -242,6 +242,8 @@ dialog select{border:1px solid var(--line);background:var(--panel-2);border-radi
 /* outside the Claude-hosted copy there is no feedback store: hide every feedback control */
 .no-fb #fbNew,.no-fb [data-v="feedback"],.no-fb [data-fb],.no-fb #docFb,.no-fb #caseFb,.no-fb #cmpFb,.no-fb #costFb,.no-fb #ovFb{display:none!important}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.case-preview{display:block;width:100%;height:100%;object-fit:contain;background:#ecf1ef}.case-preview[hidden]{display:none}.compact-review{margin:0 0 1.25rem}.compact-review h3{margin:.6rem 0}.compact-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}.compact-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:.8rem 1rem}.compact-card h4{margin:0 0 .35rem;font-size:1.125rem}.compact-card p{margin:0 0 .65rem}.compact-card .row{gap:.45rem;flex-wrap:wrap}.compact-card a{text-decoration:none}.case-pickers{display:flex;flex-wrap:wrap;gap:.4rem}.case-dims{display:grid;grid-template-columns:auto 1fr;gap:.3rem .7rem;margin:.55rem 0;font-size:.9rem}.case-dims dt{color:var(--muted)}.case-dims dd{margin:0;font-variant-numeric:tabular-nums}
+@media(max-width:680px){.compact-review-grid{grid-template-columns:1fr}.case-preview{min-height:220px}}
 </style>
 
 <header>
@@ -264,7 +266,7 @@ dialog select{border:1px solid var(--line);background:var(--panel-2);border-radi
 <main>
   <!-- OVERVIEW -->
   <section class="view" id="v-overview"><div class="scroll pad"><div class="page" id="ovPage">
-    <div class="hero"><h2>Eight revisions, one adapter</h2><p>Loading revisions…</p></div>
+    <div class="hero"><h2>GE appliance adapter revisions</h2><p>Loading revisions…</p></div>
   </div></div></section>
 
   <!-- BOARD -->
@@ -332,7 +334,7 @@ dialog select{border:1px solid var(--line);background:var(--panel-2);border-radi
           <label class="ctl">Explode <input id="cExplode" type="range" min="0" max="1" step="0.01" value="0"></label>
           <label class="ctl"><input id="cBoard" type="checkbox" checked> Board inside</label>
         </div>
-        <canvas id="cCanvas"></canvas>
+        <canvas id="cCanvas"></canvas><img id="cPreview" class="case-preview" alt="" hidden>
         <div class="tip" id="cTip" hidden></div>
         <div class="loading" id="cLoading">Loading case…</div>
       </div>
@@ -404,7 +406,7 @@ function toast(msg) { const t = document.createElement('div'); t.className = 'to
 const store = { get(k, d) { try { const v = localStorage.getItem('gea.' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { localStorage.setItem('gea.' + k, JSON.stringify(v)); } catch {} } };
 
-const STATUS = { candidate: ['st-candidate', 'acc'], blocked: ['st-blocked', 'bad'], superseded: ['st-superseded', ''], original: ['st-original', 'info'], 'pivot option': ['st-pivot', 'warn'] };
+const STATUS = { 'routing study':['st-blocked','warn'], 'routed prototype':['st-candidate','acc'], prototype:['st-pivot','info'], candidate: ['st-candidate', 'acc'], blocked: ['st-blocked', 'bad'], superseded: ['st-superseded', ''], original: ['st-original', 'info'], 'pivot option': ['st-pivot', 'warn'] };
 const stCls = s => (STATUS[s] || ['', ''])[0];
 const stPill = s => `<span class="pill ${(STATUS[s] || ['', ''])[1]}">${esc(s || 'unknown')}</span>`;
 
@@ -414,12 +416,12 @@ const S = { revs: [], byId: {}, bySlug: {}, cur: null, view: 'overview', pricing
 /* ---------- boot ---------- */
 async function boot() {
   const [revs, pricing, cases, docs, updates] = await Promise.all([
-    getJSON('data/revisions.json', []), getJSON('data/pricing.json', null), getJSON('data/cases.json', []),
+    getJSON('data/revisions.json?atlas=350d8b58', []), getJSON('data/pricing.json', null), getJSON('data/cases.json?atlas=compact-cases-350d8b58', []),
     getJSON('data/docs.json', []), getJSON('data/updates.json', [])]);
   S.revs = revs; S.pricing = pricing; S.cases = cases; S.docs = docs; S.updates = updates;
   revs.forEach(r => { S.byId[r.id] = r; S.bySlug[slug(r.id)] = r.id; });
   S.cur = store.get('rev', null);
-  if (!S.byId[S.cur]) S.cur = (revs.find(r => r.status === 'candidate') || revs[revs.length - 1] || {}).id;
+  if (!S.byId[S.cur]) S.cur = revs[revs.length - 1]?.id;
   renderRail();
   $$('#views button').forEach(b => b.onclick = () => go(b.dataset.v));
   $('#fbNew').onclick = () => openFeedback(currentContext());
@@ -434,7 +436,12 @@ function renderRail() {
 function selectRev(id) {
   S.cur = id; store.set('rev', id);
   $$('#revrail .revchip').forEach(b => b.setAttribute('aria-pressed', b.dataset.id === id));
-  if (['overview', 'docs', 'feedback'].includes(S.view)) go('board'); else go(S.view);
+  if (S.view === 'case') {
+    const module = S.cases.find(c => c.id === S.caseId)?.module_variant;
+    const available = S.cases.filter(c => c.revisions?.includes(id));
+    const chosen = available.find(c => c.module_variant === module) || available[0];
+    if (chosen) go('case', chosen.id); else go('board', id);
+  } else if (['overview', 'docs', 'feedback'].includes(S.view)) go('board'); else go(S.view);
 }
 
 /* ---------- routing (#view-arg) ---------- */
@@ -443,7 +450,11 @@ function go(view, arg) {
   if (view === 'board') h += '-' + slug(arg || S.cur);
   if (view === 'compare') h += '-' + (arg || (slug(cmpA()) + '-vs-' + slug(S.cur)));
   if (view === 'cost') h += '-' + slug(arg || S.cur);
-  if (view === 'case' && (arg || S.caseId)) h += '-' + slug(arg || S.caseId);
+  if (view === 'case') {
+    const prev = S.cases.find(c => c.id === S.caseId);
+    const chosen = arg || (prev?.revisions?.includes(S.cur) ? prev.id : S.byId[S.cur]?.case) || S.caseId;
+    if (chosen) h += '-' + slug(chosen);
+  }
   if (view === 'docs' && (arg || S.docId)) h += '-' + slug(arg || S.docId);
   if (location.hash.slice(1) === h) route(); else location.hash = h;
 }
@@ -455,6 +466,12 @@ function route() {
   $$('#views button').forEach(b => { if (b.dataset.v === S.view) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
   $$('main > .view').forEach(v => v.hidden = v.id !== 'v-' + S.view);
   if ((S.view === 'board' || S.view === 'cost') && S.bySlug[arg]) { S.cur = S.bySlug[arg]; store.set('rev', S.cur); }
+  if (S.view === 'case') {
+    const chosen = S.cases.find(c => slug(c.id) === arg);
+    if (chosen?.revisions?.length && !chosen.revisions.includes(S.cur)) {
+      S.cur = chosen.revisions[0]; store.set('rev', S.cur);
+    }
+  }
   $$('#revrail .revchip').forEach(b => b.setAttribute('aria-pressed', b.dataset.id === S.cur));
   const chip = $('#revrail .revchip[aria-pressed="true"]'), rail = $('#revrail');
   if (chip && (chip.offsetLeft < rail.scrollLeft || chip.offsetLeft + chip.offsetWidth > rail.scrollLeft + rail.clientWidth)) rail.scrollLeft = chip.offsetLeft - 8;
@@ -529,8 +546,24 @@ function mapper(board) {
   return { k2w: (x, y, h = 0) => new THREE.Vector3(x - ox, h, (y - oy) * zs), zs, bot, top, scale: g.scale_to_mm || 1000 };
 }
 
-function showBoard() {
-  if (!B.stage) initBoardStage();
+async function showBoard() {
+  if (!B.stage && !B.flat) {
+    try { initBoardStage(); } catch (error) {
+      if (!/WebGL/i.test(String(error))) throw error;
+      B.flat = true; B.mode = 'renders';
+      const modeBar = $('#bMode');
+      modeBar.querySelector('[data-m="3d"]').hidden = true;
+      modeBar.insertAdjacentHTML('beforeend','<button type="button" data-m="artwork">Layer artwork</button>');
+      $$('#bMode button').forEach(b => b.onclick = () => setMode(b.dataset.m));
+      $('#bSearch').oninput = renderPartList;
+    }
+  }
+  if (B.flat) {
+    const id = S.cur; B.rev = id; B.sel = null;
+    const data = await loadRev(id); if (S.cur !== id) return;
+    B.data = data; renderSel(); renderPartList(); $('#bLoading').hidden = true;
+    setMode(B.mode); return;
+  }
   const id = S.cur; fillDiffSelect();
   if (B.rev !== id) buildBoard(id); else { setMode(B.mode); B.stage.resize(); }
 }
@@ -572,7 +605,7 @@ async function buildBoard(id) {
     const g = new THREE.Mesh(new THREE.BoxGeometry(w, h, dpt), boxMat);
     const top = p.side !== 'bottom'; const c = M.k2w((bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2, top ? M.top + h / 2 : M.bot - h / 2);
     g.position.copy(c); g.userData.ref = p.ref; g.userData.pickbox = true; root.add(g); B.boxes[p.ref] = g; B.pickTargets.push(g);
-    if (!p.glb_node && !/^(H|TP|MH|Fid|FID|G\*|LOGO|REF)/i.test(p.ref)) { // stand-in body for parts with no 3D model in the export
+    if (!p.glb_node && !p.dnp && (!/^rev3[ijkl]$/.test(id) || p.assembled) && !/^(H|TP|MH|Fid|FID|G\*|LOGO|REF)/i.test(p.ref)) { // stand-in body for parts with no 3D model in the export
       const ph = /^(R|C|L|D|F)\d/.test(p.ref) ? 0.6 : 1.0; const pw = Math.max(0.3, w * 0.7), pd = Math.max(0.3, dpt * 0.7);
       const px = new THREE.Mesh(new THREE.BoxGeometry(pw, ph, pd), PROXY_MAT); px.position.copy(M.k2w((bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2, top ? M.top + ph / 2 : M.bot - ph / 2));
       px.userData.ref = p.ref; px.userData.pickbox = true; root.add(px); B.proxies.push(px); }
@@ -665,10 +698,20 @@ function setLook(l) {
 }
 function setMode(m) {
   B.mode = m; $$('#bMode button').forEach(b => b.setAttribute('aria-pressed', b.dataset.m === m));
-  const is3d = m === '3d'; $('#bCanvas').hidden = !is3d; B.stage.labels.domElement.hidden = !is3d;
+  const is3d = m === '3d'; $('#bCanvas').hidden = !is3d; if (B.stage) B.stage.labels.domElement.hidden = !is3d;
   $('#bLook').hidden = !is3d; $('#bCam').hidden = !is3d; $('#bLabels').parentElement.hidden = !is3d; $('#bDiff').parentElement.hidden = !is3d;
   $('#bExplodeCtl').hidden = !is3d || B.look !== 'layers'; $('#bLayers').hidden = !is3d || B.look === 'assembled'; $('#bLegend').hidden = !is3d || !B.diff;
   $('#bSch').hidden = m !== 'sch'; $('#bRenders').hidden = m !== 'renders';
+  if (m === 'artwork') {
+    const host = $('#bRenders'); host.hidden = false;
+    const layers = B.data.board.layers || [];
+    const menu = document.createElement('select'); menu.setAttribute('aria-label','Copper, mask, silkscreen or drill artwork');
+    for (const l of layers) menu.add(new Option(l.name, l.file));
+    const img = document.createElement('img');
+    const draw = () => { img.src=B.data.base+menu.value; img.alt=menu.selectedOptions[0]?.text+' artwork'; };
+    host.replaceChildren(menu,img);menu.value=(layers.find(l=>l.name==='F.Cu') || layers[0]).file;
+    menu.onchange=draw;draw();
+  }
   if (m === 'sch') renderSch(); if (m === 'renders') renderRenders(); if (is3d) B.stage.resize();
 }
 function frameBoard(view) {
@@ -861,11 +904,13 @@ function cmpA() { const i = S.revs.findIndex(r => r.id === S.cur); return (S.rev
 
 /* ---------- overview ---------- */
 async function showOverview() {
-  const el = $('#ovPage'); const cand = S.revs.find(r => r.status === 'candidate');
+  const el = $('#ovPage'); const cand = S.byId.rev3k || S.revs.find(r => r.status === 'candidate');
   const open = S.fb.filter(f => f.status !== 'resolved');
   el.innerHTML = `<div class="hero"><div class="lbl">Design review hub</div><h2>${S.revs.length} board revisions, ${S.cases.length} cases, one adapter</h2>
-   <p>The carrier plugs into a GE appliance's 8P8C service port and hosts a socketed XIAO ESP32-C3 or C6 running ESPHome. ${cand ? `<b>${esc(cand.label)}</b> is the current candidate: ${esc(cand.summary || '')}` : ''}</p></div>
-   <div class="grid-revs">${S.revs.slice().reverse().map(r => `<button class="revcard" type="button" data-id="${esc(r.id)}"><div class="thumb">${r.has?.renders !== false ? `<img loading="lazy" alt="" src="data/${esc(r.id)}/renders/top.png" onerror="this.remove()">` : ''}</div>
+   <p>The carrier plugs into a GE appliance's 8P8C service port and hosts a socketed XIAO ESP32-C3 or C6 running ESPHome. ${cand ? `<b>${esc(cand.label)}</b> is the routed prototype for review. ${esc(cand.summary || '')}` : ''}</p></div>
+   <section class="compact-review" aria-labelledby="compact-review-title"><h3 id="compact-review-title">Compact boards and enclosures</h3>
+    <div class="compact-review-grid">${['rev3l','rev3k'].filter(id => S.byId[id]).map(id => {const r=S.byId[id], cases=S.cases.filter(c=>c.compact_revision===id);return `<article class="compact-card"><h4>${esc(r.label)} · ${r.size_mm.map(esc).join(' × ')} mm</h4><p>${esc(r.summary)}</p><div class="row"><a class="btn primary" href="#board-${slug(id)}">Inspect board</a>${cases.map(c=>`<a class="btn" href="#case-${slug(c.id)}">${esc(c.module_variant.toUpperCase())} case</a>`).join('')}</div></article>`}).join('')}</div>
+    <p>FirstBuild measures 59.944 × 27.432 mm. Rev 3L is 5.06 mm longer and 2.57 mm wider, occupying 18.6% more board area.</p></section><div class="grid-revs">${S.revs.slice().reverse().map(r => `<button class="revcard" type="button" data-id="${esc(r.id)}"><div class="thumb">${r.has?.renders !== false ? `<img loading="lazy" alt="" src="data/${esc(r.id)}/renders/top.png" onerror="this.remove()">` : ''}</div>
      <div class="body"><div class="t"><span class="dot ${stCls(r.status)}"></span>${esc(r.label)}<span style="margin-left:auto">${stPill(r.status)}</span></div><div class="s">${esc(r.summary || '')}</div>
      <div class="stats"><span>${r.layers ?? '?'}L</span><span>${r.size_mm ? r.size_mm.map(v => Math.round(v)).join('×') + ' mm' : ''}</span><span>${fmtN(r.parts_assembled)} placed</span><span>${fmtN(r.unique_lcsc)} codes</span><span>${esc(r.date || '')}</span></div></div></button>`).join('')}</div>
    <div class="two"><div class="sec card" style="border-radius:var(--r)"><h3>Recent updates</h3><div class="feed">${S.updates.map(u => `<div class="it"><span class="d">${esc(u.date)}</span><span><b>${esc(u.title)}</b>${u.rev ? ' · ' + esc(S.byId[u.rev]?.label || u.rev) : ''}<br><span class="muted">${esc(u.text)}</span></span></div>`).join('') || '<span class="muted">No updates logged.</span>'}</div></div>
@@ -958,8 +1003,23 @@ const ZUP = new THREE.Matrix4().makeRotationX(-Math.PI / 2); // CAD (x, y, z-up)
 function showCase(arg) {
   const id = S.bySlug[arg] ? null : (S.cases.find(c => slug(c.id) === arg)?.id);
   S.caseId = id || S.caseId || (S.cases.find(c => (c.revisions || []).includes(S.cur)) || S.cases[0] || {}).id;
-  if (!C.stage) {
-    C.stage = new Stage($('#cCanvas'));
+  if (!C.stage && !C.flat) {
+    try { C.stage = new Stage($('#cCanvas')); }
+    catch (error) {
+      if (!/WebGL/i.test(String(error))) throw error;
+      C.flat = true;
+    }
+  }
+  if (C.flat) {
+    const cs=S.cases.find(c=>c.id===S.caseId); C.id=S.caseId; C.board=null; C.det=null; C.parts=[];
+    $('#cCanvas').hidden=true;$('#cCanvas').parentElement.querySelector('.tb').hidden=true;
+    const img=$('#cPreview'); img.hidden=!cs?.preview;
+    if(cs?.preview){img.src='data/'+cs.preview;img.alt=cs.label+' assembled CAD preview';} else img.removeAttribute('src');
+    $('#cLoading').hidden=Boolean(cs?.preview);$('#cLoading').textContent='Interactive rotation requires WebGL.';
+    if(cs)renderCaseInsp(cs);return;
+  }
+  if (!C.controlsBound) {
+    C.controlsBound=true;
     $$('#cCam button').forEach(b => b.onclick = () => frameCase(b.dataset.c));
     $('#cOpacity').oninput = caseLook; $('#cExplode').oninput = caseLook; $('#cBoard').onchange = caseLook;
     $('#cWhip').onchange = () => { store.set('whipPose', $('#cWhip').value); caseLook(); };
@@ -996,7 +1056,7 @@ async function buildCase(id) {
   const brev = (cs.revisions || []).includes(S.cur) ? S.cur : (cs.revisions || [])[0];
   const mx = cs.board_placement?.matrix_mm_by_revision?.[brev] || cs.board_placement?.matrix_mm;
   C.det = null;
-  if (brev && mx) { try { const d = await loadRev(brev); const g = await loader.loadAsync(servedGltf(d.base + 'board.glb')); if (C.id !== id) return; const bm = g.scene; bm.scale.setScalar(d.board?.glb?.scale_to_mm || 1000);
+  if (brev && mx) { try { const d = await loadRev(brev); const g = await loader.loadAsync(servedGltf(cs.board_asset ? 'data/' + cs.board_asset : d.base + 'board.glb')); if (C.id !== id) return; const bm = g.scene; bm.scale.setScalar(d.board?.glb?.scale_to_mm || 1000);
       const holder = new THREE.Group(); holder.add(bm);
       // matrix maps case mm -> board mm. Board in case frame = inverse(matrix); then the same Z-up -> Y-up rotation as the case.
       const M4 = new THREE.Matrix4().set(...mx.flat()); C.det = M4.determinant();
@@ -1040,25 +1100,27 @@ function renderCaseInsp(cs) {
   const el = $('#cInsp'); if (!cs) { el.innerHTML = ''; return; }
   const bp = cs.board_placement || {};
   // Cases that carry module/antenna fields form one family with two pickers; anything else is listed as its own case.
-  const fam = S.cases.filter(c => c.module && c.antenna); const others = S.cases.filter(c => !(c.module && c.antenna));
+  const fam = S.cases.filter(c => c.module && c.antenna); const compact = S.cases.filter(c => c.compact_revision); const others = S.cases.filter(c => !(c.module && c.antenna) && !c.compact_revision);
   const mods = [...new Set(fam.map(c => c.module))]; const ants = [...new Map(fam.map(c => [c.antenna, c.antenna_label || c.antenna])).entries()];
   const pick = (m, a) => (fam.find(c => c.module === m && c.antenna === a) || fam.find(c => c.module === m) || {}).id;
   const inFam = !!(cs.module && cs.antenna);
   el.innerHTML = `<div class="sec"><div class="lbl">Case</div>
+   ${compact.length ? `<div class="case-pickers" aria-label="Compact enclosures">${compact.map(c => `<button class="btn ${c.id === cs.id ? 'primary' : ''}" type="button" aria-pressed="${c.id === cs.id}" data-case="${esc(c.id)}">${esc(c.label.replace(' enclosure',''))}</button>`).join('')}</div>` : ''}
    ${fam.length ? `<div class="row"><span class="lbl" style="min-width:58px">Module</span><div class="seg" role="group" aria-label="Module">${mods.map(m => `<button type="button" data-case="${esc(pick(m, inFam ? cs.antenna : ants[0][0]))}" aria-pressed="${inFam && cs.module === m}">${esc(m.toUpperCase())}</button>`).join('')}</div></div>
    <div class="row"><span class="lbl" style="min-width:58px">Antenna</span><div class="seg" role="group" aria-label="Antenna">${ants.map(([a, l]) => `<button type="button" data-case="${esc(pick(inFam ? cs.module : mods[0], a))}" aria-pressed="${inFam && cs.antenna === a}">${esc(l)}</button>`).join('')}</div></div>` : ''}
    ${others.length ? `<div class="row"><span class="lbl" style="min-width:58px">Other</span>${others.map(c => `<button class="btn ${c.id === cs.id ? 'primary' : ''}" type="button" data-case="${esc(c.id)}">${esc(c.label)}</button>`).join('')}</div>` : ''}</div>
    <div class="sec"><h2>${esc(cs.label)}</h2><div class="muted" style="font-size:13px">Fits ${esc((cs.revisions || []).map(r => S.byId[r]?.label || r).join(', ') || '—')}</div>
+   ${cs.params?.enclosure_exterior_mm ? `<dl class="case-dims"><dt>PCB</dt><dd>${cs.params.pcb_mm.map(esc).join(' × ')} mm</dd><dt>Case exterior</dt><dd>${cs.params.enclosure_exterior_mm.map(esc).join(' × ')} mm</dd></dl>` : ''}
    ${cs.status_note ? `<div class="note">${esc(cs.status_note)}</div>` : ''}
-   <div class="pills">${C.board ? `<span class="pill ${bp.verified ? 'good' : 'warn'}">positions ${bp.verified ? 'line up' : 'not verified'}</span>` : '<span class="pill">board placement unknown</span>'}${C.det != null && C.det < 0 ? '<span class="pill bad">case is mirrored</span>' : ''}</div>
+   <div class="pills">${C.board ? `<span class="pill ${bp.verified ? 'good' : 'warn'}">positions ${bp.verified ? 'line up' : 'not verified'}</span>` : (bp.verified ? '<span class="pill good">CAD registration verified</span>' : '<span class="pill">board placement unknown</span>')}${C.det != null && C.det < 0 ? '<span class="pill bad">case is mirrored</span>' : ''}</div>
    ${C.det != null && C.det < 0 ? `<div class="note"><b>The exported case is a mirror image of the board.</b> The case CAD takes KiCad coordinates as-is (y = KiCad y, which points down the board in the top view) and builds with z up. That is a left-handed frame, so features land where the board's parts are only after mirroring the board. Here the case is drawn as it would print, and the board is mirrored to line up: its silkscreen reads backwards. A real board in this printed case would have J1 and the XIAO openings on the wrong long side. The Rev2 case uses y = −KiCad y and does not have this problem. Check before printing.</div>` : ''}
    ${(() => { const st = $('#cMagnets')?.value; const p = (cs.parts || []).find(q => q.magnet_style && q.magnet_style === st); return p ? `<div class="note"><b>Magnets: ${esc(p.magnet_label)}.</b> ${esc(p.note || '')} Four N52 8 × 2 mm discs; 6 × 2 and 10 × 2 are also available from the CAD (<span class="mono">--magnets</span>). Stick-on magnet tape on a plain base works too, with no reprint.</div>` : ''; })()}
    ${bp.map ? `<details><summary class="lbl" style="cursor:pointer">How the board is placed</summary><div class="muted" style="font-size:12.5px;margin-top:6px">${esc(bp.map)}</div></details>` : ''}</div>
    <div class="sec"><div class="lbl">Pieces</div><div class="tw"><table><thead><tr><th></th><th>Piece</th><th class="n">Print time</th><th class="n">Filament</th><th class="n">Grams</th></tr></thead><tbody>
-   ${(cs.parts || []).map((p, i) => `<tr><td><input type="checkbox" data-i="${i}" checked aria-label="Show ${esc(p.name)}"></td><td>${esc(p.name)} <span class="muted">${esc(p.role)}</span></td><td class="n">${esc(p.print?.time ?? '—')}</td><td class="n">${p.print?.filament_m != null ? (+p.print.filament_m).toFixed(2) + ' m' : '—'}</td><td class="n">${p.print?.grams != null ? (+p.print.grams).toFixed(0) : '—'}</td></tr>`).join('')}</tbody></table></div></div>
+   ${(cs.parts || []).map((p, i) => `<tr><td><input type="checkbox" data-i="${i}" checked ${C.flat ? 'disabled' : ''} aria-label="Show ${esc(p.name)}"></td><td>${esc(p.name)} <span class="muted">${esc(p.role)}</span></td><td class="n">${esc(p.print?.time ?? '—')}</td><td class="n">${p.print?.filament_m != null ? (+p.print.filament_m).toFixed(2) + ' m' : '—'}</td><td class="n">${p.print?.grams != null ? (+p.print.grams).toFixed(0) : '—'}</td></tr>`).join('')}</tbody></table></div></div>
    ${cs.params ? `<div class="sec"><details><summary class="lbl" style="cursor:pointer">Export parameters</summary><pre class="mono" style="font-size:11.5px;white-space:pre-wrap;margin:8px 0 0">${esc(JSON.stringify(cs.params, null, 1))}</pre></details></div>` : ''}
-   ${(cs.source_files || []).length ? `<div class="sec"><div class="lbl">Sources</div><div class="mono" style="font-size:11.5px;overflow-wrap:anywhere">${cs.source_files.map(esc).join('<br>')}</div></div>` : ''}
-   <div class="sec"><div class="row"><button class="btn primary" type="button" id="caseFb">Feedback on ${esc(cs.label)}</button>${S.docs.find(d => /case\/rev3c\/analytical\/README/.test(d.path)) ? '<button class="btn" type="button" id="caseDoc">Case README</button>' : ''}</div></div>`;
+   ${(cs.source_files || []).length ? `<div class="sec"><div class="lbl">Sources</div><div class="mono" style="font-size:11.5px;overflow-wrap:anywhere">${cs.source_files.map(f=>esc(typeof f==='string' ? f : f.path)).join('<br>')}</div></div>` : ''}
+   <div class="sec"><div class="row"><button class="btn primary" type="button" id="caseFb">Feedback on ${esc(cs.label)}</button>${!cs.compact_revision && S.docs.find(d => /case\/rev3c\/analytical\/README/.test(d.path)) ? '<button class="btn" type="button" id="caseDoc">Case README</button>' : ''}</div></div>`;
   $$('[data-case]', el).forEach(b => b.onclick = () => go('case', b.dataset.case));
   $$('input[data-i]', el).forEach(i => i.onchange = () => { const g = C.parts.find(g => g.userData.part === cs.parts[+i.dataset.i]); if (g) { g.userData.on = i.checked; caseLook(); } });
   $('#caseFb').onclick = () => openFeedback({ rev: (cs.revisions || [])[0] || null, view: 'case', target: { type: 'case', id: cs.id, label: cs.label } });

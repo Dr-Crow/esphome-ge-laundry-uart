@@ -1,0 +1,8 @@
+candidate,XIAO_5V_drop_mV,J1_to_XIAO_ground_mV,load_A,inner_um
+previous routed 3L,49.013,17.257,0.6,15.2
+ground width and stitches,49.013,16.625,0.6,15.2
+5 V widening on In2,44.8,16.63,0.6,15.2
+5 V widening on both inners,40.813,16.632,0.6,15.2
+selected; 5 V widening on top and both inners,40.512,16.633,0.6,15.2
+5 V widening on bottom and both inners,36.756,22.62,0.6,15.2
+5 V widening on all copper layers,36.455,22.62,0.6,15.2

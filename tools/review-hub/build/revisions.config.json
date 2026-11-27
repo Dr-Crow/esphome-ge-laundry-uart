@@ -247,6 +247,62 @@
       "summary": "Rev 3G plus the J7 3.3 V listen-only GEA bus monitor header and C16/C17 moved to a JLC basic part; review only.",
       "readme": "pcb/rev3h/README.md",
       "documented_quotes": []
+    },
+    {
+      "id": "rev3i",
+      "label": "Rev 3I",
+      "pcb": "pcb/rev3i/design/GEA-Adapter-Rev3I.kicad_pcb",
+      "sch": "pcb/rev3i/design/GEA-Adapter-Rev3I.kicad_sch",
+      "bom": "pcb/rev3i/manufacturing/BOM-GEA-Adapter-Rev3I.csv",
+      "case": null,
+      "status": "prototype",
+      "date": "2026-11-26",
+      "date_basis": "native repository design review",
+      "summary": "Shorter single-sided layout with the Basic C9 and a proposed half-ounce inner stack. Electrical and factory qualification remain open.",
+      "readme": "pcb/rev3i/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3j",
+      "label": "Rev 3J",
+      "pcb": "pcb/rev3j/design/GEA-Adapter-Rev3J.kicad_pcb",
+      "sch": "pcb/rev3j/design/GEA-Adapter-Rev3J.kicad_sch",
+      "bom": "pcb/rev3j/manufacturing/BOM-GEA-Adapter-Rev3J.csv",
+      "case": null,
+      "status": "prototype",
+      "date": "2026-11-26",
+      "date_basis": "native repository design review",
+      "summary": "Short-axis compaction retains the protected inputs and XIAO interfaces. Routed prototype with a matching enclosure study.",
+      "readme": "pcb/rev3j/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3k",
+      "label": "Rev 3K",
+      "pcb": "pcb/rev3k/design/GEA-Adapter-Rev3K.kicad_pcb",
+      "sch": "pcb/rev3k/design/GEA-Adapter-Rev3K.kicad_sch",
+      "bom": "pcb/rev3k/manufacturing/BOM-GEA-Adapter-Rev3K.csv",
+      "case": "rev3k-c3",
+      "status": "routed prototype",
+      "date": "2026-11-26",
+      "date_basis": "native repository design review",
+      "summary": "70 × 32 mm routed prototype. Recorded ERC, DRC, schematic parity and unresolved connection counts are zero. Factory and bench verification remain open.",
+      "readme": "pcb/rev3k/README.md",
+      "documented_quotes": []
+    },
+    {
+      "id": "rev3l",
+      "label": "Rev 3L",
+      "pcb": "pcb/rev3l-placement/design/GEA-Adapter-Rev3L.kicad_pcb",
+      "sch": "pcb/rev3l-placement/design/GEA-Adapter-Rev3L.kicad_sch",
+      "bom": "pcb/rev3k/manufacturing/BOM-GEA-Adapter-Rev3K.csv",
+      "case": "rev3l-c3",
+      "status": "routing study",
+      "date": "2026-11-27",
+      "date_basis": "frozen routing repair and native review",
+      "summary": "65 × 30 mm routing study. Thirteen connections remain open, including both sides of debug LED D5. The dangling track was removed. ERC, schematic parity and other DRC findings are zero. Do not fabricate.",
+      "readme": "pcb/rev3l-placement/README.md",
+      "documented_quotes": []
     }
   ]
 }

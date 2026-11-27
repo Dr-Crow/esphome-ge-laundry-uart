@@ -184,7 +184,7 @@ def placement_check(base, lid, ex_rev3d, seat_z, pcb_t, cx, cy):
     return res
 
 
-def run(CFG, SITE, DATA):
+def run(CFG, SITE, DATA, exporter=None):
     repo = Path(CFG['repo'])
     ana = repo / 'case' / 'rev3c' / 'analytical'
     cases_dir = DATA / 'cases'
@@ -334,7 +334,9 @@ def run(CFG, SITE, DATA):
          'source_files': sources([r2dir / 'v2-case-base.stl', r2dir / 'v2-case-lid.stl']),
          'status_note': 'Designed around the Rev 2.x outline (case/rev2/README.md). Units assumed to be mm; not verified against a board.'},
     ]
-    for c in cases:
-        for p in c['parts']: p['file'] = p['file']
+    import compact_cases
+    if exporter is None:
+        import build as exporter
+    cases = compact_cases.build(CFG, DATA, exporter) + cases
     (DATA / 'cases.json').write_text(json.dumps(cases, indent=1) + '\n')
     print('cases:', [(c['id'], c['board_placement']['verified']) for c in cases])

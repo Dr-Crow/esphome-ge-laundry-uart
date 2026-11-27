@@ -4,11 +4,15 @@
 
 ## Electrical status
 
-The first 65 mm checkpoint had 32 opens and 94 other DRC findings. The present KiCad 9.0.9 all-severity, all-track-errors run has **14 open connections, one dangling track, zero ERC findings and zero schematic-parity differences**. There are no reported copper-clearance violations. The main supply and ground nets have no open connections in this report.
+The first 65 mm checkpoint had 32 opens and 94 other DRC findings. The present KiCad 9.0.9 all-severity, all-track-errors run has **13 open connections, zero additional DRC findings, zero ERC findings and zero schematic-parity differences**. There are no reported copper-clearance violations. The main supply and ground nets have no open connections in this report.
 
-Remaining open nets are /DBG_LED × 2, GEA_HalfDplx, Net-(D5-A), Net-(D9-K2) × 2, Net-(R12-Pad2), Net-(R21-Pad1), /GEA3_TX_D6, /PIN1_ILM × 2, /PIN1_UV, /PIN1_OV, /PIN1_FLT_N. An open current-limit, voltage-threshold, fault or appliance-data connection can change behavior even when the supply rails show continuity. The current layout needs a local placement and routing pass for the protection control and interface networks. Keep the eFuse thresholds, input priority, clamp, USB isolation parts, XIAO pin mapping and debug series resistors intact.
+Remaining open nets are /DBG_LED, GEA_HalfDplx, Net-(D5-A), Net-(D9-K2) × 2, Net-(R12-Pad2), Net-(R21-Pad1), /GEA3_TX_D6, /PIN1_ILM × 2, /PIN1_UV, /PIN1_OV, /PIN1_FLT_N. An open current-limit, voltage-threshold, fault or appliance-data connection can change behavior even when the supply rails show continuity. The current layout needs a local placement and routing pass for the protection control and interface networks. Keep the eFuse thresholds, input priority, clamp, USB isolation parts, XIAO pin mapping and debug series resistors intact.
 
-The update reroutes interconnects on all four layers, separates the input/output escapes of the two eFuses, adds local ground vias and joins sections of the ground reference. The regulator switching and bootstrap copper retain the prior local geometry. The board keeps all 98 footprints and the 232 reference/pad/net records of 3K. The schematic and fitted component selection are unchanged. Footprint geometry work used KiCad pcbnew 9.0.2. The board SHA-256 is `8d86cbcf1a12b6e15ace2d1e3eeee70081afdc3978cf3d7eb4a5bb02f857e9c9`.
+The previous checkpoint rerouted interconnects on all four layers, separated the input/output escapes of the two eFuses, added local ground vias and joined sections of the ground reference. The regulator switching and bootstrap copper retain the prior local geometry. The board keeps all 98 footprints and the 232 reference/pad/net records of 3K. The schematic and fitted component selection are unchanged. Footprint geometry work used KiCad pcbnew 9.0.2. The board SHA-256 is `350d8b584832cdfd5ba15cd5963fd1e350280ad6a8d1cf80e9e64bdd16007e5e`.
+
+The current update removes the orphaned debug-LED copper and the dangling branch. The anode and cathode of D5 each still have one electrical open. Moving the series resistor, changing LED orientation and global rerouting were evaluated. The tested alternatives failed to improve complete-net connectivity while retaining the other design rules. No indicator or safeguard was deleted. All footprint coordinates and orientations match the previous 3L.
+
+This version adds 27 ground stitching vias, widens existing ground tracks where clearances allow and widens portions of the module 5 V feed on F.Cu, In1.Cu and In2.Cu. Widening the feed on B.Cu as well produced a lower feed drop but cut into a return corridor. The selected trial retained the existing B.Cu feed width. See the [copper comparison](evidence/power-trials.csv).
 
 ## Probe access and isolation
 
@@ -20,7 +24,7 @@ J7 is a 3.3 V monitor for an isolated fixture. Pin 1 is shared ground. Pins 2–
 
 ## Size, assembly and cost
 
-FirstBuild measures 59.944 × 27.432 mm across its outline artwork, approximately 1,644.4 mm². The 65 × 30 mm Rev 3L is 5.056 mm longer, 2.568 mm wider and 18.6% larger by area. Its 1,950 mm² footprint saves 290 mm² (12.95%) versus the 70 × 32 mm Rev 3K. These are board dimensions. The 3K case is 77.2 × 40 × 31.9 mm externally and does not fit 3L. A matching 3L case remains open pending layout freeze. [FirstBuild outline Gerber](https://github.com/geappliances/home-assistant-adapter/blob/4888a7df56e8ce6382ed91e4b95bd5020f1802f6/doc/pcb/HA%20Adapter%20Gerbers%2011-15-24.zip)
+FirstBuild measures 59.944 × 27.432 mm across its outline artwork, approximately 1,644.4 mm². The 65 × 30 mm Rev 3L is 5.056 mm longer, 2.568 mm wider and 18.6% larger by area. Its 1,950 mm² footprint saves 290 mm² (12.95%) versus the 70 × 32 mm Rev 3K. These are board dimensions. The 3K case is 77.2 × 40 × 31.9 mm externally and does not fit 3L. The matching [3L case study](case/) measures 72.2 × 38 × 31.9 mm externally and has a common friction-fit base and separate C3/C6 printed-button lids. Both require a physical fit check. [FirstBuild outline Gerber](https://github.com/geappliances/home-assistant-adapter/blob/4888a7df56e8ce6382ed91e4b95bd5020f1802f6/doc/pcb/HA%20Adapter%20Gerbers%2011-15-24.zip)
 
 The fitted BOM comparison gives 72 references and 32 distinct LCSC codes, all top-side. No TP reference is fitted. Review Gerbers contain 178 top paste objects and zero bottom paste objects. The unpopulated underside pads use copper and a mask opening. They require no bottom stencil, placement, solder joint or second reflow. A physical probe fixture or paid functional test is a separate service. There is no new assembly quote or independently verified dollar saving from the smaller outline. Use five fully assembled, single-board, single-sided, lead-free Economic assemblies as the pricing basis. The prior part and fee review is in [3K sourcing](../rev3k/PARTS-AND-COST.md). [JLC assembly pricing](https://jlcpcb.com/help/article/pcb-assembly-price) · [JLC functional test](https://jlcpcb.com/help/article/functional-test-service)
 
@@ -38,9 +42,9 @@ The inherited Rev 3K model uses 35 µm outer copper, 15.2 versus 30.48 µm finis
 
 - J1.1 to U9.5 (VDC) models 42.313 mV of copper drop at 0.60 A on the thinner stack.
 - J1.3 to U10.5 (/ALT_PWR) models 12.05 mV of copper drop at 0.60 A on the thinner stack.
-- JP3.2 to J6.7 (+5V) models 49.013 mV of copper drop at 0.60 A on the thinner stack.
+- JP3.2 to J6.7 (+5V) models 40.512 mV of copper drop at 0.60 A on the thinner stack.
 - J6.5 to U5.5 (+3V3) models 23.015 mV of copper drop at 0.60 A on the thinner stack.
 
 The [ground return mesh](evidence/ground-return.csv) samples the actual fills, tracks and through connections on a 0.25 mm grid. Ground continuity in this model does not establish transient or RF behavior.
 
-On the 15.2 µm inner-copper assumption at 0.60 A, the module 5 V feed is 49.0 mV on 3L versus 32.3 mV on 3K. The J1.8-to-J6.6 return is 17.3 mV versus 3.3 mV. The 30.48 µm inner model for 3L gives 33.7 mV on the 5 V feed and 9.6 mV on the return. These are pin-to-pin copper-only sensitivity results. Give the next layout wider and more direct supply and return routes before choosing the production copper weight.
+At 0.60 A and 15.2 µm modeled inner copper, the module 5 V feed drops 40.5 mV, down from 49.0 mV on the preceding 3L. The J1.8–J6.6 ground return drops 16.6 mV, down from 17.3 mV. The corresponding Rev 3K values are 32.3 and 3.3 mV. On 3L with 30.48 µm inners the revised values are 29.4 and 9.3 mV. The gap in the return path still warrants a placement and routing redesign before adopting the thinner inner stack. The feed and return calculations use different endpoint pairs. Each is a copper-only estimate. A working 0.5 oz design, factory pricing, temperature rise, regulator stability and backfeed behavior remain unverified.

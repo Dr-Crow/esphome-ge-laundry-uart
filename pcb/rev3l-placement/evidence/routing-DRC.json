@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-11-26T18:28:15-0500",
+    "date": "2026-11-26T19:24:06-0500",
     "included_severities": [
         "error",
         "warning",
@@ -15,43 +15,20 @@
             "description": "Missing connection between items",
             "items": [
                 {
+                    "description": "Track [/DBG_LED] on B.Cu, length 0.0250 mm",
+                    "pos": {
+                        "x": 50.625,
+                        "y": 26.369999
+                    },
+                    "uuid": "dfec1d5d-7e9a-4a4f-a65f-c777b308efb2"
+                },
+                {
                     "description": "Track [/DBG_LED] on F.Cu, length 0.7700 mm",
                     "pos": {
                         "x": 35.56,
                         "y": 10.92
                     },
                     "uuid": "7910b994-410b-4101-b142-ae37a1121319"
-                },
-                {
-                    "description": "Track [/DBG_LED] on B.Cu, length 0.3111 mm",
-                    "pos": {
-                        "x": 38.17,
-                        "y": 18.535
-                    },
-                    "uuid": "31c20a6f-432c-45a1-ac44-36c94dec58a6"
-                }
-            ],
-            "severity": "error",
-            "type": "unconnected_items"
-        },
-        {
-            "description": "Missing connection between items",
-            "items": [
-                {
-                    "description": "Track [/DBG_LED] on B.Cu, length 0.1350 mm",
-                    "pos": {
-                        "x": 50.625,
-                        "y": 26.505
-                    },
-                    "uuid": "916d6c64-a655-430a-80b0-c1935ea1ca10"
-                },
-                {
-                    "description": "Track [/DBG_LED] on In2.Cu, length 2.3500 mm",
-                    "pos": {
-                        "x": 48.4,
-                        "y": 20.5
-                    },
-                    "uuid": "6c34728f-bdd8-473b-8ffb-b2421b8d4135"
                 }
             ],
             "severity": "error",
@@ -107,12 +84,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [Net-(D9-K2)] on F.Cu, length 0.0636 mm",
+                    "description": "Track [Net-(D9-K2)] on In2.Cu, length 0.2546 mm",
                     "pos": {
-                        "x": 33.975,
-                        "y": 7.92
+                        "x": 33.93,
+                        "y": 7.875
                     },
-                    "uuid": "26857add-aab8-4246-ac2f-2771aab995c9"
+                    "uuid": "12519362-1264-49c4-aeea-fa6bd8bbe3fd"
                 },
                 {
                     "description": "Track [Net-(D9-K2)] on F.Cu, length 0.0309 mm",
@@ -130,12 +107,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [Net-(D9-K2)] on F.Cu, length 0.0293 mm",
+                    "description": "Pad 2 [Net-(D9-K2)] of D9 on F.Cu",
                     "pos": {
-                        "x": 39.34,
-                        "y": 19.04
+                        "x": 39.3125,
+                        "y": 19.05
                     },
-                    "uuid": "1dc6631a-7534-4ae4-b989-7d1a9688d8cb"
+                    "uuid": "f949f09e-7df0-47bd-b16b-ebfae5506b7d"
                 },
                 {
                     "description": "Track [Net-(D9-K2)] on In1.Cu, length 0.3960 mm",
@@ -153,12 +130,12 @@
             "description": "Missing connection between items",
             "items": [
                 {
-                    "description": "Track [Net-(R12-Pad2)] on B.Cu, length 17.5700 mm",
+                    "description": "Track [Net-(R12-Pad2)] on B.Cu, length 0.0990 mm",
                     "pos": {
-                        "x": 2.03,
-                        "y": 19.39
+                        "x": 1.96,
+                        "y": 19.46
                     },
-                    "uuid": "77b6bc0a-3846-442d-aa67-ca6bab634595"
+                    "uuid": "fa3e5d14-d854-4014-b506-a86b059ad655"
                 },
                 {
                     "description": "Track [Net-(R12-Pad2)] on F.Cu, length 0.0190 mm",
@@ -276,12 +253,12 @@
                     "uuid": "2bbcc0fa-4087-4971-9d78-06af82fb9041"
                 },
                 {
-                    "description": "Pad 1 [/PIN1_UV] of R32 on F.Cu",
+                    "description": "Track [/PIN1_UV] on F.Cu, length 0.0050 mm",
                     "pos": {
-                        "x": 29.825,
+                        "x": 29.82,
                         "y": 1.05
                     },
-                    "uuid": "fd6976a8-7aa9-4516-9e93-d990ee6030db"
+                    "uuid": "498bc639-f0c9-4167-81ad-5a1e44aed13b"
                 }
             ],
             "severity": "error",
@@ -334,21 +311,5 @@
             "type": "unconnected_items"
         }
     ],
-    "violations": [
-        {
-            "description": "Track has unconnected end",
-            "items": [
-                {
-                    "description": "Track [/DBG_LED] on F.Cu, length 0.0990 mm",
-                    "pos": {
-                        "x": 57.82,
-                        "y": 5.11
-                    },
-                    "uuid": "808226e4-e0cf-4194-ac9a-a9e17ce66bf8"
-                }
-            ],
-            "severity": "warning",
-            "type": "track_dangling"
-        }
-    ]
+    "violations": []
 }

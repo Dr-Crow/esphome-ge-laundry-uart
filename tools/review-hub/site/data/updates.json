@@ -1,4 +1,10 @@
 [
+  {
+    "rev": "rev3l",
+    "date": "2026-11-27",
+    "title": "Rev 3L routing repair and printable case studies",
+    "text": "Thirteen PCB connections remain open. The dangling D5 branch was removed, but the LED still lacks complete anode and cathode connections. There are no other DRC findings, schematic differences or ERC violations. Open the Rev 3K and 3L case links for the C3 and C6 lids, common bases and LED guides."
+  },
  {
   "date": "2026-11-26",
   "rev": "rev3h",

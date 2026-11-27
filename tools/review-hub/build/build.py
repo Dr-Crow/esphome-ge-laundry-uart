@@ -150,6 +150,17 @@ def pad_probe_candidates(ex):
     return ex.get('pad_probes', [])
 
 
+def export_compact_model(rev, pcb, origin, raw, final):
+    """Only fitted components are rendered. Repair empty STEP meshes under their native transforms."""
+    direct = raw.with_name('direct.glb')
+    cx, cy = origin
+    kicad_cli('pcb', 'export', 'glb', '--subst-models', '--no-dnp', '--include-silkscreen', '--include-soldermask',
+              '--user-origin', f'{cx}x{cy}mm', '-o', direct, pcb)
+    refs = [p['ref'] for p in read_bom(rev) if not p['dnp']]
+    sh([hubenv.cad_python(CFG), HERE / 'compact_fitted.py', direct, raw, PKG3D, *refs])
+    sh(['node', HERE / 'optimize_glb.mjs', raw, final, '--wrap'], cwd=HERE)
+
+
 def stage_glb(rev, ex, force):
     cdir = CACHE / rev
     pcb = REPO / REVS[rev]['pcb']
@@ -160,12 +171,18 @@ def stage_glb(rev, ex, force):
     outdir.mkdir(parents=True, exist_ok=True)
     final = outdir / 'board.glb'
     key = sha(pcb, HERE / 'optimize_glb.mjs', HERE / 'glbtools.py', PKG3D / 'MANIFEST.json', f'{cx},{cy}'.encode())
+    compact = rev in ('rev3i', 'rev3j', 'rev3k', 'rev3l')
+    if compact:
+        key = sha(key.encode(), HERE / 'compact_fitted.py', REPO / REVS[rev]['bom'])
     if not fresh(cdir / 'glb.stamp', key, force) or not final.exists() or not raw.exists():
         log(rev, f'kicad-cli export glb (origin {cx},{cy})')
-        kicad_cli('pcb', 'export', 'glb', '--subst-models', '--include-silkscreen', '--include-soldermask',
-                  '--user-origin', f'{cx}x{cy}mm', '-o', raw, pcb)
-        log(rev, 'optimize (join primitives / dedup / meshopt)')
-        sh(['node', HERE / 'optimize_glb.mjs', raw, final, '--wrap'], cwd=HERE)
+        if compact:
+            export_compact_model(rev, pcb, (cx, cy), raw, final)
+        else:
+            kicad_cli('pcb', 'export', 'glb', '--subst-models', '--include-silkscreen', '--include-soldermask',
+                      '--user-origin', f'{cx}x{cy}mm', '-o', raw, pcb)
+            log(rev, 'optimize (join primitives / dedup / meshopt)')
+            sh(['node', HERE / 'optimize_glb.mjs', raw, final, '--wrap'], cwd=HERE)
         (cdir / 'glb.stamp').write_text(key)
     return verify_glb(rev, ex, raw, final, cx, cy)
 
@@ -354,7 +371,8 @@ def stage_layers(rev, ex, force):
     svgdir.mkdir(parents=True)
     names = [d[0] for d in LAYER_DEFS if d[2] != 'copper' or d[0] in ex['copper_layers']]
     kicad_cli('pcb', 'export', 'svg', '--mode-multi', '--layers', ','.join(names), '--page-size-mode', '2',
-              '--exclude-drawing-sheet', '--black-and-white', '-o', svgdir, pcb)
+              '--exclude-drawing-sheet', '--black-and-white',
+              *(['--drill-shape-opt', '0'] if rev in ('rev3i', 'rev3j', 'rev3k', 'rev3l') else []), '-o', svgdir, pcb)
     stem = pcb.stem
     bb = ex['bbox_mm']
     W, H = bb['x1'] - bb['x0'], bb['y1'] - bb['y0']
@@ -708,10 +726,15 @@ def build_index(revs):
         bb = board['bbox_mm']
         commit = subprocess.run(['git', '-C', str(REPO), 'log', '-1', '--format=%h', '--', str(Path(r['pcb']).parent)], capture_output=True, text=True).stdout.strip()
         uniq = cost['totals']['unique'] if cost and cost['lines'] else None
+        size_mm = [round(bb['x1'] - bb['x0'], 2), round(bb['y1'] - bb['y0'], 2)]
+        if rid in ('rev3i', 'rev3j', 'rev3k', 'rev3l'):
+            # Drawing strokes extend beyond the nominal mechanical profile.
+            size_mm = np.ptp(np.asarray(board['outline'][0]), axis=0).round(4).tolist()
+            uniq = len({p['lcsc'] for p in parts if p['assembled'] and p['lcsc']})
         out.append({
             'id': rid, 'label': r['label'], 'status': r['status'], 'date': r['date'], 'date_basis': r.get('date_basis'),
             'summary': r['summary'], 'commit': commit, 'commit_basis': 'last commit touching the revision design/ folder',
-            'layers': board['copper_layers'].__len__(), 'size_mm': [round(bb['x1'] - bb['x0'], 2), round(bb['y1'] - bb['y0'], 2)],
+            'layers': board['copper_layers'].__len__(), 'size_mm': size_mm,
             'thickness_mm': board['thickness_mm'], 'parts_total': len(parts), 'parts_assembled': sum(1 for p in parts if p['assembled']),
             'unique_lcsc': uniq, 'extended': cost['totals']['extended'] if cost and cost['lines'] else None,
             'case': r['case'], 'readme': r['readme'] and f'repo/{r["readme"]}',
@@ -797,7 +820,7 @@ def main():
         docs_mirror.run(CFG, SITE)
     if args.cases or full:
         import cases_build
-        cases_build.run(CFG, SITE, DATA)
+        cases_build.run(CFG, SITE, DATA, sys.modules[__name__])
     build_index(revs)
     print('revisions.json written')
     import publish_prep  # artifacts don't serve .glb or SVGs with a DOCTYPE
