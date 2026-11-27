@@ -27,8 +27,10 @@
     44.589650000000006,
     18.7825
   ],
-  "c3_fpc_lid_overlap_mm3": 0,
-  "c3_coax_lid_overlap_mm3": 0.0,
+  "c3_fpc_base_overlap_mm3": 0,
+  "c3_fpc_base_clearance_mm": 0.35,
+  "c3_coax_base_overlap_mm3": 0.0,
+  "c3_coax_base_clearance_mm": 14.2042,
   "c3_lead_path_mm": 29.23,
   "c3_coax_points_case_xyz": [
     [
@@ -107,8 +109,12 @@
       21.8
     ]
   ],
+  "c3_fpc_lid_overlap_mm3": 0,
+  "c3_fpc_lid_clearance_mm": 0.12,
+  "c3_coax_lid_overlap_mm3": 0.0,
+  "c3_coax_lid_clearance_mm": 0.2184,
   "c3_board_overlap_mm3": 0,
-  "c3_closure_interference_mm3": 0.42,
+  "c3_closure_interference_mm3": 0.355,
   "c3_switches_case_xy": {
     "BOOT": [
       44.71665,
@@ -126,7 +132,7 @@
   },
   "c6_ceramic_to_lid_min_mm": 9.45,
   "c6_board_overlap_mm3": 0,
-  "c6_closure_interference_mm3": 0.42,
+  "c6_closure_interference_mm3": 0.355,
   "c6_switches_case_xy": {
     "BOOT": [
       63.064949999999996,

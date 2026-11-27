@@ -28,3 +28,7 @@ Verify startup on each input, pin-1 priority and handover, overload/thermal beha
 With the case removed, the 2 mm diameter vertical-probe screen clears TP12 buck output and TP16 ground, TP1 module 5 V, TP2 module 3.3 V, TP3 protected input and TP7 ground for both registered module envelopes. TP18 fails this screen. J7 is the series-protected bus monitor. Probe bodies and actual cables need a physical check. [Probe map](evidence/probes.svg) · [Access distances](evidence/probe-clearance.json)
 
 The placement-only files in evidence/unrouted-placement, placement-DRC.json and power-trials.csv are historical. The linked routing-DRC.json, rail-paths.csv and ground-return.csv describe the current board.
+
+## Assembly and printed-case corrections
+
+The two XIAO sockets and the debug header now use their body centers in the placement list. The common case base has a shorter tongue below the C3 antenna pocket. Check the assembly overlay and print fit before ordering. [Corrected placement list](manufacturing/CPL-GEA-Adapter-Rev3L.csv) · [Connector verification](evidence/connector-centroid-review.md) · [Common base STEP](case/common-base.step) · [Print checks](../rev3k/case/PRINT-FIT.md)
